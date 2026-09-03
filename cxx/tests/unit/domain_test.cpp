@@ -3,6 +3,7 @@
 // release levels, the statistics and the summary shape.
 
 #include <cstdio>
+#include <print>
 #include <set>
 
 #include "adapters/abigail/comparer.hpp"
@@ -320,8 +321,8 @@ void rollup_definitions() {
   CHECK(!s.at("frequency").at("all").at("rows").empty());
   CHECK(s.at("symbols").at("removed_undeclared").get<int>() == 1);
   const auto text = render_text(s);
-  CHECK(text.find("BREAK RATES") != std::string::npos);
-  CHECK(text.find("field_added_to_struct") != std::string::npos);
+  CHECK(text.contains("BREAK RATES"));
+  CHECK(text.contains("field_added_to_struct"));
 }
 
 void header_model() {
@@ -370,6 +371,6 @@ int main() try {
   header_model();
   return test::report("domain");
 } catch (const std::exception &e) {
-  std::fprintf(stderr, "domain: unexpected exception: %s\n", e.what());
+  std::println(stderr, "domain: unexpected exception: {}", e.what());
   return 1;
 }

@@ -89,9 +89,8 @@ struct SelectOptions {
 // ---- resolve ----------------------------------------------------------------
 
 struct ResolveOptions {
-  std::uint32_t releases = 10;    ///< Most recent distinct upstream releases per library.
-  std::uint32_t max_scan = 40;    ///< Archive versions to examine before giving up.
-  std::uint32_t size_threads = 4; ///< Concurrent size lookups.
+  std::uint32_t releases = 10; ///< Most recent distinct upstream releases per library.
+  std::uint32_t max_scan = 40; ///< Archive versions to examine before giving up.
 };
 
 /// @brief Turns the selection into consecutive-release PairJobs, with the

@@ -96,10 +96,17 @@ Result<PairResult> diff_one(
   }
   sv.log(
     std::format(
-      "  {}: {} + {} objects, {:.0f} MB extracted", res.id, m1.shared_objects.size(),
-      m2.shared_objects.size(), static_cast<double>(res.bytes_extracted) / 1e6
+      "  {}: {} + {} objects, {:.0f} MB extracted{}", res.id, m1.shared_objects.size(),
+      m2.shared_objects.size(), static_cast<double>(res.bytes_extracted) / 1e6,
+      m1.missing.empty() && m2.missing.empty()
+        ? std::string{}
+        : std::format(", missing: {} / {}", Json(m1.missing).dump(), Json(m2.missing).dump())
     )
   );
+  for (const auto *m : {&m1, &m2}) {
+    for (const auto &pkg : m->missing)
+      res.object_errors.push_back("missing package: " + pkg);
+  }
 
   // Pair shared objects by SONAME stem so a SONAME bump still compares.
   std::map<std::string, std::filesystem::path> by_stem_2;

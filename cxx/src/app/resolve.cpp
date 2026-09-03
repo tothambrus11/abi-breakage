@@ -1,11 +1,9 @@
 #include <algorithm>
 #include <array>
-#include <atomic>
 #include <format>
 #include <map>
-#include <mutex>
+#include <optional>
 #include <set>
-#include <thread>
 
 #include "app/materialize.hpp"
 #include "app/stages.hpp"
@@ -74,18 +72,35 @@ std::pair<std::vector<BinaryName>, std::vector<BinaryName>> roles(
   return {runtime, dev};
 }
 
-/// @brief Sum of the .deb sizes the diff stage will download for `rel`.
-///        Unknown sizes count as zero; the estimate is for scheduling.
-std::uint64_t download_bytes(const Services &sv, const Release &rel) {
+/// @brief The newest binary version of `name` in `rel` that has an amd64 (or
+///        arch-independent) .deb, with the file's hash. A binNMU that never
+///        built on amd64 sorts newest but has no file; the older version does.
+std::optional<std::pair<VersionString, FileHash>> first_amd64(
+  const Services &sv, const Release &rel, const BinaryName &name
+) {
+  const auto it = std::ranges::find(rel.binaries, name, &BinaryVersions::name);
+  if (it == rel.binaries.end())
+    return std::nullopt;
+  for (const auto &v : it->versions) {
+    if (auto hash = ports::amd64_deb_hash(sv.packages, name, v); hash && *hash)
+      return std::pair{v, **hash};
+  }
+  return std::nullopt;
+}
+
+/// @brief Sum of the .deb sizes the diff stage will download for `rel`, or
+///        nullopt if some runtime package has no amd64 build at all (a
+///        ports-only upload): such a release cannot be compared.
+std::optional<std::uint64_t> download_bytes(const Services &sv, const Release &rel) {
   std::uint64_t total = 0;
   for (const auto &name : packages_for(rel, Want{})) {
-    const auto it = std::ranges::find(rel.binaries, name, &BinaryVersions::name);
-    if (it == rel.binaries.end() || it->versions.empty())
-      continue;
-    auto hash = ports::amd64_deb_hash(sv.packages, name, it->versions.front());
-    if (!hash || !*hash)
-      continue;
-    if (auto size = sv.packages.file_size(**hash); size && *size)
+    const auto found = first_amd64(sv, rel, name);
+    if (!found) {
+      if (std::ranges::contains(rel.runtime, name))
+        return std::nullopt;
+      continue; // a missing dbgsym or dev package is reported at materialisation
+    }
+    if (auto size = sv.packages.file_size(found->second); size && *size)
       total += **size;
   }
   return total;
@@ -99,7 +114,7 @@ Result<Plan> run_resolve(const Workspace &ws, const Services &sv, const ResolveO
   sv.log(std::format("{} selected sources", sel.libraries.size()));
 
   Plan plan;
-  std::vector<Release *> to_size;
+  std::uint32_t no_amd64 = 0;
   for (const auto &lib : sel.libraries) {
     auto versions = sv.packages.source_versions(lib.source);
     if (!versions) {
@@ -108,60 +123,78 @@ Result<Plan> run_resolve(const Workspace &ws, const Services &sv, const ResolveO
     }
     std::ranges::sort(*versions, std::greater<>{}); // newest first, dpkg order
 
-    // One archive version per upstream release: the newest Debian revision.
-    std::vector<DebianVersion> per_upstream;
-    std::set<std::string> seen_up;
+    // One archive version per upstream release: the newest Debian revision
+    // that has the packages we need AND an amd64 build of them. Ports-only
+    // uploads ("+riscv64", "+hurd.1") sort newest but built nowhere we can
+    // read; the previous revision of the same upstream release does.
+    std::vector<std::pair<std::string, std::vector<DebianVersion>>> per_upstream;
     for (const auto &v : *versions) {
       if (v.is_prerelease())
         continue;
-      if (seen_up.insert(v.upstream().get()).second)
-        per_upstream.push_back(v);
+      const auto up = v.upstream().get();
+      if (per_upstream.empty() || per_upstream.back().first != up)
+        per_upstream.emplace_back(up, std::vector<DebianVersion>{});
+      per_upstream.back().second.push_back(v);
     }
 
     std::vector<Release> picked;
     std::uint32_t scanned = 0;
-    for (const auto &v : per_upstream) {
+    for (const auto &[up, revisions] : per_upstream) {
       if (picked.size() >= o.releases || scanned++ >= o.max_scan)
         break;
-      auto bins = sv.packages.binary_packages(lib.source, v.str());
-      if (!bins)
-        continue;
-      std::map<std::string, std::vector<VersionString>> by_name;
-      std::set<std::string> names;
-      for (const auto &b : *bins) {
-        by_name[b.name.get()].push_back(b.version);
-        names.insert(b.name.get());
-      }
-      auto [rt, dev] = roles(names, lib.binary);
-      if (rt.empty() || dev.empty())
-        continue;
-      std::set<std::string> keep;
-      for (const auto &r : rt) {
-        keep.insert(r.get());
-        keep.insert(r.get() + "-dbgsym");
-      }
-      for (const auto &d : dev)
-        keep.insert(d.get());
-      Release rel{
-        .upstream = v.upstream(),
-        .source_version = v.str(),
-        .runtime = rt,
-        .dev = dev,
-        .binaries = {},
-        .download_bytes = 0
-      };
-      for (const auto &k : keep) {
-        if (auto it = by_name.find(k); it != by_name.end()) {
-          auto vs = it->second;
-          std::ranges::sort(vs, [](const VersionString &a, const VersionString &b) {
-            auto da = DebianVersion::parse(a.get());
-            auto db = DebianVersion::parse(b.get());
-            return da && db ? *da > *db : a > b;
-          });
-          rel.binaries.push_back(BinaryVersions{.name = BinaryName{k}, .versions = vs});
+      for (const auto &v : revisions) {
+        auto bins = sv.packages.binary_packages(lib.source, v.str());
+        if (!bins)
+          continue;
+        std::map<std::string, std::vector<VersionString>> by_name;
+        std::set<std::string> names;
+        for (const auto &b : *bins) {
+          by_name[b.name.get()].push_back(b.version);
+          names.insert(b.name.get());
         }
+        auto [rt, dev] = roles(names, lib.binary);
+        if (rt.empty() || dev.empty())
+          continue;
+        std::set<std::string> keep;
+        for (const auto &r : rt) {
+          keep.insert(r.get());
+          keep.insert(r.get() + "-dbgsym");
+        }
+        for (const auto &d : dev)
+          keep.insert(d.get());
+        Release rel{
+          .upstream = v.upstream(),
+          .source_version = v.str(),
+          .runtime = rt,
+          .dev = dev,
+          .binaries = {},
+          .download_bytes = 0
+        };
+        for (const auto &k : keep) {
+          if (auto it = by_name.find(k); it != by_name.end()) {
+            auto vs = it->second;
+            std::ranges::sort(vs, [](const VersionString &a, const VersionString &b) {
+              auto da = DebianVersion::parse(a.get());
+              auto db = DebianVersion::parse(b.get());
+              return da && db ? *da > *db : a > b;
+            });
+            rel.binaries.push_back(BinaryVersions{.name = BinaryName{k}, .versions = vs});
+          }
+        }
+        const auto bytes = download_bytes(sv, rel);
+        if (!bytes) {
+          sv.log(
+            std::format(
+              "{:<24} {} has no amd64 build; trying an older revision", lib.source, v.str()
+            )
+          );
+          ++no_amd64;
+          continue;
+        }
+        rel.download_bytes = *bytes;
+        picked.push_back(std::move(rel));
+        break;
       }
-      picked.push_back(std::move(rel));
     }
     std::ranges::reverse(picked); // oldest -> newest
     for (std::size_t i = 1; i < picked.size(); ++i)
@@ -174,41 +207,12 @@ Result<Plan> run_resolve(const Workspace &ws, const Services &sv, const ResolveO
     );
   }
 
-  // Sizes, for scheduling and budgets. Every release appears in up to two
-  // jobs; look each up once and copy.
-  std::map<std::string, std::uint64_t> sizes;
-  std::vector<std::pair<std::string, const Release *>> unique;
-  for (const auto &j : plan.jobs) {
-    for (const auto *r : {&j.v1, &j.v2}) {
-      const auto key = j.source.get() + "@" + r->source_version.get();
-      if (sizes.emplace(key, 0).second)
-        unique.emplace_back(key, r);
-    }
-  }
-  sv.log(std::format("looking up download sizes of {} releases", unique.size()));
-  {
-    std::atomic<std::size_t> next{0};
-    std::mutex mx;
-    auto worker = [&] {
-      for (;;) {
-        const auto k = next.fetch_add(1);
-        if (k >= unique.size())
-          return;
-        const auto bytes = download_bytes(sv, *unique[k].second);
-        const std::scoped_lock lk(mx);
-        sizes[unique[k].first] = bytes;
-      }
-    };
-    std::vector<std::jthread> pool;
-    for (std::uint32_t t = 0; t < std::max<std::uint32_t>(1, o.size_threads); ++t)
-      pool.emplace_back(worker);
-  }
-  for (auto &j : plan.jobs) {
-    for (auto *r : {&j.v1, &j.v2})
-      r->download_bytes = sizes[j.source.get() + "@" + r->source_version.get()];
-  }
   ABISTUDY_TRY_VOID(sv.store.save(ws.plan(), schema_plan, plan));
-  sv.log(std::format("{} consecutive-release pairs", plan.jobs.size()));
+  sv.log(
+    std::format(
+      "{} consecutive-release pairs ({} port-only revisions skipped)", plan.jobs.size(), no_amd64
+    )
+  );
   return plan;
 }
 
