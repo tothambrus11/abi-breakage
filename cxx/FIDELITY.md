@@ -146,10 +146,13 @@ libraries and use the compiler's own ABI implementation:
 * `clang::ItaniumMangleContext` — the mangler itself, so the predicted export
   set is computed by the same code that computes real ones.
 
-Tradeoffs of the C++ API: it is unstable across LLVM majors (pin the version
-in the Docker image — already the practice here), the link is heavier, and the
-code must be insulated behind our own small interface (one `clang_abi.cpp`
-that produces our `abi::model` types, so an LLVM bump touches one file). In
+Tradeoffs of the C++ API: it is unstable across LLVM majors (**decision:
+pin LLVM/clang 23**, from apt.llvm.org on the sid image, and add a parity
+test that checks our extracted layouts against `-fdump-record-layouts` /
+`-fdump-vtable-layouts` output for the calibration cases, so an LLVM bump is
+caught by the gate), the link is heavier, and the code must be insulated
+behind our own small interface (one `clang_abi.cpp` that produces our
+`abi::model` types, so an LLVM bump touches one file). In
 exchange, the "evaluate the ABI ourselves" plan degenerates into "extract what
 the production compiler already computed", which is the highest-fidelity
 oracle available on any platform.
@@ -299,6 +302,11 @@ taxonomy. Build outward:
    surface, which no DWARF tool can do), not just equal to it.
 5. **Port libabigail's harmless-diff judgment** into the classifier and the
    calibration suite as negative cases (ongoing, alongside 4).
+6. **`profile` stage** (§7): Claude-generated, validator-gated per-package
+   build/surface profiles, frozen as artifacts before `diff` runs.
+7. **Linkability lattice + rdep import scan** (§8): stratify every exported
+   symbol (declared / used / tracked / versioned / bare), headline over
+   L0 ∪ L1, and weight symbol breaks by observed importing packages.
 
 At the end of this, "the best ABI diff tool for any published Linux library"
 is concretely: *dynsym truth for symbols, compiler-computed header model for
@@ -306,3 +314,152 @@ the contract, DWARF for what shipped, one taxonomy over all three, and the
 disagreements between them reported as data.* No single-source tool —
 libabigail, abi-compliance-checker, or a from-scratch libclang evaluator —
 can make that claim.
+
+---
+
+## 7. A per-package profiling stage: Claude as build analyst, validators as judge
+
+Every fidelity problem in §2 that isn't an algorithm is a *configuration*
+problem: which flags reproduce the shipped build, which headers are the real
+public tree, which exported symbols the maintainer considers ABI, which
+conventions (ICU's suffix renames, private namespaces) shape the surface.
+These are exactly the judgments a human doing this study by hand would form
+in ten minutes of reading the package — and they are legible to an LLM long
+before they are legible to a heuristic.
+
+**New stage `profile`, between `resolve` and `diff`.** For each *package*
+(not each release — profiles are per-package with per-release deltas only
+when validation demands them):
+
+1. **Mechanical evidence gathering** (no LLM): a bounded dossier assembled
+   from what the pipeline already downloads plus the *source* package, which
+   snapshot.debian.org also serves — `debian/rules` and
+   `debian/<pkg>.symbols` (see §8: maintainer-curated ABI lists),
+   `.pc` files, `configure.ac`/`meson.build`/`CMakeLists.txt` excerpts, the
+   `-dev` header tree listing with samples, a dynsym summary (counts by
+   version node, naming patterns, weak/strong mix), and the `.buildinfo`
+   file when present (the exact build environment Debian used).
+2. **Claude produces a `PackageProfile`** — a schema-versioned JSON artifact
+   like every other stage output: proposed compile flags and include roots
+   per header subtree, `-std=` level, per-file language overrides, defines
+   the build system injects (`config.h` equivalents, `_FILE_OFFSET_BITS`),
+   which header subtrees are public vs installed-but-internal, symbol
+   classification notes (export-all leakage, plugin entry points, naming
+   conventions), expected mass-rename policy, and free-text risk notes.
+   Mechanics: the Batch API (50% of standard price; the corpus is ~120
+   packages, latency is irrelevant), model `claude-opus-5`, structured
+   outputs (`output_config.format`) so the artifact validates against the
+   schema by construction, adaptive thinking. Prompt and raw response are
+   stored next to the profile for audit.
+3. **Deterministic validation — the load-bearing design rule.** Nothing from
+   the profile flows into a result directly; every field feeds a validator:
+   * proposed flags are accepted iff they *measurably improve parse
+     coverage* (fatal-diagnostic rate before vs after) and the probe TU
+     compiles — otherwise the field is discarded and the discard recorded;
+   * public-tree claims are checked against `.pc` `Cflags` and the
+     `#include` graph (a "private" subtree reachable from a public header
+     is public, whatever anyone says);
+   * symbol classification notes are only ever used to *annotate* strata
+     from §8, never to move a symbol between strata on their own.
+   The profile is therefore a *proposal generator* for knobs the pipeline
+   already exposes, and a validated profile can never make a number worse
+   than the no-profile baseline — the validator falls back per-field.
+4. **Reproducibility.** LLM output is nondeterministic, so profiles are
+   frozen artifacts: generated once, validated, committed to the study
+   workspace like `plan.json`, and re-generated only on explicit request.
+   The study's numbers are a function of pinned inputs; the LLM sits
+   *upstream* of the pipeline, not inside it. Provenance records model id,
+   prompt hash, and validation outcomes.
+
+Where the LLM earns its place (and heuristics were failing): reading autoconf
+feature tests to predict `config.h` defines; recognizing that a `-dev` tree
+ships both a public API and a "semi-private" tree for plugins; naming the
+package's export discipline (version script vs `-fvisibility=hidden` vs
+export-everything) from the build files; flagging that a library's C headers
+hide a C++ convenience layer. Each of these currently costs a per-library
+investigation when the coverage numbers look wrong; the profile stage moves
+that investigation before the compilations, where it can still change how
+they run.
+
+---
+
+## 8. Which source of truth, when — a decision procedure
+
+The question generalizes: dynsym, DWARF, the clang header model, Debian's
+symbols files, reverse-dependency imports, and now an LLM profile all speak
+about the same surface. The wrong answer is any kind of voting or confidence
+averaging — unauditable, and a study must be able to trace every count to a
+rule. The right structure is two deterministic devices:
+
+### 8.1 A precedence table per fact category
+
+For each category of fact, one source is **authoritative** and the others are
+**validators** whose disagreement is recorded, never silently resolved:
+
+| Fact | Authoritative | Validators | On disagreement |
+|---|---|---|---|
+| a symbol exists / was removed | dynsym | — | (dynsym is definitional) |
+| a symbol is *linkable surface* | the lattice below | LLM profile annotates | stratum recorded per symbol |
+| layout of a type that shipped | DWARF | clang model | flag `config divergence`; DWARF wins for "what shipped", clang for "what clients compile against" — **both are reported, because the divergence itself is an ABI hazard** (clients building with different config than the library did) |
+| layout of a declared-but-not-shipped type | clang model | — | (DWARF cannot see it) |
+| vtable layout | DWARF when present | `VTableContext` | as layout row |
+| inline/template/macro surface | clang model | — | (only source) |
+| build configuration | `.pc` / `.buildinfo` / build files | LLM profile proposes, coverage validates | discard field, record discard |
+
+Two principles fall out. **Authority follows the question**: "what shipped"
+belongs to the binary, "what clients see" belongs to the headers, "what
+clients actually do" belongs to their import tables — most apparent
+conflicts dissolve once the question is named. And **disagreement is data**:
+the DWARF-vs-clang layout delta measures header-model fidelity (§5.3); the
+declared-vs-exported delta measures export hygiene; neither is an error to
+suppress.
+
+### 8.2 The linkability lattice — "exported but source-invisible"
+
+The observation is correct and measurable: many exported symbols cannot be
+named from any public header, so no client can link them *from source*, and
+counting their removal as a break inflates every number. Classify each
+exported symbol into ordered strata, each defined by a cheap, deterministic
+join:
+
+* **L0 — declared surface**: exported ∩ declared in the public headers.
+  Computed by mangling every external declaration in the clang model
+  (`ItaniumMangleContext`) and joining against dynsym by mangled name. This
+  is the contract, and computing it is by itself a strong reason for the
+  clang C++ API.
+* **L1 — used surface**: exported ∩ imported by some other package. Debian
+  makes this empirical and cheap: scan the *undefined* symbol tables of the
+  package's reverse dependencies (the archive's `Packages` index gives the
+  rdep set; their binaries are in the same snapshot store the pipeline
+  already downloads from). A symbol some shipped binary imports is
+  demonstrably linked-to — no heuristic needed. This also upgrades the
+  headline metric from "a symbol was removed" to "a removal that would have
+  broken N packages", weighting every break by observed clients.
+* **L2 — maintainer-tracked surface**: exported ∩ listed in
+  `debian/<pkg>.symbols`. Debian's `dpkg-gensymbols` machinery exists
+  precisely to track the ABI per package; where a symbols file exists it is
+  a curated statement of intent, updated on every upload.
+* **L3 — versioned surface**: exported under a version node not matching
+  `PRIVATE`/`INTERNAL` (the existing filter, kept).
+* **L4 — bare exports**: everything else — default-visibility leakage,
+  internal cross-`.so` links within the same source package (detectable:
+  the importer is a sibling binary package), plugin entry points, and
+  **vague-linkage symbols** (weak `W` symbols emitted from inline/template
+  definitions — every client compiles its own copy, so their appearance and
+  disappearance is compiler bookkeeping, not surface; classify these
+  separately and never count them as breaks).
+
+The strata are not exclusive; each symbol carries its full membership
+vector. Reporting then has principled tiers: **headline break rates over
+L0 ∪ L1** (declared or demonstrably used — nobody can argue with either),
+L2/L3 as sensitivity bands, L4 events counted but quarantined. The naming
+heuristics (leading `_`, `detail`/`impl`/`internal` namespaces) and the LLM
+profile's notes annotate L4 for the human reader but never promote or demote
+a symbol — membership is decided only by the deterministic joins.
+
+The same lattice answers "what is the most representative surface to check"
+per library: it is L0 ∪ L1, computed, not chosen — and where a package's L0
+is tiny while L1 is large (C libraries with generated headers the parse
+missed) or vice versa (header-only surface nobody links), that imbalance is
+itself the profile-stage signal to investigate the package's configuration
+before trusting its numbers.
