@@ -1,0 +1,77 @@
+{
+ "data": {
+  "id": "libsidplay@1.36.59..1.36.60",
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      215,
+      218
+     ],
+     "mangled_functions": [
+      215,
+      218
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 4,
+     "symbol_removed": 1
+    },
+    "soname": [
+     "libsidplay.so.1",
+     "libsidplay.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::_M_construct<charconst*>(const char*, const char*, std::forward_iterator_tag)",
+      "symbol": "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tag"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method const unsigned char& smartPtrBase<unsignedcharconst>::operator[](ulint)",
+      "symbol": "_ZN12smartPtrBaseIKhEixEm"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void sidEmuSet(sidOperator*, uword)",
+      "symbol": "_Z9sidEmuSetP11sidOperatort"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void waveCalcFilter(sidOperator*)",
+      "symbol": "_Z14waveCalcFilterP11sidOperator"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void sidEmuSet2(sidOperator*)",
+      "symbol": "_Z10sidEmuSet2P11sidOperator"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": []
+   }
+  ],
+  "seconds": 5.629967896,
+  "source": "libsidplay",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.36.59",
+   "1.36.60"
+  ]
+ },
+ "generated_at": "2026-09-02T12:25:33Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

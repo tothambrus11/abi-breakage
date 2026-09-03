@@ -1,0 +1,231 @@
+{
+ "data": {
+  "id": "gcc-16@16-20260322..16-20260423",
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      4610,
+      4646
+     ],
+     "mangled_functions": [
+      4566,
+      4602
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 30
+    },
+    "soname": [
+     "libstdc++.so.6",
+     "libstdc++.so.6"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function std::__format::_Sink_iter<wchar_t> std::__format::__do_vformat_to<wchar_t,1>(std::__format::_Sink_iter<wchar_t>, std::basic_string_view<wchar_t,std::char_traits<wchar_t>>, std::__format::__format_context&)",
+      "symbol": "_ZNSt8__format15__do_vformat_toIwLj1EEENS_10_Sink_iterIT_EES3_St17basic_string_viewIS2_St11char_traitsIS2_EERSt20basic_format_contextIS3_S2_E",
+      "version": "GLIBCXX_3.4.35"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::starts_with(const char*) const",
+      "symbol": "_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11starts_withEPKc",
+      "version": "GLIBCXX_3.4.35"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::basic_string<char,std::char_traits<char>,std::allocator<char>>::starts_with(const char*) const",
+      "symbol": "_ZNKSs11starts_withEPKc",
+      "version": "GLIBCXX_3.4.35"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::ends_with(const wchar_t*) const",
+      "symbol": "_ZNKSbIwSt11char_traitsIwESaIwEE9ends_withEPKw",
+      "version": "GLIBCXX_3.4.35"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::basic_string<char,std::char_traits<char>,std::allocator<char>>::ends_with(char) const",
+      "symbol": "_ZNKSs9ends_withEc",
+      "version": "GLIBCXX_3.4.35"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::starts_with(wchar_t) const",
+      "symbol": "_ZNKSbIwSt11char_traitsIwESaIwEE11starts_withEw",
+      "version": "GLIBCXX_3.4.35"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::basic_string<char,std::char_traits<char>,std::allocator<char>>::starts_with(std::basic_string_view<char,std::char_traits<char>>) const",
+      "symbol": "_ZNKSs11starts_withESt17basic_string_viewIcSt11char_traitsIcEE",
+      "version": "GLIBCXX_3.4.35"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::ends_with(wchar_t) const",
+      "symbol": "_ZNKSbIwSt11char_traitsIwESaIwEE9ends_withEw",
+      "version": "GLIBCXX_3.4.35"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::basic_string()",
+      "symbol": "_ZNSbIwSt11char_traitsIwESaIwEEC2EvQ26is_default_constructible_vIT1_E",
+      "version": "GLIBCXX_3.4.35"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::basic_string<char,std::char_traits<char>,std::allocator<char>>::ends_with(std::basic_string_view<char,std::char_traits<char>>) const",
+      "symbol": "_ZNKSs9ends_withESt17basic_string_viewIcSt11char_traitsIcEE",
+      "version": "GLIBCXX_3.4.35"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::starts_with(std::basic_string_view<wchar_t,std::char_traits<wchar_t>>) const",
+      "symbol": "_ZNKSbIwSt11char_traitsIwESaIwEE11starts_withESt17basic_string_viewIwS0_E",
+      "version": "GLIBCXX_3.4.35"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::starts_with(wchar_t) const",
+      "symbol": "_ZNKSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEE11starts_withEw",
+      "version": "GLIBCXX_3.4.35"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::ends_with(std::basic_string_view<wchar_t,std::char_traits<wchar_t>>) const",
+      "symbol": "_ZNKSbIwSt11char_traitsIwESaIwEE9ends_withESt17basic_string_viewIwS0_E",
+      "version": "GLIBCXX_3.4.35"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::basic_string<char,std::char_traits<char>,std::allocator<char>>::ends_with(const char*) const",
+      "symbol": "_ZNKSs9ends_withEPKc",
+      "version": "GLIBCXX_3.4.35"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::starts_with(const wchar_t*) const",
+      "symbol": "_ZNKSbIwSt11char_traitsIwESaIwEE11starts_withEPKw",
+      "version": "GLIBCXX_3.4.35"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::starts_with(std::basic_string_view<char,std::char_traits<char>>) const",
+      "symbol": "_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11starts_withESt17basic_string_viewIcS2_E",
+      "version": "GLIBCXX_3.4.35"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::starts_with(char) const",
+      "symbol": "_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11starts_withEc",
+      "version": "GLIBCXX_3.4.35"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::ends_with(const char*) const",
+      "symbol": "_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9ends_withEPKc",
+      "version": "GLIBCXX_3.4.35"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::ends_with(std::basic_string_view<char,std::char_traits<char>>) const",
+      "symbol": "_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9ends_withESt17basic_string_viewIcS2_E",
+      "version": "GLIBCXX_3.4.35"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::ends_with(std::basic_string_view<wchar_t,std::char_traits<wchar_t>>) const",
+      "symbol": "_ZNKSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEE9ends_withESt17basic_string_viewIwS2_E",
+      "version": "GLIBCXX_3.4.35"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::starts_with(const wchar_t*) const",
+      "symbol": "_ZNKSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEE11starts_withEPKw",
+      "version": "GLIBCXX_3.4.35"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::starts_with(std::basic_string_view<wchar_t,std::char_traits<wchar_t>>) const",
+      "symbol": "_ZNKSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEE11starts_withESt17basic_string_viewIwS2_E",
+      "version": "GLIBCXX_3.4.35"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::ends_with(const wchar_t*) const",
+      "symbol": "_ZNKSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEE9ends_withEPKw",
+      "version": "GLIBCXX_3.4.35"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string()",
+      "symbol": "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC2EvQ26is_default_constructible_vIT1_E",
+      "version": "GLIBCXX_3.4.35"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::ends_with(wchar_t) const",
+      "symbol": "_ZNKSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEE9ends_withEw",
+      "version": "GLIBCXX_3.4.35"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::ends_with(char) const",
+      "symbol": "_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9ends_withEc",
+      "version": "GLIBCXX_3.4.35"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string()",
+      "symbol": "_ZNSsC2EvQ26is_default_constructible_vIT1_E",
+      "version": "GLIBCXX_3.4.35"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::basic_string()",
+      "symbol": "_ZNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEC2EvQ26is_default_constructible_vIT1_E",
+      "version": "GLIBCXX_3.4.35"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::basic_string<char,std::char_traits<char>,std::allocator<char>>::starts_with(char) const",
+      "symbol": "_ZNKSs11starts_withEc",
+      "version": "GLIBCXX_3.4.35"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function std::__format::_Sink_iter<char> std::__format::__do_vformat_to<char,1>(std::__format::_Sink_iter<char>, std::basic_string_view<char,std::char_traits<char>>, std::__format::__format_context&)",
+      "symbol": "_ZNSt8__format15__do_vformat_toIcLj1EEENS_10_Sink_iterIT_EES3_St17basic_string_viewIS2_St11char_traitsIS2_EERSt20basic_format_contextIS3_S2_E",
+      "version": "GLIBCXX_3.4.35"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": []
+   }
+  ],
+  "seconds": 16.299536147,
+  "source": "gcc-16",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "16-20260322",
+   "16-20260423"
+  ]
+ },
+ "generated_at": "2026-09-02T12:59:29Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

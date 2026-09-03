@@ -1,0 +1,571 @@
+{
+ "data": {
+  "id": "brotli@1.0.9..1.1.0",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      6,
+      9
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 3
+    },
+    "soname": [
+     "libbrotlicommon.so.1",
+     "libbrotlicommon.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function void BrotliSharedDictionaryDestroyInstance(BrotliSharedDictionaryInternal*)",
+      "symbol": "BrotliSharedDictionaryDestroyInstance"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function BrotliSharedDictionaryInternal* BrotliSharedDictionaryCreateInstance(brotli_alloc_func, brotli_free_func, void*)",
+      "symbol": "BrotliSharedDictionaryCreateInstance"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int BrotliSharedDictionaryAttach(BrotliSharedDictionaryInternal*, BrotliSharedDictionaryType, size_t, const uint8_t*)",
+      "symbol": "BrotliSharedDictionaryAttach"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": []
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      12,
+      14
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "enum_case_added": 1,
+     "symbol_added": 2
+    },
+    "soname": [
+     "libbrotlidec.so.1",
+     "libbrotlidec.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function void BrotliDecoderSetMetadataCallbacks(BrotliDecoderStateInternal*, brotli_decoder_metadata_start_func, brotli_decoder_metadata_chunk_func, void*)",
+      "symbol": "BrotliDecoderSetMetadataCallbacks"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int BrotliDecoderAttachDictionary(BrotliDecoderStateInternal*, BrotliSharedDictionaryType, size_t, const uint8_t*)",
+      "symbol": "BrotliDecoderAttachDictionary"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 6,
+     "field_removed_from_struct": 1,
+     "field_type_changed": 23,
+     "member_offset_changed": 80,
+     "type_size_changed": 5
+    },
+    "type_events": [
+     {
+      "count": 5,
+      "declared_in": "./c/dec/./state.h",
+      "kind": "field_added_to_struct",
+      "type": "struct BrotliDecoderStateStruct"
+     },
+     {
+      "count": 1,
+      "declared_in": "./c/dec/./state.h",
+      "kind": "field_removed_from_struct",
+      "type": "struct BrotliDecoderStateStruct"
+     },
+     {
+      "count": 11,
+      "declared_in": "./c/dec/./state.h",
+      "kind": "field_type_changed",
+      "type": "struct BrotliDecoderStateStruct"
+     },
+     {
+      "count": 62,
+      "declared_in": "./c/dec/./state.h",
+      "kind": "member_offset_changed",
+      "type": "struct BrotliDecoderStateStruct"
+     },
+     {
+      "count": 1,
+      "declared_in": "./c/dec/./state.h",
+      "kind": "type_size_changed",
+      "type": "struct BrotliDecoderStateStruct"
+     },
+     {
+      "count": 1,
+      "declared_in": "./c/dec/./bit_reader.h",
+      "kind": "field_added_to_struct",
+      "type": "struct BrotliBitReader"
+     },
+     {
+      "count": 2,
+      "declared_in": "./c/dec/./bit_reader.h",
+      "kind": "field_type_changed",
+      "type": "struct BrotliBitReader"
+     },
+     {
+      "count": 1,
+      "declared_in": "./c/dec/./bit_reader.h",
+      "kind": "type_size_changed",
+      "type": "struct BrotliBitReader"
+     },
+     {
+      "count": 1,
+      "declared_in": "./c/dec/./state.h",
+      "kind": "type_size_changed",
+      "type": "union {BrotliMetablockHeaderArena header; BrotliMetablockBodyArena body;}"
+     },
+     {
+      "count": 1,
+      "declared_in": "./c/dec/./state.h",
+      "kind": "field_type_changed",
+      "type": "struct BrotliMetablockBodyArena"
+     },
+     {
+      "count": 1,
+      "declared_in": "./c/dec/./state.h",
+      "kind": "type_size_changed",
+      "type": "struct BrotliMetablockBodyArena"
+     },
+     {
+      "count": 9,
+      "declared_in": "./c/dec/./state.h",
+      "kind": "field_type_changed",
+      "type": "struct BrotliMetablockHeaderArena"
+     },
+     {
+      "count": 18,
+      "declared_in": "./c/dec/./state.h",
+      "kind": "member_offset_changed",
+      "type": "struct BrotliMetablockHeaderArena"
+     },
+     {
+      "count": 1,
+      "declared_in": "./c/dec/./state.h",
+      "kind": "type_size_changed",
+      "type": "struct BrotliMetablockHeaderArena"
+     },
+     {
+      "count": 1,
+      "declared_in": "./c/include/brotli/decode.h",
+      "kind": "enum_case_added",
+      "type": "enum BrotliDecoderErrorCode"
+     }
+    ]
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      10,
+      13
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "function_signature_changed": 7,
+     "symbol_added": 3
+    },
+    "soname": [
+     "libbrotlienc.so.1",
+     "libbrotlienc.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function BrotliEncoderPreparedDictionary* BrotliEncoderPrepareDictionary(BrotliSharedDictionaryType, size_t, const uint8_t*, int, brotli_alloc_func, brotli_free_func, void*)",
+      "symbol": "BrotliEncoderPrepareDictionary"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void BrotliEncoderDestroyPreparedDictionary(BrotliEncoderPreparedDictionary*)",
+      "symbol": "BrotliEncoderDestroyPreparedDictionary"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int BrotliEncoderAttachPreparedDictionary(BrotliEncoderStateInternal*, const BrotliEncoderPreparedDictionary*)",
+      "symbol": "BrotliEncoderAttachPreparedDictionary"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function int BrotliEncoderSetParameter(BrotliEncoderState*, BrotliEncoderParameter, uint32_t)  ->  function int BrotliEncoderSetParameter(BrotliEncoderStateInternal*, BrotliEncoderParameter, uint32_t)",
+      "symbol": "BrotliEncoderSetParameter"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function int BrotliEncoderHasMoreOutput(BrotliEncoderState*)  ->  function int BrotliEncoderHasMoreOutput(BrotliEncoderStateInternal*)",
+      "symbol": "BrotliEncoderHasMoreOutput"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function int BrotliEncoderIsFinished(BrotliEncoderState*)  ->  function int BrotliEncoderIsFinished(BrotliEncoderStateInternal*)",
+      "symbol": "BrotliEncoderIsFinished"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void BrotliEncoderDestroyInstance(BrotliEncoderState*)  ->  function void BrotliEncoderDestroyInstance(BrotliEncoderStateInternal*)",
+      "symbol": "BrotliEncoderDestroyInstance"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function const uint8_t* BrotliEncoderTakeOutput(BrotliEncoderState*, size_t*)  ->  function const uint8_t* BrotliEncoderTakeOutput(BrotliEncoderStateInternal*, size_t*)",
+      "symbol": "BrotliEncoderTakeOutput"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function BrotliEncoderState* BrotliEncoderCreateInstance(brotli_alloc_func, brotli_free_func, void*)  ->  function BrotliEncoderStateInternal* BrotliEncoderCreateInstance(brotli_alloc_func, brotli_free_func, void*)",
+      "symbol": "BrotliEncoderCreateInstance"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function int BrotliEncoderCompressStream(BrotliEncoderState*, BrotliEncoderOperation, size_t*, const uint8_t**, size_t*, uint8_t**, size_t*)  ->  function int BrotliEncoderCompressStream(BrotliEncoderStateInternal*, BrotliEncoderOperation, size_t*, const uint8_t**, size_t*, uint8_t**, size_t*)",
+      "symbol": "BrotliEncoderCompressStream"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 9,
+     "field_removed_from_struct": 15,
+     "field_type_changed": 8,
+     "member_offset_changed": 63,
+     "type_size_changed": 14
+    },
+    "type_events": [
+     {
+      "count": 3,
+      "declared_in": "./c/enc/encode.c",
+      "kind": "field_added_to_struct",
+      "type": "struct BrotliEncoderStateStruct"
+     },
+     {
+      "count": 4,
+      "declared_in": "./c/enc/encode.c",
+      "kind": "field_removed_from_struct",
+      "type": "struct BrotliEncoderStateStruct"
+     },
+     {
+      "count": 33,
+      "declared_in": "./c/enc/encode.c",
+      "kind": "member_offset_changed",
+      "type": "struct BrotliEncoderStateStruct"
+     },
+     {
+      "count": 1,
+      "declared_in": "./c/enc/encode.c",
+      "kind": "type_size_changed",
+      "type": "struct BrotliEncoderStateStruct"
+     },
+     {
+      "count": 1,
+      "declared_in": "./c/enc/././././params.h",
+      "kind": "field_type_changed",
+      "type": "struct BrotliEncoderParams"
+     },
+     {
+      "count": 2,
+      "declared_in": "./c/enc/././././params.h",
+      "kind": "member_offset_changed",
+      "type": "struct BrotliEncoderParams"
+     },
+     {
+      "count": 1,
+      "declared_in": "./c/enc/././././params.h",
+      "kind": "type_size_changed",
+      "type": "struct BrotliEncoderParams"
+     },
+     {
+      "count": 1,
+      "declared_in": "./c/enc/./././params.h",
+      "kind": "field_removed_from_struct",
+      "type": "struct BrotliHasherParams"
+     },
+     {
+      "count": 1,
+      "declared_in": "./c/enc/./././params.h",
+      "kind": "member_offset_changed",
+      "type": "struct BrotliHasherParams"
+     },
+     {
+      "count": 1,
+      "declared_in": "./c/enc/./././params.h",
+      "kind": "type_size_changed",
+      "type": "struct BrotliHasherParams"
+     },
+     {
+      "count": 2,
+      "declared_in": "./c/enc/././././encoder_dict.h",
+      "kind": "field_added_to_struct",
+      "type": "struct BrotliEncoderDictionary"
+     },
+     {
+      "count": 6,
+      "declared_in": "./c/enc/././././encoder_dict.h",
+      "kind": "field_removed_from_struct",
+      "type": "struct BrotliEncoderDictionary"
+     },
+     {
+      "count": 2,
+      "declared_in": "./c/enc/././././encoder_dict.h",
+      "kind": "field_type_changed",
+      "type": "struct BrotliEncoderDictionary"
+     },
+     {
+      "count": 1,
+      "declared_in": "./c/enc/././././encoder_dict.h",
+      "kind": "type_size_changed",
+      "type": "struct BrotliEncoderDictionary"
+     },
+     {
+      "count": 1,
+      "declared_in": "./c/enc/././hash.h",
+      "kind": "member_offset_changed",
+      "type": "struct Hasher"
+     },
+     {
+      "count": 1,
+      "declared_in": "./c/enc/././hash.h",
+      "kind": "type_size_changed",
+      "type": "struct Hasher"
+     },
+     {
+      "count": 1,
+      "declared_in": "./c/enc/././hash.h",
+      "kind": "field_added_to_struct",
+      "type": "struct HasherCommon"
+     },
+     {
+      "count": 1,
+      "declared_in": "./c/enc/././hash.h",
+      "kind": "field_type_changed",
+      "type": "struct HasherCommon"
+     },
+     {
+      "count": 4,
+      "declared_in": "./c/enc/././hash.h",
+      "kind": "member_offset_changed",
+      "type": "struct HasherCommon"
+     },
+     {
+      "count": 1,
+      "declared_in": "./c/enc/././hash.h",
+      "kind": "type_size_changed",
+      "type": "struct HasherCommon"
+     },
+     {
+      "count": 1,
+      "declared_in": "./c/enc/././hash.h",
+      "kind": "type_size_changed",
+      "type": "union {H2 _H2; H3 _H3; H4 _H4; H5 _H5; H6 _H6; H40 _H40; H41 _H41; H42 _H42; H54 _H54; H35 _H35; H55 _H55; H65 _H65; H10 _H10;}"
+     },
+     {
+      "count": 1,
+      "declared_in": "./c/enc/./././hash_composite_inc.h",
+      "kind": "field_added_to_struct",
+      "type": "struct H35"
+     },
+     {
+      "count": 1,
+      "declared_in": "./c/enc/./././hash_composite_inc.h",
+      "kind": "field_removed_from_struct",
+      "type": "struct H35"
+     },
+     {
+      "count": 4,
+      "declared_in": "./c/enc/./././hash_composite_inc.h",
+      "kind": "member_offset_changed",
+      "type": "struct H35"
+     },
+     {
+      "count": 1,
+      "declared_in": "./c/enc/./././hash_composite_inc.h",
+      "kind": "type_size_changed",
+      "type": "struct H35"
+     },
+     {
+      "count": 1,
+      "declared_in": "./c/enc/./././hash_forgetful_chain_inc.h",
+      "kind": "field_type_changed",
+      "type": "struct H40"
+     },
+     {
+      "count": 1,
+      "declared_in": "./c/enc/./././hash_forgetful_chain_inc.h",
+      "kind": "member_offset_changed",
+      "type": "struct H40"
+     },
+     {
+      "count": 1,
+      "declared_in": "./c/enc/./././hash_forgetful_chain_inc.h",
+      "kind": "type_size_changed",
+      "type": "struct H40"
+     },
+     {
+      "count": 1,
+      "declared_in": "./c/enc/./././hash_forgetful_chain_inc.h",
+      "kind": "field_type_changed",
+      "type": "struct H41"
+     },
+     {
+      "count": 1,
+      "declared_in": "./c/enc/./././hash_forgetful_chain_inc.h",
+      "kind": "member_offset_changed",
+      "type": "struct H41"
+     },
+     {
+      "count": 1,
+      "declared_in": "./c/enc/./././hash_forgetful_chain_inc.h",
+      "kind": "type_size_changed",
+      "type": "struct H41"
+     },
+     {
+      "count": 1,
+      "declared_in": "./c/enc/./././hash_forgetful_chain_inc.h",
+      "kind": "field_type_changed",
+      "type": "struct H42"
+     },
+     {
+      "count": 1,
+      "declared_in": "./c/enc/./././hash_forgetful_chain_inc.h",
+      "kind": "member_offset_changed",
+      "type": "struct H42"
+     },
+     {
+      "count": 1,
+      "declared_in": "./c/enc/./././hash_forgetful_chain_inc.h",
+      "kind": "type_size_changed",
+      "type": "struct H42"
+     },
+     {
+      "count": 1,
+      "declared_in": "./c/enc/./././hash_composite_inc.h",
+      "kind": "field_added_to_struct",
+      "type": "struct H55"
+     },
+     {
+      "count": 1,
+      "declared_in": "./c/enc/./././hash_composite_inc.h",
+      "kind": "field_removed_from_struct",
+      "type": "struct H55"
+     },
+     {
+      "count": 4,
+      "declared_in": "./c/enc/./././hash_composite_inc.h",
+      "kind": "member_offset_changed",
+      "type": "struct H55"
+     },
+     {
+      "count": 1,
+      "declared_in": "./c/enc/./././hash_composite_inc.h",
+      "kind": "type_size_changed",
+      "type": "struct H55"
+     },
+     {
+      "count": 1,
+      "declared_in": "./c/enc/./././hash_longest_match64_inc.h",
+      "kind": "field_removed_from_struct",
+      "type": "struct H6"
+     },
+     {
+      "count": 1,
+      "declared_in": "./c/enc/./././hash_longest_match64_inc.h",
+      "kind": "field_type_changed",
+      "type": "struct H6"
+     },
+     {
+      "count": 6,
+      "declared_in": "./c/enc/./././hash_longest_match64_inc.h",
+      "kind": "member_offset_changed",
+      "type": "struct H6"
+     },
+     {
+      "count": 1,
+      "declared_in": "./c/enc/./././hash_longest_match64_inc.h",
+      "kind": "type_size_changed",
+      "type": "struct H6"
+     },
+     {
+      "count": 1,
+      "declared_in": "./c/enc/./././hash_composite_inc.h",
+      "kind": "field_added_to_struct",
+      "type": "struct H65"
+     },
+     {
+      "count": 1,
+      "declared_in": "./c/enc/./././hash_composite_inc.h",
+      "kind": "field_removed_from_struct",
+      "type": "struct H65"
+     },
+     {
+      "count": 5,
+      "declared_in": "./c/enc/./././hash_composite_inc.h",
+      "kind": "member_offset_changed",
+      "type": "struct H65"
+     },
+     {
+      "count": 1,
+      "declared_in": "./c/enc/./././hash_composite_inc.h",
+      "kind": "type_size_changed",
+      "type": "struct H65"
+     }
+    ]
+   }
+  ],
+  "seconds": 1.530514987,
+  "source": "brotli",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.0.9",
+   "1.1.0"
+  ]
+ },
+ "generated_at": "2026-09-02T14:59:16Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

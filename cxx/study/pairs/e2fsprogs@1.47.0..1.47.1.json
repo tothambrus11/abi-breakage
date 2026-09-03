@@ -1,0 +1,58 @@
+{
+ "data": {
+  "id": "e2fsprogs@1.47.0..1.47.1",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      30,
+      30
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "field_type_changed": 1
+    },
+    "soname": [
+     "libss.so.2",
+     "libss.so.2"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [
+     {
+      "count": 1,
+      "declared_in": "../../../../lib/ss/ss.h",
+      "kind": "field_type_changed",
+      "type": "struct _ss_request_entry"
+     }
+    ]
+   }
+  ],
+  "seconds": 2.974185931,
+  "source": "e2fsprogs",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.47.0",
+   "1.47.1"
+  ]
+ },
+ "generated_at": "2026-09-02T14:57:19Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

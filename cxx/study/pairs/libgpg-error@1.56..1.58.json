@@ -1,0 +1,81 @@
+{
+ "data": {
+  "id": "libgpg-error@1.56..1.58",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      199,
+      200
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 1
+    },
+    "soname": [
+     "libgpg-error.so.0",
+     "libgpg-error.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function char* gpgrt_fconcat(unsigned int, const char*, ...)",
+      "symbol": "gpgrt_fconcat",
+      "version": "GPG_ERROR_1.0"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 2,
+     "field_type_changed": 1,
+     "member_offset_changed": 1
+    },
+    "type_events": [
+     {
+      "count": 2,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
+      "kind": "field_added_to_struct",
+      "type": "struct _IO_FILE"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
+      "kind": "field_type_changed",
+      "type": "struct _IO_FILE"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
+      "kind": "member_offset_changed",
+      "type": "struct _IO_FILE"
+     }
+    ]
+   }
+  ],
+  "seconds": 2.62633365,
+  "source": "libgpg-error",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.56",
+   "1.58"
+  ]
+ },
+ "generated_at": "2026-09-02T14:58:40Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

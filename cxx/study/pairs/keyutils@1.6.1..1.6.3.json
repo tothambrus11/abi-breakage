@@ -1,0 +1,57 @@
+{
+ "data": {
+  "id": "keyutils@1.6.1..1.6.3",
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      43,
+      44
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 1
+    },
+    "soname": [
+     "libkeyutils.so.1",
+     "libkeyutils.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function long int keyctl_watch_key(key_serial_t, int, int)",
+      "symbol": "keyctl_watch_key",
+      "version": "KEYUTILS_1.10"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": []
+   }
+  ],
+  "seconds": 1.792815964,
+  "source": "keyutils",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.6.1",
+   "1.6.3"
+  ]
+ },
+ "generated_at": "2026-09-02T12:05:49Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

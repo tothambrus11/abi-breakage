@@ -1,0 +1,51 @@
+{
+ "data": {
+  "coverage": [
+   {
+    "header_files": 5,
+    "parsed": 5,
+    "skipped_by_limit": 0,
+    "with_fatal_error": 0
+   },
+   {
+    "header_files": 5,
+    "parsed": 5,
+    "skipped_by_limit": 0,
+    "with_fatal_error": 0
+   }
+  ],
+  "diff": {
+   "definitions": [
+    5,
+    7
+   ],
+   "definitions_added": 2,
+   "definitions_common": 5,
+   "definitions_removed": 0,
+   "examples": [
+    "hunspell/w_char.hxx::operator==",
+    "hunspell/w_char.hxx::operator<",
+    "hunspell/w_char.hxx::operator!="
+   ],
+   "inline_body_changed": 3,
+   "inline_body_changed_template": 0,
+   "inline_decl_changed": 0,
+   "macro_value_changed": 0,
+   "macros": [
+    35,
+    36
+   ],
+   "macros_common": 35
+  },
+  "id": "hunspell@1.7.1..1.7.2",
+  "language": "cxx",
+  "source": "hunspell",
+  "upstream": [
+   "1.7.1",
+   "1.7.2"
+  ]
+ },
+ "generated_at": "2026-09-02T14:52:22Z",
+ "schema": "abistudy/header-pair/2",
+ "tool": "abistudy 3.0.0"
+}

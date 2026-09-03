@@ -1,0 +1,58 @@
+{
+ "data": {
+  "id": "lmdb@0.9.18..0.9.19",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      71,
+      71
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "enum_case_added": 1
+    },
+    "soname": [
+     "liblmdb.so.0",
+     "liblmdb.so.0"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [
+     {
+      "count": 1,
+      "declared_in": "./libraries/liblmdb/lmdb.h",
+      "kind": "enum_case_added",
+      "type": "enum MDB_cursor_op"
+     }
+    ]
+   }
+  ],
+  "seconds": 1.319072385,
+  "source": "lmdb",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "0.9.18",
+   "0.9.19"
+  ]
+ },
+ "generated_at": "2026-09-02T14:59:17Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

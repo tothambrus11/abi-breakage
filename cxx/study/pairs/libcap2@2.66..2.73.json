@@ -1,0 +1,113 @@
+{
+ "data": {
+  "id": "libcap2@2.66..2.73",
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      70,
+      67
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_removed": 3
+    },
+    "soname": [
+     "libcap.so.2",
+     "libcap.so.2"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void __so_start(void)",
+      "symbol": "__so_start"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _libcap_initialize(void)",
+      "symbol": "_libcap_initialize"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function char* _libcap_strdup(const char*)",
+      "symbol": "_libcap_strdup"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": []
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      7,
+      7
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 1,
+     "symbol_removed": 2
+    },
+    "soname": [
+     "libpsx.so.2",
+     "libpsx.so.2"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void __so_start(void)",
+      "symbol": "__so_start"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "pthread_key_t psx_action_key",
+      "symbol": "psx_action_key"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int __real_pthread_create(pthread_t*, const pthread_attr_t*, void* (*)(void*), void*)",
+      "symbol": "__real_pthread_create"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": []
+   }
+  ],
+  "seconds": 1.857282466,
+  "source": "libcap2",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "2.66",
+   "2.73"
+  ]
+ },
+ "generated_at": "2026-09-02T12:05:55Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

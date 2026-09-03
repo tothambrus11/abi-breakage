@@ -1,0 +1,61 @@
+{
+ "data": {
+  "id": "game-music-emu@0.6.0..0.6.1",
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      42,
+      44
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 2
+    },
+    "soname": [
+     "libgme.so.0",
+     "libgme.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function int gme_tell_samples(const Music_Emu*)",
+      "symbol": "gme_tell_samples"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function gme_err_t gme_seek_samples(Music_Emu*, int)",
+      "symbol": "gme_seek_samples"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": []
+   }
+  ],
+  "seconds": 3.145295936,
+  "source": "game-music-emu",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "0.6.0",
+   "0.6.1"
+  ]
+ },
+ "generated_at": "2026-09-02T12:16:35Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

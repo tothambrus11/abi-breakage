@@ -1,0 +1,79 @@
+{
+ "data": {
+  "id": "libgcrypt20@1.11.1..1.11.2",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      221,
+      221
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libgcrypt.so.20",
+     "libgcrypt.so.20"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "enum_case_added": 1,
+     "field_added_to_struct": 2,
+     "field_type_changed": 1,
+     "member_offset_changed": 1
+    },
+    "type_events": [
+     {
+      "count": 1,
+      "declared_in": "/usr/include/x86_64-linux-gnu/gpg-error.h",
+      "kind": "enum_case_added",
+      "type": "enum gpg_err_code_t"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
+      "kind": "field_added_to_struct",
+      "type": "struct _IO_FILE"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
+      "kind": "field_type_changed",
+      "type": "struct _IO_FILE"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
+      "kind": "member_offset_changed",
+      "type": "struct _IO_FILE"
+     }
+    ]
+   }
+  ],
+  "seconds": 4.273039533,
+  "source": "libgcrypt20",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.11.1",
+   "1.11.2"
+  ]
+ },
+ "generated_at": "2026-09-02T14:59:08Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

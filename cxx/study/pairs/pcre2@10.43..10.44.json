@@ -1,0 +1,198 @@
+{
+ "data": {
+  "id": "pcre2@10.43..10.44",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      75,
+      76
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 1
+    },
+    "soname": [
+     "libpcre2-16.so.0",
+     "libpcre2-16.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function int pcre2_set_max_pattern_compiled_length_16(pcre2_compile_context_16*, size_t)",
+      "symbol": "pcre2_set_max_pattern_compiled_length_16"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 1,
+     "member_offset_changed": 5,
+     "type_size_changed": 1
+    },
+    "type_events": [
+     {
+      "count": 1,
+      "declared_in": "src/pcre2_intmodedep.h",
+      "kind": "field_added_to_struct",
+      "type": "struct pcre2_real_compile_context_16"
+     },
+     {
+      "count": 5,
+      "declared_in": "src/pcre2_intmodedep.h",
+      "kind": "member_offset_changed",
+      "type": "struct pcre2_real_compile_context_16"
+     },
+     {
+      "count": 1,
+      "declared_in": "src/pcre2_intmodedep.h",
+      "kind": "type_size_changed",
+      "type": "struct pcre2_real_compile_context_16"
+     }
+    ]
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      75,
+      76
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 1
+    },
+    "soname": [
+     "libpcre2-32.so.0",
+     "libpcre2-32.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function int pcre2_set_max_pattern_compiled_length_32(pcre2_compile_context_32*, size_t)",
+      "symbol": "pcre2_set_max_pattern_compiled_length_32"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 1,
+     "member_offset_changed": 5,
+     "type_size_changed": 1
+    },
+    "type_events": [
+     {
+      "count": 1,
+      "declared_in": "src/pcre2_intmodedep.h",
+      "kind": "field_added_to_struct",
+      "type": "struct pcre2_real_compile_context_32"
+     },
+     {
+      "count": 5,
+      "declared_in": "src/pcre2_intmodedep.h",
+      "kind": "member_offset_changed",
+      "type": "struct pcre2_real_compile_context_32"
+     },
+     {
+      "count": 1,
+      "declared_in": "src/pcre2_intmodedep.h",
+      "kind": "type_size_changed",
+      "type": "struct pcre2_real_compile_context_32"
+     }
+    ]
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      75,
+      76
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 1
+    },
+    "soname": [
+     "libpcre2-8.so.0",
+     "libpcre2-8.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function int pcre2_set_max_pattern_compiled_length_8(pcre2_compile_context_8*, size_t)",
+      "symbol": "pcre2_set_max_pattern_compiled_length_8"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 1,
+     "member_offset_changed": 5,
+     "type_size_changed": 1
+    },
+    "type_events": [
+     {
+      "count": 1,
+      "declared_in": "src/pcre2_intmodedep.h",
+      "kind": "field_added_to_struct",
+      "type": "struct pcre2_real_compile_context_8"
+     },
+     {
+      "count": 5,
+      "declared_in": "src/pcre2_intmodedep.h",
+      "kind": "member_offset_changed",
+      "type": "struct pcre2_real_compile_context_8"
+     },
+     {
+      "count": 1,
+      "declared_in": "src/pcre2_intmodedep.h",
+      "kind": "type_size_changed",
+      "type": "struct pcre2_real_compile_context_8"
+     }
+    ]
+   }
+  ],
+  "seconds": 4.540686442,
+  "source": "pcre2",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "10.43",
+   "10.44"
+  ]
+ },
+ "generated_at": "2026-09-02T14:58:32Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

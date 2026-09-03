@@ -1,0 +1,100 @@
+{
+ "data": {
+  "id": "libusb-1.0@1.0.21..1.0.22",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      88,
+      89
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "enum_case_added": 1,
+     "symbol_added": 1
+    },
+    "soname": [
+     "libusb-1.0.so.0",
+     "libusb-1.0.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function int libusb_set_option(libusb_context*, libusb_option, ...)",
+      "symbol": "libusb_set_option"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 2,
+     "field_type_changed": 1,
+     "member_offset_changed": 22,
+     "type_size_changed": 1
+    },
+    "type_events": [
+     {
+      "count": 1,
+      "declared_in": "../../libusb/libusbi.h",
+      "kind": "member_offset_changed",
+      "type": "struct libusb_device_handle"
+     },
+     {
+      "count": 2,
+      "declared_in": "../../libusb/libusbi.h",
+      "kind": "field_added_to_struct",
+      "type": "struct libusb_context"
+     },
+     {
+      "count": 1,
+      "declared_in": "../../libusb/libusbi.h",
+      "kind": "field_type_changed",
+      "type": "struct libusb_context"
+     },
+     {
+      "count": 21,
+      "declared_in": "../../libusb/libusbi.h",
+      "kind": "member_offset_changed",
+      "type": "struct libusb_context"
+     },
+     {
+      "count": 1,
+      "declared_in": "../../libusb/libusbi.h",
+      "kind": "type_size_changed",
+      "type": "struct libusb_context"
+     },
+     {
+      "count": 1,
+      "declared_in": "../../libusb/libusb.h",
+      "kind": "enum_case_added",
+      "type": "enum libusb_speed"
+     }
+    ]
+   }
+  ],
+  "seconds": 1.348118378,
+  "source": "libusb-1.0",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.0.21",
+   "1.0.22"
+  ]
+ },
+ "generated_at": "2026-09-02T14:58:58Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

@@ -1,0 +1,49 @@
+{
+ "data": {
+  "coverage": [
+   {
+    "header_files": 7,
+    "parsed": 7,
+    "skipped_by_limit": 0,
+    "with_fatal_error": 0
+   },
+   {
+    "header_files": 7,
+    "parsed": 7,
+    "skipped_by_limit": 0,
+    "with_fatal_error": 0
+   }
+  ],
+  "diff": {
+   "definitions": [
+    42,
+    44
+   ],
+   "definitions_added": 5,
+   "definitions_common": 39,
+   "definitions_removed": 3,
+   "examples": [
+    "LibreOfficeKit/LibreOfficeKitInit.h::lok_dlopen"
+   ],
+   "inline_body_changed": 1,
+   "inline_body_changed_template": 0,
+   "inline_decl_changed": 0,
+   "macro_value_changed": 0,
+   "macros": [
+    20,
+    20
+   ],
+   "macros_common": 18
+  },
+  "id": "libreoffice@26.2.5.2..26.8.0.0.alpha1",
+  "language": "cxx",
+  "source": "libreoffice",
+  "upstream": [
+   "26.2.5.2",
+   "26.8.0.0.alpha1"
+  ]
+ },
+ "generated_at": "2026-09-02T14:53:53Z",
+ "schema": "abistudy/header-pair/2",
+ "tool": "abistudy 3.0.0"
+}

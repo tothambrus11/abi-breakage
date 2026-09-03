@@ -1,0 +1,112 @@
+{
+ "data": {
+  "id": "libksba@1.6.8..1.8.0",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      163,
+      165
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 2
+    },
+    "soname": [
+     "libksba.so.8",
+     "libksba.so.8"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function gpg_error_t ksba_cms_get_attribute(ksba_cms_t, int, int, int, char**, unsigned char**, size_t*)",
+      "symbol": "ksba_cms_get_attribute",
+      "version": "KSBA_0.9"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function gpg_error_t ksba_cms_add_attribute(ksba_cms_t, int, const char*, int, const unsigned char*, size_t)",
+      "symbol": "ksba_cms_add_attribute",
+      "version": "KSBA_0.9"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "enum_case_added": 1,
+     "field_added_to_struct": 4,
+     "member_offset_changed": 8,
+     "type_size_changed": 2
+    },
+    "type_events": [
+     {
+      "count": 1,
+      "declared_in": "../../src/asn1-constants.h",
+      "kind": "enum_case_added",
+      "type": "enum node_type_t"
+     },
+     {
+      "count": 2,
+      "declared_in": "../../src/cms.h",
+      "kind": "field_added_to_struct",
+      "type": "struct ksba_cms_s"
+     },
+     {
+      "count": 5,
+      "declared_in": "../../src/cms.h",
+      "kind": "member_offset_changed",
+      "type": "struct ksba_cms_s"
+     },
+     {
+      "count": 1,
+      "declared_in": "../../src/cms.h",
+      "kind": "type_size_changed",
+      "type": "struct ksba_cms_s"
+     },
+     {
+      "count": 2,
+      "declared_in": "../../src/cms.h",
+      "kind": "field_added_to_struct",
+      "type": "struct oidparmlist_s"
+     },
+     {
+      "count": 3,
+      "declared_in": "../../src/cms.h",
+      "kind": "member_offset_changed",
+      "type": "struct oidparmlist_s"
+     },
+     {
+      "count": 1,
+      "declared_in": "../../src/cms.h",
+      "kind": "type_size_changed",
+      "type": "struct oidparmlist_s"
+     }
+    ]
+   }
+  ],
+  "seconds": 2.598250347,
+  "source": "libksba",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.6.8",
+   "1.8.0"
+  ]
+ },
+ "generated_at": "2026-09-02T14:59:36Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

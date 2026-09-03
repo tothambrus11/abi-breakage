@@ -1,0 +1,93 @@
+{
+ "data": {
+  "id": "libcap-ng@0.9.2..0.9.3",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      22,
+      23
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "enum_case_added": 2,
+     "symbol_added": 1
+    },
+    "soname": [
+     "libcap-ng.so.0",
+     "libcap-ng.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function int capng_stage_additional_groups(const gid_t*, size_t)",
+      "symbol": "capng_stage_additional_groups"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [
+     {
+      "count": 2,
+      "declared_in": "../../src/cap-ng.h",
+      "kind": "enum_case_added",
+      "type": "enum capng_flags_t"
+     }
+    ]
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      1,
+      1
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libdrop_ambient.so.0",
+     "libdrop_ambient.so.0"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": []
+   }
+  ],
+  "seconds": 1.790928208,
+  "source": "libcap-ng",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "0.9.2",
+   "0.9.3"
+  ]
+ },
+ "generated_at": "2026-09-02T14:58:05Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

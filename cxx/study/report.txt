@@ -1,0 +1,177 @@
+======================================================================================================================
+CORPUS
+======================================================================================================================
+release transitions analysed          : 714
+  libraries (Debian source packages)  : 111
+  shared objects compared             : 2048
+  C transitions                       : 529  (76 libraries)
+  C++ transitions                     : 185  (38 libraries)
+  excluded: mass symbol rename policy : 1  ["openexr"]
+  excluded: pair failed / no objects  : 57
+  debug info missing on a side        : 15  (symbol-only comparison for those)
+
+EVENTS EXCLUDED BY THE TWO ATTRIBUTION FILTERS
+  types not declared in the public headers : 15868 events {"base_class_changed":4688,"enum_case_added":146,"enum_case_removed":11,"field_added_to_struct":1190,"field_removed_from_struct":627,"field_type_changed":1266,"member_offset_changed":6259,"type_size_changed":579,"vtable_changed":1102}
+  symbols in private ELF version nodes  : 3299 events {"symbol_added":10,"symbol_removed":3289}
+
+======================================================================================================================
+FREQUENCY OF CHANGE KINDS ACROSS CONSECUTIVE RELEASES  (all libraries)
+  n = 714 release transitions   (111 libraries)
+======================================================================================================================
+change kind                  transitions   % of n  TOTAL events  median    max   resilience  mechanism
+----------------------------------------------------------------------------------------------------------------------
+field_added_to_struct                 40     5.6%           211       2     53   ABSORBS     opaque layout
+field_removed_from_struct             11     1.5%            31       2      6   ABSORBS     opaque layout
+field_type_changed                    31     4.3%           100       2     16   ABSORBS     opaque layout
+member_offset_changed                 25     3.5%           205       8     18   ABSORBS     opaque layout
+type_size_changed                     38     5.3%            74       1      8   ABSORBS     opaque layout
+base_class_changed                    15     2.1%            68       5     11   ABSORBS     opaque layout
+enum_case_added                       56     7.8%           145       2     23   ABSORBS     non-frozen enum
+enum_case_removed                      2     0.3%             2       1      1   ABSORBS     non-frozen enum
+vtable_changed                         5     0.7%            24       4     10   ABSORBS     resilient dispatch
+function_signature_changed            78    10.9%           635       2    127   cannot help cannot help
+symbol_removed                       133    18.6%          5306       7    936   cannot help cannot help
+symbol_added                         261    36.6%          7092       4   1426   n/a         n/a
+symbol_version_renamed                 3     0.4%             3       1      1   n/a         n/a
+inline_body_changed                   36     5.0%          1125       4    500   ABSORBS     no implicit cross-module inlining
+macro_value_changed                  335    46.9%          1431       2    326   ABSORBS     no implicit cross-module inlining
+
+======================================================================================================================
+C LIBRARIES ONLY
+  n = 529 release transitions   (76 libraries)
+======================================================================================================================
+change kind                  transitions   % of n  TOTAL events  median    max   resilience  mechanism
+----------------------------------------------------------------------------------------------------------------------
+field_added_to_struct                 29     5.5%           169       2     53   ABSORBS     opaque layout
+field_removed_from_struct             10     1.9%            29       2      6   ABSORBS     opaque layout
+field_type_changed                    28     5.3%            95       2     16   ABSORBS     opaque layout
+member_offset_changed                 19     3.6%           156       8     15   ABSORBS     opaque layout
+type_size_changed                     28     5.3%            64       1      8   ABSORBS     opaque layout
+base_class_changed                     1     0.2%             2       2      2   ABSORBS     opaque layout
+enum_case_added                       38     7.2%            84       2     12   ABSORBS     non-frozen enum
+enum_case_removed                      2     0.4%             2       1      1   ABSORBS     non-frozen enum
+function_signature_changed            27     5.1%           158       2     67   cannot help cannot help
+symbol_removed                        34     6.4%           625       3    370   cannot help cannot help
+symbol_added                         146    27.6%          1558       3    377   n/a         n/a
+inline_body_changed                   15     2.8%           895      26    500   ABSORBS     no implicit cross-module inlining
+macro_value_changed                  269    50.9%          1290       2    326   ABSORBS     no implicit cross-module inlining
+
+======================================================================================================================
+C++ LIBRARIES ONLY
+  n = 185 release transitions   (38 libraries)
+======================================================================================================================
+change kind                  transitions   % of n  TOTAL events  median    max   resilience  mechanism
+----------------------------------------------------------------------------------------------------------------------
+field_added_to_struct                 11     5.9%            42       3     10   ABSORBS     opaque layout
+field_removed_from_struct              1     0.5%             2       2      2   ABSORBS     opaque layout
+field_type_changed                     3     1.6%             5       2      2   ABSORBS     opaque layout
+member_offset_changed                  6     3.2%            49       9     18   ABSORBS     opaque layout
+type_size_changed                     10     5.4%            10       1      1   ABSORBS     opaque layout
+base_class_changed                    14     7.6%            66       5     11   ABSORBS     opaque layout
+enum_case_added                       18     9.7%            61       1     23   ABSORBS     non-frozen enum
+vtable_changed                         5     2.7%            24       4     10   ABSORBS     resilient dispatch
+function_signature_changed            51    27.6%           477       3    127   cannot help cannot help
+symbol_removed                        99    53.5%          4681      10    936   cannot help cannot help
+symbol_added                         115    62.2%          5534      10   1426   n/a         n/a
+symbol_version_renamed                 3     1.6%             3       1      1   n/a         n/a
+inline_body_changed                   21    11.4%           230       3     59   ABSORBS     no implicit cross-module inlining
+macro_value_changed                   66    35.7%           141       2      6   ABSORBS     no implicit cross-module inlining
+
+======================================================================================================================
+DECLARED vs SILENT BINARY BREAKS
+======================================================================================================================
+transitions analysed                        : 714
+transitions with a binary-breaking change   : 207 ( 29.0%)
+  SONAME bumped   (break declared)          : 6
+  SONAME unchanged (SILENT break)           : 201 ( 97.1% of breaks)
+
+======================================================================================================================
+WOULD A RESILIENT BOUNDARY HAVE SAVED THE RELEASE?  (binary breakage only)
+======================================================================================================================
+affected transitions                        : 207 ( 29.0% of 714)
+  every relevant change absorbable          : 46 ( 22.2%)
+  contained an unabsorbable change          : 161 ( 77.8%)
+
+LOAD-BEARING MECHANISMS  (of the fully-rescued transitions, how many needed each)
+----------------------------------------------------------------------------------------------------------------------
+  opaque layout                          needed by   46 / 46   (sole reason for 45)
+  non-frozen enum                        needed by    0 / 46   (sole reason for 0)
+  resilient dispatch                     needed by    1 / 46   (sole reason for 0)
+  no implicit cross-module inlining      needed by    0 / 46   (sole reason for 0)
+
+======================================================================================================================
+SECOND FRAMING: RECOMPILATION-FREE EVOLUTION  (adds enum cases)
+======================================================================================================================
+affected transitions                        : 229 ( 32.1% of 714)
+  every relevant change absorbable          : 68 ( 29.7%)
+  contained an unabsorbable change          : 161 ( 70.3%)
+
+LOAD-BEARING MECHANISMS  (of the fully-rescued transitions, how many needed each)
+----------------------------------------------------------------------------------------------------------------------
+  opaque layout                          needed by   46 / 68   (sole reason for 37)
+  non-frozen enum                        needed by   30 / 68   (sole reason for 22)
+  resilient dispatch                     needed by    1 / 68   (sole reason for 0)
+  no implicit cross-module inlining      needed by    0 / 68   (sole reason for 0)
+
+======================================================================================================================
+THIRD FRAMING: ...PLUS CHANGED INLINE/TEMPLATE BODIES  (stale copies in clients)
+======================================================================================================================
+affected transitions                        : 245 ( 34.3% of 714)
+  every relevant change absorbable          : 84 ( 34.3%)
+  contained an unabsorbable change          : 161 ( 65.7%)
+
+LOAD-BEARING MECHANISMS  (of the fully-rescued transitions, how many needed each)
+----------------------------------------------------------------------------------------------------------------------
+  opaque layout                          needed by   46 / 84   (sole reason for 31)
+  non-frozen enum                        needed by   30 / 84   (sole reason for 22)
+  resilient dispatch                     needed by    1 / 84   (sole reason for 0)
+  no implicit cross-module inlining      needed by   25 / 84   (sole reason for 16)
+
+======================================================================================================================
+INLINE / TEMPLATE BODY AND MACRO CHURN  (from -dev headers via libclang; invisible to ABI tools)
+======================================================================================================================
+measure                                                    transitions   % of n  TOTAL events
+----------------------------------------------------------------------------------------------------------------------
+transitions with header data                                       714
+  ...shipping >=1 inlinable definition in public headers           243    34.0%
+transitions changing >=1 inline/template body                       36     5.0%          1125
+transitions changing >=1 public macro value                        335    46.9%          1431
+  ...excluding version/build stamp macros                          335    46.9%
+  bodies changed per affected transition (median / max)              4      500
+transitions with POOR header parse coverage                          0     0.0%   (>50% of TUs hit a fatal diagnostic; counts there are lower bounds)
+
+most changed client-visible bodies in one release:
+  gmp@6.1.2+dfsg..6.2.0+dfsg                     500 bodies (of 1129 shared)
+  e2fsprogs@1.46.6..1.47.0                        93 bodies (of 212 shared)
+  gmp@6.2.1+dfsg1..6.3.0+dfsg                     64 bodies (of 1330 shared)
+  libsigc++-2.0@2.9.3..2.10.0                     59 bodies (of 1614 shared)
+  libsigc++-2.0@2.10.0..2.10.1                    59 bodies (of 1614 shared)
+  xxhash@0.7.3..0.7.4                             53 bodies (of 98 shared)
+  xxhash@0.8.1..0.8.2                             43 bodies (of 119 shared)
+  xxhash@0.8.0..0.8.1                             41 bodies (of 113 shared)
+  z3@4.4.1..4.8.4                                 34 bodies (of 464 shared)
+  zeromq3@4.3.1..4.3.2                            26 bodies (of 64 shared)
+
+======================================================================================================================
+LEAST ABI-STABLE LIBRARIES  (binary-breaking transitions / transitions)
+======================================================================================================================
+  intel-gmmlib                 8 / 9
+  sane-backends                8 / 9
+  hunspell                     8 / 8
+  libwps                       7 / 9
+  srt                          7 / 8
+  snappy                       7 / 8
+  libzstd                      6 / 9
+  libde265                     6 / 9
+  chromaprint                  6 / 9
+  rubberband                   6 / 9
+  libfido2                     6 / 8
+  libetonyek                   6 / 6
+  xxhash                       5 / 9
+  lz4                          5 / 8
+  libnumbertext                5 / 7
+  libmwaw                      5 / 6
+  sqlite3                      4 / 9
+  freetype                     4 / 9
+  audit                        4 / 9
+  libyuv                       4 / 9

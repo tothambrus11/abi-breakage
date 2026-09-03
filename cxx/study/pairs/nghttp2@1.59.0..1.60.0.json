@@ -1,0 +1,226 @@
+{
+ "data": {
+  "id": "nghttp2@1.59.0..1.60.0",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      164,
+      178
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "field_type_changed": 2,
+     "symbol_added": 14,
+     "type_size_changed": 1
+    },
+    "soname": [
+     "libnghttp2.so.14",
+     "libnghttp2.so.14"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function nghttp2_ssize nghttp2_hd_deflate_hd2(nghttp2_hd_deflater*, uint8_t*, size_t, const nghttp2_nv*, size_t)",
+      "symbol": "nghttp2_hd_deflate_hd2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void nghttp2_session_callbacks_set_select_padding_callback2(nghttp2_session_callbacks*, nghttp2_select_padding_callback2)",
+      "symbol": "nghttp2_session_callbacks_set_select_padding_callback2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function nghttp2_ssize nghttp2_hd_deflate_hd_vec2(nghttp2_hd_deflater*, const nghttp2_vec*, size_t, const nghttp2_nv*, size_t)",
+      "symbol": "nghttp2_hd_deflate_hd_vec2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function nghttp2_ssize nghttp2_hd_inflate_hd3(nghttp2_hd_inflater*, nghttp2_nv*, int*, const uint8_t*, size_t, int)",
+      "symbol": "nghttp2_hd_inflate_hd3"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function nghttp2_ssize nghttp2_pack_settings_payload2(uint8_t*, size_t, const nghttp2_settings_entry*, size_t)",
+      "symbol": "nghttp2_pack_settings_payload2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void nghttp2_session_callbacks_set_data_source_read_length_callback2(nghttp2_session_callbacks*, nghttp2_data_source_read_length_callback2)",
+      "symbol": "nghttp2_session_callbacks_set_data_source_read_length_callback2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function nghttp2_ssize nghttp2_session_mem_recv2(nghttp2_session*, const uint8_t*, size_t)",
+      "symbol": "nghttp2_session_mem_recv2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int nghttp2_submit_response2(nghttp2_session*, int32_t, const nghttp2_nv*, size_t, const nghttp2_data_provider2*)",
+      "symbol": "nghttp2_submit_response2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int32_t nghttp2_submit_request2(nghttp2_session*, const nghttp2_priority_spec*, const nghttp2_nv*, size_t, const nghttp2_data_provider2*, void*)",
+      "symbol": "nghttp2_submit_request2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void nghttp2_session_callbacks_set_recv_callback2(nghttp2_session_callbacks*, nghttp2_recv_callback2)",
+      "symbol": "nghttp2_session_callbacks_set_recv_callback2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void nghttp2_session_callbacks_set_pack_extension_callback2(nghttp2_session_callbacks*, nghttp2_pack_extension_callback2)",
+      "symbol": "nghttp2_session_callbacks_set_pack_extension_callback2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int nghttp2_submit_data2(nghttp2_session*, uint8_t, int32_t, const nghttp2_data_provider2*)",
+      "symbol": "nghttp2_submit_data2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void nghttp2_session_callbacks_set_send_callback2(nghttp2_session_callbacks*, nghttp2_send_callback2)",
+      "symbol": "nghttp2_session_callbacks_set_send_callback2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function nghttp2_ssize nghttp2_session_mem_send2(nghttp2_session*, const uint8_t**)",
+      "symbol": "nghttp2_session_mem_send2"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 5,
+     "field_type_changed": 2,
+     "member_offset_changed": 77,
+     "type_size_changed": 6
+    },
+    "type_events": [
+     {
+      "count": 5,
+      "declared_in": "./lib/nghttp2_callbacks.h",
+      "kind": "field_added_to_struct",
+      "type": "struct nghttp2_session_callbacks"
+     },
+     {
+      "count": 22,
+      "declared_in": "./lib/nghttp2_callbacks.h",
+      "kind": "member_offset_changed",
+      "type": "struct nghttp2_session_callbacks"
+     },
+     {
+      "count": 1,
+      "declared_in": "./lib/nghttp2_callbacks.h",
+      "kind": "type_size_changed",
+      "type": "struct nghttp2_session_callbacks"
+     },
+     {
+      "count": 46,
+      "declared_in": "./lib/nghttp2_session.h",
+      "kind": "member_offset_changed",
+      "type": "struct nghttp2_session"
+     },
+     {
+      "count": 1,
+      "declared_in": "./lib/nghttp2_session.h",
+      "kind": "type_size_changed",
+      "type": "struct nghttp2_session"
+     },
+     {
+      "count": 3,
+      "declared_in": "./lib/nghttp2_outbound_item.h",
+      "kind": "member_offset_changed",
+      "type": "struct nghttp2_outbound_item"
+     },
+     {
+      "count": 1,
+      "declared_in": "./lib/nghttp2_outbound_item.h",
+      "kind": "type_size_changed",
+      "type": "struct nghttp2_outbound_item"
+     },
+     {
+      "count": 1,
+      "declared_in": "./lib/nghttp2_outbound_item.h",
+      "kind": "type_size_changed",
+      "type": "union nghttp2_aux_data"
+     },
+     {
+      "count": 1,
+      "declared_in": "./lib/nghttp2_outbound_item.h",
+      "kind": "field_type_changed",
+      "type": "struct nghttp2_data_aux_data"
+     },
+     {
+      "count": 3,
+      "declared_in": "./lib/nghttp2_outbound_item.h",
+      "kind": "member_offset_changed",
+      "type": "struct nghttp2_data_aux_data"
+     },
+     {
+      "count": 1,
+      "declared_in": "./lib/nghttp2_outbound_item.h",
+      "kind": "type_size_changed",
+      "type": "struct nghttp2_data_aux_data"
+     },
+     {
+      "count": 2,
+      "declared_in": "./includes/nghttp2/nghttp2.h",
+      "kind": "field_type_changed",
+      "type": "struct nghttp2_data_provider"
+     },
+     {
+      "count": 1,
+      "declared_in": "./includes/nghttp2/nghttp2.h",
+      "kind": "type_size_changed",
+      "type": "struct nghttp2_data_provider"
+     },
+     {
+      "count": 1,
+      "declared_in": "./lib/nghttp2_outbound_item.h",
+      "kind": "field_type_changed",
+      "type": "struct nghttp2_headers_aux_data"
+     },
+     {
+      "count": 3,
+      "declared_in": "./lib/nghttp2_outbound_item.h",
+      "kind": "member_offset_changed",
+      "type": "struct nghttp2_headers_aux_data"
+     },
+     {
+      "count": 1,
+      "declared_in": "./lib/nghttp2_outbound_item.h",
+      "kind": "type_size_changed",
+      "type": "struct nghttp2_headers_aux_data"
+     }
+    ]
+   }
+  ],
+  "seconds": 1.888694083,
+  "source": "nghttp2",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.59.0",
+   "1.60.0"
+  ]
+ },
+ "generated_at": "2026-09-02T14:58:24Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

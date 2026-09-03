@@ -1,0 +1,67 @@
+{
+ "data": {
+  "id": "libde265@1.0.11..1.0.12",
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      89,
+      88
+     ],
+     "mangled_functions": [
+      25,
+      24
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 1,
+     "symbol_removed": 2
+    },
+    "soname": [
+     "libde265.so.0",
+     "libde265.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Vector_base<int,std::allocator<int>>::~_Vector_base()",
+      "symbol": "_ZNSt12_Vector_baseIiSaIiEED2Ev"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>> std::operator+<char,std::char_traits<char>,std::allocator<char>>(const std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>&, const std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>&)",
+      "symbol": "_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EERKS8_SA_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::vector<int,std::allocator<int>>::~vector()",
+      "symbol": "_ZNSt6vectorIiSaIiEED2Ev"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": []
+   }
+  ],
+  "seconds": 5.272248865,
+  "source": "libde265",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.0.11",
+   "1.0.12"
+  ]
+ },
+ "generated_at": "2026-09-02T12:11:44Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

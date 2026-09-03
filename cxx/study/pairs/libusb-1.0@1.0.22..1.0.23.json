@@ -1,0 +1,85 @@
+{
+ "data": {
+  "id": "libusb-1.0@1.0.22..1.0.23",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      89,
+      89
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 2
+    },
+    "soname": [
+     "libusb-1.0.so.0",
+     "libusb-1.0.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function int libusb_wrap_sys_device(libusb_context*, intptr_t, libusb_device_handle**)",
+      "symbol": "libusb_wrap_sys_device"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libusb_set_log_cb(libusb_context*, libusb_log_cb, int)",
+      "symbol": "libusb_set_log_cb"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 2,
+     "member_offset_changed": 29,
+     "type_size_changed": 1
+    },
+    "type_events": [
+     {
+      "count": 2,
+      "declared_in": "../../libusb/libusbi.h",
+      "kind": "field_added_to_struct",
+      "type": "struct libusb_context"
+     },
+     {
+      "count": 29,
+      "declared_in": "../../libusb/libusbi.h",
+      "kind": "member_offset_changed",
+      "type": "struct libusb_context"
+     },
+     {
+      "count": 1,
+      "declared_in": "../../libusb/libusbi.h",
+      "kind": "type_size_changed",
+      "type": "struct libusb_context"
+     }
+    ]
+   }
+  ],
+  "seconds": 1.807495458,
+  "source": "libusb-1.0",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.0.22",
+   "1.0.23"
+  ]
+ },
+ "generated_at": "2026-09-02T14:59:00Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

@@ -1,0 +1,23 @@
+# Build trees (host and container; CMake caches are not relocatable)
+build/
+build-*/
+cxx/build/
+cxx/build-*/
+
+# Study workspaces: downloaded .debs and extraction scratch are rebuildable
+# from plan.json; header indexes are large derived artefacts.
+cxx/study*/cache/
+cxx/study*/scratch/
+cxx/study*/headers/index/
+
+# Logs from local gate runs
+cxx/gate/
+cxx/image-build.log
+
+# Calibration cases are compiled by the test itself
+cxx/tests/calibration/cases/*/*/lib.so
+
+# Superseded Python pipeline: keep scripts and small results, drop the index dump
+v2/results/hdrindex/
+__pycache__/
+*.pyc

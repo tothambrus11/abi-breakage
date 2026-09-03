@@ -1,0 +1,58 @@
+{
+ "data": {
+  "id": "slang2@2.3.0..2.3.1",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      612,
+      612
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libslang.so.2",
+     "libslang.so.2"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 6
+    },
+    "type_events": [
+     {
+      "count": 6,
+      "declared_in": "./src/_slang.h",
+      "kind": "field_added_to_struct",
+      "type": "union _pSL_Object_Union_Type"
+     }
+    ]
+   }
+  ],
+  "seconds": 1.538947261,
+  "source": "slang2",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "2.3.0",
+   "2.3.1"
+  ]
+ },
+ "generated_at": "2026-09-02T14:57:19Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

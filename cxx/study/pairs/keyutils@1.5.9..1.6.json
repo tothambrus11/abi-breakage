@@ -1,0 +1,104 @@
+{
+ "data": {
+  "id": "keyutils@1.5.9..1.6",
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      32,
+      41
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 9
+    },
+    "soname": [
+     "libkeyutils.so.1",
+     "libkeyutils.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function long int keyctl_restrict_keyring(key_serial_t, const char*, const char*)",
+      "symbol": "keyctl_restrict_keyring"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function long int keyctl_pkey_verify(key_serial_t, const char*, void*, size_t, void*, size_t)",
+      "symbol": "keyctl_pkey_verify",
+      "version": "KEYUTILS_1.6"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function long int keyctl_pkey_query(key_serial_t, const char*, keyctl_pkey_query*)",
+      "symbol": "keyctl_pkey_query",
+      "version": "KEYUTILS_1.6"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function long int keyctl_pkey_decrypt(key_serial_t, const char*, void*, size_t, void*, size_t)",
+      "symbol": "keyctl_pkey_decrypt",
+      "version": "KEYUTILS_1.6"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function long int keyctl_dh_compute_kdf(key_serial_t, key_serial_t, key_serial_t, char*, char*, size_t, char*, size_t)",
+      "symbol": "keyctl_dh_compute_kdf",
+      "version": "KEYUTILS_1.7"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function long int keyctl_pkey_encrypt(key_serial_t, const char*, void*, size_t, void*, size_t)",
+      "symbol": "keyctl_pkey_encrypt",
+      "version": "KEYUTILS_1.6"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int keyctl_dh_compute_alloc(key_serial_t, key_serial_t, key_serial_t, void**)",
+      "symbol": "keyctl_dh_compute_alloc",
+      "version": "KEYUTILS_1.6"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function long int keyctl_pkey_sign(key_serial_t, const char*, void*, size_t, void*, size_t)",
+      "symbol": "keyctl_pkey_sign",
+      "version": "KEYUTILS_1.6"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function long int keyctl_dh_compute(key_serial_t, key_serial_t, key_serial_t, char*, size_t)",
+      "symbol": "keyctl_dh_compute",
+      "version": "KEYUTILS_1.6"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": []
+   }
+  ],
+  "seconds": 1.816020376,
+  "source": "keyutils",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.5.9",
+   "1.6"
+  ]
+ },
+ "generated_at": "2026-09-02T12:05:47Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

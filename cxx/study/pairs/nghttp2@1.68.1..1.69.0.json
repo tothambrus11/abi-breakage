@@ -1,0 +1,122 @@
+{
+ "data": {
+  "id": "nghttp2@1.68.1..1.69.0",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      181,
+      181
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libnghttp2.so.14",
+     "libnghttp2.so.14"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 4,
+     "field_removed_from_struct": 1,
+     "field_type_changed": 3,
+     "member_offset_changed": 57,
+     "type_size_changed": 3
+    },
+    "type_events": [
+     {
+      "count": 1,
+      "declared_in": "./lib/nghttp2_hd_huffman.h",
+      "kind": "field_added_to_struct",
+      "type": "struct nghttp2_hd_huff_decode_context"
+     },
+     {
+      "count": 1,
+      "declared_in": "./lib/nghttp2_hd_huffman.h",
+      "kind": "type_size_changed",
+      "type": "struct nghttp2_hd_huff_decode_context"
+     },
+     {
+      "count": 53,
+      "declared_in": "./lib/nghttp2_session.h",
+      "kind": "member_offset_changed",
+      "type": "struct nghttp2_session"
+     },
+     {
+      "count": 1,
+      "declared_in": "./lib/nghttp2_session.h",
+      "kind": "type_size_changed",
+      "type": "struct nghttp2_session"
+     },
+     {
+      "count": 2,
+      "declared_in": "./lib/nghttp2_map.h",
+      "kind": "field_added_to_struct",
+      "type": "struct nghttp2_map"
+     },
+     {
+      "count": 2,
+      "declared_in": "./lib/nghttp2_map.h",
+      "kind": "field_type_changed",
+      "type": "struct nghttp2_map"
+     },
+     {
+      "count": 4,
+      "declared_in": "./lib/nghttp2_map.h",
+      "kind": "member_offset_changed",
+      "type": "struct nghttp2_map"
+     },
+     {
+      "count": 1,
+      "declared_in": "./lib/nghttp2_map.h",
+      "kind": "type_size_changed",
+      "type": "struct nghttp2_map"
+     },
+     {
+      "count": 1,
+      "declared_in": "./lib/nghttp2_outbound_item.h",
+      "kind": "field_added_to_struct",
+      "type": "union nghttp2_aux_data"
+     },
+     {
+      "count": 1,
+      "declared_in": "./lib/nghttp2_outbound_item.h",
+      "kind": "field_type_changed",
+      "type": "struct nghttp2_data_provider_wrap"
+     },
+     {
+      "count": 1,
+      "declared_in": "./lib/nghttp2_outbound_item.h",
+      "kind": "field_removed_from_struct",
+      "type": "union {struct {nghttp2_data_source source; void* read_callback;}; nghttp2_data_provider v1; nghttp2_data_provider2 v2;}"
+     }
+    ]
+   }
+  ],
+  "seconds": 1.901008777,
+  "source": "nghttp2",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.68.1",
+   "1.69.0"
+  ]
+ },
+ "generated_at": "2026-09-02T14:58:26Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

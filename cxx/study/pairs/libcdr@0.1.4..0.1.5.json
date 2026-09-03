@@ -1,0 +1,76 @@
+{
+ "data": {
+  "id": "libcdr@0.1.4..0.1.5",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      48,
+      46
+     ],
+     "mangled_functions": [
+      46,
+      46
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libcdr-0.1.so.1",
+     "libcdr-0.1.so.1"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 7
+    },
+    "type_events": [
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/8/bits/stl_pair.h",
+      "kind": "base_class_changed",
+      "type": "struct std::pair<std::_Rb_tree_node_base*,std::_Rb_tree_node_base*>"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/8/bits/stl_pair.h",
+      "kind": "base_class_changed",
+      "type": "struct std::pair<std::_Rb_tree_iterator<unsignedint>,bool>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "class std::vector<std::pair<double,double>,std::allocator<std::pair<double,double>>>"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/8/bits/stl_pair.h",
+      "kind": "base_class_changed",
+      "type": "struct std::pair<double,double>"
+     }
+    ]
+   }
+  ],
+  "seconds": 11.082037767,
+  "source": "libcdr",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "0.1.4",
+   "0.1.5"
+  ]
+ },
+ "generated_at": "2026-09-02T15:08:13Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

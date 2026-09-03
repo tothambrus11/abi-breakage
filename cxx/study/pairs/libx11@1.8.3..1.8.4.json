@@ -1,0 +1,65 @@
+{
+ "data": {
+  "id": "libx11@1.8.3..1.8.4",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      1182,
+      1182
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "field_added_to_struct": 2,
+     "type_size_changed": 1
+    },
+    "soname": [
+     "libX11.so.6",
+     "libX11.so.6"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [
+     {
+      "count": 2,
+      "declared_in": "../../../include/X11/Xlibint.h",
+      "kind": "field_added_to_struct",
+      "type": "struct _XDisplay"
+     },
+     {
+      "count": 1,
+      "declared_in": "../../../include/X11/Xlibint.h",
+      "kind": "type_size_changed",
+      "type": "struct _XDisplay"
+     }
+    ]
+   }
+  ],
+  "seconds": 3.504753243,
+  "source": "libx11",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.8.3",
+   "1.8.4"
+  ]
+ },
+ "generated_at": "2026-09-02T14:58:01Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

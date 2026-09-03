@@ -1,0 +1,91 @@
+{
+ "data": {
+  "id": "libksba@1.6.7..1.6.8",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      163,
+      163
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libksba.so.8",
+     "libksba.so.8"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 1,
+     "field_type_changed": 2,
+     "member_offset_changed": 20,
+     "type_size_changed": 2
+    },
+    "type_events": [
+     {
+      "count": 1,
+      "declared_in": "../../src/ocsp.h",
+      "kind": "field_added_to_struct",
+      "type": "struct ksba_ocsp_s"
+     },
+     {
+      "count": 11,
+      "declared_in": "../../src/ocsp.h",
+      "kind": "member_offset_changed",
+      "type": "struct ksba_ocsp_s"
+     },
+     {
+      "count": 1,
+      "declared_in": "../../src/ocsp.h",
+      "kind": "type_size_changed",
+      "type": "struct ksba_ocsp_s"
+     },
+     {
+      "count": 2,
+      "declared_in": "../../src/ocsp.h",
+      "kind": "field_type_changed",
+      "type": "struct ocsp_reqitem_s"
+     },
+     {
+      "count": 9,
+      "declared_in": "../../src/ocsp.h",
+      "kind": "member_offset_changed",
+      "type": "struct ocsp_reqitem_s"
+     },
+     {
+      "count": 1,
+      "declared_in": "../../src/ocsp.h",
+      "kind": "type_size_changed",
+      "type": "struct ocsp_reqitem_s"
+     }
+    ]
+   }
+  ],
+  "seconds": 2.128454555,
+  "source": "libksba",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.6.7",
+   "1.6.8"
+  ]
+ },
+ "generated_at": "2026-09-02T14:59:34Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

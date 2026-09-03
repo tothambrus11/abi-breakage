@@ -1,0 +1,6 @@
+{
+ "lang": "cxx",
+ "truth": "class_made_polymorphic",
+ "breaks": true,
+ "note": "non-polymorphic class gains a vptr -> layout shifts by a pointer"
+}

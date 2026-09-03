@@ -1,0 +1,384 @@
+{
+ "data": {
+  "id": "rubberband@3.2.1+dfsg..3.3.0+dfsg",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      529,
+      521
+     ],
+     "mangled_functions": [
+      499,
+      490
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "function_signature_changed": 1,
+     "symbol_added": 21,
+     "symbol_removed": 28
+    },
+    "soname": [
+     "librubberband.so.2",
+     "librubberband.so.2"
+    ],
+    "symbol_events": [
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method void RubberBand::R3Stretcher::consume()  ->  method void RubberBand::R3Stretcher::consume(bool)",
+      "symbol": "_ZN10RubberBand11R3Stretcher7consumeEv"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*,std::_Rb_tree_node_base*> std::_Rb_tree<int,std::pair<intconst,std::shared_ptr<RubberBand::R3Stretcher::ChannelScaleData>>,std::_Select1st<std::pair<intconst,std::shared_ptr<RubberBand::R3Stretcher::ChannelScaleData>>>,std::less<int>,std::allocator<std::pair<intconst,std::shared_ptr<RubberBand::R3Stretcher::ChannelScaleData>>>>::_M_get_insert_unique_pos(const std::_Rb_tree<int,std::pair<intconst,std::shared_ptr<RubberBand::R3Stretcher::ChannelScaleData>>,std::_Select1st<std::pair<intconst,std::shared_ptr<RubberBand::R3Stretcher::ChannelScaleData>>>,std::less<int>,std::allocator<std::pair<intconst,std::shared_ptr<RubberBand::R3Stretcher::ChannelScaleData>>>>::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiSt10shared_ptrIN10RubberBand11R3Stretcher16ChannelScaleDataEEESt10_Select1stIS7_ESt4lessIiESaIS7_EE24_M_get_insert_unique_posERS1_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<longunsignedint,std::allocator<longunsignedint>>::_M_realloc_insert<longunsignedintconst&>(std::vector<longunsignedint,std::allocator<longunsignedint>>::iterator)",
+      "symbol": "_ZNSt6vectorImSaImEE17_M_realloc_insertIJRKmEEEvN9__gnu_cxx17__normal_iteratorIPmS1_EEDpOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*,std::_Rb_tree_node_base*> std::_Rb_tree<int,std::pair<intconst,std::shared_ptr<RubberBand::R3Stretcher::ScaleData>>,std::_Select1st<std::pair<intconst,std::shared_ptr<RubberBand::R3Stretcher::ScaleData>>>,std::less<int>,std::allocator<std::pair<intconst,std::shared_ptr<RubberBand::R3Stretcher::ScaleData>>>>::_M_get_insert_hint_unique_pos(std::_Rb_tree<int,std::pair<intconst,std::shared_ptr<RubberBand::R3Stretcher::ScaleData>>,std::_Select1st<std::pair<intconst,std::shared_ptr<RubberBand::R3Stretcher::ScaleData>>>,std::less<int>,std::allocator<std::pair<intconst,std::shared_ptr<RubberBand::R3Stretcher::ScaleData>>>>::const_iterator, const std::_Rb_tree<int,std::pair<intconst,std::shared_ptr<RubberBand::R3Stretcher::ScaleData>>,std::_Select1st<std::pair<intconst,std::shared_ptr<RubberBand::R3Stretcher::ScaleData>>>,std::less<int>,std::allocator<std::pair<intconst,std::shared_ptr<RubberBand::R3Stretcher::ScaleData>>>>::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiSt10shared_ptrIN10RubberBand11R3Stretcher9ScaleDataEEESt10_Select1stIS7_ESt4lessIiESaIS7_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS7_ERS1_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*,std::_Rb_tree_node_base*> std::_Rb_tree<int,std::pair<intconst,std::shared_ptr<RubberBand::R3Stretcher::ScaleData>>,std::_Select1st<std::pair<intconst,std::shared_ptr<RubberBand::R3Stretcher::ScaleData>>>,std::less<int>,std::allocator<std::pair<intconst,std::shared_ptr<RubberBand::R3Stretcher::ScaleData>>>>::_M_get_insert_unique_pos(const std::_Rb_tree<int,std::pair<intconst,std::shared_ptr<RubberBand::R3Stretcher::ScaleData>>,std::_Select1st<std::pair<intconst,std::shared_ptr<RubberBand::R3Stretcher::ScaleData>>>,std::less<int>,std::allocator<std::pair<intconst,std::shared_ptr<RubberBand::R3Stretcher::ScaleData>>>>::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiSt10shared_ptrIN10RubberBand11R3Stretcher9ScaleDataEEESt10_Select1stIS7_ESt4lessIiESaIS7_EE24_M_get_insert_unique_posERS1_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*,std::_Rb_tree_node_base*> std::_Rb_tree<longunsignedint,std::pair<longunsignedintconst,RubberBand::Window<float>*>,std::_Select1st<std::pair<longunsignedintconst,RubberBand::Window<float>*>>,std::less<longunsignedint>,std::allocator<std::pair<longunsignedintconst,RubberBand::Window<float>*>>>::_M_get_insert_unique_pos(const std::_Rb_tree<longunsignedint,std::pair<longunsignedintconst,RubberBand::Window<float>*>,std::_Select1st<std::pair<longunsignedintconst,RubberBand::Window<float>*>>,std::less<longunsignedint>,std::allocator<std::pair<longunsignedintconst,RubberBand::Window<float>*>>>::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeImSt4pairIKmPN10RubberBand6WindowIfEEESt10_Select1stIS6_ESt4lessImESaIS6_EE24_M_get_insert_unique_posERS1_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*,std::_Rb_tree_node_base*> std::_Rb_tree<longunsignedint,std::pair<longunsignedintconst,RubberBand::SincWindow<float>*>,std::_Select1st<std::pair<longunsignedintconst,RubberBand::SincWindow<float>*>>,std::less<longunsignedint>,std::allocator<std::pair<longunsignedintconst,RubberBand::SincWindow<float>*>>>::_M_get_insert_unique_pos(const std::_Rb_tree<longunsignedint,std::pair<longunsignedintconst,RubberBand::SincWindow<float>*>,std::_Select1st<std::pair<longunsignedintconst,RubberBand::SincWindow<float>*>>,std::less<longunsignedint>,std::allocator<std::pair<longunsignedintconst,RubberBand::SincWindow<float>*>>>::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeImSt4pairIKmPN10RubberBand10SincWindowIfEEESt10_Select1stIS6_ESt4lessImESaIS6_EE24_M_get_insert_unique_posERS1_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*,std::_Rb_tree_node_base*> std::_Rb_tree<longunsignedint,std::pair<longunsignedintconst,longunsignedint>,std::_Select1st<std::pair<longunsignedintconst,longunsignedint>>,std::less<longunsignedint>,std::allocator<std::pair<longunsignedintconst,longunsignedint>>>::_M_get_insert_unique_pos(const std::_Rb_tree<longunsignedint,std::pair<longunsignedintconst,longunsignedint>,std::_Select1st<std::pair<longunsignedintconst,longunsignedint>>,std::less<longunsignedint>,std::allocator<std::pair<longunsignedintconst,longunsignedint>>>::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeImSt4pairIKmmESt10_Select1stIS2_ESt4lessImESaIS2_EE24_M_get_insert_unique_posERS1_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<int,std::allocator<int>>::_M_realloc_insert<intconst&>(std::vector<int,std::allocator<int>>::iterator)",
+      "symbol": "_ZNSt6vectorIiSaIiEE17_M_realloc_insertIJRKiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<RubberBand::StretchCalculator::Peak,std::allocator<RubberBand::StretchCalculator::Peak>>::_M_realloc_insert<constRubberBand::StretchCalculator::Peak&>(std::vector<RubberBand::StretchCalculator::Peak,std::allocator<RubberBand::StretchCalculator::Peak>>::iterator)",
+      "symbol": "_ZNSt6vectorIN10RubberBand17StretchCalculator4PeakESaIS2_EE17_M_realloc_insertIJRKS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*,std::_Rb_tree_node_base*> std::_Rb_tree<longunsignedint,std::pair<longunsignedintconst,RubberBand::FFT*>,std::_Select1st<std::pair<longunsignedintconst,RubberBand::FFT*>>,std::less<longunsignedint>,std::allocator<std::pair<longunsignedintconst,RubberBand::FFT*>>>::_M_get_insert_unique_pos(const std::_Rb_tree<longunsignedint,std::pair<longunsignedintconst,RubberBand::FFT*>,std::_Select1st<std::pair<longunsignedintconst,RubberBand::FFT*>>,std::less<longunsignedint>,std::allocator<std::pair<longunsignedintconst,RubberBand::FFT*>>>::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeImSt4pairIKmPN10RubberBand3FFTEESt10_Select1stIS5_ESt4lessImESaIS5_EE24_M_get_insert_unique_posERS1_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*,std::_Rb_tree_node_base*> std::_Rb_tree<longunsignedint,longunsignedint,std::_Identity<longunsignedint>,std::less<longunsignedint>,std::allocator<longunsignedint>>::_M_get_insert_unique_pos(const std::_Rb_tree<longunsignedint,longunsignedint,std::_Identity<longunsignedint>,std::less<longunsignedint>,std::allocator<longunsignedint>>::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeImmSt9_IdentityImESt4lessImESaImEE24_M_get_insert_unique_posERKm"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<RubberBand::R2Stretcher::ChannelData*,std::allocator<RubberBand::R2Stretcher::ChannelData*>>::_M_realloc_insert<RubberBand::R2Stretcher::ChannelData*>(std::vector<RubberBand::R2Stretcher::ChannelData*,std::allocator<RubberBand::R2Stretcher::ChannelData*>>::iterator)",
+      "symbol": "_ZNSt6vectorIPN10RubberBand11R2Stretcher11ChannelDataESaIS3_EE17_M_realloc_insertIJS3_EEEvN9__gnu_cxx17__normal_iteratorIPS3_S5_EEDpOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::shared_ptr<RubberBand::R3Stretcher::ChannelData>,std::allocator<std::shared_ptr<RubberBand::R3Stretcher::ChannelData>>>::_M_realloc_insert<std::shared_ptr<RubberBand::R3Stretcher::ChannelData>>(std::vector<std::shared_ptr<RubberBand::R3Stretcher::ChannelData>,std::allocator<std::shared_ptr<RubberBand::R3Stretcher::ChannelData>>>::iterator)",
+      "symbol": "_ZNSt6vectorISt10shared_ptrIN10RubberBand11R3Stretcher11ChannelDataEESaIS4_EE17_M_realloc_insertIJS4_EEEvN9__gnu_cxx17__normal_iteratorIPS4_S6_EEDpOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*,std::_Rb_tree_node_base*> std::_Rb_tree<longunsignedint,std::pair<longunsignedintconst,RubberBand::SincWindow<float>*>,std::_Select1st<std::pair<longunsignedintconst,RubberBand::SincWindow<float>*>>,std::less<longunsignedint>,std::allocator<std::pair<longunsignedintconst,RubberBand::SincWindow<float>*>>>::_M_get_insert_hint_unique_pos(std::_Rb_tree<longunsignedint,std::pair<longunsignedintconst,RubberBand::SincWindow<float>*>,std::_Select1st<std::pair<longunsignedintconst,RubberBand::SincWindow<float>*>>,std::less<longunsignedint>,std::allocator<std::pair<longunsignedintconst,RubberBand::SincWindow<float>*>>>::const_iterator, const std::_Rb_tree<longunsignedint,std::pair<longunsignedintconst,RubberBand::SincWindow<float>*>,std::_Select1st<std::pair<longunsignedintconst,RubberBand::SincWindow<float>*>>,std::less<longunsignedint>,std::allocator<std::pair<longunsignedintconst,RubberBand::SincWindow<float>*>>>::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeImSt4pairIKmPN10RubberBand10SincWindowIfEEESt10_Select1stIS6_ESt4lessImESaIS6_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS6_ERS1_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*,std::_Rb_tree_node_base*> std::_Rb_tree<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,RubberBand::SizeConstraint>,std::_Select1st<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,RubberBand::SizeConstraint>>,std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,RubberBand::SizeConstraint>>>::_M_get_insert_hint_unique_pos(std::_Rb_tree<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,RubberBand::SizeConstraint>,std::_Select1st<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,RubberBand::SizeConstraint>>,std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,RubberBand::SizeConstraint>>>::const_iterator, const std::_Rb_tree<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,RubberBand::SizeConstraint>,std::_Select1st<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,RubberBand::SizeConstraint>>,std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,RubberBand::SizeConstraint>>>::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_N10RubberBand14SizeConstraintEESt10_Select1stISA_ESt4lessIS5_ESaISA_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorISA_ERS7_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<float,std::allocator<float>>::_M_realloc_insert<floatconst&>(std::vector<float,std::allocator<float>>::iterator)",
+      "symbol": "_ZNSt6vectorIfSaIfEE17_M_realloc_insertIJRKfEEEvN9__gnu_cxx17__normal_iteratorIPfS1_EEDpOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Rb_tree<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,RubberBand::SizeConstraint>,std::_Select1st<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,RubberBand::SizeConstraint>>,std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,RubberBand::SizeConstraint>>>::iterator std::_Rb_tree<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,RubberBand::SizeConstraint>,std::_Select1st<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,RubberBand::SizeConstraint>>,std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,RubberBand::SizeConstraint>>>::find(const std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>&)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_N10RubberBand14SizeConstraintEESt10_Select1stISA_ESt4lessIS5_ESaISA_EE4findERS7_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<float,std::allocator<float>>::_M_realloc_insert<float>(std::vector<float,std::allocator<float>>::iterator)",
+      "symbol": "_ZNSt6vectorIfSaIfEE17_M_realloc_insertIJfEEEvN9__gnu_cxx17__normal_iteratorIPfS1_EEDpOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*,std::_Rb_tree_node_base*> std::_Rb_tree<longunsignedint,std::pair<longunsignedintconst,RubberBand::FFT*>,std::_Select1st<std::pair<longunsignedintconst,RubberBand::FFT*>>,std::less<longunsignedint>,std::allocator<std::pair<longunsignedintconst,RubberBand::FFT*>>>::_M_get_insert_hint_unique_pos(std::_Rb_tree<longunsignedint,std::pair<longunsignedintconst,RubberBand::FFT*>,std::_Select1st<std::pair<longunsignedintconst,RubberBand::FFT*>>,std::less<longunsignedint>,std::allocator<std::pair<longunsignedintconst,RubberBand::FFT*>>>::const_iterator, const std::_Rb_tree<longunsignedint,std::pair<longunsignedintconst,RubberBand::FFT*>,std::_Select1st<std::pair<longunsignedintconst,RubberBand::FFT*>>,std::less<longunsignedint>,std::allocator<std::pair<longunsignedintconst,RubberBand::FFT*>>>::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeImSt4pairIKmPN10RubberBand3FFTEESt10_Select1stIS5_ESt4lessImESaIS5_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS5_ERS1_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<longunsignedint,std::allocator<longunsignedint>>::_M_realloc_insert<longunsignedint>(std::vector<longunsignedint,std::allocator<longunsignedint>>::iterator)",
+      "symbol": "_ZNSt6vectorImSaImEE17_M_realloc_insertIJmEEEvN9__gnu_cxx17__normal_iteratorIPmS1_EEDpOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*,std::_Rb_tree_node_base*> std::_Rb_tree<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,RubberBand::SizeConstraint>,std::_Select1st<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,RubberBand::SizeConstraint>>,std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,RubberBand::SizeConstraint>>>::_M_get_insert_unique_pos(const std::_Rb_tree<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,RubberBand::SizeConstraint>,std::_Select1st<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,RubberBand::SizeConstraint>>,std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,RubberBand::SizeConstraint>>>::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_N10RubberBand14SizeConstraintEESt10_Select1stISA_ESt4lessIS5_ESaISA_EE24_M_get_insert_unique_posERS7_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*,std::_Rb_tree_node_base*> std::_Rb_tree<longunsignedint,std::pair<longunsignedintconst,longunsignedint>,std::_Select1st<std::pair<longunsignedintconst,longunsignedint>>,std::less<longunsignedint>,std::allocator<std::pair<longunsignedintconst,longunsignedint>>>::_M_get_insert_hint_unique_pos(std::_Rb_tree<longunsignedint,std::pair<longunsignedintconst,longunsignedint>,std::_Select1st<std::pair<longunsignedintconst,longunsignedint>>,std::less<longunsignedint>,std::allocator<std::pair<longunsignedintconst,longunsignedint>>>::const_iterator, const std::_Rb_tree<longunsignedint,std::pair<longunsignedintconst,longunsignedint>,std::_Select1st<std::pair<longunsignedintconst,longunsignedint>>,std::less<longunsignedint>,std::allocator<std::pair<longunsignedintconst,longunsignedint>>>::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeImSt4pairIKmmESt10_Select1stIS2_ESt4lessImESaIS2_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS2_ERS1_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*,std::_Rb_tree_node_base*> std::_Rb_tree<longunsignedint,std::pair<longunsignedintconst,RubberBand::Window<float>*>,std::_Select1st<std::pair<longunsignedintconst,RubberBand::Window<float>*>>,std::less<longunsignedint>,std::allocator<std::pair<longunsignedintconst,RubberBand::Window<float>*>>>::_M_get_insert_hint_unique_pos(std::_Rb_tree<longunsignedint,std::pair<longunsignedintconst,RubberBand::Window<float>*>,std::_Select1st<std::pair<longunsignedintconst,RubberBand::Window<float>*>>,std::less<longunsignedint>,std::allocator<std::pair<longunsignedintconst,RubberBand::Window<float>*>>>::const_iterator, const std::_Rb_tree<longunsignedint,std::pair<longunsignedintconst,RubberBand::Window<float>*>,std::_Select1st<std::pair<longunsignedintconst,RubberBand::Window<float>*>>,std::less<longunsignedint>,std::allocator<std::pair<longunsignedintconst,RubberBand::Window<float>*>>>::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeImSt4pairIKmPN10RubberBand6WindowIfEEESt10_Select1stIS6_ESt4lessImESaIS6_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS6_ERS1_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Rb_tree<longunsignedint,std::pair<longunsignedintconst,RubberBand::FFT*>,std::_Select1st<std::pair<longunsignedintconst,RubberBand::FFT*>>,std::less<longunsignedint>,std::allocator<std::pair<longunsignedintconst,RubberBand::FFT*>>>::iterator std::_Rb_tree<longunsignedint,std::pair<longunsignedintconst,RubberBand::FFT*>,std::_Select1st<std::pair<longunsignedintconst,RubberBand::FFT*>>,std::less<longunsignedint>,std::allocator<std::pair<longunsignedintconst,RubberBand::FFT*>>>::_M_emplace_hint_unique<conststd::piecewise_construct_t&,std::tuple<longunsignedintconst&>,std::tuple<>>(std::_Rb_tree<longunsignedint,std::pair<longunsignedintconst,RubberBand::FFT*>,std::_Select1st<std::pair<longunsignedintconst,RubberBand::FFT*>>,std::less<longunsignedint>,std::allocator<std::pair<longunsignedintconst,RubberBand::FFT*>>>::const_iterator)",
+      "symbol": "_ZNSt8_Rb_treeImSt4pairIKmPN10RubberBand3FFTEESt10_Select1stIS5_ESt4lessImESaIS5_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJRS1_EESG_IJEEEEESt17_Rb_tree_iteratorIS5_ESt23_Rb_tree_const_iteratorIS5_EDpOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*,std::_Rb_tree_node_base*> std::_Rb_tree<int,std::pair<intconst,std::shared_ptr<RubberBand::R3Stretcher::ChannelScaleData>>,std::_Select1st<std::pair<intconst,std::shared_ptr<RubberBand::R3Stretcher::ChannelScaleData>>>,std::less<int>,std::allocator<std::pair<intconst,std::shared_ptr<RubberBand::R3Stretcher::ChannelScaleData>>>>::_M_get_insert_hint_unique_pos(std::_Rb_tree<int,std::pair<intconst,std::shared_ptr<RubberBand::R3Stretcher::ChannelScaleData>>,std::_Select1st<std::pair<intconst,std::shared_ptr<RubberBand::R3Stretcher::ChannelScaleData>>>,std::less<int>,std::allocator<std::pair<intconst,std::shared_ptr<RubberBand::R3Stretcher::ChannelScaleData>>>>::const_iterator, const std::_Rb_tree<int,std::pair<intconst,std::shared_ptr<RubberBand::R3Stretcher::ChannelScaleData>>,std::_Select1st<std::pair<intconst,std::shared_ptr<RubberBand::R3Stretcher::ChannelScaleData>>>,std::less<int>,std::allocator<std::pair<intconst,std::shared_ptr<RubberBand::R3Stretcher::ChannelScaleData>>>>::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiSt10shared_ptrIN10RubberBand11R3Stretcher16ChannelScaleDataEEESt10_Select1stIS7_ESt4lessIiESaIS7_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS7_ERS1_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<int,std::allocator<int>>::_M_realloc_insert<int>(std::vector<int,std::allocator<int>>::iterator)",
+      "symbol": "_ZNSt6vectorIiSaIiEE17_M_realloc_insertIJiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function RubberBand::MovingMedian<double>* std::__do_uninit_fill_n<RubberBand::MovingMedian<double>*,longunsignedint,RubberBand::MovingMedian<double>>(RubberBand::MovingMedian<double>*, unsigned long int, const RubberBand::MovingMedian<double>&)",
+      "symbol": "_ZSt18__do_uninit_fill_nIPN10RubberBand12MovingMedianIdEEmS2_ET_S4_T0_RKT1_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void RubberBand::MovingMedian<double>::MovingMedian(int, float)",
+      "symbol": "_ZN10RubberBand12MovingMedianIdEC2Eif"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function unsigned int rubberband_get_process_size_limit(RubberBandState)",
+      "symbol": "rubberband_get_process_size_limit"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<longunsignedint,std::allocator<longunsignedint>>::_M_realloc_append<longunsignedintconst&>()",
+      "symbol": "_ZNSt6vectorImSaImEE17_M_realloc_appendIJRKmEEEvDpOT_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<int,std::allocator<int>>::emplace_back<int>()",
+      "symbol": "_ZNSt6vectorIiSaIiEE12emplace_backIJiEEEvDpOT_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<float,std::allocator<float>>::_M_realloc_append<floatconst&>()",
+      "symbol": "_ZNSt6vectorIfSaIfEE17_M_realloc_appendIJRKfEEEvDpOT_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<bool,std::allocator<bool>>::_M_insert_aux(std::vector<bool,std::allocator<bool>>::iterator, bool)",
+      "symbol": "_ZNSt6vectorIbSaIbEE13_M_insert_auxESt13_Bit_iteratorb"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<float,RubberBand::StlAllocator<float>>::_M_fill_insert(std::vector<float,RubberBand::StlAllocator<float>>::iterator, std::vector<float,RubberBand::StlAllocator<float>>::size_type, const std::vector<float,RubberBand::StlAllocator<float>>::value_type&)",
+      "symbol": "_ZNSt6vectorIfN10RubberBand12StlAllocatorIfEEE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPfS3_EEmRKf"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int RubberBand::RingBuffer<float>::skip(int)",
+      "symbol": "_ZN10RubberBand10RingBufferIfE4skipEi"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int RubberBand::RingBuffer<float>::zero(int)",
+      "symbol": "_ZN10RubberBand10RingBufferIfE4zeroEi"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::_Function_handler<void(charconst*,double,double),RubberBand::RubberBandStretcher::Impl::makeRBLog(std::shared_ptr<RubberBand::RubberBandStretcher::Logger>)::<lambda(charconst*,double,double)>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt17_Function_handlerIFvPKcddEZN10RubberBand19RubberBandStretcher4Impl9makeRBLogESt10shared_ptrINS4_6LoggerEEEUlS1_ddE_E10_M_managerERSt9_Any_dataRKSB_St18_Manager_operation"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::_M_construct<true>(const char*, std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::size_type)",
+      "symbol": "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructILb1EEEvPKcm"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method size_t RubberBand::RubberBandStretcher::getProcessSizeLimit() const",
+      "symbol": "_ZNK10RubberBand19RubberBandStretcher19getProcessSizeLimitEv"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method size_t RubberBand::R2Stretcher::getProcessSizeLimit() const",
+      "symbol": "_ZNK10RubberBand11R2Stretcher19getProcessSizeLimitEv"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::_Rb_tree<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,RubberBand::SizeConstraint>,std::_Select1st<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,RubberBand::SizeConstraint>>,std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,RubberBand::SizeConstraint>>>::iterator std::_Rb_tree<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,RubberBand::SizeConstraint>,std::_Select1st<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,RubberBand::SizeConstraint>>,std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,RubberBand::SizeConstraint>>>::_M_emplace_hint_unique<conststd::piecewise_construct_t&,std::tuple<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>&&>,std::tuple<>>(std::_Rb_tree<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,RubberBand::SizeConstraint>,std::_Select1st<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,RubberBand::SizeConstraint>>,std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,RubberBand::SizeConstraint>>>::const_iterator)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_N10RubberBand14SizeConstraintEESt10_Select1stISA_ESt4lessIS5_ESaISA_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJOS5_EESL_IJEEEEESt17_Rb_tree_iteratorISA_ESt23_Rb_tree_const_iteratorISA_EDpOT_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method size_t RubberBand::R3Stretcher::getProcessSizeLimit() const",
+      "symbol": "_ZNK10RubberBand11R3Stretcher19getProcessSizeLimitEv"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<int,std::allocator<int>>::_M_realloc_append<int>()",
+      "symbol": "_ZNSt6vectorIiSaIiEE17_M_realloc_appendIJiEEEvDpOT_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<RubberBand::StretchCalculator::Peak,std::allocator<RubberBand::StretchCalculator::Peak>>::_M_realloc_append<constRubberBand::StretchCalculator::Peak&>()",
+      "symbol": "_ZNSt6vectorIN10RubberBand17StretchCalculator4PeakESaIS2_EE17_M_realloc_appendIJRKS2_EEEvDpOT_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Function_handler<void(charconst*,double),RubberBand::RubberBandStretcher::Impl::makeRBLog(std::shared_ptr<RubberBand::RubberBandStretcher::Logger>)::<lambda(charconst*,double)>>::_M_invoke(const std::_Any_data&, const char*&&, double&&)",
+      "symbol": "_ZNSt17_Function_handlerIFvPKcdEZN10RubberBand19RubberBandStretcher4Impl9makeRBLogESt10shared_ptrINS4_6LoggerEEEUlS1_dE_E9_M_invokeERKSt9_Any_dataOS1_Od"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void RubberBand::R3Stretcher::ensureOutbuf(int, bool)",
+      "symbol": "_ZN10RubberBand11R3Stretcher12ensureOutbufEib"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::_Function_handler<void(charconst*,double),RubberBand::RubberBandStretcher::Impl::makeRBLog(std::shared_ptr<RubberBand::RubberBandStretcher::Logger>)::<lambda(charconst*,double)>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt17_Function_handlerIFvPKcdEZN10RubberBand19RubberBandStretcher4Impl9makeRBLogESt10shared_ptrINS4_6LoggerEEEUlS1_dE_E10_M_managerERSt9_Any_dataRKSB_St18_Manager_operation"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void RubberBand::R3Stretcher::ensureInbuf(int, bool)",
+      "symbol": "_ZN10RubberBand11R3Stretcher11ensureInbufEib"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Function_handler<void(charconst*,double,double),RubberBand::RubberBandStretcher::Impl::makeRBLog(std::shared_ptr<RubberBand::RubberBandStretcher::Logger>)::<lambda(charconst*,double,double)>>::_M_invoke(const std::_Any_data&, const char*&&, double&&, double&&)",
+      "symbol": "_ZNSt17_Function_handlerIFvPKcddEZN10RubberBand19RubberBandStretcher4Impl9makeRBLogESt10shared_ptrINS4_6LoggerEEEUlS1_ddE_E9_M_invokeERKSt9_Any_dataOS1_OdSF_"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 4,
+     "field_added_to_struct": 3,
+     "field_removed_from_struct": 1,
+     "field_type_changed": 3,
+     "member_offset_changed": 4,
+     "type_size_changed": 1
+    },
+    "type_events": [
+     {
+      "count": 2,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h",
+      "kind": "field_added_to_struct",
+      "type": "struct __pthread_cond_s"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h",
+      "kind": "field_removed_from_struct",
+      "type": "struct __pthread_cond_s"
+     },
+     {
+      "count": 4,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h",
+      "kind": "member_offset_changed",
+      "type": "struct __pthread_cond_s"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/12/bits/stl_list.h",
+      "kind": "base_class_changed",
+      "type": "class std::__cxx11::list<RubberBand::RingBuffer<float>*,std::allocator<RubberBand::RingBuffer<float>*>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "../src/finer/R3Stretcher.h",
+      "kind": "field_added_to_struct",
+      "type": "struct RubberBand::R3Stretcher::Limits"
+     },
+     {
+      "count": 1,
+      "declared_in": "../src/finer/R3Stretcher.h",
+      "kind": "type_size_changed",
+      "type": "struct RubberBand::R3Stretcher::Limits"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/12/ext/aligned_buffer.h",
+      "kind": "field_type_changed",
+      "type": "struct __gnu_cxx::__aligned_buffer<RubberBand::R3Stretcher::ChannelData>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/12/ext/aligned_buffer.h",
+      "kind": "base_class_changed",
+      "type": "struct __gnu_cxx::__aligned_buffer<RubberBand::R3Stretcher::ChannelData>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/12/ext/aligned_buffer.h",
+      "kind": "field_type_changed",
+      "type": "struct __gnu_cxx::__aligned_buffer<RubberBand::R3Stretcher::ChannelScaleData>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/12/ext/aligned_buffer.h",
+      "kind": "base_class_changed",
+      "type": "struct __gnu_cxx::__aligned_buffer<RubberBand::R3Stretcher::ChannelScaleData>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/12/ext/aligned_buffer.h",
+      "kind": "field_type_changed",
+      "type": "struct __gnu_cxx::__aligned_buffer<RubberBand::R3Stretcher::ScaleData>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/12/ext/aligned_buffer.h",
+      "kind": "base_class_changed",
+      "type": "struct __gnu_cxx::__aligned_buffer<RubberBand::R3Stretcher::ScaleData>"
+     }
+    ]
+   }
+  ],
+  "seconds": 6.229597485,
+  "source": "rubberband",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "3.2.1+dfsg",
+   "3.3.0+dfsg"
+  ]
+ },
+ "generated_at": "2026-09-02T15:04:53Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

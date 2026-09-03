@@ -1,0 +1,77 @@
+{
+ "data": {
+  "id": "chromaprint@1.4.2..1.4.3",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      34,
+      34
+     ],
+     "mangled_functions": [
+      10,
+      12
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 2
+    },
+    "soname": [
+     "libchromaprint.so.1",
+     "libchromaprint.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<float,std::allocator<float>>::_M_default_append(std::vector<float,std::allocator<float>>::size_type)",
+      "symbol": "_ZNSt6vectorIfSaIfEE17_M_default_appendEm"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<double,std::allocator<double>>::_M_default_append(std::vector<double,std::allocator<double>>::size_type)",
+      "symbol": "_ZNSt6vectorIdSaIdEE17_M_default_appendEm"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 2
+    },
+    "type_events": [
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/7/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "class std::vector<std::pair<unsignedint,unsignedint>,std::allocator<std::pair<unsignedint,unsignedint>>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/7/bits/stl_pair.h",
+      "kind": "base_class_changed",
+      "type": "struct std::pair<unsignedint,unsignedint>"
+     }
+    ]
+   }
+  ],
+  "seconds": 2.862006239,
+  "source": "chromaprint",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.4.2",
+   "1.4.3"
+  ]
+ },
+ "generated_at": "2026-09-02T15:03:45Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

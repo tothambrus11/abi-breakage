@@ -1,0 +1,136 @@
+{
+ "data": {
+  "id": "libnftnl@1.2.6..1.2.7",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      332,
+      333
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "function_signature_changed": 6,
+     "symbol_added": 1
+    },
+    "soname": [
+     "libnftnl.so.11",
+     "libnftnl.so.11"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function void nftnl_obj_unset(nftnl_obj*, uint16_t)",
+      "symbol": "nftnl_obj_unset",
+      "version": "LIBNFTNL_11"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void nftnl_obj_set_u8(nftnl_obj*, uint16_t, uint8_t)  ->  function int nftnl_obj_set_u8(nftnl_obj*, uint16_t, uint8_t)",
+      "symbol": "nftnl_obj_set_u8",
+      "version": "LIBNFTNL_11"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void nftnl_obj_set_str(nftnl_obj*, uint16_t, const char*)  ->  function int nftnl_obj_set_str(nftnl_obj*, uint16_t, const char*)",
+      "symbol": "nftnl_obj_set_str",
+      "version": "LIBNFTNL_11"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void nftnl_obj_set_data(nftnl_obj*, uint16_t, void*, uint32_t)  ->  function int nftnl_obj_set_data(nftnl_obj*, uint16_t, void*, uint32_t)",
+      "symbol": "nftnl_obj_set_data",
+      "version": "LIBNFTNL_13"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void nftnl_obj_set_u32(nftnl_obj*, uint16_t, uint32_t)  ->  function int nftnl_obj_set_u32(nftnl_obj*, uint16_t, uint32_t)",
+      "symbol": "nftnl_obj_set_u32",
+      "version": "LIBNFTNL_11"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void nftnl_obj_set_u64(nftnl_obj*, uint16_t, uint64_t)  ->  function int nftnl_obj_set_u64(nftnl_obj*, uint16_t, uint64_t)",
+      "symbol": "nftnl_obj_set_u64",
+      "version": "LIBNFTNL_11"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void nftnl_obj_set_u16(nftnl_obj*, uint16_t, uint16_t)  ->  function int nftnl_obj_set_u16(nftnl_obj*, uint16_t, uint16_t)",
+      "symbol": "nftnl_obj_set_u16",
+      "version": "LIBNFTNL_11"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 2,
+     "member_offset_changed": 12,
+     "type_size_changed": 2
+    },
+    "type_events": [
+     {
+      "count": 1,
+      "declared_in": "../include/expr_ops.h",
+      "kind": "field_added_to_struct",
+      "type": "struct expr_ops"
+     },
+     {
+      "count": 7,
+      "declared_in": "../include/expr_ops.h",
+      "kind": "member_offset_changed",
+      "type": "struct expr_ops"
+     },
+     {
+      "count": 1,
+      "declared_in": "../include/expr_ops.h",
+      "kind": "type_size_changed",
+      "type": "struct expr_ops"
+     },
+     {
+      "count": 1,
+      "declared_in": "../include/obj.h",
+      "kind": "field_added_to_struct",
+      "type": "struct obj_ops"
+     },
+     {
+      "count": 5,
+      "declared_in": "../include/obj.h",
+      "kind": "member_offset_changed",
+      "type": "struct obj_ops"
+     },
+     {
+      "count": 1,
+      "declared_in": "../include/obj.h",
+      "kind": "type_size_changed",
+      "type": "struct obj_ops"
+     }
+    ]
+   }
+  ],
+  "seconds": 1.886315188,
+  "source": "libnftnl",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.2.6",
+   "1.2.7"
+  ]
+ },
+ "generated_at": "2026-09-02T14:58:54Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

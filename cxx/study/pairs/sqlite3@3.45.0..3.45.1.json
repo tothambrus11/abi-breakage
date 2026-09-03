@@ -1,0 +1,56 @@
+{
+ "data": {
+  "id": "sqlite3@3.45.0..3.45.1",
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      1402,
+      1403
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 1
+    },
+    "soname": [
+     "libsqlite3.so.0",
+     "libsqlite3.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function int sqlite3Fts3IntegrityCheck(Fts3Table*, int*)",
+      "symbol": "sqlite3Fts3IntegrityCheck"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": []
+   }
+  ],
+  "seconds": 4.664319746,
+  "source": "sqlite3",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "3.45.0",
+   "3.45.1"
+  ]
+ },
+ "generated_at": "2026-09-02T12:06:42Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

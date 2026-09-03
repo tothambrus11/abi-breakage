@@ -1,0 +1,56 @@
+{
+ "data": {
+  "coverage": [
+   {
+    "header_files": 2,
+    "parsed": 2,
+    "skipped_by_limit": 0,
+    "with_fatal_error": 0
+   },
+   {
+    "header_files": 2,
+    "parsed": 2,
+    "skipped_by_limit": 0,
+    "with_fatal_error": 0
+   }
+  ],
+  "diff": {
+   "definitions": [
+    104,
+    115
+   ],
+   "definitions_added": 17,
+   "definitions_common": 98,
+   "definitions_removed": 6,
+   "examples": [
+    "xxhash.h::XXH_INLINE_XXH64_reset",
+    "xxhash.h::XXH_INLINE_XXH64_digest",
+    "xxh3.h::XXH_INLINE_XXH3_freeState",
+    "xxh3.h::XXH_INLINE_XXH3_createState",
+    "xxh3.h::XXH_INLINE_XXH3_64bits_reset_withSeed",
+    "xxh3.h::XXH_INLINE_XXH3_64bits_digest",
+    "xxh3.h::XXH_INLINE_XXH3_128bits_withSeed",
+    "xxh3.h::XXH_INLINE_XXH3_128bits_update"
+   ],
+   "inline_body_changed": 53,
+   "inline_body_changed_template": 0,
+   "inline_decl_changed": 10,
+   "macro_value_changed": 7,
+   "macros": [
+    104,
+    110
+   ],
+   "macros_common": 96
+  },
+  "id": "xxhash@0.7.3..0.7.4",
+  "language": "c",
+  "source": "xxhash",
+  "upstream": [
+   "0.7.3",
+   "0.7.4"
+  ]
+ },
+ "generated_at": "2026-09-02T14:51:38Z",
+ "schema": "abistudy/header-pair/2",
+ "tool": "abistudy 3.0.0"
+}

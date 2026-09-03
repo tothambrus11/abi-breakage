@@ -1,0 +1,92 @@
+{
+ "data": {
+  "id": "jemalloc@5.1.0..5.2.1",
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      30,
+      30
+     ],
+     "mangled_functions": [
+      10,
+      10
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 2,
+     "symbol_removed": 6
+    },
+    "soname": [
+     "libjemalloc.so.2",
+     "libjemalloc.so.2"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "void (* je_hooks_arena_new_hook)(...)",
+      "symbol": "je_hooks_arena_new_hook"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "void (* __free_hook)(void*)",
+      "symbol": "__free_hook"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "void* (* __malloc_hook)(size_t)",
+      "symbol": "__malloc_hook"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "void* (* __memalign_hook)(size_t, size_t)",
+      "symbol": "__memalign_hook"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "void* (* __realloc_hook)(void*, size_t)",
+      "symbol": "__realloc_hook"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "void (* je_hooks_libc_hook)(...)",
+      "symbol": "je_hooks_libc_hook"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "void (* je_test_hooks_libc_hook)(...)",
+      "symbol": "je_test_hooks_libc_hook"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "void (* je_test_hooks_arena_new_hook)(...)",
+      "symbol": "je_test_hooks_arena_new_hook"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": []
+   }
+  ],
+  "seconds": 2.082523057,
+  "source": "jemalloc",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "5.1.0",
+   "5.2.1"
+  ]
+ },
+ "generated_at": "2026-09-02T12:11:37Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

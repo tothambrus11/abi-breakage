@@ -1,0 +1,190 @@
+{
+ "data": {
+  "breaks": {
+   "breaking": 0,
+   "declared": 0,
+   "silent": 0
+  },
+  "corpus": {
+   "c_transitions": 3,
+   "cxx_transitions": 0,
+   "debug_info_missing": 1,
+   "errored": 0,
+   "libraries": 2,
+   "mass_rename_excluded": 0,
+   "objects": 3,
+   "transitions": 3
+  },
+  "filtered": {
+   "private_node": {},
+   "third_party": {}
+  },
+  "frequency_all": {
+   "libraries": 2,
+   "n": 3,
+   "rows": [
+    {
+     "events": 4,
+     "kind": "symbol_added",
+     "max": 4,
+     "mechanism": "n/a",
+     "median": 4.0,
+     "transitions": 1
+    }
+   ],
+   "title": "FREQUENCY OF CHANGE KINDS ACROSS CONSECUTIVE RELEASES  (all libraries)"
+  },
+  "frequency_c": {
+   "libraries": 2,
+   "n": 3,
+   "rows": [
+    {
+     "events": 4,
+     "kind": "symbol_added",
+     "max": 4,
+     "mechanism": "n/a",
+     "median": 4.0,
+     "transitions": 1
+    }
+   ],
+   "title": "C LIBRARIES ONLY"
+  },
+  "frequency_cxx": {
+   "libraries": 0,
+   "n": 0,
+   "rows": [],
+   "title": "C++ LIBRARIES ONLY"
+  },
+  "headers": {
+   "body_changed": 0,
+   "body_events": 0,
+   "macro_changed": 0,
+   "macro_changed_nonversion": 0,
+   "macro_events": 0,
+   "poor_coverage": 0,
+   "with_data": 0,
+   "with_definitions": 0
+  },
+  "rescue_binary": {
+   "affected": 0,
+   "fully_rescued": 0,
+   "mechanisms": [
+    {
+     "mechanism": "opaque layout",
+     "needed_by": 0,
+     "sole_reason": 0
+    },
+    {
+     "mechanism": "non-frozen enum",
+     "needed_by": 0,
+     "sole_reason": 0
+    },
+    {
+     "mechanism": "resilient dispatch",
+     "needed_by": 0,
+     "sole_reason": 0
+    },
+    {
+     "mechanism": "no implicit cross-module inlining",
+     "needed_by": 0,
+     "sole_reason": 0
+    }
+   ],
+   "title": "WOULD A RESILIENT BOUNDARY HAVE SAVED THE RELEASE?  (binary breakage only)"
+  },
+  "rescue_evolution": {
+   "affected": 0,
+   "fully_rescued": 0,
+   "mechanisms": [
+    {
+     "mechanism": "opaque layout",
+     "needed_by": 0,
+     "sole_reason": 0
+    },
+    {
+     "mechanism": "non-frozen enum",
+     "needed_by": 0,
+     "sole_reason": 0
+    },
+    {
+     "mechanism": "resilient dispatch",
+     "needed_by": 0,
+     "sole_reason": 0
+    },
+    {
+     "mechanism": "no implicit cross-module inlining",
+     "needed_by": 0,
+     "sole_reason": 0
+    }
+   ],
+   "title": "SECOND FRAMING: RECOMPILATION-FREE EVOLUTION  (adds enum cases)"
+  },
+  "rescue_inline": {
+   "affected": 0,
+   "fully_rescued": 0,
+   "mechanisms": [
+    {
+     "mechanism": "opaque layout",
+     "needed_by": 0,
+     "sole_reason": 0
+    },
+    {
+     "mechanism": "non-frozen enum",
+     "needed_by": 0,
+     "sole_reason": 0
+    },
+    {
+     "mechanism": "resilient dispatch",
+     "needed_by": 0,
+     "sole_reason": 0
+    },
+    {
+     "mechanism": "no implicit cross-module inlining",
+     "needed_by": 0,
+     "sole_reason": 0
+    }
+   ],
+   "title": "THIRD FRAMING: ...PLUS CHANGED INLINE/TEMPLATE BODIES  (stale copies in clients)"
+  },
+  "transitions": [
+   {
+    "counts": {},
+    "debug_info_missing": false,
+    "header_coverage_poor": false,
+    "header_defs_common": 0,
+    "id": "acl@2.3.1..2.3.2",
+    "language": "c",
+    "mass_rename": false,
+    "soname_changed": false,
+    "source": "acl"
+   },
+   {
+    "counts": {
+     "symbol_added": 4
+    },
+    "debug_info_missing": false,
+    "header_coverage_poor": false,
+    "header_defs_common": 0,
+    "id": "acl@2.3.2..2.4.0",
+    "language": "c",
+    "mass_rename": false,
+    "soname_changed": false,
+    "source": "acl"
+   },
+   {
+    "counts": {},
+    "debug_info_missing": true,
+    "header_coverage_poor": false,
+    "header_defs_common": 0,
+    "id": "bzip2@1.0.6..1.0.8",
+    "language": "c",
+    "mass_rename": false,
+    "soname_changed": false,
+    "source": "bzip2"
+   }
+  ]
+ },
+ "generated_at": "2026-09-02T13:42:53Z",
+ "schema": "abistudy/summary/1",
+ "tool": "abistudy 3.0.0"
+}

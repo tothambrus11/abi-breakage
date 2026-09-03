@@ -1,0 +1,7 @@
+# One-off image for the ground-truth calibration suite, which must COMPILE the
+# 30 synthetic libraries. Kept separate so the main analysis image stays slim.
+FROM debian:trixie-slim
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+      abigail-tools gcc g++ libc6-dev python3 python3-clang binutils \
+    && rm -rf /var/lib/apt/lists/*
+WORKDIR /work

@@ -1,0 +1,62 @@
+{
+ "data": {
+  "id": "audit@4.1.1..4.1.2",
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      80,
+      80
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 1,
+     "symbol_removed": 1
+    },
+    "soname": [
+     "libaudit.so.1",
+     "libaudit.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void audit_msg(int, const char*, ...)",
+      "symbol": "audit_msg"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void set_aumessage_mode(message_t, debug_message_t)",
+      "symbol": "set_aumessage_mode"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": []
+   }
+  ],
+  "seconds": 1.857609528,
+  "source": "audit",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "4.1.1",
+   "4.1.2"
+  ]
+ },
+ "generated_at": "2026-09-02T12:08:54Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

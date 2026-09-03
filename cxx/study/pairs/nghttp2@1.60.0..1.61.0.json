@@ -1,0 +1,98 @@
+{
+ "data": {
+  "id": "nghttp2@1.60.0..1.61.0",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      178,
+      179
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 1
+    },
+    "soname": [
+     "libnghttp2.so.14",
+     "libnghttp2.so.14"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function void nghttp2_option_set_max_continuations(nghttp2_option*, size_t)",
+      "symbol": "nghttp2_option_set_max_continuations"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 3,
+     "member_offset_changed": 38,
+     "type_size_changed": 2
+    },
+    "type_events": [
+     {
+      "count": 1,
+      "declared_in": "./lib/nghttp2_option.h",
+      "kind": "field_added_to_struct",
+      "type": "struct nghttp2_option"
+     },
+     {
+      "count": 12,
+      "declared_in": "./lib/nghttp2_option.h",
+      "kind": "member_offset_changed",
+      "type": "struct nghttp2_option"
+     },
+     {
+      "count": 1,
+      "declared_in": "./lib/nghttp2_option.h",
+      "kind": "type_size_changed",
+      "type": "struct nghttp2_option"
+     },
+     {
+      "count": 2,
+      "declared_in": "./lib/nghttp2_session.h",
+      "kind": "field_added_to_struct",
+      "type": "struct nghttp2_session"
+     },
+     {
+      "count": 26,
+      "declared_in": "./lib/nghttp2_session.h",
+      "kind": "member_offset_changed",
+      "type": "struct nghttp2_session"
+     },
+     {
+      "count": 1,
+      "declared_in": "./lib/nghttp2_session.h",
+      "kind": "type_size_changed",
+      "type": "struct nghttp2_session"
+     }
+    ]
+   }
+  ],
+  "seconds": 1.892010688,
+  "source": "nghttp2",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.60.0",
+   "1.61.0"
+  ]
+ },
+ "generated_at": "2026-09-02T14:58:24Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

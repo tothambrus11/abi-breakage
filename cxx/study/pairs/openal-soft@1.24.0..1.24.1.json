@@ -1,0 +1,104 @@
+{
+ "data": {
+  "id": "openal-soft@1.24.0..1.24.1",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      176,
+      176
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libopenal.so.1",
+     "libopenal.so.1"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 5,
+     "field_removed_from_struct": 22,
+     "field_type_changed": 2,
+     "type_size_changed": 1,
+     "vtable_changed": 8
+    },
+    "type_events": [
+     {
+      "count": 22,
+      "declared_in": "./alc/device.h",
+      "kind": "field_removed_from_struct",
+      "type": "struct ALCdevice"
+     },
+     {
+      "count": 1,
+      "declared_in": "./alc/device.h",
+      "kind": "type_size_changed",
+      "type": "struct ALCdevice"
+     },
+     {
+      "count": 2,
+      "declared_in": "./alc/device.h",
+      "kind": "base_class_changed",
+      "type": "struct ALCdevice"
+     },
+     {
+      "count": 4,
+      "declared_in": "./alc/device.h",
+      "kind": "vtable_changed",
+      "type": "struct ALCdevice"
+     },
+     {
+      "count": 1,
+      "declared_in": "./alc/context.h",
+      "kind": "field_type_changed",
+      "type": "struct ALCcontext"
+     },
+     {
+      "count": 1,
+      "declared_in": "./common/intrusive_ptr.h",
+      "kind": "field_type_changed",
+      "type": "class al::intrusive_ptr<ALCdevice>"
+     },
+     {
+      "count": 3,
+      "declared_in": "./alc/device.h",
+      "kind": "base_class_changed",
+      "type": "struct ALCdevice"
+     },
+     {
+      "count": 4,
+      "declared_in": "./alc/device.h",
+      "kind": "vtable_changed",
+      "type": "struct ALCdevice"
+     }
+    ]
+   }
+  ],
+  "seconds": 22.868278977,
+  "source": "openal-soft",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.24.0",
+   "1.24.1"
+  ]
+ },
+ "generated_at": "2026-09-02T15:04:32Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

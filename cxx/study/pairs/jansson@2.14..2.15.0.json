@@ -1,0 +1,63 @@
+{
+ "data": {
+  "id": "jansson@2.14..2.15.0",
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      81,
+      83
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 2
+    },
+    "soname": [
+     "libjansson.so.4",
+     "libjansson.so.4"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function void json_set_alloc_funcs2(json_malloc_t, json_realloc_t, json_free_t)",
+      "symbol": "json_set_alloc_funcs2",
+      "version": "libjansson.so.4"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void json_get_alloc_funcs2(json_malloc_t*, json_realloc_t*, json_free_t*)",
+      "symbol": "json_get_alloc_funcs2",
+      "version": "libjansson.so.4"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": []
+   }
+  ],
+  "seconds": 1.36127408,
+  "source": "jansson",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "2.14",
+   "2.15.0"
+  ]
+ },
+ "generated_at": "2026-09-02T12:10:28Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

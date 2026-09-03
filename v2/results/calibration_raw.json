@@ -1,0 +1,962 @@
+{
+ "c_field_added_end": {
+  "case_meta": {
+   "lang": "c",
+   "truth": "struct_field_added",
+   "breaks": true,
+   "note": "field appended to a public struct -> size grows"
+  },
+  "default": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 1 Changed (1 filtered out), 0 Added functions\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 function with some indirect sub-type change:\n\n  [C] 'function void pt_init(Point*)' at lib.c:3:1 has some indirect sub-type changes:\n    parameter 1 of type 'Point*' has sub-type changes:\n      in pointed to type 'struct Point' at lib.h:3:1:\n        type size changed from 64 to 96 (in bits)\n        1 data member insertion:\n          'int z', at offset 64 (in bits) at lib.h:3:1\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_field_added_end/v1/include --headers-dir2 /data/calib/c_field_added_end/v2/include /data/calib/c_field_added_end/v1/lib.so /data/calib/c_field_added_end/v2/lib.so"
+  },
+  "harmless": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 2 Changed, 0 Added functions\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n2 functions with some indirect sub-type change:\n\n  [C] 'function void pt_init(Point*)' at lib.c:3:1 has some indirect sub-type changes:\n    parameter 1 of type 'Point*' has sub-type changes:\n      in pointed to type 'struct Point' at lib.h:3:1:\n        type size changed from 64 to 96 (in bits)\n        1 data member insertion:\n          'int z', at offset 64 (in bits) at lib.h:3:1\n\n  [C] 'function int pt_sum(Point*)' at lib.c:2:1 has some indirect sub-type changes:\n    parameter 1 of type 'Point*' has sub-type changes:\n      pointed to type 'struct Point' changed at lib.h:3:1, as reported earlier\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_field_added_end/v1/include --headers-dir2 /data/calib/c_field_added_end/v2/include --harmless /data/calib/c_field_added_end/v1/lib.so /data/calib/c_field_added_end/v2/lib.so"
+  },
+  "leafh": {
+   "rc": 4,
+   "out": "Leaf changes summary: 1 artifact changed\nChanged leaf types summary: 1 leaf type changed\nRemoved/Changed/Added functions summary: 0 Removed, 0 Changed, 0 Added function\nRemoved/Changed/Added variables summary: 0 Removed, 0 Changed, 0 Added variable\n\n'struct Point at lib.h:3:1' changed:\n  type size changed from 64 to 96 (in bits)\n  1 data member insertion:\n    'int z', at offset 64 (in bits) at lib.h:3:1\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_field_added_end/v1/include --headers-dir2 /data/calib/c_field_added_end/v2/include --leaf-changes-only --harmless /data/calib/c_field_added_end/v1/lib.so /data/calib/c_field_added_end/v2/lib.so"
+  },
+  "no_hdrs": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 1 Changed (1 filtered out), 0 Added functions\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 function with some indirect sub-type change:\n\n  [C] 'function void pt_init(Point*)' at lib.c:3:1 has some indirect sub-type changes:\n    parameter 1 of type 'Point*' has sub-type changes:\n      in pointed to type 'struct Point' at lib.h:3:1:\n        type size changed from 64 to 96 (in bits)\n        1 data member insertion:\n          'int z', at offset 64 (in bits) at lib.h:3:1\n\n",
+   "err": "",
+   "cmd": "abidiff (no headers-dir)"
+  }
+ },
+ "c_field_added_middle": {
+  "case_meta": {
+   "lang": "c",
+   "truth": "struct_field_added_middle",
+   "breaks": true,
+   "note": "field inserted mid-struct -> offsets of later fields shift"
+  },
+  "default": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 1 Changed (1 filtered out), 0 Added functions\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 function with some indirect sub-type change:\n\n  [C] 'function void pt_init(Point*)' at lib.c:3:1 has some indirect sub-type changes:\n    parameter 1 of type 'Point*' has sub-type changes:\n      in pointed to type 'struct Point' at lib.h:3:1:\n        type size changed from 64 to 96 (in bits)\n        1 data member insertion:\n          'int w', at offset 32 (in bits) at lib.h:3:1\n        1 data member change:\n          'int y' offset changed from 32 to 64 (in bits) (by +32 bits)\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_field_added_middle/v1/include --headers-dir2 /data/calib/c_field_added_middle/v2/include /data/calib/c_field_added_middle/v1/lib.so /data/calib/c_field_added_middle/v2/lib.so"
+  },
+  "harmless": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 2 Changed, 0 Added functions\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n2 functions with some indirect sub-type change:\n\n  [C] 'function void pt_init(Point*)' at lib.c:3:1 has some indirect sub-type changes:\n    parameter 1 of type 'Point*' has sub-type changes:\n      in pointed to type 'struct Point' at lib.h:3:1:\n        type size changed from 64 to 96 (in bits)\n        1 data member insertion:\n          'int w', at offset 32 (in bits) at lib.h:3:1\n        1 data member change:\n          'int y' offset changed from 32 to 64 (in bits) (by +32 bits)\n\n  [C] 'function int pt_sum(Point*)' at lib.c:2:1 has some indirect sub-type changes:\n    parameter 1 of type 'Point*' has sub-type changes:\n      pointed to type 'struct Point' changed at lib.h:3:1, as reported earlier\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_field_added_middle/v1/include --headers-dir2 /data/calib/c_field_added_middle/v2/include --harmless /data/calib/c_field_added_middle/v1/lib.so /data/calib/c_field_added_middle/v2/lib.so"
+  },
+  "leafh": {
+   "rc": 4,
+   "out": "Leaf changes summary: 1 artifact changed\nChanged leaf types summary: 1 leaf type changed\nRemoved/Changed/Added functions summary: 0 Removed, 0 Changed, 0 Added function\nRemoved/Changed/Added variables summary: 0 Removed, 0 Changed, 0 Added variable\n\n'struct Point at lib.h:3:1' changed:\n  type size changed from 64 to 96 (in bits)\n  1 data member insertion:\n    'int w', at offset 32 (in bits) at lib.h:3:1\n  there are data member changes:\n    'int y' offset changed from 32 to 64 (in bits) (by +32 bits)\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_field_added_middle/v1/include --headers-dir2 /data/calib/c_field_added_middle/v2/include --leaf-changes-only --harmless /data/calib/c_field_added_middle/v1/lib.so /data/calib/c_field_added_middle/v2/lib.so"
+  },
+  "no_hdrs": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 1 Changed (1 filtered out), 0 Added functions\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 function with some indirect sub-type change:\n\n  [C] 'function void pt_init(Point*)' at lib.c:3:1 has some indirect sub-type changes:\n    parameter 1 of type 'Point*' has sub-type changes:\n      in pointed to type 'struct Point' at lib.h:3:1:\n        type size changed from 64 to 96 (in bits)\n        1 data member insertion:\n          'int w', at offset 32 (in bits) at lib.h:3:1\n        1 data member change:\n          'int y' offset changed from 32 to 64 (in bits) (by +32 bits)\n\n",
+   "err": "",
+   "cmd": "abidiff (no headers-dir)"
+  }
+ },
+ "c_field_type_changed": {
+  "case_meta": {
+   "lang": "c",
+   "truth": "struct_field_type_changed",
+   "breaks": true,
+   "note": "public struct field changes type/width"
+  },
+  "default": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 1 Changed (1 filtered out), 0 Added functions\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 function with some indirect sub-type change:\n\n  [C] 'function void pt_init(Point*)' at lib.c:3:1 has some indirect sub-type changes:\n    parameter 1 of type 'Point*' has sub-type changes:\n      in pointed to type 'struct Point' at lib.h:3:1:\n        type size changed from 64 to 128 (in bits)\n        1 data member change:\n          type of 'int y' changed:\n            type name changed from 'int' to 'long int'\n            type size changed from 32 to 64 (in bits)\n          and offset changed from 32 to 64 (in bits) (by +32 bits)\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_field_type_changed/v1/include --headers-dir2 /data/calib/c_field_type_changed/v2/include /data/calib/c_field_type_changed/v1/lib.so /data/calib/c_field_type_changed/v2/lib.so"
+  },
+  "harmless": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 2 Changed, 0 Added functions\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n2 functions with some indirect sub-type change:\n\n  [C] 'function void pt_init(Point*)' at lib.c:3:1 has some indirect sub-type changes:\n    parameter 1 of type 'Point*' has sub-type changes:\n      in pointed to type 'struct Point' at lib.h:3:1:\n        type size changed from 64 to 128 (in bits)\n        1 data member change:\n          type of 'int y' changed:\n            type name changed from 'int' to 'long int'\n            type size changed from 32 to 64 (in bits)\n          and offset changed from 32 to 64 (in bits) (by +32 bits)\n\n  [C] 'function int pt_sum(Point*)' at lib.c:2:1 has some indirect sub-type changes:\n    parameter 1 of type 'Point*' has sub-type changes:\n      pointed to type 'struct Point' changed at lib.h:3:1, as reported earlier\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_field_type_changed/v1/include --headers-dir2 /data/calib/c_field_type_changed/v2/include --harmless /data/calib/c_field_type_changed/v1/lib.so /data/calib/c_field_type_changed/v2/lib.so"
+  },
+  "leafh": {
+   "rc": 4,
+   "out": "Leaf changes summary: 1 artifact changed\nChanged leaf types summary: 1 leaf type changed\nRemoved/Changed/Added functions summary: 0 Removed, 0 Changed, 0 Added function\nRemoved/Changed/Added variables summary: 0 Removed, 0 Changed, 0 Added variable\n\n'struct Point at lib.h:3:1' changed:\n  type size changed from 64 to 128 (in bits)\n  there are data member changes:\n    type 'int' of 'Point::y' changed:\n      type name changed from 'int' to 'long int'\n      type size changed from 32 to 64 (in bits)\n    and offset changed from 32 to 64 (in bits) (by +32 bits)\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_field_type_changed/v1/include --headers-dir2 /data/calib/c_field_type_changed/v2/include --leaf-changes-only --harmless /data/calib/c_field_type_changed/v1/lib.so /data/calib/c_field_type_changed/v2/lib.so"
+  },
+  "no_hdrs": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 1 Changed (1 filtered out), 0 Added functions\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 function with some indirect sub-type change:\n\n  [C] 'function void pt_init(Point*)' at lib.c:3:1 has some indirect sub-type changes:\n    parameter 1 of type 'Point*' has sub-type changes:\n      in pointed to type 'struct Point' at lib.h:3:1:\n        type size changed from 64 to 128 (in bits)\n        1 data member change:\n          type of 'int y' changed:\n            type name changed from 'int' to 'long int'\n            type size changed from 32 to 64 (in bits)\n          and offset changed from 32 to 64 (in bits) (by +32 bits)\n\n",
+   "err": "",
+   "cmd": "abidiff (no headers-dir)"
+  }
+ },
+ "c_field_removed": {
+  "case_meta": {
+   "lang": "c",
+   "truth": "struct_field_removed",
+   "breaks": true,
+   "note": "field removed from public struct"
+  },
+  "default": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 1 Changed (1 filtered out), 0 Added functions\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 function with some indirect sub-type change:\n\n  [C] 'function void pt_init(Point*)' at lib.c:3:1 has some indirect sub-type changes:\n    parameter 1 of type 'Point*' has sub-type changes:\n      in pointed to type 'struct Point' at lib.h:3:1:\n        type size changed from 96 to 64 (in bits)\n        1 data member deletion:\n          'int z', at offset 64 (in bits) at lib.h:3:1\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_field_removed/v1/include --headers-dir2 /data/calib/c_field_removed/v2/include /data/calib/c_field_removed/v1/lib.so /data/calib/c_field_removed/v2/lib.so"
+  },
+  "harmless": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 2 Changed, 0 Added functions\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n2 functions with some indirect sub-type change:\n\n  [C] 'function void pt_init(Point*)' at lib.c:3:1 has some indirect sub-type changes:\n    parameter 1 of type 'Point*' has sub-type changes:\n      in pointed to type 'struct Point' at lib.h:3:1:\n        type size changed from 96 to 64 (in bits)\n        1 data member deletion:\n          'int z', at offset 64 (in bits) at lib.h:3:1\n\n  [C] 'function int pt_sum(Point*)' at lib.c:2:1 has some indirect sub-type changes:\n    parameter 1 of type 'Point*' has sub-type changes:\n      pointed to type 'struct Point' changed at lib.h:3:1, as reported earlier\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_field_removed/v1/include --headers-dir2 /data/calib/c_field_removed/v2/include --harmless /data/calib/c_field_removed/v1/lib.so /data/calib/c_field_removed/v2/lib.so"
+  },
+  "leafh": {
+   "rc": 4,
+   "out": "Leaf changes summary: 1 artifact changed\nChanged leaf types summary: 1 leaf type changed\nRemoved/Changed/Added functions summary: 0 Removed, 0 Changed, 0 Added function\nRemoved/Changed/Added variables summary: 0 Removed, 0 Changed, 0 Added variable\n\n'struct Point at lib.h:3:1' changed:\n  type size changed from 96 to 64 (in bits)\n  1 data member deletion:\n    'int z', at offset 64 (in bits) at lib.h:3:1\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_field_removed/v1/include --headers-dir2 /data/calib/c_field_removed/v2/include --leaf-changes-only --harmless /data/calib/c_field_removed/v1/lib.so /data/calib/c_field_removed/v2/lib.so"
+  },
+  "no_hdrs": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 1 Changed (1 filtered out), 0 Added functions\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 function with some indirect sub-type change:\n\n  [C] 'function void pt_init(Point*)' at lib.c:3:1 has some indirect sub-type changes:\n    parameter 1 of type 'Point*' has sub-type changes:\n      in pointed to type 'struct Point' at lib.h:3:1:\n        type size changed from 96 to 64 (in bits)\n        1 data member deletion:\n          'int z', at offset 64 (in bits) at lib.h:3:1\n\n",
+   "err": "",
+   "cmd": "abidiff (no headers-dir)"
+  }
+ },
+ "c_field_added_padding": {
+  "case_meta": {
+   "lang": "c",
+   "truth": "struct_field_added_into_padding",
+   "breaks": true,
+   "note": "field added into existing tail padding -> size UNCHANGED, still a break"
+  },
+  "default": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 1 Changed, 0 Added function\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 function with some indirect sub-type change:\n\n  [C] 'function int pad_get(Pad*)' at lib.c:2:1 has some indirect sub-type changes:\n    parameter 1 of type 'Pad*' has sub-type changes:\n      in pointed to type 'struct Pad' at lib.h:3:1:\n        type size hasn't changed\n        1 data member insertion:\n          'char c', at offset 8 (in bits) at lib.h:3:1\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_field_added_padding/v1/include --headers-dir2 /data/calib/c_field_added_padding/v2/include /data/calib/c_field_added_padding/v1/lib.so /data/calib/c_field_added_padding/v2/lib.so"
+  },
+  "harmless": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 1 Changed, 0 Added function\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 function with some indirect sub-type change:\n\n  [C] 'function int pad_get(Pad*)' at lib.c:2:1 has some indirect sub-type changes:\n    parameter 1 of type 'Pad*' has sub-type changes:\n      in pointed to type 'struct Pad' at lib.h:3:1:\n        type size hasn't changed\n        1 data member insertion:\n          'char c', at offset 8 (in bits) at lib.h:3:1\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_field_added_padding/v1/include --headers-dir2 /data/calib/c_field_added_padding/v2/include --harmless /data/calib/c_field_added_padding/v1/lib.so /data/calib/c_field_added_padding/v2/lib.so"
+  },
+  "leafh": {
+   "rc": 4,
+   "out": "Leaf changes summary: 1 artifact changed\nChanged leaf types summary: 1 leaf type changed\nRemoved/Changed/Added functions summary: 0 Removed, 0 Changed, 0 Added function\nRemoved/Changed/Added variables summary: 0 Removed, 0 Changed, 0 Added variable\n\n'struct Pad at lib.h:3:1' changed:\n  type size hasn't changed\n  1 data member insertion:\n    'char c', at offset 8 (in bits) at lib.h:3:1\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_field_added_padding/v1/include --headers-dir2 /data/calib/c_field_added_padding/v2/include --leaf-changes-only --harmless /data/calib/c_field_added_padding/v1/lib.so /data/calib/c_field_added_padding/v2/lib.so"
+  },
+  "no_hdrs": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 1 Changed, 0 Added function\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 function with some indirect sub-type change:\n\n  [C] 'function int pad_get(Pad*)' at lib.c:2:1 has some indirect sub-type changes:\n    parameter 1 of type 'Pad*' has sub-type changes:\n      in pointed to type 'struct Pad' at lib.h:3:1:\n        type size hasn't changed\n        1 data member insertion:\n          'char c', at offset 8 (in bits) at lib.h:3:1\n\n",
+   "err": "",
+   "cmd": "abidiff (no headers-dir)"
+  }
+ },
+ "c_enum_case_added": {
+  "case_meta": {
+   "lang": "c",
+   "truth": "enum_case_added",
+   "breaks": true,
+   "note": "enumerator added, underlying type size unchanged"
+  },
+  "default": {
+   "rc": 0,
+   "out": "Functions changes summary: 0 Removed, 0 Changed (1 filtered out), 0 Added function\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_enum_case_added/v1/include --headers-dir2 /data/calib/c_enum_case_added/v2/include /data/calib/c_enum_case_added/v1/lib.so /data/calib/c_enum_case_added/v2/lib.so"
+  },
+  "harmless": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 1 Changed, 0 Added function\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 function with some indirect sub-type change:\n\n  [C] 'function const char* color_name(Color)' at lib.c:2:1 has some indirect sub-type changes:\n    parameter 1 of type 'enum Color' has sub-type changes:\n      type size hasn't changed\n      1 enumerator insertion:\n        'Color::BLUE' value '2'\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_enum_case_added/v1/include --headers-dir2 /data/calib/c_enum_case_added/v2/include --harmless /data/calib/c_enum_case_added/v1/lib.so /data/calib/c_enum_case_added/v2/lib.so"
+  },
+  "leafh": {
+   "rc": 4,
+   "out": "Leaf changes summary: 1 artifact changed\nChanged leaf types summary: 1 leaf type changed\nRemoved/Changed/Added functions summary: 0 Removed, 0 Changed, 0 Added function\nRemoved/Changed/Added variables summary: 0 Removed, 0 Changed, 0 Added variable\n\n'enum Color at lib.h:3:1' changed:\n  type size hasn't changed\n  1 enumerator insertion:\n    'Color::BLUE' value '2'\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_enum_case_added/v1/include --headers-dir2 /data/calib/c_enum_case_added/v2/include --leaf-changes-only --harmless /data/calib/c_enum_case_added/v1/lib.so /data/calib/c_enum_case_added/v2/lib.so"
+  },
+  "no_hdrs": {
+   "rc": 0,
+   "out": "Functions changes summary: 0 Removed, 0 Changed (1 filtered out), 0 Added function\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n",
+   "err": "",
+   "cmd": "abidiff (no headers-dir)"
+  }
+ },
+ "c_enum_case_added_widening": {
+  "case_meta": {
+   "lang": "c",
+   "truth": "enum_case_added_widening",
+   "breaks": true,
+   "note": "enumerator added that forces a wider underlying type -> size change"
+  },
+  "default": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 1 Changed, 0 Added function\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 function with some indirect sub-type change:\n\n  [C] 'function const char* color_name(Color)' at lib.c:2:1 has some indirect sub-type changes:\n    parameter 1 of type 'enum Color' has sub-type changes:\n      type size changed from 32 to 64 (in bits)\n      type alignment changed from 32 to 64\n      type size changed from 32 to 64 (in bits)\n      type alignment changed from 32 to 64\n      1 enumerator insertion:\n        'Color::HUGE_C' value '549755813887'\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_enum_case_added_widening/v1/include --headers-dir2 /data/calib/c_enum_case_added_widening/v2/include /data/calib/c_enum_case_added_widening/v1/lib.so /data/calib/c_enum_case_added_widening/v2/lib.so"
+  },
+  "harmless": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 1 Changed, 0 Added function\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 function with some indirect sub-type change:\n\n  [C] 'function const char* color_name(Color)' at lib.c:2:1 has some indirect sub-type changes:\n    parameter 1 of type 'enum Color' has sub-type changes:\n      type size changed from 32 to 64 (in bits)\n      type alignment changed from 32 to 64\n      type size changed from 32 to 64 (in bits)\n      type alignment changed from 32 to 64\n      1 enumerator insertion:\n        'Color::HUGE_C' value '549755813887'\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_enum_case_added_widening/v1/include --headers-dir2 /data/calib/c_enum_case_added_widening/v2/include --harmless /data/calib/c_enum_case_added_widening/v1/lib.so /data/calib/c_enum_case_added_widening/v2/lib.so"
+  },
+  "leafh": {
+   "rc": 4,
+   "out": "Leaf changes summary: 2 artifacts changed\nChanged leaf types summary: 1 leaf type changed\nRemoved/Changed/Added functions summary: 0 Removed, 1 Changed, 0 Added function\nRemoved/Changed/Added variables summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 function with some sub-type change:\n\n  [C] 'function const char* color_name(Color)' at lib.c:2:1 has some sub-type changes:\n    parameter 1 of type 'enum Color' changed:\n      type size changed from 32 to 64 (in bits)\n      type alignment changed from 32 to 64\n      type size changed from 32 to 64 (in bits)\n      type alignment changed from 32 to 64\n      1 enumerator insertion:\n        'Color::HUGE_C' value '549755813887'\n\n'enum Color at lib.h:3:1' changed:\n  enum type 'enum Color' changed at lib.h:3:1, as reported earlier\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_enum_case_added_widening/v1/include --headers-dir2 /data/calib/c_enum_case_added_widening/v2/include --leaf-changes-only --harmless /data/calib/c_enum_case_added_widening/v1/lib.so /data/calib/c_enum_case_added_widening/v2/lib.so"
+  },
+  "no_hdrs": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 1 Changed, 0 Added function\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 function with some indirect sub-type change:\n\n  [C] 'function const char* color_name(Color)' at lib.c:2:1 has some indirect sub-type changes:\n    parameter 1 of type 'enum Color' has sub-type changes:\n      type size changed from 32 to 64 (in bits)\n      type alignment changed from 32 to 64\n      type size changed from 32 to 64 (in bits)\n      type alignment changed from 32 to 64\n      1 enumerator insertion:\n        'Color::HUGE_C' value '549755813887'\n\n",
+   "err": "",
+   "cmd": "abidiff (no headers-dir)"
+  }
+ },
+ "c_enum_case_removed": {
+  "case_meta": {
+   "lang": "c",
+   "truth": "enum_case_removed",
+   "breaks": true,
+   "note": "enumerator removed"
+  },
+  "default": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 1 Changed, 0 Added function\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 function with some indirect sub-type change:\n\n  [C] 'function const char* color_name(Color)' at lib.c:2:1 has some indirect sub-type changes:\n    parameter 1 of type 'enum Color' has sub-type changes:\n      type size hasn't changed\n      1 enumerator deletion:\n        'Color::BLUE' value '2'\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_enum_case_removed/v1/include --headers-dir2 /data/calib/c_enum_case_removed/v2/include /data/calib/c_enum_case_removed/v1/lib.so /data/calib/c_enum_case_removed/v2/lib.so"
+  },
+  "harmless": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 1 Changed, 0 Added function\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 function with some indirect sub-type change:\n\n  [C] 'function const char* color_name(Color)' at lib.c:2:1 has some indirect sub-type changes:\n    parameter 1 of type 'enum Color' has sub-type changes:\n      type size hasn't changed\n      1 enumerator deletion:\n        'Color::BLUE' value '2'\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_enum_case_removed/v1/include --headers-dir2 /data/calib/c_enum_case_removed/v2/include --harmless /data/calib/c_enum_case_removed/v1/lib.so /data/calib/c_enum_case_removed/v2/lib.so"
+  },
+  "leafh": {
+   "rc": 4,
+   "out": "Leaf changes summary: 1 artifact changed\nChanged leaf types summary: 1 leaf type changed\nRemoved/Changed/Added functions summary: 0 Removed, 0 Changed, 0 Added function\nRemoved/Changed/Added variables summary: 0 Removed, 0 Changed, 0 Added variable\n\n'enum Color at lib.h:3:1' changed:\n  type size hasn't changed\n  1 enumerator deletion:\n    'Color::BLUE' value '2'\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_enum_case_removed/v1/include --headers-dir2 /data/calib/c_enum_case_removed/v2/include --leaf-changes-only --harmless /data/calib/c_enum_case_removed/v1/lib.so /data/calib/c_enum_case_removed/v2/lib.so"
+  },
+  "no_hdrs": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 1 Changed, 0 Added function\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 function with some indirect sub-type change:\n\n  [C] 'function const char* color_name(Color)' at lib.c:2:1 has some indirect sub-type changes:\n    parameter 1 of type 'enum Color' has sub-type changes:\n      type size hasn't changed\n      1 enumerator deletion:\n        'Color::BLUE' value '2'\n\n",
+   "err": "",
+   "cmd": "abidiff (no headers-dir)"
+  }
+ },
+ "c_param_type_changed": {
+  "case_meta": {
+   "lang": "c",
+   "truth": "function_param_type_changed",
+   "breaks": true,
+   "note": "parameter type widened"
+  },
+  "default": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 1 Changed, 0 Added function\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 function with some indirect sub-type change:\n\n  [C] 'function int f_scale(int, int)' at lib.c:2:1 has some indirect sub-type changes:\n    parameter 2 of type 'int' changed:\n      type name changed from 'int' to 'long int'\n      type size changed from 32 to 64 (in bits)\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_param_type_changed/v1/include --headers-dir2 /data/calib/c_param_type_changed/v2/include /data/calib/c_param_type_changed/v1/lib.so /data/calib/c_param_type_changed/v2/lib.so"
+  },
+  "harmless": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 1 Changed, 0 Added function\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 function with some indirect sub-type change:\n\n  [C] 'function int f_scale(int, int)' at lib.c:2:1 has some indirect sub-type changes:\n    parameter 2 of type 'int' changed:\n      type name changed from 'int' to 'long int'\n      type size changed from 32 to 64 (in bits)\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_param_type_changed/v1/include --headers-dir2 /data/calib/c_param_type_changed/v2/include --harmless /data/calib/c_param_type_changed/v1/lib.so /data/calib/c_param_type_changed/v2/lib.so"
+  },
+  "leafh": {
+   "rc": 4,
+   "out": "Leaf changes summary: 1 artifact changed\nChanged leaf types summary: 0 leaf type changed\nRemoved/Changed/Added functions summary: 0 Removed, 1 Changed, 0 Added function\nRemoved/Changed/Added variables summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 function with some sub-type change:\n\n  [C] 'function int f_scale(int, int)' at lib.c:2:1 has some sub-type changes:\n    parameter 2 of type 'int' changed:\n      type name changed from 'int' to 'long int'\n      type size changed from 32 to 64 (in bits)\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_param_type_changed/v1/include --headers-dir2 /data/calib/c_param_type_changed/v2/include --leaf-changes-only --harmless /data/calib/c_param_type_changed/v1/lib.so /data/calib/c_param_type_changed/v2/lib.so"
+  },
+  "no_hdrs": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 1 Changed, 0 Added function\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 function with some indirect sub-type change:\n\n  [C] 'function int f_scale(int, int)' at lib.c:2:1 has some indirect sub-type changes:\n    parameter 2 of type 'int' changed:\n      type name changed from 'int' to 'long int'\n      type size changed from 32 to 64 (in bits)\n\n",
+   "err": "",
+   "cmd": "abidiff (no headers-dir)"
+  }
+ },
+ "c_param_added": {
+  "case_meta": {
+   "lang": "c",
+   "truth": "function_param_added",
+   "breaks": true,
+   "note": "parameter appended to an exported C function"
+  },
+  "default": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 1 Changed, 0 Added function\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 function with some indirect sub-type change:\n\n  [C] 'function int f_scale(int, int)' at lib.c:2:1 has some indirect sub-type changes:\n    parameter 3 of type 'int' was added\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_param_added/v1/include --headers-dir2 /data/calib/c_param_added/v2/include /data/calib/c_param_added/v1/lib.so /data/calib/c_param_added/v2/lib.so"
+  },
+  "harmless": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 1 Changed, 0 Added function\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 function with some indirect sub-type change:\n\n  [C] 'function int f_scale(int, int)' at lib.c:2:1 has some indirect sub-type changes:\n    parameter 3 of type 'int' was added\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_param_added/v1/include --headers-dir2 /data/calib/c_param_added/v2/include --harmless /data/calib/c_param_added/v1/lib.so /data/calib/c_param_added/v2/lib.so"
+  },
+  "leafh": {
+   "rc": 4,
+   "out": "Leaf changes summary: 1 artifact changed\nChanged leaf types summary: 0 leaf type changed\nRemoved/Changed/Added functions summary: 0 Removed, 1 Changed, 0 Added function\nRemoved/Changed/Added variables summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 function with some sub-type change:\n\n  [C] 'function int f_scale(int, int)' at lib.c:2:1 has some sub-type changes:\n    parameter 3 of type 'int' was added\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_param_added/v1/include --headers-dir2 /data/calib/c_param_added/v2/include --leaf-changes-only --harmless /data/calib/c_param_added/v1/lib.so /data/calib/c_param_added/v2/lib.so"
+  },
+  "no_hdrs": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 1 Changed, 0 Added function\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 function with some indirect sub-type change:\n\n  [C] 'function int f_scale(int, int)' at lib.c:2:1 has some indirect sub-type changes:\n    parameter 3 of type 'int' was added\n\n",
+   "err": "",
+   "cmd": "abidiff (no headers-dir)"
+  }
+ },
+ "c_return_type_changed": {
+  "case_meta": {
+   "lang": "c",
+   "truth": "function_return_type_changed",
+   "breaks": true,
+   "note": "return type changed"
+  },
+  "default": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 1 Changed, 0 Added function\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 function with some indirect sub-type change:\n\n  [C] 'function int f_scale(int, int)' at lib.c:2:1 has some indirect sub-type changes:\n    return type changed:\n      type name changed from 'int' to 'long int'\n      type size changed from 32 to 64 (in bits)\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_return_type_changed/v1/include --headers-dir2 /data/calib/c_return_type_changed/v2/include /data/calib/c_return_type_changed/v1/lib.so /data/calib/c_return_type_changed/v2/lib.so"
+  },
+  "harmless": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 1 Changed, 0 Added function\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 function with some indirect sub-type change:\n\n  [C] 'function int f_scale(int, int)' at lib.c:2:1 has some indirect sub-type changes:\n    return type changed:\n      type name changed from 'int' to 'long int'\n      type size changed from 32 to 64 (in bits)\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_return_type_changed/v1/include --headers-dir2 /data/calib/c_return_type_changed/v2/include --harmless /data/calib/c_return_type_changed/v1/lib.so /data/calib/c_return_type_changed/v2/lib.so"
+  },
+  "leafh": {
+   "rc": 4,
+   "out": "Leaf changes summary: 1 artifact changed\nChanged leaf types summary: 0 leaf type changed\nRemoved/Changed/Added functions summary: 0 Removed, 1 Changed, 0 Added function\nRemoved/Changed/Added variables summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 function with some sub-type change:\n\n  [C] 'function int f_scale(int, int)' at lib.c:2:1 has some sub-type changes:\n    return type changed:\n      type name changed from 'int' to 'long int'\n      type size changed from 32 to 64 (in bits)\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_return_type_changed/v1/include --headers-dir2 /data/calib/c_return_type_changed/v2/include --leaf-changes-only --harmless /data/calib/c_return_type_changed/v1/lib.so /data/calib/c_return_type_changed/v2/lib.so"
+  },
+  "no_hdrs": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 1 Changed, 0 Added function\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 function with some indirect sub-type change:\n\n  [C] 'function int f_scale(int, int)' at lib.c:2:1 has some indirect sub-type changes:\n    return type changed:\n      type name changed from 'int' to 'long int'\n      type size changed from 32 to 64 (in bits)\n\n",
+   "err": "",
+   "cmd": "abidiff (no headers-dir)"
+  }
+ },
+ "c_func_added": {
+  "case_meta": {
+   "lang": "c",
+   "truth": "function_added",
+   "breaks": false,
+   "note": "new exported function -> additive, not a break"
+  },
+  "default": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 0 Changed, 1 Added function\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 Added function:\n\n  [A] 'function int f_new(int)'    {f_new}\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_func_added/v1/include --headers-dir2 /data/calib/c_func_added/v2/include /data/calib/c_func_added/v1/lib.so /data/calib/c_func_added/v2/lib.so"
+  },
+  "harmless": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 0 Changed, 1 Added function\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 Added function:\n\n  [A] 'function int f_new(int)'    {f_new}\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_func_added/v1/include --headers-dir2 /data/calib/c_func_added/v2/include --harmless /data/calib/c_func_added/v1/lib.so /data/calib/c_func_added/v2/lib.so"
+  },
+  "leafh": {
+   "rc": 4,
+   "out": "Leaf changes summary: 1 artifact changed\nChanged leaf types summary: 0 leaf type changed\nRemoved/Changed/Added functions summary: 0 Removed, 0 Changed, 1 Added function\nRemoved/Changed/Added variables summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 Added function:\n\n  [A] 'function int f_new(int)'    {f_new}\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_func_added/v1/include --headers-dir2 /data/calib/c_func_added/v2/include --leaf-changes-only --harmless /data/calib/c_func_added/v1/lib.so /data/calib/c_func_added/v2/lib.so"
+  },
+  "no_hdrs": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 0 Changed, 1 Added function\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 Added function:\n\n  [A] 'function int f_new(int)'    {f_new}\n\n",
+   "err": "",
+   "cmd": "abidiff (no headers-dir)"
+  }
+ },
+ "c_func_removed": {
+  "case_meta": {
+   "lang": "c",
+   "truth": "function_removed",
+   "breaks": true,
+   "note": "exported function removed"
+  },
+  "default": {
+   "rc": 12,
+   "out": "Functions changes summary: 1 Removed, 0 Changed, 0 Added function\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 Removed function:\n\n  [D] 'function int f_old(int)'    {f_old}\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_func_removed/v1/include --headers-dir2 /data/calib/c_func_removed/v2/include /data/calib/c_func_removed/v1/lib.so /data/calib/c_func_removed/v2/lib.so"
+  },
+  "harmless": {
+   "rc": 12,
+   "out": "Functions changes summary: 1 Removed, 0 Changed, 0 Added function\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 Removed function:\n\n  [D] 'function int f_old(int)'    {f_old}\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_func_removed/v1/include --headers-dir2 /data/calib/c_func_removed/v2/include --harmless /data/calib/c_func_removed/v1/lib.so /data/calib/c_func_removed/v2/lib.so"
+  },
+  "leafh": {
+   "rc": 12,
+   "out": "Leaf changes summary: 1 artifact changed\nChanged leaf types summary: 0 leaf type changed\nRemoved/Changed/Added functions summary: 1 Removed, 0 Changed, 0 Added function\nRemoved/Changed/Added variables summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 Removed function:\n\n  [D] 'function int f_old(int)'    {f_old}\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_func_removed/v1/include --headers-dir2 /data/calib/c_func_removed/v2/include --leaf-changes-only --harmless /data/calib/c_func_removed/v1/lib.so /data/calib/c_func_removed/v2/lib.so"
+  },
+  "no_hdrs": {
+   "rc": 12,
+   "out": "Functions changes summary: 1 Removed, 0 Changed, 0 Added function\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 Removed function:\n\n  [D] 'function int f_old(int)'    {f_old}\n\n",
+   "err": "",
+   "cmd": "abidiff (no headers-dir)"
+  }
+ },
+ "c_param_constness": {
+  "case_meta": {
+   "lang": "c",
+   "truth": "function_param_qualifier_changed",
+   "breaks": false,
+   "note": "const added to a pointer param -> ABI-compatible in C, mangling-relevant in C++"
+  },
+  "default": {
+   "rc": 0,
+   "out": "Functions changes summary: 0 Removed, 0 Changed (1 filtered out), 0 Added function\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_param_constness/v1/include --headers-dir2 /data/calib/c_param_constness/v2/include /data/calib/c_param_constness/v1/lib.so /data/calib/c_param_constness/v2/lib.so"
+  },
+  "harmless": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 1 Changed, 0 Added function\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 function with some indirect sub-type change:\n\n  [C] 'function int cnt(char*)' at lib.c:2:1 has some indirect sub-type changes:\n    parameter 1 of type 'char*' changed:\n      in pointed to type 'char':\n        entity changed from 'char' to 'const char'\n        type size hasn't changed\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_param_constness/v1/include --headers-dir2 /data/calib/c_param_constness/v2/include --harmless /data/calib/c_param_constness/v1/lib.so /data/calib/c_param_constness/v2/lib.so"
+  },
+  "leafh": {
+   "rc": 0,
+   "out": "Leaf changes summary: 0 artifact changed\nChanged leaf types summary: 0 leaf type changed\nRemoved/Changed/Added functions summary: 0 Removed, 0 Changed, 0 Added function\nRemoved/Changed/Added variables summary: 0 Removed, 0 Changed, 0 Added variable\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_param_constness/v1/include --headers-dir2 /data/calib/c_param_constness/v2/include --leaf-changes-only --harmless /data/calib/c_param_constness/v1/lib.so /data/calib/c_param_constness/v2/lib.so"
+  },
+  "no_hdrs": {
+   "rc": 0,
+   "out": "Functions changes summary: 0 Removed, 0 Changed (1 filtered out), 0 Added function\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n",
+   "err": "",
+   "cmd": "abidiff (no headers-dir)"
+  }
+ },
+ "c_inline_body_changed": {
+  "case_meta": {
+   "lang": "c",
+   "truth": "inline_body_changed",
+   "breaks": true,
+   "note": "body of a header inline fn changes; NO type or symbol change. Breaks any client that already inlined the old body."
+  },
+  "default": {
+   "rc": 0,
+   "out": "",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_inline_body_changed/v1/include --headers-dir2 /data/calib/c_inline_body_changed/v2/include /data/calib/c_inline_body_changed/v1/lib.so /data/calib/c_inline_body_changed/v2/lib.so"
+  },
+  "harmless": {
+   "rc": 0,
+   "out": "",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_inline_body_changed/v1/include --headers-dir2 /data/calib/c_inline_body_changed/v2/include --harmless /data/calib/c_inline_body_changed/v1/lib.so /data/calib/c_inline_body_changed/v2/lib.so"
+  },
+  "leafh": {
+   "rc": 0,
+   "out": "",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_inline_body_changed/v1/include --headers-dir2 /data/calib/c_inline_body_changed/v2/include --leaf-changes-only --harmless /data/calib/c_inline_body_changed/v1/lib.so /data/calib/c_inline_body_changed/v2/lib.so"
+  },
+  "no_hdrs": {
+   "rc": 0,
+   "out": "",
+   "err": "",
+   "cmd": "abidiff (no headers-dir)"
+  }
+ },
+ "c_macro_value_changed": {
+  "case_meta": {
+   "lang": "c",
+   "truth": "macro_value_changed",
+   "breaks": true,
+   "note": "public macro constant changes; invisible in DWARF types/symbols"
+  },
+  "default": {
+   "rc": 0,
+   "out": "",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_macro_value_changed/v1/include --headers-dir2 /data/calib/c_macro_value_changed/v2/include /data/calib/c_macro_value_changed/v1/lib.so /data/calib/c_macro_value_changed/v2/lib.so"
+  },
+  "harmless": {
+   "rc": 0,
+   "out": "",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_macro_value_changed/v1/include --headers-dir2 /data/calib/c_macro_value_changed/v2/include --harmless /data/calib/c_macro_value_changed/v1/lib.so /data/calib/c_macro_value_changed/v2/lib.so"
+  },
+  "leafh": {
+   "rc": 0,
+   "out": "",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_macro_value_changed/v1/include --headers-dir2 /data/calib/c_macro_value_changed/v2/include --leaf-changes-only --harmless /data/calib/c_macro_value_changed/v1/lib.so /data/calib/c_macro_value_changed/v2/lib.so"
+  },
+  "no_hdrs": {
+   "rc": 0,
+   "out": "",
+   "err": "",
+   "cmd": "abidiff (no headers-dir)"
+  }
+ },
+ "c_no_change": {
+  "case_meta": {
+   "lang": "c",
+   "truth": "none",
+   "breaks": false,
+   "note": "control: identical sources"
+  },
+  "default": {
+   "rc": 0,
+   "out": "",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_no_change/v1/include --headers-dir2 /data/calib/c_no_change/v2/include /data/calib/c_no_change/v1/lib.so /data/calib/c_no_change/v2/lib.so"
+  },
+  "harmless": {
+   "rc": 0,
+   "out": "",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_no_change/v1/include --headers-dir2 /data/calib/c_no_change/v2/include --harmless /data/calib/c_no_change/v1/lib.so /data/calib/c_no_change/v2/lib.so"
+  },
+  "leafh": {
+   "rc": 0,
+   "out": "",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/c_no_change/v1/include --headers-dir2 /data/calib/c_no_change/v2/include --leaf-changes-only --harmless /data/calib/c_no_change/v1/lib.so /data/calib/c_no_change/v2/lib.so"
+  },
+  "no_hdrs": {
+   "rc": 0,
+   "out": "",
+   "err": "",
+   "cmd": "abidiff (no headers-dir)"
+  }
+ },
+ "cxx_virtual_added_end": {
+  "case_meta": {
+   "lang": "cxx",
+   "truth": "vtable_virtual_added_end",
+   "breaks": true,
+   "note": "virtual appended -> vtable grows; breaks subclasses, not plain callers"
+  },
+  "default": {
+   "rc": 12,
+   "out": "Functions changes summary: 0 Removed, 1 Changed (4 filtered out), 1 Added functions\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 Added function:\n\n  [A] 'method virtual int Shape::centroid() const'    {_ZNK5Shape8centroidEv}\n    note that this adds a new entry to the vtable of class Shape\n\n1 function with some indirect sub-type change:\n\n  [C] 'method virtual int Shape::perimeter() const' at lib.cpp:4:1 has some indirect sub-type changes:\n    implicit parameter 0 of type 'const Shape*' has sub-type changes:\n      in pointed to type 'const Shape':\n        in unqualified underlying type 'class Shape' at lib.h:3:1:\n          type size hasn't changed\n          1 member function insertion:\n            'method virtual int Shape::centroid() const' at lib.cpp:5:1, virtual at voffset 4/4    {_ZNK5Shape8centroidEv}\n          no member function changes (5 filtered);\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/cxx_virtual_added_end/v1/include --headers-dir2 /data/calib/cxx_virtual_added_end/v2/include /data/calib/cxx_virtual_added_end/v1/lib.so /data/calib/cxx_virtual_added_end/v2/lib.so"
+  },
+  "harmless": {
+   "rc": 12,
+   "out": "Functions changes summary: 0 Removed, 5 Changed, 1 Added functions\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 Added function:\n\n  [A] 'method virtual int Shape::centroid() const'    {_ZNK5Shape8centroidEv}\n    note that this adds a new entry to the vtable of class Shape\n\n5 functions with some indirect sub-type change:\n\n  [C] 'method virtual int Shape::area() const' at lib.cpp:3:1 has some indirect sub-type changes:\n    implicit parameter 0 of type 'const Shape*' has sub-type changes:\n      in pointed to type 'const Shape':\n        in unqualified underlying type 'class Shape' at lib.h:3:1:\n          type size hasn't changed\n          1 member function insertion:\n            'method virtual int Shape::centroid() const' at lib.cpp:5:1, virtual at voffset 4/4    {_ZNK5Shape8centroidEv}\n          5 member function changes:\n            'method virtual int Shape::area() const' has some sub-type changes:\n              implicit parameter 0 of type 'const Shape*' has sub-type changes:\n                in pointed to type 'const Shape':\n                  unqualified underlying type 'class Shape' changed, as being reported\n            'method virtual int Shape::perimeter() const' has some sub-type changes:\n              implicit parameter 0 of type 'const Shape*' has sub-type changes:\n                in pointed to type 'const Shape':\n                  unqualified underlying type 'class Shape' changed, as being reported\n            'method virtual Shape::~Shape()' has some sub-type changes:\n              implicit parameter 0 of type 'Shape*' has sub-type changes:\n                pointed to type 'class Shape' changed, as being reported\n            'method virtual Shape::~Shape()' has some sub-type changes:\n              implicit parameter 0 of type 'Shape*' has sub-type changes:\n                pointed to type 'class Shape' changed, as being reported\n            'method virtual Shape::~Shape(int)' has some sub-type changes:\n              implicit parameter 0 of type 'Shape*' has sub-type changes:\n                pointed to type 'class Shape' changed, as being reported\n\n  [C] 'method virtual int Shape::perimeter() const' at lib.cpp:4:1 has some indirect sub-type changes:\n    implicit parameter 0 of type 'const Shape*' has sub-type changes:\n      in pointed to type 'const Shape':\n        unqualified underlying type 'class Shape' changed at lib.h:3:1, as reported earlier\n\n  [C] 'method virtual Shape::~Shape()' at lib.cpp:2:1 has some indirect sub-type changes:\n    implicit parameter 0 of type 'Shape*' has sub-type changes:\n      pointed to type 'class Shape' changed at lib.h:3:1, as reported earlier\n\n  [C] 'method virtual Shape::~Shape()' at lib.cpp:2:1 has some indirect sub-type changes:\n    implicit parameter 0 of type 'Shape*' has sub-type changes:\n      pointed to type 'class Shape' changed at lib.h:3:1, as reported earlier\n\n  [C] 'function Shape* make_shape(void)' at lib.cpp:5:1 has some indirect sub-type changes:\n    return type changed:\n      pointed to type 'class Shape' changed at lib.h:3:1, as reported earlier\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/cxx_virtual_added_end/v1/include --headers-dir2 /data/calib/cxx_virtual_added_end/v2/include --harmless /data/calib/cxx_virtual_added_end/v1/lib.so /data/calib/cxx_virtual_added_end/v2/lib.so"
+  },
+  "leafh": {
+   "rc": 12,
+   "out": "Leaf changes summary: 2 artifacts changed\nChanged leaf types summary: 1 leaf type changed\nRemoved/Changed/Added functions summary: 0 Removed, 0 Changed, 1 Added function\nRemoved/Changed/Added variables summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 Added function:\n\n  [A] 'method virtual int Shape::centroid() const'    {_ZNK5Shape8centroidEv}\n    note that this adds a new entry to the vtable of class Shape\n\n'class Shape at lib.h:3:1' changed:\n  type size hasn't changed\n  1 member function insertion:\n    'method virtual int Shape::centroid() const' at lib.cpp:5:1, virtual at voffset 4/4    {_ZNK5Shape8centroidEv}\n  there are member function changes:\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/cxx_virtual_added_end/v1/include --headers-dir2 /data/calib/cxx_virtual_added_end/v2/include --leaf-changes-only --harmless /data/calib/cxx_virtual_added_end/v1/lib.so /data/calib/cxx_virtual_added_end/v2/lib.so"
+  },
+  "no_hdrs": {
+   "rc": 12,
+   "out": "Functions changes summary: 0 Removed, 1 Changed (4 filtered out), 1 Added functions\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 Added function:\n\n  [A] 'method virtual int Shape::centroid() const'    {_ZNK5Shape8centroidEv}\n    note that this adds a new entry to the vtable of class Shape\n\n1 function with some indirect sub-type change:\n\n  [C] 'method virtual int Shape::perimeter() const' at lib.cpp:4:1 has some indirect sub-type changes:\n    implicit parameter 0 of type 'const Shape*' has sub-type changes:\n      in pointed to type 'const Shape':\n        in unqualified underlying type 'class Shape' at lib.h:3:1:\n          type size hasn't changed\n          1 member function insertion:\n            'method virtual int Shape::centroid() const' at lib.cpp:5:1, virtual at voffset 4/4    {_ZNK5Shape8centroidEv}\n          no member function changes (5 filtered);\n\n",
+   "err": "",
+   "cmd": "abidiff (no headers-dir)"
+  }
+ },
+ "cxx_virtual_added_middle": {
+  "case_meta": {
+   "lang": "cxx",
+   "truth": "vtable_virtual_added_middle",
+   "breaks": true,
+   "note": "virtual inserted mid-vtable -> every later slot index shifts"
+  },
+  "default": {
+   "rc": 12,
+   "out": "Functions changes summary: 0 Removed, 1 Changed (4 filtered out), 1 Added functions\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 Added function:\n\n  [A] 'method virtual int Shape::centroid() const'    {_ZNK5Shape8centroidEv}\n    note that this adds a new entry to the vtable of class Shape\n\n1 function with some indirect sub-type change:\n\n  [C] 'method virtual int Shape::area() const' at lib.cpp:3:1 has some indirect sub-type changes:\n    the vtable offset of method virtual int Shape::area() const changed from 2 to 3\n      note that this is an ABI incompatible change to the vtable of class Shape\n    implicit parameter 0 of type 'const Shape*' has sub-type changes:\n      in pointed to type 'const Shape':\n        in unqualified underlying type 'class Shape' at lib.h:3:1:\n          type size hasn't changed\n          1 member function insertion:\n            'method virtual int Shape::centroid() const' at lib.cpp:3:1, virtual at voffset 2/4    {_ZNK5Shape8centroidEv}\n          1 member function changes (4 filtered):\n            'method virtual int Shape::perimeter() const' has some sub-type changes:\n              the vtable offset of method virtual int Shape::perimeter() const changed from 3 to 4\n                note that this is an ABI incompatible change to the vtable of class Shape\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/cxx_virtual_added_middle/v1/include --headers-dir2 /data/calib/cxx_virtual_added_middle/v2/include /data/calib/cxx_virtual_added_middle/v1/lib.so /data/calib/cxx_virtual_added_middle/v2/lib.so"
+  },
+  "harmless": {
+   "rc": 12,
+   "out": "Functions changes summary: 0 Removed, 5 Changed, 1 Added functions\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 Added function:\n\n  [A] 'method virtual int Shape::centroid() const'    {_ZNK5Shape8centroidEv}\n    note that this adds a new entry to the vtable of class Shape\n\n5 functions with some indirect sub-type change:\n\n  [C] 'method virtual int Shape::area() const' at lib.cpp:3:1 has some indirect sub-type changes:\n    the vtable offset of method virtual int Shape::area() const changed from 2 to 3\n      note that this is an ABI incompatible change to the vtable of class Shape\n    implicit parameter 0 of type 'const Shape*' has sub-type changes:\n      in pointed to type 'const Shape':\n        in unqualified underlying type 'class Shape' at lib.h:3:1:\n          type size hasn't changed\n          1 member function insertion:\n            'method virtual int Shape::centroid() const' at lib.cpp:3:1, virtual at voffset 2/4    {_ZNK5Shape8centroidEv}\n          5 member function changes:\n            'method virtual int Shape::area() const' has some sub-type changes:\n              the vtable offset of method virtual int Shape::area() const changed from 2 to 3\n                note that this is an ABI incompatible change to the vtable of class Shape\n              implicit parameter 0 of type 'const Shape*' has sub-type changes:\n                in pointed to type 'const Shape':\n                  unqualified underlying type 'class Shape' changed, as being reported\n            'method virtual int Shape::perimeter() const' has some sub-type changes:\n              the vtable offset of method virtual int Shape::perimeter() const changed from 3 to 4\n                note that this is an ABI incompatible change to the vtable of class Shape\n              implicit parameter 0 of type 'const Shape*' has sub-type changes:\n                in pointed to type 'const Shape':\n                  unqualified underlying type 'class Shape' changed, as being reported\n            'method virtual Shape::~Shape()' has some sub-type changes:\n              implicit parameter 0 of type 'Shape*' has sub-type changes:\n                pointed to type 'class Shape' changed, as being reported\n            'method virtual Shape::~Shape()' has some sub-type changes:\n              implicit parameter 0 of type 'Shape*' has sub-type changes:\n                pointed to type 'class Shape' changed, as being reported\n            'method virtual Shape::~Shape(int)' has some sub-type changes:\n              implicit parameter 0 of type 'Shape*' has sub-type changes:\n                pointed to type 'class Shape' changed, as being reported\n\n  [C] 'method virtual int Shape::perimeter() const' at lib.cpp:4:1 has some indirect sub-type changes:\n    the vtable offset of method virtual int Shape::perimeter() const changed from 3 to 4\n      note that this is an ABI incompatible change to the vtable of class Shape\n    implicit parameter 0 of type 'const Shape*' has sub-type changes:\n      in pointed to type 'const Shape':\n        unqualified underlying type 'class Shape' changed at lib.h:3:1, as reported earlier\n\n  [C] 'method virtual Shape::~Shape()' at lib.cpp:2:1 has some indirect sub-type changes:\n    implicit parameter 0 of type 'Shape*' has sub-type changes:\n      pointed to type 'class Shape' changed at lib.h:3:1, as reported earlier\n\n  [C] 'method virtual Shape::~Shape()' at lib.cpp:2:1 has some indirect sub-type changes:\n    implicit parameter 0 of type 'Shape*' has sub-type changes:\n      pointed to type 'class Shape' changed at lib.h:3:1, as reported earlier\n\n  [C] 'function Shape* make_shape(void)' at lib.cpp:5:1 has some indirect sub-type changes:\n    return type changed:\n      pointed to type 'class Shape' changed at lib.h:3:1, as reported earlier\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/cxx_virtual_added_middle/v1/include --headers-dir2 /data/calib/cxx_virtual_added_middle/v2/include --harmless /data/calib/cxx_virtual_added_middle/v1/lib.so /data/calib/cxx_virtual_added_middle/v2/lib.so"
+  },
+  "leafh": {
+   "rc": 12,
+   "out": "Leaf changes summary: 4 artifacts changed\nChanged leaf types summary: 1 leaf type changed\nRemoved/Changed/Added functions summary: 0 Removed, 2 Changed, 1 Added function\nRemoved/Changed/Added variables summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 Added function:\n\n  [A] 'method virtual int Shape::centroid() const'    {_ZNK5Shape8centroidEv}\n    note that this adds a new entry to the vtable of class Shape\n\n2 functions with some sub-type change:\n\n  [C] 'method virtual int Shape::area() const' at lib.cpp:4:1 has some sub-type changes:\n    the vtable offset of method virtual int Shape::area() const changed from 2 to 3\n      note that this is an ABI incompatible change to the vtable of class Shape\n\n  [C] 'method virtual int Shape::perimeter() const' at lib.cpp:5:1 has some sub-type changes:\n    the vtable offset of method virtual int Shape::perimeter() const changed from 3 to 4\n      note that this is an ABI incompatible change to the vtable of class Shape\n\n'class Shape at lib.h:3:1' changed:\n  type size hasn't changed\n  1 member function insertion:\n    'method virtual int Shape::centroid() const' at lib.cpp:3:1, virtual at voffset 2/4    {_ZNK5Shape8centroidEv}\n  there are member function changes:\n    'method virtual int Shape::area() const' has some changes:\n      the vtable offset of method virtual int Shape::area() const changed from 2 to 3\n        note that this is an ABI incompatible change to the vtable of class Shape\n    'method virtual int Shape::perimeter() const' has some changes:\n      the vtable offset of method virtual int Shape::perimeter() const changed from 3 to 4\n        note that this is an ABI incompatible change to the vtable of class Shape\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/cxx_virtual_added_middle/v1/include --headers-dir2 /data/calib/cxx_virtual_added_middle/v2/include --leaf-changes-only --harmless /data/calib/cxx_virtual_added_middle/v1/lib.so /data/calib/cxx_virtual_added_middle/v2/lib.so"
+  },
+  "no_hdrs": {
+   "rc": 12,
+   "out": "Functions changes summary: 0 Removed, 1 Changed (4 filtered out), 1 Added functions\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 Added function:\n\n  [A] 'method virtual int Shape::centroid() const'    {_ZNK5Shape8centroidEv}\n    note that this adds a new entry to the vtable of class Shape\n\n1 function with some indirect sub-type change:\n\n  [C] 'method virtual int Shape::area() const' at lib.cpp:3:1 has some indirect sub-type changes:\n    the vtable offset of method virtual int Shape::area() const changed from 2 to 3\n      note that this is an ABI incompatible change to the vtable of class Shape\n    implicit parameter 0 of type 'const Shape*' has sub-type changes:\n      in pointed to type 'const Shape':\n        in unqualified underlying type 'class Shape' at lib.h:3:1:\n          type size hasn't changed\n          1 member function insertion:\n            'method virtual int Shape::centroid() const' at lib.cpp:3:1, virtual at voffset 2/4    {_ZNK5Shape8centroidEv}\n          1 member function changes (4 filtered):\n            'method virtual int Shape::perimeter() const' has some sub-type changes:\n              the vtable offset of method virtual int Shape::perimeter() const changed from 3 to 4\n                note that this is an ABI incompatible change to the vtable of class Shape\n\n",
+   "err": "",
+   "cmd": "abidiff (no headers-dir)"
+  }
+ },
+ "cxx_virtual_removed": {
+  "case_meta": {
+   "lang": "cxx",
+   "truth": "vtable_virtual_removed",
+   "breaks": true,
+   "note": "virtual removed from vtable"
+  },
+  "default": {
+   "rc": 12,
+   "out": "Functions changes summary: 1 Removed, 1 Changed (3 filtered out), 0 Added functions\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 Removed function:\n\n  [D] 'method virtual int Shape::perimeter() const'    {_ZNK5Shape9perimeterEv}\n    note that this removes an entry from the vtable of class Shape\n\n1 function with some indirect sub-type change:\n\n  [C] 'method virtual int Shape::area() const' at lib.cpp:3:1 has some indirect sub-type changes:\n    implicit parameter 0 of type 'const Shape*' has sub-type changes:\n      in pointed to type 'const Shape':\n        in unqualified underlying type 'class Shape' at lib.h:3:1:\n          type size hasn't changed\n          1 member function deletion:\n            'method virtual int Shape::perimeter() const' at lib.cpp:4:1, virtual at voffset 3/3    {_ZNK5Shape9perimeterEv}\n          no member function changes (4 filtered);\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/cxx_virtual_removed/v1/include --headers-dir2 /data/calib/cxx_virtual_removed/v2/include /data/calib/cxx_virtual_removed/v1/lib.so /data/calib/cxx_virtual_removed/v2/lib.so"
+  },
+  "harmless": {
+   "rc": 12,
+   "out": "Functions changes summary: 1 Removed, 4 Changed, 0 Added functions\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 Removed function:\n\n  [D] 'method virtual int Shape::perimeter() const'    {_ZNK5Shape9perimeterEv}\n    note that this removes an entry from the vtable of class Shape\n\n4 functions with some indirect sub-type change:\n\n  [C] 'method virtual int Shape::area() const' at lib.cpp:3:1 has some indirect sub-type changes:\n    implicit parameter 0 of type 'const Shape*' has sub-type changes:\n      in pointed to type 'const Shape':\n        in unqualified underlying type 'class Shape' at lib.h:3:1:\n          type size hasn't changed\n          1 member function deletion:\n            'method virtual int Shape::perimeter() const' at lib.cpp:4:1, virtual at voffset 3/3    {_ZNK5Shape9perimeterEv}\n          4 member function changes:\n            'method virtual int Shape::area() const' has some sub-type changes:\n              implicit parameter 0 of type 'const Shape*' has sub-type changes:\n                in pointed to type 'const Shape':\n                  unqualified underlying type 'class Shape' changed, as being reported\n            'method virtual Shape::~Shape()' has some sub-type changes:\n              implicit parameter 0 of type 'Shape*' has sub-type changes:\n                pointed to type 'class Shape' changed, as being reported\n            'method virtual Shape::~Shape()' has some sub-type changes:\n              implicit parameter 0 of type 'Shape*' has sub-type changes:\n                pointed to type 'class Shape' changed, as being reported\n            'method virtual Shape::~Shape(int)' has some sub-type changes:\n              implicit parameter 0 of type 'Shape*' has sub-type changes:\n                pointed to type 'class Shape' changed, as being reported\n\n  [C] 'method virtual Shape::~Shape()' at lib.cpp:2:1 has some indirect sub-type changes:\n    implicit parameter 0 of type 'Shape*' has sub-type changes:\n      pointed to type 'class Shape' changed at lib.h:3:1, as reported earlier\n\n  [C] 'method virtual Shape::~Shape()' at lib.cpp:2:1 has some indirect sub-type changes:\n    implicit parameter 0 of type 'Shape*' has sub-type changes:\n      pointed to type 'class Shape' changed at lib.h:3:1, as reported earlier\n\n  [C] 'function Shape* make_shape(void)' at lib.cpp:5:1 has some indirect sub-type changes:\n    return type changed:\n      pointed to type 'class Shape' changed at lib.h:3:1, as reported earlier\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/cxx_virtual_removed/v1/include --headers-dir2 /data/calib/cxx_virtual_removed/v2/include --harmless /data/calib/cxx_virtual_removed/v1/lib.so /data/calib/cxx_virtual_removed/v2/lib.so"
+  },
+  "leafh": {
+   "rc": 12,
+   "out": "Leaf changes summary: 2 artifacts changed\nChanged leaf types summary: 1 leaf type changed\nRemoved/Changed/Added functions summary: 1 Removed, 0 Changed, 0 Added function\nRemoved/Changed/Added variables summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 Removed function:\n\n  [D] 'method virtual int Shape::perimeter() const'    {_ZNK5Shape9perimeterEv}\n    note that this removes an entry from the vtable of class Shape\n\n'class Shape at lib.h:3:1' changed:\n  type size hasn't changed\n  1 member function deletion:\n    'method virtual int Shape::perimeter() const' at lib.cpp:4:1, virtual at voffset 3/3    {_ZNK5Shape9perimeterEv}\n  there are member function changes:\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/cxx_virtual_removed/v1/include --headers-dir2 /data/calib/cxx_virtual_removed/v2/include --leaf-changes-only --harmless /data/calib/cxx_virtual_removed/v1/lib.so /data/calib/cxx_virtual_removed/v2/lib.so"
+  },
+  "no_hdrs": {
+   "rc": 12,
+   "out": "Functions changes summary: 1 Removed, 1 Changed (3 filtered out), 0 Added functions\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 Removed function:\n\n  [D] 'method virtual int Shape::perimeter() const'    {_ZNK5Shape9perimeterEv}\n    note that this removes an entry from the vtable of class Shape\n\n1 function with some indirect sub-type change:\n\n  [C] 'method virtual int Shape::area() const' at lib.cpp:3:1 has some indirect sub-type changes:\n    implicit parameter 0 of type 'const Shape*' has sub-type changes:\n      in pointed to type 'const Shape':\n        in unqualified underlying type 'class Shape' at lib.h:3:1:\n          type size hasn't changed\n          1 member function deletion:\n            'method virtual int Shape::perimeter() const' at lib.cpp:4:1, virtual at voffset 3/3    {_ZNK5Shape9perimeterEv}\n          no member function changes (4 filtered);\n\n",
+   "err": "",
+   "cmd": "abidiff (no headers-dir)"
+  }
+ },
+ "cxx_made_polymorphic": {
+  "case_meta": {
+   "lang": "cxx",
+   "truth": "class_made_polymorphic",
+   "breaks": true,
+   "note": "non-polymorphic class gains a vptr -> layout shifts by a pointer"
+  },
+  "default": {
+   "rc": 12,
+   "out": "Functions changes summary: 0 Removed, 1 Changed (1 filtered out), 2 Added functions\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\nFunction symbols changes summary: 0 Removed, 0 Added function symbol not referenced by debug info\nVariable symbols changes summary: 0 Removed, 3 Added variable symbols not referenced by debug info\n\n2 Added functions:\n\n  [A] 'method virtual Box::~Box()'    {_ZN3BoxD0Ev}\n    note that this adds a new entry to the vtable of class Box\n  [A] 'method virtual Box::~Box()'    {_ZN3BoxD2Ev, aliases _ZN3BoxD1Ev}\n    note that this adds a new entry to the vtable of class Box\n\n1 function with some indirect sub-type change:\n\n  [C] 'method int Box::area() const' at lib.cpp:2:1 has some indirect sub-type changes:\n    method int Box::area() const is now declared virtual\n      note that a vtable was added to class Box\n    implicit parameter 0 of type 'const Box*' has sub-type changes:\n      in pointed to type 'const Box':\n        in unqualified underlying type 'class Box' at lib.h:3:1:\n          type size changed from 64 to 128 (in bits)\n          4 member function insertions:\n            'method virtual int Box::area() const' at lib.cpp:2:1, virtual at voffset 0/0    {_ZNK3Box4areaEv}\n            'method virtual Box::~Box()' at lib.cpp:3:1    {_ZN3BoxD0Ev}\n            'method virtual Box::~Box()' at lib.cpp:3:1    {_ZN3BoxD2Ev}\n            'method virtual Box::~Box(int)' at lib.cpp:3:1\n          2 data member changes:\n            'int w' offset changed from 0 to 64 (in bits) (by +64 bits)\n            'int h' offset changed from 32 to 96 (in bits) (by +64 bits)\n\n3 Added variable symbols not referenced by debug info:\n\n  [A] _ZTI3Box\n  [A] _ZTS3Box\n  [A] _ZTV3Box\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/cxx_made_polymorphic/v1/include --headers-dir2 /data/calib/cxx_made_polymorphic/v2/include /data/calib/cxx_made_polymorphic/v1/lib.so /data/calib/cxx_made_polymorphic/v2/lib.so"
+  },
+  "harmless": {
+   "rc": 12,
+   "out": "Functions changes summary: 0 Removed, 2 Changed, 2 Added functions\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\nFunction symbols changes summary: 0 Removed, 0 Added function symbol not referenced by debug info\nVariable symbols changes summary: 0 Removed, 3 Added variable symbols not referenced by debug info\n\n2 Added functions:\n\n  [A] 'method virtual Box::~Box()'    {_ZN3BoxD0Ev}\n    note that this adds a new entry to the vtable of class Box\n  [A] 'method virtual Box::~Box()'    {_ZN3BoxD2Ev, aliases _ZN3BoxD1Ev}\n    note that this adds a new entry to the vtable of class Box\n\n2 functions with some indirect sub-type change:\n\n  [C] 'method int Box::area() const' at lib.cpp:2:1 has some indirect sub-type changes:\n    method int Box::area() const is now declared virtual\n      note that a vtable was added to class Box\n    implicit parameter 0 of type 'const Box*' has sub-type changes:\n      in pointed to type 'const Box':\n        in unqualified underlying type 'class Box' at lib.h:3:1:\n          type size changed from 64 to 128 (in bits)\n          4 member function insertions:\n            'method virtual int Box::area() const' at lib.cpp:2:1, virtual at voffset 0/0    {_ZNK3Box4areaEv}\n            'method virtual Box::~Box()' at lib.cpp:3:1    {_ZN3BoxD0Ev}\n            'method virtual Box::~Box()' at lib.cpp:3:1    {_ZN3BoxD2Ev}\n            'method virtual Box::~Box(int)' at lib.cpp:3:1\n          2 data member changes:\n            'int w' offset changed from 0 to 64 (in bits) (by +64 bits)\n            'int h' offset changed from 32 to 96 (in bits) (by +64 bits)\n\n  [C] 'function Box* make_box(void)' at lib.cpp:3:1 has some indirect sub-type changes:\n    return type changed:\n      pointed to type 'class Box' changed at lib.h:3:1, as reported earlier\n\n3 Added variable symbols not referenced by debug info:\n\n  [A] _ZTI3Box\n  [A] _ZTS3Box\n  [A] _ZTV3Box\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/cxx_made_polymorphic/v1/include --headers-dir2 /data/calib/cxx_made_polymorphic/v2/include --harmless /data/calib/cxx_made_polymorphic/v1/lib.so /data/calib/cxx_made_polymorphic/v2/lib.so"
+  },
+  "leafh": {
+   "rc": 12,
+   "out": "Leaf changes summary: 7 artifacts changed\nChanged leaf types summary: 1 leaf type changed\nRemoved/Changed/Added functions summary: 0 Removed, 1 Changed, 2 Added functions\nRemoved/Changed/Added variables summary: 0 Removed, 0 Changed, 0 Added variable\nFunction symbols changes summary: 0 Removed, 0 Added function symbol not referenced by debug info\nVariable symbols changes summary: 0 Removed, 3 Added variable symbols not referenced by debug info\n\n2 Added functions:\n\n  [A] 'method virtual Box::~Box()'    {_ZN3BoxD0Ev}\n    note that this adds a new entry to the vtable of class Box\n  [A] 'method virtual Box::~Box()'    {_ZN3BoxD2Ev, aliases _ZN3BoxD1Ev}\n    note that this adds a new entry to the vtable of class Box\n\n1 function with some sub-type change:\n\n  [C] 'method int Box::area() const' at lib.cpp:2:1 has some sub-type changes:\n    method int Box::area() const is now declared virtual\n      note that a vtable was added to class Box\n\n3 Added variable symbols not referenced by debug info:\n\n  [A] _ZTI3Box\n  [A] _ZTS3Box\n  [A] _ZTV3Box\n\n'class Box at lib.h:3:1' changed:\n  type size changed from 64 to 128 (in bits)\n  4 member function insertions:\n    'method virtual int Box::area() const' at lib.cpp:2:1, virtual at voffset 0/0    {_ZNK3Box4areaEv}\n    'method virtual Box::~Box(int)' at lib.cpp:3:1\n    'method virtual Box::~Box()' at lib.cpp:3:1    {_ZN3BoxD2Ev}\n    'method virtual Box::~Box()' at lib.cpp:3:1    {_ZN3BoxD0Ev}\n  there are data member changes:\n    'int w' offset changed from 0 to 64 (in bits) (by +64 bits)\n    'int h' offset changed from 32 to 96 (in bits) (by +64 bits)\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/cxx_made_polymorphic/v1/include --headers-dir2 /data/calib/cxx_made_polymorphic/v2/include --leaf-changes-only --harmless /data/calib/cxx_made_polymorphic/v1/lib.so /data/calib/cxx_made_polymorphic/v2/lib.so"
+  },
+  "no_hdrs": {
+   "rc": 12,
+   "out": "Functions changes summary: 0 Removed, 1 Changed (1 filtered out), 2 Added functions\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\nFunction symbols changes summary: 0 Removed, 0 Added function symbol not referenced by debug info\nVariable symbols changes summary: 0 Removed, 3 Added variable symbols not referenced by debug info\n\n2 Added functions:\n\n  [A] 'method virtual Box::~Box()'    {_ZN3BoxD0Ev}\n    note that this adds a new entry to the vtable of class Box\n  [A] 'method virtual Box::~Box()'    {_ZN3BoxD2Ev, aliases _ZN3BoxD1Ev}\n    note that this adds a new entry to the vtable of class Box\n\n1 function with some indirect sub-type change:\n\n  [C] 'method int Box::area() const' at lib.cpp:2:1 has some indirect sub-type changes:\n    method int Box::area() const is now declared virtual\n      note that a vtable was added to class Box\n    implicit parameter 0 of type 'const Box*' has sub-type changes:\n      in pointed to type 'const Box':\n        in unqualified underlying type 'class Box' at lib.h:3:1:\n          type size changed from 64 to 128 (in bits)\n          4 member function insertions:\n            'method virtual int Box::area() const' at lib.cpp:2:1, virtual at voffset 0/0    {_ZNK3Box4areaEv}\n            'method virtual Box::~Box()' at lib.cpp:3:1    {_ZN3BoxD0Ev}\n            'method virtual Box::~Box()' at lib.cpp:3:1    {_ZN3BoxD2Ev}\n            'method virtual Box::~Box(int)' at lib.cpp:3:1\n          2 data member changes:\n            'int w' offset changed from 0 to 64 (in bits) (by +64 bits)\n            'int h' offset changed from 32 to 96 (in bits) (by +64 bits)\n\n3 Added variable symbols not referenced by debug info:\n\n  [A] _ZTI3Box\n  [A] _ZTS3Box\n  [A] _ZTV3Box\n\n",
+   "err": "",
+   "cmd": "abidiff (no headers-dir)"
+  }
+ },
+ "cxx_base_class_added": {
+  "case_meta": {
+   "lang": "cxx",
+   "truth": "base_class_added",
+   "breaks": true,
+   "note": "base class inserted -> subobject layout and vtable change"
+  },
+  "default": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 1 Changed (2 filtered out), 2 Added functions\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\nFunction symbols changes summary: 0 Removed, 0 Added function symbol not referenced by debug info\nVariable symbols changes summary: 0 Removed, 3 Added variable symbols not referenced by debug info\n\n2 Added functions:\n\n  [A] 'method virtual BaseNew::~BaseNew()'    {_ZN7BaseNewD0Ev}\n    note that this adds a new entry to the vtable of class BaseNew\n  [A] 'method virtual BaseNew::~BaseNew()'    {_ZN7BaseNewD2Ev, aliases _ZN7BaseNewD1Ev}\n    note that this adds a new entry to the vtable of class BaseNew\n\n1 function with some indirect sub-type change:\n\n  [C] 'function Derived* make_d(void)' at lib.cpp:3:1 has some indirect sub-type changes:\n    return type changed:\n      in pointed to type 'class Derived' at lib.h:4:1:\n        type size hasn't changed\n        1 base class insertion:\n          class BaseNew at lib.h:3:1\n        no member function changes (3 filtered);\n        1 data member change:\n          'int a' offset changed from 64 to 96 (in bits) (by +32 bits)\n\n3 Added variable symbols not referenced by debug info:\n\n  [A] _ZTI7BaseNew\n  [A] _ZTS7BaseNew\n  [A] _ZTV7BaseNew\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/cxx_base_class_added/v1/include --headers-dir2 /data/calib/cxx_base_class_added/v2/include /data/calib/cxx_base_class_added/v1/lib.so /data/calib/cxx_base_class_added/v2/lib.so"
+  },
+  "harmless": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 3 Changed, 2 Added functions\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\nFunction symbols changes summary: 0 Removed, 0 Added function symbol not referenced by debug info\nVariable symbols changes summary: 0 Removed, 3 Added variable symbols not referenced by debug info\n\n2 Added functions:\n\n  [A] 'method virtual BaseNew::~BaseNew()'    {_ZN7BaseNewD0Ev}\n    note that this adds a new entry to the vtable of class BaseNew\n  [A] 'method virtual BaseNew::~BaseNew()'    {_ZN7BaseNewD2Ev, aliases _ZN7BaseNewD1Ev}\n    note that this adds a new entry to the vtable of class BaseNew\n\n3 functions with some indirect sub-type change:\n\n  [C] 'method virtual Derived::~Derived()' at lib.cpp:2:1 has some indirect sub-type changes:\n    implicit parameter 0 of type 'Derived*' has sub-type changes:\n      in pointed to type 'class Derived' at lib.h:4:1:\n        type size hasn't changed\n        1 base class insertion:\n          class BaseNew at lib.h:3:1\n        3 member function changes:\n          'method virtual Derived::~Derived()' has some sub-type changes:\n            implicit parameter 0 of type 'Derived*' has sub-type changes:\n              pointed to type 'class Derived' changed, as being reported\n          'method virtual Derived::~Derived()' has some sub-type changes:\n            implicit parameter 0 of type 'Derived*' has sub-type changes:\n              pointed to type 'class Derived' changed, as being reported\n          'method virtual Derived::~Derived(int)' has some sub-type changes:\n            implicit parameter 0 of type 'Derived*' has sub-type changes:\n              pointed to type 'class Derived' changed, as being reported\n        1 data member change:\n          'int a' offset changed from 64 to 96 (in bits) (by +32 bits)\n\n  [C] 'method virtual Derived::~Derived()' at lib.cpp:2:1 has some indirect sub-type changes:\n    implicit parameter 0 of type 'Derived*' has sub-type changes:\n      pointed to type 'class Derived' changed at lib.h:3:1, as reported earlier\n\n  [C] 'function Derived* make_d(void)' at lib.cpp:3:1 has some indirect sub-type changes:\n    return type changed:\n      pointed to type 'class Derived' changed at lib.h:3:1, as reported earlier\n\n3 Added variable symbols not referenced by debug info:\n\n  [A] _ZTI7BaseNew\n  [A] _ZTS7BaseNew\n  [A] _ZTV7BaseNew\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/cxx_base_class_added/v1/include --headers-dir2 /data/calib/cxx_base_class_added/v2/include --harmless /data/calib/cxx_base_class_added/v1/lib.so /data/calib/cxx_base_class_added/v2/lib.so"
+  },
+  "leafh": {
+   "rc": 4,
+   "out": "Leaf changes summary: 6 artifacts changed\nChanged leaf types summary: 1 leaf type changed\nRemoved/Changed/Added functions summary: 0 Removed, 0 Changed, 2 Added functions\nRemoved/Changed/Added variables summary: 0 Removed, 0 Changed, 0 Added variable\nFunction symbols changes summary: 0 Removed, 0 Added function symbol not referenced by debug info\nVariable symbols changes summary: 0 Removed, 3 Added variable symbols not referenced by debug info\n\n2 Added functions:\n\n  [A] 'method virtual BaseNew::~BaseNew()'    {_ZN7BaseNewD0Ev}\n    note that this adds a new entry to the vtable of class BaseNew\n  [A] 'method virtual BaseNew::~BaseNew()'    {_ZN7BaseNewD2Ev, aliases _ZN7BaseNewD1Ev}\n    note that this adds a new entry to the vtable of class BaseNew\n\n3 Added variable symbols not referenced by debug info:\n\n  [A] _ZTI7BaseNew\n  [A] _ZTS7BaseNew\n  [A] _ZTV7BaseNew\n\n'class Derived at lib.h:3:1' changed:\n  type size hasn't changed\n  there are member function changes:\n  there are data member changes:\n    'int a' offset changed from 64 to 96 (in bits) (by +32 bits)\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/cxx_base_class_added/v1/include --headers-dir2 /data/calib/cxx_base_class_added/v2/include --leaf-changes-only --harmless /data/calib/cxx_base_class_added/v1/lib.so /data/calib/cxx_base_class_added/v2/lib.so"
+  },
+  "no_hdrs": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 1 Changed (2 filtered out), 2 Added functions\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\nFunction symbols changes summary: 0 Removed, 0 Added function symbol not referenced by debug info\nVariable symbols changes summary: 0 Removed, 3 Added variable symbols not referenced by debug info\n\n2 Added functions:\n\n  [A] 'method virtual BaseNew::~BaseNew()'    {_ZN7BaseNewD0Ev}\n    note that this adds a new entry to the vtable of class BaseNew\n  [A] 'method virtual BaseNew::~BaseNew()'    {_ZN7BaseNewD2Ev, aliases _ZN7BaseNewD1Ev}\n    note that this adds a new entry to the vtable of class BaseNew\n\n1 function with some indirect sub-type change:\n\n  [C] 'function Derived* make_d(void)' at lib.cpp:3:1 has some indirect sub-type changes:\n    return type changed:\n      in pointed to type 'class Derived' at lib.h:4:1:\n        type size hasn't changed\n        1 base class insertion:\n          class BaseNew at lib.h:3:1\n        no member function changes (3 filtered);\n        1 data member change:\n          'int a' offset changed from 64 to 96 (in bits) (by +32 bits)\n\n3 Added variable symbols not referenced by debug info:\n\n  [A] _ZTI7BaseNew\n  [A] _ZTS7BaseNew\n  [A] _ZTV7BaseNew\n\n",
+   "err": "",
+   "cmd": "abidiff (no headers-dir)"
+  }
+ },
+ "cxx_data_member_added": {
+  "case_meta": {
+   "lang": "cxx",
+   "truth": "struct_field_added",
+   "breaks": true,
+   "note": "private data member added -> class size grows (the classic C++ ABI break)"
+  },
+  "default": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 1 Changed (2 filtered out), 0 Added functions\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 function with some indirect sub-type change:\n\n  [C] 'method Counter::Counter()' at lib.cpp:2:1 has some indirect sub-type changes:\n    implicit parameter 0 of type 'Counter*' has sub-type changes:\n      in pointed to type 'class Counter' at lib.h:3:1:\n        type size changed from 32 to 64 (in bits)\n        1 data member insertion:\n          'int step', at offset 32 (in bits) at lib.h:5:1\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/cxx_data_member_added/v1/include --headers-dir2 /data/calib/cxx_data_member_added/v2/include /data/calib/cxx_data_member_added/v1/lib.so /data/calib/cxx_data_member_added/v2/lib.so"
+  },
+  "harmless": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 3 Changed, 0 Added functions\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n3 functions with some indirect sub-type change:\n\n  [C] 'method Counter::Counter()' at lib.cpp:2:1 has some indirect sub-type changes:\n    implicit parameter 0 of type 'Counter*' has sub-type changes:\n      in pointed to type 'class Counter' at lib.h:3:1:\n        type size changed from 32 to 64 (in bits)\n        1 data member insertion:\n          'int step', at offset 32 (in bits) at lib.h:5:1\n\n  [C] 'method void Counter::bump()' at lib.cpp:3:1 has some indirect sub-type changes:\n    implicit parameter 0 of type 'Counter*' has sub-type changes:\n      pointed to type 'class Counter' changed at lib.h:3:1, as reported earlier\n\n  [C] 'method int Counter::value() const' at lib.cpp:4:1 has some indirect sub-type changes:\n    implicit parameter 0 of type 'const Counter*' has sub-type changes:\n      in pointed to type 'const Counter':\n        unqualified underlying type 'class Counter' changed at lib.h:3:1, as reported earlier\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/cxx_data_member_added/v1/include --headers-dir2 /data/calib/cxx_data_member_added/v2/include --harmless /data/calib/cxx_data_member_added/v1/lib.so /data/calib/cxx_data_member_added/v2/lib.so"
+  },
+  "leafh": {
+   "rc": 4,
+   "out": "Leaf changes summary: 1 artifact changed\nChanged leaf types summary: 1 leaf type changed\nRemoved/Changed/Added functions summary: 0 Removed, 0 Changed, 0 Added function\nRemoved/Changed/Added variables summary: 0 Removed, 0 Changed, 0 Added variable\n\n'class Counter at lib.h:3:1' changed:\n  type size changed from 32 to 64 (in bits)\n  1 data member insertion:\n    'int step', at offset 32 (in bits) at lib.h:5:1\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/cxx_data_member_added/v1/include --headers-dir2 /data/calib/cxx_data_member_added/v2/include --leaf-changes-only --harmless /data/calib/cxx_data_member_added/v1/lib.so /data/calib/cxx_data_member_added/v2/lib.so"
+  },
+  "no_hdrs": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 1 Changed (2 filtered out), 0 Added functions\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 function with some indirect sub-type change:\n\n  [C] 'method Counter::Counter()' at lib.cpp:2:1 has some indirect sub-type changes:\n    implicit parameter 0 of type 'Counter*' has sub-type changes:\n      in pointed to type 'class Counter' at lib.h:3:1:\n        type size changed from 32 to 64 (in bits)\n        1 data member insertion:\n          'int step', at offset 32 (in bits) at lib.h:5:1\n\n",
+   "err": "",
+   "cmd": "abidiff (no headers-dir)"
+  }
+ },
+ "cxx_method_sig_changed": {
+  "case_meta": {
+   "lang": "cxx",
+   "truth": "function_param_type_changed",
+   "breaks": true,
+   "note": "member function signature change -> mangled name changes"
+  },
+  "default": {
+   "rc": 12,
+   "out": "Functions changes summary: 1 Removed, 0 Changed, 1 Added functions\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 Removed function:\n\n  [D] 'method void Counter::bump()'    {_ZN7Counter4bumpEv}\n\n1 Added function:\n\n  [A] 'method void Counter::bump(int)'    {_ZN7Counter4bumpEi}\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/cxx_method_sig_changed/v1/include --headers-dir2 /data/calib/cxx_method_sig_changed/v2/include /data/calib/cxx_method_sig_changed/v1/lib.so /data/calib/cxx_method_sig_changed/v2/lib.so"
+  },
+  "harmless": {
+   "rc": 12,
+   "out": "Functions changes summary: 1 Removed, 0 Changed, 1 Added functions\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 Removed function:\n\n  [D] 'method void Counter::bump()'    {_ZN7Counter4bumpEv}\n\n1 Added function:\n\n  [A] 'method void Counter::bump(int)'    {_ZN7Counter4bumpEi}\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/cxx_method_sig_changed/v1/include --headers-dir2 /data/calib/cxx_method_sig_changed/v2/include --harmless /data/calib/cxx_method_sig_changed/v1/lib.so /data/calib/cxx_method_sig_changed/v2/lib.so"
+  },
+  "leafh": {
+   "rc": 12,
+   "out": "Leaf changes summary: 2 artifacts changed\nChanged leaf types summary: 0 leaf type changed\nRemoved/Changed/Added functions summary: 1 Removed, 0 Changed, 1 Added function\nRemoved/Changed/Added variables summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 Removed function:\n\n  [D] 'method void Counter::bump()'    {_ZN7Counter4bumpEv}\n\n1 Added function:\n\n  [A] 'method void Counter::bump(int)'    {_ZN7Counter4bumpEi}\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/cxx_method_sig_changed/v1/include --headers-dir2 /data/calib/cxx_method_sig_changed/v2/include --leaf-changes-only --harmless /data/calib/cxx_method_sig_changed/v1/lib.so /data/calib/cxx_method_sig_changed/v2/lib.so"
+  },
+  "no_hdrs": {
+   "rc": 12,
+   "out": "Functions changes summary: 1 Removed, 0 Changed, 1 Added functions\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 Removed function:\n\n  [D] 'method void Counter::bump()'    {_ZN7Counter4bumpEv}\n\n1 Added function:\n\n  [A] 'method void Counter::bump(int)'    {_ZN7Counter4bumpEi}\n\n",
+   "err": "",
+   "cmd": "abidiff (no headers-dir)"
+  }
+ },
+ "cxx_nonvirtual_method_added": {
+  "case_meta": {
+   "lang": "cxx",
+   "truth": "method_added_nonvirtual",
+   "breaks": false,
+   "note": "non-virtual method added -> additive, layout untouched"
+  },
+  "default": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 0 Changed, 1 Added function\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 Added function:\n\n  [A] 'method void Counter::reset()'    {_ZN7Counter5resetEv}\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/cxx_nonvirtual_method_added/v1/include --headers-dir2 /data/calib/cxx_nonvirtual_method_added/v2/include /data/calib/cxx_nonvirtual_method_added/v1/lib.so /data/calib/cxx_nonvirtual_method_added/v2/lib.so"
+  },
+  "harmless": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 0 Changed, 1 Added function\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 Added function:\n\n  [A] 'method void Counter::reset()'    {_ZN7Counter5resetEv}\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/cxx_nonvirtual_method_added/v1/include --headers-dir2 /data/calib/cxx_nonvirtual_method_added/v2/include --harmless /data/calib/cxx_nonvirtual_method_added/v1/lib.so /data/calib/cxx_nonvirtual_method_added/v2/lib.so"
+  },
+  "leafh": {
+   "rc": 4,
+   "out": "Leaf changes summary: 1 artifact changed\nChanged leaf types summary: 0 leaf type changed\nRemoved/Changed/Added functions summary: 0 Removed, 0 Changed, 1 Added function\nRemoved/Changed/Added variables summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 Added function:\n\n  [A] 'method void Counter::reset()'    {_ZN7Counter5resetEv}\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/cxx_nonvirtual_method_added/v1/include --headers-dir2 /data/calib/cxx_nonvirtual_method_added/v2/include --leaf-changes-only --harmless /data/calib/cxx_nonvirtual_method_added/v1/lib.so /data/calib/cxx_nonvirtual_method_added/v2/lib.so"
+  },
+  "no_hdrs": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 0 Changed, 1 Added function\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 Added function:\n\n  [A] 'method void Counter::reset()'    {_ZN7Counter5resetEv}\n\n",
+   "err": "",
+   "cmd": "abidiff (no headers-dir)"
+  }
+ },
+ "cxx_enum_class_case_added": {
+  "case_meta": {
+   "lang": "cxx",
+   "truth": "enum_case_added",
+   "breaks": true,
+   "note": "scoped enum gains a case"
+  },
+  "default": {
+   "rc": 0,
+   "out": "Functions changes summary: 0 Removed, 0 Changed (1 filtered out), 0 Added function\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/cxx_enum_class_case_added/v1/include --headers-dir2 /data/calib/cxx_enum_class_case_added/v2/include /data/calib/cxx_enum_class_case_added/v1/lib.so /data/calib/cxx_enum_class_case_added/v2/lib.so"
+  },
+  "harmless": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 1 Changed, 0 Added function\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 function with some indirect sub-type change:\n\n  [C] 'function int apply(Mode)' at lib.cpp:2:1 has some indirect sub-type changes:\n    parameter 1 of type 'enum Mode' has sub-type changes:\n      type size hasn't changed\n      1 enumerator insertion:\n        'Mode::Append' value '2'\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/cxx_enum_class_case_added/v1/include --headers-dir2 /data/calib/cxx_enum_class_case_added/v2/include --harmless /data/calib/cxx_enum_class_case_added/v1/lib.so /data/calib/cxx_enum_class_case_added/v2/lib.so"
+  },
+  "leafh": {
+   "rc": 4,
+   "out": "Leaf changes summary: 1 artifact changed\nChanged leaf types summary: 1 leaf type changed\nRemoved/Changed/Added functions summary: 0 Removed, 0 Changed, 0 Added function\nRemoved/Changed/Added variables summary: 0 Removed, 0 Changed, 0 Added variable\n\n'enum Mode at lib.h:3:1' changed:\n  type size hasn't changed\n  1 enumerator insertion:\n    'Mode::Append' value '2'\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/cxx_enum_class_case_added/v1/include --headers-dir2 /data/calib/cxx_enum_class_case_added/v2/include --leaf-changes-only --harmless /data/calib/cxx_enum_class_case_added/v1/lib.so /data/calib/cxx_enum_class_case_added/v2/lib.so"
+  },
+  "no_hdrs": {
+   "rc": 0,
+   "out": "Functions changes summary: 0 Removed, 0 Changed (1 filtered out), 0 Added function\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n",
+   "err": "",
+   "cmd": "abidiff (no headers-dir)"
+  }
+ },
+ "cxx_inline_method_body_changed": {
+  "case_meta": {
+   "lang": "cxx",
+   "truth": "inline_body_changed",
+   "breaks": true,
+   "note": "in-class method body changes; layout and mangled names identical"
+  },
+  "default": {
+   "rc": 0,
+   "out": "",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/cxx_inline_method_body_changed/v1/include --headers-dir2 /data/calib/cxx_inline_method_body_changed/v2/include /data/calib/cxx_inline_method_body_changed/v1/lib.so /data/calib/cxx_inline_method_body_changed/v2/lib.so"
+  },
+  "harmless": {
+   "rc": 0,
+   "out": "",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/cxx_inline_method_body_changed/v1/include --headers-dir2 /data/calib/cxx_inline_method_body_changed/v2/include --harmless /data/calib/cxx_inline_method_body_changed/v1/lib.so /data/calib/cxx_inline_method_body_changed/v2/lib.so"
+  },
+  "leafh": {
+   "rc": 0,
+   "out": "",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/cxx_inline_method_body_changed/v1/include --headers-dir2 /data/calib/cxx_inline_method_body_changed/v2/include --leaf-changes-only --harmless /data/calib/cxx_inline_method_body_changed/v1/lib.so /data/calib/cxx_inline_method_body_changed/v2/lib.so"
+  },
+  "no_hdrs": {
+   "rc": 0,
+   "out": "",
+   "err": "",
+   "cmd": "abidiff (no headers-dir)"
+  }
+ },
+ "cxx_template_body_changed": {
+  "case_meta": {
+   "lang": "cxx",
+   "truth": "inline_body_changed",
+   "breaks": true,
+   "note": "template body changes; instantiated in every client TU"
+  },
+  "default": {
+   "rc": 0,
+   "out": "",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/cxx_template_body_changed/v1/include --headers-dir2 /data/calib/cxx_template_body_changed/v2/include /data/calib/cxx_template_body_changed/v1/lib.so /data/calib/cxx_template_body_changed/v2/lib.so"
+  },
+  "harmless": {
+   "rc": 0,
+   "out": "",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/cxx_template_body_changed/v1/include --headers-dir2 /data/calib/cxx_template_body_changed/v2/include --harmless /data/calib/cxx_template_body_changed/v1/lib.so /data/calib/cxx_template_body_changed/v2/lib.so"
+  },
+  "leafh": {
+   "rc": 0,
+   "out": "",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/cxx_template_body_changed/v1/include --headers-dir2 /data/calib/cxx_template_body_changed/v2/include --leaf-changes-only --harmless /data/calib/cxx_template_body_changed/v1/lib.so /data/calib/cxx_template_body_changed/v2/lib.so"
+  },
+  "no_hdrs": {
+   "rc": 0,
+   "out": "",
+   "err": "",
+   "cmd": "abidiff (no headers-dir)"
+  }
+ },
+ "cxx_pimpl_field_added": {
+  "case_meta": {
+   "lang": "cxx",
+   "truth": "opaque_impl_changed",
+   "breaks": false,
+   "note": "pimpl: hidden impl type grows. This is manual resilience -- the exact thing Hylo's boundary would automate. Expect NO public break."
+  },
+  "default": {
+   "rc": 0,
+   "out": "Functions changes summary: 0 Removed, 0 Changed (3 filtered out), 0 Added functions\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/cxx_pimpl_field_added/v1/include --headers-dir2 /data/calib/cxx_pimpl_field_added/v2/include /data/calib/cxx_pimpl_field_added/v1/lib.so /data/calib/cxx_pimpl_field_added/v2/lib.so"
+  },
+  "harmless": {
+   "rc": 0,
+   "out": "Functions changes summary: 0 Removed, 0 Changed (3 filtered out), 0 Added functions\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/cxx_pimpl_field_added/v1/include --headers-dir2 /data/calib/cxx_pimpl_field_added/v2/include --harmless /data/calib/cxx_pimpl_field_added/v1/lib.so /data/calib/cxx_pimpl_field_added/v2/lib.so"
+  },
+  "leafh": {
+   "rc": 0,
+   "out": "Leaf changes summary: 0 artifact changed (1 filtered out)\nChanged leaf types summary: 0 (1 filtered out) leaf type changed\nRemoved/Changed/Added functions summary: 0 Removed, 0 Changed, 0 Added function\nRemoved/Changed/Added variables summary: 0 Removed, 0 Changed, 0 Added variable\n\n",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/cxx_pimpl_field_added/v1/include --headers-dir2 /data/calib/cxx_pimpl_field_added/v2/include --leaf-changes-only --harmless /data/calib/cxx_pimpl_field_added/v1/lib.so /data/calib/cxx_pimpl_field_added/v2/lib.so"
+  },
+  "no_hdrs": {
+   "rc": 4,
+   "out": "Functions changes summary: 0 Removed, 1 Changed (2 filtered out), 0 Added functions\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 function with some indirect sub-type change:\n\n  [C] 'method Handle::Handle()' at lib.cpp:3:1 has some indirect sub-type changes:\n    implicit parameter 0 of type 'Handle*' has sub-type changes:\n      in pointed to type 'class Handle' at lib.h:4:1:\n        type size hasn't changed\n        1 data member change:\n          type of 'Impl* p' changed:\n            in pointed to type 'class Impl' at lib.cpp:2:1:\n              type size changed from 32 to 64 (in bits)\n              1 data member insertion:\n                'int b', at offset 32 (in bits) at lib.cpp:2:1\n\n",
+   "err": "",
+   "cmd": "abidiff (no headers-dir)"
+  }
+ },
+ "cxx_no_change": {
+  "case_meta": {
+   "lang": "cxx",
+   "truth": "none",
+   "breaks": false,
+   "note": "control: identical sources"
+  },
+  "default": {
+   "rc": 0,
+   "out": "",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/cxx_no_change/v1/include --headers-dir2 /data/calib/cxx_no_change/v2/include /data/calib/cxx_no_change/v1/lib.so /data/calib/cxx_no_change/v2/lib.so"
+  },
+  "harmless": {
+   "rc": 0,
+   "out": "",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/cxx_no_change/v1/include --headers-dir2 /data/calib/cxx_no_change/v2/include --harmless /data/calib/cxx_no_change/v1/lib.so /data/calib/cxx_no_change/v2/lib.so"
+  },
+  "leafh": {
+   "rc": 0,
+   "out": "",
+   "err": "",
+   "cmd": "abidiff --headers-dir1 /data/calib/cxx_no_change/v1/include --headers-dir2 /data/calib/cxx_no_change/v2/include --leaf-changes-only --harmless /data/calib/cxx_no_change/v1/lib.so /data/calib/cxx_no_change/v2/lib.so"
+  },
+  "no_hdrs": {
+   "rc": 0,
+   "out": "",
+   "err": "",
+   "cmd": "abidiff (no headers-dir)"
+  }
+ }
+}

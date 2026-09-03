@@ -1,0 +1,67 @@
+{
+ "data": {
+  "id": "chromaprint@1.5.1..1.6.0",
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      32,
+      31
+     ],
+     "mangled_functions": [
+      9,
+      7
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 1,
+     "symbol_removed": 2
+    },
+    "soname": [
+     "libchromaprint.so.1",
+     "libchromaprint.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<double,std::allocator<double>>::_M_fill_insert(std::vector<double,std::allocator<double>>::iterator, std::vector<double,std::allocator<double>>::size_type, const std::vector<double,std::allocator<double>>::value_type&)",
+      "symbol": "_ZNSt6vectorIdSaIdEE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPdS1_EEmRKd"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<unsignedint,std::allocator<unsignedint>>::_M_fill_assign(std::size_t, const std::vector<unsignedint,std::allocator<unsignedint>>::value_type&)",
+      "symbol": "_ZNSt6vectorIjSaIjEE14_M_fill_assignEmRKj"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int chromaprint_decode_fingerprint_header(const char*, int, int*, int*, int)",
+      "symbol": "chromaprint_decode_fingerprint_header"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": []
+   }
+  ],
+  "seconds": 3.490788187,
+  "source": "chromaprint",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.5.1",
+   "1.6.0"
+  ]
+ },
+ "generated_at": "2026-09-02T12:16:50Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

@@ -1,0 +1,71 @@
+{
+ "data": {
+  "id": "xxhash@0.8.2..0.8.3",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      57,
+      58
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "field_type_changed": 2,
+     "symbol_added": 1
+    },
+    "soname": [
+     "libxxhash.so.0",
+     "libxxhash.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function int XXH_featureTest(void)",
+      "symbol": "XXH_featureTest"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [
+     {
+      "count": 1,
+      "declared_in": "./xxhash.h",
+      "kind": "field_type_changed",
+      "type": "struct XXH32_state_s"
+     },
+     {
+      "count": 1,
+      "declared_in": "./xxhash.h",
+      "kind": "field_type_changed",
+      "type": "struct XXH64_state_s"
+     }
+    ]
+   }
+  ],
+  "seconds": 1.802512442,
+  "source": "xxhash",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "0.8.2",
+   "0.8.3"
+  ]
+ },
+ "generated_at": "2026-09-02T14:59:21Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

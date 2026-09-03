@@ -1,0 +1,100 @@
+{
+ "data": {
+  "id": "libusb-1.0@1.0.29..1.0.30",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      99,
+      104
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 5
+    },
+    "soname": [
+     "libusb-1.0.so.0",
+     "libusb-1.0.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function unsigned long int libusb_get_session_data(libusb_device*)",
+      "symbol": "libusb_get_session_data"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int libusb_get_max_raw_io_transfer_size(libusb_device_handle*, uint8_t)",
+      "symbol": "libusb_get_max_raw_io_transfer_size"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int libusb_get_device_string(libusb_device*, libusb_device_string_type, char*, int)",
+      "symbol": "libusb_get_device_string"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int libusb_endpoint_supports_raw_io(libusb_device_handle*, uint8_t)",
+      "symbol": "libusb_endpoint_supports_raw_io"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int libusb_endpoint_set_raw_io(libusb_device_handle*, uint8_t, int)",
+      "symbol": "libusb_endpoint_set_raw_io"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 1,
+     "member_offset_changed": 9,
+     "type_size_changed": 1
+    },
+    "type_events": [
+     {
+      "count": 1,
+      "declared_in": "../../libusb/libusbi.h",
+      "kind": "field_added_to_struct",
+      "type": "struct libusb_device"
+     },
+     {
+      "count": 1,
+      "declared_in": "../../libusb/libusbi.h",
+      "kind": "type_size_changed",
+      "type": "struct libusb_device"
+     },
+     {
+      "count": 9,
+      "declared_in": "../../libusb/libusbi.h",
+      "kind": "member_offset_changed",
+      "type": "struct libusb_context"
+     }
+    ]
+   }
+  ],
+  "seconds": 1.825182284,
+  "source": "libusb-1.0",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.0.29",
+   "1.0.30"
+  ]
+ },
+ "generated_at": "2026-09-02T14:59:02Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

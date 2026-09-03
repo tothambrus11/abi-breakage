@@ -1,0 +1,497 @@
+{
+ "data": {
+  "id": "libxml2@2.14.6+dfsg..2.15.0+dfsg",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      1391,
+      1398
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "enum_case_added": 3,
+     "field_type_changed": 16,
+     "function_signature_changed": 67,
+     "symbol_added": 7
+    },
+    "soname": [
+     "libxml2.so.16",
+     "libxml2.so.16"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function void xmlRelaxNGValidCtxtClearErrors(xmlRelaxNGValidCtxt*)",
+      "symbol": "xmlRelaxNGValidCtxtClearErrors"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int xmlCtxtIsInSubset(xmlParserCtxt*)",
+      "symbol": "xmlCtxtIsInSubset"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void* xmlCtxtGetUserData(xmlParserCtxt*)",
+      "symbol": "xmlCtxtGetUserData"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function xmlNode* xmlCtxtGetNode(xmlParserCtxt*)",
+      "symbol": "xmlCtxtGetNode"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int xmlCtxtGetInputPosition(xmlParserCtxt*, int, const char**, int*, int*, unsigned long int*)",
+      "symbol": "xmlCtxtGetInputPosition"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int xmlCtxtGetInputWindow(xmlParserCtxt*, int, const xmlChar**, int*, int*)",
+      "symbol": "xmlCtxtGetInputWindow"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int xmlCtxtGetDocTypeDecl(xmlParserCtxt*, const xmlChar**, const xmlChar**, const xmlChar**)",
+      "symbol": "xmlCtxtGetDocTypeDecl"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void xmlXIncludeSetResourceLoader(xmlXIncludeCtxtPtr, xmlResourceLoader, void*)  ->  function void xmlXIncludeSetResourceLoader(xmlXIncludeCtxt*, xmlResourceLoader, void*)",
+      "symbol": "xmlXIncludeSetResourceLoader"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function xmlRegisterNodeFunc xmlThrDefRegisterNodeDefault(xmlRegisterNodeFunc)  ->  function xmlRegisterNodeFunc xmlThrDefRegisterNodeDefault(xmlRegisterNodeFunc)",
+      "symbol": "xmlThrDefRegisterNodeDefault"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function xmlParserInputBufferCreateFilenameFunc xmlThrDefParserInputBufferCreateFilenameDefault(xmlParserInputBufferCreateFilenameFunc)  ->  function xmlParserInputBufferCreateFilenameFunc xmlThrDefParserInputBufferCreateFilenameDefault(xmlParserInputBufferCreateFilenameFunc)",
+      "symbol": "xmlThrDefParserInputBufferCreateFilenameDefault"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function xmlOutputBufferCreateFilenameFunc xmlThrDefOutputBufferCreateFilenameDefault(xmlOutputBufferCreateFilenameFunc)  ->  function xmlOutputBufferCreateFilenameFunc xmlThrDefOutputBufferCreateFilenameDefault(xmlOutputBufferCreateFilenameFunc)",
+      "symbol": "xmlThrDefOutputBufferCreateFilenameDefault"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function xmlDeregisterNodeFunc xmlThrDefDeregisterNodeDefault(xmlDeregisterNodeFunc)  ->  function xmlDeregisterNodeFunc xmlThrDefDeregisterNodeDefault(xmlDeregisterNodeFunc)",
+      "symbol": "xmlThrDefDeregisterNodeDefault"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function int xmlSchemaValidatePredefinedType(xmlSchemaTypePtr, const xmlChar*, xmlSchemaValPtr*)  ->  function int xmlSchemaValidatePredefinedType(xmlSchemaType*, const xmlChar*, xmlSchemaVal**)",
+      "symbol": "xmlSchemaValidatePredefinedType"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function int xmlSchemaValPredefTypeNodeNoNorm(xmlSchemaTypePtr, const xmlChar*, xmlSchemaValPtr*, xmlNodePtr)  ->  function int xmlSchemaValPredefTypeNodeNoNorm(xmlSchemaType*, const xmlChar*, xmlSchemaVal**, xmlNode*)",
+      "symbol": "xmlSchemaValPredefTypeNodeNoNorm"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function int xmlSchemaValPredefTypeNode(xmlSchemaTypePtr, const xmlChar*, xmlSchemaValPtr*, xmlNodePtr)  ->  function int xmlSchemaValPredefTypeNode(xmlSchemaType*, const xmlChar*, xmlSchemaVal**, xmlNode*)",
+      "symbol": "xmlSchemaValPredefTypeNode"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void xmlSchemaSetResourceLoader(xmlSchemaParserCtxtPtr, xmlResourceLoader, void*)  ->  function void xmlSchemaSetResourceLoader(xmlSchemaParserCtxt*, xmlResourceLoader, void*)",
+      "symbol": "xmlSchemaSetResourceLoader"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void xmlRelaxNGSetResourceLoader(xmlRelaxNGParserCtxtPtr, xmlResourceLoader, void*)  ->  function void xmlRelaxNGSetResourceLoader(xmlRelaxNGParserCtxt*, xmlResourceLoader, void*)",
+      "symbol": "xmlRelaxNGSetResourceLoader"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void xmlXPathRegisterVariableLookup(xmlXPathContextPtr, xmlXPathVariableLookupFunc, void*)  ->  function void xmlXPathRegisterVariableLookup(xmlXPathContext*, xmlXPathVariableLookupFunc, void*)",
+      "symbol": "xmlXPathRegisterVariableLookup"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function xmlRegisterNodeFunc xmlRegisterNodeDefault(xmlRegisterNodeFunc)  ->  function xmlRegisterNodeFunc xmlRegisterNodeDefault(xmlRegisterNodeFunc)",
+      "symbol": "xmlRegisterNodeDefault"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function xmlRegExecCtxtPtr xmlRegNewExecCtxt(xmlRegexpPtr, xmlRegExecCallbacks, void*)  ->  function xmlRegExecCtxt* xmlRegNewExecCtxt(xmlRegexp*, xmlRegExecCallbacks, void*)",
+      "symbol": "xmlRegNewExecCtxt"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function int xmlXPathRegisterFunc(xmlXPathContextPtr, const xmlChar*, xmlXPathFunction)  ->  function int xmlXPathRegisterFunc(xmlXPathContext*, const xmlChar*, xmlXPathFunction)",
+      "symbol": "xmlXPathRegisterFunc"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function int xmlPatternCompileSafe(const xmlChar*, xmlDict*, int, const xmlChar**, xmlPatternPtr*)  ->  function int xmlPatternCompileSafe(const xmlChar*, xmlDict*, int, const xmlChar**, xmlPattern**)",
+      "symbol": "xmlPatternCompileSafe"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void xmlParserPrintFileInfo(xmlParserInputPtr)  ->  function void xmlParserPrintFileInfo(_xmlParserInput*)",
+      "symbol": "xmlParserPrintFileInfo"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void xmlParserPrintFileContext(xmlParserInputPtr)  ->  function void xmlParserPrintFileContext(_xmlParserInput*)",
+      "symbol": "xmlParserPrintFileContext"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function xmlXPathFunction xmlXPathFunctionLookup(xmlXPathContextPtr, const xmlChar*)  ->  function xmlXPathFunction xmlXPathFunctionLookup(xmlXPathContext*, const xmlChar*)",
+      "symbol": "xmlXPathFunctionLookup"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function int xmlAddEntity(xmlDocPtr, int, const xmlChar*, int, const xmlChar*, const xmlChar*, const xmlChar*, xmlEntityPtr*)  ->  function int xmlAddEntity(xmlDoc*, int, const xmlChar*, int, const xmlChar*, const xmlChar*, const xmlChar*, xmlEntity**)",
+      "symbol": "xmlAddEntity"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function xmlSchemaSAXPlugPtr xmlSchemaSAXPlug(xmlSchemaValidCtxtPtr, xmlSAXHandlerPtr*, void**)  ->  function xmlSchemaSAXPlugStruct* xmlSchemaSAXPlug(xmlSchemaValidCtxt*, xmlSAXHandler**, void**)",
+      "symbol": "xmlSchemaSAXPlug"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function xmlParserInputBufferCreateFilenameFunc xmlParserInputBufferCreateFilenameDefault(xmlParserInputBufferCreateFilenameFunc)  ->  function xmlParserInputBufferCreateFilenameFunc xmlParserInputBufferCreateFilenameDefault(xmlParserInputBufferCreateFilenameFunc)",
+      "symbol": "xmlParserInputBufferCreateFilenameDefault"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function int xmlParseURISafe(const char*, xmlURIPtr*)  ->  function int xmlParseURISafe(const char*, xmlURI**)",
+      "symbol": "xmlParseURISafe"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void xmlSetExternalEntityLoader(xmlExternalEntityLoader)  ->  function void xmlSetExternalEntityLoader(xmlExternalEntityLoader)",
+      "symbol": "xmlSetExternalEntityLoader"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function int xmlXPathRegisterFuncNS(xmlXPathContextPtr, const xmlChar*, const xmlChar*, xmlXPathFunction)  ->  function int xmlXPathRegisterFuncNS(xmlXPathContext*, const xmlChar*, const xmlChar*, xmlXPathFunction)",
+      "symbol": "xmlXPathRegisterFuncNS"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void htmlParseElement(htmlParserCtxtPtr)  ->  function void htmlParseElement(htmlParserCtxt*)",
+      "symbol": "htmlParseElement"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function xmlParserErrors xmlParseInNodeContext(xmlNodePtr, const char*, int, int, xmlNodePtr*)  ->  function xmlParserErrors xmlParseInNodeContext(xmlNode*, const char*, int, int, xmlNode**)",
+      "symbol": "xmlParseInNodeContext"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function htmlParserCtxtPtr htmlCreatePushParserCtxt(htmlSAXHandlerPtr, void*, const char*, int, const char*, xmlCharEncoding)  ->  function htmlParserCtxt* htmlCreatePushParserCtxt(htmlSAXHandler*, void*, const char*, int, const char*, xmlCharEncoding)",
+      "symbol": "htmlCreatePushParserCtxt"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function xlinkNodeDetectFunc xlinkGetDefaultDetect(void)  ->  function xlinkNodeDetectFunc xlinkGetDefaultDetect(void)",
+      "symbol": "xlinkGetDefaultDetect"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function int xmlParseElementContentDecl(xmlParserCtxtPtr, const xmlChar*, xmlElementContentPtr*)  ->  function int xmlParseElementContentDecl(xmlParserCtxt*, const xmlChar*, xmlElementContent**)",
+      "symbol": "xmlParseElementContentDecl"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function const htmlEntityDesc* htmlParseEntityRef(htmlParserCtxtPtr, const xmlChar**)  ->  function const htmlEntityDesc* htmlParseEntityRef(htmlParserCtxt*, const xmlChar**)",
+      "symbol": "htmlParseEntityRef"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function htmlParserCtxtPtr htmlNewSAXParserCtxt(const htmlSAXHandler*, void*)  ->  function htmlParserCtxt* htmlNewSAXParserCtxt(const htmlSAXHandler*, void*)",
+      "symbol": "htmlNewSAXParserCtxt"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function int htmlParseDocument(htmlParserCtxtPtr)  ->  function int htmlParseDocument(htmlParserCtxt*)",
+      "symbol": "htmlParseDocument"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function int htmlParseChunk(htmlParserCtxtPtr, const char*, int, int)  ->  function int htmlParseChunk(htmlParserCtxt*, const char*, int, int)",
+      "symbol": "htmlParseChunk"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void xmlTextReaderSetResourceLoader(xmlTextReaderPtr, xmlResourceLoader, void*)  ->  function void xmlTextReaderSetResourceLoader(xmlTextReader*, xmlResourceLoader, void*)",
+      "symbol": "xmlTextReaderSetResourceLoader"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function int xmlDOMWrapCloneNode(xmlDOMWrapCtxtPtr, xmlDocPtr, xmlNodePtr, xmlNodePtr*, xmlDocPtr, xmlNodePtr, int, int)  ->  function int xmlDOMWrapCloneNode(xmlDOMWrapCtxt*, xmlDoc*, xmlNode*, xmlNode**, xmlDoc*, xmlNode*, int, int)",
+      "symbol": "xmlDOMWrapCloneNode"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function htmlParserCtxtPtr htmlCreateMemoryParserCtxt(const char*, int)  ->  function htmlParserCtxt* htmlCreateMemoryParserCtxt(const char*, int)",
+      "symbol": "htmlCreateMemoryParserCtxt"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function htmlDocPtr htmlSAXParseFile(const char*, const char*, htmlSAXHandlerPtr, void*)  ->  function xmlDoc* htmlSAXParseFile(const char*, const char*, htmlSAXHandler*, void*)",
+      "symbol": "htmlSAXParseFile"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void xlinkSetDefaultDetect(xlinkNodeDetectFunc)  ->  function void xlinkSetDefaultDetect(xlinkNodeDetectFunc)",
+      "symbol": "xlinkSetDefaultDetect"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function htmlParserCtxtPtr htmlCreateFileParserCtxt(const char*, const char*)  ->  function htmlParserCtxt* htmlCreateFileParserCtxt(const char*, const char*)",
+      "symbol": "htmlCreateFileParserCtxt"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function int xmlC14NExecute(xmlDocPtr, xmlC14NIsVisibleCallback, void*, int, xmlChar**, int, xmlOutputBufferPtr)  ->  function int xmlC14NExecute(xmlDoc*, xmlC14NIsVisibleCallback, void*, int, xmlChar**, int, xmlOutputBuffer*)",
+      "symbol": "xmlC14NExecute"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function xmlParserErrors xmlNewInputFromUrl(const char*, xmlParserInputFlags, xmlParserInputPtr*)  ->  function xmlParserErrors xmlNewInputFromUrl(const char*, xmlParserInputFlags, xmlParserInput**)",
+      "symbol": "xmlNewInputFromUrl"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function htmlParserCtxtPtr htmlNewParserCtxt(void)  ->  function htmlParserCtxt* htmlNewParserCtxt(void)",
+      "symbol": "htmlNewParserCtxt"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function htmlDocPtr htmlCtxtParseDocument(htmlParserCtxtPtr, xmlParserInputPtr)  ->  function xmlDoc* htmlCtxtParseDocument(htmlParserCtxt*, xmlParserInput*)",
+      "symbol": "htmlCtxtParseDocument"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void htmlCtxtReset(htmlParserCtxtPtr)  ->  function void htmlCtxtReset(htmlParserCtxt*)",
+      "symbol": "htmlCtxtReset"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function htmlDocPtr htmlSAXParseDoc(const xmlChar*, const char*, htmlSAXHandlerPtr, void*)  ->  function xmlDoc* htmlSAXParseDoc(const xmlChar*, const char*, htmlSAXHandler*, void*)",
+      "symbol": "htmlSAXParseDoc"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function int xmlCharEncOutFunc(xmlCharEncodingHandler*, xmlBufferPtr, xmlBufferPtr)  ->  function int xmlCharEncOutFunc(xmlCharEncodingHandler*, _xmlBuffer*, _xmlBuffer*)",
+      "symbol": "xmlCharEncOutFunc"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function int htmlParseCharRef(htmlParserCtxtPtr)  ->  function int htmlParseCharRef(htmlParserCtxt*)",
+      "symbol": "htmlParseCharRef"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function int xmlCharEncFirstLine(xmlCharEncodingHandler*, xmlBufferPtr, xmlBufferPtr)  ->  function int xmlCharEncFirstLine(xmlCharEncodingHandler*, _xmlBuffer*, _xmlBuffer*)",
+      "symbol": "xmlCharEncFirstLine"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function xmlDeregisterNodeFunc xmlDeregisterNodeDefault(xmlDeregisterNodeFunc)  ->  function xmlDeregisterNodeFunc xmlDeregisterNodeDefault(xmlDeregisterNodeFunc)",
+      "symbol": "xmlDeregisterNodeDefault"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function xmlXPathFunction xmlXPathFunctionLookupNS(xmlXPathContextPtr, const xmlChar*, const xmlChar*)  ->  function xmlXPathFunction xmlXPathFunctionLookupNS(xmlXPathContext*, const xmlChar*, const xmlChar*)",
+      "symbol": "xmlXPathFunctionLookupNS"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function int xmlCharEncInFunc(xmlCharEncodingHandler*, xmlBufferPtr, xmlBufferPtr)  ->  function int xmlCharEncInFunc(xmlCharEncodingHandler*, _xmlBuffer*, _xmlBuffer*)",
+      "symbol": "xmlCharEncInFunc"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function int xmlParseAttributeType(xmlParserCtxtPtr, xmlEnumerationPtr*)  ->  function int xmlParseAttributeType(xmlParserCtxt*, xmlEnumeration**)",
+      "symbol": "xmlParseAttributeType"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function xmlNsPtr* xmlGetNsList(const xmlDoc*, const xmlNode*)  ->  function xmlNs** xmlGetNsList(const xmlDoc*, const xmlNode*)",
+      "symbol": "xmlGetNsList"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function int xmlGetNsListSafe(const xmlDoc*, const xmlNode*, xmlNsPtr**)  ->  function int xmlGetNsListSafe(const xmlDoc*, const xmlNode*, xmlNs***)",
+      "symbol": "xmlGetNsListSafe"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function int htmlCtxtSetOptions(xmlParserCtxtPtr, int)  ->  function int htmlCtxtSetOptions(htmlParserCtxt*, int)",
+      "symbol": "htmlCtxtSetOptions"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function xmlExternalEntityLoader xmlGetExternalEntityLoader(void)  ->  function xmlExternalEntityLoader xmlGetExternalEntityLoader(void)",
+      "symbol": "xmlGetExternalEntityLoader"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function int xmlParseExternalEntity(xmlDocPtr, xmlSAXHandlerPtr, void*, int, const xmlChar*, const xmlChar*, xmlNodePtr*)  ->  function int xmlParseExternalEntity(xmlDoc*, xmlSAXHandler*, void*, int, const xmlChar*, const xmlChar*, xmlNode**)",
+      "symbol": "xmlParseExternalEntity"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void htmlFreeParserCtxt(htmlParserCtxtPtr)  ->  function void htmlFreeParserCtxt(htmlParserCtxt*)",
+      "symbol": "htmlFreeParserCtxt"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function xmlTextWriterPtr xmlNewTextWriterDoc(xmlDocPtr*, int)  ->  function xmlTextWriter* xmlNewTextWriterDoc(xmlDoc**, int)",
+      "symbol": "xmlNewTextWriterDoc"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function xmlListPtr xmlListCreate(xmlListDeallocator, xmlListDataCompare)  ->  function xmlList* xmlListCreate(xmlListDeallocator, xmlListDataCompare)",
+      "symbol": "xmlListCreate"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void xmlCtxtSetResourceLoader(xmlParserCtxtPtr, xmlResourceLoader, void*)  ->  function void xmlCtxtSetResourceLoader(xmlParserCtxt*, xmlResourceLoader, void*)",
+      "symbol": "xmlCtxtSetResourceLoader"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function int htmlCtxtUseOptions(htmlParserCtxtPtr, int)  ->  function int htmlCtxtUseOptions(htmlParserCtxt*, int)",
+      "symbol": "htmlCtxtUseOptions"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function int xmlParseBalancedChunkMemory(xmlDocPtr, xmlSAXHandlerPtr, void*, int, const xmlChar*, xmlNodePtr*)  ->  function int xmlParseBalancedChunkMemory(xmlDoc*, xmlSAXHandler*, void*, int, const xmlChar*, xmlNode**)",
+      "symbol": "xmlParseBalancedChunkMemory"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function int xmlParseCtxtExternalEntity(xmlParserCtxtPtr, const xmlChar*, const xmlChar*, xmlNodePtr*)  ->  function int xmlParseCtxtExternalEntity(xmlParserCtxt*, const xmlChar*, const xmlChar*, xmlNode**)",
+      "symbol": "xmlParseCtxtExternalEntity"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function xmlOutputBufferCreateFilenameFunc xmlOutputBufferCreateFilenameDefault(xmlOutputBufferCreateFilenameFunc)  ->  function xmlOutputBufferCreateFilenameFunc xmlOutputBufferCreateFilenameDefault(xmlOutputBufferCreateFilenameFunc)",
+      "symbol": "xmlOutputBufferCreateFilenameDefault"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function int xmlParseBalancedChunkMemoryRecover(xmlDocPtr, xmlSAXHandlerPtr, void*, int, const xmlChar*, xmlNodePtr*, int)  ->  function int xmlParseBalancedChunkMemoryRecover(xmlDoc*, xmlSAXHandler*, void*, int, const xmlChar*, xmlNode**, int)",
+      "symbol": "xmlParseBalancedChunkMemoryRecover"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function int xmlParseEnumeratedType(xmlParserCtxtPtr, xmlEnumerationPtr*)  ->  function int xmlParseEnumeratedType(xmlParserCtxt*, xmlEnumeration**)",
+      "symbol": "xmlParseEnumeratedType"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_removed_from_struct": 2,
+     "field_type_changed": 1,
+     "member_offset_changed": 5,
+     "type_size_changed": 1
+    },
+    "type_events": [
+     {
+      "count": 1,
+      "declared_in": "../../include/libxml/encoding.h",
+      "kind": "enum_case_added",
+      "type": "enum xmlCharEncoding"
+     },
+     {
+      "count": 6,
+      "declared_in": "../../include/libxml/parser.h",
+      "kind": "field_type_changed",
+      "type": "struct _xmlSAXHandler"
+     },
+     {
+      "count": 2,
+      "declared_in": "../../buf.c",
+      "kind": "field_removed_from_struct",
+      "type": "struct _xmlBuf"
+     },
+     {
+      "count": 5,
+      "declared_in": "../../buf.c",
+      "kind": "member_offset_changed",
+      "type": "struct _xmlBuf"
+     },
+     {
+      "count": 1,
+      "declared_in": "../../buf.c",
+      "kind": "type_size_changed",
+      "type": "struct _xmlBuf"
+     },
+     {
+      "count": 1,
+      "declared_in": "../../include/libxml/encoding.h",
+      "kind": "enum_case_added",
+      "type": "enum xmlCharEncFlags"
+     },
+     {
+      "count": 3,
+      "declared_in": "../../include/libxml/parser.h",
+      "kind": "field_type_changed",
+      "type": "struct _xmlParserCtxt"
+     },
+     {
+      "count": 1,
+      "declared_in": "../../include/libxml/valid.h",
+      "kind": "field_type_changed",
+      "type": "struct _xmlValidCtxt"
+     },
+     {
+      "count": 1,
+      "declared_in": "../../xmlregexp.c",
+      "kind": "field_type_changed",
+      "type": "struct _xmlRegExecCtxt"
+     },
+     {
+      "count": 1,
+      "declared_in": "../../include/libxml/parser.h",
+      "kind": "enum_case_added",
+      "type": "enum xmlParserInputFlags"
+     },
+     {
+      "count": 6,
+      "declared_in": "../../include/libxml/parser.h",
+      "kind": "field_type_changed",
+      "type": "struct _xmlSAXHandlerV1"
+     }
+    ]
+   }
+  ],
+  "seconds": 3.964005047,
+  "source": "libxml2",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "2.14.6+dfsg",
+   "2.15.0+dfsg"
+  ]
+ },
+ "generated_at": "2026-09-02T14:58:15Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

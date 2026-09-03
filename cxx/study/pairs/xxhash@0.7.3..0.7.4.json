@@ -1,0 +1,86 @@
+{
+ "data": {
+  "id": "xxhash@0.7.3..0.7.4",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      43,
+      44
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "field_added_to_struct": 1,
+     "field_removed_from_struct": 2,
+     "field_type_changed": 3,
+     "member_offset_changed": 7,
+     "symbol_added": 1
+    },
+    "soname": [
+     "libxxhash.so.0",
+     "libxxhash.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function void XXH3_generateSecret(void*, void*, size_t)",
+      "symbol": "XXH3_generateSecret"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [
+     {
+      "count": 1,
+      "declared_in": "./xxhash.h",
+      "kind": "field_added_to_struct",
+      "type": "struct XXH3_state_s"
+     },
+     {
+      "count": 2,
+      "declared_in": "./xxhash.h",
+      "kind": "field_removed_from_struct",
+      "type": "struct XXH3_state_s"
+     },
+     {
+      "count": 3,
+      "declared_in": "./xxhash.h",
+      "kind": "field_type_changed",
+      "type": "struct XXH3_state_s"
+     },
+     {
+      "count": 7,
+      "declared_in": "./xxhash.h",
+      "kind": "member_offset_changed",
+      "type": "struct XXH3_state_s"
+     }
+    ]
+   }
+  ],
+  "seconds": 1.760490213,
+  "source": "xxhash",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "0.7.3",
+   "0.7.4"
+  ]
+ },
+ "generated_at": "2026-09-02T14:59:19Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

@@ -1,0 +1,272 @@
+{
+ "data": {
+  "id": "hunspell@1.7.1..1.7.2",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      125,
+      130
+     ],
+     "mangled_functions": [
+      109,
+      113
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "function_signature_changed": 2,
+     "symbol_added": 10,
+     "symbol_removed": 5
+    },
+    "soname": [
+     "libhunspell-1.7.so.0",
+     "libhunspell-1.7.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function int u8_u16(std::vector<w_char,std::allocator<w_char>>&, const std::string&)  ->  function int u8_u16(std::vector<w_char,std::allocator<w_char>>&, const std::string&, bool)",
+      "symbol": "_Z6u8_u16RSt6vectorI6w_charSaIS0_EERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method int Hunzip::fail(const char*, const char*)  ->  method int Hunzip::fail(const char*, const std::string&)",
+      "symbol": "_ZN6Hunzip4failEPKcS1_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<shortunsignedint,std::allocator<shortunsignedint>>::_M_default_append(std::vector<shortunsignedint,std::allocator<shortunsignedint>>::size_type)",
+      "symbol": "_ZNSt6vectorItSaItEE17_M_default_appendEm"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function char* mystrdup(const char*)",
+      "symbol": "_Z8mystrdupPKc"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void initialize_utf_tbl(void)",
+      "symbol": "_Z18initialize_utf_tblv"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void free_utf_tbl(void)",
+      "symbol": "_Z12free_utf_tblv"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::vector<shortunsignedint,std::allocator<shortunsignedint>>,std::allocator<std::vector<shortunsignedint,std::allocator<shortunsignedint>>>>::_M_realloc_insert<std::vector<shortunsignedint,std::allocator<shortunsignedint>>>(std::vector<std::vector<shortunsignedint,std::allocator<shortunsignedint>>,std::allocator<std::vector<shortunsignedint,std::allocator<shortunsignedint>>>>::iterator)",
+      "symbol": "_ZNSt6vectorIS_ItSaItEESaIS1_EE17_M_realloc_insertIJS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<std::vector<shortunsignedint,std::allocator<shortunsignedint>>,std::allocator<std::vector<shortunsignedint,std::allocator<shortunsignedint>>>>::_M_realloc_insert<>(std::vector<std::vector<shortunsignedint,std::allocator<shortunsignedint>>,std::allocator<std::vector<shortunsignedint,std::allocator<shortunsignedint>>>>::iterator)",
+      "symbol": "_ZNSt6vectorIS_ItSaItEESaIS1_EE17_M_realloc_insertIJEEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<char*,std::allocator<char*>>::_M_realloc_insert<char*const&>(std::vector<char*,std::allocator<char*>>::iterator)",
+      "symbol": "_ZNSt6vectorIPcSaIS0_EE17_M_realloc_insertIJRKS0_EEEvN9__gnu_cxx17__normal_iteratorIPS0_S2_EEDpOT_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>::_M_realloc_insert<__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>&,__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>&>(std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>::iterator)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_realloc_insertIJRN9__gnu_cxx17__normal_iteratorIPKcS5_EESE_EEEvNSA_IPS5_S7_EEDpOT_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>::_M_realloc_insert<charconst(&)[3]>(std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>::iterator)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_realloc_insertIJRA3_KcEEEvN9__gnu_cxx17__normal_iteratorIPS5_S7_EEDpOT_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>::_M_realloc_insert<charconst(&)[2]>(std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>::iterator)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_realloc_insertIJRA2_KcEEEvN9__gnu_cxx17__normal_iteratorIPS5_S7_EEDpOT_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>::_M_realloc_insert<charconst(&)[1]>(std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>::iterator)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_realloc_insertIJRA1_KcEEEvN9__gnu_cxx17__normal_iteratorIPS5_S7_EEDpOT_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>,std::allocator<std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>>::_M_realloc_insert<>(std::vector<std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>,std::allocator<std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>>::iterator)",
+      "symbol": "_ZNSt6vectorIS_INSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EESaIS7_EE17_M_realloc_insertIJEEEvN9__gnu_cxx17__normal_iteratorIPS7_S9_EEDpOT_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>::_M_realloc_insert<char*&>(std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>::iterator)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_realloc_insertIJRPcEEEvN9__gnu_cxx17__normal_iteratorIPS5_S7_EEDpOT_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<shortunsignedint*,std::allocator<shortunsignedint*>>::_M_realloc_insert<shortunsignedint*const&>(std::vector<shortunsignedint*,std::allocator<shortunsignedint*>>::iterator)",
+      "symbol": "_ZNSt6vectorIPtSaIS0_EE17_M_realloc_insertIJRKS0_EEEvN9__gnu_cxx17__normal_iteratorIPS0_S2_EEDpOT_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int Hunspell_suffix_suggest(Hunhandle*, char***, const char*)",
+      "symbol": "Hunspell_suffix_suggest"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 4,
+     "field_removed_from_struct": 5,
+     "field_type_changed": 10,
+     "member_offset_changed": 45,
+     "type_size_changed": 5
+    },
+    "type_events": [
+     {
+      "count": 1,
+      "declared_in": "./src/hunspell/hunspell.cxx",
+      "kind": "field_type_changed",
+      "type": "class HunspellImpl"
+     },
+     {
+      "count": 6,
+      "declared_in": "./src/hunspell/hunspell.cxx",
+      "kind": "member_offset_changed",
+      "type": "class HunspellImpl"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/hunspell/hunspell.cxx",
+      "kind": "type_size_changed",
+      "type": "class HunspellImpl"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/hunspell/affentry.hxx",
+      "kind": "base_class_changed",
+      "type": "class PfxEntry"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/hunspell/baseaffix.hxx",
+      "kind": "field_type_changed",
+      "type": "class AffEntry"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/hunspell/affentry.hxx",
+      "kind": "base_class_changed",
+      "type": "class SfxEntry"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/12/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "class std::vector<HashMgr*,std::allocator<HashMgr*>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/12/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Vector_base<HashMgr*,std::allocator<HashMgr*>>::_Vector_impl"
+     },
+     {
+      "count": 3,
+      "declared_in": "./src/hunspell/hashmgr.hxx",
+      "kind": "field_removed_from_struct",
+      "type": "class HashMgr"
+     },
+     {
+      "count": 4,
+      "declared_in": "./src/hunspell/hashmgr.hxx",
+      "kind": "field_type_changed",
+      "type": "class HashMgr"
+     },
+     {
+      "count": 14,
+      "declared_in": "./src/hunspell/hashmgr.hxx",
+      "kind": "member_offset_changed",
+      "type": "class HashMgr"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/hunspell/hashmgr.hxx",
+      "kind": "type_size_changed",
+      "type": "class HashMgr"
+     },
+     {
+      "count": 2,
+      "declared_in": "./src/hunspell/replist.hxx",
+      "kind": "field_removed_from_struct",
+      "type": "class RepList"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/hunspell/replist.hxx",
+      "kind": "field_type_changed",
+      "type": "class RepList"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/hunspell/replist.hxx",
+      "kind": "type_size_changed",
+      "type": "class RepList"
+     },
+     {
+      "count": 2,
+      "declared_in": "./src/hunspell/suggestmgr.hxx",
+      "kind": "field_type_changed",
+      "type": "class SuggestMgr"
+     },
+     {
+      "count": 15,
+      "declared_in": "./src/hunspell/suggestmgr.hxx",
+      "kind": "member_offset_changed",
+      "type": "class SuggestMgr"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/hunspell/suggestmgr.hxx",
+      "kind": "type_size_changed",
+      "type": "class SuggestMgr"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/hunspell/hunzip.hxx",
+      "kind": "field_type_changed",
+      "type": "class Hunzip"
+     },
+     {
+      "count": 10,
+      "declared_in": "./src/hunspell/hunzip.hxx",
+      "kind": "member_offset_changed",
+      "type": "class Hunzip"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/hunspell/hunzip.hxx",
+      "kind": "type_size_changed",
+      "type": "class Hunzip"
+     }
+    ]
+   }
+  ],
+  "seconds": 4.30854477,
+  "source": "hunspell",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.7.1",
+   "1.7.2"
+  ]
+ },
+ "generated_at": "2026-09-02T15:05:38Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

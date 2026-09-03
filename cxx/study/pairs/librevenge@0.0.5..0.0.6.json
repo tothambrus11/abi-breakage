@@ -1,0 +1,157 @@
+{
+ "data": {
+  "id": "librevenge@0.0.5..0.0.6",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      236,
+      236
+     ],
+     "mangled_functions": [
+      236,
+      236
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 1,
+     "symbol_removed": 2
+    },
+    "soname": [
+     "librevenge-0.0.so.0",
+     "librevenge-0.0.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<unsignedchar,std::allocator<unsignedchar>>::reserve(std::vector<unsignedchar,std::allocator<unsignedchar>>::size_type)",
+      "symbol": "_ZNSt6vectorIhSaIhEE7reserveEm"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<unsignedchar,std::allocator<unsignedchar>>::_M_realloc_append<unsignedcharconst&>()",
+      "symbol": "_ZNSt6vectorIhSaIhEE17_M_realloc_appendIJRKhEEEvDpOT_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method librevenge::RVNGString::RVNGString(std::string&&)",
+      "symbol": "_ZN10librevenge10RVNGStringC2EONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_type_changed": 2
+    },
+    "type_events": [
+     {
+      "count": 2,
+      "declared_in": "/usr/include/boost/smart_ptr/detail/sp_counted_base_gcc_atomic.hpp",
+      "kind": "field_type_changed",
+      "type": "class boost::detail::sp_counted_base"
+     }
+    ]
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      817,
+      817
+     ],
+     "mangled_functions": [
+      817,
+      817
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "librevenge-generators-0.0.so.0",
+     "librevenge-generators-0.0.so.0"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": []
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      84,
+      84
+     ],
+     "mangled_functions": [
+      84,
+      84
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 2,
+     "symbol_removed": 2
+    },
+    "soname": [
+     "librevenge-stream-0.0.so.0",
+     "librevenge-stream-0.0.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<unsignedchar,std::allocator<unsignedchar>>::_M_fill_insert(std::vector<unsignedchar,std::allocator<unsignedchar>>::iterator, std::vector<unsignedchar,std::allocator<unsignedchar>>::size_type, const std::vector<unsignedchar,std::allocator<unsignedchar>>::value_type&)",
+      "symbol": "_ZNSt6vectorIhSaIhEE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPhS1_EEmRKh"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<longunsignedint,std::allocator<longunsignedint>>::_M_fill_insert(std::vector<longunsignedint,std::allocator<longunsignedint>>::iterator, std::vector<longunsignedint,std::allocator<longunsignedint>>::size_type, const std::vector<longunsignedint,std::allocator<longunsignedint>>::value_type&)",
+      "symbol": "_ZNSt6vectorImSaImEE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPmS1_EEmRKm"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<longunsignedint,std::allocator<longunsignedint>>::_M_fill_append(std::vector<longunsignedint,std::allocator<longunsignedint>>::size_type, const std::vector<longunsignedint,std::allocator<longunsignedint>>::value_type&)",
+      "symbol": "_ZNSt6vectorImSaImEE14_M_fill_appendEmRKm"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<unsignedchar,std::allocator<unsignedchar>>::_M_fill_append(std::vector<unsignedchar,std::allocator<unsignedchar>>::size_type, const std::vector<unsignedchar,std::allocator<unsignedchar>>::value_type&)",
+      "symbol": "_ZNSt6vectorIhSaIhEE14_M_fill_appendEmRKh"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": []
+   }
+  ],
+  "seconds": 7.749881989,
+  "source": "librevenge",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "0.0.5",
+   "0.0.6"
+  ]
+ },
+ "generated_at": "2026-09-02T15:07:41Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

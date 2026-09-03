@@ -1,0 +1,57 @@
+{
+ "data": {
+  "id": "libselinux@3.9..3.10",
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      241,
+      242
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 1
+    },
+    "soname": [
+     "libselinux.so.1",
+     "libselinux.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function unsigned long int selinux_restorecon_get_relabeled_files(void)",
+      "symbol": "selinux_restorecon_get_relabeled_files",
+      "version": "LIBSELINUX_3.10"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": []
+   }
+  ],
+  "seconds": 2.086145438,
+  "source": "libselinux",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "3.9",
+   "3.10"
+  ]
+ },
+ "generated_at": "2026-09-02T12:05:32Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

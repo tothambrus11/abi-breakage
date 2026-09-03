@@ -1,0 +1,99 @@
+{
+ "data": {
+  "id": "soundtouch@2.3.3+ds..2.4.0+ds",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      213,
+      213
+     ],
+     "mangled_functions": [
+      212,
+      212
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libSoundTouch.so.1",
+     "libSoundTouch.so.1"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 2,
+     "field_removed_from_struct": 1
+    },
+    "type_events": [
+     {
+      "count": 1,
+      "declared_in": "./source/SoundTouch/FIRFilter.h",
+      "kind": "field_removed_from_struct",
+      "type": "class soundtouch::FIRFilter"
+     },
+     {
+      "count": 1,
+      "declared_in": "./source/SoundTouch/FIRFilter.h",
+      "kind": "base_class_changed",
+      "type": "class soundtouch::FIRFilterSSE"
+     },
+     {
+      "count": 1,
+      "declared_in": "./source/SoundTouch/FIRFilter.h",
+      "kind": "base_class_changed",
+      "type": "class soundtouch::FIRFilterSSE"
+     }
+    ]
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      31,
+      31
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libSoundTouchDll.so.1",
+     "libSoundTouchDll.so.1"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": []
+   }
+  ],
+  "seconds": 2.077048503,
+  "source": "soundtouch",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "2.3.3+ds",
+   "2.4.0+ds"
+  ]
+ },
+ "generated_at": "2026-09-02T15:06:03Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

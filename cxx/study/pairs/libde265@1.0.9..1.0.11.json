@@ -1,0 +1,329 @@
+{
+ "data": {
+  "id": "libde265@1.0.9..1.0.11",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      128,
+      89
+     ],
+     "mangled_functions": [
+      40,
+      25
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "enum_case_added": 6,
+     "symbol_removed": 39
+    },
+    "soname": [
+     "libde265.so.0",
+     "libde265.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,ALGO_TB_RateEstimation>,std::allocator<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,ALGO_TB_RateEstimation>>>::_M_realloc_insert<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,ALGO_TB_RateEstimation>>(std::vector<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,ALGO_TB_RateEstimation>,std::allocator<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,ALGO_TB_RateEstimation>>>::iterator)",
+      "symbol": "_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE22ALGO_TB_RateEstimationESaIS8_EE17_M_realloc_insertIJS8_EEEvN9__gnu_cxx17__normal_iteratorIPS8_SA_EEDpOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>::_M_realloc_insert<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>&>(std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>::iterator)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_realloc_insertIJRKS5_EEEvN9__gnu_cxx17__normal_iteratorIPS5_S7_EEDpOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void en265_get_image_spec(en265_encoder_context*, int, int, de265_chroma, de265_image_spec*)",
+      "symbol": "en265_get_image_spec"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void en265_show_parameters(en265_encoder_context*)",
+      "symbol": "en265_show_parameters"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::pair<IntraPredMode,float>,std::allocator<std::pair<IntraPredMode,float>>>::_M_default_append(std::vector<std::pair<IntraPredMode,float>,std::allocator<std::pair<IntraPredMode,float>>>::size_type)",
+      "symbol": "_ZNSt6vectorISt4pairI13IntraPredModefESaIS2_EE17_M_default_appendEm"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,MVTestMode>,std::allocator<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,MVTestMode>>>::_M_realloc_insert<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,MVTestMode>>(std::vector<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,MVTestMode>,std::allocator<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,MVTestMode>>>::iterator)",
+      "symbol": "_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE10MVTestModeESaIS8_EE17_M_realloc_insertIJS8_EEEvN9__gnu_cxx17__normal_iteratorIPS8_SA_EEDpOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function de265_error en265_trim_input_queue(en265_encoder_context*, int)",
+      "symbol": "en265_trim_input_queue"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,TBBitrateEstimMethod>,std::allocator<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,TBBitrateEstimMethod>>>::_M_realloc_insert<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,TBBitrateEstimMethod>>(std::vector<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,TBBitrateEstimMethod>,std::allocator<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,TBBitrateEstimMethod>>>::iterator)",
+      "symbol": "_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE20TBBitrateEstimMethodESaIS8_EE17_M_realloc_insertIJS8_EEEvN9__gnu_cxx17__normal_iteratorIPS8_SA_EEDpOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function de265_error en265_set_parameter_string(en265_encoder_context*, const char*, const char*)",
+      "symbol": "en265_set_parameter_string"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function de265_error en265_push_eof(en265_encoder_context*)",
+      "symbol": "en265_push_eof"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function de265_error en265_block_on_input_queue_length(en265_encoder_context*, int, int)",
+      "symbol": "en265_block_on_input_queue_length"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,ALGO_CB_IntraPartMode>,std::allocator<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,ALGO_CB_IntraPartMode>>>::_M_realloc_insert<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,ALGO_CB_IntraPartMode>>(std::vector<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,ALGO_CB_IntraPartMode>,std::allocator<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,ALGO_CB_IntraPartMode>>>::iterator)",
+      "symbol": "_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE21ALGO_CB_IntraPartModeESaIS8_EE17_M_realloc_insertIJS8_EEEvN9__gnu_cxx17__normal_iteratorIPS8_SA_EEDpOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void en265_free_packet(en265_encoder_context*, en265_packet*)",
+      "symbol": "en265_free_packet"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,PartMode>,std::allocator<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,PartMode>>>::_M_realloc_insert<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,PartMode>>(std::vector<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,PartMode>,std::allocator<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,PartMode>>>::iterator)",
+      "symbol": "_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE8PartModeESaIS8_EE17_M_realloc_insertIJS8_EEEvN9__gnu_cxx17__normal_iteratorIPS8_SA_EEDpOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function const char** en265_list_parameter_choices(en265_encoder_context*, const char*)",
+      "symbol": "en265_list_parameter_choices"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function de265_error en265_free_encoder(en265_encoder_context*)",
+      "symbol": "en265_free_encoder"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,MEMode>,std::allocator<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,MEMode>>>::_M_realloc_insert<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,MEMode>>(std::vector<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,MEMode>,std::allocator<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,MEMode>>>::iterator)",
+      "symbol": "_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE6MEModeESaIS8_EE17_M_realloc_insertIJS8_EEEvN9__gnu_cxx17__normal_iteratorIPS8_SA_EEDpOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int en265_number_of_queued_packets(en265_encoder_context*)",
+      "symbol": "en265_number_of_queued_packets"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function de265_error en265_set_parameter_bool(en265_encoder_context*, const char*, int)",
+      "symbol": "en265_set_parameter_bool"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void en265_print_logging(const encoder_context*, const char*, const char*)",
+      "symbol": "_Z19en265_print_loggingPK15encoder_contextPKcS3_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function de265_error en265_set_parameter_int(en265_encoder_context*, const char*, int)",
+      "symbol": "en265_set_parameter_int"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function en265_encoder_context* en265_new_encoder(void)",
+      "symbol": "en265_new_encoder"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function de265_error en265_encode(en265_encoder_context*)",
+      "symbol": "en265_encode"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::pair<IntraPredMode,float>,std::allocator<std::pair<IntraPredMode,float>>>::_M_realloc_insert<std::pair<IntraPredMode,float>>(std::vector<std::pair<IntraPredMode,float>,std::allocator<std::pair<IntraPredMode,float>>>::iterator)",
+      "symbol": "_ZNSt6vectorISt4pairI13IntraPredModefESaIS2_EE17_M_realloc_insertIJS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,ALGO_TB_Split_BruteForce_ZeroBlockPrune>,std::allocator<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,ALGO_TB_Split_BruteForce_ZeroBlockPrune>>>::_M_realloc_insert<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,ALGO_TB_Split_BruteForce_ZeroBlockPrune>>(std::vector<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,ALGO_TB_Split_BruteForce_ZeroBlockPrune>,std::allocator<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,ALGO_TB_Split_BruteForce_ZeroBlockPrune>>>::iterator)",
+      "symbol": "_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE39ALGO_TB_Split_BruteForce_ZeroBlockPruneESaIS8_EE17_M_realloc_insertIJS8_EEEvN9__gnu_cxx17__normal_iteratorIPS8_SA_EEDpOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function de265_error en265_start_encoder(en265_encoder_context*, int)",
+      "symbol": "en265_start_encoder"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,ALGO_TB_IntraPredMode>,std::allocator<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,ALGO_TB_IntraPredMode>>>::_M_realloc_insert<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,ALGO_TB_IntraPredMode>>(std::vector<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,ALGO_TB_IntraPredMode>,std::allocator<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,ALGO_TB_IntraPredMode>>>::iterator)",
+      "symbol": "_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE21ALGO_TB_IntraPredModeESaIS8_EE17_M_realloc_insertIJS8_EEEvN9__gnu_cxx17__normal_iteratorIPS8_SA_EEDpOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function en265_parameter_type en265_get_parameter_type(en265_encoder_context*, const char*)",
+      "symbol": "en265_get_parameter_type"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function de265_error en265_push_image(en265_encoder_context*, de265_image*)",
+      "symbol": "en265_push_image"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function en265_packet* en265_get_packet(en265_encoder_context*, int)",
+      "symbol": "en265_get_packet"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function de265_error en265_set_parameter_choice(en265_encoder_context*, const char*, const char*)",
+      "symbol": "en265_set_parameter_choice"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int en265_current_input_queue_length(en265_encoder_context*)",
+      "symbol": "en265_current_input_queue_length"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function de265_image* en265_allocate_image(en265_encoder_context*, int, int, de265_chroma, de265_PTS, void*)",
+      "symbol": "en265_allocate_image"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function en265_encoder_state en265_get_encoder_state(en265_encoder_context*)",
+      "symbol": "en265_get_encoder_state"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function const char** en265_list_parameters(en265_encoder_context*)",
+      "symbol": "en265_list_parameters"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,ALGO_TB_IntraPredMode_Subset>,std::allocator<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,ALGO_TB_IntraPredMode_Subset>>>::_M_realloc_insert<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,ALGO_TB_IntraPredMode_Subset>>(std::vector<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,ALGO_TB_IntraPredMode_Subset>,std::allocator<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,ALGO_TB_IntraPredMode_Subset>>>::iterator)",
+      "symbol": "_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE28ALGO_TB_IntraPredMode_SubsetESaIS8_EE17_M_realloc_insertIJS8_EEEvN9__gnu_cxx17__normal_iteratorIPS8_SA_EEDpOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,SOP_Structure>,std::allocator<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,SOP_Structure>>>::_M_realloc_insert<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,SOP_Structure>>(std::vector<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,SOP_Structure>,std::allocator<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,SOP_Structure>>>::iterator)",
+      "symbol": "_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE13SOP_StructureESaIS8_EE17_M_realloc_insertIJS8_EEEvN9__gnu_cxx17__normal_iteratorIPS8_SA_EEDpOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function de265_error en265_parse_command_line_parameters(en265_encoder_context*, int*, char**)",
+      "symbol": "en265_parse_command_line_parameters"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,MVSearchAlgo>,std::allocator<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,MVSearchAlgo>>>::_M_realloc_insert<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,MVSearchAlgo>>(std::vector<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,MVSearchAlgo>,std::allocator<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,MVSearchAlgo>>>::iterator)",
+      "symbol": "_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE12MVSearchAlgoESaIS8_EE17_M_realloc_insertIJS8_EEEvN9__gnu_cxx17__normal_iteratorIPS8_SA_EEDpOT_"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 12
+    },
+    "type_events": [
+     {
+      "count": 1,
+      "declared_in": "./libde265/decctx.h",
+      "kind": "base_class_changed",
+      "type": "class decoder_context"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/12/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "class std::vector<de265_image*,std::allocator<de265_image*>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/12/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Vector_base<de265_image*,std::allocator<de265_image*>>::_Vector_impl"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/12/bits/stl_deque.h",
+      "kind": "base_class_changed",
+      "type": "class std::deque<de265_image*,std::allocator<de265_image*>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/12/bits/stl_deque.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Deque_base<de265_image*,std::allocator<de265_image*>>::_Deque_impl"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/12/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "class std::vector<image_unit*,std::allocator<image_unit*>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/12/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Vector_base<image_unit*,std::allocator<image_unit*>>::_Vector_impl"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/12/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "class std::vector<slice_unit*,std::allocator<slice_unit*>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/12/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Vector_base<slice_unit*,std::allocator<slice_unit*>>::_Vector_impl"
+     },
+     {
+      "count": 1,
+      "declared_in": "./libde265/decctx.h",
+      "kind": "base_class_changed",
+      "type": "class decoder_context"
+     },
+     {
+      "count": 1,
+      "declared_in": "../../../libde265/decctx.h",
+      "kind": "base_class_changed",
+      "type": "class base_context"
+     },
+     {
+      "count": 1,
+      "declared_in": "../../../libde265/decctx.h",
+      "kind": "base_class_changed",
+      "type": "class base_context"
+     },
+     {
+      "count": 6,
+      "declared_in": "./libde265/de265.h",
+      "kind": "enum_case_added",
+      "type": "enum de265_error"
+     }
+    ]
+   }
+  ],
+  "seconds": 7.791932293,
+  "source": "libde265",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.0.9",
+   "1.0.11"
+  ]
+ },
+ "generated_at": "2026-09-02T14:59:43Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

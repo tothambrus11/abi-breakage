@@ -1,0 +1,173 @@
+{
+ "data": {
+  "id": "sqlite3@3.45.3..3.46.0",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      1406,
+      1407
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "function_signature_changed": 4,
+     "symbol_added": 5,
+     "symbol_removed": 4
+    },
+    "soname": [
+     "libsqlite3.so.0",
+     "libsqlite3.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int sqlite3ExprIsConstantNotJoin(Expr*)",
+      "symbol": "sqlite3ExprIsConstantNotJoin"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int sqlite3ExprIsTableConstant(Expr*, int)",
+      "symbol": "sqlite3ExprIsTableConstant"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sqlite3Fts3IcuTokenizerModule(const sqlite3_tokenizer_module**)",
+      "symbol": "sqlite3Fts3IcuTokenizerModule"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int sqlite3IcuInit(sqlite3*)",
+      "symbol": "sqlite3IcuInit"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int sqlite3changegroup_add_change(sqlite3_changegroup*, sqlite3_changeset_iter*)",
+      "symbol": "sqlite3changegroup_add_change"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void sqlite3MultiValuesEnd(Parse*, Select*)",
+      "symbol": "sqlite3MultiValuesEnd"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Select* sqlite3MultiValues(Parse*, Select*, ExprList*)",
+      "symbol": "sqlite3MultiValues"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void sqlite3MemSetArrayInt64(sqlite3_value*, int, i64)",
+      "symbol": "sqlite3MemSetArrayInt64"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void sqlite3DequoteNumber(Parse*, Expr*)",
+      "symbol": "sqlite3DequoteNumber"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function int sqlite3ExprIsSingleTableConstraint(Expr*, const SrcList*, int)  ->  function int sqlite3ExprIsSingleTableConstraint(Expr*, const SrcList*, int, int)",
+      "symbol": "sqlite3ExprIsSingleTableConstraint"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function int sqlite3ExprIsConstant(Expr*)  ->  function int sqlite3ExprIsConstant(Parse*, Expr*)",
+      "symbol": "sqlite3ExprIsConstant"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void sqlite3ExprDeferredDelete(Parse*, Expr*)  ->  function int sqlite3ExprDeferredDelete(Parse*, Expr*)",
+      "symbol": "sqlite3ExprDeferredDelete"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function int sqlite3BtreeIntegrityCheck(sqlite3*, Btree*, Pgno*, int, int, int*, char**)  ->  function int sqlite3BtreeIntegrityCheck(sqlite3*, Btree*, Pgno*, Mem*, int, int, int*, char**)",
+      "symbol": "sqlite3BtreeIntegrityCheck"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 4,
+     "field_type_changed": 2,
+     "member_offset_changed": 2,
+     "type_size_changed": 2
+    },
+    "type_events": [
+     {
+      "count": 1,
+      "declared_in": "./src/sqliteInt.h",
+      "kind": "field_added_to_struct",
+      "type": "struct Parse"
+     },
+     {
+      "count": 2,
+      "declared_in": "./src/sqliteInt.h",
+      "kind": "field_type_changed",
+      "type": "struct SrcItem"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/sqliteInt.h",
+      "kind": "field_added_to_struct",
+      "type": "struct {u8 jointype; unsigned int notIndexed; unsigned int isIndexedBy; unsigned int isTabFunc; unsigned int isCorrelated; unsigned int isMaterialized; unsigned int viaCoroutine; unsigned int isRecursive; unsigned int fromDDL; unsigned int isCte; unsigned int notCte; unsigned int isUsing; unsigned int isOn; unsigned int isSynthUsing; unsigned int isNestedFrom;}"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/sqliteInt.h",
+      "kind": "field_added_to_struct",
+      "type": "union {char* zIndexedBy; ExprList* pFuncArg;}"
+     },
+     {
+      "count": 1,
+      "declared_in": "./ext/session/sqlite3session.c",
+      "kind": "field_added_to_struct",
+      "type": "struct sqlite3_changegroup"
+     },
+     {
+      "count": 2,
+      "declared_in": "./ext/session/sqlite3session.c",
+      "kind": "member_offset_changed",
+      "type": "struct sqlite3_changegroup"
+     },
+     {
+      "count": 1,
+      "declared_in": "./ext/session/sqlite3session.c",
+      "kind": "type_size_changed",
+      "type": "struct sqlite3_changegroup"
+     },
+     {
+      "count": 1,
+      "declared_in": "./ext/session/sqlite3session.c",
+      "kind": "type_size_changed",
+      "type": "struct sqlite3_rebaser"
+     }
+    ]
+   }
+  ],
+  "seconds": 4.157663445,
+  "source": "sqlite3",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "3.45.3",
+   "3.46.0"
+  ]
+ },
+ "generated_at": "2026-09-02T14:57:34Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

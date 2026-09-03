@@ -1,0 +1,165 @@
+{
+ "data": {
+  "id": "libabw@0.1.1..0.1.2",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      26,
+      35
+     ],
+     "mangled_functions": [
+      24,
+      33
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 13,
+     "symbol_removed": 4
+    },
+    "soname": [
+     "libabw-0.1.so.1",
+     "libabw-0.1.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual boost::system::system_error::~system_error()",
+      "symbol": "_ZN5boost6system12system_errorD2Ev"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual boost::system::system_error::~system_error()",
+      "symbol": "_ZN5boost6system12system_errorD0Ev"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual const char* boost::system::system_error::what() const",
+      "symbol": "_ZNK5boost6system12system_error4whatEv"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>::_M_emplace_back_aux<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>(std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>&&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE19_M_emplace_back_auxIJS5_EEEvDpOT_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Rb_tree<int,int,std::_Identity<int>,std::less<int>,std::allocator<int>>::_M_erase(std::_Rb_tree<int,int,std::_Identity<int>,std::less<int>,std::allocator<int>>::_Link_type)",
+      "symbol": "_ZNSt8_Rb_treeIiiSt9_IdentityIiESt4lessIiESaIiEE8_M_eraseEPSt13_Rb_tree_nodeIiE"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::_Rb_tree<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::_Select1st<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>,std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>& std::_Rb_tree<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::_Select1st<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>,std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>::operator=(const std::_Rb_tree<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::_Select1st<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>,std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>&)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_S5_ESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EEaSERKSE_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>::_M_realloc_insert<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>(std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>::iterator, std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>&&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_realloc_insertIJS5_EEEvN9__gnu_cxx17__normal_iteratorIPS5_S7_EEDpOT_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual std::_Sp_counted_deleter<unsignedchar*,void(*)(void*),std::allocator<void>,(__gnu_cxx::_Lock_policy)2>::~_Sp_counted_deleter()",
+      "symbol": "_ZNSt19_Sp_counted_deleterIPhPFvPvESaIvELN9__gnu_cxx12_Lock_policyE2EED2Ev"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual std::_Sp_counted_deleter<unsignedchar*,void(*)(void*),std::allocator<void>,(__gnu_cxx::_Lock_policy)2>::~_Sp_counted_deleter()",
+      "symbol": "_ZNSt19_Sp_counted_deleterIPhPFvPvESaIvELN9__gnu_cxx12_Lock_policyE2EED0Ev"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release()",
+      "symbol": "_ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE10_M_releaseEv"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void std::_Sp_counted_deleter<unsignedchar*,void(*)(void*),std::allocator<void>,(__gnu_cxx::_Lock_policy)2>::_M_destroy()",
+      "symbol": "_ZNSt19_Sp_counted_deleterIPhPFvPvESaIvELN9__gnu_cxx12_Lock_policyE2EE10_M_destroyEv"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_destroy()",
+      "symbol": "_ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE10_M_destroyEv"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::pair<std::_Rb_tree_iterator<int>,bool> std::_Rb_tree<int,int,std::_Identity<int>,std::less<int>,std::allocator<int>>::_M_insert_unique<intconst&>(const int&)",
+      "symbol": "_ZNSt8_Rb_treeIiiSt9_IdentityIiESt4lessIiESaIiEE16_M_insert_uniqueIRKiEESt4pairISt17_Rb_tree_iteratorIiEbEOT_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void std::_Sp_counted_ptr<std::nullptr_t,(__gnu_cxx::_Lock_policy)2>::_M_dispose()",
+      "symbol": "_ZNSt15_Sp_counted_ptrIDnLN9__gnu_cxx12_Lock_policyE2EE10_M_disposeEv"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void* std::_Sp_counted_deleter<unsignedchar*,void(*)(void*),std::allocator<void>,(__gnu_cxx::_Lock_policy)2>::_M_get_deleter(const std::type_info&)",
+      "symbol": "_ZNSt19_Sp_counted_deleterIPhPFvPvESaIvELN9__gnu_cxx12_Lock_policyE2EE14_M_get_deleterERKSt9type_info"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void std::_Sp_counted_deleter<unsignedchar*,void(*)(void*),std::allocator<void>,(__gnu_cxx::_Lock_policy)2>::_M_dispose()",
+      "symbol": "_ZNSt19_Sp_counted_deleterIPhPFvPvESaIvELN9__gnu_cxx12_Lock_policyE2EE10_M_disposeEv"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::_Rb_tree<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::_Select1st<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>,std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>::const_iterator std::_Rb_tree<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::_Select1st<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>,std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>::find(const std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>&) const",
+      "symbol": "_ZNKSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_S5_ESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE4findERS7_"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 7
+    },
+    "type_events": [
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/6/bits/stl_tree.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Rb_tree<int,std::pair<intconst,int>,std::_Select1st<std::pair<intconst,int>>,std::less<int>,std::allocator<std::pair<intconst,int>>>::_Rb_tree_impl<std::less<int>,true>"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/6/bits/stl_tree.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Rb_tree<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::_Identity<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>::_Rb_tree_impl<std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,true>"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/6/bits/stl_tree.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Rb_tree<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::_Select1st<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>,std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>::_Rb_tree_impl<std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,true>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/6/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "class std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>"
+     }
+    ]
+   }
+  ],
+  "seconds": 6.255464115,
+  "source": "libabw",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "0.1.1",
+   "0.1.2"
+  ]
+ },
+ "generated_at": "2026-09-02T15:16:35Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

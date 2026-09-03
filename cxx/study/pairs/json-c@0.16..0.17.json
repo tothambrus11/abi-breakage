@@ -1,0 +1,86 @@
+{
+ "data": {
+  "id": "json-c@0.16..0.17",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      137,
+      140
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {
+     "symbol_added": 1
+    },
+    "public": {
+     "enum_case_added": 1,
+     "symbol_added": 3
+    },
+    "soname": [
+     "libjson-c.so.5",
+     "libjson-c.so.5"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function int json_patch_apply(json_object*, json_object*, json_object**, json_patch_error*)",
+      "symbol": "json_patch_apply",
+      "version": "JSONC_0.17"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int json_object_array_insert_idx(json_object*, size_t, json_object*)",
+      "symbol": "json_object_array_insert_idx",
+      "version": "JSONC_0.17"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function char* _json_c_strerror(int)",
+      "symbol": "_json_c_strerror",
+      "version": "JSONC_PRIVATE"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "const char* json_number_chars",
+      "symbol": "json_number_chars",
+      "version": "JSONC_0.14"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [
+     {
+      "count": 1,
+      "declared_in": "./json_tokener.h",
+      "kind": "enum_case_added",
+      "type": "enum json_tokener_error"
+     }
+    ]
+   }
+  ],
+  "seconds": 1.801994122,
+  "source": "json-c",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "0.16",
+   "0.17"
+  ]
+ },
+ "generated_at": "2026-09-02T14:59:27Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

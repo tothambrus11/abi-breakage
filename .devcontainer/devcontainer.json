@@ -1,0 +1,81 @@
+// Development container for the abistudy pipeline.
+//
+// The toolchain is NOT redefined here: this container is built from
+// cxx/Dockerfile, the same image that scripts/check.sh gates in and that
+// METHODOLOGY.md §7 documents for reproduction. Debian sid is a hard
+// requirement (it is the only suite carrying a C++26-capable GCC alongside
+// libabigail-dev and libclang-dev), so keep the toolchain edits in
+// cxx/Dockerfile and leave this file to editor and ergonomics concerns.
+{
+  "name": "abistudy (C++26, libabigail, libclang)",
+
+  "build": {
+    "dockerfile": "../cxx/Dockerfile",
+    "context": "../cxx"
+  },
+
+  // Interactive extras only -- the non-root user, sudo, less, strace, jq.
+  // Nothing here may affect a build result; if it would, it belongs in
+  // cxx/Dockerfile so the gate sees it too.
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": true,
+      "configureZshAsDefaultShell": false,
+      "username": "vscode",
+      "userUid": "automatic",
+      "userGid": "automatic"
+    }
+  },
+
+  // The whole repo is mounted, not just cxx/: notes/, results/ and the
+  // superseded Python pipeline in v2/ stay readable for cross-checking.
+  "workspaceFolder": "/workspaces/abi-breakage",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/abi-breakage,type=bind",
+
+  // clang-tidy with the cppcoreguidelines family peaks around 1.5 GB per
+  // translation unit; the gate assumes it fits in 8 GB. A full study run
+  // materialises several thousand .deb files under cxx/study.
+  "hostRequirements": {
+    "cpus": 4,
+    "memory": "8gb",
+    "storage": "64gb"
+  },
+
+  "containerEnv": {
+    // Honoured by cxx/scripts/check.sh. Raise it on a roomier host.
+    "JOBS": "2"
+  },
+
+  // common-utils supplies the non-root user and sudo but not git, and no
+  // published Feature ships gdb; both are interactive-only, so they are
+  // installed here rather than in the gate image.
+  "postCreateCommand": "sudo apt-get update && sudo DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends git gdb && sudo rm -rf /var/lib/apt/lists/*",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.cmake-tools",
+        "ms-python.python"
+      ],
+      "settings": {
+        "cmake.sourceDirectory": "${workspaceFolder}/cxx",
+        // Deliberately not cxx/build or cxx/build-check: those caches are
+        // configured with the source dir at /work by the documented
+        // `docker run -v "$PWD/cxx:/work"` invocations, and CMake refuses a
+        // cache whose paths moved. The container gets its own tree.
+        "cmake.buildDirectory": "${workspaceFolder}/cxx/build-dev",
+        "cmake.generator": "Ninja",
+        "cmake.configureSettings": {
+          "CMAKE_BUILD_TYPE": "RelWithDebInfo"
+        },
+        "C_Cpp.default.compileCommands": "${workspaceFolder}/cxx/build-dev/compile_commands.json",
+        "C_Cpp.default.cppStandard": "c++26",
+        "C_Cpp.clang_format_path": "/usr/bin/clang-format",
+        "editor.formatOnSave": true
+      }
+    }
+  },
+
+  "remoteUser": "vscode"
+}

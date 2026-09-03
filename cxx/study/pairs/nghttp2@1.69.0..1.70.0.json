@@ -1,0 +1,58 @@
+{
+ "data": {
+  "id": "nghttp2@1.69.0..1.70.0",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      181,
+      181
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libnghttp2.so.14",
+     "libnghttp2.so.14"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_type_changed": 1
+    },
+    "type_events": [
+     {
+      "count": 1,
+      "declared_in": "./lib/nghttp2_stream.h",
+      "kind": "field_type_changed",
+      "type": "struct nghttp2_stream"
+     }
+    ]
+   }
+  ],
+  "seconds": 1.895078708,
+  "source": "nghttp2",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.69.0",
+   "1.70.0"
+  ]
+ },
+ "generated_at": "2026-09-02T14:58:26Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

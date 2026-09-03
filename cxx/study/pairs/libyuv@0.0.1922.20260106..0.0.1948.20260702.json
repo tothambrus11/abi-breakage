@@ -1,0 +1,844 @@
+{
+ "data": {
+  "id": "libyuv@0.0.1922.20260106..0.0.1948.20260702",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      1308,
+      1319
+     ],
+     "mangled_functions": [
+      34,
+      34
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "function_signature_changed": 4,
+     "symbol_added": 91,
+     "symbol_removed": 57
+    },
+    "soname": [
+     "libyuv.so.0",
+     "libyuv.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::RGB24MirrorRow_Any_SSSE3(const uint8_t*, uint8_t*, int)",
+      "symbol": "RGB24MirrorRow_Any_SSSE3"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::RGB24ToYJRow_SSSE3(const uint8_t*, uint8_t*, int)",
+      "symbol": "RGB24ToYJRow_SSSE3"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::I422ToARGB4444Row_Any_SSSE3(const uint8_t*, const uint8_t*, const uint8_t*, uint8_t*, const libyuv::YuvConstants*, int)",
+      "symbol": "I422ToARGB4444Row_Any_SSSE3"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::RGB24ToYRow_C(const uint8_t*, uint8_t*, int)",
+      "symbol": "RGB24ToYRow_C"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::ARGB4444ToARGBRow_SSE2(const uint8_t*, uint8_t*, int)",
+      "symbol": "ARGB4444ToARGBRow_SSE2"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::HalfFloatRow_Any_SSE2(const uint16_t*, uint16_t*, float, int)",
+      "symbol": "HalfFloatRow_Any_SSE2"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::RGB24ToUVJRow_C(const uint8_t*, int, uint8_t*, uint8_t*, int)",
+      "symbol": "RGB24ToUVJRow_C"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::ARGBToARGB4444Row_Any_SSE2(const uint8_t*, uint8_t*, int)",
+      "symbol": "ARGBToARGB4444Row_Any_SSE2"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::I422ToARGB1555Row_SSSE3(const uint8_t*, const uint8_t*, const uint8_t*, uint8_t*, const libyuv::YuvConstants*, int)",
+      "symbol": "I422ToARGB1555Row_SSSE3"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::ARGBToARGB1555Row_SSE2(const uint8_t*, uint8_t*, int)",
+      "symbol": "ARGBToARGB1555Row_SSE2"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::ARGBToRGB565DitherRow_SSE2(const uint8_t*, uint8_t*, uint32_t, int)",
+      "symbol": "ARGBToRGB565DitherRow_SSE2"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::ARGBToRGB565Row_SSE2(const uint8_t*, uint8_t*, int)",
+      "symbol": "ARGBToRGB565Row_SSE2"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::RAWToYJRow_AVX2(const uint8_t*, uint8_t*, int)",
+      "symbol": "RAWToYJRow_AVX2"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::RAWToYJRow_Any_AVX2(const uint8_t*, uint8_t*, int)",
+      "symbol": "RAWToYJRow_Any_AVX2"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::HalfFloatRow_SSE2(const uint16_t*, uint16_t*, float, int)",
+      "symbol": "HalfFloatRow_SSE2"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::RGB24ToYJRow_Any_AVX2(const uint8_t*, uint8_t*, int)",
+      "symbol": "RGB24ToYJRow_Any_AVX2"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::NV12ToRGB565Row_Any_AVX2(const uint8_t*, const uint8_t*, uint8_t*, const libyuv::YuvConstants*, int)",
+      "symbol": "NV12ToRGB565Row_Any_AVX2"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::J400ToARGBRow_Any_SSE2(const uint8_t*, uint8_t*, int)",
+      "symbol": "J400ToARGBRow_Any_SSE2"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::I422ToRGB565Row_SSSE3(const uint8_t*, const uint8_t*, const uint8_t*, uint8_t*, const libyuv::YuvConstants*, int)",
+      "symbol": "I422ToRGB565Row_SSSE3"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::NV12ToRGB565Row_AVX2(const uint8_t*, const uint8_t*, uint8_t*, const libyuv::YuvConstants*, int)",
+      "symbol": "NV12ToRGB565Row_AVX2"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::I422ToARGB4444Row_AVX2(const uint8_t*, const uint8_t*, const uint8_t*, uint8_t*, const libyuv::YuvConstants*, int)",
+      "symbol": "I422ToARGB4444Row_AVX2"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::ARGBToARGB4444Row_SSE2(const uint8_t*, uint8_t*, int)",
+      "symbol": "ARGBToARGB4444Row_SSE2"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::ARGBToRGB565Row_Any_SSE2(const uint8_t*, uint8_t*, int)",
+      "symbol": "ARGBToRGB565Row_Any_SSE2"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::ARGBToARGB1555Row_Any_SSE2(const uint8_t*, uint8_t*, int)",
+      "symbol": "ARGBToARGB1555Row_Any_SSE2"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::RAWToUVRow_C(const uint8_t*, int, uint8_t*, uint8_t*, int)",
+      "symbol": "RAWToUVRow_C"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::InterpolateRow_SSSE3(uint8_t*, const uint8_t*, ptrdiff_t, int, int)",
+      "symbol": "InterpolateRow_SSSE3"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::RAWToYJRow_C(const uint8_t*, uint8_t*, int)",
+      "symbol": "RAWToYJRow_C"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::ARGB1555ToARGBRow_Any_SSE2(const uint8_t*, uint8_t*, int)",
+      "symbol": "ARGB1555ToARGBRow_Any_SSE2"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::RAWToUVJRow_C(const uint8_t*, int, uint8_t*, uint8_t*, int)",
+      "symbol": "RAWToUVJRow_C"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::MirrorSplitUVRow_SSSE3(const uint8_t*, uint8_t*, uint8_t*, int)",
+      "symbol": "MirrorSplitUVRow_SSSE3"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::ARGB4444ToARGBRow_Any_SSE2(const uint8_t*, uint8_t*, int)",
+      "symbol": "ARGB4444ToARGBRow_Any_SSE2"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::RAWToYJRow_Any_SSSE3(const uint8_t*, uint8_t*, int)",
+      "symbol": "RAWToYJRow_Any_SSSE3"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::RGB24MirrorRow_SSSE3(const uint8_t*, uint8_t*, int)",
+      "symbol": "RGB24MirrorRow_SSSE3"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::RAWToYRow_C(const uint8_t*, uint8_t*, int)",
+      "symbol": "RAWToYRow_C"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::ARGBToRGB565DitherRow_Any_SSE2(const uint8_t*, uint8_t*, const uint32_t, int)",
+      "symbol": "ARGBToRGB565DitherRow_Any_SSE2"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::RGB24ToUVRow_C(const uint8_t*, int, uint8_t*, uint8_t*, int)",
+      "symbol": "RGB24ToUVRow_C"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::RGB24ToYJRow_AVX2(const uint8_t*, uint8_t*, int)",
+      "symbol": "RGB24ToYJRow_AVX2"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::RGB24ToYJRow_C(const uint8_t*, uint8_t*, int)",
+      "symbol": "RGB24ToYJRow_C"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::RGB565ToARGBRow_Any_SSE2(const uint8_t*, uint8_t*, int)",
+      "symbol": "RGB565ToARGBRow_Any_SSE2"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::RGB565ToARGBRow_SSE2(const uint8_t*, uint8_t*, int)",
+      "symbol": "RGB565ToARGBRow_SSE2"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::ARGB1555ToARGBRow_SSE2(const uint8_t*, uint8_t*, int)",
+      "symbol": "ARGB1555ToARGBRow_SSE2"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::RAWToYJRow_SSSE3(const uint8_t*, uint8_t*, int)",
+      "symbol": "RAWToYJRow_SSSE3"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::NV12ToRGB565Row_Any_SSSE3(const uint8_t*, const uint8_t*, uint8_t*, const libyuv::YuvConstants*, int)",
+      "symbol": "NV12ToRGB565Row_Any_SSSE3"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::J400ToARGBRow_SSE2(const uint8_t*, uint8_t*, int)",
+      "symbol": "J400ToARGBRow_SSE2"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::I422ToRGB565Row_Any_AVX2(const uint8_t*, const uint8_t*, const uint8_t*, uint8_t*, const libyuv::YuvConstants*, int)",
+      "symbol": "I422ToRGB565Row_Any_AVX2"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::RGB24ToYJRow_Any_SSSE3(const uint8_t*, uint8_t*, int)",
+      "symbol": "RGB24ToYJRow_Any_SSSE3"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::I422ToRGB565Row_Any_SSSE3(const uint8_t*, const uint8_t*, const uint8_t*, uint8_t*, const libyuv::YuvConstants*, int)",
+      "symbol": "I422ToRGB565Row_Any_SSSE3"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::NV12ToRGB565Row_SSSE3(const uint8_t*, const uint8_t*, uint8_t*, const libyuv::YuvConstants*, int)",
+      "symbol": "NV12ToRGB565Row_SSSE3"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::InterpolateRow_Any_SSSE3(uint8_t*, const uint8_t*, ptrdiff_t, int, int)",
+      "symbol": "InterpolateRow_Any_SSSE3"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::I422ToRGBARow_Any_SSSE3(const uint8_t*, const uint8_t*, const uint8_t*, uint8_t*, const libyuv::YuvConstants*, int)",
+      "symbol": "I422ToRGBARow_Any_SSSE3"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::I422ToRGB565Row_AVX2(const uint8_t*, const uint8_t*, const uint8_t*, uint8_t*, const libyuv::YuvConstants*, int)",
+      "symbol": "I422ToRGB565Row_AVX2"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::I422ToARGB1555Row_Any_AVX2(const uint8_t*, const uint8_t*, const uint8_t*, uint8_t*, const libyuv::YuvConstants*, int)",
+      "symbol": "I422ToARGB1555Row_Any_AVX2"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::I422ToARGB1555Row_AVX2(const uint8_t*, const uint8_t*, const uint8_t*, uint8_t*, const libyuv::YuvConstants*, int)",
+      "symbol": "I422ToARGB1555Row_AVX2"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::MirrorUVRow_Any_SSSE3(const uint8_t*, uint8_t*, int)",
+      "symbol": "MirrorUVRow_Any_SSSE3"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::I422ToARGB4444Row_SSSE3(const uint8_t*, const uint8_t*, const uint8_t*, uint8_t*, const libyuv::YuvConstants*, int)",
+      "symbol": "I422ToARGB4444Row_SSSE3"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::I422ToARGB4444Row_Any_AVX2(const uint8_t*, const uint8_t*, const uint8_t*, uint8_t*, const libyuv::YuvConstants*, int)",
+      "symbol": "I422ToARGB4444Row_Any_AVX2"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::I422ToARGB1555Row_Any_SSSE3(const uint8_t*, const uint8_t*, const uint8_t*, uint8_t*, const libyuv::YuvConstants*, int)",
+      "symbol": "I422ToARGB1555Row_Any_SSSE3"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::RGBToYMatrixRow_C(const uint8_t*, uint8_t*, int, const libyuv::ArgbConstants*)",
+      "symbol": "RGBToYMatrixRow_C"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::RGBToYMatrixRow_Any_AVX2(const uint8_t*, uint8_t*, int, const libyuv::ArgbConstants*)",
+      "symbol": "RGBToYMatrixRow_Any_AVX2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::RGBToYMatrixRow_AVX2(const uint8_t*, uint8_t*, int, const libyuv::ArgbConstants*)",
+      "symbol": "RGBToYMatrixRow_AVX2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::RGBToUVMatrixRow_C(const uint8_t*, int, uint8_t*, uint8_t*, int, const libyuv::ArgbConstants*)",
+      "symbol": "RGBToUVMatrixRow_C"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::RGBToUVMatrixRow_AVX2(const uint8_t*, int, uint8_t*, uint8_t*, int, const libyuv::ArgbConstants*)",
+      "symbol": "RGBToUVMatrixRow_AVX2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::RGBAToYRow_AVX2(const uint8_t*, uint8_t*, int)",
+      "symbol": "RGBAToYRow_AVX2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::ARGBToUVMatrixRow_C(const uint8_t*, int, uint8_t*, uint8_t*, int, const libyuv::ArgbConstants*)",
+      "symbol": "ARGBToUVMatrixRow_C"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::ARGBToUVMatrixRow_Any_SSSE3(const uint8_t*, int, uint8_t*, uint8_t*, int, const libyuv::ArgbConstants*)",
+      "symbol": "ARGBToUVMatrixRow_Any_SSSE3"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::ARGB4444ToUVMatrixRow_Any_AVX2(const uint8_t*, int, uint8_t*, uint8_t*, int, const libyuv::ArgbConstants*)",
+      "symbol": "ARGB4444ToUVMatrixRow_Any_AVX2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int libyuv::RGB24ToNV12(const uint8_t*, int, uint8_t*, int, uint8_t*, int, int, int)",
+      "symbol": "RGB24ToNV12"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::ARGBToUV444MatrixRow_Any_AVX2(const uint8_t*, uint8_t*, uint8_t*, int, const libyuv::ArgbConstants*)",
+      "symbol": "ARGBToUV444MatrixRow_Any_AVX2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::RGB565ToARGBRow_AVX2(const uint8_t*, uint8_t*, int)",
+      "symbol": "RGB565ToARGBRow_AVX2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int libyuv::ARGBToNV12Matrix(const uint8_t*, int, uint8_t*, int, uint8_t*, int, const libyuv::ArgbConstants*, int, int)",
+      "symbol": "ARGBToNV12Matrix"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::ARGBToUV444MatrixRow_Any_SSSE3(const uint8_t*, uint8_t*, uint8_t*, int, const libyuv::ArgbConstants*)",
+      "symbol": "ARGBToUV444MatrixRow_Any_SSSE3"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int libyuv::ARGBToI422Matrix(const uint8_t*, int, uint8_t*, int, uint8_t*, int, uint8_t*, int, const libyuv::ArgbConstants*, int, int)",
+      "symbol": "ARGBToI422Matrix"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::ARGB1555ToYMatrixRow_Any_AVX2(const uint8_t*, uint8_t*, int, const libyuv::ArgbConstants*)",
+      "symbol": "ARGB1555ToYMatrixRow_Any_AVX2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::ARGB4444ToYMatrixRow_C(const uint8_t*, uint8_t*, int, const libyuv::ArgbConstants*)",
+      "symbol": "ARGB4444ToYMatrixRow_C"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int libyuv::ABGRToI422(const uint8_t*, int, uint8_t*, int, uint8_t*, int, uint8_t*, int, int, int)",
+      "symbol": "ABGRToI422"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int libyuv::RAWToNV21Matrix(const uint8_t*, int, uint8_t*, int, uint8_t*, int, const libyuv::ArgbConstants*, int, int)",
+      "symbol": "RAWToNV21Matrix"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::ARGB4444ToYMatrixRow_AVX2(const uint8_t*, uint8_t*, int, const libyuv::ArgbConstants*)",
+      "symbol": "ARGB4444ToYMatrixRow_AVX2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int libyuv::ARGBToI420Matrix(const uint8_t*, int, uint8_t*, int, uint8_t*, int, uint8_t*, int, const libyuv::ArgbConstants*, int, int)",
+      "symbol": "ARGBToI420Matrix"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::ARGBToUV444MatrixRow_C(const uint8_t*, uint8_t*, uint8_t*, int, const libyuv::ArgbConstants*)",
+      "symbol": "ARGBToUV444MatrixRow_C"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::ARGB1555ToARGBRow_Any_AVX2(const uint8_t*, uint8_t*, int)",
+      "symbol": "ARGB1555ToARGBRow_Any_AVX2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::ARGB1555ToUVMatrixRow_AVX2(const uint8_t*, int, uint8_t*, uint8_t*, int, const libyuv::ArgbConstants*)",
+      "symbol": "ARGB1555ToUVMatrixRow_AVX2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::RGBAToYRow_Any_AVX2(const uint8_t*, uint8_t*, int)",
+      "symbol": "RGBAToYRow_Any_AVX2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::ARGB4444ToUVMatrixRow_C(const uint8_t*, int, uint8_t*, uint8_t*, int, const libyuv::ArgbConstants*)",
+      "symbol": "ARGB4444ToUVMatrixRow_C"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::RGB565ToUVMatrixRow_C(const uint8_t*, int, uint8_t*, uint8_t*, int, const libyuv::ArgbConstants*)",
+      "symbol": "RGB565ToUVMatrixRow_C"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::RGB565ToUVMatrixRow_Any_AVX2(const uint8_t*, int, uint8_t*, uint8_t*, int, const libyuv::ArgbConstants*)",
+      "symbol": "RGB565ToUVMatrixRow_Any_AVX2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int libyuv::ARGBToI444Matrix(const uint8_t*, int, uint8_t*, int, uint8_t*, int, uint8_t*, int, const libyuv::ArgbConstants*, int, int)",
+      "symbol": "ARGBToI444Matrix"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::ARGB1555ToARGBRow_AVX2(const uint8_t*, uint8_t*, int)",
+      "symbol": "ARGB1555ToARGBRow_AVX2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::RGB24MirrorRow_AVX2(const uint8_t*, uint8_t*, int)",
+      "symbol": "RGB24MirrorRow_AVX2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::ARGB1555ToYMatrixRow_C(const uint8_t*, uint8_t*, int, const libyuv::ArgbConstants*)",
+      "symbol": "ARGB1555ToYMatrixRow_C"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int libyuv::ARGBToI400Matrix(const uint8_t*, int, uint8_t*, int, const libyuv::ArgbConstants*, int, int)",
+      "symbol": "ARGBToI400Matrix"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::ARGB4444ToUVMatrixRow_AVX2(const uint8_t*, int, uint8_t*, uint8_t*, int, const libyuv::ArgbConstants*)",
+      "symbol": "ARGB4444ToUVMatrixRow_AVX2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::ARGBToYMatrixRow_Any_SSSE3(const uint8_t*, uint8_t*, int, const libyuv::ArgbConstants*)",
+      "symbol": "ARGBToYMatrixRow_Any_SSSE3"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::ARGB4444ToARGBRow_Any_AVX2(const uint8_t*, uint8_t*, int)",
+      "symbol": "ARGB4444ToARGBRow_Any_AVX2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::ARGB4444ToARGBRow_AVX2(const uint8_t*, uint8_t*, int)",
+      "symbol": "ARGB4444ToARGBRow_AVX2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::ARGBToYMatrixRow_Any_AVX2(const uint8_t*, uint8_t*, int, const libyuv::ArgbConstants*)",
+      "symbol": "ARGBToYMatrixRow_Any_AVX2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::InterpolateRow_16_Any_AVX2(uint16_t*, const uint16_t*, ptrdiff_t, int, int)",
+      "symbol": "InterpolateRow_16_Any_AVX2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::RGB24MirrorRow_Any_AVX2(const uint8_t*, uint8_t*, int)",
+      "symbol": "RGB24MirrorRow_Any_AVX2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::ARGBToYMatrixRow_SSSE3(const uint8_t*, uint8_t*, int, const libyuv::ArgbConstants*)",
+      "symbol": "ARGBToYMatrixRow_SSSE3"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::RGB565ToUVMatrixRow_AVX2(const uint8_t*, int, uint8_t*, uint8_t*, int, const libyuv::ArgbConstants*)",
+      "symbol": "RGB565ToUVMatrixRow_AVX2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::ARGBToYMatrixRow_C(const uint8_t*, uint8_t*, int, const libyuv::ArgbConstants*)",
+      "symbol": "ARGBToYMatrixRow_C"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::RGB24ToARGBRow_AVX2(const uint8_t*, uint8_t*, int)",
+      "symbol": "RGB24ToARGBRow_AVX2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::ARGB4444ToYMatrixRow_Any_AVX2(const uint8_t*, uint8_t*, int, const libyuv::ArgbConstants*)",
+      "symbol": "ARGB4444ToYMatrixRow_Any_AVX2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int libyuv::ARGBToYUY2Matrix(const uint8_t*, int, uint8_t*, int, const libyuv::ArgbConstants*, int, int)",
+      "symbol": "ARGBToYUY2Matrix"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int libyuv::RGBAToI422(const uint8_t*, int, uint8_t*, int, uint8_t*, int, uint8_t*, int, int, int)",
+      "symbol": "RGBAToI422"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int libyuv::ARGBToUYVYMatrix(const uint8_t*, int, uint8_t*, int, const libyuv::ArgbConstants*, int, int)",
+      "symbol": "ARGBToUYVYMatrix"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int libyuv::BGRAToI422(const uint8_t*, int, uint8_t*, int, uint8_t*, int, uint8_t*, int, int, int)",
+      "symbol": "BGRAToI422"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::BGRAToYRow_AVX2(const uint8_t*, uint8_t*, int)",
+      "symbol": "BGRAToYRow_AVX2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::RGBToUVMatrixRow_Any_AVX2(const uint8_t*, int, uint8_t*, uint8_t*, int, const libyuv::ArgbConstants*)",
+      "symbol": "RGBToUVMatrixRow_Any_AVX2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::RGB565ToYMatrixRow_Any_AVX2(const uint8_t*, uint8_t*, int, const libyuv::ArgbConstants*)",
+      "symbol": "RGB565ToYMatrixRow_Any_AVX2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::BGRAToYRow_Any_AVX2(const uint8_t*, uint8_t*, int)",
+      "symbol": "BGRAToYRow_Any_AVX2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::RGB565ToYMatrixRow_AVX2(const uint8_t*, uint8_t*, int, const libyuv::ArgbConstants*)",
+      "symbol": "RGB565ToYMatrixRow_AVX2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::InterpolateRow_16_AVX2(uint16_t*, const uint16_t*, ptrdiff_t, int, int)",
+      "symbol": "InterpolateRow_16_AVX2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::J400ToARGBRow_AVX2(const uint8_t*, uint8_t*, int)",
+      "symbol": "J400ToARGBRow_AVX2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::J400ToARGBRow_Any_AVX2(const uint8_t*, uint8_t*, int)",
+      "symbol": "J400ToARGBRow_Any_AVX2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::ARGB1555ToUVMatrixRow_C(const uint8_t*, int, uint8_t*, uint8_t*, int, const libyuv::ArgbConstants*)",
+      "symbol": "ARGB1555ToUVMatrixRow_C"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::MirrorSplitUVRow_AVX2(const uint8_t*, uint8_t*, uint8_t*, int)",
+      "symbol": "MirrorSplitUVRow_AVX2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int libyuv::RAWToNV21(const uint8_t*, int, uint8_t*, int, uint8_t*, int, int, int)",
+      "symbol": "RAWToNV21"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::ARGBToUVMatrixRow_Any_AVX2(const uint8_t*, int, uint8_t*, uint8_t*, int, const libyuv::ArgbConstants*)",
+      "symbol": "ARGBToUVMatrixRow_Any_AVX2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::RGB565ToARGBRow_Any_AVX2(const uint8_t*, uint8_t*, int)",
+      "symbol": "RGB565ToARGBRow_Any_AVX2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::RGB24ToARGBRow_Any_AVX2(const uint8_t*, uint8_t*, int)",
+      "symbol": "RGB24ToARGBRow_Any_AVX2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::ARGBToYMatrixRow_AVX2(const uint8_t*, uint8_t*, int, const libyuv::ArgbConstants*)",
+      "symbol": "ARGBToYMatrixRow_AVX2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::ARGB1555ToYMatrixRow_AVX2(const uint8_t*, uint8_t*, int, const libyuv::ArgbConstants*)",
+      "symbol": "ARGB1555ToYMatrixRow_AVX2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::ARGB1555ToUVMatrixRow_Any_AVX2(const uint8_t*, int, uint8_t*, uint8_t*, int, const libyuv::ArgbConstants*)",
+      "symbol": "ARGB1555ToUVMatrixRow_Any_AVX2"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::RGB565ToYMatrixRow_C(const uint8_t*, uint8_t*, int, const libyuv::ArgbConstants*)",
+      "symbol": "RGB565ToYMatrixRow_C"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "const libyuv::ArgbConstants libyuv::kRgbaV2020Constants",
+      "symbol": "kRgbaV2020Constants"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "const libyuv::ArgbConstants libyuv::kRgbaI601Constants",
+      "symbol": "kRgbaI601Constants"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "const libyuv::ArgbConstants libyuv::kBgraV2020Constants",
+      "symbol": "kBgraV2020Constants"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "const libyuv::ArgbConstants libyuv::kRgbaH709Constants",
+      "symbol": "kRgbaH709Constants"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "const libyuv::ArgbConstants libyuv::kBgraU2020Constants",
+      "symbol": "kBgraU2020Constants"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "const libyuv::ArgbConstants libyuv::kBgraI601Constants",
+      "symbol": "kBgraI601Constants"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "const libyuv::ArgbConstants libyuv::kRgbaU2020Constants",
+      "symbol": "kRgbaU2020Constants"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "const libyuv::ArgbConstants libyuv::kBgraH709Constants",
+      "symbol": "kBgraH709Constants"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "const libyuv::ArgbConstants libyuv::kAbgrI601Constants",
+      "symbol": "kAbgrI601Constants"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "const libyuv::ArgbConstants libyuv::kAbgrU2020Constants",
+      "symbol": "kAbgrU2020Constants"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "const libyuv::ArgbConstants libyuv::kAbgrJPEGConstants",
+      "symbol": "kAbgrJPEGConstants"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "const libyuv::ArgbConstants libyuv::kAbgrV2020Constants",
+      "symbol": "kAbgrV2020Constants"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "const libyuv::ArgbConstants libyuv::kArgbF709Constants",
+      "symbol": "kArgbF709Constants"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "const libyuv::ArgbConstants libyuv::kAbgrH709Constants",
+      "symbol": "kAbgrH709Constants"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "const libyuv::ArgbConstants libyuv::kArgbI601Constants",
+      "symbol": "kArgbI601Constants"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "const libyuv::ArgbConstants libyuv::kAbgrF709Constants",
+      "symbol": "kAbgrF709Constants"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "const libyuv::ArgbConstants libyuv::kArgbH709Constants",
+      "symbol": "kArgbH709Constants"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "const libyuv::ArgbConstants libyuv::kArgbJPEGConstants",
+      "symbol": "kArgbJPEGConstants"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "const libyuv::ArgbConstants libyuv::kRgbaF709Constants",
+      "symbol": "kRgbaF709Constants"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "const libyuv::ArgbConstants libyuv::kBgraJPEGConstants",
+      "symbol": "kBgraJPEGConstants"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "const libyuv::ArgbConstants libyuv::kArgbU2020Constants",
+      "symbol": "kArgbU2020Constants"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "const libyuv::ArgbConstants libyuv::kArgbV2020Constants",
+      "symbol": "kArgbV2020Constants"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "const libyuv::ArgbConstants libyuv::kRgbaJPEGConstants",
+      "symbol": "kRgbaJPEGConstants"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "const libyuv::ArgbConstants libyuv::kBgraF709Constants",
+      "symbol": "kBgraF709Constants"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void libyuv::ARGBToUVMatrixRow_SSSE3(const uint8_t*, int, uint8_t*, uint8_t*, int, const libyuv::RgbUVConstants*)  ->  function void libyuv::ARGBToUVMatrixRow_SSSE3(const uint8_t*, int, uint8_t*, uint8_t*, int, const libyuv::ArgbConstants*)",
+      "symbol": "ARGBToUVMatrixRow_SSSE3"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void libyuv::ARGBToUVMatrixRow_AVX2(const uint8_t*, int, uint8_t*, uint8_t*, int, const libyuv::RgbUVConstants*)  ->  function void libyuv::ARGBToUVMatrixRow_AVX2(const uint8_t*, int, uint8_t*, uint8_t*, int, const libyuv::ArgbConstants*)",
+      "symbol": "ARGBToUVMatrixRow_AVX2"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void libyuv::ARGBToUV444MatrixRow_SSSE3(const uint8_t*, uint8_t*, uint8_t*, int, const libyuv::RgbUVConstants*)  ->  function void libyuv::ARGBToUV444MatrixRow_SSSE3(const uint8_t*, uint8_t*, uint8_t*, int, const libyuv::ArgbConstants*)",
+      "symbol": "ARGBToUV444MatrixRow_SSSE3"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void libyuv::ARGBToUV444MatrixRow_AVX2(const uint8_t*, uint8_t*, uint8_t*, int, const libyuv::RgbUVConstants*)  ->  function void libyuv::ARGBToUV444MatrixRow_AVX2(const uint8_t*, uint8_t*, uint8_t*, int, const libyuv::ArgbConstants*)",
+      "symbol": "ARGBToUV444MatrixRow_AVX2"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 3,
+     "field_type_changed": 2,
+     "member_offset_changed": 2,
+     "type_size_changed": 1
+    },
+    "type_events": [
+     {
+      "count": 3,
+      "declared_in": "./source/row_gcc.cc",
+      "kind": "field_added_to_struct",
+      "type": "struct libyuv::RgbUVConstants"
+     },
+     {
+      "count": 2,
+      "declared_in": "./source/row_gcc.cc",
+      "kind": "field_type_changed",
+      "type": "struct libyuv::RgbUVConstants"
+     },
+     {
+      "count": 2,
+      "declared_in": "./source/row_gcc.cc",
+      "kind": "member_offset_changed",
+      "type": "struct libyuv::RgbUVConstants"
+     },
+     {
+      "count": 1,
+      "declared_in": "./source/row_gcc.cc",
+      "kind": "type_size_changed",
+      "type": "struct libyuv::RgbUVConstants"
+     }
+    ]
+   }
+  ],
+  "seconds": 2.74073859,
+  "source": "libyuv",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "0.0.1922.20260106",
+   "0.0.1948.20260702"
+  ]
+ },
+ "generated_at": "2026-09-02T15:02:55Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

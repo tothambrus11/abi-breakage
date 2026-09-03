@@ -1,0 +1,141 @@
+{
+ "data": {
+  "id": "xxhash@0.7.0..0.7.1",
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      false,
+      true
+     ],
+     "exported_functions": [
+      24,
+      43
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 18
+    },
+    "soname": [
+     "libxxhash.so.0",
+     "libxxhash.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function XXH_errorcode XXH3_freeState(XXH3_state_t*)",
+      "symbol": "XXH3_freeState"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void XXH3_copyState(XXH3_state_t*, const XXH3_state_t*)",
+      "symbol": "XXH3_copyState"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function XXH3_state_t* XXH3_createState(void)",
+      "symbol": "XXH3_createState"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function XXH_errorcode XXH3_64bits_reset(XXH3_state_t*)",
+      "symbol": "XXH3_64bits_reset"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function XXH128_hash_t XXH128_hashFromCanonical(const XXH128_canonical_t*)",
+      "symbol": "XXH128_hashFromCanonical"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int XXH128_cmp(void*, void*)",
+      "symbol": "XXH128_cmp"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void XXH128_canonicalFromHash(XXH128_canonical_t*, XXH128_hash_t)",
+      "symbol": "XXH128_canonicalFromHash"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function XXH_errorcode XXH3_128bits_reset(XXH3_state_t*)",
+      "symbol": "XXH3_128bits_reset"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int XXH128_isEqual(XXH128_hash_t, XXH128_hash_t)",
+      "symbol": "XXH128_isEqual"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function XXH64_hash_t XXH3_64bits_digest(const XXH3_state_t*)",
+      "symbol": "XXH3_64bits_digest"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function XXH128_hash_t XXH3_128bits_digest(const XXH3_state_t*)",
+      "symbol": "XXH3_128bits_digest"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function XXH128_hash_t XXH3_128bits_withSecret(void*, size_t, void*, size_t)",
+      "symbol": "XXH3_128bits_withSecret"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function XXH_errorcode XXH3_128bits_reset_withSeed(XXH3_state_t*, XXH64_hash_t)",
+      "symbol": "XXH3_128bits_reset_withSeed"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function XXH_errorcode XXH3_64bits_reset_withSeed(XXH3_state_t*, XXH64_hash_t)",
+      "symbol": "XXH3_64bits_reset_withSeed"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function XXH_errorcode XXH3_64bits_update(XXH3_state_t*, void*, size_t)",
+      "symbol": "XXH3_64bits_update"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function XXH_errorcode XXH3_128bits_update(XXH3_state_t*, void*, size_t)",
+      "symbol": "XXH3_128bits_update"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function XXH_errorcode XXH3_64bits_reset_withSecret(XXH3_state_t*, void*, size_t)",
+      "symbol": "XXH3_64bits_reset_withSecret"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function XXH64_hash_t XXH3_64bits_withSecret(void*, size_t, void*, size_t)",
+      "symbol": "XXH3_64bits_withSecret"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": []
+   }
+  ],
+  "seconds": 1.306715095,
+  "source": "xxhash",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "0.7.0",
+   "0.7.1"
+  ]
+ },
+ "generated_at": "2026-09-02T12:10:49Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

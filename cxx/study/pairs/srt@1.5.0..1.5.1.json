@@ -1,0 +1,952 @@
+{
+ "data": {
+  "id": "srt@1.5.0..1.5.1",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      1019,
+      1014
+     ],
+     "mangled_functions": [
+      903,
+      896
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "function_signature_changed": 9,
+     "symbol_added": 10,
+     "symbol_removed": 15
+    },
+    "soname": [
+     "libsrt-gnutls.so.1.5",
+     "libsrt-gnutls.so.1.5"
+    ],
+    "symbol_events": [
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method bool srt::CTsbpdTime::addDriftSample(uint32_t, int)  ->  method bool srt::CTsbpdTime::addDriftSample(uint32_t, const srt::CTsbpdTime::time_point&, int)",
+      "symbol": "_ZN3srt10CTsbpdTime14addDriftSampleEji"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method bool srt::CRcvBufferNew::addRcvTsbPdDriftSample(uint32_t, int)  ->  method bool srt::CRcvBufferNew::addRcvTsbPdDriftSample(uint32_t, const srt::CRcvBufferNew::time_point&, int)",
+      "symbol": "_ZN3srt13CRcvBufferNew22addRcvTsbPdDriftSampleEji"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method void srt::CCryptoControl::regenCryptoKm(bool, bool)  ->  method void srt::CCryptoControl::regenCryptoKm(srt::CUDT*, bool)",
+      "symbol": "_ZN3srt14CCryptoControl13regenCryptoKmEbb"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method srt::CCryptoControl::CCryptoControl(srt::CUDT*, SRTSOCKET)  ->  method srt::CCryptoControl::CCryptoControl(SRTSOCKET)",
+      "symbol": "_ZN3srt14CCryptoControlC2EPNS_4CUDTEi"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method bool srt::CCryptoControl::init(srt::HandshakeSide, bool)  ->  method bool srt::CCryptoControl::init(srt::HandshakeSide, const srt::CSrtConfig&, bool)",
+      "symbol": "_ZN3srt14CCryptoControl4initENS_13HandshakeSideEb"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method srt::CUnitQueue::CUnitQueue()  ->  method srt::CUnitQueue::CUnitQueue(int, int)",
+      "symbol": "_ZN3srt10CUnitQueueC2Ev"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method void srt::CCryptoControl::sendKeysToPeer(srt::Whether2RegenKm)  ->  method void srt::CCryptoControl::sendKeysToPeer(srt::CUDT*, int, srt::Whether2RegenKm)",
+      "symbol": "_ZN3srt14CCryptoControl14sendKeysToPeerENS_15Whether2RegenKmE"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method srt_logging::LogDispatcher::Proxy& srt_logging::LogDispatcher::Proxy::vform(const char*, typedef__va_list_tag__va_list_tag*)",
+      "symbol": "_ZN11srt_logging13LogDispatcher5Proxy5vformEPKcP13__va_list_tag"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method srt::SrtOptionAction::SrtOptionAction()",
+      "symbol": "_ZN3srt15SrtOptionActionC2Ev"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int srt::CUnitQueue::init(int, int, int)",
+      "symbol": "_ZN3srt10CUnitQueue4initEiii"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_iterator<std::pair<intconst,srt::CEPollDesc::Wait>>,bool> std::_Rb_tree<int,std::pair<intconst,srt::CEPollDesc::Wait>,std::_Select1st<std::pair<intconst,srt::CEPollDesc::Wait>>,std::less<int>,std::allocator<std::pair<intconst,srt::CEPollDesc::Wait>>>::_M_emplace_unique<std::pair<int,srt::CEPollDesc::Wait>>()",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiN3srt10CEPollDesc4WaitEESt10_Select1stIS5_ESt4lessIiESaIS5_EE17_M_emplace_uniqueIJS0_IiS4_EEEES0_ISt17_Rb_tree_iteratorIS5_EbEDpOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*,std::_Rb_tree_node_base*> std::_Rb_tree<SRT_SOCKOPT,std::pair<constSRT_SOCKOPT,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::_Select1st<std::pair<constSRT_SOCKOPT,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>,std::less<SRT_SOCKOPT>,std::allocator<std::pair<constSRT_SOCKOPT,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>::_M_get_insert_hint_unique_pos(std::_Rb_tree<SRT_SOCKOPT,std::pair<constSRT_SOCKOPT,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::_Select1st<std::pair<constSRT_SOCKOPT,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>,std::less<SRT_SOCKOPT>,std::allocator<std::pair<constSRT_SOCKOPT,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>::const_iterator, const std::_Rb_tree<SRT_SOCKOPT,std::pair<constSRT_SOCKOPT,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::_Select1st<std::pair<constSRT_SOCKOPT,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>,std::less<SRT_SOCKOPT>,std::allocator<std::pair<constSRT_SOCKOPT,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeI11SRT_SOCKOPTSt4pairIKS0_NSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEESt10_Select1stIS9_ESt4lessIS0_ESaIS9_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS9_ERS2_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_iterator<std::pair<intconst,srt::CEPollDesc>>,bool> std::_Rb_tree<int,std::pair<intconst,srt::CEPollDesc>,std::_Select1st<std::pair<intconst,srt::CEPollDesc>>,std::less<int>,std::allocator<std::pair<intconst,srt::CEPollDesc>>>::_M_emplace_unique<std::pair<int,srt::CEPollDesc>>()",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiN3srt10CEPollDescEESt10_Select1stIS4_ESt4lessIiESaIS4_EE17_M_emplace_uniqueIJS0_IiS3_EEEES0_ISt17_Rb_tree_iteratorIS4_EbEDpOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_iterator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,bool> std::_Rb_tree<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::_Identity<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>::_M_insert_unique<std::__cxx11::basic_string<char>>(std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>&&)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_St9_IdentityIS5_ESt4lessIS5_ESaIS5_EE16_M_insert_uniqueIS5_EESt4pairISt17_Rb_tree_iteratorIS5_EbEOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Deque_iterator<bool,bool&,bool*>::_Self& std::_Deque_iterator<bool,bool&,bool*>::operator+=(std::_Deque_iterator<bool,bool&,bool*>::difference_type)",
+      "symbol": "_ZNSt15_Deque_iteratorIbRbPbEpLEl"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::vector<std::pair<int,int>,std::allocator<std::pair<int,int>>>& std::vector<std::pair<int,int>,std::allocator<std::pair<int,int>>>::operator=(const std::vector<std::pair<int,int>,std::allocator<std::pair<int,int>>>&)",
+      "symbol": "_ZNSt6vectorISt4pairIiiESaIS1_EEaSERKS3_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*,std::_Rb_tree_node_base*> std::_Rb_tree<int,std::pair<intconst,srt::CMultiplexer>,std::_Select1st<std::pair<intconst,srt::CMultiplexer>>,std::less<int>,std::allocator<std::pair<intconst,srt::CMultiplexer>>>::_M_get_insert_hint_unique_pos(std::_Rb_tree<int,std::pair<intconst,srt::CMultiplexer>,std::_Select1st<std::pair<intconst,srt::CMultiplexer>>,std::less<int>,std::allocator<std::pair<intconst,srt::CMultiplexer>>>::const_iterator, const std::_Rb_tree<int,std::pair<intconst,srt::CMultiplexer>,std::_Select1st<std::pair<intconst,srt::CMultiplexer>>,std::less<int>,std::allocator<std::pair<intconst,srt::CMultiplexer>>>::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiN3srt12CMultiplexerEESt10_Select1stIS4_ESt4lessIiESaIS4_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS4_ERS1_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void std::__introsort_loop<__gnu_cxx::__normal_iterator<srt::CUnit**,std::vector<srt::CUnit*>>,longint,__gnu_cxx::__ops::_Iter_comp_iter<srt::SortBySequence>>(__gnu_cxx::__normal_iterator<srt::CUnit**,std::vector<srt::CUnit*,std::allocator<srt::CUnit*>>>, __gnu_cxx::__normal_iterator<srt::CUnit**,std::vector<srt::CUnit*,std::allocator<srt::CUnit*>>>, long int, __gnu_cxx::__ops::_Iter_comp_iter<srt::SortBySequence>)",
+      "symbol": "_ZSt16__introsort_loopIN9__gnu_cxx17__normal_iteratorIPPN3srt5CUnitESt6vectorIS4_SaIS4_EEEElNS0_5__ops15_Iter_comp_iterINS2_14SortBySequenceEEEEvT_SE_T0_T1_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void srt::CUDT::handleKeepalive(const char*, size_t)",
+      "symbol": "_ZN3srt4CUDT15handleKeepaliveEPKcm"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*,std::_Rb_tree_node_base*> std::_Rb_tree<longint,std::pair<longintconst,std::set<int,std::less<int>,std::allocator<int>>>,std::_Select1st<std::pair<longintconst,std::set<int,std::less<int>,std::allocator<int>>>>,std::less<longint>,std::allocator<std::pair<longintconst,std::set<int,std::less<int>,std::allocator<int>>>>>::_M_get_insert_hint_unique_pos(std::_Rb_tree<longint,std::pair<longintconst,std::set<int,std::less<int>,std::allocator<int>>>,std::_Select1st<std::pair<longintconst,std::set<int,std::less<int>,std::allocator<int>>>>,std::less<longint>,std::allocator<std::pair<longintconst,std::set<int,std::less<int>,std::allocator<int>>>>>::const_iterator, const std::_Rb_tree<longint,std::pair<longintconst,std::set<int,std::less<int>,std::allocator<int>>>,std::_Select1st<std::pair<longintconst,std::set<int,std::less<int>,std::allocator<int>>>>,std::less<longint>,std::allocator<std::pair<longintconst,std::set<int,std::less<int>,std::allocator<int>>>>>::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeIlSt4pairIKlSt3setIiSt4lessIiESaIiEEESt10_Select1stIS7_ES3_IlESaIS7_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS7_ERS1_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int srt::CUnitQueue::increase()",
+      "symbol": "_ZN3srt10CUnitQueue8increaseEv"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int srt::CUnitQueue::shrink()",
+      "symbol": "_ZN3srt10CUnitQueue6shrinkEv"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::_Rb_tree<longint,std::pair<longintconst,std::set<int,std::less<int>,std::allocator<int>>>,std::_Select1st<std::pair<longintconst,std::set<int,std::less<int>,std::allocator<int>>>>,std::less<longint>,std::allocator<std::pair<longintconst,std::set<int,std::less<int>,std::allocator<int>>>>>::iterator std::_Rb_tree<longint,std::pair<longintconst,std::set<int,std::less<int>,std::allocator<int>>>,std::_Select1st<std::pair<longintconst,std::set<int,std::less<int>,std::allocator<int>>>>,std::less<longint>,std::allocator<std::pair<longintconst,std::set<int,std::less<int>,std::allocator<int>>>>>::_M_emplace_hint_unique<conststd::piecewise_construct_t&,std::tuple<longint&&>,std::tuple<>>(std::_Rb_tree<longint,std::pair<longintconst,std::set<int,std::less<int>,std::allocator<int>>>,std::_Select1st<std::pair<longintconst,std::set<int,std::less<int>,std::allocator<int>>>>,std::less<longint>,std::allocator<std::pair<longintconst,std::set<int,std::less<int>,std::allocator<int>>>>>::const_iterator)",
+      "symbol": "_ZNSt8_Rb_treeIlSt4pairIKlSt3setIiSt4lessIiESaIiEEESt10_Select1stIS7_ES3_IlESaIS7_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJOlEESH_IJEEEEESt17_Rb_tree_iteratorIS7_ESt23_Rb_tree_const_iteratorIS7_EDpOT_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::_Rb_tree<int,std::pair<intconst,srt::CEPollDesc>,std::_Select1st<std::pair<intconst,srt::CEPollDesc>>,std::less<int>,std::allocator<std::pair<intconst,srt::CEPollDesc>>>::iterator std::_Rb_tree<int,std::pair<intconst,srt::CEPollDesc>,std::_Select1st<std::pair<intconst,srt::CEPollDesc>>,std::less<int>,std::allocator<std::pair<intconst,srt::CEPollDesc>>>::_M_emplace_hint_unique<std::pair<int,srt::CEPollDesc>>(std::_Rb_tree<int,std::pair<intconst,srt::CEPollDesc>,std::_Select1st<std::pair<intconst,srt::CEPollDesc>>,std::less<int>,std::allocator<std::pair<intconst,srt::CEPollDesc>>>::const_iterator)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiN3srt10CEPollDescEESt10_Select1stIS4_ESt4lessIiESaIS4_EE22_M_emplace_hint_uniqueIJS0_IiS3_EEEESt17_Rb_tree_iteratorIS4_ESt23_Rb_tree_const_iteratorIS4_EDpOT_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int crysprHelper_Close(CRYSPR_cb*)",
+      "symbol": "crysprHelper_Close"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void srt::CUDT::processKeepalive(const srt::CPacket&, const srt::CUDT::time_point&)",
+      "symbol": "_ZN3srt4CUDT16processKeepaliveERKNS_7CPacketERKNS_4sync9TimePointINS4_12steady_clockEEE"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method srt::CUnitQueue::CQEntry* srt::CUnitQueue::allocateEntry(int, const int)",
+      "symbol": "_ZN3srt10CUnitQueue13allocateEntryEii"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CUnitQueue::increase_()",
+      "symbol": "_ZN3srt10CUnitQueue9increase_Ev"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function CRYSPR_cb* crysprHelper_Open(CRYSPR_methods*, size_t, size_t)",
+      "symbol": "crysprHelper_Open"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method srt::sync::atomic<int>::~atomic()",
+      "symbol": "_ZN3srt4sync6atomicIiED2Ev"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void srt::CCryptoControl::globalInit(void)",
+      "symbol": "_ZN3srt14CCryptoControl10globalInitEv"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::_Rb_tree<int,std::pair<intconst,srt::CEPollDesc::Wait>,std::_Select1st<std::pair<intconst,srt::CEPollDesc::Wait>>,std::less<int>,std::allocator<std::pair<intconst,srt::CEPollDesc::Wait>>>::iterator std::_Rb_tree<int,std::pair<intconst,srt::CEPollDesc::Wait>,std::_Select1st<std::pair<intconst,srt::CEPollDesc::Wait>>,std::less<int>,std::allocator<std::pair<intconst,srt::CEPollDesc::Wait>>>::_M_emplace_hint_unique<std::pair<int,srt::CEPollDesc::Wait>>(std::_Rb_tree<int,std::pair<intconst,srt::CEPollDesc::Wait>,std::_Select1st<std::pair<intconst,srt::CEPollDesc::Wait>>,std::less<int>,std::allocator<std::pair<intconst,srt::CEPollDesc::Wait>>>::const_iterator)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiN3srt10CEPollDesc4WaitEESt10_Select1stIS5_ESt4lessIiESaIS5_EE22_M_emplace_hint_uniqueIJS0_IiS4_EEEESt17_Rb_tree_iteratorIS5_ESt23_Rb_tree_const_iteratorIS5_EDpOT_"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function int crysprStub_AES_SetKey(bool, const unsigned char*, size_t, CRYSPR_AESCTX*)  ->  function int crysprStub_AES_SetKey(int, bool, const unsigned char*, size_t, CRYSPR_AESCTX*)",
+      "symbol": "crysprStub_AES_SetKey"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function int crysprGnuTLS_AES_SetKey(bool, const unsigned char*, size_t, CRYSPR_AESCTX*)  ->  function int crysprGnuTLS_AES_SetKey(int, bool, const unsigned char*, size_t, CRYSPR_AESCTX*)",
+      "symbol": "crysprGnuTLS_AES_SetKey"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 155,
+     "field_added_to_struct": 1,
+     "field_removed_from_struct": 1,
+     "field_type_changed": 4,
+     "member_offset_changed": 27,
+     "type_size_changed": 2
+    },
+    "type_events": [
+     {
+      "count": 1,
+      "declared_in": "./haicrypt/cryspr.h",
+      "kind": "field_type_changed",
+      "type": "struct tag_CRYSPR_methods"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "class std::vector<srt::SrtHandshakeExtension,std::allocator<srt::SrtHandshakeExtension>>"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Vector_base<srt::SrtHandshakeExtension,std::allocator<srt::SrtHandshakeExtension>>::_Vector_impl"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "class std::vector<unsignedint,std::allocator<unsignedint>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Vector_base<unsignedint,std::allocator<unsignedint>>::_Vector_impl"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "kind": "base_class_changed",
+      "type": "class std::allocator<unsignedint>"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "kind": "base_class_changed",
+      "type": "class std::allocator<srt::SrtHandshakeExtension>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_tree.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Rb_tree<int,int,std::_Identity<int>,std::less<int>,std::allocator<int>>::_Rb_tree_impl<std::less<int>,true>"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "kind": "base_class_changed",
+      "type": "class std::allocator<std::_Rb_tree_node<int>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/basic_string.h",
+      "kind": "base_class_changed",
+      "type": "struct std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Alloc_hider"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "kind": "base_class_changed",
+      "type": "class std::allocator<char>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "class std::vector<int,std::allocator<int>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Vector_base<int,std::allocator<int>>::_Vector_impl"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "kind": "base_class_changed",
+      "type": "class std::allocator<int>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_tree.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Rb_tree<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::_Select1st<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>,std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>::_Rb_tree_impl<std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,true>"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "kind": "base_class_changed",
+      "type": "class std::allocator<std::_Rb_tree_node<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "./srtcore/crypto.h",
+      "kind": "field_removed_from_struct",
+      "type": "class srt::CCryptoControl"
+     },
+     {
+      "count": 13,
+      "declared_in": "./srtcore/crypto.h",
+      "kind": "member_offset_changed",
+      "type": "class srt::CCryptoControl"
+     },
+     {
+      "count": 1,
+      "declared_in": "./srtcore/crypto.h",
+      "kind": "type_size_changed",
+      "type": "class srt::CCryptoControl"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_tree.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Rb_tree<int,std::pair<intconst,srt::CEPollDesc>,std::_Select1st<std::pair<intconst,srt::CEPollDesc>>,std::less<int>,std::allocator<std::pair<intconst,srt::CEPollDesc>>>::_Rb_tree_impl<std::less<int>,true>"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "kind": "base_class_changed",
+      "type": "class std::allocator<std::_Rb_tree_node<std::pair<intconst,srt::CEPollDesc>>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_tree.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Rb_tree<int,std::pair<intconst,srt::CEPollDesc::Wait>,std::_Select1st<std::pair<intconst,srt::CEPollDesc::Wait>>,std::less<int>,std::allocator<std::pair<intconst,srt::CEPollDesc::Wait>>>::_Rb_tree_impl<std::less<int>,true>"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "kind": "base_class_changed",
+      "type": "class std::allocator<std::_Rb_tree_node<std::pair<intconst,srt::CEPollDesc::Wait>>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_list.h",
+      "kind": "base_class_changed",
+      "type": "class std::__cxx11::list<srt::CEPollDesc::Notice,std::allocator<srt::CEPollDesc::Notice>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_list.h",
+      "kind": "base_class_changed",
+      "type": "struct std::__cxx11::_List_base<srt::CEPollDesc::Notice,std::allocator<srt::CEPollDesc::Notice>>::_List_impl"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "kind": "base_class_changed",
+      "type": "class std::allocator<std::_List_node<srt::CEPollDesc::Notice>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_tree.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Rb_tree<int,std::pair<intconst,int>,std::_Select1st<std::pair<intconst,int>>,std::less<int>,std::allocator<std::pair<intconst,int>>>::_Rb_tree_impl<std::less<int>,true>"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "kind": "base_class_changed",
+      "type": "class std::allocator<std::_Rb_tree_node<std::pair<intconst,int>>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "./srtcore/socketconfig.h",
+      "kind": "base_class_changed",
+      "type": "struct srt::CSrtConfig"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "class std::vector<std::pair<int,int>,std::allocator<std::pair<int,int>>>"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Vector_base<std::pair<int,int>,std::allocator<std::pair<int,int>>>::_Vector_impl"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_pair.h",
+      "kind": "base_class_changed",
+      "type": "struct std::pair<int,int>"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "kind": "base_class_changed",
+      "type": "class std::allocator<std::pair<int,int>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h",
+      "kind": "field_type_changed",
+      "type": "struct __pthread_cond_s"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/unique_ptr.h",
+      "kind": "base_class_changed",
+      "type": "struct std::__uniq_ptr_data<srt::CCryptoControl,std::default_delete<srt::CCryptoControl>,true,true>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/tuple",
+      "kind": "base_class_changed",
+      "type": "class std::tuple<srt::CCryptoControl*,std::default_delete<srt::CCryptoControl>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/tuple",
+      "kind": "base_class_changed",
+      "type": "struct std::_Tuple_impl<0,srt::CCryptoControl*,std::default_delete<srt::CCryptoControl>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_list.h",
+      "kind": "base_class_changed",
+      "type": "class std::__cxx11::list<srt::CInfoBlock*,std::allocator<srt::CInfoBlock*>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_list.h",
+      "kind": "base_class_changed",
+      "type": "struct std::__cxx11::_List_base<srt::CInfoBlock*,std::allocator<srt::CInfoBlock*>>::_List_impl"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "kind": "base_class_changed",
+      "type": "class std::allocator<std::_List_node<srt::CInfoBlock*>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "class std::vector<std::__cxx11::list<std::_List_iterator<srt::CInfoBlock*>,std::allocator<std::_List_iterator<srt::CInfoBlock*>>>,std::allocator<std::__cxx11::list<std::_List_iterator<srt::CInfoBlock*>,std::allocator<std::_List_iterator<srt::CInfoBlock*>>>>>"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Vector_base<std::__cxx11::list<std::_List_iterator<srt::CInfoBlock*>,std::allocator<std::_List_iterator<srt::CInfoBlock*>>>,std::allocator<std::__cxx11::list<std::_List_iterator<srt::CInfoBlock*>,std::allocator<std::_List_iterator<srt::CInfoBlock*>>>>>::_Vector_impl"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_list.h",
+      "kind": "base_class_changed",
+      "type": "class std::__cxx11::list<std::_List_iterator<srt::CInfoBlock*>,std::allocator<std::_List_iterator<srt::CInfoBlock*>>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_list.h",
+      "kind": "base_class_changed",
+      "type": "struct std::__cxx11::_List_base<std::_List_iterator<srt::CInfoBlock*>,std::allocator<std::_List_iterator<srt::CInfoBlock*>>>::_List_impl"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "kind": "base_class_changed",
+      "type": "class std::allocator<std::_List_node<std::_List_iterator<srt::CInfoBlock*>>>"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "kind": "base_class_changed",
+      "type": "class std::allocator<std::__cxx11::list<std::_List_iterator<srt::CInfoBlock*>,std::allocator<std::_List_iterator<srt::CInfoBlock*>>>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "class std::vector<srt::EventSlot,std::allocator<srt::EventSlot>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Vector_base<srt::EventSlot,std::allocator<srt::EventSlot>>::_Vector_impl"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "kind": "base_class_changed",
+      "type": "class std::allocator<srt::EventSlot>"
+     },
+     {
+      "count": 1,
+      "declared_in": "./srtcore/queue.h",
+      "kind": "field_type_changed",
+      "type": "struct srt::CUnit"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "class std::vector<srt::SrtPacket,std::allocator<srt::SrtPacket>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Vector_base<srt::SrtPacket,std::allocator<srt::SrtPacket>>::_Vector_impl"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "kind": "base_class_changed",
+      "type": "class std::allocator<srt::SrtPacket>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_deque.h",
+      "kind": "base_class_changed",
+      "type": "class std::deque<srt::CRcvFreshLoss,std::allocator<srt::CRcvFreshLoss>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_deque.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Deque_base<srt::CRcvFreshLoss,std::allocator<srt::CRcvFreshLoss>>::_Deque_impl"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "kind": "base_class_changed",
+      "type": "class std::allocator<srt::CRcvFreshLoss>"
+     },
+     {
+      "count": 1,
+      "declared_in": "./srtcore/queue.h",
+      "kind": "field_added_to_struct",
+      "type": "class srt::CRcvQueue"
+     },
+     {
+      "count": 1,
+      "declared_in": "./srtcore/queue.h",
+      "kind": "field_type_changed",
+      "type": "class srt::CRcvQueue"
+     },
+     {
+      "count": 14,
+      "declared_in": "./srtcore/queue.h",
+      "kind": "member_offset_changed",
+      "type": "class srt::CRcvQueue"
+     },
+     {
+      "count": 1,
+      "declared_in": "./srtcore/queue.h",
+      "kind": "type_size_changed",
+      "type": "class srt::CRcvQueue"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_list.h",
+      "kind": "base_class_changed",
+      "type": "class std::__cxx11::list<srt::CRendezvousQueue::CRL,std::allocator<srt::CRendezvousQueue::CRL>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_list.h",
+      "kind": "base_class_changed",
+      "type": "struct std::__cxx11::_List_base<srt::CRendezvousQueue::CRL,std::allocator<srt::CRendezvousQueue::CRL>>::_List_impl"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "kind": "base_class_changed",
+      "type": "class std::allocator<std::_List_node<srt::CRendezvousQueue::CRL>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "class std::vector<srt::CUDT*,std::allocator<srt::CUDT*>>"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Vector_base<srt::CUDT*,std::allocator<srt::CUDT*>>::_Vector_impl"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "kind": "base_class_changed",
+      "type": "class std::allocator<srt::CUDT*>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_tree.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Rb_tree<int,std::pair<intconst,std::queue<srt::CPacket*,std::deque<srt::CPacket*,std::allocator<srt::CPacket*>>>>,std::_Select1st<std::pair<intconst,std::queue<srt::CPacket*,std::deque<srt::CPacket*,std::allocator<srt::CPacket*>>>>>,std::less<int>,std::allocator<std::pair<intconst,std::queue<srt::CPacket*,std::deque<srt::CPacket*,std::allocator<srt::CPacket*>>>>>>::_Rb_tree_impl<std::less<int>,true>"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "kind": "base_class_changed",
+      "type": "class std::allocator<std::_Rb_tree_node<std::pair<intconst,std::queue<srt::CPacket*,std::deque<srt::CPacket*,std::allocator<srt::CPacket*>>>>>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "class std::vector<srt::CRendezvousQueue::LinkStatusInfo,std::allocator<srt::CRendezvousQueue::LinkStatusInfo>>"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Vector_base<srt::CRendezvousQueue::LinkStatusInfo,std::allocator<srt::CRendezvousQueue::LinkStatusInfo>>::_Vector_impl"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "kind": "base_class_changed",
+      "type": "class std::allocator<srt::CRendezvousQueue::LinkStatusInfo>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_pair.h",
+      "kind": "base_class_changed",
+      "type": "struct std::pair<bool,srt::sync::TimePoint<srt::sync::steady_clock>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_tree.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Rb_tree<int,std::pair<intconst,srt::CUDTSocket*>,std::_Select1st<std::pair<intconst,srt::CUDTSocket*>>,std::less<int>,std::allocator<std::pair<intconst,srt::CUDTSocket*>>>::_Rb_tree_impl<std::less<int>,true>"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "kind": "base_class_changed",
+      "type": "class std::allocator<std::_Rb_tree_node<std::pair<intconst,srt::CUDTSocket*>>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_tree.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Rb_tree<longint,std::pair<longintconst,std::set<int,std::less<int>,std::allocator<int>>>,std::_Select1st<std::pair<longintconst,std::set<int,std::less<int>,std::allocator<int>>>>,std::less<longint>,std::allocator<std::pair<longintconst,std::set<int,std::less<int>,std::allocator<int>>>>>::_Rb_tree_impl<std::less<longint>,true>"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "kind": "base_class_changed",
+      "type": "class std::allocator<std::_Rb_tree_node<std::pair<longintconst,std::set<int,std::less<int>,std::allocator<int>>>>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_tree.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Rb_tree<int,std::pair<intconst,srt::CMultiplexer>,std::_Select1st<std::pair<intconst,srt::CMultiplexer>>,std::less<int>,std::allocator<std::pair<intconst,srt::CMultiplexer>>>::_Rb_tree_impl<std::less<int>,true>"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "kind": "base_class_changed",
+      "type": "class std::allocator<std::_Rb_tree_node<std::pair<intconst,srt::CMultiplexer>>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "./srtcore/packetfilter_api.h",
+      "kind": "base_class_changed",
+      "type": "struct srt::SrtFilterConfig"
+     },
+     {
+      "count": 1,
+      "declared_in": "./srtcore/fec.h",
+      "kind": "base_class_changed",
+      "type": "class srt::FECFilterBuiltin"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "class std::vector<char,std::allocator<char>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Vector_base<char,std::allocator<char>>::_Vector_impl"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "class std::vector<srt::FECFilterBuiltin::Group,std::allocator<srt::FECFilterBuiltin::Group>>"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Vector_base<srt::FECFilterBuiltin::Group,std::allocator<srt::FECFilterBuiltin::Group>>::_Vector_impl"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "kind": "base_class_changed",
+      "type": "class std::allocator<srt::FECFilterBuiltin::Group>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_deque.h",
+      "kind": "base_class_changed",
+      "type": "class std::deque<srt::FECFilterBuiltin::RcvGroup,std::allocator<srt::FECFilterBuiltin::RcvGroup>>"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/stl_deque.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Deque_base<srt::FECFilterBuiltin::RcvGroup,std::allocator<srt::FECFilterBuiltin::RcvGroup>>::_Deque_impl"
+     },
+     {
+      "count": 1,
+      "declared_in": "./srtcore/fec.h",
+      "kind": "base_class_changed",
+      "type": "struct srt::FECFilterBuiltin::RcvGroup"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "kind": "base_class_changed",
+      "type": "class std::allocator<srt::FECFilterBuiltin::RcvGroup>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_deque.h",
+      "kind": "base_class_changed",
+      "type": "class std::deque<bool,std::allocator<bool>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_deque.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Deque_base<bool,std::allocator<bool>>::_Deque_impl"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "kind": "base_class_changed",
+      "type": "class std::allocator<bool>"
+     },
+     {
+      "count": 1,
+      "declared_in": "./srtcore/congctl.cpp",
+      "kind": "base_class_changed",
+      "type": "class srt::FileCC"
+     },
+     {
+      "count": 1,
+      "declared_in": "./srtcore/congctl.cpp",
+      "kind": "base_class_changed",
+      "type": "class srt::LiveCC"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "class std::vector<srt::CUnit*,std::allocator<srt::CUnit*>>"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Vector_base<srt::CUnit*,std::allocator<srt::CUnit*>>::_Vector_impl"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "kind": "base_class_changed",
+      "type": "class std::allocator<srt::CUnit*>"
+     },
+     {
+      "count": 1,
+      "declared_in": "./srtcore/handshake.h",
+      "kind": "base_class_changed",
+      "type": "struct srt::SrtHSRequest"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_tree.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Rb_tree<srt_logging::LogFA,srt_logging::LogFA,std::_Identity<srt_logging::LogFA>,std::less<srt_logging::LogFA>,std::allocator<srt_logging::LogFA>>::_Rb_tree_impl<std::less<srt_logging::LogFA>,true>"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "kind": "base_class_changed",
+      "type": "class std::allocator<std::_Rb_tree_node<srt_logging::LogFA>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "class std::vector<SRT_SocketOptionObject::SingleOption*,std::allocator<SRT_SocketOptionObject::SingleOption*>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Vector_base<SRT_SocketOptionObject::SingleOption*,std::allocator<SRT_SocketOptionObject::SingleOption*>>::_Vector_impl"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "kind": "base_class_changed",
+      "type": "class std::allocator<SRT_SocketOptionObject::SingleOption*>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_pair.h",
+      "kind": "base_class_changed",
+      "type": "struct std::pair<std::_Rb_tree_iterator<int>,bool>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_pair.h",
+      "kind": "base_class_changed",
+      "type": "struct std::pair<std::_Rb_tree_node_base*,std::_Rb_tree_node_base*>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_tree.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Rb_tree<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::_Identity<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>::_Rb_tree_impl<std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,true>"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "kind": "base_class_changed",
+      "type": "class std::allocator<std::_Rb_tree_node<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_pair.h",
+      "kind": "base_class_changed",
+      "type": "struct std::pair<std::_Rb_tree_iterator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,bool>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_pair.h",
+      "kind": "base_class_changed",
+      "type": "struct std::pair<std::_Rb_tree_iterator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::_Rb_tree_iterator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_tree.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Rb_tree<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,srt::PacketFilter::ManagedPtr>,std::_Select1st<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,srt::PacketFilter::ManagedPtr>>,std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,srt::PacketFilter::ManagedPtr>>>::_Rb_tree_impl<std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,true>"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "kind": "base_class_changed",
+      "type": "class std::allocator<std::_Rb_tree_node<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,srt::PacketFilter::ManagedPtr>>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_deque.h",
+      "kind": "base_class_changed",
+      "type": "class std::deque<srt::CPacket*,std::allocator<srt::CPacket*>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_deque.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Deque_base<srt::CPacket*,std::allocator<srt::CPacket*>>::_Deque_impl"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "kind": "base_class_changed",
+      "type": "class std::allocator<srt::CPacket*>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "class std::vector<srt::CUDTSocket*,std::allocator<srt::CUDTSocket*>>"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Vector_base<srt::CUDTSocket*,std::allocator<srt::CUDTSocket*>>::_Vector_impl"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "kind": "base_class_changed",
+      "type": "class std::allocator<srt::CUDTSocket*>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "class std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Vector_base<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>::_Vector_impl"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "kind": "base_class_changed",
+      "type": "class std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>"
+     }
+    ]
+   }
+  ],
+  "seconds": 9.676810241,
+  "source": "srt",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.5.0",
+   "1.5.1"
+  ]
+ },
+ "generated_at": "2026-09-02T15:05:07Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

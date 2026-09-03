@@ -1,0 +1,69 @@
+{
+ "data": {
+  "id": "kmod@32+20240611..33+20240816",
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      75,
+      75
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_removed": 3
+    },
+    "soname": [
+     "libkmod.so.2",
+     "libkmod.so.2"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int kmod_module_get_weakdeps(const kmod_module*, kmod_list**)",
+      "symbol": "kmod_module_get_weakdeps",
+      "version": "LIBKMOD_5"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int kmod_module_new_from_name_lookup(kmod_ctx*, const char*, kmod_module**)",
+      "symbol": "kmod_module_new_from_name_lookup",
+      "version": "LIBKMOD_5"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function kmod_config_iter* kmod_config_get_weakdeps(const kmod_ctx*)",
+      "symbol": "kmod_config_get_weakdeps",
+      "version": "LIBKMOD_5"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": []
+   }
+  ],
+  "seconds": 1.880073292,
+  "source": "kmod",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "32+20240611",
+   "33+20240816"
+  ]
+ },
+ "generated_at": "2026-09-02T12:08:09Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

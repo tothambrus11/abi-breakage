@@ -1,0 +1,6 @@
+{
+ "lang": "cxx",
+ "truth": "vtable_virtual_added_end",
+ "breaks": true,
+ "note": "virtual appended -> vtable grows; breaks subclasses, not plain callers"
+}

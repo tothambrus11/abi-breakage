@@ -1,0 +1,158 @@
+{
+ "data": {
+  "id": "ncurses@6.4+20240414..6.5",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      12,
+      12
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libtic.so.6",
+     "libtic.so.6"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_type_changed": 1
+    },
+    "type_events": [
+     {
+      "count": 1,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
+      "kind": "field_type_changed",
+      "type": "struct _IO_FILE"
+     }
+    ]
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      211,
+      211
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_removed": 10
+    },
+    "soname": [
+     "libtinfo.so.6",
+     "libtinfo.so.6"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int is_raw_sp(SCREEN*)",
+      "symbol": "is_raw_sp",
+      "version": "NCURSES6_TINFO_6.4.current"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int is_raw(void)",
+      "symbol": "is_raw",
+      "version": "NCURSES6_TINFO_6.4.current"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int tiscan_s(int*, int*, const char*)",
+      "symbol": "tiscan_s",
+      "version": "NCURSES6_TINFO_6.4.current"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int is_cbreak_sp(SCREEN*)",
+      "symbol": "is_cbreak_sp",
+      "version": "NCURSES6_TINFO_6.4.current"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int is_cbreak(void)",
+      "symbol": "is_cbreak",
+      "version": "NCURSES6_TINFO_6.4.current"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int is_nl(void)",
+      "symbol": "is_nl",
+      "version": "NCURSES6_TINFO_6.4.current"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int is_echo(void)",
+      "symbol": "is_echo",
+      "version": "NCURSES6_TINFO_6.4.current"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int is_nl_sp(SCREEN*)",
+      "symbol": "is_nl_sp",
+      "version": "NCURSES6_TINFO_6.4.current"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int is_echo_sp(SCREEN*)",
+      "symbol": "is_echo_sp",
+      "version": "NCURSES6_TINFO_6.4.current"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function char* tiparm_s(int, int, const char*, ...)",
+      "symbol": "tiparm_s",
+      "version": "NCURSES6_TINFO_6.4.current"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_type_changed": 1
+    },
+    "type_events": [
+     {
+      "count": 1,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
+      "kind": "field_type_changed",
+      "type": "struct _IO_FILE"
+     }
+    ]
+   }
+  ],
+  "seconds": 2.59123586,
+  "source": "ncurses",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "6.4+20240414",
+   "6.5"
+  ]
+ },
+ "generated_at": "2026-09-02T14:58:48Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

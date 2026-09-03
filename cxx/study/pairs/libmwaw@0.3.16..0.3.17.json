@@ -1,0 +1,1666 @@
+{
+ "data": {
+  "id": "libmwaw@0.3.16..0.3.17",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      231,
+      264
+     ],
+     "mangled_functions": [
+      231,
+      264
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "enum_case_added": 23,
+     "function_signature_changed": 2,
+     "symbol_added": 102,
+     "symbol_removed": 81
+    },
+    "soname": [
+     "libmwaw-0.3.so.3",
+     "libmwaw-0.3.so.3"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Rb_tree<int,std::pair<intconst,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::_Select1st<std::pair<intconst,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>,std::less<int>,std::allocator<std::pair<intconst,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>::iterator std::_Rb_tree<int,std::pair<intconst,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::_Select1st<std::pair<intconst,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>,std::less<int>,std::allocator<std::pair<intconst,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>::_M_insert_node(std::_Rb_tree<int,std::pair<intconst,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::_Select1st<std::pair<intconst,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>,std::less<int>,std::allocator<std::pair<intconst,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>::_Base_ptr, std::_Rb_tree<int,std::pair<intconst,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::_Select1st<std::pair<intconst,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>,std::less<int>,std::allocator<std::pair<intconst,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>::_Base_ptr, std::_Rb_tree<int,std::pair<intconst,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::_Select1st<std::pair<intconst,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>,std::less<int>,std::allocator<std::pair<intconst,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>::_Link_type)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEESt10_Select1stIS8_ESt4lessIiESaIS8_EE14_M_insert_nodeEPSt18_Rb_tree_node_baseSG_PSt13_Rb_tree_nodeIS8_E"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<int,std::allocator<int>>::_M_assign_aux<std::_Rb_tree_const_iterator<longint>>(std::_Rb_tree_const_iterator<longint>, std::_Rb_tree_const_iterator<longint>, std::forward_iterator_tag)",
+      "symbol": "_ZNSt6vectorIiSaIiEE13_M_assign_auxISt23_Rb_tree_const_iteratorIlEEEvT_S5_St20forward_iterator_tag"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Rb_tree<longint,std::pair<longintconst,int>,std::_Select1st<std::pair<longintconst,int>>,std::less<longint>,std::allocator<std::pair<longintconst,int>>>::_Link_type std::_Rb_tree<longint,std::pair<longintconst,int>,std::_Select1st<std::pair<longintconst,int>>,std::less<longint>,std::allocator<std::pair<longintconst,int>>>::_M_copy<std::_Rb_tree<longint,std::pair<longintconst,int>,std::_Select1st<std::pair<longintconst,int>>,std::less<longint>,std::allocator<std::pair<longintconst,int>>>::_Alloc_node>(std::_Rb_tree<longint,std::pair<longintconst,int>,std::_Select1st<std::pair<longintconst,int>>,std::less<longint>,std::allocator<std::pair<longintconst,int>>>::_Const_Link_type, std::_Rb_tree<longint,std::pair<longintconst,int>,std::_Select1st<std::pair<longintconst,int>>,std::less<longint>,std::allocator<std::pair<longintconst,int>>>::_Base_ptr, std::_Rb_tree<longint,std::pair<longintconst,int>,std::_Select1st<std::pair<longintconst,int>>,std::less<longint>,std::allocator<std::pair<longintconst,int>>>::_Alloc_node&)",
+      "symbol": "_ZNSt8_Rb_treeIlSt4pairIKliESt10_Select1stIS2_ESt4lessIlESaIS2_EE7_M_copyINS8_11_Alloc_nodeEEEPSt13_Rb_tree_nodeIS2_EPKSC_PSt18_Rb_tree_node_baseRT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Rb_tree<unsignedchar,std::pair<unsignedcharconst,longunsignedint>,std::_Select1st<std::pair<unsignedcharconst,longunsignedint>>,std::less<unsignedchar>,std::allocator<std::pair<unsignedcharconst,longunsignedint>>>::iterator std::_Rb_tree<unsignedchar,std::pair<unsignedcharconst,longunsignedint>,std::_Select1st<std::pair<unsignedcharconst,longunsignedint>>,std::less<unsignedchar>,std::allocator<std::pair<unsignedcharconst,longunsignedint>>>::_M_insert_node(std::_Rb_tree<unsignedchar,std::pair<unsignedcharconst,longunsignedint>,std::_Select1st<std::pair<unsignedcharconst,longunsignedint>>,std::less<unsignedchar>,std::allocator<std::pair<unsignedcharconst,longunsignedint>>>::_Base_ptr, std::_Rb_tree<unsignedchar,std::pair<unsignedcharconst,longunsignedint>,std::_Select1st<std::pair<unsignedcharconst,longunsignedint>>,std::less<unsignedchar>,std::allocator<std::pair<unsignedcharconst,longunsignedint>>>::_Base_ptr, std::_Rb_tree<unsignedchar,std::pair<unsignedcharconst,longunsignedint>,std::_Select1st<std::pair<unsignedcharconst,longunsignedint>>,std::less<unsignedchar>,std::allocator<std::pair<unsignedcharconst,longunsignedint>>>::_Link_type)",
+      "symbol": "_ZNSt8_Rb_treeIhSt4pairIKhmESt10_Select1stIS2_ESt4lessIhESaIS2_EE14_M_insert_nodeEPSt18_Rb_tree_node_baseSA_PSt13_Rb_tree_nodeIS2_E"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method PowerPoint1ParserInternal::Frame* std::__uninitialized_copy<false>::__uninit_copy<constPowerPoint1ParserInternal::Frame*,PowerPoint1ParserInternal::Frame*>(const PowerPoint1ParserInternal::Frame*, const PowerPoint1ParserInternal::Frame*, PowerPoint1ParserInternal::Frame*)",
+      "symbol": "_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPKN25PowerPoint1ParserInternal5FrameEPS3_EET0_T_S8_S7_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::_Destroy_aux<false>::__destroy<MacDrawProParserInternal::Layer*>(MacDrawProParserInternal::Layer*, MacDrawProParserInternal::Layer*)",
+      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIPN24MacDrawProParserInternal5LayerEEEvT_S5_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__shared_count<(__gnu_cxx::_Lock_policy)2>::__shared_count<MsWksGraphInternal::BasicShape,std::allocator<MsWksGraphInternal::BasicShape>,MsWksGraphInternal::Zone&>(MsWksGraphInternal::BasicShape*&, std::_Sp_alloc_shared_tag<std::allocator<MsWksGraphInternal::BasicShape>>)",
+      "symbol": "_ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE2EEC2IN18MsWksGraphInternal10BasicShapeESaIS5_EJRNS4_4ZoneEEEERPT_St20_Sp_alloc_shared_tagIT0_EDpOT1_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<longint,std::allocator<longint>>::_M_insert_aux<longint>(std::vector<longint,std::allocator<longint>>::iterator, long int&&)",
+      "symbol": "_ZNSt6vectorIlSaIlEE13_M_insert_auxIlEEvN9__gnu_cxx17__normal_iteratorIPlS1_EEOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<unsignedchar,std::allocator<unsignedchar>>::_M_range_insert<unsignedchar*>(std::vector<unsignedchar,std::allocator<unsignedchar>>::iterator, unsigned char*, unsigned char*, std::forward_iterator_tag)",
+      "symbol": "_ZNSt6vectorIhSaIhEE15_M_range_insertIPhEEvN9__gnu_cxx17__normal_iteratorIS3_S1_EET_S7_St20forward_iterator_tag"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__shared_count<(__gnu_cxx::_Lock_policy)2>::__shared_count<GreatWksGraphInternal::FrameShape,std::allocator<GreatWksGraphInternal::FrameShape>,GreatWksGraphInternal::Frame&>(GreatWksGraphInternal::FrameShape*&, std::_Sp_alloc_shared_tag<std::allocator<GreatWksGraphInternal::FrameShape>>)",
+      "symbol": "_ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE2EEC2IN21GreatWksGraphInternal10FrameShapeESaIS5_EJRNS4_5FrameEEEERPT_St20_Sp_alloc_shared_tagIT0_EDpOT1_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Rb_tree<longunsignedint,longunsignedint,std::_Identity<longunsignedint>,std::less<longunsignedint>,std::allocator<longunsignedint>>::size_type std::_Rb_tree<longunsignedint,longunsignedint,std::_Identity<longunsignedint>,std::less<longunsignedint>,std::allocator<longunsignedint>>::erase(const unsigned long int&)",
+      "symbol": "_ZNSt8_Rb_treeImmSt9_IdentityImESt4lessImESaImEE5eraseERKm"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::_Rb_tree<unsignedchar,std::pair<unsignedcharconst,longunsignedint>,std::_Select1st<std::pair<unsignedcharconst,longunsignedint>>,std::less<unsignedchar>,std::allocator<std::pair<unsignedcharconst,longunsignedint>>>::_M_erase(std::_Rb_tree<unsignedchar,std::pair<unsignedcharconst,longunsignedint>,std::_Select1st<std::pair<unsignedcharconst,longunsignedint>>,std::less<unsignedchar>,std::allocator<std::pair<unsignedcharconst,longunsignedint>>>::_Link_type)",
+      "symbol": "_ZNSt8_Rb_treeIhSt4pairIKhmESt10_Select1stIS2_ESt4lessIhESaIS2_EE8_M_eraseEPSt13_Rb_tree_nodeIS2_E"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_iterator<longint>,bool> std::_Rb_tree<longint,longint,std::_Identity<longint>,std::less<longint>,std::allocator<longint>>::_M_insert_unique<longint>(long int&&)",
+      "symbol": "_ZNSt8_Rb_treeIllSt9_IdentityIlESt4lessIlESaIlEE16_M_insert_uniqueIlEESt4pairISt17_Rb_tree_iteratorIlEbEOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::_Rb_tree<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::_Select1st<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>,std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>::_M_erase(std::_Rb_tree<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::_Select1st<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>,std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>::_Link_type)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_S5_ESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE8_M_eraseEPSt13_Rb_tree_nodeIS8_E"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::_Rb_tree<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,int>,std::_Select1st<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,int>>,std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,int>>>::_M_erase(std::_Rb_tree<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,int>,std::_Select1st<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,int>>,std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,int>>>::_Link_type)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_iESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE8_M_eraseEPSt13_Rb_tree_nodeIS8_E"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Rb_tree<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::_Select1st<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>,std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>::iterator std::_Rb_tree<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::_Select1st<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>,std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>::_M_emplace_hint_unique<conststd::piecewise_construct_t&,std::tuple<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>&>,std::tuple<>>(std::_Rb_tree<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::_Select1st<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>,std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>::const_iterator)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_S5_ESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJRS7_EESJ_IJEEEEESt17_Rb_tree_iteratorIS8_ESt23_Rb_tree_const_iteratorIS8_EDpOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Rb_tree<int,int,std::_Identity<int>,std::less<int>,std::allocator<int>>& std::_Rb_tree<int,int,std::_Identity<int>,std::less<int>,std::allocator<int>>::operator=(const std::_Rb_tree<int,int,std::_Identity<int>,std::less<int>,std::allocator<int>>&)",
+      "symbol": "_ZNSt8_Rb_treeIiiSt9_IdentityIiESt4lessIiESaIiEEaSERKS5_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::vector<unsignedchar,std::allocator<unsignedchar>>& std::vector<unsignedchar,std::allocator<unsignedchar>>::operator=(const std::vector<unsignedchar,std::allocator<unsignedchar>>&)",
+      "symbol": "_ZNSt6vectorIhSaIhEEaSERKS1_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method MacDrawProParserInternal::Shape* std::__uninitialized_copy<false>::__uninit_copy<constMacDrawProParserInternal::Shape*,MacDrawProParserInternal::Shape*>(const MacDrawProParserInternal::Shape*, const MacDrawProParserInternal::Shape*, MacDrawProParserInternal::Shape*)",
+      "symbol": "_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPKN24MacDrawProParserInternal5ShapeEPS3_EET0_T_S8_S7_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::_Rb_tree<unsignedchar,std::pair<unsignedcharconst,int>,std::_Select1st<std::pair<unsignedcharconst,int>>,std::less<unsignedchar>,std::allocator<std::pair<unsignedcharconst,int>>>::_M_erase(std::_Rb_tree<unsignedchar,std::pair<unsignedcharconst,int>,std::_Select1st<std::pair<unsignedcharconst,int>>,std::less<unsignedchar>,std::allocator<std::pair<unsignedcharconst,int>>>::_Link_type)",
+      "symbol": "_ZNSt8_Rb_treeIhSt4pairIKhiESt10_Select1stIS2_ESt4lessIhESaIS2_EE8_M_eraseEPSt13_Rb_tree_nodeIS2_E"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__shared_count<(__gnu_cxx::_Lock_policy)2>::__shared_count<MWAWPictBitmapColor,std::allocator<MWAWPictBitmapColor>,MWAWVec2<int>&,bool>(MWAWPictBitmapColor*&, std::_Sp_alloc_shared_tag<std::allocator<MWAWPictBitmapColor>>)",
+      "symbol": "_ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE2EEC2I19MWAWPictBitmapColorSaIS4_EJR8MWAWVec2IiEbEEERPT_St20_Sp_alloc_shared_tagIT0_EDpOT1_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Rb_tree<unsignedchar,std::pair<unsignedcharconst,longunsignedint>,std::_Select1st<std::pair<unsignedcharconst,longunsignedint>>,std::less<unsignedchar>,std::allocator<std::pair<unsignedcharconst,longunsignedint>>>::iterator std::_Rb_tree<unsignedchar,std::pair<unsignedcharconst,longunsignedint>,std::_Select1st<std::pair<unsignedcharconst,longunsignedint>>,std::less<unsignedchar>,std::allocator<std::pair<unsignedcharconst,longunsignedint>>>::_M_emplace_hint_unique<conststd::piecewise_construct_t&,std::tuple<unsignedcharconst&>,std::tuple<>>(std::_Rb_tree<unsignedchar,std::pair<unsignedcharconst,longunsignedint>,std::_Select1st<std::pair<unsignedcharconst,longunsignedint>>,std::less<unsignedchar>,std::allocator<std::pair<unsignedcharconst,longunsignedint>>>::const_iterator)",
+      "symbol": "_ZNSt8_Rb_treeIhSt4pairIKhmESt10_Select1stIS2_ESt4lessIhESaIS2_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJRS1_EESD_IJEEEEESt17_Rb_tree_iteratorIS2_ESt23_Rb_tree_const_iteratorIS2_EDpOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::_M_construct<char*>(char*, char*, std::forward_iterator_tag)",
+      "symbol": "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPcEEvT_S7_St20forward_iterator_tag"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Rb_tree<longunsignedint,std::pair<longunsignedintconst,charconst*>,std::_Select1st<std::pair<longunsignedintconst,charconst*>>,std::less<longunsignedint>,std::allocator<std::pair<longunsignedintconst,charconst*>>>::iterator std::_Rb_tree<longunsignedint,std::pair<longunsignedintconst,charconst*>,std::_Select1st<std::pair<longunsignedintconst,charconst*>>,std::less<longunsignedint>,std::allocator<std::pair<longunsignedintconst,charconst*>>>::_M_insert_node(std::_Rb_tree<longunsignedint,std::pair<longunsignedintconst,charconst*>,std::_Select1st<std::pair<longunsignedintconst,charconst*>>,std::less<longunsignedint>,std::allocator<std::pair<longunsignedintconst,charconst*>>>::_Base_ptr, std::_Rb_tree<longunsignedint,std::pair<longunsignedintconst,charconst*>,std::_Select1st<std::pair<longunsignedintconst,charconst*>>,std::less<longunsignedint>,std::allocator<std::pair<longunsignedintconst,charconst*>>>::_Base_ptr, std::_Rb_tree<longunsignedint,std::pair<longunsignedintconst,charconst*>,std::_Select1st<std::pair<longunsignedintconst,charconst*>>,std::less<longunsignedint>,std::allocator<std::pair<longunsignedintconst,charconst*>>>::_Link_type)",
+      "symbol": "_ZNSt8_Rb_treeImSt4pairIKmPKcESt10_Select1stIS4_ESt4lessImESaIS4_EE14_M_insert_nodeEPSt18_Rb_tree_node_baseSC_PSt13_Rb_tree_nodeIS4_E"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::_Rb_tree<longunsignedint,std::pair<longunsignedintconst,longunsignedint>,std::_Select1st<std::pair<longunsignedintconst,longunsignedint>>,std::less<longunsignedint>,std::allocator<std::pair<longunsignedintconst,longunsignedint>>>::_M_erase(std::_Rb_tree<longunsignedint,std::pair<longunsignedintconst,longunsignedint>,std::_Select1st<std::pair<longunsignedintconst,longunsignedint>>,std::less<longunsignedint>,std::allocator<std::pair<longunsignedintconst,longunsignedint>>>::_Link_type)",
+      "symbol": "_ZNSt8_Rb_treeImSt4pairIKmmESt10_Select1stIS2_ESt4lessImESaIS2_EE8_M_eraseEPSt13_Rb_tree_nodeIS2_E"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::_Rb_tree<int,std::pair<intconst,std::map<int,longunsignedint,std::less<int>,std::allocator<std::pair<intconst,longunsignedint>>>>,std::_Select1st<std::pair<intconst,std::map<int,longunsignedint,std::less<int>,std::allocator<std::pair<intconst,longunsignedint>>>>>,std::less<int>,std::allocator<std::pair<intconst,std::map<int,longunsignedint,std::less<int>,std::allocator<std::pair<intconst,longunsignedint>>>>>>::_M_erase(std::_Rb_tree<int,std::pair<intconst,std::map<int,longunsignedint,std::less<int>,std::allocator<std::pair<intconst,longunsignedint>>>>,std::_Select1st<std::pair<intconst,std::map<int,longunsignedint,std::less<int>,std::allocator<std::pair<intconst,longunsignedint>>>>>,std::less<int>,std::allocator<std::pair<intconst,std::map<int,longunsignedint,std::less<int>,std::allocator<std::pair<intconst,longunsignedint>>>>>>::_Link_type)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiSt3mapIimSt4lessIiESaIS0_IS1_mEEEESt10_Select1stIS8_ES4_SaIS8_EE8_M_eraseEPSt13_Rb_tree_nodeIS8_E"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::_M_construct<charconst*>(const char*, const char*, std::forward_iterator_tag)",
+      "symbol": "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tag"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::_Rb_tree<longint,std::pair<longintconst,longunsignedint>,std::_Select1st<std::pair<longintconst,longunsignedint>>,std::less<longint>,std::allocator<std::pair<longintconst,longunsignedint>>>::_M_erase(std::_Rb_tree<longint,std::pair<longintconst,longunsignedint>,std::_Select1st<std::pair<longintconst,longunsignedint>>,std::less<longint>,std::allocator<std::pair<longintconst,longunsignedint>>>::_Link_type)",
+      "symbol": "_ZNSt8_Rb_treeIlSt4pairIKlmESt10_Select1stIS2_ESt4lessIlESaIS2_EE8_M_eraseEPSt13_Rb_tree_nodeIS2_E"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::_Rb_tree<int,std::pair<intconst,ClarisWksStruct::DSET::Position>,std::_Select1st<std::pair<intconst,ClarisWksStruct::DSET::Position>>,std::less<int>,std::allocator<std::pair<intconst,ClarisWksStruct::DSET::Position>>>::_M_erase(std::_Rb_tree<int,std::pair<intconst,ClarisWksStruct::DSET::Position>,std::_Select1st<std::pair<intconst,ClarisWksStruct::DSET::Position>>,std::less<int>,std::allocator<std::pair<intconst,ClarisWksStruct::DSET::Position>>>::_Link_type)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiN15ClarisWksStruct4DSET8PositionEESt10_Select1stIS5_ESt4lessIiESaIS5_EE8_M_eraseEPSt13_Rb_tree_nodeIS5_E"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>& std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>::operator=(const std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EEaSERKS7_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::_Rb_tree<int,std::pair<intconst,FreeHandParserInternal::ZoneType>,std::_Select1st<std::pair<intconst,FreeHandParserInternal::ZoneType>>,std::less<int>,std::allocator<std::pair<intconst,FreeHandParserInternal::ZoneType>>>::_M_erase(std::_Rb_tree<int,std::pair<intconst,FreeHandParserInternal::ZoneType>,std::_Select1st<std::pair<intconst,FreeHandParserInternal::ZoneType>>,std::less<int>,std::allocator<std::pair<intconst,FreeHandParserInternal::ZoneType>>>::_Link_type)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiN22FreeHandParserInternal8ZoneTypeEESt10_Select1stIS4_ESt4lessIiESaIS4_EE8_M_eraseEPSt13_Rb_tree_nodeIS4_E"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method GreatWksDBParserInternal::Field* std::__uninitialized_copy<false>::__uninit_copy<constGreatWksDBParserInternal::Field*,GreatWksDBParserInternal::Field*>(const GreatWksDBParserInternal::Field*, const GreatWksDBParserInternal::Field*, GreatWksDBParserInternal::Field*)",
+      "symbol": "_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPKN24GreatWksDBParserInternal5FieldEPS3_EET0_T_S8_S7_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::_Rb_tree<int,std::pair<intconst,longint>,std::_Select1st<std::pair<intconst,longint>>,std::less<int>,std::allocator<std::pair<intconst,longint>>>::_M_erase(std::_Rb_tree<int,std::pair<intconst,longint>,std::_Select1st<std::pair<intconst,longint>>,std::less<int>,std::allocator<std::pair<intconst,longint>>>::_Link_type)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKilESt10_Select1stIS2_ESt4lessIiESaIS2_EE8_M_eraseEPSt13_Rb_tree_nodeIS2_E"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Rb_tree<int,std::pair<intconst,bool>,std::_Select1st<std::pair<intconst,bool>>,std::less<int>,std::allocator<std::pair<intconst,bool>>>::iterator std::_Rb_tree<int,std::pair<intconst,bool>,std::_Select1st<std::pair<intconst,bool>>,std::less<int>,std::allocator<std::pair<intconst,bool>>>::_M_insert_node(std::_Rb_tree<int,std::pair<intconst,bool>,std::_Select1st<std::pair<intconst,bool>>,std::less<int>,std::allocator<std::pair<intconst,bool>>>::_Base_ptr, std::_Rb_tree<int,std::pair<intconst,bool>,std::_Select1st<std::pair<intconst,bool>>,std::less<int>,std::allocator<std::pair<intconst,bool>>>::_Base_ptr, std::_Rb_tree<int,std::pair<intconst,bool>,std::_Select1st<std::pair<intconst,bool>>,std::less<int>,std::allocator<std::pair<intconst,bool>>>::_Link_type)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKibESt10_Select1stIS2_ESt4lessIiESaIS2_EE14_M_insert_nodeEPSt18_Rb_tree_node_baseSA_PSt13_Rb_tree_nodeIS2_E"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::_Rb_tree<int,std::pair<intconst,longunsignedint>,std::_Select1st<std::pair<intconst,longunsignedint>>,std::less<int>,std::allocator<std::pair<intconst,longunsignedint>>>::_M_erase(std::_Rb_tree<int,std::pair<intconst,longunsignedint>,std::_Select1st<std::pair<intconst,longunsignedint>>,std::less<int>,std::allocator<std::pair<intconst,longunsignedint>>>::_Link_type)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKimESt10_Select1stIS2_ESt4lessIiESaIS2_EE8_M_eraseEPSt13_Rb_tree_nodeIS2_E"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function __gnu_cxx::__enable_if<true,bool>::__type std::operator==<char>(const std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>&, const std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>&)",
+      "symbol": "_ZSteqIcEN9__gnu_cxx11__enable_ifIXsrSt9__is_charIT_E7__valueEbE6__typeERKNSt7__cxx1112basic_stringIS3_St11char_traitsIS3_ESaIS3_EEESE_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Rb_tree<int,std::pair<intconst,int>,std::_Select1st<std::pair<intconst,int>>,std::less<int>,std::allocator<std::pair<intconst,int>>>::iterator std::_Rb_tree<int,std::pair<intconst,int>,std::_Select1st<std::pair<intconst,int>>,std::less<int>,std::allocator<std::pair<intconst,int>>>::_M_insert_node(std::_Rb_tree<int,std::pair<intconst,int>,std::_Select1st<std::pair<intconst,int>>,std::less<int>,std::allocator<std::pair<intconst,int>>>::_Base_ptr, std::_Rb_tree<int,std::pair<intconst,int>,std::_Select1st<std::pair<intconst,int>>,std::less<int>,std::allocator<std::pair<intconst,int>>>::_Base_ptr, std::_Rb_tree<int,std::pair<intconst,int>,std::_Select1st<std::pair<intconst,int>>,std::less<int>,std::allocator<std::pair<intconst,int>>>::_Link_type)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiiESt10_Select1stIS2_ESt4lessIiESaIS2_EE14_M_insert_nodeEPSt18_Rb_tree_node_baseSA_PSt13_Rb_tree_nodeIS2_E"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::_Rb_tree<longint,std::pair<longintconst,longint>,std::_Select1st<std::pair<longintconst,longint>>,std::less<longint>,std::allocator<std::pair<longintconst,longint>>>::_M_erase(std::_Rb_tree<longint,std::pair<longintconst,longint>,std::_Select1st<std::pair<longintconst,longint>>,std::less<longint>,std::allocator<std::pair<longintconst,longint>>>::_Link_type)",
+      "symbol": "_ZNSt8_Rb_treeIlSt4pairIKllESt10_Select1stIS2_ESt4lessIlESaIS2_EE8_M_eraseEPSt13_Rb_tree_nodeIS2_E"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Rb_tree<int,std::pair<intconst,longint>,std::_Select1st<std::pair<intconst,longint>>,std::less<int>,std::allocator<std::pair<intconst,longint>>>::iterator std::_Rb_tree<int,std::pair<intconst,longint>,std::_Select1st<std::pair<intconst,longint>>,std::less<int>,std::allocator<std::pair<intconst,longint>>>::_M_emplace_hint_unique<conststd::piecewise_construct_t&,std::tuple<intconst&>,std::tuple<>>(std::_Rb_tree<int,std::pair<intconst,longint>,std::_Select1st<std::pair<intconst,longint>>,std::less<int>,std::allocator<std::pair<intconst,longint>>>::const_iterator)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKilESt10_Select1stIS2_ESt4lessIiESaIS2_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJRS1_EESD_IJEEEEESt17_Rb_tree_iteratorIS2_ESt23_Rb_tree_const_iteratorIS2_EDpOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::_Rb_tree<longunsignedint,longunsignedint,std::_Identity<longunsignedint>,std::less<longunsignedint>,std::allocator<longunsignedint>>::_M_erase(std::_Rb_tree<longunsignedint,longunsignedint,std::_Identity<longunsignedint>,std::less<longunsignedint>,std::allocator<longunsignedint>>::_Link_type)",
+      "symbol": "_ZNSt8_Rb_treeImmSt9_IdentityImESt4lessImESaImEE8_M_eraseEPSt13_Rb_tree_nodeImE"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::_Rb_tree<int,std::pair<intconst,bool>,std::_Select1st<std::pair<intconst,bool>>,std::less<int>,std::allocator<std::pair<intconst,bool>>>::_M_erase(std::_Rb_tree<int,std::pair<intconst,bool>,std::_Select1st<std::pair<intconst,bool>>,std::less<int>,std::allocator<std::pair<intconst,bool>>>::_Link_type)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKibESt10_Select1stIS2_ESt4lessIiESaIS2_EE8_M_eraseEPSt13_Rb_tree_nodeIS2_E"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Rb_tree<longint,std::pair<longintconst,int>,std::_Select1st<std::pair<longintconst,int>>,std::less<longint>,std::allocator<std::pair<longintconst,int>>>& std::_Rb_tree<longint,std::pair<longintconst,int>,std::_Select1st<std::pair<longintconst,int>>,std::less<longint>,std::allocator<std::pair<longintconst,int>>>::operator=(const std::_Rb_tree<longint,std::pair<longintconst,int>,std::_Select1st<std::pair<longintconst,int>>,std::less<longint>,std::allocator<std::pair<longintconst,int>>>&)",
+      "symbol": "_ZNSt8_Rb_treeIlSt4pairIKliESt10_Select1stIS2_ESt4lessIlESaIS2_EEaSERKS8_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::_Rb_tree<int,std::pair<intconst,int>,std::_Select1st<std::pair<intconst,int>>,std::less<int>,std::allocator<std::pair<intconst,int>>>::_M_erase(std::_Rb_tree<int,std::pair<intconst,int>,std::_Select1st<std::pair<intconst,int>>,std::less<int>,std::allocator<std::pair<intconst,int>>>::_Link_type)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiiESt10_Select1stIS2_ESt4lessIiESaIS2_EE8_M_eraseEPSt13_Rb_tree_nodeIS2_E"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Rb_tree<int,std::pair<intconst,int>,std::_Select1st<std::pair<intconst,int>>,std::less<int>,std::allocator<std::pair<intconst,int>>>& std::_Rb_tree<int,std::pair<intconst,int>,std::_Select1st<std::pair<intconst,int>>,std::less<int>,std::allocator<std::pair<intconst,int>>>::operator=(const std::_Rb_tree<int,std::pair<intconst,int>,std::_Select1st<std::pair<intconst,int>>,std::less<int>,std::allocator<std::pair<intconst,int>>>&)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiiESt10_Select1stIS2_ESt4lessIiESaIS2_EEaSERKS8_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::_Rb_tree<longint,longint,std::_Identity<longint>,std::less<longint>,std::allocator<longint>>::_M_erase(std::_Rb_tree<longint,longint,std::_Identity<longint>,std::less<longint>,std::allocator<longint>>::_Link_type)",
+      "symbol": "_ZNSt8_Rb_treeIllSt9_IdentityIlESt4lessIlESaIlEE8_M_eraseEPSt13_Rb_tree_nodeIlE"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Rb_tree<int,int,std::_Identity<int>,std::less<int>,std::allocator<int>>::_Link_type std::_Rb_tree<int,int,std::_Identity<int>,std::less<int>,std::allocator<int>>::_M_copy<std::_Rb_tree<int,int,std::_Identity<int>,std::less<int>,std::allocator<int>>::_Alloc_node>(std::_Rb_tree<int,int,std::_Identity<int>,std::less<int>,std::allocator<int>>::_Const_Link_type, std::_Rb_tree<int,int,std::_Identity<int>,std::less<int>,std::allocator<int>>::_Base_ptr, std::_Rb_tree<int,int,std::_Identity<int>,std::less<int>,std::allocator<int>>::_Alloc_node&)",
+      "symbol": "_ZNSt8_Rb_treeIiiSt9_IdentityIiESt4lessIiESaIiEE7_M_copyINS5_11_Alloc_nodeEEEPSt13_Rb_tree_nodeIiEPKS9_PSt18_Rb_tree_node_baseRT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Rb_tree<longint,std::pair<longintconst,int>,std::_Select1st<std::pair<longintconst,int>>,std::less<longint>,std::allocator<std::pair<longintconst,int>>>::iterator std::_Rb_tree<longint,std::pair<longintconst,int>,std::_Select1st<std::pair<longintconst,int>>,std::less<longint>,std::allocator<std::pair<longintconst,int>>>::_M_emplace_hint_unique<conststd::piecewise_construct_t&,std::tuple<longintconst&>,std::tuple<>>(std::_Rb_tree<longint,std::pair<longintconst,int>,std::_Select1st<std::pair<longintconst,int>>,std::less<longint>,std::allocator<std::pair<longintconst,int>>>::const_iterator)",
+      "symbol": "_ZNSt8_Rb_treeIlSt4pairIKliESt10_Select1stIS2_ESt4lessIlESaIS2_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJRS1_EESD_IJEEEEESt17_Rb_tree_iteratorIS2_ESt23_Rb_tree_const_iteratorIS2_EDpOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::_Rb_tree<int,int,std::_Identity<int>,std::less<int>,std::allocator<int>>::_M_erase(std::_Rb_tree<int,int,std::_Identity<int>,std::less<int>,std::allocator<int>>::_Link_type)",
+      "symbol": "_ZNSt8_Rb_treeIiiSt9_IdentityIiESt4lessIiESaIiEE8_M_eraseEPSt13_Rb_tree_nodeIiE"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Rb_tree<longint,std::pair<longintconst,int>,std::_Select1st<std::pair<longintconst,int>>,std::less<longint>,std::allocator<std::pair<longintconst,int>>>::_Link_type std::_Rb_tree<longint,std::pair<longintconst,int>,std::_Select1st<std::pair<longintconst,int>>,std::less<longint>,std::allocator<std::pair<longintconst,int>>>::_M_copy<std::_Rb_tree<longint,std::pair<longintconst,int>,std::_Select1st<std::pair<longintconst,int>>,std::less<longint>,std::allocator<std::pair<longintconst,int>>>::_Reuse_or_alloc_node>(std::_Rb_tree<longint,std::pair<longintconst,int>,std::_Select1st<std::pair<longintconst,int>>,std::less<longint>,std::allocator<std::pair<longintconst,int>>>::_Const_Link_type, std::_Rb_tree<longint,std::pair<longintconst,int>,std::_Select1st<std::pair<longintconst,int>>,std::less<longint>,std::allocator<std::pair<longintconst,int>>>::_Base_ptr, std::_Rb_tree<longint,std::pair<longintconst,int>,std::_Select1st<std::pair<longintconst,int>>,std::less<longint>,std::allocator<std::pair<longintconst,int>>>::_Reuse_or_alloc_node&)",
+      "symbol": "_ZNSt8_Rb_treeIlSt4pairIKliESt10_Select1stIS2_ESt4lessIlESaIS2_EE7_M_copyINS8_20_Reuse_or_alloc_nodeEEEPSt13_Rb_tree_nodeIS2_EPKSC_PSt18_Rb_tree_node_baseRT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Rb_tree<int,std::pair<intconst,int>,std::_Select1st<std::pair<intconst,int>>,std::less<int>,std::allocator<std::pair<intconst,int>>>::_Link_type std::_Rb_tree<int,std::pair<intconst,int>,std::_Select1st<std::pair<intconst,int>>,std::less<int>,std::allocator<std::pair<intconst,int>>>::_M_copy<std::_Rb_tree<int,std::pair<intconst,int>,std::_Select1st<std::pair<intconst,int>>,std::less<int>,std::allocator<std::pair<intconst,int>>>::_Reuse_or_alloc_node>(std::_Rb_tree<int,std::pair<intconst,int>,std::_Select1st<std::pair<intconst,int>>,std::less<int>,std::allocator<std::pair<intconst,int>>>::_Const_Link_type, std::_Rb_tree<int,std::pair<intconst,int>,std::_Select1st<std::pair<intconst,int>>,std::less<int>,std::allocator<std::pair<intconst,int>>>::_Base_ptr, std::_Rb_tree<int,std::pair<intconst,int>,std::_Select1st<std::pair<intconst,int>>,std::less<int>,std::allocator<std::pair<intconst,int>>>::_Reuse_or_alloc_node&)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiiESt10_Select1stIS2_ESt4lessIiESaIS2_EE7_M_copyINS8_20_Reuse_or_alloc_nodeEEEPSt13_Rb_tree_nodeIS2_EPKSC_PSt18_Rb_tree_node_baseRT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::_Rb_tree<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::_Identity<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>::_M_erase(std::_Rb_tree<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::_Identity<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>::_Link_type)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_St9_IdentityIS5_ESt4lessIS5_ESaIS5_EE8_M_eraseEPSt13_Rb_tree_nodeIS5_E"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method PowerPoint1ParserInternal::Frame* std::__uninitialized_default_n_1<false>::__uninit_default_n<PowerPoint1ParserInternal::Frame*,longunsignedint>(PowerPoint1ParserInternal::Frame*, unsigned long int)",
+      "symbol": "_ZNSt27__uninitialized_default_n_1ILb0EE18__uninit_default_nIPN25PowerPoint1ParserInternal5FrameEmEET_S5_T0_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Rb_tree<int,std::pair<intconst,int>,std::_Select1st<std::pair<intconst,int>>,std::less<int>,std::allocator<std::pair<intconst,int>>>::_Link_type std::_Rb_tree<int,std::pair<intconst,int>,std::_Select1st<std::pair<intconst,int>>,std::less<int>,std::allocator<std::pair<intconst,int>>>::_M_copy<std::_Rb_tree<int,std::pair<intconst,int>,std::_Select1st<std::pair<intconst,int>>,std::less<int>,std::allocator<std::pair<intconst,int>>>::_Alloc_node>(std::_Rb_tree<int,std::pair<intconst,int>,std::_Select1st<std::pair<intconst,int>>,std::less<int>,std::allocator<std::pair<intconst,int>>>::_Const_Link_type, std::_Rb_tree<int,std::pair<intconst,int>,std::_Select1st<std::pair<intconst,int>>,std::less<int>,std::allocator<std::pair<intconst,int>>>::_Base_ptr, std::_Rb_tree<int,std::pair<intconst,int>,std::_Select1st<std::pair<intconst,int>>,std::less<int>,std::allocator<std::pair<intconst,int>>>::_Alloc_node&)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiiESt10_Select1stIS2_ESt4lessIiESaIS2_EE7_M_copyINS8_11_Alloc_nodeEEEPSt13_Rb_tree_nodeIS2_EPKSC_PSt18_Rb_tree_node_baseRT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Rb_tree<int,int,std::_Identity<int>,std::less<int>,std::allocator<int>>::_Link_type std::_Rb_tree<int,int,std::_Identity<int>,std::less<int>,std::allocator<int>>::_M_copy<std::_Rb_tree<int,int,std::_Identity<int>,std::less<int>,std::allocator<int>>::_Reuse_or_alloc_node>(std::_Rb_tree<int,int,std::_Identity<int>,std::less<int>,std::allocator<int>>::_Const_Link_type, std::_Rb_tree<int,int,std::_Identity<int>,std::less<int>,std::allocator<int>>::_Base_ptr, std::_Rb_tree<int,int,std::_Identity<int>,std::less<int>,std::allocator<int>>::_Reuse_or_alloc_node&)",
+      "symbol": "_ZNSt8_Rb_treeIiiSt9_IdentityIiESt4lessIiESaIiEE7_M_copyINS5_20_Reuse_or_alloc_nodeEEEPSt13_Rb_tree_nodeIiEPKS9_PSt18_Rb_tree_node_baseRT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::_Rb_tree<longint,std::pair<longintconst,int>,std::_Select1st<std::pair<longintconst,int>>,std::less<longint>,std::allocator<std::pair<longintconst,int>>>::_M_erase(std::_Rb_tree<longint,std::pair<longintconst,int>,std::_Select1st<std::pair<longintconst,int>>,std::less<longint>,std::allocator<std::pair<longintconst,int>>>::_Link_type)",
+      "symbol": "_ZNSt8_Rb_treeIlSt4pairIKliESt10_Select1stIS2_ESt4lessIlESaIS2_EE8_M_eraseEPSt13_Rb_tree_nodeIS2_E"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Rb_tree<int,int,std::_Identity<int>,std::less<int>,std::allocator<int>>::size_type std::_Rb_tree<int,int,std::_Identity<int>,std::less<int>,std::allocator<int>>::erase(const int&)",
+      "symbol": "_ZNSt8_Rb_treeIiiSt9_IdentityIiESt4lessIiESaIiEE5eraseERKi"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_iterator<int>,bool> std::_Rb_tree<int,int,std::_Identity<int>,std::less<int>,std::allocator<int>>::_M_insert_unique<int>(int&&)",
+      "symbol": "_ZNSt8_Rb_treeIiiSt9_IdentityIiESt4lessIiESaIiEE16_M_insert_uniqueIiEESt4pairISt17_Rb_tree_iteratorIiEbEOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Rb_tree<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::_Select1st<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>,std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>::iterator std::_Rb_tree<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::_Select1st<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>,std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>::_M_insert_node(std::_Rb_tree<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::_Select1st<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>,std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>::_Base_ptr, std::_Rb_tree<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::_Select1st<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>,std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>::_Base_ptr, std::_Rb_tree<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::_Select1st<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>,std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>::_Link_type)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_S5_ESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE14_M_insert_nodeEPSt18_Rb_tree_node_baseSG_PSt13_Rb_tree_nodeIS8_E"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::_Rb_tree<int,std::pair<intconst,std::vector<float,std::allocator<float>>>,std::_Select1st<std::pair<intconst,std::vector<float,std::allocator<float>>>>,std::less<int>,std::allocator<std::pair<intconst,std::vector<float,std::allocator<float>>>>>::_M_erase(std::_Rb_tree<int,std::pair<intconst,std::vector<float,std::allocator<float>>>,std::_Select1st<std::pair<intconst,std::vector<float,std::allocator<float>>>>,std::less<int>,std::allocator<std::pair<intconst,std::vector<float,std::allocator<float>>>>>::_Link_type)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiSt6vectorIfSaIfEEESt10_Select1stIS5_ESt4lessIiESaIS5_EE8_M_eraseEPSt13_Rb_tree_nodeIS5_E"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::_Rb_tree<unsignedint,std::pair<unsignedintconst,int>,std::_Select1st<std::pair<unsignedintconst,int>>,std::less<unsignedint>,std::allocator<std::pair<unsignedintconst,int>>>::_M_erase(std::_Rb_tree<unsignedint,std::pair<unsignedintconst,int>,std::_Select1st<std::pair<unsignedintconst,int>>,std::less<unsignedint>,std::allocator<std::pair<unsignedintconst,int>>>::_Link_type)",
+      "symbol": "_ZNSt8_Rb_treeIjSt4pairIKjiESt10_Select1stIS2_ESt4lessIjESaIS2_EE8_M_eraseEPSt13_Rb_tree_nodeIS2_E"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Rb_tree<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,int>,std::_Select1st<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,int>>,std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,int>>>::iterator std::_Rb_tree<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,int>,std::_Select1st<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,int>>,std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,int>>>::_M_emplace_hint_unique<conststd::piecewise_construct_t&,std::tuple<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>&>,std::tuple<>>(std::_Rb_tree<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,int>,std::_Select1st<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,int>>,std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,int>>>::const_iterator)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_iESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJRS7_EESJ_IJEEEEESt17_Rb_tree_iteratorIS8_ESt23_Rb_tree_const_iteratorIS8_EDpOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<unsignedchar,std::allocator<unsignedchar>>::_M_range_insert<__gnu_cxx::__normal_iterator<unsignedchar*,std::vector<unsignedchar>>>(std::vector<unsignedchar,std::allocator<unsignedchar>>::iterator, __gnu_cxx::__normal_iterator<unsignedchar*,std::vector<unsignedchar,std::allocator<unsignedchar>>>, __gnu_cxx::__normal_iterator<unsignedchar*,std::vector<unsignedchar,std::allocator<unsignedchar>>>, std::forward_iterator_tag)",
+      "symbol": "_ZNSt6vectorIhSaIhEE15_M_range_insertIN9__gnu_cxx17__normal_iteratorIPhS1_EEEEvS6_T_S7_St20forward_iterator_tag"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<shortint,std::allocator<shortint>>::emplace_back<shortint>()",
+      "symbol": "_ZNSt6vectorIsSaIsEE12emplace_backIJsEEEvDpOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Rb_tree<int,std::pair<intconst,longunsignedint>,std::_Select1st<std::pair<intconst,longunsignedint>>,std::less<int>,std::allocator<std::pair<intconst,longunsignedint>>>::iterator std::_Rb_tree<int,std::pair<intconst,longunsignedint>,std::_Select1st<std::pair<intconst,longunsignedint>>,std::less<int>,std::allocator<std::pair<intconst,longunsignedint>>>::_M_insert_node(std::_Rb_tree<int,std::pair<intconst,longunsignedint>,std::_Select1st<std::pair<intconst,longunsignedint>>,std::less<int>,std::allocator<std::pair<intconst,longunsignedint>>>::_Base_ptr, std::_Rb_tree<int,std::pair<intconst,longunsignedint>,std::_Select1st<std::pair<intconst,longunsignedint>>,std::less<int>,std::allocator<std::pair<intconst,longunsignedint>>>::_Base_ptr, std::_Rb_tree<int,std::pair<intconst,longunsignedint>,std::_Select1st<std::pair<intconst,longunsignedint>>,std::less<int>,std::allocator<std::pair<intconst,longunsignedint>>>::_Link_type)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKimESt10_Select1stIS2_ESt4lessIiESaIS2_EE14_M_insert_nodeEPSt18_Rb_tree_node_baseSA_PSt13_Rb_tree_nodeIS2_E"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::vector<double,std::allocator<double>>& std::vector<double,std::allocator<double>>::operator=(const std::vector<double,std::allocator<double>>&)",
+      "symbol": "_ZNSt6vectorIdSaIdEEaSERKS1_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Rb_tree<longint,std::pair<longintconst,int>,std::_Select1st<std::pair<longintconst,int>>,std::less<longint>,std::allocator<std::pair<longintconst,int>>>::iterator std::_Rb_tree<longint,std::pair<longintconst,int>,std::_Select1st<std::pair<longintconst,int>>,std::less<longint>,std::allocator<std::pair<longintconst,int>>>::_M_insert_node(std::_Rb_tree<longint,std::pair<longintconst,int>,std::_Select1st<std::pair<longintconst,int>>,std::less<longint>,std::allocator<std::pair<longintconst,int>>>::_Base_ptr, std::_Rb_tree<longint,std::pair<longintconst,int>,std::_Select1st<std::pair<longintconst,int>>,std::less<longint>,std::allocator<std::pair<longintconst,int>>>::_Base_ptr, std::_Rb_tree<longint,std::pair<longintconst,int>,std::_Select1st<std::pair<longintconst,int>>,std::less<longint>,std::allocator<std::pair<longintconst,int>>>::_Link_type)",
+      "symbol": "_ZNSt8_Rb_treeIlSt4pairIKliESt10_Select1stIS2_ESt4lessIlESaIS2_EE14_M_insert_nodeEPSt18_Rb_tree_node_baseSA_PSt13_Rb_tree_nodeIS2_E"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Rb_tree<unsignedchar,std::pair<unsignedcharconst,longunsignedint>,std::_Select1st<std::pair<unsignedcharconst,longunsignedint>>,std::less<unsignedchar>,std::allocator<std::pair<unsignedcharconst,longunsignedint>>>::iterator std::_Rb_tree<unsignedchar,std::pair<unsignedcharconst,longunsignedint>,std::_Select1st<std::pair<unsignedcharconst,longunsignedint>>,std::less<unsignedchar>,std::allocator<std::pair<unsignedcharconst,longunsignedint>>>::_M_emplace_hint_unique<conststd::piecewise_construct_t&,std::tuple<unsignedchar&&>,std::tuple<>>(std::_Rb_tree<unsignedchar,std::pair<unsignedcharconst,longunsignedint>,std::_Select1st<std::pair<unsignedcharconst,longunsignedint>>,std::less<unsignedchar>,std::allocator<std::pair<unsignedcharconst,longunsignedint>>>::const_iterator)",
+      "symbol": "_ZNSt8_Rb_treeIhSt4pairIKhmESt10_Select1stIS2_ESt4lessIhESaIS2_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJOhEESD_IJEEEEESt17_Rb_tree_iteratorIS2_ESt23_Rb_tree_const_iteratorIS2_EDpOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<longint,std::allocator<longint>>::emplace_back<longint>()",
+      "symbol": "_ZNSt6vectorIlSaIlEE12emplace_backIJlEEEvDpOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<bool,std::allocator<bool>>::_M_insert_aux(std::vector<bool,std::allocator<bool>>::iterator, bool)",
+      "symbol": "_ZNSt6vectorIbSaIbEE13_M_insert_auxESt13_Bit_iteratorb"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::_Rb_tree<int,std::pair<intconst,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::_Select1st<std::pair<intconst,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>,std::less<int>,std::allocator<std::pair<intconst,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>::_M_erase(std::_Rb_tree<int,std::pair<intconst,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::_Select1st<std::pair<intconst,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>,std::less<int>,std::allocator<std::pair<intconst,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>::_Link_type)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEESt10_Select1stIS8_ESt4lessIiESaIS8_EE8_M_eraseEPSt13_Rb_tree_nodeIS8_E"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Rb_tree<int,std::pair<intconst,longunsignedint>,std::_Select1st<std::pair<intconst,longunsignedint>>,std::less<int>,std::allocator<std::pair<intconst,longunsignedint>>>::_Link_type std::_Rb_tree<int,std::pair<intconst,longunsignedint>,std::_Select1st<std::pair<intconst,longunsignedint>>,std::less<int>,std::allocator<std::pair<intconst,longunsignedint>>>::_M_copy<std::_Rb_tree<int,std::pair<intconst,longunsignedint>,std::_Select1st<std::pair<intconst,longunsignedint>>,std::less<int>,std::allocator<std::pair<intconst,longunsignedint>>>::_Alloc_node>(std::_Rb_tree<int,std::pair<intconst,longunsignedint>,std::_Select1st<std::pair<intconst,longunsignedint>>,std::less<int>,std::allocator<std::pair<intconst,longunsignedint>>>::_Const_Link_type, std::_Rb_tree<int,std::pair<intconst,longunsignedint>,std::_Select1st<std::pair<intconst,longunsignedint>>,std::less<int>,std::allocator<std::pair<intconst,longunsignedint>>>::_Base_ptr, std::_Rb_tree<int,std::pair<intconst,longunsignedint>,std::_Select1st<std::pair<intconst,longunsignedint>>,std::less<int>,std::allocator<std::pair<intconst,longunsignedint>>>::_Alloc_node&)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKimESt10_Select1stIS2_ESt4lessIiESaIS2_EE7_M_copyINS8_11_Alloc_nodeEEEPSt13_Rb_tree_nodeIS2_EPKSC_PSt18_Rb_tree_node_baseRT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Rb_tree<int,std::pair<intconst,int>,std::_Select1st<std::pair<intconst,int>>,std::less<int>,std::allocator<std::pair<intconst,int>>>::iterator std::_Rb_tree<int,std::pair<intconst,int>,std::_Select1st<std::pair<intconst,int>>,std::less<int>,std::allocator<std::pair<intconst,int>>>::_M_emplace_hint_unique<conststd::piecewise_construct_t&,std::tuple<intconst&>,std::tuple<>>(std::_Rb_tree<int,std::pair<intconst,int>,std::_Select1st<std::pair<intconst,int>>,std::less<int>,std::allocator<std::pair<intconst,int>>>::const_iterator)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiiESt10_Select1stIS2_ESt4lessIiESaIS2_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJRS1_EESD_IJEEEEESt17_Rb_tree_iteratorIS2_ESt23_Rb_tree_const_iteratorIS2_EDpOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<unsignedchar,std::allocator<unsignedchar>>::emplace_back<unsignedchar>()",
+      "symbol": "_ZNSt6vectorIhSaIhEE12emplace_backIJhEEEvDpOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::vector<float,std::allocator<float>>& std::vector<float,std::allocator<float>>::operator=(const std::vector<float,std::allocator<float>>&)",
+      "symbol": "_ZNSt6vectorIfSaIfEEaSERKS1_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<float,std::allocator<float>>::emplace_back<float>()",
+      "symbol": "_ZNSt6vectorIfSaIfEE12emplace_backIJfEEEvDpOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Rb_tree<int,std::pair<intconst,int>,std::_Select1st<std::pair<intconst,int>>,std::less<int>,std::allocator<std::pair<intconst,int>>>::iterator std::_Rb_tree<int,std::pair<intconst,int>,std::_Select1st<std::pair<intconst,int>>,std::less<int>,std::allocator<std::pair<intconst,int>>>::_M_emplace_hint_unique<conststd::piecewise_construct_t&,std::tuple<int&&>,std::tuple<>>(std::_Rb_tree<int,std::pair<intconst,int>,std::_Select1st<std::pair<intconst,int>>,std::less<int>,std::allocator<std::pair<intconst,int>>>::const_iterator)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiiESt10_Select1stIS2_ESt4lessIiESaIS2_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJOiEESD_IJEEEEESt17_Rb_tree_iteratorIS2_ESt23_Rb_tree_const_iteratorIS2_EDpOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__shared_count<(__gnu_cxx::_Lock_policy)2>::__shared_count<MsWksGraphInternal::DataPict,std::allocator<MsWksGraphInternal::DataPict>,MsWksGraphInternal::Zone&>(MsWksGraphInternal::DataPict*&, std::_Sp_alloc_shared_tag<std::allocator<MsWksGraphInternal::DataPict>>)",
+      "symbol": "_ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE2EEC2IN18MsWksGraphInternal8DataPictESaIS5_EJRNS4_4ZoneEEEERPT_St20_Sp_alloc_shared_tagIT0_EDpOT1_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::_Rb_tree<int,std::pair<intconst,std::vector<int,std::allocator<int>>>,std::_Select1st<std::pair<intconst,std::vector<int,std::allocator<int>>>>,std::less<int>,std::allocator<std::pair<intconst,std::vector<int,std::allocator<int>>>>>::_M_erase(std::_Rb_tree<int,std::pair<intconst,std::vector<int,std::allocator<int>>>,std::_Select1st<std::pair<intconst,std::vector<int,std::allocator<int>>>>,std::less<int>,std::allocator<std::pair<intconst,std::vector<int,std::allocator<int>>>>>::_Link_type)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiSt6vectorIiSaIiEEESt10_Select1stIS5_ESt4lessIiESaIS5_EE8_M_eraseEPSt13_Rb_tree_nodeIS5_E"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method BeagleWksDRParserInternal::Shape* std::__uninitialized_default_n_1<false>::__uninit_default_n<BeagleWksDRParserInternal::Shape*,longunsignedint>(BeagleWksDRParserInternal::Shape*, unsigned long int)",
+      "symbol": "_ZNSt27__uninitialized_default_n_1ILb0EE18__uninit_default_nIPN25BeagleWksDRParserInternal5ShapeEmEET_S5_T0_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<int,std::allocator<int>>::_M_range_insert<__gnu_cxx::__normal_iterator<int*,std::vector<int>>>(std::vector<int,std::allocator<int>>::iterator, __gnu_cxx::__normal_iterator<int*,std::vector<int,std::allocator<int>>>, __gnu_cxx::__normal_iterator<int*,std::vector<int,std::allocator<int>>>, std::forward_iterator_tag)",
+      "symbol": "_ZNSt6vectorIiSaIiEE15_M_range_insertIN9__gnu_cxx17__normal_iteratorIPiS1_EEEEvS6_T_S7_St20forward_iterator_tag"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Rb_tree<longint,std::pair<longintconst,longunsignedint>,std::_Select1st<std::pair<longintconst,longunsignedint>>,std::less<longint>,std::allocator<std::pair<longintconst,longunsignedint>>>::iterator std::_Rb_tree<longint,std::pair<longintconst,longunsignedint>,std::_Select1st<std::pair<longintconst,longunsignedint>>,std::less<longint>,std::allocator<std::pair<longintconst,longunsignedint>>>::_M_emplace_hint_unique<conststd::piecewise_construct_t&,std::tuple<longintconst&>,std::tuple<>>(std::_Rb_tree<longint,std::pair<longintconst,longunsignedint>,std::_Select1st<std::pair<longintconst,longunsignedint>>,std::less<longint>,std::allocator<std::pair<longintconst,longunsignedint>>>::const_iterator)",
+      "symbol": "_ZNSt8_Rb_treeIlSt4pairIKlmESt10_Select1stIS2_ESt4lessIlESaIS2_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJRS1_EESD_IJEEEEESt17_Rb_tree_iteratorIS2_ESt23_Rb_tree_const_iteratorIS2_EDpOT_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Rb_tree<longint,std::pair<longintconst,int>,std::_Select1st<std::pair<longintconst,int>>,std::less<longint>,std::allocator<std::pair<longintconst,int>>>::_Rb_tree(const std::_Rb_tree<longint,std::pair<longintconst,int>,std::_Select1st<std::pair<longintconst,int>>,std::less<longint>,std::allocator<std::pair<longintconst,int>>>&)",
+      "symbol": "_ZNSt8_Rb_treeIlSt4pairIKliESt10_Select1stIS2_ESt4lessIlESaIS2_EEC2ERKS8_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::pair<std::_Rb_tree_iterator<unsignedint>,bool> std::_Rb_tree<unsignedint,unsignedint,std::_Identity<unsignedint>,std::less<unsignedint>,std::allocator<unsignedint>>::_M_insert_unique<unsignedintconst&>(const unsigned int&)",
+      "symbol": "_ZNSt8_Rb_treeIjjSt9_IdentityIjESt4lessIjESaIjEE16_M_insert_uniqueIRKjEESt4pairISt17_Rb_tree_iteratorIjEbEOT_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Rb_tree<int,std::pair<intconst,int>,std::_Select1st<std::pair<intconst,int>>,std::less<int>,std::allocator<std::pair<intconst,int>>>::_Rb_tree(const std::_Rb_tree<int,std::pair<intconst,int>,std::_Select1st<std::pair<intconst,int>>,std::less<int>,std::allocator<std::pair<intconst,int>>>&)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiiESt10_Select1stIS2_ESt4lessIiESaIS2_EEC2ERKS8_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<int,std::allocator<int>>::push_back(const std::vector<int,std::allocator<int>>::value_type&)",
+      "symbol": "_ZNSt6vectorIiSaIiEE9push_backERKi"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::map<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,int,std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,int>>>::~map()",
+      "symbol": "_ZNSt3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiSt4lessIS5_ESaISt4pairIKS5_iEEED2Ev"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method MacWrtProStructuresInternal::Font* std::__uninitialized_default_n_1<false>::__uninit_default_n<MacWrtProStructuresInternal::Font*,longunsignedint>(MacWrtProStructuresInternal::Font*, unsigned long int)",
+      "symbol": "_ZNSt27__uninitialized_default_n_1ILb0EE18__uninit_default_nIPN27MacWrtProStructuresInternal4FontEmEET_S5_T0_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method ClarisWksDatabaseInternal::Field* std::__uninitialized_default_n_1<false>::__uninit_default_n<ClarisWksDatabaseInternal::Field*,longunsignedint>(ClarisWksDatabaseInternal::Field*, unsigned long int)",
+      "symbol": "_ZNSt27__uninitialized_default_n_1ILb0EE18__uninit_default_nIPN25ClarisWksDatabaseInternal5FieldEmEET_S5_T0_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method GreatWksDBParserInternal::Cell* std::__uninitialized_default_n_1<false>::__uninit_default_n<GreatWksDBParserInternal::Cell*,longunsignedint>(GreatWksDBParserInternal::Cell*, unsigned long int)",
+      "symbol": "_ZNSt27__uninitialized_default_n_1ILb0EE18__uninit_default_nIPN24GreatWksDBParserInternal4CellEmEET_S5_T0_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method RagTime5StyleManager::TextStyle* std::__uninitialized_default_n_1<false>::__uninit_default_n<RagTime5StyleManager::TextStyle*,longunsignedint>(RagTime5StyleManager::TextStyle*, unsigned long int)",
+      "symbol": "_ZNSt27__uninitialized_default_n_1ILb0EE18__uninit_default_nIPN20RagTime5StyleManager9TextStyleEmEET_S5_T0_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method MarinerWrtTextInternal::Zone::Information* std::__uninitialized_default_n_1<false>::__uninit_default_n<MarinerWrtTextInternal::Zone::Information*,longunsignedint>(MarinerWrtTextInternal::Zone::Information*, unsigned long int)",
+      "symbol": "_ZNSt27__uninitialized_default_n_1ILb0EE18__uninit_default_nIPN22MarinerWrtTextInternal4Zone11InformationEmEET_S6_T0_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method MsWks4TextInternal::Font* std::__uninitialized_default_n_1<false>::__uninit_default_n<MsWks4TextInternal::Font*,longunsignedint>(MsWks4TextInternal::Font*, unsigned long int)",
+      "symbol": "_ZNSt27__uninitialized_default_n_1ILb0EE18__uninit_default_nIPN18MsWks4TextInternal4FontEmEET_S5_T0_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method MWAWEntry* std::__uninitialized_default_n_1<false>::__uninit_default_n<MWAWEntry*,longunsignedint>(MWAWEntry*, unsigned long int)",
+      "symbol": "_ZNSt27__uninitialized_default_n_1ILb0EE18__uninit_default_nIP9MWAWEntrymEET_S4_T0_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method ZWField* std::__uninitialized_default_n_1<false>::__uninit_default_n<ZWField*,longunsignedint>(ZWField*, unsigned long int)",
+      "symbol": "_ZNSt27__uninitialized_default_n_1ILb0EE18__uninit_default_nIP7ZWFieldmEET_S4_T0_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method MWAWVariable<MWAWBorder>* std::__uninitialized_fill_n<false>::__uninit_fill_n<MWAWVariable<MWAWBorder>*,longunsignedint,MWAWVariable<MWAWBorder>>(MWAWVariable<MWAWBorder>*, unsigned long int, const MWAWVariable<MWAWBorder>&)",
+      "symbol": "_ZNSt22__uninitialized_fill_nILb0EE15__uninit_fill_nIP12MWAWVariableI10MWAWBorderEmS4_EET_S6_T0_RKT1_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method MWAWCell::Format* std::__uninitialized_default_n_1<false>::__uninit_default_n<MWAWCell::Format*,longunsignedint>(MWAWCell::Format*, unsigned long int)",
+      "symbol": "_ZNSt27__uninitialized_default_n_1ILb0EE18__uninit_default_nIPN8MWAWCell6FormatEmEET_S5_T0_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method WriteNowEntry* std::__uninitialized_default_n_1<false>::__uninit_default_n<WriteNowEntry*,longunsignedint>(WriteNowEntry*, unsigned long int)",
+      "symbol": "_ZNSt27__uninitialized_default_n_1ILb0EE18__uninit_default_nIP13WriteNowEntrymEET_S4_T0_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method MacWrtProStructuresInternal::Font* std::__uninitialized_copy<false>::__uninit_copy<constMacWrtProStructuresInternal::Font*,MacWrtProStructuresInternal::Font*>(const MacWrtProStructuresInternal::Font*, const MacWrtProStructuresInternal::Font*, MacWrtProStructuresInternal::Font*)",
+      "symbol": "_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPKN27MacWrtProStructuresInternal4FontEPS3_EET0_T_S8_S7_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method PowerPoint1ParserInternal::TextZone::Line* std::__uninitialized_copy<false>::__uninit_copy<constPowerPoint1ParserInternal::TextZone::Line*,PowerPoint1ParserInternal::TextZone::Line*>(const PowerPoint1ParserInternal::TextZone::Line*, const PowerPoint1ParserInternal::TextZone::Line*, PowerPoint1ParserInternal::TextZone::Line*)",
+      "symbol": "_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPKN25PowerPoint1ParserInternal8TextZone4LineEPS4_EET0_T_S9_S8_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method WriterPlsParserInternal::Font* std::__uninitialized_copy<false>::__uninit_copy<constWriterPlsParserInternal::Font*,WriterPlsParserInternal::Font*>(const WriterPlsParserInternal::Font*, const WriterPlsParserInternal::Font*, WriterPlsParserInternal::Font*)",
+      "symbol": "_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPKN23WriterPlsParserInternal4FontEPS3_EET0_T_S8_S7_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method BeagleWksSSParserInternal::Cell* std::__uninitialized_copy<false>::__uninit_copy<constBeagleWksSSParserInternal::Cell*,BeagleWksSSParserInternal::Cell*>(const BeagleWksSSParserInternal::Cell*, const BeagleWksSSParserInternal::Cell*, BeagleWksSSParserInternal::Cell*)",
+      "symbol": "_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPKN25BeagleWksSSParserInternal4CellEPS3_EET0_T_S8_S7_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method MarinerWrtTextInternal::Font* std::__uninitialized_copy<false>::__uninit_copy<constMarinerWrtTextInternal::Font*,MarinerWrtTextInternal::Font*>(const MarinerWrtTextInternal::Font*, const MarinerWrtTextInternal::Font*, MarinerWrtTextInternal::Font*)",
+      "symbol": "_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPKN22MarinerWrtTextInternal4FontEPS3_EET0_T_S8_S7_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method MindWrtParserInternal::LineInfo* std::__uninitialized_copy<false>::__uninit_copy<constMindWrtParserInternal::LineInfo*,MindWrtParserInternal::LineInfo*>(const MindWrtParserInternal::LineInfo*, const MindWrtParserInternal::LineInfo*, MindWrtParserInternal::LineInfo*)",
+      "symbol": "_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPKN21MindWrtParserInternal8LineInfoEPS3_EET0_T_S8_S7_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Destroy_aux<false>::__destroy<WriterPlsParserInternal::Font*>(WriterPlsParserInternal::Font*, WriterPlsParserInternal::Font*)",
+      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIPN23WriterPlsParserInternal4FontEEEvT_S5_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::_Rb_tree<int,std::pair<intconst,longunsignedint>,std::_Select1st<std::pair<intconst,longunsignedint>>,std::less<int>,std::allocator<std::pair<intconst,longunsignedint>>>::iterator std::_Rb_tree<int,std::pair<intconst,longunsignedint>,std::_Select1st<std::pair<intconst,longunsignedint>>,std::less<int>,std::allocator<std::pair<intconst,longunsignedint>>>::find(const int&)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKimESt10_Select1stIS2_ESt4lessIiESaIS2_EE4findERS1_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<std::vector<unsignedchar,std::allocator<unsignedchar>>,std::allocator<std::vector<unsignedchar,std::allocator<unsignedchar>>>>::resize(std::vector<std::vector<unsignedchar,std::allocator<unsignedchar>>,std::allocator<std::vector<unsignedchar,std::allocator<unsignedchar>>>>::size_type)",
+      "symbol": "_ZNSt6vectorIS_IhSaIhEESaIS1_EE6resizeEm"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Destroy_aux<false>::__destroy<HanMacWrdJGraphInternal::CellFormat*>(HanMacWrdJGraphInternal::CellFormat*, HanMacWrdJGraphInternal::CellFormat*)",
+      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIPN23HanMacWrdJGraphInternal10CellFormatEEEvT_S5_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Destroy_aux<false>::__destroy<NisusWrtParserInternal::Reference*>(NisusWrtParserInternal::Reference*, NisusWrtParserInternal::Reference*)",
+      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIPN22NisusWrtParserInternal9ReferenceEEEvT_S5_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method MacWrtParserInternal::Information* std::__uninitialized_copy<false>::__uninit_copy<constMacWrtParserInternal::Information*,MacWrtParserInternal::Information*>(const MacWrtParserInternal::Information*, const MacWrtParserInternal::Information*, MacWrtParserInternal::Information*)",
+      "symbol": "_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPKN20MacWrtParserInternal11InformationEPS3_EET0_T_S8_S7_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Destroy_aux<false>::__destroy<MacDrawProParserInternal::Library*>(MacDrawProParserInternal::Library*, MacDrawProParserInternal::Library*)",
+      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIPN24MacDrawProParserInternal7LibraryEEEvT_S5_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_add_ref_copy()",
+      "symbol": "_ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE15_M_add_ref_copyEv"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method PowerPoint3ParserInternal::TextZone* std::__uninitialized_copy<false>::__uninit_copy<constPowerPoint3ParserInternal::TextZone*,PowerPoint3ParserInternal::TextZone*>(const PowerPoint3ParserInternal::TextZone*, const PowerPoint3ParserInternal::TextZone*, PowerPoint3ParserInternal::TextZone*)",
+      "symbol": "_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPKN25PowerPoint3ParserInternal8TextZoneEPS3_EET0_T_S8_S7_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Destroy_aux<false>::__destroy<MarinerWrtTextInternal::Zone::Information*>(MarinerWrtTextInternal::Zone::Information*, MarinerWrtTextInternal::Zone::Information*)",
+      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIPN22MarinerWrtTextInternal4Zone11InformationEEEvT_S6_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::_Rb_tree<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,int>,std::_Select1st<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,int>>,std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,int>>>::const_iterator std::_Rb_tree<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,int>,std::_Select1st<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,int>>,std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,int>>>::find(const std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>&) const",
+      "symbol": "_ZNKSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_iESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE4findERS7_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Destroy_aux<false>::__destroy<MsWksDBParserInternal::Form*>(MsWksDBParserInternal::Form*, MsWksDBParserInternal::Form*)",
+      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIPN21MsWksDBParserInternal4FormEEEvT_S5_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Destroy_aux<false>::__destroy<MsWks4TextInternal::DataPLC*>(MsWks4TextInternal::DataPLC*, MsWks4TextInternal::DataPLC*)",
+      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIPN18MsWks4TextInternal7DataPLCEEEvT_S5_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method MsWrd1ParserInternal::Font* std::__uninitialized_copy<false>::__uninit_copy<constMsWrd1ParserInternal::Font*,MsWrd1ParserInternal::Font*>(const MsWrd1ParserInternal::Font*, const MsWrd1ParserInternal::Font*, MsWrd1ParserInternal::Font*)",
+      "symbol": "_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPKN20MsWrd1ParserInternal4FontEPS3_EET0_T_S8_S7_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::map<int,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::less<int>,std::allocator<std::pair<intconst,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>::~map()",
+      "symbol": "_ZNSt3mapIiNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4lessIiESaISt4pairIKiS5_EEED2Ev"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Destroy_aux<false>::__destroy<MWAWBorder*>(MWAWBorder*, MWAWBorder*)",
+      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIP10MWAWBorderEEvT_S4_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method MWAWHeaderFooter* std::__uninitialized_copy<false>::__uninit_copy<__gnu_cxx::__normal_iterator<constMWAWHeaderFooter*,std::vector<MWAWHeaderFooter>>,MWAWHeaderFooter*>(__gnu_cxx::__normal_iterator<constMWAWHeaderFooter*,std::vector<MWAWHeaderFooter,std::allocator<MWAWHeaderFooter>>>, __gnu_cxx::__normal_iterator<constMWAWHeaderFooter*,std::vector<MWAWHeaderFooter,std::allocator<MWAWHeaderFooter>>>, MWAWHeaderFooter*)",
+      "symbol": "_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIN9__gnu_cxx17__normal_iteratorIPK16MWAWHeaderFooterSt6vectorIS4_SaIS4_EEEEPS4_EET0_T_SD_SC_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Destroy_aux<false>::__destroy<GreatWksSSParserInternal::Style*>(GreatWksSSParserInternal::Style*, GreatWksSSParserInternal::Style*)",
+      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIPN24GreatWksSSParserInternal5StyleEEEvT_S5_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method MarinerWrtParserInternal::Zone* std::__uninitialized_default_n_1<false>::__uninit_default_n<MarinerWrtParserInternal::Zone*,longunsignedint>(MarinerWrtParserInternal::Zone*, unsigned long int)",
+      "symbol": "_ZNSt27__uninitialized_default_n_1ILb0EE18__uninit_default_nIPN24MarinerWrtParserInternal4ZoneEmEET_S5_T0_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method MsWks4ZoneInternal::Frame* std::__uninitialized_default_n_1<false>::__uninit_default_n<MsWks4ZoneInternal::Frame*,longunsignedint>(MsWks4ZoneInternal::Frame*, unsigned long int)",
+      "symbol": "_ZNSt27__uninitialized_default_n_1ILb0EE18__uninit_default_nIPN18MsWks4ZoneInternal5FrameEmEET_S5_T0_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method StyleParserInternal::Font* std::__uninitialized_copy<false>::__uninit_copy<constStyleParserInternal::Font*,StyleParserInternal::Font*>(const StyleParserInternal::Font*, const StyleParserInternal::Font*, StyleParserInternal::Font*)",
+      "symbol": "_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPKN19StyleParserInternal4FontEPS3_EET0_T_S8_S7_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Destroy_aux<false>::__destroy<RagTime5StructManager::ZoneLink*>(RagTime5StructManager::ZoneLink*, RagTime5StructManager::ZoneLink*)",
+      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIPN21RagTime5StructManager8ZoneLinkEEEvT_S5_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Destroy_aux<false>::__destroy<MacWrtProStructuresInternal::Page*>(MacWrtProStructuresInternal::Page*, MacWrtProStructuresInternal::Page*)",
+      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIPN27MacWrtProStructuresInternal4PageEEEvT_S5_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Destroy_aux<false>::__destroy<GreatWksTextInternal::Token*>(GreatWksTextInternal::Token*, GreatWksTextInternal::Token*)",
+      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIPN20GreatWksTextInternal5TokenEEEvT_S5_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method GreatWksDBParserInternal::Field* std::__uninitialized_default_n_1<false>::__uninit_default_n<GreatWksDBParserInternal::Field*,longunsignedint>(GreatWksDBParserInternal::Field*, unsigned long int)",
+      "symbol": "_ZNSt27__uninitialized_default_n_1ILb0EE18__uninit_default_nIPN24GreatWksDBParserInternal5FieldEmEET_S5_T0_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Destroy_aux<false>::__destroy<MoreTextInternal::Comment*>(MoreTextInternal::Comment*, MoreTextInternal::Comment*)",
+      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIPN16MoreTextInternal7CommentEEEvT_S5_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Destroy_aux<false>::__destroy<WriterPlsParserInternal::ParagraphInfo*>(WriterPlsParserInternal::ParagraphInfo*, WriterPlsParserInternal::ParagraphInfo*)",
+      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIPN23WriterPlsParserInternal13ParagraphInfoEEEvT_S5_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Rb_tree<int,int,std::_Identity<int>,std::less<int>,std::allocator<int>>::_Rb_tree(const std::_Rb_tree<int,int,std::_Identity<int>,std::less<int>,std::allocator<int>>&)",
+      "symbol": "_ZNSt8_Rb_treeIiiSt9_IdentityIiESt4lessIiESaIiEEC2ERKS5_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method MsWrdParserInternal::Object* std::__uninitialized_copy<false>::__uninit_copy<constMsWrdParserInternal::Object*,MsWrdParserInternal::Object*>(const MsWrdParserInternal::Object*, const MsWrdParserInternal::Object*, MsWrdParserInternal::Object*)",
+      "symbol": "_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPKN19MsWrdParserInternal6ObjectEPS3_EET0_T_S8_S7_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method WriterPlsParserInternal::Font* std::__uninitialized_default_n_1<false>::__uninit_default_n<WriterPlsParserInternal::Font*,longunsignedint>(WriterPlsParserInternal::Font*, unsigned long int)",
+      "symbol": "_ZNSt27__uninitialized_default_n_1ILb0EE18__uninit_default_nIPN23WriterPlsParserInternal4FontEmEET_S5_T0_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Destroy_aux<false>::__destroy<MacDocParserInternal::Index*>(MacDocParserInternal::Index*, MacDocParserInternal::Index*)",
+      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIPN20MacDocParserInternal5IndexEEEvT_S5_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Destroy_aux<false>::__destroy<MWAWVariable<MWAWBorder>*>(MWAWVariable<MWAWBorder>*, MWAWVariable<MWAWBorder>*)",
+      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIP12MWAWVariableI10MWAWBorderEEEvT_S6_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Destroy_aux<false>::__destroy<CanvasParserInternal::Layer*>(CanvasParserInternal::Layer*, CanvasParserInternal::Layer*)",
+      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIPN20CanvasParserInternal5LayerEEEvT_S5_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Destroy_aux<false>::__destroy<MWAWVariable<MsWrdStruct::Table::Cell>*>(MWAWVariable<MsWrdStruct::Table::Cell>*, MWAWVariable<MsWrdStruct::Table::Cell>*)",
+      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIP12MWAWVariableIN11MsWrdStruct5Table4CellEEEEvT_S8_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Destroy_aux<false>::__destroy<MWAWCellContent*>(MWAWCellContent*, MWAWCellContent*)",
+      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIP15MWAWCellContentEEvT_S4_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Rb_tree<int,std::pair<intconst,longunsignedint>,std::_Select1st<std::pair<intconst,longunsignedint>>,std::less<int>,std::allocator<std::pair<intconst,longunsignedint>>>::_Rb_tree(const std::_Rb_tree<int,std::pair<intconst,longunsignedint>,std::_Select1st<std::pair<intconst,longunsignedint>>,std::less<int>,std::allocator<std::pair<intconst,longunsignedint>>>&)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKimESt10_Select1stIS2_ESt4lessIiESaIS2_EEC2ERKS8_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Destroy_aux<false>::__destroy<MarinerWrtStruct*>(MarinerWrtStruct*, MarinerWrtStruct*)",
+      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIP16MarinerWrtStructEEvT_S4_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Destroy_aux<false>::__destroy<MoreTextInternal::OutlineMod*>(MoreTextInternal::OutlineMod*, MoreTextInternal::OutlineMod*)",
+      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIPN16MoreTextInternal10OutlineModEEEvT_S5_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Destroy_aux<false>::__destroy<HanMacWrdJTextInternal::Token*>(HanMacWrdJTextInternal::Token*, HanMacWrdJTextInternal::Token*)",
+      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIPN22HanMacWrdJTextInternal5TokenEEEvT_S5_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::_Vector_base<unsignedchar,std::allocator<unsignedchar>>::~_Vector_base()",
+      "symbol": "_ZNSt12_Vector_baseIhSaIhEED2Ev"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Destroy_aux<false>::__destroy<ClarisDrawTextInternal::Token*>(ClarisDrawTextInternal::Token*, ClarisDrawTextInternal::Token*)",
+      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIPN22ClarisDrawTextInternal5TokenEEEvT_S5_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method ClarisDrawTextInternal::Token* std::__uninitialized_copy<false>::__uninit_copy<constClarisDrawTextInternal::Token*,ClarisDrawTextInternal::Token*>(const ClarisDrawTextInternal::Token*, const ClarisDrawTextInternal::Token*, ClarisDrawTextInternal::Token*)",
+      "symbol": "_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPKN22ClarisDrawTextInternal5TokenEPS3_EET0_T_S8_S7_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Destroy_aux<false>::__destroy<MWAWFont*>(MWAWFont*, MWAWFont*)",
+      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIP8MWAWFontEEvT_S4_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::_Vector_base<longint,std::allocator<longint>>::~_Vector_base()",
+      "symbol": "_ZNSt12_Vector_baseIlSaIlEED2Ev"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Destroy_aux<false>::__destroy<MoreTextInternal::Topic*>(MoreTextInternal::Topic*, MoreTextInternal::Topic*)",
+      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIPN16MoreTextInternal5TopicEEEvT_S5_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Destroy_aux<false>::__destroy<MarinerWrtParserInternal::Zone*>(MarinerWrtParserInternal::Zone*, MarinerWrtParserInternal::Zone*)",
+      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIPN24MarinerWrtParserInternal4ZoneEEEvT_S5_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Destroy_aux<false>::__destroy<MsWrdTextInternal::Footnote*>(MsWrdTextInternal::Footnote*, MsWrdTextInternal::Footnote*)",
+      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIPN17MsWrdTextInternal8FootnoteEEEvT_S5_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Destroy_aux<false>::__destroy<RagTime5SpreadsheetInternal::CellValue*>(RagTime5SpreadsheetInternal::CellValue*, RagTime5SpreadsheetInternal::CellValue*)",
+      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIPN27RagTime5SpreadsheetInternal9CellValueEEEvT_S5_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>::vector(const std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EEC2ERKS7_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method HanMacWrdJTextInternal::TextZone* std::__uninitialized_default_n_1<false>::__uninit_default_n<HanMacWrdJTextInternal::TextZone*,longunsignedint>(HanMacWrdJTextInternal::TextZone*, unsigned long int)",
+      "symbol": "_ZNSt27__uninitialized_default_n_1ILb0EE18__uninit_default_nIPN22HanMacWrdJTextInternal8TextZoneEmEET_S5_T0_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method MWAWFont* std::__uninitialized_copy<false>::__uninit_copy<constMWAWFont*,MWAWFont*>(const MWAWFont*, const MWAWFont*, MWAWFont*)",
+      "symbol": "_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPK8MWAWFontPS2_EET0_T_S7_S6_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Destroy_aux<false>::__destroy<LightWayTxtTextInternal::Font*>(LightWayTxtTextInternal::Font*, LightWayTxtTextInternal::Font*)",
+      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIPN23LightWayTxtTextInternal4FontEEEvT_S5_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Destroy_aux<false>::__destroy<MacWrtProStructuresInternal::Font*>(MacWrtProStructuresInternal::Font*, MacWrtProStructuresInternal::Font*)",
+      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIPN27MacWrtProStructuresInternal4FontEEEvT_S5_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method MsWks4TextInternal::DataPLC* std::__uninitialized_default_n_1<false>::__uninit_default_n<MsWks4TextInternal::DataPLC*,longunsignedint>(MsWks4TextInternal::DataPLC*, unsigned long int)",
+      "symbol": "_ZNSt27__uninitialized_default_n_1ILb0EE18__uninit_default_nIPN18MsWks4TextInternal7DataPLCEmEET_S5_T0_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Destroy_aux<false>::__destroy<MacWrtProStructuresInternal::Section*>(MacWrtProStructuresInternal::Section*, MacWrtProStructuresInternal::Section*)",
+      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIPN27MacWrtProStructuresInternal7SectionEEEvT_S5_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<longint,std::allocator<longint>>::resize(std::vector<longint,std::allocator<longint>>::size_type)",
+      "symbol": "_ZNSt6vectorIlSaIlEE6resizeEm"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::_Vector_base<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>::~_Vector_base()",
+      "symbol": "_ZNSt12_Vector_baseINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EED2Ev"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method RagTime5StyleManager::GraphicStyle* std::__uninitialized_default_n_1<false>::__uninit_default_n<RagTime5StyleManager::GraphicStyle*,longunsignedint>(RagTime5StyleManager::GraphicStyle*, unsigned long int)",
+      "symbol": "_ZNSt27__uninitialized_default_n_1ILb0EE18__uninit_default_nIPN20RagTime5StyleManager12GraphicStyleEmEET_S5_T0_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::_Vector_base<double,std::allocator<double>>::~_Vector_base()",
+      "symbol": "_ZNSt12_Vector_baseIdSaIdEED2Ev"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::_Vector_base<float,std::allocator<float>>::~_Vector_base()",
+      "symbol": "_ZNSt12_Vector_baseIfSaIfEED2Ev"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::_Vector_base<int,std::allocator<int>>::~_Vector_base()",
+      "symbol": "_ZNSt12_Vector_baseIiSaIiEED2Ev"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::_Vector_base<longunsignedint,std::allocator<longunsignedint>>::~_Vector_base()",
+      "symbol": "_ZNSt12_Vector_baseImSaImEED2Ev"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method ClarisWksTextInternal::Token* std::__uninitialized_copy<false>::__uninit_copy<constClarisWksTextInternal::Token*,ClarisWksTextInternal::Token*>(const ClarisWksTextInternal::Token*, const ClarisWksTextInternal::Token*, ClarisWksTextInternal::Token*)",
+      "symbol": "_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPKN21ClarisWksTextInternal5TokenEPS3_EET0_T_S8_S7_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method MWAWVariable<MWAWBorder>* std::__uninitialized_copy<false>::__uninit_copy<constMWAWVariable<MWAWBorder>*,MWAWVariable<MWAWBorder>*>(const MWAWVariable<MWAWBorder>*, const MWAWVariable<MWAWBorder>*, MWAWVariable<MWAWBorder>*)",
+      "symbol": "_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPK12MWAWVariableI10MWAWBorderEPS4_EET0_T_S9_S8_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::__shared_count<(__gnu_cxx::_Lock_policy)2>::__shared_count<RagTime5GraphInternal::SubDocument*>(RagTime5GraphInternal::SubDocument*)",
+      "symbol": "_ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE2EEC2IPN21RagTime5GraphInternal11SubDocumentEEET_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method MWAWFont* std::__uninitialized_default_n_1<false>::__uninit_default_n<MWAWFont*,longunsignedint>(MWAWFont*, unsigned long int)",
+      "symbol": "_ZNSt27__uninitialized_default_n_1ILb0EE18__uninit_default_nIP8MWAWFontmEET_S4_T0_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::_Rb_tree_header::_Rb_tree_header(std::_Rb_tree_header&&)",
+      "symbol": "_ZNSt15_Rb_tree_headerC2EOS_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method MWAWPageSpan* std::__uninitialized_copy<false>::__uninit_copy<__gnu_cxx::__normal_iterator<constMWAWPageSpan*,std::vector<MWAWPageSpan>>,MWAWPageSpan*>(__gnu_cxx::__normal_iterator<constMWAWPageSpan*,std::vector<MWAWPageSpan,std::allocator<MWAWPageSpan>>>, __gnu_cxx::__normal_iterator<constMWAWPageSpan*,std::vector<MWAWPageSpan,std::allocator<MWAWPageSpan>>>, MWAWPageSpan*)",
+      "symbol": "_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIN9__gnu_cxx17__normal_iteratorIPK12MWAWPageSpanSt6vectorIS4_SaIS4_EEEEPS4_EET0_T_SD_SC_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method MarinerWrtStruct* std::__uninitialized_copy<false>::__uninit_copy<constMarinerWrtStruct*,MarinerWrtStruct*>(const MarinerWrtStruct*, const MarinerWrtStruct*, MarinerWrtStruct*)",
+      "symbol": "_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPK16MarinerWrtStructPS2_EET0_T_S7_S6_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method MWAWCellContent* std::__uninitialized_copy<false>::__uninit_copy<constMWAWCellContent*,MWAWCellContent*>(const MWAWCellContent*, const MWAWCellContent*, MWAWCellContent*)",
+      "symbol": "_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPK15MWAWCellContentPS2_EET0_T_S7_S6_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method MWAWListLevel* std::__uninitialized_default_n_1<false>::__uninit_default_n<MWAWListLevel*,longunsignedint>(MWAWListLevel*, unsigned long int)",
+      "symbol": "_ZNSt27__uninitialized_default_n_1ILb0EE18__uninit_default_nIP13MWAWListLevelmEET_S4_T0_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method RagTimeSpreadsheetInternal::CellFormat* std::__uninitialized_copy<false>::__uninit_copy<constRagTimeSpreadsheetInternal::CellFormat*,RagTimeSpreadsheetInternal::CellFormat*>(const RagTimeSpreadsheetInternal::CellFormat*, const RagTimeSpreadsheetInternal::CellFormat*, RagTimeSpreadsheetInternal::CellFormat*)",
+      "symbol": "_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPKN26RagTimeSpreadsheetInternal10CellFormatEPS3_EET0_T_S8_S7_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method MWAWCellContent::FormulaInstruction* std::__uninitialized_copy<false>::__uninit_copy<__gnu_cxx::__normal_iterator<constMWAWCellContent::FormulaInstruction*,std::vector<MWAWCellContent::FormulaInstruction>>,MWAWCellContent::FormulaInstruction*>(__gnu_cxx::__normal_iterator<constMWAWCellContent::FormulaInstruction*,std::vector<MWAWCellContent::FormulaInstruction,std::allocator<MWAWCellContent::FormulaInstruction>>>, __gnu_cxx::__normal_iterator<constMWAWCellContent::FormulaInstruction*,std::vector<MWAWCellContent::FormulaInstruction,std::allocator<MWAWCellContent::FormulaInstruction>>>, MWAWCellContent::FormulaInstruction*)",
+      "symbol": "_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIN9__gnu_cxx17__normal_iteratorIPKN15MWAWCellContent18FormulaInstructionESt6vectorIS5_SaIS5_EEEEPS5_EET0_T_SE_SD_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method MWAWVariable<MsWrdStruct::Table::Cell>* std::__uninitialized_copy<false>::__uninit_copy<__gnu_cxx::__normal_iterator<constMWAWVariable<MsWrdStruct::Table::Cell>*,std::vector<MWAWVariable<MsWrdStruct::Table::Cell>>>,MWAWVariable<MsWrdStruct::Table::Cell>*>(__gnu_cxx::__normal_iterator<constMWAWVariable<MsWrdStruct::Table::Cell>*,std::vector<MWAWVariable<MsWrdStruct::Table::Cell>,std::allocator<MWAWVariable<MsWrdStruct::Table::Cell>>>>, __gnu_cxx::__normal_iterator<constMWAWVariable<MsWrdStruct::Table::Cell>*,std::vector<MWAWVariable<MsWrdStruct::Table::Cell>,std::allocator<MWAWVariable<MsWrdStruct::Table::Cell>>>>, MWAWVariable<MsWrdStruct::Table::Cell>*)",
+      "symbol": "_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIN9__gnu_cxx17__normal_iteratorIPK12MWAWVariableIN11MsWrdStruct5Table4CellEESt6vectorIS8_SaIS8_EEEEPS8_EET0_T_SH_SG_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method MsWks4TextInternal::Font* std::__uninitialized_copy<false>::__uninit_copy<constMsWks4TextInternal::Font*,MsWks4TextInternal::Font*>(const MsWks4TextInternal::Font*, const MsWks4TextInternal::Font*, MsWks4TextInternal::Font*)",
+      "symbol": "_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPKN18MsWks4TextInternal4FontEPS3_EET0_T_S8_S7_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Destroy_aux<false>::__destroy<ClarisWksTextInternal::Token*>(ClarisWksTextInternal::Token*, ClarisWksTextInternal::Token*)",
+      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIPN21ClarisWksTextInternal5TokenEEEvT_S5_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method MsWks4ZoneInternal::Frame* std::__uninitialized_copy<false>::__uninit_copy<constMsWks4ZoneInternal::Frame*,MsWks4ZoneInternal::Frame*>(const MsWks4ZoneInternal::Frame*, const MsWks4ZoneInternal::Frame*, MsWks4ZoneInternal::Frame*)",
+      "symbol": "_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPKN18MsWks4ZoneInternal5FrameEPS3_EET0_T_S8_S7_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method WriteNowTextInternal::Style* std::__uninitialized_default_n_1<false>::__uninit_default_n<WriteNowTextInternal::Style*,longunsignedint>(WriteNowTextInternal::Style*, unsigned long int)",
+      "symbol": "_ZNSt27__uninitialized_default_n_1ILb0EE18__uninit_default_nIPN20WriteNowTextInternal5StyleEmEET_S5_T0_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method MsWksTableInternal::Table::Cell* std::__uninitialized_copy<false>::__uninit_copy<constMsWksTableInternal::Table::Cell*,MsWksTableInternal::Table::Cell*>(const MsWksTableInternal::Table::Cell*, const MsWksTableInternal::Table::Cell*, MsWksTableInternal::Table::Cell*)",
+      "symbol": "_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPKN18MsWksTableInternal5Table4CellEPS4_EET0_T_S9_S8_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method GreatWksTextInternal::Token* std::__uninitialized_copy<false>::__uninit_copy<constGreatWksTextInternal::Token*,GreatWksTextInternal::Token*>(const GreatWksTextInternal::Token*, const GreatWksTextInternal::Token*, GreatWksTextInternal::Token*)",
+      "symbol": "_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPKN20GreatWksTextInternal5TokenEPS3_EET0_T_S8_S7_"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method void std::vector<int,std::allocator<int>>::emplace_back<int>()  ->  method void std::vector<int,std::allocator<int>>::emplace_back<int>(int&&)",
+      "symbol": "_ZNSt6vectorIiSaIiEE12emplace_backIJiEEEvDpOT_"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method void std::vector<double,std::allocator<double>>::emplace_back<double>()  ->  method void std::vector<double,std::allocator<double>>::emplace_back<double>(double&&)",
+      "symbol": "_ZNSt6vectorIdSaIdEE12emplace_backIJdEEEvDpOT_"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 91,
+     "field_added_to_struct": 6,
+     "field_removed_from_struct": 5,
+     "field_type_changed": 1,
+     "member_offset_changed": 73,
+     "type_size_changed": 10
+    },
+    "type_events": [
+     {
+      "count": 23,
+      "declared_in": "../../inc/libmwaw/MWAWDocument.hxx",
+      "kind": "enum_case_added",
+      "type": "enum MWAWDocument::Type"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/stl_deque.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Deque_base<int,std::allocator<int>>::_Deque_impl"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/stl_deque.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Deque_base<longunsignedint,std::allocator<longunsignedint>>::_Deque_impl"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/lib/ClarisDrawGraph.cxx",
+      "kind": "base_class_changed",
+      "type": "class ClarisDrawGraphInternal::SubDocument"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<MWAWParserState>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "class std::vector<MWAWHeaderFooter,std::allocator<MWAWHeaderFooter>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Vector_base<MWAWHeaderFooter,std::allocator<MWAWHeaderFooter>>::_Vector_impl"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<MWAWSubDocument>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<MWAWListener>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "class std::vector<std::shared_ptr<MWAWCell>,std::allocator<std::shared_ptr<MWAWCell>>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Vector_base<std::shared_ptr<MWAWCell>,std::allocator<std::shared_ptr<MWAWCell>>>::_Vector_impl"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<MWAWCell>"
+     },
+     {
+      "count": 5,
+      "declared_in": "./src/lib/MWAWGraphicStyle.hxx",
+      "kind": "field_removed_from_struct",
+      "type": "class MWAWGraphicStyle"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/lib/MWAWGraphicStyle.hxx",
+      "kind": "field_type_changed",
+      "type": "class MWAWGraphicStyle"
+     },
+     {
+      "count": 11,
+      "declared_in": "./src/lib/MWAWGraphicStyle.hxx",
+      "kind": "member_offset_changed",
+      "type": "class MWAWGraphicStyle"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/lib/MWAWGraphicStyle.hxx",
+      "kind": "type_size_changed",
+      "type": "class MWAWGraphicStyle"
+     },
+     {
+      "count": 6,
+      "declared_in": "/usr/include/c++/9/bits/stl_vector.h",
+      "kind": "field_added_to_struct",
+      "type": "class std::vector<MWAWGraphicStyle::GradientStop,std::allocator<MWAWGraphicStyle::GradientStop>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/stl_vector.h",
+      "kind": "type_size_changed",
+      "type": "class std::vector<MWAWGraphicStyle::GradientStop,std::allocator<MWAWGraphicStyle::GradientStop>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "class std::vector<MWAWGraphicStyle::GradientStop,std::allocator<MWAWGraphicStyle::GradientStop>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<MWAWGraphicListener>"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/lib/MWAWGraphicListener.hxx",
+      "kind": "base_class_changed",
+      "type": "class MWAWGraphicListener"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<MWAWGraphicListenerInternal::GraphicState>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "class std::vector<MWAWPageSpan,std::allocator<MWAWPageSpan>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Vector_base<MWAWPageSpan,std::allocator<MWAWPageSpan>>::_Vector_impl"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "class std::vector<std::shared_ptr<MWAWSubDocument>,std::allocator<std::shared_ptr<MWAWSubDocument>>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Vector_base<std::shared_ptr<MWAWSubDocument>,std::allocator<std::shared_ptr<MWAWSubDocument>>>::_Vector_impl"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<MWAWGraphicListenerInternal::State>"
+     },
+     {
+      "count": 19,
+      "declared_in": "./src/lib/MWAWGraphicListener.cxx",
+      "kind": "member_offset_changed",
+      "type": "struct MWAWGraphicListenerInternal::State"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/lib/MWAWGraphicListener.cxx",
+      "kind": "type_size_changed",
+      "type": "struct MWAWGraphicListenerInternal::State"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "class std::vector<std::shared_ptr<MWAWGraphicListenerInternal::State>,std::allocator<std::shared_ptr<MWAWGraphicListenerInternal::State>>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Vector_base<std::shared_ptr<MWAWGraphicListenerInternal::State>,std::allocator<std::shared_ptr<MWAWGraphicListenerInternal::State>>>::_Vector_impl"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/lib/MWAWGraphicListener.hxx",
+      "kind": "base_class_changed",
+      "type": "class MWAWGraphicListener"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<MWAWPresentationListener>"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/lib/MWAWPresentationListener.hxx",
+      "kind": "base_class_changed",
+      "type": "class MWAWPresentationListener"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<MWAWPresentationListenerInternal::GraphicState>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<MWAWPresentationListenerInternal::State>"
+     },
+     {
+      "count": 19,
+      "declared_in": "./src/lib/MWAWPresentationListener.cxx",
+      "kind": "member_offset_changed",
+      "type": "struct MWAWPresentationListenerInternal::State"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/lib/MWAWPresentationListener.cxx",
+      "kind": "type_size_changed",
+      "type": "struct MWAWPresentationListenerInternal::State"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "class std::vector<std::shared_ptr<MWAWPresentationListenerInternal::State>,std::allocator<std::shared_ptr<MWAWPresentationListenerInternal::State>>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Vector_base<std::shared_ptr<MWAWPresentationListenerInternal::State>,std::allocator<std::shared_ptr<MWAWPresentationListenerInternal::State>>>::_Vector_impl"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/lib/MWAWPresentationListener.hxx",
+      "kind": "base_class_changed",
+      "type": "class MWAWPresentationListener"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<MWAWSpreadsheetListener>"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/lib/MWAWSpreadsheetListener.hxx",
+      "kind": "base_class_changed",
+      "type": "class MWAWSpreadsheetListener"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<MWAWSpreadsheetListenerInternal::DocumentState>"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/lib/MWAWSpreadsheetListener.hxx",
+      "kind": "base_class_changed",
+      "type": "class MWAWSpreadsheetListener"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<MWAWTextListener>"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/lib/MWAWTextListener.hxx",
+      "kind": "base_class_changed",
+      "type": "class MWAWTextListener"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<MWAWTextListenerInternal::DocumentState>"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/lib/MWAWTextListener.hxx",
+      "kind": "base_class_changed",
+      "type": "class MWAWTextListener"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/lib/ClarisDrawParser.hxx",
+      "kind": "base_class_changed",
+      "type": "class ClarisDrawParser"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<ClarisDrawStyleManager>"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/lib/ClarisDrawParser.hxx",
+      "kind": "base_class_changed",
+      "type": "class ClarisDrawParser"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<ClarisDrawGraph>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<ClarisDrawText>"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/lib/MWAWParser.hxx",
+      "kind": "base_class_changed",
+      "type": "class MWAWGraphicParser"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/lib/MWAWParser.hxx",
+      "kind": "base_class_changed",
+      "type": "class MWAWGraphicParser"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/lib/ClarisDrawGraph.cxx",
+      "kind": "base_class_changed",
+      "type": "class ClarisDrawGraphInternal::SubDocument"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/lib/ClarisWksGraph.cxx",
+      "kind": "base_class_changed",
+      "type": "class ClarisWksGraphInternal::SubDocument"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<ClarisWksStyleManager>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<ClarisWksStyleManagerInternal::State>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "class std::vector<MWAWGraphicStyle,std::allocator<MWAWGraphicStyle>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Vector_base<MWAWGraphicStyle,std::allocator<MWAWGraphicStyle>>::_Vector_impl"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<ClarisWksDatabase>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<ClarisWksGraph>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<ClarisWksPresentation>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<ClarisWksSpreadsheet>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<ClarisWksTable>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<ClarisWksText>"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/lib/ClarisWksGraph.cxx",
+      "kind": "base_class_changed",
+      "type": "class ClarisWksGraphInternal::SubDocument"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/lib/HanMacWrdJGraph.cxx",
+      "kind": "base_class_changed",
+      "type": "class HanMacWrdJGraphInternal::SubDocument"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<HanMacWrdJGraphInternal::State>"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/lib/HanMacWrdJGraph.cxx",
+      "kind": "type_size_changed",
+      "type": "struct HanMacWrdJGraphInternal::State"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "class std::vector<HanMacWrdJGraphInternal::FrameFormat,std::allocator<HanMacWrdJGraphInternal::FrameFormat>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Vector_base<HanMacWrdJGraphInternal::FrameFormat,std::allocator<HanMacWrdJGraphInternal::FrameFormat>>::_Vector_impl"
+     },
+     {
+      "count": 3,
+      "declared_in": "./src/lib/HanMacWrdJGraph.cxx",
+      "kind": "member_offset_changed",
+      "type": "struct HanMacWrdJGraphInternal::FrameFormat"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/lib/HanMacWrdJGraph.cxx",
+      "kind": "type_size_changed",
+      "type": "struct HanMacWrdJGraphInternal::FrameFormat"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/lib/HanMacWrdJParser.hxx",
+      "kind": "base_class_changed",
+      "type": "class HanMacWrdJParser"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<HanMacWrdJGraph>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<HanMacWrdJText>"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/lib/MWAWParser.hxx",
+      "kind": "base_class_changed",
+      "type": "class MWAWTextParser"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/lib/MWAWParser.hxx",
+      "kind": "base_class_changed",
+      "type": "class MWAWTextParser"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/lib/HanMacWrdJGraph.cxx",
+      "kind": "base_class_changed",
+      "type": "class HanMacWrdJGraphInternal::SubDocument"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/lib/HanMacWrdKGraph.cxx",
+      "kind": "base_class_changed",
+      "type": "class HanMacWrdKGraphInternal::SubDocument"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/lib/HanMacWrdKParser.hxx",
+      "kind": "base_class_changed",
+      "type": "class HanMacWrdKParser"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<HanMacWrdKGraph>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<HanMacWrdKText>"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/lib/HanMacWrdKGraph.cxx",
+      "kind": "base_class_changed",
+      "type": "class HanMacWrdKGraphInternal::SubDocument"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/lib/MsWksGraph.cxx",
+      "kind": "base_class_changed",
+      "type": "class MsWksGraphInternal::SubDocument"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<MsWksGraphInternal::State>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "class std::vector<std::shared_ptr<MsWksGraphInternal::Zone>,std::allocator<std::shared_ptr<MsWksGraphInternal::Zone>>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Vector_base<std::shared_ptr<MsWksGraphInternal::Zone>,std::allocator<std::shared_ptr<MsWksGraphInternal::Zone>>>::_Vector_impl"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<MsWksGraphInternal::Zone>"
+     },
+     {
+      "count": 4,
+      "declared_in": "./src/lib/MsWksGraph.cxx",
+      "kind": "member_offset_changed",
+      "type": "struct MsWksGraphInternal::Zone"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/lib/MsWksGraph.cxx",
+      "kind": "type_size_changed",
+      "type": "struct MsWksGraphInternal::Zone"
+     },
+     {
+      "count": 2,
+      "declared_in": "./src/lib/MsWksGraph.hxx",
+      "kind": "member_offset_changed",
+      "type": "struct MsWksGraph::Style"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/lib/MsWksGraph.hxx",
+      "kind": "type_size_changed",
+      "type": "struct MsWksGraph::Style"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/lib/MsWksGraph.hxx",
+      "kind": "base_class_changed",
+      "type": "struct MsWksGraph::Style"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/lib/MsWksGraph.hxx",
+      "kind": "base_class_changed",
+      "type": "struct MsWksGraph::Style"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<MsWksDocumentInternal::State>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<MsWks4Zone>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<MsWksDocument>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<MsWksGraph>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<MsWks3Text>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<MsWks4Text>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<MsWksTable>"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/lib/MsWksGraph.cxx",
+      "kind": "base_class_changed",
+      "type": "class MsWksGraphInternal::SubDocument"
+     },
+     {
+      "count": 12,
+      "declared_in": "./src/lib/MacDrawParser.cxx",
+      "kind": "member_offset_changed",
+      "type": "struct MacDrawParserInternal::Shape"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/lib/MacDrawParser.cxx",
+      "kind": "type_size_changed",
+      "type": "struct MacDrawParserInternal::Shape"
+     },
+     {
+      "count": 3,
+      "declared_in": "./src/lib/SuperPaintParser.cxx",
+      "kind": "member_offset_changed",
+      "type": "struct SuperPaintParserInternal::Shape"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/lib/SuperPaintParser.cxx",
+      "kind": "type_size_changed",
+      "type": "struct SuperPaintParserInternal::Shape"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/lib/BeagleWksDBParser.cxx",
+      "kind": "base_class_changed",
+      "type": "struct BeagleWksDBParserInternal::Cell"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/stl_deque.h",
+      "kind": "base_class_changed",
+      "type": "class std::deque<int,std::allocator<int>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/stl_deque.h",
+      "kind": "base_class_changed",
+      "type": "class std::deque<longunsignedint,std::allocator<longunsignedint>>"
+     }
+    ]
+   }
+  ],
+  "seconds": 161.674142005,
+  "source": "libmwaw",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "0.3.16",
+   "0.3.17"
+  ]
+ },
+ "generated_at": "2026-09-02T15:39:12Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

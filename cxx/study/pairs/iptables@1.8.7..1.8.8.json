@@ -1,0 +1,112 @@
+{
+ "data": {
+  "id": "iptables@1.8.7..1.8.8",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      74,
+      80
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 6
+    },
+    "soname": [
+     "libxtables.so.12",
+     "libxtables.so.12"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function char* xtables_strdup(const char*)",
+      "symbol": "xtables_strdup"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void xtables_announce_chain(const char*)",
+      "symbol": "xtables_announce_chain"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const char* xt_xlate_set_get(xt_xlate*)",
+      "symbol": "xt_xlate_set_get"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function uint8_t xt_xlate_get_family(xt_xlate*)",
+      "symbol": "xt_xlate_get_family"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void xt_xlate_set_add(xt_xlate*, const char*, ...)",
+      "symbol": "xt_xlate_set_add"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void xl_xlate_set_family(xt_xlate*, uint8_t)",
+      "symbol": "xl_xlate_set_family"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 1,
+     "field_type_changed": 1,
+     "member_offset_changed": 1,
+     "type_size_changed": 1
+    },
+    "type_events": [
+     {
+      "count": 1,
+      "declared_in": "./libxtables/xtables.c",
+      "kind": "field_added_to_struct",
+      "type": "struct xt_xlate"
+     },
+     {
+      "count": 1,
+      "declared_in": "./libxtables/xtables.c",
+      "kind": "field_type_changed",
+      "type": "struct xt_xlate"
+     },
+     {
+      "count": 1,
+      "declared_in": "./libxtables/xtables.c",
+      "kind": "member_offset_changed",
+      "type": "struct xt_xlate"
+     },
+     {
+      "count": 1,
+      "declared_in": "./libxtables/xtables.c",
+      "kind": "type_size_changed",
+      "type": "struct xt_xlate"
+     }
+    ]
+   }
+  ],
+  "seconds": 1.774393819,
+  "source": "iptables",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.8.7",
+   "1.8.8"
+  ]
+ },
+ "generated_at": "2026-09-02T14:58:22Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

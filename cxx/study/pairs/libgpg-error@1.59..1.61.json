@@ -1,0 +1,58 @@
+{
+ "data": {
+  "id": "libgpg-error@1.59..1.61",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      200,
+      200
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "enum_case_added": 3
+    },
+    "soname": [
+     "libgpg-error.so.0",
+     "libgpg-error.so.0"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [
+     {
+      "count": 3,
+      "declared_in": "./gpg-error.h",
+      "kind": "enum_case_added",
+      "type": "enum gpg_err_code_t"
+     }
+    ]
+   }
+  ],
+  "seconds": 2.600859718,
+  "source": "libgpg-error",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.59",
+   "1.61"
+  ]
+ },
+ "generated_at": "2026-09-02T14:58:41Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

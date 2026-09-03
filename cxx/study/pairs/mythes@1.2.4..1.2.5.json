@@ -1,0 +1,80 @@
+{
+ "data": {
+  "id": "mythes@1.2.4..1.2.5",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      16,
+      14
+     ],
+     "mangled_functions": [
+      16,
+      14
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_removed": 1
+    },
+    "soname": [
+     "libmythes-1.2.so.0",
+     "libmythes-1.2.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Vector_base<char,std::allocator<char>>::~_Vector_base()",
+      "symbol": "_ZNSt12_Vector_baseIcSaIcEED2Ev"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 3,
+     "field_type_changed": 2,
+     "member_offset_changed": 1
+    },
+    "type_events": [
+     {
+      "count": 3,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
+      "kind": "field_added_to_struct",
+      "type": "struct _IO_FILE"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
+      "kind": "field_type_changed",
+      "type": "struct _IO_FILE"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
+      "kind": "member_offset_changed",
+      "type": "struct _IO_FILE"
+     }
+    ]
+   }
+  ],
+  "seconds": 1.794116301,
+  "source": "mythes",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.2.4",
+   "1.2.5"
+  ]
+ },
+ "generated_at": "2026-09-02T15:07:39Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

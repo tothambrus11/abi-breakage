@@ -1,0 +1,204 @@
+{
+ "data": {
+  "id": "snappy@1.1.8..1.1.9",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      57,
+      65
+     ],
+     "mangled_functions": [
+      52,
+      60
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "function_signature_changed": 3,
+     "symbol_added": 9
+    },
+    "soname": [
+     "libsnappy.so.1",
+     "libsnappy.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function void snappy::MemCopy(ptrdiff_t, const uint8_t*, size_t)",
+      "symbol": "_ZN6snappy7MemCopyElPKhm"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void snappy::MemCopy(char*, const uint8_t*, size_t)",
+      "symbol": "_ZN6snappy7MemCopyEPcPKhm"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool snappy::SnappyScatteredWriter<snappy::SnappySinkAllocator>::SlowAppendFromSelf(size_t, size_t)",
+      "symbol": "_ZN6snappy21SnappyScatteredWriterINS_19SnappySinkAllocatorEE18SlowAppendFromSelfEmm"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function std::pair<unsignedcharconst*,longint> snappy::DecompressBranchless<longunsignedint>(const uint8_t*, const uint8_t*, ptrdiff_t, unsigned long int, ptrdiff_t)",
+      "symbol": "_ZN6snappy20DecompressBranchlessImEESt4pairIPKhlES3_S3_lT_l"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function std::pair<unsignedcharconst*,longint> snappy::DecompressBranchless<char*>(const uint8_t*, const uint8_t*, ptrdiff_t, char*, ptrdiff_t)",
+      "symbol": "_ZN6snappy20DecompressBranchlessIPcEESt4pairIPKhlES4_S4_lT_l"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void snappy::MemMove(char*, void*, size_t)",
+      "symbol": "_ZN6snappy7MemMoveEPcPKvm"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void snappy::SnappyDecompressor::DecompressAllTags<snappy::SnappyDecompressionValidator>(snappy::SnappyDecompressionValidator*)",
+      "symbol": "_ZN6snappy18SnappyDecompressor17DecompressAllTagsINS_28SnappyDecompressionValidatorEEEvPT_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void snappy::SnappyDecompressor::DecompressAllTags<snappy::SnappyScatteredWriter<snappy::SnappySinkAllocator>>(snappy::SnappyScatteredWriter<snappy::SnappySinkAllocator>*)",
+      "symbol": "_ZN6snappy18SnappyDecompressor17DecompressAllTagsINS_21SnappyScatteredWriterINS_19SnappySinkAllocatorEEEEEvPT_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void snappy::SnappyDecompressor::DecompressAllTags<snappy::SnappyArrayWriter>(snappy::SnappyArrayWriter*)",
+      "symbol": "_ZN6snappy18SnappyDecompressor17DecompressAllTagsINS_17SnappyArrayWriterEEEvPT_"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function char* snappy::internal::CompressFragment(const char*, size_t, char*, snappy::uint16*, const int)  ->  function char* snappy::internal::CompressFragment(const char*, size_t, char*, uint16_t*, const int)",
+      "symbol": "_ZN6snappy8internal16CompressFragmentEPKcmPcPti"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method snappy::uint16* snappy::internal::WorkingMemory::GetHashTable(size_t, int*) const  ->  method uint16_t* snappy::internal::WorkingMemory::GetHashTable(size_t, int*) const",
+      "symbol": "_ZNK6snappy8internal13WorkingMemory12GetHashTableEmPi"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function bool snappy::GetUncompressedLength(snappy::Source*, snappy::uint32*)  ->  function bool snappy::GetUncompressedLength(snappy::Source*, uint32_t*)",
+      "symbol": "_ZN6snappy21GetUncompressedLengthEPNS_6SourceEPj"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 11,
+     "field_added_to_struct": 2,
+     "field_type_changed": 1,
+     "member_offset_changed": 3,
+     "type_size_changed": 2
+    },
+    "type_events": [
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/basic_string.h",
+      "kind": "base_class_changed",
+      "type": "struct std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Alloc_hider"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/9/bits/allocator.h",
+      "kind": "base_class_changed",
+      "type": "class std::allocator<char>"
+     },
+     {
+      "count": 1,
+      "declared_in": "./snappy.cc",
+      "kind": "field_added_to_struct",
+      "type": "class snappy::SnappyDecompressor"
+     },
+     {
+      "count": 3,
+      "declared_in": "./snappy.cc",
+      "kind": "member_offset_changed",
+      "type": "class snappy::SnappyDecompressor"
+     },
+     {
+      "count": 1,
+      "declared_in": "./snappy.cc",
+      "kind": "type_size_changed",
+      "type": "class snappy::SnappyDecompressor"
+     },
+     {
+      "count": 1,
+      "declared_in": "./snappy.cc",
+      "kind": "field_added_to_struct",
+      "type": "class snappy::SnappyScatteredWriter<snappy::SnappySinkAllocator>"
+     },
+     {
+      "count": 1,
+      "declared_in": "./snappy.cc",
+      "kind": "type_size_changed",
+      "type": "class snappy::SnappyScatteredWriter<snappy::SnappySinkAllocator>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "class std::vector<snappy::SnappySinkAllocator::Datablock,std::allocator<snappy::SnappySinkAllocator::Datablock>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Vector_base<snappy::SnappySinkAllocator::Datablock,std::allocator<snappy::SnappySinkAllocator::Datablock>>::_Vector_impl"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/9/bits/allocator.h",
+      "kind": "base_class_changed",
+      "type": "class std::allocator<snappy::SnappySinkAllocator::Datablock>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "class std::vector<char*,std::allocator<char*>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Vector_base<char*,std::allocator<char*>>::_Vector_impl"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/9/bits/allocator.h",
+      "kind": "base_class_changed",
+      "type": "class std::allocator<char*>"
+     },
+     {
+      "count": 1,
+      "declared_in": "./snappy-internal.h",
+      "kind": "field_type_changed",
+      "type": "class snappy::internal::WorkingMemory"
+     }
+    ]
+   }
+  ],
+  "seconds": 1.016214987,
+  "source": "snappy",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.1.8",
+   "1.1.9"
+  ]
+ },
+ "generated_at": "2026-09-02T15:00:03Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

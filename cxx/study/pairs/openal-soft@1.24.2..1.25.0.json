@@ -1,0 +1,99 @@
+{
+ "data": {
+  "id": "openal-soft@1.24.2..1.25.0",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      176,
+      176
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "function_signature_changed": 1
+    },
+    "soname": [
+     "libopenal.so.1",
+     "libopenal.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void alGetPointervSOFT(ALenum, ALvoid**)  ->  function void alGetPointervSOFT(ALenum, ALvoidptr*)",
+      "symbol": "alGetPointervSOFT"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 2,
+     "field_removed_from_struct": 33,
+     "type_size_changed": 2,
+     "vtable_changed": 8
+    },
+    "type_events": [
+     {
+      "count": 1,
+      "declared_in": "./alc/device.h",
+      "kind": "type_size_changed",
+      "type": "struct ALCdevice"
+     },
+     {
+      "count": 4,
+      "declared_in": "./alc/device.h",
+      "kind": "vtable_changed",
+      "type": "struct ALCdevice"
+     },
+     {
+      "count": 33,
+      "declared_in": "./alc/context.h",
+      "kind": "field_removed_from_struct",
+      "type": "struct ALCcontext"
+     },
+     {
+      "count": 1,
+      "declared_in": "./alc/context.h",
+      "kind": "type_size_changed",
+      "type": "struct ALCcontext"
+     },
+     {
+      "count": 2,
+      "declared_in": "./alc/context.h",
+      "kind": "base_class_changed",
+      "type": "struct ALCcontext"
+     },
+     {
+      "count": 4,
+      "declared_in": "./alc/context.h",
+      "kind": "vtable_changed",
+      "type": "struct ALCcontext"
+     }
+    ]
+   }
+  ],
+  "seconds": 34.724837782,
+  "source": "openal-soft",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.24.2",
+   "1.25.0"
+  ]
+ },
+ "generated_at": "2026-09-02T15:04:53Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

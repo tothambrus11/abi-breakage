@@ -1,0 +1,304 @@
+<title>The Resilience Budget</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --paper:#F5F7F8; --card:#FFFFFF; --ink:#121820; --slate:#57636E;
+    --rule:#DCE2E6; --rule-strong:#C3CCD3;
+    --accent:#0E6C66; --accent-soft:#DCEDEB;
+    --absorb:#2C6B4E; --absorb-soft:#DFEDE5;
+    --nohelp:#A2382A; --nohelp-soft:#F4E1DE;
+    --invisible:#8A6212; --invisible-soft:#F5EAD4;
+    --bar:#9FB8B5; --bar-strong:#0E6C66;
+    --shadow:0 1px 2px rgba(18,24,32,.06), 0 8px 24px -16px rgba(18,24,32,.28);
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --paper:#0E1318; --card:#151C23; --ink:#E3E9ED; --slate:#95A2AD;
+      --rule:#262F38; --rule-strong:#36424D;
+      --accent:#43A79F; --accent-soft:#122C2B;
+      --absorb:#5EAE84; --absorb-soft:#132A20;
+      --nohelp:#DE7C6C; --nohelp-soft:#2E1A17;
+      --invisible:#D6A83F; --invisible-soft:#2C2413;
+      --bar:#3A5754; --bar-strong:#43A79F;
+      --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -18px rgba(0,0,0,.8);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0E1318; --card:#151C23; --ink:#E3E9ED; --slate:#95A2AD;
+    --rule:#262F38; --rule-strong:#36424D;
+    --accent:#43A79F; --accent-soft:#122C2B;
+    --absorb:#5EAE84; --absorb-soft:#132A20;
+    --nohelp:#DE7C6C; --nohelp-soft:#2E1A17;
+    --invisible:#D6A83F; --invisible-soft:#2C2413;
+    --bar:#3A5754; --bar-strong:#43A79F;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -18px rgba(0,0,0,.8);
+  }
+  *{box-sizing:border-box}
+  body{background:var(--paper); color:var(--ink); font-family:"IBM Plex Sans","Segoe UI",system-ui,sans-serif;
+       font-size:16px; line-height:1.62; margin:0; -webkit-font-smoothing:antialiased}
+  .wrap{max-width:1080px; margin:0 auto; padding:56px 28px 96px; display:flex; flex-direction:column; gap:56px}
+  h1,h2,h3{font-family:"IBM Plex Sans Condensed","IBM Plex Sans",sans-serif; text-wrap:balance; margin:0; line-height:1.14}
+  h1{font-size:clamp(2.1rem,5vw,3.1rem); font-weight:700; letter-spacing:-.015em}
+  h2{font-size:1.55rem; font-weight:600; letter-spacing:-.008em}
+  h3{font-size:1.06rem; font-weight:600}
+  p{margin:0; max-width:68ch}
+  a{color:var(--accent)}
+  .eyebrow{font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:.14em; text-transform:uppercase; color:var(--accent); font-weight:500}
+  .lede{font-size:1.13rem; color:var(--slate); max-width:66ch}
+  section{display:flex; flex-direction:column; gap:20px}
+  .stack{display:flex; flex-direction:column; gap:14px}
+  header{display:flex; flex-direction:column; gap:18px; border-bottom:2px solid var(--ink); padding-bottom:26px}
+  .corpus{font-family:"IBM Plex Mono",monospace; font-size:.79rem; color:var(--slate); display:flex; flex-wrap:wrap; gap:6px 20px}
+  .corpus b{color:var(--ink); font-weight:600}
+  .ledger{display:flex; flex-direction:column; border-top:1px solid var(--rule-strong)}
+  .ledger-row{display:grid; grid-template-columns:minmax(0,1fr) auto; gap:12px 24px; align-items:baseline; padding:15px 0; border-bottom:1px solid var(--rule)}
+  .ledger-row .k{font-weight:500}
+  .ledger-row .k small{display:block; font-weight:400; color:var(--slate); font-size:.87rem; line-height:1.5; max-width:60ch}
+  .ledger-row .v{font-family:"IBM Plex Mono",monospace; font-weight:600; font-size:1.35rem; font-variant-numeric:tabular-nums; white-space:nowrap}
+  .v.go{color:var(--absorb)} .v.no{color:var(--nohelp)} .v.hid{color:var(--invisible)}
+  .tablewrap{overflow-x:auto; border:1px solid var(--rule); border-radius:3px; background:var(--card); box-shadow:var(--shadow)}
+  table{border-collapse:collapse; width:100%; min-width:720px; font-variant-numeric:tabular-nums}
+  caption{text-align:left; padding:14px 16px 0; color:var(--slate); font-size:.84rem; font-family:"IBM Plex Mono",monospace}
+  th,td{padding:9px 14px; text-align:right; border-bottom:1px solid var(--rule)}
+  th{font-family:"IBM Plex Mono",monospace; font-size:.7rem; font-weight:500; letter-spacing:.08em; text-transform:uppercase; color:var(--slate);
+     border-bottom:1px solid var(--rule-strong); white-space:nowrap; position:sticky; top:0; background:var(--card)}
+  td:first-child,th:first-child{text-align:left}
+  tbody tr:last-child td{border-bottom:none}
+  .kind{font-family:"IBM Plex Mono",monospace; font-size:.85rem; white-space:nowrap}
+  .num{font-family:"IBM Plex Mono",monospace; font-size:.9rem}
+  .big{font-weight:600}
+  .barcell{width:132px; min-width:132px}
+  .bar{height:8px; background:var(--bar); border-radius:1px; display:block}
+  .bar.hi{background:var(--bar-strong)}
+  .chip{font-family:"IBM Plex Mono",monospace; font-size:.66rem; font-weight:600; letter-spacing:.06em; text-transform:uppercase; padding:3px 7px; border-radius:2px; white-space:nowrap}
+  .chip.go{color:var(--absorb); background:var(--absorb-soft)}
+  .chip.no{color:var(--nohelp); background:var(--nohelp-soft)}
+  .chip.na{color:var(--slate); background:var(--rule)}
+  .chip.hid{color:var(--invisible); background:var(--invisible-soft)}
+  tr.group td{background:var(--paper); font-family:"IBM Plex Mono",monospace; font-size:.68rem; letter-spacing:.1em; text-transform:uppercase; color:var(--slate); padding:7px 14px}
+  .callout{border-left:3px solid var(--invisible); background:var(--invisible-soft); padding:18px 22px; border-radius:0 3px 3px 0; display:flex; flex-direction:column; gap:10px}
+  .callout h3{color:var(--invisible)}
+  .note{border-left:3px solid var(--accent); background:var(--accent-soft); padding:18px 22px; border-radius:0 3px 3px 0; display:flex; flex-direction:column; gap:10px}
+  .traps{display:flex; flex-direction:column; border-top:1px solid var(--rule)}
+  .trap{display:grid; grid-template-columns:auto minmax(0,1fr); gap:16px; padding:15px 0; border-bottom:1px solid var(--rule); align-items:start}
+  .trap .n{font-family:"IBM Plex Mono",monospace; font-size:.78rem; font-weight:600; color:var(--accent); padding-top:3px}
+  .trap p{font-size:.94rem; color:var(--slate); max-width:64ch}
+  .trap strong{color:var(--ink); font-weight:600}
+  code{font-family:"IBM Plex Mono",monospace; font-size:.87em; background:var(--rule); padding:1px 5px; border-radius:2px}
+  .callout code,.note code{background:rgba(127,127,127,.18)}
+  footer{border-top:1px solid var(--rule); padding-top:22px; color:var(--slate); font-size:.86rem; display:flex; flex-direction:column; gap:10px}
+  @media (max-width:640px){ .wrap{padding:36px 18px 64px; gap:44px} .ledger-row{grid-template-columns:1fr} }
+</style>
+
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">Empirical study · Debian archive · 2026-09-02</div>
+  <h1>The Resilience Budget</h1>
+  <p class="lede">A resilient module boundary buys recompilation-free evolution at a runtime cost.
+  This measures which kinds of change actually happen across 3 consecutive releases
+  of 2 C and C++ libraries — and therefore which resilience mechanisms earn that cost,
+  and which are budget spent on events that almost never occur.</p>
+  <div class="corpus">
+    <span><b>3</b> consecutive-release transitions</span>
+    <span><b>2</b> libraries</span>
+    <span><b>3</b> shared objects</span>
+    <span><b>3</b> C / <b>0</b> C++ transitions</span>
+    <span>abistudy 3.0.0 · libabigail library API · libclang C API</span>
+  </div>
+</header>
+
+<section>
+  <div class="eyebrow">The answer</div>
+  <h2>What to build, and what to skip</h2>
+  <div class="ledger">
+    <div class="ledger-row"><div class="k">Opaque struct layout<small>Field added, removed, retyped or shifted; type size changed. Present in 0 transitions; load-bearing for 0 of the 0 releases a resilient boundary would fully rescue, the sole reason for 0.</small></div><div class="v ">No data</div></div><div class="ledger-row"><div class="k">Non-frozen enums<small>An added enum case moves no byte, so it is not a binary break — but it breaks any client that switched exhaustively. Enum cases changed in 0 transitions (0.0%); load-bearing for 0 of 0 rescues, sole reason for 0.</small></div><div class="v ">No data</div></div><div class="ledger-row"><div class="k">No implicit cross-module inlining<small>Inline, in-class and template bodies changed in <b>0.0%</b> of transitions (0 events); non-stamp macro values in 0.0%. C and C++ have no defence, and no ABI tool can detect it. Counted as a hazard, it is load-bearing for 0 of 0 rescued releases, the sole reason for 0.</small></div><div class="v hid">Marginal</div></div><div class="ledger-row"><div class="k">Resilient vtable dispatch<small>Vtables changed in 0 of 3 transitions (0.0%); load-bearing for 0 rescues, sole reason for 0. Real, but the thinnest return on runtime budget of the four.</small></div><div class="v ">No data</div></div><div class="ledger-row"><div class="k">Removed symbols &amp; changed signatures<small>Present in 0 of 0 binary-breaking transitions (n/a). No indirection helps: a call that no longer type-checks is an API break, not an ABI one. This is the ceiling on what any resilience mechanism can deliver.</small></div><div class="v no">Cannot help</div></div>
+  </div>
+</section>
+
+<section>
+  <div class="eyebrow">Frequency</div>
+  <h2>How often each change kind occurs</h2>
+  <p>Counted per release transition, on the library's own public API. Bars scale to the transition
+  count. <span class="chip go">absorbs</span> marks changes a resilient boundary makes invisible to
+  clients; <span class="chip no">cannot help</span> marks changes that break the source API too;
+  <span class="chip hid">invisible</span> marks changes no ABI tool can detect.</p>
+  <div class="tablewrap">
+    <table>
+      <caption>All 2 libraries — n = 3 transitions</caption>
+      <thead><tr><th>Change kind</th><th class="barcell">Transitions</th><th>n</th><th>% of n</th>
+      <th>Total events</th><th>Median</th><th>Max</th><th>Resilience</th></tr></thead>
+      <tbody><tr class="group"><td colspan="8">Symbols</td></tr><tr><td class="kind">symbol_added</td><td class="barcell"><span class="bar" style="width:100.0%"></span></td><td class="num big">1</td><td class="num">33.3%</td><td class="num">4</td><td class="num">4</td><td class="num">4</td><td><span class="chip na">additive</span></td></tr></tbody>
+    </table>
+  </div>
+  <div class="tablewrap">
+    <table>
+      <caption>C++ libraries only — n = 0 transitions across 0 libraries.
+      Language assigned from the fraction of Itanium-mangled exported symbols.</caption>
+      <thead><tr><th>Change kind</th><th class="barcell">Transitions</th><th>n</th><th>% of n</th>
+      <th>Total events</th><th>Median</th><th>Max</th><th>Resilience</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <div class="tablewrap">
+    <table>
+      <caption>C libraries only — n = 3 transitions across 2 libraries</caption>
+      <thead><tr><th>Change kind</th><th class="barcell">Transitions</th><th>n</th><th>% of n</th>
+      <th>Total events</th><th>Median</th><th>Max</th><th>Resilience</th></tr></thead>
+      <tbody><tr class="group"><td colspan="8">Symbols</td></tr><tr><td class="kind">symbol_added</td><td class="barcell"><span class="bar" style="width:100.0%"></span></td><td class="num big">1</td><td class="num">33.3%</td><td class="num">4</td><td class="num">4</td><td class="num">4</td><td><span class="chip na">additive</span></td></tr></tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <div class="eyebrow">The blind spot</div>
+  <h2>The most frequent hazard is the one no tool measures</h2>
+  <div class="callout">
+    <h3>Inline, in-class and template bodies</h3>
+    <p><code>abidiff</code> compares DWARF types and ELF symbols. <code>abi-compliance-checker</code>
+    compares declared interfaces. A change to the <em>body</em> of a header <code>inline</code>
+    function, an in-class method, or a template produces no output and exit code 0 from either —
+    even with <code>--harmless</code>. It is invisible by construction, not merely rare. Yet C++
+    copies exactly those bodies into every client that included the header.</p>
+  </div>
+  <div class="tablewrap">
+    <table>
+      <caption>Measured from the <code>-dev</code> headers with libclang — n = 0 transitions with header data</caption>
+      <thead><tr><th>Measure</th><th>Transitions</th><th>% of n</th><th>Total events</th></tr></thead>
+      <tbody>
+        <tr><td>Ship at least one inlinable definition in public headers</td>
+            <td class="num big">0</td><td class="num">n/a</td><td class="num">—</td></tr>
+        <tr><td>Changed at least one inline / template body</td>
+            <td class="num big">0</td><td class="num">n/a</td><td class="num">0</td></tr>
+        <tr><td>Changed at least one public macro value</td>
+            <td class="num big">0</td><td class="num">n/a</td><td class="num">0</td></tr>
+        <tr><td>&nbsp;&nbsp;…excluding version / build-stamp macros, which change every release by construction</td>
+            <td class="num big">0</td><td class="num">n/a</td><td class="num">—</td></tr>
+        <tr><td>Poor parse coverage (over half the units hit a fatal diagnostic; counts there are lower bounds)</td>
+            <td class="num big">0</td><td class="num">n/a</td><td class="num">—</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>At 0.0%, inline-body churn is incomparably more as frequent as struct-field additions (0.0%) and incomparably more as frequent as vtable changes (0.0%). This is the strongest argument in the data for making cross-module inlining opt-in rather than automatic.</p>
+</section>
+
+<section>
+  <div class="eyebrow">Breakage</div>
+  <h2>Most breaks are never declared</h2>
+  <div class="ledger">
+    <div class="ledger-row">
+      <div class="k">Transitions containing a binary-breaking change</div>
+      <div class="v">0 <span style="color:var(--slate);font-size:.9rem">/ 3 · 0.0%</span></div>
+    </div>
+    <div class="ledger-row">
+      <div class="k">…where the SONAME was bumped <small>the break was announced; the loader will refuse to mismatch</small></div>
+      <div class="v">0</div>
+    </div>
+    <div class="ledger-row">
+      <div class="k">…where the SONAME was unchanged <small>a silent break: existing binaries keep linking and may misbehave</small></div>
+      <div class="v no">0 <span style="color:var(--slate);font-size:.9rem">· n/a</span></div>
+    </div>
+  </div>
+  <p>The SONAME is the only ABI-compatibility signal the C/C++ platform offers, and in this corpus it
+  accompanies roughly one break in ∞. That is the background condition a resilient
+  boundary competes against — not a careful versioning discipline, but an unenforced convention.</p>
+  <p style="font-size:.94rem;color:var(--slate)">Least stable in the corpus, by binary-breaking
+  transitions: .</p>
+</section>
+
+<section>
+  <div class="eyebrow">The verdict</div>
+  <h2>Would a resilient boundary have saved the release?</h2>
+  <p>Three framings, because they answer different questions. The first asks what survives at the
+  linker level; the second what survives without recompiling — which is what a resilient boundary
+  is for; the third also counts a changed inline body as a hazard, since a client may still be
+  running the old copy.</p>
+  <div class="tablewrap">
+    <table>
+      <caption>Rescue analysis. "Sole reason" counts releases where that one mechanism was the only
+      thing standing between broken and compatible.</caption>
+      <thead><tr><th>Framing</th><th>Affected</th><th>Fully rescued</th><th>Opaque layout</th>
+      <th>Non-frozen enum</th><th>Resilient dispatch</th><th>Opt-in inlining</th></tr></thead>
+      <tbody><tr><td>Binary breakage only</td><td class="num">0</td><td class="num big">0 <span style="color:var(--slate)">· n/a</span></td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">—</td></tr><tr><td>Recompilation-free evolution</td><td class="num">0</td><td class="num big">0 <span style="color:var(--slate)">· n/a</span></td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">—</td></tr><tr><td>…plus changed inline bodies</td><td class="num">0</td><td class="num big">0 <span style="color:var(--slate)">· n/a</span></td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">—</td></tr></tbody>
+    </table>
+  </div>
+  <div class="note">
+    <h3>Why the two rows differ, and why it matters</h3>
+    <p>Adding an enum case moves no byte, so <code>abidiff</code> — correctly, for its purpose — does
+    not call it an ABI break; neither does a changed inline body. Score only binary breakage and the
+    enum and inlining mechanisms are credited with <b>zero</b> by construction. Under the framings
+    that match what resilience is for: 0 of 0 affected releases are fully rescued (n/a); opaque layout is load-bearing for 0, non-frozen enums for 0, resilient dispatch for 0. Counting changed inline bodies as a hazard too, opt-in inlining becomes load-bearing for 0 of 0 rescues.</p>
+  </div>
+  <p>The ceiling is the real finding: even under the generous framing, <b>n/a</b> of affected releases contain a removed symbol or a changed signature. Resilience buys evolution headroom, not immunity — it converts a class of breaks that is common and mechanical into a non-event, while leaving untouched the class that arises from deliberate API redesign.</p>
+</section>
+
+<section>
+  <div class="eyebrow">Method</div>
+  <h2>How the measurement is made</h2>
+  <p>Everything runs in one C++26 tool, <code>abistudy</code>, in five idempotent stages. libabigail is
+  linked as a library and its diff tree is walked directly — no <code>abidiff</code> text is parsed —
+  so every count traces to a specific IR node, and the per-object artefacts keep the event lists that
+  justify each number. Header bodies are indexed with the libclang C API. A 30-case ground-truth suite
+  (synthetic libraries with exactly one known change each, four of them negative controls) is compiled
+  and pushed through the same code on every build; the calibration gate passes 30/30.</p>
+  <div class="traps">
+    <div class="trap"><div class="n">01</div><div>
+      <p><strong>Default <code>abidiff</code> hides enum-case additions.</strong> They are filtered as
+      harmless. The tool keeps the harmless categories, so they are counted.</p></div></div>
+    <div class="trap"><div class="n">02</div><div>
+      <p><strong><code>--leaf-changes-only</code> drops base-class insertions.</strong> The visitor reads
+      the base-class maps of each class diff directly.</p></div></div>
+    <div class="trap"><div class="n">03</div><div>
+      <p><strong>Third-party types are attributed to the library.</strong> glibc's <code>_IO_FILE</code>
+      or libstdc++'s <code>std::tuple</code> change when the toolchain moves. Each type event carries
+      the DWARF declaring file; <b>0</b> events outside the package's own headers
+      were set aside.</p></div></div>
+    <div class="trap"><div class="n">04</div><div>
+      <p><strong>Private ELF version nodes.</strong> Symbols whose version node says
+      <code>PRIVATE</code> or <code>INTERNAL</code> are not API; <b>0</b> such events
+      were set aside. <code>--drop-private-types</code> would not have caught them: it covers types,
+      not functions.</p></div></div>
+    <div class="trap"><div class="n">05</div><div>
+      <p><strong><code>abipkgdiff</code> cannot compare across a SONAME rename.</strong> It pairs ELF
+      files by filename and silently skips the mismatch. Shared objects are paired by SONAME stem
+      instead.</p></div></div>
+    <div class="trap"><div class="n">06</div><div>
+      <p><strong>Some libraries rename every symbol by policy.</strong> ICU suffixes each symbol with
+      its version. Transitions whose churn is such a rename (0 here) are detected and
+      excluded rather than left to dominate the totals.</p></div></div>
+  </div>
+</section>
+
+<section>
+  <div class="eyebrow">Scope</div>
+  <h2>What this does and does not establish</h2>
+  <div class="stack">
+    <p><strong>Selection is automatic, not curated.</strong> Libraries are the most-installed
+    <code>lib*</code> packages by Debian popcon whose source ships both a <code>-dbgsym</code> and a
+    <code>-dev</code> package, quota'd separately for C and C++.</p>
+    <p><strong>"Consecutive releases" means consecutive upstream versions as packaged by Debian</strong>,
+    deduplicated so Debian-revision-only rebuilds are not counted as library evolution. Debian may skip
+    upstream releases, so a pair can span more than one.</p>
+    <p><strong>Reachability is not usage.</strong> A layout-visible struct is one reachable from the
+    public API; whether clients embed it rather than hold a pointer is not measured, so layout counts
+    are an upper bound on real client breakage.</p>
+    <p><strong>Header coverage is heuristic.</strong> Headers are parsed standalone with include paths
+    guessed from the package layout; 0 transitions had poor coverage and their body counts
+    are lower bounds.</p>
+    <p><strong>Debug info was missing on one side for 1 transitions</strong>; those
+    were compared on symbols alone and contribute no layout events.</p>
+    <p><strong>Transitions are not independent samples</strong>: a library contributes up to nine.
+    Per-library rates are in <code>summary.json</code>.</p>
+  </div>
+</section>
+
+<footer>
+  <div>abistudy 3.0.0 · libabigail library API · libclang C API. Corpus from snapshot.debian.org; DWARF from <code>-dbgsym</code>; public API
+  restricted to the <code>-dev</code> include root. Generated 2026-09-02T13:42:53Z by
+  <code>abistudy report</code> from <code>summary.json</code>.</div>
+  <div>Machine-readable results: <code>summary.json</code>; per-transition evidence:
+  <code>pairs/*.json</code>, <code>headers/pairs/*.json</code>; method and production-readiness
+  review: <code>METHODOLOGY.md</code>.</div>
+</footer>
+
+</div>

@@ -1,0 +1,58 @@
+{
+ "data": {
+  "id": "attr@2.4.47..2.4.48",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      26,
+      26
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "field_type_changed": 1
+    },
+    "soname": [
+     "libattr.so.1",
+     "libattr.so.1"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [
+     {
+      "count": 1,
+      "declared_in": "../include/attr/attributes.h",
+      "kind": "field_type_changed",
+      "type": "struct attrlist_cursor"
+     }
+    ]
+   }
+  ],
+  "seconds": 1.840905981,
+  "source": "attr",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "2.4.47",
+   "2.4.48"
+  ]
+ },
+ "generated_at": "2026-09-02T14:57:06Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

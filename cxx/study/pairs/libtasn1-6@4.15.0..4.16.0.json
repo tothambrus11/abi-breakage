@@ -1,0 +1,81 @@
+{
+ "data": {
+  "id": "libtasn1-6@4.15.0..4.16.0",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      40,
+      41
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 1
+    },
+    "soname": [
+     "libtasn1.so.6",
+     "libtasn1.so.6"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function int asn1_object_id_der(const char*, unsigned char*, int*, unsigned int)",
+      "symbol": "asn1_object_id_der",
+      "version": "LIBTASN1_4_16_0"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 2,
+     "member_offset_changed": 3,
+     "type_size_changed": 1
+    },
+    "type_events": [
+     {
+      "count": 2,
+      "declared_in": "./lib/int.h",
+      "kind": "field_added_to_struct",
+      "type": "struct asn1_node_st"
+     },
+     {
+      "count": 3,
+      "declared_in": "./lib/int.h",
+      "kind": "member_offset_changed",
+      "type": "struct asn1_node_st"
+     },
+     {
+      "count": 1,
+      "declared_in": "./lib/int.h",
+      "kind": "type_size_changed",
+      "type": "struct asn1_node_st"
+     }
+    ]
+   }
+  ],
+  "seconds": 1.84831232,
+  "source": "libtasn1-6",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "4.15.0",
+   "4.16.0"
+  ]
+ },
+ "generated_at": "2026-09-02T14:58:09Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

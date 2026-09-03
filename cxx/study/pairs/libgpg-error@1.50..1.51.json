@@ -1,0 +1,67 @@
+{
+ "data": {
+  "id": "libgpg-error@1.50..1.51",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      174,
+      175
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 1
+    },
+    "soname": [
+     "libgpg-error.so.0",
+     "libgpg-error.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function void gpgrt_spawn_actions_set_env_rev(gpgrt_spawn_actions_t, const char* const*)",
+      "symbol": "gpgrt_spawn_actions_set_env_rev",
+      "version": "GPG_ERROR_1.0"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 1
+    },
+    "type_events": [
+     {
+      "count": 1,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
+      "kind": "field_added_to_struct",
+      "type": "struct _IO_FILE"
+     }
+    ]
+   }
+  ],
+  "seconds": 2.656120425,
+  "source": "libgpg-error",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.50",
+   "1.51"
+  ]
+ },
+ "generated_at": "2026-09-02T14:58:38Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

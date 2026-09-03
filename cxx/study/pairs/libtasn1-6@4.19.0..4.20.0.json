@@ -1,0 +1,78 @@
+{
+ "data": {
+  "id": "libtasn1-6@4.19.0..4.20.0",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      41,
+      41
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libtasn1.so.6",
+     "libtasn1.so.6"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 3,
+     "member_offset_changed": 3,
+     "type_size_changed": 1
+    },
+    "type_events": [
+     {
+      "count": 2,
+      "declared_in": "./lib/int.h",
+      "kind": "field_added_to_struct",
+      "type": "struct asn1_node_st"
+     },
+     {
+      "count": 3,
+      "declared_in": "./lib/int.h",
+      "kind": "member_offset_changed",
+      "type": "struct asn1_node_st"
+     },
+     {
+      "count": 1,
+      "declared_in": "./lib/int.h",
+      "kind": "type_size_changed",
+      "type": "struct asn1_node_st"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
+      "kind": "field_added_to_struct",
+      "type": "struct _IO_FILE"
+     }
+    ]
+   }
+  ],
+  "seconds": 1.841939645,
+  "source": "libtasn1-6",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "4.19.0",
+   "4.20.0"
+  ]
+ },
+ "generated_at": "2026-09-02T14:58:11Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

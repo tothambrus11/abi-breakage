@@ -1,0 +1,589 @@
+{
+ "data": {
+  "id": "rubberband@3.1.2+dfsg0..3.2.1+dfsg",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      561,
+      529
+     ],
+     "mangled_functions": [
+      531,
+      499
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "function_signature_changed": 2,
+     "symbol_added": 38,
+     "symbol_removed": 60
+    },
+    "soname": [
+     "librubberband.so.2",
+     "librubberband.so.2"
+    ],
+    "symbol_events": [
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method void RubberBand::Guide::updateGuidance(double, int, const RubberBand::process_t* const, const RubberBand::process_t* const, const RubberBand::process_t* const, const RubberBand::BinSegmenter::Segmentation&, const RubberBand::BinSegmenter::Segmentation&, const RubberBand::BinSegmenter::Segmentation&, RubberBand::process_t, int, bool, bool, RubberBand::Guide::Guidance&) const  ->  method void RubberBand::Guide::updateGuidance(double, int, const RubberBand::process_t* const, const RubberBand::process_t* const, const RubberBand::process_t* const, const RubberBand::BinSegmenter::Segmentation&, const RubberBand::BinSegmenter::Segmentation&, const RubberBand::BinSegmenter::Segmentation&, RubberBand::process_t, int, bool, bool, bool, RubberBand::Guide::Guidance&) const",
+      "symbol": "_ZNK10RubberBand5Guide14updateGuidanceEdiPKdS2_S2_RKNS_12BinSegmenter12SegmentationES6_S6_dibbRNS0_8GuidanceE"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method void RubberBand::GuidedPhaseAdvance::advance(RubberBand::process_t* const*, const RubberBand::process_t* const*, const RubberBand::process_t* const*, const RubberBand::process_t* const*, const RubberBand::Guide::Configuration&, const RubberBand::Guide::Guidance* const*, int, int)  ->  method void RubberBand::GuidedPhaseAdvance::advance(RubberBand::process_t* const*, const RubberBand::process_t* const*, const RubberBand::process_t* const*, const RubberBand::process_t* const*, const RubberBand::Guide::Configuration&, const RubberBand::Guide::Guidance* const*, bool, int, int)",
+      "symbol": "_ZN10RubberBand18GuidedPhaseAdvance7advanceEPKPdPKPKdS7_S7_RKNS_5Guide13ConfigurationEPKPKNS8_8GuidanceEii"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual int RubberBand::Resamplers::D_BQResampler::resample(float* const restrict*, int, const float* const restrict*, int, double, bool)",
+      "symbol": "_ZN10RubberBand10Resamplers13D_BQResampler8resampleEPrKPfiPrKPKfidb"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method RubberBand::Resamplers::D_BQResampler::D_BQResampler(RubberBand::Resampler::Parameters, int)",
+      "symbol": "_ZN10RubberBand10Resamplers13D_BQResamplerC2ENS_9Resampler10ParametersEi"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual RubberBand::Resamplers::D_BQResampler::~D_BQResampler()",
+      "symbol": "_ZN10RubberBand10Resamplers13D_BQResamplerD0Ev"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual void RubberBand::FFTs::D_Builtin::inversePolar(const float*, const float*, float*)",
+      "symbol": "_ZN10RubberBand4FFTs9D_Builtin12inversePolarEPKfS3_Pf"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int RubberBand::BQResampler::resampleInterleaved(float* const, int, const float* const, int, double, bool)",
+      "symbol": "_ZN10RubberBand11BQResampler19resampleInterleavedEPfiPKfidb"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void RubberBand::BQResampler::reset()",
+      "symbol": "_ZN10RubberBand11BQResampler5resetEv"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method RubberBand::BQResampler::BQResampler(RubberBand::BQResampler::Parameters, int)",
+      "symbol": "_ZN10RubberBand11BQResamplerC2ENS0_10ParametersEi"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual void RubberBand::FFTs::D_Builtin::inverseCepstral(const double*, double*)",
+      "symbol": "_ZN10RubberBand4FFTs9D_Builtin15inverseCepstralEPKdPd"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void RubberBand::FFTs::D_Builtin::transformF<double>(const double* restrict, double* restrict, double* restrict)",
+      "symbol": "_ZN10RubberBand4FFTs9D_Builtin10transformFIdEEvPKT_PdS6_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual RubberBand::FFT::Precisions RubberBand::FFTs::D_Builtin::getSupportedPrecisions() const",
+      "symbol": "_ZNK10RubberBand4FFTs9D_Builtin22getSupportedPrecisionsEv"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual RubberBand::Resamplers::D_BQResampler::~D_BQResampler()",
+      "symbol": "_ZN10RubberBand10Resamplers13D_BQResamplerD2Ev"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void RubberBand::FFTs::D_Builtin::transformComplex(const double* restrict, const double* restrict, double* restrict, double* restrict, bool)",
+      "symbol": "_ZN10RubberBand4FFTs9D_Builtin16transformComplexEPKdS3_PdS4_b"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual void RubberBand::FFTs::D_Builtin::inverseInterleaved(const float*, float*)",
+      "symbol": "_ZN10RubberBand4FFTs9D_Builtin18inverseInterleavedEPKfPf"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual void RubberBand::FFTs::D_Builtin::inverse(const double*, const double*, double*)",
+      "symbol": "_ZN10RubberBand4FFTs9D_Builtin7inverseEPKdS3_Pd"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method double RubberBand::BQResampler::reconstruct_one(RubberBand::BQResampler::state*) const",
+      "symbol": "_ZNK10RubberBand11BQResampler15reconstruct_oneEPNS0_5stateE"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual int RubberBand::Resamplers::D_BQResampler::resampleInterleaved(float*, int, const float*, int, double, bool)",
+      "symbol": "_ZN10RubberBand10Resamplers13D_BQResampler19resampleInterleavedEPfiPKfidb"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual void RubberBand::FFTs::D_Builtin::forwardPolar(const double*, double*, double*)",
+      "symbol": "_ZN10RubberBand4FFTs9D_Builtin12forwardPolarEPKdPdS4_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual double RubberBand::Resamplers::D_BQResampler::getEffectiveRatio(double) const",
+      "symbol": "_ZNK10RubberBand10Resamplers13D_BQResampler17getEffectiveRatioEd"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual void RubberBand::FFTs::D_Builtin::inverseCepstral(const float*, float*)",
+      "symbol": "_ZN10RubberBand4FFTs9D_Builtin15inverseCepstralEPKfPf"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::vector<double,std::allocator<double>> RubberBand::BQResampler::make_filter(int, double) const",
+      "symbol": "_ZNK10RubberBand11BQResampler11make_filterEid"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::vector<std::shared_ptr<RubberBand::R3Stretcher::ChannelData>,std::allocator<std::shared_ptr<RubberBand::R3Stretcher::ChannelData>>>::~vector()",
+      "symbol": "_ZNSt6vectorISt10shared_ptrIN10RubberBand11R3Stretcher11ChannelDataEESaIS4_EED2Ev"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual int RubberBand::FFTs::D_Builtin::getSize() const",
+      "symbol": "_ZNK10RubberBand4FFTs9D_Builtin7getSizeEv"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual void RubberBand::FFTs::D_Builtin::forward(const float*, float*, float*)",
+      "symbol": "_ZN10RubberBand4FFTs9D_Builtin7forwardEPKfPfS4_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method RubberBand::BQResampler::params RubberBand::BQResampler::fill_params(double, double, double) const",
+      "symbol": "_ZNK10RubberBand11BQResampler11fill_paramsEddd"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual void RubberBand::FFTs::D_Builtin::initDouble()",
+      "symbol": "_ZN10RubberBand4FFTs9D_Builtin10initDoubleEv"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual void RubberBand::FFTs::D_Builtin::forwardInterleaved(const float*, float*)",
+      "symbol": "_ZN10RubberBand4FFTs9D_Builtin18forwardInterleavedEPKfPf"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void RubberBand::FFTs::D_Builtin::makeTables()",
+      "symbol": "_ZN10RubberBand4FFTs9D_Builtin10makeTablesEv"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method double RubberBand::BQResampler::getEffectiveRatio(double) const",
+      "symbol": "_ZNK10RubberBand11BQResampler17getEffectiveRatioEd"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void RubberBand::BQResampler::kaiser_params(double, double, double&, int&) const",
+      "symbol": "_ZNK10RubberBand11BQResampler13kaiser_paramsEddRdRi"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void RubberBand::BQResampler::sinc_multiply(double, std::vector<double,std::allocator<double>>&) const",
+      "symbol": "_ZNK10RubberBand11BQResampler13sinc_multiplyEdRSt6vectorIdSaIdEE"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void RubberBand::BQResampler::state_for_ratio(RubberBand::BQResampler::state&, double, const RubberBand::BQResampler::state& restrict) const",
+      "symbol": "_ZNK10RubberBand11BQResampler15state_for_ratioERNS0_5stateEdRKS1_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::vector<double,std::allocator<double>> RubberBand::BQResampler::kaiser_for(double, double, int, int) const",
+      "symbol": "_ZNK10RubberBand11BQResampler10kaiser_forEddii"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual int RubberBand::Resamplers::D_BQResampler::getChannelCount() const",
+      "symbol": "_ZNK10RubberBand10Resamplers13D_BQResampler15getChannelCountEv"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method RubberBand::BQResampler::BQResampler(const RubberBand::BQResampler&)",
+      "symbol": "_ZN10RubberBand11BQResamplerC2ERKS0_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual RubberBand::FFTs::D_Builtin::~D_Builtin()",
+      "symbol": "_ZN10RubberBand4FFTs9D_BuiltinD0Ev"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void RubberBand::FFTs::D_Builtin::transformI<double>(const double* restrict, const double* restrict, double* restrict)",
+      "symbol": "_ZN10RubberBand4FFTs9D_Builtin10transformIIdEEvPKdS4_PT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<double,std::allocator<double>>::_M_realloc_insert<doubleconst&>(std::vector<double,std::allocator<double>>::iterator)",
+      "symbol": "_ZNSt6vectorIdSaIdEE17_M_realloc_insertIJRKdEEEvN9__gnu_cxx17__normal_iteratorIPdS1_EEDpOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void RubberBand::FFTs::D_Builtin::transformI<float>(const double* restrict, const double* restrict, float* restrict)",
+      "symbol": "_ZN10RubberBand4FFTs9D_Builtin10transformIIfEEvPKdS4_PT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual void RubberBand::FFTs::D_Builtin::inverse(const float*, const float*, float*)",
+      "symbol": "_ZN10RubberBand4FFTs9D_Builtin7inverseEPKfS3_Pf"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<double,std::allocator<double>>::_M_realloc_insert<double>(std::vector<double,std::allocator<double>>::iterator)",
+      "symbol": "_ZNSt6vectorIdSaIdEE17_M_realloc_insertIJdEEEvN9__gnu_cxx17__normal_iteratorIPdS1_EEDpOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual void RubberBand::FFTs::D_Builtin::initFloat()",
+      "symbol": "_ZN10RubberBand4FFTs9D_Builtin9initFloatEv"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method RubberBand::BQResampler::QualityParams::QualityParams(RubberBand::BQResampler::Quality)",
+      "symbol": "_ZN10RubberBand11BQResampler13QualityParamsC2ENS0_7QualityE"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual void RubberBand::FFTs::D_Builtin::inversePolar(const double*, const double*, double*)",
+      "symbol": "_ZN10RubberBand4FFTs9D_Builtin12inversePolarEPKdS3_Pd"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::vector<double,std::allocator<double>> RubberBand::BQResampler::kaiser(double, int) const",
+      "symbol": "_ZNK10RubberBand11BQResampler6kaiserEdi"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void RubberBand::BQResampler::phase_data_for(std::vector<RubberBand::BQResampler::phase_rec,std::allocator<RubberBand::BQResampler::phase_rec>>&, RubberBand::BQResampler::floatbuf&, int, const std::vector<double,std::allocator<double>>*, int, int, int) const",
+      "symbol": "_ZNK10RubberBand11BQResampler14phase_data_forERSt6vectorINS0_9phase_recESaIS2_EERS1_IfNS_12StlAllocatorIfEEEiPKS1_IdSaIdEEiii"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual void RubberBand::Resamplers::D_BQResampler::reset()",
+      "symbol": "_ZN10RubberBand10Resamplers13D_BQResampler5resetEv"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual void RubberBand::FFTs::D_Builtin::forwardMagnitude(const double*, double*)",
+      "symbol": "_ZN10RubberBand4FFTs9D_Builtin16forwardMagnitudeEPKdPd"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<RubberBand::BQResampler::phase_rec,std::allocator<RubberBand::BQResampler::phase_rec>>::reserve(std::vector<RubberBand::BQResampler::phase_rec,std::allocator<RubberBand::BQResampler::phase_rec>>::size_type)",
+      "symbol": "_ZNSt6vectorIN10RubberBand11BQResampler9phase_recESaIS2_EE7reserveEm"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual void RubberBand::FFTs::D_Builtin::forwardMagnitude(const float*, float*)",
+      "symbol": "_ZN10RubberBand4FFTs9D_Builtin16forwardMagnitudeEPKfPf"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual void RubberBand::FFTs::D_Builtin::forwardInterleaved(const double*, double*)",
+      "symbol": "_ZN10RubberBand4FFTs9D_Builtin18forwardInterleavedEPKdPd"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual void RubberBand::FFTs::D_Builtin::forward(const double*, double*, double*)",
+      "symbol": "_ZN10RubberBand4FFTs9D_Builtin7forwardEPKdPdS4_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<RubberBand::BQResampler::phase_rec,std::allocator<RubberBand::BQResampler::phase_rec>>::_M_realloc_insert<constRubberBand::BQResampler::phase_rec&>(std::vector<RubberBand::BQResampler::phase_rec,std::allocator<RubberBand::BQResampler::phase_rec>>::iterator)",
+      "symbol": "_ZNSt6vectorIN10RubberBand11BQResampler9phase_recESaIS2_EE17_M_realloc_insertIJRKS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<float,RubberBand::StlAllocator<float>>::reserve(std::vector<float,RubberBand::StlAllocator<float>>::size_type)",
+      "symbol": "_ZNSt6vectorIfN10RubberBand12StlAllocatorIfEEE7reserveEm"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method RubberBand::BQResampler::params RubberBand::BQResampler::pick_params(double) const",
+      "symbol": "_ZNK10RubberBand11BQResampler11pick_paramsEd"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int RubberBand::BQResampler::gcd(int, int) const",
+      "symbol": "_ZNK10RubberBand11BQResampler3gcdEii"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method double RubberBand::BQResampler::bessel0(double) const",
+      "symbol": "_ZNK10RubberBand11BQResampler7bessel0Ed"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual void RubberBand::FFTs::D_Builtin::inverseInterleaved(const double*, double*)",
+      "symbol": "_ZN10RubberBand4FFTs9D_Builtin18inverseInterleavedEPKdPd"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual void RubberBand::FFTs::D_Builtin::forwardPolar(const float*, float*, float*)",
+      "symbol": "_ZN10RubberBand4FFTs9D_Builtin12forwardPolarEPKfPfS4_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual RubberBand::FFTs::D_Builtin::~D_Builtin()",
+      "symbol": "_ZN10RubberBand4FFTs9D_BuiltinD2Ev"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void RubberBand::FFTs::D_Builtin::transformF<float>(const float* restrict, double* restrict, double* restrict)",
+      "symbol": "_ZN10RubberBand4FFTs9D_Builtin10transformFIfEEvPKT_PdS6_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual double RubberBand::Resamplers::D_SRC::getEffectiveRatio(double) const",
+      "symbol": "_ZNK10RubberBand10Resamplers5D_SRC17getEffectiveRatioEd"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual int RubberBand::FFTs::D_FFTW::getSize() const",
+      "symbol": "_ZNK10RubberBand4FFTs6D_FFTW7getSizeEv"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual int RubberBand::Resamplers::D_SRC::getChannelCount() const",
+      "symbol": "_ZNK10RubberBand10Resamplers5D_SRC15getChannelCountEv"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual RubberBand::FFTs::D_FFTW::~D_FFTW()",
+      "symbol": "_ZN10RubberBand4FFTs6D_FFTWD2Ev"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void RubberBand::FFTs::D_FFTW::initDouble()",
+      "symbol": "_ZN10RubberBand4FFTs6D_FFTW10initDoubleEv"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual RubberBand::FFT::Precisions RubberBand::FFTs::D_FFTW::getSupportedPrecisions() const",
+      "symbol": "_ZNK10RubberBand4FFTs6D_FFTW22getSupportedPrecisionsEv"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void RubberBand::R3Stretcher::initialise()",
+      "symbol": "_ZN10RubberBand11R3Stretcher10initialiseEv"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual RubberBand::Resamplers::D_SRC::~D_SRC()",
+      "symbol": "_ZN10RubberBand10Resamplers5D_SRCD2Ev"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void RubberBand::v_polar_to_cartesian_interleaved<double,double>(double* restrict const, const double* restrict const, const double* restrict const, const int)",
+      "symbol": "_ZN10RubberBand32v_polar_to_cartesian_interleavedIddEEvPT0_PKT_S5_i"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const float** RubberBand::allocate<floatconst*>(size_t)",
+      "symbol": "_ZN10RubberBand8allocateIPKfEEPT_m"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual RubberBand::Resamplers::D_SRC::~D_SRC()",
+      "symbol": "_ZN10RubberBand10Resamplers5D_SRCD0Ev"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method RubberBand::Resamplers::D_SRC::D_SRC(RubberBand::Resampler::Quality, RubberBand::Resampler::RatioChange, int, double, int, int)",
+      "symbol": "_ZN10RubberBand10Resamplers5D_SRCC2ENS_9Resampler7QualityENS2_11RatioChangeEidii"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void RubberBand::FFTs::D_FFTW::inversePolar(const float*, const float*, float*)",
+      "symbol": "_ZN10RubberBand4FFTs6D_FFTW12inversePolarEPKfS3_Pf"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual int RubberBand::Resamplers::D_SRC::resample(float* const restrict*, int, const float* const restrict*, int, double, bool)",
+      "symbol": "_ZN10RubberBand10Resamplers5D_SRC8resampleEPrKPfiPrKPKfidb"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void RubberBand::R3Stretcher::prepareInput(const float* const*, int, int)",
+      "symbol": "_ZN10RubberBand11R3Stretcher12prepareInputEPKPKfii"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void RubberBand::FFTs::D_FFTW::forward(const float*, float*, float*)",
+      "symbol": "_ZN10RubberBand4FFTs6D_FFTW7forwardEPKfPfS4_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void RubberBand::FFTs::D_FFTW::forwardPolar(const double*, double*, double*)",
+      "symbol": "_ZN10RubberBand4FFTs6D_FFTW12forwardPolarEPKdPdS4_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void RubberBand::Resamplers::D_SRC::reset()",
+      "symbol": "_ZN10RubberBand10Resamplers5D_SRC5resetEv"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual int RubberBand::Resamplers::D_SRC::resampleInterleaved(float*, int, const float*, int, double, bool)",
+      "symbol": "_ZN10RubberBand10Resamplers5D_SRC19resampleInterleavedEPfiPKfidb"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void RubberBand::FFTs::D_FFTW::forward(const double*, double*, double*)",
+      "symbol": "_ZN10RubberBand4FFTs6D_FFTW7forwardEPKdPdS4_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void RubberBand::FFTs::D_FFTW::forwardPolar(const float*, float*, float*)",
+      "symbol": "_ZN10RubberBand4FFTs6D_FFTW12forwardPolarEPKfPfS4_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void RubberBand::FFTs::D_FFTW::inverseInterleaved(const double*, double*)",
+      "symbol": "_ZN10RubberBand4FFTs6D_FFTW18inverseInterleavedEPKdPd"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void RubberBand::FFTs::D_FFTW::inverseInterleaved(const float*, float*)",
+      "symbol": "_ZN10RubberBand4FFTs6D_FFTW18inverseInterleavedEPKfPf"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void RubberBand::FFTs::D_FFTW::inversePolar(const double*, const double*, double*)",
+      "symbol": "_ZN10RubberBand4FFTs6D_FFTW12inversePolarEPKdS3_Pd"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual RubberBand::FFTs::D_FFTW::~D_FFTW()",
+      "symbol": "_ZN10RubberBand4FFTs6D_FFTWD0Ev"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void RubberBand::FFTs::D_FFTW::inverseCepstral(const double*, double*)",
+      "symbol": "_ZN10RubberBand4FFTs6D_FFTW15inverseCepstralEPKdPd"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void RubberBand::FFTs::D_FFTW::inverseCepstral(const float*, float*)",
+      "symbol": "_ZN10RubberBand4FFTs6D_FFTW15inverseCepstralEPKfPf"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void RubberBand::FFTs::D_FFTW::forwardMagnitude(const double*, double*)",
+      "symbol": "_ZN10RubberBand4FFTs6D_FFTW16forwardMagnitudeEPKdPd"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void RubberBand::FFTs::D_FFTW::forwardMagnitude(const float*, float*)",
+      "symbol": "_ZN10RubberBand4FFTs6D_FFTW16forwardMagnitudeEPKfPf"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method RubberBand::R3Stretcher::~R3Stretcher()",
+      "symbol": "_ZN10RubberBand11R3StretcherD2Ev"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void RubberBand::FFTs::D_FFTW::forwardInterleaved(const double*, double*)",
+      "symbol": "_ZN10RubberBand4FFTs6D_FFTW18forwardInterleavedEPKdPd"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void RubberBand::FFTs::D_FFTW::initFloat()",
+      "symbol": "_ZN10RubberBand4FFTs6D_FFTW9initFloatEv"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void RubberBand::FFTs::D_FFTW::forwardInterleaved(const float*, float*)",
+      "symbol": "_ZN10RubberBand4FFTs6D_FFTW18forwardInterleavedEPKfPf"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void RubberBand::FFTs::D_FFTW::inverse(const double*, const double*, double*)",
+      "symbol": "_ZN10RubberBand4FFTs6D_FFTW7inverseEPKdS3_Pd"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void RubberBand::FFTs::D_FFTW::inverse(const float*, const float*, float*)",
+      "symbol": "_ZN10RubberBand4FFTs6D_FFTW7inverseEPKfS3_Pf"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "static int RubberBand::FFTs::D_FFTW::m_extantd",
+      "symbol": "_ZN10RubberBand4FFTs6D_FFTW9m_extantdE"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "static int RubberBand::FFTs::D_FFTW::m_extantf",
+      "symbol": "_ZN10RubberBand4FFTs6D_FFTW9m_extantfE"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "static pthread_mutex_t RubberBand::FFTs::D_FFTW::m_commonMutex",
+      "symbol": "_ZN10RubberBand4FFTs6D_FFTW13m_commonMutexE"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 1,
+     "member_offset_changed": 23,
+     "type_size_changed": 2
+    },
+    "type_events": [
+     {
+      "count": 1,
+      "declared_in": "../src/finer/R3Stretcher.h",
+      "kind": "field_added_to_struct",
+      "type": "struct RubberBand::R3Stretcher::ChannelAssembly"
+     },
+     {
+      "count": 7,
+      "declared_in": "../src/finer/R3Stretcher.h",
+      "kind": "member_offset_changed",
+      "type": "struct RubberBand::R3Stretcher::ChannelAssembly"
+     },
+     {
+      "count": 1,
+      "declared_in": "../src/finer/R3Stretcher.h",
+      "kind": "type_size_changed",
+      "type": "struct RubberBand::R3Stretcher::ChannelAssembly"
+     },
+     {
+      "count": 16,
+      "declared_in": "../src/finer/R3Stretcher.h",
+      "kind": "member_offset_changed",
+      "type": "class RubberBand::R3Stretcher"
+     },
+     {
+      "count": 1,
+      "declared_in": "../src/finer/R3Stretcher.h",
+      "kind": "type_size_changed",
+      "type": "class RubberBand::R3Stretcher"
+     }
+    ]
+   }
+  ],
+  "seconds": 6.025680365,
+  "source": "rubberband",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "3.1.2+dfsg0",
+   "3.2.1+dfsg"
+  ]
+ },
+ "generated_at": "2026-09-02T15:04:49Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

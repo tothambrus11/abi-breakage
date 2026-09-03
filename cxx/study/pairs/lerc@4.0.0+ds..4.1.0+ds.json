@@ -1,0 +1,140 @@
+{
+ "data": {
+  "id": "lerc@4.0.0+ds..4.1.0+ds",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      172,
+      172
+     ],
+     "mangled_functions": [
+      160,
+      160
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 1,
+     "symbol_removed": 1
+    },
+    "soname": [
+     "libLerc.so.4",
+     "libLerc.so.4"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _assert(bool)",
+      "symbol": "_Z7_assertb"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void lerc_assert(bool)",
+      "symbol": "_Z11lerc_assertb"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "member_offset_changed": 19,
+     "type_size_changed": 4,
+     "vtable_changed": 16
+    },
+    "type_events": [
+     {
+      "count": 3,
+      "declared_in": "src/LercLib/Lerc1Decode/../BitMask.h",
+      "kind": "member_offset_changed",
+      "type": "class LercNS::BitMask"
+     },
+     {
+      "count": 1,
+      "declared_in": "src/LercLib/Lerc1Decode/../BitMask.h",
+      "kind": "type_size_changed",
+      "type": "class LercNS::BitMask"
+     },
+     {
+      "count": 4,
+      "declared_in": "src/LercLib/Lerc1Decode/../BitMask.h",
+      "kind": "vtable_changed",
+      "type": "class LercNS::BitMask"
+     },
+     {
+      "count": 3,
+      "declared_in": "src/LercLib/BitStuffer2.h",
+      "kind": "member_offset_changed",
+      "type": "class LercNS::BitStuffer2"
+     },
+     {
+      "count": 1,
+      "declared_in": "src/LercLib/BitStuffer2.h",
+      "kind": "type_size_changed",
+      "type": "class LercNS::BitStuffer2"
+     },
+     {
+      "count": 4,
+      "declared_in": "src/LercLib/BitStuffer2.h",
+      "kind": "vtable_changed",
+      "type": "class LercNS::BitStuffer2"
+     },
+     {
+      "count": 12,
+      "declared_in": "src/LercLib/Lerc2.h",
+      "kind": "member_offset_changed",
+      "type": "class LercNS::Lerc2"
+     },
+     {
+      "count": 1,
+      "declared_in": "src/LercLib/Lerc2.h",
+      "kind": "type_size_changed",
+      "type": "class LercNS::Lerc2"
+     },
+     {
+      "count": 4,
+      "declared_in": "src/LercLib/Lerc2.h",
+      "kind": "vtable_changed",
+      "type": "class LercNS::Lerc2"
+     },
+     {
+      "count": 1,
+      "declared_in": "src/LercLib/RLE.h",
+      "kind": "member_offset_changed",
+      "type": "class LercNS::RLE"
+     },
+     {
+      "count": 1,
+      "declared_in": "src/LercLib/RLE.h",
+      "kind": "type_size_changed",
+      "type": "class LercNS::RLE"
+     },
+     {
+      "count": 4,
+      "declared_in": "src/LercLib/RLE.h",
+      "kind": "vtable_changed",
+      "type": "class LercNS::RLE"
+     }
+    ]
+   }
+  ],
+  "seconds": 3.737765993,
+  "source": "lerc",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "4.0.0+ds",
+   "4.1.0+ds"
+  ]
+ },
+ "generated_at": "2026-09-02T14:59:53Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

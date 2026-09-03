@@ -1,0 +1,1674 @@
+== 2026-09-02T12:59:13Z removing failed pair records for retry
+removed 32
+== 2026-09-02T12:59:13Z diff (retry, 1 worker)
+[12:59:13] 772 pairs total, 32 to do, 1 workers
+[12:59:29] [1/32] gcc-16@16-20260322..16-20260423 ok
+[12:59:46] [2/32] gcc-16@16-20260423..16-20260425 ok
+[13:00:47] [3/32] libheif@1.23.1..1.23.2 ok
+[13:02:22] [4/32] z3@4.4.1..4.8.4 ok
+[13:07:02] [5/32] z3@4.8.7..4.8.8 ok
+[13:12:23] [6/32] z3@4.8.8..4.8.9 ok
+[13:18:23] [7/32] z3@4.8.9..4.8.10 ok
+[13:23:37] [8/32] z3@4.8.10..4.8.12 killed by signal 9 (likely out of memory); will retry alone
+[13:30:01] [9/32] z3@4.8.12..4.13.3 killed by signal 9 (likely out of memory); will retry alone
+[13:30:37] [10/32] openal-soft@1.25.0..1.25.1 ok
+[13:37:22] [11/32] libreoffice@26.2.3.1..26.2.3.2 killed by signal 9 (likely out of memory); will retry alone
+== 2026-09-02T13:42:54Z diff (retry 2, 1 worker, memory guard)
+[13:42:54] 772 pairs total, 24 to do, 1 workers
+== 2026-09-02T13:46:21Z diff (retry 3, 1 worker, prlimit 5000MB, download budget)
+[13:46:22] 772 pairs total, 24 to do, 1 workers
+[13:51:49] [1/24] z3@4.8.10..4.8.12 killed by signal 9 (likely out of memory); will retry alone
+== 2026-09-02T13:57:00Z diff (retry 4, 1 worker, prlimit --as 5000MB, download budget 500MB/release)
+[13:57:00] 772 pairs total, 24 to do, 1 workers
+[13:58:17] [1/24] z3@4.8.10..4.8.12 ok
+[13:59:31] [2/24] z3@4.8.12..4.13.3 ok
+[14:10:48] [3/24] libreoffice@26.2.3.1..26.2.3.2 ok
+== 2026-09-02T14:18:11Z diff (retry 5: pair-level download budget, prlimit)
+[14:18:11] 772 pairs total, 21 to do, 1 workers
+== 2026-09-02T14:20:56Z diff (retry 6: pair-level HEAD budget, prlimit)
+[14:20:56] 772 pairs total, 21 to do, 1 workers
+[14:20:57] [1/21] libreoffice@26.2.3.2..26.2.4.1 ok
+[14:20:59] [2/21] libreoffice@26.2.4.1..26.2.4.2 ok
+[14:21:00] [3/21] libreoffice@26.2.4.2..26.2.5.2 ok
+[14:21:02] [4/21] libreoffice@26.2.5.2..26.8.0.0.alpha1 ok
+[14:21:03] [5/21] libreoffice@26.8.0.0.alpha1..26.8.0.0.beta1 ok
+[14:21:05] [6/21] libreoffice@26.8.0.0.beta1..26.8.0.1 ok
+[14:21:06] [7/21] libreoffice@26.8.0.1..26.8.0.2 ok
+[14:21:08] [8/21] libreoffice@26.8.0.2..26.8.0.3 ok
+[14:22:26] [9/21] libetonyek@0.1.7..0.1.8 ok
+[14:24:11] [10/21] libetonyek@0.1.8..0.1.9 ok
+[14:25:59] [11/21] libetonyek@0.1.9..0.1.10 ok
+[14:27:59] [12/21] libetonyek@0.1.10..0.1.12 ok
+[14:29:36] [13/21] libetonyek@0.1.12..0.1.13 ok
+[14:31:51] [14/21] libmwaw@0.3.13..0.3.14 ok
+[14:34:18] [15/21] libmwaw@0.3.14..0.3.15 ok
+[14:36:32] [16/21] libmwaw@0.3.15..0.3.16 killed by signal 9 (likely out of memory); will retry alone
+[14:39:29] [17/21] libmwaw@0.3.16..0.3.17 ok
+[14:42:17] [18/21] libmwaw@0.3.17..0.3.19 ok
+[14:44:20] [19/21] libmwaw@0.3.19..0.3.20 ok
+[14:46:26] [20/21] libmwaw@0.3.20..0.3.21 ok
+[14:49:22] [21/21] libmwaw@0.3.21..0.3.22 ok
+[14:49:22] libmwaw@0.3.15..0.3.16 FAILED killed by signal twice (out of memory?)
+[14:49:22] diff stage complete
+== 2026-09-02T14:49:22Z headers
+[14:49:22]     rebuilding acl@2.2.52-5.c.json (index schema changed)
+[14:49:23]     indexed acl 2.2.52: 0 defs, 24 macros, 2/2 parsed
+[14:49:23]     rebuilding acl@2.2.53-10.c.json (index schema changed)
+[14:49:23]     indexed acl 2.2.53: 0 defs, 24 macros, 2/2 parsed
+[14:49:23]     rebuilding acl@2.3.1-6.c.json (index schema changed)
+[14:49:23]     indexed acl 2.3.1: 0 defs, 24 macros, 2/2 parsed
+[14:49:23]     rebuilding acl@2.3.2-3.c.json (index schema changed)
+[14:49:23]     indexed acl 2.3.2: 0 defs, 24 macros, 2/2 parsed
+[14:49:23]     rebuilding acl@2.4.0-1.c.json (index schema changed)
+[14:49:23]     indexed acl 2.4.0: 0 defs, 24 macros, 2/2 parsed
+[14:49:23]     rebuilding bzip2@1.0.6-9.2.c.json (index schema changed)
+[14:49:23]     indexed bzip2 1.0.6: 0 defs, 19 macros, 1/1 parsed
+[14:49:23]     rebuilding bzip2@1.0.8-6.c.json (index schema changed)
+[14:49:23]     indexed bzip2 1.0.8: 0 defs, 19 macros, 1/1 parsed
+[14:49:23]     rebuilding attr@1%2.4.47-4.c.json (index schema changed)
+[14:49:24]     indexed attr 2.4.47: 0 defs, 16 macros, 4/4 parsed
+[14:49:24]     rebuilding attr@1%2.4.48-6.c.json (index schema changed)
+[14:49:24]     indexed attr 2.4.48: 0 defs, 15 macros, 4/4 parsed
+[14:49:24]     rebuilding attr@1%2.5.1-5.c.json (index schema changed)
+[14:49:24]     indexed attr 2.5.1: 0 defs, 15 macros, 4/4 parsed
+[14:49:24]     rebuilding attr@1%2.5.2-4.c.json (index schema changed)
+[14:49:24]     indexed attr 2.5.2: 0 defs, 14 macros, 3/3 parsed
+[14:49:24]     rebuilding attr@1%2.6.0-1.c.json (index schema changed)
+[14:49:24]     indexed attr 2.6.0: 0 defs, 14 macros, 3/3 parsed
+[14:49:26]     rebuilding util-linux@2.40.3-1.c.json (index schema changed)
+[14:49:26]     indexed util-linux 2.40.3: 0 defs, 39 macros, 1/1 parsed
+[14:49:26]     rebuilding util-linux@2.40.4-5.c.json (index schema changed)
+[14:49:26]     indexed util-linux 2.40.4: 0 defs, 39 macros, 1/1 parsed
+[14:49:26]     rebuilding util-linux@2.41-5.c.json (index schema changed)
+[14:49:26]     indexed util-linux 2.41: 0 defs, 39 macros, 1/1 parsed
+[14:49:26] [25/772] util-linux@2.40.4..2.41 bodies=0 macros=2
+[14:49:26]     rebuilding util-linux@2.41.1-4.c.json (index schema changed)
+[14:49:26]     indexed util-linux 2.41.1: 0 defs, 39 macros, 1/1 parsed
+[14:49:26]     rebuilding util-linux@2.41.2-4.c.json (index schema changed)
+[14:49:27]     indexed util-linux 2.41.2: 0 defs, 39 macros, 1/1 parsed
+[14:49:27]     rebuilding util-linux@2.41.3-4.c.json (index schema changed)
+[14:49:27]     indexed util-linux 2.41.3: 0 defs, 39 macros, 1/1 parsed
+[14:49:27]     rebuilding util-linux@2.41.5-0+deb13u1.c.json (index schema changed)
+[14:49:27]     indexed util-linux 2.41.5: 0 defs, 39 macros, 1/1 parsed
+[14:49:27]     rebuilding util-linux@2.42-6.c.json (index schema changed)
+[14:49:27]     indexed util-linux 2.42: 0 defs, 44 macros, 1/1 parsed
+[14:49:27]     rebuilding util-linux@2.42.1-6.c.json (index schema changed)
+[14:49:27]     indexed util-linux 2.42.1: 0 defs, 44 macros, 1/1 parsed
+[14:49:27]     rebuilding util-linux@2.42.2-4.c.json (index schema changed)
+[14:49:27]     indexed util-linux 2.42.2: 0 defs, 44 macros, 1/1 parsed
+[14:49:27]     rebuilding libselinux@3.2-1.c.json (index schema changed)
+[14:49:28]     indexed libselinux 3.2: 0 defs, 82 macros, 7/7 parsed
+[14:49:28]     rebuilding libselinux@3.3-1.c.json (index schema changed)
+[14:49:28]     indexed libselinux 3.3: 0 defs, 82 macros, 7/7 parsed
+[14:49:28]     rebuilding libselinux@3.5-2.1~exp1.c.json (index schema changed)
+[14:49:28]     indexed libselinux 3.5: 0 defs, 83 macros, 7/7 parsed
+[14:49:28]     rebuilding libselinux@3.7-4.c.json (index schema changed)
+[14:49:28]     indexed libselinux 3.7: 0 defs, 83 macros, 7/7 parsed
+[14:49:28]     rebuilding libselinux@3.8-4.c.json (index schema changed)
+[14:49:28]     indexed libselinux 3.8: 0 defs, 83 macros, 7/7 parsed
+[14:49:29]     rebuilding libselinux@3.8.1-1.c.json (index schema changed)
+[14:49:29]     indexed libselinux 3.8.1: 0 defs, 83 macros, 7/7 parsed
+[14:49:29]     rebuilding libselinux@3.9-4.c.json (index schema changed)
+[14:49:29]     indexed libselinux 3.9: 0 defs, 84 macros, 7/7 parsed
+[14:49:29]     rebuilding libselinux@3.10-1.c.json (index schema changed)
+[14:49:29]     indexed libselinux 3.10: 0 defs, 85 macros, 7/7 parsed
+[14:49:29]     rebuilding libselinux@3.11-2.c.json (index schema changed)
+[14:49:29]     indexed libselinux 3.11: 0 defs, 86 macros, 7/7 parsed
+[14:49:30]     rebuilding libedit@3.1-20210714-1.c.json (index schema changed)
+[14:49:30]     indexed libedit 3.1-20210714: 0 defs, 89 macros, 3/3 parsed
+[14:49:30]     rebuilding libedit@3.1-20210910-1.c.json (index schema changed)
+[14:49:30]     indexed libedit 3.1-20210910: 0 defs, 90 macros, 3/3 parsed
+[14:49:30]     rebuilding libedit@3.1-20221009-1.c.json (index schema changed)
+[14:49:30]     indexed libedit 3.1-20221009: 0 defs, 94 macros, 3/3 parsed
+[14:49:30]     rebuilding libedit@3.1-20221030-2.c.json (index schema changed)
+[14:49:31]     indexed libedit 3.1-20221030: 0 defs, 94 macros, 3/3 parsed
+[14:49:31]     rebuilding libedit@3.1-20230828-1.c.json (index schema changed)
+[14:49:31]     indexed libedit 3.1-20230828: 0 defs, 94 macros, 3/3 parsed
+[14:49:31]     rebuilding libedit@3.1-20240517-1.c.json (index schema changed)
+[14:49:31]     indexed libedit 3.1-20240517: 0 defs, 94 macros, 3/3 parsed
+[14:49:31]     rebuilding libedit@3.1-20240808-1.c.json (index schema changed)
+[14:49:32]     indexed libedit 3.1-20240808: 0 defs, 94 macros, 3/3 parsed
+[14:49:32]     rebuilding libedit@3.1-20250104-1.c.json (index schema changed)
+[14:49:32]     indexed libedit 3.1-20250104: 0 defs, 94 macros, 3/3 parsed
+[14:49:32]     rebuilding libedit@3.1-20251016-1.c.json (index schema changed)
+[14:49:32]     indexed libedit 3.1-20251016: 0 defs, 94 macros, 3/3 parsed
+[14:49:32]     rebuilding libedit@3.1-20260512-1.c.json (index schema changed)
+[14:49:33]     indexed libedit 3.1-20260512: 0 defs, 96 macros, 3/3 parsed
+[14:49:33] [50/772] libedit@3.1-20251016..3.1-20260512 bodies=0 macros=0
+[14:49:33]     rebuilding popt@1.16-14.c.json (index schema changed)
+[14:49:33]     indexed popt 1.16: 0 defs, 59 macros, 1/1 parsed
+[14:49:33]     rebuilding popt@1.18-3.c.json (index schema changed)
+[14:49:33]     indexed popt 1.18: 0 defs, 59 macros, 1/1 parsed
+[14:49:33]     rebuilding popt@1.19+dfsg-2.c.json (index schema changed)
+[14:49:33]     indexed popt 1.19+dfsg: 0 defs, 60 macros, 1/1 parsed
+[14:49:33]     rebuilding keyutils@1.5.9-10.c.json (index schema changed)
+[14:49:33]     indexed keyutils 1.5.9: 0 defs, 66 macros, 1/1 parsed
+[14:49:33]     rebuilding keyutils@1.6-6.c.json (index schema changed)
+[14:49:33]     indexed keyutils 1.6: 0 defs, 77 macros, 1/1 parsed
+[14:49:33]     rebuilding keyutils@1.6.1-3.c.json (index schema changed)
+[14:49:33]     indexed keyutils 1.6.1: 0 defs, 88 macros, 1/1 parsed
+[14:49:33]     rebuilding keyutils@1.6.3-6.c.json (index schema changed)
+[14:49:34]     indexed keyutils 1.6.3: 0 defs, 92 macros, 1/1 parsed
+[14:49:34]     rebuilding libcap2@1%2.36-1.c.json (index schema changed)
+[14:49:34]     indexed libcap2 2.36: 0 defs, 5 macros, 2/2 parsed
+[14:49:34]     rebuilding libcap2@1%2.42-2.c.json (index schema changed)
+[14:49:34]     indexed libcap2 2.42: 0 defs, 4 macros, 2/2 parsed
+[14:49:34]     rebuilding libcap2@1%2.43-1.c.json (index schema changed)
+[14:49:34]     indexed libcap2 2.43: 0 defs, 4 macros, 2/2 parsed
+[14:49:34]     rebuilding libcap2@1%2.44-1+deb11u1.c.json (index schema changed)
+[14:49:34]     indexed libcap2 2.44: 0 defs, 4 macros, 2/2 parsed
+[14:49:34]     rebuilding libcap2@1%2.63-1.c.json (index schema changed)
+[14:49:34]     indexed libcap2 2.63: 0 defs, 5 macros, 2/2 parsed
+[14:49:34]     rebuilding libcap2@1%2.66-5.c.json (index schema changed)
+[14:49:35]     indexed libcap2 2.66: 0 defs, 7 macros, 2/2 parsed
+[14:49:35]     rebuilding libcap2@1%2.73-4.c.json (index schema changed)
+[14:49:35]     indexed libcap2 2.73: 0 defs, 9 macros, 2/2 parsed
+[14:49:35]     rebuilding libcap2@1%2.75-10+deb13u1.c.json (index schema changed)
+[14:49:35]     indexed libcap2 2.75: 0 defs, 9 macros, 2/2 parsed
+[14:49:35]     rebuilding libcap2@1%2.77-1.c.json (index schema changed)
+[14:49:35]     indexed libcap2 2.77: 0 defs, 9 macros, 2/2 parsed
+[14:49:35]     rebuilding libcap2@1%2.78-1.c.json (index schema changed)
+[14:49:35]     indexed libcap2 2.78: 0 defs, 9 macros, 2/2 parsed
+[14:49:36]     rebuilding e2fsprogs@1.46.1-1.c.json (index schema changed)
+[14:49:36]     indexed e2fsprogs 1.46.1: 212 defs, 734 macros, 16/16 parsed
+[14:49:36]     rebuilding e2fsprogs@1.46.2-2+deb11u1.c.json (index schema changed)
+[14:49:37]     indexed e2fsprogs 1.46.2: 212 defs, 735 macros, 16/16 parsed
+[14:49:37]     rebuilding e2fsprogs@1.46.3-1.c.json (index schema changed)
+[14:49:37]     indexed e2fsprogs 1.46.3: 212 defs, 735 macros, 16/16 parsed
+[14:49:37]     rebuilding e2fsprogs@1.46.4-1.c.json (index schema changed)
+[14:49:38]     indexed e2fsprogs 1.46.4: 212 defs, 735 macros, 16/16 parsed
+[14:49:38]     rebuilding e2fsprogs@1.46.5-2.c.json (index schema changed)
+[14:49:38]     indexed e2fsprogs 1.46.5: 212 defs, 735 macros, 16/16 parsed
+[14:49:38]     rebuilding e2fsprogs@1.46.6-1.c.json (index schema changed)
+[14:49:39]     indexed e2fsprogs 1.46.6: 212 defs, 740 macros, 16/16 parsed
+[14:49:39]     rebuilding e2fsprogs@1.47.0-2.4.c.json (index schema changed)
+[14:49:39]     indexed e2fsprogs 1.47.0: 220 defs, 744 macros, 16/16 parsed
+[14:49:40]     rebuilding e2fsprogs@1.47.1-1.c.json (index schema changed)
+[14:49:40]     indexed e2fsprogs 1.47.1: 226 defs, 747 macros, 16/16 parsed
+[14:49:40]     rebuilding e2fsprogs@1.47.2-3.c.json (index schema changed)
+[14:49:41]     indexed e2fsprogs 1.47.2: 226 defs, 751 macros, 16/16 parsed
+[14:49:41]     rebuilding e2fsprogs@1.47.4-1.c.json (index schema changed)
+[14:49:41]     indexed e2fsprogs 1.47.4: 230 defs, 756 macros, 16/16 parsed
+[14:49:41]     rebuilding slang2@2.3.0-4.1.c.json (index schema changed)
+[14:49:41]     indexed slang2 2.3.0: 0 defs, 434 macros, 2/2 parsed
+[14:49:41]     rebuilding slang2@2.3.1-5.c.json (index schema changed)
+[14:49:42]     indexed slang2 2.3.1: 0 defs, 434 macros, 2/2 parsed
+[14:49:42]     rebuilding slang2@2.3.1a-3.c.json (index schema changed)
+[14:49:42]     indexed slang2 2.3.1a: 0 defs, 434 macros, 2/2 parsed
+[14:49:42] [75/772] slang2@2.3.1..2.3.1a bodies=0 macros=1
+[14:49:42]     rebuilding slang2@2.3.2-5.c.json (index schema changed)
+[14:49:42]     indexed slang2 2.3.2: 0 defs, 434 macros, 2/2 parsed
+[14:49:42]     rebuilding slang2@2.3.3-6.c.json (index schema changed)
+[14:49:42]     indexed slang2 2.3.3: 0 defs, 434 macros, 2/2 parsed
+[14:49:42]     rebuilding libbsd@0.11.2-1.c.json (index schema changed)
+[14:49:43]     indexed libbsd 0.11.2: 12 defs, 152 macros, 28/28 parsed
+[14:49:43]     rebuilding libbsd@0.11.3-1+deb11u1.c.json (index schema changed)
+[14:49:43]     indexed libbsd 0.11.3: 12 defs, 152 macros, 28/28 parsed
+[14:49:43]     rebuilding libbsd@0.11.4-1.c.json (index schema changed)
+[14:49:43]     indexed libbsd 0.11.4: 12 defs, 152 macros, 28/28 parsed
+[14:49:43]     rebuilding libbsd@0.11.5-1.c.json (index schema changed)
+[14:49:44]     indexed libbsd 0.11.5: 12 defs, 152 macros, 28/28 parsed
+[14:49:44]     rebuilding libbsd@0.11.6-1.c.json (index schema changed)
+[14:49:44]     indexed libbsd 0.11.6: 12 defs, 152 macros, 28/28 parsed
+[14:49:44]     rebuilding libbsd@0.11.7-4.c.json (index schema changed)
+[14:49:45]     indexed libbsd 0.11.7: 12 defs, 152 macros, 28/28 parsed
+[14:49:45]     rebuilding libbsd@0.11.8-1.c.json (index schema changed)
+[14:49:45]     indexed libbsd 0.11.8: 12 defs, 152 macros, 28/28 parsed
+[14:49:45]     rebuilding libbsd@0.12.0-1.c.json (index schema changed)
+[14:49:45]     indexed libbsd 0.12.0: 12 defs, 154 macros, 27/27 parsed
+[14:49:46]     rebuilding libbsd@0.12.1-1.c.json (index schema changed)
+[14:49:46]     indexed libbsd 0.12.1: 12 defs, 154 macros, 28/28 parsed
+[14:49:46]     rebuilding libbsd@0.12.2-3.c.json (index schema changed)
+[14:49:46]     indexed libbsd 0.12.2: 12 defs, 154 macros, 28/28 parsed
+[14:49:46]     rebuilding lvm2@2.03.02-4.c.json (index schema changed)
+[14:49:47]     indexed lvm2 2.03.02: 1 defs, 107 macros, 3/3 parsed
+[14:49:47]     rebuilding lvm2@2.03.07-1.c.json (index schema changed)
+[14:49:47]     indexed lvm2 2.03.07: 1 defs, 108 macros, 3/3 parsed
+[14:49:47]     rebuilding lvm2@2.03.09-3.c.json (index schema changed)
+[14:49:47]     indexed lvm2 2.03.09: 1 defs, 108 macros, 3/3 parsed
+[14:49:47]     rebuilding lvm2@2.03.10-1.c.json (index schema changed)
+[14:49:48]     indexed lvm2 2.03.10: 1 defs, 108 macros, 3/3 parsed
+[14:49:48]     rebuilding lvm2@2.03.11-2.1.c.json (index schema changed)
+[14:49:48]     indexed lvm2 2.03.11: 1 defs, 108 macros, 3/3 parsed
+[14:49:48]     rebuilding lvm2@2.03.15-2.c.json (index schema changed)
+[14:49:48]     indexed lvm2 2.03.15: 1 defs, 108 macros, 3/3 parsed
+[14:49:48]     rebuilding lvm2@2.03.16-3.c.json (index schema changed)
+[14:49:48]     indexed lvm2 2.03.16: 1 defs, 108 macros, 3/3 parsed
+[14:49:48]     rebuilding lvm2@2.03.22-1.c.json (index schema changed)
+[14:49:49]     indexed lvm2 2.03.22: 1 defs, 108 macros, 3/3 parsed
+[14:49:49]     rebuilding lvm2@2.03.27-1.c.json (index schema changed)
+[14:49:49]     indexed lvm2 2.03.27: 1 defs, 109 macros, 3/3 parsed
+[14:49:49]     rebuilding lvm2@2.03.31-2.c.json (index schema changed)
+[14:49:49]     indexed lvm2 2.03.31: 1 defs, 109 macros, 3/3 parsed
+[14:49:49]     rebuilding sqlite3@3.44.2-1.c.json (index schema changed)
+[14:49:50]     indexed sqlite3 3.44.2: 0 defs, 747 macros, 2/2 parsed
+[14:49:50]     rebuilding sqlite3@3.45.0-1.c.json (index schema changed)
+[14:49:50]     indexed sqlite3 3.45.0: 0 defs, 748 macros, 2/2 parsed
+[14:49:50]     rebuilding sqlite3@3.45.1-1.c.json (index schema changed)
+[14:49:50]     indexed sqlite3 3.45.1: 0 defs, 748 macros, 2/2 parsed
+[14:49:50]     rebuilding sqlite3@3.45.2-1.c.json (index schema changed)
+[14:49:50]     indexed sqlite3 3.45.2: 0 defs, 748 macros, 2/2 parsed
+[14:49:50]     rebuilding sqlite3@3.45.3-2~exp1.c.json (index schema changed)
+[14:49:51]     indexed sqlite3 3.45.3: 0 defs, 749 macros, 2/2 parsed
+[14:49:51]     rebuilding sqlite3@3.46.0-1.c.json (index schema changed)
+[14:49:51]     indexed sqlite3 3.46.0: 0 defs, 749 macros, 2/2 parsed
+[14:49:51] [100/772] sqlite3@3.45.3..3.46.0 bodies=0 macros=3
+[14:49:51]     rebuilding sqlite3@3.46.1-9.c.json (index schema changed)
+[14:49:51]     indexed sqlite3 3.46.1: 0 defs, 749 macros, 2/2 parsed
+[14:49:51]     rebuilding sqlite3@3.53.2-1.c.json (index schema changed)
+[14:49:51]     indexed sqlite3 3.53.2: 0 defs, 793 macros, 2/2 parsed
+[14:49:51]     rebuilding sqlite3@3.53.3-1.c.json (index schema changed)
+[14:49:52]     indexed sqlite3 3.53.3: 0 defs, 793 macros, 2/2 parsed
+[14:49:52]     rebuilding sqlite3@3.53.4-2.c.json (index schema changed)
+[14:49:52]     indexed sqlite3 3.53.4: 0 defs, 793 macros, 2/2 parsed
+[14:49:52]     rebuilding expat@2.7.1-2.c.json (index schema changed)
+[14:49:52]     indexed expat 2.7.1: 0 defs, 50 macros, 3/3 parsed
+[14:49:52]     rebuilding expat@2.7.2-1.c.json (index schema changed)
+[14:49:52]     indexed expat 2.7.2: 0 defs, 50 macros, 3/3 parsed
+[14:49:52]     rebuilding expat@2.7.3-2.c.json (index schema changed)
+[14:49:52]     indexed expat 2.7.3: 0 defs, 50 macros, 3/3 parsed
+[14:49:52]     rebuilding expat@2.7.4-1.c.json (index schema changed)
+[14:49:53]     indexed expat 2.7.4: 0 defs, 50 macros, 3/3 parsed
+[14:49:53]     rebuilding expat@2.7.5-1.c.json (index schema changed)
+[14:49:53]     indexed expat 2.7.5: 0 defs, 50 macros, 3/3 parsed
+[14:49:53]     rebuilding expat@2.8.0-2.c.json (index schema changed)
+[14:49:53]     indexed expat 2.8.0: 0 defs, 52 macros, 3/3 parsed
+[14:49:53]     rebuilding expat@2.8.1-1.c.json (index schema changed)
+[14:49:53]     indexed expat 2.8.1: 0 defs, 52 macros, 3/3 parsed
+[14:49:53]     rebuilding expat@2.8.2-1.c.json (index schema changed)
+[14:49:53]     indexed expat 2.8.2: 0 defs, 51 macros, 3/3 parsed
+[14:49:53]     rebuilding expat@2.8.3-1.c.json (index schema changed)
+[14:49:53]     indexed expat 2.8.3: 0 defs, 51 macros, 3/3 parsed
+[14:49:53]     rebuilding expat@2.8.4-1.c.json (index schema changed)
+[14:49:54]     indexed expat 2.8.4: 0 defs, 51 macros, 3/3 parsed
+[14:49:54]     rebuilding newt@0.52.18-3.c.json (index schema changed)
+[14:49:54]     indexed newt 0.52.18: 0 defs, 94 macros, 1/1 parsed
+[14:49:54]     rebuilding newt@0.52.19-1.c.json (index schema changed)
+[14:49:54]     indexed newt 0.52.19: 0 defs, 94 macros, 1/1 parsed
+[14:49:54]     rebuilding newt@0.52.20-8.c.json (index schema changed)
+[14:49:54]     indexed newt 0.52.20: 0 defs, 94 macros, 1/1 parsed
+[14:49:54]     rebuilding newt@0.52.21-6.c.json (index schema changed)
+[14:49:54]     indexed newt 0.52.21: 0 defs, 94 macros, 1/1 parsed
+[14:49:54]     rebuilding newt@0.52.22-1.c.json (index schema changed)
+[14:49:54]     indexed newt 0.52.22: 0 defs, 94 macros, 1/1 parsed
+[14:49:54]     rebuilding newt@0.52.23-1.c.json (index schema changed)
+[14:49:54]     indexed newt 0.52.23: 0 defs, 94 macros, 1/1 parsed
+[14:49:54]     rebuilding newt@0.52.24-4.c.json (index schema changed)
+[14:49:55]     indexed newt 0.52.24: 0 defs, 94 macros, 1/1 parsed
+[14:49:55]     rebuilding newt@0.52.25-2.c.json (index schema changed)
+[14:49:55]     indexed newt 0.52.25: 0 defs, 94 macros, 1/1 parsed
+[14:49:55]     rebuilding freetype@2.11.1+dfsg-2.c.json (index schema changed)
+[14:49:56]     indexed freetype 2.11.1+dfsg: 0 defs, 1138 macros, 54/54 parsed
+[14:49:56]     rebuilding freetype@2.12.0+dfsg-1.c.json (index schema changed)
+[14:49:58]     indexed freetype 2.12.0+dfsg: 0 defs, 1145 macros, 55/55 parsed
+[14:49:58]     rebuilding freetype@2.12.1+dfsg-5+deb12u4.c.json (index schema changed)
+[14:49:59]     indexed freetype 2.12.1+dfsg: 0 defs, 1145 macros, 55/55 parsed
+[14:49:59]     rebuilding freetype@2.13.0+dfsg-1.c.json (index schema changed)
+[14:50:00]     indexed freetype 2.13.0+dfsg: 0 defs, 1145 macros, 55/55 parsed
+[14:50:00]     rebuilding freetype@2.13.1+dfsg-1.c.json (index schema changed)
+[14:50:01]     indexed freetype 2.13.1+dfsg: 0 defs, 1145 macros, 55/55 parsed
+[14:50:01]     rebuilding freetype@2.13.2+dfsg-1.c.json (index schema changed)
+[14:50:03]     indexed freetype 2.13.2+dfsg: 0 defs, 1145 macros, 55/55 parsed
+[14:50:03] [125/772] freetype@2.13.1+dfsg..2.13.2+dfsg bodies=0 macros=1
+[14:50:03]     rebuilding freetype@2.13.3+dfsg-1+deb13u1.c.json (index schema changed)
+[14:50:04]     indexed freetype 2.13.3+dfsg: 0 defs, 1145 macros, 55/55 parsed
+[14:50:04]     rebuilding freetype@2.14.1+dfsg-2.c.json (index schema changed)
+[14:50:05]     indexed freetype 2.14.1+dfsg: 0 defs, 1147 macros, 55/55 parsed
+[14:50:05]     rebuilding freetype@2.14.2+dfsg-1.c.json (index schema changed)
+[14:50:06]     indexed freetype 2.14.2+dfsg: 0 defs, 1147 macros, 55/55 parsed
+[14:50:06]     rebuilding freetype@2.14.3+dfsg-2.c.json (index schema changed)
+[14:50:07]     indexed freetype 2.14.3+dfsg: 0 defs, 1147 macros, 55/55 parsed
+[14:50:07]     rebuilding xz-utils@5.6.0-0.2.c.json (index schema changed)
+[14:50:08]     indexed xz-utils 5.6.0: 0 defs, 71 macros, 15/15 parsed
+[14:50:08]     rebuilding xz-utils@5.6.1-1.c.json (index schema changed)
+[14:50:08]     indexed xz-utils 5.6.1: 0 defs, 71 macros, 15/15 parsed
+[14:50:08]     rebuilding xz-utils@5.6.1+really5.4.5-1.c.json (index schema changed)
+[14:50:08]     indexed xz-utils 5.6.1+really5.4.5: 0 defs, 66 macros, 15/15 parsed
+[14:50:08]     rebuilding xz-utils@5.6.2-2.c.json (index schema changed)
+[14:50:08]     indexed xz-utils 5.6.2: 0 defs, 71 macros, 15/15 parsed
+[14:50:08]     rebuilding xz-utils@5.6.3-1.c.json (index schema changed)
+[14:50:08]     indexed xz-utils 5.6.3: 0 defs, 71 macros, 15/15 parsed
+[14:50:08]     rebuilding xz-utils@5.6.4-1.c.json (index schema changed)
+[14:50:09]     indexed xz-utils 5.6.4: 0 defs, 71 macros, 15/15 parsed
+[14:50:09]     rebuilding xz-utils@5.8.0-1.c.json (index schema changed)
+[14:50:09]     indexed xz-utils 5.8.0: 0 defs, 71 macros, 15/15 parsed
+[14:50:09]     rebuilding xz-utils@5.8.1-2.c.json (index schema changed)
+[14:50:09]     indexed xz-utils 5.8.1: 0 defs, 71 macros, 15/15 parsed
+[14:50:09]     rebuilding xz-utils@5.8.2-2.c.json (index schema changed)
+[14:50:09]     indexed xz-utils 5.8.2: 0 defs, 71 macros, 15/15 parsed
+[14:50:09]     rebuilding xz-utils@5.8.3-1.c.json (index schema changed)
+[14:50:09]     indexed xz-utils 5.8.3: 0 defs, 71 macros, 15/15 parsed
+[14:50:09]     rebuilding dbus@1.15.2-1.c.json (index schema changed)
+[14:50:10]     indexed dbus 1.15.2: 5 defs, 167 macros, 17/17 parsed
+[14:50:10]     rebuilding dbus@1.15.4-1.c.json (index schema changed)
+[14:50:10]     indexed dbus 1.15.4: 5 defs, 167 macros, 17/17 parsed
+[14:50:10]     rebuilding dbus@1.15.6-2.c.json (index schema changed)
+[14:50:10]     indexed dbus 1.15.6: 5 defs, 167 macros, 17/17 parsed
+[14:50:10]     rebuilding dbus@1.15.8-4.c.json (index schema changed)
+[14:50:10]     indexed dbus 1.15.8: 5 defs, 167 macros, 17/17 parsed
+[14:50:11] [150/772] dbus@1.15.6..1.15.8 bodies=0 macros=0
+[14:50:11]     rebuilding dbus@1.15.10-1.c.json (index schema changed)
+[14:50:11]     indexed dbus 1.15.10: 5 defs, 167 macros, 17/17 parsed
+[14:50:11]     rebuilding dbus@1.15.12-1.c.json (index schema changed)
+[14:50:11]     indexed dbus 1.15.12: 5 defs, 167 macros, 17/17 parsed
+[14:50:11]     rebuilding dbus@1.15.90-1.c.json (index schema changed)
+[14:50:11]     indexed dbus 1.15.90: 5 defs, 167 macros, 17/17 parsed
+[14:50:11]     rebuilding dbus@1.15.92-1.c.json (index schema changed)
+[14:50:12]     indexed dbus 1.15.92: 5 defs, 167 macros, 17/17 parsed
+[14:50:12]     rebuilding dbus@1.16.0-1.c.json (index schema changed)
+[14:50:12]     indexed dbus 1.16.0: 5 defs, 167 macros, 17/17 parsed
+[14:50:12]     rebuilding dbus@1.16.2-5.c.json (index schema changed)
+[14:50:12]     indexed dbus 1.16.2: 5 defs, 167 macros, 17/17 parsed
+[14:50:12]     rebuilding kmod@31-1.c.json (index schema changed)
+[14:50:12]     indexed kmod 31: 0 defs, 0 macros, 1/1 parsed
+[14:50:12]     rebuilding kmod@31+20240202-2.c.json (index schema changed)
+[14:50:12]     indexed kmod 31+20240202: 0 defs, 0 macros, 1/1 parsed
+[14:50:12]     rebuilding kmod@32-1.c.json (index schema changed)
+[14:50:12]     indexed kmod 32: 0 defs, 0 macros, 1/1 parsed
+[14:50:13]     rebuilding kmod@32+20240327-1.c.json (index schema changed)
+[14:50:13]     indexed kmod 32+20240327: 0 defs, 0 macros, 1/1 parsed
+[14:50:13]     rebuilding kmod@32+20240611-1.c.json (index schema changed)
+[14:50:13]     indexed kmod 32+20240611: 0 defs, 0 macros, 1/1 parsed
+[14:50:13]     rebuilding kmod@33+20240816-2.c.json (index schema changed)
+[14:50:13]     indexed kmod 33+20240816: 0 defs, 0 macros, 1/1 parsed
+[14:50:13]     rebuilding kmod@33+20241031-1.c.json (index schema changed)
+[14:50:13]     indexed kmod 33+20241031: 0 defs, 0 macros, 1/1 parsed
+[14:50:13]     rebuilding kmod@34-3.c.json (index schema changed)
+[14:50:13]     indexed kmod 34: 0 defs, 0 macros, 1/1 parsed
+[14:50:13]     rebuilding kmod@34.1-2.c.json (index schema changed)
+[14:50:13]     indexed kmod 34.1: 0 defs, 0 macros, 1/1 parsed
+[14:50:13]     rebuilding kmod@34.2-2.c.json (index schema changed)
+[14:50:14]     indexed kmod 34.2: 0 defs, 0 macros, 1/1 parsed
+[14:50:14]     rebuilding pciutils@1%3.6.4-1.c.json (index schema changed)
+[14:50:14]     indexed pciutils 3.6.4: 0 defs, 1127 macros, 4/4 parsed
+[14:50:14]     rebuilding pciutils@1%3.7.0-6.c.json (index schema changed)
+[14:50:14]     indexed pciutils 3.7.0: 0 defs, 1153 macros, 4/4 parsed
+[14:50:14]     rebuilding pciutils@1%3.9.0-4.c.json (index schema changed)
+[14:50:14]     indexed pciutils 3.9.0: 0 defs, 1294 macros, 4/4 parsed
+[14:50:14]     rebuilding pciutils@1%3.10.0-2.c.json (index schema changed)
+[14:50:14]     indexed pciutils 3.10.0: 0 defs, 1296 macros, 4/4 parsed
+[14:50:14]     rebuilding pciutils@1%3.11.1-1.c.json (index schema changed)
+[14:50:14]     indexed pciutils 3.11.1: 0 defs, 1321 macros, 4/4 parsed
+[14:50:14]     rebuilding pciutils@1%3.12.0-1.c.json (index schema changed)
+[14:50:15]     indexed pciutils 3.12.0: 0 defs, 1345 macros, 4/4 parsed
+[14:50:15]     rebuilding pciutils@1%3.13.0-2.c.json (index schema changed)
+[14:50:15]     indexed pciutils 3.13.0: 0 defs, 1359 macros, 4/4 parsed
+[14:50:15]     rebuilding pciutils@1%3.14.0-1.c.json (index schema changed)
+[14:50:15]     indexed pciutils 3.14.0: 0 defs, 1474 macros, 4/4 parsed
+[14:50:15]     rebuilding pciutils@1%3.15.0-2.c.json (index schema changed)
+[14:50:15]     indexed pciutils 3.15.0: 0 defs, 1541 macros, 4/4 parsed
+[14:50:15]     rebuilding p11-kit@0.25.0-5.c.json (index schema changed)
+[14:50:15]     indexed p11-kit 0.25.0: 0 defs, 960 macros, 8/8 parsed
+[14:50:15]     rebuilding p11-kit@0.25.1-1.c.json (index schema changed)
+[14:50:15]     indexed p11-kit 0.25.1: 0 defs, 960 macros, 8/8 parsed
+[14:50:15] [175/772] p11-kit@0.25.0..0.25.1 bodies=0 macros=0
+[14:50:15]     rebuilding p11-kit@0.25.2-1.c.json (index schema changed)
+[14:50:16]     indexed p11-kit 0.25.2: 0 defs, 960 macros, 8/8 parsed
+[14:50:16]     rebuilding p11-kit@0.25.3-5.c.json (index schema changed)
+[14:50:16]     indexed p11-kit 0.25.3: 0 defs, 960 macros, 8/8 parsed
+[14:50:16]     rebuilding p11-kit@0.25.5-3.c.json (index schema changed)
+[14:50:16]     indexed p11-kit 0.25.5: 0 defs, 960 macros, 8/8 parsed
+[14:50:16]     rebuilding p11-kit@0.25.9-2.c.json (index schema changed)
+[14:50:16]     indexed p11-kit 0.25.9: 0 defs, 1374 macros, 8/8 parsed
+[14:50:16]     rebuilding p11-kit@0.25.10-1.c.json (index schema changed)
+[14:50:17]     indexed p11-kit 0.25.10: 0 defs, 1374 macros, 8/8 parsed
+[14:50:17]     rebuilding p11-kit@0.26.2-3.c.json (index schema changed)
+[14:50:17]     indexed p11-kit 0.26.2: 0 defs, 1514 macros, 8/8 parsed
+[14:50:17]     rebuilding p11-kit@0.26.4-1.c.json (index schema changed)
+[14:50:17]     indexed p11-kit 0.26.4: 0 defs, 1514 macros, 8/8 parsed
+[14:50:17]     rebuilding p11-kit@0.26.5-1.c.json (index schema changed)
+[14:50:17]     indexed p11-kit 0.26.5: 0 defs, 1514 macros, 8/8 parsed
+[14:50:17]     rebuilding gmp@2%6.1.0+dfsg-2.c.json (index schema changed)
+[14:50:18]     indexed gmp 6.1.0+dfsg: 1281 defs, 387 macros, 2/2 parsed
+[14:50:18]     rebuilding gmp@2%6.1.1+dfsg-1.c.json (index schema changed)
+[14:50:19]     indexed gmp 6.1.1+dfsg: 1281 defs, 387 macros, 2/2 parsed
+[14:50:19]     rebuilding gmp@2%6.1.2+dfsg-4+deb10u1.c.json (index schema changed)
+[14:50:19]     indexed gmp 6.1.2+dfsg: 1281 defs, 387 macros, 2/2 parsed
+[14:50:19]     rebuilding gmp@2%6.2.0+dfsg-6.c.json (index schema changed)
+[14:50:20]     indexed gmp 6.2.0+dfsg: 1330 defs, 388 macros, 2/2 parsed
+[14:50:20]     rebuilding gmp@2%6.2.1+dfsg-3.c.json (index schema changed)
+[14:50:21]     indexed gmp 6.2.1+dfsg: 1330 defs, 388 macros, 2/2 parsed
+[14:50:21]     rebuilding gmp@2%6.2.1+dfsg1-1.1.c.json (index schema changed)
+[14:50:22]     indexed gmp 6.2.1+dfsg1: 1330 defs, 388 macros, 2/2 parsed
+[14:50:22]     rebuilding gmp@2%6.3.0+dfsg-5.c.json (index schema changed)
+[14:50:22]     indexed gmp 6.3.0+dfsg: 1331 defs, 389 macros, 2/2 parsed
+[14:50:22]     rebuilding libxau@1%1.0.9-1.c.json (index schema changed)
+[14:50:22]     indexed libxau 1.0.9: 0 defs, 8 macros, 1/1 parsed
+[14:50:22]     rebuilding libxau@1%1.0.11-1.c.json (index schema changed)
+[14:50:23]     indexed libxau 1.0.11: 0 defs, 8 macros, 1/1 parsed
+[14:50:23]     rebuilding libxcb@1.13-3.c.json (index schema changed)
+[14:50:23]     indexed libxcb 1.13: 0 defs, 48 macros, 4/4 parsed
+[14:50:23]     rebuilding libxcb@1.13.1-5.c.json (index schema changed)
+[14:50:24]     indexed libxcb 1.13.1: 0 defs, 48 macros, 4/4 parsed
+[14:50:24]     rebuilding libxcb@1.14-3.c.json (index schema changed)
+[14:50:24]     indexed libxcb 1.14: 0 defs, 48 macros, 4/4 parsed
+[14:50:24]     rebuilding libxcb@1.15-1.c.json (index schema changed)
+[14:50:25]     indexed libxcb 1.15: 0 defs, 48 macros, 4/4 parsed
+[14:50:25]     rebuilding libxcb@1.17.0-2.c.json (index schema changed)
+[14:50:26]     indexed libxcb 1.17.0: 0 defs, 50 macros, 4/4 parsed
+[14:50:26]     rebuilding libx11@2%1.7.4-1.c.json (index schema changed)
+[14:50:26]     indexed libx11 1.7.4: 0 defs, 315 macros, 13/13 parsed
+[14:50:26]     rebuilding libx11@2%1.7.5-1.c.json (index schema changed)
+[14:50:27]     indexed libx11 1.7.5: 0 defs, 315 macros, 13/13 parsed
+[14:50:27]     rebuilding libx11@2%1.8.1-2.c.json (index schema changed)
+[14:50:27]     indexed libx11 1.8.1: 0 defs, 315 macros, 13/13 parsed
+[14:50:27]     rebuilding libx11@2%1.8.3-3.c.json (index schema changed)
+[14:50:28]     indexed libx11 1.8.3: 0 defs, 315 macros, 13/13 parsed
+[14:50:28]     rebuilding libx11@2%1.8.4-2+deb12u2.c.json (index schema changed)
+[14:50:28]     indexed libx11 1.8.4: 0 defs, 315 macros, 13/13 parsed
+[14:50:28]     rebuilding libx11@2%1.8.6-1.c.json (index schema changed)
+[14:50:29]     indexed libx11 1.8.6: 0 defs, 315 macros, 13/13 parsed
+[14:50:29]     rebuilding libx11@2%1.8.7-1.c.json (index schema changed)
+[14:50:29]     indexed libx11 1.8.7: 0 defs, 315 macros, 13/13 parsed
+[14:50:29] [200/772] libx11@1.8.6..1.8.7 bodies=0 macros=0
+[14:50:29]     rebuilding libx11@2%1.8.10-2.c.json (index schema changed)
+[14:50:30]     indexed libx11 1.8.10: 0 defs, 315 macros, 13/13 parsed
+[14:50:30]     rebuilding libx11@2%1.8.12-1.c.json (index schema changed)
+[14:50:30]     indexed libx11 1.8.12: 0 defs, 315 macros, 13/13 parsed
+[14:50:30]     rebuilding libx11@2%1.8.13-1.c.json (index schema changed)
+[14:50:30]     indexed libx11 1.8.13: 0 defs, 315 macros, 13/13 parsed
+[14:50:31]     rebuilding libcap-ng@0.7.7-3.1.c.json (index schema changed)
+[14:50:31]     indexed libcap-ng 0.7.7: 0 defs, 0 macros, 1/1 parsed
+[14:50:31]     rebuilding libcap-ng@0.7.9-4.c.json (index schema changed)
+[14:50:31]     indexed libcap-ng 0.7.9: 0 defs, 0 macros, 1/1 parsed
+[14:50:31]     rebuilding libcap-ng@0.8.3-3.c.json (index schema changed)
+[14:50:31]     indexed libcap-ng 0.8.3: 0 defs, 2 macros, 1/1 parsed
+[14:50:31]     rebuilding libcap-ng@0.8.4-2.c.json (index schema changed)
+[14:50:31]     indexed libcap-ng 0.8.4: 0 defs, 2 macros, 1/1 parsed
+[14:50:31]     rebuilding libcap-ng@0.8.5-4.c.json (index schema changed)
+[14:50:31]     indexed libcap-ng 0.8.5: 0 defs, 2 macros, 1/1 parsed
+[14:50:31]     rebuilding libcap-ng@0.9.1-1.c.json (index schema changed)
+[14:50:31]     indexed libcap-ng 0.9.1: 0 defs, 2 macros, 1/1 parsed
+[14:50:31]     rebuilding libcap-ng@0.9.2-1.c.json (index schema changed)
+[14:50:32]     indexed libcap-ng 0.9.2: 0 defs, 2 macros, 1/1 parsed
+[14:50:32]     rebuilding libcap-ng@0.9.3-1.c.json (index schema changed)
+[14:50:32]     indexed libcap-ng 0.9.3: 0 defs, 2 macros, 1/1 parsed
+[14:50:32]     rebuilding libcap-ng@0.9.5-1.c.json (index schema changed)
+[14:50:32]     indexed libcap-ng 0.9.5: 0 defs, 2 macros, 1/1 parsed
+[14:50:32]     rebuilding audit@1%3.0.6-1.c.json (index schema changed)
+[14:50:32]     indexed audit 3.0.6: 0 defs, 157 macros, 1/1 parsed
+[14:50:32]     rebuilding audit@1%3.0.7-1.1.c.json (index schema changed)
+[14:50:32]     indexed audit 3.0.7: 0 defs, 157 macros, 1/1 parsed
+[14:50:32]     rebuilding audit@1%3.0.9-1.c.json (index schema changed)
+[14:50:32]     indexed audit 3.0.9: 0 defs, 157 macros, 1/1 parsed
+[14:50:32]     rebuilding audit@1%3.1.1-1.c.json (index schema changed)
+[14:50:32]     indexed audit 3.1.1: 0 defs, 157 macros, 1/1 parsed
+[14:50:32]     rebuilding audit@1%3.1.2-4.c.json (index schema changed)
+[14:50:33]     indexed audit 3.1.2: 0 defs, 157 macros, 1/1 parsed
+[14:50:33]     rebuilding audit@1%4.0.1-3.c.json (index schema changed)
+[14:50:33]     indexed audit 4.0.1: 0 defs, 156 macros, 3/3 parsed
+[14:50:33]     rebuilding audit@1%4.0.2-2.c.json (index schema changed)
+[14:50:33]     indexed audit 4.0.2: 0 defs, 156 macros, 3/3 parsed
+[14:50:33]     rebuilding audit@1%4.0.5-1.c.json (index schema changed)
+[14:50:33]     indexed audit 4.0.5: 0 defs, 156 macros, 3/3 parsed
+[14:50:33]     rebuilding audit@1%4.1.1-1.c.json (index schema changed)
+[14:50:33]     indexed audit 4.1.1: 0 defs, 156 macros, 3/3 parsed
+[14:50:33]     rebuilding audit@1%4.1.2-1.c.json (index schema changed)
+[14:50:33]     indexed audit 4.1.2: 0 defs, 156 macros, 3/3 parsed
+[14:50:33]     rebuilding systemd@257.13-1~deb13u1.c.json (index schema changed)
+[14:50:34]     indexed systemd 257.13: 0 defs, 0 macros, 1/1 parsed
+[14:50:34]     rebuilding systemd@258-1.c.json (index schema changed)
+[14:50:34]     indexed systemd 258: 0 defs, 0 macros, 1/1 parsed
+[14:50:34]     rebuilding systemd@258.1-2.c.json (index schema changed)
+[14:50:34]     indexed systemd 258.1: 0 defs, 0 macros, 1/1 parsed
+[14:50:34]     rebuilding systemd@259-1.c.json (index schema changed)
+[14:50:34]     indexed systemd 259: 0 defs, 0 macros, 1/1 parsed
+[14:50:34]     rebuilding systemd@259.1-1.c.json (index schema changed)
+[14:50:34]     indexed systemd 259.1: 0 defs, 0 macros, 1/1 parsed
+[14:50:34]     rebuilding systemd@260-1.c.json (index schema changed)
+[14:50:34]     indexed systemd 260: 0 defs, 0 macros, 1/1 parsed
+[14:50:34] [225/772] systemd@259.1..260 bodies=0 macros=0
+[14:50:34]     rebuilding systemd@260.1-1.c.json (index schema changed)
+[14:50:35]     indexed systemd 260.1: 0 defs, 0 macros, 1/1 parsed
+[14:50:35]     rebuilding systemd@261-2.c.json (index schema changed)
+[14:50:35]     indexed systemd 261: 0 defs, 0 macros, 1/1 parsed
+[14:50:35]     rebuilding systemd@261.1-3.c.json (index schema changed)
+[14:50:35]     indexed systemd 261.1: 0 defs, 0 macros, 1/1 parsed
+[14:50:35]     rebuilding systemd@261.2-1.c.json (index schema changed)
+[14:50:35]     indexed systemd 261.2: 0 defs, 0 macros, 1/1 parsed
+[14:50:35]     rebuilding cdebconf@0.275.c.json (index schema changed)
+[14:50:35]     indexed cdebconf 0.275: 0 defs, 44 macros, 9/9 parsed
+[14:50:35]     rebuilding cdebconf@0.276.c.json (index schema changed)
+[14:50:35]     indexed cdebconf 0.276: 0 defs, 44 macros, 9/9 parsed
+[14:50:35]     rebuilding cdebconf@0.277.c.json (index schema changed)
+[14:50:35]     indexed cdebconf 0.277: 0 defs, 44 macros, 9/9 parsed
+[14:50:35]     rebuilding cdebconf@0.278.c.json (index schema changed)
+[14:50:36]     indexed cdebconf 0.278: 0 defs, 44 macros, 9/9 parsed
+[14:50:36]     rebuilding cdebconf@0.279.c.json (index schema changed)
+[14:50:36]     indexed cdebconf 0.279: 0 defs, 44 macros, 9/9 parsed
+[14:50:36]     rebuilding cdebconf@0.280.c.json (index schema changed)
+[14:50:36]     indexed cdebconf 0.280: 0 defs, 44 macros, 9/9 parsed
+[14:50:36]     rebuilding cdebconf@0.281.c.json (index schema changed)
+[14:50:36]     indexed cdebconf 0.281: 0 defs, 44 macros, 9/9 parsed
+[14:50:36]     rebuilding cdebconf@0.282.c.json (index schema changed)
+[14:50:36]     indexed cdebconf 0.282: 0 defs, 44 macros, 9/9 parsed
+[14:50:36]     rebuilding cdebconf@0.283.c.json (index schema changed)
+[14:50:37]     indexed cdebconf 0.283: 0 defs, 44 macros, 9/9 parsed
+[14:50:37]     rebuilding libtasn1-6@4.12-3.c.json (index schema changed)
+[14:50:37]     indexed libtasn1-6 4.12: 0 defs, 99 macros, 1/1 parsed
+[14:50:37]     rebuilding libtasn1-6@4.13-4.c.json (index schema changed)
+[14:50:37]     indexed libtasn1-6 4.13: 0 defs, 99 macros, 1/1 parsed
+[14:50:37]     rebuilding libtasn1-6@4.14-3.c.json (index schema changed)
+[14:50:37]     indexed libtasn1-6 4.14: 0 defs, 104 macros, 1/1 parsed
+[14:50:37]     rebuilding libtasn1-6@4.15.0-2.c.json (index schema changed)
+[14:50:38]     indexed libtasn1-6 4.15.0: 0 defs, 104 macros, 1/1 parsed
+[14:50:38]     rebuilding libtasn1-6@4.16.0-2+deb11u2.c.json (index schema changed)
+[14:50:38]     indexed libtasn1-6 4.16.0: 0 defs, 104 macros, 1/1 parsed
+[14:50:38]     rebuilding libtasn1-6@4.17.0-2.c.json (index schema changed)
+[14:50:38]     indexed libtasn1-6 4.17.0: 0 defs, 104 macros, 1/1 parsed
+[14:50:38]     rebuilding libtasn1-6@4.18.0-4.c.json (index schema changed)
+[14:50:38]     indexed libtasn1-6 4.18.0: 0 defs, 104 macros, 1/1 parsed
+[14:50:38]     rebuilding libtasn1-6@4.19.0-3.c.json (index schema changed)
+[14:50:38]     indexed libtasn1-6 4.19.0: 0 defs, 104 macros, 1/1 parsed
+[14:50:38]     rebuilding libtasn1-6@4.20.0-2+deb13u1.c.json (index schema changed)
+[14:50:39]     indexed libtasn1-6 4.20.0: 0 defs, 104 macros, 1/1 parsed
+[14:50:39]     rebuilding libtasn1-6@4.21.0-2.c.json (index schema changed)
+[14:50:39]     indexed libtasn1-6 4.21.0: 0 defs, 104 macros, 1/1 parsed
+[14:50:39]     rebuilding libmnl@1.0.3-5.c.json (index schema changed)
+[14:50:39]     indexed libmnl 1.0.3: 0 defs, 8 macros, 1/1 parsed
+[14:50:39]     rebuilding libmnl@1.0.4-3.c.json (index schema changed)
+[14:50:39]     indexed libmnl 1.0.4: 0 defs, 8 macros, 1/1 parsed
+[14:50:39]     rebuilding libmnl@1.0.5-3.c.json (index schema changed)
+[14:50:39]     indexed libmnl 1.0.5: 0 defs, 9 macros, 1/1 parsed
+[14:50:39]     rebuilding cyrus-sasl2@2.1.27+dfsg-2.3.c.json (index schema changed)
+[14:50:40]     indexed cyrus-sasl2 2.1.27+dfsg: 0 defs, 163 macros, 7/7 parsed
+[14:50:40]     rebuilding cyrus-sasl2@2.1.27+dfsg2-3.c.json (index schema changed)
+[14:50:40]     indexed cyrus-sasl2 2.1.27+dfsg2: 0 defs, 163 macros, 7/7 parsed
+[14:50:40] [250/772] cyrus-sasl2@2.1.27+dfsg..2.1.27+dfsg2 bodies=0 macros=0
+[14:50:40]     rebuilding cyrus-sasl2@2.1.28+dfsg-11.c.json (index schema changed)
+[14:50:40]     indexed cyrus-sasl2 2.1.28+dfsg: 0 defs, 163 macros, 7/7 parsed
+[14:50:40]     rebuilding cyrus-sasl2@2.1.28+dfsg1-11.c.json (index schema changed)
+[14:50:40]     indexed cyrus-sasl2 2.1.28+dfsg1: 0 defs, 163 macros, 6/6 parsed
+[14:50:40]     rebuilding libxml2@2.14.1+dfsg-0exp1.c.json (index schema changed)
+[14:50:41]     indexed libxml2 2.14.1+dfsg: 0 defs, 173 macros, 46/46 parsed
+[14:50:41]     rebuilding libxml2@2.14.2+dfsg-0exp1.c.json (index schema changed)
+[14:50:42]     indexed libxml2 2.14.2+dfsg: 0 defs, 173 macros, 46/46 parsed
+[14:50:42]     rebuilding libxml2@2.14.3+dfsg-0exp3.c.json (index schema changed)
+[14:50:43]     indexed libxml2 2.14.3+dfsg: 0 defs, 173 macros, 46/46 parsed
+[14:50:43]     rebuilding libxml2@2.14.4+dfsg-0exp1.c.json (index schema changed)
+[14:50:44]     indexed libxml2 2.14.4+dfsg: 0 defs, 173 macros, 46/46 parsed
+[14:50:44]     rebuilding libxml2@2.14.5+dfsg-0.2.c.json (index schema changed)
+[14:50:45]     indexed libxml2 2.14.5+dfsg: 0 defs, 173 macros, 46/46 parsed
+[14:50:45]     rebuilding libxml2@2.14.6+dfsg-0.1.c.json (index schema changed)
+[14:50:46]     indexed libxml2 2.14.6+dfsg: 0 defs, 173 macros, 46/46 parsed
+[14:50:46]     rebuilding libxml2@2.15.0+dfsg-0.3.c.json (index schema changed)
+[14:50:47]     indexed libxml2 2.15.0+dfsg: 0 defs, 172 macros, 46/46 parsed
+[14:50:47]     rebuilding libxml2@2.15.1+dfsg-2.c.json (index schema changed)
+[14:50:48]     indexed libxml2 2.15.1+dfsg: 0 defs, 172 macros, 46/46 parsed
+[14:50:48]     rebuilding libxml2@2.15.2+dfsg-0.1.c.json (index schema changed)
+[14:50:49]     indexed libxml2 2.15.2+dfsg: 0 defs, 172 macros, 46/46 parsed
+[14:50:49]     rebuilding libxml2@2.15.3+dfsg-1.c.json (index schema changed)
+[14:50:50]     indexed libxml2 2.15.3+dfsg: 0 defs, 172 macros, 46/46 parsed
+[14:50:50]     rebuilding apparmor@3.0.12-1.c.json (index schema changed)
+[14:50:50]     indexed apparmor 3.0.12: 0 defs, 33 macros, 3/3 parsed
+[14:50:50]     rebuilding apparmor@3.0.13-2.c.json (index schema changed)
+[14:50:50]     indexed apparmor 3.0.13: 0 defs, 33 macros, 3/3 parsed
+[14:50:50]     rebuilding apparmor@3.1.7-4.c.json (index schema changed)
+[14:50:50]     indexed apparmor 3.1.7: 0 defs, 33 macros, 3/3 parsed
+[14:50:50]     rebuilding apparmor@4.1.0-1.c.json (index schema changed)
+[14:50:50]     indexed apparmor 4.1.0: 0 defs, 35 macros, 3/3 parsed
+[14:50:50]     rebuilding apparmor@4.1.3-1.c.json (index schema changed)
+[14:50:50]     indexed apparmor 4.1.3: 0 defs, 35 macros, 3/3 parsed
+[14:50:51]     rebuilding apparmor@4.1.6-3.c.json (index schema changed)
+[14:50:51]     indexed apparmor 4.1.6: 0 defs, 35 macros, 3/3 parsed
+[14:50:51]     rebuilding apparmor@4.1.7-6.c.json (index schema changed)
+[14:50:51]     indexed apparmor 4.1.7: 0 defs, 35 macros, 3/3 parsed
+[14:50:51]     rebuilding apparmor@4.1.8-2.c.json (index schema changed)
+[14:50:51]     indexed apparmor 4.1.8: 0 defs, 35 macros, 3/3 parsed
+[14:50:51]     rebuilding apparmor@5.0.1-1.c.json (index schema changed)
+[14:50:51]     indexed apparmor 5.0.1: 0 defs, 39 macros, 3/3 parsed
+[14:50:51]     rebuilding apparmor@5.0.2-4.c.json (index schema changed)
+[14:50:51]     indexed apparmor 5.0.2: 0 defs, 39 macros, 3/3 parsed
+[14:50:51]     rebuilding libseccomp@2.4.4-1.c.json (index schema changed)
+[14:50:51]     indexed libseccomp 2.4.4: 0 defs, 36 macros, 2/2 parsed
+[14:50:51]     rebuilding libseccomp@2.5.0-3.c.json (index schema changed)
+[14:50:52]     indexed libseccomp 2.5.0: 0 defs, 37 macros, 2/2 parsed
+[14:50:52]     rebuilding libseccomp@2.5.1-1+deb11u1.c.json (index schema changed)
+[14:50:52]     indexed libseccomp 2.5.1: 0 defs, 37 macros, 2/2 parsed
+[14:50:52]     rebuilding libseccomp@2.5.2-2.c.json (index schema changed)
+[14:50:52]     indexed libseccomp 2.5.2: 0 defs, 37 macros, 2/2 parsed
+[14:50:52]     rebuilding libseccomp@2.5.3-2.c.json (index schema changed)
+[14:50:52]     indexed libseccomp 2.5.3: 0 defs, 37 macros, 2/2 parsed
+[14:50:52] [275/772] libseccomp@2.5.2..2.5.3 bodies=0 macros=1
+[14:50:52]     rebuilding libseccomp@2.5.4-2.c.json (index schema changed)
+[14:50:52]     indexed libseccomp 2.5.4: 0 defs, 37 macros, 2/2 parsed
+[14:50:52]     rebuilding libseccomp@2.5.5-2.c.json (index schema changed)
+[14:50:52]     indexed libseccomp 2.5.5: 0 defs, 38 macros, 2/2 parsed
+[14:50:52]     rebuilding lz4@1.8.0-5.c.json (index schema changed)
+[14:50:52]     indexed lz4 1.8.0: 0 defs, 32 macros, 4/4 parsed
+[14:50:52]     rebuilding lz4@1.8.1.2-1.c.json (index schema changed)
+[14:50:53]     indexed lz4 1.8.1.2: 0 defs, 33 macros, 4/4 parsed
+[14:50:53]     rebuilding lz4@1.8.2-1.c.json (index schema changed)
+[14:50:53]     indexed lz4 1.8.2: 0 defs, 33 macros, 4/4 parsed
+[14:50:53]     rebuilding lz4@1.8.3-1+deb10u1.c.json (index schema changed)
+[14:50:53]     indexed lz4 1.8.3: 0 defs, 35 macros, 4/4 parsed
+[14:50:53]     rebuilding lz4@1.9.1-2.c.json (index schema changed)
+[14:50:53]     indexed lz4 1.9.1: 0 defs, 37 macros, 4/4 parsed
+[14:50:53]     rebuilding lz4@1.9.2-2.c.json (index schema changed)
+[14:50:53]     indexed lz4 1.9.2: 0 defs, 40 macros, 4/4 parsed
+[14:50:53]     rebuilding lz4@1.9.3-2.c.json (index schema changed)
+[14:50:53]     indexed lz4 1.9.3: 0 defs, 40 macros, 4/4 parsed
+[14:50:53]     rebuilding lz4@1.9.4-4.c.json (index schema changed)
+[14:50:54]     indexed lz4 1.9.4: 0 defs, 43 macros, 3/3 parsed
+[14:50:54]     rebuilding lz4@1.10.0-10.c.json (index schema changed)
+[14:50:54]     indexed lz4 1.10.0: 0 defs, 43 macros, 4/4 parsed
+[14:50:54]     rebuilding libidn2@2.0.4-2.2.c.json (index schema changed)
+[14:50:54]     indexed libidn2 2.0.4: 0 defs, 18 macros, 1/1 parsed
+[14:50:54]     rebuilding libidn2@2.0.5-1+deb10u1.c.json (index schema changed)
+[14:50:54]     indexed libidn2 2.0.5: 0 defs, 18 macros, 1/1 parsed
+[14:50:54]     rebuilding libidn2@2.2.0-2.c.json (index schema changed)
+[14:50:55]     indexed libidn2 2.2.0: 0 defs, 19 macros, 1/1 parsed
+[14:50:55]     rebuilding libidn2@2.3.0-5.c.json (index schema changed)
+[14:50:55]     indexed libidn2 2.3.0: 0 defs, 19 macros, 1/1 parsed
+[14:50:55]     rebuilding libidn2@2.3.1-1.c.json (index schema changed)
+[14:50:55]     indexed libidn2 2.3.1: 0 defs, 19 macros, 1/1 parsed
+[14:50:55]     rebuilding libidn2@2.3.2-2.c.json (index schema changed)
+[14:50:55]     indexed libidn2 2.3.2: 0 defs, 19 macros, 1/1 parsed
+[14:50:55]     rebuilding libidn2@2.3.4-1.c.json (index schema changed)
+[14:50:55]     indexed libidn2 2.3.4: 0 defs, 19 macros, 1/1 parsed
+[14:50:55]     rebuilding libidn2@2.3.7-2.c.json (index schema changed)
+[14:50:56]     indexed libidn2 2.3.7: 0 defs, 18 macros, 1/1 parsed
+[14:50:56]     rebuilding libidn2@2.3.8-5.c.json (index schema changed)
+[14:50:56]     indexed libidn2 2.3.8: 0 defs, 18 macros, 1/1 parsed
+[14:50:56]     rebuilding iptables@1.8.4-3.c.json (index schema changed)
+[14:50:56]     indexed iptables 1.8.4: 2 defs, 19 macros, 2/2 parsed
+[14:50:56]     rebuilding iptables@1.8.5-3.c.json (index schema changed)
+[14:50:56]     indexed iptables 1.8.5: 2 defs, 19 macros, 2/2 parsed
+[14:50:56]     rebuilding iptables@1.8.6-1.c.json (index schema changed)
+[14:50:56]     indexed iptables 1.8.6: 2 defs, 19 macros, 2/2 parsed
+[14:50:56]     rebuilding iptables@1.8.7-1.c.json (index schema changed)
+[14:50:56]     indexed iptables 1.8.7: 2 defs, 19 macros, 2/2 parsed
+[14:50:56]     rebuilding iptables@1.8.8-1.c.json (index schema changed)
+[14:50:56]     indexed iptables 1.8.8: 7 defs, 22 macros, 2/2 parsed
+[14:50:56] [300/772] iptables@1.8.7..1.8.8 bodies=0 macros=0
+[14:50:56]     rebuilding iptables@1.8.9-2.c.json (index schema changed)
+[14:50:57]     indexed iptables 1.8.9: 2 defs, 22 macros, 2/2 parsed
+[14:50:57]     rebuilding iptables@1.8.10-4.c.json (index schema changed)
+[14:50:57]     indexed iptables 1.8.10: 2 defs, 22 macros, 2/2 parsed
+[14:50:57]     rebuilding iptables@1.8.11-4.c.json (index schema changed)
+[14:50:57]     indexed iptables 1.8.11: 2 defs, 22 macros, 2/2 parsed
+[14:50:57]     rebuilding iptables@1.8.12-2.c.json (index schema changed)
+[14:50:57]     indexed iptables 1.8.12: 2 defs, 22 macros, 2/2 parsed
+[14:50:57]     rebuilding iptables@1.8.13-1.c.json (index schema changed)
+[14:50:57]     indexed iptables 1.8.13: 2 defs, 22 macros, 2/2 parsed
+[14:50:57]     rebuilding nghttp2@1.59.0-1.c.json (index schema changed)
+[14:50:57]     indexed nghttp2 1.59.0: 0 defs, 24 macros, 2/2 parsed
+[14:50:57]     rebuilding nghttp2@1.60.0-1.c.json (index schema changed)
+[14:50:57]     indexed nghttp2 1.60.0: 0 defs, 24 macros, 2/2 parsed
+[14:50:58]     rebuilding nghttp2@1.61.0-1.c.json (index schema changed)
+[14:50:58]     indexed nghttp2 1.61.0: 0 defs, 24 macros, 2/2 parsed
+[14:50:58]     rebuilding nghttp2@1.62.1-2.c.json (index schema changed)
+[14:50:58]     indexed nghttp2 1.62.1: 0 defs, 24 macros, 2/2 parsed
+[14:50:58]     rebuilding nghttp2@1.63.0-1.c.json (index schema changed)
+[14:50:58]     indexed nghttp2 1.63.0: 0 defs, 24 macros, 2/2 parsed
+[14:50:58]     rebuilding nghttp2@1.64.0-1.1+deb13u1.c.json (index schema changed)
+[14:50:58]     indexed nghttp2 1.64.0: 0 defs, 24 macros, 2/2 parsed
+[14:50:58]     rebuilding nghttp2@1.68.0-2.c.json (index schema changed)
+[14:50:58]     indexed nghttp2 1.68.0: 0 defs, 24 macros, 2/2 parsed
+[14:50:58]     rebuilding nghttp2@1.68.1-1.c.json (index schema changed)
+[14:50:58]     indexed nghttp2 1.68.1: 0 defs, 24 macros, 2/2 parsed
+[14:50:58]     rebuilding nghttp2@1.69.0-1.c.json (index schema changed)
+[14:50:59]     indexed nghttp2 1.69.0: 0 defs, 24 macros, 2/2 parsed
+[14:50:59]     rebuilding nghttp2@1.70.0-1.c.json (index schema changed)
+[14:50:59]     indexed nghttp2 1.70.0: 0 defs, 24 macros, 2/2 parsed
+[14:50:59]     rebuilding rtmpdump@2.4+20151223.gitfa8646d-1.c.json (index schema changed)
+[14:50:59]     indexed rtmpdump 2.4+20151223.gitfa8646d: 0 defs, 57 macros, 4/4 parsed
+[14:50:59]     rebuilding rtmpdump@2.4+20151223.gitfa8646d.1-3.c.json (index schema changed)
+[14:50:59]     indexed rtmpdump 2.4+20151223.gitfa8646d.1: 0 defs, 57 macros, 4/4 parsed
+[14:50:59]     rebuilding rtmpdump@2.6-1.c.json (index schema changed)
+[14:50:59]     indexed rtmpdump 2.6: 0 defs, 57 macros, 4/4 parsed
+[14:50:59]     rebuilding pcre2@10.36-2+deb11u1.c.json (index schema changed)
+[14:50:59]     indexed pcre2 10.36: 0 defs, 429 macros, 2/2 parsed
+[14:50:59]     rebuilding pcre2@10.39-4.c.json (index schema changed)
+[14:51:00]     indexed pcre2 10.39: 0 defs, 431 macros, 2/2 parsed
+[14:51:00]     rebuilding pcre2@10.40-3.c.json (index schema changed)
+[14:51:00]     indexed pcre2 10.40: 0 defs, 431 macros, 2/2 parsed
+[14:51:00]     rebuilding pcre2@10.42-4.c.json (index schema changed)
+[14:51:00]     indexed pcre2 10.42: 0 defs, 431 macros, 2/2 parsed
+[14:51:00]     rebuilding pcre2@10.43-1.c.json (index schema changed)
+[14:51:00]     indexed pcre2 10.43: 0 defs, 440 macros, 2/2 parsed
+[14:51:00]     rebuilding pcre2@10.44-5.c.json (index schema changed)
+[14:51:01]     indexed pcre2 10.44: 0 defs, 441 macros, 2/2 parsed
+[14:51:01]     rebuilding pcre2@10.45-1.c.json (index schema changed)
+[14:51:01]     indexed pcre2 10.45: 0 defs, 480 macros, 2/2 parsed
+[14:51:01]     rebuilding pcre2@10.46-1.c.json (index schema changed)
+[14:51:01]     indexed pcre2 10.46: 0 defs, 480 macros, 2/2 parsed
+[14:51:01]     rebuilding pcre2@10.47-2.c.json (index schema changed)
+[14:51:01]     indexed pcre2 10.47: 0 defs, 491 macros, 2/2 parsed
+[14:51:01]     rebuilding pcre2@10.48-2.c.json (index schema changed)
+[14:51:02]     indexed pcre2 10.48: 0 defs, 492 macros, 2/2 parsed
+[14:51:02] [325/772] pcre2@10.47..10.48 bodies=0 macros=2
+[14:51:02]     rebuilding libgpg-error@1.49-2.c.json (index schema changed)
+[14:51:02]     indexed libgpg-error 1.49: 18 defs, 80 macros, 2/2 parsed
+[14:51:02]     rebuilding libgpg-error@1.50-4.c.json (index schema changed)
+[14:51:02]     indexed libgpg-error 1.50: 18 defs, 90 macros, 2/2 parsed
+[14:51:02]     rebuilding libgpg-error@1.51-4.c.json (index schema changed)
+[14:51:03]     indexed libgpg-error 1.51: 18 defs, 92 macros, 2/2 parsed
+[14:51:03]     rebuilding libgpg-error@1.53-1.c.json (index schema changed)
+[14:51:03]     indexed libgpg-error 1.53: 20 defs, 104 macros, 2/2 parsed
+[14:51:03]     rebuilding libgpg-error@1.54-1.c.json (index schema changed)
+[14:51:04]     indexed libgpg-error 1.54: 20 defs, 104 macros, 2/2 parsed
+[14:51:04]     rebuilding libgpg-error@1.55-2.c.json (index schema changed)
+[14:51:04]     indexed libgpg-error 1.55: 20 defs, 104 macros, 2/2 parsed
+[14:51:04]     rebuilding libgpg-error@1.56-2.c.json (index schema changed)
+[14:51:05]     indexed libgpg-error 1.56: 20 defs, 106 macros, 2/2 parsed
+[14:51:05]     rebuilding libgpg-error@1.58-2.c.json (index schema changed)
+[14:51:05]     indexed libgpg-error 1.58: 20 defs, 112 macros, 2/2 parsed
+[14:51:05]     rebuilding libgpg-error@1.59-4.c.json (index schema changed)
+[14:51:05]     indexed libgpg-error 1.59: 20 defs, 112 macros, 2/2 parsed
+[14:51:05]     rebuilding libgpg-error@1.61-5.c.json (index schema changed)
+[14:51:06]     indexed libgpg-error 1.61: 20 defs, 112 macros, 2/2 parsed
+[14:51:06]     rebuilding libzstd@1.4.5+dfsg-4.c.json (index schema changed)
+[14:51:06]     indexed libzstd 1.4.5+dfsg: 0 defs, 21 macros, 4/4 parsed
+[14:51:06]     rebuilding libzstd@1.4.8+dfsg-3.c.json (index schema changed)
+[14:51:06]     indexed libzstd 1.4.8+dfsg: 0 defs, 21 macros, 3/3 parsed
+[14:51:06]     rebuilding libzstd@1.4.9+dfsg-1.c.json (index schema changed)
+[14:51:06]     indexed libzstd 1.4.9+dfsg: 0 defs, 21 macros, 3/3 parsed
+[14:51:06]     rebuilding libzstd@1.4.10+dfsg-1.c.json (index schema changed)
+[14:51:06]     indexed libzstd 1.4.10+dfsg: 0 defs, 21 macros, 3/3 parsed
+[14:51:07]     rebuilding libzstd@1.5.2+dfsg-1.c.json (index schema changed)
+[14:51:07]     indexed libzstd 1.5.2+dfsg: 0 defs, 22 macros, 3/3 parsed
+[14:51:07]     rebuilding libzstd@1.5.2+dfsg2-3.c.json (index schema changed)
+[14:51:07]     indexed libzstd 1.5.2+dfsg2: 0 defs, 22 macros, 3/3 parsed
+[14:51:07]     rebuilding libzstd@1.5.4+dfsg2-5.c.json (index schema changed)
+[14:51:07]     indexed libzstd 1.5.4+dfsg2: 0 defs, 25 macros, 3/3 parsed
+[14:51:07]     rebuilding libzstd@1.5.5+dfsg2-2.c.json (index schema changed)
+[14:51:07]     indexed libzstd 1.5.5+dfsg2: 0 defs, 25 macros, 3/3 parsed
+[14:51:07]     rebuilding libzstd@1.5.6+dfsg-2.c.json (index schema changed)
+[14:51:07]     indexed libzstd 1.5.6+dfsg: 0 defs, 25 macros, 3/3 parsed
+[14:51:07]     rebuilding libzstd@1.5.7+dfsg-4.c.json (index schema changed)
+[14:51:08]     indexed libzstd 1.5.7+dfsg: 0 defs, 25 macros, 3/3 parsed
+[14:51:08]     rebuilding ncurses@6.4+20240113-1.c.json (index schema changed)
+[14:51:08]     indexed ncurses 6.4+20240113: 531 defs, 2748 macros, 36/36 parsed
+[14:51:09]     rebuilding ncurses@6.4+20240414-1.c.json (index schema changed)
+[14:51:09]     indexed ncurses 6.4+20240414: 531 defs, 2752 macros, 36/36 parsed
+[14:51:09]     rebuilding ncurses@6.5-2.c.json (index schema changed)
+[14:51:10]     indexed ncurses 6.5: 531 defs, 2752 macros, 36/36 parsed
+[14:51:10]     rebuilding ncurses@6.5+20250125-2.c.json (index schema changed)
+[14:51:11]     indexed ncurses 6.5+20250125: 531 defs, 2752 macros, 36/36 parsed
+[14:51:11]     rebuilding ncurses@6.5+20250216-2.c.json (index schema changed)
+[14:51:12]     indexed ncurses 6.5+20250216: 531 defs, 2756 macros, 36/36 parsed
+[14:51:13]     rebuilding ncurses@6.5+20251115-2.c.json (index schema changed)
+[14:51:14]     indexed ncurses 6.5+20251115: 531 defs, 2752 macros, 36/36 parsed
+[14:51:14]     rebuilding ncurses@6.5+20251122-1.c.json (index schema changed)
+[14:51:15]     indexed ncurses 6.5+20251122: 531 defs, 2752 macros, 36/36 parsed
+[14:51:15]     rebuilding ncurses@6.5+20251123-1.c.json (index schema changed)
+[14:51:16]     indexed ncurses 6.5+20251123: 531 defs, 2752 macros, 36/36 parsed
+[14:51:16] [350/772] ncurses@6.5+20251122..6.5+20251123 bodies=0 macros=15
+[14:51:16]     rebuilding ncurses@6.6+20251231-1.c.json (index schema changed)
+[14:51:17]     indexed ncurses 6.6+20251231: 531 defs, 2752 macros, 36/36 parsed
+[14:51:17]     rebuilding ncurses@6.6+20260608-2.c.json (index schema changed)
+[14:51:18]     indexed ncurses 6.6+20260608: 531 defs, 2752 macros, 36/36 parsed
+[14:51:18]     rebuilding libpipeline@1.4.2-1.c.json (index schema changed)
+[14:51:18]     indexed libpipeline 1.4.2: 0 defs, 4 macros, 1/1 parsed
+[14:51:18]     rebuilding libpipeline@1.5.0-2.c.json (index schema changed)
+[14:51:18]     indexed libpipeline 1.5.0: 0 defs, 4 macros, 1/1 parsed
+[14:51:18]     rebuilding libpipeline@1.5.1-3.c.json (index schema changed)
+[14:51:18]     indexed libpipeline 1.5.1: 0 defs, 4 macros, 1/1 parsed
+[14:51:18]     rebuilding libpipeline@1.5.2-2.c.json (index schema changed)
+[14:51:18]     indexed libpipeline 1.5.2: 0 defs, 4 macros, 1/1 parsed
+[14:51:18]     rebuilding libpipeline@1.5.3-1.c.json (index schema changed)
+[14:51:19]     indexed libpipeline 1.5.3: 0 defs, 4 macros, 1/1 parsed
+[14:51:19]     rebuilding libpipeline@1.5.4-2.c.json (index schema changed)
+[14:51:19]     indexed libpipeline 1.5.4: 0 defs, 4 macros, 1/1 parsed
+[14:51:19]     rebuilding libpipeline@1.5.5-1.c.json (index schema changed)
+[14:51:19]     indexed libpipeline 1.5.5: 0 defs, 4 macros, 1/1 parsed
+[14:51:19]     rebuilding libpipeline@1.5.6-3.c.json (index schema changed)
+[14:51:19]     indexed libpipeline 1.5.6: 0 defs, 4 macros, 1/1 parsed
+[14:51:19]     rebuilding libpipeline@1.5.7-2.c.json (index schema changed)
+[14:51:19]     indexed libpipeline 1.5.7: 0 defs, 4 macros, 1/1 parsed
+[14:51:19]     rebuilding libpipeline@1.5.8-3.c.json (index schema changed)
+[14:51:19]     indexed libpipeline 1.5.8: 0 defs, 4 macros, 1/1 parsed
+[14:51:19]     rebuilding libnftnl@1.2.3-1.c.json (index schema changed)
+[14:51:20]     indexed libnftnl 1.2.3: 0 defs, 27 macros, 13/13 parsed
+[14:51:20]     rebuilding libnftnl@1.2.4-2.c.json (index schema changed)
+[14:51:20]     indexed libnftnl 1.2.4: 0 defs, 27 macros, 13/13 parsed
+[14:51:20]     rebuilding libnftnl@1.2.5-1.c.json (index schema changed)
+[14:51:20]     indexed libnftnl 1.2.5: 0 defs, 27 macros, 13/13 parsed
+[14:51:20]     rebuilding libnftnl@1.2.6-2.c.json (index schema changed)
+[14:51:20]     indexed libnftnl 1.2.6: 0 defs, 27 macros, 13/13 parsed
+[14:51:20]     rebuilding libnftnl@1.2.7-1.c.json (index schema changed)
+[14:51:21]     indexed libnftnl 1.2.7: 0 defs, 27 macros, 13/13 parsed
+[14:51:21]     rebuilding libnftnl@1.2.8-1.c.json (index schema changed)
+[14:51:21]     indexed libnftnl 1.2.8: 0 defs, 27 macros, 13/13 parsed
+[14:51:21]     rebuilding libnftnl@1.2.9-1.c.json (index schema changed)
+[14:51:21]     indexed libnftnl 1.2.9: 0 defs, 27 macros, 13/13 parsed
+[14:51:21]     rebuilding libnftnl@1.3.0-1.c.json (index schema changed)
+[14:51:21]     indexed libnftnl 1.3.0: 0 defs, 27 macros, 13/13 parsed
+[14:51:21]     rebuilding libnftnl@1.3.1-1.c.json (index schema changed)
+[14:51:21]     indexed libnftnl 1.3.1: 0 defs, 30 macros, 13/13 parsed
+[14:51:22]     rebuilding libnftnl@1.3.2-1.c.json (index schema changed)
+[14:51:22]     indexed libnftnl 1.3.2: 0 defs, 30 macros, 13/13 parsed
+[14:51:22]     rebuilding libusb-1.0@2%1.0.21-2.c.json (index schema changed)
+[14:51:22]     indexed libusb-1.0 1.0.21: 14 defs, 24 macros, 1/1 parsed
+[14:51:22]     rebuilding libusb-1.0@2%1.0.22-2.c.json (index schema changed)
+[14:51:22]     indexed libusb-1.0 1.0.22: 14 defs, 24 macros, 1/1 parsed
+[14:51:22]     rebuilding libusb-1.0@2%1.0.23-3.c.json (index schema changed)
+[14:51:22]     indexed libusb-1.0 1.0.23: 14 defs, 24 macros, 1/1 parsed
+[14:51:22]     rebuilding libusb-1.0@2%1.0.24-3.c.json (index schema changed)
+[14:51:22]     indexed libusb-1.0 1.0.24: 14 defs, 26 macros, 1/1 parsed
+[14:51:22]     rebuilding libusb-1.0@2%1.0.25-1.c.json (index schema changed)
+[14:51:23]     indexed libusb-1.0 1.0.25: 14 defs, 27 macros, 1/1 parsed
+[14:51:23]     rebuilding libusb-1.0@2%1.0.26-1.c.json (index schema changed)
+[14:51:23]     indexed libusb-1.0 1.0.26: 14 defs, 27 macros, 1/1 parsed
+[14:51:23] [375/772] libusb-1.0@1.0.25..1.0.26 bodies=0 macros=0
+[14:51:23]     rebuilding libusb-1.0@2%1.0.27-2.c.json (index schema changed)
+[14:51:23]     indexed libusb-1.0 1.0.27: 14 defs, 28 macros, 1/1 parsed
+[14:51:23]     rebuilding libusb-1.0@2%1.0.28-1.c.json (index schema changed)
+[14:51:23]     indexed libusb-1.0 1.0.28: 14 defs, 30 macros, 1/1 parsed
+[14:51:23]     rebuilding libusb-1.0@2%1.0.29-2.c.json (index schema changed)
+[14:51:23]     indexed libusb-1.0 1.0.29: 14 defs, 30 macros, 1/1 parsed
+[14:51:23]     rebuilding libusb-1.0@2%1.0.30-1.c.json (index schema changed)
+[14:51:23]     indexed libusb-1.0 1.0.30: 14 defs, 31 macros, 1/1 parsed
+[14:51:23]     rebuilding jansson@2.7-5.c.json (index schema changed)
+[14:51:23]     indexed jansson 2.7: 8 defs, 27 macros, 2/2 parsed
+[14:51:23]     rebuilding jansson@2.9-1.c.json (index schema changed)
+[14:51:24]     indexed jansson 2.9: 9 defs, 28 macros, 2/2 parsed
+[14:51:24]     rebuilding jansson@2.10-1.c.json (index schema changed)
+[14:51:24]     indexed jansson 2.10: 9 defs, 29 macros, 2/2 parsed
+[14:51:24]     rebuilding jansson@2.11-1.c.json (index schema changed)
+[14:51:24]     indexed jansson 2.11: 10 defs, 32 macros, 2/2 parsed
+[14:51:24]     rebuilding jansson@2.12-1.c.json (index schema changed)
+[14:51:24]     indexed jansson 2.12: 10 defs, 32 macros, 2/2 parsed
+[14:51:24]     rebuilding jansson@2.13.1-1.1.c.json (index schema changed)
+[14:51:24]     indexed jansson 2.13.1: 13 defs, 32 macros, 2/2 parsed
+[14:51:24]     rebuilding jansson@2.14-2.c.json (index schema changed)
+[14:51:24]     indexed jansson 2.14: 15 defs, 32 macros, 2/2 parsed
+[14:51:24]     rebuilding jansson@2.15.0-1.c.json (index schema changed)
+[14:51:25]     indexed jansson 2.15.0: 15 defs, 31 macros, 2/2 parsed
+[14:51:25]     rebuilding jansson@2.15.1-1.c.json (index schema changed)
+[14:51:25]     indexed jansson 2.15.1: 15 defs, 31 macros, 2/2 parsed
+[14:51:25]     rebuilding libgcrypt20@1.10.2-3.c.json (index schema changed)
+[14:51:25]     indexed libgcrypt20 1.10.2: 0 defs, 37 macros, 1/1 parsed
+[14:51:25]     rebuilding libgcrypt20@1.10.3-3.c.json (index schema changed)
+[14:51:26]     indexed libgcrypt20 1.10.3: 0 defs, 37 macros, 1/1 parsed
+[14:51:26]     rebuilding libgcrypt20@1.11.0-7+deb13u1.c.json (index schema changed)
+[14:51:27]     indexed libgcrypt20 1.11.0: 0 defs, 83 macros, 1/1 parsed
+[14:51:27]     rebuilding libgcrypt20@1.11.0+git20250114-1.c.json (index schema changed)
+[14:51:28]     indexed libgcrypt20 1.11.0+git20250114: 0 defs, 102 macros, 1/1 parsed
+[14:51:28]     rebuilding libgcrypt20@1.11.1-1.c.json (index schema changed)
+[14:51:29]     indexed libgcrypt20 1.11.1: 0 defs, 83 macros, 1/1 parsed
+[14:51:29]     rebuilding libgcrypt20@1.11.2-3.c.json (index schema changed)
+[14:51:30]     indexed libgcrypt20 1.11.2: 0 defs, 102 macros, 1/1 parsed
+[14:51:30]     rebuilding libgcrypt20@1.12.0-2.c.json (index schema changed)
+[14:51:31]     indexed libgcrypt20 1.12.0: 0 defs, 121 macros, 1/1 parsed
+[14:51:31]     rebuilding libgcrypt20@1.12.1-2.c.json (index schema changed)
+[14:51:32]     indexed libgcrypt20 1.12.1: 0 defs, 121 macros, 1/1 parsed
+[14:51:32]     rebuilding libgcrypt20@1.12.2-1.c.json (index schema changed)
+[14:51:32]     indexed libgcrypt20 1.12.2: 0 defs, 121 macros, 1/1 parsed
+[14:51:32]     rebuilding libgcrypt20@1.12.3-1.c.json (index schema changed)
+[14:51:33]     indexed libgcrypt20 1.12.3: 0 defs, 131 macros, 1/1 parsed
+[14:51:33]     rebuilding brotli@1.0.0-1~exp0.c.json (index schema changed)
+[14:51:33]     indexed brotli 1.0.0: 0 defs, 27 macros, 4/4 parsed
+[14:51:33]     rebuilding brotli@1.0.2-3.c.json (index schema changed)
+[14:51:34]     indexed brotli 1.0.2: 0 defs, 27 macros, 4/4 parsed
+[14:51:34]     rebuilding brotli@1.0.3-1.c.json (index schema changed)
+[14:51:34]     indexed brotli 1.0.3: 0 defs, 22 macros, 4/4 parsed
+[14:51:34]     rebuilding brotli@1.0.4-1.c.json (index schema changed)
+[14:51:34]     indexed brotli 1.0.4: 0 defs, 22 macros, 4/4 parsed
+[14:51:34]     rebuilding brotli@1.0.5-2.c.json (index schema changed)
+[14:51:34]     indexed brotli 1.0.5: 0 defs, 20 macros, 4/4 parsed
+[14:51:34] [400/772] brotli@1.0.4..1.0.5 bodies=0 macros=0
+[14:51:34]     rebuilding brotli@1.0.6-1.c.json (index schema changed)
+[14:51:34]     indexed brotli 1.0.6: 0 defs, 20 macros, 4/4 parsed
+[14:51:34]     rebuilding brotli@1.0.7-7.c.json (index schema changed)
+[14:51:34]     indexed brotli 1.0.7: 0 defs, 20 macros, 4/4 parsed
+[14:51:34]     rebuilding brotli@1.0.9-2.c.json (index schema changed)
+[14:51:34]     indexed brotli 1.0.9: 0 defs, 21 macros, 4/4 parsed
+[14:51:35]     rebuilding brotli@1.1.0-2.c.json (index schema changed)
+[14:51:35]     indexed brotli 1.1.0: 0 defs, 26 macros, 5/5 parsed
+[14:51:35]     rebuilding brotli@1.2.0-4.c.json (index schema changed)
+[14:51:35]     indexed brotli 1.2.0: 0 defs, 26 macros, 5/5 parsed
+[14:51:35]     rebuilding protobuf-c@1.3.1-1.c.json (index schema changed)
+[14:51:35]     indexed protobuf-c 1.3.1: 0 defs, 14 macros, 2/2 parsed
+[14:51:35]     rebuilding protobuf-c@1.3.2-1.c.json (index schema changed)
+[14:51:35]     indexed protobuf-c 1.3.2: 0 defs, 14 macros, 2/2 parsed
+[14:51:35]     rebuilding protobuf-c@1.3.3-1.c.json (index schema changed)
+[14:51:35]     indexed protobuf-c 1.3.3: 0 defs, 14 macros, 2/2 parsed
+[14:51:35]     rebuilding protobuf-c@1.4.1-1.c.json (index schema changed)
+[14:51:35]     indexed protobuf-c 1.4.1: 0 defs, 14 macros, 2/2 parsed
+[14:51:35]     rebuilding protobuf-c@1.5.1-1.c.json (index schema changed)
+[14:51:36]     indexed protobuf-c 1.5.1: 0 defs, 14 macros, 2/2 parsed
+[14:51:36]     rebuilding lmdb@0.9.18-5.c.json (index schema changed)
+[14:51:36]     indexed lmdb 0.9.18: 0 defs, 54 macros, 1/1 parsed
+[14:51:36]     rebuilding lmdb@0.9.19-1.c.json (index schema changed)
+[14:51:36]     indexed lmdb 0.9.19: 0 defs, 54 macros, 1/1 parsed
+[14:51:36]     rebuilding lmdb@0.9.21-1.c.json (index schema changed)
+[14:51:36]     indexed lmdb 0.9.21: 0 defs, 54 macros, 1/1 parsed
+[14:51:36]     rebuilding lmdb@0.9.22-1.c.json (index schema changed)
+[14:51:36]     indexed lmdb 0.9.22: 0 defs, 54 macros, 1/1 parsed
+[14:51:36]     rebuilding lmdb@0.9.24-1.c.json (index schema changed)
+[14:51:36]     indexed lmdb 0.9.24: 0 defs, 54 macros, 1/1 parsed
+[14:51:36]     rebuilding lmdb@0.9.31-1.c.json (index schema changed)
+[14:51:36]     indexed lmdb 0.9.31: 0 defs, 54 macros, 1/1 parsed
+[14:51:37]     rebuilding lmdb@0.9.35-1.c.json (index schema changed)
+[14:51:37]     indexed lmdb 0.9.35: 0 defs, 54 macros, 1/1 parsed
+[14:51:37]     rebuilding xxhash@0.6.5-3.c.json (index schema changed)
+[14:51:37]     indexed xxhash 0.6.5: 0 defs, 5 macros, 1/1 parsed
+[14:51:37]     rebuilding xxhash@0.7.0-2.c.json (index schema changed)
+[14:51:37]     indexed xxhash 0.7.0: 0 defs, 5 macros, 1/1 parsed
+[14:51:37]     rebuilding xxhash@0.7.1-1.c.json (index schema changed)
+[14:51:37]     indexed xxhash 0.7.1: 0 defs, 5 macros, 1/1 parsed
+[14:51:37]     rebuilding xxhash@0.7.2-1.c.json (index schema changed)
+[14:51:37]     indexed xxhash 0.7.2: 0 defs, 5 macros, 1/1 parsed
+[14:51:37]     rebuilding xxhash@0.7.3-2.c.json (index schema changed)
+[14:51:37]     indexed xxhash 0.7.3: 104 defs, 104 macros, 2/2 parsed
+[14:51:37]     rebuilding xxhash@0.7.4-1.c.json (index schema changed)
+[14:51:38]     indexed xxhash 0.7.4: 115 defs, 110 macros, 2/2 parsed
+[14:51:38]     rebuilding xxhash@0.8.0-2.c.json (index schema changed)
+[14:51:38]     indexed xxhash 0.8.0: 115 defs, 119 macros, 3/3 parsed
+[14:51:38]     rebuilding xxhash@0.8.1-1.c.json (index schema changed)
+[14:51:38]     indexed xxhash 0.8.1: 120 defs, 130 macros, 3/3 parsed
+[14:51:38]     rebuilding xxhash@0.8.2-2.c.json (index schema changed)
+[14:51:38]     indexed xxhash 0.8.2: 124 defs, 142 macros, 3/3 parsed
+[14:51:38]     rebuilding xxhash@0.8.3-2.c.json (index schema changed)
+[14:51:38]     indexed xxhash 0.8.3: 132 defs, 145 macros, 3/3 parsed
+[14:51:39]     rebuilding libxcrypt@1%4.4.26-1.c.json (index schema changed)
+[14:51:39]     indexed libxcrypt 4.4.26: 0 defs, 18 macros, 1/1 parsed
+[14:51:39]     rebuilding libxcrypt@1%4.4.27-1.1.c.json (index schema changed)
+[14:51:39]     indexed libxcrypt 4.4.27: 0 defs, 18 macros, 1/1 parsed
+[14:51:39] [425/772] libxcrypt@4.4.26..4.4.27 bodies=0 macros=1
+[14:51:39]     rebuilding libxcrypt@1%4.4.28-2.c.json (index schema changed)
+[14:51:39]     indexed libxcrypt 4.4.28: 0 defs, 18 macros, 1/1 parsed
+[14:51:39]     rebuilding libxcrypt@1%4.4.30-1.c.json (index schema changed)
+[14:51:39]     indexed libxcrypt 4.4.30: 0 defs, 18 macros, 1/1 parsed
+[14:51:39]     rebuilding libxcrypt@1%4.4.33-2.c.json (index schema changed)
+[14:51:39]     indexed libxcrypt 4.4.33: 0 defs, 18 macros, 1/1 parsed
+[14:51:39]     rebuilding libxcrypt@1%4.4.35-1.c.json (index schema changed)
+[14:51:39]     indexed libxcrypt 4.4.35: 0 defs, 18 macros, 1/1 parsed
+[14:51:39]     rebuilding libxcrypt@1%4.4.36-5.c.json (index schema changed)
+[14:51:40]     indexed libxcrypt 4.4.36: 0 defs, 18 macros, 1/1 parsed
+[14:51:40]     rebuilding libxcrypt@1%4.4.38-1.c.json (index schema changed)
+[14:51:40]     indexed libxcrypt 4.4.38: 0 defs, 18 macros, 1/1 parsed
+[14:51:40]     rebuilding libxcrypt@1%4.5.1-1.c.json (index schema changed)
+[14:51:40]     indexed libxcrypt 4.5.1: 0 defs, 18 macros, 1/1 parsed
+[14:51:40]     rebuilding libxcrypt@1%4.5.2+20251210-1.c.json (index schema changed)
+[14:51:40]     indexed libxcrypt 4.5.2+20251210: 0 defs, 18 macros, 1/1 parsed
+[14:51:40]     rebuilding uchardet@0.0.6-3.c.json (index schema changed)
+[14:51:40]     indexed uchardet 0.0.6: 0 defs, 0 macros, 1/1 parsed
+[14:51:40]     rebuilding uchardet@0.0.7-1.c.json (index schema changed)
+[14:51:40]     indexed uchardet 0.0.7: 0 defs, 0 macros, 1/1 parsed
+[14:51:40]     rebuilding uchardet@0.0.8-2.c.json (index schema changed)
+[14:51:40]     indexed uchardet 0.0.8: 0 defs, 0 macros, 1/1 parsed
+[14:51:40]     rebuilding libmd@0.0.0-3.c.json (index schema changed)
+[14:51:41]     indexed libmd 0.0.0: 0 defs, 56 macros, 10/10 parsed
+[14:51:41]     rebuilding libmd@1.0.0-1.c.json (index schema changed)
+[14:51:41]     indexed libmd 1.0.0: 0 defs, 56 macros, 10/10 parsed
+[14:51:41]     rebuilding libmd@1.0.1-3.c.json (index schema changed)
+[14:51:41]     indexed libmd 1.0.1: 0 defs, 60 macros, 10/10 parsed
+[14:51:41]     rebuilding libmd@1.0.3-3.c.json (index schema changed)
+[14:51:41]     indexed libmd 1.0.3: 0 defs, 60 macros, 10/10 parsed
+[14:51:41]     rebuilding libmd@1.0.4-2.c.json (index schema changed)
+[14:51:42]     indexed libmd 1.0.4: 0 defs, 60 macros, 10/10 parsed
+[14:51:42]     rebuilding libmd@1.1.0-2.c.json (index schema changed)
+[14:51:42]     indexed libmd 1.1.0: 0 defs, 67 macros, 10/10 parsed
+[14:51:42]     rebuilding libmd@1.2.0-2.c.json (index schema changed)
+[14:51:42]     indexed libmd 1.2.0: 0 defs, 71 macros, 11/11 parsed
+[14:51:42]     rebuilding libfido2@1.9.0-2.c.json (index schema changed)
+[14:51:43]     indexed libfido2 1.9.0: 0 defs, 140 macros, 10/10 parsed
+[14:51:43]     rebuilding libfido2@1.10.0-1.c.json (index schema changed)
+[14:51:43]     indexed libfido2 1.10.0: 0 defs, 140 macros, 10/10 parsed
+[14:51:43]     rebuilding libfido2@1.11.0-1.c.json (index schema changed)
+[14:51:44]     indexed libfido2 1.11.0: 0 defs, 140 macros, 10/10 parsed
+[14:51:44]     rebuilding libfido2@1.12.0-2.c.json (index schema changed)
+[14:51:44]     indexed libfido2 1.12.0: 0 defs, 155 macros, 11/11 parsed
+[14:51:44]     rebuilding libfido2@1.13.0-1.c.json (index schema changed)
+[14:51:45]     indexed libfido2 1.13.0: 0 defs, 155 macros, 11/11 parsed
+[14:51:45]     rebuilding libfido2@1.14.0-1.1~exp1.c.json (index schema changed)
+[14:51:46]     indexed libfido2 1.14.0: 0 defs, 155 macros, 11/11 parsed
+[14:51:46]     rebuilding libfido2@1.15.0-1.c.json (index schema changed)
+[14:51:46]     indexed libfido2 1.15.0: 0 defs, 157 macros, 11/11 parsed
+[14:51:46]     rebuilding libfido2@1.16.0-2.c.json (index schema changed)
+[14:51:47]     indexed libfido2 1.16.0: 0 defs, 160 macros, 11/11 parsed
+[14:51:47] [450/772] libfido2@1.15.0..1.16.0 bodies=0 macros=0
+[14:51:47]     rebuilding libfido2@1.17.0-2.c.json (index schema changed)
+[14:51:48]     indexed libfido2 1.17.0: 0 defs, 169 macros, 11/11 parsed
+[14:51:48]     rebuilding fstrm@0.4.0-1.c.json (index schema changed)
+[14:51:48]     indexed fstrm 0.4.0: 0 defs, 23 macros, 9/9 parsed
+[14:51:48]     rebuilding fstrm@0.6.0-1.c.json (index schema changed)
+[14:51:48]     indexed fstrm 0.6.0: 0 defs, 23 macros, 9/9 parsed
+[14:51:48]     rebuilding fstrm@0.6.1-1.c.json (index schema changed)
+[14:51:48]     indexed fstrm 0.6.1: 0 defs, 23 macros, 9/9 parsed
+[14:51:48]     rebuilding json-c@0.12-3.c.json (index schema changed)
+[14:51:48]     indexed json-c 0.12: 0 defs, 21 macros, 15/15 parsed
+[14:51:48]     rebuilding json-c@0.12.1-1.3.c.json (index schema changed)
+[14:51:48]     indexed json-c 0.12.1: 0 defs, 21 macros, 15/15 parsed
+[14:51:48]     rebuilding json-c@0.12.1+ds-2+deb10u1.c.json (index schema changed)
+[14:51:49]     indexed json-c 0.12.1+ds: 0 defs, 21 macros, 15/15 parsed
+[14:51:49]     rebuilding json-c@0.13.1+dfsg-9.c.json (index schema changed)
+[14:51:49]     indexed json-c 0.13.1+dfsg: 1 defs, 36 macros, 15/15 parsed
+[14:51:49]     rebuilding json-c@0.14+dfsg-1.c.json (index schema changed)
+[14:51:49]     indexed json-c 0.14+dfsg: 1 defs, 60 macros, 16/16 parsed
+[14:51:49]     rebuilding json-c@0.15-3.c.json (index schema changed)
+[14:51:49]     indexed json-c 0.15: 1 defs, 39 macros, 15/15 parsed
+[14:51:49]     rebuilding json-c@0.16-2.c.json (index schema changed)
+[14:51:49]     indexed json-c 0.16: 8 defs, 40 macros, 15/15 parsed
+[14:51:49]     rebuilding json-c@0.17-1.c.json (index schema changed)
+[14:51:50]     indexed json-c 0.17: 8 defs, 42 macros, 16/16 parsed
+[14:51:50]     rebuilding json-c@0.18+ds-3.c.json (index schema changed)
+[14:51:50]     indexed json-c 0.18+ds: 8 defs, 42 macros, 16/16 parsed
+[14:51:50]     rebuilding json-c@0.19+ds-1.c.json (index schema changed)
+[14:51:50]     indexed json-c 0.19+ds: 8 defs, 42 macros, 16/16 parsed
+[14:51:50]     rebuilding nftables@1.0.7-2.c.json (index schema changed)
+[14:51:50]     indexed nftables 1.0.7: 0 defs, 1 macros, 1/1 parsed
+[14:51:50]     rebuilding nftables@1.0.8-1.c.json (index schema changed)
+[14:51:50]     indexed nftables 1.0.8: 0 defs, 1 macros, 1/1 parsed
+[14:51:50]     rebuilding nftables@1.0.9-2.c.json (index schema changed)
+[14:51:51]     indexed nftables 1.0.9: 0 defs, 1 macros, 1/1 parsed
+[14:51:51]     rebuilding nftables@1.1.0-2.c.json (index schema changed)
+[14:51:51]     indexed nftables 1.1.0: 0 defs, 1 macros, 1/1 parsed
+[14:51:51]     rebuilding nftables@1.1.1-1.c.json (index schema changed)
+[14:51:51]     indexed nftables 1.1.1: 0 defs, 1 macros, 1/1 parsed
+[14:51:51]     rebuilding nftables@1.1.2-1.c.json (index schema changed)
+[14:51:51]     indexed nftables 1.1.2: 0 defs, 1 macros, 1/1 parsed
+[14:51:51]     rebuilding nftables@1.1.3-1.c.json (index schema changed)
+[14:51:51]     indexed nftables 1.1.3: 0 defs, 1 macros, 1/1 parsed
+[14:51:51]     rebuilding nftables@1.1.4-2.c.json (index schema changed)
+[14:51:51]     indexed nftables 1.1.4: 0 defs, 1 macros, 1/1 parsed
+[14:51:51]     rebuilding nftables@1.1.5-2.c.json (index schema changed)
+[14:51:51]     indexed nftables 1.1.5: 0 defs, 1 macros, 1/1 parsed
+[14:51:51]     rebuilding nftables@1.1.6-1.c.json (index schema changed)
+[14:51:52]     indexed nftables 1.1.6: 0 defs, 1 macros, 1/1 parsed
+[14:51:52]     rebuilding libmaxminddb@1.4.3-2.c.json (index schema changed)
+[14:51:52]     indexed libmaxminddb 1.4.3: 0 defs, 36 macros, 2/2 parsed
+[14:51:52]     rebuilding libmaxminddb@1.5.0-3.c.json (index schema changed)
+[14:51:52]     indexed libmaxminddb 1.5.0: 0 defs, 36 macros, 2/2 parsed
+[14:51:52]     rebuilding libmaxminddb@1.5.2-1.c.json (index schema changed)
+[14:51:52]     indexed libmaxminddb 1.5.2: 0 defs, 36 macros, 2/2 parsed
+[14:51:52]     rebuilding libmaxminddb@1.7.1-1.c.json (index schema changed)
+[14:51:52]     indexed libmaxminddb 1.7.1: 0 defs, 36 macros, 2/2 parsed
+[14:51:52]     rebuilding libmaxminddb@1.8.0-1.c.json (index schema changed)
+[14:51:52]     indexed libmaxminddb 1.8.0: 0 defs, 36 macros, 2/2 parsed
+[14:51:52] [475/772] libmaxminddb@1.7.1..1.8.0 bodies=0 macros=0
+[14:51:52]     rebuilding libmaxminddb@1.9.1-1.c.json (index schema changed)
+[14:51:53]     indexed libmaxminddb 1.9.1: 0 defs, 36 macros, 2/2 parsed
+[14:51:53]     rebuilding libmaxminddb@1.10.0-1.c.json (index schema changed)
+[14:51:53]     indexed libmaxminddb 1.10.0: 0 defs, 36 macros, 2/2 parsed
+[14:51:53]     rebuilding libmaxminddb@1.11.0-1.c.json (index schema changed)
+[14:51:53]     indexed libmaxminddb 1.11.0: 0 defs, 36 macros, 2/2 parsed
+[14:51:53]     rebuilding libmaxminddb@1.12.2-1.c.json (index schema changed)
+[14:51:53]     indexed libmaxminddb 1.12.2: 0 defs, 36 macros, 2/2 parsed
+[14:51:53]     rebuilding libmaxminddb@1.13.3-1.c.json (index schema changed)
+[14:51:53]     indexed libmaxminddb 1.13.3: 0 defs, 37 macros, 2/2 parsed
+[14:51:53]     rebuilding gpm@1.20.4-6.2.c.json (index schema changed)
+[14:51:53]     indexed gpm 1.20.4: 0 defs, 20 macros, 1/1 parsed
+[14:51:53]     rebuilding gpm@1.20.7-12.c.json (index schema changed)
+[14:51:53]     indexed gpm 1.20.7: 0 defs, 20 macros, 1/1 parsed
+[14:51:53]     rebuilding libksba@1.6.0-3.c.json (index schema changed)
+[14:51:54]     indexed libksba 1.6.0: 0 defs, 43 macros, 1/1 parsed
+[14:51:54]     rebuilding libksba@1.6.2-4.c.json (index schema changed)
+[14:51:54]     indexed libksba 1.6.2: 0 defs, 43 macros, 1/1 parsed
+[14:51:54]     rebuilding libksba@1.6.3-2.c.json (index schema changed)
+[14:51:55]     indexed libksba 1.6.3: 0 defs, 43 macros, 1/1 parsed
+[14:51:55]     rebuilding libksba@1.6.4-2.c.json (index schema changed)
+[14:51:55]     indexed libksba 1.6.4: 0 defs, 43 macros, 1/1 parsed
+[14:51:55]     rebuilding libksba@1.6.5-2.c.json (index schema changed)
+[14:51:55]     indexed libksba 1.6.5: 0 defs, 43 macros, 1/1 parsed
+[14:51:55]     rebuilding libksba@1.6.6-1.c.json (index schema changed)
+[14:51:56]     indexed libksba 1.6.6: 0 defs, 43 macros, 1/1 parsed
+[14:51:56]     rebuilding libksba@1.6.7-2.c.json (index schema changed)
+[14:51:56]     indexed libksba 1.6.7: 0 defs, 43 macros, 1/1 parsed
+[14:51:56]     rebuilding libksba@1.6.8-2.c.json (index schema changed)
+[14:51:56]     indexed libksba 1.6.8: 0 defs, 43 macros, 1/1 parsed
+[14:51:56]     rebuilding libksba@1.8.0-3.c.json (index schema changed)
+[14:51:57]     indexed libksba 1.8.0: 0 defs, 43 macros, 1/1 parsed
+[14:51:57]     rebuilding libksba@1.8.1-1.c.json (index schema changed)
+[14:51:57]     indexed libksba 1.8.1: 0 defs, 43 macros, 1/1 parsed
+[14:51:57] [500/772] libde265@1.0.12..1.0.13 bodies=0 macros=2
+[14:51:58]     rebuilding libheif@1.19.1-1.c.json (index schema changed)
+[14:51:58]     indexed libheif 1.19.1: 116 defs, 37 macros, 7/7 parsed
+[14:51:58]     rebuilding libheif@1.19.3-1.c.json (index schema changed)
+[14:51:59]     indexed libheif 1.19.3: 116 defs, 37 macros, 7/7 parsed
+[14:51:59]     rebuilding libheif@1.19.5-1.c.json (index schema changed)
+[14:51:59]     indexed libheif 1.19.5: 116 defs, 37 macros, 7/7 parsed
+[14:51:59]     rebuilding libheif@1.19.7-1.c.json (index schema changed)
+[14:52:00]     indexed libheif 1.19.7: 116 defs, 37 macros, 7/7 parsed
+[14:52:00]     rebuilding libheif@1.19.8-1+deb13u1.c.json (index schema changed)
+[14:52:00]     indexed libheif 1.19.8: 116 defs, 37 macros, 7/7 parsed
+[14:52:00]     rebuilding libheif@1.20.1-1.c.json (index schema changed)
+[14:52:01]     indexed libheif 1.20.1: 116 defs, 47 macros, 24/24 parsed
+[14:52:01]     rebuilding libheif@1.20.2-2.c.json (index schema changed)
+[14:52:02]     indexed libheif 1.20.2: 118 defs, 47 macros, 24/24 parsed
+[14:52:02] [525/772] libheif@1.20.1..1.20.2 bodies=0 macros=2
+[14:52:02]     rebuilding libheif@1.21.2-4.c.json (index schema changed)
+[14:52:02]     indexed libheif 1.21.2: 118 defs, 53 macros, 25/25 parsed
+[14:52:02]     rebuilding libheif@1.23.1-1.c.json (index schema changed)
+[14:52:03]     indexed libheif 1.23.1: 130 defs, 57 macros, 28/28 parsed
+[14:52:03]     rebuilding libheif@1.23.2-1.c.json (index schema changed)
+[14:52:04]     indexed libheif 1.23.2: 130 defs, 57 macros, 28/28 parsed
+[14:52:04]     rebuilding z3@4.4.1-1.c.json (index schema changed)
+[14:52:05]     indexed z3 4.4.1: 472 defs, 43 macros, 10/10 parsed
+[14:52:05]     rebuilding z3@4.8.4-1.c.json (index schema changed)
+[14:52:05]     indexed z3 4.8.4: 736 defs, 49 macros, 14/14 parsed
+[14:52:05]     rebuilding z3@4.8.7-4.c.json (index schema changed)
+[14:52:06]     indexed z3 4.8.7: 777 defs, 49 macros, 14/14 parsed
+[14:52:06]     rebuilding z3@4.8.8-1.c.json (index schema changed)
+[14:52:07]     indexed z3 4.8.8: 787 defs, 49 macros, 14/14 parsed
+[14:52:07]     rebuilding z3@4.8.9-1.c.json (index schema changed)
+[14:52:07]     indexed z3 4.8.9: 819 defs, 49 macros, 14/14 parsed
+[14:52:07]     rebuilding z3@4.8.10-1.c.json (index schema changed)
+[14:52:08]     indexed z3 4.8.10: 820 defs, 49 macros, 14/14 parsed
+[14:52:08]     rebuilding libyuv@0.0.1898.20241219-1.c.json (index schema changed)
+[14:52:08]     indexed libyuv 0.0.1898.20241219: 4 defs, 92 macros, 26/26 parsed
+[14:52:08]     rebuilding libyuv@0.0.1899.20250103-1.c.json (index schema changed)
+[14:52:09]     indexed libyuv 0.0.1899.20250103: 4 defs, 92 macros, 26/26 parsed
+[14:52:09]     rebuilding libyuv@0.0.1904.20250204-1.c.json (index schema changed)
+[14:52:09]     indexed libyuv 0.0.1904.20250204: 4 defs, 92 macros, 26/26 parsed
+[14:52:09]     rebuilding libyuv@0.0.1916.20250814-1.c.json (index schema changed)
+[14:52:10]     indexed libyuv 0.0.1916.20250814: 4 defs, 92 macros, 26/26 parsed
+[14:52:10]     rebuilding libyuv@0.0.1919.20250919-1.c.json (index schema changed)
+[14:52:10]     indexed libyuv 0.0.1919.20250919: 4 defs, 92 macros, 26/26 parsed
+[14:52:11]     rebuilding libyuv@0.0.1922.20251210-1.c.json (index schema changed)
+[14:52:11]     indexed libyuv 0.0.1922.20251210: 4 defs, 92 macros, 25/25 parsed
+[14:52:11]     rebuilding libyuv@0.0.1922.20260106-1.c.json (index schema changed)
+[14:52:11]     indexed libyuv 0.0.1922.20260106: 4 defs, 92 macros, 25/25 parsed
+[14:52:12]     rebuilding libyuv@0.0.1948.20260702-1.c.json (index schema changed)
+[14:52:12]     indexed libyuv 0.0.1948.20260702: 4 defs, 93 macros, 25/25 parsed
+[14:52:12]     rebuilding libyuv@0.0.1949.20260706-1.c.json (index schema changed)
+[14:52:12]     indexed libyuv 0.0.1949.20260706: 4 defs, 93 macros, 25/25 parsed
+[14:52:13]     rebuilding libyuv@0.0.1959.20260817-1.c.json (index schema changed)
+[14:52:13]     indexed libyuv 0.0.1959.20260817: 4 defs, 93 macros, 25/25 parsed
+[14:52:13] [550/772] libgav1@0.19.0..0.20.0 bodies=0 macros=0
+[14:52:13]     rebuilding zeromq3@4.2.3-1.c.json (index schema changed)
+[14:52:14]     indexed zeromq3 4.2.3: 85 defs, 153 macros, 3/3 parsed
+[14:52:14]     rebuilding zeromq3@4.2.5-2.c.json (index schema changed)
+[14:52:14]     indexed zeromq3 4.2.5: 85 defs, 153 macros, 3/3 parsed
+[14:52:14]     rebuilding zeromq3@4.3.1-5.c.json (index schema changed)
+[14:52:15]     indexed zeromq3 4.3.1: 85 defs, 187 macros, 3/3 parsed
+[14:52:15]     rebuilding zeromq3@4.3.2-2.c.json (index schema changed)
+[14:52:16]     indexed zeromq3 4.3.2: 275 defs, 198 macros, 4/4 parsed
+[14:52:16]     rebuilding zeromq3@4.3.3-6.c.json (index schema changed)
+[14:52:17]     indexed zeromq3 4.3.3: 275 defs, 199 macros, 4/4 parsed
+[14:52:17]     rebuilding zeromq3@4.3.4-6.c.json (index schema changed)
+[14:52:18]     indexed zeromq3 4.3.4: 0 defs, 185 macros, 2/2 parsed
+[14:52:18]     rebuilding zeromq3@4.3.5-1.c.json (index schema changed)
+[14:52:18]     indexed zeromq3 4.3.5: 0 defs, 185 macros, 2/2 parsed
+[14:52:18]     rebuilding game-music-emu@0.6.0-4.c.json (index schema changed)
+[14:52:18]     indexed game-music-emu 0.6.0: 0 defs, 1 macros, 1/1 parsed
+[14:52:18]     rebuilding game-music-emu@0.6.1-1.c.json (index schema changed)
+[14:52:18]     indexed game-music-emu 0.6.1: 0 defs, 1 macros, 1/1 parsed
+[14:52:18]     rebuilding game-music-emu@0.6.2-1.c.json (index schema changed)
+[14:52:18]     indexed game-music-emu 0.6.2: 0 defs, 1 macros, 1/1 parsed
+[14:52:18]     rebuilding game-music-emu@0.6.3-7.c.json (index schema changed)
+[14:52:18]     indexed game-music-emu 0.6.3: 0 defs, 4 macros, 2/2 parsed
+[14:52:18]     rebuilding game-music-emu@0.6.4-1.c.json (index schema changed)
+[14:52:19]     indexed game-music-emu 0.6.4: 0 defs, 1 macros, 1/1 parsed
+[14:52:19]     rebuilding game-music-emu@0.6.5-1.c.json (index schema changed)
+[14:52:19]     indexed game-music-emu 0.6.5: 0 defs, 1 macros, 1/1 parsed
+[14:52:19]     rebuilding chromaprint@1.3-1.c.json (index schema changed)
+[14:52:19]     indexed chromaprint 1.3: 0 defs, 5 macros, 1/1 parsed
+[14:52:19]     rebuilding chromaprint@1.3.2-2.c.json (index schema changed)
+[14:52:19]     indexed chromaprint 1.3.2: 0 defs, 5 macros, 1/1 parsed
+[14:52:19] [575/772] apt@3.1.15..3.1.16 bodies=1 macros=0
+[14:52:19]     rebuilding openal-soft@1%1.18.2-3.c.json (index schema changed)
+[14:52:19]     indexed openal-soft 1.18.2: 0 defs, 881 macros, 6/6 parsed
+[14:52:19]     rebuilding openal-soft@1%1.19.0-2.c.json (index schema changed)
+[14:52:20]     indexed openal-soft 1.19.0: 0 defs, 887 macros, 6/6 parsed
+[14:52:20]     rebuilding openal-soft@1%1.19.1-2.c.json (index schema changed)
+[14:52:20]     indexed openal-soft 1.19.1: 0 defs, 887 macros, 6/6 parsed
+[14:52:20]     rebuilding openal-soft@1%1.24.0-4.c.json (index schema changed)
+[14:52:20]     indexed openal-soft 1.24.0: 0 defs, 991 macros, 6/6 parsed
+[14:52:20]     rebuilding openal-soft@1%1.24.1-2.c.json (index schema changed)
+[14:52:20]     indexed openal-soft 1.24.1: 0 defs, 991 macros, 6/6 parsed
+[14:52:20]     rebuilding openal-soft@1%1.24.2-2.c.json (index schema changed)
+[14:52:20]     indexed openal-soft 1.24.2: 0 defs, 992 macros, 6/6 parsed
+[14:52:20]     rebuilding openal-soft@1%1.25.0-1.c.json (index schema changed)
+[14:52:20]     indexed openal-soft 1.25.0: 0 defs, 1011 macros, 6/6 parsed
+[14:52:20]     rebuilding openal-soft@1%1.25.1-2.c.json (index schema changed)
+[14:52:21]     indexed openal-soft 1.25.1: 0 defs, 1011 macros, 6/6 parsed
+[14:52:21]     rebuilding openal-soft@1%1.25.2-1.c.json (index schema changed)
+[14:52:21]     indexed openal-soft 1.25.2: 0 defs, 1011 macros, 5/5 parsed
+[14:52:21] [600/772] rubberband@3.2.1+dfsg..3.3.0+dfsg bodies=0 macros=4
+[14:52:21] [625/772] intel-gmmlib@22.7.0+ds1..22.7.1+ds1 bodies=0 macros=0
+[14:52:21]     rebuilding libglu@9.0.0-2.1.c.json (index schema changed)
+[14:52:22]     indexed libglu 9.0.0: 0 defs, 216 macros, 2/2 parsed
+[14:52:22]     rebuilding libglu@9.0.1-1.c.json (index schema changed)
+[14:52:22]     indexed libglu 9.0.1: 0 defs, 216 macros, 2/2 parsed
+[14:52:22]     rebuilding libglu@9.0.2-1.1.c.json (index schema changed)
+[14:52:22]     indexed libglu 9.0.2: 0 defs, 157 macros, 1/1 parsed
+[14:52:22]     rebuilding gst-plugins-bad1.0@1.28.0-1.c.json (index schema changed)
+[14:52:23]     indexed gst-plugins-bad1.0 1.28.0: 1 defs, 488 macros, 159/159 parsed
+[14:52:23]     rebuilding gst-plugins-bad1.0@1.28.1-3.c.json (index schema changed)
+[14:52:24]     indexed gst-plugins-bad1.0 1.28.1: 1 defs, 489 macros, 162/162 parsed
+[14:52:24]     rebuilding gst-plugins-bad1.0@1.28.2-2.c.json (index schema changed)
+[14:52:25]     indexed gst-plugins-bad1.0 1.28.2: 1 defs, 489 macros, 162/162 parsed
+[14:52:25]     rebuilding gst-plugins-bad1.0@1.28.3-1.c.json (index schema changed)
+[14:52:26]     indexed gst-plugins-bad1.0 1.28.3: 1 defs, 489 macros, 162/162 parsed
+[14:52:26]     rebuilding gst-plugins-bad1.0@1.28.4-1.c.json (index schema changed)
+[14:52:27]     indexed gst-plugins-bad1.0 1.28.4: 1 defs, 489 macros, 162/162 parsed
+[14:52:27]     rebuilding gst-plugins-bad1.0@1.28.5-2.c.json (index schema changed)
+[14:52:28]     indexed gst-plugins-bad1.0 1.28.5: 1 defs, 489 macros, 162/162 parsed
+[14:52:28]     rebuilding gst-plugins-bad1.0@1.28.6-1.c.json (index schema changed)
+[14:52:28]     indexed gst-plugins-bad1.0 1.28.6: 1 defs, 489 macros, 162/162 parsed
+[14:52:29] [650/772] gst-plugins-bad1.0@1.28.5..1.28.6 bodies=0 macros=0
+[14:52:29]     rebuilding gst-plugins-bad1.0@1.29.1-1.c.json (index schema changed)
+[14:52:29]     indexed gst-plugins-bad1.0 1.29.1: 1 defs, 491 macros, 164/164 parsed
+[14:52:29]     rebuilding gst-plugins-bad1.0@1.29.2-2.c.json (index schema changed)
+[14:52:30]     indexed gst-plugins-bad1.0 1.29.2: 1 defs, 495 macros, 166/166 parsed
+[14:52:30]     rebuilding pipewire@1.5.85-1.c.json (index schema changed)
+[14:52:38]     indexed pipewire 1.5.85: 705 defs, 1431 macros, 235/235 parsed
+[14:52:38]     rebuilding pipewire@1.6.0-1.c.json (index schema changed)
+[14:52:45]     indexed pipewire 1.6.0: 705 defs, 1431 macros, 235/235 parsed
+[14:52:46]     rebuilding pipewire@1.6.1-1.c.json (index schema changed)
+[14:52:53]     indexed pipewire 1.6.1: 705 defs, 1431 macros, 235/235 parsed
+[14:52:53]     rebuilding pipewire@1.6.2-1.c.json (index schema changed)
+[14:53:00]     indexed pipewire 1.6.2: 705 defs, 1431 macros, 235/235 parsed
+[14:53:00]     rebuilding pipewire@1.6.3-1.c.json (index schema changed)
+[14:53:08]     indexed pipewire 1.6.3: 705 defs, 1431 macros, 235/235 parsed
+[14:53:08]     rebuilding pipewire@1.6.4-1.c.json (index schema changed)
+[14:53:15]     indexed pipewire 1.6.4: 705 defs, 1431 macros, 235/235 parsed
+[14:53:15]     rebuilding pipewire@1.6.5-1.c.json (index schema changed)
+[14:53:22]     indexed pipewire 1.6.5: 705 defs, 1431 macros, 235/235 parsed
+[14:53:22]     rebuilding pipewire@1.6.6-1.c.json (index schema changed)
+[14:53:31]     indexed pipewire 1.6.6: 705 defs, 1431 macros, 235/235 parsed
+[14:53:31]     rebuilding pipewire@1.6.7-1.c.json (index schema changed)
+[14:53:39]     indexed pipewire 1.6.7: 705 defs, 1431 macros, 235/235 parsed
+[14:53:39]     rebuilding pipewire@1.6.8-1.c.json (index schema changed)
+[14:53:47]     indexed pipewire 1.6.8: 705 defs, 1431 macros, 235/235 parsed
+[14:53:47] [675/772] sane-backends@1.1.1..1.2.1 bodies=0 macros=0
+[14:53:47]     rebuilding mesa@25.0.0-1.c.json (index schema changed)
+[14:53:48]     indexed mesa 25.0.0: 2 defs, 16 macros, 3/3 parsed
+[14:53:48]     rebuilding mesa@25.0.1-2.c.json (index schema changed)
+[14:53:48]     indexed mesa 25.0.1: 2 defs, 16 macros, 3/3 parsed
+[14:53:48]     rebuilding mesa@25.0.2-1.c.json (index schema changed)
+[14:53:48]     indexed mesa 25.0.2: 2 defs, 16 macros, 3/3 parsed
+[14:53:48]     rebuilding mesa@25.0.3-1.c.json (index schema changed)
+[14:53:48]     indexed mesa 25.0.3: 2 defs, 16 macros, 3/3 parsed
+[14:53:48]     rebuilding mesa@25.0.4-1.c.json (index schema changed)
+[14:53:48]     indexed mesa 25.0.4: 2 defs, 16 macros, 3/3 parsed
+[14:53:48]     rebuilding mesa@25.0.5-2.c.json (index schema changed)
+[14:53:48]     indexed mesa 25.0.5: 2 defs, 16 macros, 3/3 parsed
+[14:53:48]     rebuilding mesa@25.0.7-2+deb13u1.c.json (index schema changed)
+[14:53:48]     indexed mesa 25.0.7: 2 defs, 16 macros, 3/3 parsed
+[14:53:48]     rebuilding mesa@25.1.0-1.c.json (index schema changed)
+[14:53:49]     indexed mesa 25.1.0: 2 defs, 16 macros, 3/3 parsed
+[14:53:49]     rebuilding mesa@25.1.5-1.c.json (index schema changed)
+[14:53:49]     indexed mesa 25.1.5: 2 defs, 16 macros, 3/3 parsed
+[14:53:49]     rebuilding mesa@25.1.7-1.c.json (index schema changed)
+[14:53:49]     indexed mesa 25.1.7: 2 defs, 16 macros, 3/3 parsed
+[14:53:49]     rebuilding vte2.91@0.80.0-1.c.json (index schema changed)
+[14:53:49]     indexed vte2.91 0.80.0: 0 defs, 90 macros, 24/24 parsed
+[14:53:49]     rebuilding vte2.91@0.80.1-1.c.json (index schema changed)
+[14:53:50]     indexed vte2.91 0.80.1: 0 defs, 90 macros, 24/24 parsed
+[14:53:50]     rebuilding vte2.91@0.80.3-3.c.json (index schema changed)
+[14:53:50]     indexed vte2.91 0.80.3: 0 defs, 90 macros, 24/24 parsed
+[14:53:50]     rebuilding vte2.91@0.82.0-1.c.json (index schema changed)
+[14:53:51]     indexed vte2.91 0.82.0: 0 defs, 90 macros, 24/24 parsed
+[14:53:51]     rebuilding vte2.91@0.82.1-1.c.json (index schema changed)
+[14:53:51]     indexed vte2.91 0.82.1: 0 defs, 90 macros, 24/24 parsed
+[14:53:51]     rebuilding vte2.91@0.82.2-1.c.json (index schema changed)
+[14:53:51]     indexed vte2.91 0.82.2: 0 defs, 90 macros, 24/24 parsed
+[14:53:51]     rebuilding vte2.91@0.82.3-2.c.json (index schema changed)
+[14:53:52]     indexed vte2.91 0.82.3: 0 defs, 90 macros, 24/24 parsed
+[14:53:52]     rebuilding vte2.91@0.83.90-1.c.json (index schema changed)
+[14:53:52]     indexed vte2.91 0.83.90: 0 defs, 90 macros, 24/24 parsed
+[14:53:52]     rebuilding vte2.91@0.84.0-2.c.json (index schema changed)
+[14:53:53]     indexed vte2.91 0.84.0: 0 defs, 90 macros, 24/24 parsed
+[14:53:53]     rebuilding vte2.91@0.84.1-1.c.json (index schema changed)
+[14:53:53]     indexed vte2.91 0.84.1: 0 defs, 90 macros, 24/24 parsed
+[14:53:53] [700/772] openexr@3.1.5..3.1.13 bodies=0 macros=0
+[14:53:53] [725/772] libcdr@0.1.3..0.1.4 bodies=0 macros=0
+[14:53:54] [750/772] libmwaw@0.3.21..0.3.22 bodies=0 macros=0
+[14:53:54] headers stage complete
+== 2026-09-02T14:53:54Z analyze
+[14:53:54] wrote /work/study/summary.json and /work/study/report.txt
+== 2026-09-02T14:53:54Z report
+[14:53:54] wrote /work/study/report.html
+== 2026-09-02T14:53:54Z POST DONE
+== 2026-09-02T14:57:04Z diff (re-attribution run, 3 workers)
+[14:57:04] 772 pairs total, 334 to do, 3 workers
+[14:57:06] [1/334] attr@2.4.47..2.4.48 ok
+[14:57:06] [2/334] util-linux@2.41.3..2.41.5 ok
+[14:57:08] [3/334] util-linux@2.41.5..2.42 ok
+[14:57:08] [4/334] util-linux@2.42.1..2.42.2 ok
+[14:57:10] [5/334] libselinux@3.5..3.7 ok
+[14:57:10] [6/334] libselinux@3.7..3.8 ok
+[14:57:12] [7/334] libedit@3.1-20221030..3.1-20230828 ok
+[14:57:13] [8/334] libedit@3.1-20240517..3.1-20240808 ok
+[14:57:15] [9/334] libedit@3.1-20250104..3.1-20251016 ok
+[14:57:15] [10/334] libedit@3.1-20251016..3.1-20260512 ok
+[14:57:16] [11/334] popt@1.18..1.19+dfsg ok
+[14:57:17] [12/334] libcap2@2.44..2.63 ok
+[14:57:19] [13/334] slang2@2.3.0..2.3.1 ok
+[14:57:19] [14/334] e2fsprogs@1.47.0..1.47.1 ok
+[14:57:20] [15/334] slang2@2.3.1..2.3.1a ok
+[14:57:21] [16/334] slang2@2.3.1a..2.3.2 ok
+[14:57:22] [17/334] slang2@2.3.2..2.3.3 ok
+[14:57:23] [18/334] gcc-16@16.1.0..16.2.0 ok
+[14:57:23] [19/334] libbsd@0.12.1..0.12.2 ok
+[14:57:25] [20/334] lvm2@2.03.11..2.03.15 ok
+[14:57:26] [21/334] lvm2@2.03.16..2.03.22 ok
+[14:57:26] [22/334] lvm2@2.03.22..2.03.27 ok
+[14:57:28] [23/334] lvm2@2.03.27..2.03.31 ok
+[14:57:30] [24/334] sqlite3@3.44.2..3.45.0 ok
+[14:57:30] [25/334] sqlite3@3.45.1..3.45.2 ok
+[14:57:32] [26/334] sqlite3@3.45.2..3.45.3 ok
+[14:57:34] [27/334] sqlite3@3.45.3..3.46.0 ok
+[14:57:34] [28/334] sqlite3@3.46.0..3.46.1 ok
+[14:57:36] [29/334] sqlite3@3.46.1..3.53.2 ok
+[14:57:36] [30/334] expat@2.7.1..2.7.2 ok
+[14:57:38] [31/334] sqlite3@3.53.2..3.53.3 ok
+[14:57:38] [32/334] expat@2.7.3..2.7.4 ok
+[14:57:38] [33/334] expat@2.7.5..2.8.0 ok
+[14:57:40] [34/334] expat@2.8.1..2.8.2 ok
+[14:57:40] [35/334] expat@2.8.2..2.8.3 ok
+[14:57:40] [36/334] expat@2.8.3..2.8.4 ok
+[14:57:42] [37/334] newt@0.52.24..0.52.25 ok
+[14:57:42] [38/334] freetype@2.11.1+dfsg..2.12.0+dfsg ok
+[14:57:43] [39/334] freetype@2.12.1+dfsg..2.13.0+dfsg ok
+[14:57:44] [40/334] freetype@2.13.0+dfsg..2.13.1+dfsg ok
+[14:57:45] [41/334] freetype@2.13.1+dfsg..2.13.2+dfsg ok
+[14:57:45] [42/334] freetype@2.13.2+dfsg..2.13.3+dfsg ok
+[14:57:47] [43/334] freetype@2.13.3+dfsg..2.14.1+dfsg ok
+[14:57:47] [44/334] freetype@2.14.1+dfsg..2.14.2+dfsg ok
+[14:57:47] [45/334] dbus@1.15.2..1.15.4 ok
+[14:57:49] [46/334] kmod@32..32+20240327 ok
+[14:57:49] [47/334] dbus@1.15.6..1.15.8 ok
+[14:57:49] [48/334] kmod@33+20240816..33+20241031 ok
+[14:57:51] [49/334] pciutils@3.6.4..3.7.0 ok
+[14:57:51] [50/334] pciutils@3.10.0..3.11.1 ok
+[14:57:51] [51/334] pciutils@3.12.0..3.13.0 ok
+[14:57:52] [52/334] pciutils@3.14.0..3.15.0 ok
+[14:57:53] [53/334] p11-kit@0.25.0..0.25.1 ok
+[14:57:54] [54/334] gmp@6.1.1+dfsg..6.1.2+dfsg ok
+[14:57:54] [55/334] libxau@1.0.9..1.0.11 ok
+[14:57:55] [56/334] gmp@6.2.1+dfsg1..6.3.0+dfsg ok
+[14:57:57] [57/334] libxcb@1.14..1.15 ok
+[14:57:57] [58/334] libxcb@1.15..1.17.0 ok
+[14:57:58] [59/334] libxcb@1.13.1..1.14 ok
+[14:58:01] [60/334] libx11@1.8.1..1.8.3 ok
+[14:58:01] [61/334] libx11@1.8.3..1.8.4 ok
+[14:58:01] [62/334] libx11@1.8.6..1.8.7 ok
+[14:58:03] [63/334] libcap-ng@0.7.9..0.8.3 ok
+[14:58:04] [64/334] libx11@1.8.7..1.8.10 ok
+[14:58:04] [65/334] libx11@1.8.10..1.8.12 ok
+[14:58:05] [66/334] libcap-ng@0.9.2..0.9.3 ok
+[14:58:06] [67/334] systemd@257.13..258 ok
+[14:58:06] [68/334] systemd@258.1..259 ok
+[14:58:07] [69/334] systemd@260.1..261 ok
+[14:58:07] [70/334] cdebconf@0.281..0.282 ok
+[14:58:08] [71/334] cdebconf@0.277..0.278 ok
+[14:58:09] [72/334] libtasn1-6@4.15.0..4.16.0 ok
+[14:58:09] [73/334] libtasn1-6@4.16.0..4.17.0 ok
+[14:58:10] [74/334] libtasn1-6@4.18.0..4.19.0 ok
+[14:58:11] [75/334] libmnl@1.0.4..1.0.5 ok
+[14:58:11] [76/334] libtasn1-6@4.20.0..4.21.0 ok
+[14:58:11] [77/334] libtasn1-6@4.19.0..4.20.0 ok
+[14:58:13] [78/334] cyrus-sasl2@2.1.28+dfsg..2.1.28+dfsg1 ok
+[14:58:15] [79/334] apparmor@3.0.13..3.1.7 ok
+[14:58:15] [80/334] libxml2@2.15.1+dfsg..2.15.2+dfsg ok
+[14:58:15] [81/334] libxml2@2.14.6+dfsg..2.15.0+dfsg ok
+[14:58:17] [82/334] apparmor@3.1.7..4.1.0 ok
+[14:58:17] [83/334] apparmor@4.1.8..5.0.1 ok
+[14:58:17] [84/334] apparmor@4.1.0..4.1.3 ok
+[14:58:19] [85/334] libseccomp@2.4.4..2.5.0 ok
+[14:58:19] [86/334] lz4@1.8.0..1.8.1.2 ok
+[14:58:19] [87/334] lz4@1.8.1.2..1.8.2 ok
+[14:58:20] [88/334] lz4@1.9.2..1.9.3 ok
+[14:58:20] [89/334] lz4@1.8.3..1.9.1 ok
+[14:58:21] [90/334] lz4@1.9.3..1.9.4 ok
+[14:58:22] [91/334] lz4@1.9.4..1.10.0 ok
+[14:58:22] [92/334] iptables@1.8.7..1.8.8 ok
+[14:58:23] [93/334] iptables@1.8.10..1.8.11 ok
+[14:58:24] [94/334] nghttp2@1.59.0..1.60.0 ok
+[14:58:24] [95/334] nghttp2@1.60.0..1.61.0 ok
+[14:58:25] [96/334] nghttp2@1.63.0..1.64.0 ok
+[14:58:26] [97/334] nghttp2@1.64.0..1.68.0 ok
+[14:58:26] [98/334] nghttp2@1.68.1..1.69.0 ok
+[14:58:26] [99/334] nghttp2@1.69.0..1.70.0 ok
+[14:58:28] [100/334] rtmpdump@2.4+20151223.gitfa8646d..2.4+20151223.gitfa8646d.1 ok
+[14:58:31] [101/334] pcre2@10.40..10.42 ok
+[14:58:31] [102/334] pcre2@10.42..10.43 ok
+[14:58:32] [103/334] pcre2@10.43..10.44 ok
+[14:58:35] [104/334] libgpg-error@1.49..1.50 ok
+[14:58:36] [105/334] pcre2@10.44..10.45 ok
+[14:58:36] [106/334] pcre2@10.46..10.47 ok
+[14:58:38] [107/334] libgpg-error@1.50..1.51 ok
+[14:58:38] [108/334] libgpg-error@1.51..1.53 ok
+[14:58:39] [109/334] libgpg-error@1.55..1.56 ok
+[14:58:40] [110/334] libgpg-error@1.56..1.58 ok
+[14:58:41] [111/334] libzstd@1.4.5+dfsg..1.4.8+dfsg ok
+[14:58:41] [112/334] libgpg-error@1.59..1.61 ok
+[14:58:43] [113/334] libzstd@1.4.8+dfsg..1.4.9+dfsg ok
+[14:58:43] [114/334] libzstd@1.4.9+dfsg..1.4.10+dfsg ok
+[14:58:43] [115/334] libzstd@1.4.10+dfsg..1.5.2+dfsg ok
+[14:58:45] [116/334] libzstd@1.5.2+dfsg..1.5.2+dfsg2 ok
+[14:58:45] [117/334] libzstd@1.5.4+dfsg2..1.5.5+dfsg2 ok
+[14:58:45] [118/334] libzstd@1.5.2+dfsg2..1.5.4+dfsg2 ok
+[14:58:47] [119/334] libzstd@1.5.5+dfsg2..1.5.6+dfsg ok
+[14:58:47] [120/334] libzstd@1.5.6+dfsg..1.5.7+dfsg ok
+[14:58:48] [121/334] ncurses@6.4+20240414..6.5 ok
+[14:58:49] [122/334] ncurses@6.5..6.5+20250125 ok
+[14:58:50] [123/334] ncurses@6.5+20250125..6.5+20250216 ok
+[14:58:51] [124/334] ncurses@6.5+20250216..6.5+20251115 ok
+[14:58:52] [125/334] ncurses@6.5+20251123..6.6+20251231 ok
+[14:58:52] [126/334] libpipeline@1.4.2..1.5.0 ok
+[14:58:53] [127/334] ncurses@6.6+20251231..6.6+20260608 ok
+[14:58:54] [128/334] libpipeline@1.5.0..1.5.1 ok
+[14:58:54] [129/334] libpipeline@1.5.7..1.5.8 ok
+[14:58:55] [130/334] libnftnl@1.2.6..1.2.7 ok
+[14:58:56] [131/334] libnftnl@1.2.7..1.2.8 ok
+[14:58:56] [132/334] libnftnl@1.2.8..1.2.9 ok
+[14:58:56] [133/334] libnftnl@1.2.9..1.3.0 ok
+[14:58:58] [134/334] libnftnl@1.3.0..1.3.1 ok
+[14:58:58] [135/334] libusb-1.0@1.0.21..1.0.22 ok
+[14:58:58] [136/334] libnftnl@1.3.1..1.3.2 ok
+[14:59:00] [137/334] libusb-1.0@1.0.22..1.0.23 ok
+[14:59:00] [138/334] libusb-1.0@1.0.23..1.0.24 ok
+[14:59:00] [139/334] libusb-1.0@1.0.24..1.0.25 ok
+[14:59:01] [140/334] libusb-1.0@1.0.26..1.0.27 ok
+[14:59:02] [141/334] libusb-1.0@1.0.27..1.0.28 ok
+[14:59:02] [142/334] libusb-1.0@1.0.29..1.0.30 ok
+[14:59:03] [143/334] jansson@2.11..2.12 ok
+[14:59:06] [144/334] libgcrypt20@1.10.3..1.11.0 ok
+[14:59:07] [145/334] libgcrypt20@1.11.0..1.11.0+git20250114 ok
+[14:59:08] [146/334] libgcrypt20@1.11.1..1.11.2 ok
+[14:59:14] [147/334] brotli@1.0.2..1.0.3 ok
+[14:59:15] [148/334] libgcrypt20@1.12.2..1.12.3 ok
+[14:59:15] [149/334] brotli@1.0.3..1.0.4 ok
+[14:59:15] [150/334] brotli@1.0.7..1.0.9 ok
+[14:59:16] [151/334] brotli@1.0.9..1.1.0 ok
+[14:59:17] [152/334] brotli@1.1.0..1.2.0 ok
+[14:59:17] [153/334] lmdb@0.9.18..0.9.19 ok
+[14:59:18] [154/334] lmdb@0.9.24..0.9.31 ok
+[14:59:19] [155/334] xxhash@0.7.1..0.7.2 ok
+[14:59:19] [156/334] xxhash@0.7.3..0.7.4 ok
+[14:59:20] [157/334] xxhash@0.7.4..0.8.0 ok
+[14:59:20] [158/334] xxhash@0.8.0..0.8.1 ok
+[14:59:21] [159/334] xxhash@0.8.2..0.8.3 ok
+[14:59:21] [160/334] libfido2@1.10.0..1.11.0 ok
+[14:59:22] [161/334] libfido2@1.11.0..1.12.0 ok
+[14:59:22] [162/334] libfido2@1.13.0..1.14.0 ok
+[14:59:23] [163/334] libfido2@1.14.0..1.15.0 ok
+[14:59:24] [164/334] libfido2@1.15.0..1.16.0 ok
+[14:59:24] [165/334] libfido2@1.16.0..1.17.0 ok
+[14:59:25] [166/334] fstrm@0.6.0..0.6.1 ok
+[14:59:26] [167/334] json-c@0.12.1+ds..0.13.1+dfsg ok
+[14:59:26] [168/334] json-c@0.13.1+dfsg..0.14+dfsg ok
+[14:59:27] [169/334] json-c@0.16..0.17 ok
+[14:59:28] [170/334] nftables@1.0.8..1.0.9 ok
+[14:59:28] [171/334] nftables@1.1.0..1.1.1 ok
+[14:59:29] [172/334] nftables@1.1.1..1.1.2 ok
+[14:59:30] [173/334] nftables@1.1.5..1.1.6 ok
+[14:59:30] [174/334] libmaxminddb@1.10.0..1.11.0 ok
+[14:59:31] [175/334] libmaxminddb@1.11.0..1.12.2 ok
+[14:59:32] [176/334] gpm@1.20.4..1.20.7 ok
+[14:59:33] [177/334] libksba@1.6.0..1.6.2 ok
+[14:59:33] [178/334] libksba@1.6.6..1.6.7 ok
+[14:59:34] [179/334] libksba@1.6.7..1.6.8 ok
+[14:59:36] [180/334] libksba@1.6.8..1.8.0 ok
+[14:59:43] [181/334] libde265@1.0.7..1.0.8 ok
+[14:59:43] [182/334] libde265@1.0.9..1.0.11 ok
+[14:59:44] [183/334] libde265@1.0.8..1.0.9 ok
+[14:59:48] [184/334] libde265@1.0.13..1.0.15 ok
+[14:59:49] [185/334] libde265@1.0.15..1.0.16 ok
+[14:59:49] [186/334] libde265@1.0.16..1.0.18 ok
+[14:59:52] [187/334] lerc@3.0+ds..4.0.0+ds ok
+[14:59:53] [188/334] libde265@1.0.18..1.1.1 ok
+[14:59:53] [189/334] lerc@4.0.0+ds..4.1.0+ds ok
+[14:59:56] [190/334] lerc@4.1.0+ds..4.1.1+ds ok
+[14:59:57] [191/334] lerc@4.1.1+ds..4.2.0+ds ok
+[14:59:59] [192/334] aspell@0.60.7..0.60.8 ok
+[15:00:01] [193/334] snappy@1.1.6..1.1.7 ok
+[15:00:02] [194/334] aspell@0.60.8..0.60.8.1 ok
+[15:00:03] [195/334] snappy@1.1.7..1.1.8 ok
+[15:00:03] [196/334] aspell@0.60.8.1..0.60.8.2 ok
+[15:00:03] [197/334] snappy@1.1.8..1.1.9 ok
+[15:00:04] [198/334] snappy@1.2.1..1.2.2 ok
+[15:00:33] [199/334] libheif@1.19.1..1.19.3 ok
+[15:00:34] [200/334] libheif@1.19.5..1.19.7 ok
+[15:00:35] [201/334] libheif@1.19.7..1.19.8 ok
+[15:01:12] [202/334] libheif@1.19.8..1.20.1 ok
+[15:01:21] [203/334] libheif@1.20.1..1.20.2 ok
+[15:01:24] [204/334] libheif@1.20.2..1.21.2 ok
+[15:02:15] [205/334] libheif@1.21.2..1.23.1 ok
+[15:02:31] [206/334] libheif@1.23.1..1.23.2 ok
+[15:02:52] [207/334] z3@4.8.7..4.8.8 killed by signal 9 (likely out of memory); will retry alone
+[15:02:55] [208/334] libyuv@0.0.1922.20260106..0.0.1948.20260702 ok
+[15:03:01] [209/334] libgav1@0.16.0..0.16.3 ok
+[15:03:06] [210/334] libgav1@0.16.3..0.17.0 ok
+[15:03:13] [211/334] libgav1@0.17.0..0.18.0 ok
+[15:03:15] [212/334] libcaca@0.99.beta19..0.99.beta20 ok
+[15:03:18] [213/334] game-music-emu@0.6.1..0.6.2 ok
+[15:03:21] [214/334] game-music-emu@0.6.2..0.6.3 ok
+[15:03:23] [215/334] game-music-emu@0.6.3..0.6.4 ok
+[15:03:26] [216/334] game-music-emu@0.6.4..0.6.5 ok
+[15:03:42] [217/334] z3@4.8.8..4.8.9 killed by signal 9 (likely out of memory); will retry alone
+[15:03:43] [218/334] chromaprint@1.4.1..1.4.2 ok
+[15:03:45] [219/334] chromaprint@1.4.2..1.4.3 ok
+[15:03:45] [220/334] chromaprint@1.4.3..1.5.0 ok
+[15:03:48] [221/334] chromaprint@1.5.0..1.5.1 ok
+[15:03:49] [222/334] chromaprint@1.6.0..1.6.1 ok
+[15:03:57] [223/334] djvulibre@3.5.27.1..3.5.28 ok
+[15:04:04] [224/334] djvulibre@3.5.28..3.5.29 ok
+[15:04:07] [225/334] openal-soft@1.18.2..1.19.0 ok
+[15:04:09] [226/334] openal-soft@1.19.0..1.19.1 ok
+[15:04:18] [227/334] apt@3.1.12..3.1.13 ok
+[15:04:19] [228/334] z3@4.8.9..4.8.10 ok
+[15:04:32] [229/334] openal-soft@1.24.0..1.24.1 ok
+[15:04:35] [230/334] rubberband@1.9.2..2.0.0 ok
+[15:04:41] [231/334] rubberband@2.0.2+dfsg0..3.0.0+dfsg0 ok
+[15:04:43] [232/334] openal-soft@1.24.1..1.24.2 ok
+[15:04:47] [233/334] rubberband@3.0.0+dfsg0..3.1.0+dfsg0 ok
+[15:04:49] [234/334] rubberband@3.1.2+dfsg0..3.2.1+dfsg ok
+[15:04:53] [235/334] rubberband@3.2.1+dfsg..3.3.0+dfsg ok
+[15:04:54] [236/334] openal-soft@1.24.2..1.25.0 ok
+[15:04:55] [237/334] libsigc++-2.0@2.9.3..2.10.0 ok
+[15:04:56] [238/334] rubberband@3.3.0+dfsg..4.0.0+dfsg ok
+[15:04:56] [239/334] libsigc++-2.0@2.10.8..2.12.0 ok
+[15:04:57] [240/334] libsigc++-2.0@2.12.0..2.12.1 ok
+[15:05:05] [241/334] srt@1.4.2..1.4.4 ok
+[15:05:05] [242/334] srt@1.4.4..1.5.0 ok
+[15:05:07] [243/334] srt@1.5.0..1.5.1 ok
+[15:05:15] [244/334] srt@1.5.1..1.5.2 ok
+[15:05:15] [245/334] srt@1.5.2..1.5.3 ok
+[15:05:17] [246/334] srt@1.5.3..1.5.4 ok
+[15:05:23] [247/334] zimg@3.0.4+ds1..3.0.5+ds1 ok
+[15:05:25] [248/334] srt@1.5.4..1.5.5 ok
+[15:05:26] [249/334] srt@1.5.5..1.5.6 ok
+[15:05:26] [250/334] intel-gmmlib@22.5.5+ds1..22.6.0+ds1 ok
+[15:05:28] [251/334] intel-gmmlib@22.6.0+ds1..22.7.0+ds1 ok
+[15:05:29] [252/334] intel-gmmlib@22.7.0+ds1..22.7.1+ds1 ok
+[15:05:29] [253/334] intel-gmmlib@22.7.1+ds1..22.7.2+ds1 ok
+[15:05:31] [254/334] intel-gmmlib@22.7.2+ds1..22.8.1+ds1 ok
+[15:05:31] [255/334] intel-gmmlib@22.8.2+ds1..22.9.0+ds1 ok
+[15:05:32] [256/334] intel-gmmlib@22.9.0+ds1..22.10.0+ds1 ok
+[15:05:34] [257/334] intel-gmmlib@22.10.0+ds1..22.10.1+ds1 ok
+[15:05:36] [258/334] hunspell@1.6.1..1.6.2 ok
+[15:05:36] [259/334] hunspell@1.7.0..1.7.1 ok
+[15:05:39] [260/334] hunspell@1.7.1..1.7.2 ok
+[15:05:40] [261/334] hunspell@1.7.2..1.7.2+really1.7.1 ok
+[15:05:41] [262/334] hunspell@1.7.2+really1.7.1..1.7.2+really1.7.2 ok
+[15:05:44] [263/334] hunspell@1.7.2+really1.7.2..1.7.3 ok
+[15:05:45] [264/334] hunspell@1.7.3..1.7.3+really1.7.2 ok
+[15:05:46] [265/334] hunspell@1.7.3+really1.7.2..1.7.3+really1.7.3 ok
+[15:05:46] [266/334] libmodplug@0.8.8.5..0.8.9.0 ok
+[15:05:53] [267/334] gst-plugins-bad1.0@1.27.90..1.28.0 ok
+[15:05:53] [268/334] gst-plugins-bad1.0@1.28.0..1.28.1 ok
+[15:05:54] [269/334] gst-plugins-bad1.0@1.28.3..1.28.4 ok
+[15:05:58] [270/334] gst-plugins-bad1.0@1.28.4..1.28.5 ok
+[15:05:59] [271/334] gst-plugins-bad1.0@1.28.5..1.28.6 ok
+[15:05:59] [272/334] gst-plugins-bad1.0@1.28.6..1.29.1 ok
+[15:06:01] [273/334] soundtouch@1.9.2..2.0.0 ok
+[15:06:02] [274/334] soundtouch@2.0.0..2.1.2+ds1 ok
+[15:06:03] [275/334] soundtouch@2.3.3+ds..2.4.0+ds ok
+[15:06:04] [276/334] gst-plugins-bad1.0@1.29.1..1.29.2 ok
+[15:06:15] [277/334] sane-backends@1.0.27..1.0.29 ok
+[15:06:23] [278/334] sane-backends@1.0.29..1.0.30 ok
+[15:06:23] [279/334] sane-backends@1.0.30..1.0.31 ok
+[15:06:35] [280/334] sane-backends@1.0.31..1.0.32 ok
+[15:06:44] [281/334] sane-backends@1.0.32..1.1.1 ok
+[15:06:47] [282/334] sane-backends@1.1.1..1.2.1 ok
+[15:06:57] [283/334] sane-backends@1.2.1..1.3.0 ok
+[15:07:07] [284/334] sane-backends@1.3.0..1.3.1 ok
+[15:07:09] [285/334] sane-backends@1.3.1..1.4.0 ok
+[15:07:14] [286/334] mesa@25.0.0..25.0.1 ok
+[15:07:24] [287/334] mesa@25.0.1..25.0.2 ok
+[15:07:26] [288/334] mesa@25.0.7..25.1.0 ok
+[15:07:29] [289/334] openexr@3.1.3..3.1.4 ok
+[15:07:33] [290/334] librevenge@0.0.3..0.0.4 ok
+[15:07:37] [291/334] librevenge@0.0.4..0.0.5 ok
+[15:07:39] [292/334] mythes@1.2.4..1.2.5 ok
+[15:07:40] [293/334] openexr@3.4.6+ds..3.4.14 ok
+[15:07:41] [294/334] librevenge@0.0.5..0.0.6 ok
+[15:07:44] [295/334] libwpg@0.3.3..0.3.4 ok
+[15:07:52] [296/334] libwpd@0.10.1..0.10.2 ok
+[15:07:53] [297/334] libwpd@0.10.2..0.10.3 ok
+[15:07:54] [298/334] libodfgen@0.1.6..0.1.7 ok
+[15:08:02] [299/334] libcdr@0.1.2..0.1.3 ok
+[15:08:02] [300/334] libodfgen@0.1.7..0.1.8 ok
+[15:08:03] [301/334] libcdr@0.1.3..0.1.4 ok
+[15:08:13] [302/334] libcdr@0.1.4..0.1.5 ok
+[15:08:14] [303/334] libcdr@0.1.5..0.1.6 ok
+[15:08:15] [304/334] libcdr@0.1.7..0.1.8 ok
+[15:08:31] [305/334] libvisio@0.1.4..0.1.5 ok
+[15:08:33] [306/334] libvisio@0.1.5..0.1.6 ok
+[15:08:38] [307/334] libvisio@0.1.6..0.1.7 ok
+[15:08:55] [308/334] libvisio@0.1.7..0.1.9 ok
+[15:08:57] [309/334] libvisio@0.1.9..0.1.10 ok
+[15:09:39] [310/334] libetonyek@0.1.6..0.1.7 ok
+[15:10:15] [311/334] libetonyek@0.1.7..0.1.8 killed by signal 9 (likely out of memory); will retry alone
+[15:10:46] [312/334] libetonyek@0.1.8..0.1.9 killed by signal 9 (likely out of memory); will retry alone
+[15:11:32] [313/334] libetonyek@0.1.9..0.1.10 killed by signal 9 (likely out of memory); will retry alone
+[15:12:13] [314/334] libetonyek@0.1.10..0.1.12 killed by signal 9 (likely out of memory); will retry alone
+[15:13:21] [315/334] libetonyek@0.1.12..0.1.13 killed by signal 9 (likely out of memory); will retry alone
+[15:14:13] [316/334] libmwaw@0.3.13..0.3.14 killed by signal 9 (likely out of memory); will retry alone
+[15:14:52] [317/334] libmwaw@0.3.14..0.3.15 killed by signal 9 (likely out of memory); will retry alone
+[15:15:43] [318/334] libmwaw@0.3.16..0.3.17 killed by signal 9 (likely out of memory); will retry alone
+[15:16:28] [319/334] libmwaw@0.3.17..0.3.19 killed by signal 9 (likely out of memory); will retry alone
+[15:16:35] [320/334] libabw@0.1.1..0.1.2 ok
+[15:16:42] [321/334] libabw@0.1.2..0.1.3 ok
+[15:16:52] [322/334] libe-book@0.1.2..0.1.3 ok
+[15:16:56] [323/334] libnumbertext@1.0..1.0.5 ok
+[15:17:01] [324/334] libnumbertext@1.0.6..1.0.7 ok
+[15:17:05] [325/334] libnumbertext@1.0.7..1.0.8 ok
+[15:17:10] [326/334] libnumbertext@1.0.10..1.0.11 ok
+[15:17:50] [327/334] libmwaw@0.3.21..0.3.22 killed by signal 9 (likely out of memory); will retry alone
+[15:17:52] [328/334] libwps@0.4.7..0.4.8 ok
+[15:18:23] [329/334] libwps@0.4.8..0.4.9 ok
+[15:18:29] [330/334] libwps@0.4.9..0.4.10 ok
+[15:19:04] [331/334] libmwaw@0.3.22..0.3.23 ok
+[15:19:05] [332/334] libwps@0.4.10..0.4.11 ok
+[15:19:10] [333/334] libwps@0.4.11..0.4.12 ok
+[15:19:40] [334/334] libwps@0.4.13..0.4.14 ok
+[15:19:40] retrying 12 killed pair(s) with one worker
+[15:22:11] [1/12] z3@4.8.7..4.8.8 ok
+[15:23:26] [2/12] z3@4.8.8..4.8.9 ok
+[15:24:45] [3/12] libetonyek@0.1.7..0.1.8 ok
+[15:26:30] [4/12] libetonyek@0.1.8..0.1.9 ok
+[15:28:18] [5/12] libetonyek@0.1.9..0.1.10 ok
+[15:30:08] [6/12] libetonyek@0.1.10..0.1.12 ok
+[15:31:46] [7/12] libetonyek@0.1.12..0.1.13 ok
+[15:34:03] [8/12] libmwaw@0.3.13..0.3.14 ok
+[15:36:30] [9/12] libmwaw@0.3.14..0.3.15 ok
+[15:39:12] [10/12] libmwaw@0.3.16..0.3.17 ok
+[15:42:02] [11/12] libmwaw@0.3.17..0.3.19 ok
+[15:44:51] [12/12] libmwaw@0.3.21..0.3.22 ok
+[15:44:51] diff stage complete
+== 2026-09-02T15:44:51Z headers
+[15:44:51] headers stage complete
+== 2026-09-02T15:44:51Z analyze
+[15:44:51] wrote /work/study/summary.json and /work/study/report.txt
+== 2026-09-02T15:44:51Z report
+[15:44:51] wrote /work/study/report.html
+== 2026-09-02T15:44:51Z POST DONE

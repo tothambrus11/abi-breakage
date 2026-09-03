@@ -1,0 +1,56 @@
+{
+ "data": {
+  "coverage": [
+   {
+    "header_files": 14,
+    "parsed": 14,
+    "skipped_by_limit": 0,
+    "with_fatal_error": 0
+   },
+   {
+    "header_files": 14,
+    "parsed": 14,
+    "skipped_by_limit": 0,
+    "with_fatal_error": 0
+   }
+  ],
+  "diff": {
+   "definitions": [
+    842,
+    934
+   ],
+   "definitions_added": 115,
+   "definitions_common": 819,
+   "definitions_removed": 23,
+   "examples": [
+    "z3++.h::register_final",
+    "z3++.h::fresh_eh",
+    "z3++.h::ctx",
+    "z3++.h::inc",
+    "z3++.h::solver",
+    "z3++.h::solver",
+    "z3++.h::add",
+    "z3++.h::to_string"
+   ],
+   "inline_body_changed": 37,
+   "inline_body_changed_template": 0,
+   "inline_decl_changed": 3,
+   "macro_value_changed": 3,
+   "macros": [
+    49,
+    46
+   ],
+   "macros_common": 46
+  },
+  "id": "z3@4.8.12..4.13.3",
+  "language": "cxx",
+  "source": "z3",
+  "upstream": [
+   "4.8.12",
+   "4.13.3"
+  ]
+ },
+ "generated_at": "2026-09-02T14:52:08Z",
+ "schema": "abistudy/header-pair/2",
+ "tool": "abistudy 3.0.0"
+}

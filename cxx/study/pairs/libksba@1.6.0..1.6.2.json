@@ -1,0 +1,58 @@
+{
+ "data": {
+  "id": "libksba@1.6.0..1.6.2",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      163,
+      163
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libksba.so.8",
+     "libksba.so.8"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_removed_from_struct": 1
+    },
+    "type_events": [
+     {
+      "count": 1,
+      "declared_in": "../../src/ocsp.h",
+      "kind": "field_removed_from_struct",
+      "type": "struct ksba_ocsp_s"
+     }
+    ]
+   }
+  ],
+  "seconds": 2.575140793,
+  "source": "libksba",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.6.0",
+   "1.6.2"
+  ]
+ },
+ "generated_at": "2026-09-02T14:59:33Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

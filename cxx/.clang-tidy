@@ -1,0 +1,72 @@
+---
+# Recommended rule families, with the few checks that fight this code base's
+# deliberate choices switched off (each exclusion is justified inline).
+Checks: >
+  bugprone-*,
+  cert-*,
+  clang-analyzer-*,
+  concurrency-*,
+  cppcoreguidelines-*,
+  misc-*,
+  modernize-*,
+  performance-*,
+  portability-*,
+  readability-*,
+  -bugprone-easily-swappable-parameters,
+  -cppcoreguidelines-avoid-magic-numbers,
+  -readability-magic-numbers,
+  -cppcoreguidelines-pro-bounds-array-to-pointer-decay,
+  -cppcoreguidelines-pro-bounds-pointer-arithmetic,
+  -cppcoreguidelines-pro-type-vararg,
+  -cppcoreguidelines-macro-usage,
+  -cppcoreguidelines-avoid-do-while,
+  -cppcoreguidelines-owning-memory,
+  -misc-include-cleaner,
+  -misc-non-private-member-variables-in-classes,
+  -modernize-use-trailing-return-type,
+  -readability-identifier-length,
+  -readability-function-cognitive-complexity,
+  -cert-err58-cpp,
+  -portability-avoid-pragma-once
+# Exclusions, in order:
+#   easily-swappable-parameters   : strong types already solve this where it matters.
+#   magic-numbers                 : thresholds are named constants; the rest are format widths.
+#   array-to-pointer-decay,
+#   pointer-arithmetic, vararg    : required at the libarchive / libclang / POSIX C boundaries.
+#   macro-usage                   : ABISTUDY_TRY / EXPECTS are the deliberate control-flow macros.
+#   avoid-do-while, owning-memory : C-API RAII wrappers own raw handles by design.
+#   include-cleaner               : noisy with third-party umbrella headers (libabigail).
+#   non-private-member-variables  : artefact structs are plain data by design.
+#   trailing-return-type          : house style keeps leading return types.
+#   identifier-length             : i/j/k loops and (a, b) pairs are fine.
+#   cognitive-complexity          : the diff visitor is long by nature; reviewed by hand.
+#   err58-cpp                     : static constexpr tables cannot throw.
+#   avoid-pragma-once             : every supported compiler honours it; guards add noise.
+
+WarningsAsErrors: >
+  bugprone-*,
+  clang-analyzer-*,
+  concurrency-*,
+  performance-*
+HeaderFilterRegex: '^.*/src/.*'
+FormatStyle: file
+CheckOptions:
+  bugprone-unused-return-value.AllowCastToVoid: true
+  readability-braces-around-statements.ShortStatementLines: 2
+  readability-implicit-bool-conversion.AllowPointerConditions: true
+  readability-implicit-bool-conversion.AllowIntegerConditions: true
+  cppcoreguidelines-special-member-functions.AllowSoleDefaultDtor: true
+  cppcoreguidelines-special-member-functions.AllowMissingMoveFunctions: true
+  misc-const-correctness.AnalyzeValues: false
+  modernize-use-nodiscard.ReplacementString: '[[nodiscard]]'
+  performance-unnecessary-value-param.AllowedTypes: 'std::shared_ptr;std::function'
+  readability-identifier-naming.NamespaceCase: lower_case
+  readability-identifier-naming.ClassCase: CamelCase
+  readability-identifier-naming.StructCase: CamelCase
+  readability-identifier-naming.FunctionCase: lower_case
+  readability-identifier-naming.VariableCase: lower_case
+  readability-identifier-naming.PrivateMemberSuffix: '_'
+  readability-identifier-naming.EnumConstantCase: lower_case
+  readability-identifier-naming.ConstexprVariableCase: lower_case
+  readability-identifier-naming.MacroDefinitionCase: UPPER_CASE
+  readability-identifier-naming.TemplateParameterCase: CamelCase

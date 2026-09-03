@@ -1,0 +1,77 @@
+{
+ "data": {
+  "id": "libfido2@1.15.0..1.16.0",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      267,
+      269
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "field_added_to_struct": 1,
+     "symbol_added": 2,
+     "type_size_changed": 1
+    },
+    "soname": [
+     "libfido2.so.1",
+     "libfido2.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function int fido_cred_set_entattest(fido_cred_t*, int)",
+      "symbol": "fido_cred_set_entattest"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool fido_cred_entattest(const fido_cred_t*)",
+      "symbol": "fido_cred_entattest"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [
+     {
+      "count": 1,
+      "declared_in": "./src/fido/types.h",
+      "kind": "field_added_to_struct",
+      "type": "struct fido_cred"
+     },
+     {
+      "count": 1,
+      "declared_in": "./src/fido/types.h",
+      "kind": "type_size_changed",
+      "type": "struct fido_cred"
+     }
+    ]
+   }
+  ],
+  "seconds": 1.826530458,
+  "source": "libfido2",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.15.0",
+   "1.16.0"
+  ]
+ },
+ "generated_at": "2026-09-02T14:59:24Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

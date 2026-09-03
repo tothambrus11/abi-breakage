@@ -1,0 +1,93 @@
+{
+ "data": {
+  "id": "apparmor@4.1.8..5.0.1",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      73,
+      78
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {
+     "symbol_added": 2
+    },
+    "public": {
+     "symbol_added": 3
+    },
+    "soname": [
+     "libapparmor.so.1",
+     "libapparmor.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function int aa_set_self_attr(int, char*, int)",
+      "symbol": "aa_set_self_attr",
+      "version": "APPARMOR_5.0"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int aa_get_self_attr(int, char**, char**)",
+      "symbol": "aa_get_self_attr",
+      "version": "APPARMOR_5.0"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t _aa_strip_compressed_cache_header(const char**, size_t*)",
+      "symbol": "_aa_strip_compressed_cache_header",
+      "version": "PRIVATE"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const char* aa_get_lsm_iface_name(int)",
+      "symbol": "aa_get_lsm_iface_name",
+      "version": "APPARMOR_5.0"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t _aa_compressed_cache_offset(const char*, size_t)",
+      "symbol": "_aa_compressed_cache_offset",
+      "version": "PRIVATE"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 2
+    },
+    "type_events": [
+     {
+      "count": 2,
+      "declared_in": "./libraries/libapparmor/src/kernel_interface.c",
+      "kind": "field_added_to_struct",
+      "type": "struct aa_kernel_interface"
+     }
+    ]
+   }
+  ],
+  "seconds": 1.8065361,
+  "source": "apparmor",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "4.1.8",
+   "5.0.1"
+  ]
+ },
+ "generated_at": "2026-09-02T14:58:17Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

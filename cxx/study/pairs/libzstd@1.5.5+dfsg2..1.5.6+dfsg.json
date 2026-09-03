@@ -1,0 +1,204 @@
+{
+ "data": {
+  "id": "libzstd@1.5.5+dfsg2..1.5.6+dfsg",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      185,
+      186
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "enum_case_added": 2,
+     "enum_case_removed": 1,
+     "function_signature_changed": 1,
+     "symbol_added": 1
+    },
+    "soname": [
+     "libzstd.so.1",
+     "libzstd.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function void ZSTD_CCtxParams_registerSequenceProducer(ZSTD_CCtx_params*, void*, ZSTD_sequenceProducer_F)",
+      "symbol": "ZSTD_CCtxParams_registerSequenceProducer"
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void ZSTD_registerSequenceProducer(ZSTD_CCtx*, void*, ZSTD_sequenceProducer_F*)  ->  function void ZSTD_registerSequenceProducer(ZSTD_CCtx*, void*, ZSTD_sequenceProducer_F)",
+      "symbol": "ZSTD_registerSequenceProducer"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 5,
+     "field_removed_from_struct": 1,
+     "field_type_changed": 3,
+     "member_offset_changed": 77,
+     "type_size_changed": 6
+    },
+    "type_events": [
+     {
+      "count": 1,
+      "declared_in": ".//dictBuilder/../compress/zstd_compress_internal.h",
+      "kind": "field_added_to_struct",
+      "type": "struct ZSTD_CCtx_params_s"
+     },
+     {
+      "count": 1,
+      "declared_in": ".//dictBuilder/../compress/zstd_compress_internal.h",
+      "kind": "field_type_changed",
+      "type": "struct ZSTD_CCtx_params_s"
+     },
+     {
+      "count": 2,
+      "declared_in": ".//dictBuilder/../compress/zstd_compress_internal.h",
+      "kind": "member_offset_changed",
+      "type": "struct ZSTD_CCtx_params_s"
+     },
+     {
+      "count": 1,
+      "declared_in": ".//dictBuilder/../compress/zstd_compress_internal.h",
+      "kind": "type_size_changed",
+      "type": "struct ZSTD_CCtx_params_s"
+     },
+     {
+      "count": 1,
+      "declared_in": ".//compress/../common/../zstd.h",
+      "kind": "enum_case_added",
+      "type": "enum ZSTD_cParameter"
+     },
+     {
+      "count": 1,
+      "declared_in": ".//compress/../common/../zstd.h",
+      "kind": "enum_case_removed",
+      "type": "enum ZSTD_cParameter"
+     },
+     {
+      "count": 2,
+      "declared_in": ".//compress/zstd_compress_internal.h",
+      "kind": "field_added_to_struct",
+      "type": "struct ZSTD_CCtx_s"
+     },
+     {
+      "count": 1,
+      "declared_in": ".//compress/zstd_compress_internal.h",
+      "kind": "field_removed_from_struct",
+      "type": "struct ZSTD_CCtx_s"
+     },
+     {
+      "count": 44,
+      "declared_in": ".//compress/zstd_compress_internal.h",
+      "kind": "member_offset_changed",
+      "type": "struct ZSTD_CCtx_s"
+     },
+     {
+      "count": 1,
+      "declared_in": ".//compress/zstd_compress_internal.h",
+      "kind": "type_size_changed",
+      "type": "struct ZSTD_CCtx_s"
+     },
+     {
+      "count": 19,
+      "declared_in": ".//compress/zstdmt_compress.c",
+      "kind": "member_offset_changed",
+      "type": "struct ZSTDMT_CCtx_s"
+     },
+     {
+      "count": 1,
+      "declared_in": ".//compress/zstdmt_compress.c",
+      "kind": "type_size_changed",
+      "type": "struct ZSTDMT_CCtx_s"
+     },
+     {
+      "count": 4,
+      "declared_in": ".//compress/zstdmt_compress.c",
+      "kind": "member_offset_changed",
+      "type": "struct ZSTDMT_jobDescription"
+     },
+     {
+      "count": 1,
+      "declared_in": ".//compress/zstdmt_compress.c",
+      "kind": "type_size_changed",
+      "type": "struct ZSTDMT_jobDescription"
+     },
+     {
+      "count": 1,
+      "declared_in": ".//compress/zstdmt_compress.c",
+      "kind": "field_type_changed",
+      "type": "struct ZSTDMT_CCtxPool"
+     },
+     {
+      "count": 1,
+      "declared_in": ".//compress/zstdmt_compress.c",
+      "kind": "field_type_changed",
+      "type": "struct ZSTDMT_bufferPool_s"
+     },
+     {
+      "count": 1,
+      "declared_in": ".//compress/zstdmt_compress.c",
+      "kind": "type_size_changed",
+      "type": "struct ZSTDMT_bufferPool_s"
+     },
+     {
+      "count": 6,
+      "declared_in": ".//compress/zstdmt_compress.c",
+      "kind": "member_offset_changed",
+      "type": "struct serialState_t"
+     },
+     {
+      "count": 1,
+      "declared_in": ".//compress/zstdmt_compress.c",
+      "kind": "type_size_changed",
+      "type": "struct serialState_t"
+     },
+     {
+      "count": 2,
+      "declared_in": ".//decompress/zstd_decompress_internal.h",
+      "kind": "field_added_to_struct",
+      "type": "struct ZSTD_DCtx_s"
+     },
+     {
+      "count": 2,
+      "declared_in": ".//decompress/zstd_decompress_internal.h",
+      "kind": "member_offset_changed",
+      "type": "struct ZSTD_DCtx_s"
+     },
+     {
+      "count": 1,
+      "declared_in": ".//decompress/../common/../zstd.h",
+      "kind": "enum_case_added",
+      "type": "enum ZSTD_dParameter"
+     }
+    ]
+   }
+  ],
+  "seconds": 1.642302583,
+  "source": "libzstd",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.5.5+dfsg2",
+   "1.5.6+dfsg"
+  ]
+ },
+ "generated_at": "2026-09-02T14:58:47Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

@@ -1,0 +1,89 @@
+{
+ "data": {
+  "id": "intel-gmmlib@22.7.0+ds1..22.7.1+ds1",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      97,
+      97
+     ],
+     "mangled_functions": [
+      95,
+      95
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "base_class_changed": 5,
+     "field_added_to_struct": 1
+    },
+    "soname": [
+     "libigdgmm.so.12",
+     "libigdgmm.so.12"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [
+     {
+      "count": 1,
+      "declared_in": "./Source/GmmLib/inc/External/Common/GmmCachePolicyExt.h",
+      "kind": "field_added_to_struct",
+      "type": "union MEMORY_OBJECT_CONTROL_STATE_REC"
+     },
+     {
+      "count": 1,
+      "declared_in": "./Source/GmmLib/inc/External/Common/../Linux/GmmResourceInfoLin.h",
+      "kind": "base_class_changed",
+      "type": "class GmmLib::GmmResourceInfoLin"
+     },
+     {
+      "count": 1,
+      "declared_in": "./Source/GmmLib/inc/External/Common/../Linux/GmmResourceInfoLin.h",
+      "kind": "base_class_changed",
+      "type": "class GmmLib::GmmResourceInfoLin"
+     },
+     {
+      "count": 1,
+      "declared_in": "./Source/GmmLib/TranslationTable/../TranslationTable/GmmUmdTranslationTable.h",
+      "kind": "base_class_changed",
+      "type": "class GmmLib::AuxTable"
+     },
+     {
+      "count": 1,
+      "declared_in": "./Source/GmmLib/TranslationTable/../TranslationTable/GmmUmdTranslationTable.h",
+      "kind": "base_class_changed",
+      "type": "class GmmLib::MidLevelTable"
+     },
+     {
+      "count": 1,
+      "declared_in": "./Source/GmmLib/TranslationTable/../TranslationTable/GmmUmdTranslationTable.h",
+      "kind": "base_class_changed",
+      "type": "class GmmLib::LastLevelTable"
+     }
+    ]
+   }
+  ],
+  "seconds": 2.681802338,
+  "source": "intel-gmmlib",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "22.7.0+ds1",
+   "22.7.1+ds1"
+  ]
+ },
+ "generated_at": "2026-09-02T15:05:29Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

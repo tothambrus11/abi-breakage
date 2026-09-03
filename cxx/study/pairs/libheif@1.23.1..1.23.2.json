@@ -1,0 +1,443 @@
+{
+ "data": {
+  "id": "libheif@1.23.1..1.23.2",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      471,
+      473
+     ],
+     "mangled_functions": [
+      6,
+      8
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 1
+    },
+    "soname": [
+     "libheif.so.1",
+     "libheif.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::_Hashtable<unsignedint,unsignedint,std::allocator<unsignedint>,std::__detail::_Identity,std::equal_to<unsignedint>,std::hash<unsignedint>,std::__detail::_Mod_range_hashing,std::__detail::_Default_ranged_hash,std::__detail::_Prime_rehash_policy,std::__detail::_Hashtable_traits<false,true,true>>::~_Hashtable()",
+      "symbol": "_ZNSt10_HashtableIjjSaIjENSt8__detail9_IdentityESt8equal_toIjESt4hashIjENS1_18_Mod_range_hashingENS1_20_Default_ranged_hashENS1_20_Prime_rehash_policyENS1_17_Hashtable_traitsILb0ELb1ELb1EEEED2Ev"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 53,
+     "field_added_to_struct": 4,
+     "field_type_changed": 1,
+     "member_offset_changed": 29,
+     "type_size_changed": 3,
+     "vtable_changed": 8
+    },
+    "type_events": [
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<HeifContext>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "class std::vector<std::shared_ptr<ImageItem>,std::allocator<std::shared_ptr<ImageItem>>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Vector_base<std::shared_ptr<ImageItem>,std::allocator<std::shared_ptr<ImageItem>>>::_Vector_impl"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<ImageItem>"
+     },
+     {
+      "count": 4,
+      "declared_in": "./libheif/image-items/image_item.h",
+      "kind": "vtable_changed",
+      "type": "class ImageItem"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "class std::vector<std::shared_ptr<ImageItem>,std::allocator<std::shared_ptr<ImageItem>>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<ImageItem>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "class std::vector<std::shared_ptr<ImageMetadata>,std::allocator<std::shared_ptr<ImageMetadata>>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Vector_base<std::shared_ptr<ImageMetadata>,std::allocator<std::shared_ptr<ImageMetadata>>>::_Vector_impl"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<ImageMetadata>"
+     },
+     {
+      "count": 1,
+      "declared_in": "./libheif/image-items/image_item.h",
+      "kind": "field_added_to_struct",
+      "type": "class ImageMetadata"
+     },
+     {
+      "count": 1,
+      "declared_in": "./libheif/image-items/image_item.h",
+      "kind": "type_size_changed",
+      "type": "class ImageMetadata"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/std_mutex.h",
+      "kind": "base_class_changed",
+      "type": "class std::mutex"
+     },
+     {
+      "count": 4,
+      "declared_in": "./libheif/image-items/image_item.h",
+      "kind": "vtable_changed",
+      "type": "class ImageItem"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/variant",
+      "kind": "base_class_changed",
+      "type": "class std::variant<std::vector<unsignedchar,std::allocator<unsignedchar>>,Error>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/variant",
+      "kind": "base_class_changed",
+      "type": "struct std::__detail::__variant::_Variant_base<std::vector<unsignedchar,std::allocator<unsignedchar>>,Error>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/variant",
+      "kind": "base_class_changed",
+      "type": "struct std::__detail::__variant::_Move_assign_base<false,std::vector<unsignedchar,std::allocator<unsignedchar>>,Error>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/variant",
+      "kind": "base_class_changed",
+      "type": "struct std::__detail::__variant::_Copy_assign_base<false,std::vector<unsignedchar,std::allocator<unsignedchar>>,Error>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/variant",
+      "kind": "base_class_changed",
+      "type": "struct std::__detail::__variant::_Move_ctor_base<false,std::vector<unsignedchar,std::allocator<unsignedchar>>,Error>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/variant",
+      "kind": "base_class_changed",
+      "type": "struct std::__detail::__variant::_Copy_ctor_base<false,std::vector<unsignedchar,std::allocator<unsignedchar>>,Error>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/variant",
+      "kind": "field_type_changed",
+      "type": "union std::__detail::__variant::_Variadic_union<false,Error>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/variant",
+      "kind": "base_class_changed",
+      "type": "class std::variant<std::shared_ptr<Decoder>,Error>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/variant",
+      "kind": "base_class_changed",
+      "type": "struct std::__detail::__variant::_Variant_base<std::shared_ptr<Decoder>,Error>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/variant",
+      "kind": "base_class_changed",
+      "type": "struct std::__detail::__variant::_Move_assign_base<false,std::shared_ptr<Decoder>,Error>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/variant",
+      "kind": "base_class_changed",
+      "type": "struct std::__detail::__variant::_Copy_assign_base<false,std::shared_ptr<Decoder>,Error>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/variant",
+      "kind": "base_class_changed",
+      "type": "struct std::__detail::__variant::_Move_ctor_base<false,std::shared_ptr<Decoder>,Error>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/variant",
+      "kind": "base_class_changed",
+      "type": "struct std::__detail::__variant::_Copy_ctor_base<false,std::shared_ptr<Decoder>,Error>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<Decoder>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<HeifFile>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/variant",
+      "kind": "base_class_changed",
+      "type": "class std::variant<std::optional<ImageSize>,Error>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/variant",
+      "kind": "base_class_changed",
+      "type": "struct std::__detail::__variant::_Variant_base<std::optional<ImageSize>,Error>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/variant",
+      "kind": "base_class_changed",
+      "type": "struct std::__detail::__variant::_Move_assign_base<false,std::optional<ImageSize>,Error>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/variant",
+      "kind": "base_class_changed",
+      "type": "struct std::__detail::__variant::_Copy_assign_base<false,std::optional<ImageSize>,Error>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/variant",
+      "kind": "base_class_changed",
+      "type": "struct std::__detail::__variant::_Move_ctor_base<false,std::optional<ImageSize>,Error>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/variant",
+      "kind": "base_class_changed",
+      "type": "struct std::__detail::__variant::_Copy_ctor_base<false,std::optional<ImageSize>,Error>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/variant",
+      "kind": "base_class_changed",
+      "type": "class std::variant<std::shared_ptr<HeifPixelImage>,Error>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/variant",
+      "kind": "base_class_changed",
+      "type": "struct std::__detail::__variant::_Variant_base<std::shared_ptr<HeifPixelImage>,Error>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/variant",
+      "kind": "base_class_changed",
+      "type": "struct std::__detail::__variant::_Move_assign_base<false,std::shared_ptr<HeifPixelImage>,Error>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/variant",
+      "kind": "base_class_changed",
+      "type": "struct std::__detail::__variant::_Copy_assign_base<false,std::shared_ptr<HeifPixelImage>,Error>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/variant",
+      "kind": "base_class_changed",
+      "type": "struct std::__detail::__variant::_Move_ctor_base<false,std::shared_ptr<HeifPixelImage>,Error>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/variant",
+      "kind": "base_class_changed",
+      "type": "struct std::__detail::__variant::_Copy_ctor_base<false,std::shared_ptr<HeifPixelImage>,Error>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<Encoder>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/variant",
+      "kind": "base_class_changed",
+      "type": "class std::variant<Encoder::CodedImageData,Error>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/variant",
+      "kind": "base_class_changed",
+      "type": "struct std::__detail::__variant::_Variant_base<Encoder::CodedImageData,Error>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/variant",
+      "kind": "base_class_changed",
+      "type": "struct std::__detail::__variant::_Move_assign_base<false,Encoder::CodedImageData,Error>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/variant",
+      "kind": "base_class_changed",
+      "type": "struct std::__detail::__variant::_Copy_assign_base<false,Encoder::CodedImageData,Error>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/variant",
+      "kind": "base_class_changed",
+      "type": "struct std::__detail::__variant::_Move_ctor_base<false,Encoder::CodedImageData,Error>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/variant",
+      "kind": "base_class_changed",
+      "type": "struct std::__detail::__variant::_Copy_ctor_base<false,Encoder::CodedImageData,Error>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<Track>"
+     },
+     {
+      "count": 2,
+      "declared_in": "./libheif/sequences/track.h",
+      "kind": "field_added_to_struct",
+      "type": "class Track"
+     },
+     {
+      "count": 29,
+      "declared_in": "./libheif/sequences/track.h",
+      "kind": "member_offset_changed",
+      "type": "class Track"
+     },
+     {
+      "count": 1,
+      "declared_in": "./libheif/sequences/track.h",
+      "kind": "type_size_changed",
+      "type": "class Track"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "class std::vector<std::shared_ptr<Chunk>,std::allocator<std::shared_ptr<Chunk>>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Vector_base<std::shared_ptr<Chunk>,std::allocator<std::shared_ptr<Chunk>>>::_Vector_impl"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<Chunk>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<Box_stts>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "class std::vector<Box_stts::TimeToSample,std::allocator<Box_stts::TimeToSample>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Vector_base<Box_stts::TimeToSample,std::allocator<Box_stts::TimeToSample>>::_Vector_impl"
+     },
+     {
+      "count": 1,
+      "declared_in": "./libheif/sequences/seq_boxes.h",
+      "kind": "field_added_to_struct",
+      "type": "struct Box_stts::TimeToSample"
+     },
+     {
+      "count": 1,
+      "declared_in": "./libheif/sequences/seq_boxes.h",
+      "kind": "type_size_changed",
+      "type": "struct Box_stts::TimeToSample"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "class std::vector<std::shared_ptr<Track>,std::allocator<std::shared_ptr<Track>>>"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Vector_base<std::shared_ptr<Track>,std::allocator<std::shared_ptr<Track>>>::_Vector_impl"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "kind": "base_class_changed",
+      "type": "class std::shared_ptr<Track>"
+     }
+    ]
+   }
+  ],
+  "seconds": 69.575496678,
+  "source": "libheif",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.23.1",
+   "1.23.2"
+  ]
+ },
+ "generated_at": "2026-09-02T15:02:31Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

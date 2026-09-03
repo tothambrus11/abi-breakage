@@ -1,0 +1,191 @@
+{
+ "data": {
+  "id": "game-music-emu@0.6.3..0.6.4",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      48,
+      51
+     ],
+     "mangled_functions": [
+      2,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 5,
+     "symbol_removed": 2
+    },
+    "soname": [
+     "libgme.so.0",
+     "libgme.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<shortint,std::allocator<shortint>>::_M_default_append(std::vector<shortint,std::allocator<shortint>>::size_type)",
+      "symbol": "_ZNSt6vectorIsSaIsEE17_M_default_appendEm"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function std::vector<shortint,std::allocator<shortint>>* std::__do_uninit_fill_n<std::vector<shortint>*,longunsignedint,std::vector<shortint>>(std::vector<shortint,std::allocator<shortint>>*, unsigned long int, const std::vector<shortint,std::allocator<shortint>>&)",
+      "symbol": "_ZSt18__do_uninit_fill_nIPSt6vectorIsSaIsEEmS2_ET_S4_T0_RKT1_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void gme_set_fade_msecs(Music_Emu*, int, int)",
+      "symbol": "gme_set_fade_msecs"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function gme_err_t gme_load_tracks(Music_Emu*, void*, long int*, int)",
+      "symbol": "gme_load_tracks"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int gme_fixed_track_count(gme_type_t)",
+      "symbol": "gme_fixed_track_count"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void gme_disable_echo(Music_Emu*, int)",
+      "symbol": "gme_disable_echo"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int gme_autoload_playback_limit(const Music_Emu*)",
+      "symbol": "gme_autoload_playback_limit"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 2,
+     "field_added_to_struct": 16,
+     "member_offset_changed": 37,
+     "type_size_changed": 5,
+     "vtable_changed": 10
+    },
+    "type_events": [
+     {
+      "count": 24,
+      "declared_in": "./gme/Music_Emu.h",
+      "kind": "member_offset_changed",
+      "type": "struct Music_Emu"
+     },
+     {
+      "count": 1,
+      "declared_in": "./gme/Music_Emu.h",
+      "kind": "type_size_changed",
+      "type": "struct Music_Emu"
+     },
+     {
+      "count": 1,
+      "declared_in": "./gme/Music_Emu.h",
+      "kind": "base_class_changed",
+      "type": "struct Music_Emu"
+     },
+     {
+      "count": 5,
+      "declared_in": "./gme/Music_Emu.h",
+      "kind": "vtable_changed",
+      "type": "struct Music_Emu"
+     },
+     {
+      "count": 1,
+      "declared_in": "./gme/Music_Emu.h",
+      "kind": "base_class_changed",
+      "type": "struct Music_Emu"
+     },
+     {
+      "count": 5,
+      "declared_in": "./gme/Music_Emu.h",
+      "kind": "vtable_changed",
+      "type": "struct Music_Emu"
+     },
+     {
+      "count": 1,
+      "declared_in": "./gme/Gme_File.h",
+      "kind": "field_added_to_struct",
+      "type": "struct Gme_File"
+     },
+     {
+      "count": 2,
+      "declared_in": "./gme/Gme_File.h",
+      "kind": "member_offset_changed",
+      "type": "struct Gme_File"
+     },
+     {
+      "count": 1,
+      "declared_in": "./gme/Gme_File.h",
+      "kind": "type_size_changed",
+      "type": "struct Gme_File"
+     },
+     {
+      "count": 1,
+      "declared_in": "./gme/M3u_Playlist.h",
+      "kind": "type_size_changed",
+      "type": "class M3_Playlist"
+     },
+     {
+      "count": 4,
+      "declared_in": "./gme/M3u_Playlist.h",
+      "kind": "field_added_to_struct",
+      "type": "struct M3_Playlist::info_t"
+     },
+     {
+      "count": 4,
+      "declared_in": "./gme/M3u_Playlist.h",
+      "kind": "member_offset_changed",
+      "type": "struct M3_Playlist::info_t"
+     },
+     {
+      "count": 1,
+      "declared_in": "./gme/M3u_Playlist.h",
+      "kind": "type_size_changed",
+      "type": "struct M3_Playlist::info_t"
+     },
+     {
+      "count": 11,
+      "declared_in": "./gme/Gme_File.h",
+      "kind": "field_added_to_struct",
+      "type": "struct track_info_t"
+     },
+     {
+      "count": 7,
+      "declared_in": "./gme/Gme_File.h",
+      "kind": "member_offset_changed",
+      "type": "struct track_info_t"
+     },
+     {
+      "count": 1,
+      "declared_in": "./gme/Gme_File.h",
+      "kind": "type_size_changed",
+      "type": "struct track_info_t"
+     }
+    ]
+   }
+  ],
+  "seconds": 2.640487357,
+  "source": "game-music-emu",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "0.6.3",
+   "0.6.4"
+  ]
+ },
+ "generated_at": "2026-09-02T15:03:23Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

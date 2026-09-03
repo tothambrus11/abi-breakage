@@ -1,0 +1,87 @@
+{
+ "data": {
+  "id": "apparmor@3.1.7..4.1.0",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      71,
+      73
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "field_added_to_struct": 3,
+     "symbol_added": 2,
+     "type_size_changed": 1
+    },
+    "soname": [
+     "libapparmor.so.1",
+     "libapparmor.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function int aa_split_overlay_str(char*, char***, size_t, bool)",
+      "symbol": "aa_split_overlay_str",
+      "version": "APPARMOR_3.1"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int aa_features_check(int, const char*, aa_features*)",
+      "symbol": "aa_features_check",
+      "version": "APPARMOR_3.1"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 1
+    },
+    "type_events": [
+     {
+      "count": 1,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
+      "kind": "field_added_to_struct",
+      "type": "struct _IO_FILE"
+     },
+     {
+      "count": 3,
+      "declared_in": "../include/aalogparse.h",
+      "kind": "field_added_to_struct",
+      "type": "struct aa_log_record"
+     },
+     {
+      "count": 1,
+      "declared_in": "../include/aalogparse.h",
+      "kind": "type_size_changed",
+      "type": "struct aa_log_record"
+     }
+    ]
+   }
+  ],
+  "seconds": 1.810907866,
+  "source": "apparmor",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "3.1.7",
+   "4.1.0"
+  ]
+ },
+ "generated_at": "2026-09-02T14:58:17Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

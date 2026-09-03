@@ -1,0 +1,98 @@
+{
+ "data": {
+  "id": "lvm2@2.03.16..2.03.22",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      443,
+      443
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "enum_case_added": 1
+    },
+    "soname": [
+     "libdevmapper.so.1.02.1",
+     "libdevmapper.so.1.02.1"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 2,
+     "member_offset_changed": 10,
+     "type_size_changed": 3
+    },
+    "type_events": [
+     {
+      "count": 1,
+      "declared_in": "../libdm/libdevmapper.h",
+      "kind": "enum_case_added",
+      "type": "enum dm_report_group_type_e"
+     },
+     {
+      "count": 4,
+      "declared_in": "./debian/build/build_deb/libdm/libdm-deptree.c",
+      "kind": "member_offset_changed",
+      "type": "struct dm_tree_node"
+     },
+     {
+      "count": 1,
+      "declared_in": "./debian/build/build_deb/libdm/libdm-deptree.c",
+      "kind": "type_size_changed",
+      "type": "struct dm_tree_node"
+     },
+     {
+      "count": 6,
+      "declared_in": "./debian/build/build_deb/libdm/libdm-deptree.c",
+      "kind": "member_offset_changed",
+      "type": "struct dm_tree"
+     },
+     {
+      "count": 1,
+      "declared_in": "./debian/build/build_deb/libdm/libdm-deptree.c",
+      "kind": "type_size_changed",
+      "type": "struct dm_tree"
+     },
+     {
+      "count": 2,
+      "declared_in": "./debian/build/build_deb/libdm/libdm-deptree.c",
+      "kind": "field_added_to_struct",
+      "type": "struct load_properties"
+     },
+     {
+      "count": 1,
+      "declared_in": "./debian/build/build_deb/libdm/libdm-deptree.c",
+      "kind": "type_size_changed",
+      "type": "struct load_properties"
+     }
+    ]
+   }
+  ],
+  "seconds": 2.48293787,
+  "source": "lvm2",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "2.03.16",
+   "2.03.22"
+  ]
+ },
+ "generated_at": "2026-09-02T14:57:26Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

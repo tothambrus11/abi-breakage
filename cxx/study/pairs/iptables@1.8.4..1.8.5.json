@@ -1,0 +1,56 @@
+{
+ "data": {
+  "id": "iptables@1.8.4..1.8.5",
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      71,
+      72
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 1
+    },
+    "soname": [
+     "libxtables.so.12",
+     "libxtables.so.12"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function void xtables_fini(void)",
+      "symbol": "xtables_fini"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": []
+   }
+  ],
+  "seconds": 1.854255228,
+  "source": "iptables",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.8.4",
+   "1.8.5"
+  ]
+ },
+ "generated_at": "2026-09-02T12:09:37Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

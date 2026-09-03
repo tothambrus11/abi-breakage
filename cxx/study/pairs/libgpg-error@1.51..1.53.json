@@ -1,0 +1,219 @@
+{
+ "data": {
+  "id": "libgpg-error@1.51..1.53",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      175,
+      199
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 24
+    },
+    "soname": [
+     "libgpg-error.so.0",
+     "libgpg-error.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function gpgrt_strlist_t gpgrt_strlist_prev(gpgrt_strlist_t, gpgrt_strlist_t)",
+      "symbol": "gpgrt_strlist_prev",
+      "version": "GPG_ERROR_1.0"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function char* gpgrt_strlist_pop(gpgrt_strlist_t*)",
+      "symbol": "gpgrt_strlist_pop",
+      "version": "GPG_ERROR_1.0"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function gpgrt_strlist_t gpgrt_strlist_tokenize(gpgrt_strlist_t*, const char*, const char*, unsigned int)",
+      "symbol": "gpgrt_strlist_tokenize",
+      "version": "GPG_ERROR_1.0"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function gpgrt_strlist_t gpgrt_strlist_last(gpgrt_strlist_t)",
+      "symbol": "gpgrt_strlist_last",
+      "version": "GPG_ERROR_1.0"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void gpgrt_strlist_free(gpgrt_strlist_t)",
+      "symbol": "gpgrt_strlist_free",
+      "version": "GPG_ERROR_1.0"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function gpgrt_strlist_t gpgrt_strlist_add(gpgrt_strlist_t*, const char*, unsigned int)",
+      "symbol": "gpgrt_strlist_add",
+      "version": "GPG_ERROR_1.0"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function gpgrt_strlist_t gpgrt_strlist_copy(gpgrt_strlist_t)",
+      "symbol": "gpgrt_strlist_copy",
+      "version": "GPG_ERROR_1.0"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function gpg_err_code_t gpgrt_nve_set(gpgrt_nvc_t, gpgrt_nve_t, const char*)",
+      "symbol": "gpgrt_nve_set",
+      "version": "GPG_ERROR_1.0"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function gpg_err_code_t gpgrt_nvc_add(gpgrt_nvc_t, const char*, const char*)",
+      "symbol": "gpgrt_nvc_add",
+      "version": "GPG_ERROR_1.0"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const char* gpgrt_nvc_get_string(gpgrt_nvc_t, const char*)",
+      "symbol": "gpgrt_nvc_get_string",
+      "version": "GPG_ERROR_1.0"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int gpgrt_nvc_get_flag(gpgrt_nvc_t, unsigned int, int)",
+      "symbol": "gpgrt_nvc_get_flag",
+      "version": "GPG_ERROR_1.0"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int gpgrt_nvc_get_bool(gpgrt_nvc_t, const char*)",
+      "symbol": "gpgrt_nvc_get_bool",
+      "version": "GPG_ERROR_1.0"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function gpgrt_nve_t gpgrt_nvc_lookup(gpgrt_nvc_t, const char*)",
+      "symbol": "gpgrt_nvc_lookup",
+      "version": "GPG_ERROR_1.0"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function gpgrt_strlist_t gpgrt_strlist_rev(gpgrt_strlist_t*)",
+      "symbol": "gpgrt_strlist_rev",
+      "version": "GPG_ERROR_1.0"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function gpgrt_strlist_t gpgrt_strlist_find(gpgrt_strlist_t, const char*)",
+      "symbol": "gpgrt_strlist_find",
+      "version": "GPG_ERROR_1.0"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const char* gpgrt_nve_value(gpgrt_nve_t)",
+      "symbol": "gpgrt_nve_value",
+      "version": "GPG_ERROR_1.0"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function gpgrt_nvc_t gpgrt_nvc_new(unsigned int)",
+      "symbol": "gpgrt_nvc_new",
+      "version": "GPG_ERROR_1.0"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function gpg_err_code_t gpgrt_nvc_write(gpgrt_nvc_t, estream_t)",
+      "symbol": "gpgrt_nvc_write",
+      "version": "GPG_ERROR_1.0"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function gpg_err_code_t gpgrt_nvc_parse(gpgrt_nvc_t*, int*, estream_t, unsigned int)",
+      "symbol": "gpgrt_nvc_parse",
+      "version": "GPG_ERROR_1.0"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void gpgrt_nvc_release(gpgrt_nvc_t)",
+      "symbol": "gpgrt_nvc_release",
+      "version": "GPG_ERROR_1.0"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void gpgrt_nvc_delete(gpgrt_nvc_t, gpgrt_nve_t, const char*)",
+      "symbol": "gpgrt_nvc_delete",
+      "version": "GPG_ERROR_1.0"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function gpg_err_code_t gpgrt_nvc_set(gpgrt_nvc_t, const char*, const char*)",
+      "symbol": "gpgrt_nvc_set",
+      "version": "GPG_ERROR_1.0"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const char* gpgrt_nve_name(gpgrt_nve_t)",
+      "symbol": "gpgrt_nve_name",
+      "version": "GPG_ERROR_1.0"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function gpgrt_nve_t gpgrt_nve_next(gpgrt_nve_t, const char*)",
+      "symbol": "gpgrt_nve_next",
+      "version": "GPG_ERROR_1.0"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 2,
+     "member_offset_changed": 4,
+     "type_size_changed": 1
+    },
+    "type_events": [
+     {
+      "count": 2,
+      "declared_in": "../../src/argparse.c",
+      "kind": "field_added_to_struct",
+      "type": "struct _gpgrt_argparse_internal_s"
+     },
+     {
+      "count": 4,
+      "declared_in": "../../src/argparse.c",
+      "kind": "member_offset_changed",
+      "type": "struct _gpgrt_argparse_internal_s"
+     },
+     {
+      "count": 1,
+      "declared_in": "../../src/argparse.c",
+      "kind": "type_size_changed",
+      "type": "struct _gpgrt_argparse_internal_s"
+     }
+    ]
+   }
+  ],
+  "seconds": 2.649389681,
+  "source": "libgpg-error",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.51",
+   "1.53"
+  ]
+ },
+ "generated_at": "2026-09-02T14:58:38Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

@@ -1,0 +1,72 @@
+{
+ "data": {
+  "id": "djvulibre@3.5.28..3.5.29",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      2460,
+      2460
+     ],
+     "mangled_functions": [
+      2316,
+      2316
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libdjvulibre.so.21",
+     "libdjvulibre.so.21"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 2,
+     "field_type_changed": 1,
+     "member_offset_changed": 1
+    },
+    "type_events": [
+     {
+      "count": 2,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
+      "kind": "field_added_to_struct",
+      "type": "struct _IO_FILE"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
+      "kind": "field_type_changed",
+      "type": "struct _IO_FILE"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
+      "kind": "member_offset_changed",
+      "type": "struct _IO_FILE"
+     }
+    ]
+   }
+  ],
+  "seconds": 7.746979511,
+  "source": "djvulibre",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "3.5.28",
+   "3.5.29"
+  ]
+ },
+ "generated_at": "2026-09-02T15:04:04Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

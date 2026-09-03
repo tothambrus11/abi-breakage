@@ -1,0 +1,114 @@
+{
+ "data": {
+  "id": "soundtouch@2.0.0..2.1.2+ds1",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      203,
+      209
+     ],
+     "mangled_functions": [
+      200,
+      208
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "field_added_to_struct": 10,
+     "member_offset_changed": 1,
+     "symbol_added": 8,
+     "type_size_changed": 1
+    },
+    "soname": [
+     "libSoundTouch.so.1",
+     "libSoundTouch.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "method int soundtouch::BPMDetect::getBeats(float*, float*, int)",
+      "symbol": "_ZN10soundtouch9BPMDetect8getBeatsEPfS1_i"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void soundtouch::BPMDetect::updateBeatPos(int)",
+      "symbol": "_ZN10soundtouch9BPMDetect13updateBeatPosEi"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method soundtouch::IIR2_filter::IIR2_filter(const double*)",
+      "symbol": "_ZN10soundtouch11IIR2_filterC2EPKd"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method float soundtouch::IIR2_filter::update(float)",
+      "symbol": "_ZN10soundtouch11IIR2_filter6updateEf"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void MAFilter(float*, const float*, int, int, int)",
+      "symbol": "_Z8MAFilterPfPKfiii"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<soundtouch::BEAT,std::allocator<soundtouch::BEAT>>::_M_realloc_insert<constsoundtouch::BEAT&>(std::vector<soundtouch::BEAT,std::allocator<soundtouch::BEAT>>::iterator, const soundtouch::BEAT&)",
+      "symbol": "_ZNSt6vectorIN10soundtouch4BEATESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void hamming(float*, int)",
+      "symbol": "_Z7hammingPfi"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "bool _dontcomplain_mmx_empty",
+      "symbol": "_dontcomplain_mmx_empty"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [
+     {
+      "count": 10,
+      "declared_in": "../../include/BPMDetect.h",
+      "kind": "field_added_to_struct",
+      "type": "class soundtouch::BPMDetect"
+     },
+     {
+      "count": 1,
+      "declared_in": "../../include/BPMDetect.h",
+      "kind": "member_offset_changed",
+      "type": "class soundtouch::BPMDetect"
+     },
+     {
+      "count": 1,
+      "declared_in": "../../include/BPMDetect.h",
+      "kind": "type_size_changed",
+      "type": "class soundtouch::BPMDetect"
+     }
+    ]
+   }
+  ],
+  "seconds": 2.303884193,
+  "source": "soundtouch",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "2.0.0",
+   "2.1.2+ds1"
+  ]
+ },
+ "generated_at": "2026-09-02T15:06:02Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

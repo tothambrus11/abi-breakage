@@ -1,0 +1,132 @@
+{
+ "data": {
+  "id": "ncurses@6.5+20251123..6.6+20251231",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      12,
+      12
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libtic.so.6",
+     "libtic.so.6"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 2,
+     "field_type_changed": 1,
+     "member_offset_changed": 1
+    },
+    "type_events": [
+     {
+      "count": 2,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
+      "kind": "field_added_to_struct",
+      "type": "struct _IO_FILE"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
+      "kind": "field_type_changed",
+      "type": "struct _IO_FILE"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
+      "kind": "member_offset_changed",
+      "type": "struct _IO_FILE"
+     }
+    ]
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      211,
+      212
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 1
+    },
+    "soname": [
+     "libtinfo.so.6",
+     "libtinfo.so.6"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool _nc_is_path_found(const char*, stat*)",
+      "symbol": "_nc_is_path_found",
+      "version": "NCURSES6_TINFO_6.6.20251230"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 2,
+     "field_type_changed": 1,
+     "member_offset_changed": 1
+    },
+    "type_events": [
+     {
+      "count": 2,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
+      "kind": "field_added_to_struct",
+      "type": "struct _IO_FILE"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
+      "kind": "field_type_changed",
+      "type": "struct _IO_FILE"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
+      "kind": "member_offset_changed",
+      "type": "struct _IO_FILE"
+     }
+    ]
+   }
+  ],
+  "seconds": 2.550244884,
+  "source": "ncurses",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "6.5+20251123",
+   "6.6+20251231"
+  ]
+ },
+ "generated_at": "2026-09-02T14:58:52Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

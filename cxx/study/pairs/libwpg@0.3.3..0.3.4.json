@@ -1,0 +1,129 @@
+{
+ "data": {
+  "id": "libwpg@0.3.3..0.3.4",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      10,
+      10
+     ],
+     "mangled_functions": [
+      10,
+      10
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 5,
+     "symbol_removed": 6
+    },
+    "soname": [
+     "libwpg-0.3.so.3",
+     "libwpg-0.3.so.3"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<double,std::allocator<double>>::emplace_back<double>(double&&)",
+      "symbol": "_ZNSt6vectorIdSaIdEE12emplace_backIJdEEEvDpOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::vector<double,std::allocator<double>>& std::vector<double,std::allocator<double>>::operator=(const std::vector<double,std::allocator<double>>&)",
+      "symbol": "_ZNSt6vectorIdSaIdEEaSERKS1_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<double,std::allocator<double>>::_M_realloc_insert<doubleconst&>(std::vector<double,std::allocator<double>>::iterator, const double&)",
+      "symbol": "_ZNSt6vectorIdSaIdEE17_M_realloc_insertIJRKdEEEvN9__gnu_cxx17__normal_iteratorIPdS1_EEDpOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<double,std::allocator<double>>::_M_realloc_insert<double>(std::vector<double,std::allocator<double>>::iterator, double&&)",
+      "symbol": "_ZNSt6vectorIdSaIdEE17_M_realloc_insertIJdEEEvN9__gnu_cxx17__normal_iteratorIPdS1_EEDpOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<unsignedchar,std::allocator<unsignedchar>>::emplace_back<unsignedchar>(unsigned char&&)",
+      "symbol": "_ZNSt6vectorIhSaIhEE12emplace_backIJhEEEvDpOT_"
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<unsignedchar,std::allocator<unsignedchar>>::_M_realloc_insert<unsignedcharconst&>(std::vector<unsignedchar,std::allocator<unsignedchar>>::iterator, const unsigned char&)",
+      "symbol": "_ZNSt6vectorIhSaIhEE17_M_realloc_insertIJRKhEEEvN9__gnu_cxx17__normal_iteratorIPhS1_EEDpOT_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<unsignedchar,std::allocator<unsignedchar>>::_M_realloc_append<unsignedchar>()",
+      "symbol": "_ZNSt6vectorIhSaIhEE17_M_realloc_appendIJhEEEvDpOT_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<unsignedchar,std::allocator<unsignedchar>>::_M_realloc_append<unsignedcharconst&>()",
+      "symbol": "_ZNSt6vectorIhSaIhEE17_M_realloc_appendIJRKhEEEvDpOT_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<double,std::allocator<double>>::_M_realloc_append<double>()",
+      "symbol": "_ZNSt6vectorIdSaIdEE17_M_realloc_appendIJdEEEvDpOT_"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release_last_use_cold()",
+      "symbol": "_ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE24_M_release_last_use_coldEv"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::_Vector_base<double,std::allocator<double>>::~_Vector_base()",
+      "symbol": "_ZNSt12_Vector_baseIdSaIdEED2Ev"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 5
+    },
+    "type_events": [
+     {
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "class std::vector<unsignedchar,std::allocator<unsignedchar>>"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "kind": "base_class_changed",
+      "type": "struct std::_Vector_base<unsignedchar,std::allocator<unsignedchar>>::_Vector_impl"
+     },
+     {
+      "count": 2,
+      "declared_in": "/usr/include/c++/8/bits/allocator.h",
+      "kind": "base_class_changed",
+      "type": "class std::allocator<unsignedchar>"
+     }
+    ]
+   }
+  ],
+  "seconds": 3.120375203,
+  "source": "libwpg",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "0.3.3",
+   "0.3.4"
+  ]
+ },
+ "generated_at": "2026-09-02T15:07:44Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

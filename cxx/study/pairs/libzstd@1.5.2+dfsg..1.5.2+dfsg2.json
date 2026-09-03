@@ -1,0 +1,58 @@
+{
+ "data": {
+  "id": "libzstd@1.5.2+dfsg..1.5.2+dfsg2",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      179,
+      179
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libzstd.so.1",
+     "libzstd.so.1"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_type_changed": 1
+    },
+    "type_events": [
+     {
+      "count": 1,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h",
+      "kind": "field_type_changed",
+      "type": "struct __pthread_cond_s"
+     }
+    ]
+   }
+  ],
+  "seconds": 2.200578063,
+  "source": "libzstd",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.5.2+dfsg",
+   "1.5.2+dfsg2"
+  ]
+ },
+ "generated_at": "2026-09-02T14:58:45Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

@@ -1,0 +1,9 @@
+# Header stage: parses public headers with libclang to find the definitions C++
+# copies into every client (inline functions, in-class methods, templates).
+# A real parser, not a hand-rolled scanner -- worth the image size.
+FROM debian:trixie-slim
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+      python3 python3-clang ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+RUN python3 -c "import clang.cindex as c; c.Index.create(); print('libclang OK')"
+WORKDIR /work

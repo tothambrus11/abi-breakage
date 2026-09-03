@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  gate:
+    name: format, clang-tidy build, unit + calibration tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: docker/setup-buildx-action@v3
+
+      # The same image scripts/check.sh documents; layers are cached between runs.
+      - name: Build abistudy:dev
+        uses: docker/build-push-action@v6
+        with:
+          context: cxx
+          file: cxx/Dockerfile
+          tags: abistudy:dev
+          load: true
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      # ubuntu-latest runners have 4 vCPUs and 16 GB; clang-tidy peaks ~1.5 GB per TU.
+      - name: Run the gate
+        run: docker run --rm -v "$PWD/cxx:/work" -w /work -e JOBS=4 abistudy:dev scripts/check.sh

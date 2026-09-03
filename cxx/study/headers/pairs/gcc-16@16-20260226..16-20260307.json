@@ -1,0 +1,56 @@
+{
+ "data": {
+  "coverage": [
+   {
+    "header_files": 848,
+    "parsed": 848,
+    "skipped_by_limit": 0,
+    "with_fatal_error": 0
+   },
+   {
+    "header_files": 848,
+    "parsed": 848,
+    "skipped_by_limit": 0,
+    "with_fatal_error": 0
+   }
+  ],
+  "diff": {
+   "definitions": [
+    15979,
+    15985
+   ],
+   "definitions_added": 18,
+   "definitions_common": 15967,
+   "definitions_removed": 12,
+   "examples": [
+    "c++/16/bitset::operator[]",
+    "c++/16/bitset::operator[]",
+    "c++/16/debug/map.h::try_emplace",
+    "c++/16/debug/unordered_map::erase",
+    "c++/16/debug/unordered_map::erase",
+    "c++/16/debug/unordered_map::insert_or_assign",
+    "c++/16/bits/hashtable.h::try_emplace",
+    "c++/16/debug/map.h::insert_or_assign"
+   ],
+   "inline_body_changed": 25,
+   "inline_body_changed_template": 8,
+   "inline_decl_changed": 0,
+   "macro_value_changed": 0,
+   "macros": [
+    131,
+    131
+   ],
+   "macros_common": 131
+  },
+  "id": "gcc-16@16-20260226..16-20260307",
+  "language": "cxx",
+  "source": "gcc-16",
+  "upstream": [
+   "16-20260226",
+   "16-20260307"
+  ]
+ },
+ "generated_at": "2026-09-02T14:49:25Z",
+ "schema": "abistudy/header-pair/2",
+ "tool": "abistudy 3.0.0"
+}

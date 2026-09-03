@@ -1,0 +1,1150 @@
+== 2026-09-02T11:56:48Z select
+[11:57:16] popcon rows: 222132, archive packages: 60329
+[11:57:16]   [  1] c   rank=5     libacl1                      source=acl
+[11:57:17]   [  2] c   rank=8     libbz2-1.0                   source=bzip2
+[11:57:17]   [  3] c   rank=9     libpam-modules               source=pam
+[11:57:17]   [  4] c   rank=10    libattr1                     source=attr
+[11:57:18]   [  5] c   rank=11    libstdc++6                   source=gcc-16
+[11:57:18]   [  6] c   rank=12    libblkid1                    source=util-linux
+[11:57:18]   [  7] c   rank=22    libselinux1                  source=libselinux
+[11:57:19]   [  8] c   rank=35    libedit2                     source=libedit
+[11:57:20]   [  9] c   rank=37    libpopt0                     source=popt
+[11:57:20]   [ 10] c   rank=39    libkeyutils1                 source=keyutils
+[11:57:20]   [ 11] c   rank=41    libcap2                      source=libcap2
+[11:57:21]   [ 12] c   rank=45    libss2                       source=e2fsprogs
+[11:57:21]   [ 13] c   rank=47    libslang2                    source=slang2
+[11:57:21]   [ 14] c   rank=51    libbsd0                      source=libbsd
+[11:57:22]   [ 15] c   rank=53    libdevmapper1.02.1           source=lvm2
+[11:57:22]   [ 16] c   rank=59    libsqlite3-0                 source=sqlite3
+[11:57:23]   [ 17] c   rank=62    libexpat1                    source=expat
+[11:57:23]   [ 18] c   rank=63    libnewt0.52                  source=newt
+[11:57:24]   [ 19] c   rank=75    libfreetype6                 source=freetype
+[11:57:25]   [ 20] c   rank=82    libklibc                     source=klibc
+[11:57:25]   [ 21] c   rank=85    liblzma5                     source=xz-utils
+[11:57:26]   [ 22] c   rank=90    libdbus-1-3                  source=dbus
+[11:57:26]   [ 23] c   rank=92    libkmod2                     source=kmod
+[11:57:26]   [ 24] c   rank=93    libpci3                      source=pciutils
+[11:57:27]   [ 25] c   rank=94    libp11-kit0                  source=p11-kit
+[11:57:27]   [ 26] c   rank=98    libgmp10                     source=gmp
+[11:57:27]   [ 27] c   rank=99    libwrap0                     source=tcp-wrappers
+[11:57:28]   [ 28] c   rank=102   libxdmcp6                    source=libxdmcp
+[11:57:28]   [ 29] c   rank=103   libxau6                      source=libxau
+[11:57:28]   [ 30] c   rank=104   libxcb1                      source=libxcb
+[11:57:29]   [ 31] c   rank=106   libx11-6                     source=libx11
+[11:57:29]   [ 32] c   rank=107   libcap-ng0                   source=libcap-ng
+[11:57:29]   [ 33] c   rank=109   libxext6                     source=libxext
+[11:57:29]   [ 34] c   rank=113   libaudit1                    source=audit
+[11:57:30]   [ 35] c   rank=115   libudev1                     source=systemd
+[11:57:30]   [ 36] c   rank=117   libdebconfclient0            source=cdebconf
+[11:57:31]   [ 37] c   rank=120   libtasn1-6                   source=libtasn1-6
+[11:57:31]   [ 38] c   rank=123   libmnl0                      source=libmnl
+[11:57:31]   [ 39] c   rank=128   libsasl2-2                   source=cyrus-sasl2
+[11:57:32]   [ 40] c   rank=140   libxmuu1                     source=libxmu
+[11:57:32]   [ 41] c   rank=142   libxml2                      source=libxml2
+[11:57:32]   [ 42] c   rank=144   libapparmor1                 source=apparmor
+[11:57:33]   [ 43] c   rank=150   libseccomp2                  source=libseccomp
+[11:57:33]   [ 44] c   rank=152   liblz4-1                     source=lz4
+[11:57:33]   [ 45] c   rank=155   libidn2-0                    source=libidn2
+[11:57:34]   [ 46] c   rank=156   libxtables12                 source=iptables
+[11:57:34]   [ 47] c   rank=163   libnghttp2-14                source=nghttp2
+[11:57:35]   [ 48] c   rank=167   librtmp1                     source=rtmpdump
+[11:57:35]   [ 49] c   rank=169   libpcre2-8-0                 source=pcre2
+[11:57:36]   [ 50] c   rank=173   libgpg-error0                source=libgpg-error
+[11:57:36]   [ 51] c   rank=175   libzstd1                     source=libzstd
+[11:57:37]   [ 52] c   rank=176   libtinfo6                    source=ncurses
+[11:57:37]   [ 53] c   rank=181   libpipeline1                 source=libpipeline
+[11:57:38]   [ 54] c   rank=183   libnftnl11                   source=libnftnl
+[11:57:38]   [ 55] c   rank=184   libusb-1.0-0                 source=libusb-1.0
+[11:57:38]   [ 56] c   rank=185   libjansson4                  source=jansson
+[11:57:38]   [ 57] c   rank=187   libgcrypt20                  source=libgcrypt20
+[11:57:39]   [ 58] c   rank=200   libbrotli1                   source=brotli
+[11:57:39]   [ 59] c   rank=210   libprotobuf-c1               source=protobuf-c
+[11:57:39]   [ 60] c   rank=212   liblmdb0                     source=lmdb
+[11:57:40]   [ 61] c   rank=215   libxxhash0                   source=xxhash
+[11:57:40]   [ 62] c   rank=217   libcrypt1                    source=libxcrypt
+[11:57:41]   [ 63] cxx rank=218   libuchardet0                 source=uchardet
+[11:57:41]   [ 64] c   rank=219   libmd0                       source=libmd
+[11:57:41]   [ 65] c   rank=220   libfido2-1                   source=libfido2
+[11:57:41]   [ 66] c   rank=226   libfstrm0                    source=fstrm
+[11:57:42]   [ 67] c   rank=227   libjson-c5                   source=json-c
+[11:57:42]   [ 68] c   rank=236   libnftables1                 source=nftables
+[11:57:43]   [ 69] c   rank=241   libmaxminddb0                source=libmaxminddb
+[11:57:43]   [ 70] c   rank=244   libgpm2                      source=gpm
+[11:57:43]   [ 71] c   rank=247   libksba8                     source=libksba
+[11:57:43]   [ 72] cxx rank=278   libjemalloc2                 source=jemalloc
+[11:57:44]   [ 73] cxx rank=356   libde265-0                   source=libde265
+[11:57:44]   [ 74] cxx rank=358   liblerc4                     source=lerc
+[11:57:44]   [ 75] cxx rank=364   libaspell15                  source=aspell
+[11:57:45]   [ 76] cxx rank=385   libsnappy1v5                 source=snappy
+[11:57:45]   [ 77] cxx rank=387   libheif1                     source=libheif
+[11:57:45]   [ 78] cxx rank=407   libz3-4                      source=z3
+[11:57:46]   [ 79] cxx rank=476   libyuv0                      source=libyuv
+[11:57:46]   [ 80] cxx rank=523   libgav1-1                    source=libgav1
+[11:57:46]   [ 81] cxx rank=532   libcaca0                     source=libcaca
+[11:57:47]   [ 82] cxx rank=547   libzmq5                      source=zeromq3
+[11:57:47]   [ 83] cxx rank=549   libgme0                      source=game-music-emu
+[11:57:48]   [ 84] cxx rank=561   libchromaprint1              source=chromaprint
+[11:57:48]   [ 85] cxx rank=562   libjack-jackd2-0             source=jackd2
+[11:57:48]   [ 86] cxx rank=579   libbs2b0                     source=libbs2b
+[11:57:48]   [ 87] cxx rank=596   libapt-pkg7.0                source=apt
+[11:57:49]   [ 88] cxx rank=646   libdjvulibre21               source=djvulibre
+[11:57:49]   [ 89] cxx rank=655   libopenal1                   source=openal-soft
+[11:57:50]   [ 90] cxx rank=683   librubberband2               source=rubberband
+[11:57:50]   [ 91] cxx rank=712   libsigc++-2.0-0v5            source=libsigc++-2.0
+[11:57:51]   [ 92] cxx rank=735   libsrt1.5-gnutls             source=srt
+[11:57:51]   [ 93] cxx rank=743   libzimg2                     source=zimg
+[11:57:51]   [ 94] cxx rank=751   libigdgmm12                  source=intel-gmmlib
+[11:57:52]   [ 95] cxx rank=781   libglu1-mesa                 source=libglu
+[11:57:52]   [ 96] cxx rank=784   libhunspell-1.7-0            source=hunspell
+[11:57:52]   [ 97] cxx rank=805   libmodplug1                  source=libmodplug
+[11:57:53]   [ 98] cxx rank=827   libgstreamer-plugins-bad1.0-0 source=gst-plugins-bad1.0
+[11:57:53]   [ 99] cxx rank=829   libspa-0.2-modules           source=pipewire
+[11:57:53]   [100] cxx rank=845   libsoundtouch1               source=soundtouch
+[11:57:53]   [101] cxx rank=895   libsane1                     source=sane-backends
+[11:57:54]   [102] cxx rank=896   libsidplay1v5                source=libsidplay
+[11:57:54]   [103] cxx rank=922   libxatracker2                source=mesa
+[11:57:54]   [104] cxx rank=926   libvte-2.91-0                source=vte2.91
+[11:57:55]   [105] cxx rank=930   libopenexr-3-1-30            source=openexr
+[11:57:55]   [106] cxx rank=944   librevenge-0.0-0             source=librevenge
+[11:57:55]   [107] cxx rank=954   libopenni2-0                 source=openni2
+[11:57:56]   [108] cxx rank=955   libmythes-1.2-0              source=mythes
+[11:57:56]   [109] cxx rank=975   libwpd-0.10-10               source=libwpd
+[11:57:56]   [110] cxx rank=976   libwpg-0.3-3                 source=libwpg
+[11:57:57]   [111] cxx rank=983   libreoffice-core             source=libreoffice
+[11:57:57]   [112] cxx rank=986   libodfgen-0.1-1              source=libodfgen
+[11:57:57]   [113] cxx rank=987   libcdr-0.1-1                 source=libcdr
+[11:57:58]   [114] cxx rank=988   libvisio-0.1-1               source=libvisio
+[11:57:58]   [115] cxx rank=989   libetonyek-0.1-1             source=libetonyek
+[11:57:58]   [116] cxx rank=990   libmwaw-0.3-3                source=libmwaw
+[11:57:59]   [117] cxx rank=992   libabw-0.1-1                 source=libabw
+[11:57:59]   [118] cxx rank=993   libe-book-0.1-1              source=libe-book
+[11:57:59]   [119] cxx rank=1000  libnumbertext-1.0-0          source=libnumbertext
+[11:57:59]   [120] cxx rank=1006  libwps-0.4-4                 source=libwps
+[11:57:59] selected 120 sources: 70 C, 50 C++
+== 2026-09-02T11:58:00Z resolve
+[11:58:00] 120 selected sources
+[11:58:03] acl                      releases=5   runtime=libacl1
+[11:58:04] bzip2                    releases=2   runtime=libbz2-1.0
+[11:58:07] pam                      releases=6   runtime=libpam-modules
+[11:58:10] attr                     releases=5   runtime=libattr1
+[11:58:12] gcc-16                   releases=10  runtime=libstdc++6
+[11:58:13] util-linux               releases=10  runtime=libblkid1
+[11:58:15] libselinux               releases=10  runtime=libselinux1
+[11:58:16] libedit                  releases=10  runtime=libedit2
+[11:58:18] popt                     releases=3   runtime=libpopt0
+[11:58:20] keyutils                 releases=4   runtime=libkeyutils1
+[11:58:21] libcap2                  releases=10  runtime=libcap2
+[11:58:23] e2fsprogs                releases=10  runtime=libss2
+[11:58:25] slang2                   releases=5   runtime=libslang2
+[11:58:27] libbsd                   releases=10  runtime=libbsd0
+[11:58:28] lvm2                     releases=10  runtime=libdevmapper1.02.1
+[11:58:30] sqlite3                  releases=10  runtime=libsqlite3-0
+[11:58:31] expat                    releases=10  runtime=libexpat1
+[11:58:34] newt                     releases=8   runtime=libnewt0.52
+[11:58:36] freetype                 releases=10  runtime=libfreetype6
+[11:58:37] klibc                    releases=10  runtime=libklibc
+[11:58:39] xz-utils                 releases=10  runtime=liblzma5
+[11:58:41] dbus                     releases=10  runtime=libdbus-1-3
+[11:58:42] kmod                     releases=10  runtime=libkmod2
+[11:58:44] pciutils                 releases=10  runtime=libpci3
+[11:58:45] p11-kit                  releases=10  runtime=libp11-kit0
+[11:58:50] gmp                      releases=7   runtime=libgmp10
+[11:58:50] tcp-wrappers             releases=1   runtime=libwrap0
+[11:58:51] libxdmcp                 releases=1   runtime=libxdmcp6
+[11:58:53] libxau                   releases=2   runtime=libxau6
+[11:58:57] libxcb                   releases=5   runtime=libxcb1
+[11:58:58] libx11                   releases=10  runtime=libx11-6
+[11:59:01] libcap-ng                releases=9   runtime=libcap-ng0
+[11:59:03] libxext                  releases=1   runtime=libxext6
+[11:59:05] audit                    releases=10  runtime=libaudit1
+[11:59:06] systemd                  releases=10  runtime=libudev1
+[11:59:08] cdebconf                 releases=10  runtime=libdebconfclient0
+[11:59:09] libtasn1-6               releases=10  runtime=libtasn1-6
+[11:59:10] libmnl                   releases=3   runtime=libmnl0
+[11:59:12] cyrus-sasl2              releases=4   runtime=libsasl2-2
+[11:59:13] libxmu                   releases=1   runtime=libxmuu1
+[11:59:15] libxml2                  releases=10  runtime=libxml2-16
+[11:59:16] apparmor                 releases=10  runtime=libapparmor1
+[11:59:18] libseccomp               releases=10  runtime=libseccomp2
+[11:59:19] lz4                      releases=9   runtime=liblz4-1
+[11:59:21] libidn2                  releases=10  runtime=libidn2-0
+[11:59:22] iptables                 releases=10  runtime=libxtables12
+[11:59:24] nghttp2                  releases=10  runtime=libnghttp2-14
+[11:59:25] rtmpdump                 releases=3   runtime=librtmp1
+[11:59:27] pcre2                    releases=10  runtime=libpcre2-16-0
+[11:59:29] libgpg-error             releases=10  runtime=libgpg-error0
+[11:59:30] libzstd                  releases=10  runtime=libzstd1
+[11:59:32] ncurses                  releases=10  runtime=libtinfo6
+[11:59:34] libpipeline              releases=10  runtime=libpipeline1
+[11:59:35] libnftnl                 releases=10  runtime=libnftnl11
+[11:59:37] libusb-1.0               releases=10  runtime=libusb-1.0-0
+[11:59:39] jansson                  releases=9   runtime=libjansson4
+[11:59:41] libgcrypt20              releases=10  runtime=libgcrypt20
+[11:59:43] brotli                   releases=10  runtime=libbrotli1
+[11:59:45] protobuf-c               releases=5   runtime=libprotobuf-c1
+[11:59:47] lmdb                     releases=7   runtime=liblmdb0
+[11:59:49] xxhash                   releases=10  runtime=libxxhash0
+[11:59:50] libxcrypt                releases=10  runtime=libcrypt1
+[11:59:51] uchardet                 releases=4   runtime=libuchardet0
+[11:59:52] libmd                    releases=7   runtime=libmd0
+[11:59:54] libfido2                 releases=10  runtime=libfido2-1
+[11:59:54] fstrm                    releases=3   runtime=libfstrm0
+[11:59:56] json-c                   releases=10  runtime=libjson-c5
+[11:59:57] nftables                 releases=10  runtime=libnftables1
+[11:59:59] libmaxminddb             releases=10  runtime=libmaxminddb0
+[12:00:00] gpm                      releases=2   runtime=libgpm2
+[12:00:02] libksba                  releases=10  runtime=libksba8
+[12:00:05] jemalloc                 releases=6   runtime=libjemalloc2
+[12:00:06] libde265                 releases=10  runtime=libde265-0
+[12:00:07] lerc                     releases=5   runtime=liblerc4
+[12:00:09] aspell                   releases=4   runtime=libaspell15
+[12:00:12] snappy                   releases=9   runtime=libsnappy1v5
+[12:00:13] libheif                  releases=10  runtime=libheif1
+[12:00:15] z3                       releases=9   runtime=libz3-4
+[12:00:16] libyuv                   releases=10  runtime=libyuv0
+[12:00:17] libgav1                  releases=6   runtime=libgav1-2
+[12:00:20] libcaca                  releases=2   runtime=libcaca0
+[12:00:23] zeromq3                  releases=7   runtime=libzmq5
+[12:00:24] game-music-emu           releases=6   runtime=libgme0
+[12:00:26] chromaprint              releases=10  runtime=libchromaprint1
+[12:00:27] jackd2                   releases=0   runtime=-
+[12:00:27] libbs2b                  releases=1   runtime=libbs2b0
+[12:00:28] apt                      releases=10  runtime=libapt-pkg7.0
+[12:00:31] djvulibre                releases=4   runtime=libdjvulibre21
+[12:00:33] openal-soft              releases=10  runtime=libopenal1
+[12:00:34] rubberband               releases=10  runtime=librubberband3
+[12:00:38] libsigc++-2.0            releases=9   runtime=libsigc++-2.0-0v5
+[12:00:40] srt                      releases=9   runtime=libsrt1.5-gnutls
+[12:00:41] zimg                     releases=6   runtime=libzimg2
+[12:00:42] intel-gmmlib             releases=10  runtime=libigdgmm12
+[12:00:43] libglu                   releases=3   runtime=libglu1-mesa
+[12:00:44] hunspell                 releases=10  runtime=libhunspell-1.7-0
+[12:00:46] libmodplug               releases=2   runtime=libmodplug1
+[12:00:47] gst-plugins-bad1.0       releases=10  runtime=libgstreamer-plugins-bad1.0-0
+[12:00:49] pipewire                 releases=10  runtime=libspa-0.2-modules
+[12:00:52] soundtouch               releases=9   runtime=libsoundtouch1
+[12:00:53] sane-backends            releases=10  runtime=libsane1
+[12:00:54] libsidplay               releases=2   runtime=libsidplay1v5
+[12:01:00] mesa                     releases=10  runtime=libxatracker2
+[12:01:01] vte2.91                  releases=10  runtime=libvte-2.91-0
+[12:01:04] openexr                  releases=6   runtime=libopenexr-3-4-33
+[12:01:05] librevenge               releases=4   runtime=librevenge-0.0-0
+[12:01:06] openni2                  releases=1   runtime=libopenni2-0
+[12:01:07] mythes                   releases=3   runtime=libmythes-1.2-0
+[12:01:11] libwpd                   releases=3   runtime=libwpd-0.10-10
+[12:01:13] libwpg                   releases=4   runtime=libwpg-0.3-3
+[12:01:15] libreoffice              releases=10  runtime=libreoffice-core
+[12:01:17] libodfgen                releases=3   runtime=libodfgen-0.1-1
+[12:01:20] libcdr                   releases=8   runtime=libcdr-0.1-1
+[12:01:25] libvisio                 releases=7   runtime=libvisio-0.1-1
+[12:01:27] libetonyek               releases=7   runtime=libetonyek-0.1-1
+[12:01:29] libmwaw                  releases=10  runtime=libmwaw-0.3-3
+[12:01:29] libabw                   releases=4   runtime=libabw-0.1-1
+[12:01:30] libe-book                releases=3   runtime=libe-book-0.1-1
+[12:01:32] libnumbertext            releases=8   runtime=libnumbertext-1.0-0
+[12:01:33] libwps                   releases=10  runtime=libwps-0.4-4
+[12:01:33] 772 consecutive-release pairs
+== 2026-09-02T12:01:33Z diff
+[12:01:33] 772 pairs total, 772 to do, 4 workers
+[12:01:35] [1/772] acl@2.2.53..2.3.1 ok
+[12:01:35] [2/772] acl@2.3.1..2.3.2 ok
+[12:01:35] [3/772] acl@2.2.52..2.2.53 ok
+[12:01:35] [4/772] acl@2.3.2..2.4.0 ok
+[12:01:37] [5/772] pam@1.1.8..1.3.1 ok
+[12:01:37] [6/772] bzip2@1.0.6..1.0.8 ok
+[12:01:37] [7/772] pam@1.3.1..1.4.0 ok
+[12:01:38] [8/772] pam@1.4.0..1.5.2 ok
+[12:01:39] [9/772] attr@2.4.47..2.4.48 ok
+[12:01:39] [10/772] pam@1.5.2..1.5.3 ok
+[12:01:39] [11/772] attr@2.4.48..2.5.1 ok
+[12:01:40] [12/772] pam@1.5.3..1.7.0 ok
+[12:01:40] [13/772] attr@2.5.1..2.5.2 ok
+[12:01:41] [14/772] attr@2.5.2..2.6.0 ok
+[12:03:13] [15/772] gcc-16@16-20260307..16-20260308 ok
+[12:03:13] [16/772] gcc-16@16-20260308..16-20260315 ok
+[12:03:29] [17/772] gcc-16@16-20260226..16-20260307 ok
+[12:04:28] [18/772] gcc-16@16-20260423..16-20260425 FAILED exit -9: [12:03:32]   gcc-16@16-20260423..16-20260425: 1 + 1 objects, 72 MB extracted
+[12:03:49]     libstdc++.so.6 -> libstdc++.so.6  lang=cxx public=0 third=0 private=0 renamed=0
+
+[12:04:29] [19/772] gcc-16@16-20260322..16-20260423 FAILED exit -9: [12:03:16]   gcc-16@16-20260322..16-20260423: 1 + 1 objects, 70 MB extracted
+[12:03:33]     libstdc++.so.6 -> libstdc++.so.6  lang=cxx public=1 third=0 private=0 renamed=0
+
+[12:05:12] [20/772] gcc-16@16-20260217..16-20260226 ok
+[12:05:14] [21/772] util-linux@2.40.3..2.40.4 ok
+[12:05:16] [22/772] util-linux@2.40.4..2.41 ok
+[12:05:17] [23/772] util-linux@2.41..2.41.1 ok
+[12:05:17] [24/772] gcc-16@16-20260315..16-20260322 ok
+[12:05:19] [25/772] util-linux@2.41.1..2.41.2 ok
+[12:05:19] [26/772] util-linux@2.41.2..2.41.3 ok
+[12:05:20] [27/772] util-linux@2.41.3..2.41.5 ok
+[12:05:21] [28/772] util-linux@2.41.5..2.42 ok
+[12:05:22] [29/772] util-linux@2.42..2.42.1 ok
+[12:05:23] [30/772] util-linux@2.42.1..2.42.2 ok
+[12:05:25] [31/772] libselinux@3.2..3.3 ok
+[12:05:26] [32/772] libselinux@3.3..3.4 ok
+[12:05:27] [33/772] libselinux@3.4..3.5 ok
+[12:05:28] [34/772] libselinux@3.5..3.7 ok
+[12:05:29] [35/772] libselinux@3.7..3.8 ok
+[12:05:30] [36/772] libselinux@3.8..3.8.1 ok
+[12:05:31] [37/772] libselinux@3.8.1..3.9 ok
+[12:05:32] [38/772] libselinux@3.9..3.10 ok
+[12:05:33] [39/772] libselinux@3.10..3.11 ok
+[12:05:35] [40/772] libedit@3.1-20210714..3.1-20210910 ok
+[12:05:36] [41/772] libedit@3.1-20210910..3.1-20221009 ok
+[12:05:37] [42/772] libedit@3.1-20221009..3.1-20221030 ok
+[12:05:39] [43/772] libedit@3.1-20221030..3.1-20230828 ok
+[12:05:40] [44/772] libedit@3.1-20230828..3.1-20240517 ok
+[12:05:41] [45/772] libedit@3.1-20240517..3.1-20240808 ok
+[12:05:42] [46/772] libedit@3.1-20240808..3.1-20250104 ok
+[12:05:44] [47/772] libedit@3.1-20250104..3.1-20251016 ok
+[12:05:45] [48/772] libedit@3.1-20251016..3.1-20260512 ok
+[12:05:46] [49/772] popt@1.16..1.18 ok
+[12:05:47] [50/772] popt@1.18..1.19+dfsg ok
+[12:05:47] [51/772] keyutils@1.5.9..1.6 ok
+[12:05:48] [52/772] keyutils@1.6..1.6.1 ok
+[12:05:49] [53/772] keyutils@1.6.1..1.6.3 ok
+[12:05:50] [54/772] libcap2@2.36..2.42 ok
+[12:05:51] [55/772] libcap2@2.42..2.43 ok
+[12:05:52] [56/772] libcap2@2.43..2.44 ok
+[12:05:53] [57/772] libcap2@2.44..2.63 ok
+[12:05:54] [58/772] libcap2@2.63..2.66 ok
+[12:05:55] [59/772] libcap2@2.66..2.73 ok
+[12:05:56] [60/772] libcap2@2.73..2.75 ok
+[12:05:57] [61/772] libcap2@2.75..2.77 ok
+[12:05:58] [62/772] libcap2@2.77..2.78 ok
+[12:06:00] [63/772] e2fsprogs@1.46.1..1.46.2 ok
+[12:06:01] [64/772] e2fsprogs@1.46.2..1.46.3 ok
+[12:06:03] [65/772] e2fsprogs@1.46.3..1.46.4 ok
+[12:06:05] [66/772] e2fsprogs@1.46.4..1.46.5 ok
+[12:06:07] [67/772] e2fsprogs@1.46.5..1.46.6 ok
+[12:06:08] [68/772] e2fsprogs@1.46.6..1.47.0 ok
+[12:06:09] [69/772] e2fsprogs@1.47.0..1.47.1 ok
+[12:06:11] [70/772] e2fsprogs@1.47.1..1.47.2 ok
+[12:06:13] [71/772] e2fsprogs@1.47.2..1.47.4 ok
+[12:06:14] [72/772] slang2@2.3.0..2.3.1 ok
+[12:06:15] [73/772] slang2@2.3.1..2.3.1a ok
+[12:06:16] [74/772] slang2@2.3.1a..2.3.2 ok
+[12:06:17] [75/772] slang2@2.3.2..2.3.3 ok
+[12:06:18] [76/772] libbsd@0.11.2..0.11.3 ok
+[12:06:19] [77/772] libbsd@0.11.3..0.11.4 ok
+[12:06:20] [78/772] libbsd@0.11.4..0.11.5 ok
+[12:06:21] [79/772] libbsd@0.11.5..0.11.6 ok
+[12:06:23] [80/772] libbsd@0.11.6..0.11.7 ok
+[12:06:24] [81/772] libbsd@0.11.7..0.11.8 ok
+[12:06:24] [82/772] libbsd@0.11.8..0.12.0 ok
+[12:06:25] [83/772] libbsd@0.12.0..0.12.1 ok
+[12:06:26] [84/772] libbsd@0.12.1..0.12.2 ok
+[12:06:28] [85/772] lvm2@2.03.02..2.03.07 ok
+[12:06:29] [86/772] lvm2@2.03.07..2.03.09 ok
+[12:06:30] [87/772] lvm2@2.03.09..2.03.10 ok
+[12:06:32] [88/772] lvm2@2.03.10..2.03.11 ok
+[12:06:33] [89/772] lvm2@2.03.11..2.03.15 ok
+[12:06:34] [90/772] lvm2@2.03.15..2.03.16 ok
+[12:06:35] [91/772] lvm2@2.03.16..2.03.22 ok
+[12:06:36] [92/772] lvm2@2.03.22..2.03.27 ok
+[12:06:38] [93/772] lvm2@2.03.27..2.03.31 ok
+[12:06:41] [94/772] sqlite3@3.44.2..3.45.0 ok
+[12:06:42] [95/772] sqlite3@3.45.0..3.45.1 ok
+[12:06:45] [96/772] sqlite3@3.45.1..3.45.2 ok
+[12:06:49] [97/772] sqlite3@3.45.2..3.45.3 ok
+[12:06:50] [98/772] sqlite3@3.45.3..3.46.0 ok
+[12:06:53] [99/772] sqlite3@3.46.0..3.46.1 ok
+[12:06:54] [100/772] sqlite3@3.46.1..3.53.2 ok
+[12:06:57] [101/772] sqlite3@3.53.2..3.53.3 ok
+[12:06:59] [102/772] expat@2.7.1..2.7.2 ok
+[12:06:59] [103/772] sqlite3@3.53.3..3.53.4 ok
+[12:07:01] [104/772] expat@2.7.2..2.7.3 ok
+[12:07:01] [105/772] expat@2.7.3..2.7.4 ok
+[12:07:02] [106/772] expat@2.7.4..2.7.5 ok
+[12:07:03] [107/772] expat@2.7.5..2.8.0 ok
+[12:07:04] [108/772] expat@2.8.0..2.8.1 ok
+[12:07:05] [109/772] expat@2.8.1..2.8.2 ok
+[12:07:06] [110/772] expat@2.8.2..2.8.3 ok
+[12:07:07] [111/772] expat@2.8.3..2.8.4 ok
+[12:07:08] [112/772] newt@0.52.18..0.52.19 ok
+[12:07:09] [113/772] newt@0.52.19..0.52.20 ok
+[12:07:10] [114/772] newt@0.52.20..0.52.21 ok
+[12:07:11] [115/772] newt@0.52.21..0.52.22 ok
+[12:07:12] [116/772] newt@0.52.22..0.52.23 ok
+[12:07:13] [117/772] newt@0.52.23..0.52.24 ok
+[12:07:15] [118/772] newt@0.52.24..0.52.25 ok
+[12:07:19] [119/772] freetype@2.11.1+dfsg..2.12.0+dfsg ok
+[12:07:21] [120/772] freetype@2.12.0+dfsg..2.12.1+dfsg ok
+[12:07:23] [121/772] freetype@2.12.1+dfsg..2.13.0+dfsg ok
+[12:07:25] [122/772] freetype@2.13.0+dfsg..2.13.1+dfsg ok
+[12:07:28] [123/772] freetype@2.13.1+dfsg..2.13.2+dfsg ok
+[12:07:30] [124/772] freetype@2.13.2+dfsg..2.13.3+dfsg ok
+[12:07:32] [125/772] freetype@2.13.3+dfsg..2.14.1+dfsg ok
+[12:07:34] [126/772] freetype@2.14.1+dfsg..2.14.2+dfsg ok
+[12:07:37] [127/772] klibc@2.0.5..2.0.6 ok
+[12:07:37] [128/772] freetype@2.14.2+dfsg..2.14.3+dfsg ok
+[12:07:38] [129/772] klibc@2.0.6..2.0.7 ok
+[12:07:39] [130/772] klibc@2.0.7..2.0.8 ok
+[12:07:40] [131/772] klibc@2.0.8..2.0.9 ok
+[12:07:41] [132/772] klibc@2.0.9..2.0.10 ok
+[12:07:42] [133/772] klibc@2.0.10..2.0.11 ok
+[12:07:43] [134/772] klibc@2.0.11..2.0.12 ok
+[12:07:44] [135/772] klibc@2.0.12..2.0.13 ok
+[12:07:46] [136/772] klibc@2.0.13..2.0.14 ok
+[12:07:46] [137/772] xz-utils@5.6.0..5.6.1 ok
+[12:07:47] [138/772] xz-utils@5.6.1..5.6.1+really5.4.5 ok
+[12:07:48] [139/772] xz-utils@5.6.1+really5.4.5..5.6.2 ok
+[12:07:50] [140/772] xz-utils@5.6.2..5.6.3 ok
+[12:07:50] [141/772] xz-utils@5.6.3..5.6.4 ok
+[12:07:51] [142/772] xz-utils@5.6.4..5.8.0 ok
+[12:07:52] [143/772] xz-utils@5.8.0..5.8.1 ok
+[12:07:54] [144/772] xz-utils@5.8.1..5.8.2 ok
+[12:07:55] [145/772] xz-utils@5.8.2..5.8.3 ok
+[12:07:56] [146/772] dbus@1.15.2..1.15.4 ok
+[12:07:57] [147/772] dbus@1.15.4..1.15.6 ok
+[12:07:58] [148/772] dbus@1.15.6..1.15.8 ok
+[12:07:59] [149/772] dbus@1.15.8..1.15.10 ok
+[12:08:00] [150/772] dbus@1.15.10..1.15.12 ok
+[12:08:01] [151/772] dbus@1.15.12..1.15.90 ok
+[12:08:02] [152/772] dbus@1.15.90..1.15.92 ok
+[12:08:04] [153/772] dbus@1.15.92..1.16.0 ok
+[12:08:05] [154/772] dbus@1.16.0..1.16.2 ok
+[12:08:06] [155/772] kmod@31..31+20240202 ok
+[12:08:07] [156/772] kmod@31+20240202..32 ok
+[12:08:07] [157/772] kmod@32..32+20240327 ok
+[12:08:08] [158/772] kmod@32+20240327..32+20240611 ok
+[12:08:09] [159/772] kmod@32+20240611..33+20240816 ok
+[12:08:10] [160/772] kmod@33+20240816..33+20241031 ok
+[12:08:11] [161/772] kmod@33+20241031..34 ok
+[12:08:12] [162/772] kmod@34..34.1 ok
+[12:08:13] [163/772] kmod@34.1..34.2 ok
+[12:08:14] [164/772] pciutils@3.6.4..3.7.0 ok
+[12:08:15] [165/772] pciutils@3.7.0..3.8.0 ok
+[12:08:16] [166/772] pciutils@3.8.0..3.9.0 ok
+[12:08:17] [167/772] pciutils@3.9.0..3.10.0 ok
+[12:08:18] [168/772] pciutils@3.10.0..3.11.1 ok
+[12:08:18] [169/772] pciutils@3.11.1..3.12.0 ok
+[12:08:19] [170/772] pciutils@3.12.0..3.13.0 ok
+[12:08:20] [171/772] pciutils@3.13.0..3.14.0 ok
+[12:08:21] [172/772] pciutils@3.14.0..3.15.0 ok
+[12:08:23] [173/772] p11-kit@0.25.0..0.25.1 ok
+[12:08:23] [174/772] gcc-16@16.1.0..16.2.0 ok
+[12:08:24] [175/772] p11-kit@0.25.1..0.25.2 ok
+[12:08:25] [176/772] p11-kit@0.25.2..0.25.3 ok
+[12:08:25] [177/772] p11-kit@0.25.3..0.25.5 ok
+[12:08:26] [178/772] p11-kit@0.25.5..0.25.9 ok
+[12:08:27] [179/772] gcc-16@16-20260425..16.1.0 ok
+[12:08:27] [180/772] p11-kit@0.25.9..0.25.10 ok
+[12:08:28] [181/772] p11-kit@0.25.10..0.26.2 ok
+[12:08:28] [182/772] p11-kit@0.26.2..0.26.4 ok
+[12:08:29] [183/772] p11-kit@0.26.4..0.26.5 ok
+[12:08:30] [184/772] gmp@6.1.0+dfsg..6.1.1+dfsg ok
+[12:08:30] [185/772] gmp@6.1.1+dfsg..6.1.2+dfsg ok
+[12:08:32] [186/772] gmp@6.1.2+dfsg..6.2.0+dfsg ok
+[12:08:32] [187/772] gmp@6.2.0+dfsg..6.2.1+dfsg ok
+[12:08:33] [188/772] gmp@6.2.1+dfsg..6.2.1+dfsg1 ok
+[12:08:34] [189/772] libxau@1.0.9..1.0.11 ok
+[12:08:34] [190/772] gmp@6.2.1+dfsg1..6.3.0+dfsg ok
+[12:08:35] [191/772] libxcb@1.13..1.13.1 ok
+[12:08:36] [192/772] libxcb@1.13.1..1.14 ok
+[12:08:38] [193/772] libxcb@1.14..1.15 ok
+[12:08:39] [194/772] libx11@1.7.4..1.7.5 ok
+[12:08:40] [195/772] libxcb@1.15..1.17.0 ok
+[12:08:41] [196/772] libx11@1.7.5..1.8.1 ok
+[12:08:42] [197/772] libx11@1.8.1..1.8.3 ok
+[12:08:43] [198/772] libx11@1.8.3..1.8.4 ok
+[12:08:44] [199/772] libx11@1.8.4..1.8.6 ok
+[12:08:44] [200/772] libx11@1.8.6..1.8.7 ok
+[12:08:46] [201/772] libx11@1.8.7..1.8.10 ok
+[12:08:46] [202/772] libcap-ng@0.7.7..0.7.9 ok
+[12:08:47] [203/772] libx11@1.8.10..1.8.12 ok
+[12:08:47] [204/772] libcap-ng@0.7.9..0.8.3 ok
+[12:08:48] [205/772] libx11@1.8.12..1.8.13 ok
+[12:08:48] [206/772] libcap-ng@0.8.3..0.8.4 ok
+[12:08:48] [207/772] libcap-ng@0.8.4..0.8.5 ok
+[12:08:49] [208/772] libcap-ng@0.8.5..0.9.1 ok
+[12:08:49] [209/772] libcap-ng@0.9.1..0.9.2 ok
+[12:08:49] [210/772] libcap-ng@0.9.2..0.9.3 ok
+[12:08:50] [211/772] libcap-ng@0.9.3..0.9.5 ok
+[12:08:50] [212/772] audit@3.0.6..3.0.7 ok
+[12:08:51] [213/772] audit@3.0.7..3.0.9 ok
+[12:08:52] [214/772] audit@3.0.9..3.1.1 ok
+[12:08:52] [215/772] audit@3.1.2..4.0.1 ok
+[12:08:52] [216/772] audit@3.1.1..3.1.2 ok
+[12:08:53] [217/772] audit@4.0.1..4.0.2 ok
+[12:08:54] [218/772] audit@4.0.2..4.0.5 ok
+[12:08:54] [219/772] audit@4.0.5..4.1.1 ok
+[12:08:54] [220/772] audit@4.1.1..4.1.2 ok
+[12:08:55] [221/772] systemd@257.13..258 ok
+[12:08:55] [222/772] systemd@258..258.1 ok
+[12:08:56] [223/772] systemd@258.1..259 ok
+[12:08:56] [224/772] systemd@259..259.1 ok
+[12:08:57] [225/772] systemd@259.1..260 ok
+[12:08:57] [226/772] systemd@260..260.1 ok
+[12:08:58] [227/772] systemd@260.1..261 ok
+[12:08:58] [228/772] systemd@261..261.1 ok
+[12:08:59] [229/772] cdebconf@0.275..0.276 ok
+[12:08:59] [230/772] systemd@261.1..261.2 ok
+[12:09:00] [231/772] cdebconf@0.276..0.277 ok
+[12:09:00] [232/772] cdebconf@0.277..0.278 ok
+[12:09:00] [233/772] cdebconf@0.279..0.279+hurd.1 ok
+[12:09:01] [234/772] cdebconf@0.278..0.279 ok
+[12:09:01] [235/772] cdebconf@0.279+hurd.1..0.280 ok
+[12:09:02] [236/772] cdebconf@0.280..0.281 ok
+[12:09:02] [237/772] cdebconf@0.281..0.282 ok
+[12:09:03] [238/772] libtasn1-6@4.12..4.13 ok
+[12:09:03] [239/772] cdebconf@0.282..0.283 ok
+[12:09:03] [240/772] libtasn1-6@4.13..4.14 ok
+[12:09:04] [241/772] libtasn1-6@4.14..4.15.0 ok
+[12:09:04] [242/772] libtasn1-6@4.15.0..4.16.0 ok
+[12:09:05] [243/772] libtasn1-6@4.16.0..4.17.0 ok
+[12:09:05] [244/772] libtasn1-6@4.17.0..4.18.0 ok
+[12:09:06] [245/772] libtasn1-6@4.18.0..4.19.0 ok
+[12:09:06] [246/772] libtasn1-6@4.19.0..4.20.0 ok
+[12:09:07] [247/772] libmnl@1.0.3..1.0.4 ok
+[12:09:07] [248/772] libtasn1-6@4.20.0..4.21.0 ok
+[12:09:08] [249/772] libmnl@1.0.4..1.0.5 ok
+[12:09:08] [250/772] cyrus-sasl2@2.1.27+dfsg..2.1.27+dfsg2 ok
+[12:09:08] [251/772] cyrus-sasl2@2.1.27+dfsg2..2.1.28+dfsg ok
+[12:09:09] [252/772] cyrus-sasl2@2.1.28+dfsg..2.1.28+dfsg1 ok
+[12:09:14] [253/772] libxml2@2.14.1+dfsg..2.14.2+dfsg ok
+[12:09:14] [254/772] libxml2@2.14.2+dfsg..2.14.3+dfsg ok
+[12:09:14] [255/772] libxml2@2.14.3+dfsg..2.14.4+dfsg ok
+[12:09:16] [256/772] libxml2@2.14.4+dfsg..2.14.5+dfsg ok
+[12:09:18] [257/772] libxml2@2.14.5+dfsg..2.14.6+dfsg ok
+[12:09:20] [258/772] libxml2@2.14.6+dfsg..2.15.0+dfsg ok
+[12:09:21] [259/772] libxml2@2.15.0+dfsg..2.15.1+dfsg ok
+[12:09:22] [260/772] apparmor@3.0.12..3.0.13 ok
+[12:09:22] [261/772] libxml2@2.15.1+dfsg..2.15.2+dfsg ok
+[12:09:23] [262/772] apparmor@3.0.13..3.1.7 ok
+[12:09:24] [263/772] apparmor@3.1.7..4.1.0 ok
+[12:09:24] [264/772] apparmor@4.1.0..4.1.3 ok
+[12:09:24] [265/772] libxml2@2.15.2+dfsg..2.15.3+dfsg ok
+[12:09:25] [266/772] apparmor@4.1.3..4.1.6 ok
+[12:09:25] [267/772] apparmor@4.1.6..4.1.7 ok
+[12:09:26] [268/772] apparmor@4.1.7..4.1.8 ok
+[12:09:26] [269/772] apparmor@4.1.8..5.0.1 ok
+[12:09:27] [270/772] libseccomp@2.4.3..2.4.4 ok
+[12:09:27] [271/772] apparmor@5.0.1..5.0.2 ok
+[12:09:27] [272/772] libseccomp@2.4.4..2.5.0 ok
+[12:09:28] [273/772] libseccomp@2.5.0..2.5.1 ok
+[12:09:28] [274/772] libseccomp@2.5.1..2.5.2 ok
+[12:09:28] [275/772] libseccomp@2.5.2..2.5.3 ok
+[12:09:29] [276/772] libseccomp@2.5.3..2.5.4 ok
+[12:09:29] [277/772] libseccomp@2.5.5..2.6.0 ok
+[12:09:29] [278/772] libseccomp@2.5.4..2.5.5 ok
+[12:09:30] [279/772] libseccomp@2.6.0..2.6.1 ok
+[12:09:30] [280/772] lz4@1.8.0..1.8.1.2 ok
+[12:09:30] [281/772] lz4@1.8.1.2..1.8.2 ok
+[12:09:31] [282/772] lz4@1.8.2..1.8.3 ok
+[12:09:31] [283/772] lz4@1.8.3..1.9.1 ok
+[12:09:32] [284/772] lz4@1.9.1..1.9.2 ok
+[12:09:32] [285/772] lz4@1.9.2..1.9.3 ok
+[12:09:33] [286/772] lz4@1.9.3..1.9.4 ok
+[12:09:33] [287/772] lz4@1.9.4..1.10.0 ok
+[12:09:34] [288/772] libidn2@2.0.4..2.0.5 ok
+[12:09:34] [289/772] libidn2@2.0.5..2.2.0 ok
+[12:09:35] [290/772] libidn2@2.2.0..2.3.0 ok
+[12:09:35] [291/772] libidn2@2.3.0..2.3.1 ok
+[12:09:35] [292/772] libidn2@2.3.2..2.3.3 ok
+[12:09:36] [293/772] libidn2@2.3.1..2.3.2 ok
+[12:09:36] [294/772] libidn2@2.3.3..2.3.4 ok
+[12:09:37] [295/772] libidn2@2.3.4..2.3.7 ok
+[12:09:37] [296/772] iptables@1.8.4..1.8.5 ok
+[12:09:38] [297/772] libidn2@2.3.7..2.3.8 ok
+[12:09:38] [298/772] iptables@1.8.5..1.8.6 ok
+[12:09:38] [299/772] iptables@1.8.6..1.8.7 ok
+[12:09:39] [300/772] iptables@1.8.7..1.8.8 ok
+[12:09:39] [301/772] iptables@1.8.8..1.8.9 ok
+[12:09:40] [302/772] iptables@1.8.9..1.8.10 ok
+[12:09:40] [303/772] iptables@1.8.10..1.8.11 ok
+[12:09:40] [304/772] iptables@1.8.11..1.8.12 ok
+[12:09:41] [305/772] nghttp2@1.59.0..1.60.0 ok
+[12:09:41] [306/772] iptables@1.8.12..1.8.13 ok
+[12:09:42] [307/772] nghttp2@1.60.0..1.61.0 ok
+[12:09:42] [308/772] nghttp2@1.61.0..1.62.1 ok
+[12:09:43] [309/772] nghttp2@1.62.1..1.63.0 ok
+[12:09:43] [310/772] nghttp2@1.63.0..1.64.0 ok
+[12:09:44] [311/772] nghttp2@1.64.0..1.68.0 ok
+[12:09:44] [312/772] nghttp2@1.68.0..1.68.1 ok
+[12:09:44] [313/772] nghttp2@1.68.1..1.69.0 ok
+[12:09:45] [314/772] nghttp2@1.69.0..1.70.0 ok
+[12:09:46] [315/772] rtmpdump@2.4+20151223.gitfa8646d..2.4+20151223.gitfa8646d.1 ok
+[12:09:46] [316/772] rtmpdump@2.4+20151223.gitfa8646d.1..2.6 ok
+[12:09:48] [317/772] pcre2@10.36..10.39 ok
+[12:09:49] [318/772] pcre2@10.39..10.40 ok
+[12:09:49] [319/772] pcre2@10.40..10.42 ok
+[12:09:51] [320/772] pcre2@10.42..10.43 ok
+[12:09:52] [321/772] pcre2@10.43..10.44 ok
+[12:09:52] [322/772] pcre2@10.44..10.45 ok
+[12:09:53] [323/772] pcre2@10.45..10.46 ok
+[12:09:55] [324/772] pcre2@10.46..10.47 ok
+[12:09:55] [325/772] libgpg-error@1.49..1.50 ok
+[12:09:56] [326/772] libgpg-error@1.50..1.51 ok
+[12:09:57] [327/772] libgpg-error@1.51..1.53 ok
+[12:09:57] [328/772] pcre2@10.47..10.48 ok
+[12:09:58] [329/772] libgpg-error@1.53..1.54 ok
+[12:09:58] [330/772] libgpg-error@1.54..1.55 ok
+[12:09:59] [331/772] libgpg-error@1.55..1.56 ok
+[12:09:59] [332/772] libgpg-error@1.56..1.58 ok
+[12:10:00] [333/772] libgpg-error@1.58..1.59 ok
+[12:10:01] [334/772] libzstd@1.4.5+dfsg..1.4.8+dfsg ok
+[12:10:01] [335/772] libgpg-error@1.59..1.61 ok
+[12:10:01] [336/772] libzstd@1.4.8+dfsg..1.4.9+dfsg ok
+[12:10:02] [337/772] libzstd@1.4.9+dfsg..1.4.10+dfsg ok
+[12:10:03] [338/772] libzstd@1.4.10+dfsg..1.5.2+dfsg ok
+[12:10:03] [339/772] libzstd@1.5.2+dfsg..1.5.2+dfsg2 ok
+[12:10:04] [340/772] libzstd@1.5.2+dfsg2..1.5.4+dfsg2 ok
+[12:10:05] [341/772] libzstd@1.5.4+dfsg2..1.5.5+dfsg2 ok
+[12:10:05] [342/772] libzstd@1.5.5+dfsg2..1.5.6+dfsg ok
+[12:10:05] [343/772] libzstd@1.5.6+dfsg..1.5.7+dfsg ok
+[12:10:07] [344/772] ncurses@6.4+20240113..6.4+20240414 ok
+[12:10:08] [345/772] ncurses@6.4+20240414..6.5 ok
+[12:10:09] [346/772] ncurses@6.5..6.5+20250125 ok
+[12:10:10] [347/772] ncurses@6.5+20250125..6.5+20250216 ok
+[12:10:10] [348/772] ncurses@6.5+20250216..6.5+20251115 ok
+[12:10:11] [349/772] ncurses@6.5+20251115..6.5+20251122 ok
+[12:10:12] [350/772] ncurses@6.5+20251122..6.5+20251123 ok
+[12:10:13] [351/772] ncurses@6.5+20251123..6.6+20251231 ok
+[12:10:13] [352/772] libpipeline@1.4.2..1.5.0 ok
+[12:10:14] [353/772] libpipeline@1.5.0..1.5.1 ok
+[12:10:14] [354/772] libpipeline@1.5.1..1.5.2 ok
+[12:10:14] [355/772] ncurses@6.6+20251231..6.6+20260608 ok
+[12:10:15] [356/772] libpipeline@1.5.2..1.5.3 ok
+[12:10:15] [357/772] libpipeline@1.5.3..1.5.4 ok
+[12:10:16] [358/772] libpipeline@1.5.4..1.5.5 ok
+[12:10:16] [359/772] libpipeline@1.5.5..1.5.6 ok
+[12:10:17] [360/772] libpipeline@1.5.6..1.5.7 ok
+[12:10:17] [361/772] libpipeline@1.5.7..1.5.8 ok
+[12:10:18] [362/772] libnftnl@1.2.3..1.2.4 ok
+[12:10:18] [363/772] libnftnl@1.2.4..1.2.5 ok
+[12:10:19] [364/772] libnftnl@1.2.5..1.2.6 ok
+[12:10:19] [365/772] libnftnl@1.2.6..1.2.7 ok
+[12:10:19] [366/772] libnftnl@1.2.7..1.2.8 ok
+[12:10:20] [367/772] libnftnl@1.2.8..1.2.9 ok
+[12:10:20] [368/772] libnftnl@1.2.9..1.3.0 ok
+[12:10:21] [369/772] libnftnl@1.3.0..1.3.1 ok
+[12:10:22] [370/772] libnftnl@1.3.1..1.3.2 ok
+[12:10:22] [371/772] libusb-1.0@1.0.21..1.0.22 ok
+[12:10:22] [372/772] libusb-1.0@1.0.22..1.0.23 ok
+[12:10:23] [373/772] libusb-1.0@1.0.23..1.0.24 ok
+[12:10:23] [374/772] libusb-1.0@1.0.24..1.0.25 ok
+[12:10:23] [375/772] libusb-1.0@1.0.25..1.0.26 ok
+[12:10:24] [376/772] libusb-1.0@1.0.26..1.0.27 ok
+[12:10:24] [377/772] libusb-1.0@1.0.27..1.0.28 ok
+[12:10:25] [378/772] libusb-1.0@1.0.28..1.0.29 ok
+[12:10:25] [379/772] libusb-1.0@1.0.29..1.0.30 ok
+[12:10:25] [380/772] jansson@2.7..2.9 ok
+[12:10:26] [381/772] jansson@2.9..2.10 ok
+[12:10:27] [382/772] jansson@2.12..2.13.1 ok
+[12:10:27] [383/772] jansson@2.10..2.11 ok
+[12:10:28] [384/772] jansson@2.11..2.12 ok
+[12:10:28] [385/772] jansson@2.13.1..2.14 ok
+[12:10:28] [386/772] jansson@2.14..2.15.0 ok
+[12:10:29] [387/772] jansson@2.15.0..2.15.1 ok
+[12:10:32] [388/772] libgcrypt20@1.10.2..1.10.3 ok
+[12:10:32] [389/772] libgcrypt20@1.10.3..1.11.0 ok
+[12:10:33] [390/772] libgcrypt20@1.11.0..1.11.0+git20250114 ok
+[12:10:34] [391/772] libgcrypt20@1.11.0+git20250114..1.11.1 ok
+[12:10:36] [392/772] libgcrypt20@1.11.2..1.12.0 ok
+[12:10:37] [393/772] libgcrypt20@1.12.0..1.12.1 ok
+[12:10:38] [394/772] libgcrypt20@1.11.1..1.11.2 ok
+[12:10:39] [395/772] libgcrypt20@1.12.1..1.12.2 ok
+[12:10:39] [396/772] brotli@1.0.0..1.0.2 ok
+[12:10:40] [397/772] brotli@1.0.2..1.0.3 ok
+[12:10:41] [398/772] brotli@1.0.3..1.0.4 ok
+[12:10:41] [399/772] brotli@1.0.4..1.0.5 ok
+[12:10:41] [400/772] libgcrypt20@1.12.2..1.12.3 ok
+[12:10:42] [401/772] brotli@1.0.5..1.0.6 ok
+[12:10:42] [402/772] brotli@1.0.6..1.0.7 ok
+[12:10:43] [403/772] brotli@1.0.7..1.0.9 ok
+[12:10:44] [404/772] brotli@1.0.9..1.1.0 ok
+[12:10:44] [405/772] brotli@1.1.0..1.2.0 ok
+[12:10:44] [406/772] protobuf-c@1.3.1..1.3.2 ok
+[12:10:45] [407/772] protobuf-c@1.3.2..1.3.3 ok
+[12:10:46] [408/772] protobuf-c@1.3.3..1.4.1 ok
+[12:10:46] [409/772] protobuf-c@1.4.1..1.5.1 ok
+[12:10:46] [410/772] lmdb@0.9.18..0.9.19 ok
+[12:10:47] [411/772] lmdb@0.9.19..0.9.21 ok
+[12:10:47] [412/772] lmdb@0.9.21..0.9.22 ok
+[12:10:48] [413/772] lmdb@0.9.22..0.9.24 ok
+[12:10:48] [414/772] lmdb@0.9.24..0.9.31 ok
+[12:10:49] [415/772] lmdb@0.9.31..0.9.35 ok
+[12:10:49] [416/772] xxhash@0.6.5..0.7.0 ok
+[12:10:49] [417/772] xxhash@0.7.0..0.7.1 ok
+[12:10:50] [418/772] xxhash@0.7.1..0.7.2 ok
+[12:10:50] [419/772] xxhash@0.7.2..0.7.3 ok
+[12:10:50] [420/772] xxhash@0.7.3..0.7.4 ok
+[12:10:51] [421/772] xxhash@0.7.4..0.8.0 ok
+[12:10:52] [422/772] xxhash@0.8.0..0.8.1 ok
+[12:10:52] [423/772] xxhash@0.8.1..0.8.2 ok
+[12:10:52] [424/772] xxhash@0.8.2..0.8.3 ok
+[12:10:53] [425/772] libxcrypt@4.4.26..4.4.27 ok
+[12:10:53] [426/772] libxcrypt@4.4.27..4.4.28 ok
+[12:10:53] [427/772] libxcrypt@4.4.28..4.4.30 ok
+[12:10:54] [428/772] libxcrypt@4.4.30..4.4.33 ok
+[12:10:54] [429/772] libxcrypt@4.4.33..4.4.35 ok
+[12:10:55] [430/772] libxcrypt@4.4.35..4.4.36 ok
+[12:10:56] [431/772] libxcrypt@4.4.36..4.4.38 ok
+[12:10:56] [432/772] libxcrypt@4.4.38..4.5.1 ok
+[12:10:57] [433/772] uchardet@0.0.1..0.0.6 ok
+[12:10:57] [434/772] libxcrypt@4.5.1..4.5.2+20251210 ok
+[12:10:58] [435/772] uchardet@0.0.6..0.0.7 ok
+[12:10:59] [436/772] uchardet@0.0.7..0.0.8 ok
+[12:11:00] [437/772] libmd@0.0.0..1.0.0 ok
+[12:11:00] [438/772] libmd@1.0.0..1.0.1 ok
+[12:11:01] [439/772] libmd@1.0.1..1.0.3 ok
+[12:11:02] [440/772] libmd@1.0.3..1.0.4 ok
+[12:11:03] [441/772] libmd@1.0.4..1.1.0 ok
+[12:11:04] [442/772] libmd@1.1.0..1.2.0 ok
+[12:11:04] [443/772] libfido2@1.8.0..1.9.0 ok
+[12:11:06] [444/772] libfido2@1.9.0..1.10.0 ok
+[12:11:06] [445/772] libfido2@1.10.0..1.11.0 ok
+[12:11:07] [446/772] libfido2@1.11.0..1.12.0 ok
+[12:11:08] [447/772] libfido2@1.12.0..1.13.0 ok
+[12:11:09] [448/772] libfido2@1.13.0..1.14.0 ok
+[12:11:09] [449/772] libfido2@1.14.0..1.15.0 ok
+[12:11:10] [450/772] libfido2@1.15.0..1.16.0 ok
+[12:11:11] [451/772] fstrm@0.4.0..0.6.0 ok
+[12:11:11] [452/772] fstrm@0.6.0..0.6.1 ok
+[12:11:12] [453/772] libfido2@1.16.0..1.17.0 ok
+[12:11:13] [454/772] json-c@0.12..0.12.1 ok
+[12:11:14] [455/772] json-c@0.12.1..0.12.1+ds ok
+[12:11:15] [456/772] json-c@0.12.1+ds..0.13.1+dfsg ok
+[12:11:16] [457/772] json-c@0.13.1+dfsg..0.14+dfsg ok
+[12:11:17] [458/772] json-c@0.14+dfsg..0.15 ok
+[12:11:18] [459/772] json-c@0.15..0.16 ok
+[12:11:18] [460/772] json-c@0.16..0.17 ok
+[12:11:19] [461/772] json-c@0.17..0.18+ds ok
+[12:11:20] [462/772] json-c@0.18+ds..0.19+ds ok
+[12:11:21] [463/772] nftables@1.0.7..1.0.8 ok
+[12:11:22] [464/772] nftables@1.0.8..1.0.9 ok
+[12:11:23] [465/772] nftables@1.0.9..1.1.0 ok
+[12:11:23] [466/772] nftables@1.1.0..1.1.1 ok
+[12:11:24] [467/772] nftables@1.1.1..1.1.2 ok
+[12:11:25] [468/772] nftables@1.1.2..1.1.3 ok
+[12:11:25] [469/772] nftables@1.1.3..1.1.4 ok
+[12:11:26] [470/772] nftables@1.1.4..1.1.5 ok
+[12:11:26] [471/772] libmaxminddb@1.4.3..1.5.0 ok
+[12:11:27] [472/772] nftables@1.1.5..1.1.6 ok
+[12:11:27] [473/772] libmaxminddb@1.5.0..1.5.2 ok
+[12:11:28] [474/772] libmaxminddb@1.5.2..1.7.1 ok
+[12:11:28] [475/772] libmaxminddb@1.7.1..1.8.0 ok
+[12:11:28] [476/772] libmaxminddb@1.8.0..1.9.1 ok
+[12:11:29] [477/772] libmaxminddb@1.9.1..1.10.0 ok
+[12:11:29] [478/772] libmaxminddb@1.10.0..1.11.0 ok
+[12:11:29] [479/772] libmaxminddb@1.11.0..1.12.2 ok
+[12:11:30] [480/772] libmaxminddb@1.12.2..1.13.3 ok
+[12:11:31] [481/772] gpm@1.20.4..1.20.7 ok
+[12:11:31] [482/772] libksba@1.6.0..1.6.2 ok
+[12:11:32] [483/772] libksba@1.6.2..1.6.3 ok
+[12:11:32] [484/772] libksba@1.6.3..1.6.4 ok
+[12:11:33] [485/772] libksba@1.6.4..1.6.5 ok
+[12:11:33] [486/772] libksba@1.6.5..1.6.6 ok
+[12:11:34] [487/772] libksba@1.6.6..1.6.7 ok
+[12:11:35] [488/772] libksba@1.6.7..1.6.8 ok
+[12:11:35] [489/772] libksba@1.6.8..1.8.0 ok
+[12:11:36] [490/772] jemalloc@3.6.0..5.0.1 ok
+[12:11:36] [491/772] libksba@1.8.0..1.8.1 ok
+[12:11:37] [492/772] jemalloc@5.0.1..5.1.0 ok
+[12:11:37] [493/772] jemalloc@5.1.0..5.2.1 ok
+[12:11:38] [494/772] jemalloc@5.2.1..5.3.0 ok
+[12:11:39] [495/772] jemalloc@5.3.0..5.3.1 ok
+[12:11:44] [496/772] libde265@1.0.11..1.0.12 ok
+[12:11:46] [497/772] libde265@1.0.7..1.0.8 ok
+[12:11:46] [498/772] libde265@1.0.9..1.0.11 ok
+[12:11:47] [499/772] libde265@1.0.8..1.0.9 ok
+[12:11:49] [500/772] libde265@1.0.12..1.0.13 ok
+[12:11:50] [501/772] libde265@1.0.13..1.0.15 ok
+[12:11:51] [502/772] libde265@1.0.15..1.0.16 ok
+[12:11:52] [503/772] libde265@1.0.16..1.0.18 ok
+[12:11:54] [504/772] lerc@3.0+ds..4.0.0+ds ok
+[12:11:55] [505/772] libde265@1.0.18..1.1.1 ok
+[12:11:55] [506/772] lerc@4.0.0+ds..4.1.0+ds ok
+[12:11:56] [507/772] lerc@4.1.0+ds..4.1.1+ds ok
+[12:11:58] [508/772] lerc@4.1.1+ds..4.2.0+ds ok
+[12:12:01] [509/772] snappy@1.1.3..1.1.4 ok
+[12:12:01] [510/772] aspell@0.60.7..0.60.8 ok
+[12:12:02] [511/772] aspell@0.60.8..0.60.8.1 ok
+[12:12:03] [512/772] snappy@1.1.4..1.1.6 ok
+[12:12:03] [513/772] aspell@0.60.8.1..0.60.8.2 ok
+[12:12:03] [514/772] snappy@1.1.6..1.1.7 ok
+[12:12:05] [515/772] snappy@1.1.7..1.1.8 ok
+[12:12:05] [516/772] snappy@1.1.8..1.1.9 ok
+[12:12:06] [517/772] snappy@1.1.9..1.1.10 ok
+[12:12:07] [518/772] snappy@1.1.10..1.2.1 ok
+[12:12:08] [519/772] snappy@1.2.1..1.2.2 ok
+[12:12:39] [520/772] libheif@1.19.1..1.19.3 ok
+[12:12:39] [521/772] libheif@1.19.3..1.19.5 ok
+[12:12:40] [522/772] libheif@1.19.5..1.19.7 ok
+[12:12:41] [523/772] libheif@1.19.7..1.19.8 ok
+[12:13:18] [524/772] libheif@1.19.8..1.20.1 ok
+[12:13:32] [525/772] libheif@1.20.1..1.20.2 ok
+[12:13:37] [526/772] libheif@1.20.2..1.21.2 ok
+[12:13:43] [527/772] z3@4.8.4..4.8.6 ok
+[12:13:49] [528/772] z3@4.8.6..4.8.7 ok
+[12:13:50] [529/772] libheif@1.21.2..1.23.1 ok
+[12:14:06] [530/772] z3@4.4.1..4.8.4 FAILED exit -9: [12:13:40]   z3@4.4.1..4.8.4: 1 + 1 objects, 157 MB extracted
+
+[12:14:09] [531/772] libheif@1.23.1..1.23.2 FAILED exit -9: [12:13:21]   libheif@1.23.1..1.23.2: 1 + 1 objects, 48 MB extracted
+
+[12:14:11] [532/772] z3@4.8.7..4.8.8 FAILED exit -9: [12:14:01]   z3@4.8.7..4.8.8: 1 + 1 objects, 299 MB extracted
+
+[12:14:17] [533/772] z3@4.8.8..4.8.9 FAILED exit -9: [12:14:08]   z3@4.8.8..4.8.9: 1 + 1 objects, 313 MB extracted
+
+[12:14:25] [534/772] libyuv@0.0.1898.20241219..0.0.1899.20250103 ok
+[12:14:30] [535/772] libyuv@0.0.1899.20250103..0.0.1904.20250204 ok
+[12:14:34] [536/772] libyuv@0.0.1904.20250204..0.0.1916.20250814 ok
+[12:14:36] [537/772] libyuv@0.0.1916.20250814..0.0.1919.20250919 ok
+[12:14:39] [538/772] libyuv@0.0.1919.20250919..0.0.1922.20251210 ok
+[12:14:42] [539/772] libyuv@0.0.1922.20251210..0.0.1922.20260106 ok
+[12:14:46] [540/772] libyuv@0.0.1922.20260106..0.0.1948.20260702 ok
+[12:14:50] [541/772] libyuv@0.0.1948.20260702..0.0.1949.20260706 ok
+[12:14:52] [542/772] libyuv@0.0.1949.20260706..0.0.1959.20260817 ok
+[12:14:59] [543/772] libgav1@0.16.0..0.16.3 ok
+[12:15:04] [544/772] libgav1@0.16.3..0.17.0 ok
+[12:15:36] [545/772] z3@4.8.9..4.8.10 FAILED exit -9: [12:14:28]   z3@4.8.9..4.8.10: 1 + 1 objects, 320 MB extracted
+
+[12:15:38] [546/772] libgav1@0.18.0..0.19.0 ok
+[12:15:39] [547/772] libgav1@0.17.0..0.18.0 ok
+[12:15:39] [548/772] libgav1@0.19.0..0.20.0 ok
+[12:15:42] [549/772] libcaca@0.99.beta19..0.99.beta20 ok
+[12:15:53] [550/772] zeromq3@4.2.5..4.3.1 ok
+[12:16:07] [551/772] z3@4.8.10..4.8.12 FAILED exit -9: [12:14:31]   z3@4.8.10..4.8.12: 1 + 1 objects, 335 MB extracted
+
+[12:16:10] [552/772] zeromq3@4.2.3..4.2.5 ok
+[12:16:16] [553/772] zeromq3@4.3.1..4.3.2 ok
+[12:16:32] [554/772] zeromq3@4.3.4..4.3.5 ok
+[12:16:33] [555/772] zeromq3@4.3.2..4.3.3 ok
+[12:16:35] [556/772] game-music-emu@0.6.0..0.6.1 ok
+[12:16:36] [557/772] zeromq3@4.3.3..4.3.4 ok
+[12:16:36] [558/772] game-music-emu@0.6.1..0.6.2 ok
+[12:16:38] [559/772] game-music-emu@0.6.2..0.6.3 ok
+[12:16:39] [560/772] game-music-emu@0.6.3..0.6.4 ok
+[12:16:40] [561/772] game-music-emu@0.6.4..0.6.5 ok
+[12:16:41] [562/772] chromaprint@1.2..1.3 ok
+[12:16:43] [563/772] chromaprint@1.3..1.3.2 ok
+[12:16:44] [564/772] chromaprint@1.3.2..1.4.1 ok
+[12:16:46] [565/772] chromaprint@1.4.1..1.4.2 ok
+[12:16:47] [566/772] chromaprint@1.4.2..1.4.3 ok
+[12:16:47] [567/772] chromaprint@1.4.3..1.5.0 ok
+[12:16:48] [568/772] chromaprint@1.5.0..1.5.1 ok
+[12:16:50] [569/772] chromaprint@1.5.1..1.6.0 ok
+[12:16:52] [570/772] chromaprint@1.6.0..1.6.1 ok
+[12:17:16] [571/772] z3@4.8.12..4.13.3 FAILED exit -9: [12:14:34]   z3@4.8.12..4.13.3: 1 + 1 objects, 379 MB extracted
+
+[12:18:09] [572/772] apt@3.1.12..3.1.13 ok
+[12:18:39] [573/772] apt@3.1.13..3.1.14 ok
+[12:18:46] [574/772] apt@3.1.14..3.1.15 ok
+[12:18:55] [575/772] apt@3.1.15..3.1.16 ok
+[12:19:45] [576/772] apt@3.1.16..3.2.0 ok
+[12:20:07] [577/772] apt@3.2.0..3.3.0 ok
+[12:20:13] [578/772] apt@3.3.0..3.3.1 ok
+[12:20:18] [579/772] djvulibre@3.5.27.1..3.5.28 ok
+[12:20:20] [580/772] apt@3.3.1..3.3.2 ok
+[12:20:21] [581/772] djvulibre@3.5.28..3.5.29 ok
+[12:20:22] [582/772] openal-soft@1.18.2..1.19.0 ok
+[12:20:23] [583/772] openal-soft@1.19.0..1.19.1 ok
+[12:20:23] [584/772] openal-soft@1.19.1..1.23.1 ok
+[12:20:24] [585/772] openal-soft@1.23.1..1.24.0 ok
+[12:20:26] [586/772] djvulibre@3.5.29..3.5.30 ok
+[12:20:46] [587/772] openal-soft@1.24.0..1.24.1 ok
+[12:20:49] [588/772] openal-soft@1.24.1..1.24.2 ok
+[12:21:01] [589/772] openal-soft@1.24.2..1.25.0 ok
+[12:21:02] [590/772] apt@3.3.2..3.3.3 ok
+[12:21:05] [591/772] rubberband@1.9.2..2.0.0 ok
+[12:21:06] [592/772] rubberband@2.0.0..2.0.2+dfsg0 ok
+[12:21:10] [593/772] rubberband@2.0.2+dfsg0..3.0.0+dfsg0 ok
+[12:21:12] [594/772] rubberband@3.0.0+dfsg0..3.1.0+dfsg0 ok
+[12:21:16] [595/772] rubberband@3.1.0+dfsg0..3.1.1+dfsg0 ok
+[12:21:20] [596/772] rubberband@3.1.1+dfsg0..3.1.2+dfsg0 ok
+[12:21:23] [597/772] openal-soft@1.25.0..1.25.1 FAILED exit -9: [12:20:49]   openal-soft@1.25.0..1.25.1: 1 + 1 objects, 42 MB extracted
+
+[12:21:27] [598/772] rubberband@3.1.2+dfsg0..3.2.1+dfsg ok
+[12:21:32] [599/772] rubberband@3.2.1+dfsg..3.3.0+dfsg ok
+[12:21:34] [600/772] rubberband@3.3.0+dfsg..4.0.0+dfsg ok
+[12:21:44] [601/772] libsigc++-2.0@2.8.0..2.9.3 ok
+[12:21:45] [602/772] openal-soft@1.25.1..1.25.2 ok
+[12:21:48] [603/772] libsigc++-2.0@2.9.3..2.10.0 ok
+[12:21:50] [604/772] libsigc++-2.0@2.10.0..2.10.1 ok
+[12:22:02] [605/772] libsigc++-2.0@2.10.1..2.10.2 ok
+[12:22:04] [606/772] libsigc++-2.0@2.10.2..2.10.4 ok
+[12:22:05] [607/772] libsigc++-2.0@2.10.4..2.10.8 ok
+[12:22:09] [608/772] libsigc++-2.0@2.10.8..2.12.0 ok
+[12:22:18] [609/772] srt@1.4.2..1.4.4 ok
+[12:22:19] [610/772] srt@1.4.4..1.5.0 ok
+[12:22:21] [611/772] libsigc++-2.0@2.12.0..2.12.1 ok
+[12:22:22] [612/772] srt@1.5.0..1.5.1 ok
+[12:22:29] [613/772] srt@1.5.1..1.5.2 ok
+[12:22:32] [614/772] srt@1.5.2..1.5.3 ok
+[12:22:34] [615/772] srt@1.5.3..1.5.4 ok
+[12:22:35] [616/772] zimg@3.0.2+ds1..3.0.3+ds1 ok
+[12:22:36] [617/772] zimg@3.0.3+ds1..3.0.4+ds1 ok
+[12:22:36] [618/772] srt@1.5.4..1.5.5 ok
+[12:22:40] [619/772] zimg@3.0.1+ds1..3.0.2+ds1 ok
+[12:22:42] [620/772] zimg@3.0.4+ds1..3.0.5+ds1 ok
+[12:22:44] [621/772] srt@1.5.5..1.5.6 ok
+[12:22:45] [622/772] zimg@3.0.5+ds1..3.0.6+ds1 ok
+[12:22:47] [623/772] intel-gmmlib@22.5.5+ds1..22.6.0+ds1 ok
+[12:22:48] [624/772] intel-gmmlib@22.6.0+ds1..22.7.0+ds1 ok
+[12:22:49] [625/772] intel-gmmlib@22.7.0+ds1..22.7.1+ds1 ok
+[12:22:55] [626/772] intel-gmmlib@22.7.1+ds1..22.7.2+ds1 ok
+[12:22:58] [627/772] intel-gmmlib@22.7.2+ds1..22.8.1+ds1 ok
+[12:22:58] [628/772] intel-gmmlib@22.8.1+ds1..22.8.2+ds1 ok
+[12:22:58] [629/772] intel-gmmlib@22.8.2+ds1..22.9.0+ds1 ok
+[12:23:01] [630/772] libglu@9.0.0..9.0.1 ok
+[12:23:01] [631/772] intel-gmmlib@22.9.0+ds1..22.10.0+ds1 ok
+[12:23:01] [632/772] libglu@9.0.1..9.0.2 ok
+[12:23:02] [633/772] intel-gmmlib@22.10.0+ds1..22.10.1+ds1 ok
+[12:23:06] [634/772] hunspell@1.6.2..1.7.0 ok
+[12:23:07] [635/772] hunspell@1.6.1..1.6.2 ok
+[12:23:07] [636/772] hunspell@1.7.0..1.7.1 ok
+[12:23:09] [637/772] hunspell@1.7.1..1.7.2 ok
+[12:23:11] [638/772] hunspell@1.7.2..1.7.2+really1.7.1 ok
+[12:23:13] [639/772] hunspell@1.7.2+really1.7.1..1.7.2+really1.7.2 ok
+[12:23:15] [640/772] hunspell@1.7.2+really1.7.2..1.7.3 ok
+[12:23:16] [641/772] libmodplug@0.8.8.5..0.8.9.0 ok
+[12:23:18] [642/772] hunspell@1.7.3..1.7.3+really1.7.2 ok
+[12:23:20] [643/772] hunspell@1.7.3+really1.7.2..1.7.3+really1.7.3 ok
+[12:23:24] [644/772] gst-plugins-bad1.0@1.27.90..1.28.0 ok
+[12:23:25] [645/772] gst-plugins-bad1.0@1.28.0..1.28.1 ok
+[12:23:26] [646/772] gst-plugins-bad1.0@1.28.1..1.28.2 ok
+[12:23:28] [647/772] gst-plugins-bad1.0@1.28.2..1.28.3 ok
+[12:23:32] [648/772] gst-plugins-bad1.0@1.28.3..1.28.4 ok
+[12:23:33] [649/772] gst-plugins-bad1.0@1.28.4..1.28.5 ok
+[12:23:35] [650/772] gst-plugins-bad1.0@1.28.5..1.28.6 ok
+[12:23:37] [651/772] gst-plugins-bad1.0@1.28.6..1.29.1 ok
+[12:23:39] [652/772] gst-plugins-bad1.0@1.29.1..1.29.2 ok
+[12:24:01] [653/772] pipewire@1.5.85..1.6.0 ok
+[12:24:02] [654/772] pipewire@1.6.0..1.6.1 ok
+[12:24:04] [655/772] pipewire@1.6.1..1.6.2 ok
+[12:24:05] [656/772] pipewire@1.6.2..1.6.3 ok
+[12:24:14] [657/772] pipewire@1.6.3..1.6.4 ok
+[12:24:26] [658/772] pipewire@1.6.4..1.6.5 ok
+[12:24:28] [659/772] pipewire@1.6.5..1.6.6 ok
+[12:24:29] [660/772] pipewire@1.6.6..1.6.7 ok
+[12:24:30] [661/772] soundtouch@1.9.2..2.0.0 ok
+[12:24:32] [662/772] soundtouch@2.0.0..2.1.2+ds1 ok
+[12:24:33] [663/772] soundtouch@2.1.2+ds1..2.2+ds1 ok
+[12:24:34] [664/772] soundtouch@2.2+ds1..2.3.1+ds1 ok
+[12:24:36] [665/772] soundtouch@2.3.1+ds1..2.3.2+ds1 ok
+[12:24:37] [666/772] soundtouch@2.3.2+ds1..2.3.3+ds ok
+[12:24:38] [667/772] soundtouch@2.3.3+ds..2.4.0+ds ok
+[12:24:38] [668/772] pipewire@1.6.7..1.6.8 ok
+[12:24:40] [669/772] soundtouch@2.4.0+ds..2.4.1+ds ok
+[12:24:52] [670/772] sane-backends@1.0.27..1.0.29 ok
+[12:24:59] [671/772] sane-backends@1.0.29..1.0.30 ok
+[12:25:02] [672/772] sane-backends@1.0.30..1.0.31 ok
+[12:25:02] [673/772] sane-backends@1.0.31..1.0.32 ok
+[12:25:14] [674/772] sane-backends@1.0.32..1.1.1 ok
+[12:25:27] [675/772] sane-backends@1.1.1..1.2.1 ok
+[12:25:29] [676/772] sane-backends@1.2.1..1.3.0 ok
+[12:25:32] [677/772] sane-backends@1.3.0..1.3.1 ok
+[12:25:33] [678/772] libsidplay@1.36.59..1.36.60 ok
+[12:25:42] [679/772] sane-backends@1.3.1..1.4.0 ok
+[12:25:51] [680/772] mesa@25.0.1..25.0.2 ok
+[12:25:53] [681/772] mesa@25.0.0..25.0.1 ok
+[12:25:54] [682/772] mesa@25.0.2..25.0.3 ok
+[12:26:02] [683/772] mesa@25.0.3..25.0.4 ok
+[12:26:10] [684/772] mesa@25.0.4..25.0.5 ok
+[12:26:13] [685/772] mesa@25.0.5..25.0.7 ok
+[12:26:14] [686/772] mesa@25.0.7..25.1.0 ok
+[12:26:22] [687/772] mesa@25.1.0..25.1.5 ok
+[12:26:26] [688/772] vte2.91@0.80.0..0.80.1 ok
+[12:26:28] [689/772] vte2.91@0.80.1..0.80.3 ok
+[12:26:31] [690/772] mesa@25.1.5..25.1.7 ok
+[12:26:37] [691/772] vte2.91@0.80.3..0.82.0 ok
+[12:26:45] [692/772] vte2.91@0.82.0..0.82.1 ok
+[12:26:45] [693/772] vte2.91@0.82.1..0.82.2 ok
+[12:26:48] [694/772] vte2.91@0.82.2..0.82.3 ok
+[12:26:53] [695/772] vte2.91@0.82.3..0.83.90 ok
+[12:27:01] [696/772] vte2.91@0.83.90..0.84.0 ok
+[12:27:02] [697/772] vte2.91@0.84.0..0.84.1 ok
+[12:27:18] [698/772] openexr@3.1.4..3.1.5 ok
+[12:27:24] [699/772] openexr@3.1.5..3.1.13 ok
+[12:27:27] [700/772] openexr@3.1.3..3.1.4 ok
+[12:27:31] [701/772] librevenge@0.0.3..0.0.4 ok
+[12:27:38] [702/772] librevenge@0.0.4..0.0.5 ok
+[12:27:40] [703/772] mythes@1.2.4..1.2.5 ok
+[12:27:41] [704/772] mythes@1.2.5..1.2.6 ok
+[12:27:44] [705/772] librevenge@0.0.5..0.0.6 ok
+[12:27:54] [706/772] libwpd@0.10.1..0.10.2 ok
+[12:27:54] [707/772] openexr@3.1.13..3.4.6+ds ok
+[12:27:56] [708/772] libwpg@0.3.1..0.3.2 ok
+[12:27:56] [709/772] libwpd@0.10.2..0.10.3 ok
+[12:27:56] [710/772] libwpg@0.3.2..0.3.3 ok
+[12:27:59] [711/772] libwpg@0.3.3..0.3.4 ok
+[12:28:25] [712/772] openexr@3.4.6+ds..3.4.14 ok
+[12:31:16] [713/772] libreoffice@26.2.3.2..26.2.4.1 FAILED exit -9: [12:29:27]   libreoffice@26.2.3.2..26.2.4.1: 43 + 43 objects, 1774 MB extracted
+[12:29:29]      ->   lang=c public=0 third=0 private=0 renamed=0
+[12:29:30]      ->   lang=c public=0 third=0 private=0 renamed=0
+[12:29:39]      ->   lang=c public=0 third=0 private=0 renamed=0
+[12:29:42]      ->   lang=c public=0 third=0 private=0 renamed=0
+[12:29:51]      ->   lang=c public=0 third=0 private=0 renam
+[12:32:49] [714/772] libreoffice@26.2.3.1..26.2.3.2 FAILED exit -9: [12:30:04]   libreoffice@26.2.3.1..26.2.3.2: 43 + 43 objects, 1775 MB extracted
+[12:30:06]      ->   lang=c public=0 third=0 private=0 renamed=0
+[12:30:08]      ->   lang=c public=0 third=0 private=0 renamed=0
+[12:30:18]      ->   lang=c public=0 third=0 private=0 renamed=0
+[12:30:21]      ->   lang=c public=0 third=0 private=0 renamed=0
+[12:30:30]      ->   lang=c public=0 third=0 private=0 renam
+[12:33:54] [715/772] libreoffice@26.2.4.2..26.2.5.2 FAILED exit -9: [12:30:20]   libreoffice@26.2.4.2..26.2.5.2: 43 + 43 objects, 1782 MB extracted
+[12:30:21]      ->   lang=c public=0 third=0 private=0 renamed=0
+[12:30:24]      ->   lang=c public=0 third=0 private=0 renamed=0
+[12:30:32]      ->   lang=c public=0 third=0 private=0 renamed=0
+[12:30:35]      ->   lang=c public=0 third=0 private=0 renamed=0
+[12:30:44]      ->   lang=c public=0 third=0 private=0 renam
+[12:35:23] [716/772] libreoffice@26.2.4.1..26.2.4.2 FAILED exit -9: [12:30:12]   libreoffice@26.2.4.1..26.2.4.2: 43 + 43 objects, 1775 MB extracted
+[12:30:14]      ->   lang=c public=0 third=0 private=0 renamed=0
+[12:30:17]      ->   lang=c public=0 third=0 private=0 renamed=0
+[12:30:25]      ->   lang=c public=0 third=0 private=0 renamed=0
+[12:30:28]      ->   lang=c public=0 third=0 private=0 renamed=0
+[12:30:37]      ->   lang=c public=0 third=0 private=0 renam
+[12:39:02] [717/772] libreoffice@26.2.5.2..26.8.0.0.alpha1 FAILED exit -9: [12:32:50]   libreoffice@26.2.5.2..26.8.0.0.alpha1: 43 + 44 objects, 1769 MB extracted
+[12:32:53]      ->   lang=c public=0 third=0 private=0 renamed=0
+[12:32:55]      ->   lang=c public=0 third=0 private=0 renamed=0
+[12:33:03]      ->   lang=c public=0 third=0 private=0 renamed=0
+[12:33:06]      ->   lang=c public=0 third=0 private=0 renamed=0
+[12:33:15]      ->   lang=c public=0 third=0 private=
+[12:39:10] [718/772] libreoffice@26.8.0.0.alpha1..26.8.0.0.beta1 FAILED exit -9: [12:34:36]   libreoffice@26.8.0.0.alpha1..26.8.0.0.beta1: 44 + 44 objects, 1747 MB extracted
+[12:34:38]      ->   lang=c public=0 third=0 private=0 renamed=0
+[12:34:40]      ->   lang=c public=0 third=0 private=0 renamed=0
+[12:34:48]      ->   lang=c public=0 third=0 private=0 renamed=0
+[12:34:52]      ->   lang=c public=0 third=0 private=0 renamed=0
+[12:35:00]      ->   lang=c public=0 third=0 pr
+[12:40:13] [719/772] libreoffice@26.8.0.2..26.8.0.3 FAILED exit -9: 
+[12:41:36] [720/772] libreoffice@26.8.0.0.beta1..26.8.0.1 FAILED exit -9: [12:35:15]   libreoffice@26.8.0.0.beta1..26.8.0.1: 44 + 44 objects, 1745 MB extracted
+[12:35:25]      ->   lang=c public=0 third=0 private=0 renamed=0
+[12:35:27]      ->   lang=c public=0 third=0 private=0 renamed=0
+[12:35:35]      ->   lang=c public=0 third=0 private=0 renamed=0
+[12:35:38]      ->   lang=c public=0 third=0 private=0 renamed=0
+[12:39:22]      ->   lang=c public=0 third=0 private=0
+[12:41:40] [721/772] libodfgen@0.1.6..0.1.7 ok
+[12:41:44] [722/772] libreoffice@26.8.0.1..26.8.0.2 FAILED exit -9: 
+[12:46:28] [723/772] libodfgen@0.1.7..0.1.8 ok
+[12:46:29] [724/772] libcdr@0.1.2..0.1.3 ok
+[12:46:32] [725/772] libcdr@0.1.3..0.1.4 ok
+[12:46:39] [726/772] libcdr@0.1.4..0.1.5 ok
+[12:46:52] [727/772] libcdr@0.1.5..0.1.6 ok
+[12:46:58] [728/772] libcdr@0.1.6..0.1.7 ok
+[12:47:02] [729/772] libcdr@0.1.8..0.1.9 ok
+[12:47:03] [730/772] libcdr@0.1.7..0.1.8 ok
+[12:47:14] [731/772] libvisio@0.1.4..0.1.5 ok
+[12:47:19] [732/772] libvisio@0.1.5..0.1.6 ok
+[12:47:25] [733/772] libvisio@0.1.6..0.1.7 ok
+[12:47:28] [734/772] libvisio@0.1.7..0.1.9 ok
+[12:47:38] [735/772] libvisio@0.1.9..0.1.10 ok
+[12:47:41] [736/772] libvisio@0.1.10..0.1.11 ok
+[12:48:24] [737/772] libetonyek@0.1.8..0.1.9 FAILED exit -9: [12:47:45]   libetonyek@0.1.8..0.1.9: 1 + 1 objects, 88 MB extracted
+
+[12:49:01] [738/772] libetonyek@0.1.7..0.1.8 FAILED exit -9: [12:47:33]   libetonyek@0.1.7..0.1.8: 1 + 1 objects, 65 MB extracted
+
+[12:49:09] [739/772] libetonyek@0.1.6..0.1.7 ok
+[12:49:52] [740/772] libetonyek@0.1.9..0.1.10 FAILED exit -9: [12:47:48]   libetonyek@0.1.9..0.1.10: 1 + 1 objects, 89 MB extracted
+
+[12:50:15] [741/772] libetonyek@0.1.10..0.1.12 FAILED exit -9: [12:48:29]   libetonyek@0.1.10..0.1.12: 1 + 1 objects, 89 MB extracted
+
+[12:50:46] [742/772] libetonyek@0.1.12..0.1.13 FAILED exit -9: [12:49:06]   libetonyek@0.1.12..0.1.13: 1 + 1 objects, 82 MB extracted
+
+[12:51:16] [743/772] libmwaw@0.3.15..0.3.16 FAILED exit -9: [12:50:21]   libmwaw@0.3.15..0.3.16: 1 + 1 objects, 127 MB extracted
+
+[12:52:08] [744/772] libmwaw@0.3.13..0.3.14 FAILED exit -9: [12:49:14]   libmwaw@0.3.13..0.3.14: 1 + 1 objects, 89 MB extracted
+
+[12:52:38] [745/772] libmwaw@0.3.14..0.3.15 FAILED exit -9: [12:49:58]   libmwaw@0.3.14..0.3.15: 1 + 1 objects, 108 MB extracted
+
+[12:53:02] [746/772] libmwaw@0.3.17..0.3.19 FAILED exit -9: [12:51:23]   libmwaw@0.3.17..0.3.19: 1 + 1 objects, 133 MB extracted
+
+[12:53:26] [747/772] libmwaw@0.3.19..0.3.20 FAILED exit -9: [12:52:15]   libmwaw@0.3.19..0.3.20: 1 + 1 objects, 138 MB extracted
+
+[12:53:53] [748/772] libmwaw@0.3.20..0.3.21 FAILED exit -9: [12:52:44]   libmwaw@0.3.20..0.3.21: 1 + 1 objects, 141 MB extracted
+
+[12:54:00] [749/772] libabw@0.1.1..0.1.2 ok
+[12:54:08] [750/772] libabw@0.1.2..0.1.3 ok
+[12:54:28] [751/772] libmwaw@0.3.16..0.3.17 FAILED exit -9: [12:50:54]   libmwaw@0.3.16..0.3.17: 1 + 1 objects, 129 MB extracted
+
+[12:54:31] [752/772] libabw@0.1.3..0.1.4 ok
+[12:54:39] [753/772] libe-book@0.1.2..0.1.3 ok
+[12:54:43] [754/772] libe-book@0.1.3..0.1.4 ok
+[12:54:47] [755/772] libnumbertext@1.0..1.0.5 ok
+[12:54:49] [756/772] libnumbertext@1.0.5..1.0.6 ok
+[12:54:52] [757/772] libnumbertext@1.0.6..1.0.7 ok
+[12:54:54] [758/772] libnumbertext@1.0.7..1.0.8 ok
+[12:54:58] [759/772] libnumbertext@1.0.8..1.0.9 ok
+[12:55:00] [760/772] libnumbertext@1.0.9..1.0.10 ok
+[12:55:04] [761/772] libnumbertext@1.0.10..1.0.11 ok
+[12:55:13] [762/772] libwps@0.4.5..0.4.6 ok
+[12:55:16] [763/772] libwps@0.4.6..0.4.7 ok
+[12:55:44] [764/772] libwps@0.4.7..0.4.8 ok
+[12:55:52] [765/772] libwps@0.4.8..0.4.9 ok
+[12:56:06] [766/772] libmwaw@0.3.21..0.3.22 FAILED exit -9: [12:53:08]   libmwaw@0.3.21..0.3.22: 1 + 1 objects, 137 MB extracted
+
+[12:56:28] [767/772] libwps@0.4.9..0.4.10 ok
+[12:56:43] [768/772] libwps@0.4.10..0.4.11 ok
+[12:56:50] [769/772] libwps@0.4.11..0.4.12 ok
+[12:57:08] [770/772] libwps@0.4.12..0.4.13 ok
+[12:57:13] [771/772] libmwaw@0.3.22..0.3.23 ok
+[12:57:22] [772/772] libwps@0.4.13..0.4.14 ok
+[12:57:22] diff stage complete
+== 2026-09-02T12:57:22Z headers
+[12:58:31]     indexed gcc-16 16-20260423: 15983 defs, 131 macros, 862/862 parsed
+[12:58:32] [25/772] util-linux@2.40.4..2.41 bodies=0 macros=2
+[12:58:32] [50/772] libedit@3.1-20251016..3.1-20260512 bodies=0 macros=0
+[12:58:32] [75/772] slang2@2.3.1..2.3.1a bodies=0 macros=1
+[12:58:33] [100/772] sqlite3@3.45.3..3.46.0 bodies=0 macros=3
+[12:58:33] [125/772] freetype@2.13.1+dfsg..2.13.2+dfsg bodies=0 macros=1
+[12:58:36] [150/772] dbus@1.15.6..1.15.8 bodies=0 macros=0
+[12:58:36] [175/772] p11-kit@0.25.0..0.25.1 bodies=0 macros=0
+[12:58:36] [200/772] libx11@1.8.6..1.8.7 bodies=0 macros=0
+[12:58:37] [225/772] systemd@259.1..260 bodies=0 macros=0
+[12:58:37] [250/772] cyrus-sasl2@2.1.27+dfsg..2.1.27+dfsg2 bodies=0 macros=0
+[12:58:37] [275/772] libseccomp@2.5.2..2.5.3 bodies=0 macros=1
+[12:58:37] [300/772] iptables@1.8.7..1.8.8 bodies=0 macros=0
+[12:58:38] [325/772] pcre2@10.47..10.48 bodies=0 macros=2
+[12:58:38] [350/772] ncurses@6.5+20251122..6.5+20251123 bodies=0 macros=14
+[12:58:38] [375/772] libusb-1.0@1.0.25..1.0.26 bodies=0 macros=0
+[12:58:39] [400/772] brotli@1.0.4..1.0.5 bodies=0 macros=0
+[12:58:39] [425/772] libxcrypt@4.4.26..4.4.27 bodies=0 macros=1
+[12:58:39] [450/772] libfido2@1.15.0..1.16.0 bodies=0 macros=0
+[12:58:40] [475/772] libmaxminddb@1.7.1..1.8.0 bodies=0 macros=0
+[12:58:40] [500/772] libde265@1.0.12..1.0.13 bodies=0 macros=2
+[12:58:40] [525/772] libheif@1.20.1..1.20.2 bodies=0 macros=2
+[12:58:41]     indexed libheif 1.23.1: 130 defs, 57 macros, 28/28 parsed
+[12:58:42]     indexed libheif 1.23.2: 130 defs, 57 macros, 28/28 parsed
+[12:58:43]     indexed z3 4.4.1: 472 defs, 43 macros, 10/10 parsed
+[12:58:43]     indexed z3 4.8.8: 787 defs, 49 macros, 14/14 parsed
+[12:58:44]     indexed z3 4.8.9: 819 defs, 49 macros, 14/14 parsed
+[12:58:44]     indexed z3 4.8.10: 820 defs, 49 macros, 14/14 parsed
+[12:58:45]     indexed z3 4.8.12: 842 defs, 49 macros, 14/14 parsed
+[12:58:46]     indexed z3 4.13.3: 934 defs, 46 macros, 14/14 parsed
+[12:58:46] [550/772] libgav1@0.19.0..0.20.0 bodies=0 macros=0
+[12:58:46] [575/772] apt@3.1.15..3.1.16 bodies=1 macros=0
+[12:58:47]     indexed openal-soft 1.25.0: 0 defs, 1017 macros, 6/6 parsed
+[12:58:47]     indexed openal-soft 1.25.1: 0 defs, 1017 macros, 6/6 parsed
+[12:58:47] [600/772] rubberband@3.2.1+dfsg..3.3.0+dfsg bodies=0 macros=4
+[12:58:48] [625/772] intel-gmmlib@22.7.0+ds1..22.7.1+ds1 bodies=0 macros=0
+[12:58:48] [650/772] gst-plugins-bad1.0@1.28.5..1.28.6 bodies=0 macros=0
+[12:58:48] [675/772] sane-backends@1.1.1..1.2.1 bodies=0 macros=0
+[12:58:49] [700/772] openexr@3.1.5..3.1.13 bodies=0 macros=0
+[12:58:50]     indexed libreoffice 26.2.3.1: 42 defs, 20 macros, 7/7 parsed
+[12:58:52]     indexed libreoffice 26.2.3.2: 42 defs, 20 macros, 7/7 parsed
+[12:58:53]     indexed libreoffice 26.2.4.1: 42 defs, 20 macros, 7/7 parsed
+[12:58:54]     indexed libreoffice 26.2.4.2: 42 defs, 20 macros, 7/7 parsed
+[12:58:56]     indexed libreoffice 26.2.5.2: 42 defs, 20 macros, 7/7 parsed
+[12:58:57]     indexed libreoffice 26.8.0.0.alpha1: 44 defs, 20 macros, 7/7 parsed
+[12:58:59]     indexed libreoffice 26.8.0.0.beta1: 43 defs, 20 macros, 7/7 parsed
+[12:59:00]     indexed libreoffice 26.8.0.1: 43 defs, 20 macros, 7/7 parsed
+[12:59:02]     indexed libreoffice 26.8.0.2: 43 defs, 20 macros, 7/7 parsed
+[12:59:04]     indexed libreoffice 26.8.0.3: 43 defs, 20 macros, 7/7 parsed
+[12:59:04] [725/772] libcdr@0.1.3..0.1.4 bodies=0 macros=0
+[12:59:04]     indexed libetonyek 0.1.8: 0 defs, 0 macros, 2/2 parsed
+[12:59:05]     indexed libetonyek 0.1.9: 0 defs, 0 macros, 2/2 parsed
+[12:59:05]     indexed libetonyek 0.1.10: 0 defs, 0 macros, 2/2 parsed
+[12:59:05]     indexed libetonyek 0.1.12: 0 defs, 0 macros, 2/2 parsed
+[12:59:05]     indexed libetonyek 0.1.13: 0 defs, 0 macros, 2/2 parsed
+[12:59:05]     indexed libmwaw 0.3.13: 0 defs, 6 macros, 2/2 parsed
+[12:59:05]     indexed libmwaw 0.3.14: 0 defs, 6 macros, 2/2 parsed
+[12:59:05]     indexed libmwaw 0.3.15: 0 defs, 6 macros, 2/2 parsed
+[12:59:06]     indexed libmwaw 0.3.16: 0 defs, 6 macros, 2/2 parsed
+[12:59:06]     indexed libmwaw 0.3.17: 0 defs, 7 macros, 2/2 parsed
+[12:59:06]     indexed libmwaw 0.3.19: 0 defs, 7 macros, 2/2 parsed
+[12:59:06]     indexed libmwaw 0.3.20: 0 defs, 7 macros, 2/2 parsed
+[12:59:06]     indexed libmwaw 0.3.21: 0 defs, 7 macros, 2/2 parsed
+[12:59:06] [750/772] libmwaw@0.3.21..0.3.22 bodies=0 macros=0
+[12:59:07] headers stage complete
+== 2026-09-02T12:59:07Z analyze
+[12:59:07] wrote /work/study/summary.json and /work/study/report.txt
+== 2026-09-02T12:59:07Z RUN DONE

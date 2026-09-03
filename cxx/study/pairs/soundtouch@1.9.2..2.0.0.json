@@ -1,0 +1,105 @@
+{
+ "data": {
+  "id": "soundtouch@1.9.2..2.0.0",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      202,
+      203
+     ],
+     "mangled_functions": [
+      199,
+      200
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "field_removed_from_struct": 2,
+     "member_offset_changed": 8,
+     "symbol_added": 2,
+     "symbol_removed": 1,
+     "type_size_changed": 1
+    },
+    "soname": [
+     "libSoundTouch.so.1",
+     "libSoundTouch.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void soundtouch::BPMDetect::calcEnvelope(soundtouch::SAMPLETYPE*, int)",
+      "symbol": "_ZN10soundtouch9BPMDetect12calcEnvelopeEPfi"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int soundtouch::RateTransposer::getLatency() const",
+      "symbol": "_ZNK10soundtouch14RateTransposer10getLatencyEv"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method double soundtouch::SoundTouch::getInputOutputSampleRatio()",
+      "symbol": "_ZN10soundtouch10SoundTouch25getInputOutputSampleRatioEv"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 1,
+     "field_added_to_struct": 1
+    },
+    "type_events": [
+     {
+      "count": 2,
+      "declared_in": "../../include/BPMDetect.h",
+      "kind": "field_removed_from_struct",
+      "type": "class soundtouch::BPMDetect"
+     },
+     {
+      "count": 8,
+      "declared_in": "../../include/BPMDetect.h",
+      "kind": "member_offset_changed",
+      "type": "class soundtouch::BPMDetect"
+     },
+     {
+      "count": 1,
+      "declared_in": "../../include/BPMDetect.h",
+      "kind": "type_size_changed",
+      "type": "class soundtouch::BPMDetect"
+     },
+     {
+      "count": 1,
+      "declared_in": "./source/SoundTouch/TDStretch.h",
+      "kind": "field_added_to_struct",
+      "type": "class soundtouch::TDStretch"
+     },
+     {
+      "count": 1,
+      "declared_in": "./source/SoundTouch/TDStretch.h",
+      "kind": "base_class_changed",
+      "type": "class soundtouch::TDStretchSSE"
+     }
+    ]
+   }
+  ],
+  "seconds": 2.207015562,
+  "source": "soundtouch",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.9.2",
+   "2.0.0"
+  ]
+ },
+ "generated_at": "2026-09-02T15:06:01Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

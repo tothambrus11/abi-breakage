@@ -1,0 +1,77 @@
+{
+ "data": {
+  "id": "lerc@4.1.0+ds..4.1.1+ds",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      172,
+      174
+     ],
+     "mangled_functions": [
+      160,
+      162
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "function_signature_changed": 1,
+     "symbol_added": 2
+    },
+    "soname": [
+     "libLerc.so.4",
+     "libLerc.so.4"
+    ],
+    "symbol_events": [
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method bool LercNS::CntZImage::read(const LercNS::Byte**, double, bool, bool)  ->  method bool LercNS::CntZImage::read(const LercNS::Byte**, const LercNS::Byte*, double, bool, bool)",
+      "symbol": "_ZN6LercNS9CntZImage4readEPPKhdbb"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool LercNS::Lerc2::SetMinMax(int, double, double)",
+      "symbol": "_ZN6LercNS5Lerc29SetMinMaxEidd"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void LercNS::Lerc2::ClearMinMax()",
+      "symbol": "_ZN6LercNS5Lerc211ClearMinMaxEv"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 1
+    },
+    "type_events": [
+     {
+      "count": 1,
+      "declared_in": "src/LercLib/Lerc2.h",
+      "kind": "field_added_to_struct",
+      "type": "class LercNS::Lerc2"
+     }
+    ]
+   }
+  ],
+  "seconds": 3.824316378,
+  "source": "lerc",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "4.1.0+ds",
+   "4.1.1+ds"
+  ]
+ },
+ "generated_at": "2026-09-02T14:59:56Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

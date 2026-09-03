@@ -1,0 +1,73 @@
+{
+ "data": {
+  "id": "libvisio@0.1.9..0.1.10",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      72,
+      73
+     ],
+     "mangled_functions": [
+      72,
+      73
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 1
+    },
+    "soname": [
+     "libvisio-0.1.so.1",
+     "libvisio-0.1.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool std::operator==<char,std::char_traits<char>,std::allocator<char>>(const std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>&, const char*)",
+      "symbol": "_ZSteqIcSt11char_traitsIcESaIcEEbRKNSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 1,
+     "vtable_changed": 3
+    },
+    "type_events": [
+     {
+      "count": 3,
+      "declared_in": "/usr/include/boost/lexical_cast/bad_lexical_cast.hpp",
+      "kind": "vtable_changed",
+      "type": "class boost::bad_lexical_cast"
+     },
+     {
+      "count": 1,
+      "declared_in": "/usr/include/boost/throw_exception.hpp",
+      "kind": "base_class_changed",
+      "type": "struct boost::wrapexcept<boost::bad_lexical_cast>"
+     }
+    ]
+   }
+  ],
+  "seconds": 23.597252252,
+  "source": "libvisio",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "0.1.9",
+   "0.1.10"
+  ]
+ },
+ "generated_at": "2026-09-02T15:08:57Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

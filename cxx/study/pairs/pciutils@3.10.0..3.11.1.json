@@ -1,0 +1,79 @@
+{
+ "data": {
+  "id": "pciutils@3.10.0..3.11.1",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      49,
+      49
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "field_added_to_struct": 2,
+     "field_removed_from_struct": 2,
+     "member_offset_changed": 6,
+     "type_size_changed": 1
+    },
+    "soname": [
+     "libpci.so.3",
+     "libpci.so.3"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [
+     {
+      "count": 2,
+      "declared_in": "./lib/pci.h",
+      "kind": "field_added_to_struct",
+      "type": "struct pci_access"
+     },
+     {
+      "count": 2,
+      "declared_in": "./lib/pci.h",
+      "kind": "field_removed_from_struct",
+      "type": "struct pci_access"
+     },
+     {
+      "count": 6,
+      "declared_in": "./lib/pci.h",
+      "kind": "member_offset_changed",
+      "type": "struct pci_access"
+     },
+     {
+      "count": 1,
+      "declared_in": "./lib/pci.h",
+      "kind": "type_size_changed",
+      "type": "struct pci_access"
+     }
+    ]
+   }
+  ],
+  "seconds": 1.827837943,
+  "source": "pciutils",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "3.10.0",
+   "3.11.1"
+  ]
+ },
+ "generated_at": "2026-09-02T14:57:51Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}

@@ -1,0 +1,556 @@
+{
+ "data": {
+  "id": "openal-soft@1.18.2..1.19.0",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      161,
+      170
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "field_added_to_struct": 53,
+     "symbol_added": 10,
+     "symbol_removed": 1,
+     "type_size_changed": 3
+    },
+    "soname": [
+     "libopenal.so.1",
+     "libopenal.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "function ALCboolean alcIsAmbisonicFormatSupportedSOFT(ALCdevice*, ALCenum, ALCenum, ALsizei)",
+      "symbol": "alcIsAmbisonicFormatSupportedSOFT"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void alUnmapBufferSOFT(ALuint)",
+      "symbol": "alUnmapBufferSOFT"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void alSourceQueueBufferLayersSOFT(ALuint, ALsizei, const ALuint*)",
+      "symbol": "alSourceQueueBufferLayersSOFT"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void* alMapBufferSOFT(ALuint, ALsizei, ALsizei, ALbitfieldSOFT)",
+      "symbol": "alMapBufferSOFT"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void alGetPointervSOFT(ALenum, void**)",
+      "symbol": "alGetPointervSOFT"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void* alGetPointerSOFT(ALenum)",
+      "symbol": "alGetPointerSOFT"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const ALchar* alsoft_get_version(void)",
+      "symbol": "alsoft_get_version"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void alFlushMappedBufferSOFT(ALuint, ALsizei, ALsizei)",
+      "symbol": "alFlushMappedBufferSOFT"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void alEventControlSOFT(ALsizei, const ALenum*, ALboolean)",
+      "symbol": "alEventControlSOFT"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void alEventCallbackSOFT(ALEVENTPROCSOFT, void*)",
+      "symbol": "alEventCallbackSOFT"
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void alBufferStorageSOFT(ALuint, ALenum, const ALvoid*, ALsizei, ALsizei, ALbitfieldSOFT)",
+      "symbol": "alBufferStorageSOFT"
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "enum_case_added": 1,
+     "field_added_to_struct": 38,
+     "field_removed_from_struct": 22,
+     "field_type_changed": 23,
+     "member_offset_changed": 110,
+     "type_size_changed": 17
+    },
+    "type_events": [
+     {
+      "count": 8,
+      "declared_in": "./OpenAL32/Include/alMain.h",
+      "kind": "field_added_to_struct",
+      "type": "struct ALCdevice_struct"
+     },
+     {
+      "count": 6,
+      "declared_in": "./OpenAL32/Include/alMain.h",
+      "kind": "field_removed_from_struct",
+      "type": "struct ALCdevice_struct"
+     },
+     {
+      "count": 5,
+      "declared_in": "./OpenAL32/Include/alMain.h",
+      "kind": "field_type_changed",
+      "type": "struct ALCdevice_struct"
+     },
+     {
+      "count": 26,
+      "declared_in": "./OpenAL32/Include/alMain.h",
+      "kind": "member_offset_changed",
+      "type": "struct ALCdevice_struct"
+     },
+     {
+      "count": 1,
+      "declared_in": "./OpenAL32/Include/alMain.h",
+      "kind": "type_size_changed",
+      "type": "struct ALCdevice_struct"
+     },
+     {
+      "count": 1,
+      "declared_in": "./Alc/hrtf.h",
+      "kind": "field_added_to_struct",
+      "type": "struct Hrtf"
+     },
+     {
+      "count": 5,
+      "declared_in": "./Alc/hrtf.h",
+      "kind": "member_offset_changed",
+      "type": "struct Hrtf"
+     },
+     {
+      "count": 1,
+      "declared_in": "./Alc/hrtf.h",
+      "kind": "type_size_changed",
+      "type": "struct Hrtf"
+     },
+     {
+      "count": 16,
+      "declared_in": "",
+      "kind": "field_added_to_struct",
+      "type": "struct Compressor"
+     },
+     {
+      "count": 1,
+      "declared_in": "",
+      "kind": "type_size_changed",
+      "type": "struct Compressor"
+     },
+     {
+      "count": 19,
+      "declared_in": "./OpenAL32/Include/alMain.h",
+      "kind": "field_added_to_struct",
+      "type": "struct ALCcontext_struct"
+     },
+     {
+      "count": 1,
+      "declared_in": "./OpenAL32/Include/alMain.h",
+      "kind": "field_removed_from_struct",
+      "type": "struct ALCcontext_struct"
+     },
+     {
+      "count": 2,
+      "declared_in": "./OpenAL32/Include/alMain.h",
+      "kind": "field_type_changed",
+      "type": "struct ALCcontext_struct"
+     },
+     {
+      "count": 20,
+      "declared_in": "./OpenAL32/Include/alMain.h",
+      "kind": "member_offset_changed",
+      "type": "struct ALCcontext_struct"
+     },
+     {
+      "count": 1,
+      "declared_in": "./OpenAL32/Include/alMain.h",
+      "kind": "type_size_changed",
+      "type": "struct ALCcontext_struct"
+     },
+     {
+      "count": 1,
+      "declared_in": "./OpenAL32/Include/alListener.h",
+      "kind": "field_removed_from_struct",
+      "type": "struct ALlistener"
+     },
+     {
+      "count": 2,
+      "declared_in": "./OpenAL32/Include/alListener.h",
+      "kind": "field_type_changed",
+      "type": "struct ALlistener"
+     },
+     {
+      "count": 1,
+      "declared_in": "./OpenAL32/Include/alListener.h",
+      "kind": "member_offset_changed",
+      "type": "struct ALlistener"
+     },
+     {
+      "count": 1,
+      "declared_in": "./OpenAL32/Include/alListener.h",
+      "kind": "type_size_changed",
+      "type": "struct ALlistener"
+     },
+     {
+      "count": 6,
+      "declared_in": "./OpenAL32/Include/alListener.h",
+      "kind": "field_removed_from_struct",
+      "type": "struct ALlistenerProps"
+     },
+     {
+      "count": 1,
+      "declared_in": "./OpenAL32/Include/alListener.h",
+      "kind": "member_offset_changed",
+      "type": "struct ALlistenerProps"
+     },
+     {
+      "count": 1,
+      "declared_in": "./OpenAL32/Include/alListener.h",
+      "kind": "type_size_changed",
+      "type": "struct ALlistenerProps"
+     },
+     {
+      "count": 1,
+      "declared_in": "./OpenAL32/Include/alListener.h",
+      "kind": "field_added_to_struct",
+      "type": "struct {aluMatrixf Matrix; aluVector Velocity; ALfloat Gain; ALfloat MetersPerUnit; ALfloat DopplerFactor; ALfloat SpeedOfSound; ALboolean SourceDistanceModel; DistanceModel DistanceModel;}"
+     },
+     {
+      "count": 2,
+      "declared_in": "./OpenAL32/Include/alListener.h",
+      "kind": "member_offset_changed",
+      "type": "struct {aluMatrixf Matrix; aluVector Velocity; ALfloat Gain; ALfloat MetersPerUnit; ALfloat DopplerFactor; ALfloat SpeedOfSound; ALboolean SourceDistanceModel; DistanceModel DistanceModel;}"
+     },
+     {
+      "count": 1,
+      "declared_in": "./OpenAL32/Include/alu.h",
+      "kind": "field_removed_from_struct",
+      "type": "struct ALvoice"
+     },
+     {
+      "count": 1,
+      "declared_in": "./OpenAL32/Include/alu.h",
+      "kind": "field_type_changed",
+      "type": "struct ALvoice"
+     },
+     {
+      "count": 15,
+      "declared_in": "./OpenAL32/Include/alu.h",
+      "kind": "member_offset_changed",
+      "type": "struct ALvoice"
+     },
+     {
+      "count": 1,
+      "declared_in": "./OpenAL32/Include/alu.h",
+      "kind": "type_size_changed",
+      "type": "struct ALvoice"
+     },
+     {
+      "count": 1,
+      "declared_in": "./OpenAL32/Include/alu.h",
+      "kind": "enum_case_added",
+      "type": "enum Resampler"
+     },
+     {
+      "count": 1,
+      "declared_in": "./OpenAL32/Include/alAuxEffectSlot.h",
+      "kind": "field_removed_from_struct",
+      "type": "struct ALeffectslot"
+     },
+     {
+      "count": 1,
+      "declared_in": "./OpenAL32/Include/alAuxEffectSlot.h",
+      "kind": "field_type_changed",
+      "type": "struct ALeffectslot"
+     },
+     {
+      "count": 5,
+      "declared_in": "./OpenAL32/Include/alAuxEffectSlot.h",
+      "kind": "member_offset_changed",
+      "type": "struct ALeffectslot"
+     },
+     {
+      "count": 1,
+      "declared_in": "./OpenAL32/Include/alAuxEffectSlot.h",
+      "kind": "type_size_changed",
+      "type": "struct ALeffectslot"
+     },
+     {
+      "count": 2,
+      "declared_in": "./OpenAL32/Include/alEffect.h",
+      "kind": "field_added_to_struct",
+      "type": "union ALeffectProps"
+     },
+     {
+      "count": 1,
+      "declared_in": "./OpenAL32/Include/alEffect.h",
+      "kind": "field_type_changed",
+      "type": "union ALeffectProps"
+     },
+     {
+      "count": 2,
+      "declared_in": "./OpenAL32/Include/alEffect.h",
+      "kind": "field_removed_from_struct",
+      "type": "struct {ALint Waveform; ALint Phase; ALfloat Rate; ALfloat Depth; ALfloat Feedback; ALfloat Delay;}"
+     },
+     {
+      "count": 2,
+      "declared_in": "./OpenAL32/Include/alEffect.h",
+      "kind": "field_type_changed",
+      "type": "struct {ALint Waveform; ALint Phase; ALfloat Rate; ALfloat Depth; ALfloat Feedback; ALfloat Delay;}"
+     },
+     {
+      "count": 1,
+      "declared_in": "./OpenAL32/Include/alEffect.h",
+      "kind": "type_size_changed",
+      "type": "struct {ALint Waveform; ALint Phase; ALfloat Rate; ALfloat Depth; ALfloat Feedback; ALfloat Delay;}"
+     },
+     {
+      "count": 1,
+      "declared_in": "./OpenAL32/Include/alAuxEffectSlot.h",
+      "kind": "field_type_changed",
+      "type": "struct ALeffectStateVtable"
+     },
+     {
+      "count": 31,
+      "declared_in": "",
+      "kind": "field_added_to_struct",
+      "type": "struct Uhj2Encoder"
+     },
+     {
+      "count": 1,
+      "declared_in": "",
+      "kind": "type_size_changed",
+      "type": "struct Uhj2Encoder"
+     },
+     {
+      "count": 6,
+      "declared_in": "",
+      "kind": "field_added_to_struct",
+      "type": "struct BFormatDec"
+     },
+     {
+      "count": 1,
+      "declared_in": "",
+      "kind": "type_size_changed",
+      "type": "struct BFormatDec"
+     },
+     {
+      "count": 2,
+      "declared_in": "./OpenAL32/Include/alAuxEffectSlot.h",
+      "kind": "field_added_to_struct",
+      "type": "struct {ALfloat Gain; ALboolean AuxSendAuto; ALenum EffectType; ALeffectState* EffectState; ALfloat RoomRolloff; ALfloat DecayTime; ALfloat DecayHFRatio; ALboolean DecayHFLimit; ALfloat AirAbsorptionGainHF;}"
+     },
+     {
+      "count": 6,
+      "declared_in": "./OpenAL32/Include/alAuxEffectSlot.h",
+      "kind": "member_offset_changed",
+      "type": "struct {ALfloat Gain; ALboolean AuxSendAuto; ALenum EffectType; ALeffectState* EffectState; ALfloat RoomRolloff; ALfloat DecayTime; ALfloat DecayHFRatio; ALboolean DecayHFLimit; ALfloat AirAbsorptionGainHF;}"
+     },
+     {
+      "count": 1,
+      "declared_in": "./OpenAL32/Include/alAuxEffectSlot.h",
+      "kind": "type_size_changed",
+      "type": "struct {ALfloat Gain; ALboolean AuxSendAuto; ALenum EffectType; ALeffectState* EffectState; ALfloat RoomRolloff; ALfloat DecayTime; ALfloat DecayHFRatio; ALboolean DecayHFLimit; ALfloat AirAbsorptionGainHF;}"
+     },
+     {
+      "count": 1,
+      "declared_in": "./OpenAL32/Include/alSource.h",
+      "kind": "field_added_to_struct",
+      "type": "struct ALsource"
+     },
+     {
+      "count": 1,
+      "declared_in": "./OpenAL32/Include/alSource.h",
+      "kind": "field_removed_from_struct",
+      "type": "struct ALsource"
+     },
+     {
+      "count": 3,
+      "declared_in": "./OpenAL32/Include/alSource.h",
+      "kind": "member_offset_changed",
+      "type": "struct ALsource"
+     },
+     {
+      "count": 3,
+      "declared_in": "./OpenAL32/Include/alSource.h",
+      "kind": "field_added_to_struct",
+      "type": "struct ALbufferlistitem"
+     },
+     {
+      "count": 1,
+      "declared_in": "./OpenAL32/Include/alSource.h",
+      "kind": "field_removed_from_struct",
+      "type": "struct ALbufferlistitem"
+     },
+     {
+      "count": 1,
+      "declared_in": "./OpenAL32/Include/alSource.h",
+      "kind": "member_offset_changed",
+      "type": "struct ALbufferlistitem"
+     },
+     {
+      "count": 1,
+      "declared_in": "./OpenAL32/Include/alu.h",
+      "kind": "type_size_changed",
+      "type": "union InterpState"
+     },
+     {
+      "count": 2,
+      "declared_in": "./OpenAL32/Include/alu.h",
+      "kind": "field_type_changed",
+      "type": "struct BsincState"
+     },
+     {
+      "count": 1,
+      "declared_in": "./OpenAL32/Include/alu.h",
+      "kind": "type_size_changed",
+      "type": "struct BsincState"
+     },
+     {
+      "count": 3,
+      "declared_in": "./OpenAL32/Include/alu.h",
+      "kind": "member_offset_changed",
+      "type": "struct {ActiveFilters FilterType; DirectParams Params[8]; ALfloat(* Buffer)[2048]; ALsizei Channels; ALsizei ChannelsPerOrder[4];}"
+     },
+     {
+      "count": 1,
+      "declared_in": "./OpenAL32/Include/alu.h",
+      "kind": "type_size_changed",
+      "type": "struct {ActiveFilters FilterType; DirectParams Params[8]; ALfloat(* Buffer)[2048]; ALsizei Channels; ALsizei ChannelsPerOrder[4];}"
+     },
+     {
+      "count": 3,
+      "declared_in": "./OpenAL32/Include/alu.h",
+      "kind": "field_type_changed",
+      "type": "struct DirectParams"
+     },
+     {
+      "count": 4,
+      "declared_in": "./OpenAL32/Include/alu.h",
+      "kind": "member_offset_changed",
+      "type": "struct DirectParams"
+     },
+     {
+      "count": 1,
+      "declared_in": "./OpenAL32/Include/alu.h",
+      "kind": "type_size_changed",
+      "type": "struct DirectParams"
+     },
+     {
+      "count": 1,
+      "declared_in": "./OpenAL32/Include/alFilter.h",
+      "kind": "field_added_to_struct",
+      "type": "struct ALfilterState"
+     },
+     {
+      "count": 1,
+      "declared_in": "./OpenAL32/Include/alFilter.h",
+      "kind": "field_removed_from_struct",
+      "type": "struct ALfilterState"
+     },
+     {
+      "count": 1,
+      "declared_in": "./OpenAL32/Include/alFilter.h",
+      "kind": "field_type_changed",
+      "type": "struct ALfilterState"
+     },
+     {
+      "count": 5,
+      "declared_in": "./OpenAL32/Include/alFilter.h",
+      "kind": "member_offset_changed",
+      "type": "struct ALfilterState"
+     },
+     {
+      "count": 1,
+      "declared_in": "./OpenAL32/Include/alFilter.h",
+      "kind": "type_size_changed",
+      "type": "struct ALfilterState"
+     },
+     {
+      "count": 2,
+      "declared_in": "./OpenAL32/Include/alu.h",
+      "kind": "member_offset_changed",
+      "type": "struct {ActiveFilters FilterType; SendParams Params[8]; ALfloat(* Buffer)[2048]; ALsizei Channels;}"
+     },
+     {
+      "count": 1,
+      "declared_in": "./OpenAL32/Include/alu.h",
+      "kind": "type_size_changed",
+      "type": "struct {ActiveFilters FilterType; SendParams Params[8]; ALfloat(* Buffer)[2048]; ALsizei Channels;}"
+     },
+     {
+      "count": 2,
+      "declared_in": "./OpenAL32/Include/alu.h",
+      "kind": "field_type_changed",
+      "type": "struct SendParams"
+     },
+     {
+      "count": 2,
+      "declared_in": "./OpenAL32/Include/alu.h",
+      "kind": "member_offset_changed",
+      "type": "struct SendParams"
+     },
+     {
+      "count": 1,
+      "declared_in": "./OpenAL32/Include/alu.h",
+      "kind": "type_size_changed",
+      "type": "struct SendParams"
+     },
+     {
+      "count": 1,
+      "declared_in": "./Alc/backends/base.h",
+      "kind": "field_removed_from_struct",
+      "type": "struct ALCbackendVtable"
+     },
+     {
+      "count": 9,
+      "declared_in": "./Alc/backends/base.h",
+      "kind": "member_offset_changed",
+      "type": "struct ALCbackendVtable"
+     },
+     {
+      "count": 1,
+      "declared_in": "./Alc/backends/base.h",
+      "kind": "type_size_changed",
+      "type": "struct ALCbackendVtable"
+     }
+    ]
+   }
+  ],
+  "seconds": 2.056330958,
+  "source": "openal-soft",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.18.2",
+   "1.19.0"
+  ]
+ },
+ "generated_at": "2026-09-02T15:04:07Z",
+ "schema": "abistudy/pair/1",
+ "tool": "abistudy 3.0.0"
+}
