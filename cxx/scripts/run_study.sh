@@ -17,9 +17,11 @@ log="$work/run.log"
 mkdir -p "$work"
 stamp() { echo "== $(date -u +%FT%TZ) $*" | tee -a "$log"; }
 
-stamp "cleaning results of earlier schemas"
-rm -rf "$work/pairs" "$work/headers/pairs" "$work/headers/index" "$work/scratch"
-rm -f "$work/summary.json" "$work/report.txt" "$work/report.html"
+if [ "${CLEAN:-1}" != 0 ]; then
+  stamp "cleaning results of earlier schemas"
+  rm -rf "$work/pairs" "$work/headers/pairs" "$work/headers/index" "$work/scratch"
+  rm -f "$work/summary.json" "$work/report.txt" "$work/report.html"
+fi
 
 stamp "diff (workers=${WORKERS:-4}, deadline=${deadline} min)"
 "$bin" diff --work "$work" --workers "${WORKERS:-4}" --deadline-minutes "$deadline" \

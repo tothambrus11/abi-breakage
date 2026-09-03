@@ -1,6 +1,7 @@
 #include <algorithm>
 #include <chrono>
 #include <condition_variable>
+#include <deque>
 #include <format>
 #include <map>
 #include <mutex>
@@ -220,7 +221,12 @@ Result<void> run_diff(
   auto pass = [&](const std::vector<std::size_t> &jobs, std::uint32_t workers) {
     std::mutex mx;
     std::condition_variable cv;
-    std::size_t next = 0;
+    // Two queues, both largest first: at most one big pair runs at a time,
+    // and a worker that cannot take a big one takes the next small one.
+    std::deque<std::size_t> big;
+    std::deque<std::size_t> small;
+    for (const auto i : jobs)
+      (is_big(i) ? big : small).push_back(i);
     std::size_t done = 0;
     bool big_running = false;
     std::vector<std::size_t> killed;
@@ -231,16 +237,24 @@ Result<void> run_diff(
         std::size_t i = 0;
         {
           std::unique_lock lk(mx);
-          cv.wait(lk, [&] { return next >= jobs.size() || !is_big(jobs[next]) || !big_running; });
-          if (next >= jobs.size())
+          cv.wait(lk, [&] { return !small.empty() || big.empty() || !big_running; });
+          if (small.empty() && big.empty())
             return;
-          i = jobs[next++];
+          if (!big.empty() && !big_running) {
+            i = big.front();
+            big.pop_front();
+            big_running = true;
+          } else {
+            i = small.front();
+            small.pop_front();
+          }
           if (deadline && std::chrono::steady_clock::now() > *deadline) {
+            if (is_big(i))
+              big_running = false;
             deferred.push_back(i);
+            cv.notify_all();
             continue;
           }
-          if (is_big(i))
-            big_running = true;
         }
         const auto &job = plan.jobs[i];
         // prlimit caps the child's address space so an oversized DWARF fails
