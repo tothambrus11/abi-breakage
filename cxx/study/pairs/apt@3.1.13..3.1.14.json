@@ -1,0 +1,55 @@
+{
+ "data": {
+  "bytes_extracted": 37965812,
+  "id": "apt@3.1.13..3.1.14",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      1287,
+      1287
+     ],
+     "mangled_functions": [
+      1287,
+      1287
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libapt-pkg.so.7.0",
+     "libapt-pkg.so.7.0"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 72.102600402,
+  "source": "apt",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "3.1.13",
+   "3.1.14"
+  ]
+ },
+ "generated_at": "2026-09-03T23:09:31Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

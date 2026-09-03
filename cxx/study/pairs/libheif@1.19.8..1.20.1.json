@@ -1,0 +1,1545 @@
+{
+ "data": {
+  "bytes_extracted": 29797707,
+  "id": "libheif@1.19.8..1.20.1",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      272,
+      354
+     ],
+     "mangled_functions": [
+      2,
+      2
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 81
+    },
+    "soname": [
+     "libheif.so.1",
+     "libheif.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function heif_unci_image_parameters* heif_unci_image_parameters_alloc()",
+      "symbol": "heif_unci_image_parameters_alloc",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void heif_track_release(heif_track*)",
+      "symbol": "heif_track_release",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void heif_track_options_set_timescale(heif_track_options*, uint32_t)",
+      "symbol": "heif_track_options_set_timescale",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void heif_track_options_set_interleaved_sample_aux_infos(heif_track_options*, int)",
+      "symbol": "heif_track_options_set_interleaved_sample_aux_infos",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void heif_track_options_set_gimi_track_id(heif_track_options*, const char*)",
+      "symbol": "heif_track_options_set_gimi_track_id",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void heif_track_options_enable_sample_gimi_content_ids(heif_track_options*, heif_sample_aux_info_presence)",
+      "symbol": "heif_track_options_enable_sample_gimi_content_ids",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function heif_track_options* heif_track_options_alloc()",
+      "symbol": "heif_track_options_alloc",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function heif_error heif_track_get_urim_sample_entry_uri_of_first_cluster(const heif_track*, const char**)",
+      "symbol": "heif_track_get_urim_sample_entry_uri_of_first_cluster",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void heif_track_get_track_reference_types(const heif_track*, uint32_t*)",
+      "symbol": "heif_track_get_track_reference_types",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function uint32_t heif_track_get_timescale(const heif_track*)",
+      "symbol": "heif_track_get_timescale",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const heif_tai_clock_info* heif_track_get_tai_clock_info_of_first_cluster(heif_track*)",
+      "symbol": "heif_track_get_tai_clock_info_of_first_cluster",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function uint32_t heif_track_get_sample_entry_type_of_first_cluster(const heif_track*)",
+      "symbol": "heif_track_get_sample_entry_type_of_first_cluster",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void heif_track_get_sample_aux_info_types(const heif_track*, heif_sample_aux_info_type*)",
+      "symbol": "heif_track_get_sample_aux_info_types",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t heif_track_get_references_from_track(const heif_track*, uint32_t, uint32_t*)",
+      "symbol": "heif_track_get_references_from_track",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t heif_track_get_number_of_track_reference_types(const heif_track*)",
+      "symbol": "heif_track_get_number_of_track_reference_types",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t heif_track_get_number_of_track_reference_of_type(const heif_track*, uint32_t)",
+      "symbol": "heif_track_get_number_of_track_reference_of_type",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int heif_track_get_number_of_sample_aux_infos(const heif_track*)",
+      "symbol": "heif_track_get_number_of_sample_aux_infos",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const uint8_t* heif_image_get_plane_readonly2(const heif_image*, heif_channel, size_t*)",
+      "symbol": "heif_image_get_plane_readonly2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function heif_error heif_context_add_empty_unci_image(heif_context*, const heif_unci_image_parameters*, const heif_encoding_options*, const heif_image*, heif_image_handle**)",
+      "symbol": "heif_context_add_empty_unci_image",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function uint32_t heif_image_get_duration(const heif_image*)",
+      "symbol": "heif_image_get_duration",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void heif_unci_image_parameters_copy(heif_unci_image_parameters*, const heif_unci_image_parameters*)",
+      "symbol": "heif_unci_image_parameters_copy",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function heif_error heif_track_add_raw_sequence_sample(heif_track*, const heif_raw_sequence_sample*)",
+      "symbol": "heif_track_add_raw_sequence_sample",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function heif_error heif_context_add_uri_metadata_sequence_track(heif_context*, const char*, const heif_track_options*, heif_track**)",
+      "symbol": "heif_context_add_uri_metadata_sequence_track",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void heif_image_set_gimi_sample_content_id(heif_image*, const char*)",
+      "symbol": "heif_image_set_gimi_sample_content_id",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function heif_error heif_image_add_plane_safe(heif_image*, heif_channel, int, int, int, const heif_security_limits*)",
+      "symbol": "heif_image_add_plane_safe",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function heif_error heif_image_get_tai_timestamp(const heif_image*, heif_tai_timestamp_packet**)",
+      "symbol": "heif_image_get_tai_timestamp",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const heif_tai_timestamp_packet* heif_raw_sequence_sample_get_tai_timestamp(const heif_raw_sequence_sample*)",
+      "symbol": "heif_raw_sequence_sample_get_tai_timestamp",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const uint8_t* heif_raw_sequence_sample_get_data(const heif_raw_sequence_sample*, size_t*)",
+      "symbol": "heif_raw_sequence_sample_get_data",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const char* heif_image_get_gimi_sample_content_id(const heif_image*)",
+      "symbol": "heif_image_get_gimi_sample_content_id",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void heif_decoding_options_copy(heif_decoding_options*, const heif_decoding_options*)",
+      "symbol": "heif_decoding_options_copy",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void heif_unci_image_parameters_release(heif_unci_image_parameters*)",
+      "symbol": "heif_unci_image_parameters_release",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function heif_error heif_item_set_property_tai_timestamp(heif_context*, heif_item_id, const heif_tai_timestamp_packet*, heif_property_id*)",
+      "symbol": "heif_item_set_property_tai_timestamp",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function heif_track* heif_context_get_track(const heif_context*, uint32_t)",
+      "symbol": "heif_context_get_track",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void heif_context_set_sequence_timescale(heif_context*, uint32_t)",
+      "symbol": "heif_context_set_sequence_timescale",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int heif_context_has_sequence(const heif_context*)",
+      "symbol": "heif_context_has_sequence",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void heif_color_conversion_options_ext_copy(heif_color_conversion_options_ext*, const heif_color_conversion_options_ext*)",
+      "symbol": "heif_color_conversion_options_ext_copy",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void heif_context_set_major_brand(heif_context*, heif_brand2)",
+      "symbol": "heif_context_set_major_brand",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void heif_context_get_track_ids(const heif_context*, uint32_t*)",
+      "symbol": "heif_context_get_track_ids",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void heif_raw_sequence_sample_set_gimi_sample_content_id(heif_raw_sequence_sample*, const char*)",
+      "symbol": "heif_raw_sequence_sample_set_gimi_sample_content_id",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void heif_raw_sequence_sample_release(heif_raw_sequence_sample*)",
+      "symbol": "heif_raw_sequence_sample_release",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function heif_error heif_item_set_property_tai_clock_info(heif_context*, heif_item_id, const heif_tai_clock_info*, heif_property_id*)",
+      "symbol": "heif_item_set_property_tai_clock_info",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function heif_error heif_raw_sequence_sample_set_data(heif_raw_sequence_sample*, const uint8_t*, size_t)",
+      "symbol": "heif_raw_sequence_sample_set_data",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function uint32_t heif_context_get_sequence_timescale(const heif_context*)",
+      "symbol": "heif_context_get_sequence_timescale",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int heif_context_number_of_sequence_tracks(const heif_context*)",
+      "symbol": "heif_context_number_of_sequence_tracks",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t heif_raw_sequence_sample_get_data_size(const heif_raw_sequence_sample*)",
+      "symbol": "heif_raw_sequence_sample_get_data_size",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void heif_sequence_encoding_options_release(heif_sequence_encoding_options*)",
+      "symbol": "heif_sequence_encoding_options_release",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function heif_error heif_item_get_property_tai_clock_info(const heif_context*, heif_item_id, heif_tai_clock_info**)",
+      "symbol": "heif_item_get_property_tai_clock_info",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function heif_error heif_context_add_visual_sequence_track(heif_context*, uint16_t, uint16_t, heif_track_type, const heif_track_options*, const heif_sequence_encoding_options*, heif_track**)",
+      "symbol": "heif_context_add_visual_sequence_track",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void heif_tai_clock_info_release(heif_tai_clock_info*)",
+      "symbol": "heif_tai_clock_info_release",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function uint64_t heif_context_get_sequence_duration(const heif_context*)",
+      "symbol": "heif_context_get_sequence_duration",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void heif_track_options_release(heif_track_options*)",
+      "symbol": "heif_track_options_release",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function heif_raw_sequence_sample* heif_raw_sequence_sample_alloc()",
+      "symbol": "heif_raw_sequence_sample_alloc",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function heif_error heif_item_get_property_tai_timestamp(const heif_context*, heif_item_id, heif_tai_timestamp_packet**)",
+      "symbol": "heif_item_get_property_tai_timestamp",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function uint32_t heif_raw_sequence_sample_get_duration(const heif_raw_sequence_sample*)",
+      "symbol": "heif_raw_sequence_sample_get_duration",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function heif_color_conversion_options_ext* heif_color_conversion_options_ext_alloc()",
+      "symbol": "heif_color_conversion_options_ext_alloc",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function heif_error heif_track_decode_next_image(heif_track*, heif_image**, heif_colorspace, heif_chroma, const heif_decoding_options*)",
+      "symbol": "heif_track_decode_next_image",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function heif_error heif_image_extract_area(const heif_image*, uint32_t, uint32_t, uint32_t, uint32_t, const heif_security_limits*, heif_image**)",
+      "symbol": "heif_image_extract_area",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const char* heif_raw_sequence_sample_get_gimi_sample_content_id(const heif_raw_sequence_sample*)",
+      "symbol": "heif_raw_sequence_sample_get_gimi_sample_content_id",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function heif_error heif_track_options_enable_sample_tai_timestamps(heif_track_options*, const heif_tai_clock_info*, heif_sample_aux_info_presence)",
+      "symbol": "heif_track_options_enable_sample_tai_timestamps",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function heif_error heif_image_set_tai_timestamp(heif_image*, const heif_tai_timestamp_packet*)",
+      "symbol": "heif_image_set_tai_timestamp",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void heif_track_add_reference_to_track(heif_track*, uint32_t, const heif_track*)",
+      "symbol": "heif_track_add_reference_to_track",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function heif_error heif_track_get_image_resolution(const heif_track*, uint16_t*, uint16_t*)",
+      "symbol": "heif_track_get_image_resolution",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int heif_raw_sequence_sample_has_tai_timestamp(const heif_raw_sequence_sample*)",
+      "symbol": "heif_raw_sequence_sample_has_tai_timestamp",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function heif_error heif_track_encode_sequence_image(heif_track*, const heif_image*, heif_encoder*, const heif_sequence_encoding_options*)",
+      "symbol": "heif_track_encode_sequence_image",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void heif_raw_sequence_sample_set_duration(heif_raw_sequence_sample*, uint32_t)",
+      "symbol": "heif_raw_sequence_sample_set_duration",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void heif_encoding_options_copy(heif_encoding_options*, const heif_encoding_options*)",
+      "symbol": "heif_encoding_options_copy",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void heif_raw_sequence_sample_set_tai_timestamp(heif_raw_sequence_sample*, const heif_tai_timestamp_packet*)",
+      "symbol": "heif_raw_sequence_sample_set_tai_timestamp",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const char* heif_track_get_gimi_track_content_id(const heif_track*)",
+      "symbol": "heif_track_get_gimi_track_content_id",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function heif_sequence_encoding_options* heif_sequence_encoding_options_alloc()",
+      "symbol": "heif_sequence_encoding_options_alloc",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void heif_string_release(const char*)",
+      "symbol": "heif_string_release",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function heif_tai_clock_info* heif_tai_clock_info_alloc()",
+      "symbol": "heif_tai_clock_info_alloc",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function uint32_t heif_track_get_track_handler_type(const heif_track*)",
+      "symbol": "heif_track_get_track_handler_type",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void heif_tai_clock_info_copy(heif_tai_clock_info*, const heif_tai_clock_info*)",
+      "symbol": "heif_tai_clock_info_copy",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void heif_tai_timestamp_packet_copy(heif_tai_timestamp_packet*, const heif_tai_timestamp_packet*)",
+      "symbol": "heif_tai_timestamp_packet_copy",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void heif_image_set_duration(heif_image*, uint32_t)",
+      "symbol": "heif_image_set_duration",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function heif_tai_timestamp_packet* heif_tai_timestamp_packet_alloc()",
+      "symbol": "heif_tai_timestamp_packet_alloc",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void heif_tai_timestamp_packet_release(heif_tai_timestamp_packet*)",
+      "symbol": "heif_tai_timestamp_packet_release",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t heif_track_find_referring_tracks(const heif_track*, uint32_t, uint32_t*, size_t)",
+      "symbol": "heif_track_find_referring_tracks",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void heif_color_conversion_options_ext_free(heif_color_conversion_options_ext*)",
+      "symbol": "heif_color_conversion_options_ext_free",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function uint32_t heif_track_get_id(const heif_track*)",
+      "symbol": "heif_track_get_id",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function heif_error heif_track_get_next_raw_sequence_sample(heif_track*, heif_raw_sequence_sample**)",
+      "symbol": "heif_track_get_next_raw_sequence_sample",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 53,
+     "enum_case_added": 3,
+     "enum_case_removed": 1,
+     "field_added_to_struct": 20,
+     "field_removed_from_struct": 7,
+     "field_type_changed": 21,
+     "member_offset_changed": 13,
+     "type_size_changed": 12,
+     "vtable_changed": 85
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libheif/api/libheif/heif.h",
+      "exposure": "not_in_interface",
+      "kind": "enum_case_added",
+      "third_party": true,
+      "type": "enum heif_error_code"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libheif/api/libheif/heif.h",
+      "exposure": "not_in_interface",
+      "kind": "enum_case_added",
+      "third_party": true,
+      "type": "enum heif_suberror_code"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<HeifContext>"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "./libheif/context.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "class HeifContext"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libheif/context.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "class HeifContext"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libheif/context.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class HeifContext"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::shared_ptr<ImageItem>, std::allocator<std::shared_ptr<ImageItem> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::shared_ptr<ImageItem>, std::allocator<std::shared_ptr<ImageItem> > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<ImageItem>"
+     },
+     {
+      "append_only": false,
+      "count": 12,
+      "declared_in": "./libheif/image-items/image_item.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class ImageItem"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<const color_profile_nclx>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libheif/nclx.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class color_profile_nclx"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libheif/nclx.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class color_profile"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<const color_profile_raw>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libheif/nclx.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class color_profile_raw"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<Error, std::allocator<Error> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<Error, std::allocator<Error> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<HeifPixelImage>"
+     },
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": "./libheif/pixelimage.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "class HeifPixelImage"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libheif/pixelimage.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "class HeifPixelImage"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libheif/pixelimage.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class HeifPixelImage"
+     },
+     {
+      "append_only": false,
+      "count": 5,
+      "declared_in": "./libheif/pixelimage.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "class HeifPixelImage"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libheif/pixelimage.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class HeifPixelImage"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libheif/pixelimage.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class HeifPixelImage"
+     },
+     {
+      "append_only": false,
+      "count": 6,
+      "declared_in": "./libheif/api/libheif/heif.h",
+      "exposure": "by_pointer",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct heif_mastering_display_colour_volume"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libheif/api/libheif/heif.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct heif_mastering_display_colour_volume"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./libheif/api/libheif/heif.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct heif_mastering_display_colour_volume"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::weak_ptr<HeifPixelImage>"
+     },
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "./libheif/api/libheif/heif.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct heif_decoding_options"
+     },
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "./libheif/api/libheif/heif.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct heif_decoding_options"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<Decoder>"
+     },
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "./libheif/codecs/decoder.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class Decoder"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libheif/codecs/decoder.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class Decoder"
+     },
+     {
+      "append_only": true,
+      "count": 2,
+      "declared_in": "./libheif/codecs/decoder.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct DataExtent"
+     },
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "./libheif/codecs/decoder.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct DataExtent"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<HeifFile>"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "./libheif/file.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "class HeifFile"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libheif/file.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "class HeifFile"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libheif/file.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class HeifFile"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<FileLayout>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libheif/file_layout.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "class FileLayout"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "./libheif/file_layout.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "class FileLayout"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libheif/file_layout.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class FileLayout"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<Box_ftyp>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Box_ftyp"
+     },
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class Box_ftyp"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<StreamReader>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libheif/bitstream.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class StreamReader"
+     },
+     {
+      "append_only": true,
+      "count": 3,
+      "declared_in": "./libheif/api/libheif/heif.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct heif_security_limits"
+     },
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "./libheif/api/libheif/heif.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct heif_security_limits"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Box"
+     },
+     {
+      "append_only": false,
+      "count": 11,
+      "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class Box"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class BoxHeader"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<Box_meta>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Box_meta"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class Box_meta"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class FullBox"
+     },
+     {
+      "append_only": false,
+      "count": 5,
+      "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class FullBox"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<Box_hdlr>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Box_hdlr"
+     },
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class Box_hdlr"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<Box_ipco>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Box_ipco"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class Box_ipco"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<Box_ipma>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Box_ipma"
+     },
+     {
+      "append_only": false,
+      "count": 5,
+      "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class Box_ipma"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<Box_iloc>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Box_iloc"
+     },
+     {
+      "append_only": false,
+      "count": 5,
+      "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class Box_iloc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<Box_idat>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Box_idat"
+     },
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class Box_idat"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<Box_iref>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Box_iref"
+     },
+     {
+      "append_only": false,
+      "count": 5,
+      "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class Box_iref"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<Box_iref::Reference, std::allocator<Box_iref::Reference> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<Box_iref::Reference, std::allocator<Box_iref::Reference> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<Box_pitm>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Box_pitm"
+     },
+     {
+      "append_only": false,
+      "count": 5,
+      "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class Box_pitm"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<Box_iinf>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Box_iinf"
+     },
+     {
+      "append_only": false,
+      "count": 5,
+      "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class Box_iinf"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<Box_grpl>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Box_grpl"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class Box_grpl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<Box_iprp>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Box_iprp"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class Box_iprp"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libheif/codecs/decoder.h",
+      "exposure": "not_in_interface",
+      "kind": "enum_case_added",
+      "third_party": true,
+      "type": "enum DataExtent::Source"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libheif/codecs/decoder.h",
+      "exposure": "not_in_interface",
+      "kind": "enum_case_removed",
+      "third_party": true,
+      "type": "enum DataExtent::Source"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libheif/error.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class Result<ImageItem::CodedImageData>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libheif/error.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "class Result<ImageItem::CodedImageData>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libheif/error.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class Result<ImageItem::CodedImageData>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./libheif/image-items/image_item.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct ImageItem::CodedImageData"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./libheif/image-items/image_item.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct ImageItem::CodedImageData"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libheif/image-items/image_item.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct ImageItem::CodedImageData"
+     },
+     {
+      "append_only": false,
+      "count": 15,
+      "declared_in": "./libheif/api/libheif/heif_plugin.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct heif_encoder_plugin"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::shared_ptr<RegionItem>, std::allocator<std::shared_ptr<RegionItem> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::shared_ptr<RegionItem>, std::allocator<std::shared_ptr<RegionItem> > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<RegionItem>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::shared_ptr<RegionGeometry>, std::allocator<std::shared_ptr<RegionGeometry> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::shared_ptr<RegionGeometry>, std::allocator<std::shared_ptr<RegionGeometry> > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<RegionGeometry>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./libheif/region.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class RegionGeometry"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libheif/api/libheif/heif.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct heif_writer"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libheif/api/libheif/heif_plugin.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct heif_decoder_plugin"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "./libheif/api/libheif/heif_plugin.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct heif_decoder_plugin"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libheif/api/libheif/heif_plugin.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct heif_decoder_plugin"
+     }
+    ],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 42.561331734,
+  "source": "libheif",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.19.8",
+   "1.20.1"
+  ]
+ },
+ "generated_at": "2026-09-03T23:10:17Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}
