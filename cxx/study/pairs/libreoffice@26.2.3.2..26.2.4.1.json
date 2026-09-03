@@ -1,5 +1,6 @@
 {
  "data": {
+  "bytes_extracted": 0,
   "error": "skipped: 1402 MB of packages (~4206 MB extracted) exceeds --max-extracted-mb 2500 (memory budget)",
   "id": "libreoffice@26.2.3.2..26.2.4.1",
   "object_errors": [],
@@ -15,7 +16,11 @@
    "26.2.4.1"
   ]
  },
- "generated_at": "2026-09-02T14:20:57Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-03T22:50:16Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }
