@@ -116,7 +116,7 @@ struct DiffOptions {
   std::uint64_t child_memory_mb = 6000;
   /// Pairs whose download exceeds this run one at a time, largest first, so
   /// two big readers never coexist.
-  std::uint64_t big_pair_download_mb = 120;
+  std::uint64_t big_pair_download_mb = 40;
   /// Stop starting new pairs after this much wall-clock time; the rest are
   /// recorded as not attempted. 0 = no deadline.
   std::chrono::minutes deadline{0};

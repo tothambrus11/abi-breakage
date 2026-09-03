@@ -167,7 +167,7 @@ Result<void> run(const Args &a) {
     o.max_extracted_mb = mb;
     ABISTUDY_TRY(auto cm, a.uint("child-memory-mb", 6000));
     o.child_memory_mb = cm;
-    ABISTUDY_TRY(auto big, a.uint("big-pair-mb", 120));
+    ABISTUDY_TRY(auto big, a.uint("big-pair-mb", 40));
     o.big_pair_download_mb = big;
     ABISTUDY_TRY(auto dl, a.uint("deadline-minutes", 0));
     o.deadline = std::chrono::minutes(dl);

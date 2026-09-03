@@ -26,7 +26,7 @@ fi
 stamp "diff (workers=${WORKERS:-4}, deadline=${deadline} min)"
 "$bin" diff --work "$work" --workers "${WORKERS:-4}" --deadline-minutes "$deadline" \
   --pair-timeout "${PAIR_TIMEOUT:-1200}" --child-memory-mb "${CHILD_MB:-6000}" \
-  --big-pair-mb "${BIG_MB:-120}" --max-extracted-mb "${MAX_EXTRACTED_MB:-2500}" 2>&1 | tee -a "$log"
+  --big-pair-mb "${BIG_MB:-40}" --max-extracted-mb "${MAX_EXTRACTED_MB:-2500}" 2>&1 | tee -a "$log"
 
 stamp "headers"
 "$bin" headers --work "$work" 2>&1 | tee -a "$log"
