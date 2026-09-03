@@ -8,7 +8,9 @@ would have absorbed them.
 - `cxx/` — the `abistudy` pipeline: a C++26 tool linking libabigail and libclang
   with subcommands `select`, `resolve`, `diff`, `headers`, `analyze`, `report`.
   Methodology, filters, and the production-readiness review live in
-  `cxx/METHODOLOGY.md`.
+  `cxx/METHODOLOGY.md`; the investigation of higher-fidelity designs
+  (libclang vs libabigail, tiered evidence, probe-TU DWARF) is
+  `cxx/FIDELITY.md`.
 - `cxx/study/` — the study workspace: plan, per-transition results, summary,
   and the rendered report. Downloaded packages and header indexes are not
   committed; the diff stage rebuilds them from `plan.json`.
