@@ -1,0 +1,216 @@
+{
+ "data": {
+  "bytes_extracted": 15718688,
+  "id": "sqlite3@3.45.3..3.46.0",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      1406,
+      1407
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "function_signature_changed": 4,
+     "symbol_added": 5,
+     "symbol_removed": 4
+    },
+    "soname": [
+     "libsqlite3.so.0",
+     "libsqlite3.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int sqlite3ExprIsConstantNotJoin(Expr*)",
+      "symbol": "sqlite3ExprIsConstantNotJoin",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int sqlite3ExprIsTableConstant(Expr*, int)",
+      "symbol": "sqlite3ExprIsTableConstant",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sqlite3Fts3IcuTokenizerModule(const sqlite3_tokenizer_module**)",
+      "symbol": "sqlite3Fts3IcuTokenizerModule",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int sqlite3IcuInit(sqlite3*)",
+      "symbol": "sqlite3IcuInit",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int sqlite3changegroup_add_change(sqlite3_changegroup*, sqlite3_changeset_iter*)",
+      "symbol": "sqlite3changegroup_add_change",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void sqlite3MultiValuesEnd(Parse*, Select*)",
+      "symbol": "sqlite3MultiValuesEnd",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Select* sqlite3MultiValues(Parse*, Select*, ExprList*)",
+      "symbol": "sqlite3MultiValues",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void sqlite3MemSetArrayInt64(sqlite3_value*, int, i64)",
+      "symbol": "sqlite3MemSetArrayInt64",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void sqlite3DequoteNumber(Parse*, Expr*)",
+      "symbol": "sqlite3DequoteNumber",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function int sqlite3ExprIsSingleTableConstraint(Expr*, const SrcList*, int)  ->  function int sqlite3ExprIsSingleTableConstraint(Expr*, const SrcList*, int, int)",
+      "symbol": "sqlite3ExprIsSingleTableConstraint",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function int sqlite3ExprIsConstant(Expr*)  ->  function int sqlite3ExprIsConstant(Parse*, Expr*)",
+      "symbol": "sqlite3ExprIsConstant",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void sqlite3ExprDeferredDelete(Parse*, Expr*)  ->  function int sqlite3ExprDeferredDelete(Parse*, Expr*)",
+      "symbol": "sqlite3ExprDeferredDelete",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function int sqlite3BtreeIntegrityCheck(sqlite3*, Btree*, Pgno*, int, int, int*, char**)  ->  function int sqlite3BtreeIntegrityCheck(sqlite3*, Btree*, Pgno*, Mem*, int, int, int*, char**)",
+      "symbol": "sqlite3BtreeIntegrityCheck",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 4,
+     "field_type_changed": 2,
+     "member_offset_changed": 2,
+     "type_size_changed": 2
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/sqliteInt.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct Parse"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/sqliteInt.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct SrcItem"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/sqliteInt.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct {u8 jointype; unsigned int notIndexed; unsigned int isIndexedBy; unsigned int isTabFunc; unsigned int isCorrelated; unsigned int isMaterialized; unsigned int viaCoroutine; unsigned int isRecursive; unsigned int fromDDL; unsigned int isCte; unsigned int notCte; unsigned int isUsing; unsigned int isOn; unsigned int isSynthUsing; unsigned int isNestedFrom;}"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/sqliteInt.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "union {char* zIndexedBy; ExprList* pFuncArg;}"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./ext/session/sqlite3session.c",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct sqlite3_changegroup"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./ext/session/sqlite3session.c",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct sqlite3_changegroup"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./ext/session/sqlite3session.c",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct sqlite3_changegroup"
+     },
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "./ext/session/sqlite3session.c",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct sqlite3_rebaser"
+     }
+    ],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 8.003991983,
+  "source": "sqlite3",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "3.45.3",
+   "3.46.0"
+  ]
+ },
+ "generated_at": "2026-09-03T23:29:21Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

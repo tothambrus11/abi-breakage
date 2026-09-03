@@ -1,0 +1,98 @@
+{
+ "data": {
+  "bytes_extracted": 15660325,
+  "id": "sqlite3@3.45.2..3.45.3",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      1403,
+      1406
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 3
+    },
+    "soname": [
+     "libsqlite3.so.0",
+     "libsqlite3.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function int sqlite3IsOverflow(double)",
+      "symbol": "sqlite3IsOverflow",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int sqlite3IcuInit(sqlite3*)",
+      "symbol": "sqlite3IcuInit",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void sqlite3Fts3IcuTokenizerModule(const sqlite3_tokenizer_module**)",
+      "symbol": "sqlite3Fts3IcuTokenizerModule",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 1,
+     "member_offset_changed": 1
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/sqliteInt.h",
+      "exposure": "by_value",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct Sqlite3Config"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/sqliteInt.h",
+      "exposure": "by_value",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct Sqlite3Config"
+     }
+    ],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 7.602012776,
+  "source": "sqlite3",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "3.45.2",
+   "3.45.3"
+  ]
+ },
+ "generated_at": "2026-09-03T23:29:24Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

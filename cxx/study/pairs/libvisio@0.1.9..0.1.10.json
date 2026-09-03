@@ -1,0 +1,64 @@
+{
+ "data": {
+  "bytes_extracted": 14091729,
+  "id": "libvisio@0.1.9..0.1.10",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      72,
+      73
+     ],
+     "mangled_functions": [
+      72,
+      73
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libvisio-0.1.so.1",
+     "libvisio-0.1.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool std::operator==<char, std::char_traits<char>, std::allocator<char> >(const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, const char*)",
+      "symbol": "_ZSteqIcSt11char_traitsIcESaIcEEbRKNSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_",
+      "weak": true
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {
+     "symbol_added": 1
+    }
+   }
+  ],
+  "seconds": 32.107318051,
+  "source": "libvisio",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "0.1.9",
+   "0.1.10"
+  ]
+ },
+ "generated_at": "2026-09-03T23:26:50Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

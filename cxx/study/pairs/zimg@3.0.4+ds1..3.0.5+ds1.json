@@ -1,0 +1,277 @@
+{
+ "data": {
+  "bytes_extracted": 14775185,
+  "id": "zimg@3.0.4+ds1..3.0.5+ds1",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      36,
+      34
+     ],
+     "mangled_functions": [
+      23,
+      21
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "enum_case_added": 1
+    },
+    "soname": [
+     "libzimg.so.2",
+     "libzimg.so.2"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::vector<double, std::allocator<double> >::iterator std::vector<double, std::allocator<double> >::_M_erase(std::vector<double, std::allocator<double> >::iterator, std::vector<double, std::allocator<double> >::iterator)",
+      "symbol": "_ZNSt6vectorIdSaIdEE8_M_eraseEN9__gnu_cxx17__normal_iteratorIPdS1_EES5_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::vector<long double, std::allocator<long double> >::iterator std::vector<long double, std::allocator<long double> >::_M_erase(std::vector<long double, std::allocator<long double> >::iterator, std::vector<long double, std::allocator<long double> >::iterator)",
+      "symbol": "_ZNSt6vectorIeSaIeEE8_M_eraseEN9__gnu_cxx17__normal_iteratorIPeS1_EES5_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::vector<float, std::allocator<float> >::iterator std::vector<float, std::allocator<float> >::_M_erase(std::vector<float, std::allocator<float> >::iterator, std::vector<float, std::allocator<float> >::iterator)",
+      "symbol": "_ZNSt6vectorIfSaIfEE8_M_eraseEN9__gnu_cxx17__normal_iteratorIPfS1_EES5_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release_last_use_cold()",
+      "symbol": "_ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE24_M_release_last_use_coldEv",
+      "weak": true
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 30
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<double, std::allocator<double> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<double>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<float, std::allocator<float> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<float>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<long unsigned int, std::allocator<long unsigned int> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<long unsigned int>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<double, std::allocator<double> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<float, std::allocator<float> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<long double, std::allocator<long double> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<long double, std::allocator<long double> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<long double>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<std::vector<double, std::allocator<double> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::vector<float, std::allocator<float> >, std::allocator<std::vector<float, std::allocator<float> > > >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::vector<float, std::allocator<float> >, std::allocator<std::vector<float, std::allocator<float> > > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<std::vector<float, std::allocator<float> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::vector<long double, std::allocator<long double> >, std::allocator<std::vector<long double, std::allocator<long double> > > >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::vector<long double, std::allocator<long double> >, std::allocator<std::vector<long double, std::allocator<long double> > > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<std::vector<long double, std::allocator<long double> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "src/zimg/api/zimg.h",
+      "exposure": "not_in_interface",
+      "kind": "enum_case_added",
+      "third_party": false,
+      "type": "enum zimg_transfer_characteristics_e"
+     }
+    ],
+    "vague_linkage": {
+     "symbol_added": 1,
+     "symbol_removed": 3
+    }
+   }
+  ],
+  "seconds": 9.130680967,
+  "source": "zimg",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "3.0.4+ds1",
+   "3.0.5+ds1"
+  ]
+ },
+ "generated_at": "2026-09-03T23:28:20Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

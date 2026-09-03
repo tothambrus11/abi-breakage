@@ -1,0 +1,116 @@
+{
+ "data": {
+  "bytes_extracted": 18147356,
+  "id": "openal-soft@1.24.0..1.24.1",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      176,
+      176
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libopenal.so.1",
+     "libopenal.so.1"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 2,
+     "field_removed_from_struct": 22,
+     "field_type_changed": 2,
+     "type_size_changed": 1,
+     "vtable_changed": 4
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 22,
+      "declared_in": "./alc/device.h",
+      "exposure": "by_pointer",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct ALCdevice"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./alc/device.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct ALCdevice"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./alc/device.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct ALCdevice"
+     },
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": "./alc/device.h",
+      "exposure": "by_pointer",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "struct ALCdevice"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./alc/context.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct ALCcontext"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./common/intrusive_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class al::intrusive_ptr<ALCdevice>"
+     }
+    ],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 29.120356355,
+  "source": "openal-soft",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.24.0",
+   "1.24.1"
+  ]
+ },
+ "generated_at": "2026-09-03T23:21:50Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

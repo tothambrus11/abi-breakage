@@ -1,0 +1,119 @@
+{
+ "data": {
+  "bytes_extracted": 13047921,
+  "id": "zimg@3.0.5+ds1..3.0.6+ds1",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      34,
+      37
+     ],
+     "mangled_functions": [
+      21,
+      24
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libzimg.so.2",
+     "libzimg.so.2"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<float, std::allocator<float> >::_M_fill_append(std::vector<float, std::allocator<float> >::size_type, const std::vector<float, std::allocator<float> >::value_type&)",
+      "symbol": "_ZNSt6vectorIfSaIfEE14_M_fill_appendEmRKf",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<long double, std::allocator<long double> >::_M_fill_append(std::vector<long double, std::allocator<long double> >::size_type, const std::vector<long double, std::allocator<long double> >::value_type&)",
+      "symbol": "_ZNSt6vectorIeSaIeEE14_M_fill_appendEmRKe",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<double, std::allocator<double> >::_M_fill_append(std::vector<double, std::allocator<double> >::size_type, const std::vector<double, std::allocator<double> >::value_type&)",
+      "symbol": "_ZNSt6vectorIdSaIdEE14_M_fill_appendEmRKd",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method std::vector<std::vector<float, std::allocator<float> >, std::allocator<std::vector<float, std::allocator<float> > > >::~vector(int)  ->  method std::vector<std::vector<float, std::allocator<float> >, std::allocator<std::vector<float, std::allocator<float> > > >::~vector()",
+      "symbol": "_ZNSt6vectorIS_IfSaIfEESaIS1_EED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method std::vector<std::vector<long double, std::allocator<long double> >, std::allocator<std::vector<long double, std::allocator<long double> > > >::~vector(int)  ->  method std::vector<std::vector<long double, std::allocator<long double> >, std::allocator<std::vector<long double, std::allocator<long double> > > >::~vector()",
+      "symbol": "_ZNSt6vectorIS_IeSaIeEESaIS1_EED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::~vector(int)  ->  method std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::~vector()",
+      "symbol": "_ZNSt6vectorIS_IdSaIdEESaIS1_EED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method std::_Function_base::~_Function_base(int)  ->  method std::_Function_base::~_Function_base()",
+      "symbol": "_ZNSt14_Function_baseD2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method std::_Vector_base<long unsigned int, std::allocator<long unsigned int> >::~_Vector_base(int)  ->  method std::_Vector_base<long unsigned int, std::allocator<long unsigned int> >::~_Vector_base()",
+      "symbol": "_ZNSt12_Vector_baseImSaImEED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method std::_Vector_base<float, std::allocator<float> >::~_Vector_base(int)  ->  method std::_Vector_base<float, std::allocator<float> >::~_Vector_base()",
+      "symbol": "_ZNSt12_Vector_baseIfSaIfEED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method std::_Vector_base<double, std::allocator<double> >::~_Vector_base(int)  ->  method std::_Vector_base<double, std::allocator<double> >::~_Vector_base()",
+      "symbol": "_ZNSt12_Vector_baseIdSaIdEED2Ev",
+      "weak": true
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {
+     "function_signature_changed": 7,
+     "symbol_added": 3
+    }
+   }
+  ],
+  "seconds": 8.751730082,
+  "source": "zimg",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "3.0.5+ds1",
+   "3.0.6+ds1"
+  ]
+ },
+ "generated_at": "2026-09-03T23:29:38Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

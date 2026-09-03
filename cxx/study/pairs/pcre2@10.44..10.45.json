@@ -1,0 +1,389 @@
+{
+ "data": {
+  "bytes_extracted": 13818690,
+  "id": "pcre2@10.44..10.45",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      76,
+      78
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 2
+    },
+    "soname": [
+     "libpcre2-16.so.0",
+     "libpcre2-16.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function int pcre2_set_substitute_case_callout_16(pcre2_match_context_16*, typedef size_t (typedef PCRE2_SPTR16, typedef size_t, PCRE2_UCHAR16*, typedef size_t, int, void*)*, void*)",
+      "symbol": "pcre2_set_substitute_case_callout_16",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int pcre2_set_optimize_16(pcre2_compile_context_16*, uint32_t)",
+      "symbol": "pcre2_set_optimize_16",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 5,
+     "member_offset_changed": 22,
+     "type_size_changed": 3
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "src/pcre2_intmodedep.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct pcre2_real_code_16"
+     },
+     {
+      "append_only": false,
+      "count": 18,
+      "declared_in": "src/pcre2_intmodedep.h",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct pcre2_real_code_16"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "src/pcre2_intmodedep.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct pcre2_real_code_16"
+     },
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "src/pcre2_intmodedep.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct pcre2_real_compile_context_16"
+     },
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "src/pcre2_intmodedep.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct pcre2_real_compile_context_16"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "src/pcre2_intmodedep.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct pcre2_real_match_context_16"
+     },
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": "src/pcre2_intmodedep.h",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct pcre2_real_match_context_16"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "src/pcre2_intmodedep.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct pcre2_real_match_context_16"
+     }
+    ],
+    "vague_linkage": {}
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      76,
+      78
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 2
+    },
+    "soname": [
+     "libpcre2-32.so.0",
+     "libpcre2-32.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function int pcre2_set_substitute_case_callout_32(pcre2_match_context_32*, typedef size_t (typedef PCRE2_SPTR32, typedef size_t, PCRE2_UCHAR32*, typedef size_t, int, void*)*, void*)",
+      "symbol": "pcre2_set_substitute_case_callout_32",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int pcre2_set_optimize_32(pcre2_compile_context_32*, uint32_t)",
+      "symbol": "pcre2_set_optimize_32",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 5,
+     "member_offset_changed": 22,
+     "type_size_changed": 3
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "src/pcre2_intmodedep.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct pcre2_real_code_32"
+     },
+     {
+      "append_only": false,
+      "count": 18,
+      "declared_in": "src/pcre2_intmodedep.h",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct pcre2_real_code_32"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "src/pcre2_intmodedep.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct pcre2_real_code_32"
+     },
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "src/pcre2_intmodedep.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct pcre2_real_compile_context_32"
+     },
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "src/pcre2_intmodedep.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct pcre2_real_compile_context_32"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "src/pcre2_intmodedep.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct pcre2_real_match_context_32"
+     },
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": "src/pcre2_intmodedep.h",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct pcre2_real_match_context_32"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "src/pcre2_intmodedep.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct pcre2_real_match_context_32"
+     }
+    ],
+    "vague_linkage": {}
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      76,
+      78
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 2
+    },
+    "soname": [
+     "libpcre2-8.so.0",
+     "libpcre2-8.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function int pcre2_set_substitute_case_callout_8(pcre2_match_context_8*, typedef size_t (typedef PCRE2_SPTR8, typedef size_t, PCRE2_UCHAR8*, typedef size_t, int, void*)*, void*)",
+      "symbol": "pcre2_set_substitute_case_callout_8",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int pcre2_set_optimize_8(pcre2_compile_context_8*, uint32_t)",
+      "symbol": "pcre2_set_optimize_8",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 5,
+     "member_offset_changed": 22,
+     "type_size_changed": 3
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "src/pcre2_intmodedep.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct pcre2_real_code_8"
+     },
+     {
+      "append_only": false,
+      "count": 18,
+      "declared_in": "src/pcre2_intmodedep.h",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct pcre2_real_code_8"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "src/pcre2_intmodedep.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct pcre2_real_code_8"
+     },
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "src/pcre2_intmodedep.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct pcre2_real_compile_context_8"
+     },
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "src/pcre2_intmodedep.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct pcre2_real_compile_context_8"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "src/pcre2_intmodedep.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct pcre2_real_match_context_8"
+     },
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": "src/pcre2_intmodedep.h",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct pcre2_real_match_context_8"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "src/pcre2_intmodedep.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct pcre2_real_match_context_8"
+     }
+    ],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 9.187715135,
+  "source": "pcre2",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "10.44",
+   "10.45"
+  ]
+ },
+ "generated_at": "2026-09-03T23:30:34Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

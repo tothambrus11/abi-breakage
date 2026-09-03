@@ -1,0 +1,70 @@
+{
+ "data": {
+  "bytes_extracted": 18431584,
+  "id": "vte2.91@0.83.90..0.84.0",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      248,
+      250
+     ],
+     "mangled_functions": [
+      2,
+      2
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 2
+    },
+    "soname": [
+     "libvte-2.91.so.0",
+     "libvte-2.91.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function void vte_terminal_reset_termprop_by_id(VteTerminal*, int)",
+      "symbol": "vte_terminal_reset_termprop_by_id",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void vte_terminal_reset_termprop(VteTerminal*, const char*)",
+      "symbol": "vte_terminal_reset_termprop",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 17.064388708,
+  "source": "vte2.91",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "0.83.90",
+   "0.84.0"
+  ]
+ },
+ "generated_at": "2026-09-03T23:22:13Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

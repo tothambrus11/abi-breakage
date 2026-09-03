@@ -1,0 +1,467 @@
+{
+ "data": {
+  "bytes_extracted": 17824923,
+  "id": "srt@1.5.2..1.5.3",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      1031,
+      1017
+     ],
+     "mangled_functions": [
+      911,
+      897
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 6,
+     "symbol_removed": 1
+    },
+    "soname": [
+     "libsrt-gnutls.so.1.5",
+     "libsrt-gnutls.so.1.5"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(const char*, const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)",
+      "symbol": "_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_RKS8_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Rb_tree<long int, std::pair<long int const, std::set<int, std::less<int>, std::allocator<int> > >, std::_Select1st<std::pair<long int const, std::set<int, std::less<int>, std::allocator<int> > > >, std::less<long int>, std::allocator<std::pair<long int const, std::set<int, std::less<int>, std::allocator<int> > > > >::iterator std::_Rb_tree<long int, std::pair<long int const, std::set<int, std::less<int>, std::allocator<int> > >, std::_Select1st<std::pair<long int const, std::set<int, std::less<int>, std::allocator<int> > > >, std::less<long int>, std::allocator<std::pair<long int const, std::set<int, std::less<int>, std::allocator<int> > > > >::_M_emplace_hint_unique<const std::piecewise_construct_t&, std::tuple<long int&&>, std::tuple<> >(std::_Rb_tree<long int, std::pair<long int const, std::set<int, std::less<int>, std::allocator<int> > >, std::_Select1st<std::pair<long int const, std::set<int, std::less<int>, std::allocator<int> > > >, std::less<long int>, std::allocator<std::pair<long int const, std::set<int, std::less<int>, std::allocator<int> > > > >::const_iterator, const std::piecewise_construct_t&, std::tuple<long int&&>&&, std::tuple<>&&)",
+      "symbol": "_ZNSt8_Rb_treeIlSt4pairIKlSt3setIiSt4lessIiESaIiEEESt10_Select1stIS7_ES3_IlESaIS7_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJOlEESH_IJEEEEESt17_Rb_tree_iteratorIS7_ESt23_Rb_tree_const_iteratorIS7_EDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::iterator std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::find(const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_S5_ESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE4findERS7_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::_M_get_insert_hint_unique_pos(std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::const_iterator, const std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_S5_ESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS8_ERS7_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::_M_get_insert_unique_pos(const std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_S5_ESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE24_M_get_insert_unique_posERS7_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, srt::PacketFilter::ManagedPtr>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, srt::PacketFilter::ManagedPtr> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, srt::PacketFilter::ManagedPtr> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, srt::PacketFilter::ManagedPtr>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, srt::PacketFilter::ManagedPtr> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, srt::PacketFilter::ManagedPtr> > >::const_iterator, const std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, srt::PacketFilter::ManagedPtr>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, srt::PacketFilter::ManagedPtr> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, srt::PacketFilter::ManagedPtr> > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_N3srt12PacketFilter10ManagedPtrEESt10_Select1stISB_ESt4lessIS5_ESaISB_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorISB_ERS7_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, srt::PacketFilter::ManagedPtr>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, srt::PacketFilter::ManagedPtr> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, srt::PacketFilter::ManagedPtr> > >::_M_get_insert_unique_pos(const std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, srt::PacketFilter::ManagedPtr>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, srt::PacketFilter::ManagedPtr> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, srt::PacketFilter::ManagedPtr> > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_N3srt12PacketFilter10ManagedPtrEESt10_Select1stISB_ESt4lessIS5_ESaISB_EE24_M_get_insert_unique_posERS7_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::deque<srt::CPacket*, std::allocator<srt::CPacket*> >::_M_push_back_aux<srt::CPacket* const&>(srt::CPacket* const&)",
+      "symbol": "_ZNSt5dequeIPN3srt7CPacketESaIS2_EE16_M_push_back_auxIJRKS2_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<srt::EventSlot, std::allocator<srt::EventSlot> >::_M_realloc_insert<const srt::EventSlot&>(std::vector<srt::EventSlot, std::allocator<srt::EventSlot> >::iterator, const srt::EventSlot&)",
+      "symbol": "_ZNSt6vectorIN3srt9EventSlotESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<srt::CRendezvousQueue::LinkStatusInfo, std::allocator<srt::CRendezvousQueue::LinkStatusInfo> >::_M_realloc_insert<const srt::CRendezvousQueue::LinkStatusInfo&>(std::vector<srt::CRendezvousQueue::LinkStatusInfo, std::allocator<srt::CRendezvousQueue::LinkStatusInfo> >::iterator, const srt::CRendezvousQueue::LinkStatusInfo&)",
+      "symbol": "_ZNSt6vectorIN3srt16CRendezvousQueue14LinkStatusInfoESaIS2_EE17_M_realloc_insertIJRKS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::_Identity<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_get_insert_hint_unique_pos(std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::_Identity<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::const_iterator, const std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::_Identity<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_St9_IdentityIS5_ESt4lessIS5_ESaIS5_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS5_ERKS5_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, srt::PacketFilter::ManagedPtr>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, srt::PacketFilter::ManagedPtr> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, srt::PacketFilter::ManagedPtr> > >::iterator std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, srt::PacketFilter::ManagedPtr>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, srt::PacketFilter::ManagedPtr> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, srt::PacketFilter::ManagedPtr> > >::find(const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_N3srt12PacketFilter10ManagedPtrEESt10_Select1stISB_ESt4lessIS5_ESaISB_EE4findERS7_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::deque<srt::CRcvFreshLoss, std::allocator<srt::CRcvFreshLoss> >::iterator std::deque<srt::CRcvFreshLoss, std::allocator<srt::CRcvFreshLoss> >::_M_erase(std::deque<srt::CRcvFreshLoss, std::allocator<srt::CRcvFreshLoss> >::iterator, std::deque<srt::CRcvFreshLoss, std::allocator<srt::CRcvFreshLoss> >::iterator)",
+      "symbol": "_ZNSt5dequeIN3srt13CRcvFreshLossESaIS1_EE8_M_eraseESt15_Deque_iteratorIS1_RS1_PS1_ES7_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<int, std::pair<int const, std::queue<srt::CPacket*, std::deque<srt::CPacket*, std::allocator<srt::CPacket*> > > >, std::_Select1st<std::pair<int const, std::queue<srt::CPacket*, std::deque<srt::CPacket*, std::allocator<srt::CPacket*> > > > >, std::less<int>, std::allocator<std::pair<int const, std::queue<srt::CPacket*, std::deque<srt::CPacket*, std::allocator<srt::CPacket*> > > > > >::_M_get_insert_hint_unique_pos(std::_Rb_tree<int, std::pair<int const, std::queue<srt::CPacket*, std::deque<srt::CPacket*, std::allocator<srt::CPacket*> > > >, std::_Select1st<std::pair<int const, std::queue<srt::CPacket*, std::deque<srt::CPacket*, std::allocator<srt::CPacket*> > > > >, std::less<int>, std::allocator<std::pair<int const, std::queue<srt::CPacket*, std::deque<srt::CPacket*, std::allocator<srt::CPacket*> > > > > >::const_iterator, const std::_Rb_tree<int, std::pair<int const, std::queue<srt::CPacket*, std::deque<srt::CPacket*, std::allocator<srt::CPacket*> > > >, std::_Select1st<std::pair<int const, std::queue<srt::CPacket*, std::deque<srt::CPacket*, std::allocator<srt::CPacket*> > > > >, std::less<int>, std::allocator<std::pair<int const, std::queue<srt::CPacket*, std::deque<srt::CPacket*, std::allocator<srt::CPacket*> > > > > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiSt5queueIPN3srt7CPacketESt5dequeIS5_SaIS5_EEEESt10_Select1stISA_ESt4lessIiESaISA_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorISA_ERS1_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method srt::SrtOptionAction::SrtOptionAction()",
+      "symbol": "_ZN3srt15SrtOptionActionC2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<int, std::pair<int const, int>, std::_Select1st<std::pair<int const, int> >, std::less<int>, std::allocator<std::pair<int const, int> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree<int, std::pair<int const, int>, std::_Select1st<std::pair<int const, int> >, std::less<int>, std::allocator<std::pair<int const, int> > >::const_iterator, const std::_Rb_tree<int, std::pair<int const, int>, std::_Select1st<std::pair<int const, int> >, std::less<int>, std::allocator<std::pair<int const, int> > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiiESt10_Select1stIS2_ESt4lessIiESaIS2_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS2_ERS1_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_realloc_insert<const std::pair<int, int>&>(std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::iterator, const std::pair<int, int>&)",
+      "symbol": "_ZNSt6vectorISt4pairIiiESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void srt::CRcvQueue::storePkt(int32_t, srt::CPacket*)",
+      "symbol": "_ZN3srt9CRcvQueue8storePktEiPNS_7CPacketE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<srt::SrtPacket, std::allocator<srt::SrtPacket> >::_M_realloc_insert<srt::SrtPacket>(std::vector<srt::SrtPacket, std::allocator<srt::SrtPacket> >::iterator, srt::SrtPacket&&)",
+      "symbol": "_ZNSt6vectorIN3srt9SrtPacketESaIS1_EE17_M_realloc_insertIJS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::_Identity<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_get_insert_unique_pos(const std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::_Identity<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_St9_IdentityIS5_ESt4lessIS5_ESaIS5_EE24_M_get_insert_unique_posERKS5_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::const_iterator std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::find(const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) const",
+      "symbol": "_ZNKSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_S5_ESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE4findERS7_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<int, std::allocator<int> >::_M_realloc_insert<int>(std::vector<int, std::allocator<int> >::iterator, int&&)",
+      "symbol": "_ZNSt6vectorIiSaIiEE17_M_realloc_insertIJiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::deque<bool, std::allocator<bool> >::_M_fill_insert(std::deque<bool, std::allocator<bool> >::iterator, std::deque<bool, std::allocator<bool> >::size_type, const std::deque<bool, std::allocator<bool> >::value_type&)",
+      "symbol": "_ZNSt5dequeIbSaIbEE14_M_fill_insertESt15_Deque_iteratorIbRbPbEmRKb",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<srt::SrtHandshakeExtension, std::allocator<srt::SrtHandshakeExtension> >::_M_realloc_insert<srt::SrtHandshakeExtension>(std::vector<srt::SrtHandshakeExtension, std::allocator<srt::SrtHandshakeExtension> >::iterator, srt::SrtHandshakeExtension&&)",
+      "symbol": "_ZNSt6vectorIN3srt21SrtHandshakeExtensionESaIS1_EE17_M_realloc_insertIJS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_insert<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::iterator, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_realloc_insertIJS5_EEEvN9__gnu_cxx17__normal_iteratorIPS5_S7_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<srt::CUDTSocket*, std::allocator<srt::CUDTSocket*> >::_M_realloc_insert<srt::CUDTSocket* const&>(std::vector<srt::CUDTSocket*, std::allocator<srt::CUDTSocket*> >::iterator, srt::CUDTSocket* const&)",
+      "symbol": "_ZNSt6vectorIPN3srt10CUDTSocketESaIS2_EE17_M_realloc_insertIJRKS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<srt::CUDT*, std::allocator<srt::CUDT*> >::_M_realloc_insert<srt::CUDT* const&>(std::vector<srt::CUDT*, std::allocator<srt::CUDT*> >::iterator, srt::CUDT* const&)",
+      "symbol": "_ZNSt6vectorIPN3srt4CUDTESaIS2_EE17_M_realloc_insertIJRKS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<srt::CUnit*, std::allocator<srt::CUnit*> >::_M_realloc_insert<srt::CUnit* const&>(std::vector<srt::CUnit*, std::allocator<srt::CUnit*> >::iterator, srt::CUnit* const&)",
+      "symbol": "_ZNSt6vectorIPN3srt5CUnitESaIS2_EE17_M_realloc_insertIJRKS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_realloc_insert<std::pair<int, int> >(std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::iterator, std::pair<int, int>&&)",
+      "symbol": "_ZNSt6vectorISt4pairIiiESaIS1_EE17_M_realloc_insertIJS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<int, std::allocator<int> >::_M_realloc_insert<int const&>(std::vector<int, std::allocator<int> >::iterator, const int&)",
+      "symbol": "_ZNSt6vectorIiSaIiEE17_M_realloc_insertIJRKiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<SRT_SOCKOPT, std::pair<const SRT_SOCKOPT, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<const SRT_SOCKOPT, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<SRT_SOCKOPT>, std::allocator<std::pair<const SRT_SOCKOPT, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::_M_get_insert_hint_unique_pos(std::_Rb_tree<SRT_SOCKOPT, std::pair<const SRT_SOCKOPT, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<const SRT_SOCKOPT, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<SRT_SOCKOPT>, std::allocator<std::pair<const SRT_SOCKOPT, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::const_iterator, const std::_Rb_tree<SRT_SOCKOPT, std::pair<const SRT_SOCKOPT, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<const SRT_SOCKOPT, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<SRT_SOCKOPT>, std::allocator<std::pair<const SRT_SOCKOPT, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeI11SRT_SOCKOPTSt4pairIKS0_NSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEESt10_Select1stIS9_ESt4lessIS0_ESaIS9_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS9_ERS2_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_iterator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Rb_tree_iterator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::_Identity<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::equal_range(const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_St9_IdentityIS5_ESt4lessIS5_ESaIS5_EE11equal_rangeERKS5_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<int, std::allocator<int> >::_M_realloc_append<int>(int&&)",
+      "symbol": "_ZNSt6vectorIiSaIiEE17_M_realloc_appendIJiEEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<int, std::allocator<int> >::_M_realloc_append<int const&>(const int&)",
+      "symbol": "_ZNSt6vectorIiSaIiEE17_M_realloc_appendIJRKiEEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_realloc_append<std::pair<int, int> >(std::pair<int, int>&&)",
+      "symbol": "_ZNSt6vectorISt4pairIiiESaIS1_EE17_M_realloc_appendIJS1_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_realloc_append<const std::pair<int, int>&>(const std::pair<int, int>&)",
+      "symbol": "_ZNSt6vectorISt4pairIiiESaIS1_EE17_M_realloc_appendIJRKS1_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<unsigned int, std::allocator<unsigned int> >::_M_realloc_append<unsigned int const&>(const unsigned int&)",
+      "symbol": "_ZNSt6vectorIjSaIjEE17_M_realloc_appendIJRKjEEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void srt::CSndRateEstimator::addSample(const srt::CSndRateEstimator::time_point&, int, size_t)",
+      "symbol": "_ZN3srt17CSndRateEstimator9addSampleERKNS_4sync9TimePointINS1_12steady_clockEEEim",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CSndRateEstimator::incSampleIdx(int, int) const",
+      "symbol": "_ZNK3srt17CSndRateEstimator12incSampleIdxEii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method srt::CSndRateEstimator::CSndRateEstimator(const srt::CSndRateEstimator::time_point&)",
+      "symbol": "_ZN3srt17CSndRateEstimatorC2ERKNS_4sync9TimePointINS1_12steady_clockEEE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CSndRateEstimator::getCurrentRate() const",
+      "symbol": "_ZNK3srt17CSndRateEstimator14getCurrentRateEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void srt::CRcvQueue::storePktClone(int32_t, const srt::CPacket&)",
+      "symbol": "_ZN3srt9CRcvQueue13storePktCloneEiRKNS_7CPacketE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::deque<srt::FECFilterBuiltin::RcvGroup, std::allocator<srt::FECFilterBuiltin::RcvGroup> >::_M_reallocate_map(std::deque<srt::FECFilterBuiltin::RcvGroup, std::allocator<srt::FECFilterBuiltin::RcvGroup> >::size_type, bool)",
+      "symbol": "_ZNSt5dequeIN3srt16FECFilterBuiltin8RcvGroupESaIS2_EE17_M_reallocate_mapEmb",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_append<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_realloc_appendIJS5_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool srt::CUDT::isRcvBufferReadyNoLock() const",
+      "symbol": "_ZNK3srt4CUDT22isRcvBufferReadyNoLockEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<srt::EventSlot, std::allocator<srt::EventSlot> >::_M_realloc_append<const srt::EventSlot&>(const srt::EventSlot&)",
+      "symbol": "_ZNSt6vectorIN3srt9EventSlotESaIS1_EE17_M_realloc_appendIJRKS1_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::mapped_type map_get<const std::map<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >, char [5]>(const std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >&, const char[5]&, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::mapped_type)",
+      "symbol": "_Z7map_getIKSt3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_St4lessIS6_ESaISt4pairIKS6_S6_EEEA5_cENT_11mapped_typeERSG_RKT0_SH_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<srt::CRendezvousQueue::LinkStatusInfo, std::allocator<srt::CRendezvousQueue::LinkStatusInfo> >::_M_realloc_append<const srt::CRendezvousQueue::LinkStatusInfo&>(const srt::CRendezvousQueue::LinkStatusInfo&)",
+      "symbol": "_ZNSt6vectorIN3srt16CRendezvousQueue14LinkStatusInfoESaIS2_EE17_M_realloc_appendIJRKS2_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<srt::CUDTSocket*, std::allocator<srt::CUDTSocket*> >::_M_realloc_append<srt::CUDTSocket* const&>(srt::CUDTSocket* const&)",
+      "symbol": "_ZNSt6vectorIPN3srt10CUDTSocketESaIS2_EE17_M_realloc_appendIJRKS2_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<srt::CUnit*, std::allocator<srt::CUnit*> >::_M_realloc_append<srt::CUnit* const&>(srt::CUnit* const&)",
+      "symbol": "_ZNSt6vectorIPN3srt5CUnitESaIS2_EE17_M_realloc_appendIJRKS2_EEEvDpOT_",
+      "weak": true
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 6,
+     "field_added_to_struct": 1,
+     "member_offset_changed": 36,
+     "type_size_changed": 2
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./srtcore/core.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "class srt::CUDT"
+     },
+     {
+      "append_only": false,
+      "count": 30,
+      "declared_in": "./srtcore/core.h",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "class srt::CUDT"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./srtcore/core.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class srt::CUDT"
+     },
+     {
+      "append_only": false,
+      "count": 6,
+      "declared_in": "./srtcore/api.h",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "class srt::CUDTSocket"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./srtcore/api.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class srt::CUDTSocket"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/12/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<srt::CUDT*, std::allocator<srt::CUDT*> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/12/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<srt::CUDT*, std::allocator<srt::CUDT*> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/12/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<srt::CRendezvousQueue::LinkStatusInfo, std::allocator<srt::CRendezvousQueue::LinkStatusInfo> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/12/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<srt::CRendezvousQueue::LinkStatusInfo, std::allocator<srt::CRendezvousQueue::LinkStatusInfo> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./srtcore/congctl.cpp",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class srt::FileCC"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./srtcore/congctl.cpp",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class srt::LiveCC"
+     }
+    ],
+    "vague_linkage": {
+     "symbol_added": 12,
+     "symbol_removed": 31
+    }
+   }
+  ],
+  "seconds": 14.687724754,
+  "source": "srt",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.5.2",
+   "1.5.3"
+  ]
+ },
+ "generated_at": "2026-09-03T23:28:03Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

@@ -1,0 +1,3660 @@
+{
+ "data": {
+  "bytes_extracted": 23275634,
+  "id": "openexr@3.1.4..3.1.5",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      3250,
+      3250
+     ],
+     "mangled_functions": [
+      3250,
+      3250
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libIex-3_1.so.30",
+     "libIex-3_1.so.30"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 172
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexBaseExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::ArgExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/basic_string.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Alloc_hider"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<char>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexMathExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::DivzeroExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexBaseExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::MathExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::E2bigExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexBaseExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::ErrnoExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EaccesExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EaddrinuseExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EaddrnotavailExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EadvExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EafnosupportExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EagainExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EalreadyExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EbadeExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EbadfExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EbadfdExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EbadmsgExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EbadrExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EbadrqcExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EbadsltExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EbfontExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EbufsizeExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EbusyExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EcanceledExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EcantextentExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EchildExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EchrngExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EclockcpuExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EcommExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EconnabortedExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EconnrefusedExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EconnresetExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EcontrollerExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EdeadlkExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EdeadlockExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EdestaddrreqExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EdestroyedExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EdircorruptedExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EdisjointExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EdomExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EdquotExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EemptyExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EendofminorExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EenqueuedExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EexistExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EfaultExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EfbigExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EgrouploopExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EhostdownExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EhostunreachExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EidrmExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EilseqExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EinitExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EinprogressExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EintrExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EinvalExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EinvalmodeExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EinvalstateExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EinvaltimeExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EioExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EioresidExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EisconnExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EisdirExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EisnamExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EjoinedExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::El2hltExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::El2nsyncExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::El3hltExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::El3rstExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::ElibaccExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::ElibbadExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::ElibexecExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::ElibmaxExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::ElibscnExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::ElnrngExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EloginlimExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EloopExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EmfileExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EmlinkExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EmsgsizeExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EmultihopExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EmustrunExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnametoolongExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnavailExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnetdownExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnetresetExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnetunreachExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnfileExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnfsremoteExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnoanoExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnoattachExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnoattrExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnobufsExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnocsiExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnodataExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnodevExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnoentExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnoexecExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnoexistExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnointrgroupExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnolckExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnolimfileExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnolinkExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnologinExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnomemExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnomsgExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnonetExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnopkgExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnoprocExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnoprotooptExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnospcExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnosrExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnostrExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnosysExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnotblkExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnotconnExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnotcontrollerExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnotdirExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnotemptyExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnotenqueuedExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnotjoinedExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnotnamExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnotsockExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnotstoppedExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnotsupExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnottyExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnotuniqExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EnxioExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EopnotsuppExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EoverflowExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EpermExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EpfnosupportExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EpipeExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EproclimExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EprotoExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EprotonosupportExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EprototypeExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::ErangeExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EremchgExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EremdevExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EremoteExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EremoteioExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::ErestartExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::ErofsExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EshutdownExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EsocktnosupportExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EspipeExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EsrchExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EsrmntExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EstaleExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EstrpipeExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EtimeExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EtimedoutExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EtoomanyrefsExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EtxtbsyExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EucleanExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EunatchExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::EusersExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::ExdevExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexErrnoExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::ExfullExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexMathExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::InexactExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexBaseExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::InputExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexMathExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::InvalidFpOpExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexBaseExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::IoExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexBaseExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::LogicExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexBaseExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::NoImplExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexBaseExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::NullExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexMathExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::OverflowExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexBaseExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::TypeExc"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Iex/IexMathExc.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Iex_3_1::UnderflowExc"
+     }
+    ],
+    "vague_linkage": {}
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      47,
+      47
+     ],
+     "mangled_functions": [
+      47,
+      47
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libIlmThread-3_1.so.30",
+     "libIlmThread-3_1.so.30"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<IlmThread_3_1::Task*, std::allocator<IlmThread_3_1::Task*> >::_M_realloc_insert<IlmThread_3_1::Task* const&>(std::vector<IlmThread_3_1::Task*, std::allocator<IlmThread_3_1::Task*> >::iterator, IlmThread_3_1::Task* const&)",
+      "symbol": "_ZNSt6vectorIPN13IlmThread_3_14TaskESaIS2_EE17_M_realloc_insertIJRKS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<IlmThread_3_1::Task*, std::allocator<IlmThread_3_1::Task*> >::_M_realloc_append<IlmThread_3_1::Task* const&>(IlmThread_3_1::Task* const&)",
+      "symbol": "_ZNSt6vectorIPN13IlmThread_3_14TaskESaIS2_EE17_M_realloc_appendIJRKS2_EEEvDpOT_",
+      "weak": true
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {
+     "symbol_added": 1,
+     "symbol_removed": 1
+    }
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      2117,
+      2105
+     ],
+     "mangled_functions": [
+      2030,
+      2018
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "base_class_changed": 35,
+     "symbol_added": 2
+    },
+    "soname": [
+     "libOpenEXR-3_1.so.30",
+     "libOpenEXR-3_1.so.30"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(const char*, const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)",
+      "symbol": "_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_RKS8_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<long unsigned int, std::pair<long unsigned int const, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::_Select1st<std::pair<long unsigned int const, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >, std::less<long unsigned int>, std::allocator<std::pair<long unsigned int const, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > > >::_M_get_insert_hint_unique_pos(std::_Rb_tree<long unsigned int, std::pair<long unsigned int const, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::_Select1st<std::pair<long unsigned int const, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >, std::less<long unsigned int>, std::allocator<std::pair<long unsigned int const, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > > >::const_iterator, const std::_Rb_tree<long unsigned int, std::pair<long unsigned int const, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::_Select1st<std::pair<long unsigned int const, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >, std::less<long unsigned int>, std::allocator<std::pair<long unsigned int const, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeImSt4pairIKmSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS8_EEESt10_Select1stISB_ESt4lessImESaISB_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorISB_ERS1_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_iterator<std::pair<long unsigned int const, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >, bool> std::_Rb_tree<long unsigned int, std::pair<long unsigned int const, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::_Select1st<std::pair<long unsigned int const, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >, std::less<long unsigned int>, std::allocator<std::pair<long unsigned int const, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > > >::_M_emplace_unique<std::pair<long unsigned int, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >(std::pair<long unsigned int, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >&&)",
+      "symbol": "_ZNSt8_Rb_treeImSt4pairIKmSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS8_EEESt10_Select1stISB_ESt4lessImESaISB_EE17_M_emplace_uniqueIJS0_ImSA_EEEES0_ISt17_Rb_tree_iteratorISB_EbEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_iterator<std::pair<int const, Imf_3_1::GenericOutputFile*> >, bool> std::_Rb_tree<int, std::pair<int const, Imf_3_1::GenericOutputFile*>, std::_Select1st<std::pair<int const, Imf_3_1::GenericOutputFile*> >, std::less<int>, std::allocator<std::pair<int const, Imf_3_1::GenericOutputFile*> > >::_M_emplace_unique<std::pair<int, Imf_3_1::GenericOutputFile*> >(std::pair<int, Imf_3_1::GenericOutputFile*>&&)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiPN7Imf_3_117GenericOutputFileEESt10_Select1stIS5_ESt4lessIiESaIS5_EE17_M_emplace_uniqueIJS0_IiS4_EEEES0_ISt17_Rb_tree_iteratorIS5_EbEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_iterator<std::pair<int const, Imf_3_1::GenericInputFile*> >, bool> std::_Rb_tree<int, std::pair<int const, Imf_3_1::GenericInputFile*>, std::_Select1st<std::pair<int const, Imf_3_1::GenericInputFile*> >, std::less<int>, std::allocator<std::pair<int const, Imf_3_1::GenericInputFile*> > >::_M_emplace_unique<std::pair<int, Imf_3_1::GenericInputFile*> >(std::pair<int, Imf_3_1::GenericInputFile*>&&)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiPN7Imf_3_116GenericInputFileEESt10_Select1stIS5_ESt4lessIiESaIS5_EE17_M_emplace_uniqueIJS0_IiS4_EEEES0_ISt17_Rb_tree_iteratorIS5_EbEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Rb_tree<Imf_3_1::Name, std::pair<const Imf_3_1::Name, Imf_3_1::Channel>, std::_Select1st<std::pair<const Imf_3_1::Name, Imf_3_1::Channel> >, std::less<Imf_3_1::Name>, std::allocator<std::pair<const Imf_3_1::Name, Imf_3_1::Channel> > >& std::_Rb_tree<Imf_3_1::Name, std::pair<const Imf_3_1::Name, Imf_3_1::Channel>, std::_Select1st<std::pair<const Imf_3_1::Name, Imf_3_1::Channel> >, std::less<Imf_3_1::Name>, std::allocator<std::pair<const Imf_3_1::Name, Imf_3_1::Channel> > >::operator=(const std::_Rb_tree<Imf_3_1::Name, std::pair<const Imf_3_1::Name, Imf_3_1::Channel>, std::_Select1st<std::pair<const Imf_3_1::Name, Imf_3_1::Channel> >, std::less<Imf_3_1::Name>, std::allocator<std::pair<const Imf_3_1::Name, Imf_3_1::Channel> > >&)",
+      "symbol": "_ZNSt8_Rb_treeIN7Imf_3_14NameESt4pairIKS1_NS0_7ChannelEESt10_Select1stIS5_ESt4lessIS1_ESaIS5_EEaSERKSB_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::vector<char const*, std::allocator<char const*> >, std::allocator<std::vector<char const*, std::allocator<char const*> > > >::_M_realloc_insert<const std::vector<char const*, std::allocator<char const*> >&>(std::vector<std::vector<char const*, std::allocator<char const*> >, std::allocator<std::vector<char const*, std::allocator<char const*> > > >::iterator, const std::vector<char const*, std::allocator<char const*> >&)",
+      "symbol": "_ZNSt6vectorIS_IPKcSaIS1_EESaIS3_EE17_M_realloc_insertIJRKS3_EEEvN9__gnu_cxx17__normal_iteratorIPS3_S5_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<char const*, std::allocator<char const*> >::_M_realloc_insert<char const* const&>(std::vector<char const*, std::allocator<char const*> >::iterator, const char* const&)",
+      "symbol": "_ZNSt6vectorIPKcSaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_insert<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::iterator, const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_realloc_insertIJRKS5_EEEvN9__gnu_cxx17__normal_iteratorIPS5_S7_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<Imf_3_1::PixelType, std::allocator<Imf_3_1::PixelType> >::_M_realloc_insert<const Imf_3_1::PixelType&>(std::vector<Imf_3_1::PixelType, std::allocator<Imf_3_1::PixelType> >::iterator, const Imf_3_1::PixelType&)",
+      "symbol": "_ZNSt6vectorIN7Imf_3_19PixelTypeESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<Imf_3_1::Header, std::allocator<Imf_3_1::Header> >::_M_realloc_insert<const Imf_3_1::Header&>(std::vector<Imf_3_1::Header, std::allocator<Imf_3_1::Header> >::iterator, const Imf_3_1::Header&)",
+      "symbol": "_ZNSt6vectorIN7Imf_3_16HeaderESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<char, std::allocator<char> >::_M_realloc_insert<char>(std::vector<char, std::allocator<char> >::iterator, char&&)",
+      "symbol": "_ZNSt6vectorIcSaIcEE17_M_realloc_insertIJcEEEvN9__gnu_cxx17__normal_iteratorIPcS1_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<int, std::pair<int const, Imf_3_1::GenericOutputFile*>, std::_Select1st<std::pair<int const, Imf_3_1::GenericOutputFile*> >, std::less<int>, std::allocator<std::pair<int const, Imf_3_1::GenericOutputFile*> > >::_M_get_insert_unique_pos(const std::_Rb_tree<int, std::pair<int const, Imf_3_1::GenericOutputFile*>, std::_Select1st<std::pair<int const, Imf_3_1::GenericOutputFile*> >, std::less<int>, std::allocator<std::pair<int const, Imf_3_1::GenericOutputFile*> > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiPN7Imf_3_117GenericOutputFileEESt10_Select1stIS5_ESt4lessIiESaIS5_EE24_M_get_insert_unique_posERS1_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::vector<float, std::allocator<float> >& std::vector<float, std::allocator<float> >::operator=(const std::vector<float, std::allocator<float> >&)",
+      "symbol": "_ZNSt6vectorIfSaIfEEaSERKS1_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int> > >::_M_get_insert_unique_pos(const std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int> > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_iESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE24_M_get_insert_unique_posERS7_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<int, std::allocator<int> >::_M_realloc_insert<int>(std::vector<int, std::allocator<int> >::iterator, int&&)",
+      "symbol": "_ZNSt6vectorIiSaIiEE17_M_realloc_insertIJiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::_Identity<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_get_insert_hint_unique_pos(std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::_Identity<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::const_iterator, const std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::_Identity<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_St9_IdentityIS5_ESt4lessIS5_ESaIS5_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS5_ERKS5_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<long unsigned int, std::allocator<long unsigned int> >::_M_realloc_insert<long unsigned int>(std::vector<long unsigned int, std::allocator<long unsigned int> >::iterator, unsigned long int&&)",
+      "symbol": "_ZNSt6vectorImSaImEE17_M_realloc_insertIJmEEEvN9__gnu_cxx17__normal_iteratorIPmS1_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<Imf_3_1::DeepScanLineInputFile*, std::allocator<Imf_3_1::DeepScanLineInputFile*> >::_M_realloc_insert<Imf_3_1::DeepScanLineInputFile* const&>(std::vector<Imf_3_1::DeepScanLineInputFile*, std::allocator<Imf_3_1::DeepScanLineInputFile*> >::iterator, Imf_3_1::DeepScanLineInputFile* const&)",
+      "symbol": "_ZNSt6vectorIPN7Imf_3_121DeepScanLineInputFileESaIS2_EE17_M_realloc_insertIJRKS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::_Identity<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_get_insert_unique_pos(const std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::_Identity<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_St9_IdentityIS5_ESt4lessIS5_ESaIS5_EE24_M_get_insert_unique_posERKS5_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<char*, std::allocator<char*> >::_M_realloc_insert<char* const&>(std::vector<char*, std::allocator<char*> >::iterator, char* const&)",
+      "symbol": "_ZNSt6vectorIPcSaIS0_EE17_M_realloc_insertIJRKS0_EEEvN9__gnu_cxx17__normal_iteratorIPS0_S2_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<int, std::pair<int const, Imf_3_1::GenericInputFile*>, std::_Select1st<std::pair<int const, Imf_3_1::GenericInputFile*> >, std::less<int>, std::allocator<std::pair<int const, Imf_3_1::GenericInputFile*> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree<int, std::pair<int const, Imf_3_1::GenericInputFile*>, std::_Select1st<std::pair<int const, Imf_3_1::GenericInputFile*> >, std::less<int>, std::allocator<std::pair<int const, Imf_3_1::GenericInputFile*> > >::const_iterator, const std::_Rb_tree<int, std::pair<int const, Imf_3_1::GenericInputFile*>, std::_Select1st<std::pair<int const, Imf_3_1::GenericInputFile*> >, std::less<int>, std::allocator<std::pair<int const, Imf_3_1::GenericInputFile*> > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiPN7Imf_3_116GenericInputFileEESt10_Select1stIS5_ESt4lessIiESaIS5_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS5_ERS1_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<int, std::pair<int const, Imf_3_1::GenericInputFile*>, std::_Select1st<std::pair<int const, Imf_3_1::GenericInputFile*> >, std::less<int>, std::allocator<std::pair<int const, Imf_3_1::GenericInputFile*> > >::_M_get_insert_unique_pos(const std::_Rb_tree<int, std::pair<int const, Imf_3_1::GenericInputFile*>, std::_Select1st<std::pair<int const, Imf_3_1::GenericInputFile*> >, std::less<int>, std::allocator<std::pair<int const, Imf_3_1::GenericInputFile*> > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiPN7Imf_3_116GenericInputFileEESt10_Select1stIS5_ESt4lessIiESaIS5_EE24_M_get_insert_unique_posERS1_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<Imf_3_1::IDManifest::ChannelGroupManifest, std::allocator<Imf_3_1::IDManifest::ChannelGroupManifest> >::_M_realloc_insert<Imf_3_1::IDManifest::ChannelGroupManifest>(std::vector<Imf_3_1::IDManifest::ChannelGroupManifest, std::allocator<Imf_3_1::IDManifest::ChannelGroupManifest> >::iterator, Imf_3_1::IDManifest::ChannelGroupManifest&&)",
+      "symbol": "_ZNSt6vectorIN7Imf_3_110IDManifest20ChannelGroupManifestESaIS2_EE17_M_realloc_insertIJS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<int, std::pair<int const, Imf_3_1::GenericOutputFile*>, std::_Select1st<std::pair<int const, Imf_3_1::GenericOutputFile*> >, std::less<int>, std::allocator<std::pair<int const, Imf_3_1::GenericOutputFile*> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree<int, std::pair<int const, Imf_3_1::GenericOutputFile*>, std::_Select1st<std::pair<int const, Imf_3_1::GenericOutputFile*> >, std::less<int>, std::allocator<std::pair<int const, Imf_3_1::GenericOutputFile*> > >::const_iterator, const std::_Rb_tree<int, std::pair<int const, Imf_3_1::GenericOutputFile*>, std::_Select1st<std::pair<int const, Imf_3_1::GenericOutputFile*> >, std::less<int>, std::allocator<std::pair<int const, Imf_3_1::GenericOutputFile*> > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiPN7Imf_3_117GenericOutputFileEESt10_Select1stIS5_ESt4lessIiESaIS5_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS5_ERS1_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<Imf_3_1::DeepScanLineInputPart*, std::allocator<Imf_3_1::DeepScanLineInputPart*> >::_M_realloc_insert<Imf_3_1::DeepScanLineInputPart* const&>(std::vector<Imf_3_1::DeepScanLineInputPart*, std::allocator<Imf_3_1::DeepScanLineInputPart*> >::iterator, Imf_3_1::DeepScanLineInputPart* const&)",
+      "symbol": "_ZNSt6vectorIPN7Imf_3_121DeepScanLineInputPartESaIS2_EE17_M_realloc_insertIJRKS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<Imf_3_1::IDManifest::ChannelGroupManifest, std::allocator<Imf_3_1::IDManifest::ChannelGroupManifest> >::_M_realloc_insert<const Imf_3_1::IDManifest::ChannelGroupManifest&>(std::vector<Imf_3_1::IDManifest::ChannelGroupManifest, std::allocator<Imf_3_1::IDManifest::ChannelGroupManifest> >::iterator, const Imf_3_1::IDManifest::ChannelGroupManifest&)",
+      "symbol": "_ZNSt6vectorIN7Imf_3_110IDManifest20ChannelGroupManifestESaIS2_EE17_M_realloc_insertIJRKS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >& std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::operator=(const std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EEaSERKS7_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::vector<char*, std::allocator<char*> >, std::allocator<std::vector<char*, std::allocator<char*> > > >::_M_realloc_insert<const std::vector<char*, std::allocator<char*> >&>(std::vector<std::vector<char*, std::allocator<char*> >, std::allocator<std::vector<char*, std::allocator<char*> > > >::iterator, const std::vector<char*, std::allocator<char*> >&)",
+      "symbol": "_ZNSt6vectorIS_IPcSaIS0_EESaIS2_EE17_M_realloc_insertIJRKS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<long unsigned int, std::pair<long unsigned int const, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::_Select1st<std::pair<long unsigned int const, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >, std::less<long unsigned int>, std::allocator<std::pair<long unsigned int const, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > > >::_M_get_insert_unique_pos(const std::_Rb_tree<long unsigned int, std::pair<long unsigned int const, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::_Select1st<std::pair<long unsigned int const, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >, std::less<long unsigned int>, std::allocator<std::pair<long unsigned int const, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeImSt4pairIKmSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS8_EEESt10_Select1stISB_ESt4lessImESaISB_EE24_M_get_insert_unique_posERS1_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int> > >::const_iterator, const std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int> > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_iESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS8_ERS7_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_realloc_insert<const std::pair<int, int>&>(std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::iterator, const std::pair<int, int>&)",
+      "symbol": "_ZNSt6vectorISt4pairIiiESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >* std::__do_uninit_copy<__gnu_cxx::__normal_iterator<const std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >, std::__cxx11::basic_string<char>*>(__gnu_cxx::__normal_iterator<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, __gnu_cxx::__normal_iterator<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*)",
+      "symbol": "_ZSt16__do_uninit_copyIN9__gnu_cxx17__normal_iteratorIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS7_SaIS7_EEEEPS7_ET0_T_SG_SF_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<char, std::allocator<char> >::_M_realloc_append<char>(char&&)",
+      "symbol": "_ZNSt6vectorIcSaIcEE17_M_realloc_appendIJcEEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<std::vector<char*, std::allocator<char*> >, std::allocator<std::vector<char*, std::allocator<char*> > > >::_M_realloc_append<const std::vector<char*, std::allocator<char*> >&>(const std::vector<char*, std::allocator<char*> >&)",
+      "symbol": "_ZNSt6vectorIS_IPcSaIS0_EESaIS2_EE17_M_realloc_appendIJRKS2_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function std::vector<long unsigned int, std::allocator<long unsigned int> >* std::__do_uninit_copy<__gnu_cxx::__normal_iterator<const std::vector<long unsigned int>*, std::vector<std::vector<long unsigned int> > >, std::vector<long unsigned int>*>(__gnu_cxx::__normal_iterator<const std::vector<long unsigned int, std::allocator<long unsigned int> >*, std::vector<std::vector<long unsigned int, std::allocator<long unsigned int> >, std::allocator<std::vector<long unsigned int, std::allocator<long unsigned int> > > > >, __gnu_cxx::__normal_iterator<const std::vector<long unsigned int, std::allocator<long unsigned int> >*, std::vector<std::vector<long unsigned int, std::allocator<long unsigned int> >, std::allocator<std::vector<long unsigned int, std::allocator<long unsigned int> > > > >, std::vector<long unsigned int, std::allocator<long unsigned int> >*)",
+      "symbol": "_ZSt16__do_uninit_copyIN9__gnu_cxx17__normal_iteratorIPKSt6vectorImSaImEES2_IS4_SaIS4_EEEEPS4_ET0_T_SC_SB_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int64_t Imf_3_1::CompositeDeepScanLine::getMaximumSampleCount()",
+      "symbol": "_ZN7Imf_3_121CompositeDeepScanLine21getMaximumSampleCountEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<Imf_3_1::PixelType, std::allocator<Imf_3_1::PixelType> >::_M_realloc_append<const Imf_3_1::PixelType&>(const Imf_3_1::PixelType&)",
+      "symbol": "_ZNSt6vectorIN7Imf_3_19PixelTypeESaIS1_EE17_M_realloc_appendIJRKS1_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_append<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>(const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_realloc_appendIJRKS5_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<char const*, std::allocator<char const*> >::_M_realloc_append<char const* const&>(const char* const&)",
+      "symbol": "_ZNSt6vectorIPKcSaIS1_EE17_M_realloc_appendIJRKS1_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void Imf_3_1::CompositeDeepScanLine::setMaximumSampleCount()",
+      "symbol": "_ZN7Imf_3_121CompositeDeepScanLine21setMaximumSampleCountEl",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<Imf_3_1::IDManifest::ChannelGroupManifest, std::allocator<Imf_3_1::IDManifest::ChannelGroupManifest> >::_M_realloc_append<const Imf_3_1::IDManifest::ChannelGroupManifest&>(const Imf_3_1::IDManifest::ChannelGroupManifest&)",
+      "symbol": "_ZNSt6vectorIN7Imf_3_110IDManifest20ChannelGroupManifestESaIS2_EE17_M_realloc_appendIJRKS2_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<Imf_3_1::IDManifest::ChannelGroupManifest, std::allocator<Imf_3_1::IDManifest::ChannelGroupManifest> >::_M_realloc_append<Imf_3_1::IDManifest::ChannelGroupManifest>(Imf_3_1::IDManifest::ChannelGroupManifest&&)",
+      "symbol": "_ZNSt6vectorIN7Imf_3_110IDManifest20ChannelGroupManifestESaIS2_EE17_M_realloc_appendIJS2_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<Imf_3_1::DeepScanLineInputFile*, std::allocator<Imf_3_1::DeepScanLineInputFile*> >::_M_realloc_append<Imf_3_1::DeepScanLineInputFile* const&>(Imf_3_1::DeepScanLineInputFile* const&)",
+      "symbol": "_ZNSt6vectorIPN7Imf_3_121DeepScanLineInputFileESaIS2_EE17_M_realloc_appendIJRKS2_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_append<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_realloc_appendIJS5_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function std::vector<std::vector<long unsigned int, std::allocator<long unsigned int> >, std::allocator<std::vector<long unsigned int, std::allocator<long unsigned int> > > >* std::__do_uninit_copy<__gnu_cxx::__normal_iterator<const std::vector<std::vector<long unsigned int> >*, std::vector<std::vector<std::vector<long unsigned int> > > >, std::vector<std::vector<long unsigned int> >*>(__gnu_cxx::__normal_iterator<const std::vector<std::vector<long unsigned int, std::allocator<long unsigned int> >, std::allocator<std::vector<long unsigned int, std::allocator<long unsigned int> > > >*, std::vector<std::vector<std::vector<long unsigned int, std::allocator<long unsigned int> >, std::allocator<std::vector<long unsigned int, std::allocator<long unsigned int> > > >, std::allocator<std::vector<std::vector<long unsigned int, std::allocator<long unsigned int> >, std::allocator<std::vector<long unsigned int, std::allocator<long unsigned int> > > > > > >, __gnu_cxx::__normal_iterator<const std::vector<std::vector<long unsigned int, std::allocator<long unsigned int> >, std::allocator<std::vector<long unsigned int, std::allocator<long unsigned int> > > >*, std::vector<std::vector<std::vector<long unsigned int, std::allocator<long unsigned int> >, std::allocator<std::vector<long unsigned int, std::allocator<long unsigned int> > > >, std::allocator<std::vector<std::vector<long unsigned int, std::allocator<long unsigned int> >, std::allocator<std::vector<long unsigned int, std::allocator<long unsigned int> > > > > > >, std::vector<std::vector<long unsigned int, std::allocator<long unsigned int> >, std::allocator<std::vector<long unsigned int, std::allocator<long unsigned int> > > >*)",
+      "symbol": "_ZSt16__do_uninit_copyIN9__gnu_cxx17__normal_iteratorIPKSt6vectorIS2_ImSaImEESaIS4_EES2_IS6_SaIS6_EEEEPS6_ET0_T_SE_SD_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<Imf_3_1::Header, std::allocator<Imf_3_1::Header> >::_M_realloc_append<const Imf_3_1::Header&>(const Imf_3_1::Header&)",
+      "symbol": "_ZNSt6vectorIN7Imf_3_16HeaderESaIS1_EE17_M_realloc_appendIJRKS1_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<std::vector<char const*, std::allocator<char const*> >, std::allocator<std::vector<char const*, std::allocator<char const*> > > >::_M_realloc_append<const std::vector<char const*, std::allocator<char const*> >&>(const std::vector<char const*, std::allocator<char const*> >&)",
+      "symbol": "_ZNSt6vectorIS_IPKcSaIS1_EESaIS3_EE17_M_realloc_appendIJRKS3_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::_Rb_tree<long unsigned int, std::pair<long unsigned int const, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::_Select1st<std::pair<long unsigned int const, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >, std::less<long unsigned int>, std::allocator<std::pair<long unsigned int const, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > > >::iterator std::_Rb_tree<long unsigned int, std::pair<long unsigned int const, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::_Select1st<std::pair<long unsigned int const, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >, std::less<long unsigned int>, std::allocator<std::pair<long unsigned int const, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > > >::_M_emplace_hint_unique<std::pair<long unsigned int, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >(std::_Rb_tree<long unsigned int, std::pair<long unsigned int const, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::_Select1st<std::pair<long unsigned int const, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >, std::less<long unsigned int>, std::allocator<std::pair<long unsigned int const, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > > >::const_iterator, std::pair<long unsigned int, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >&&)",
+      "symbol": "_ZNSt8_Rb_treeImSt4pairIKmSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS8_EEESt10_Select1stISB_ESt4lessImESaISB_EE22_M_emplace_hint_uniqueIJS0_ImSA_EEEESt17_Rb_tree_iteratorISB_ESt23_Rb_tree_const_iteratorISB_EDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<Imf_3_1::DeepScanLineInputPart*, std::allocator<Imf_3_1::DeepScanLineInputPart*> >::_M_realloc_append<Imf_3_1::DeepScanLineInputPart* const&>(Imf_3_1::DeepScanLineInputPart* const&)",
+      "symbol": "_ZNSt6vectorIPN7Imf_3_121DeepScanLineInputPartESaIS2_EE17_M_realloc_appendIJRKS2_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<int, std::allocator<int> >::_M_realloc_append<int>(int&&)",
+      "symbol": "_ZNSt6vectorIiSaIiEE17_M_realloc_appendIJiEEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<char*, std::allocator<char*> >::_M_realloc_append<char* const&>(char* const&)",
+      "symbol": "_ZNSt6vectorIPcSaIS0_EE17_M_realloc_appendIJRKS0_EEEvDpOT_",
+      "weak": true
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 157
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_tree.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Rb_tree<Imf_3_1::Name, std::pair<const Imf_3_1::Name, Imf_3_1::Attribute*>, std::_Select1st<std::pair<const Imf_3_1::Name, Imf_3_1::Attribute*> >, std::less<Imf_3_1::Name>, std::allocator<std::pair<const Imf_3_1::Name, Imf_3_1::Attribute*> > >::_Rb_tree_impl<std::less<Imf_3_1::Name>, true>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<std::_Rb_tree_node<std::pair<const Imf_3_1::Name, Imf_3_1::Attribute*> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_tree.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Rb_tree<Imf_3_1::Name, std::pair<const Imf_3_1::Name, Imf_3_1::Slice>, std::_Select1st<std::pair<const Imf_3_1::Name, Imf_3_1::Slice> >, std::less<Imf_3_1::Name>, std::allocator<std::pair<const Imf_3_1::Name, Imf_3_1::Slice> > >::_Rb_tree_impl<std::less<Imf_3_1::Name>, true>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<std::_Rb_tree_node<std::pair<const Imf_3_1::Name, Imf_3_1::Slice> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::vector<std::vector<long unsigned int, std::allocator<long unsigned int> >, std::allocator<std::vector<long unsigned int, std::allocator<long unsigned int> > > >, std::allocator<std::vector<std::vector<long unsigned int, std::allocator<long unsigned int> >, std::allocator<std::vector<long unsigned int, std::allocator<long unsigned int> > > > > >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::vector<std::vector<long unsigned int, std::allocator<long unsigned int> >, std::allocator<std::vector<long unsigned int, std::allocator<long unsigned int> > > >, std::allocator<std::vector<std::vector<long unsigned int, std::allocator<long unsigned int> >, std::allocator<std::vector<long unsigned int, std::allocator<long unsigned int> > > > > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::vector<long unsigned int, std::allocator<long unsigned int> >, std::allocator<std::vector<long unsigned int, std::allocator<long unsigned int> > > >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::vector<long unsigned int, std::allocator<long unsigned int> >, std::allocator<std::vector<long unsigned int, std::allocator<long unsigned int> > > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_value",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<long unsigned int, std::allocator<long unsigned int> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<long unsigned int, std::allocator<long unsigned int> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<long unsigned int>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<std::vector<long unsigned int, std::allocator<long unsigned int> > >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<std::vector<std::vector<long unsigned int, std::allocator<long unsigned int> >, std::allocator<std::vector<long unsigned int, std::allocator<long unsigned int> > > > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<Imf_3_1::(anonymous namespace)::TInSliceInfo, std::allocator<Imf_3_1::(anonymous namespace)::TInSliceInfo> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<Imf_3_1::(anonymous namespace)::TInSliceInfo, std::allocator<Imf_3_1::(anonymous namespace)::TInSliceInfo> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<Imf_3_1::(anonymous namespace)::TInSliceInfo>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfMultiPartInputFile.cpp",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct Imf_3_1::MultiPartInputFile::Data"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<Imf_3_1::InputPartData*, std::allocator<Imf_3_1::InputPartData*> >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<Imf_3_1::InputPartData*, std::allocator<Imf_3_1::InputPartData*> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/basic_string.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Alloc_hider"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<char>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<Imf_3_1::InputPartData*>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_tree.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Rb_tree<int, std::pair<int const, Imf_3_1::GenericInputFile*>, std::_Select1st<std::pair<int const, Imf_3_1::GenericInputFile*> >, std::less<int>, std::allocator<std::pair<int const, Imf_3_1::GenericInputFile*> > >::_Rb_tree_impl<std::less<int>, true>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<std::_Rb_tree_node<std::pair<int const, Imf_3_1::GenericInputFile*> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<Imf_3_1::Header, std::allocator<Imf_3_1::Header> >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<Imf_3_1::Header, std::allocator<Imf_3_1::Header> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<Imf_3_1::Header>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<Imf_3_1::(anonymous namespace)::TileBuffer*, std::allocator<Imf_3_1::(anonymous namespace)::TileBuffer*> >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<Imf_3_1::(anonymous namespace)::TileBuffer*, std::allocator<Imf_3_1::(anonymous namespace)::TileBuffer*> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<Imf_3_1::(anonymous namespace)::TileBuffer*>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<Imf_3_1::(anonymous namespace)::InSliceInfo, std::allocator<Imf_3_1::(anonymous namespace)::InSliceInfo> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<Imf_3_1::(anonymous namespace)::InSliceInfo, std::allocator<Imf_3_1::(anonymous namespace)::InSliceInfo> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<Imf_3_1::(anonymous namespace)::InSliceInfo>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<Imf_3_1::(anonymous namespace)::LineBuffer*, std::allocator<Imf_3_1::(anonymous namespace)::LineBuffer*> >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<Imf_3_1::(anonymous namespace)::LineBuffer*, std::allocator<Imf_3_1::(anonymous namespace)::LineBuffer*> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<Imf_3_1::(anonymous namespace)::LineBuffer*>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<Imf_3_1::(anonymous namespace)::sliceOptimizationData, std::allocator<Imf_3_1::(anonymous namespace)::sliceOptimizationData> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<Imf_3_1::(anonymous namespace)::sliceOptimizationData, std::allocator<Imf_3_1::(anonymous namespace)::sliceOptimizationData> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<Imf_3_1::(anonymous namespace)::sliceOptimizationData>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_tree.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Rb_tree<Imf_3_1::Name, std::pair<const Imf_3_1::Name, Imf_3_1::DeepSlice>, std::_Select1st<std::pair<const Imf_3_1::Name, Imf_3_1::DeepSlice> >, std::less<Imf_3_1::Name>, std::allocator<std::pair<const Imf_3_1::Name, Imf_3_1::DeepSlice> > >::_Rb_tree_impl<std::less<Imf_3_1::Name>, true>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<std::_Rb_tree_node<std::pair<const Imf_3_1::Name, Imf_3_1::DeepSlice> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<Imf_3_1::(anonymous namespace)::InSliceInfo*, std::allocator<Imf_3_1::(anonymous namespace)::InSliceInfo*> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<Imf_3_1::(anonymous namespace)::InSliceInfo*, std::allocator<Imf_3_1::(anonymous namespace)::InSliceInfo*> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<Imf_3_1::(anonymous namespace)::InSliceInfo*>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<Imf_3_1::DeepScanLineInputFile*, std::allocator<Imf_3_1::DeepScanLineInputFile*> >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<Imf_3_1::DeepScanLineInputFile*, std::allocator<Imf_3_1::DeepScanLineInputFile*> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<Imf_3_1::DeepScanLineInputFile*>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<Imf_3_1::DeepScanLineInputPart*, std::allocator<Imf_3_1::DeepScanLineInputPart*> >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<Imf_3_1::DeepScanLineInputPart*, std::allocator<Imf_3_1::DeepScanLineInputPart*> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<Imf_3_1::DeepScanLineInputPart*>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::vector<float, std::allocator<float> >, std::allocator<std::vector<float, std::allocator<float> > > >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::vector<float, std::allocator<float> >, std::allocator<std::vector<float, std::allocator<float> > > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<float, std::allocator<float> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<float, std::allocator<float> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<float>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<std::vector<float, std::allocator<float> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<int, std::allocator<int> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<int, std::allocator<int> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<int>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<Imf_3_1::(anonymous namespace)::OutSliceInfo, std::allocator<Imf_3_1::(anonymous namespace)::OutSliceInfo> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<Imf_3_1::(anonymous namespace)::OutSliceInfo, std::allocator<Imf_3_1::(anonymous namespace)::OutSliceInfo> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<Imf_3_1::(anonymous namespace)::OutSliceInfo>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_tree.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Rb_tree<Imf_3_1::Name, std::pair<const Imf_3_1::Name, Imf_3_1::Channel>, std::_Select1st<std::pair<const Imf_3_1::Name, Imf_3_1::Channel> >, std::less<Imf_3_1::Name>, std::allocator<std::pair<const Imf_3_1::Name, Imf_3_1::Channel> > >::_Rb_tree_impl<std::less<Imf_3_1::Name>, true>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<std::_Rb_tree_node<std::pair<const Imf_3_1::Name, Imf_3_1::Channel> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_tree.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::_Identity<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_Rb_tree_impl<std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, true>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<std::_Rb_tree_node<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<Imf_3_1::IDManifest::ChannelGroupManifest, std::allocator<Imf_3_1::IDManifest::ChannelGroupManifest> >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<Imf_3_1::IDManifest::ChannelGroupManifest, std::allocator<Imf_3_1::IDManifest::ChannelGroupManifest> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_tree.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Rb_tree<long unsigned int, std::pair<long unsigned int const, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::_Select1st<std::pair<long unsigned int const, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >, std::less<long unsigned int>, std::allocator<std::pair<long unsigned int const, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > > >::_Rb_tree_impl<std::less<long unsigned int>, true>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<std::_Rb_tree_node<std::pair<long unsigned int const, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > > >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<Imf_3_1::IDManifest::ChannelGroupManifest>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<Imf_3_1::(anonymous namespace)::OutSliceInfo*, std::allocator<Imf_3_1::(anonymous namespace)::OutSliceInfo*> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<Imf_3_1::(anonymous namespace)::OutSliceInfo*, std::allocator<Imf_3_1::(anonymous namespace)::OutSliceInfo*> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<Imf_3_1::(anonymous namespace)::OutSliceInfo*>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfMultiPartOutputFile.cpp",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct Imf_3_1::MultiPartOutputFile::Data"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<Imf_3_1::OutputPartData*, std::allocator<Imf_3_1::OutputPartData*> >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<Imf_3_1::OutputPartData*, std::allocator<Imf_3_1::OutputPartData*> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<Imf_3_1::OutputPartData*>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_tree.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Rb_tree<int, std::pair<int const, Imf_3_1::GenericOutputFile*>, std::_Select1st<std::pair<int const, Imf_3_1::GenericOutputFile*> >, std::less<int>, std::allocator<std::pair<int const, Imf_3_1::GenericOutputFile*> > >::_Rb_tree_impl<std::less<int>, true>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<std::_Rb_tree_node<std::pair<int const, Imf_3_1::GenericOutputFile*> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<Imf_3_1::(anonymous namespace)::TInSliceInfo*, std::allocator<Imf_3_1::(anonymous namespace)::TInSliceInfo*> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<Imf_3_1::(anonymous namespace)::TInSliceInfo*, std::allocator<Imf_3_1::(anonymous namespace)::TInSliceInfo*> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<Imf_3_1::(anonymous namespace)::TInSliceInfo*>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<Imf_3_1::(anonymous namespace)::TOutSliceInfo*, std::allocator<Imf_3_1::(anonymous namespace)::TOutSliceInfo*> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<Imf_3_1::(anonymous namespace)::TOutSliceInfo*, std::allocator<Imf_3_1::(anonymous namespace)::TOutSliceInfo*> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<Imf_3_1::(anonymous namespace)::TOutSliceInfo*>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_tree.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Rb_tree<Imf_3_1::(anonymous namespace)::TileCoord, std::pair<const Imf_3_1::(anonymous namespace)::TileCoord, Imf_3_1::(anonymous namespace)::BufferedTile*>, std::_Select1st<std::pair<const Imf_3_1::(anonymous namespace)::TileCoord, Imf_3_1::(anonymous namespace)::BufferedTile*> >, std::less<Imf_3_1::(anonymous namespace)::TileCoord>, std::allocator<std::pair<const Imf_3_1::(anonymous namespace)::TileCoord, Imf_3_1::(anonymous namespace)::BufferedTile*> > >::_Rb_tree_impl<std::less<Imf_3_1::(anonymous namespace)::TileCoord>, true>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<std::_Rb_tree_node<std::pair<const Imf_3_1::(anonymous namespace)::TileCoord, Imf_3_1::(anonymous namespace)::BufferedTile*> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfAttribute.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_1::TypedAttribute<Imath_3_1::Matrix44<float> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfAttribute.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_1::TypedAttribute<Imf_3_1::Chromaticities>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfAttribute.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_1::TypedAttribute<Imf_3_1::PreviewImage>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfAttribute.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_1::TypedAttribute<Imf_3_1::TimeCode>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfAttribute.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_1::TypedAttribute<float>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfAttribute.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_1::TypedAttribute<int>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfAttribute.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_1::TypedAttribute<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<char, std::allocator<char> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<char, std::allocator<char> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfOpaqueAttribute.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_1::OpaqueAttribute"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfStdIO.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_1::StdIFStream"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfStdIO.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_1::StdISStream"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfStdIO.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_1::StdOFStream"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfStdIO.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_1::StdOSStream"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<Imf_3_1::(anonymous namespace)::TOutSliceInfo, std::allocator<Imf_3_1::(anonymous namespace)::TOutSliceInfo> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<Imf_3_1::(anonymous namespace)::TOutSliceInfo, std::allocator<Imf_3_1::(anonymous namespace)::TOutSliceInfo> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<Imf_3_1::(anonymous namespace)::TOutSliceInfo>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfAttribute.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_1::TypedAttribute<Imath_3_1::Box<Imath_3_1::Vec2<float> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfAttribute.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_1::TypedAttribute<Imath_3_1::Box<Imath_3_1::Vec2<int> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfAttribute.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_1::TypedAttribute<Imath_3_1::Matrix33<double> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfAttribute.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_1::TypedAttribute<Imath_3_1::Matrix33<float> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfAttribute.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_1::TypedAttribute<Imath_3_1::Matrix44<double> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfAttribute.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_1::TypedAttribute<Imath_3_1::Vec2<double> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfAttribute.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_1::TypedAttribute<Imath_3_1::Vec2<float> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfAttribute.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_1::TypedAttribute<Imath_3_1::Vec2<int> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfAttribute.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_1::TypedAttribute<Imath_3_1::Vec3<double> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfAttribute.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_1::TypedAttribute<Imath_3_1::Vec3<float> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfAttribute.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_1::TypedAttribute<Imath_3_1::Vec3<int> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfAttribute.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_1::TypedAttribute<Imf_3_1::ChannelList>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfAttribute.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_1::TypedAttribute<Imf_3_1::CompressedIDManifest>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfAttribute.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_1::TypedAttribute<Imf_3_1::Compression>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfAttribute.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_1::TypedAttribute<Imf_3_1::DeepImageState>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfAttribute.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_1::TypedAttribute<Imf_3_1::Envmap>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfAttribute.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_1::TypedAttribute<Imf_3_1::KeyCode>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfAttribute.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_1::TypedAttribute<Imf_3_1::LineOrder>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfAttribute.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_1::TypedAttribute<Imf_3_1::Rational>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfAttribute.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_1::TypedAttribute<Imf_3_1::TileDescription>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfAttribute.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_1::TypedAttribute<double>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfAttribute.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_1::TypedAttribute<std::vector<float, std::allocator<float> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfAttribute.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_1::TypedAttribute<std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_pair.h",
+      "exposure": "by_value",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_pair.h",
+      "exposure": "by_value",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::pair<std::_Rb_tree_iterator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, bool>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<float*, std::allocator<float*> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<float*, std::allocator<float*> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<float*>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::vector<float*, std::allocator<float*> >, std::allocator<std::vector<float*, std::allocator<float*> > > >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::vector<float*, std::allocator<float*> >, std::allocator<std::vector<float*, std::allocator<float*> > > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<std::vector<float*, std::allocator<float*> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<unsigned int, std::allocator<unsigned int> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<unsigned int>"
+     }
+    ],
+    "vague_linkage": {
+     "symbol_added": 18,
+     "symbol_removed": 32
+    }
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      147,
+      147
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libOpenEXRCore-3_1.so.30",
+     "libOpenEXRCore-3_1.so.30"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 1,
+     "type_size_changed": 1
+    },
+    "type_events": [
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRCore/openexr_context.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct _exr_context_initializer_v2"
+     },
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRCore/openexr_context.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct _exr_context_initializer_v2"
+     }
+    ],
+    "vague_linkage": {}
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      211,
+      207
+     ],
+     "mangled_functions": [
+      211,
+      207
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libOpenEXRUtil-3_1.so.30",
+     "libOpenEXRUtil-3_1.so.30"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_1::FlatImageChannel*>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_1::FlatImageChannel*> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_1::FlatImageChannel*> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_1::FlatImageChannel*>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_1::FlatImageChannel*> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_1::FlatImageChannel*> > >::const_iterator, const std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_1::FlatImageChannel*>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_1::FlatImageChannel*> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_1::FlatImageChannel*> > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_PN7Imf_3_116FlatImageChannelEESt10_Select1stISB_ESt4lessIS5_ESaISB_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorISB_ERS7_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_1::FlatImageChannel*>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_1::FlatImageChannel*> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_1::FlatImageChannel*> > >::_M_get_insert_unique_pos(const std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_1::FlatImageChannel*>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_1::FlatImageChannel*> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_1::FlatImageChannel*> > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_PN7Imf_3_116FlatImageChannelEESt10_Select1stISB_ESt4lessIS5_ESaISB_EE24_M_get_insert_unique_posERS7_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_1::DeepImageChannel*>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_1::DeepImageChannel*> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_1::DeepImageChannel*> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_1::DeepImageChannel*>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_1::DeepImageChannel*> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_1::DeepImageChannel*> > >::const_iterator, const std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_1::DeepImageChannel*>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_1::DeepImageChannel*> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_1::DeepImageChannel*> > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_PN7Imf_3_116DeepImageChannelEESt10_Select1stISB_ESt4lessIS5_ESaISB_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorISB_ERS7_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_1::DeepImageChannel*>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_1::DeepImageChannel*> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_1::DeepImageChannel*> > >::_M_get_insert_unique_pos(const std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_1::DeepImageChannel*>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_1::DeepImageChannel*> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_1::DeepImageChannel*> > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_PN7Imf_3_116DeepImageChannelEESt10_Select1stISB_ESt4lessIS5_ESaISB_EE24_M_get_insert_unique_posERS7_",
+      "weak": true
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 39
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRUtil/ImfDeepImage.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Imf_3_1::DeepImage"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRUtil/ImfDeepImageLevel.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Imf_3_1::DeepImageLevel"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_tree.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_1::DeepImageChannel*>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_1::DeepImageChannel*> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_1::DeepImageChannel*> > >::_Rb_tree_impl<std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, true>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<std::_Rb_tree_node<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_1::DeepImageChannel*> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRUtil/ImfSampleCountChannel.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Imf_3_1::SampleCountChannel"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_tree.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_1::Image::ChannelInfo>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_1::Image::ChannelInfo> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_1::Image::ChannelInfo> > >::_Rb_tree_impl<std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, true>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<std::_Rb_tree_node<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_1::Image::ChannelInfo> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/basic_string.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Alloc_hider"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<char>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_tree.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::_Rb_tree_impl<std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, true>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<std::_Rb_tree_node<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRUtil/ImfDeepImageChannel.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Imf_3_1::DeepImageChannel"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRUtil/ImfFlatImage.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Imf_3_1::FlatImage"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRUtil/ImfFlatImageLevel.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Imf_3_1::FlatImageLevel"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_tree.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_1::FlatImageChannel*>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_1::FlatImageChannel*> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_1::FlatImageChannel*> > >::_Rb_tree_impl<std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, true>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<std::_Rb_tree_node<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_1::FlatImageChannel*> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRUtil/ImfFlatImageChannel.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Imf_3_1::FlatImageChannel"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRUtil/ImfDeepImageChannel.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Imf_3_1::TypedDeepImageChannel<Imath_3_1::half>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRUtil/ImfDeepImageChannel.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Imf_3_1::TypedDeepImageChannel<float>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRUtil/ImfDeepImageChannel.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Imf_3_1::TypedDeepImageChannel<unsigned int>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRUtil/ImfFlatImageChannel.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Imf_3_1::TypedFlatImageChannel<Imath_3_1::half>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRUtil/ImfFlatImageChannel.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Imf_3_1::TypedFlatImageChannel<float>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRUtil/ImfFlatImageChannel.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Imf_3_1::TypedFlatImageChannel<unsigned int>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_tree.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Rb_tree<Imf_3_1::Name, std::pair<const Imf_3_1::Name, Imf_3_1::Attribute*>, std::_Select1st<std::pair<const Imf_3_1::Name, Imf_3_1::Attribute*> >, std::less<Imf_3_1::Name>, std::allocator<std::pair<const Imf_3_1::Name, Imf_3_1::Attribute*> > >::_Rb_tree_impl<std::less<Imf_3_1::Name>, true>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<std::_Rb_tree_node<std::pair<const Imf_3_1::Name, Imf_3_1::Attribute*> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<float, std::allocator<float> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<float, std::allocator<float> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<float>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<unsigned char, std::allocator<unsigned char> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<unsigned char>"
+     }
+    ],
+    "vague_linkage": {
+     "symbol_removed": 4
+    }
+   }
+  ],
+  "seconds": 56.108062491,
+  "source": "openexr",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "3.1.4",
+   "3.1.5"
+  ]
+ },
+ "generated_at": "2026-09-03T23:25:14Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}
