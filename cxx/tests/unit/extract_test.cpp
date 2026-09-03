@@ -2,7 +2,7 @@
 // zstd/xz-compressed data.tar), extracts it with deb::extract_deb, and checks
 // that ordinary members land where the pipeline expects them while members
 // that could escape the destination are refused.
-#include "deb/extract.hpp"
+#include "adapters/libarchive/extract.hpp"
 
 #include <archive.h>
 #include <archive_entry.h>
@@ -82,7 +82,7 @@ int main() try {
   CHECK(make_deb(root / "demo.deb", data).has_value());
 
   const auto dest = root / "x";
-  const auto st = deb::extract_deb(root / "demo.deb", dest);
+  const auto st = deb::LibarchiveExtractor{}.extract(root / "demo.deb", dest);
   CHECK(st.has_value());
   if (st) {
     CHECK_EQ(st->files, 2U);
@@ -98,7 +98,7 @@ int main() try {
 
   // Not a .deb at all -> parse error, not a crash.
   CHECK(fs::write_file_atomic(root / "junk.deb", "hello").has_value());
-  const auto bad = deb::extract_deb(root / "junk.deb", root / "y");
+  const auto bad = deb::LibarchiveExtractor{}.extract(root / "junk.deb", root / "y");
   CHECK(!bad);
   if (bad) {
     std::println(
@@ -111,7 +111,7 @@ int main() try {
   }
 
   // Missing file -> io error.
-  const auto missing = deb::extract_deb(root / "nope.deb", root / "z");
+  const auto missing = deb::LibarchiveExtractor{}.extract(root / "nope.deb", root / "z");
   CHECK(!missing && missing.error().code == ErrorCode::io);
 
   // read_maybe_compressed handles xz and plain text alike.

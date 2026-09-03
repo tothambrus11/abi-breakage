@@ -1,4 +1,4 @@
-#include "core/version.hpp"
+#include "domain/version.hpp"
 
 #include "check.hpp"
 

@@ -27,7 +27,9 @@ Checks: >
   -readability-identifier-length,
   -readability-function-cognitive-complexity,
   -cert-err58-cpp,
-  -portability-avoid-pragma-once
+  -portability-avoid-pragma-once,
+  -readability-trailing-comma,
+  -cppcoreguidelines-pro-bounds-avoid-unchecked-container-access
 # Exclusions, in order:
 #   easily-swappable-parameters   : strong types already solve this where it matters.
 #   magic-numbers                 : thresholds are named constants; the rest are format widths.

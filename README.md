@@ -6,26 +6,46 @@ mechanisms (opaque layout, non-frozen enums, resilient dispatch, opt-in inlining
 would have absorbed them.
 
 - `cxx/` — the `abistudy` pipeline: a C++26 tool linking libabigail and libclang
-  with subcommands `select`, `resolve`, `diff`, `headers`, `analyze`, `report`.
-  Methodology, filters, and the production-readiness review live in
-  `cxx/METHODOLOGY.md`; the investigation of higher-fidelity designs
-  (libclang vs libabigail, tiered evidence, probe-TU DWARF) is
-  `cxx/FIDELITY.md`.
-- `cxx/study/` — the study workspace: plan, per-transition results, summary,
-  and the rendered report. Downloaded packages and header indexes are not
-  committed; the diff stage rebuilds them from `plan.json`.
+  with subcommands `select`, `resolve`, `diff`, `headers`, `analyze`, `report`,
+  organised as a hexagonal application (`src/domain`, `src/ports`,
+  `src/adapters`, `src/app`, `src/cli`).
+  - `cxx/METHODOLOGY.md` — how every number is measured and what it can support;
+  - `cxx/REVIEW.md` — the referee-style review of the methodology and the
+    corrections adopted (two break definitions, corrected mechanism map,
+    symbol strata, cluster bootstrap, release levels);
+  - `cxx/FIDELITY.md` — the design investigation for the next generation
+    (libclang vs libabigail, tiered evidence, probe-TU DWARF, profiling).
+- `cxx/study/` — the study workspace: selection, plan, per-transition results,
+  summary and the rendered reports. Downloaded packages, scratch and header
+  indexes are not committed; the diff stage rebuilds them from `plan.json`.
 - `scripts/`, `v2/`, `results/` — the earlier Python pipelines, kept for
   cross-checking.
 
 ## Building and running the gate
 
-Everything runs inside one Docker image; nothing is installed on the host.
+Natively on Ubuntu 24.04 (clang 23 from apt.llvm.org, libabigail 2.4,
+libclang-23-dev, libarchive, libcurl, OpenSSL, nlohmann-json, libdw/libelf):
+
+```sh
+cd cxx
+CXX=clang++-23 cmake -S . -B build -G Ninja && cmake --build build
+(cd build && ctest --output-on-failure)     # unit tests + 33-case calibration
+JOBS=2 scripts/check.sh                     # + clang-format and clang-tidy gate
+```
+
+Or inside the Docker image (Debian sid), with nothing installed on the host:
 
 ```sh
 docker build -t abistudy:dev cxx
 docker run --rm -v "$PWD/cxx:/work" -w /work abistudy:dev scripts/check.sh
 ```
 
-The gate enforces clang-format, builds with clang-tidy (bugprone, analyzer,
-concurrency and performance checks as errors), and runs the unit tests plus the
-thirty-case calibration suite. CI runs the same command.
+## Running the study
+
+```sh
+cxx/build/abistudy all --work cxx/study --c-limit 70 --cxx-limit 50 --releases 10 \
+  --workers 4 --deadline-minutes 270
+```
+
+Each stage is idempotent and resumable; `abistudy --help` lists the knobs
+(memory budget per child, big-pair serialisation, per-pair timeout, deadline).
