@@ -46,6 +46,8 @@ int main() try {
 
   return test::report("strong");
 } catch (const std::exception &e) {
-  std::fprintf(stderr, "strong: unexpected exception: %s\n", e.what());
+  static_cast<void>(std::fputs("strong: unexpected exception: ", stderr));
+  static_cast<void>(std::fputs(e.what(), stderr));
+  static_cast<void>(std::fputs("\n", stderr));
   return 1;
 }

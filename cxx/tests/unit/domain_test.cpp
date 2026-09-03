@@ -3,7 +3,6 @@
 // release levels, the statistics and the summary shape.
 
 #include <cstdio>
-#include <print>
 #include <set>
 
 #include "adapters/abigail/comparer.hpp"
@@ -371,6 +370,8 @@ int main() try {
   header_model();
   return test::report("domain");
 } catch (const std::exception &e) {
-  std::println(stderr, "domain: unexpected exception: {}", e.what());
+  static_cast<void>(std::fputs("domain: unexpected exception: ", stderr));
+  static_cast<void>(std::fputs(e.what(), stderr));
+  static_cast<void>(std::fputs("\n", stderr));
   return 1;
 }
