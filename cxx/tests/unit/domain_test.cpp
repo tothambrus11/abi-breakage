@@ -179,7 +179,7 @@ TypeEvent te(
   };
 }
 
-SymbolEvent se(ChangeKind kind, std::string symbol) {
+SymbolEvent se(ChangeKind kind, const std::string &symbol) {
   return SymbolEvent{
     .kind = kind,
     .symbol = SymbolName{symbol},
@@ -229,34 +229,24 @@ void rollup_definitions() {
   // one removed field (always), one third-party event, and three symbol
   // removals: declared, undeclared, unknown.
   auto o = object_with(
-    {TypeEvent{
+    {te(
        ChangeKind::field_added_to_struct, "struct A", "a.h", 1, TypeExposure::by_pointer, false,
        true
-     },
-     TypeEvent{
-       ChangeKind::type_size_changed, "struct A", "a.h", 1, TypeExposure::by_pointer, false, true
-     },
-     TypeEvent{
+     ),
+     te(ChangeKind::type_size_changed, "struct A", "a.h", 1, TypeExposure::by_pointer, false, true),
+     te(
        ChangeKind::field_added_to_struct, "struct B", "b.h", 2, TypeExposure::by_value, false, true
-     },
-     TypeEvent{
+     ),
+     te(
        ChangeKind::field_removed_from_struct, "struct C", "c.h", 1, TypeExposure::by_pointer, false,
        false
-     },
-     TypeEvent{
+     ),
+     te(
        ChangeKind::field_added_to_struct, "struct _IO_FILE", "/usr/include/stdio.h", 1,
        TypeExposure::by_pointer, true, true
-     }},
-    {SymbolEvent{
-       ChangeKind::symbol_removed, SymbolName{"declared_fn"}, "declared_fn()", std::nullopt, false
-     },
-     SymbolEvent{
-       ChangeKind::symbol_removed, SymbolName{"internal_fn"}, "internal_fn()", std::nullopt, false
-     },
-     SymbolEvent{
-       ChangeKind::symbol_removed, SymbolName{"mystery_fn"}, "mystery_fn()", std::nullopt, false
-     },
-     se(ChangeKind::symbol_added, "new_fn")}
+     )},
+    {se(ChangeKind::symbol_removed, "declared_fn"), se(ChangeKind::symbol_removed, "internal_fn"),
+     se(ChangeKind::symbol_removed, "mystery_fn"), se(ChangeKind::symbol_added, "new_fn")}
   );
   PairResult pr{
     .id = "x@1.0..1.1",

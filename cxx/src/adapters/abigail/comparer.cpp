@@ -712,7 +712,7 @@ bool declared_in_own_headers(
       if (sys_rel.empty())
         return true;
       // Under a system include root a top-level basename is not enough.
-      if (candidate == sys_rel || candidate.find('/') != std::string_view::npos)
+      if (candidate == sys_rel || candidate.contains('/'))
         return true;
     }
     if (slash == std::string_view::npos || slash == 0)

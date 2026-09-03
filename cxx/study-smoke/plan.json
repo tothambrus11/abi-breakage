@@ -2,206 +2,145 @@
  "data": {
   "jobs": [
    {
-    "source": "acl",
+    "source": "pam",
     "v1": {
      "binaries": [
       {
-       "name": "libacl1",
+       "name": "libpam-modules",
        "versions": [
-        "2.3.1-6"
+        "1.4.0-13"
        ]
       },
       {
-       "name": "libacl1-dbgsym",
+       "name": "libpam-modules-dbgsym",
        "versions": [
-        "2.3.1-6"
+        "1.4.0-13"
        ]
       },
       {
-       "name": "libacl1-dev",
+       "name": "libpam0g-dev",
        "versions": [
-        "2.3.1-6"
+        "1.4.0-13"
        ]
       }
      ],
      "dev": [
-      "libacl1-dev"
+      "libpam0g-dev"
      ],
+     "download_bytes": 968648,
      "runtime": [
-      "libacl1"
+      "libpam-modules"
      ],
-     "source_version": "2.3.1-6",
-     "upstream": "2.3.1"
+     "source_version": "1.4.0-13",
+     "upstream": "1.4.0"
     },
     "v2": {
      "binaries": [
       {
-       "name": "libacl1",
+       "name": "libpam-modules",
        "versions": [
-        "2.3.2-3"
+        "1.5.2-9.1+b1",
+        "1.5.2-9.1"
        ]
       },
       {
-       "name": "libacl1-dbgsym",
+       "name": "libpam-modules-dbgsym",
        "versions": [
-        "2.3.2-3"
+        "1.5.2-9.1+b1",
+        "1.5.2-9.1"
        ]
       },
       {
-       "name": "libacl1-dev",
+       "name": "libpam0g-dev",
        "versions": [
-        "2.3.2-3"
+        "1.5.2-9.1+b1",
+        "1.5.2-9.1"
        ]
       }
      ],
      "dev": [
-      "libacl1-dev"
+      "libpam0g-dev"
      ],
+     "download_bytes": 791172,
      "runtime": [
-      "libacl1"
+      "libpam-modules"
      ],
-     "source_version": "2.3.2-3",
-     "upstream": "2.3.2"
+     "source_version": "1.5.2-9.1",
+     "upstream": "1.5.2"
     }
    },
    {
-    "source": "acl",
+    "source": "jemalloc",
     "v1": {
      "binaries": [
       {
-       "name": "libacl1",
+       "name": "libjemalloc-dev",
        "versions": [
-        "2.3.2-3"
+        "3.6.0-11+riscv64"
        ]
       },
       {
-       "name": "libacl1-dbgsym",
+       "name": "libjemalloc1",
        "versions": [
-        "2.3.2-3"
+        "3.6.0-11+riscv64"
        ]
       },
       {
-       "name": "libacl1-dev",
+       "name": "libjemalloc1-dbgsym",
        "versions": [
-        "2.3.2-3"
+        "3.6.0-11+riscv64"
        ]
       }
      ],
      "dev": [
-      "libacl1-dev"
+      "libjemalloc-dev"
      ],
+     "download_bytes": 0,
      "runtime": [
-      "libacl1"
+      "libjemalloc1"
      ],
-     "source_version": "2.3.2-3",
-     "upstream": "2.3.2"
+     "source_version": "3.6.0-11+riscv64",
+     "upstream": "3.6.0"
     },
     "v2": {
      "binaries": [
       {
-       "name": "libacl1",
+       "name": "libjemalloc-dev",
        "versions": [
-        "2.4.0-1"
+        "5.0.1-1"
        ]
       },
       {
-       "name": "libacl1-dbgsym",
+       "name": "libjemalloc2",
        "versions": [
-        "2.4.0-1"
+        "5.0.1-1"
        ]
       },
       {
-       "name": "libacl1-dev",
+       "name": "libjemalloc2-dbgsym",
        "versions": [
-        "2.4.0-1"
+        "5.0.1-1"
        ]
       }
      ],
      "dev": [
-      "libacl1-dev"
+      "libjemalloc-dev"
      ],
+     "download_bytes": 1540884,
      "runtime": [
-      "libacl1"
+      "libjemalloc2"
      ],
-     "source_version": "2.4.0-1",
-     "upstream": "2.4.0"
-    }
-   },
-   {
-    "source": "bzip2",
-    "v1": {
-     "binaries": [
-      {
-       "name": "libbz2-1.0",
-       "versions": [
-        "1.0.6-9.2"
-       ]
-      },
-      {
-       "name": "libbz2-1.0-dbgsym",
-       "versions": [
-        "1.0.6-9.2"
-       ]
-      },
-      {
-       "name": "libbz2-dev",
-       "versions": [
-        "1.0.6-9.2"
-       ]
-      }
-     ],
-     "dev": [
-      "libbz2-dev"
-     ],
-     "runtime": [
-      "libbz2-1.0"
-     ],
-     "source_version": "1.0.6-9.2",
-     "upstream": "1.0.6"
-    },
-    "v2": {
-     "binaries": [
-      {
-       "name": "libbz2-1.0",
-       "versions": [
-        "1.0.8-6+b3",
-        "1.0.8-6+b2",
-        "1.0.8-6+b1",
-        "1.0.8-6"
-       ]
-      },
-      {
-       "name": "libbz2-1.0-dbgsym",
-       "versions": [
-        "1.0.8-6+b3",
-        "1.0.8-6+b2",
-        "1.0.8-6+b1",
-        "1.0.8-6"
-       ]
-      },
-      {
-       "name": "libbz2-dev",
-       "versions": [
-        "1.0.8-6+b3",
-        "1.0.8-6+b2",
-        "1.0.8-6+b1",
-        "1.0.8-6"
-       ]
-      }
-     ],
-     "dev": [
-      "libbz2-dev"
-     ],
-     "runtime": [
-      "libbz2-1.0"
-     ],
-     "source_version": "1.0.8-6",
-     "upstream": "1.0.8"
+     "source_version": "5.0.1-1",
+     "upstream": "5.0.1"
     }
    }
   ]
  },
- "generated_at": "2026-09-02T11:42:38Z",
- "schema": "abistudy/plan/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-03T22:32:38Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/plan/2",
+ "tool": "abistudy 4.0.0"
 }

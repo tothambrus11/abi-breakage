@@ -141,7 +141,7 @@ Result<void> run(const Args &a) {
   };
   ABISTUDY_TRY_VOID(ensure_workspace(ws, sv));
 
-  const auto do_select = [&]() -> Result<void> {
+  const auto do_select = [&] -> Result<void> {
     SelectOptions o;
     ABISTUDY_TRY(o.c_limit, a.uint("c-limit", o.c_limit));
     ABISTUDY_TRY(o.cxx_limit, a.uint("cxx-limit", o.cxx_limit));
@@ -149,14 +149,14 @@ Result<void> run(const Args &a) {
     ABISTUDY_TRY_VOID(run_select(ws, sv, o));
     return {};
   };
-  const auto do_resolve = [&]() -> Result<void> {
+  const auto do_resolve = [&] -> Result<void> {
     ResolveOptions o;
     ABISTUDY_TRY(o.releases, a.uint("releases", o.releases));
     ABISTUDY_TRY(o.max_scan, a.uint("max-scan", o.max_scan));
     ABISTUDY_TRY_VOID(run_resolve(ws, sv, o));
     return {};
   };
-  const auto do_diff = [&]() -> Result<void> {
+  const auto do_diff = [&] -> Result<void> {
     DiffOptions o;
     ABISTUDY_TRY(o.workers, a.uint("workers", o.workers));
     ABISTUDY_TRY(auto secs, a.uint("pair-timeout", 1200));
@@ -189,12 +189,12 @@ Result<void> run(const Args &a) {
       return fail(ErrorCode::io, "cannot resolve /proc/self/exe: {}", ec.message());
     return run_diff(ws, sv, self, o);
   };
-  const auto do_headers = [&]() -> Result<void> {
+  const auto do_headers = [&] -> Result<void> {
     HeadersOptions o;
     ABISTUDY_TRY(o.max_files, a.uint("max-files", o.max_files));
     return run_headers(ws, sv, o);
   };
-  const auto do_analyze = [&]() -> Result<void> {
+  const auto do_analyze = [&] -> Result<void> {
     ABISTUDY_TRY(auto text, run_analyze(ws, sv));
     std::print("{}", text);
     return {};

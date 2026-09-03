@@ -73,7 +73,7 @@ std::vector<std::filesystem::path> find_shared_objects(const std::filesystem::pa
     if (it->is_symlink(ec) || !it->is_regular_file(ec))
       continue;
     const auto name = it->path().filename().string();
-    if (!name.starts_with("lib") || name.find(".so") == std::string::npos)
+    if (!name.starts_with("lib") || !name.contains(".so"))
       continue;
     if (has_elf_magic(it->path()))
       out.push_back(it->path());

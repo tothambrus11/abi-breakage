@@ -175,10 +175,13 @@ Json header_section(const Ptrs &ts) {
   std::uint64_t macro_events = 0;
   std::vector<std::pair<std::string, std::uint32_t>> top;
   for (const auto *t : withh) {
-    body_events += t->headers.value().inline_body_changed;
-    macro_events += t->headers.value().macro_value_changed;
-    if (t->headers.value().inline_body_changed)
-      top.emplace_back(t->id, t->headers.value().inline_body_changed);
+    if (!t->headers.has_value())
+      continue;
+    const HeaderDiff &h = *t->headers;
+    body_events += h.inline_body_changed;
+    macro_events += h.macro_value_changed;
+    if (h.inline_body_changed)
+      top.emplace_back(t->id, h.inline_body_changed);
   }
   std::ranges::sort(top, std::greater<>{}, [](const auto &p) { return p.second; });
   if (top.size() > 10)
@@ -189,15 +192,15 @@ Json header_section(const Ptrs &ts) {
   return {
     {"with_data", withh.size()},
     {"with_definitions",
-     count([](const Transition &t) { return t.headers.value().definitions_common > 0; })},
+     count([](const Transition &t) { return t.headers && t.headers->definitions_common > 0; })},
     {"body_changed",
-     count([](const Transition &t) { return t.headers.value().inline_body_changed > 0; })},
+     count([](const Transition &t) { return t.headers && t.headers->inline_body_changed > 0; })},
     {"body_events", body_events},
     {"macro_changed",
-     count([](const Transition &t) { return t.headers.value().macro_value_changed > 0; })},
+     count([](const Transition &t) { return t.headers && t.headers->macro_value_changed > 0; })},
     {"macro_events", macro_events},
     {"macro_changed_nonversion", count([](const Transition &t) {
-       return t.headers.value().macro_value_changed_nonversion > 0;
+       return t.headers && t.headers->macro_value_changed_nonversion > 0;
      })},
     {"poor_coverage", count([](const Transition &t) { return t.header_coverage_poor; })},
     {"top", topj}

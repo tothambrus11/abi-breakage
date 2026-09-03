@@ -206,10 +206,11 @@ Outcome run_case(const stdfs::path &dir) {
   for (const auto &[k, n] : obs.abi.vague_linkage_counts.items())
     got += std::format("vague:{}={} ", to_string(k), n);
   for (const auto &e : obs.abi.type_events) {
-    if (!e.third_party && is_layout_kind(e.kind))
+    if (!e.third_party && is_layout_kind(e.kind)) {
       got += std::format(
         "[{} {}{}] ", e.type_name, to_string(e.exposure), e.append_only ? " append" : ""
       );
+    }
   }
   if (hd.inline_body_changed)
     got += std::format("[hdr bodies={}] ", hd.inline_body_changed);

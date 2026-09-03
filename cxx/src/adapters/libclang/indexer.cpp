@@ -50,7 +50,7 @@ bool looks_like_header(const std::filesystem::path &p) {
   if (std::ranges::find(header_extensions, ext) != std::end(header_extensions))
     return true;
   // libstdc++-style extensionless headers under a c++/ directory.
-  return ext.empty() && p.string().find("/c++/") != std::string::npos;
+  return ext.empty() && p.string().contains("/c++/");
 }
 
 std::vector<std::filesystem::path> header_files(const std::filesystem::path &root) {

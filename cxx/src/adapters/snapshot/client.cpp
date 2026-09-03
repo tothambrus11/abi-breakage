@@ -93,7 +93,10 @@ void common_options(CURL *h, const std::string &url, const ClientOptions &opt) {
 
 std::chrono::seconds backoff(long status, int attempt) {
   const auto base = status == 429 ? std::chrono::seconds(10) : std::chrono::seconds(1);
-  return std::min(base * (1L << static_cast<unsigned>(attempt - 1)), std::chrono::seconds(60));
+  auto delay = base;
+  for (int i = 1; i < attempt && delay < std::chrono::seconds(60); ++i)
+    delay *= 2;
+  return std::min(delay, std::chrono::seconds(60));
 }
 
 } // namespace

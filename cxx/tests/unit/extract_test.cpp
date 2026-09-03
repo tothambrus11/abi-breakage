@@ -35,7 +35,7 @@ void add_regular(archive *a, const std::string &name, const std::string &content
 
 /// @brief A tar.xz with the given (path, content) members, as bytes.
 std::string make_data_tar(const std::vector<std::pair<std::string, std::string>> &files) {
-  std::string buf(1 << 20, '\0');
+  std::string buf(std::size_t{1} << 20U, '\0');
   std::size_t used = 0;
   archive *a = archive_write_new();
   archive_write_set_format_pax_restricted(a);
@@ -51,7 +51,7 @@ std::string make_data_tar(const std::vector<std::pair<std::string, std::string>>
 
 /// @brief Wraps control/data tarballs in the ar container a .deb is.
 Result<void> make_deb(const stdfs::path &out, const std::string &data_tar) {
-  std::string buf(1 << 20, '\0');
+  std::string buf(std::size_t{1} << 20U, '\0');
   std::size_t used = 0;
   archive *a = archive_write_new();
   archive_write_set_format_ar_svr4(a);
