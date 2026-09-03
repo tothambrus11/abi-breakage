@@ -45,6 +45,28 @@ struct Loaded {
   bool debug_info_found = false;
 };
 
+/// @brief libabigail < 2.5 takes the debug-info roots as `vector<char**>`
+///        (pointers to C strings), later versions as `vector<string>`. Both are
+///        served from one call site.
+template <class Env = ir::environment>
+elf_based_reader_sptr create_reader_compat(const std::string &elf, const DebugRoots &roots, Env &env) {
+  if constexpr (std::is_invocable_v<
+                  decltype(&dwarf::create_reader), const std::string &,
+                  const std::vector<std::string> &, Env &, bool, bool>) {
+    return dwarf::create_reader(elf, roots, env, /*read_all_types=*/false, /*kernel=*/false);
+  } else {
+    std::vector<char *> cstrs;
+    cstrs.reserve(roots.size());
+    for (const auto &r : roots)
+      cstrs.push_back(const_cast<char *>(r.c_str())); // NOLINT(*-const-cast): API takes char**
+    std::vector<char **> ptrs;
+    ptrs.reserve(cstrs.size());
+    for (auto &c : cstrs)
+      ptrs.push_back(&c);
+    return dwarf::create_reader(elf, ptrs, env, /*read_all_types=*/false, /*kernel=*/false);
+  }
+}
+
 /// @brief Reads one shared object into a corpus, restricted to types declared
 ///        under `public_headers` when that directory is given.
 Result<Loaded> load(ir::environment &env, const Side &s, const DebugRoots &roots) {
@@ -54,10 +76,7 @@ Result<Loaded> load(ir::environment &env, const Side &s, const DebugRoots &roots
 
   elf_based_reader_sptr rdr;
   try {
-    rdr = dwarf::create_reader(
-      s.elf.string(), roots, env,
-      /*load_all_types=*/false, /*linux_kernel_mode=*/false
-    );
+    rdr = create_reader_compat(s.elf.string(), roots, env);
   } catch (const std::exception &e) {
     return fail(ErrorCode::abi_reader, "libabigail reader for '{}': {}", s.elf.string(), e.what());
   }
