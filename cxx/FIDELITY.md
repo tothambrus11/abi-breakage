@@ -435,6 +435,31 @@ join:
   demonstrably linked-to — no heuristic needed. This also upgrades the
   headline metric from "a symbol was removed" to "a removal that would have
   broken N packages", weighting every break by observed clients.
+
+  **L1 is one-directional evidence.** The archive's importers are a biased
+  sample of a library's real clients — much consumption happens outside any
+  package registry (proprietary software, user builds, other distros,
+  containers, vendored copies), and some libraries are consumed *mostly*
+  there. So membership in L1 is proof of use, but absence from L1 is proof
+  of nothing: L1 may only ever *add* a symbol to the surface or add weight
+  to a break, never demote one, and every L1-derived count is reported as a
+  lower bound ("≥ N archive packages"), the same scope caveat popcon already
+  imposes on the corpus. The declared surface L0 remains the headline's
+  backbone precisely because it does not depend on observing clients.
+
+  **Containment check: L1 ⊆ L0 is a free configuration validator.** In-archive
+  clients compile against the same public headers we parse, so a symbol that
+  archive binaries demonstrably import but our clang model cannot find a
+  declaration for means the model is wrong, not the clients: a header the
+  parse missed, a configuration branch not taken, a generated header, or a
+  language misclassification. Per package, `|L1 ∩ L0| / |L1|` is therefore a
+  parse-fidelity score with an expected value near 1, computable without any
+  ground-truth labelling. The residue L1 \ L0 is a ranked diagnostic queue —
+  after excluding the known-legitimate escapes (importers from the same
+  source package, `PRIVATE`-node symbols knowingly used, `dlsym`-style and
+  foreign-language bindings that never touch the headers) — and a large
+  residue fails the package's profile in §7 before its numbers are trusted,
+  alongside the fatal-diagnostic rate it usually explains.
 * **L2 — maintainer-tracked surface**: exported ∩ listed in
   `debian/<pkg>.symbols`. Debian's `dpkg-gensymbols` machinery exists
   precisely to track the ABI per package; where a symbols file exists it is
