@@ -1,0 +1,82 @@
+{
+ "data": {
+  "bytes_extracted": 12817017,
+  "id": "jemalloc@5.3.0..5.3.1",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      40,
+      43
+     ],
+     "mangled_functions": [
+      20,
+      20
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 4
+    },
+    "soname": [
+     "libjemalloc.so.2",
+     "libjemalloc.so.2"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function void* pvalloc(size_t)",
+      "symbol": "pvalloc",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void free_sized(void*, size_t)",
+      "symbol": "free_sized",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void free_aligned_sized(void*, size_t, size_t)",
+      "symbol": "free_aligned_sized",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "const char* malloc_conf_2_conf_harder",
+      "symbol": "malloc_conf_2_conf_harder",
+      "weak": true
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 8.064532599,
+  "source": "jemalloc",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "5.3.0",
+   "5.3.1"
+  ]
+ },
+ "generated_at": "2026-09-03T23:33:18Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

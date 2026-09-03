@@ -1,0 +1,57 @@
+{
+ "data": {
+  "bytes_extracted": 5577292,
+  "id": "gmp@6.1.0+dfsg..6.1.1+dfsg",
+  "object_errors": [
+   "missing package: libgmp10-dbgsym"
+  ],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      false,
+      true
+     ],
+     "exported_functions": [
+      591,
+      591
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libgmp.so.10",
+     "libgmp.so.10"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 4.511529937,
+  "source": "gmp",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "6.1.0+dfsg",
+   "6.1.1+dfsg"
+  ]
+ },
+ "generated_at": "2026-09-03T23:37:55Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

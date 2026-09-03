@@ -1,0 +1,64 @@
+{
+ "data": {
+  "bytes_extracted": 2698901,
+  "id": "libsigc++-2.0@2.10.2..2.10.4",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      95,
+      94
+     ],
+     "mangled_functions": [
+      95,
+      94
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libsigc-2.0.so.0",
+     "libsigc-2.0.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__cxx11::_List_base<sigc::slot_base, std::allocator<sigc::slot_base> >::_M_clear()",
+      "symbol": "_ZNSt7__cxx1110_List_baseIN4sigc9slot_baseESaIS2_EE8_M_clearEv",
+      "weak": true
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {
+     "symbol_removed": 1
+    }
+   }
+  ],
+  "seconds": 11.62258692,
+  "source": "libsigc++-2.0",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "2.10.2",
+   "2.10.4"
+  ]
+ },
+ "generated_at": "2026-09-03T23:45:01Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

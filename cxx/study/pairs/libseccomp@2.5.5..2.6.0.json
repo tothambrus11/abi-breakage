@@ -1,0 +1,99 @@
+{
+ "data": {
+  "bytes_extracted": 1411399,
+  "id": "libseccomp@2.5.5..2.6.0",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      32,
+      37
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "enum_case_added": 1,
+     "symbol_added": 5
+    },
+    "soname": [
+     "libseccomp.so.2",
+     "libseccomp.so.2"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function int seccomp_transaction_start(const scmp_filter_ctx)",
+      "symbol": "seccomp_transaction_start",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void seccomp_transaction_reject(const scmp_filter_ctx)",
+      "symbol": "seccomp_transaction_reject",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int seccomp_transaction_commit(const scmp_filter_ctx)",
+      "symbol": "seccomp_transaction_commit",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int seccomp_precompute(const scmp_filter_ctx)",
+      "symbol": "seccomp_precompute",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int seccomp_export_bpf_mem(const scmp_filter_ctx, void*, size_t*)",
+      "symbol": "seccomp_export_bpf_mem",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../include/seccomp.h",
+      "exposure": "by_value",
+      "kind": "enum_case_added",
+      "third_party": false,
+      "type": "enum scmp_filter_attr"
+     }
+    ],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 3.303846932,
+  "source": "libseccomp",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "2.5.5",
+   "2.6.0"
+  ]
+ },
+ "generated_at": "2026-09-03T23:43:54Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

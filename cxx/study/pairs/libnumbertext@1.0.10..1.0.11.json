@@ -1,0 +1,1845 @@
+{
+ "data": {
+  "bytes_extracted": 5329200,
+  "id": "libnumbertext@1.0.10..1.0.11",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      354,
+      325
+     ],
+     "mangled_functions": [
+      354,
+      325
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libnumbertext-1.0.so.0",
+     "libnumbertext-1.0.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method bool std::__detail::_Compiler<std::__cxx11::regex_traits<wchar_t> >::_M_expression_term<true, false>(std::pair<bool, wchar_t>&, std::__detail::_BracketMatcher<std::__cxx11::regex_traits<wchar_t>, true, false>&)  ->  method bool std::__detail::_Compiler<std::__cxx11::regex_traits<wchar_t> >::_M_expression_term<true, false>(std::__detail::_Compiler<std::__cxx11::regex_traits<wchar_t> >::_BracketState&, std::__detail::_Compiler<std::__cxx11::regex_traits<wchar_t> >::_BracketMatcher&)",
+      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIwEEE18_M_expression_termILb1ELb0EEEbRSt4pairIbwERNS_15_BracketMatcherIS3_XT_EXT0_EEE",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method bool std::__detail::_Compiler<std::__cxx11::regex_traits<wchar_t> >::_M_expression_term<false, true>(std::pair<bool, wchar_t>&, std::__detail::_BracketMatcher<std::__cxx11::regex_traits<wchar_t>, false, true>&)  ->  method bool std::__detail::_Compiler<std::__cxx11::regex_traits<wchar_t> >::_M_expression_term<false, true>(std::__detail::_Compiler<std::__cxx11::regex_traits<wchar_t> >::_BracketState&, std::__detail::_Compiler<std::__cxx11::regex_traits<wchar_t> >::_BracketMatcher&)",
+      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIwEEE18_M_expression_termILb0ELb1EEEbRSt4pairIbwERNS_15_BracketMatcherIS3_XT_EXT0_EEE",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method bool std::__detail::_Compiler<std::__cxx11::regex_traits<wchar_t> >::_M_expression_term<false, false>(std::pair<bool, wchar_t>&, std::__detail::_BracketMatcher<std::__cxx11::regex_traits<wchar_t>, false, false>&)  ->  method bool std::__detail::_Compiler<std::__cxx11::regex_traits<wchar_t> >::_M_expression_term<false, false>(std::__detail::_Compiler<std::__cxx11::regex_traits<wchar_t> >::_BracketState&, std::__detail::_Compiler<std::__cxx11::regex_traits<wchar_t> >::_BracketMatcher&)",
+      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIwEEE18_M_expression_termILb0ELb0EEEbRSt4pairIbwERNS_15_BracketMatcherIS3_XT_EXT0_EEE",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method bool std::__detail::_Compiler<std::__cxx11::regex_traits<char> >::_M_expression_term<true, true>(std::pair<bool, char>&, std::__detail::_BracketMatcher<std::__cxx11::regex_traits<char>, true, true>&)  ->  method bool std::__detail::_Compiler<std::__cxx11::regex_traits<char> >::_M_expression_term<true, true>(std::__detail::_Compiler<std::__cxx11::regex_traits<char> >::_BracketState&, std::__detail::_Compiler<std::__cxx11::regex_traits<char> >::_BracketMatcher&)",
+      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIcEEE18_M_expression_termILb1ELb1EEEbRSt4pairIbcERNS_15_BracketMatcherIS3_XT_EXT0_EEE",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method bool std::__detail::_Compiler<std::__cxx11::regex_traits<char> >::_M_expression_term<true, false>(std::pair<bool, char>&, std::__detail::_BracketMatcher<std::__cxx11::regex_traits<char>, true, false>&)  ->  method bool std::__detail::_Compiler<std::__cxx11::regex_traits<char> >::_M_expression_term<true, false>(std::__detail::_Compiler<std::__cxx11::regex_traits<char> >::_BracketState&, std::__detail::_Compiler<std::__cxx11::regex_traits<char> >::_BracketMatcher&)",
+      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIcEEE18_M_expression_termILb1ELb0EEEbRSt4pairIbcERNS_15_BracketMatcherIS3_XT_EXT0_EEE",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method bool std::__detail::_Compiler<std::__cxx11::regex_traits<char> >::_M_expression_term<false, false>(std::pair<bool, char>&, std::__detail::_BracketMatcher<std::__cxx11::regex_traits<char>, false, false>&)  ->  method bool std::__detail::_Compiler<std::__cxx11::regex_traits<char> >::_M_expression_term<false, false>(std::__detail::_Compiler<std::__cxx11::regex_traits<char> >::_BracketState&, std::__detail::_Compiler<std::__cxx11::regex_traits<char> >::_BracketMatcher&)",
+      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIcEEE18_M_expression_termILb0ELb0EEEbRSt4pairIbcERNS_15_BracketMatcherIS3_XT_EXT0_EEE",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method bool std::__detail::_Compiler<std::__cxx11::regex_traits<wchar_t> >::_M_expression_term<true, true>(std::pair<bool, wchar_t>&, std::__detail::_BracketMatcher<std::__cxx11::regex_traits<wchar_t>, true, true>&)  ->  method bool std::__detail::_Compiler<std::__cxx11::regex_traits<wchar_t> >::_M_expression_term<true, true>(std::__detail::_Compiler<std::__cxx11::regex_traits<wchar_t> >::_BracketState&, std::__detail::_Compiler<std::__cxx11::regex_traits<wchar_t> >::_BracketMatcher&)",
+      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIwEEE18_M_expression_termILb1ELb1EEEbRSt4pairIbwERNS_15_BracketMatcherIS3_XT_EXT0_EEE",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method bool std::__detail::_Compiler<std::__cxx11::regex_traits<char> >::_M_expression_term<false, true>(std::pair<bool, char>&, std::__detail::_BracketMatcher<std::__cxx11::regex_traits<char>, false, true>&)  ->  method bool std::__detail::_Compiler<std::__cxx11::regex_traits<char> >::_M_expression_term<false, true>(std::__detail::_Compiler<std::__cxx11::regex_traits<char> >::_BracketState&, std::__detail::_Compiler<std::__cxx11::regex_traits<char> >::_BracketMatcher&)",
+      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIcEEE18_M_expression_termILb0ELb1EEEbRSt4pairIbcERNS_15_BracketMatcherIS3_XT_EXT0_EEE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > std::operator+<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >(const wchar_t*, const std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >&)",
+      "symbol": "_ZStplIwSt11char_traitsIwESaIwEENSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_RKS8_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > std::operator+<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >(std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >&&, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >&&)",
+      "symbol": "_ZStplIwSt11char_traitsIwESaIwEENSt7__cxx1112basic_stringIT_T0_T1_EEOS8_S9_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function __gnu_cxx::__normal_iterator<const std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >*, std::vector<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::allocator<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > std::find<__gnu_cxx::__normal_iterator<const std::__cxx11::basic_string<wchar_t>*, std::vector<std::__cxx11::basic_string<wchar_t> > >, std::__cxx11::basic_string<wchar_t> >(__gnu_cxx::__normal_iterator<const std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >*, std::vector<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::allocator<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > >, __gnu_cxx::__normal_iterator<const std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >*, std::vector<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::allocator<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > >, const std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >&)",
+      "symbol": "_ZSt4findIN9__gnu_cxx17__normal_iteratorIPKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEESt6vectorIS7_SaIS7_EEEES7_ET_SE_SE_RKT0_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function std::back_insert_iterator<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > std::regex_replace<std::back_insert_iterator<std::__cxx11::basic_string<wchar_t> >, __gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t> >, std::__cxx11::regex_traits<wchar_t>, wchar_t>(std::back_insert_iterator<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, __gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, __gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, const std::__cxx11::basic_regex<wchar_t, std::__cxx11::regex_traits<wchar_t> >&, const wchar_t*, std::regex_constants::match_flag_type)",
+      "symbol": "_ZSt13regex_replaceISt20back_insert_iteratorINSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEEN9__gnu_cxx17__normal_iteratorIPKwS6_EENS1_12regex_traitsIwEEwET_SF_T0_SG_RKNS1_11basic_regexIT2_T1_EEPKSI_NSt15regex_constants15match_flag_typeE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function std::back_insert_iterator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > std::regex_replace<std::back_insert_iterator<std::__cxx11::basic_string<char> >, __gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char> >, std::__cxx11::regex_traits<char>, char>(std::back_insert_iterator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, const std::__cxx11::basic_regex<char, std::__cxx11::regex_traits<char> >&, const char*, std::regex_constants::match_flag_type)",
+      "symbol": "_ZSt13regex_replaceISt20back_insert_iteratorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEN9__gnu_cxx17__normal_iteratorIPKcS6_EENS1_12regex_traitsIcEEcET_SF_T0_SG_RKNS1_11basic_regexIT2_T1_EEPKSI_NSt15regex_constants15match_flag_typeE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function bool std::binary_search<__gnu_cxx::__normal_iterator<wchar_t const*, std::vector<wchar_t, std::allocator<wchar_t> > >, wchar_t>(__gnu_cxx::__normal_iterator<wchar_t const*, std::vector<wchar_t, std::allocator<wchar_t> > >, __gnu_cxx::__normal_iterator<wchar_t const*, std::vector<wchar_t, std::allocator<wchar_t> > >, const wchar_t&)",
+      "symbol": "_ZSt13binary_searchIN9__gnu_cxx17__normal_iteratorIPKwSt6vectorIwSaIwEEEEwEbT_S8_RKT0_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function bool std::binary_search<__gnu_cxx::__normal_iterator<char const*, std::vector<char, std::allocator<char> > >, char>(__gnu_cxx::__normal_iterator<char const*, std::vector<char, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char const*, std::vector<char, std::allocator<char> > >, const char&)",
+      "symbol": "_ZSt13binary_searchIN9__gnu_cxx17__normal_iteratorIPKcSt6vectorIcSaIcEEEEcEbT_S8_RKT0_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual std::_Sp_counted_ptr_inplace<std::__detail::_NFA<std::__cxx11::regex_traits<wchar_t> >, std::allocator<std::__detail::_NFA<std::__cxx11::regex_traits<wchar_t> > >, (__gnu_cxx::_Lock_policy)2>::~_Sp_counted_ptr_inplace(int)",
+      "symbol": "_ZNSt23_Sp_counted_ptr_inplaceINSt8__detail4_NFAINSt7__cxx1112regex_traitsIwEEEESaIS5_ELN9__gnu_cxx12_Lock_policyE2EED0Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual void* std::_Sp_counted_ptr_inplace<std::__detail::_NFA<std::__cxx11::regex_traits<wchar_t> >, std::allocator<std::__detail::_NFA<std::__cxx11::regex_traits<wchar_t> > >, (__gnu_cxx::_Lock_policy)2>::_M_get_deleter(const std::type_info&)",
+      "symbol": "_ZNSt23_Sp_counted_ptr_inplaceINSt8__detail4_NFAINSt7__cxx1112regex_traitsIwEEEESaIS5_ELN9__gnu_cxx12_Lock_policyE2EE14_M_get_deleterERKSt9type_info",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual void std::_Sp_counted_ptr_inplace<std::__detail::_NFA<std::__cxx11::regex_traits<wchar_t> >, std::allocator<std::__detail::_NFA<std::__cxx11::regex_traits<wchar_t> > >, (__gnu_cxx::_Lock_policy)2>::_M_dispose()",
+      "symbol": "_ZNSt23_Sp_counted_ptr_inplaceINSt8__detail4_NFAINSt7__cxx1112regex_traitsIwEEEESaIS5_ELN9__gnu_cxx12_Lock_policyE2EE10_M_disposeEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual void* std::_Sp_counted_ptr_inplace<std::__detail::_NFA<std::__cxx11::regex_traits<char> >, std::allocator<std::__detail::_NFA<std::__cxx11::regex_traits<char> > >, (__gnu_cxx::_Lock_policy)2>::_M_get_deleter(const std::type_info&)",
+      "symbol": "_ZNSt23_Sp_counted_ptr_inplaceINSt8__detail4_NFAINSt7__cxx1112regex_traitsIcEEEESaIS5_ELN9__gnu_cxx12_Lock_policyE2EE14_M_get_deleterERKSt9type_info",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::_Destroy_aux<false>::__destroy<std::__detail::_State<char>*>(std::__detail::_State<char>*)",
+      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIPNSt8__detail6_StateIcEEEEvT_S6_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function std::__detail::__enable_if_contiguous_iter std::__detail::__compile_nfa<std::__cxx11::regex_traits<wchar_t>, wchar_t const*>(const wchar_t*, const wchar_t*, const std::__cxx11::regex_traits<wchar_t>::locale_type&, std::regex_constants::syntax_option_type)",
+      "symbol": "_ZNSt8__detail13__compile_nfaINSt7__cxx1112regex_traitsIwEEPKwEENSt9enable_ifIXsrNS_20__is_contiguous_iterIT0_EE5valueESt10shared_ptrIKNS_4_NFAIT_EEEE4typeES8_S8_RKNSC_11locale_typeENSt15regex_constants18syntax_option_typeE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::_Destroy_aux<false>::__destroy<std::__detail::_State<wchar_t>*>(std::__detail::_State<wchar_t>*)",
+      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIPNSt8__detail6_StateIwEEEEvT_S6_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function bool std::__detail::__regex_algo_impl<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t> >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t> > > >, wchar_t, std::__cxx11::regex_traits<wchar_t>, (std::__detail::_RegexExecutorPolicy)0, true>(__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, __gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::__cxx11::match_results<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > >&, const std::__cxx11::basic_regex<wchar_t, std::__cxx11::regex_traits<wchar_t> >&, std::regex_constants::match_flag_type)",
+      "symbol": "_ZNSt8__detail17__regex_algo_implIN9__gnu_cxx17__normal_iteratorIPKwNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEEESaINS5_9sub_matchISB_EEEwNS5_12regex_traitsIwEELNS_20_RegexExecutorPolicyE0ELb1EEEbT_SI_RNS5_13match_resultsISI_T0_EERKNS5_11basic_regexIT1_T2_EENSt15regex_constants15match_flag_typeE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::_Destroy_aux<false>::__destroy<std::__cxx11::basic_string<wchar_t>*>(std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >*)",
+      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIPNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEEEvT_S9_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::_Destroy_aux<false>::__destroy<std::__cxx11::basic_string<char>*>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*)",
+      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEvT_S9_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros>, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_rehash(std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros>, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::size_type, const std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros>, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::__rehash_state&)",
+      "symbol": "_ZNSt10_HashtableINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_5SorosESaIS9_ENSt8__detail10_Select1stESt8equal_toIS5_ESt4hashIS5_ENSB_18_Mod_range_hashingENSB_20_Default_ranged_hashENSB_20_Prime_rehash_policyENSB_17_Hashtable_traitsILb1ELb0ELb1EEEE9_M_rehashEmRKm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual void std::_Sp_counted_ptr_inplace<std::__detail::_NFA<std::__cxx11::regex_traits<wchar_t> >, std::allocator<std::__detail::_NFA<std::__cxx11::regex_traits<wchar_t> > >, (__gnu_cxx::_Lock_policy)2>::_M_destroy()",
+      "symbol": "_ZNSt23_Sp_counted_ptr_inplaceINSt8__detail4_NFAINSt7__cxx1112regex_traitsIwEEEESaIS5_ELN9__gnu_cxx12_Lock_policyE2EE10_M_destroyEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual std::_Sp_counted_ptr_inplace<std::__detail::_NFA<std::__cxx11::regex_traits<wchar_t> >, std::allocator<std::__detail::_NFA<std::__cxx11::regex_traits<wchar_t> > >, (__gnu_cxx::_Lock_policy)2>::~_Sp_counted_ptr_inplace(int)",
+      "symbol": "_ZNSt23_Sp_counted_ptr_inplaceINSt8__detail4_NFAINSt7__cxx1112regex_traitsIwEEEESaIS5_ELN9__gnu_cxx12_Lock_policyE2EED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > > >, std::allocator<std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > > > > >::emplace_back<long int&, const std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > >&>(long int&, const std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > >&)",
+      "symbol": "_ZNSt6vectorISt4pairIlS_INSt7__cxx119sub_matchIN9__gnu_cxx17__normal_iteratorIPKwNS1_12basic_stringIwSt11char_traitsIwESaIwEEEEEEESaISD_EEESaISG_EE12emplace_backIJRlRKSF_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > __gnu_cxx::__to_xstring<std::__cxx11::basic_string<wchar_t>, wchar_t>(int (wchar_t*, typedef std::size_t, const wchar_t*, typedef __va_list_tag __va_list_tag*)*, std::size_t, const wchar_t*, ...)",
+      "symbol": "_ZN9__gnu_cxx12__to_xstringINSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEwEET_PFiPT0_mPKS8_P13__va_list_tagEmSB_z",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::pair<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<std::pair<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > >::_M_realloc_insert<std::pair<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >(std::vector<std::pair<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<std::pair<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > >::iterator, std::pair<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >&&)",
+      "symbol": "_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEES6_ESaIS7_EE17_M_realloc_insertIJS7_EEEvN9__gnu_cxx17__normal_iteratorIPS7_S9_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::__cxx11::match_results<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > >::const_reference std::__cxx11::match_results<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > >::operator[](std::__cxx11::match_results<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > >::size_type) const",
+      "symbol": "_ZNKSt7__cxx1113match_resultsIN9__gnu_cxx17__normal_iteratorIPKwNS_12basic_stringIwSt11char_traitsIwESaIwEEEEESaINS_9sub_matchISA_EEEEixEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::locale::locale<std::codecvt_utf8<wchar_t> >(const std::locale&, std::codecvt_utf8<wchar_t, 1114111, (std::codecvt_mode)0>*)",
+      "symbol": "_ZNSt6localeC2ISt12codecvt_utf8IwLm1114111ELSt12codecvt_mode0EEEERKS_PT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > > >, std::allocator<std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > > > > >::_M_realloc_insert<long int&, const std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > >&>(std::vector<std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > > >, std::allocator<std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > > > > >::iterator, long int&, const std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > >&)",
+      "symbol": "_ZNSt6vectorISt4pairIlS_INSt7__cxx119sub_matchIN9__gnu_cxx17__normal_iteratorIPKwNS1_12basic_stringIwSt11char_traitsIwESaIwEEEEEEESaISD_EEESaISG_EE17_M_realloc_insertIJRlRKSF_EEEvNS4_IPSG_SI_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<wchar_t, std::allocator<wchar_t> >::_M_realloc_insert<wchar_t>(std::vector<wchar_t, std::allocator<wchar_t> >::iterator, wchar_t&&)",
+      "symbol": "_ZNSt6vectorIwSaIwEE17_M_realloc_insertIJwEEEvN9__gnu_cxx17__normal_iteratorIPwS1_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::__detail::_State<char>, std::allocator<std::__detail::_State<char> > >::_M_realloc_insert<std::__detail::_State<char> >(std::vector<std::__detail::_State<char>, std::allocator<std::__detail::_State<char> > >::iterator, std::__detail::_State<char>&&)",
+      "symbol": "_ZNSt6vectorINSt8__detail6_StateIcEESaIS2_EE17_M_realloc_insertIJS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__detail::_Executor<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > >, std::__cxx11::regex_traits<wchar_t>, false>::_Executor(__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, __gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::__detail::_Executor<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > >, std::__cxx11::regex_traits<wchar_t>, false>::_ResultsVec&, const std::__detail::_Executor<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > >, std::__cxx11::regex_traits<wchar_t>, false>::_RegexT&, std::__detail::_Executor<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > >, std::__cxx11::regex_traits<wchar_t>, false>::_FlagT)",
+      "symbol": "_ZNSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKwNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIwEELb0EEC2ESB_SB_RSt6vectorISD_SE_ERKNS5_11basic_regexIwSG_EENSt15regex_constants15match_flag_typeE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual std::_Sp_counted_ptr_inplace<std::__detail::_NFA<std::__cxx11::regex_traits<char> >, std::allocator<std::__detail::_NFA<std::__cxx11::regex_traits<char> > >, (__gnu_cxx::_Lock_policy)2>::~_Sp_counted_ptr_inplace(int)",
+      "symbol": "_ZNSt23_Sp_counted_ptr_inplaceINSt8__detail4_NFAINSt7__cxx1112regex_traitsIcEEEESaIS5_ELN9__gnu_cxx12_Lock_policyE2EED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >::string_type std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >::str() const",
+      "symbol": "_ZNKSt7__cxx119sub_matchIN9__gnu_cxx17__normal_iteratorIPKwNS_12basic_stringIwSt11char_traitsIwESaIwEEEEEE3strEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros>, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::__node_base_ptr std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros>, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_find_before_node(std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros>, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::size_type, const std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros>, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::key_type&, std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros>, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::__hash_code) const",
+      "symbol": "_ZNKSt10_HashtableINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_5SorosESaIS9_ENSt8__detail10_Select1stESt8equal_toIS5_ESt4hashIS5_ENSB_18_Mod_range_hashingENSB_20_Default_ranged_hashENSB_20_Prime_rehash_policyENSB_17_Hashtable_traitsILb1ELb0ELb1EEEE19_M_find_before_nodeEmRS7_m",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::__cxx11::basic_regex<wchar_t, std::__cxx11::regex_traits<wchar_t> >, std::allocator<std::__cxx11::basic_regex<wchar_t, std::__cxx11::regex_traits<wchar_t> > > >::_M_realloc_insert<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >&>(std::vector<std::__cxx11::basic_regex<wchar_t, std::__cxx11::regex_traits<wchar_t> >, std::allocator<std::__cxx11::basic_regex<wchar_t, std::__cxx11::regex_traits<wchar_t> > > >::iterator, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1111basic_regexIwNS0_12regex_traitsIwEEEESaIS4_EE17_M_realloc_insertIJRNS0_12basic_stringIwSt11char_traitsIwESaIwEEEEEEvN9__gnu_cxx17__normal_iteratorIPS4_S6_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function __gnu_cxx::__normal_iterator<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > std::find<__gnu_cxx::__normal_iterator<const std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > > >, std::__cxx11::basic_string<char> >(__gnu_cxx::__normal_iterator<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, __gnu_cxx::__normal_iterator<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)",
+      "symbol": "_ZSt4findIN9__gnu_cxx17__normal_iteratorIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS7_SaIS7_EEEES7_ET_SE_SE_RKT0_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<long int, std::pair<long int const, long int>, std::_Select1st<std::pair<long int const, long int> >, std::less<long int>, std::allocator<std::pair<long int const, long int> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree<long int, std::pair<long int const, long int>, std::_Select1st<std::pair<long int const, long int> >, std::less<long int>, std::allocator<std::pair<long int const, long int> > >::const_iterator, const std::_Rb_tree<long int, std::pair<long int const, long int>, std::_Select1st<std::pair<long int const, long int> >, std::less<long int>, std::allocator<std::pair<long int const, long int> > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeIlSt4pairIKllESt10_Select1stIS2_ESt4lessIlESaIS2_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS2_ERS1_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual std::_Sp_counted_ptr_inplace<std::__detail::_NFA<std::__cxx11::regex_traits<char> >, std::allocator<std::__detail::_NFA<std::__cxx11::regex_traits<char> > >, (__gnu_cxx::_Lock_policy)2>::~_Sp_counted_ptr_inplace(int)",
+      "symbol": "_ZNSt23_Sp_counted_ptr_inplaceINSt8__detail4_NFAINSt7__cxx1112regex_traitsIcEEEESaIS5_ELN9__gnu_cxx12_Lock_policyE2EED0Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::__detail::_State<wchar_t>, std::allocator<std::__detail::_State<wchar_t> > >::_M_realloc_insert<std::__detail::_State<wchar_t> >(std::vector<std::__detail::_State<wchar_t>, std::allocator<std::__detail::_State<wchar_t> > >::iterator, std::__detail::_State<wchar_t>&&)",
+      "symbol": "_ZNSt6vectorINSt8__detail6_StateIwEESaIS2_EE17_M_realloc_insertIJS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__detail::_Executor<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::regex_traits<char>, false>::_Executor(__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Executor<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::regex_traits<char>, false>::_ResultsVec&, const std::__detail::_Executor<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::regex_traits<char>, false>::_RegexT&, std::__detail::_Executor<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::regex_traits<char>, false>::_FlagT)",
+      "symbol": "_ZNSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIcEELb0EEC2ESB_SB_RSt6vectorISD_SE_ERKNS5_11basic_regexIcSG_EENSt15regex_constants15match_flag_typeE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_insert<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::iterator, const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_realloc_insertIJRKS5_EEEvN9__gnu_cxx17__normal_iteratorIPS5_S7_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::vector(const std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EEC2ERKS7_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::allocator<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >::vector(const std::vector<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::allocator<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEESaIS5_EEC2ERKS7_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > > >, std::allocator<std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > > > > >::emplace_back<long int&, const std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >&>(long int&, const std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >&)",
+      "symbol": "_ZNSt6vectorISt4pairIlS_INSt7__cxx119sub_matchIN9__gnu_cxx17__normal_iteratorIPKcNS1_12basic_stringIcSt11char_traitsIcESaIcEEEEEEESaISD_EEESaISG_EE12emplace_backIJRlRKSF_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::__cxx11::regex_traits<char>::_RegexMask, std::allocator<std::__cxx11::regex_traits<char>::_RegexMask> >::_M_realloc_insert<const std::__cxx11::regex_traits<char>::_RegexMask&>(std::vector<std::__cxx11::regex_traits<char>::_RegexMask, std::allocator<std::__cxx11::regex_traits<char>::_RegexMask> >::iterator, const std::__cxx11::regex_traits<char>::_RegexMask&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112regex_traitsIcE10_RegexMaskESaIS3_EE17_M_realloc_insertIJRKS3_EEEvN9__gnu_cxx17__normal_iteratorIPS3_S5_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::__detail::_StateIdT std::__detail::_NFA<std::__cxx11::regex_traits<wchar_t> >::_M_insert_state(std::__detail::_NFA<std::__cxx11::regex_traits<wchar_t> >::_StateT)",
+      "symbol": "_ZNSt8__detail4_NFAINSt7__cxx1112regex_traitsIwEEE15_M_insert_stateENS_6_StateIwEE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::__cxx11::regex_traits<wchar_t>::_RegexMask, std::allocator<std::__cxx11::regex_traits<wchar_t>::_RegexMask> >::_M_realloc_insert<const std::__cxx11::regex_traits<wchar_t>::_RegexMask&>(std::vector<std::__cxx11::regex_traits<wchar_t>::_RegexMask, std::allocator<std::__cxx11::regex_traits<wchar_t>::_RegexMask> >::iterator, const std::__cxx11::regex_traits<wchar_t>::_RegexMask&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112regex_traitsIwE10_RegexMaskESaIS3_EE17_M_realloc_insertIJRKS3_EEEvN9__gnu_cxx17__normal_iteratorIPS3_S5_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::emplace_back<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >&&)",
+      "symbol": "_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_ESaIS7_EE12emplace_backIJS7_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::_M_realloc_insert<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >(std::vector<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::iterator, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >&&)",
+      "symbol": "_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_ESaIS7_EE17_M_realloc_insertIJS7_EEEvN9__gnu_cxx17__normal_iteratorIPS7_S9_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function bool std::__detail::__regex_algo_impl<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t> >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t> > > >, wchar_t, std::__cxx11::regex_traits<wchar_t>, (std::__detail::_RegexExecutorPolicy)0, false>(__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, __gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::__cxx11::match_results<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > >&, const std::__cxx11::basic_regex<wchar_t, std::__cxx11::regex_traits<wchar_t> >&, std::regex_constants::match_flag_type)",
+      "symbol": "_ZNSt8__detail17__regex_algo_implIN9__gnu_cxx17__normal_iteratorIPKwNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEEESaINS5_9sub_matchISB_EEEwNS5_12regex_traitsIwEELNS_20_RegexExecutorPolicyE0ELb0EEEbT_SI_RNS5_13match_resultsISI_T0_EERKNS5_11basic_regexIT1_T2_EENSt15regex_constants15match_flag_typeE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::vector(const std::vector<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >&)",
+      "symbol": "_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_ESaIS7_EEC2ERKS9_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::pair<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<std::pair<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > >::vector(const std::vector<std::pair<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<std::pair<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > >&)",
+      "symbol": "_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEES6_ESaIS7_EEC2ERKS9_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > > >, std::allocator<std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > > > > >::_M_realloc_insert<long int&, const std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >&>(std::vector<std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > > >, std::allocator<std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > > > > >::iterator, long int&, const std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >&)",
+      "symbol": "_ZNSt6vectorISt4pairIlS_INSt7__cxx119sub_matchIN9__gnu_cxx17__normal_iteratorIPKcNS1_12basic_stringIcSt11char_traitsIcESaIcEEEEEEESaISD_EEESaISG_EE17_M_realloc_insertIJRlRKSF_EEEvNS4_IPSG_SI_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::pair<wchar_t, wchar_t>, std::allocator<std::pair<wchar_t, wchar_t> > >::_M_realloc_insert<std::pair<wchar_t, wchar_t> >(std::vector<std::pair<wchar_t, wchar_t>, std::allocator<std::pair<wchar_t, wchar_t> > >::iterator, std::pair<wchar_t, wchar_t>&&)",
+      "symbol": "_ZNSt6vectorISt4pairIwwESaIS1_EE17_M_realloc_insertIJS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::vector<char, std::allocator<char> >::iterator std::vector<char, std::allocator<char> >::_M_erase(std::vector<char, std::allocator<char> >::iterator, std::vector<char, std::allocator<char> >::iterator)",
+      "symbol": "_ZNSt6vectorIcSaIcEE8_M_eraseEN9__gnu_cxx17__normal_iteratorIPcS1_EES5_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<long unsigned int, std::allocator<long unsigned int> >::_M_realloc_insert<long unsigned int const&>(std::vector<long unsigned int, std::allocator<long unsigned int> >::iterator, const unsigned long int&)",
+      "symbol": "_ZNSt6vectorImSaImEE17_M_realloc_insertIJRKmEEEvN9__gnu_cxx17__normal_iteratorIPmS1_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::vector<wchar_t, std::allocator<wchar_t> >::iterator std::vector<wchar_t, std::allocator<wchar_t> >::_M_erase(std::vector<wchar_t, std::allocator<wchar_t> >::iterator, std::vector<wchar_t, std::allocator<wchar_t> >::iterator)",
+      "symbol": "_ZNSt6vectorIwSaIwEE8_M_eraseEN9__gnu_cxx17__normal_iteratorIPwS1_EES5_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_M_construct<wchar_t*>(wchar_t*, wchar_t*, std::forward_iterator_tag)",
+      "symbol": "_ZNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEE12_M_constructIPwEEvT_S7_St20forward_iterator_tag",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<long int, std::pair<long int const, long int>, std::_Select1st<std::pair<long int const, long int> >, std::less<long int>, std::allocator<std::pair<long int const, long int> > >::_M_get_insert_unique_pos(const std::_Rb_tree<long int, std::pair<long int const, long int>, std::_Select1st<std::pair<long int const, long int> >, std::less<long int>, std::allocator<std::pair<long int const, long int> > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeIlSt4pairIKllESt10_Select1stIS2_ESt4lessIlESaIS2_EE24_M_get_insert_unique_posERS1_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__detail::_BracketMatcher<std::__cxx11::regex_traits<char>, false, false>::_M_ready()",
+      "symbol": "_ZNSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIcEELb0ELb0EE8_M_readyEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function bool std::__detail::__regex_algo_impl<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char> >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char> > > >, char, std::__cxx11::regex_traits<char>, (std::__detail::_RegexExecutorPolicy)0, false>(__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__cxx11::match_results<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >&, const std::__cxx11::basic_regex<char, std::__cxx11::regex_traits<char> >&, std::regex_constants::match_flag_type)",
+      "symbol": "_ZNSt8__detail17__regex_algo_implIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEESaINS5_9sub_matchISB_EEEcNS5_12regex_traitsIcEELNS_20_RegexExecutorPolicyE0ELb0EEEbT_SI_RNS5_13match_resultsISI_T0_EERKNS5_11basic_regexIT1_T2_EENSt15regex_constants15match_flag_typeE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::deque<std::__detail::_StateSeq<std::__cxx11::regex_traits<wchar_t> >, std::allocator<std::__detail::_StateSeq<std::__cxx11::regex_traits<wchar_t> > > >::push_back(const std::deque<std::__detail::_StateSeq<std::__cxx11::regex_traits<wchar_t> >, std::allocator<std::__detail::_StateSeq<std::__cxx11::regex_traits<wchar_t> > > >::value_type&)",
+      "symbol": "_ZNSt5dequeINSt8__detail9_StateSeqINSt7__cxx1112regex_traitsIwEEEESaIS5_EE9push_backERKS5_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual void std::_Sp_counted_ptr_inplace<std::__detail::_NFA<std::__cxx11::regex_traits<char> >, std::allocator<std::__detail::_NFA<std::__cxx11::regex_traits<char> > >, (__gnu_cxx::_Lock_policy)2>::_M_destroy()",
+      "symbol": "_ZNSt23_Sp_counted_ptr_inplaceINSt8__detail4_NFAINSt7__cxx1112regex_traitsIcEEEESaIS5_ELN9__gnu_cxx12_Lock_policyE2EE10_M_destroyEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual void std::_Sp_counted_ptr_inplace<std::__detail::_NFA<std::__cxx11::regex_traits<char> >, std::allocator<std::__detail::_NFA<std::__cxx11::regex_traits<char> > >, (__gnu_cxx::_Lock_policy)2>::_M_dispose()",
+      "symbol": "_ZNSt23_Sp_counted_ptr_inplaceINSt8__detail4_NFAINSt7__cxx1112regex_traitsIcEEEESaIS5_ELN9__gnu_cxx12_Lock_policyE2EE10_M_disposeEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::allocator<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >::_M_realloc_insert<const std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >&>(std::vector<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::allocator<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >::iterator, const std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEESaIS5_EE17_M_realloc_insertIJRKS5_EEEvN9__gnu_cxx17__normal_iteratorIPS5_S7_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::pair<char, char>, std::allocator<std::pair<char, char> > >::_M_realloc_insert<std::pair<char, char> >(std::vector<std::pair<char, char>, std::allocator<std::pair<char, char> > >::iterator, std::pair<char, char>&&)",
+      "symbol": "_ZNSt6vectorISt4pairIccESaIS1_EE17_M_realloc_insertIJS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function bool std::__detail::__regex_algo_impl<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char> >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char> > > >, char, std::__cxx11::regex_traits<char>, (std::__detail::_RegexExecutorPolicy)0, true>(__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__cxx11::match_results<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >&, const std::__cxx11::basic_regex<char, std::__cxx11::regex_traits<char> >&, std::regex_constants::match_flag_type)",
+      "symbol": "_ZNSt8__detail17__regex_algo_implIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEESaINS5_9sub_matchISB_EEEcNS5_12regex_traitsIcEELNS_20_RegexExecutorPolicyE0ELb1EEEbT_SI_RNS5_13match_resultsISI_T0_EERKNS5_11basic_regexIT1_T2_EENSt15regex_constants15match_flag_typeE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function std::back_insert_iterator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > std::__regex_replace<std::back_insert_iterator<std::__cxx11::basic_string<char> >, __gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char> >, std::__cxx11::regex_traits<char>, char>(std::back_insert_iterator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, const std::__cxx11::basic_regex<char, std::__cxx11::regex_traits<char> >&, const char*, std::size_t, std::regex_constants::match_flag_type)",
+      "symbol": "_ZSt15__regex_replaceISt20back_insert_iteratorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEN9__gnu_cxx17__normal_iteratorIPKcS6_EENS1_12regex_traitsIcEEcET_SF_T0_SG_RKNS1_11basic_regexIT2_T1_EEPKSI_mNSt15regex_constants15match_flag_typeE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::__detail::_Executor<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::regex_traits<char>, false>::_M_handle_backref(std::__detail::_Executor<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::regex_traits<char>, false>::_Match_mode, std::__detail::_StateIdT)",
+      "symbol": "_ZNSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIcEELb0EE17_M_handle_backrefENSH_11_Match_modeEl",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function std::back_insert_iterator<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > std::__regex_replace<std::back_insert_iterator<std::__cxx11::basic_string<wchar_t> >, __gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t> >, std::__cxx11::regex_traits<wchar_t>, wchar_t>(std::back_insert_iterator<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, __gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, __gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, const std::__cxx11::basic_regex<wchar_t, std::__cxx11::regex_traits<wchar_t> >&, const wchar_t*, std::size_t, std::regex_constants::match_flag_type)",
+      "symbol": "_ZSt15__regex_replaceISt20back_insert_iteratorINSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEEN9__gnu_cxx17__normal_iteratorIPKwS6_EENS1_12regex_traitsIwEEwET_SF_T0_SG_RKNS1_11basic_regexIT2_T1_EEPKSI_mNSt15regex_constants15match_flag_typeE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool std::__detail::__regex_algo_impl<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t> >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t> > > >, wchar_t, std::__cxx11::regex_traits<wchar_t> >(__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, __gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::__cxx11::match_results<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > >&, const std::__cxx11::basic_regex<wchar_t, std::__cxx11::regex_traits<wchar_t> >&, std::regex_constants::match_flag_type, std::__detail::_RegexExecutorPolicy, bool)",
+      "symbol": "_ZNSt8__detail17__regex_algo_implIN9__gnu_cxx17__normal_iteratorIPKwNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEEESaINS5_9sub_matchISB_EEEwNS5_12regex_traitsIwEEEEbT_SH_RNS5_13match_resultsISH_T0_EERKNS5_11basic_regexIT1_T2_EENSt15regex_constants15match_flag_typeENS_20_RegexExecutorPolicyEb",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_M_construct<true>(const wchar_t*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::size_type)",
+      "symbol": "_ZNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEE12_M_constructILb1EEEvPKwm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool std::__detail::__regex_algo_impl<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char> >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char> > > >, char, std::__cxx11::regex_traits<char> >(__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__cxx11::match_results<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >&, const std::__cxx11::basic_regex<char, std::__cxx11::regex_traits<char> >&, std::regex_constants::match_flag_type, std::__detail::_RegexExecutorPolicy, bool)",
+      "symbol": "_ZNSt8__detail17__regex_algo_implIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEESaINS5_9sub_matchISB_EEEcNS5_12regex_traitsIcEEEEbT_SH_RNS5_13match_resultsISH_T0_EERKNS5_11basic_regexIT1_T2_EENSt15regex_constants15match_flag_typeENS_20_RegexExecutorPolicyEb",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::__cxx11::basic_regex<wchar_t, std::__cxx11::regex_traits<wchar_t> >::basic_regex(const wchar_t*, std::__cxx11::basic_regex<wchar_t, std::__cxx11::regex_traits<wchar_t> >::flag_type)",
+      "symbol": "_ZNSt7__cxx1111basic_regexIwNS_12regex_traitsIwEEEC2EPKwNSt15regex_constants18syntax_option_typeE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<std::pair<wchar_t, wchar_t>, std::allocator<std::pair<wchar_t, wchar_t> > >::_M_realloc_append<std::pair<wchar_t, wchar_t> >(std::pair<wchar_t, wchar_t>&&)",
+      "symbol": "_ZNSt6vectorISt4pairIwwESaIS1_EE17_M_realloc_appendIJS1_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > > >, std::allocator<std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > > > > >::_M_realloc_append<long int&, const std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > >&>(long int&, const std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > >&)",
+      "symbol": "_ZNSt6vectorISt4pairIlS_INSt7__cxx119sub_matchIN9__gnu_cxx17__normal_iteratorIPKwNS1_12basic_stringIwSt11char_traitsIwESaIwEEEEEEESaISD_EEESaISG_EE17_M_realloc_appendIJRlRKSF_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<std::pair<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<std::pair<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > >::_M_realloc_append<std::pair<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >(std::pair<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >&&)",
+      "symbol": "_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEES6_ESaIS7_EE17_M_realloc_appendIJS7_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::_M_realloc_append<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >&&)",
+      "symbol": "_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_ESaIS7_EE17_M_realloc_appendIJS7_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::__cxx11::regex_iterator<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, wchar_t, std::__cxx11::regex_traits<wchar_t> >::operator==(const std::__cxx11::regex_iterator<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, wchar_t, std::__cxx11::regex_traits<wchar_t> >&) const",
+      "symbol": "_ZNKSt7__cxx1114regex_iteratorIN9__gnu_cxx17__normal_iteratorIPKwNS_12basic_stringIwSt11char_traitsIwESaIwEEEEEwNS_12regex_traitsIwEEEeqERKSD_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<bool, std::allocator<bool> >::_M_insert_aux(std::vector<bool, std::allocator<bool> >::iterator, bool)",
+      "symbol": "_ZNSt6vectorIbSaIbEE13_M_insert_auxESt13_Bit_iteratorb",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::__detail::_Executor<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > >, std::__cxx11::regex_traits<wchar_t>, true>::_M_is_line_terminator(std::__detail::_Executor<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > >, std::__cxx11::regex_traits<wchar_t>, true>::_CharT) const",
+      "symbol": "_ZNKSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKwNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIwEELb1EE21_M_is_line_terminatorEw",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::__detail::_Executor<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::regex_traits<char>, true>::_M_is_line_terminator(std::__detail::_Executor<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::regex_traits<char>, true>::_CharT) const",
+      "symbol": "_ZNKSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIcEELb1EE21_M_is_line_terminatorEc",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<std::pair<char, char>, std::allocator<std::pair<char, char> > >::_M_realloc_append<std::pair<char, char> >(std::pair<char, char>&&)",
+      "symbol": "_ZNSt6vectorISt4pairIccESaIS1_EE17_M_realloc_appendIJS1_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual std::_Sp_counted_ptr_inplace<std::__detail::_NFA<std::__cxx11::regex_traits<char> >, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::~_Sp_counted_ptr_inplace()",
+      "symbol": "_ZNSt23_Sp_counted_ptr_inplaceINSt8__detail4_NFAINSt7__cxx1112regex_traitsIcEEEESaIvELN9__gnu_cxx12_Lock_policyE2EED0Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::__detail::_Executor<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > >, std::__cxx11::regex_traits<wchar_t>, false>::_M_handle_backref(std::__detail::_Executor<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > >, std::__cxx11::regex_traits<wchar_t>, false>::_Match_mode, std::__detail::_StateIdT)",
+      "symbol": "_ZNSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKwNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIwEELb0EE17_M_handle_backrefENSH_11_Match_modeEl",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<true>(const char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::size_type)",
+      "symbol": "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructILb1EEEvPKcm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_append<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>(const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_realloc_appendIJRKS5_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros>, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::iterator std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros>, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_insert_unique_node(std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros>, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::size_type, std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros>, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::__hash_code, std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros>, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::__node_ptr, std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros>, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::size_type)",
+      "symbol": "_ZNSt10_HashtableINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_5SorosESaIS9_ENSt8__detail10_Select1stESt8equal_toIS5_ESt4hashIS5_ENSB_18_Mod_range_hashingENSB_20_Default_ranged_hashENSB_20_Prime_rehash_policyENSB_17_Hashtable_traitsILb1ELb0ELb1EEEE21_M_insert_unique_nodeEmmPNSB_10_Hash_nodeIS9_Lb1EEEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual std::_Sp_counted_ptr_inplace<std::__detail::_NFA<std::__cxx11::regex_traits<char> >, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::~_Sp_counted_ptr_inplace()",
+      "symbol": "_ZNSt23_Sp_counted_ptr_inplaceINSt8__detail4_NFAINSt7__cxx1112regex_traitsIcEEEESaIvELN9__gnu_cxx12_Lock_policyE2EED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::__detail::_Executor<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::regex_traits<char>, false>::_M_is_line_terminator(std::__detail::_Executor<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::regex_traits<char>, false>::_CharT) const",
+      "symbol": "_ZNKSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIcEELb0EE21_M_is_line_terminatorEc",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void std::_Sp_counted_ptr_inplace<std::__detail::_NFA<std::__cxx11::regex_traits<wchar_t> >, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_destroy()",
+      "symbol": "_ZNSt23_Sp_counted_ptr_inplaceINSt8__detail4_NFAINSt7__cxx1112regex_traitsIwEEEESaIvELN9__gnu_cxx12_Lock_policyE2EE10_M_destroyEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void std::_Sp_counted_ptr_inplace<std::__detail::_NFA<std::__cxx11::regex_traits<wchar_t> >, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_dispose()",
+      "symbol": "_ZNSt23_Sp_counted_ptr_inplaceINSt8__detail4_NFAINSt7__cxx1112regex_traitsIwEEEESaIvELN9__gnu_cxx12_Lock_policyE2EE10_M_disposeEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > > >, std::allocator<std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > > > > >::_M_realloc_append<long int&, const std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >&>(long int&, const std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >&)",
+      "symbol": "_ZNSt6vectorISt4pairIlS_INSt7__cxx119sub_matchIN9__gnu_cxx17__normal_iteratorIPKcNS1_12basic_stringIcSt11char_traitsIcESaIcEEEEEEESaISD_EEESaISG_EE17_M_realloc_appendIJRlRKSF_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::deque<long int, std::allocator<long int> >::_M_reallocate_map(std::deque<long int, std::allocator<long int> >::size_type, bool)",
+      "symbol": "_ZNSt5dequeIlSaIlEE17_M_reallocate_mapEmb",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::__cxx11::basic_regex<char, std::__cxx11::regex_traits<char> >::_M_compile(const char*, const char*, std::__cxx11::basic_regex<char, std::__cxx11::regex_traits<char> >::flag_type)",
+      "symbol": "_ZNSt7__cxx1111basic_regexIcNS_12regex_traitsIcEEE10_M_compileEPKcS5_NSt15regex_constants18syntax_option_typeE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void* std::_Sp_counted_ptr_inplace<std::__detail::_NFA<std::__cxx11::regex_traits<wchar_t> >, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_get_deleter(const std::type_info&)",
+      "symbol": "_ZNSt23_Sp_counted_ptr_inplaceINSt8__detail4_NFAINSt7__cxx1112regex_traitsIwEEEESaIvELN9__gnu_cxx12_Lock_policyE2EE14_M_get_deleterERKSt9type_info",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release_last_use_cold()",
+      "symbol": "_ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE24_M_release_last_use_coldEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::deque<std::__detail::_StateSeq<std::__cxx11::regex_traits<wchar_t> >, std::allocator<std::__detail::_StateSeq<std::__cxx11::regex_traits<wchar_t> > > >::_M_push_back_aux<std::__detail::_StateSeq<std::__cxx11::regex_traits<wchar_t> > >(std::__detail::_StateSeq<std::__cxx11::regex_traits<wchar_t> >&&)",
+      "symbol": "_ZNSt5dequeINSt8__detail9_StateSeqINSt7__cxx1112regex_traitsIwEEEESaIS5_EE16_M_push_back_auxIJS5_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::__cxx11::regex_iterator<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, char, std::__cxx11::regex_traits<char> >::operator==(const std::__cxx11::regex_iterator<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, char, std::__cxx11::regex_traits<char> >&) const",
+      "symbol": "_ZNKSt7__cxx1114regex_iteratorIN9__gnu_cxx17__normal_iteratorIPKcNS_12basic_stringIcSt11char_traitsIcESaIcEEEEEcNS_12regex_traitsIcEEEeqERKSD_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual std::_Sp_counted_ptr_inplace<std::__detail::_NFA<std::__cxx11::regex_traits<wchar_t> >, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::~_Sp_counted_ptr_inplace()",
+      "symbol": "_ZNSt23_Sp_counted_ptr_inplaceINSt8__detail4_NFAINSt7__cxx1112regex_traitsIwEEEESaIvELN9__gnu_cxx12_Lock_policyE2EED0Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::__cxx11::basic_regex<wchar_t, std::__cxx11::regex_traits<wchar_t> >::_M_compile(const wchar_t*, const wchar_t*, std::__cxx11::basic_regex<wchar_t, std::__cxx11::regex_traits<wchar_t> >::flag_type)",
+      "symbol": "_ZNSt7__cxx1111basic_regexIwNS_12regex_traitsIwEEE10_M_compileEPKwS5_NSt15regex_constants18syntax_option_typeE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual std::_Sp_counted_ptr_inplace<std::__detail::_NFA<std::__cxx11::regex_traits<wchar_t> >, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::~_Sp_counted_ptr_inplace()",
+      "symbol": "_ZNSt23_Sp_counted_ptr_inplaceINSt8__detail4_NFAINSt7__cxx1112regex_traitsIwEEEESaIvELN9__gnu_cxx12_Lock_policyE2EED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::__detail::_Executor<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > >, std::__cxx11::regex_traits<wchar_t>, false>::_M_is_line_terminator(std::__detail::_Executor<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > >, std::__cxx11::regex_traits<wchar_t>, false>::_CharT) const",
+      "symbol": "_ZNKSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKwNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIwEELb0EE21_M_is_line_terminatorEw",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::deque<std::__detail::_StateSeq<std::__cxx11::regex_traits<char> >, std::allocator<std::__detail::_StateSeq<std::__cxx11::regex_traits<char> > > >::_M_push_back_aux<std::__detail::_StateSeq<std::__cxx11::regex_traits<char> > >(std::__detail::_StateSeq<std::__cxx11::regex_traits<char> >&&)",
+      "symbol": "_ZNSt5dequeINSt8__detail9_StateSeqINSt7__cxx1112regex_traitsIcEEEESaIS5_EE16_M_push_back_auxIJS5_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int std::__detail::_Compiler<std::__cxx11::regex_traits<char> >::_M_cur_int_value(int)",
+      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIcEEE16_M_cur_int_valueEi",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::__cxx11::regex_traits<char>::char_type std::__cxx11::regex_traits<char>::translate_nocase(std::__cxx11::regex_traits<char>::char_type) const",
+      "symbol": "_ZNKSt7__cxx1112regex_traitsIcE16translate_nocaseEc",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::allocator<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >::_M_realloc_append<const std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >&>(const std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEESaIS5_EE17_M_realloc_appendIJRKS5_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::__detail::_Compiler<std::__cxx11::regex_traits<char> >::_StateSeqT std::__detail::_Compiler<std::__cxx11::regex_traits<char> >::_M_pop()",
+      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIcEEE6_M_popEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<std::__cxx11::basic_regex<wchar_t, std::__cxx11::regex_traits<wchar_t> >, std::allocator<std::__cxx11::basic_regex<wchar_t, std::__cxx11::regex_traits<wchar_t> > > >::_M_realloc_append<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >&>(std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1111basic_regexIwNS0_12regex_traitsIwEEEESaIS4_EE17_M_realloc_appendIJRNS0_12basic_stringIwSt11char_traitsIwESaIwEEEEEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void* std::_Sp_counted_ptr_inplace<std::__detail::_NFA<std::__cxx11::regex_traits<char> >, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_get_deleter(const std::type_info&)",
+      "symbol": "_ZNSt23_Sp_counted_ptr_inplaceINSt8__detail4_NFAINSt7__cxx1112regex_traitsIcEEEESaIvELN9__gnu_cxx12_Lock_policyE2EE14_M_get_deleterERKSt9type_info",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<std::__cxx11::regex_traits<char>::_RegexMask, std::allocator<std::__cxx11::regex_traits<char>::_RegexMask> >::_M_realloc_append<const std::__cxx11::regex_traits<char>::_RegexMask&>(const std::__cxx11::regex_traits<char>::_RegexMask&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112regex_traitsIcE10_RegexMaskESaIS3_EE17_M_realloc_appendIJRKS3_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<std::__detail::_State<char>, std::allocator<std::__detail::_State<char> > >::_M_realloc_append<std::__detail::_State<char> >(std::__detail::_State<char>&&)",
+      "symbol": "_ZNSt6vectorINSt8__detail6_StateIcEESaIS2_EE17_M_realloc_appendIJS2_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<std::__cxx11::regex_traits<wchar_t>::_RegexMask, std::allocator<std::__cxx11::regex_traits<wchar_t>::_RegexMask> >::_M_realloc_append<const std::__cxx11::regex_traits<wchar_t>::_RegexMask&>(const std::__cxx11::regex_traits<wchar_t>::_RegexMask&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112regex_traitsIwE10_RegexMaskESaIS3_EE17_M_realloc_appendIJRKS3_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void std::_Sp_counted_ptr_inplace<std::__detail::_NFA<std::__cxx11::regex_traits<char> >, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_destroy()",
+      "symbol": "_ZNSt23_Sp_counted_ptr_inplaceINSt8__detail4_NFAINSt7__cxx1112regex_traitsIcEEEESaIvELN9__gnu_cxx12_Lock_policyE2EE10_M_destroyEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void std::_Sp_counted_ptr_inplace<std::__detail::_NFA<std::__cxx11::regex_traits<char> >, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_dispose()",
+      "symbol": "_ZNSt23_Sp_counted_ptr_inplaceINSt8__detail4_NFAINSt7__cxx1112regex_traitsIcEEEESaIvELN9__gnu_cxx12_Lock_policyE2EE10_M_disposeEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<std::__detail::_State<wchar_t>, std::allocator<std::__detail::_State<wchar_t> > >::_M_realloc_append<std::__detail::_State<wchar_t> >(std::__detail::_State<wchar_t>&&)",
+      "symbol": "_ZNSt6vectorINSt8__detail6_StateIwEESaIS2_EE17_M_realloc_appendIJS2_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method std::__cxx11::wstring_convert<std::codecvt_utf8<wchar_t, 1114111, (std::codecvt_mode)0>, wchar_t, std::allocator<wchar_t>, std::allocator<char> >::~wstring_convert(int)  ->  method std::__cxx11::wstring_convert<std::codecvt_utf8<wchar_t, 1114111, (std::codecvt_mode)0>, wchar_t, std::allocator<wchar_t>, std::allocator<char> >::~wstring_convert()",
+      "symbol": "_ZNSt7__cxx1115wstring_convertISt12codecvt_utf8IwLm1114111ELSt12codecvt_mode0EEwSaIwESaIcEED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method std::vector<std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > > >, std::allocator<std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > > > > >::~vector(int)  ->  method std::vector<std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > > >, std::allocator<std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > > > > >::~vector()",
+      "symbol": "_ZNSt6vectorISt4pairIlS_INSt7__cxx119sub_matchIN9__gnu_cxx17__normal_iteratorIPKwNS1_12basic_stringIwSt11char_traitsIwESaIwEEEEEEESaISD_EEESaISG_EED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method std::vector<std::__cxx11::basic_regex<wchar_t, std::__cxx11::regex_traits<wchar_t> >, std::allocator<std::__cxx11::basic_regex<wchar_t, std::__cxx11::regex_traits<wchar_t> > > >::~vector(int)  ->  method std::vector<std::__cxx11::basic_regex<wchar_t, std::__cxx11::regex_traits<wchar_t> >, std::allocator<std::__cxx11::basic_regex<wchar_t, std::__cxx11::regex_traits<wchar_t> > > >::~vector()",
+      "symbol": "_ZNSt6vectorINSt7__cxx1111basic_regexIwNS0_12regex_traitsIwEEEESaIS4_EED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method std::vector<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::allocator<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >::~vector(int)  ->  method std::vector<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::allocator<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >::~vector()",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEESaIS5_EED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::~vector(int)  ->  method std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::~vector()",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method std::_Function_base::~_Function_base(int)  ->  method std::_Function_base::~_Function_base()",
+      "symbol": "_ZNSt14_Function_baseD2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method std::__cxx11::basic_regex<char, std::__cxx11::regex_traits<char> >::~basic_regex(int)  ->  method std::__cxx11::basic_regex<char, std::__cxx11::regex_traits<char> >::~basic_regex()",
+      "symbol": "_ZNSt7__cxx1111basic_regexIcNS_12regex_traitsIcEEED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros>, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_Scoped_node::~_Scoped_node(int)  ->  method std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros>, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_Scoped_node::~_Scoped_node()",
+      "symbol": "_ZNSt10_HashtableINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_5SorosESaIS9_ENSt8__detail10_Select1stESt8equal_toIS5_ESt4hashIS5_ENSB_18_Mod_range_hashingENSB_20_Default_ranged_hashENSB_20_Prime_rehash_policyENSB_17_Hashtable_traitsILb1ELb0ELb1EEEE12_Scoped_nodeD2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method std::_Deque_base<long int, std::allocator<long int> >::~_Deque_base(int)  ->  method std::_Deque_base<long int, std::allocator<long int> >::~_Deque_base()",
+      "symbol": "_ZNSt11_Deque_baseIlSaIlEED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros>, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::~_Hashtable(int)  ->  method std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros>, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::~_Hashtable()",
+      "symbol": "_ZNSt10_HashtableINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_5SorosESaIS9_ENSt8__detail10_Select1stESt8equal_toIS5_ESt4hashIS5_ENSB_18_Mod_range_hashingENSB_20_Default_ranged_hashENSB_20_Prime_rehash_policyENSB_17_Hashtable_traitsILb1ELb0ELb1EEEED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method std::__cxx11::basic_regex<wchar_t, std::__cxx11::regex_traits<wchar_t> >::~basic_regex(int)  ->  method std::__cxx11::basic_regex<wchar_t, std::__cxx11::regex_traits<wchar_t> >::~basic_regex()",
+      "symbol": "_ZNSt7__cxx1111basic_regexIwNS_12regex_traitsIwEEED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method std::vector<std::pair<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<std::pair<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > >::~vector(int)  ->  method std::vector<std::pair<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<std::pair<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > >::~vector()",
+      "symbol": "_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEES6_ESaIS7_EED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method std::vector<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::~vector(int)  ->  method std::vector<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::~vector()",
+      "symbol": "_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_ESaIS7_EED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method std::vector<std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > > >, std::allocator<std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > > > > >::~vector(int)  ->  method std::vector<std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > > >, std::allocator<std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > > > > >::~vector()",
+      "symbol": "_ZNSt6vectorISt4pairIlS_INSt7__cxx119sub_matchIN9__gnu_cxx17__normal_iteratorIPKcNS1_12basic_stringIcSt11char_traitsIcESaIcEEEEEEESaISD_EEESaISG_EED2Ev",
+      "weak": true
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 136,
+     "enum_case_added": 27,
+     "field_added_to_struct": 3,
+     "field_type_changed": 5
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/basic_string.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Alloc_hider"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<char>"
+     },
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": "/usr/include/c++/11/bits/hashtable.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros>, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/hashtable_policy.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros>, true> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/hashtable_policy.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros>, true> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/hashtable_policy.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct std::__detail::_Hashtable_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros>, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Hashtable_traits<true, false, true> >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/hashtable_policy.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__detail::_Hashtable_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros>, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Hashtable_traits<true, false, true> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/hashtable_policy.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct std::__detail::_Hash_code_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros>, std::__detail::_Select1st, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, true>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/hashtable_policy.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__detail::_Hash_code_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros>, std::__detail::_Select1st, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, true>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/basic_string.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_Alloc_hider"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<wchar_t>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::__cxx11::basic_regex<wchar_t, std::__cxx11::regex_traits<wchar_t> >, std::allocator<std::__cxx11::basic_regex<wchar_t, std::__cxx11::regex_traits<wchar_t> > > >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::__cxx11::basic_regex<wchar_t, std::__cxx11::regex_traits<wchar_t> >, std::allocator<std::__cxx11::basic_regex<wchar_t, std::__cxx11::regex_traits<wchar_t> > > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 12,
+      "declared_in": "/usr/include/c++/11/bits/regex_constants.h",
+      "exposure": "by_value",
+      "kind": "enum_case_added",
+      "third_party": true,
+      "type": "enum std::regex_constants::syntax_option_type"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/shared_ptr.h",
+      "exposure": "by_value",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<const std::__detail::_NFA<std::__cxx11::regex_traits<wchar_t> > >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/regex_automaton.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__detail::_NFA<std::__cxx11::regex_traits<wchar_t> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<long unsigned int, std::allocator<long unsigned int> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<long unsigned int, std::allocator<long unsigned int> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<long unsigned int>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::__detail::_State<wchar_t>, std::allocator<std::__detail::_State<wchar_t> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::__detail::_State<wchar_t>, std::allocator<std::__detail::_State<wchar_t> > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<std::__detail::_State<wchar_t> >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<std::__cxx11::basic_regex<wchar_t, std::__cxx11::regex_traits<wchar_t> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::allocator<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::allocator<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_bvector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<bool, std::allocator<bool> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_bvector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Bvector_base<std::allocator<bool> >::_Bvector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_deque.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Deque_base<long int, std::allocator<long int> >::_Deque_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<long int>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/hashtable_policy.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__detail::_Hash_node<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros>, true>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/hashtable_policy.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__detail::_Hash_node_value<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros>, true>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/ext/aligned_buffer.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct __gnu_cxx::__aligned_buffer<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/ext/aligned_buffer.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct __gnu_cxx::__aligned_buffer<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<const std::__detail::_NFA<std::__cxx11::regex_traits<char> > >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/regex_automaton.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__detail::_NFA<std::__cxx11::regex_traits<char> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::__detail::_State<char>, std::allocator<std::__detail::_State<char> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::__detail::_State<char>, std::allocator<std::__detail::_State<char> > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<std::__detail::_State<char> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/regex.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::__cxx11::match_results<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/regex.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_pair.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::pair<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >"
+     },
+     {
+      "append_only": false,
+      "count": 13,
+      "declared_in": "/usr/include/c++/11/bits/regex_constants.h",
+      "exposure": "by_value",
+      "kind": "enum_case_added",
+      "third_party": true,
+      "type": "enum std::regex_constants::match_flag_type"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/regex.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::__cxx11::match_results<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/regex.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_pair.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::pair<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, __gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/locale_conv.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class std::__cxx11::wstring_convert<std::codecvt_utf8<wchar_t, 1114111, (std::codecvt_mode)0>, wchar_t, std::allocator<wchar_t>, std::allocator<char> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/unique_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class std::unique_ptr<std::codecvt_utf8<wchar_t, 1114111, (std::codecvt_mode)0>, std::default_delete<std::codecvt_utf8<wchar_t, 1114111, (std::codecvt_mode)0> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<char, std::allocator<char> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<char, std::allocator<char> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_pair.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::__cxx11::regex_traits<char>::_RegexMask, std::allocator<std::__cxx11::regex_traits<char>::_RegexMask> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::__cxx11::regex_traits<char>::_RegexMask, std::allocator<std::__cxx11::regex_traits<char>::_RegexMask> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<std::__cxx11::regex_traits<char>::_RegexMask>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<wchar_t, std::allocator<wchar_t> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<wchar_t, std::allocator<wchar_t> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::pair<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<std::pair<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::pair<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<std::pair<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_pair.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::pair<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<std::pair<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::__cxx11::regex_traits<wchar_t>::_RegexMask, std::allocator<std::__cxx11::regex_traits<wchar_t>::_RegexMask> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::__cxx11::regex_traits<wchar_t>::_RegexMask, std::allocator<std::__cxx11::regex_traits<wchar_t>::_RegexMask> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<std::__cxx11::regex_traits<wchar_t>::_RegexMask>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/regex_scanner.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::__detail::_Scanner<char>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_pair.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::pair<char, std::__detail::_ScannerBase::_TokenT>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_pair.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::pair<char, char>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<std::__detail::_NFA<std::__cxx11::regex_traits<char> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_deque.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::deque<std::__detail::_StateSeq<std::__cxx11::regex_traits<char> >, std::allocator<std::__detail::_StateSeq<std::__cxx11::regex_traits<char> > > >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/stl_deque.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Deque_base<std::__detail::_StateSeq<std::__cxx11::regex_traits<char> >, std::allocator<std::__detail::_StateSeq<std::__cxx11::regex_traits<char> > > >::_Deque_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<std::__detail::_StateSeq<std::__cxx11::regex_traits<char> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/regex_scanner.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::__detail::_Scanner<wchar_t>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<std::__detail::_NFA<std::__cxx11::regex_traits<wchar_t> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_deque.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::deque<std::__detail::_StateSeq<std::__cxx11::regex_traits<wchar_t> >, std::allocator<std::__detail::_StateSeq<std::__cxx11::regex_traits<wchar_t> > > >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/stl_deque.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Deque_base<std::__detail::_StateSeq<std::__cxx11::regex_traits<wchar_t> >, std::allocator<std::__detail::_StateSeq<std::__cxx11::regex_traits<wchar_t> > > >::_Deque_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<std::__detail::_StateSeq<std::__cxx11::regex_traits<wchar_t> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::pair<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int>, std::allocator<std::pair<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int> > >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::pair<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int>, std::allocator<std::pair<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int> > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_pair.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::pair<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<std::pair<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/regex_executor.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct std::__detail::_Executor<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::regex_traits<char>, false>::_State_info<std::integral_constant<bool, false>, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > > >, std::allocator<std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > > > > >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > > >, std::allocator<std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > > > > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_pair.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > > >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > > > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::pair<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, int>, std::allocator<std::pair<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, int> > >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::pair<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, int>, std::allocator<std::pair<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, int> > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_pair.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::pair<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, int>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<std::pair<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, int> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/regex_executor.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct std::__detail::_Executor<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > >, std::__cxx11::regex_traits<wchar_t>, false>::_State_info<std::integral_constant<bool, false>, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > > >, std::allocator<std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > > > > >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > > >, std::allocator<std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > > > > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_pair.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > > >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > > > >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/regex_error.h",
+      "exposure": "by_value",
+      "kind": "enum_case_added",
+      "third_party": true,
+      "type": "enum std::regex_constants::error_type"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_deque.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::deque<long int, std::allocator<long int> >"
+     }
+    ],
+    "vague_linkage": {
+     "function_signature_changed": 22,
+     "symbol_added": 49,
+     "symbol_removed": 65
+    }
+   }
+  ],
+  "seconds": 8.648189364,
+  "source": "libnumbertext",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.0.10",
+   "1.0.11"
+  ]
+ },
+ "generated_at": "2026-09-03T23:36:14Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

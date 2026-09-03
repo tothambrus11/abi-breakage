@@ -1,0 +1,133 @@
+{
+ "data": {
+  "bytes_extracted": 592230,
+  "id": "fstrm@0.6.0..0.6.1",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      75,
+      75
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libfstrm.so.0",
+     "libfstrm.so.0"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 4,
+     "field_removed_from_struct": 3,
+     "field_type_changed": 1,
+     "member_offset_changed": 4
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct __pthread_cond_s"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct __pthread_cond_s"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct __pthread_cond_s"
+     },
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct __pthread_cond_s"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "union {unsigned long long int __wseq; struct {unsigned int __low; unsigned int __high;} __wseq32;}"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "union {unsigned long long int __wseq; struct {unsigned int __low; unsigned int __high;} __wseq32;}"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "union {unsigned long long int __g1_start; struct {unsigned int __low; unsigned int __high;} __g1_start32;}"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "union {unsigned long long int __g1_start; struct {unsigned int __low; unsigned int __high;} __g1_start32;}"
+     }
+    ],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 2.52765376,
+  "source": "fstrm",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "0.6.0",
+   "0.6.1"
+  ]
+ },
+ "generated_at": "2026-09-03T23:46:32Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

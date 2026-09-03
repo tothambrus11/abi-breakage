@@ -1,0 +1,161 @@
+{
+ "data": {
+  "bytes_extracted": 5369373,
+  "id": "intel-gmmlib@22.7.2+ds1..22.8.1+ds1",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      97,
+      97
+     ],
+     "mangled_functions": [
+      95,
+      95
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libigdgmm.so.12",
+     "libigdgmm.so.12"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 5,
+     "field_added_to_struct": 6,
+     "field_type_changed": 1,
+     "type_size_changed": 1,
+     "vtable_changed": 1
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./Source/GmmLib/inc/External/Common/GmmInfo.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "class GmmLib::Context"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./Source/GmmLib/inc/External/Common/GmmInfo.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class GmmLib::Context"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./Source/GmmLib/inc/External/Common/GmmResourceFlags.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct GMM_RESOURCE_FLAG_REC"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "./Source/GmmLib/inc/External/Common/GmmResourceFlags.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct {uint32_t GTMfx2ndLevelBatchRingSizeAlign; uint32_t ILKNeedAvcMprRowStore32KAlign; uint32_t ILKNeedAvcDmvBuffer32KAlign; uint32_t NoBufferSamplerPadding; uint32_t NoLegacyPlanarLinearVideoRestrictions; uint32_t CHVAstcSkipVirtualMips; uint32_t DisablePackedMipTail; uint32_t __ForceOtherHVALIGN4; uint32_t DisableDisplayCcsClearColor; uint32_t DisableDisplayCcsCompression; uint32_t PreGen12FastClearOnly; uint32_t MediaPipeUsage; uint32_t ForceStdAllocAlign; uint32_t DeniableLocalOnlyForCompression;}"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./Source/GmmLib/inc/External/Common/GmmResourceInfoExt.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct GMM_RESCREATE_CUSTOM_PARAMS_2_REC"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./Source/GmmLib/inc/External/Common/../../../../inc/umKmInc/../common/sku_wa.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct _WA_TABLE"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./Source/GmmLib/inc/External/Common/../Linux/GmmResourceInfoLin.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class GmmLib::GmmResourceInfoLin"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./Source/GmmLib/inc/External/Common/../Linux/GmmResourceInfoLin.h",
+      "exposure": "by_pointer",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class GmmLib::GmmResourceInfoLin"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./Source/GmmLib/TranslationTable/../TranslationTable/GmmUmdTranslationTable.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class GmmLib::AuxTable"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./Source/GmmLib/TranslationTable/../TranslationTable/GmmUmdTranslationTable.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class GmmLib::MidLevelTable"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./Source/GmmLib/TranslationTable/../TranslationTable/GmmUmdTranslationTable.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class GmmLib::LastLevelTable"
+     }
+    ],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 6.215033361,
+  "source": "intel-gmmlib",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "22.7.2+ds1",
+   "22.8.1+ds1"
+  ]
+ },
+ "generated_at": "2026-09-03T23:38:33Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

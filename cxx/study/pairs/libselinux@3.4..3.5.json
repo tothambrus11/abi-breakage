@@ -1,0 +1,72 @@
+{
+ "data": {
+  "bytes_extracted": 1885889,
+  "id": "libselinux@3.4..3.5",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      238,
+      240
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 2
+    },
+    "soname": [
+     "libselinux.so.1",
+     "libselinux.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function int getpidprevcon_raw(pid_t, char**)",
+      "symbol": "getpidprevcon_raw",
+      "version": "LIBSELINUX_3.5",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int getpidprevcon(pid_t, char**)",
+      "symbol": "getpidprevcon",
+      "version": "LIBSELINUX_3.5",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 1.424598331,
+  "source": "libselinux",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "3.4",
+   "3.5"
+  ]
+ },
+ "generated_at": "2026-09-03T23:41:15Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

@@ -1,0 +1,142 @@
+{
+ "data": {
+  "bytes_extracted": 470002,
+  "id": "libmd@1.0.4..1.1.0",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      71,
+      89
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 12
+    },
+    "soname": [
+     "libmd.so.0",
+     "libmd.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function void SHA512_256Init(SHA2_CTX*)",
+      "symbol": "SHA512_256Init",
+      "version": "LIBMD_0.1",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void SHA512_256Final(uint8_t*, SHA2_CTX*)",
+      "symbol": "SHA512_256Final",
+      "version": "LIBMD_0.1",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function char* SHA512_256End(SHA2_CTX*, char*)",
+      "symbol": "SHA512_256End",
+      "version": "LIBMD_0.1",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function char* SHA512_256Data(const uint8_t*, size_t, char*)",
+      "symbol": "SHA512_256Data",
+      "version": "LIBMD_0.1",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function char* SHA512_256FileChunk(const char*, char*, off_t, off_t)",
+      "symbol": "SHA512_256FileChunk",
+      "version": "LIBMD_0.1",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function char* SHA512_256File(const char*, char*)",
+      "symbol": "SHA512_256File",
+      "version": "LIBMD_0.1",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void SHA224Init(SHA2_CTX*)",
+      "symbol": "SHA224Init",
+      "version": "LIBMD_0.1",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void SHA224Final(uint8_t*, SHA2_CTX*)",
+      "symbol": "SHA224Final",
+      "version": "LIBMD_0.1",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function char* SHA224FileChunk(const char*, char*, off_t, off_t)",
+      "symbol": "SHA224FileChunk",
+      "version": "LIBMD_0.1",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function char* SHA224File(const char*, char*)",
+      "symbol": "SHA224File",
+      "version": "LIBMD_0.1",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function char* SHA224End(SHA2_CTX*, char*)",
+      "symbol": "SHA224End",
+      "version": "LIBMD_0.1",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function char* SHA224Data(const uint8_t*, size_t, char*)",
+      "symbol": "SHA224Data",
+      "version": "LIBMD_0.1",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 2.677138952,
+  "source": "libmd",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.0.4",
+   "1.1.0"
+  ]
+ },
+ "generated_at": "2026-09-03T23:46:29Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

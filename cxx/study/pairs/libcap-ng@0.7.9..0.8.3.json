@@ -1,0 +1,107 @@
+{
+ "data": {
+  "bytes_extracted": 249969,
+  "id": "libcap-ng@0.7.9..0.8.3",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      19,
+      22
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "enum_case_added": 4,
+     "symbol_added": 3
+    },
+    "soname": [
+     "libcap-ng.so.0",
+     "libcap-ng.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function int capng_set_rootid(int)",
+      "symbol": "capng_set_rootid",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function capng_results_t capng_have_permitted_capabilities()",
+      "symbol": "capng_have_permitted_capabilities",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int capng_get_rootid()",
+      "symbol": "capng_get_rootid",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../../src/cap-ng.h",
+      "exposure": "by_value",
+      "kind": "enum_case_added",
+      "third_party": false,
+      "type": "enum capng_select_t"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../../src/cap-ng.h",
+      "exposure": "by_value",
+      "kind": "enum_case_added",
+      "third_party": false,
+      "type": "enum capng_flags_t"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../../src/cap-ng.h",
+      "exposure": "by_value",
+      "kind": "enum_case_added",
+      "third_party": false,
+      "type": "enum capng_type_t"
+     }
+    ],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 2.166147851,
+  "source": "libcap-ng",
+  "unpaired": [
+   [],
+   [
+    "libdrop_ambient"
+   ]
+  ],
+  "upstream": [
+   "0.7.9",
+   "0.8.3"
+  ]
+ },
+ "generated_at": "2026-09-03T23:47:13Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

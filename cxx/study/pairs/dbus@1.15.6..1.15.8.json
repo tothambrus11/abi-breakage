@@ -1,0 +1,2418 @@
+{
+ "data": {
+  "bytes_extracted": 3680628,
+  "id": "dbus@1.15.6..1.15.8",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      568,
+      571
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {
+     "symbol_added": 3,
+     "symbol_removed": 328
+    },
+    "public": {},
+    "soname": [
+     "libdbus-1.so.3",
+     "libdbus-1.so.3"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int _dbus_write_socket_with_unix_fds(DBusSocket, const DBusString*, int, int, const int*, int)",
+      "symbol": "_dbus_write_socket_with_unix_fds",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_watch_unref(DBusWatch*)",
+      "symbol": "_dbus_watch_unref",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function DBusWatch* _dbus_watch_ref(DBusWatch*)",
+      "symbol": "_dbus_watch_ref",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function DBusWatch* _dbus_watch_new(DBusPollable, unsigned int, dbus_bool_t, DBusWatchHandler, void*, DBusFreeFunction)",
+      "symbol": "_dbus_watch_new",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_watch_list_set_functions(DBusWatchList*, DBusAddWatchFunction, DBusRemoveWatchFunction, DBusWatchToggledFunction, void*, DBusFreeFunction)",
+      "symbol": "_dbus_watch_list_set_functions",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_watch_list_free(DBusWatchList*)",
+      "symbol": "_dbus_watch_list_free",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_watch_list_add_watch(DBusWatchList*, DBusWatch*)",
+      "symbol": "_dbus_watch_list_add_watch",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_watch_invalidate(DBusWatch*)",
+      "symbol": "_dbus_watch_invalidate",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function DBusPollable _dbus_watch_get_pollable(DBusWatch*)",
+      "symbol": "_dbus_watch_get_pollable",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_watch_get_oom_last_time(DBusWatch*)",
+      "symbol": "_dbus_watch_get_oom_last_time",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_warn_return_if_fail(const char*, const char*, const char*, int)",
+      "symbol": "_dbus_warn_return_if_fail",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_warn(const char*, ...)",
+      "symbol": "_dbus_warn",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_verbose_bytes_of_string(const DBusString*, int, int)",
+      "symbol": "_dbus_verbose_bytes_of_string",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_variant_write(DBusVariant*, DBusMessageIter*)",
+      "symbol": "_dbus_variant_write",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function const DBusString* _dbus_variant_peek(DBusVariant*)",
+      "symbol": "_dbus_variant_peek",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int _dbus_variant_get_length(DBusVariant*)",
+      "symbol": "_dbus_variant_get_length",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_variant_free(DBusVariant*)",
+      "symbol": "_dbus_variant_free",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_validate_member(const DBusString*, int, int)",
+      "symbol": "_dbus_validate_member",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_validate_interface(const DBusString*, int, int)",
+      "symbol": "_dbus_validate_interface",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_validate_bus_name(const DBusString*, int, int)",
+      "symbol": "_dbus_validate_bus_name",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function DBusValidity _dbus_validate_body_with_reason(const DBusString*, int, int, int*, const DBusString*, int, int)",
+      "symbol": "_dbus_validate_body_with_reason",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_uuid_encode(const DBusGUID*, DBusString*)",
+      "symbol": "_dbus_uuid_encode",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_username_from_current_process(const DBusString**)",
+      "symbol": "_dbus_username_from_current_process",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_user_database_unlock_system()",
+      "symbol": "_dbus_user_database_unlock_system",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function const DBusUserInfo* _dbus_user_database_lookup(DBusUserDatabase*, dbus_uid_t, const DBusString*, DBusError*)",
+      "symbol": "_dbus_user_database_lookup",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_user_database_lock_system()",
+      "symbol": "_dbus_user_database_lock_system",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_user_database_get_username(DBusUserDatabase*, const DBusString*, const DBusUserInfo**, DBusError*)",
+      "symbol": "_dbus_user_database_get_username",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_user_database_get_uid(DBusUserDatabase*, dbus_uid_t, const DBusUserInfo**, DBusError*)",
+      "symbol": "_dbus_user_database_get_uid",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function DBusUserDatabase* _dbus_user_database_get_system()",
+      "symbol": "_dbus_user_database_get_system",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_type_writer_write_reader(DBusTypeWriter*, DBusTypeReader*)",
+      "symbol": "_dbus_type_writer_write_reader",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_type_writer_write_fixed_multi(DBusTypeWriter*, int, void*, int)",
+      "symbol": "_dbus_type_writer_write_fixed_multi",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_type_writer_write_basic(DBusTypeWriter*, int, void*)",
+      "symbol": "_dbus_type_writer_write_basic",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_type_writer_recurse(DBusTypeWriter*, int, const DBusString*, int, DBusTypeWriter*)",
+      "symbol": "_dbus_type_writer_recurse",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_type_writer_init(DBusTypeWriter*, int, DBusString*, int, DBusString*, int)",
+      "symbol": "_dbus_type_writer_init",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_type_reader_read_basic(const DBusTypeReader*, void*)",
+      "symbol": "_dbus_type_reader_read_basic",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_type_reader_next(DBusTypeReader*)",
+      "symbol": "_dbus_type_reader_next",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_type_reader_init_types_only(DBusTypeReader*, const DBusString*, int)",
+      "symbol": "_dbus_type_reader_init_types_only",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_type_reader_init(DBusTypeReader*, int, const DBusString*, int, const DBusString*, int)",
+      "symbol": "_dbus_type_reader_init",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int _dbus_type_reader_get_value_pos(const DBusTypeReader*)",
+      "symbol": "_dbus_type_reader_get_value_pos",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_type_reader_get_signature(const DBusTypeReader*, const DBusString**, int*, int*)",
+      "symbol": "_dbus_type_reader_get_signature",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int _dbus_type_reader_get_element_type(const DBusTypeReader*)",
+      "symbol": "_dbus_type_reader_get_element_type",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int _dbus_type_reader_get_current_type(const DBusTypeReader*)",
+      "symbol": "_dbus_type_reader_get_current_type",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_type_reader_delete(DBusTypeReader*, const DBusTypeReader*)",
+      "symbol": "_dbus_type_reader_delete",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_timeout_unref(DBusTimeout*)",
+      "symbol": "_dbus_timeout_unref",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_timeout_restarted(DBusTimeout*)",
+      "symbol": "_dbus_timeout_restarted",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function DBusWatchList* _dbus_watch_list_new()",
+      "symbol": "_dbus_watch_list_new",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_timeout_disable(DBusTimeout*)",
+      "symbol": "_dbus_timeout_disable",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_string_toupper_ascii(const DBusString*, int, int)",
+      "symbol": "_dbus_string_toupper_ascii",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_warn_check_failed(const char*, ...)",
+      "symbol": "_dbus_warn_check_failed",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_string_tolower_ascii(const DBusString*, int, int)",
+      "symbol": "_dbus_string_tolower_ascii",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_hash_table_unref(DBusHashTable*)",
+      "symbol": "_dbus_hash_table_unref",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_list_clear(DBusList**)",
+      "symbol": "_dbus_list_clear",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_header_get_field_raw(DBusHeader*, int, const DBusString**, int*)",
+      "symbol": "_dbus_header_get_field_raw",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function long int _dbus_message_loader_get_max_message_size(DBusMessageLoader*)",
+      "symbol": "_dbus_message_loader_get_max_message_size",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_string_steal_data(DBusString*, char**)",
+      "symbol": "_dbus_string_steal_data",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function DBusCredentials* _dbus_credentials_new_from_current_process()",
+      "symbol": "_dbus_credentials_new_from_current_process",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_timeout_needs_restart(DBusTimeout*)",
+      "symbol": "_dbus_timeout_needs_restart",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_string_validate_utf8(const DBusString*, int, int)",
+      "symbol": "_dbus_string_validate_utf8",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_hash_table_remove_int(DBusHashTable*, int)",
+      "symbol": "_dbus_hash_table_remove_int",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_hash_table_from_array(DBusHashTable*, char**, char)",
+      "symbol": "_dbus_hash_table_from_array",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function DBusHashTable* _dbus_hash_table_ref(DBusHashTable*)",
+      "symbol": "_dbus_hash_table_ref",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_list_remove_link(DBusList**, DBusList*)",
+      "symbol": "_dbus_list_remove_link",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_pipe_is_valid(DBusPipe*)",
+      "symbol": "_dbus_pipe_is_valid",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_hash_table_insert_string_preallocated(DBusHashTable*, DBusPreallocatedHash*, char*, void*)",
+      "symbol": "_dbus_hash_table_insert_string_preallocated",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_close_socket(DBusSocket*, DBusError*)",
+      "symbol": "_dbus_close_socket",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_string_validate_nul(const DBusString*, int, int)",
+      "symbol": "_dbus_string_validate_nul",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_hash_iter_lookup(DBusHashTable*, void*, dbus_bool_t, DBusHashIter*)",
+      "symbol": "_dbus_hash_iter_lookup",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_list_prepend_link(DBusList**, DBusList*)",
+      "symbol": "_dbus_list_prepend_link",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_header_delete_field(DBusHeader*, int)",
+      "symbol": "_dbus_header_delete_field",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_list_append_link(DBusList**, DBusList*)",
+      "symbol": "_dbus_list_append_link",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function DBusHashTable* _dbus_hash_table_new(DBusHashType, DBusFreeFunction, DBusFreeFunction)",
+      "symbol": "_dbus_hash_table_new",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_group_info_unref(DBusGroupInfo*)",
+      "symbol": "_dbus_group_info_unref",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_hash_iter_init(DBusHashTable*, DBusHashIter*)",
+      "symbol": "_dbus_hash_iter_init",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int _dbus_dup(int, DBusError*)",
+      "symbol": "_dbus_dup",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_string_init_const_len(DBusString*, const char*, int)",
+      "symbol": "_dbus_string_init_const_len",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function const char* _dbus_getenv(const char*)",
+      "symbol": "_dbus_getenv",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function const char* _dbus_get_tmpdir()",
+      "symbol": "_dbus_get_tmpdir",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_string_shorten(DBusString*, int)",
+      "symbol": "_dbus_string_shorten",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_get_monotonic_time(long int*, long int*)",
+      "symbol": "_dbus_get_monotonic_time",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function DBusVariant* _dbus_variant_read(DBusMessageIter*)",
+      "symbol": "_dbus_variant_read",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void* _dbus_hash_table_lookup_int(DBusHashTable*, int)",
+      "symbol": "_dbus_hash_table_lookup_int",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_generate_uuid(DBusGUID*, DBusError*)",
+      "symbol": "_dbus_generate_uuid",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_generate_random_ascii(DBusString*, int, DBusError*)",
+      "symbol": "_dbus_generate_random_ascii",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_init_system_log(const char*, DBusLogFlags)",
+      "symbol": "_dbus_init_system_log",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int _dbus_first_type_in_signature(const DBusString*, int)",
+      "symbol": "_dbus_first_type_in_signature",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_fd_set_all_close_on_exec()",
+      "symbol": "_dbus_fd_set_all_close_on_exec",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_exit(int)",
+      "symbol": "_dbus_exit",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_file_get_contents(DBusString*, const DBusString*, DBusError*)",
+      "symbol": "_dbus_file_get_contents",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_int32_t _dbus_atomic_dec(DBusAtomic*)",
+      "symbol": "_dbus_atomic_dec",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function DBusList* _dbus_list_alloc_link(void*)",
+      "symbol": "_dbus_list_alloc_link",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function DBusCredentials* _dbus_connection_get_credentials(DBusConnection*)",
+      "symbol": "_dbus_connection_get_credentials",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_get_uuid(const char*, char**, dbus_bool_t, DBusError*)",
+      "symbol": "_dbus_get_uuid",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function char** _dbus_hash_table_to_array(DBusHashTable*, char)",
+      "symbol": "_dbus_hash_table_to_array",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_create_uuid(char**, DBusError*)",
+      "symbol": "_dbus_create_uuid",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_get_real_time(long int*, long int*)",
+      "symbol": "_dbus_get_real_time",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_set_error_valist(DBusError*, const char*, const char*, __va_list_tag*)",
+      "symbol": "_dbus_set_error_valist",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_hash_iter_remove_entry(DBusHashIter*)",
+      "symbol": "_dbus_hash_iter_remove_entry",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_string_append_strings(DBusString*, char**, char)",
+      "symbol": "_dbus_string_append_strings",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_is_a_number(const DBusString*, unsigned long int*)",
+      "symbol": "_dbus_is_a_number",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_delete_directory(const DBusString*, DBusError*)",
+      "symbol": "_dbus_delete_directory",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_uid_t _dbus_getuid()",
+      "symbol": "_dbus_getuid",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void* _dbus_hash_table_lookup_uintptr(DBusHashTable*, uintptr_t)",
+      "symbol": "_dbus_hash_table_lookup_uintptr",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_hash_iter_set_value(DBusHashIter*, void*)",
+      "symbol": "_dbus_hash_iter_set_value",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_watch_set_oom_last_time(DBusWatch*, dbus_bool_t)",
+      "symbol": "_dbus_watch_set_oom_last_time",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_validate_bus_namespace(const DBusString*, int, int)",
+      "symbol": "_dbus_validate_bus_namespace",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_credentials_add_pid(DBusCredentials*, dbus_pid_t)",
+      "symbol": "_dbus_credentials_add_pid",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_message_loader_get_buffer(DBusMessageLoader*, DBusString**, int*, dbus_bool_t*)",
+      "symbol": "_dbus_message_loader_get_buffer",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int _dbus_write_socket(DBusSocket, const DBusString*, int, int)",
+      "symbol": "_dbus_write_socket",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_credentials_to_string_append(DBusCredentials*, DBusString*)",
+      "symbol": "_dbus_credentials_to_string_append",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void* _dbus_hash_table_lookup_string(DBusHashTable*, const char*)",
+      "symbol": "_dbus_hash_table_lookup_string",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_credentials_same_user(DBusCredentials*, DBusCredentials*)",
+      "symbol": "_dbus_credentials_same_user",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_auth_set_credentials(DBusAuth*, DBusCredentials*)",
+      "symbol": "_dbus_auth_set_credentials",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_header_set_field_basic(DBusHeader*, int, int, void*)",
+      "symbol": "_dbus_header_set_field_basic",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function size_t _dbus_string_array_length(const char**)",
+      "symbol": "_dbus_string_array_length",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_string_compact(DBusString*, int)",
+      "symbol": "_dbus_string_compact",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_clearenv()",
+      "symbol": "_dbus_clearenv",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_credentials_include(DBusCredentials*, DBusCredentialType)",
+      "symbol": "_dbus_credentials_include",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function DBusAuth* _dbus_auth_server_new(const DBusString*)",
+      "symbol": "_dbus_auth_server_new",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_hash_table_free_preallocated_entry(DBusHashTable*, DBusPreallocatedHash*)",
+      "symbol": "_dbus_hash_table_free_preallocated_entry",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int _dbus_hash_table_get_n_entries(DBusHashTable*)",
+      "symbol": "_dbus_hash_table_get_n_entries",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_timeout_restart(DBusTimeout*, int)",
+      "symbol": "_dbus_timeout_restart",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_auth_set_context(DBusAuth*, const DBusString*)",
+      "symbol": "_dbus_auth_set_context",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_address_append_escaped(DBusString*, const DBusString*)",
+      "symbol": "_dbus_address_append_escaped",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_auth_set_mechanisms(DBusAuth*, const char**)",
+      "symbol": "_dbus_auth_set_mechanisms",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_auth_bytes_sent(DBusAuth*, int)",
+      "symbol": "_dbus_auth_bytes_sent",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_close_all()",
+      "symbol": "_dbus_close_all",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_server_ref_unlocked(DBusServer*)",
+      "symbol": "_dbus_server_ref_unlocked",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_type_writer_unrecurse(DBusTypeWriter*, DBusTypeWriter*)",
+      "symbol": "_dbus_type_writer_unrecurse",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function DBusConnection* _dbus_connection_ref_unlocked(DBusConnection*)",
+      "symbol": "_dbus_connection_ref_unlocked",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_list_length_is_one(DBusList**)",
+      "symbol": "_dbus_list_length_is_one",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_auth_return_buffer(DBusAuth*, DBusString*)",
+      "symbol": "_dbus_auth_return_buffer",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_hash_table_insert_string(DBusHashTable*, char*, void*)",
+      "symbol": "_dbus_hash_table_insert_string",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_message_loader_get_is_corrupted(DBusMessageLoader*)",
+      "symbol": "_dbus_message_loader_get_is_corrupted",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_hash_table_insert_uintptr(DBusHashTable*, uintptr_t, void*)",
+      "symbol": "_dbus_hash_table_insert_uintptr",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function const char* _dbus_error_from_errno(int)",
+      "symbol": "_dbus_error_from_errno",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_pid_t _dbus_credentials_get_pid(DBusCredentials*)",
+      "symbol": "_dbus_credentials_get_pid",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_auth_get_bytes_to_send(DBusAuth*, const DBusString**)",
+      "symbol": "_dbus_auth_get_bytes_to_send",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_rmutex_unlock(DBusRMutex*)",
+      "symbol": "_dbus_rmutex_unlock",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function DBusAuth* _dbus_auth_ref(DBusAuth*)",
+      "symbol": "_dbus_auth_ref",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_uid_t _dbus_credentials_get_unix_uid(DBusCredentials*)",
+      "symbol": "_dbus_credentials_get_unix_uid",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_read_local_machine_uuid(DBusGUID*, dbus_bool_t, DBusError*)",
+      "symbol": "_dbus_read_local_machine_uuid",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_auth_unref(DBusAuth*)",
+      "symbol": "_dbus_auth_unref",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_list_append(DBusList**, void*)",
+      "symbol": "_dbus_list_append",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function DBusList* _dbus_list_find_last(DBusList**, void*)",
+      "symbol": "_dbus_list_find_last",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function char _dbus_header_get_byte_order(const DBusHeader*)",
+      "symbol": "_dbus_header_get_byte_order",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_string_equal_substring(const DBusString*, int, int, const DBusString*, int)",
+      "symbol": "_dbus_string_equal_substring",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_connection_unlock(DBusConnection*)",
+      "symbol": "_dbus_connection_unlock",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_auth_get_buffer(DBusAuth*, DBusString**)",
+      "symbol": "_dbus_auth_get_buffer",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_auth_delete_unused_bytes(DBusAuth*)",
+      "symbol": "_dbus_auth_delete_unused_bytes",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_atomic_set_zero(DBusAtomic*)",
+      "symbol": "_dbus_atomic_set_zero",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_type_reader_recurse(DBusTypeReader*, DBusTypeReader*)",
+      "symbol": "_dbus_type_reader_recurse",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_string_insert_byte(DBusString*, int, unsigned char)",
+      "symbol": "_dbus_string_insert_byte",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_get_local_machine_uuid_encoded(DBusString*, DBusError*)",
+      "symbol": "_dbus_get_local_machine_uuid_encoded",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function DBusAuthState _dbus_auth_do_work(DBusAuth*)",
+      "symbol": "_dbus_auth_do_work",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_credentials_unref(DBusCredentials*)",
+      "symbol": "_dbus_credentials_unref",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function const char* _dbus_credentials_get_linux_security_label(DBusCredentials*)",
+      "symbol": "_dbus_credentials_get_linux_security_label",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_watch_list_remove_watch(DBusWatchList*, DBusWatch*)",
+      "symbol": "_dbus_watch_list_remove_watch",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_auth_is_supported_mechanism(DBusString*)",
+      "symbol": "_dbus_auth_is_supported_mechanism",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_int32_t _dbus_atomic_inc(DBusAtomic*)",
+      "symbol": "_dbus_atomic_inc",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_close(int, DBusError*)",
+      "symbol": "_dbus_close",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_string_equal_len(const DBusString*, const DBusString*, int)",
+      "symbol": "_dbus_string_equal_len",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_append_user_from_current_process(DBusString*)",
+      "symbol": "_dbus_append_user_from_current_process",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_list_get_stats(dbus_uint32_t*, dbus_uint32_t*, dbus_uint32_t*)",
+      "symbol": "_dbus_list_get_stats",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_logv(DBusSystemLogSeverity, const char*, __va_list_tag*)",
+      "symbol": "_dbus_logv",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_int32_t _dbus_atomic_get(DBusAtomic*)",
+      "symbol": "_dbus_atomic_get",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_connection_set_pending_fds_function(DBusConnection*, DBusPendingFdsChangeFunction, void*)",
+      "symbol": "_dbus_connection_set_pending_fds_function",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_atomic_set_nonzero(DBusAtomic*)",
+      "symbol": "_dbus_atomic_set_nonzero",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_list_copy(DBusList**, DBusList**)",
+      "symbol": "_dbus_list_copy",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function const char* _dbus_error_from_system_errno()",
+      "symbol": "_dbus_error_from_system_errno",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function DBusCredentials* _dbus_auth_get_identity(DBusAuth*)",
+      "symbol": "_dbus_auth_get_identity",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_socketpair(DBusSocket*, DBusSocket*, dbus_bool_t, DBusError*)",
+      "symbol": "_dbus_socketpair",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_auth_dump_supported_mechanisms(DBusString*)",
+      "symbol": "_dbus_auth_dump_supported_mechanisms",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int _dbus_pipe_close(DBusPipe*, DBusError*)",
+      "symbol": "_dbus_pipe_close",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_pid_t _dbus_getpid()",
+      "symbol": "_dbus_getpid",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function DBusTimeout* _dbus_timeout_new(int, DBusTimeoutHandler, void*, DBusFreeFunction)",
+      "symbol": "_dbus_timeout_new",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_marshal_byteswap(const DBusString*, int, int, int, DBusString*, int)",
+      "symbol": "_dbus_marshal_byteswap",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_connection_get_linux_security_label(DBusConnection*, char**)",
+      "symbol": "_dbus_connection_get_linux_security_label",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void* _dbus_hash_iter_get_value(DBusHashIter*)",
+      "symbol": "_dbus_hash_iter_get_value",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_string_hex_encode(const DBusString*, int, DBusString*, int)",
+      "symbol": "_dbus_string_hex_encode",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_uint32_t _dbus_connection_get_next_client_serial(DBusConnection*)",
+      "symbol": "_dbus_connection_get_next_client_serial",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_mem_pool_dealloc(DBusMemPool*, void*)",
+      "symbol": "_dbus_mem_pool_dealloc",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_string_append_len(DBusString*, const char*, int)",
+      "symbol": "_dbus_string_append_len",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_auth_get_unused_bytes(DBusAuth*, const DBusString**)",
+      "symbol": "_dbus_auth_get_unused_bytes",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function uintptr_t _dbus_hash_iter_get_uintptr_key(DBusHashIter*)",
+      "symbol": "_dbus_hash_iter_get_uintptr_key",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_credentials_take_unix_gids(DBusCredentials*, dbus_gid_t*, size_t)",
+      "symbol": "_dbus_credentials_take_unix_gids",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_sleep_milliseconds(int)",
+      "symbol": "_dbus_sleep_milliseconds",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function const char* _dbus_variant_get_signature(DBusVariant*)",
+      "symbol": "_dbus_variant_get_signature",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_string_append_uint(DBusString*, unsigned long int)",
+      "symbol": "_dbus_string_append_uint",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_flush_caches()",
+      "symbol": "_dbus_flush_caches",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_string_free(DBusString*)",
+      "symbol": "_dbus_string_free",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_validate_error_name(const DBusString*, int, int)",
+      "symbol": "_dbus_validate_error_name",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_message_loader_queue_messages(DBusMessageLoader*)",
+      "symbol": "_dbus_message_loader_queue_messages",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_create_directory(const DBusString*, DBusError*)",
+      "symbol": "_dbus_create_directory",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_fd_set_close_on_exec(int)",
+      "symbol": "_dbus_fd_set_close_on_exec",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_credentials_clear(DBusCredentials*)",
+      "symbol": "_dbus_credentials_clear",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_list_insert_after(DBusList**, DBusList*, void*)",
+      "symbol": "_dbus_list_insert_after",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_credentials_are_empty(DBusCredentials*)",
+      "symbol": "_dbus_credentials_are_empty",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_ensure_directory(const DBusString*, DBusError*)",
+      "symbol": "_dbus_ensure_directory",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_homedir_from_current_process(const DBusString**)",
+      "symbol": "_dbus_homedir_from_current_process",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_credentials_add_unix_uid(DBusCredentials*, dbus_uid_t)",
+      "symbol": "_dbus_credentials_add_unix_uid",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_credentials_are_anonymous(DBusCredentials*)",
+      "symbol": "_dbus_credentials_are_anonymous",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_string_skip_white(const DBusString*, int, int*)",
+      "symbol": "_dbus_string_skip_white",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_uid_t _dbus_geteuid()",
+      "symbol": "_dbus_geteuid",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_connection_unref_unlocked(DBusConnection*)",
+      "symbol": "_dbus_connection_unref_unlocked",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function DBusCredentials* _dbus_credentials_copy(DBusCredentials*)",
+      "symbol": "_dbus_credentials_copy",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_string_copy_to_buffer_with_nul(const DBusString*, char*, int)",
+      "symbol": "_dbus_string_copy_to_buffer_with_nul",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_split_paths_and_append(DBusString*, const char*, DBusList**)",
+      "symbol": "_dbus_split_paths_and_append",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_string_skip_blank(const DBusString*, int, int*)",
+      "symbol": "_dbus_string_skip_blank",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function DBusCredentials* _dbus_credentials_new()",
+      "symbol": "_dbus_credentials_new",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_message_loader_get_unix_fds(DBusMessageLoader*, int**, unsigned int*)",
+      "symbol": "_dbus_message_loader_get_unix_fds",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_connection_lock(DBusConnection*)",
+      "symbol": "_dbus_connection_lock",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function char* _dbus_string_get_data_len(DBusString*, int, int)",
+      "symbol": "_dbus_string_get_data_len",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_hash_iter_next(DBusHashIter*)",
+      "symbol": "_dbus_hash_iter_next",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function const char* _dbus_type_to_string(int)",
+      "symbol": "_dbus_type_to_string",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_abort()",
+      "symbol": "_dbus_abort",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_credentials_ref(DBusCredentials*)",
+      "symbol": "_dbus_credentials_ref",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_list_clear_full(DBusList**, DBusFreeFunction)",
+      "symbol": "_dbus_list_clear_full",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_validate_path(const DBusString*, int, int)",
+      "symbol": "_dbus_validate_path",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_list_foreach(DBusList**, DBusForeachFunction, void*)",
+      "symbol": "_dbus_list_foreach",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_type_reader_read_fixed_multi(const DBusTypeReader*, void**, int*)",
+      "symbol": "_dbus_type_reader_read_fixed_multi",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_server_toggle_all_watches(DBusServer*, dbus_bool_t)",
+      "symbol": "_dbus_server_toggle_all_watches",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_list_free_link(DBusList*)",
+      "symbol": "_dbus_list_free_link",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_marshal_set_uint32(DBusString*, int, dbus_uint32_t, int)",
+      "symbol": "_dbus_marshal_set_uint32",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void* _dbus_list_get_first(DBusList**)",
+      "symbol": "_dbus_list_get_first",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function DBusList* _dbus_list_get_first_link(DBusList**)",
+      "symbol": "_dbus_list_get_first_link",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int _dbus_list_get_length(DBusList**)",
+      "symbol": "_dbus_list_get_length",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_list_insert_after_link(DBusList**, DBusList*, DBusList*)",
+      "symbol": "_dbus_list_insert_after_link",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_list_insert_before_link(DBusList**, DBusList*, DBusList*)",
+      "symbol": "_dbus_list_insert_before_link",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void* _dbus_list_pop_first(DBusList**)",
+      "symbol": "_dbus_list_pop_first",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_string_starts_with_words_c_str(const DBusString*, const char*, char)",
+      "symbol": "_dbus_string_starts_with_words_c_str",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function DBusList* _dbus_list_pop_first_link(DBusList**)",
+      "symbol": "_dbus_list_pop_first_link",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void* _dbus_list_pop_last(DBusList**)",
+      "symbol": "_dbus_list_pop_last",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function DBusMemPool* _dbus_mem_pool_new(int, dbus_bool_t)",
+      "symbol": "_dbus_mem_pool_new",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_list_prepend(DBusList**, void*)",
+      "symbol": "_dbus_list_prepend",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_list_remove(DBusList**, void*)",
+      "symbol": "_dbus_list_remove",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_string_insert_8_aligned(DBusString*, int, const unsigned char*)",
+      "symbol": "_dbus_string_insert_8_aligned",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function const char* _dbus_hash_iter_get_string_key(DBusHashIter*)",
+      "symbol": "_dbus_hash_iter_get_string_key",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_list_remove_last(DBusList**, void*)",
+      "symbol": "_dbus_list_remove_last",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_list_unlink(DBusList**, DBusList*)",
+      "symbol": "_dbus_list_unlink",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_string_copy(const DBusString*, int, DBusString*, int)",
+      "symbol": "_dbus_string_copy",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_log(DBusSystemLogSeverity, const char*, ...)",
+      "symbol": "_dbus_log",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_lookup_session_address(dbus_bool_t*, DBusString*, DBusError*)",
+      "symbol": "_dbus_lookup_session_address",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_string_equal_c_str(const DBusString*, const char*)",
+      "symbol": "_dbus_string_equal_c_str",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_string_split_on_byte(DBusString*, unsigned char, DBusString*)",
+      "symbol": "_dbus_string_split_on_byte",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_uint32_t _dbus_marshal_read_uint32(const DBusString*, int, int, int*)",
+      "symbol": "_dbus_marshal_read_uint32",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_fd_clear_close_on_exec(int)",
+      "symbol": "_dbus_fd_clear_close_on_exec",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_string_replace_len(const DBusString*, int, int, DBusString*, int, int)",
+      "symbol": "_dbus_string_replace_len",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void* _dbus_mem_pool_alloc(DBusMemPool*)",
+      "symbol": "_dbus_mem_pool_alloc",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function DBusPendingCall* _dbus_pending_call_ref_unlocked(DBusPendingCall*)",
+      "symbol": "_dbus_pending_call_ref_unlocked",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_mem_pool_free(DBusMemPool*)",
+      "symbol": "_dbus_mem_pool_free",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function const char* _dbus_strerror(int)",
+      "symbol": "_dbus_strerror",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int _dbus_connection_get_pending_fds_count(DBusConnection*)",
+      "symbol": "_dbus_connection_get_pending_fds_count",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_string_find_blank(const DBusString*, int, int*)",
+      "symbol": "_dbus_string_find_blank",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_message_get_unix_fds(DBusMessage*, const int**, unsigned int*)",
+      "symbol": "_dbus_message_get_unix_fds",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function DBusMessageLoader* _dbus_message_loader_new()",
+      "symbol": "_dbus_message_loader_new",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_hash_table_insert_int(DBusHashTable*, int, void*)",
+      "symbol": "_dbus_hash_table_insert_int",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function DBusMessage* _dbus_message_loader_pop_message(DBusMessageLoader*)",
+      "symbol": "_dbus_message_loader_pop_message",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_type_writer_init_values_only(DBusTypeWriter*, int, const DBusString*, int, DBusString*, int)",
+      "symbol": "_dbus_type_writer_init_values_only",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_string_starts_with_c_str(const DBusString*, const char*)",
+      "symbol": "_dbus_string_starts_with_c_str",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_credentials_are_superset(DBusCredentials*, DBusCredentials*)",
+      "symbol": "_dbus_credentials_are_superset",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function DBusMessageLoader* _dbus_message_loader_ref(DBusMessageLoader*)",
+      "symbol": "_dbus_message_loader_ref",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_message_loader_return_unix_fds(DBusMessageLoader*, int*, unsigned int)",
+      "symbol": "_dbus_message_loader_return_unix_fds",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_message_iter_get_args_valist(DBusMessageIter*, DBusError*, int, __va_list_tag*)",
+      "symbol": "_dbus_message_iter_get_args_valist",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_message_loader_unref(DBusMessageLoader*)",
+      "symbol": "_dbus_message_loader_unref",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int _dbus_hash_iter_get_int_key(DBusHashIter*)",
+      "symbol": "_dbus_hash_iter_get_int_key",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_ensure_standard_fds(DBusEnsureStandardFdsFlags, const char**)",
+      "symbol": "_dbus_ensure_standard_fds",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_message_remove_unknown_fields(DBusMessage*)",
+      "symbol": "_dbus_message_remove_unknown_fields",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_concat_dir_and_file(DBusString*, const DBusString*)",
+      "symbol": "_dbus_concat_dir_and_file",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function DBusPendingCall* _dbus_pending_call_new_unlocked(DBusConnection*, int, DBusTimeoutHandler)",
+      "symbol": "_dbus_pending_call_new_unlocked",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_pending_call_unref_and_unlock(DBusPendingCall*)",
+      "symbol": "_dbus_pending_call_unref_and_unlock",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_string_copy_data(const DBusString*, char**)",
+      "symbol": "_dbus_string_copy_data",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_pipe_init(DBusPipe*, int)",
+      "symbol": "_dbus_pipe_init",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_pipe_init_stdout(DBusPipe*)",
+      "symbol": "_dbus_pipe_init_stdout",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_pipe_invalidate(DBusPipe*)",
+      "symbol": "_dbus_pipe_invalidate",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int _dbus_read_socket(DBusSocket, DBusString*, int)",
+      "symbol": "_dbus_read_socket",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_pipe_is_stdout_or_stderr(DBusPipe*)",
+      "symbol": "_dbus_pipe_is_stdout_or_stderr",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int _dbus_poll(DBusPollFD*, int, int)",
+      "symbol": "_dbus_poll",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_print_backtrace()",
+      "symbol": "_dbus_print_backtrace",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int _dbus_printf_string_upper_bound(const char*, __va_list_tag*)",
+      "symbol": "_dbus_printf_string_upper_bound",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_credentials_add_windows_sid(DBusCredentials*, const char*)",
+      "symbol": "_dbus_credentials_add_windows_sid",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_register_shutdown_func(DBusShutdownFunction, void*)",
+      "symbol": "_dbus_register_shutdown_func",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_rmutex_lock(DBusRMutex*)",
+      "symbol": "_dbus_rmutex_lock",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_string_chop_white(DBusString*)",
+      "symbol": "_dbus_string_chop_white",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_string_array_contains(const char**, const char*)",
+      "symbol": "_dbus_string_array_contains",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function DBusServer* _dbus_server_new_for_tcp_socket(const char*, const char*, const char*, const char*, DBusError*, dbus_bool_t)",
+      "symbol": "_dbus_server_new_for_tcp_socket",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_string_init_from_string(DBusString*, const DBusString*)",
+      "symbol": "_dbus_string_init_from_string",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_server_unref_unlocked(DBusServer*)",
+      "symbol": "_dbus_server_unref_unlocked",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_string_delete(DBusString*, int, int)",
+      "symbol": "_dbus_string_delete",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function char* _dbus_strdup(const char*)",
+      "symbol": "_dbus_strdup",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_string_append(DBusString*, const char*)",
+      "symbol": "_dbus_string_append",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_string_append_byte(DBusString*, unsigned char)",
+      "symbol": "_dbus_string_append_byte",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_hash_table_remove_uintptr(DBusHashTable*, uintptr_t)",
+      "symbol": "_dbus_hash_table_remove_uintptr",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_string_append_int(DBusString*, long int)",
+      "symbol": "_dbus_string_append_int",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_hash_table_remove_string(DBusHashTable*, const char*)",
+      "symbol": "_dbus_hash_table_remove_string",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_delete_file(const DBusString*, DBusError*)",
+      "symbol": "_dbus_delete_file",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_string_init_const(DBusString*, const char*)",
+      "symbol": "_dbus_string_init_const",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_message_loader_return_buffer(DBusMessageLoader*, DBusString*)",
+      "symbol": "_dbus_message_loader_return_buffer",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_string_append_printf(DBusString*, const char*, ...)",
+      "symbol": "_dbus_string_append_printf",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_string_init_preallocated(DBusString*, int)",
+      "symbol": "_dbus_string_init_preallocated",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int _dbus_pipe_write(DBusPipe*, const DBusString*, int, int, DBusError*)",
+      "symbol": "_dbus_pipe_write",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int _dbus_read(int, DBusString*, int)",
+      "symbol": "_dbus_read",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_string_append_printf_valist(DBusString*, const char*, __va_list_tag*)",
+      "symbol": "_dbus_string_append_printf_valist",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function DBusAuth* _dbus_auth_client_new()",
+      "symbol": "_dbus_auth_client_new",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_string_copy_len(const DBusString*, int, int, DBusString*, int)",
+      "symbol": "_dbus_string_copy_len",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_string_move(DBusString*, int, DBusString*, int)",
+      "symbol": "_dbus_string_move",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_credentials_get_unix_gids(DBusCredentials*, const dbus_gid_t**, size_t*)",
+      "symbol": "_dbus_credentials_get_unix_gids",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_string_equal(const DBusString*, const DBusString*)",
+      "symbol": "_dbus_string_equal",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function DBusValidity _dbus_validate_signature_with_reason(const DBusString*, int, int)",
+      "symbol": "_dbus_validate_signature_with_reason",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function const char* _dbus_credentials_get_windows_sid(DBusCredentials*)",
+      "symbol": "_dbus_credentials_get_windows_sid",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_string_find(const DBusString*, int, const char*, int*)",
+      "symbol": "_dbus_string_find",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void* _dbus_list_get_last(DBusList**)",
+      "symbol": "_dbus_list_get_last",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_string_find_eol(const DBusString*, int, int*, int*)",
+      "symbol": "_dbus_string_find_eol",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_string_find_to(const DBusString*, int, int, const char*, int*)",
+      "symbol": "_dbus_string_find_to",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function const char* _dbus_strerror_from_errno()",
+      "symbol": "_dbus_strerror_from_errno",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int _dbus_string_get_allocated_size(const DBusString*)",
+      "symbol": "_dbus_string_get_allocated_size",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_string_hex_decode(const DBusString*, int, int*, DBusString*, int)",
+      "symbol": "_dbus_string_hex_decode",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_string_init(DBusString*)",
+      "symbol": "_dbus_string_init",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_string_insert_bytes(DBusString*, int, int, unsigned char)",
+      "symbol": "_dbus_string_insert_bytes",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function DBusPreallocatedHash* _dbus_hash_table_preallocate_entry(DBusHashTable*)",
+      "symbol": "_dbus_hash_table_preallocate_entry",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_string_lengthen(DBusString*, int)",
+      "symbol": "_dbus_string_lengthen",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function DBusList* _dbus_list_get_last_link(DBusList**)",
+      "symbol": "_dbus_list_get_last_link",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_string_parse_int(const DBusString*, int, long int*, int*)",
+      "symbol": "_dbus_string_parse_int",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_type_reader_set_basic(DBusTypeReader*, void*, const DBusTypeReader*)",
+      "symbol": "_dbus_type_reader_set_basic",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _dbus_connection_get_stats(DBusConnection*, dbus_uint32_t*, dbus_uint32_t*, dbus_uint32_t*, dbus_uint32_t*, dbus_uint32_t*, dbus_uint32_t*, dbus_uint32_t*, dbus_uint32_t*, dbus_uint32_t*, dbus_uint32_t*)",
+      "symbol": "_dbus_connection_get_stats",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_string_parse_uint(const DBusString*, int, unsigned long int*, int*)",
+      "symbol": "_dbus_string_parse_uint",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_string_pop_line(DBusString*, DBusString*)",
+      "symbol": "_dbus_string_pop_line",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function dbus_bool_t _dbus_string_set_length(DBusString*, int)",
+      "symbol": "_dbus_string_set_length",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "const char* _dbus_no_memory_message",
+      "symbol": "_dbus_no_memory_message",
+      "version": "LIBDBUS_PRIVATE_1.15.6",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void _dbus_credentials_take_pid_fd(DBusCredentials*, int)",
+      "symbol": "_dbus_credentials_take_pid_fd",
+      "version": "LIBDBUS_PRIVATE_1.15.8",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int _dbus_credentials_get_pid_fd(DBusCredentials*)",
+      "symbol": "_dbus_credentials_get_pid_fd",
+      "version": "LIBDBUS_PRIVATE_1.15.8",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function dbus_pid_t _dbus_resolve_pid_fd(int)",
+      "symbol": "_dbus_resolve_pid_fd",
+      "version": "LIBDBUS_PRIVATE_1.15.8",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 1,
+     "field_removed_from_struct": 1,
+     "member_offset_changed": 4,
+     "type_size_changed": 1
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../../dbus/dbus-sysdeps.h",
+      "exposure": "by_pointer",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct DBusAtomic"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../../dbus/dbus-credentials.c",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct DBusCredentials"
+     },
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": "../../dbus/dbus-credentials.c",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct DBusCredentials"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../../dbus/dbus-credentials.c",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct DBusCredentials"
+     }
+    ],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 3.993255211,
+  "source": "dbus",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.15.6",
+   "1.15.8"
+  ]
+ },
+ "generated_at": "2026-09-03T23:39:15Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

@@ -1,0 +1,154 @@
+{
+ "data": {
+  "bytes_extracted": 1211609,
+  "id": "libusb-1.0@1.0.26..1.0.27",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      90,
+      97
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 6
+    },
+    "soname": [
+     "libusb-1.0.so.0",
+     "libusb-1.0.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function int libusb_get_platform_descriptor(libusb_context*, libusb_bos_dev_capability_descriptor*, libusb_platform_descriptor**)",
+      "symbol": "libusb_get_platform_descriptor",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int libusb_get_max_alt_packet_size(libusb_device*, int, int, unsigned char)",
+      "symbol": "libusb_get_max_alt_packet_size",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int libusb_get_interface_association_descriptors(libusb_device*, uint8_t, libusb_interface_association_descriptor_array**)",
+      "symbol": "libusb_get_interface_association_descriptors",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int libusb_init_context(libusb_context**, const libusb_init_option*, int)",
+      "symbol": "libusb_init_context",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int libusb_get_active_interface_association_descriptors(libusb_device*, libusb_interface_association_descriptor_array**)",
+      "symbol": "libusb_get_active_interface_association_descriptors",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libusb_free_interface_association_descriptors(libusb_interface_association_descriptor_array*)",
+      "symbol": "libusb_free_interface_association_descriptors",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "enum_case_added": 1,
+     "field_added_to_struct": 2,
+     "field_removed_from_struct": 2,
+     "field_type_changed": 1
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct __pthread_cond_s"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "union {unsigned long long int __wseq; struct {unsigned int __low; unsigned int __high;} __wseq32;}"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "union {unsigned long long int __wseq; struct {unsigned int __low; unsigned int __high;} __wseq32;}"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "union {unsigned long long int __g1_start; struct {unsigned int __low; unsigned int __high;} __g1_start32;}"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "union {unsigned long long int __g1_start; struct {unsigned int __low; unsigned int __high;} __g1_start32;}"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../../libusb/libusb.h",
+      "exposure": "by_value",
+      "kind": "enum_case_added",
+      "third_party": true,
+      "type": "enum libusb_option"
+     }
+    ],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 2.587077854,
+  "source": "libusb-1.0",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.0.26",
+   "1.0.27"
+  ]
+ },
+ "generated_at": "2026-09-03T23:43:12Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

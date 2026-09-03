@@ -1,0 +1,55 @@
+{
+ "data": {
+  "bytes_extracted": 4307495,
+  "id": "nftables@1.1.4..1.1.5",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      26,
+      26
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libnftables.so.1",
+     "libnftables.so.1"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 3.811519074,
+  "source": "nftables",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.1.4",
+   "1.1.5"
+  ]
+ },
+ "generated_at": "2026-09-03T23:37:19Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

@@ -1,0 +1,177 @@
+{
+ "data": {
+  "bytes_extracted": 570559,
+  "id": "libmd@1.1.0..1.2.0",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      89,
+      108
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 17
+    },
+    "soname": [
+     "libmd.so.0",
+     "libmd.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function void SHAKE128_Final(uint8_t*, size_t, SHAKE128_CTX*)",
+      "symbol": "SHAKE128_Final",
+      "version": "LIBMD_0.2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void SHA3_224_Final(uint8_t*, SHA3_224_CTX*)",
+      "symbol": "SHA3_224_Final",
+      "version": "LIBMD_0.2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void SHA3_224_Init(SHA3_224_CTX*)",
+      "symbol": "SHA3_224_Init",
+      "version": "LIBMD_0.2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int SHA3_Selftest()",
+      "symbol": "SHA3_Selftest",
+      "version": "LIBMD_0.2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void SHA3_224_Update(SHA3_224_CTX*, const uint8_t*, size_t)",
+      "symbol": "SHA3_224_Update",
+      "version": "LIBMD_0.2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void SHA3_256_Final(uint8_t*, SHA3_256_CTX*)",
+      "symbol": "SHA3_256_Final",
+      "version": "LIBMD_0.2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void SHAKE128_Init(SHAKE128_CTX*)",
+      "symbol": "SHAKE128_Init",
+      "version": "LIBMD_0.2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void SHA3_512_Init(SHA3_512_CTX*)",
+      "symbol": "SHA3_512_Init",
+      "version": "LIBMD_0.2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void SHA3_256_Init(SHA3_256_CTX*)",
+      "symbol": "SHA3_256_Init",
+      "version": "LIBMD_0.2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void SHAKE256_Final(uint8_t*, size_t, SHAKE256_CTX*)",
+      "symbol": "SHAKE256_Final",
+      "version": "LIBMD_0.2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void SHA3_256_Update(SHA3_256_CTX*, const uint8_t*, size_t)",
+      "symbol": "SHA3_256_Update",
+      "version": "LIBMD_0.2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void SHAKE128_Update(SHAKE128_CTX*, const uint8_t*, size_t)",
+      "symbol": "SHAKE128_Update",
+      "version": "LIBMD_0.2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void SHA3_512_Final(uint8_t*, SHA3_512_CTX*)",
+      "symbol": "SHA3_512_Final",
+      "version": "LIBMD_0.2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void SHA3_384_Final(uint8_t*, SHA3_384_CTX*)",
+      "symbol": "SHA3_384_Final",
+      "version": "LIBMD_0.2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void SHA3_384_Update(SHA3_384_CTX*, const uint8_t*, size_t)",
+      "symbol": "SHA3_384_Update",
+      "version": "LIBMD_0.2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void SHA3_384_Init(SHA3_384_CTX*)",
+      "symbol": "SHA3_384_Init",
+      "version": "LIBMD_0.2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void SHA3_512_Update(SHA3_512_CTX*, const uint8_t*, size_t)",
+      "symbol": "SHA3_512_Update",
+      "version": "LIBMD_0.2",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 4.320989505,
+  "source": "libmd",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.1.0",
+   "1.2.0"
+  ]
+ },
+ "generated_at": "2026-09-03T23:46:16Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

@@ -1,0 +1,67 @@
+{
+ "data": {
+  "bytes_extracted": 8616590,
+  "id": "slang2@2.3.0..2.3.1",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      612,
+      612
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libslang.so.2",
+     "libslang.so.2"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 6
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 6,
+      "declared_in": "./src/_slang.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "union _pSL_Object_Union_Type"
+     }
+    ],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 4.221755211,
+  "source": "slang2",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "2.3.0",
+   "2.3.1"
+  ]
+ },
+ "generated_at": "2026-09-03T23:37:26Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

@@ -1,0 +1,77 @@
+{
+ "data": {
+  "bytes_extracted": 11299368,
+  "id": "libx11@1.8.3..1.8.4",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      1182,
+      1182
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "field_added_to_struct": 2,
+     "type_size_changed": 1
+    },
+    "soname": [
+     "libX11.so.6",
+     "libX11.so.6"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [
+     {
+      "append_only": true,
+      "count": 2,
+      "declared_in": "../../../include/X11/Xlibint.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": false,
+      "type": "struct _XDisplay"
+     },
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "../../../include/X11/Xlibint.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": false,
+      "type": "struct _XDisplay"
+     }
+    ],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 2.862509139,
+  "source": "libx11",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.8.3",
+   "1.8.4"
+  ]
+ },
+ "generated_at": "2026-09-03T23:32:52Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

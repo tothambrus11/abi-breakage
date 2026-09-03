@@ -1,0 +1,1072 @@
+{
+ "data": {
+  "bytes_extracted": 6673010,
+  "id": "librevenge@0.0.3..0.0.4",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      227,
+      229
+     ],
+     "mangled_functions": [
+      225,
+      229
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "librevenge-0.0.so.0",
+     "librevenge-0.0.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::vector<unsigned char, std::allocator<unsigned char> >& std::vector<unsigned char, std::allocator<unsigned char> >::operator=(const std::vector<unsigned char, std::allocator<unsigned char> >&)",
+      "symbol": "_ZNSt6vectorIhSaIhEEaSERKS1_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<double, std::allocator<double> >::_M_insert_aux(std::vector<double, std::allocator<double> >::iterator, const double&)",
+      "symbol": "_ZNSt6vectorIdSaIdEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPdS1_EERKd",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<librevenge::RVNGString, std::allocator<librevenge::RVNGString> >::_M_insert_aux(std::vector<librevenge::RVNGString, std::allocator<librevenge::RVNGString> >::iterator, const librevenge::RVNGString&)",
+      "symbol": "_ZNSt6vectorIN10librevenge10RVNGStringESaIS1_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<unsigned char, std::allocator<unsigned char> >::_M_insert_aux(std::vector<unsigned char, std::allocator<unsigned char> >::iterator, const unsigned char&)",
+      "symbol": "_ZNSt6vectorIhSaIhEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPhS1_EERKh",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<librevenge::RVNGPropertyList, std::allocator<librevenge::RVNGPropertyList> >::_M_insert_aux(std::vector<librevenge::RVNGPropertyList, std::allocator<librevenge::RVNGPropertyList> >::iterator, const librevenge::RVNGPropertyList&)",
+      "symbol": "_ZNSt6vectorIN10librevenge16RVNGPropertyListESaIS1_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::_Rb_tree<int, std::pair<int const, librevenge::RVNGPropertyList>, std::_Select1st<std::pair<int const, librevenge::RVNGPropertyList> >, std::less<int>, std::allocator<std::pair<int const, librevenge::RVNGPropertyList> > >::iterator std::_Rb_tree<int, std::pair<int const, librevenge::RVNGPropertyList>, std::_Select1st<std::pair<int const, librevenge::RVNGPropertyList> >, std::less<int>, std::allocator<std::pair<int const, librevenge::RVNGPropertyList> > >::_M_emplace_hint_unique<const std::piecewise_construct_t&, std::tuple<int&&>, std::tuple<> >(std::_Rb_tree<int, std::pair<int const, librevenge::RVNGPropertyList>, std::_Select1st<std::pair<int const, librevenge::RVNGPropertyList> >, std::less<int>, std::allocator<std::pair<int const, librevenge::RVNGPropertyList> > >::const_iterator, const std::piecewise_construct_t&, std::tuple<int&&>&&, std::tuple<>&&)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiN10librevenge16RVNGPropertyListEESt10_Select1stIS4_ESt4lessIiESaIS4_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJOiEESF_IJEEEEESt17_Rb_tree_iteratorIS4_ESt23_Rb_tree_const_iteratorIS4_EDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(const char*, const char*, std::forward_iterator_tag)",
+      "symbol": "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tag",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<unsigned char, std::allocator<unsigned char> >::_M_realloc_insert<unsigned char const&>(std::vector<unsigned char, std::allocator<unsigned char> >::iterator, const unsigned char&)",
+      "symbol": "_ZNSt6vectorIhSaIhEE17_M_realloc_insertIJRKhEEEvN9__gnu_cxx17__normal_iteratorIPhS1_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<double, std::allocator<double> >::_M_realloc_insert<double>(std::vector<double, std::allocator<double> >::iterator, double&&)",
+      "symbol": "_ZNSt6vectorIdSaIdEE17_M_realloc_insertIJdEEEvN9__gnu_cxx17__normal_iteratorIPdS1_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::_Rb_tree<librevenge::RVNGString, std::pair<const librevenge::RVNGString, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<const librevenge::RVNGString, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<librevenge::RVNGString>, std::allocator<std::pair<const librevenge::RVNGString, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::iterator std::_Rb_tree<librevenge::RVNGString, std::pair<const librevenge::RVNGString, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<const librevenge::RVNGString, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<librevenge::RVNGString>, std::allocator<std::pair<const librevenge::RVNGString, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::_M_emplace_hint_unique<const std::piecewise_construct_t&, std::tuple<const librevenge::RVNGString&>, std::tuple<> >(std::_Rb_tree<librevenge::RVNGString, std::pair<const librevenge::RVNGString, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<const librevenge::RVNGString, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<librevenge::RVNGString>, std::allocator<std::pair<const librevenge::RVNGString, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::const_iterator, const std::piecewise_construct_t&, std::tuple<const librevenge::RVNGString&>&&, std::tuple<>&&)",
+      "symbol": "_ZNSt8_Rb_treeIN10librevenge10RVNGStringESt4pairIKS1_NSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEESt10_Select1stISA_ESt4lessIS1_ESaISA_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJRS3_EESL_IJEEEEESt17_Rb_tree_iteratorISA_ESt23_Rb_tree_const_iteratorISA_EDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<double, std::allocator<double> >::emplace_back<double>(double&&)",
+      "symbol": "_ZNSt6vectorIdSaIdEE12emplace_backIJdEEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<librevenge::RVNGPropertyList, std::allocator<librevenge::RVNGPropertyList> >::_M_realloc_insert<const librevenge::RVNGPropertyList&>(std::vector<librevenge::RVNGPropertyList, std::allocator<librevenge::RVNGPropertyList> >::iterator, const librevenge::RVNGPropertyList&)",
+      "symbol": "_ZNSt6vectorIN10librevenge16RVNGPropertyListESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag)",
+      "symbol": "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPcEEvT_S7_St20forward_iterator_tag",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<librevenge::RVNGString, std::allocator<librevenge::RVNGString> >::_M_realloc_insert<const librevenge::RVNGString&>(std::vector<librevenge::RVNGString, std::allocator<librevenge::RVNGString> >::iterator, const librevenge::RVNGString&)",
+      "symbol": "_ZNSt6vectorIN10librevenge10RVNGStringESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_",
+      "weak": true
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 9,
+     "field_removed_from_struct": 11,
+     "field_type_changed": 9,
+     "vtable_changed": 7
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/boost/smart_ptr/detail/sp_counted_base_gcc_x86.hpp",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class boost::detail::sp_counted_base"
+     },
+     {
+      "append_only": false,
+      "count": 5,
+      "declared_in": "/usr/include/boost/smart_ptr/detail/sp_counted_base_gcc_x86.hpp",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class boost::detail::sp_counted_base"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/5/bits/stl_tree.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, librevenge::RVNGPropertyListElement>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, librevenge::RVNGPropertyListElement> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, librevenge::RVNGPropertyListElement> > >"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "/usr/include/c++/5/bits/stl_tree.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, librevenge::RVNGPropertyListElement>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, librevenge::RVNGPropertyListElement> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, librevenge::RVNGPropertyListElement> > >::_Rb_tree_impl<std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, false>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/5/bits/stl_tree.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, librevenge::RVNGPropertyListElement>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, librevenge::RVNGPropertyListElement> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, librevenge::RVNGPropertyListElement> > >::_Rb_tree_impl<std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, false>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/5/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<librevenge::RVNGPropertyList, std::allocator<librevenge::RVNGPropertyList> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../../inc/librevenge/RVNGSVGDrawingGenerator.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class librevenge::RVNGSVGDrawingGenerator"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/5/bits/stl_tree.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class std::_Rb_tree<int, std::pair<int const, librevenge::RVNGPropertyList>, std::_Select1st<std::pair<int const, librevenge::RVNGPropertyList> >, std::less<int>, std::allocator<std::pair<int const, librevenge::RVNGPropertyList> > >"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "/usr/include/c++/5/bits/stl_tree.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct std::_Rb_tree<int, std::pair<int const, librevenge::RVNGPropertyList>, std::_Select1st<std::pair<int const, librevenge::RVNGPropertyList> >, std::less<int>, std::allocator<std::pair<int const, librevenge::RVNGPropertyList> > >::_Rb_tree_impl<std::less<int>, false>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/5/bits/stl_tree.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Rb_tree<int, std::pair<int const, librevenge::RVNGPropertyList>, std::_Select1st<std::pair<int const, librevenge::RVNGPropertyList> >, std::less<int>, std::allocator<std::pair<int const, librevenge::RVNGPropertyList> > >::_Rb_tree_impl<std::less<int>, false>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/5/bits/stl_tree.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class std::_Rb_tree<librevenge::RVNGString, std::pair<const librevenge::RVNGString, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<const librevenge::RVNGString, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<librevenge::RVNGString>, std::allocator<std::pair<const librevenge::RVNGString, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "/usr/include/c++/5/bits/stl_tree.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct std::_Rb_tree<librevenge::RVNGString, std::pair<const librevenge::RVNGString, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<const librevenge::RVNGString, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<librevenge::RVNGString>, std::allocator<std::pair<const librevenge::RVNGString, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::_Rb_tree_impl<std::less<librevenge::RVNGString>, false>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/5/bits/stl_tree.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Rb_tree<librevenge::RVNGString, std::pair<const librevenge::RVNGString, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<const librevenge::RVNGString, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<librevenge::RVNGString>, std::allocator<std::pair<const librevenge::RVNGString, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::_Rb_tree_impl<std::less<librevenge::RVNGString>, false>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../../inc/librevenge/RVNGDrawingInterface.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class librevenge::RVNGDrawingInterface"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/5/bits/stl_tree.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct std::_Rb_tree_node<std::pair<int const, librevenge::RVNGPropertyList> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/5/bits/stl_pair.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct std::pair<int const, librevenge::RVNGPropertyList>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/5/bits/stl_pair.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct std::pair<int const, librevenge::RVNGPropertyList>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/5/bits/stl_pair.h",
+      "exposure": "by_value",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/5/bits/stl_tree.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct std::_Rb_tree_node<std::pair<const librevenge::RVNGString, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/5/bits/stl_pair.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct std::pair<const librevenge::RVNGString, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/5/bits/stl_pair.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct std::pair<const librevenge::RVNGString, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >"
+     }
+    ],
+    "vague_linkage": {
+     "symbol_added": 9,
+     "symbol_removed": 5
+    }
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      838,
+      845
+     ],
+     "mangled_functions": [
+      836,
+      845
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "librevenge-generators-0.0.so.0",
+     "librevenge-generators-0.0.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_fill_insert(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::iterator, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::size_type, const std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::value_type&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPS5_S7_EEmRKS5_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::_Deque_base<int, std::allocator<int> >::_M_initialize_map(std::size_t)",
+      "symbol": "_ZNSt11_Deque_baseIiSaIiEE17_M_initialize_mapEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual boost::exception::~exception(int)",
+      "symbol": "_ZN5boost9exceptionD2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::vector<double, std::allocator<double> >& std::vector<double, std::allocator<double> >::operator=(const std::vector<double, std::allocator<double> >&)",
+      "symbol": "_ZNSt6vectorIdSaIdEEaSERKS1_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<int, std::allocator<int> >::_M_insert_aux(std::vector<int, std::allocator<int> >::iterator, const int&)",
+      "symbol": "_ZNSt6vectorIiSaIiEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPiS1_EERKi",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_M_insert_aux(std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::iterator, const std::vector<double, std::allocator<double> >&)",
+      "symbol": "_ZNSt6vectorIS_IdSaIdEESaIS1_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<double, std::allocator<double> >::_M_insert_aux(std::vector<double, std::allocator<double> >::iterator, const double&)",
+      "symbol": "_ZNSt6vectorIdSaIdEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPdS1_EERKd",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual boost::exception::~exception(int)",
+      "symbol": "_ZN5boost9exceptionD0Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::deque<int, std::allocator<int> >::_M_push_back_aux(const std::deque<int, std::allocator<int> >::value_type&)",
+      "symbol": "_ZNSt5dequeIiSaIiEE16_M_push_back_auxERKi",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::~vector(int)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::_Rb_tree<int, std::pair<int const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<int const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<int>, std::allocator<std::pair<int const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::iterator std::_Rb_tree<int, std::pair<int const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<int const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<int>, std::allocator<std::pair<int const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::_M_emplace_hint_unique<const std::piecewise_construct_t&, std::tuple<int const&>, std::tuple<> >(std::_Rb_tree<int, std::pair<int const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<int const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<int>, std::allocator<std::pair<int const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::const_iterator, const std::piecewise_construct_t&, std::tuple<int const&>&&, std::tuple<>&&)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEESt10_Select1stIS8_ESt4lessIiESaIS8_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJRS1_EESJ_IJEEEEESt17_Rb_tree_iteratorIS8_ESt23_Rb_tree_const_iteratorIS8_EDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::iterator std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::_M_emplace_hint_unique<const std::piecewise_construct_t&, std::tuple<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>, std::tuple<> >(std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::const_iterator, const std::piecewise_construct_t&, std::tuple<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>&&, std::tuple<>&&)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_S5_ESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJRS7_EESJ_IJEEEEESt17_Rb_tree_iteratorIS8_ESt23_Rb_tree_const_iteratorIS8_EDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::bad_lexical_cast> >::~clone_impl(int, void**)",
+      "symbol": "_ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_16bad_lexical_castEEEED0Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(const char*, const char*, std::forward_iterator_tag)",
+      "symbol": "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tag",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual const boost::exception_detail::clone_base* boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::bad_lexical_cast> >::clone() const",
+      "symbol": "_ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_16bad_lexical_castEEEE5cloneEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::bad_lexical_cast> >::rethrow() const",
+      "symbol": "_ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_16bad_lexical_castEEEE7rethrowEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::bad_lexical_cast> >::~clone_impl(int, void**)",
+      "symbol": "_ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_16bad_lexical_castEEEED1Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<double, std::allocator<double> >::_M_realloc_insert<double const&>(std::vector<double, std::allocator<double> >::iterator, const double&)",
+      "symbol": "_ZNSt6vectorIdSaIdEE17_M_realloc_insertIJRKdEEEvN9__gnu_cxx17__normal_iteratorIPdS1_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag)",
+      "symbol": "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPcEEvT_S7_St20forward_iterator_tag",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::deque<int, std::allocator<int> >::_M_push_back_aux<int>(int&&)",
+      "symbol": "_ZNSt5dequeIiSaIiEE16_M_push_back_auxIJiEEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_default_append(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::size_type)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_default_appendEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_M_realloc_insert<const std::vector<double, std::allocator<double> >&>(std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::iterator, const std::vector<double, std::allocator<double> >&)",
+      "symbol": "_ZNSt6vectorIS_IdSaIdEESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<double, std::allocator<double> >::emplace_back<double>(double&&)",
+      "symbol": "_ZNSt6vectorIdSaIdEE12emplace_backIJdEEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<double, std::allocator<double> >::_M_realloc_insert<double>(std::vector<double, std::allocator<double> >::iterator, double&&)",
+      "symbol": "_ZNSt6vectorIdSaIdEE17_M_realloc_insertIJdEEEvN9__gnu_cxx17__normal_iteratorIPdS1_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<int, std::allocator<int> >::_M_realloc_insert<int const&>(std::vector<int, std::allocator<int> >::iterator, const int&)",
+      "symbol": "_ZNSt6vectorIiSaIiEE17_M_realloc_insertIJRKiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_",
+      "weak": true
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 17,
+     "field_removed_from_struct": 17,
+     "field_type_changed": 11,
+     "vtable_changed": 6
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/home/rene/Debian/Pakete/Document_Liberation/librevenge/librevenge-0.0.3/src/lib/RVNGHTMLTextTextStyle.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class librevenge::RVNGHTMLTextListStyleManager"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/home/rene/Debian/Pakete/Document_Liberation/librevenge/librevenge-0.0.3/src/lib/RVNGHTMLTextTextStyle.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class librevenge::RVNGHTMLTextListStyleManager"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/5/bits/stl_tree.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "/usr/include/c++/5/bits/stl_tree.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::_Rb_tree_impl<std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, false>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/5/bits/stl_tree.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::_Rb_tree_impl<std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, false>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/5/bits/stl_tree.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class std::_Rb_tree<int, std::pair<int const, librevenge::RVNGHTMLTextListStyleManager::List>, std::_Select1st<std::pair<int const, librevenge::RVNGHTMLTextListStyleManager::List> >, std::less<int>, std::allocator<std::pair<int const, librevenge::RVNGHTMLTextListStyleManager::List> > >"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "/usr/include/c++/5/bits/stl_tree.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct std::_Rb_tree<int, std::pair<int const, librevenge::RVNGHTMLTextListStyleManager::List>, std::_Select1st<std::pair<int const, librevenge::RVNGHTMLTextListStyleManager::List> >, std::less<int>, std::allocator<std::pair<int const, librevenge::RVNGHTMLTextListStyleManager::List> > >::_Rb_tree_impl<std::less<int>, false>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/5/bits/stl_tree.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Rb_tree<int, std::pair<int const, librevenge::RVNGHTMLTextListStyleManager::List>, std::_Select1st<std::pair<int const, librevenge::RVNGHTMLTextListStyleManager::List> >, std::less<int>, std::allocator<std::pair<int const, librevenge::RVNGHTMLTextListStyleManager::List> > >::_Rb_tree_impl<std::less<int>, false>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/home/rene/Debian/Pakete/Document_Liberation/librevenge/librevenge-0.0.3/src/lib/RVNGHTMLTextTextStyle.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class librevenge::RVNGHTMLTextParagraphStyleManager"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/5/bits/stl_tree.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class std::_Rb_tree<int, std::pair<int const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<int const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<int>, std::allocator<std::pair<int const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "/usr/include/c++/5/bits/stl_tree.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct std::_Rb_tree<int, std::pair<int const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<int const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<int>, std::allocator<std::pair<int const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::_Rb_tree_impl<std::less<int>, false>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/5/bits/stl_tree.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Rb_tree<int, std::pair<int const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<int const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<int>, std::allocator<std::pair<int const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::_Rb_tree_impl<std::less<int>, false>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/home/rene/Debian/Pakete/Document_Liberation/librevenge/librevenge-0.0.3/src/lib/RVNGRawDrawingGenerator.cpp",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct librevenge::RVNGRawDrawingGeneratorImpl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/5/bits/stl_deque.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::deque<int, std::allocator<int> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/home/rene/Debian/Pakete/Document_Liberation/librevenge/librevenge-0.0.3/src/lib/RVNGRawPresentationGenerator.cpp",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct librevenge::RVNGRawPresentationGeneratorImpl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/home/rene/Debian/Pakete/Document_Liberation/librevenge/librevenge-0.0.3/src/lib/RVNGRawSpreadsheetGenerator.cpp",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct librevenge::RVNGRawSpreadsheetGeneratorImpl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/home/rene/Debian/Pakete/Document_Liberation/librevenge/librevenge-0.0.3/src/lib/RVNGRawTextGenerator.cpp",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct librevenge::RVNGRawTextGeneratorImpl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/5/bits/stl_tree.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class std::_Rb_tree<int, std::pair<int const, librevenge::RVNGPropertyList>, std::_Select1st<std::pair<int const, librevenge::RVNGPropertyList> >, std::less<int>, std::allocator<std::pair<int const, librevenge::RVNGPropertyList> > >"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "/usr/include/c++/5/bits/stl_tree.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct std::_Rb_tree<int, std::pair<int const, librevenge::RVNGPropertyList>, std::_Select1st<std::pair<int const, librevenge::RVNGPropertyList> >, std::less<int>, std::allocator<std::pair<int const, librevenge::RVNGPropertyList> > >::_Rb_tree_impl<std::less<int>, false>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/5/bits/stl_tree.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Rb_tree<int, std::pair<int const, librevenge::RVNGPropertyList>, std::_Select1st<std::pair<int const, librevenge::RVNGPropertyList> >, std::less<int>, std::allocator<std::pair<int const, librevenge::RVNGPropertyList> > >::_Rb_tree_impl<std::less<int>, false>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/5/bits/stl_tree.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class std::_Rb_tree<librevenge::RVNGString, std::pair<const librevenge::RVNGString, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<const librevenge::RVNGString, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<librevenge::RVNGString>, std::allocator<std::pair<const librevenge::RVNGString, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "/usr/include/c++/5/bits/stl_tree.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct std::_Rb_tree<librevenge::RVNGString, std::pair<const librevenge::RVNGString, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<const librevenge::RVNGString, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<librevenge::RVNGString>, std::allocator<std::pair<const librevenge::RVNGString, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::_Rb_tree_impl<std::less<librevenge::RVNGString>, false>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/5/bits/stl_tree.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Rb_tree<librevenge::RVNGString, std::pair<const librevenge::RVNGString, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<const librevenge::RVNGString, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<librevenge::RVNGString>, std::allocator<std::pair<const librevenge::RVNGString, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::_Rb_tree_impl<std::less<librevenge::RVNGString>, false>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/boost/smart_ptr/detail/sp_counted_base_gcc_x86.hpp",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class boost::detail::sp_counted_base"
+     },
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": "/usr/include/boost/smart_ptr/detail/sp_counted_base_gcc_x86.hpp",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class boost::detail::sp_counted_base"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/5/bits/stl_tree.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct std::_Rb_tree_node<std::pair<int const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/5/bits/stl_pair.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct std::pair<int const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/5/bits/stl_pair.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct std::pair<int const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/5/bits/stl_pair.h",
+      "exposure": "by_value",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/5/bits/stl_tree.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct std::_Rb_tree_node<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/5/bits/stl_pair.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/5/bits/stl_pair.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >"
+     }
+    ],
+    "vague_linkage": {
+     "symbol_added": 15,
+     "symbol_removed": 10
+    }
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      77,
+      73
+     ],
+     "mangled_functions": [
+      75,
+      73
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "librevenge-stream-0.0.so.0",
+     "librevenge-stream-0.0.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_iterator<unsigned int>, bool> std::_Rb_tree<unsigned int, unsigned int, std::_Identity<unsigned int>, std::less<unsigned int>, std::allocator<unsigned int> >::_M_insert_unique(const unsigned int&)",
+      "symbol": "_ZNSt8_Rb_treeIjjSt9_IdentityIjESt4lessIjESaIjEE16_M_insert_uniqueERKj",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<unsigned char, std::allocator<unsigned char> >::vector(std::vector<unsigned char, std::allocator<unsigned char> >::size_type, const std::vector<unsigned char, std::allocator<unsigned char> >::value_type&, const std::vector<unsigned char, std::allocator<unsigned char> >::allocator_type&)",
+      "symbol": "_ZNSt6vectorIhSaIhEEC2EmRKhRKS0_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >& std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::operator=(const std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EEaSERKS7_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual boost::exception::~exception(int)",
+      "symbol": "_ZN5boost9exceptionD0Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_insert_aux(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::iterator, const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS5_S7_EERKS5_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual boost::exception::~exception(int)",
+      "symbol": "_ZN5boost9exceptionD2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::deque<char, std::allocator<char> >::_M_range_insert_aux<char const*>(std::deque<char, std::allocator<char> >::iterator, const char*, const char*, std::forward_iterator_tag)",
+      "symbol": "_ZNSt5dequeIcSaIcEE19_M_range_insert_auxIPKcEEvSt15_Deque_iteratorIcRcPcET_S9_St20forward_iterator_tag",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<unsigned int, std::allocator<unsigned int> >::_M_insert_aux(std::vector<unsigned int, std::allocator<unsigned int> >::iterator, const unsigned int&)",
+      "symbol": "_ZNSt6vectorIjSaIjEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPjS1_EERKj",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<long unsigned int, std::allocator<long unsigned int> >::_M_insert_aux(std::vector<long unsigned int, std::allocator<long unsigned int> >::iterator, const unsigned long int&)",
+      "symbol": "_ZNSt6vectorImSaImEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPmS1_EERKm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::vector<long unsigned int, std::allocator<long unsigned int> >& std::vector<long unsigned int, std::allocator<long unsigned int> >::operator=(const std::vector<long unsigned int, std::allocator<long unsigned int> >&)",
+      "symbol": "_ZNSt6vectorImSaImEEaSERKS1_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool std::binary_search<char const*, char>(const char*, const char*, const char&)",
+      "symbol": "_ZSt13binary_searchIPKccEbT_S2_RKT0_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag)",
+      "symbol": "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPcEEvT_S7_St20forward_iterator_tag",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<long unsigned int, std::allocator<long unsigned int> >::emplace_back<long unsigned int>(unsigned long int&&)",
+      "symbol": "_ZNSt6vectorImSaImEE12emplace_backIJmEEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<unsigned int, std::allocator<unsigned int> >::_M_realloc_insert<unsigned int const&>(std::vector<unsigned int, std::allocator<unsigned int> >::iterator, const unsigned int&)",
+      "symbol": "_ZNSt6vectorIjSaIjEE17_M_realloc_insertIJRKjEEEvN9__gnu_cxx17__normal_iteratorIPjS1_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::pair<std::_Rb_tree_iterator<unsigned int>, bool> std::_Rb_tree<unsigned int, unsigned int, std::_Identity<unsigned int>, std::less<unsigned int>, std::allocator<unsigned int> >::_M_insert_unique<unsigned int const&>(const unsigned int&)",
+      "symbol": "_ZNSt8_Rb_treeIjjSt9_IdentityIjESt4lessIjESaIjEE16_M_insert_uniqueIRKjEESt4pairISt17_Rb_tree_iteratorIjEbEOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<unsigned char, std::allocator<unsigned char> >::_M_default_append(std::vector<unsigned char, std::allocator<unsigned char> >::size_type)",
+      "symbol": "_ZNSt6vectorIhSaIhEE17_M_default_appendEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<long unsigned int, std::allocator<long unsigned int> >::_M_default_append(std::vector<long unsigned int, std::allocator<long unsigned int> >::size_type)",
+      "symbol": "_ZNSt6vectorImSaImEE17_M_default_appendEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_insert<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::iterator, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_realloc_insertIJS5_EEEvN9__gnu_cxx17__normal_iteratorIPS5_S7_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(const char*, const char*, std::forward_iterator_tag)",
+      "symbol": "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tag",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_insert<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::iterator, const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_realloc_insertIJRKS5_EEEvN9__gnu_cxx17__normal_iteratorIPS5_S7_EEDpOT_",
+      "weak": true
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 5,
+     "field_removed_from_struct": 6,
+     "field_type_changed": 8
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "/usr/include/libio.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct _IO_FILE"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/5/bits/stl_tree.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class std::_Rb_tree<long unsigned int, long unsigned int, std::_Identity<long unsigned int>, std::less<long unsigned int>, std::allocator<long unsigned int> >"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "/usr/include/c++/5/bits/stl_tree.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct std::_Rb_tree<long unsigned int, long unsigned int, std::_Identity<long unsigned int>, std::less<long unsigned int>, std::allocator<long unsigned int> >::_Rb_tree_impl<std::less<long unsigned int>, false>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/5/bits/stl_tree.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Rb_tree<long unsigned int, long unsigned int, std::_Identity<long unsigned int>, std::less<long unsigned int>, std::allocator<long unsigned int> >::_Rb_tree_impl<std::less<long unsigned int>, false>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/5/bits/stl_tree.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct std::_Rb_tree_node<long unsigned int>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/5/bits/stl_tree.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class std::_Rb_tree<unsigned int, unsigned int, std::_Identity<unsigned int>, std::less<unsigned int>, std::allocator<unsigned int> >"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "/usr/include/c++/5/bits/stl_tree.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct std::_Rb_tree<unsigned int, unsigned int, std::_Identity<unsigned int>, std::less<unsigned int>, std::allocator<unsigned int> >::_Rb_tree_impl<std::less<unsigned int>, false>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/5/bits/stl_tree.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Rb_tree<unsigned int, unsigned int, std::_Identity<unsigned int>, std::less<unsigned int>, std::allocator<unsigned int> >::_Rb_tree_impl<std::less<unsigned int>, false>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/5/bits/stl_tree.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct std::_Rb_tree_node<unsigned int>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/5/bits/stl_list.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct std::__cxx11::_List_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_List_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/5/bits/stl_deque.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::deque<char, std::allocator<char> >"
+     }
+    ],
+    "vague_linkage": {
+     "symbol_added": 10,
+     "symbol_removed": 10
+    }
+   }
+  ],
+  "seconds": 9.044443291,
+  "source": "librevenge",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "0.0.3",
+   "0.0.4"
+  ]
+ },
+ "generated_at": "2026-09-03T23:33:46Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

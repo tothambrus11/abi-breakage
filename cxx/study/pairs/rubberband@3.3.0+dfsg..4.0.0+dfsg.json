@@ -1,0 +1,641 @@
+{
+ "data": {
+  "bytes_extracted": 6263649,
+  "id": "rubberband@3.3.0+dfsg..4.0.0+dfsg",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      521,
+      632
+     ],
+     "mangled_functions": [
+      490,
+      587
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 55
+    },
+    "soname": [
+     "librubberband.so.2",
+     "librubberband.so.3"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function void rubberband_live_set_pitch_scale(RubberBandLiveState, double)",
+      "symbol": "rubberband_live_set_pitch_scale",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void rubberband_live_set_formant_option(RubberBandLiveState, RubberBandOptions)",
+      "symbol": "rubberband_live_set_formant_option",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function RubberBandLiveState rubberband_live_new(unsigned int, unsigned int, RubberBandOptions)",
+      "symbol": "rubberband_live_new",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function double rubberband_live_get_pitch_scale(const RubberBandLiveState)",
+      "symbol": "rubberband_live_get_pitch_scale",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function double rubberband_live_get_formant_scale(const RubberBandLiveState)",
+      "symbol": "rubberband_live_get_formant_scale",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function unsigned int rubberband_live_get_channel_count(const RubberBandLiveState)",
+      "symbol": "rubberband_live_get_channel_count",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function unsigned int rubberband_live_get_block_size(RubberBandLiveState)",
+      "symbol": "rubberband_live_get_block_size",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void rubberband_live_delete(RubberBandLiveState)",
+      "symbol": "rubberband_live_delete",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<float, std::allocator<float> >::_M_default_append(std::vector<float, std::allocator<float> >::size_type)",
+      "symbol": "_ZNSt6vectorIfSaIfEE17_M_default_appendEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void* std::_Sp_counted_ptr_inplace<RubberBand::R3LiveShifter::ScaleData, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_get_deleter(const std::type_info&)",
+      "symbol": "_ZNSt23_Sp_counted_ptr_inplaceIN10RubberBand13R3LiveShifter9ScaleDataESaIvELN9__gnu_cxx12_Lock_policyE2EE14_M_get_deleterERKSt9type_info",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void std::_Sp_counted_ptr_inplace<RubberBand::R3LiveShifter::ScaleData, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_dispose()",
+      "symbol": "_ZNSt23_Sp_counted_ptr_inplaceIN10RubberBand13R3LiveShifter9ScaleDataESaIvELN9__gnu_cxx12_Lock_policyE2EE10_M_disposeEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void std::_Sp_counted_ptr_inplace<RubberBand::R3LiveShifter::ScaleData, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_destroy()",
+      "symbol": "_ZNSt23_Sp_counted_ptr_inplaceIN10RubberBand13R3LiveShifter9ScaleDataESaIvELN9__gnu_cxx12_Lock_policyE2EE10_M_destroyEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual std::_Sp_counted_ptr_inplace<RubberBand::R3LiveShifter::ChannelScaleData, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::~_Sp_counted_ptr_inplace()",
+      "symbol": "_ZNSt23_Sp_counted_ptr_inplaceIN10RubberBand13R3LiveShifter16ChannelScaleDataESaIvELN9__gnu_cxx12_Lock_policyE2EED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void std::_Sp_counted_ptr_inplace<RubberBand::R3LiveShifter::ChannelScaleData, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_destroy()",
+      "symbol": "_ZNSt23_Sp_counted_ptr_inplaceIN10RubberBand13R3LiveShifter16ChannelScaleDataESaIvELN9__gnu_cxx12_Lock_policyE2EE10_M_destroyEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual std::_Sp_counted_ptr_inplace<RubberBand::R3LiveShifter::ChannelData, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::~_Sp_counted_ptr_inplace()",
+      "symbol": "_ZNSt23_Sp_counted_ptr_inplaceIN10RubberBand13R3LiveShifter11ChannelDataESaIvELN9__gnu_cxx12_Lock_policyE2EED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void std::_Sp_counted_ptr_inplace<RubberBand::R3LiveShifter::ChannelData, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_dispose()",
+      "symbol": "_ZNSt23_Sp_counted_ptr_inplaceIN10RubberBand13R3LiveShifter11ChannelDataESaIvELN9__gnu_cxx12_Lock_policyE2EE10_M_disposeEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int RubberBand::R3LiveShifter::ScaleData::analysisWindowLength()",
+      "symbol": "_ZN10RubberBand13R3LiveShifter9ScaleData20analysisWindowLengthEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method RubberBand::R3LiveShifter::ChannelData::ChannelData(RubberBand::BinSegmenter::Parameters, RubberBand::BinClassifier::Parameters, int, int, int, int)",
+      "symbol": "_ZN10RubberBand13R3LiveShifter11ChannelDataC2ENS_12BinSegmenter10ParametersENS_13BinClassifier10ParametersEiiii",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void RubberBand::R3LiveShifter::analyseFormant(int)",
+      "symbol": "_ZN10RubberBand13R3LiveShifter14analyseFormantEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void RubberBand::RubberBandLiveShifter::setDebugLevel(int)",
+      "symbol": "_ZN10RubberBand21RubberBandLiveShifter13setDebugLevelEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void* std::_Sp_counted_ptr<RubberBand::RubberBandLiveShifter::Impl::CerrLogger*, (__gnu_cxx::_Lock_policy)2>::_M_get_deleter(const std::type_info&)",
+      "symbol": "_ZNSt15_Sp_counted_ptrIPN10RubberBand21RubberBandLiveShifter4Impl10CerrLoggerELN9__gnu_cxx12_Lock_policyE2EE14_M_get_deleterERKSt9type_info",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void RubberBand::RubberBandLiveShifter::Impl::CerrLogger::log(const char*, double)",
+      "symbol": "_ZN10RubberBand21RubberBandLiveShifter4Impl10CerrLogger3logEPKcd",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method RubberBand::R3LiveShifter::ScaleData::ScaleData(RubberBand::GuidedPhaseAdvance::Parameters, RubberBand::Log)",
+      "symbol": "_ZN10RubberBand13R3LiveShifter9ScaleDataC2ENS_18GuidedPhaseAdvance10ParametersENS_3LogE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual std::_Sp_counted_ptr_inplace<RubberBand::R3LiveShifter::ScaleData, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::~_Sp_counted_ptr_inplace()",
+      "symbol": "_ZNSt23_Sp_counted_ptr_inplaceIN10RubberBand13R3LiveShifter9ScaleDataESaIvELN9__gnu_cxx12_Lock_policyE2EED0Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void std::_Sp_counted_ptr_inplace<RubberBand::R3LiveShifter::ChannelScaleData, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_dispose()",
+      "symbol": "_ZNSt23_Sp_counted_ptr_inplaceIN10RubberBand13R3LiveShifter16ChannelScaleDataESaIvELN9__gnu_cxx12_Lock_policyE2EE10_M_disposeEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void RubberBand::R3LiveShifter::measureResamplerDelay()",
+      "symbol": "_ZN10RubberBand13R3LiveShifter21measureResamplerDelayEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void rubberband_live_reset(RubberBandLiveState)",
+      "symbol": "rubberband_live_reset",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void RubberBand::R3LiveShifter::initialise()",
+      "symbol": "_ZN10RubberBand13R3LiveShifter10initialiseEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function unsigned int rubberband_live_get_start_delay(const RubberBandLiveState)",
+      "symbol": "rubberband_live_get_start_delay",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method size_t RubberBand::RubberBandLiveShifter::getStartDelay() const",
+      "symbol": "_ZNK10RubberBand21RubberBandLiveShifter13getStartDelayEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void RubberBand::RubberBandLiveShifter::setFormantOption(RubberBand::RubberBandLiveShifter::Options)",
+      "symbol": "_ZN10RubberBand21RubberBandLiveShifter16setFormantOptionEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method RubberBand::WindowType RubberBand::R3LiveShifter::ScaleData::analysisWindowShape()",
+      "symbol": "_ZN10RubberBand13R3LiveShifter9ScaleData19analysisWindowShapeEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void rubberband_live_set_debug_level(RubberBandLiveState, int)",
+      "symbol": "rubberband_live_set_debug_level",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method RubberBand::R3LiveShifter::R3LiveShifter(RubberBand::R3LiveShifter::Parameters, RubberBand::Log)",
+      "symbol": "_ZN10RubberBand13R3LiveShifterC2ENS0_10ParametersENS_3LogE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void RubberBand::R3LiveShifter::shift(const float* const*, float* const*)",
+      "symbol": "_ZN10RubberBand13R3LiveShifter5shiftEPKPKfPKPf",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void RubberBand::R3LiveShifter::synthesiseChannel(int, int, bool)",
+      "symbol": "_ZN10RubberBand13R3LiveShifter17synthesiseChannelEiib",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void RubberBand::R3LiveShifter::adjustPreKick(int)",
+      "symbol": "_ZN10RubberBand13R3LiveShifter13adjustPreKickEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void RubberBand::R3LiveShifter::analyseChannel(int, int, int, int)",
+      "symbol": "_ZN10RubberBand13R3LiveShifter14analyseChannelEiiii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int RubberBand::R3LiveShifter::readOut(float* const*, int)",
+      "symbol": "_ZN10RubberBand13R3LiveShifter7readOutEPKPfi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void RubberBand::R3LiveShifter::reset()",
+      "symbol": "_ZN10RubberBand13R3LiveShifter5resetEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual std::_Sp_counted_ptr_inplace<RubberBand::R3LiveShifter::ScaleData, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::~_Sp_counted_ptr_inplace()",
+      "symbol": "_ZNSt23_Sp_counted_ptr_inplaceIN10RubberBand13R3LiveShifter9ScaleDataESaIvELN9__gnu_cxx12_Lock_policyE2EED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void RubberBand::RubberBandLiveShifter::setPitchScale(double)",
+      "symbol": "_ZN10RubberBand21RubberBandLiveShifter13setPitchScaleEd",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void std::_Sp_counted_ptr_inplace<RubberBand::R3LiveShifter::ChannelData, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_destroy()",
+      "symbol": "_ZNSt23_Sp_counted_ptr_inplaceIN10RubberBand13R3LiveShifter11ChannelDataESaIvELN9__gnu_cxx12_Lock_policyE2EE10_M_destroyEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void* std::_Sp_counted_ptr_inplace<RubberBand::R3LiveShifter::ChannelScaleData, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_get_deleter(const std::type_info&)",
+      "symbol": "_ZNSt23_Sp_counted_ptr_inplaceIN10RubberBand13R3LiveShifter16ChannelScaleDataESaIvELN9__gnu_cxx12_Lock_policyE2EE14_M_get_deleterERKSt9type_info",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void RubberBand::R3LiveShifter::adjustFormant(int)",
+      "symbol": "_ZN10RubberBand13R3LiveShifter13adjustFormantEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int RubberBand::R3LiveShifter::ScaleData::synthesisWindowLength()",
+      "symbol": "_ZN10RubberBand13R3LiveShifter9ScaleData21synthesisWindowLengthEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method RubberBand::WindowType RubberBand::R3LiveShifter::ScaleData::synthesisWindowShape()",
+      "symbol": "_ZN10RubberBand13R3LiveShifter9ScaleData20synthesisWindowShapeEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void RubberBand::RubberBandLiveShifter::setFormantScale(double)",
+      "symbol": "_ZN10RubberBand21RubberBandLiveShifter15setFormantScaleEd",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void* std::_Sp_counted_ptr_inplace<RubberBand::R3LiveShifter::ChannelData, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::_M_get_deleter(const std::type_info&)",
+      "symbol": "_ZNSt23_Sp_counted_ptr_inplaceIN10RubberBand13R3LiveShifter11ChannelDataESaIvELN9__gnu_cxx12_Lock_policyE2EE14_M_get_deleterERKSt9type_info",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void std::_Sp_counted_ptr<RubberBand::RubberBandLiveShifter::Impl::CerrLogger*, (__gnu_cxx::_Lock_policy)2>::_M_destroy()",
+      "symbol": "_ZNSt15_Sp_counted_ptrIPN10RubberBand21RubberBandLiveShifter4Impl10CerrLoggerELN9__gnu_cxx12_Lock_policyE2EE10_M_destroyEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::_Function_handler<void(char const*), RubberBand::RubberBandLiveShifter::Impl::makeRBLog(std::shared_ptr<RubberBand::RubberBandLiveShifter::Logger>)::<lambda(char const*)> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt17_Function_handlerIFvPKcEZN10RubberBand21RubberBandLiveShifter4Impl9makeRBLogESt10shared_ptrINS4_6LoggerEEEUlS1_E_E10_M_managerERSt9_Any_dataRKSB_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void RubberBand::R3LiveShifter::setFormantScale(double)",
+      "symbol": "_ZN10RubberBand13R3LiveShifter15setFormantScaleEd",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method size_t RubberBand::R3LiveShifter::getChannelCount() const",
+      "symbol": "_ZNK10RubberBand13R3LiveShifter15getChannelCountEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::_Function_handler<void(char const*, double, double), RubberBand::RubberBandLiveShifter::Impl::makeRBLog(std::shared_ptr<RubberBand::RubberBandLiveShifter::Logger>)::<lambda(char const*, double, double)> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt17_Function_handlerIFvPKcddEZN10RubberBand21RubberBandLiveShifter4Impl9makeRBLogESt10shared_ptrINS4_6LoggerEEEUlS1_ddE_E10_M_managerERSt9_Any_dataRKSB_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void RubberBand::R3LiveShifter::setPitchScale(double)",
+      "symbol": "_ZN10RubberBand13R3LiveShifter13setPitchScaleEd",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual std::_Sp_counted_ptr_inplace<RubberBand::R3LiveShifter::ChannelScaleData, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::~_Sp_counted_ptr_inplace()",
+      "symbol": "_ZNSt23_Sp_counted_ptr_inplaceIN10RubberBand13R3LiveShifter16ChannelScaleDataESaIvELN9__gnu_cxx12_Lock_policyE2EED0Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method size_t RubberBand::RubberBandLiveShifter::getChannelCount() const",
+      "symbol": "_ZNK10RubberBand21RubberBandLiveShifter15getChannelCountEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method RubberBand::R3LiveShifter::ChannelScaleData::ChannelScaleData(int, int)",
+      "symbol": "_ZN10RubberBand13R3LiveShifter16ChannelScaleDataC2Eii",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void RubberBand::RubberBandLiveShifter::shift(const float* const*, float* const*)",
+      "symbol": "_ZN10RubberBand21RubberBandLiveShifter5shiftEPKPKfPKPf",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void RubberBand::R3LiveShifter::generate(int)",
+      "symbol": "_ZN10RubberBand13R3LiveShifter8generateEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void RubberBand::R3LiveShifter::createResamplers()",
+      "symbol": "_ZN10RubberBand13R3LiveShifter16createResamplersEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void rubberband_live_set_formant_scale(RubberBandLiveState, double)",
+      "symbol": "rubberband_live_set_formant_scale",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method RubberBand::R3LiveShifter::ChannelAssembly::ChannelAssembly(int)",
+      "symbol": "_ZN10RubberBand13R3LiveShifter15ChannelAssemblyC2Ei",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method RubberBand::RubberBandLiveShifter::RubberBandLiveShifter(size_t, size_t, RubberBand::RubberBandLiveShifter::Options)",
+      "symbol": "_ZN10RubberBand21RubberBandLiveShifterC2Emmi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void RubberBand::R3LiveShifter::setFormantOption(RubberBand::RubberBandLiveShifter::Options)",
+      "symbol": "_ZN10RubberBand13R3LiveShifter16setFormantOptionEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void RubberBand::RubberBandLiveShifter::Impl::CerrLogger::log(const char*, double, double)",
+      "symbol": "_ZN10RubberBand21RubberBandLiveShifter4Impl10CerrLogger3logEPKcdd",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method double RubberBand::RubberBandLiveShifter::getFormantScale() const",
+      "symbol": "_ZNK10RubberBand21RubberBandLiveShifter15getFormantScaleEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void RubberBand::RubberBandLiveShifter::setDefaultDebugLevel()",
+      "symbol": "_ZN10RubberBand21RubberBandLiveShifter20setDefaultDebugLevelEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void RubberBand::RubberBandLiveShifter::Impl::CerrLogger::log(const char*)",
+      "symbol": "_ZN10RubberBand21RubberBandLiveShifter4Impl10CerrLogger3logEPKc",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void RubberBand::RubberBandLiveShifter::reset()",
+      "symbol": "_ZN10RubberBand21RubberBandLiveShifter5resetEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void rubberband_live_shift(RubberBandLiveState, const float* const*, float* const*)",
+      "symbol": "rubberband_live_shift",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::_Function_handler<void(char const*, double), RubberBand::RubberBandLiveShifter::Impl::makeRBLog(std::shared_ptr<RubberBand::RubberBandLiveShifter::Logger>)::<lambda(char const*, double)> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt17_Function_handlerIFvPKcdEZN10RubberBand21RubberBandLiveShifter4Impl9makeRBLogESt10shared_ptrINS4_6LoggerEEEUlS1_dE_E10_M_managerERSt9_Any_dataRKSB_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method RubberBand::RubberBandLiveShifter::RubberBandLiveShifter(size_t, size_t, std::shared_ptr<RubberBand::RubberBandLiveShifter::Logger>, RubberBand::RubberBandLiveShifter::Options)",
+      "symbol": "_ZN10RubberBand21RubberBandLiveShifterC2EmmSt10shared_ptrINS0_6LoggerEEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method size_t RubberBand::R3LiveShifter::getPreferredStartPad() const",
+      "symbol": "_ZNK10RubberBand13R3LiveShifter20getPreferredStartPadEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual std::_Sp_counted_ptr_inplace<RubberBand::R3LiveShifter::ChannelData, std::allocator<void>, (__gnu_cxx::_Lock_policy)2>::~_Sp_counted_ptr_inplace()",
+      "symbol": "_ZNSt23_Sp_counted_ptr_inplaceIN10RubberBand13R3LiveShifter11ChannelDataESaIvELN9__gnu_cxx12_Lock_policyE2EED0Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void RubberBand::R3LiveShifter::readIn(const float* const*)",
+      "symbol": "_ZN10RubberBand13R3LiveShifter6readInEPKPKf",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method RubberBand::RubberBandLiveShifter::~RubberBandLiveShifter()",
+      "symbol": "_ZN10RubberBand21RubberBandLiveShifterD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method size_t RubberBand::R3LiveShifter::getBlockSize() const",
+      "symbol": "_ZNK10RubberBand13R3LiveShifter12getBlockSizeEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Function_handler<void(char const*, double), RubberBand::RubberBandLiveShifter::Impl::makeRBLog(std::shared_ptr<RubberBand::RubberBandLiveShifter::Logger>)::<lambda(char const*, double)> >::_M_invoke(const char*&&, double&&)",
+      "symbol": "_ZNSt17_Function_handlerIFvPKcdEZN10RubberBand21RubberBandLiveShifter4Impl9makeRBLogESt10shared_ptrINS4_6LoggerEEEUlS1_dE_E9_M_invokeERKSt9_Any_dataOS1_Od",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method double RubberBand::R3LiveShifter::getPitchScale() const",
+      "symbol": "_ZNK10RubberBand13R3LiveShifter13getPitchScaleEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method size_t RubberBand::R3LiveShifter::getStartDelay() const",
+      "symbol": "_ZNK10RubberBand13R3LiveShifter13getStartDelayEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method double RubberBand::R3LiveShifter::getFormantScale() const",
+      "symbol": "_ZNK10RubberBand13R3LiveShifter15getFormantScaleEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method double RubberBand::RubberBandLiveShifter::getPitchScale() const",
+      "symbol": "_ZNK10RubberBand21RubberBandLiveShifter13getPitchScaleEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method size_t RubberBand::RubberBandLiveShifter::getBlockSize() const",
+      "symbol": "_ZNK10RubberBand21RubberBandLiveShifter12getBlockSizeEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void std::_Sp_counted_ptr<RubberBand::RubberBandLiveShifter::Impl::CerrLogger*, (__gnu_cxx::_Lock_policy)2>::_M_dispose()",
+      "symbol": "_ZNSt15_Sp_counted_ptrIPN10RubberBand21RubberBandLiveShifter4Impl10CerrLoggerELN9__gnu_cxx12_Lock_policyE2EE10_M_disposeEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Function_handler<void(char const*), RubberBand::RubberBandLiveShifter::Impl::makeRBLog(std::shared_ptr<RubberBand::RubberBandLiveShifter::Logger>)::<lambda(char const*)> >::_M_invoke(const char*&&)",
+      "symbol": "_ZNSt17_Function_handlerIFvPKcEZN10RubberBand21RubberBandLiveShifter4Impl9makeRBLogESt10shared_ptrINS4_6LoggerEEEUlS1_E_E9_M_invokeERKSt9_Any_dataOS1_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Function_handler<void(char const*, double, double), RubberBand::RubberBandLiveShifter::Impl::makeRBLog(std::shared_ptr<RubberBand::RubberBandLiveShifter::Logger>)::<lambda(char const*, double, double)> >::_M_invoke(const char*&&, double&&, double&&)",
+      "symbol": "_ZNSt17_Function_handlerIFvPKcddEZN10RubberBand21RubberBandLiveShifter4Impl9makeRBLogESt10shared_ptrINS4_6LoggerEEEUlS1_ddE_E9_M_invokeERKSt9_Any_dataOS1_OdSF_",
+      "weak": true
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_removed_from_struct": 2,
+     "member_offset_changed": 22,
+     "type_size_changed": 3
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/common/Thread.h",
+      "exposure": "by_pointer",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "class RubberBand::Mutex"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/common/Thread.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class RubberBand::Mutex"
+     },
+     {
+      "append_only": false,
+      "count": 19,
+      "declared_in": "../src/faster/R2Stretcher.h",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "class RubberBand::R2Stretcher"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/faster/R2Stretcher.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class RubberBand::R2Stretcher"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "../src/faster/../common/Scavenger.h",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "class RubberBand::Scavenger<RubberBand::RingBuffer<float> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/faster/../common/Scavenger.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class RubberBand::Scavenger<RubberBand::RingBuffer<float> >"
+     }
+    ],
+    "vague_linkage": {
+     "symbol_added": 32
+    }
+   }
+  ],
+  "seconds": 13.063463132,
+  "source": "rubberband",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "3.3.0+dfsg",
+   "4.0.0+dfsg"
+  ]
+ },
+ "generated_at": "2026-09-03T23:35:10Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

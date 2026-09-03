@@ -1,0 +1,76 @@
+{
+ "data": {
+  "bytes_extracted": 469829,
+  "id": "jansson@2.9..2.10",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      68,
+      71
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 3
+    },
+    "soname": [
+     "libjansson.so.4",
+     "libjansson.so.4"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function json_t* json_loadfd(int, size_t, json_error_t*)",
+      "symbol": "json_loadfd",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int json_dumpfd(const json_t*, int, size_t)",
+      "symbol": "json_dumpfd",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t json_dumpb(const json_t*, char*, size_t, size_t)",
+      "symbol": "json_dumpb",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 2.334272975,
+  "source": "jansson",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "2.9",
+   "2.10"
+  ]
+ },
+ "generated_at": "2026-09-03T23:46:35Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

@@ -1,0 +1,57 @@
+{
+ "data": {
+  "bytes_extracted": 10729459,
+  "id": "zeromq3@4.2.5..4.3.1",
+  "object_errors": [
+   "missing package: libzmq5-dbgsym"
+  ],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      false
+     ],
+     "exported_functions": [
+      61,
+      70
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libzmq.so.5",
+     "libzmq.so.5"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 7.247847594,
+  "source": "zeromq3",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "4.2.5",
+   "4.3.1"
+  ]
+ },
+ "generated_at": "2026-09-03T23:32:50Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

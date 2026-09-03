@@ -1,0 +1,70 @@
+{
+ "data": {
+  "bytes_extracted": 1108456,
+  "id": "libfido2@1.12.0..1.13.0",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      258,
+      260
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 2
+    },
+    "soname": [
+     "libfido2.so.1",
+     "libfido2.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function int fido_cred_empty_exclude_list(fido_cred_t*)",
+      "symbol": "fido_cred_empty_exclude_list",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int fido_assert_empty_allow_list(fido_assert_t*)",
+      "symbol": "fido_assert_empty_allow_list",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 4.013187366,
+  "source": "libfido2",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.12.0",
+   "1.13.0"
+  ]
+ },
+ "generated_at": "2026-09-03T23:42:45Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

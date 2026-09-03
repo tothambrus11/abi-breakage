@@ -1,0 +1,87 @@
+{
+ "data": {
+  "bytes_extracted": 166651,
+  "id": "libxau@1.0.9..1.0.11",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      8,
+      8
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libXau.so.6",
+     "libXau.so.6"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 3,
+     "field_type_changed": 1,
+     "member_offset_changed": 1
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct _IO_FILE"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct _IO_FILE"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct _IO_FILE"
+     }
+    ],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 3.443580295,
+  "source": "libxau",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.0.9",
+   "1.0.11"
+  ]
+ },
+ "generated_at": "2026-09-03T23:47:16Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

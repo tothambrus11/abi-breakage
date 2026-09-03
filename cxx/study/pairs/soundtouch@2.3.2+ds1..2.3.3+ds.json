@@ -1,0 +1,102 @@
+{
+ "data": {
+  "bytes_extracted": 1056101,
+  "id": "soundtouch@2.3.2+ds1..2.3.3+ds",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      214,
+      213
+     ],
+     "mangled_functions": [
+      213,
+      212
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libSoundTouch.so.1",
+     "libSoundTouch.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<soundtouch::BEAT, std::allocator<soundtouch::BEAT> >::_M_realloc_insert<const soundtouch::BEAT&>(std::vector<soundtouch::BEAT, std::allocator<soundtouch::BEAT> >::iterator, const soundtouch::BEAT&)",
+      "symbol": "_ZNSt6vectorIN10soundtouch4BEATESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_",
+      "weak": true
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {
+     "symbol_removed": 1
+    }
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      30,
+      31
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 1
+    },
+    "soname": [
+     "libSoundTouchDll.so.1",
+     "libSoundTouchDll.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function int bpm_getBeats(HANDLE, float*, float*, int)",
+      "symbol": "bpm_getBeats",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 6.746671622,
+  "source": "soundtouch",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "2.3.2+ds1",
+   "2.3.3+ds"
+  ]
+ },
+ "generated_at": "2026-09-03T23:43:04Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

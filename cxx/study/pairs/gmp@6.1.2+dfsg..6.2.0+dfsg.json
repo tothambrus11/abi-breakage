@@ -1,0 +1,143 @@
+{
+ "data": {
+  "bytes_extracted": 6563984,
+  "id": "gmp@6.1.2+dfsg..6.2.0+dfsg",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      589,
+      589
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 6,
+     "symbol_removed": 8
+    },
+    "soname": [
+     "libgmp.so.10",
+     "libgmp.so.10"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void __gmpn_set_str_compute_powtab(powers_t*, mp_ptr, mp_size_t, int)",
+      "symbol": "__gmpn_set_str_compute_powtab",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function mp_limb_t __gmpn_preinv_mu_divappr_q(mp_ptr, mp_srcptr, mp_size_t, mp_srcptr, mp_size_t, mp_srcptr, mp_size_t, mp_ptr)",
+      "symbol": "__gmpn_preinv_mu_divappr_q",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void __gmpn_matrix22_mul_strassen(mp_ptr, mp_ptr, mp_ptr, mp_ptr, mp_size_t, mp_srcptr, mp_srcptr, mp_srcptr, mp_srcptr, mp_size_t, mp_ptr)",
+      "symbol": "__gmpn_matrix22_mul_strassen",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function mp_limb_t __gmpn_dcpi1_divappr_q_n(mp_ptr, mp_ptr, mp_srcptr, mp_size_t, gmp_pi1_t*, mp_ptr)",
+      "symbol": "__gmpn_dcpi1_divappr_q_n",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function mp_size_t __gmpn_dcpi1_bdiv_q_n_itch(mp_size_t)",
+      "symbol": "__gmpn_dcpi1_bdiv_q_n_itch",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function mp_size_t __gmpn_mu_divappr_q_choose_in(mp_size_t, mp_size_t, int)",
+      "symbol": "__gmpn_mu_divappr_q_choose_in",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function mp_size_t __gmpn_mu_div_qr_choose_in(mp_size_t, mp_size_t, int)",
+      "symbol": "__gmpn_mu_div_qr_choose_in",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void __gmpn_dcpi1_bdiv_q_n(mp_ptr, mp_ptr, mp_srcptr, mp_size_t, mp_limb_t, mp_ptr)",
+      "symbol": "__gmpn_dcpi1_bdiv_q_n",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int __gmpz_stronglucas(mpz_srcptr, mpz_ptr, mpz_ptr)",
+      "symbol": "__gmpz_stronglucas",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int __gmpn_strongfibo(mp_srcptr, mp_size_t, mp_ptr)",
+      "symbol": "__gmpn_strongfibo",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function mp_limb_t __gmpn_sbpi1_bdiv_r(mp_ptr, mp_size_t, mp_srcptr, mp_size_t, mp_limb_t)",
+      "symbol": "__gmpn_sbpi1_bdiv_r",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int __gmpz_lucas_mod(mpz_ptr, mpz_ptr, long int, mp_bitcnt_t, mpz_srcptr, mpz_ptr, mpz_ptr)",
+      "symbol": "__gmpz_lucas_mod",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int __gmpn_fib2m(mp_ptr, mp_ptr, mp_srcptr, mp_size_t, mp_srcptr, mp_size_t)",
+      "symbol": "__gmpn_fib2m",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t __gmpn_compute_powtab(powers_t*, mp_ptr, mp_size_t, int)",
+      "symbol": "__gmpn_compute_powtab",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 6.265300586,
+  "source": "gmp",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "6.1.2+dfsg",
+   "6.2.0+dfsg"
+  ]
+ },
+ "generated_at": "2026-09-03T23:36:21Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

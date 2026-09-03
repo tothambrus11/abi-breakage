@@ -1,0 +1,78 @@
+{
+ "data": {
+  "bytes_extracted": 1347925,
+  "id": "chromaprint@1.5.1..1.6.0",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      32,
+      31
+     ],
+     "mangled_functions": [
+      9,
+      7
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 1
+    },
+    "soname": [
+     "libchromaprint.so.1",
+     "libchromaprint.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<unsigned int, std::allocator<unsigned int> >::_M_fill_assign(std::size_t, const std::vector<unsigned int, std::allocator<unsigned int> >::value_type&)",
+      "symbol": "_ZNSt6vectorIjSaIjEE14_M_fill_assignEmRKj",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<double, std::allocator<double> >::_M_fill_insert(std::vector<double, std::allocator<double> >::iterator, std::vector<double, std::allocator<double> >::size_type, const std::vector<double, std::allocator<double> >::value_type&)",
+      "symbol": "_ZNSt6vectorIdSaIdEE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPdS1_EEmRKd",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int chromaprint_decode_fingerprint_header(const char*, int, int*, int*, int)",
+      "symbol": "chromaprint_decode_fingerprint_header",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {
+     "symbol_removed": 2
+    }
+   }
+  ],
+  "seconds": 4.568343921,
+  "source": "chromaprint",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.5.1",
+   "1.6.0"
+  ]
+ },
+ "generated_at": "2026-09-03T23:40:26Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

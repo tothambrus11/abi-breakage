@@ -1,0 +1,255 @@
+{
+ "data": {
+  "bytes_extracted": 3080870,
+  "id": "libcap2@2.44..2.63",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      58,
+      70
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "function_signature_changed": 5,
+     "symbol_added": 13
+    },
+    "soname": [
+     "libcap.so.2",
+     "libcap.so.2"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function char* cap_proc_root(const char*)",
+      "symbol": "cap_proc_root",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int cap_prctlw(long int, long int, long int, long int, long int, long int)",
+      "symbol": "cap_prctlw",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int cap_prctl(long int, long int, long int, long int, long int, long int)",
+      "symbol": "cap_prctl",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function cap_iab_t cap_iab_dup(cap_iab_t)",
+      "symbol": "cap_iab_dup",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function cap_iab_t cap_iab_get_pid(pid_t)",
+      "symbol": "cap_iab_get_pid",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int cap_iab_compare(cap_iab_t, cap_iab_t)",
+      "symbol": "cap_iab_compare",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function cap_launch_t cap_func_launcher(int (void*)*)",
+      "symbol": "cap_func_launcher",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int cap_fill(cap_t, cap_flag_t, cap_flag_t)",
+      "symbol": "cap_fill",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function cap_t cap_copy_int_check(void*, ssize_t)",
+      "symbol": "cap_copy_int_check",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int cap_fill_flag(cap_t, cap_flag_t, cap_t, cap_flag_t)",
+      "symbol": "cap_fill_flag",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void _libcap_initialize()",
+      "symbol": "_libcap_initialize",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void __so_start()",
+      "symbol": "__so_start",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "const char __execable_dl_loader[28]",
+      "symbol": "__execable_dl_loader",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void cap_launcher_set_mode(cap_launch_t, cap_mode_t)  ->  function int cap_launcher_set_mode(cap_launch_t, cap_mode_t)",
+      "symbol": "cap_launcher_set_mode",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void cap_launcher_setgroups(cap_launch_t, gid_t, int, const gid_t*)  ->  function int cap_launcher_setgroups(cap_launch_t, gid_t, int, const gid_t*)",
+      "symbol": "cap_launcher_setgroups",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void cap_launcher_callback(cap_launch_t, int (void*)*)  ->  function int cap_launcher_callback(cap_launch_t, int (void*)*)",
+      "symbol": "cap_launcher_callback",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void cap_launcher_set_chroot(cap_launch_t, const char*)  ->  function int cap_launcher_set_chroot(cap_launch_t, const char*)",
+      "symbol": "cap_launcher_set_chroot",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void cap_launcher_setuid(cap_launch_t, uid_t)  ->  function int cap_launcher_setuid(cap_launch_t, uid_t)",
+      "symbol": "cap_launcher_setuid",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 3,
+     "member_offset_changed": 20,
+     "type_size_changed": 3
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libcap/libcap.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct _cap_struct"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "./libcap/libcap.h",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct _cap_struct"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libcap/libcap.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct _cap_struct"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libcap/libcap.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct cap_iab_s"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "./libcap/libcap.h",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct cap_iab_s"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libcap/libcap.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct cap_iab_s"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libcap/libcap.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct cap_launch_s"
+     },
+     {
+      "append_only": false,
+      "count": 14,
+      "declared_in": "./libcap/libcap.h",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct cap_launch_s"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libcap/libcap.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct cap_launch_s"
+     }
+    ],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 2.702301162,
+  "source": "libcap2",
+  "unpaired": [
+   [],
+   [
+    "libpsx"
+   ]
+  ],
+  "upstream": [
+   "2.44",
+   "2.63"
+  ]
+ },
+ "generated_at": "2026-09-03T23:42:24Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

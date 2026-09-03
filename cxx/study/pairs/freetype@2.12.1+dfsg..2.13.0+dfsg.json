@@ -1,0 +1,269 @@
+{
+ "data": {
+  "bytes_extracted": 8582471,
+  "id": "freetype@2.12.1+dfsg..2.13.0+dfsg",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      217,
+      218
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 1
+    },
+    "soname": [
+     "libfreetype.so.6",
+     "libfreetype.so.6"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function void FT_GlyphSlot_Slant(FT_GlyphSlot, FT_Fixed, FT_Fixed)",
+      "symbol": "FT_GlyphSlot_Slant",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 2,
+     "field_removed_from_struct": 2,
+     "field_type_changed": 5,
+     "member_offset_changed": 60,
+     "type_size_changed": 10
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./include/freetype/ftcolor.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct FT_ColorStop_"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./include/freetype/ftcolor.h",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct FT_ColorStop_"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./include/freetype/ftcolor.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct FT_ColorStop_"
+     },
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "./include/freetype/ftcolor.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct FT_ColorStopIterator_"
+     },
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "./include/freetype/ftcolor.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct FT_ColorStopIterator_"
+     },
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "./include/freetype/ftcolor.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct FT_COLR_Paint_"
+     },
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "./include/freetype/ftcolor.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "union {FT_PaintColrLayers colr_layers; FT_PaintGlyph glyph; FT_PaintSolid solid; FT_PaintLinearGradient linear_gradient; FT_PaintRadialGradient radial_gradient; FT_PaintSweepGradient sweep_gradient; FT_PaintTransform transform; FT_PaintTranslate translate; FT_PaintScale scale; FT_PaintRotate rotate; FT_PaintSkew skew; FT_PaintComposite composite; FT_PaintColrGlyph colr_glyph;}"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "./include/freetype/ftcolor.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct FT_PaintLinearGradient_"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./include/freetype/ftcolor.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct FT_PaintLinearGradient_"
+     },
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "./include/freetype/ftcolor.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct FT_ColorLine_"
+     },
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": "./include/freetype/ftcolor.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct FT_PaintRadialGradient_"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./include/freetype/ftcolor.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct FT_PaintRadialGradient_"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "./include/freetype/ftcolor.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct FT_PaintSweepGradient_"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./include/freetype/ftcolor.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct FT_PaintSweepGradient_"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/truetype/ttinterp.h",
+      "exposure": "by_pointer",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct TT_ExecContextRec_"
+     },
+     {
+      "append_only": false,
+      "count": 49,
+      "declared_in": "./src/truetype/ttinterp.h",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct TT_ExecContextRec_"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/truetype/ttinterp.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct TT_ExecContextRec_"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/truetype/ttgxvar.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct GX_BlendRec_"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/truetype/ttgxvar.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct GX_ItemVarDataRec_"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/truetype/ttgxvar.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct GX_AVarSegmentRec_"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/truetype/ttgxvar.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct GX_AVarSegmentRec_"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/truetype/ttgxvar.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct GX_AVarSegmentRec_"
+     }
+    ],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 6.710538879,
+  "source": "freetype",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "2.12.1+dfsg",
+   "2.13.0+dfsg"
+  ]
+ },
+ "generated_at": "2026-09-03T23:34:37Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

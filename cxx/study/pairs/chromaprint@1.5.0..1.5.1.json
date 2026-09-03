@@ -1,0 +1,475 @@
+{
+ "data": {
+  "bytes_extracted": 1155561,
+  "id": "chromaprint@1.5.0..1.5.1",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      33,
+      32
+     ],
+     "mangled_functions": [
+      11,
+      9
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "field_added_to_struct": 2,
+     "symbol_added": 1,
+     "type_size_changed": 1
+    },
+    "soname": [
+     "libchromaprint.so.1",
+     "libchromaprint.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::pair<unsigned int, unsigned int>, std::allocator<std::pair<unsigned int, unsigned int> > >::_M_realloc_insert<std::pair<unsigned int, unsigned int> >(std::vector<std::pair<unsigned int, unsigned int>, std::allocator<std::pair<unsigned int, unsigned int> > >::iterator, std::pair<unsigned int, unsigned int>&&)",
+      "symbol": "_ZNSt6vectorISt4pairIjjESaIS1_EE17_M_realloc_insertIJS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::vector<double, std::allocator<double> >& std::vector<double, std::allocator<double> >::operator=(const std::vector<double, std::allocator<double> >&)",
+      "symbol": "_ZNSt6vectorIdSaIdEEaSERKS1_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<unsigned int, std::allocator<unsigned int> >::_M_realloc_insert<unsigned int>(std::vector<unsigned int, std::allocator<unsigned int> >::iterator, unsigned int&&)",
+      "symbol": "_ZNSt6vectorIjSaIjEE17_M_realloc_insertIJjEEEvN9__gnu_cxx17__normal_iteratorIPjS1_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<unsigned char, std::allocator<unsigned char> >::_M_realloc_insert<unsigned char>(std::vector<unsigned char, std::allocator<unsigned char> >::iterator, unsigned char&&)",
+      "symbol": "_ZNSt6vectorIhSaIhEE17_M_realloc_insertIJhEEEvN9__gnu_cxx17__normal_iteratorIPhS1_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<long unsigned int, std::allocator<long unsigned int> >::_M_realloc_insert<long unsigned int const&>(std::vector<long unsigned int, std::allocator<long unsigned int> >::iterator, const unsigned long int&)",
+      "symbol": "_ZNSt6vectorImSaImEE17_M_realloc_insertIJRKmEEEvN9__gnu_cxx17__normal_iteratorIPmS1_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int chromaprint_get_algorithm(ChromaprintContext*)",
+      "symbol": "chromaprint_get_algorithm",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<long unsigned int, std::allocator<long unsigned int> >::_M_realloc_append<long unsigned int const&>(const unsigned long int&)",
+      "symbol": "_ZNSt6vectorImSaImEE17_M_realloc_appendIJRKmEEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<unsigned int, std::allocator<unsigned int> >::_M_realloc_append<unsigned int>(unsigned int&&)",
+      "symbol": "_ZNSt6vectorIjSaIjEE17_M_realloc_appendIJjEEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<unsigned char, std::allocator<unsigned char> >::_M_realloc_append<unsigned char>(unsigned char&&)",
+      "symbol": "_ZNSt6vectorIhSaIhEE17_M_realloc_appendIJhEEEvDpOT_",
+      "weak": true
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 40,
+     "field_added_to_struct": 2,
+     "field_type_changed": 3,
+     "type_size_changed": 1,
+     "vtable_changed": 2
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/chroma.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class chromaprint::Chroma"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<char, std::allocator<char> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<char, std::allocator<char> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/10/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<char>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<double, std::allocator<double> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<double, std::allocator<double> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/10/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<double>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/feature_vector_consumer.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class chromaprint::FeatureVectorConsumer"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/fft_frame_consumer.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class chromaprint::FFTFrameConsumer"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/chroma_normalizer.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class chromaprint::ChromaNormalizer"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/chroma_filter.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class chromaprint::ChromaFilter"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/10/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::vector<double, std::allocator<double> >, std::allocator<std::vector<double, std::allocator<double> > > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/10/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<std::vector<double, std::allocator<double> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<short int, std::allocator<short int> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<short int, std::allocator<short int> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/10/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<short int>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/unique_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__uniq_ptr_data<chromaprint::FFTLib, std::default_delete<chromaprint::FFTLib>, true, true>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::tuple<chromaprint::FFTLib*, std::default_delete<chromaprint::FFTLib> >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/10/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Tuple_impl<0, chromaprint::FFTLib*, std::default_delete<chromaprint::FFTLib> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/fft_lib_avfft.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "class chromaprint::FFTLib"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "./src/fft_lib_avfft.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class chromaprint::FFTLib"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/fft_lib_avfft.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class chromaprint::FFTLib"
+     },
+     {
+      "append_only": true,
+      "count": 2,
+      "declared_in": "",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": false,
+      "type": "struct RDFTContext"
+     },
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": false,
+      "type": "struct RDFTContext"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Tuple_impl<1, std::default_delete<chromaprint::FFTLib> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/tuple",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct std::_Head_base<1, std::default_delete<chromaprint::FFTLib>, true>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Head_base<1, std::default_delete<chromaprint::FFTLib>, true>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/fingerprint_calculator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class chromaprint::FingerprintCalculator"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<unsigned int, std::allocator<unsigned int> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/10/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<unsigned int>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<unsigned char, std::allocator<unsigned char> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/10/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<unsigned char>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/basic_string.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Alloc_hider"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<float, std::allocator<float> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<float, std::allocator<float> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/10/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<float>"
+     }
+    ],
+    "vague_linkage": {
+     "symbol_added": 3,
+     "symbol_removed": 5
+    }
+   }
+  ],
+  "seconds": 4.066308181,
+  "source": "chromaprint",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.5.0",
+   "1.5.1"
+  ]
+ },
+ "generated_at": "2026-09-03T23:40:41Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

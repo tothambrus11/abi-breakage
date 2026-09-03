@@ -1,0 +1,82 @@
+{
+ "data": {
+  "bytes_extracted": 1022870,
+  "id": "libfido2@1.9.0..1.10.0",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      238,
+      242
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 4
+    },
+    "soname": [
+     "libfido2.so.1",
+     "libfido2.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function int fido_dev_open_with_info(fido_dev_t*)",
+      "symbol": "fido_dev_open_with_info",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function fido_dev_t* fido_dev_new_with_info(const fido_dev_info_t*)",
+      "symbol": "fido_dev_new_with_info",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void* fido_dev_io_handle(const fido_dev_t*)",
+      "symbol": "fido_dev_io_handle",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int fido_dev_info_set(fido_dev_info_t*, size_t, const char*, const char*, const char*, const fido_dev_io_t*, const fido_dev_transport_t*)",
+      "symbol": "fido_dev_info_set",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 3.181713799,
+  "source": "libfido2",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.9.0",
+   "1.10.0"
+  ]
+ },
+ "generated_at": "2026-09-03T23:42:57Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

@@ -1,0 +1,135 @@
+{
+ "data": {
+  "bytes_extracted": 5781257,
+  "id": "brotli@1.1.0..1.2.0",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      9,
+      9
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libbrotlicommon.so.1",
+     "libbrotlicommon.so.1"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      14,
+      14
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libbrotlidec.so.1",
+     "libbrotlidec.so.1"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      13,
+      13
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libbrotlienc.so.1",
+     "libbrotlienc.so.1"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 2,
+     "field_type_changed": 1
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./c/enc/hash.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct Hasher"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./c/enc/hash.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "union {H2 _H2; H3 _H3; H4 _H4; H5 _H5; H6 _H6; H40 _H40; H41 _H41; H42 _H42; H54 _H54; H35 _H35; H55 _H55; H65 _H65; H10 _H10;}"
+     }
+    ],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 4.284410032,
+  "source": "brotli",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.1.0",
+   "1.2.0"
+  ]
+ },
+ "generated_at": "2026-09-03T23:36:23Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

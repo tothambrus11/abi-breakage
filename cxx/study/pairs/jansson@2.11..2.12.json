@@ -1,0 +1,87 @@
+{
+ "data": {
+  "bytes_extracted": 532580,
+  "id": "jansson@2.11..2.12",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      73,
+      73
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libjansson.so.4",
+     "libjansson.so.4"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_removed_from_struct": 3,
+     "field_type_changed": 3,
+     "type_size_changed": 1
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "/usr/include/libio.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct _IO_FILE"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "/usr/include/libio.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct _IO_marker"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/libio.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct _IO_marker"
+     }
+    ],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 2.498685118,
+  "source": "jansson",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "2.11",
+   "2.12"
+  ]
+ },
+ "generated_at": "2026-09-03T23:46:17Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

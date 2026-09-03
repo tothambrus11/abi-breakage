@@ -1,0 +1,164 @@
+{
+ "data": {
+  "bytes_extracted": 644225,
+  "id": "json-c@0.13.1+dfsg..0.14+dfsg",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      130,
+      135
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 7,
+     "symbol_removed": 2
+    },
+    "soname": [
+     "libjson-c.so.4",
+     "libjson-c.so.5"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void lh_abort(const char*, ...)",
+      "symbol": "lh_abort",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void* lh_table_lookup(lh_table*, void*)",
+      "symbol": "lh_table_lookup",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int json_object_set_uint64(json_object*, uint64_t)",
+      "symbol": "json_object_set_uint64",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function json_object* json_object_new_uint64(uint64_t)",
+      "symbol": "json_object_new_uint64",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function json_object* json_object_new_null()",
+      "symbol": "json_object_new_null",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t json_tokener_get_parse_end(json_tokener*)",
+      "symbol": "json_tokener_get_parse_end",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int json_parse_uint64(const char*, uint64_t*)",
+      "symbol": "json_parse_uint64",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function uint64_t json_object_get_uint64(const json_object*)",
+      "symbol": "json_object_get_uint64",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function json_object* json_object_from_fd_ex(int, int)",
+      "symbol": "json_object_from_fd_ex",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "enum_case_added": 1,
+     "field_type_changed": 2,
+     "member_offset_changed": 5,
+     "type_size_changed": 1
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./json_object_private.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct json_object"
+     },
+     {
+      "append_only": false,
+      "count": 5,
+      "declared_in": "./json_object_private.h",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct json_object"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./json_object_private.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct json_object"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./json_object_private.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "union data"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./json_tokener.h",
+      "exposure": "by_value",
+      "kind": "enum_case_added",
+      "third_party": true,
+      "type": "enum json_tokener_error"
+     }
+    ],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 2.828514025,
+  "source": "json-c",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "0.13.1+dfsg",
+   "0.14+dfsg"
+  ]
+ },
+ "generated_at": "2026-09-03T23:46:10Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

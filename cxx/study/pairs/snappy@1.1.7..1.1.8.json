@@ -1,0 +1,107 @@
+{
+ "data": {
+  "bytes_extracted": 468613,
+  "id": "snappy@1.1.7..1.1.8",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      53,
+      57
+     ],
+     "mangled_functions": [
+      48,
+      52
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "function_signature_changed": 4,
+     "symbol_added": 2
+    },
+    "soname": [
+     "libsnappy.so.1",
+     "libsnappy.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method snappy::uint16* snappy::internal::WorkingMemory::GetHashTable(size_t, int*)  ->  method snappy::uint16* snappy::internal::WorkingMemory::GetHashTable(size_t, int*) const",
+      "symbol": "_ZN6snappy8internal13WorkingMemory12GetHashTableEmPi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method snappy::internal::WorkingMemory::~WorkingMemory(int)",
+      "symbol": "_ZN6snappy8internal13WorkingMemoryD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method snappy::internal::WorkingMemory::WorkingMemory(size_t)",
+      "symbol": "_ZN6snappy8internal13WorkingMemoryC2Em",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function size_t snappy::Compress(const char*, size_t, snappy::string*)  ->  function size_t snappy::Compress(const char*, size_t, std::string*)",
+      "symbol": "_ZN6snappy8CompressEPKcmPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method void snappy::Varint::Append32(snappy::uint32)  ->  method void snappy::Varint::Append32(snappy::uint32)",
+      "symbol": "_ZN6snappy6Varint8Append32EPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEj",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function bool snappy::Uncompress(const char*, size_t, snappy::string*)  ->  function bool snappy::Uncompress(const char*, size_t, std::string*)",
+      "symbol": "_ZN6snappy10UncompressEPKcmPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_type_changed": 2
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./snappy.cc",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class snappy::SnappyIOVecWriter"
+     }
+    ],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 1.340965847,
+  "source": "snappy",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.1.7",
+   "1.1.8"
+  ]
+ },
+ "generated_at": "2026-09-03T23:46:14Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

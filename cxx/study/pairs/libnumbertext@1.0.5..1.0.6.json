@@ -1,0 +1,71 @@
+{
+ "data": {
+  "bytes_extracted": 5770456,
+  "id": "libnumbertext@1.0.5..1.0.6",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      411,
+      412
+     ],
+     "mangled_functions": [
+      411,
+      412
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libnumbertext-1.0.so.0",
+     "libnumbertext-1.0.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::__detail::_StateIdT std::__detail::_NFA<std::__cxx11::regex_traits<char> >::_M_insert_dummy()",
+      "symbol": "_ZNSt8__detail4_NFAINSt7__cxx1112regex_traitsIcEEE15_M_insert_dummyEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::locale::locale<std::codecvt_utf8<wchar_t> >(const std::locale&, std::codecvt_utf8<wchar_t, 1114111, (std::codecvt_mode)0>*)",
+      "symbol": "_ZNSt6localeC2ISt12codecvt_utf8IwLm1114111ELSt12codecvt_mode0EEEERKS_PT_",
+      "weak": true
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {
+     "symbol_added": 1,
+     "symbol_removed": 1
+    }
+   }
+  ],
+  "seconds": 13.059839958,
+  "source": "libnumbertext",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.0.5",
+   "1.0.6"
+  ]
+ },
+ "generated_at": "2026-09-03T23:35:26Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

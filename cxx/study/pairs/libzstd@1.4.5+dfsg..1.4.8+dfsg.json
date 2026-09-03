@@ -1,0 +1,2654 @@
+{
+ "data": {
+  "bytes_extracted": 8423396,
+  "id": "libzstd@1.4.5+dfsg..1.4.8+dfsg",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      188,
+      581
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "enum_case_added": 7,
+     "field_removed_from_struct": 1,
+     "member_offset_changed": 4,
+     "symbol_added": 377,
+     "symbol_removed": 1,
+     "type_size_changed": 1
+    },
+    "soname": [
+     "libzstd.so.1",
+     "libzstd.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "function size_t ZSTD_getSequences(ZSTD_CCtx*, ZSTD_Sequence*, size_t, void*, size_t)",
+      "symbol": "ZSTD_getSequences",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int divbwt(const unsigned char*, unsigned char*, int*, int, unsigned char*, int*, int)",
+      "symbol": "divbwt",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTDv07_freeDDict(ZSTDv07_DDict*)",
+      "symbol": "ZSTDv07_freeDDict",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTDv07_decompress_usingDDict(ZSTDv07_DCtx*, void*, size_t, void*, size_t, const ZSTDv07_DDict*)",
+      "symbol": "ZSTDv07_decompress_usingDDict",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTDv07_decompressDCtx(ZSTDv07_DCtx*, void*, size_t, void*, size_t)",
+      "symbol": "ZSTDv07_decompressDCtx",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTDv07_decompressContinue(ZSTDv07_DCtx*, void*, size_t, void*, size_t)",
+      "symbol": "ZSTDv07_decompressContinue",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTDv07_decompressBlock(ZSTDv07_DCtx*, void*, size_t, void*, size_t)",
+      "symbol": "ZSTDv07_decompressBlock",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function ZSTDv07_DDict* ZSTDv07_createDDict(void*, size_t)",
+      "symbol": "ZSTDv07_createDDict",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function ZSTDv07_DCtx* ZSTDv07_createDCtx_advanced(ZSTDv07_customMem)",
+      "symbol": "ZSTDv07_createDCtx_advanced",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void ZSTDv07_copyDCtx(ZSTDv07_DCtx*, const ZSTDv07_DCtx*)",
+      "symbol": "ZSTDv07_copyDCtx",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTDv06_sizeofDCtx()",
+      "symbol": "ZSTDv06_sizeofDCtx",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTDv06_nextSrcSizeToDecompress(ZSTDv06_DCtx*)",
+      "symbol": "ZSTDv06_nextSrcSizeToDecompress",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function unsigned int ZSTDv06_isError(size_t)",
+      "symbol": "ZSTDv06_isError",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTDv06_getFrameParams(ZSTDv06_frameParams*, void*, size_t)",
+      "symbol": "ZSTDv06_getFrameParams",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const char* ZSTDv06_getErrorName(size_t)",
+      "symbol": "ZSTDv06_getErrorName",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTDv06_decompress_usingPreparedDCtx(ZSTDv06_DCtx*, const ZSTDv06_DCtx*, void*, size_t, void*, size_t)",
+      "symbol": "ZSTDv06_decompress_usingPreparedDCtx",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTDv06_decompress_usingDict(ZSTDv06_DCtx*, void*, size_t, void*, size_t, void*, size_t)",
+      "symbol": "ZSTDv06_decompress_usingDict",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTDv06_decompressContinue(ZSTDv06_DCtx*, void*, size_t, void*, size_t)",
+      "symbol": "ZSTDv06_decompressContinue",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTDv06_decompressBegin_usingDict(ZSTDv06_DCtx*, void*, size_t)",
+      "symbol": "ZSTDv06_decompressBegin_usingDict",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTDv06_decompressBegin(ZSTDv06_DCtx*)",
+      "symbol": "ZSTDv06_decompressBegin",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTDv06_decompress(void*, size_t, void*, size_t)",
+      "symbol": "ZSTDv06_decompress",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function ZSTDv06_DCtx* ZSTDv06_createDCtx()",
+      "symbol": "ZSTDv06_createDCtx",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTDv05_nextSrcSizeToDecompress(ZSTDv05_DCtx*)",
+      "symbol": "ZSTDv05_nextSrcSizeToDecompress",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function unsigned int ZSTDv05_isError(size_t)",
+      "symbol": "ZSTDv05_isError",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const char* ZSTDv05_getErrorName(size_t)",
+      "symbol": "ZSTDv05_getErrorName",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void ZSTDv07_findFrameSizeInfoLegacy(void*, size_t, size_t*, unsigned long long int*)",
+      "symbol": "ZSTDv07_findFrameSizeInfoLegacy",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTDv05_freeDCtx(ZSTDv05_DCtx*)",
+      "symbol": "ZSTDv05_freeDCtx",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void ZSTDv05_findFrameSizeInfoLegacy(void*, size_t, size_t*, unsigned long long int*)",
+      "symbol": "ZSTDv05_findFrameSizeInfoLegacy",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTDv05_decompress_usingDict(ZSTDv05_DCtx*, void*, size_t, void*, size_t, void*, size_t)",
+      "symbol": "ZSTDv05_decompress_usingDict",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTDv05_decompressDCtx(ZSTDv05_DCtx*, void*, size_t, void*, size_t)",
+      "symbol": "ZSTDv05_decompressDCtx",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTDv05_decompressBlock(ZSTDv05_DCtx*, void*, size_t, void*, size_t)",
+      "symbol": "ZSTDv05_decompressBlock",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTDv05_decompressBegin_usingDict(ZSTDv05_DCtx*, void*, size_t)",
+      "symbol": "ZSTDv05_decompressBegin_usingDict",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTDv07_insertBlock(ZSTDv07_DCtx*, void*, size_t)",
+      "symbol": "ZSTDv07_insertBlock",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function ZSTDv05_DCtx* ZSTDv05_createDCtx()",
+      "symbol": "ZSTDv05_createDCtx",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void ZSTDv05_copyDCtx(ZSTDv05_DCtx*, const ZSTDv05_DCtx*)",
+      "symbol": "ZSTDv05_copyDCtx",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void ZSTD_seqToCodes(const seqStore_t*)",
+      "symbol": "ZSTD_seqToCodes",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function unsigned long long int ZSTDv07_getDecompressedSize(void*, size_t)",
+      "symbol": "ZSTDv07_getDecompressedSize",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function symbolEncodingType_e ZSTD_selectEncodingType(FSE_repeat*, const unsigned int*, const unsigned int, const size_t, size_t, const unsigned int, const FSE_CTable*, const short int*, U32, const ZSTD_defaultPolicy_e, const ZSTD_strategy)",
+      "symbol": "ZSTD_selectEncodingType",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_referenceExternalSequences(ZSTD_CCtx*, rawSeq*, size_t)",
+      "symbol": "ZSTD_referenceExternalSequences",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_mergeBlockDelimiters(ZSTD_Sequence*, size_t)",
+      "symbol": "ZSTD_mergeBlockDelimiters",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_loadDEntropy(ZSTD_entropyDTables_t*, void* const, const size_t)",
+      "symbol": "ZSTD_loadDEntropy",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void ZSTD_ldm_skipSequences(rawSeqStore_t*, size_t, const U32)",
+      "symbol": "ZSTD_ldm_skipSequences",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_ldm_getTableSize(ldmParams_t)",
+      "symbol": "ZSTD_ldm_getTableSize",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_ldm_generateSequences(ldmState_t*, rawSeqStore_t*, const ldmParams_t*, void*, size_t)",
+      "symbol": "ZSTD_ldm_generateSequences",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void ZSTD_ldm_adjustParameters(ldmParams_t*, const ZSTD_compressionParameters*)",
+      "symbol": "ZSTD_ldm_adjustParameters",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTDv07_nextSrcSizeToDecompress(ZSTDv07_DCtx*)",
+      "symbol": "ZSTDv07_nextSrcSizeToDecompress",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void ZSTD_invalidateRepCodes(ZSTD_CCtx*)",
+      "symbol": "ZSTD_invalidateRepCodes",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function U32 ZSTD_insertAndFindFirstIndex(ZSTD_matchState_t*, const BYTE*)",
+      "symbol": "ZSTD_insertAndFindFirstIndex",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_initCStream_internal(ZSTD_CStream*, void*, size_t, const ZSTD_CDict*, const ZSTD_CCtx_params*, unsigned long long int)",
+      "symbol": "ZSTD_initCStream_internal",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function unsigned int ZSTD_getDictID_fromCDict(const ZSTD_CDict*)",
+      "symbol": "ZSTD_getDictID_fromCDict",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTDv05_decompressBegin(ZSTDv05_DCtx*)",
+      "symbol": "ZSTDv05_decompressBegin",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function ZSTD_compressionParameters ZSTD_getCParamsFromCDict(const ZSTD_CDict*)",
+      "symbol": "ZSTD_getCParamsFromCDict",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTDv05_decompress_usingPreparedDCtx(ZSTDv05_DCtx*, const ZSTDv05_DCtx*, void*, size_t, void*, size_t)",
+      "symbol": "ZSTDv05_decompress_usingPreparedDCtx",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function ZSTD_compressionParameters ZSTD_getCParamsFromCCtxParams(const ZSTD_CCtx_params*, U64, size_t, ZSTD_cParamMode_e)",
+      "symbol": "ZSTD_getCParamsFromCCtxParams",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void ZSTD_fillHashTable(ZSTD_matchState_t*, void* const, ZSTD_dictTableLoadMethod_e)",
+      "symbol": "ZSTD_fillHashTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void ZSTD_fillDoubleHashTable(ZSTD_matchState_t*, void*, ZSTD_dictTableLoadMethod_e)",
+      "symbol": "ZSTD_fillDoubleHashTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_decompressBlock_internal(ZSTD_DCtx*, void*, size_t, void*, size_t, const int)",
+      "symbol": "ZSTD_decompressBlock_internal",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_decodeSeqHeaders(ZSTD_DCtx*, int*, void*, size_t)",
+      "symbol": "ZSTD_decodeSeqHeaders",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_decodeLiteralsBlock(ZSTD_DCtx*, void*, size_t)",
+      "symbol": "ZSTD_decodeLiteralsBlock",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void* ZSTD_customCalloc(size_t, ZSTD_customMem)",
+      "symbol": "ZSTD_customCalloc",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_ldm_getMaxNbSeq(ldmParams_t, size_t)",
+      "symbol": "ZSTD_ldm_getMaxNbSeq",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function ZSTD_CDict* ZSTD_createCDict_advanced2(void*, size_t, ZSTD_dictLoadMethod_e, ZSTD_dictContentType_e, const ZSTD_CCtx_params*, ZSTD_customMem)",
+      "symbol": "ZSTD_createCDict_advanced2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_compressSuperBlock(ZSTD_CCtx*, void*, size_t, void*, size_t, unsigned int)",
+      "symbol": "ZSTD_compressSuperBlock",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_compressSequences(ZSTD_CCtx* const, void*, size_t, const ZSTD_Sequence*, size_t, void*, size_t)",
+      "symbol": "ZSTD_compressSequences",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_compressRleLiteralsBlock(void*, size_t, void*, size_t)",
+      "symbol": "ZSTD_compressRleLiteralsBlock",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_compressLiterals(const ZSTD_hufCTables_t*, ZSTD_hufCTables_t*, ZSTD_strategy, int, void*, size_t, void*, size_t, void*, size_t, const int)",
+      "symbol": "ZSTD_compressLiterals",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_compressBlock_lazy_extDict(ZSTD_matchState_t*, seqStore_t*, U32*, void*, size_t)",
+      "symbol": "ZSTD_compressBlock_lazy_extDict",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_compressBlock_lazy2_extDict(ZSTD_matchState_t*, seqStore_t*, U32*, void*, size_t)",
+      "symbol": "ZSTD_compressBlock_lazy2_extDict",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_compressBlock_lazy(ZSTD_matchState_t*, seqStore_t*, U32*, void*, size_t)",
+      "symbol": "ZSTD_compressBlock_lazy",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t FSE_compress_usingCTable(void*, size_t, void*, size_t, const FSE_CTable*)",
+      "symbol": "FSE_compress_usingCTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t FSEv05_buildDTable_rle(FSEv05_DTable*, BYTE)",
+      "symbol": "FSEv05_buildDTable_rle",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_compressBlock_greedy_extDict(ZSTD_matchState_t*, seqStore_t*, U32*, void*, size_t)",
+      "symbol": "ZSTD_compressBlock_greedy_extDict",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t FSE_NCountWriteBound(unsigned int, unsigned int)",
+      "symbol": "FSE_NCountWriteBound",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_decompress4X_usingDTable_bmi2(void*, size_t, void*, size_t, const HUF_DTable*, int)",
+      "symbol": "HUF_decompress4X_usingDTable_bmi2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_readStats(BYTE*, size_t, U32*, U32*, U32*, void*, size_t)",
+      "symbol": "HUF_readStats",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTDv07_decompressBegin(ZSTDv07_DCtx*)",
+      "symbol": "ZSTDv07_decompressBegin",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_decompress4X_hufOnly_wksp_bmi2(HUF_DTable*, void*, size_t, void*, size_t, void*, size_t, int)",
+      "symbol": "HUF_decompress4X_hufOnly_wksp_bmi2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_decompress4X2(void*, size_t, void*, size_t)",
+      "symbol": "HUF_decompress4X2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_compressBlock_lazy2_dictMatchState(ZSTD_matchState_t*, seqStore_t*, U32*, void*, size_t)",
+      "symbol": "ZSTD_compressBlock_lazy2_dictMatchState",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_decompress4X1_usingDTable(void*, size_t, void*, size_t, const HUF_DTable*)",
+      "symbol": "HUF_decompress4X1_usingDTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_decompress4X1(void*, size_t, void*, size_t)",
+      "symbol": "HUF_decompress4X1",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void* ZSTD_customMalloc(size_t, ZSTD_customMem)",
+      "symbol": "ZSTD_customMalloc",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_decompress1X2(void*, size_t, void*, size_t)",
+      "symbol": "HUF_decompress1X2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_decompress1X_usingDTable_bmi2(void*, size_t, void*, size_t, const HUF_DTable*, int)",
+      "symbol": "HUF_decompress1X_usingDTable_bmi2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_decompress1X1(void*, size_t, void*, size_t)",
+      "symbol": "HUF_decompress1X1",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t FSE_buildCTable_wksp(FSE_CTable*, const short int*, unsigned int, unsigned int, void*, size_t)",
+      "symbol": "FSE_buildCTable_wksp",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_decompress1X2_usingDTable(void*, size_t, void*, size_t, const HUF_DTable*)",
+      "symbol": "HUF_decompress1X2_usingDTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUFv06_readDTableX2(U16*, void*, size_t)",
+      "symbol": "HUFv06_readDTableX2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function unsigned int ZSTD_XXH32(void*, size_t, unsigned int)",
+      "symbol": "ZSTD_XXH32",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_compressBound(size_t)",
+      "symbol": "HUF_compressBound",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_encodeSequences(void*, size_t, const FSE_CTable*, const BYTE*, const FSE_CTable*, const BYTE*, const FSE_CTable*, const BYTE*, const seqDef*, size_t, int, int)",
+      "symbol": "ZSTD_encodeSequences",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_compress4X_usingCTable(void*, size_t, void*, size_t, const HUF_CElt*)",
+      "symbol": "HUF_compress4X_usingCTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t COVER_sum(const size_t*, unsigned int)",
+      "symbol": "COVER_sum",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t FSEv07_buildDTable_raw(FSEv07_DTable*, unsigned int)",
+      "symbol": "FSEv07_buildDTable_raw",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_decompress1X_DCtx(HUF_DTable*, void*, size_t, void*, size_t)",
+      "symbol": "HUF_decompress1X_DCtx",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_compress(void*, size_t, void*, size_t)",
+      "symbol": "HUF_compress",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t FSE_compress_wksp(void*, size_t, void*, size_t, unsigned int, unsigned int, void*, size_t)",
+      "symbol": "FSE_compress_wksp",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_fseBitCost(const FSE_CTable*, const unsigned int*, const unsigned int)",
+      "symbol": "ZSTD_fseBitCost",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_readStats_wksp(BYTE*, size_t, U32*, U32*, U32*, void*, size_t, void*, size_t, int)",
+      "symbol": "HUF_readStats_wksp",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_compress1X_wksp(void*, size_t, void*, size_t, unsigned int, unsigned int, void*, size_t)",
+      "symbol": "HUF_compress1X_wksp",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUFv07_decompress4X_hufOnly(HUFv07_DTable*, void*, size_t, void*, size_t)",
+      "symbol": "HUFv07_decompress4X_hufOnly",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_decompress1X_DCtx_wksp(HUF_DTable*, void*, size_t, void*, size_t, void*, size_t)",
+      "symbol": "HUF_decompress1X_DCtx_wksp",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_decompress4X2_DCtx(HUF_DTable*, void*, size_t, void*, size_t)",
+      "symbol": "HUF_decompress4X2_DCtx",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_buildCTable(HUF_CElt*, const unsigned int*, unsigned int, unsigned int)",
+      "symbol": "HUF_buildCTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t FSEv07_decompress_usingDTable(void*, size_t, void*, size_t, const FSEv07_DTable*)",
+      "symbol": "FSEv07_decompress_usingDTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void ZSTD_XXH32_canonicalFromHash(XXH32_canonical_t*, XXH32_hash_t)",
+      "symbol": "ZSTD_XXH32_canonicalFromHash",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_crossEntropyCost(const short int*, unsigned int, const unsigned int*, const unsigned int)",
+      "symbol": "ZSTD_crossEntropyCost",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUFv05_decompress4X2_usingDTable(void*, size_t, void*, size_t, const U16*)",
+      "symbol": "HUFv05_decompress4X2_usingDTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_loadCEntropy(ZSTD_compressedBlockState_t*, void*, void* const, size_t)",
+      "symbol": "ZSTD_loadCEntropy",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void ZSTD_customFree(void*, ZSTD_customMem)",
+      "symbol": "ZSTD_customFree",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function FSEv07_DTable* FSEv07_createDTable(unsigned int)",
+      "symbol": "FSEv07_createDTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void ZSTD_updateTree(ZSTD_matchState_t*, const BYTE*, const BYTE*)",
+      "symbol": "ZSTD_updateTree",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_compress4X_wksp(void*, size_t, void*, size_t, unsigned int, unsigned int, void*, size_t)",
+      "symbol": "HUF_compress4X_wksp",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUFv05_decompress4X4_usingDTable(void*, size_t, void*, size_t, const unsigned int*)",
+      "symbol": "HUFv05_decompress4X4_usingDTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTDv07_freeDCtx(ZSTDv07_DCtx*)",
+      "symbol": "ZSTDv07_freeDCtx",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function unsigned int HIST_isError(size_t)",
+      "symbol": "HIST_isError",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUFv07_decompress4X_DCtx(HUFv07_DTable*, void*, size_t, void*, size_t)",
+      "symbol": "HUFv07_decompress4X_DCtx",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t FSEv07_buildDTable(FSEv07_DTable*, const short int*, unsigned int, unsigned int)",
+      "symbol": "FSEv07_buildDTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_compress4X_repeat(void*, size_t, void*, size_t, unsigned int, unsigned int, void*, size_t, HUF_CElt*, HUF_repeat*, int, int)",
+      "symbol": "HUF_compress4X_repeat",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t FSEv06_readNCount(short int*, unsigned int*, unsigned int*, void*, size_t)",
+      "symbol": "FSEv06_readNCount",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZBUFFv07_decompressInit(ZBUFFv07_DCtx*)",
+      "symbol": "ZBUFFv07_decompressInit",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUFv07_decompress4X2_DCtx(HUFv07_DTable*, void*, size_t, void*, size_t)",
+      "symbol": "HUFv07_decompress4X2_DCtx",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_compressBegin_advanced_internal(ZSTD_CCtx*, void*, size_t, ZSTD_dictContentType_e, ZSTD_dictTableLoadMethod_e, const ZSTD_CDict*, const ZSTD_CCtx_params*, unsigned long long int)",
+      "symbol": "ZSTD_compressBegin_advanced_internal",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_readDTableX2(HUF_DTable*, void*, size_t)",
+      "symbol": "HUF_readDTableX2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUFv05_readDTableX4(unsigned int*, void*, size_t)",
+      "symbol": "HUFv05_readDTableX4",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void FSEv06_freeDTable(FSEv06_DTable*)",
+      "symbol": "FSEv06_freeDTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTDv06_decompressBlock(ZSTDv06_DCtx*, void*, size_t, void*, size_t)",
+      "symbol": "ZSTDv06_decompressBlock",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void COVER_best_start(COVER_best_t*)",
+      "symbol": "COVER_best_start",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_readDTableX1_wksp(HUF_DTable*, void*, size_t, void*, size_t)",
+      "symbol": "HUF_readDTableX1_wksp",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUFv07_decompress4X2(void*, size_t, void*, size_t)",
+      "symbol": "HUFv07_decompress4X2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_readDTableX1_wksp_bmi2(HUF_DTable*, void*, size_t, void*, size_t, int)",
+      "symbol": "HUF_readDTableX1_wksp_bmi2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t FSE_compressBound(size_t)",
+      "symbol": "FSE_compressBound",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t FSEv06_buildDTable_raw(FSEv06_DTable*, unsigned int)",
+      "symbol": "FSEv06_buildDTable_raw",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t FSEv05_decompress(void*, size_t, void*, size_t)",
+      "symbol": "FSEv05_decompress",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTDMT_freeCCtx(ZSTDMT_CCtx*)",
+      "symbol": "ZSTDMT_freeCCtx",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t FSE_compress(void*, size_t, void*, size_t)",
+      "symbol": "FSE_compress",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function XXH32_state_t* ZSTD_XXH32_createState()",
+      "symbol": "ZSTD_XXH32_createState",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void ZSTD_ldm_fillHashTable(ldmState_t*, const BYTE*, const BYTE*, const ldmParams_t*)",
+      "symbol": "ZSTD_ldm_fillHashTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function POOL_ctx* POOL_create(size_t, size_t)",
+      "symbol": "POOL_create",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function unsigned int FSE_versionNumber()",
+      "symbol": "FSE_versionNumber",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function unsigned int ZSTD_XXH32_digest(const XXH32_state_t*)",
+      "symbol": "ZSTD_XXH32_digest",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function U32 HUF_selectDecoder(size_t, size_t)",
+      "symbol": "HUF_selectDecoder",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTDMT_toFlushNow(ZSTDMT_CCtx*)",
+      "symbol": "ZSTDMT_toFlushNow",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t FSE_buildDTable_wksp(FSE_DTable*, const short int*, unsigned int, unsigned int, void*, size_t)",
+      "symbol": "FSE_buildDTable_wksp",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t FSE_writeNCount(void*, size_t, const short int*, unsigned int, unsigned int)",
+      "symbol": "FSE_writeNCount",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t FSEv07_buildDTable_rle(FSEv07_DTable*, BYTE)",
+      "symbol": "FSEv07_buildDTable_rle",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTDMT_compressStream_generic(ZSTDMT_CCtx*, ZSTD_outBuffer*, ZSTD_inBuffer*, ZSTD_EndDirective)",
+      "symbol": "ZSTDMT_compressStream_generic",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_readDTableX2_wksp(HUF_DTable*, void*, size_t, void*, size_t)",
+      "symbol": "HUF_readDTableX2_wksp",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_decompress1X1_DCtx_wksp_bmi2(HUF_DTable*, void*, size_t, void*, size_t, void*, size_t, int)",
+      "symbol": "HUF_decompress1X1_DCtx_wksp_bmi2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t FSE_decompress_usingDTable(void*, size_t, void*, size_t, const FSE_DTable*)",
+      "symbol": "FSE_decompress_usingDTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void FSE_freeCTable(FSE_CTable*)",
+      "symbol": "FSE_freeCTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTDv05_sizeofDCtx()",
+      "symbol": "ZSTDv05_sizeofDCtx",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_compressBlock_lazy_dedicatedDictSearch(ZSTD_matchState_t*, seqStore_t*, U32*, void*, size_t)",
+      "symbol": "ZSTD_compressBlock_lazy_dedicatedDictSearch",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_decompress1X1_DCtx(HUF_DTable*, void*, size_t, void*, size_t)",
+      "symbol": "HUF_decompress1X1_DCtx",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_compress2(void*, size_t, void*, size_t, unsigned int, unsigned int)",
+      "symbol": "HUF_compress2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTDv07_decompress(void*, size_t, void*, size_t)",
+      "symbol": "ZSTDv07_decompress",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t FSE_buildDTable_rle(FSE_DTable*, BYTE)",
+      "symbol": "FSE_buildDTable_rle",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTDv07_decompressBegin_usingDict(ZSTDv07_DCtx*, void*, size_t)",
+      "symbol": "ZSTDv07_decompressBegin_usingDict",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZBUFFv05_freeDCtx(ZBUFFv05_DCtx*)",
+      "symbol": "ZBUFFv05_freeDCtx",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function FSEv06_DTable* FSEv06_createDTable(unsigned int)",
+      "symbol": "FSEv06_createDTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t FSEv05_readNCount(short int*, unsigned int*, unsigned int*, void*, size_t)",
+      "symbol": "FSEv05_readNCount",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void COVER_warnOnSmallCorpus(size_t, size_t, int)",
+      "symbol": "COVER_warnOnSmallCorpus",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t FSEv05_buildDTable(FSEv05_DTable*, const short int*, unsigned int, unsigned int)",
+      "symbol": "FSEv05_buildDTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t FSE_buildDTable(FSE_DTable*, const short int*, unsigned int, unsigned int)",
+      "symbol": "FSE_buildDTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUFv05_decompress1X2_usingDTable(void*, size_t, void*, size_t, const U16*)",
+      "symbol": "HUFv05_decompress1X2_usingDTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUFv06_decompress4X4(void*, size_t, void*, size_t)",
+      "symbol": "HUFv06_decompress4X4",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function ZSTDv07_DCtx* ZSTDv07_createDCtx()",
+      "symbol": "ZSTDv07_createDCtx",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function FSE_DTable* FSE_createDTable(unsigned int)",
+      "symbol": "FSE_createDTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function unsigned int ZSTD_XXH_versionNumber()",
+      "symbol": "ZSTD_XXH_versionNumber",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function unsigned int FSE_optimalTableLog(unsigned int, size_t, unsigned int)",
+      "symbol": "FSE_optimalTableLog",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void ZSTD_ldm_skipRawSeqStoreBytes(rawSeqStore_t*, size_t)",
+      "symbol": "ZSTD_ldm_skipRawSeqStoreBytes",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_decompress1X2_DCtx_wksp(HUF_DTable*, void*, size_t, void*, size_t, void*, size_t)",
+      "symbol": "HUF_decompress1X2_DCtx_wksp",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_decompress1X2_DCtx(HUF_DTable*, void*, size_t, void*, size_t)",
+      "symbol": "HUF_decompress1X2_DCtx",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_compressBlock_greedy_dictMatchState(ZSTD_matchState_t*, seqStore_t*, U32*, void*, size_t)",
+      "symbol": "ZSTD_compressBlock_greedy_dictMatchState",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void COVER_best_finish(COVER_best_t*, ZDICT_cover_params_t, COVER_dictSelection_t)",
+      "symbol": "COVER_best_finish",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_compressBlock_lazy_dictMatchState(ZSTD_matchState_t*, seqStore_t*, U32*, void*, size_t)",
+      "symbol": "ZSTD_compressBlock_lazy_dictMatchState",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t POOL_sizeof(POOL_ctx*)",
+      "symbol": "POOL_sizeof",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_compressBlock_lazy2_dedicatedDictSearch(ZSTD_matchState_t*, seqStore_t*, U32*, void*, size_t)",
+      "symbol": "ZSTD_compressBlock_lazy2_dedicatedDictSearch",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUFv07_decompress4X_usingDTable(void*, size_t, void*, size_t, const HUFv07_DTable*)",
+      "symbol": "HUFv07_decompress4X_usingDTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t FSE_decompress_wksp(void*, size_t, void*, size_t, unsigned int, void*, size_t)",
+      "symbol": "FSE_decompress_wksp",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function ZBUFFv06_DCtx* ZBUFFv06_createDCtx()",
+      "symbol": "ZBUFFv06_createDCtx",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZBUFFv06_decompressContinue(ZBUFFv06_DCtx*, void*, size_t*, void*, size_t*)",
+      "symbol": "ZBUFFv06_decompressContinue",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t FSE_buildCTable(FSE_CTable*, const short int*, unsigned int, unsigned int)",
+      "symbol": "FSE_buildCTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t FSEv05_decompress_usingDTable(void*, size_t, void*, size_t, const FSEv05_DTable*)",
+      "symbol": "FSEv05_decompress_usingDTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void COVER_best_init(COVER_best_t*)",
+      "symbol": "COVER_best_init",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_readCTable(HUF_CElt*, unsigned int*, void*, size_t, unsigned int*)",
+      "symbol": "HUF_readCTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t FSEv06_buildDTable_rle(FSEv06_DTable*, BYTE)",
+      "symbol": "FSEv06_buildDTable_rle",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZBUFFv07_freeDCtx(ZBUFFv07_DCtx*)",
+      "symbol": "ZBUFFv07_freeDCtx",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function unsigned int HUF_optimalTableLog(unsigned int, size_t, unsigned int)",
+      "symbol": "HUF_optimalTableLog",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void ZSTD_XXH32_copyState(XXH32_state_t* restrict, const XXH32_state_t* restrict)",
+      "symbol": "ZSTD_XXH32_copyState",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_compress_advanced_internal(ZSTD_CCtx*, void*, size_t, void*, size_t, void*, size_t, const ZSTD_CCtx_params*)",
+      "symbol": "ZSTD_compress_advanced_internal",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void COVER_best_wait(COVER_best_t*)",
+      "symbol": "COVER_best_wait",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_decompress4X2_usingDTable(void*, size_t, void*, size_t, const HUF_DTable*)",
+      "symbol": "HUF_decompress4X2_usingDTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t FSE_compress2(void*, size_t, void*, size_t, unsigned int, unsigned int)",
+      "symbol": "FSE_compress2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_decompress4X1_DCtx(HUF_DTable*, void*, size_t, void*, size_t)",
+      "symbol": "HUF_decompress4X1_DCtx",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUFv07_decompress4X2_usingDTable(void*, size_t, void*, size_t, const HUFv07_DTable*)",
+      "symbol": "HUFv07_decompress4X2_usingDTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_decompress1X1_DCtx_wksp(HUF_DTable*, void*, size_t, void*, size_t, void*, size_t)",
+      "symbol": "HUF_decompress1X1_DCtx_wksp",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const char* ERR_getErrorString(ERR_enum)",
+      "symbol": "ERR_getErrorString",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function COVER_dictSelection_t COVER_dictSelectionError(size_t)",
+      "symbol": "COVER_dictSelectionError",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t COVER_checkTotalCompressedSize(const ZDICT_cover_params_t, const size_t*, const BYTE*, size_t*, size_t, size_t, BYTE* const, size_t)",
+      "symbol": "COVER_checkTotalCompressedSize",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t FSE_readNCount(short int*, unsigned int*, unsigned int*, void*, size_t)",
+      "symbol": "FSE_readNCount",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_decompress(void*, size_t, void*, size_t)",
+      "symbol": "HUF_decompress",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function ZSTDMT_CCtx* ZSTDMT_createCCtx_advanced(unsigned int, ZSTD_customMem, ZSTD_threadPool*)",
+      "symbol": "ZSTDMT_createCCtx_advanced",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUFv07_decompress1X4_DCtx(HUFv07_DTable*, void*, size_t, void*, size_t)",
+      "symbol": "HUFv07_decompress1X4_DCtx",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_decompress1X1_usingDTable(void*, size_t, void*, size_t, const HUF_DTable*)",
+      "symbol": "HUF_decompress1X1_usingDTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUFv05_decompress1X4(void*, size_t, void*, size_t)",
+      "symbol": "HUFv05_decompress1X4",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void ZSTDMT_updateCParams_whileCompressing(ZSTDMT_CCtx*, const ZSTD_CCtx_params*)",
+      "symbol": "ZSTDMT_updateCParams_whileCompressing",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function FSE_CTable* FSE_createCTable(unsigned int, unsigned int)",
+      "symbol": "FSE_createCTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_compress1X(void*, size_t, void*, size_t, unsigned int, unsigned int)",
+      "symbol": "HUF_compress1X",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t FSEv07_readNCount(short int*, unsigned int*, unsigned int*, void*, size_t)",
+      "symbol": "FSEv07_readNCount",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void ZSTD_copyDDictParameters(ZSTD_DCtx*, const ZSTD_DDict*)",
+      "symbol": "ZSTD_copyDDictParameters",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t FSE_buildCTable_raw(FSE_CTable*, unsigned int)",
+      "symbol": "FSE_buildCTable_raw",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const char* FSE_getErrorName(size_t)",
+      "symbol": "FSE_getErrorName",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function unsigned long long int ZSTD_XXH64(void*, size_t, unsigned long long int)",
+      "symbol": "ZSTD_XXH64",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void COVER_dictSelectionFree(COVER_dictSelection_t)",
+      "symbol": "COVER_dictSelectionFree",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_generateSequences(ZSTD_CCtx*, ZSTD_Sequence*, size_t, void*, size_t)",
+      "symbol": "ZSTD_generateSequences",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_estimateCompressedSize(const HUF_CElt*, const unsigned int*, unsigned int)",
+      "symbol": "HUF_estimateCompressedSize",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZBUFFv06_recommendedDOutSize()",
+      "symbol": "ZBUFFv06_recommendedDOutSize",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_writeLastEmptyBlock(void*, size_t)",
+      "symbol": "ZSTD_writeLastEmptyBlock",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function ZBUFFv07_DCtx* ZBUFFv07_createDCtx_advanced(ZSTDv07_customMem)",
+      "symbol": "ZBUFFv07_createDCtx_advanced",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_decompress4X_hufOnly_wksp(HUF_DTable*, void*, size_t, void*, size_t, void*, size_t)",
+      "symbol": "HUF_decompress4X_hufOnly_wksp",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function unsigned int HIST_count_simple(unsigned int*, unsigned int*, void*, size_t)",
+      "symbol": "HIST_count_simple",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTDv05_decompressContinue(ZSTDv05_DCtx*, void*, size_t, void*, size_t)",
+      "symbol": "ZSTDv05_decompressContinue",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void COVER_best_destroy(COVER_best_t*)",
+      "symbol": "COVER_best_destroy",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_writeCTable(void*, size_t, const HUF_CElt*, unsigned int, unsigned int)",
+      "symbol": "HUF_writeCTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function COVER_dictSelection_t COVER_selectDict(BYTE*, size_t, size_t, const BYTE*, const size_t*, unsigned int, size_t, size_t, ZDICT_cover_params_t, size_t*, size_t)",
+      "symbol": "COVER_selectDict",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t FSE_buildCTable_rle(FSE_CTable*, BYTE)",
+      "symbol": "FSE_buildCTable_rle",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_decompress4X_usingDTable(void*, size_t, void*, size_t, const HUF_DTable*)",
+      "symbol": "HUF_decompress4X_usingDTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t FSE_decompress(void*, size_t, void*, size_t)",
+      "symbol": "FSE_decompress",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_compressBlock_btlazy2(ZSTD_matchState_t*, seqStore_t*, U32*, void*, size_t)",
+      "symbol": "ZSTD_compressBlock_btlazy2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t FSE_decompress_wksp_bmi2(void*, size_t, void*, size_t, unsigned int, void*, size_t, int)",
+      "symbol": "FSE_decompress_wksp_bmi2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_compressBlock_greedy_dedicatedDictSearch(ZSTD_matchState_t*, seqStore_t*, U32*, void*, size_t)",
+      "symbol": "ZSTD_compressBlock_greedy_dedicatedDictSearch",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_decompress4X_DCtx(HUF_DTable*, void*, size_t, void*, size_t)",
+      "symbol": "HUF_decompress4X_DCtx",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTDv07_estimateDCtxSize()",
+      "symbol": "ZSTDv07_estimateDCtxSize",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t FSE_buildDTable_raw(FSE_DTable*, unsigned int)",
+      "symbol": "FSE_buildDTable_raw",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_decompress4X2_DCtx_wksp(HUF_DTable*, void*, size_t, void*, size_t, void*, size_t)",
+      "symbol": "HUF_decompress4X2_DCtx_wksp",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int HUF_validateCTable(const HUF_CElt*, const unsigned int*, unsigned int)",
+      "symbol": "HUF_validateCTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUFv05_decompress1X2(void*, size_t, void*, size_t)",
+      "symbol": "HUFv05_decompress1X2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t FSE_normalizeCount(short int*, unsigned int, const unsigned int*, size_t, unsigned int, unsigned int)",
+      "symbol": "FSE_normalizeCount",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void FSEv07_freeDTable(FSEv07_DTable*)",
+      "symbol": "FSEv07_freeDTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function unsigned int FSE_optimalTableLog_internal(unsigned int, size_t, unsigned int, unsigned int)",
+      "symbol": "FSE_optimalTableLog_internal",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUFv06_decompress4X2_usingDTable(void*, size_t, void*, size_t, const U16*)",
+      "symbol": "HUFv06_decompress4X2_usingDTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t FSE_readNCount_bmi2(short int*, unsigned int*, unsigned int*, void*, size_t, int)",
+      "symbol": "FSE_readNCount_bmi2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_DCtx_getParameter(ZSTD_DCtx*, ZSTD_dParameter, int*)",
+      "symbol": "ZSTD_DCtx_getParameter",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t FSEv07_decompress(void*, size_t, void*, size_t)",
+      "symbol": "FSEv07_decompress",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_DDict_dictSize(const ZSTD_DDict*)",
+      "symbol": "ZSTD_DDict_dictSize",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_compressBlock_lazy2(ZSTD_matchState_t*, seqStore_t*, U32*, void*, size_t)",
+      "symbol": "ZSTD_compressBlock_lazy2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t FSEv05_buildDTable_raw(FSEv05_DTable*, unsigned int)",
+      "symbol": "FSEv05_buildDTable_raw",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int ZSTDv07_isSkipFrame(ZSTDv07_DCtx*)",
+      "symbol": "ZSTDv07_isSkipFrame",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const char* ZSTDv07_getErrorName(size_t)",
+      "symbol": "ZSTDv07_getErrorName",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function FSEv05_DTable* FSEv05_createDTable(unsigned int)",
+      "symbol": "FSEv05_createDTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZBUFFv07_decompressContinue(ZBUFFv07_DCtx*, void*, size_t*, void*, size_t*)",
+      "symbol": "ZBUFFv07_decompressContinue",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void FSEv05_freeDTable(FSEv05_DTable*)",
+      "symbol": "FSEv05_freeDTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function unsigned int ZSTDv07_isError(size_t)",
+      "symbol": "ZSTDv07_isError",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_compressBlock_btultra(ZSTD_matchState_t*, seqStore_t*, U32*, void*, size_t)",
+      "symbol": "ZSTD_compressBlock_btultra",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t FSEv06_buildDTable(FSEv06_DTable*, const short int*, unsigned int, unsigned int)",
+      "symbol": "FSEv06_buildDTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_compressBlock_doubleFast_dictMatchState(ZSTD_matchState_t*, seqStore_t*, U32*, void*, size_t)",
+      "symbol": "ZSTD_compressBlock_doubleFast_dictMatchState",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void FSE_freeDTable(FSE_DTable*)",
+      "symbol": "FSE_freeDTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_compressBlock_greedy(ZSTD_matchState_t*, seqStore_t*, U32*, void*, size_t)",
+      "symbol": "ZSTD_compressBlock_greedy",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTDv06_freeDCtx(ZSTDv06_DCtx*)",
+      "symbol": "ZSTDv06_freeDCtx",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HIST_count(unsigned int*, unsigned int*, void*, size_t)",
+      "symbol": "HIST_count",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function U32 HUF_getNbBits(void*, U32)",
+      "symbol": "HUF_getNbBits",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t FSEv06_decompress_usingDTable(void*, size_t, void*, size_t, const FSEv06_DTable*)",
+      "symbol": "FSEv06_decompress_usingDTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void ZSTD_resetSeqStore(seqStore_t*)",
+      "symbol": "ZSTD_resetSeqStore",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HIST_countFast(unsigned int*, unsigned int*, void*, size_t)",
+      "symbol": "HIST_countFast",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUFv05_decompress(void*, size_t, void*, size_t)",
+      "symbol": "HUFv05_decompress",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUFv05_decompress1X4_usingDTable(void*, size_t, void*, size_t, const unsigned int*)",
+      "symbol": "HUFv05_decompress1X4_usingDTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZBUFFv06_decompressInit(ZBUFFv06_DCtx*)",
+      "symbol": "ZBUFFv06_decompressInit",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HIST_countFast_wksp(unsigned int*, unsigned int*, void*, size_t, void*, size_t)",
+      "symbol": "HIST_countFast_wksp",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t FSEv06_decompress(void*, size_t, void*, size_t)",
+      "symbol": "FSEv06_decompress",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUFv05_decompress4X2(void*, size_t, void*, size_t)",
+      "symbol": "HUFv05_decompress4X2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUFv05_readDTableX2(U16*, void*, size_t)",
+      "symbol": "HUFv05_readDTableX2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUFv06_decompress(void*, size_t, void*, size_t)",
+      "symbol": "HUFv06_decompress",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUFv06_decompress1X2(void*, size_t, void*, size_t)",
+      "symbol": "HUFv06_decompress1X2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int divsufsort(const unsigned char*, int*, int, int)",
+      "symbol": "divsufsort",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUFv06_decompress1X2_usingDTable(void*, size_t, void*, size_t, const U16*)",
+      "symbol": "HUFv06_decompress1X2_usingDTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_compressBlock_btopt_dictMatchState(ZSTD_matchState_t*, seqStore_t*, U32*, void*, size_t)",
+      "symbol": "ZSTD_compressBlock_btopt_dictMatchState",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTDv07_sizeofDCtx(const ZSTDv07_DCtx*)",
+      "symbol": "ZSTDv07_sizeofDCtx",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const seqStore_t* ZSTD_getSeqStore(const ZSTD_CCtx*)",
+      "symbol": "ZSTD_getSeqStore",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUFv06_decompress1X4(void*, size_t, void*, size_t)",
+      "symbol": "HUFv06_decompress1X4",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_buildCTable_wksp(HUF_CElt*, const unsigned int*, U32, U32, void*, size_t)",
+      "symbol": "HUF_buildCTable_wksp",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUFv06_decompress1X4_usingDTable(void*, size_t, void*, size_t, const U32*)",
+      "symbol": "HUFv06_decompress1X4_usingDTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_compress1X_usingCTable(void*, size_t, void*, size_t, const HUF_CElt*)",
+      "symbol": "HUF_compress1X_usingCTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUFv06_decompress4X2(void*, size_t, void*, size_t)",
+      "symbol": "HUFv06_decompress4X2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUFv06_readDTableX4(U32*, void*, size_t)",
+      "symbol": "HUFv06_readDTableX4",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_decompress1X_usingDTable(void*, size_t, void*, size_t, const HUF_DTable*)",
+      "symbol": "HUF_decompress1X_usingDTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUFv06_decompress4X4_usingDTable(void*, size_t, void*, size_t, const U32*)",
+      "symbol": "HUFv06_decompress4X4_usingDTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function unsigned int COVER_dictSelectionIsError(COVER_dictSelection_t)",
+      "symbol": "COVER_dictSelectionIsError",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUFv07_decompress(void*, size_t, void*, size_t)",
+      "symbol": "HUFv07_decompress",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTDv07_getFrameParams(ZSTDv07_frameParams*, void*, size_t)",
+      "symbol": "ZSTDv07_getFrameParams",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int POOL_tryAdd(POOL_ctx*, POOL_function, void*)",
+      "symbol": "POOL_tryAdd",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void POOL_free(POOL_ctx*)",
+      "symbol": "POOL_free",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTDv05_getFrameParams(ZSTDv05_parameters*, void*, size_t)",
+      "symbol": "ZSTDv05_getFrameParams",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUFv05_decompress4X4(void*, size_t, void*, size_t)",
+      "symbol": "HUFv05_decompress4X4",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUFv07_decompress1X2(void*, size_t, void*, size_t)",
+      "symbol": "HUFv07_decompress1X2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUFv07_decompress4X4_DCtx(HUFv07_DTable*, void*, size_t, void*, size_t)",
+      "symbol": "HUFv07_decompress4X4_DCtx",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUFv07_decompress1X2_DCtx(HUFv07_DTable*, void*, size_t, void*, size_t)",
+      "symbol": "HUFv07_decompress1X2_DCtx",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUFv07_decompress1X2_usingDTable(void*, size_t, void*, size_t, const HUFv07_DTable*)",
+      "symbol": "HUFv07_decompress1X2_usingDTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_compressBlock_fast_dictMatchState(ZSTD_matchState_t*, seqStore_t*, U32*, void*, size_t)",
+      "symbol": "ZSTD_compressBlock_fast_dictMatchState",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUFv07_decompress4X4(void*, size_t, void*, size_t)",
+      "symbol": "HUFv07_decompress4X4",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUFv07_decompress1X4(void*, size_t, void*, size_t)",
+      "symbol": "HUFv07_decompress1X4",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUFv07_decompress1X4_usingDTable(void*, size_t, void*, size_t, const HUFv07_DTable*)",
+      "symbol": "HUFv07_decompress1X4_usingDTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUFv07_decompress1X_usingDTable(void*, size_t, void*, size_t, const HUFv07_DTable*)",
+      "symbol": "HUFv07_decompress1X_usingDTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUFv07_decompress4X4_usingDTable(void*, size_t, void*, size_t, const HUFv07_DTable*)",
+      "symbol": "HUFv07_decompress4X4_usingDTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_compressBlock_btlazy2_dictMatchState(ZSTD_matchState_t*, seqStore_t*, U32*, void*, size_t)",
+      "symbol": "ZSTD_compressBlock_btlazy2_dictMatchState",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void ZSTDv06_copyDCtx(ZSTDv06_DCtx*, const ZSTDv06_DCtx*)",
+      "symbol": "ZSTDv06_copyDCtx",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUFv07_readDTableX2(HUFv07_DTable*, void*, size_t)",
+      "symbol": "HUFv07_readDTableX2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZBUFFv05_recommendedDInSize()",
+      "symbol": "ZBUFFv05_recommendedDInSize",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_decompress4X1_DCtx_wksp(HUF_DTable*, void*, size_t, void*, size_t, void*, size_t)",
+      "symbol": "HUF_decompress4X1_DCtx_wksp",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUFv07_readDTableX4(HUFv07_DTable*, void*, size_t)",
+      "symbol": "HUFv07_readDTableX4",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function XXH_errorcode ZSTD_XXH32_reset(XXH32_state_t*, unsigned int)",
+      "symbol": "ZSTD_XXH32_reset",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUFv07_readStats(BYTE*, size_t, U32*, U32*, U32*, void*, size_t)",
+      "symbol": "HUFv07_readStats",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZBUFFv06_recommendedDInSize()",
+      "symbol": "ZBUFFv06_recommendedDInSize",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function XXH64_hash_t ZSTD_XXH64_hashFromCanonical(const XXH64_canonical_t*)",
+      "symbol": "ZSTD_XXH64_hashFromCanonical",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function COVER_epoch_info_t COVER_computeEpochs(U32, U32, U32, U32)",
+      "symbol": "COVER_computeEpochs",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function U32 HUFv07_selectDecoder(size_t, size_t)",
+      "symbol": "HUFv07_selectDecoder",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZDICT_trainFromBuffer_unsafe_legacy(void*, size_t, void*, const size_t*, unsigned int, ZDICT_legacy_params_t)",
+      "symbol": "ZDICT_trainFromBuffer_unsafe_legacy",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_compressBlock_btultra2(ZSTD_matchState_t*, seqStore_t*, U32*, void*, size_t)",
+      "symbol": "ZSTD_compressBlock_btultra2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_noCompressLiterals(void*, size_t, void*, size_t)",
+      "symbol": "ZSTD_noCompressLiterals",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void POOL_add(POOL_ctx*, POOL_function, void*)",
+      "symbol": "POOL_add",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function POOL_ctx* POOL_create_advanced(size_t, size_t, ZSTD_customMem)",
+      "symbol": "POOL_create_advanced",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int POOL_resize(POOL_ctx*, size_t)",
+      "symbol": "POOL_resize",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTDv06_decompressDCtx(ZSTDv06_DCtx*, void*, size_t, void*, size_t)",
+      "symbol": "ZSTDv06_decompressDCtx",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function ZBUFFv05_DCtx* ZBUFFv05_createDCtx()",
+      "symbol": "ZBUFFv05_createDCtx",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZBUFFv05_decompressContinue(ZBUFFv05_DCtx*, void*, size_t*, void*, size_t*)",
+      "symbol": "ZBUFFv05_decompressContinue",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZBUFFv05_decompressInit(ZBUFFv05_DCtx*)",
+      "symbol": "ZBUFFv05_decompressInit",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUFv07_decompress1X_DCtx(HUFv07_DTable*, void*, size_t, void*, size_t)",
+      "symbol": "HUFv07_decompress1X_DCtx",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZBUFFv05_decompressInitDictionary(ZBUFFv05_DCtx*, void*, size_t)",
+      "symbol": "ZBUFFv05_decompressInitDictionary",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void ZSTD_dedicatedDictSearch_lazy_loadDictionary(ZSTD_matchState_t*, const BYTE* const)",
+      "symbol": "ZSTD_dedicatedDictSearch_lazy_loadDictionary",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZBUFFv05_recommendedDOutSize()",
+      "symbol": "ZBUFFv05_recommendedDOutSize",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_getcBlockSize(void*, size_t, blockProperties_t*)",
+      "symbol": "ZSTD_getcBlockSize",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZBUFFv06_decompressInitDictionary(ZBUFFv06_DCtx*, void*, size_t)",
+      "symbol": "ZBUFFv06_decompressInitDictionary",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_decompress4X_hufOnly(HUF_DTable*, void*, size_t, void*, size_t)",
+      "symbol": "HUF_decompress4X_hufOnly",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZBUFFv06_freeDCtx(ZBUFFv06_DCtx*)",
+      "symbol": "ZBUFFv06_freeDCtx",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function ZSTD_blockCompressor ZSTD_selectBlockCompressor(ZSTD_strategy, ZSTD_dictMode_e)",
+      "symbol": "ZSTD_selectBlockCompressor",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function XXH32_hash_t ZSTD_XXH32_hashFromCanonical(const XXH32_canonical_t*)",
+      "symbol": "ZSTD_XXH32_hashFromCanonical",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function ZBUFFv07_DCtx* ZBUFFv07_createDCtx()",
+      "symbol": "ZBUFFv07_createDCtx",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTDv05_decompress(void*, size_t, void*, size_t)",
+      "symbol": "ZSTDv05_decompress",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZBUFFv07_decompressInitDictionary(ZBUFFv07_DCtx*, void*, size_t)",
+      "symbol": "ZBUFFv07_decompressInitDictionary",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function unsigned int FSE_isError(size_t)",
+      "symbol": "FSE_isError",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZBUFFv07_recommendedDInSize()",
+      "symbol": "ZBUFFv07_recommendedDInSize",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZBUFFv07_recommendedDOutSize()",
+      "symbol": "ZBUFFv07_recommendedDOutSize",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function ZSTD_frameProgression ZSTDMT_getFrameProgression(ZSTDMT_CCtx*)",
+      "symbol": "ZSTDMT_getFrameProgression",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void ZSTDv06_findFrameSizeInfoLegacy(void*, size_t, size_t*, unsigned long long int*)",
+      "symbol": "ZSTDv06_findFrameSizeInfoLegacy",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_compressBlock_btlazy2_extDict(ZSTD_matchState_t*, seqStore_t*, U32*, void*, size_t)",
+      "symbol": "ZSTD_compressBlock_btlazy2_extDict",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_compressBlock_btopt(ZSTD_matchState_t*, seqStore_t*, U32*, void*, size_t)",
+      "symbol": "ZSTD_compressBlock_btopt",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void ZSTD_checkContinuity(ZSTD_DCtx*, void*)",
+      "symbol": "ZSTD_checkContinuity",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTDMT_initCStream_internal(ZSTDMT_CCtx*, void*, size_t, ZSTD_dictContentType_e, const ZSTD_CDict*, ZSTD_CCtx_params, unsigned long long int)",
+      "symbol": "ZSTDMT_initCStream_internal",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTDMT_nextInputSizeHint(const ZSTDMT_CCtx*)",
+      "symbol": "ZSTDMT_nextInputSizeHint",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function U32 ZSTD_cycleLog(U32, ZSTD_strategy)",
+      "symbol": "ZSTD_cycleLog",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_CCtx_refThreadPool(ZSTD_CCtx*, ZSTD_threadPool*)",
+      "symbol": "ZSTD_CCtx_refThreadPool",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void* ZSTD_DDict_dictContent(const ZSTD_DDict*)",
+      "symbol": "ZSTD_DDict_dictContent",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void ZSTD_reset_compressedBlockState(ZSTD_compressedBlockState_t*)",
+      "symbol": "ZSTD_reset_compressedBlockState",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function XXH_errorcode ZSTD_XXH32_freeState(XXH32_state_t*)",
+      "symbol": "ZSTD_XXH32_freeState",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_compress1X_repeat(void*, size_t, void*, size_t, unsigned int, unsigned int, void*, size_t, HUF_CElt*, HUF_repeat*, int, int)",
+      "symbol": "HUF_compress1X_repeat",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function XXH_errorcode ZSTD_XXH32_update(XXH32_state_t*, void*, size_t)",
+      "symbol": "ZSTD_XXH32_update",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void ZSTD_XXH64_canonicalFromHash(XXH64_canonical_t*, XXH64_hash_t)",
+      "symbol": "ZSTD_XXH64_canonicalFromHash",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void ZSTD_XXH64_copyState(XXH64_state_t* restrict, const XXH64_state_t* restrict)",
+      "symbol": "ZSTD_XXH64_copyState",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HUF_readDTableX1(HUF_DTable*, void*, size_t)",
+      "symbol": "HUF_readDTableX1",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function XXH64_state_t* ZSTD_XXH64_createState()",
+      "symbol": "ZSTD_XXH64_createState",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTDv07_decompress_usingDict(ZSTDv07_DCtx*, void*, size_t, void*, size_t, void*, size_t)",
+      "symbol": "ZSTDv07_decompress_usingDict",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function unsigned long long int ZSTD_XXH64_digest(const XXH64_state_t*)",
+      "symbol": "ZSTD_XXH64_digest",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function XXH_errorcode ZSTD_XXH64_reset(XXH64_state_t*, unsigned long long int)",
+      "symbol": "ZSTD_XXH64_reset",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTDMT_sizeof_CCtx(ZSTDMT_CCtx*)",
+      "symbol": "ZSTDMT_sizeof_CCtx",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function XXH_errorcode ZSTD_XXH64_update(XXH64_state_t*, void*, size_t)",
+      "symbol": "ZSTD_XXH64_update",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t HIST_count_wksp(unsigned int*, unsigned int*, void*, size_t, void*, size_t)",
+      "symbol": "HIST_count_wksp",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_buildCTable(void*, size_t, FSE_CTable*, U32, symbolEncodingType_e, unsigned int*, U32, const BYTE*, size_t, const S16*, U32, U32, const FSE_CTable*, size_t, void*, size_t)",
+      "symbol": "ZSTD_buildCTable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_ldm_blockCompress(rawSeqStore_t*, ZSTD_matchState_t*, seqStore_t*, U32*, void*, size_t)",
+      "symbol": "ZSTD_ldm_blockCompress",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void ZSTD_buildFSETable(ZSTD_seqSymbol*, const short int*, unsigned int, const U32*, const U32*, unsigned int, void*, size_t, int)",
+      "symbol": "ZSTD_buildFSETable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_compressBlock_btopt_extDict(ZSTD_matchState_t*, seqStore_t*, U32*, void*, size_t)",
+      "symbol": "ZSTD_compressBlock_btopt_extDict",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_compressBlock_btultra_dictMatchState(ZSTD_matchState_t*, seqStore_t*, U32*, void*, size_t)",
+      "symbol": "ZSTD_compressBlock_btultra_dictMatchState",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_compressBlock_doubleFast(ZSTD_matchState_t*, seqStore_t*, U32*, void*, size_t)",
+      "symbol": "ZSTD_compressBlock_doubleFast",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_compressBlock_btultra_extDict(ZSTD_matchState_t*, seqStore_t*, U32*, void*, size_t)",
+      "symbol": "ZSTD_compressBlock_btultra_extDict",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_compressBlock_doubleFast_extDict(ZSTD_matchState_t*, seqStore_t*, U32*, void*, size_t)",
+      "symbol": "ZSTD_compressBlock_doubleFast_extDict",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_compressBlock_fast(ZSTD_matchState_t*, seqStore_t*, U32*, void*, size_t)",
+      "symbol": "ZSTD_compressBlock_fast",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_compressBlock_fast_extDict(ZSTD_matchState_t*, seqStore_t*, U32*, void*, size_t)",
+      "symbol": "ZSTD_compressBlock_fast_extDict",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "int g_debuglevel",
+      "symbol": "g_debuglevel",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "int g_ZSTD_threading_useless_symbol",
+      "symbol": "g_ZSTD_threading_useless_symbol",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "enum_case_added": 2,
+     "enum_case_removed": 2,
+     "field_added_to_struct": 17,
+     "field_type_changed": 3,
+     "member_offset_changed": 96,
+     "type_size_changed": 9
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": "compress/zstd_compress_internal.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct ZSTD_CCtx_s"
+     },
+     {
+      "append_only": false,
+      "count": 34,
+      "declared_in": "compress/zstd_compress_internal.h",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct ZSTD_CCtx_s"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "compress/zstd_compress_internal.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct ZSTD_CCtx_s"
+     },
+     {
+      "append_only": false,
+      "count": 5,
+      "declared_in": "compress/zstd_compress_internal.h",
+      "exposure": "by_value",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct ZSTD_CCtx_params_s"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "compress/zstd_compress_internal.h",
+      "exposure": "by_value",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct ZSTD_CCtx_params_s"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "compress/zstd_compress_internal.h",
+      "exposure": "by_value",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct ZSTD_CCtx_params_s"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "compress/zstd_cwksp.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct ZSTD_cwksp"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "compress/zstd_cwksp.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct ZSTD_cwksp"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "compress/../common/../zstd.h",
+      "exposure": "by_pointer",
+      "kind": "field_removed_from_struct",
+      "third_party": false,
+      "type": "struct ZSTD_Sequence"
+     },
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": "compress/../common/../zstd.h",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": false,
+      "type": "struct ZSTD_Sequence"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "compress/../common/../zstd.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": false,
+      "type": "struct ZSTD_Sequence"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "compress/zstd_compress_internal.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct rawSeqStore_t"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "compress/zstd_compress_internal.h",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct rawSeqStore_t"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "compress/zstd_compress_internal.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct rawSeqStore_t"
+     },
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "compress/zstd_compress_internal.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct ZSTD_blockState_t"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "compress/zstd_compress_internal.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct ZSTD_hufCTables_t"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "compress/zstd_compress_internal.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct ZSTD_matchState_t"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "compress/zstd_compress_internal.h",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct ZSTD_matchState_t"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "compress/zstd_compress_internal.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct ZSTD_matchState_t"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "compress/zstd_compress.c",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct ZSTD_CDict_s"
+     },
+     {
+      "append_only": false,
+      "count": 7,
+      "declared_in": "compress/zstd_compress.c",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct ZSTD_CDict_s"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "compress/zstd_compress.c",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct ZSTD_CDict_s"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "decompress/zstd_decompress_internal.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct ZSTD_DCtx_s"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "decompress/zstd_decompress_internal.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct ZSTD_DCtx_s"
+     },
+     {
+      "append_only": false,
+      "count": 46,
+      "declared_in": "decompress/zstd_decompress_internal.h",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct ZSTD_DCtx_s"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "decompress/zstd_decompress_internal.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct ZSTD_DCtx_s"
+     },
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "decompress/zstd_decompress_internal.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct ZSTD_entropyDTables_t"
+     },
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "decompress/zstd_decompress_internal.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct ZSTD_entropyDTables_t"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "decompress/zstd_ddict.c",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct ZSTD_DDict_s"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "decompress/zstd_ddict.c",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct ZSTD_DDict_s"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "decompress/zstd_decompress_internal.h",
+      "exposure": "not_in_interface",
+      "kind": "enum_case_added",
+      "third_party": true,
+      "type": "enum ZSTD_outBufferMode_e"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "decompress/zstd_decompress_internal.h",
+      "exposure": "not_in_interface",
+      "kind": "enum_case_removed",
+      "third_party": true,
+      "type": "enum ZSTD_outBufferMode_e"
+     },
+     {
+      "append_only": false,
+      "count": 5,
+      "declared_in": "compress/../common/../zstd.h",
+      "exposure": "by_value",
+      "kind": "enum_case_added",
+      "third_party": false,
+      "type": "enum ZSTD_cParameter"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "decompress/../common/../zstd.h",
+      "exposure": "by_value",
+      "kind": "enum_case_added",
+      "third_party": false,
+      "type": "enum ZSTD_dParameter"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "common/zstd_errors.h",
+      "exposure": "by_value",
+      "kind": "enum_case_added",
+      "third_party": false,
+      "type": "enum ZSTD_ErrorCode"
+     }
+    ],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 4.688047657,
+  "source": "libzstd",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.4.5+dfsg",
+   "1.4.8+dfsg"
+  ]
+ },
+ "generated_at": "2026-09-03T23:33:29Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

@@ -1,0 +1,91 @@
+{
+ "data": {
+  "bytes_extracted": 1141087,
+  "id": "chromaprint@1.4.2..1.4.3",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      34,
+      34
+     ],
+     "mangled_functions": [
+      10,
+      12
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libchromaprint.so.1",
+     "libchromaprint.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<float, std::allocator<float> >::_M_default_append(std::vector<float, std::allocator<float> >::size_type)",
+      "symbol": "_ZNSt6vectorIfSaIfEE17_M_default_appendEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<double, std::allocator<double> >::_M_default_append(std::vector<double, std::allocator<double> >::size_type)",
+      "symbol": "_ZNSt6vectorIdSaIdEE17_M_default_appendEm",
+      "weak": true
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 2
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/7/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::pair<unsigned int, unsigned int>, std::allocator<std::pair<unsigned int, unsigned int> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/7/bits/stl_pair.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::pair<unsigned int, unsigned int>"
+     }
+    ],
+    "vague_linkage": {
+     "symbol_added": 2
+    }
+   }
+  ],
+  "seconds": 4.286073334,
+  "source": "chromaprint",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.4.2",
+   "1.4.3"
+  ]
+ },
+ "generated_at": "2026-09-03T23:40:44Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}
