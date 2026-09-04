@@ -89,11 +89,17 @@ void symbols() {
 }
 
 void attribution() {
-  const std::unordered_set<std::string> shipped{"zlib.h", "foo/bar.h", "types.h"};
+  abigail::ShippedHeaders shipped;
+  for (const auto *p : {"zlib.h", "foo/bar.h", "types.h", "freetype2/freetype/freetype.h"})
+    shipped.add(p);
   CHECK(abigail::declared_in_own_headers("/build/zlib-1.3/zlib.h", shipped));
   CHECK(abigail::declared_in_own_headers("../include/foo/bar.h", shipped));
   CHECK(abigail::declared_in_own_headers("/usr/include/zlib.h", shipped));
   CHECK(abigail::declared_in_own_headers("/usr/include/foo/bar.h", shipped));
+  // The installed tree adds a prefix directory the build tree does not have.
+  CHECK(abigail::declared_in_own_headers("../include/freetype/freetype.h", shipped));
+  CHECK(abigail::declared_in_own_headers("/usr/include/freetype2/freetype/freetype.h", shipped));
+  CHECK(abigail::declared_in_own_headers("/usr/include/freetype/freetype.h", shipped));
   // glibc's bits/types.h is not claimed by a library shipping a top-level types.h.
   CHECK(!abigail::declared_in_own_headers("/usr/include/x86_64-linux-gnu/bits/types.h", shipped));
   CHECK(!abigail::declared_in_own_headers("/usr/include/x86_64-linux-gnu/bits/other.h", shipped));

@@ -668,10 +668,8 @@ void language_and_coverage(const ir::corpus &c, std::uint32_t &exported, std::ui
 }
 
 /// @brief Include-relative paths of every header file below the given roots.
-std::unordered_set<std::string> shipped_headers(
-  std::initializer_list<std::filesystem::path> roots
-) {
-  std::unordered_set<std::string> rel;
+ShippedHeaders shipped_headers(std::initializer_list<std::filesystem::path> roots) {
+  ShippedHeaders sh;
   for (const auto &root : roots) {
     std::error_code ec;
     if (root.empty() || !std::filesystem::is_directory(root, ec))
@@ -679,21 +677,48 @@ std::unordered_set<std::string> shipped_headers(
     for (auto it = std::filesystem::recursive_directory_iterator(root, ec);
          !ec && it != std::filesystem::recursive_directory_iterator(); it.increment(ec)) {
       if (it->is_regular_file(ec))
-        rel.insert(it->path().lexically_relative(root).generic_string());
+        sh.add(it->path().lexically_relative(root).generic_string());
     }
   }
-  return rel;
+  return sh;
+}
+
+/// @brief Number of trailing path components `a` and `b` share.
+std::size_t common_suffix_components(std::string_view a, std::string_view b) {
+  std::size_t n = 0;
+  for (;;) {
+    const auto sa = a.rfind('/');
+    const auto sb = b.rfind('/');
+    const auto ta = sa == std::string_view::npos ? a : a.substr(sa + 1);
+    const auto tb = sb == std::string_view::npos ? b : b.substr(sb + 1);
+    if (ta != tb || ta.empty())
+      return n;
+    ++n;
+    if (sa == std::string_view::npos || sb == std::string_view::npos)
+      return n;
+    a = a.substr(0, sa);
+    b = b.substr(0, sb);
+  }
 }
 
 } // namespace
 
 // ----------------------------------------------------------------------------
 
-bool declared_in_own_headers(
-  std::string_view dwarf_path, const std::unordered_set<std::string> &shipped
-) {
+void ShippedHeaders::add(std::string relative_path) {
+  const auto slash = relative_path.rfind('/');
+  std::string base = slash == std::string::npos ? relative_path : relative_path.substr(slash + 1);
+  by_basename[std::move(base)].push_back(std::move(relative_path));
+}
+
+bool declared_in_own_headers(std::string_view dwarf_path, const ShippedHeaders &shipped) {
   if (dwarf_path.empty() || shipped.empty())
     return true; // nothing to attribute against: keep the event public
+  const auto slash = dwarf_path.rfind('/');
+  const auto base = slash == std::string_view::npos ? dwarf_path : dwarf_path.substr(slash + 1);
+  const auto it = shipped.by_basename.find(std::string{base});
+  if (it == shipped.by_basename.end())
+    return false;
   constexpr std::array<std::string_view, 2> sys_roots{"/usr/include/", "/usr/lib/gcc/"};
   std::string_view sys_rel;
   for (const auto r : sys_roots) {
@@ -702,24 +727,11 @@ bool declared_in_own_headers(
       break;
     }
   }
-  // Try every suffix of the DWARF path that starts at a '/' boundary.
-  std::size_t pos = dwarf_path.size();
-  for (;;) {
-    const auto slash = dwarf_path.rfind('/', pos == 0 ? 0 : pos - 1);
-    const auto start = slash == std::string_view::npos ? 0 : slash + 1;
-    const auto candidate = dwarf_path.substr(start);
-    if (shipped.contains(std::string{candidate})) {
-      if (sys_rel.empty())
-        return true;
-      // Under a system include root a top-level basename is not enough.
-      if (candidate == sys_rel || candidate.contains('/'))
-        return true;
-    }
-    if (slash == std::string_view::npos || slash == 0)
-      break;
-    pos = slash;
-  }
-  return false;
+  if (sys_rel.empty())
+    return true;
+  return std::ranges::any_of(it->second, [&](const std::string &s) {
+    return s == sys_rel || common_suffix_components(dwarf_path, s) >= 2;
+  });
 }
 
 std::string AbigailComparer::version() const {
