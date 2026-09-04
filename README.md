@@ -14,6 +14,9 @@ would have absorbed them.
   committed; the diff stage rebuilds them from `plan.json`.
 - `scripts/`, `v2/`, `results/` — the earlier Python pipelines, kept for
   cross-checking.
+- `docs/abi-stability-since-p1863.md` — background note on WG21's ABI
+  stability decisions since P1863R1 "ABI - Now or Never" (Prague 2020) and
+  what the three standard library implementations did afterwards.
 
 ## Building and running the gate
 
