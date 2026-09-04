@@ -1,0 +1,2012 @@
+{
+ "data": {
+  "bytes_extracted": 271050493,
+  "id": "z3@4.8.4..4.8.6",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      743,
+      771
+     ],
+     "mangled_functions": [
+      66,
+      79
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "enum_case_added": 12,
+     "symbol_added": 18,
+     "symbol_removed": 3
+    },
+    "soname": [
+     "libz3.so.4",
+     "libz3.so.4"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "function const char* Z3_get_error_msg_ex(Z3_context, Z3_error_code)",
+      "symbol": "Z3_get_error_msg_ex",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void Z3_fixedpoint_push(Z3_context, Z3_fixedpoint)",
+      "symbol": "Z3_fixedpoint_push",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void Z3_fixedpoint_pop(Z3_context, Z3_fixedpoint)",
+      "symbol": "Z3_fixedpoint_pop",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void std::thread::_State_impl<std::thread::_Invoker<std::tuple<par_and_then_tactical::operator()(const goal_ref&, goal_ref_buffer&)::<lambda()> > > >::_M_run()",
+      "symbol": "_ZNSt6thread11_State_implINS_8_InvokerISt5tupleIJZN21par_and_then_tacticalclERK3refI4goalER11sref_bufferIS5_Lj16EEEUlvE0_EEEEE6_M_runEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void std::thread::_State_impl<std::thread::_Invoker<std::tuple<par_tactical::operator()(const goal_ref&, goal_ref_buffer&)::<lambda()> > > >::_M_run()",
+      "symbol": "_ZNSt6thread11_State_implINS_8_InvokerISt5tupleIJZN12par_tacticalclERK3refI4goalER11sref_bufferIS5_Lj16EEEUlvE0_EEEEE6_M_runEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_ast_vector Z3_solver_get_trail(Z3_context, Z3_solver)",
+      "symbol": "Z3_solver_get_trail",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Z3_solver_get_levels(Z3_context, Z3_solver, Z3_ast_vector, unsigned int, unsigned int*)",
+      "symbol": "Z3_solver_get_levels",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void std::thread::_State_impl<std::thread::_Invoker<std::tuple<void (*)(unsigned int, event_handler*, std::timed_mutex*), unsigned int, event_handler*, std::timed_mutex*> > >::_M_run()",
+      "symbol": "_ZNSt6thread11_State_implINS_8_InvokerISt5tupleIJPFvjP13event_handlerPSt11timed_mutexEjS4_S6_EEEEE6_M_runEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_string Z3_get_lstring(Z3_context, Z3_ast, unsigned int*)",
+      "symbol": "Z3_get_lstring",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Z3_optimize_assert_and_track(Z3_context, Z3_optimize, Z3_ast, Z3_ast)",
+      "symbol": "Z3_optimize_assert_and_track",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_sort Z3_get_re_sort_basis(Z3_context, Z3_sort)",
+      "symbol": "Z3_get_re_sort_basis",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_ast Z3_mk_lstring(Z3_context, unsigned int, Z3_string)",
+      "symbol": "Z3_mk_lstring",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_sort Z3_get_seq_sort_basis(Z3_context, Z3_sort)",
+      "symbol": "Z3_get_seq_sort_basis",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::mutex::lock()",
+      "symbol": "_ZNSt5mutex4lockEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_ast Z3_mk_str_lt(Z3_context, Z3_ast, Z3_ast)",
+      "symbol": "Z3_mk_str_lt",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_func_decl Z3_mk_tree_order(Z3_context, Z3_sort, unsigned int)",
+      "symbol": "Z3_mk_tree_order",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_func_decl Z3_mk_partial_order(Z3_context, Z3_sort, unsigned int)",
+      "symbol": "Z3_mk_partial_order",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_func_decl Z3_mk_piecewise_linear_order(Z3_context, Z3_sort, unsigned int)",
+      "symbol": "Z3_mk_piecewise_linear_order",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_string Z3_solver_to_dimacs_string(Z3_context, Z3_solver)",
+      "symbol": "Z3_solver_to_dimacs_string",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_func_decl Z3_mk_linear_order(Z3_context, Z3_sort, unsigned int)",
+      "symbol": "Z3_mk_linear_order",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_ast Z3_mk_seq_last_index(Z3_context, Z3_ast, Z3_ast)",
+      "symbol": "Z3_mk_seq_last_index",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_func_decl Z3_mk_transitive_closure(Z3_context, Z3_func_decl)",
+      "symbol": "Z3_mk_transitive_closure",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_ast Z3_mk_seq_nth(Z3_context, Z3_ast, Z3_ast)",
+      "symbol": "Z3_mk_seq_nth",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_ast Z3_mk_set_has_size(Z3_context, Z3_ast, Z3_ast)",
+      "symbol": "Z3_mk_set_has_size",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_ast Z3_mk_str_le(Z3_context, Z3_ast, Z3_ast)",
+      "symbol": "Z3_mk_str_le",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 128,
+     "field_added_to_struct": 15,
+     "field_removed_from_struct": 2,
+     "field_type_changed": 158,
+     "member_offset_changed": 76,
+     "type_size_changed": 20,
+     "vtable_changed": 31
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 12,
+      "declared_in": "../src/api/z3_api.h",
+      "exposure": "by_value",
+      "kind": "enum_case_added",
+      "third_party": false,
+      "type": "enum Z3_decl_kind"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::tuple<parallel_tactic::solve(model_ref&)::<lambda()> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Tuple_impl<0, parallel_tactic::solve(model_ref&)::<lambda()> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/solver/parallel_tactic.cpp",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "class parallel_tactic"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/solver/parallel_tactic.cpp",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "class parallel_tactic"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/solver/parallel_tactic.cpp",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class parallel_tactic"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/solver/parallel_tactic.cpp",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class parallel_tactic"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/solver/solver.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "class solver"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/solver/solver.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class solver"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/solver/solver.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class solver"
+     },
+     {
+      "append_only": false,
+      "count": 16,
+      "declared_in": "../src/solver/solver.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class solver"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/params.cpp",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class params"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class svector<std::pair<symbol, params::value>, unsigned int>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/ast/ast.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "class ast_manager"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/ast/ast.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class ast_manager"
+     },
+     {
+      "append_only": false,
+      "count": 16,
+      "declared_in": "../src/ast/ast.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "class ast_manager"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/ast/ast.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class ast_manager"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/rlimit.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class reslimit"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class svector<long unsigned int, unsigned int>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class ptr_vector<reslimit>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/ast/ast.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class family_manager"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/symbol_table.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class symbol_table<int>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class svector<int, unsigned int>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class svector<symbol, unsigned int>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/parray.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class parray_manager<ast_manager::expr_array_config>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class ptr_vector<parray_manager<ast_manager::expr_array_config>::cell>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/util/dependency.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class dependency_manager<ast_manager::expr_dependency_config>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class ptr_vector<dependency_manager<ast_manager::expr_dependency_config>::dependency>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/parray.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class parray_manager<ast_manager::expr_dependency_array_config>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class ptr_vector<parray_manager<ast_manager::expr_dependency_array_config>::cell>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class ptr_vector<decl_plugin>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/util/id_gen.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class id_gen"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class svector<unsigned int, unsigned int>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/ast/ast.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class sort"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/ast/ast.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class decl_info"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/ast/ast.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class func_decl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/util/params.cpp",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct param_descrs::imp"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/util/ref_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class ref_vector<expr, ast_manager>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/util/ref_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class ref_vector_core<expr, ref_manager_wrapper<expr, ast_manager> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/util/ref_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class ref_vector_core<expr, ref_manager_wrapper<expr, ast_manager> >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class ptr_vector<expr>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/ast/arith_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class arith_decl_plugin"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/ast/arith_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class arith_decl_plugin"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/ast/arith_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class arith_decl_plugin"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "../src/ast/arith_decl_plugin.cpp",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct arith_decl_plugin::algebraic_numbers_wrapper"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/ast/arith_decl_plugin.cpp",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct arith_decl_plugin::algebraic_numbers_wrapper"
+     },
+     {
+      "append_only": false,
+      "count": 6,
+      "declared_in": "../src/util/mpq.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "class mpq_manager<false>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/util/mpq.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class mpq_manager<false>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/util/mpq.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class mpq_manager<false>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/util/mpz.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class mpz_manager<false>"
+     },
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": "../src/util/mpz.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "class mpz_manager<false>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/util/mpz.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class mpz_manager<false>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/lib/gcc/x86_64-linux-gnu/9/include/omp.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct omp_nest_lock_t"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/lib/gcc/x86_64-linux-gnu/9/include/omp.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct omp_nest_lock_t"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/lib/gcc/x86_64-linux-gnu/9/include/omp.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct omp_nest_lock_t"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/util/mpn.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class mpn_manager"
+     },
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": "../src/util/mpn.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "class mpn_manager"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/util/mpn.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class mpn_manager"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/mpn.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class mpn_manager::mpn_sbuffer"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/math/polynomial/algebraic_numbers.cpp",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct algebraic_numbers::manager::imp"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/util/mpbqi.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class mpbqi_manager"
+     },
+     {
+      "append_only": false,
+      "count": 9,
+      "declared_in": "../src/math/polynomial/polynomial.cpp",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct polynomial::manager::imp"
+     },
+     {
+      "append_only": false,
+      "count": 5,
+      "declared_in": "../src/math/polynomial/upolynomial.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class upolynomial::manager"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/math/polynomial/upolynomial.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class upolynomial::manager"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class svector<mpz, unsigned int>"
+     },
+     {
+      "append_only": false,
+      "count": 10,
+      "declared_in": "../src/math/polynomial/upolynomial.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class upolynomial::core_manager"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/math/polynomial/polynomial.cpp",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class polynomial::monomial_manager"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class svector<polynomial::power, unsigned int>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class ptr_vector<polynomial::polynomial>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/math/polynomial/polynomial.cpp",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class polynomial::monomial2pos"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class ptr_vector<polynomial::monomial>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/math/polynomial/polynomial.cpp",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class polynomial::manager::imp::som_buffer"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/math/polynomial/polynomial.cpp",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class polynomial::manager::imp::cheap_som_buffer"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/util/vector.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class vector<svector<unsigned int, unsigned int>, true, unsigned int>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class svector<bool, unsigned int>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/math/polynomial/polynomial.cpp",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class polynomial::manager::imp::som_buffer_vector"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class ptr_vector<polynomial::manager::imp::som_buffer>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/math/polynomial/polynomial.cpp",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class polynomial::manager::imp::newton_interpolator_vector"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class ptr_vector<polynomial::manager::imp::newton_interpolator>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/util/scoped_ptr_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class scoped_ptr_vector<polynomial::manager::imp::skeleton>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class ptr_vector<polynomial::manager::imp::skeleton>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/math/polynomial/polynomial.cpp",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class polynomial::manager::imp::var_max_degree"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/math/polynomial/polynomial.cpp",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct polynomial::manager::imp::var_pos"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/math/polynomial/upolynomial.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class upolynomial::scoped_numeral_vector"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/scoped_numeral_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class _scoped_numeral_vector<mpzzp_manager>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/math/polynomial/upolynomial.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class upolynomial::core_manager::factors"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/util/vector.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class vector<svector<mpz, unsigned int>, true, unsigned int>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/scoped_numeral_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class _scoped_numeral_vector<mpbq_manager>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/scoped_numeral_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class _scoped_numeral_vector<algebraic_numbers::manager>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class ptr_vector<app>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/ast/ast.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class decl_plugin"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "../src/ast/ast_translation.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class ast_translation"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class svector<ast_translation::frame, unsigned int>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class ptr_vector<ast>"
+     },
+     {
+      "append_only": false,
+      "count": 50,
+      "declared_in": "../src/ast/bv_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class bv_decl_plugin"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/ast/bv_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class bv_decl_plugin"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/ast/bv_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class bv_decl_plugin"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class ptr_vector<sort>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class ptr_vector<func_decl>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/util/vector.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class vector<ptr_vector<func_decl>, true, unsigned int>"
+     },
+     {
+      "append_only": false,
+      "count": 8,
+      "declared_in": "../src/ast/fpa_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "class fpa_decl_plugin"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/ast/fpa_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class fpa_decl_plugin"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/ast/fpa_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class fpa_decl_plugin"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/ast/fpa_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class fpa_decl_plugin"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/mpf.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "class mpf_manager"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/util/mpf.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class mpf_manager"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/scoped_numeral_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class _scoped_numeral_vector<mpf_manager>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/chashtable.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class chashtable<unsigned int, fpa_decl_plugin::mpf_hash_proc, fpa_decl_plugin::mpf_eq_proc>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/ast/seq_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class seq_decl_plugin"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/ast/seq_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class seq_decl_plugin"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/ast/seq_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class seq_decl_plugin"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class ptr_vector<seq_decl_plugin::psig>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/ast/datatype_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "class datatype::util"
+     },
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": "../src/ast/datatype_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class datatype::util"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "../src/ast/datatype_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "class datatype::util"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/ast/datatype_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class datatype::util"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "../src/ast/datatype_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "class datatype::decl::plugin"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/ast/datatype_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class datatype::decl::plugin"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/ast/datatype_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "class datatype::decl::plugin"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/ast/datatype_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class datatype::decl::plugin"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/ast/datatype_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class datatype::decl::plugin"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/ast/datatype_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class datatype::decl::plugin"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/util/map.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class map<symbol, datatype::def*, symbol_hash_proc, symbol_eq_proc>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/util/map.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class default_map_entry<symbol, datatype::def*>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/ast/datatype_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class datatype::def"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/util/ref_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class ref_vector<sort, ast_manager>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/util/ref_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class ref_vector_core<sort, ref_manager_wrapper<sort, ast_manager> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/util/ref_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class ref_vector_core<sort, ref_manager_wrapper<sort, ast_manager> >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class ptr_vector<datatype::constructor>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/util/obj_hashtable.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class obj_map<sort, ptr_vector<func_decl>*>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/util/hashtable.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class core_hashtable<obj_map<sort, ptr_vector<func_decl>*>::obj_map_entry, obj_hash<obj_map<sort, ptr_vector<func_decl>*>::key_data>, default_eq<obj_map<sort, ptr_vector<func_decl>*>::key_data> >"
+     },
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": "../src/util/hashtable.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class core_hashtable<obj_map<sort, ptr_vector<func_decl>*>::obj_map_entry, obj_hash<obj_map<sort, ptr_vector<func_decl>*>::key_data>, default_eq<obj_map<sort, ptr_vector<func_decl>*>::key_data> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/util/obj_hashtable.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class obj_map<sort, ptr_vector<func_decl>*>::obj_map_entry"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/util/obj_hashtable.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct obj_map<sort, ptr_vector<func_decl>*>::key_data"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/util/obj_hashtable.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class obj_map<func_decl, ptr_vector<func_decl>*>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/util/hashtable.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class core_hashtable<obj_map<func_decl, ptr_vector<func_decl>*>::obj_map_entry, obj_hash<obj_map<func_decl, ptr_vector<func_decl>*>::key_data>, default_eq<obj_map<func_decl, ptr_vector<func_decl>*>::key_data> >"
+     },
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": "../src/util/hashtable.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class core_hashtable<obj_map<func_decl, ptr_vector<func_decl>*>::obj_map_entry, obj_hash<obj_map<func_decl, ptr_vector<func_decl>*>::key_data>, default_eq<obj_map<func_decl, ptr_vector<func_decl>*>::key_data> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/util/obj_hashtable.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class obj_map<func_decl, ptr_vector<func_decl>*>::obj_map_entry"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/util/obj_hashtable.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct obj_map<func_decl, ptr_vector<func_decl>*>::key_data"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/util/ref_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class ref_vector<ast, ast_manager>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/util/ref_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class ref_vector_core<ast, ref_manager_wrapper<ast, ast_manager> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/util/ref_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class ref_vector_core<ast, ref_manager_wrapper<ast, ast_manager> >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class ptr_vector<ptr_vector<func_decl> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/model/model.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "class model"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/model/model.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class model"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/model/model.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class model"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/util/obj_hashtable.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class obj_map<sort, ptr_vector<expr>*>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/util/hashtable.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class core_hashtable<obj_map<sort, ptr_vector<expr>*>::obj_map_entry, obj_hash<obj_map<sort, ptr_vector<expr>*>::key_data>, default_eq<obj_map<sort, ptr_vector<expr>*>::key_data> >"
+     },
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": "../src/util/hashtable.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class core_hashtable<obj_map<sort, ptr_vector<expr>*>::obj_map_entry, obj_hash<obj_map<sort, ptr_vector<expr>*>::key_data>, default_eq<obj_map<sort, ptr_vector<expr>*>::key_data> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/util/obj_hashtable.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class obj_map<sort, ptr_vector<expr>*>::obj_map_entry"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/util/obj_hashtable.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct obj_map<sort, ptr_vector<expr>*>::key_data"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/model/model_evaluator.cpp",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct model_evaluator::imp"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/model/model_evaluator.cpp",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct model_evaluator::imp"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "../src/model/model_evaluator.cpp",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct evaluator_cfg"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/model/model_evaluator.cpp",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct evaluator_cfg"
+     },
+     {
+      "append_only": false,
+      "count": 14,
+      "declared_in": "../src/model/model_evaluator.cpp",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct evaluator_cfg"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/model/model_evaluator.cpp",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct evaluator_cfg"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "../src/model/model_core.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class model_core"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/model/func_interp.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "class func_interp"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/model/func_interp.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class func_interp"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/model/func_interp.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class func_interp"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class ptr_vector<func_entry>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/ast/rewriter/bool_rewriter.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "class bool_rewriter"
+     },
+     {
+      "append_only": false,
+      "count": 9,
+      "declared_in": "../src/ast/rewriter/arith_rewriter.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "class arith_rewriter"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/ast/rewriter/arith_rewriter.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class arith_rewriter"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/ast/rewriter/arith_rewriter.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class arith_rewriter"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/ast/rewriter/poly_rewriter.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "class poly_rewriter<arith_rewriter_core>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/ast/rewriter/poly_rewriter.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class poly_rewriter<arith_rewriter_core>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/ast/rewriter/bv_rewriter.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class bv_rewriter"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/ast/rewriter/poly_rewriter.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "class poly_rewriter<bv_rewriter_core>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/ast/rewriter/poly_rewriter.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class poly_rewriter<bv_rewriter_core>"
+     },
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "../src/ast/rewriter/datatype_rewriter.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class datatype_rewriter"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/ast/rewriter/pb_rewriter.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class pb_rewriter"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/ast/pb_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class pb_util"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/math/automata/boolean_algebra.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class boolean_algebra<sym_expr*>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/tactic/model_converter.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class labels_vec"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/ast/ast_pp_util.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "class ast_pp_util"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/ast/ast_pp_util.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class ast_pp_util"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/util/obj_hashtable.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class obj_hashtable<func_decl>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/ast/ast_smt2_pp.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "class smt2_pp_environment_dbg"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/ast/ast_smt2_pp.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class smt2_pp_environment_dbg"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/ast/ast_smt2_pp.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class smt2_pp_environment_dbg"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "../src/ast/decl_collector.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class decl_collector"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/ast/decl_collector.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "class decl_collector"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/ast/decl_collector.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class decl_collector"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/solver/check_sat_result.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class check_sat_result"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/statistics.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class statistics"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class svector<std::pair<char const*, unsigned int>, unsigned int>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class svector<std::pair<char const*, double>, unsigned int>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/util/ref_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class sref_vector<model>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/util/ref_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class ref_vector_core<model, ref_unmanaged_wrapper<model> >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class ptr_vector<model>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/solver/parallel_tactic.cpp",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class parallel_tactic::task_queue"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class ptr_vector<parallel_tactic::solver_state>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/tactic/proof_converter.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class proof_converter"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/util/ref_buffer.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class sref_buffer<goal, 16>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/util/ref_buffer.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class ref_buffer_core<goal, ref_unmanaged_wrapper<goal>, 16>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/util/buffer.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class ptr_buffer<goal, 16>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/tactic/tactic.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class tactic"
+     }
+    ],
+    "vague_linkage": {
+     "symbol_added": 4
+    }
+   }
+  ],
+  "seconds": 232.630867211,
+  "source": "z3",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "4.8.4",
+   "4.8.6"
+  ]
+ },
+ "generated_at": "2026-09-04T00:55:09Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

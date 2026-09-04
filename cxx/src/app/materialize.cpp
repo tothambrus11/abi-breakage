@@ -5,6 +5,7 @@
 #include <fstream>
 
 #include "core/contracts.hpp"
+#include "domain/symbols.hpp"
 
 namespace abistudy::app {
 namespace {
@@ -74,6 +75,10 @@ std::vector<std::filesystem::path> find_shared_objects(const std::filesystem::pa
       continue;
     const auto name = it->path().filename().string();
     if (!name.starts_with("lib") || !name.contains(".so"))
+      continue;
+    if (!is_linkable_library_dir(
+          it->path().parent_path().lexically_relative(root).generic_string()
+        ))
       continue;
     if (has_elf_magic(it->path()))
       out.push_back(it->path());

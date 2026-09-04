@@ -82,6 +82,22 @@ void symbols() {
   CHECK_EQ(digits_blind("u_strlen_72"), "u_strlen_#");
   CHECK_EQ(digits_blind("abc"), "abc");
 
+  // Linkable library directories vs plugin directories.
+  CHECK(is_linkable_library_dir("usr/lib/x86_64-linux-gnu"));
+  CHECK(is_linkable_library_dir("usr/lib/x86_64-linux-gnu/"));
+  CHECK(is_linkable_library_dir("/lib/x86_64-linux-gnu"));
+  CHECK(is_linkable_library_dir("usr/lib"));
+  CHECK(is_linkable_library_dir("lib"));
+  CHECK(is_linkable_library_dir("usr/lib64"));
+  CHECK(!is_linkable_library_dir("usr/lib/x86_64-linux-gnu/sane"));
+  CHECK(!is_linkable_library_dir("usr/lib/x86_64-linux-gnu/spa-0.2/aec"));
+  CHECK(!is_linkable_library_dir("usr/lib/x86_64-linux-gnu/gstreamer-1.0"));
+  CHECK(!is_linkable_library_dir("lib/security"));
+  CHECK(!is_linkable_library_dir("usr/lib/klibc"));
+  CHECK(!is_linkable_library_dir("usr/libexec"));
+  CHECK(!is_linkable_library_dir("usr/share/lib"));
+  CHECK(!is_linkable_library_dir(""));
+
   // Vague linkage: weak AND mangled.
   CHECK(is_vague_linkage("_Z5twiceIiET_S0_", true));
   CHECK(!is_vague_linkage("_Z5twiceIiET_S0_", false));

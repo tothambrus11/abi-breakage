@@ -142,9 +142,21 @@ attempted:
    an incremental SHA-1, extracted in-process with libarchive (no `..`, no
    absolute paths, no symlink escapes), and deleted. Peak disk is the
    extracted tree of the pair in flight.
-2. Shared objects are paired by **SONAME stem** (`libssl` from
-   `libssl.so.3`), so a SONAME bump still compares.
-3. `AbigailComparer` reads each ELF, restricting types to those declared
+2. The shared objects of the runtime package are the `lib*.so*` ELF files in
+   a **linkable library directory** — `lib`, `usr/lib`, `lib64` and their
+   multiarch subdirectory — because only those are reachable through `-l`.
+   Anything deeper (`sane/`, `spa-0.2/`, `gstreamer-1.0/`, `caca/`,
+   `security/`) is a dlopen'ed plugin whose exported symbols are internal to
+   the loading library; counting them would report plugin churn as ABI
+   breaks (before this rule, sane-backends showed 8 strict breaks in 9
+   transitions, all removals of backend-internal symbols).
+3. Shared objects are paired by **SONAME stem** (`libssl` from
+   `libssl.so.3`), so a SONAME bump still compares. A stem that carries the
+   version itself (`libhunspell-1.6` → `libhunspell-1.7`, `libOpenEXR-3_1` →
+   `libOpenEXR-3_4`) is paired digits-blind when the match is unambiguous on
+   both sides; those transitions are exactly the declared breaks, and
+   dropping them as "unpaired" would bias the declared/silent split.
+4. `AbigailComparer` reads each ELF, restricting types to those declared
    under the `-dev` include root, computes a `corpus_diff` with harmless
    categories **kept** (enum-case additions live there), and classifies by
    walking the diff tree:
@@ -166,9 +178,9 @@ attempted:
      count differs or a parameter/return **type name modulo cv-qualifiers**
      differs; compiler-generated symbols (`_ZTV/_ZTI/_ZTS/_ZTT`) are excluded;
      every symbol event records its ELF binding.
-4. Four tallies partition the events (§4): public, third-party (declared
+5. Four tallies partition the events (§4): public, third-party (declared
    outside the library's headers), private version node, vague linkage.
-5. The two `-dev` include trees are indexed with libclang while they are on
+6. The two `-dev` include trees are indexed with libclang while they are on
    disk (§3.4).
 
 Nothing parses `abidiff` text. Every count is traceable to a specific IR node,

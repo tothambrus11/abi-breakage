@@ -22,4 +22,12 @@ namespace abistudy {
 ///        Used to recognise policy-driven per-release symbol renames.
 [[nodiscard]] std::string digits_blind(std::string_view s);
 
+/// @brief True if `relative_dir` (a path relative to a package root, no
+///        leading slash) is a directory the link editor searches by default:
+///        lib, usr/lib, lib64, usr/lib64, optionally with one multiarch
+///        triplet below. A shared object anywhere deeper (sane/, spa-0.2/,
+///        gstreamer-1.0/, caca/, security/) is a dlopen'ed plugin: nothing
+///        links against it with -l, so it is not part of the library's ABI.
+[[nodiscard]] bool is_linkable_library_dir(std::string_view relative_dir) noexcept;
+
 } // namespace abistudy

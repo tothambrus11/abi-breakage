@@ -5,6 +5,7 @@
 #include <format>
 #include <map>
 #include <mutex>
+#include <set>
 #include <thread>
 
 #include "app/materialize.hpp"
@@ -109,21 +110,45 @@ Result<PairResult> diff_one(
       res.object_errors.push_back("missing package: " + pkg);
   }
 
-  // Pair shared objects by SONAME stem so a SONAME bump still compares.
+  // Pair shared objects by SONAME stem so a SONAME bump still compares. A
+  // stem that carries the version itself (libhunspell-1.6 -> libhunspell-1.7,
+  // libOpenEXR-3_1 -> libOpenEXR-3_4) is paired digits-blind when that is
+  // unambiguous on both sides: these are exactly the declared breaks, and
+  // losing them would bias the declared/silent split.
   std::map<std::string, std::filesystem::path> by_stem_2;
   for (const auto &p : m2.shared_objects)
     by_stem_2.emplace(soname_stem(p.filename().string()).get(), p);
   std::map<std::string, std::filesystem::path> by_stem_1;
   for (const auto &p : m1.shared_objects)
     by_stem_1.emplace(soname_stem(p.filename().string()).get(), p);
+  const auto partner = [&](const std::string &stem) {
+    if (const auto it = by_stem_2.find(stem); it != by_stem_2.end())
+      return it;
+    const auto blind = digits_blind(stem);
+    if (std::ranges::count_if(by_stem_1, [&](const auto &kv) {
+          return digits_blind(kv.first) == blind;
+        }) != 1)
+      return by_stem_2.end();
+    auto found = by_stem_2.end();
+    for (auto it = by_stem_2.begin(); it != by_stem_2.end(); ++it) {
+      if (digits_blind(it->first) != blind || by_stem_1.contains(it->first))
+        continue;
+      if (found != by_stem_2.end())
+        return by_stem_2.end();
+      found = it;
+    }
+    return found;
+  };
 
   Language pair_lang = Language::unknown;
+  std::set<std::string> paired_2;
   for (const auto &[stem, p1] : by_stem_1) {
-    const auto it = by_stem_2.find(stem);
+    const auto it = partner(stem);
     if (it == by_stem_2.end()) {
       res.unpaired_1.push_back(stem);
       continue;
     }
+    paired_2.insert(it->first);
     const ports::Side a{
       .elf = p1, .debug_info_root = m1.debug_root, .public_headers = m1.include_root
     };
@@ -154,7 +179,7 @@ Result<PairResult> diff_one(
     res.objects.push_back(std::move(*d));
   }
   for (const auto &[stem, p2] : by_stem_2) {
-    if (!by_stem_1.contains(stem))
+    if (!paired_2.contains(stem))
       res.unpaired_2.push_back(stem);
   }
   // A pair whose every object failed to compare is a failure, not a quiet

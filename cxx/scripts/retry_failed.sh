@@ -17,7 +17,8 @@ for f in "$work"/pairs/*.json; do
 import json, sys
 d = json.load(open(sys.argv[1]))["data"]
 e = d.get("error") or ""
-sys.exit(0 if (("killed" in e or e.startswith("timeout") or e.startswith("exit ")) and not d["objects"]) else 1)
+memory = "killed" in e or e.startswith("timeout") or e.startswith("exit ") or "bad_alloc" in e
+sys.exit(0 if (memory and not d["objects"]) else 1)
 EOF
   then rm -f "$f"; removed=$((removed + 1)); fi
 done

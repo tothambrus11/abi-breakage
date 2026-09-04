@@ -1,0 +1,943 @@
+{
+ "data": {
+  "bytes_extracted": 141055671,
+  "id": "libmwaw@0.3.20..0.3.21",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      309,
+      310
+     ],
+     "mangled_functions": [
+      309,
+      310
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libmwaw-0.3.so.3",
+     "libmwaw-0.3.so.3"
+    ],
+    "symbol_events": [
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method void std::vector<int, std::allocator<int> >::emplace_back<int>(int&&)  ->  method std::vector<int, std::allocator<int> >::reference std::vector<int, std::allocator<int> >::emplace_back<int>(int&&)",
+      "symbol": "_ZNSt6vectorIiSaIiEE12emplace_backIJiEEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::_Rb_tree<int, std::pair<int const, long int>, std::_Select1st<std::pair<int const, long int> >, std::less<int>, std::allocator<std::pair<int const, long int> > >::_Rb_tree(const std::_Rb_tree<int, std::pair<int const, long int>, std::_Select1st<std::pair<int const, long int> >, std::less<int>, std::allocator<std::pair<int const, long int> > >&)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKilESt10_Select1stIS2_ESt4lessIiESaIS2_EEC2ERKS8_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::_Rb_tree<int, std::pair<int const, int>, std::_Select1st<std::pair<int const, int> >, std::less<int>, std::allocator<std::pair<int const, int> > >::_Rb_tree(const std::_Rb_tree<int, std::pair<int const, int>, std::_Select1st<std::pair<int const, int> >, std::less<int>, std::allocator<std::pair<int const, int> > >&)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiiESt10_Select1stIS2_ESt4lessIiESaIS2_EEC2ERKS8_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::deque<std::pair<long int, int>, std::allocator<std::pair<long int, int> > >::emplace_back<std::pair<long int, int> >(std::pair<long int, int>&&)",
+      "symbol": "_ZNSt5dequeISt4pairIliESaIS1_EE12emplace_backIJS1_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<double, std::allocator<double> >::emplace_back<double>(double&&)",
+      "symbol": "_ZNSt6vectorIdSaIdEE12emplace_backIJdEEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::_Deque_base<long unsigned int, std::allocator<long unsigned int> >::_M_initialize_map(std::size_t)",
+      "symbol": "_ZNSt11_Deque_baseImSaImEE17_M_initialize_mapEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::vector<unsigned char, std::allocator<unsigned char> >, std::allocator<std::vector<unsigned char, std::allocator<unsigned char> > > >::resize(std::vector<std::vector<unsigned char, std::allocator<unsigned char> >, std::allocator<std::vector<unsigned char, std::allocator<unsigned char> > > >::size_type)",
+      "symbol": "_ZNSt6vectorIS_IhSaIhEESaIS1_EE6resizeEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__shared_count<(__gnu_cxx::_Lock_policy)2>::__shared_count<RagTime5GraphInternal::SubDocument*>(RagTime5GraphInternal::SubDocument*)",
+      "symbol": "_ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE2EEC2IPN21RagTime5GraphInternal11SubDocumentEEET_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::_Rb_tree<long int, std::pair<long int const, int>, std::_Select1st<std::pair<long int const, int> >, std::less<long int>, std::allocator<std::pair<long int const, int> > >::_Rb_tree(const std::_Rb_tree<long int, std::pair<long int const, int>, std::_Select1st<std::pair<long int const, int> >, std::less<long int>, std::allocator<std::pair<long int const, int> > >&)",
+      "symbol": "_ZNSt8_Rb_treeIlSt4pairIKliESt10_Select1stIS2_ESt4lessIlESaIS2_EEC2ERKS8_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::_Rb_tree<int, std::pair<int const, long unsigned int>, std::_Select1st<std::pair<int const, long unsigned int> >, std::less<int>, std::allocator<std::pair<int const, long unsigned int> > >::_Rb_tree(const std::_Rb_tree<int, std::pair<int const, long unsigned int>, std::_Select1st<std::pair<int const, long unsigned int> >, std::less<int>, std::allocator<std::pair<int const, long unsigned int> > >&)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKimESt10_Select1stIS2_ESt4lessIiESaIS2_EEC2ERKS8_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_Rb_tree(const std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >&)",
+      "symbol": "_ZNSt8_Rb_treeIiiSt9_IdentityIiESt4lessIiESaIiEEC2ERKS5_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::emplace_back<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE12emplace_backIJS5_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Rb_tree_header::_Rb_tree_header(std::_Rb_tree_header&&)",
+      "symbol": "_ZNSt15_Rb_tree_headerC2EOS_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::pair<std::_Rb_tree_iterator<int>, bool> std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_M_insert_unique<int>(int&&)",
+      "symbol": "_ZNSt8_Rb_treeIiiSt9_IdentityIiESt4lessIiESaIiEE16_M_insert_uniqueIiEESt4pairISt17_Rb_tree_iteratorIiEbEOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::pair<std::_Rb_tree_iterator<std::pair<int const, std::vector<int, std::allocator<int> > > >, bool> std::_Rb_tree<int, std::pair<int const, std::vector<int, std::allocator<int> > >, std::_Select1st<std::pair<int const, std::vector<int, std::allocator<int> > > >, std::less<int>, std::allocator<std::pair<int const, std::vector<int, std::allocator<int> > > > >::_M_emplace_unique<std::pair<int, int> >(std::pair<int, int>&&)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiSt6vectorIiSaIiEEESt10_Select1stIS5_ESt4lessIiESaIS5_EE17_M_emplace_uniqueIJS0_IiiEEEES0_ISt17_Rb_tree_iteratorIS5_EbEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::pair<std::_Rb_tree_iterator<long unsigned int>, bool> std::_Rb_tree<long unsigned int, long unsigned int, std::_Identity<long unsigned int>, std::less<long unsigned int>, std::allocator<long unsigned int> >::_M_insert_unique<long unsigned int>(unsigned long int&&)",
+      "symbol": "_ZNSt8_Rb_treeImmSt9_IdentityImESt4lessImESaImEE16_M_insert_uniqueImEESt4pairISt17_Rb_tree_iteratorImEbEOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<int, std::pair<int const, float>, std::_Select1st<std::pair<int const, float> >, std::less<int>, std::allocator<std::pair<int const, float> > >::_M_get_insert_unique_pos(const std::_Rb_tree<int, std::pair<int const, float>, std::_Select1st<std::pair<int const, float> >, std::less<int>, std::allocator<std::pair<int const, float> > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKifESt10_Select1stIS2_ESt4lessIiESaIS2_EE24_M_get_insert_unique_posERS1_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::mapped_type& std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::operator[](const std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::key_type&)",
+      "symbol": "_ZNSt3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_St4lessIS5_ESaISt4pairIKS5_S5_EEEixERS9_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::pair<std::_Rb_tree_iterator<long int>, bool> std::_Rb_tree<long int, long int, std::_Identity<long int>, std::less<long int>, std::allocator<long int> >::_M_insert_unique<long int>(long int&&)",
+      "symbol": "_ZNSt8_Rb_treeIllSt9_IdentityIlESt4lessIlESaIlEE16_M_insert_uniqueIlEESt4pairISt17_Rb_tree_iteratorIlEbEOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::stack<long unsigned int, std::deque<long unsigned int, std::allocator<long unsigned int> > >::stack<>()",
+      "symbol": "_ZNSt5stackImSt5dequeImSaImEEEC2IS2_vEEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<>(const char*, const std::allocator<char>&)",
+      "symbol": "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC2IS3_EEPKcRKS3_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::map<long int, std::array<double, 9>, std::less<long int>, std::allocator<std::pair<long int const, std::array<double, 9> > > >::mapped_type& std::map<long int, std::array<double, 9>, std::less<long int>, std::allocator<std::pair<long int const, std::array<double, 9> > > >::operator[](const std::map<long int, std::array<double, 9>, std::less<long int>, std::allocator<std::pair<long int const, std::array<double, 9> > > >::key_type&)",
+      "symbol": "_ZNSt3mapIlSt5arrayIdLm9EESt4lessIlESaISt4pairIKlS1_EEEixERS5_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::stack<std::pair<long int, int>, std::deque<std::pair<long int, int>, std::allocator<std::pair<long int, int> > > >::stack<>()",
+      "symbol": "_ZNSt5stackISt4pairIliESt5dequeIS1_SaIS1_EEEC2IS4_vEEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::stack<int, std::deque<int, std::allocator<int> > >::stack<>()",
+      "symbol": "_ZNSt5stackIiSt5dequeIiSaIiEEEC2IS2_vEEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method ScriptWriterParserInternal::Frame* std::__uninitialized_copy<false>::__uninit_copy<const ScriptWriterParserInternal::Frame*, ScriptWriterParserInternal::Frame*>(const ScriptWriterParserInternal::Frame*, ScriptWriterParserInternal::Frame*)",
+      "symbol": "_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPKN26ScriptWriterParserInternal5FrameEPS3_EET0_T_S8_S7_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::vector<long int, std::allocator<long int> >::iterator std::vector<long int, std::allocator<long int> >::_M_insert_rval(std::vector<long int, std::allocator<long int> >::const_iterator, std::vector<long int, std::allocator<long int> >::value_type&&)",
+      "symbol": "_ZNSt6vectorIlSaIlEE14_M_insert_rvalEN9__gnu_cxx17__normal_iteratorIPKlS1_EEOl",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::_Vector_base<libmwaw_applepict1::DataType, std::allocator<libmwaw_applepict1::DataType> >::~_Vector_base(int)",
+      "symbol": "_ZNSt12_Vector_baseIN18libmwaw_applepict18DataTypeESaIS1_EED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<int, std::pair<int const, float>, std::_Select1st<std::pair<int const, float> >, std::less<int>, std::allocator<std::pair<int const, float> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree<int, std::pair<int const, float>, std::_Select1st<std::pair<int const, float> >, std::less<int>, std::allocator<std::pair<int const, float> > >::const_iterator, const std::_Rb_tree<int, std::pair<int const, float>, std::_Select1st<std::pair<int const, float> >, std::less<int>, std::allocator<std::pair<int const, float> > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKifESt10_Select1stIS2_ESt4lessIiESaIS2_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS2_ERS1_",
+      "weak": true
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 78,
+     "field_added_to_struct": 1
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/ClarisDrawGraph.cxx",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class ClarisDrawGraphInternal::SubDocument"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MWAWParserState>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<MWAWHeaderFooter, std::allocator<MWAWHeaderFooter> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<MWAWHeaderFooter, std::allocator<MWAWHeaderFooter> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MWAWSubDocument>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MWAWListener>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::shared_ptr<MWAWCell>, std::allocator<std::shared_ptr<MWAWCell> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::shared_ptr<MWAWCell>, std::allocator<std::shared_ptr<MWAWCell> > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MWAWCell>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/MWAWGraphicStyle.hxx",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "class MWAWGraphicStyle"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MWAWGraphicListener>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/MWAWGraphicListener.hxx",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class MWAWGraphicListener"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MWAWGraphicListenerInternal::GraphicState>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<MWAWPageSpan, std::allocator<MWAWPageSpan> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<MWAWPageSpan, std::allocator<MWAWPageSpan> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::shared_ptr<MWAWSubDocument>, std::allocator<std::shared_ptr<MWAWSubDocument> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::shared_ptr<MWAWSubDocument>, std::allocator<std::shared_ptr<MWAWSubDocument> > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MWAWGraphicListenerInternal::State>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::shared_ptr<MWAWGraphicListenerInternal::State>, std::allocator<std::shared_ptr<MWAWGraphicListenerInternal::State> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::shared_ptr<MWAWGraphicListenerInternal::State>, std::allocator<std::shared_ptr<MWAWGraphicListenerInternal::State> > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MWAWPresentationListener>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/MWAWPresentationListener.hxx",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class MWAWPresentationListener"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MWAWPresentationListenerInternal::GraphicState>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MWAWPresentationListenerInternal::State>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::shared_ptr<MWAWPresentationListenerInternal::State>, std::allocator<std::shared_ptr<MWAWPresentationListenerInternal::State> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::shared_ptr<MWAWPresentationListenerInternal::State>, std::allocator<std::shared_ptr<MWAWPresentationListenerInternal::State> > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MWAWSpreadsheetListener>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/MWAWSpreadsheetListener.hxx",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class MWAWSpreadsheetListener"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MWAWSpreadsheetListenerInternal::DocumentState>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MWAWTextListener>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/MWAWTextListener.hxx",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class MWAWTextListener"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MWAWTextListenerInternal::DocumentState>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/ClarisDrawParser.hxx",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class ClarisDrawParser"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<ClarisDrawStyleManager>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<ClarisDrawGraph>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<ClarisDrawText>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/MWAWParser.hxx",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class MWAWGraphicParser"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/ClarisWksGraph.cxx",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class ClarisWksGraphInternal::SubDocument"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<ClarisWksStyleManager>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<ClarisWksStyleManagerInternal::State>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<MWAWGraphicStyle, std::allocator<MWAWGraphicStyle> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<MWAWGraphicStyle, std::allocator<MWAWGraphicStyle> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<ClarisWksDatabase>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<ClarisWksGraph>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<ClarisWksPresentation>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<ClarisWksSpreadsheet>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<ClarisWksTable>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<ClarisWksText>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/HanMacWrdJGraph.cxx",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class HanMacWrdJGraphInternal::SubDocument"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<HanMacWrdJGraphInternal::State>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<HanMacWrdJGraphInternal::FrameFormat, std::allocator<HanMacWrdJGraphInternal::FrameFormat> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<HanMacWrdJGraphInternal::FrameFormat, std::allocator<HanMacWrdJGraphInternal::FrameFormat> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/HanMacWrdJParser.hxx",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class HanMacWrdJParser"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<HanMacWrdJGraph>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<HanMacWrdJText>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/MWAWParser.hxx",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class MWAWTextParser"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/HanMacWrdKGraph.cxx",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class HanMacWrdKGraphInternal::SubDocument"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/HanMacWrdKParser.hxx",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class HanMacWrdKParser"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<HanMacWrdKGraph>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<HanMacWrdKText>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/MsWksGraph.cxx",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class MsWksGraphInternal::SubDocument"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MsWksGraphInternal::State>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::shared_ptr<MsWksGraphInternal::Zone>, std::allocator<std::shared_ptr<MsWksGraphInternal::Zone> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::shared_ptr<MsWksGraphInternal::Zone>, std::allocator<std::shared_ptr<MsWksGraphInternal::Zone> > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MsWksGraphInternal::Zone>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/MsWksGraph.hxx",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct MsWksGraph::Style"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MsWksDocumentInternal::State>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MsWks4Zone>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MsWksDocument>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MsWksGraph>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MsWks3Text>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MsWks4Text>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MsWksTable>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/BeagleWksSSParser.cxx",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct BeagleWksSSParserInternal::Cell"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<Canvas5ImageInternal::VKFLImage>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<Canvas5ImageInternal::VKFLShape, std::allocator<Canvas5ImageInternal::VKFLShape> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<Canvas5ImageInternal::VKFLShape, std::allocator<Canvas5ImageInternal::VKFLShape> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/BeagleWksDBParser.cxx",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct BeagleWksDBParserInternal::Cell"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/GreatWksDBParser.cxx",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class GreatWksDBParserInternal::Cell"
+     }
+    ],
+    "vague_linkage": {
+     "function_signature_changed": 1,
+     "symbol_added": 15,
+     "symbol_removed": 12
+    }
+   }
+  ],
+  "seconds": 441.416759837,
+  "source": "libmwaw",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "0.3.20",
+   "0.3.21"
+  ]
+ },
+ "generated_at": "2026-09-04T01:02:30Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}
