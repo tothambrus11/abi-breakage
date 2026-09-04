@@ -666,7 +666,7 @@ void classify_symbols(corpus_diff &d, const ports::CompareOptions &opt, SharedOb
       .version = version_of(a->get_symbol()),
       .is_function = true,
       .weak = is_weak(a->get_symbol()),
-      .vtable_slot = occupies_vtable_slot(a)
+      .vtable_slot = occupies_vtable_slot(a.get())
     };
     tally_for(out, side).add(ChangeKind::function_signature_changed);
     record_event(

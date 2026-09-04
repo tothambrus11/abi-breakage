@@ -82,45 +82,6 @@ void symbols() {
   CHECK_EQ(digits_blind("u_strlen_72"), "u_strlen_#");
   CHECK_EQ(digits_blind("abc"), "abc");
 
-  // Pair outcomes are classified from the record, in one place.
-  {
-    PairResult r{};
-    CHECK(pair_outcome(r) == PairOutcome::no_linkable_object);
-    r.error = std::string{pair_error_skipped} + "900 MB of packages exceeds ...";
-    CHECK(pair_outcome(r) == PairOutcome::skipped_budget);
-    r.error = std::string{pair_error_not_attempted} + "--deadline-minutes 270 reached";
-    CHECK(pair_outcome(r) == PairOutcome::not_attempted);
-    r.error = std::string{pair_error_timeout} + "1200s";
-    CHECK(pair_outcome(r) == PairOutcome::failed_timeout);
-    r.error = std::string{pair_error_killed} + " twice under --child-memory-mb 6000";
-    CHECK(pair_outcome(r) == PairOutcome::failed_memory);
-    r.error = "no object could be compared: libz3: reading corpus: std::bad_alloc";
-    CHECK(pair_outcome(r) == PairOutcome::failed_memory);
-    r.error = std::string{pair_error_exit} + "1: reader failed";
-    CHECK(pair_outcome(r) == PairOutcome::failed);
-    CHECK(retryable_with_more_resources(PairOutcome::failed_memory));
-    CHECK(retryable_with_more_resources(PairOutcome::failed_timeout));
-    CHECK(!retryable_with_more_resources(PairOutcome::skipped_budget));
-    CHECK(!retryable_with_more_resources(PairOutcome::failed));
-    r.objects.push_back(SharedObjectDiff{});
-    CHECK(pair_outcome(r) == PairOutcome::compared); // objects win over any error text
-  }
-
-  // One language rule for every stage.
-  {
-    std::vector<SharedObjectDiff> objs;
-    CHECK(dominant_language(objs) == Language::cxx);
-    CHECK(dominant_language(objs, Language::c) == Language::c);
-    objs.push_back(SharedObjectDiff{});
-    objs.back().language = Language::unknown;
-    objs.push_back(SharedObjectDiff{});
-    objs.back().language = Language::c;
-    CHECK(dominant_language(objs) == Language::c);
-    objs.push_back(SharedObjectDiff{});
-    objs.back().language = Language::cxx;
-    CHECK(dominant_language(objs) == Language::cxx);
-  }
-
   // Linkable library directories vs plugin directories.
   CHECK(is_linkable_library_dir("usr/lib/x86_64-linux-gnu"));
   CHECK(is_linkable_library_dir("usr/lib/x86_64-linux-gnu/"));
@@ -291,6 +252,56 @@ SharedObjectDiff object_with(std::vector<TypeEvent> tes, std::vector<SymbolEvent
   return o;
 }
 
+void outcomes_and_language() {
+  // Pair outcomes are classified from the record, in one place.
+  PairResult r{
+    .id = "x@1.0..1.1",
+    .source = SourceName{"x"},
+    .upstream_1 = UpstreamVersion{"1.0"},
+    .upstream_2 = UpstreamVersion{"1.1"},
+    .objects = {},
+    .unpaired_1 = {},
+    .unpaired_2 = {},
+    .object_errors = {},
+    .error = std::nullopt,
+    .seconds = 0,
+    .bytes_extracted = 0,
+    .excluded_objects = {}
+  };
+  CHECK(pair_outcome(r) == PairOutcome::no_linkable_object);
+  r.error = std::string{pair_error_skipped} + "900 MB of packages exceeds ...";
+  CHECK(pair_outcome(r) == PairOutcome::skipped_budget);
+  r.error = std::string{pair_error_not_attempted} + "--deadline-minutes 270 reached";
+  CHECK(pair_outcome(r) == PairOutcome::not_attempted);
+  r.error = std::string{pair_error_timeout} + "1200s";
+  CHECK(pair_outcome(r) == PairOutcome::failed_timeout);
+  r.error = std::string{pair_error_killed} + " twice under --child-memory-mb 6000";
+  CHECK(pair_outcome(r) == PairOutcome::failed_memory);
+  r.error = "no object could be compared: libz3: reading corpus: std::bad_alloc";
+  CHECK(pair_outcome(r) == PairOutcome::failed_memory);
+  r.error = std::string{pair_error_exit} + "1: reader failed";
+  CHECK(pair_outcome(r) == PairOutcome::failed);
+  CHECK(retryable_with_more_resources(PairOutcome::failed_memory));
+  CHECK(retryable_with_more_resources(PairOutcome::failed_timeout));
+  CHECK(!retryable_with_more_resources(PairOutcome::skipped_budget));
+  CHECK(!retryable_with_more_resources(PairOutcome::failed));
+  r.objects.push_back(object_with({}, {}));
+  CHECK(pair_outcome(r) == PairOutcome::compared); // objects win over any error text
+
+  // One language rule for every stage.
+  std::vector<SharedObjectDiff> objs;
+  CHECK(dominant_language(objs) == Language::cxx);
+  CHECK(dominant_language(objs, Language::c) == Language::c);
+  objs.push_back(object_with({}, {}));
+  objs.back().language = Language::unknown;
+  objs.push_back(object_with({}, {}));
+  objs.back().language = Language::c;
+  CHECK(dominant_language(objs) == Language::c);
+  objs.push_back(object_with({}, {}));
+  objs.back().language = Language::cxx;
+  CHECK(dominant_language(objs) == Language::cxx);
+}
+
 void rollup_definitions() {
   // One pointer-only append (not a lenient break), one by-value append (is),
   // one removed field (always), one third-party event, and three symbol
@@ -441,6 +452,7 @@ int main() try {
   lenient_rule();
   release_levels();
   statistics();
+  outcomes_and_language();
   rollup_definitions();
   header_model();
   return test::report("domain");
