@@ -106,7 +106,8 @@ By release level (strict / lenient binary break rate):
 Patch releases break the binary interface in one transition in six under
 the strict definition and one in ten under the lenient one. The gradient
 major > minor > patch exists but is shallow: a major bump is far from a
-guarantee of a break and a patch bump is far from a guarantee of none.
+guarantee of a break and a patch bump is far from a guarantee of none
+(the major row rests on 14 transitions, see §5.2).
 Date-stamped snapshot uploads (eight libraries) break at about the minor-
 release rate, and their lenient rate is close to their strict rate: what
 they break is declared API. The `major` and `other` rows rest on 14 and 12
@@ -182,6 +183,17 @@ deliberately kept out of the break rates above.
   2015 for slow-moving libraries and to last year for fast-moving ones,
   so per-library calendar time is not comparable across rows, and
   fast-releasing libraries contribute recent history only.
+* **Major releases are under-sampled.** Only 14 transitions are major
+  bumps, and four of those are systemd's calendar numbers (257 → 261). Of
+  the 113 libraries in the plan, 104 never cross a major version within
+  their ten most recent releases, and Debian packages an incompatible new
+  major as a *separate source package* (libsigc++-2.0 / 3.0, zeromq3,
+  vte2.91, pcre2 / pcre3, libidn2: 26 of the 113 source names carry a
+  version). A corpus that follows one source package through its versions
+  therefore misses exactly the releases authors flag as incompatible. The
+  by-level comparison is between minor and patch releases; the major row
+  is anecdotal. Widening the window per library or joining sibling source
+  packages (`libfoo2` → `libfoo3`) would recover them.
 * **Pre-releases.** The prerelease filter recognises Debian's `~` form;
   upstream-style `26.8.0.0.alpha1` slipped through (libreoffice, which was
   then skipped for size). Release-level classification puts such versions
