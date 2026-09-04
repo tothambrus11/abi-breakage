@@ -204,7 +204,25 @@ deliberately kept out of the break rates above.
 * **Language.** A library is C++ if ≥ 20 % of its exported functions are
   Itanium-mangled; z3 (a C API over a C++ core) is C under this rule.
   Sensitivity: the C++ transition count is 203 / 188 / 163 at thresholds
-  10 / 20 / 50 %.
+  10 / 20 / 50 %. The study says "C and C++ libraries" because the
+  archive is: of the 5 356 runtime shared-library packages in trixie main
+  (name `lib*<digit>`, compiler sources excluded), 90 % show no other
+  language in their source's Build-Depends, and the remainder is mostly
+  Fortran (278 packages from 104 sources, BLAS/LAPACK/FFTW/cfitsio at the
+  top), Vala (172, which compiles to C and exports a C ABI), Ada (47, plplot
+  and the GNAT ecosystem), Rust (27 from 17 sources: librsvg, rav1e, dovi,
+  parts of mesa and mozjs, all exporting a C ABI), Objective-C (5, GNUstep),
+  D and Haskell (1 each). Build-Depends over-attributes (a source that
+  builds Fortran test programs or Go bindings counts), so these are upper
+  bounds. None of the 120 selected libraries is implemented in another
+  language; the closest cases (libcap2 and audit build Go bindings, vte
+  uses Vala for bindings) export a C ABI produced by C. Fortran's most
+  installed libraries (libblas3 at rank 404, liblapack3 at 530) fall below
+  the C quota cut-off (rank 247), and the Rust-implemented librsvg2-2 (rank
+  360) likewise; a language-stratified selection would be needed to say
+  anything about Fortran or Rust-implemented ABIs, and the comparer would
+  need Fortran's module symbol conventions and Rust's mangling only if the
+  non-C entry points were in scope.
 
 ### 5.3 Measurement
 
