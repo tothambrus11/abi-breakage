@@ -224,10 +224,11 @@ Result<void> run_diff(
     if (!sv.store.exists(p))
       todo.push_back(i);
   }
-  if (o.retry_failed)
+  if (o.retry_failed) {
     sv.log(
       std::format("--retry-failed: {} failed_memory/failed_timeout record(s) discarded", retried)
     );
+  }
   // Largest first: the long pole starts immediately and the tail is short.
   std::ranges::stable_sort(todo, [&](std::size_t a, std::size_t b) {
     return plan.jobs[a].download_bytes() > plan.jobs[b].download_bytes();
@@ -363,8 +364,8 @@ Result<void> run_diff(
     // A pair killed while already running alone gains nothing from a retry
     // under the same cap; `diff --retry-failed` with a larger one is the way.
     std::vector<std::size_t> still = killed;
-    const bool retried = o.workers > 1;
-    if (retried) {
+    const bool retried_alone = o.workers > 1;
+    if (retried_alone) {
       sv.log(std::format("retrying {} killed pair(s) with one worker", killed.size()));
       auto [again, deferred2] = pass(killed, 1);
       still = again;
@@ -374,7 +375,7 @@ Result<void> run_diff(
       PairResult pr = empty_result(plan.jobs[i]);
       pr.error = std::format(
         "{}{} under --child-memory-mb {} (out of memory?)", pair_error_killed,
-        retried ? " twice" : " once, already alone", o.child_memory_mb
+        retried_alone ? " twice" : " once, already alone", o.child_memory_mb
       );
       static_cast<void>(sv.store.save(ws.pair(pr.id), schema_pair, pr));
       sv.log(std::format("{} FAILED {}", pr.id, *pr.error));

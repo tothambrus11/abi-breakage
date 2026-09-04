@@ -337,7 +337,8 @@ void rollup_definitions() {
     .object_errors = {},
     .error = std::nullopt,
     .seconds = 1,
-    .bytes_extracted = 0
+    .bytes_extracted = 0,
+    .excluded_objects = {}
   };
   HeaderResult hr{
     .id = pr.id,

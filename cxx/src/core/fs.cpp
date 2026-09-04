@@ -141,10 +141,11 @@ Result<LockFile> LockFile::acquire(const stdfs::path &p) {
   if (::flock(fd, LOCK_EX | LOCK_NB) != 0) {
     const int err = errno;
     ::close(fd);
-    if (err == EWOULDBLOCK)
+    if (err == EWOULDBLOCK) {
       return fail(
         ErrorCode::io, "'{}' is locked: another abistudy stage owns this scratch tree", p.string()
       );
+    }
     return fail(ErrorCode::io, "cannot lock '{}': {}", p.string(), errno_text(err));
   }
   return LockFile{fd};

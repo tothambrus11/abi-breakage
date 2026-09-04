@@ -192,6 +192,17 @@ std::string type_key(const ir::decl_base *d) {
   return ir::get_pretty_representation(d, /*internal=*/false);
 }
 
+/// @brief libabigail's containers hold raw pointers in 2.4 and shared_ptrs
+///        later; every loop over them goes through this.
+template <class P>
+auto *raw(const P &p) {
+  if constexpr (std::is_pointer_v<P>) {
+    return p;
+  } else {
+    return p.get();
+  }
+}
+
 // ----------------------------------------------------------------------------
 // Exposure of types through the exported interface (REVIEW.md §1.1)
 // ----------------------------------------------------------------------------
@@ -243,7 +254,8 @@ void note_type(const ir::type_base_sptr &t, ExposureMap &map) {
 
 /// @brief Walks the exported functions and variables of a corpus.
 void exposure_of(const ir::corpus &c, ExposureMap &map) {
-  for (const auto *f : c.get_functions()) {
+  for (const auto &fp : c.get_functions()) {
+    const ir::function_decl *f = raw(fp);
     if (!f)
       continue;
     note_type(f->get_return_type(), map);
@@ -252,8 +264,8 @@ void exposure_of(const ir::corpus &c, ExposureMap &map) {
         note_type(p->get_type(), map);
     }
   }
-  for (const auto *v : c.get_variables()) {
-    if (v)
+  for (const auto &vp : c.get_variables()) {
+    if (const ir::var_decl *v = raw(vp); v != nullptr)
       note_type(v->get_type(), map);
   }
 }
@@ -484,15 +496,6 @@ bool occupies_vtable_slot(const ir::function_decl *f, const ShippedHeaders &ship
   if (m == nullptr || !ir::get_member_function_is_virtual(*m))
     return false;
   return declared_in_own_headers(decl_file(m), shipped);
-}
-
-template <class P>
-auto *raw(const P &p) {
-  if constexpr (std::is_pointer_v<P>) {
-    return p;
-  } else {
-    return p.get();
-  }
 }
 
 /// @brief vtables, typeinfo, typeinfo names and VTTs are emitted by the
