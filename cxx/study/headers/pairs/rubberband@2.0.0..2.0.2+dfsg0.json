@@ -1,0 +1,98 @@
+{
+ "data": {
+  "coverage": [
+   {
+    "header_files": 2,
+    "parsed": 2,
+    "parsed_as_cxx": 2,
+    "skipped_by_limit": 0,
+    "with_errors": 0,
+    "with_fatal_error": 0
+   },
+   {
+    "header_files": 2,
+    "parsed": 2,
+    "parsed_as_cxx": 2,
+    "skipped_by_limit": 0,
+    "with_errors": 0,
+    "with_fatal_error": 0
+   }
+  ],
+  "diff": {
+   "definitions": [
+    0,
+    0
+   ],
+   "definitions_added": 0,
+   "definitions_common": 0,
+   "definitions_removed": 0,
+   "examples": [],
+   "inline_body_changed": 0,
+   "inline_body_changed_template": 0,
+   "inline_decl_changed": 0,
+   "macro_value_changed": 2,
+   "macro_value_changed_nonversion": 0,
+   "macros": [
+    7,
+    7
+   ],
+   "macros_common": 7
+  },
+  "id": "rubberband@2.0.0..2.0.2+dfsg0",
+  "language": "cxx",
+  "source": "rubberband",
+  "symbol_declared": {
+   "_ZN10RubberBand10Resamplers13D_BQResampler19resampleInterleavedEPfiPKfidb": "undeclared",
+   "_ZN10RubberBand10Resamplers13D_BQResampler5resetEv": "undeclared",
+   "_ZN10RubberBand10Resamplers13D_BQResampler8resampleEPrKPfiPrKPKfidb": "undeclared",
+   "_ZN10RubberBand10Resamplers13D_BQResamplerC2ENS_9Resampler10ParametersEi": "undeclared",
+   "_ZN10RubberBand10Resamplers13D_BQResamplerD0Ev": "undeclared",
+   "_ZN10RubberBand10Resamplers13D_BQResamplerD2Ev": "undeclared",
+   "_ZN10RubberBand10Resamplers5D_SRC19resampleInterleavedEPfiPKfidb": "undeclared",
+   "_ZN10RubberBand10Resamplers5D_SRC5resetEv": "undeclared",
+   "_ZN10RubberBand10Resamplers5D_SRC8resampleEPrKPfiPrKPKfidb": "undeclared",
+   "_ZN10RubberBand10Resamplers5D_SRCC2ENS_9Resampler7QualityENS2_11RatioChangeEidii": "undeclared",
+   "_ZN10RubberBand10Resamplers5D_SRCD0Ev": "undeclared",
+   "_ZN10RubberBand10Resamplers5D_SRCD2Ev": "undeclared",
+   "_ZN10RubberBand11BQResampler13QualityParamsC2ENS0_7QualityE": "undeclared",
+   "_ZN10RubberBand11BQResampler19resampleInterleavedEPfiPKfidb": "undeclared",
+   "_ZN10RubberBand11BQResampler5resetEv": "undeclared",
+   "_ZN10RubberBand11BQResamplerC2ENS0_10ParametersEi": "undeclared",
+   "_ZN10RubberBand11BQResamplerC2ERKS0_": "undeclared",
+   "_ZNK10RubberBand10Resamplers13D_BQResampler15getChannelCountEv": "undeclared",
+   "_ZNK10RubberBand10Resamplers13D_BQResampler17getEffectiveRatioEd": "undeclared",
+   "_ZNK10RubberBand10Resamplers5D_SRC15getChannelCountEv": "undeclared",
+   "_ZNK10RubberBand10Resamplers5D_SRC17getEffectiveRatioEd": "undeclared",
+   "_ZNK10RubberBand11BQResampler10kaiser_forEddii": "undeclared",
+   "_ZNK10RubberBand11BQResampler11fill_paramsEddd": "undeclared",
+   "_ZNK10RubberBand11BQResampler11make_filterEid": "undeclared",
+   "_ZNK10RubberBand11BQResampler11pick_paramsEd": "undeclared",
+   "_ZNK10RubberBand11BQResampler13kaiser_paramsEddRdRi": "undeclared",
+   "_ZNK10RubberBand11BQResampler13sinc_multiplyEdRSt6vectorIdSaIdEE": "undeclared",
+   "_ZNK10RubberBand11BQResampler14phase_data_forERSt6vectorINS0_9phase_recESaIS2_EERS1_IfNS_12StlAllocatorIfEEEiPKS1_IdSaIdEEiii": "undeclared",
+   "_ZNK10RubberBand11BQResampler15reconstruct_oneEPNS0_5stateE": "undeclared",
+   "_ZNK10RubberBand11BQResampler15state_for_ratioERNS0_5stateEdRKS1_": "undeclared",
+   "_ZNK10RubberBand11BQResampler17getEffectiveRatioEd": "undeclared",
+   "_ZNK10RubberBand11BQResampler3gcdEii": "undeclared",
+   "_ZNK10RubberBand11BQResampler6kaiserEdi": "undeclared",
+   "_ZNK10RubberBand11BQResampler7bessel0Ed": "undeclared",
+   "_ZNSt12_Vector_baseIdSaIdEED2Ev": "undeclared",
+   "_ZNSt6vectorIN10RubberBand11BQResampler9phase_recESaIS2_EE17_M_realloc_insertIJRKS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_": "undeclared",
+   "_ZNSt6vectorIN10RubberBand11BQResampler9phase_recESaIS2_EE7reserveEm": "undeclared",
+   "_ZNSt6vectorIdSaIdEE17_M_realloc_insertIJRKdEEEvN9__gnu_cxx17__normal_iteratorIPdS1_EEDpOT_": "undeclared",
+   "_ZNSt6vectorIdSaIdEE17_M_realloc_insertIJdEEEvN9__gnu_cxx17__normal_iteratorIPdS1_EEDpOT_": "undeclared",
+   "_ZNSt6vectorIfN10RubberBand12StlAllocatorIfEEE7reserveEm": "undeclared"
+  },
+  "upstream": [
+   "2.0.0",
+   "2.0.2+dfsg0"
+  ]
+ },
+ "generated_at": "2026-09-04T02:20:29Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
+}

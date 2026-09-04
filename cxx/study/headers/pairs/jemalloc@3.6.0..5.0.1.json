@@ -1,0 +1,71 @@
+{
+ "data": {
+  "coverage": [
+   {
+    "header_files": 1,
+    "parsed": 1,
+    "parsed_as_cxx": 0,
+    "skipped_by_limit": 0,
+    "with_errors": 0,
+    "with_fatal_error": 0
+   },
+   {
+    "header_files": 1,
+    "parsed": 1,
+    "parsed_as_cxx": 0,
+    "skipped_by_limit": 0,
+    "with_errors": 0,
+    "with_fatal_error": 0
+   }
+  ],
+  "diff": {
+   "definitions": [
+    0,
+    0
+   ],
+   "definitions_added": 0,
+   "definitions_common": 0,
+   "definitions_removed": 0,
+   "examples": [],
+   "inline_body_changed": 0,
+   "inline_body_changed_template": 0,
+   "inline_decl_changed": 0,
+   "macro_value_changed": 6,
+   "macro_value_changed_nonversion": 0,
+   "macros": [
+    41,
+    36
+   ],
+   "macros_common": 31
+  },
+  "id": "jemalloc@3.6.0..5.0.1",
+  "language": "c",
+  "source": "jemalloc",
+  "symbol_declared": {
+   "_ZdlPv": "undeclared",
+   "_ZdlPvRKSt9nothrow_t": "undeclared",
+   "_ZdlPvm": "undeclared",
+   "_Znwm": "undeclared",
+   "_ZnwmRKSt9nothrow_t": "undeclared",
+   "allocm": "declared",
+   "dallocm": "declared",
+   "je_hooks_arena_new_hook": "undeclared",
+   "je_hooks_libc_hook": "undeclared",
+   "nallocm": "declared",
+   "rallocm": "declared",
+   "sallocm": "declared",
+   "sdallocx": "declared"
+  },
+  "upstream": [
+   "3.6.0",
+   "5.0.1"
+  ]
+ },
+ "generated_at": "2026-09-04T02:20:27Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
+}

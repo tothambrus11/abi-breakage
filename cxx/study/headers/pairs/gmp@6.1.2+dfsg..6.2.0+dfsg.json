@@ -1,0 +1,81 @@
+{
+ "data": {
+  "coverage": [
+   {
+    "header_files": 2,
+    "parsed": 2,
+    "parsed_as_cxx": 1,
+    "skipped_by_limit": 0,
+    "with_errors": 0,
+    "with_fatal_error": 0
+   },
+   {
+    "header_files": 2,
+    "parsed": 2,
+    "parsed_as_cxx": 1,
+    "skipped_by_limit": 0,
+    "with_errors": 0,
+    "with_fatal_error": 0
+   }
+  ],
+  "diff": {
+   "definitions": [
+    1281,
+    1330
+   ],
+   "definitions_added": 201,
+   "definitions_common": 1129,
+   "definitions_removed": 152,
+   "examples": [
+    "gmpxx.h::operator==",
+    "gmpxx.h::operator+=",
+    "gmpxx.h::operator+=",
+    "gmpxx.h::operator-=",
+    "gmpxx.h::eval",
+    "gmpxx.h::operator*=",
+    "gmpxx.h::__gmp_expr",
+    "gmpxx.h::operator="
+   ],
+   "inline_body_changed": 500,
+   "inline_body_changed_template": 253,
+   "inline_decl_changed": 0,
+   "macro_value_changed": 0,
+   "macro_value_changed_nonversion": 0,
+   "macros": [
+    387,
+    388
+   ],
+   "macros_common": 387
+  },
+  "id": "gmp@6.1.2+dfsg..6.2.0+dfsg",
+  "language": "c",
+  "source": "gmp",
+  "symbol_declared": {
+   "__gmpn_compute_powtab": "undeclared",
+   "__gmpn_dcpi1_bdiv_q_n": "undeclared",
+   "__gmpn_dcpi1_bdiv_q_n_itch": "undeclared",
+   "__gmpn_dcpi1_divappr_q_n": "undeclared",
+   "__gmpn_fib2m": "undeclared",
+   "__gmpn_matrix22_mul_strassen": "undeclared",
+   "__gmpn_mu_div_qr_choose_in": "undeclared",
+   "__gmpn_mu_divappr_q_choose_in": "undeclared",
+   "__gmpn_preinv_mu_divappr_q": "undeclared",
+   "__gmpn_sbpi1_bdiv_r": "undeclared",
+   "__gmpn_set_str_compute_powtab": "undeclared",
+   "__gmpn_strongfibo": "undeclared",
+   "__gmpz_lucas_mod": "undeclared",
+   "__gmpz_stronglucas": "undeclared"
+  },
+  "upstream": [
+   "6.1.2+dfsg",
+   "6.2.0+dfsg"
+  ]
+ },
+ "generated_at": "2026-09-04T02:20:26Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
+}

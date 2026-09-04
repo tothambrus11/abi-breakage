@@ -1,0 +1,71 @@
+{
+ "data": {
+  "coverage": [
+   {
+    "header_files": 3,
+    "parsed": 3,
+    "parsed_as_cxx": 0,
+    "skipped_by_limit": 0,
+    "with_errors": 0,
+    "with_fatal_error": 0
+   },
+   {
+    "header_files": 3,
+    "parsed": 3,
+    "parsed_as_cxx": 0,
+    "skipped_by_limit": 0,
+    "with_errors": 0,
+    "with_fatal_error": 0
+   }
+  ],
+  "diff": {
+   "definitions": [
+    0,
+    0
+   ],
+   "definitions_added": 0,
+   "definitions_common": 0,
+   "definitions_removed": 0,
+   "examples": [],
+   "inline_body_changed": 0,
+   "inline_body_changed_template": 0,
+   "inline_decl_changed": 0,
+   "macro_value_changed": 0,
+   "macro_value_changed_nonversion": 0,
+   "macros": [
+    90,
+    94
+   ],
+   "macros_common": 90
+  },
+  "id": "libedit@3.1-20210910..3.1-20221009",
+  "language": "c",
+  "source": "libedit",
+  "symbol_declared": {
+   "el_deletestr1": "declared",
+   "el_replacestr": "declared",
+   "el_wreplacestr": "declared",
+   "reallocarr": "undeclared",
+   "rl_copy_text": "declared",
+   "rl_delete_text": "declared",
+   "rl_erase_empty_line": "declared",
+   "rl_message": "declared",
+   "rl_prompt_saved": "undeclared",
+   "rl_replace_line": "declared",
+   "rl_restore_prompt": "declared",
+   "rl_save_prompt": "declared",
+   "rl_set_key": "declared"
+  },
+  "upstream": [
+   "3.1-20210910",
+   "3.1-20221009"
+  ]
+ },
+ "generated_at": "2026-09-04T02:20:23Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
+}

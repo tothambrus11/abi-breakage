@@ -1,0 +1,74 @@
+{
+ "data": {
+  "coverage": [
+   {
+    "header_files": 3,
+    "parsed": 3,
+    "parsed_as_cxx": 0,
+    "skipped_by_limit": 0,
+    "with_errors": 0,
+    "with_fatal_error": 0
+   },
+   {
+    "header_files": 3,
+    "parsed": 3,
+    "parsed_as_cxx": 0,
+    "skipped_by_limit": 0,
+    "with_errors": 0,
+    "with_fatal_error": 0
+   }
+  ],
+  "diff": {
+   "definitions": [
+    1,
+    1
+   ],
+   "definitions_added": 0,
+   "definitions_common": 1,
+   "definitions_removed": 0,
+   "examples": [],
+   "inline_body_changed": 0,
+   "inline_body_changed_template": 0,
+   "inline_decl_changed": 0,
+   "macro_value_changed": 0,
+   "macro_value_changed_nonversion": 0,
+   "macros": [
+    108,
+    108
+   ],
+   "macros_common": 108
+  },
+  "id": "lvm2@2.03.11..2.03.15",
+  "language": "c",
+  "source": "lvm2",
+  "symbol_declared": {
+   "dm_bitset_parse_list": "declared",
+   "dm_filemapd_mode_from_string": "declared",
+   "dm_get_name_mangling_mode": "declared",
+   "dm_report_group_create": "declared",
+   "dm_set_name_mangling_mode": "declared",
+   "dm_size_to_string": "declared",
+   "dm_stats_current_object_type": "declared",
+   "dm_stats_get_counter": "declared",
+   "dm_stats_object_type": "declared",
+   "dm_stats_start_filemapd": "declared",
+   "dm_task_ima_measurement": "declared",
+   "dm_task_set_add_node": "declared",
+   "dm_tree_node_add_replicator_target": "declared",
+   "dm_tree_node_add_thin_pool_message": "declared",
+   "dm_tree_node_add_thin_pool_target_v1": "declared",
+   "dm_tree_node_size_changed": "declared"
+  },
+  "upstream": [
+   "2.03.11",
+   "2.03.15"
+  ]
+ },
+ "generated_at": "2026-09-04T02:20:24Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
+}

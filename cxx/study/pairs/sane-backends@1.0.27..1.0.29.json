@@ -1,0 +1,1067 @@
+{
+ "data": {
+  "bytes_extracted": 84526450,
+  "id": "sane-backends@1.0.27..1.0.29",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      209,
+      74
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 13,
+     "symbol_removed": 155
+    },
+    "soname": [
+     "libsane.so.1",
+     "libsane.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_w_value_type(Wire*, SANE_Value_Type*)",
+      "symbol": "sanei_w_value_type",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_w_unit(Wire*, SANE_Unit*)",
+      "symbol": "sanei_w_unit",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_w_status(Wire*, SANE_Status*)",
+      "symbol": "sanei_w_status",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_w_space(Wire*, size_t)",
+      "symbol": "sanei_w_space",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_w_string(Wire*, SANE_String*)",
+      "symbol": "sanei_w_string",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_w_set_dir(Wire*, WireDirection)",
+      "symbol": "sanei_w_set_dir",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_w_reply(Wire*, WireCodecFunc, void*)",
+      "symbol": "sanei_w_reply",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_w_ptr(Wire*, void**, WireCodecFunc, size_t)",
+      "symbol": "sanei_w_ptr",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_w_parameters(Wire*, SANE_Parameters*)",
+      "symbol": "sanei_w_parameters",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_w_option_descriptor_ptr(Wire*, SANE_Option_Descriptor**)",
+      "symbol": "sanei_w_option_descriptor_ptr",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_w_option_descriptor_array(Wire*, SANE_Option_Descriptor_Array*)",
+      "symbol": "sanei_w_option_descriptor_array",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_access_init(const char*)",
+      "symbol": "sanei_access_init",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_magic_crop(SANE_Parameters*, SANE_Byte*, int, int, int, int)",
+      "symbol": "sanei_magic_crop",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_pp_outb_epp(int, SANE_Byte)",
+      "symbol": "sanei_pp_outb_epp",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_pp_getmodes(int, int*)",
+      "symbol": "sanei_pp_getmodes",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_pp_init()",
+      "symbol": "sanei_pp_init",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Byte sanei_pp_inb_ctrl(int)",
+      "symbol": "sanei_pp_inb_ctrl",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_scsi_cmd(int, void*, size_t, void*, size_t*)",
+      "symbol": "sanei_scsi_cmd",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_scsi_req_wait(void*)",
+      "symbol": "sanei_scsi_req_wait",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_w_device(Wire*, SANE_Device*)",
+      "symbol": "sanei_w_device",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_pp_claim(int)",
+      "symbol": "sanei_pp_claim",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_pp_open(const char*, int*)",
+      "symbol": "sanei_pp_open",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_w_void(Wire*)",
+      "symbol": "sanei_w_void",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int sanei_pio_write(int, const u_char*, int)",
+      "symbol": "sanei_pio_write",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int sanei_pio_read(int, u_char*, int)",
+      "symbol": "sanei_pio_read",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_pio_close(int)",
+      "symbol": "sanei_pio_close",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_pio_open(const char*, int*)",
+      "symbol": "sanei_pio_open",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_ab306_exit()",
+      "symbol": "sanei_ab306_exit",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_w_frame(Wire*, SANE_Frame*)",
+      "symbol": "sanei_w_frame",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_pa4s2_readbyte(int, u_char*)",
+      "symbol": "sanei_pa4s2_readbyte",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_pp_outb_ctrl(int, SANE_Byte)",
+      "symbol": "sanei_pp_outb_ctrl",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_pa4s2_close(int)",
+      "symbol": "sanei_pa4s2_close",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_pv8630_flush_buffer(int)",
+      "symbol": "sanei_pv8630_flush_buffer",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_pp_outb_data(int, SANE_Byte)",
+      "symbol": "sanei_pp_outb_data",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_lm983x_write_byte(SANE_Int, SANE_Byte, SANE_Byte)",
+      "symbol": "sanei_lm983x_write_byte",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_lm983x_init()",
+      "symbol": "sanei_lm983x_init",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_w_word(Wire*, SANE_Word*)",
+      "symbol": "sanei_w_word",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_codec_bin_init(Wire*)",
+      "symbol": "sanei_codec_bin_init",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_magic_isBlank2(SANE_Parameters*, SANE_Byte*, int, int, double)",
+      "symbol": "sanei_magic_isBlank2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Byte sanei_pp_inb_data(int)",
+      "symbol": "sanei_pp_inb_data",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_pa4s2_readbegin(int, u_char)",
+      "symbol": "sanei_pa4s2_readbegin",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_pv8630_init()",
+      "symbol": "sanei_pv8630_init",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Bool sanei_lm983x_reset(SANE_Int)",
+      "symbol": "sanei_lm983x_reset",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_pa4s2_writebyte(int, u_char, u_char)",
+      "symbol": "sanei_pa4s2_writebyte",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function ssize_t sanei_tcp_write(int, const u_char*, int)",
+      "symbol": "sanei_tcp_write",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_w_start_reply(Wire*, SANE_Start_Reply*)",
+      "symbol": "sanei_w_start_reply",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_w_range(Wire*, SANE_Range*)",
+      "symbol": "sanei_w_range",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_pp_outb_addr(int, SANE_Byte)",
+      "symbol": "sanei_pp_outb_addr",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_w_exit(Wire*)",
+      "symbol": "sanei_w_exit",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Bool sanei_thread_is_valid(SANE_Pid)",
+      "symbol": "sanei_thread_is_valid",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_pa4s2_enable(int, int)",
+      "symbol": "sanei_pa4s2_enable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_config_attach_matching_devices(const char*, typedef SANE_Status (const char*)*)",
+      "symbol": "sanei_config_attach_matching_devices",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_magic_findSkew(SANE_Parameters*, SANE_Byte*, int, int, int*, int*, double*)",
+      "symbol": "sanei_magic_findSkew",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function ssize_t sanei_udp_write(int, const u_char*, int)",
+      "symbol": "sanei_udp_write",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function const char** sanei_pa4s2_devices()",
+      "symbol": "sanei_pa4s2_devices",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_magic_isBlank(SANE_Parameters*, SANE_Byte*, double)",
+      "symbol": "sanei_magic_isBlank",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int* sanei_magic_getTransY(SANE_Parameters*, int, SANE_Byte*, int)",
+      "symbol": "sanei_magic_getTransY",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Byte sanei_pp_inb_stat(int)",
+      "symbol": "sanei_pp_inb_stat",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_pa4s2_scsi_pp_reg_select(int, int)",
+      "symbol": "sanei_pa4s2_scsi_pp_reg_select",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_pa4s2_options(u_int*, int)",
+      "symbol": "sanei_pa4s2_options",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_lm983x_write(SANE_Int, SANE_Byte, SANE_Byte*, SANE_Word, SANE_Bool)",
+      "symbol": "sanei_lm983x_write",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_pp_close(int)",
+      "symbol": "sanei_pp_close",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_magic_despeck(SANE_Parameters*, SANE_Byte*, SANE_Int)",
+      "symbol": "sanei_magic_despeck",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_ab306_open(const char*, int*)",
+      "symbol": "sanei_ab306_open",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_ab306_test_ready(int)",
+      "symbol": "sanei_ab306_test_ready",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_pv8630_wait_byte(int, SANEI_PV_Index, SANE_Byte, SANE_Byte, int)",
+      "symbol": "sanei_pv8630_wait_byte",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_magic_findEdges(SANE_Parameters*, SANE_Byte*, int, int, int*, int*, int*, int*)",
+      "symbol": "sanei_magic_findEdges",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_w_init_reply(Wire*, SANE_Init_Reply*)",
+      "symbol": "sanei_w_init_reply",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_magic_findTurn(SANE_Parameters*, SANE_Byte*, int, int, int*)",
+      "symbol": "sanei_magic_findTurn",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Byte sanei_pp_inb_epp(int)",
+      "symbol": "sanei_pp_inb_epp",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_lm983x_read(SANE_Int, SANE_Byte, SANE_Byte*, SANE_Word, SANE_Bool)",
+      "symbol": "sanei_lm983x_read",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_w_array(Wire*, SANE_Word*, void**, WireCodecFunc, size_t)",
+      "symbol": "sanei_w_array",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_w_open_reply(Wire*, SANE_Open_Reply*)",
+      "symbol": "sanei_w_open_reply",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int sanei_thread_sendsig(SANE_Pid, int)",
+      "symbol": "sanei_thread_sendsig",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int* sanei_magic_getTransX(SANE_Parameters*, int, SANE_Byte*, int)",
+      "symbol": "sanei_magic_getTransX",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Bool sanei_pp_uses_directio()",
+      "symbol": "sanei_pp_uses_directio",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_udp_open(const char*, int, int*)",
+      "symbol": "sanei_udp_open",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_pp_udelay(unsigned long int)",
+      "symbol": "sanei_pp_udelay",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_pv8630_bulkread(int, void*, size_t*)",
+      "symbol": "sanei_pv8630_bulkread",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_pp_release(int)",
+      "symbol": "sanei_pp_release",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_magic_turn(SANE_Parameters*, SANE_Byte*, int)",
+      "symbol": "sanei_magic_turn",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_pp_set_datadir(int, int)",
+      "symbol": "sanei_pp_set_datadir",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function ssize_t sanei_udp_write_broadcast(int, int, const u_char*, int)",
+      "symbol": "sanei_udp_write_broadcast",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_pa4s2_scsi_pp_get_status(int, u_char*)",
+      "symbol": "sanei_pa4s2_scsi_pp_get_status",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_pv8630_bulkwrite(int, void*, size_t*)",
+      "symbol": "sanei_pv8630_bulkwrite",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_pv8630_prep_bulkread(int, int)",
+      "symbol": "sanei_pv8630_prep_bulkread",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_pv8630_read_byte(int, SANEI_PV_Index, SANE_Byte*)",
+      "symbol": "sanei_pv8630_read_byte",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_scsi_open(const char*, int*, SANEI_SCSI_Sense_Handler, void*)",
+      "symbol": "sanei_scsi_open",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_pv8630_write_byte(int, SANEI_PV_Index, SANE_Byte)",
+      "symbol": "sanei_pv8630_write_byte",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_pv8630_xpect_byte(int, SANEI_PV_Index, SANE_Byte, SANE_Byte)",
+      "symbol": "sanei_pv8630_xpect_byte",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_ab306_rdata(int, int, SANE_Byte*, int, int)",
+      "symbol": "sanei_ab306_rdata",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_w_free(Wire*, WireCodecFunc, void*)",
+      "symbol": "sanei_w_free",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_scsi_find_devices(const char*, const char*, const char*, int, int, int, int, typedef SANE_Status (const char*)*)",
+      "symbol": "sanei_scsi_find_devices",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_scsi_open_extended(const char*, int*, SANEI_SCSI_Sense_Handler, void*, int*)",
+      "symbol": "sanei_scsi_open_extended",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_tcp_close(int)",
+      "symbol": "sanei_tcp_close",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_ab306_cmd(int, void*, size_t, void*, size_t*)",
+      "symbol": "sanei_ab306_cmd",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_pv8630_prep_bulkwrite(int, int)",
+      "symbol": "sanei_pv8630_prep_bulkwrite",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Pid sanei_thread_waitpid(SANE_Pid, int*)",
+      "symbol": "sanei_thread_waitpid",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_scsi_req_enter(int, void*, size_t, void*, size_t*, void**)",
+      "symbol": "sanei_scsi_req_enter",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_scsi_req_enter2(int, void*, size_t, void*, size_t, void*, size_t*, void**)",
+      "symbol": "sanei_scsi_req_enter2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_scsi_req_flush_all()",
+      "symbol": "sanei_scsi_req_flush_all",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_scsi_req_flush_all_extended(int)",
+      "symbol": "sanei_scsi_req_flush_all_extended",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_ab306_close(int)",
+      "symbol": "sanei_ab306_close",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_tcp_open(const char*, int, int*)",
+      "symbol": "sanei_tcp_open",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function ssize_t sanei_tcp_read(int, u_char*, int)",
+      "symbol": "sanei_tcp_read",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_w_control_option_reply(Wire*, SANE_Control_Option_Reply*)",
+      "symbol": "sanei_w_control_option_reply",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_thread_get_status(SANE_Pid)",
+      "symbol": "sanei_thread_get_status",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_scsi_close(int)",
+      "symbol": "sanei_scsi_close",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_w_init(Wire*, void (Wire*)*)",
+      "symbol": "sanei_w_init",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_thread_init()",
+      "symbol": "sanei_thread_init",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_pa4s2_scsi_pp_open(const char*, int*)",
+      "symbol": "sanei_pa4s2_scsi_pp_open",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_w_byte(Wire*, SANE_Byte*)",
+      "symbol": "sanei_w_byte",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int sanei_thread_kill(SANE_Pid)",
+      "symbol": "sanei_thread_kill",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_pa4s2_open(const char*, int*)",
+      "symbol": "sanei_pa4s2_open",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_udp_close(int)",
+      "symbol": "sanei_udp_close",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_udp_open_broadcast(int*)",
+      "symbol": "sanei_udp_open_broadcast",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function ssize_t sanei_udp_read(int, u_char*, int)",
+      "symbol": "sanei_udp_read",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Bool sanei_thread_is_forked()",
+      "symbol": "sanei_thread_is_forked",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function ssize_t sanei_udp_recvfrom(int, u_char*, int, char**)",
+      "symbol": "sanei_udp_recvfrom",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Pid sanei_thread_begin(int (void*)*, void*)",
+      "symbol": "sanei_thread_begin",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_w_control_option_req(Wire*, SANE_Control_Option_Req*)",
+      "symbol": "sanei_w_control_option_req",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_udp_set_nonblock(int, SANE_Bool)",
+      "symbol": "sanei_udp_set_nonblock",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_pa4s2_readend(int)",
+      "symbol": "sanei_pa4s2_readend",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_access_lock(const char*, SANE_Word)",
+      "symbol": "sanei_access_lock",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_w_action(Wire*, SANE_Action*)",
+      "symbol": "sanei_w_action",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_w_authorization_req(Wire*, SANE_Authorization_Req*)",
+      "symbol": "sanei_w_authorization_req",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_w_bool(Wire*, SANE_Bool*)",
+      "symbol": "sanei_w_bool",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_magic_init()",
+      "symbol": "sanei_magic_init",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_access_unlock(const char*)",
+      "symbol": "sanei_access_unlock",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_ab306_get_io_privilege(int)",
+      "symbol": "sanei_ab306_get_io_privilege",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_w_call(Wire*, SANE_Word, WireCodecFunc, void*, WireCodecFunc, void*)",
+      "symbol": "sanei_w_call",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_scsi_cmd2(int, void*, size_t, void*, size_t, void*, size_t*)",
+      "symbol": "sanei_scsi_cmd2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_w_device_ptr(Wire*, SANE_Device**)",
+      "symbol": "sanei_w_device_ptr",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_magic_rotate(SANE_Parameters*, SANE_Byte*, int, int, double, int)",
+      "symbol": "sanei_magic_rotate",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_w_char(Wire*, SANE_Char*)",
+      "symbol": "sanei_w_char",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_w_init_req(Wire*, SANE_Init_Req*)",
+      "symbol": "sanei_w_init_req",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_w_constraint_type(Wire*, SANE_Constraint_Type*)",
+      "symbol": "sanei_w_constraint_type",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function SANE_Status sanei_pp_setmode(int, int)",
+      "symbol": "sanei_pp_setmode",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_w_get_devices_reply(Wire*, SANE_Get_Devices_Reply*)",
+      "symbol": "sanei_w_get_devices_reply",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_w_get_parameters_reply(Wire*, SANE_Get_Parameters_Reply*)",
+      "symbol": "sanei_w_get_parameters_reply",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void sanei_w_option_descriptor(Wire*, SANE_Option_Descriptor*)",
+      "symbol": "sanei_w_option_descriptor",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "int sanei_debug_sanei_wire",
+      "symbol": "sanei_debug_sanei_wire",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "int sanei_debug_sanei_access",
+      "symbol": "sanei_debug_sanei_access",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "int sanei_debug_sanei_lm983x",
+      "symbol": "sanei_debug_sanei_lm983x",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "int sanei_debug_sanei_ab306",
+      "symbol": "sanei_debug_sanei_ab306",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "int sanei_debug_sanei_magic",
+      "symbol": "sanei_debug_sanei_magic",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "int sanei_debug_sanei_pio",
+      "symbol": "sanei_debug_sanei_pio",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "int sanei_debug_sanei_pp",
+      "symbol": "sanei_debug_sanei_pp",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "int sanei_scsi_max_request_size",
+      "symbol": "sanei_scsi_max_request_size",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "int sanei_debug_sanei_scsi",
+      "symbol": "sanei_debug_sanei_scsi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "int sanei_debug_sanei_pv8630",
+      "symbol": "sanei_debug_sanei_pv8630",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "int sanei_debug_sanei_pa4s2",
+      "symbol": "sanei_debug_sanei_pa4s2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "int sanei_debug_sanei_tcp",
+      "symbol": "sanei_debug_sanei_tcp",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "int sanei_debug_sanei_thread",
+      "symbol": "sanei_debug_sanei_thread",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "int sanei_debug_sanei_udp",
+      "symbol": "sanei_debug_sanei_udp",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void sanei_usb_testing_record_message(SANE_String_Const)",
+      "symbol": "sanei_usb_testing_record_message",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function SANE_String sanei_usb_testing_get_backend()",
+      "symbol": "sanei_usb_testing_get_backend",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function SANE_Status sanei_usb_testing_enable_replay(SANE_String_Const, int)",
+      "symbol": "sanei_usb_testing_enable_replay",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function SANE_Status sanei_usb_testing_enable_record(SANE_String_Const, SANE_String_Const)",
+      "symbol": "sanei_usb_testing_enable_record",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function SANE_Bool sanei_usb_is_replay_mode_enabled()",
+      "symbol": "sanei_usb_is_replay_mode_enabled",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void fail_test()",
+      "symbol": "fail_test",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "SANE_String testing_xml_path",
+      "symbol": "testing_xml_path",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "xmlNode* testing_xml_next_tx_node",
+      "symbol": "testing_xml_next_tx_node",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "xmlDoc* testing_xml_doc",
+      "symbol": "testing_xml_doc",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "SANE_String testing_record_backend",
+      "symbol": "testing_record_backend",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "unsigned int testing_last_known_seq",
+      "symbol": "testing_last_known_seq",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "int testing_known_commands_input_failed",
+      "symbol": "testing_known_commands_input_failed",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "xmlNode* testing_append_commands_node",
+      "symbol": "testing_append_commands_node",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 4.601588036,
+  "source": "sane-backends",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.0.27",
+   "1.0.29"
+  ]
+ },
+ "generated_at": "2026-09-04T02:34:52Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

@@ -1,0 +1,66 @@
+{
+ "data": {
+  "coverage": [
+   {
+    "header_files": 848,
+    "parsed": 848,
+    "parsed_as_cxx": 848,
+    "skipped_by_limit": 0,
+    "with_errors": 286,
+    "with_fatal_error": 0
+   },
+   {
+    "header_files": 848,
+    "parsed": 848,
+    "parsed_as_cxx": 848,
+    "skipped_by_limit": 0,
+    "with_errors": 287,
+    "with_fatal_error": 0
+   }
+  ],
+  "diff": {
+   "definitions": [
+    15929,
+    15935
+   ],
+   "definitions_added": 18,
+   "definitions_common": 15917,
+   "definitions_removed": 12,
+   "examples": [
+    "c++/16/bitset::operator[]",
+    "c++/16/bitset::operator[]",
+    "c++/16/debug/unordered_map::erase",
+    "c++/16/debug/map.h::try_emplace",
+    "c++/16/debug/unordered_set::_M_extract",
+    "c++/16/debug/unordered_set::erase",
+    "c++/16/debug/unordered_map::insert_or_assign",
+    "c++/16/debug/unordered_map::_M_extract"
+   ],
+   "inline_body_changed": 25,
+   "inline_body_changed_template": 8,
+   "inline_decl_changed": 0,
+   "macro_value_changed": 0,
+   "macro_value_changed_nonversion": 0,
+   "macros": [
+    131,
+    131
+   ],
+   "macros_common": 131
+  },
+  "id": "gcc-16@16-20260226..16-20260307",
+  "language": "cxx",
+  "source": "gcc-16",
+  "symbol_declared": {},
+  "upstream": [
+   "16-20260226",
+   "16-20260307"
+  ]
+ },
+ "generated_at": "2026-09-04T02:20:21Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
+}

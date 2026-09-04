@@ -1,0 +1,67 @@
+{
+ "data": {
+  "coverage": [
+   {
+    "header_files": 15,
+    "parsed": 15,
+    "parsed_as_cxx": 0,
+    "skipped_by_limit": 0,
+    "with_errors": 2,
+    "with_fatal_error": 0
+   },
+   {
+    "header_files": 16,
+    "parsed": 16,
+    "parsed_as_cxx": 0,
+    "skipped_by_limit": 0,
+    "with_errors": 0,
+    "with_fatal_error": 0
+   }
+  ],
+  "diff": {
+   "definitions": [
+    1,
+    1
+   ],
+   "definitions_added": 0,
+   "definitions_common": 1,
+   "definitions_removed": 0,
+   "examples": [],
+   "inline_body_changed": 0,
+   "inline_body_changed_template": 0,
+   "inline_decl_changed": 0,
+   "macro_value_changed": 3,
+   "macro_value_changed_nonversion": 0,
+   "macros": [
+    36,
+    60
+   ],
+   "macros_common": 33
+  },
+  "id": "json-c@0.13.1+dfsg..0.14+dfsg",
+  "language": "c",
+  "source": "json-c",
+  "symbol_declared": {
+   "json_object_from_fd_ex": "declared",
+   "json_object_get_uint64": "declared",
+   "json_object_new_null": "declared",
+   "json_object_new_uint64": "declared",
+   "json_object_set_uint64": "declared",
+   "json_parse_uint64": "declared",
+   "json_tokener_get_parse_end": "declared",
+   "lh_abort": "declared",
+   "lh_table_lookup": "declared"
+  },
+  "upstream": [
+   "0.13.1+dfsg",
+   "0.14+dfsg"
+  ]
+ },
+ "generated_at": "2026-09-04T02:20:27Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
+}

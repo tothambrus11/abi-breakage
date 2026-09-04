@@ -1,0 +1,105 @@
+{
+ "data": {
+  "coverage": [
+   {
+    "header_files": 164,
+    "parsed": 164,
+    "parsed_as_cxx": 0,
+    "skipped_by_limit": 0,
+    "with_errors": 163,
+    "with_fatal_error": 0
+   },
+   {
+    "header_files": 166,
+    "parsed": 166,
+    "parsed_as_cxx": 0,
+    "skipped_by_limit": 0,
+    "with_errors": 165,
+    "with_fatal_error": 0
+   }
+  ],
+  "diff": {
+   "definitions": [
+    1,
+    1
+   ],
+   "definitions_added": 0,
+   "definitions_common": 1,
+   "definitions_removed": 0,
+   "examples": [],
+   "inline_body_changed": 0,
+   "inline_body_changed_template": 0,
+   "inline_decl_changed": 0,
+   "macro_value_changed": 0,
+   "macro_value_changed_nonversion": 0,
+   "macros": [
+    491,
+    495
+   ],
+   "macros_common": 491
+  },
+  "id": "gst-plugins-bad1.0@1.29.1..1.29.2",
+  "language": "c",
+  "source": "gst-plugins-bad1.0",
+  "symbol_declared": {
+   "_ZNSt6vectorIPKcSaIS1_EE17_M_realloc_appendIJRKS1_EEEvDpOT_": "unknown",
+   "_ZNSt6vectorIPKcSaIS1_EE17_M_realloc_appendIJS1_EEEvDpOT_": "unknown",
+   "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_replaceEmmPKcm": "unknown",
+   "gst_analytics_group_mtd_has_semantic_tag": "unknown",
+   "gst_analytics_group_mtd_semantic_tag_has_prefix": "unknown",
+   "gst_analytics_group_mtd_set_semantic_tag": "unknown",
+   "gst_analytics_mtd_get_semantic_tag": "unknown",
+   "gst_analytics_mtd_has_semantic_tag": "unknown",
+   "gst_analytics_mtd_semantic_tag_has_prefix": "unknown",
+   "gst_analytics_mtd_set_semantic_tag": "unknown",
+   "gst_buffer_add_wl_buffer": "unknown",
+   "gst_buffer_get_wl_buffer": "unknown",
+   "gst_h265_bit_writer_filler": "unknown",
+   "gst_h266_create_sei_memory": "unknown",
+   "gst_h266_create_sei_memory_vvc": "unknown",
+   "gst_h266_parser_insert_sei": "unknown",
+   "gst_h266_parser_insert_sei_vvc": "unknown",
+   "gst_h266_sei_clear": "unknown",
+   "gst_h266_sei_copy": "unknown",
+   "gst_h266_sei_split_messages": "unknown",
+   "gst_h274_parser_parse_dsci": "unknown",
+   "gst_h274_parser_parse_dscs": "unknown",
+   "gst_h274_parser_parse_dscv": "unknown",
+   "gst_h274_parser_parse_registered_user_data": "unknown",
+   "gst_h274_parser_parse_user_data_unregistered": "unknown",
+   "gst_h274_write_sei_dsci": "unknown",
+   "gst_h274_write_sei_dscs": "unknown",
+   "gst_h274_write_sei_dscv": "unknown",
+   "gst_h274_write_sei_registered_user_data": "unknown",
+   "gst_h274_write_sei_user_data_unregistered": "unknown",
+   "gst_nonstream_audio_decoder_set_allocator": "unknown",
+   "gst_wl_buffer_detach": "unknown",
+   "gst_wl_buffer_force_release_and_unref": "unknown",
+   "gst_wl_buffer_get_display": "unknown",
+   "gst_wl_buffer_ref_gst_buffer": "unknown",
+   "gst_wl_buffer_unref_buffer": "unknown",
+   "gst_wl_display_lookup_buffer": "unknown",
+   "gst_wl_display_register_buffer": "unknown",
+   "gst_wl_display_sync_store": "unknown",
+   "gst_wl_display_unregister_buffer": "unknown",
+   "gst_wl_shm_memory_construct_wl_buffer": "unknown",
+   "gst_wl_window_lookup_buffer": "unknown",
+   "gst_wl_window_register_buffer": "unknown",
+   "gst_wl_window_render": "unknown",
+   "gst_wl_window_render_hdr": "unknown",
+   "gst_wl_window_set_source_info": "unknown",
+   "gst_wl_window_unregister_buffer": "unknown"
+  },
+  "upstream": [
+   "1.29.1",
+   "1.29.2"
+  ]
+ },
+ "generated_at": "2026-09-04T02:20:29Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
+}

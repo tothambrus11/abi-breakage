@@ -1,0 +1,263 @@
+======================================================================================================================
+CORPUS
+======================================================================================================================
+release transitions analysed          : 739
+  libraries (Debian source packages)  : 109
+  shared objects compared             : 1037
+  C transitions                       : 551  (77 libraries)
+  C++ transitions                     : 188  (36 libraries)
+  by release level                    : {"major":17,"minor":223,"other":41,"patch":449,"snapshot":9}
+  excluded: mass symbol rename policy : 2  ["openexr"]
+  excluded: pair failed / no objects  : 23   not attempted (budget/deadline): 9
+  debug info missing on a side        : 15  (symbol-only; excluded from layout/enum rows)
+
+EVENTS EXCLUDED BY THE ATTRIBUTION FILTERS
+  types not declared in the library's headers : {"base_class_changed":5148,"enum_case_added":130,"enum_case_removed":26,"field_added_to_struct":1169,"field_removed_from_struct":1795,"field_type_changed":1521,"member_offset_changed":6118,"type_size_changed":643,"vtable_changed":463}
+  symbols in private ELF version nodes        : {"symbol_added":10,"symbol_removed":3289}
+  vague-linkage (weak C++) symbols            : {"function_signature_changed":341,"symbol_added":2308,"symbol_removed":2488}
+
+======================================================================================================================
+FREQUENCY OF CHANGE KINDS ACROSS CONSECUTIVE RELEASES  (all libraries)
+  n = 739 transitions (109 libraries); layout/enum/vtable rows over the 724 with DWARF on both sides
+======================================================================================================================
+change kind                 strict       %         95% CI lenient     libraries      events median   max  mechanism
+----------------------------------------------------------------------------------------------------------------------
+field_added_to_struct           47    6.5%   [ 3.7,  9.6]      29  25/108  23.1%         248      2    53  opaque layout
+field_removed_from_struct       12    1.7%   [ 0.6,  2.9]      12   8/108   7.4%          32      2     6  cannot help
+field_type_changed              32    4.4%   [ 2.3,  6.7]      32  19/108  17.6%         125      2    22  cannot help
+member_offset_changed           27    3.7%   [ 1.8,  5.8]      27  15/108  13.9%         225      8    18  opaque layout
+type_size_changed               43    5.9%   [ 3.4,  8.8]      24  25/108  23.1%          84      1     8  opaque layout
+base_class_changed              16    2.2%   [ 0.4,  4.8]      16   6/108   5.6%         275      4   217  opaque layout
+enum_case_added                 58    8.0%   [ 4.8, 11.2]      58  26/108  24.1%         196      2    27  non-frozen enum
+enum_case_removed                7    1.0%   [ 0.3,  1.8]       7   6/108   5.6%          11      1     3  cannot help
+vtable_changed                  11    1.5%   [ 0.0,  4.0]      11   3/108   2.8%          15      1     3  resilient dispatch
+function_signature_changed      73    9.9%   [ 6.8, 13.2]      45  42/109  38.5%        1252      3   565  cannot help
+symbol_removed                  63    8.5%   [ 5.6, 11.7]      23  33/109  30.3%        2409      4   684  cannot help
+symbol_added                   210   28.4%   [23.2, 33.8]     210  68/109  62.4%        3439      3   684  n/a
+symbol_version_renamed           2    0.3%   [ 0.0,  0.7]       2   2/109   1.8%           2      1     1  n/a
+inline_body_changed             42    5.7%   [ 2.6,  9.4]      42  16/109  14.7%        1214      6   500  no implicit cross-module inlining
+macro_value_changed             80   10.8%   [ 6.1, 16.2]      80  31/109  28.4%         700      2   323  no implicit cross-module inlining
+[layout-changed types]          75   10.4%   [ 6.5, 14.5]      60  34/108  31.5%   (types with any layout change; primary layout measure)
+
+======================================================================================================================
+C LIBRARIES ONLY
+  n = 551 transitions (77 libraries); layout/enum/vtable rows over the 541 with DWARF on both sides
+======================================================================================================================
+change kind                 strict       %         95% CI lenient     libraries      events median   max  mechanism
+----------------------------------------------------------------------------------------------------------------------
+field_added_to_struct           34    6.3%   [ 3.0,  9.8]      19  18/76   23.7%         208      2    53  opaque layout
+field_removed_from_struct       11    2.0%   [ 0.6,  3.8]      11   7/76    9.2%          30      2     6  cannot help
+field_type_changed              29    5.4%   [ 2.7,  8.5]      29  18/76   23.7%         120      2    22  cannot help
+member_offset_changed           21    3.9%   [ 1.5,  6.7]      21  11/76   14.5%         176      8    15  opaque layout
+type_size_changed               33    6.1%   [ 3.2,  9.6]      18  19/76   25.0%          74      1     8  opaque layout
+base_class_changed               1    0.2%   [ 0.0,  0.6]       1   1/76    1.3%           2      2     2  opaque layout
+enum_case_added                 45    8.3%   [ 4.9, 12.1]      45  20/76   26.3%         140      2    27  non-frozen enum
+enum_case_removed                7    1.3%   [ 0.4,  2.4]       7   6/76    7.9%          11      1     3  cannot help
+function_signature_changed      33    6.0%   [ 3.6,  8.5]      21  22/77   28.6%         164      2    65  cannot help
+symbol_removed                  36    6.5%   [ 3.7,  9.5]      17  22/77   28.6%         787      3   370  cannot help
+symbol_added                   158   28.7%   [23.0, 34.3]     158  52/77   67.5%        1656      3   377  n/a
+inline_body_changed             19    3.4%   [ 0.8,  6.7]      19   8/77   10.4%         974     25   500  no implicit cross-module inlining
+macro_value_changed             73   13.2%   [ 7.5, 19.7]      73  27/77   35.1%         690      2   323  no implicit cross-module inlining
+[layout-changed types]          52    9.6%   [ 5.3, 14.3]      39  24/76   31.6%   (types with any layout change; primary layout measure)
+
+======================================================================================================================
+C++ LIBRARIES ONLY
+  n = 188 transitions (36 libraries); layout/enum/vtable rows over the 183 with DWARF on both sides
+======================================================================================================================
+change kind                 strict       %         95% CI lenient     libraries      events median   max  mechanism
+----------------------------------------------------------------------------------------------------------------------
+field_added_to_struct           13    7.1%   [ 2.0, 14.0]      10   7/35   20.0%          40      2    10  opaque layout
+field_removed_from_struct        1    0.5%   [ 0.0,  1.7]       1   1/35    2.9%           2      2     2  cannot help
+field_type_changed               3    1.6%   [ 0.0,  5.5]       3   1/35    2.9%           5      2     2  cannot help
+member_offset_changed            6    3.3%   [ 0.5,  6.6]       6   4/35   11.4%          49      9    18  opaque layout
+type_size_changed               10    5.5%   [ 1.6, 10.1]       6   6/35   17.1%          10      1     1  opaque layout
+base_class_changed              15    8.2%   [ 1.3, 18.5]      15   5/35   14.3%         273      4   217  opaque layout
+enum_case_added                 13    7.1%   [ 1.9, 12.6]      13   6/35   17.1%          56      2    23  non-frozen enum
+vtable_changed                  11    6.0%   [ 0.0, 16.5]      11   3/35    8.6%          15      1     3  resilient dispatch
+function_signature_changed      40   21.3%   [12.5, 32.5]      24  20/36   55.6%        1088      4   565  cannot help
+symbol_removed                  27   14.4%   [ 6.5, 23.6]       6  12/36   33.3%        1622      5   684  cannot help
+symbol_added                    52   27.7%   [16.1, 40.1]      52  17/36   47.2%        1783      3   684  n/a
+symbol_version_renamed           2    1.1%   [ 0.0,  2.6]       2   2/36    5.6%           2      1     1  n/a
+inline_body_changed             23   12.2%   [ 3.3, 22.0]      23   8/36   22.2%         240      3    59  no implicit cross-module inlining
+macro_value_changed              7    3.7%   [ 0.5,  8.1]       7   4/36   11.1%          10      1     2  no implicit cross-module inlining
+[layout-changed types]          23   12.6%   [ 4.7, 24.1]      21  10/35   28.6%   (types with any layout change; primary layout measure)
+
+======================================================================================================================
+BREAK RATES  (strict = every public event; lenient = opaque-by-convention growth and undeclared symbols excluded)
+======================================================================================================================
+framing               def.      affected       %         95% CI        libraries     lib 95% CI   declared  silent
+----------------------------------------------------------------------------------------------------------------------
+binary                lenient        106   14.3%   [10.2, 18.6]    51/109  46.8%   [38.5, 56.9]          6     100
+binary                strict         162   21.9%   [16.7, 27.0]    63/109  57.8%   [48.6, 67.0]          8     154
+evolution             lenient        145   19.6%   [14.6, 24.3]    61/109  56.0%   [45.9, 65.1]          8     137
+evolution             strict         188   25.4%   [20.1, 30.7]    70/109  64.2%   [55.0, 73.4]          8     180
+evolution_or_inline   lenient        164   22.2%   [16.6, 27.7]    64/109  58.7%   [49.5, 67.9]          8     156
+evolution_or_inline   strict         205   27.7%   [22.1, 33.2]    72/109  66.1%   [56.9, 75.2]          8     197
+
+BINARY BREAKS BY RELEASE LEVEL  (strict / lenient)
+----------------------------------------------------------------------------------------------------------------------
+  major      n=17    strict    8   47.1%   [24.0, 75.0]   lenient    3   17.6%   [ 4.3, 41.2]
+  minor      n=223   strict   64   28.7%   [19.5, 38.7]   lenient   41   18.4%   [11.3, 25.8]
+  other      n=41    strict   11   26.8%   [10.0, 51.9]   lenient   10   24.4%   [ 8.8, 51.7]
+  patch      n=449   strict   74   16.5%   [11.5, 22.4]   lenient   47   10.5%   [ 6.7, 14.9]
+  snapshot   n=9     strict    5   55.6%   [55.6, 55.6]   lenient    5   55.6%   [55.6, 55.6]
+
+======================================================================================================================
+WOULD A RESILIENT BOUNDARY HAVE SAVED THE RELEASE?
+======================================================================================================================
+framing               def.      affected  rescued        %   opaque layout             non-frozen enum           resilient dispatch        opt-in inlining
+----------------------------------------------------------------------------------------------------------------------
+binary                lenient        106       19    17.9%   19 (sole 13)              0 (sole 0)                6 (sole 0)                0 (sole 0)                
+binary                strict         162       29    17.9%   29 (sole 23)              0 (sole 0)                6 (sole 0)                0 (sole 0)                
+evolution             lenient        145       52    35.9%   19 (sole 12)              35 (sole 33)              6 (sole 0)                0 (sole 0)                
+evolution             strict         188       51    27.1%   28 (sole 19)              27 (sole 23)              6 (sole 0)                0 (sole 0)                
+evolution_or_inline   lenient        164       71    43.3%   19 (sole 9)               35 (sole 32)              6 (sole 0)                25 (sole 19)              
+evolution_or_inline   strict         205       68    33.2%   28 (sole 16)              27 (sole 23)              6 (sole 0)                23 (sole 17)              
+
+======================================================================================================================
+SYMBOL STRATA  (public removals / signature changes joined against the OLD release's headers)
+======================================================================================================================
+  removed:   declared    189  undeclared   2056  undecidable    164
+  re-signed: declared    791  undeclared    434  undecidable     27
+  layout events excluded by the lenient rule (append-only growth of pointer-only types): 198
+
+======================================================================================================================
+INLINE / TEMPLATE BODY AND MACRO CHURN  (from -dev headers via libclang; invisible to ABI tools; token-level = upper bound)
+======================================================================================================================
+  transitions with header data                    : 739
+  ...shipping >=1 inlinable definition            :    250  33.8%
+  changing >=1 inline/template body               :     42   5.7%   (1214 bodies)
+  changing >=1 public macro value                 :    347  47.0%   (1472 macros)
+  ...excluding version/build stamps               :     80  10.8%
+  POOR parse coverage (counts are lower bounds)   :    139  18.8%
+  most changed bodies in one release:
+    gmp@6.1.2+dfsg..6.2.0+dfsg                         500
+    e2fsprogs@1.46.6..1.47.0                            93
+    gmp@6.2.1+dfsg1..6.3.0+dfsg                         64
+    libsigc++-2.0@2.9.3..2.10.0                         59
+    libsigc++-2.0@2.10.0..2.10.1                        59
+    xxhash@0.7.3..0.7.4                                 53
+    xxhash@0.8.1..0.8.2                                 43
+    xxhash@0.8.0..0.8.1                                 41
+    z3@4.8.12..4.13.3                                   37
+    z3@4.4.1..4.8.4                                     34
+
+======================================================================================================================
+SENSITIVITY: language threshold (fraction of Itanium-mangled exported functions => C++)
+======================================================================================================================
+  >= 0.10: C  536   C++  203
+  >= 0.20: C  551   C++  188
+  >= 0.50: C  576   C++  163
+
+======================================================================================================================
+PER LIBRARY  (binary-breaking transitions strict / lenient over transitions)
+======================================================================================================================
+  intel-gmmlib                cxx   9 /   9 / 9  
+  libfido2                    c     7 /   5 / 9  
+  hunspell                    cxx   7 /   6 / 9  
+  srt                         cxx   7 /   0 / 8  
+  libzstd                     c     6 /   3 / 9  
+  pciutils                    c     6 /   5 / 9  
+  rubberband                  cxx   6 /   1 / 9  
+  libyuv                      c     5 /   5 / 9  
+  xxhash                      c     5 /   5 / 9  
+  snappy                      cxx   5 /   4 / 9  
+  z3                          c     5 /   5 / 8  
+  lz4                         c     5 /   5 / 8  
+  freetype                    c     4 /   3 / 9  
+  sqlite3                     c     4 /   0 / 9  
+  audit                       c     4 /   2 / 9  
+  lerc                        cxx   4 /   0 / 4  
+  sane-backends               c     3 /   0 / 9  
+  openal-soft                 c     3 /   0 / 9  
+  libde265                    cxx   3 /   0 / 9  
+  libheif                     c     3 /   1 / 9  
+  json-c                      c     3 /   2 / 9  
+  soundtouch                  cxx   3 /   3 / 8  
+  libsigc++-2.0               cxx   3 /   3 / 8  
+  chromaprint                 cxx   2 /   1 / 9  
+  libedit                     c     2 /   1 / 9  
+  libcap2                     c     2 /   1 / 9  
+  libnftnl                    c     2 /   2 / 9  
+  libx11                      c     2 /   0 / 9  
+  gst-plugins-bad1.0          cxx   2 /   1 / 9  
+  ncurses                     c     2 /   2 / 9  
+  jemalloc                    cxx   2 /   1 / 5  
+  libgav1                     cxx   2 /   2 / 5  
+  aspell                      cxx   2 /   0 / 3  
+  librevenge                  cxx   2 /   2 / 3  
+  openexr                     cxx   2 /   2 / 3  
+  libxml2                     c     1 /   1 / 9  
+  xz-utils                    c     1 /   1 / 9  
+  libusb-1.0                  c     1 /   1 / 9  
+  lvm2                        c     1 /   1 / 9  
+  nghttp2                     c     1 /   1 / 9  
+  libgpg-error                c     1 /   1 / 9  
+  apparmor                    c     1 /   0 / 9  
+  iptables                    c     1 /   1 / 9  
+  apt                         cxx   1 /   1 / 9  
+  kmod                        c     1 /   1 / 9  
+  gcc-16                      cxx   1 /   1 / 9  
+  e2fsprogs                   c     1 /   1 / 9  
+  brotli                      c     1 /   1 / 9  
+  libcap-ng                   c     1 /   1 / 8  
+  libnumbertext               cxx   1 /   1 / 7  
+  gmp                         c     1 /   0 / 6  
+  acl                         c     1 /   0 / 4  
+  slang2                      c     1 /   0 / 4  
+  attr                        c     1 /   1 / 4  
+  cyrus-sasl2                 c     1 /   1 / 3  
+  djvulibre                   cxx   1 /   1 / 3  
+  libodfgen                   cxx   1 /   1 / 2  
+  rtmpdump                    c     1 /   1 / 2  
+  mythes                      cxx   1 /   1 / 2  
+  libmodplug                  cxx   1 /   1 / 1  
+  gpm                         c     1 /   1 / 1  
+  libcaca                     cxx   1 /   1 / 1  
+  libsidplay                  cxx   1 /   1 / 1  
+  libgcrypt20                 c     0 /   0 / 9  
+  mesa                        c     0 /   0 / 9  
+  vte2.91                     c     0 /   0 / 9  
+  util-linux                  c     0 /   0 / 9  
+  nftables                    c     0 /   0 / 9  
+  expat                       c     0 /   0 / 9  
+  p11-kit                     c     0 /   0 / 9  
+  systemd                     c     0 /   0 / 9  
+  pcre2                       c     0 /   0 / 9  
+  dbus                        c     0 /   0 / 9  
+  cdebconf                    c     0 /   0 / 9  
+  libksba                     c     0 /   0 / 9  
+  libmwaw                     cxx   0 /   0 / 9  
+  libpipeline                 c     0 /   0 / 9  
+  libseccomp                  c     0 /   0 / 9  
+  libselinux                  c     0 /   0 / 9  
+  libbsd                      c     0 /   0 / 9  
+  libtasn1-6                  c     0 /   0 / 9  
+  libmaxminddb                c     0 /   0 / 9  
+  libidn2                     c     0 /   0 / 9  
+  libwps                      cxx   0 /   0 / 9  
+  libxcrypt                   c     0 /   0 / 9  
+  jansson                     c     0 /   0 / 8  
+  newt                        c     0 /   0 / 7  
+  libcdr                      cxx   0 /   0 / 7  
+  libvisio                    cxx   0 /   0 / 6  
+  libetonyek                  cxx   0 /   0 / 6  
+  libmd                       c     0 /   0 / 6  
+  zeromq3                     c     0 /   0 / 6  
+  lmdb                        c     0 /   0 / 6  
+  game-music-emu              c     0 /   0 / 5  
+  zimg                        cxx   0 /   0 / 5  
+  protobuf-c                  c     0 /   0 / 4  
+  libxcb                      c     0 /   0 / 4  
+  libabw                      cxx   0 /   0 / 3  
+  uchardet                    cxx   0 /   0 / 3  
+  libwpg                      cxx   0 /   0 / 3  
+  keyutils                    c     0 /   0 / 3  
+  libmnl                      c     0 /   0 / 2  
+  popt                        c     0 /   0 / 2  
+  fstrm                       c     0 /   0 / 2  
+  libwpd                      cxx   0 /   0 / 2  
+  libe-book                   cxx   0 /   0 / 2  
+  libglu                      c     0 /   0 / 2  
+  bzip2                       c     0 /   0 / 1  
+  libxau                      c     0 /   0 / 1  

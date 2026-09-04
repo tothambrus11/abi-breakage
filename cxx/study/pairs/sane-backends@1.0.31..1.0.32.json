@@ -1,0 +1,64 @@
+{
+ "data": {
+  "bytes_extracted": 97822905,
+  "id": "sane-backends@1.0.31..1.0.32",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      74,
+      75
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 1
+    },
+    "soname": [
+     "libsane.so.1",
+     "libsane.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function void sanei_usb_testing_record_clear()",
+      "symbol": "sanei_usb_testing_record_clear",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 4.685802044,
+  "source": "sane-backends",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.0.31",
+   "1.0.32"
+  ]
+ },
+ "generated_at": "2026-09-04T02:34:37Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

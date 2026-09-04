@@ -1,0 +1,60 @@
+{
+ "data": {
+  "coverage": [
+   {
+    "header_files": 235,
+    "parsed": 235,
+    "parsed_as_cxx": 235,
+    "skipped_by_limit": 0,
+    "with_errors": 10,
+    "with_fatal_error": 0
+   },
+   {
+    "header_files": 235,
+    "parsed": 235,
+    "parsed_as_cxx": 235,
+    "skipped_by_limit": 0,
+    "with_errors": 10,
+    "with_fatal_error": 0
+   }
+  ],
+  "diff": {
+   "definitions": [
+    705,
+    705
+   ],
+   "definitions_added": 0,
+   "definitions_common": 705,
+   "definitions_removed": 0,
+   "examples": [
+    "spa-0.2/spa/param/tag-utils.h::spa_tag_info_parse",
+    "spa-0.2/spa/param/dict-utils.h::spa_param_dict_info_parse"
+   ],
+   "inline_body_changed": 2,
+   "inline_body_changed_template": 0,
+   "inline_decl_changed": 0,
+   "macro_value_changed": 1,
+   "macro_value_changed_nonversion": 0,
+   "macros": [
+    1431,
+    1431
+   ],
+   "macros_common": 1431
+  },
+  "id": "pipewire@1.6.6..1.6.7",
+  "language": "cxx",
+  "source": "pipewire",
+  "symbol_declared": {},
+  "upstream": [
+   "1.6.6",
+   "1.6.7"
+  ]
+ },
+ "generated_at": "2026-09-04T02:39:10Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
+}

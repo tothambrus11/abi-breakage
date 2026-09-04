@@ -1,0 +1,87 @@
+{
+ "data": {
+  "coverage": [
+   {
+    "header_files": 14,
+    "parsed": 14,
+    "parsed_as_cxx": 1,
+    "skipped_by_limit": 0,
+    "with_errors": 10,
+    "with_fatal_error": 0
+   },
+   {
+    "header_files": 14,
+    "parsed": 14,
+    "parsed_as_cxx": 1,
+    "skipped_by_limit": 0,
+    "with_errors": 10,
+    "with_fatal_error": 0
+   }
+  ],
+  "diff": {
+   "definitions": [
+    736,
+    761
+   ],
+   "definitions_added": 30,
+   "definitions_common": 731,
+   "definitions_removed": 5,
+   "examples": [
+    "z3++.h::mod",
+    "z3++.h::abs",
+    "z3++.h::sqrt"
+   ],
+   "inline_body_changed": 3,
+   "inline_body_changed_template": 0,
+   "inline_decl_changed": 0,
+   "macro_value_changed": 2,
+   "macro_value_changed_nonversion": 0,
+   "macros": [
+    49,
+    49
+   ],
+   "macros_common": 49
+  },
+  "id": "z3@4.8.4..4.8.6",
+  "language": "c",
+  "source": "z3",
+  "symbol_declared": {
+   "Z3_fixedpoint_pop": "unknown",
+   "Z3_fixedpoint_push": "unknown",
+   "Z3_get_error_msg_ex": "unknown",
+   "Z3_get_lstring": "unknown",
+   "Z3_get_re_sort_basis": "unknown",
+   "Z3_get_seq_sort_basis": "unknown",
+   "Z3_mk_linear_order": "unknown",
+   "Z3_mk_lstring": "unknown",
+   "Z3_mk_partial_order": "unknown",
+   "Z3_mk_piecewise_linear_order": "unknown",
+   "Z3_mk_seq_last_index": "unknown",
+   "Z3_mk_seq_nth": "unknown",
+   "Z3_mk_set_has_size": "unknown",
+   "Z3_mk_str_le": "unknown",
+   "Z3_mk_str_lt": "unknown",
+   "Z3_mk_transitive_closure": "unknown",
+   "Z3_mk_tree_order": "unknown",
+   "Z3_optimize_assert_and_track": "unknown",
+   "Z3_solver_get_levels": "unknown",
+   "Z3_solver_get_trail": "unknown",
+   "Z3_solver_to_dimacs_string": "unknown",
+   "_ZNSt5mutex4lockEv": "unknown",
+   "_ZNSt6thread11_State_implINS_8_InvokerISt5tupleIJPFvjP13event_handlerPSt11timed_mutexEjS4_S6_EEEEE6_M_runEv": "unknown",
+   "_ZNSt6thread11_State_implINS_8_InvokerISt5tupleIJZN12par_tacticalclERK3refI4goalER11sref_bufferIS5_Lj16EEEUlvE0_EEEEE6_M_runEv": "unknown",
+   "_ZNSt6thread11_State_implINS_8_InvokerISt5tupleIJZN21par_and_then_tacticalclERK3refI4goalER11sref_bufferIS5_Lj16EEEUlvE0_EEEEE6_M_runEv": "unknown"
+  },
+  "upstream": [
+   "4.8.4",
+   "4.8.6"
+  ]
+ },
+ "generated_at": "2026-09-04T02:20:27Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
+}

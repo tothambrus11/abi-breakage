@@ -1,0 +1,70 @@
+{
+ "data": {
+  "coverage": [
+   {
+    "header_files": 2,
+    "parsed": 2,
+    "parsed_as_cxx": 2,
+    "skipped_by_limit": 0,
+    "with_errors": 0,
+    "with_fatal_error": 0
+   },
+   {
+    "header_files": 2,
+    "parsed": 2,
+    "parsed_as_cxx": 2,
+    "skipped_by_limit": 0,
+    "with_errors": 0,
+    "with_fatal_error": 0
+   }
+  ],
+  "diff": {
+   "definitions": [
+    0,
+    0
+   ],
+   "definitions_added": 0,
+   "definitions_common": 0,
+   "definitions_removed": 0,
+   "examples": [],
+   "inline_body_changed": 0,
+   "inline_body_changed_template": 0,
+   "inline_decl_changed": 0,
+   "macro_value_changed": 0,
+   "macro_value_changed_nonversion": 0,
+   "macros": [
+    6,
+    6
+   ],
+   "macros_common": 6
+  },
+  "id": "libmwaw@0.3.13..0.3.14",
+  "language": "cxx",
+  "source": "libmwaw",
+  "symbol_declared": {
+   "_ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE2EEC2IPN21RagTime5GraphInternal11SubDocumentEEET_": "undeclared",
+   "_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIP12MWAWVariableI10MWAWBorderES5_EET0_T_S7_S6_": "undeclared",
+   "_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPKN22MarinerWrtTextInternal4Zone11InformationEPS4_EET0_T_S9_S8_": "undeclared",
+   "_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPN25PowerPoint3ParserInternal5FrameES4_EET0_T_S6_S5_": "undeclared",
+   "_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPN25PowerPoint3ParserInternal8TextZoneES4_EET0_T_S6_S5_": "undeclared",
+   "_ZNSt22__uninitialized_fill_nILb0EE15__uninit_fill_nIP12MWAWVariableI10MWAWBorderEmS4_EET_S6_T0_RKT1_": "undeclared",
+   "_ZNSt27__uninitialized_default_n_1ILb0EE18__uninit_default_nIP13WriteNowEntrymEET_S4_T0_": "undeclared",
+   "_ZNSt27__uninitialized_default_n_1ILb0EE18__uninit_default_nIPN25BeagleWksDBParserInternal4CellEmEET_S5_T0_": "undeclared",
+   "_ZNSt3mapIimSt4lessIiESaISt4pairIKimEEEixERS3_": "undeclared",
+   "_ZNSt6vectorIS_IiSaIiEESaIS1_EE17_M_default_appendEm": "undeclared",
+   "_ZNSt6vectorIS_IiSaIiEESaIS1_EED2Ev": "undeclared",
+   "_ZNSt6vectorIlSaIlEE14_M_insert_rvalEN9__gnu_cxx17__normal_iteratorIPKlS1_EEOl": "undeclared"
+  },
+  "upstream": [
+   "0.3.13",
+   "0.3.14"
+  ]
+ },
+ "generated_at": "2026-09-04T02:20:50Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
+}

@@ -1,0 +1,76 @@
+{
+ "data": {
+  "coverage": [
+   {
+    "header_files": 1,
+    "parsed": 1,
+    "parsed_as_cxx": 0,
+    "skipped_by_limit": 0,
+    "with_errors": 0,
+    "with_fatal_error": 0
+   },
+   {
+    "header_files": 1,
+    "parsed": 1,
+    "parsed_as_cxx": 0,
+    "skipped_by_limit": 0,
+    "with_errors": 0,
+    "with_fatal_error": 0
+   }
+  ],
+  "diff": {
+   "definitions": [
+    0,
+    0
+   ],
+   "definitions_added": 0,
+   "definitions_common": 0,
+   "definitions_removed": 0,
+   "examples": [],
+   "inline_body_changed": 0,
+   "inline_body_changed_template": 0,
+   "inline_decl_changed": 0,
+   "macro_value_changed": 1,
+   "macro_value_changed_nonversion": 0,
+   "macros": [
+    5,
+    5
+   ],
+   "macros_common": 5
+  },
+  "id": "xxhash@0.7.0..0.7.1",
+  "language": "c",
+  "source": "xxhash",
+  "symbol_declared": {
+   "XXH128_canonicalFromHash": "undeclared",
+   "XXH128_cmp": "undeclared",
+   "XXH128_hashFromCanonical": "undeclared",
+   "XXH128_isEqual": "undeclared",
+   "XXH3_128bits_digest": "undeclared",
+   "XXH3_128bits_reset": "undeclared",
+   "XXH3_128bits_reset_withSeed": "undeclared",
+   "XXH3_128bits_update": "undeclared",
+   "XXH3_128bits_withSecret": "undeclared",
+   "XXH3_64bits_digest": "undeclared",
+   "XXH3_64bits_reset": "undeclared",
+   "XXH3_64bits_reset_withSecret": "undeclared",
+   "XXH3_64bits_reset_withSeed": "undeclared",
+   "XXH3_64bits_update": "undeclared",
+   "XXH3_64bits_withSecret": "undeclared",
+   "XXH3_copyState": "undeclared",
+   "XXH3_createState": "undeclared",
+   "XXH3_freeState": "undeclared"
+  },
+  "upstream": [
+   "0.7.0",
+   "0.7.1"
+  ]
+ },
+ "generated_at": "2026-09-04T02:20:27Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
+}

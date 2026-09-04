@@ -1,0 +1,104 @@
+{
+ "data": {
+  "coverage": [
+   {
+    "header_files": 5,
+    "parsed": 5,
+    "parsed_as_cxx": 5,
+    "skipped_by_limit": 0,
+    "with_errors": 0,
+    "with_fatal_error": 0
+   },
+   {
+    "header_files": 5,
+    "parsed": 5,
+    "parsed_as_cxx": 5,
+    "skipped_by_limit": 0,
+    "with_errors": 0,
+    "with_fatal_error": 0
+   }
+  ],
+  "diff": {
+   "definitions": [
+    0,
+    0
+   ],
+   "definitions_added": 0,
+   "definitions_common": 0,
+   "definitions_removed": 0,
+   "examples": [],
+   "inline_body_changed": 0,
+   "inline_body_changed_template": 0,
+   "inline_decl_changed": 0,
+   "macro_value_changed": 0,
+   "macro_value_changed_nonversion": 0,
+   "macros": [
+    277,
+    115
+   ],
+   "macros_common": 115
+  },
+  "id": "libcaca@0.99.beta19..0.99.beta20",
+  "language": "cxx",
+  "source": "libcaca",
+  "symbol_declared": {
+   "_ZN4CacaD2Ev": "declared",
+   "_ZN4FontD2Ev": "declared",
+   "_ZN6CanvasD2Ev": "declared",
+   "_ZN6DitherD2Ev": "declared",
+   "__caca0_utf8": "undeclared",
+   "_caca_attr_to_rgb24bg": "undeclared",
+   "_caca_attr_to_rgb24fg": "undeclared",
+   "_caca_clip_dirty_rect_list": "undeclared",
+   "_caca_getticks": "undeclared",
+   "_caca_handle_resize": "undeclared",
+   "_caca_load_frame_info": "undeclared",
+   "_caca_save_frame_info": "undeclared",
+   "_caca_set_term_title": "undeclared",
+   "_caca_sleep": "undeclared",
+   "_export_ansi": "undeclared",
+   "_export_irc": "undeclared",
+   "_export_utf8": "undeclared",
+   "_import_ansi": "undeclared",
+   "_import_bin": "undeclared",
+   "_import_text": "undeclared",
+   "_pop_event": "undeclared",
+   "_push_event": "undeclared",
+   "cucul_create_canvas_frame": "declared",
+   "cucul_export_canvas": "declared",
+   "cucul_free_buffer": "declared",
+   "cucul_free_canvas_frame": "declared",
+   "cucul_get_buffer_data": "declared",
+   "cucul_get_buffer_size": "declared",
+   "cucul_get_canvas_frame_count": "declared",
+   "cucul_get_dither_mode_list": "declared",
+   "cucul_getchar": "declared",
+   "cucul_import_canvas": "declared",
+   "cucul_load_file": "declared",
+   "cucul_load_memory": "declared",
+   "cucul_putchar": "declared",
+   "cucul_putstr": "declared",
+   "cucul_rotate": "declared",
+   "cucul_set_canvas_frame": "declared",
+   "cucul_set_color": "declared",
+   "cucul_set_dither_invert": "declared",
+   "cucul_set_dither_mode": "declared",
+   "cucul_set_truecolor": "declared",
+   "ncurses_install": "undeclared",
+   "null_install": "undeclared",
+   "raw_install": "undeclared",
+   "slang_install": "undeclared"
+  },
+  "upstream": [
+   "0.99.beta19",
+   "0.99.beta20"
+  ]
+ },
+ "generated_at": "2026-09-04T02:39:10Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
+}

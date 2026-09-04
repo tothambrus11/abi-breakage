@@ -1,0 +1,61 @@
+{
+ "data": {
+  "coverage": [
+   {
+    "header_files": 1,
+    "parsed": 1,
+    "parsed_as_cxx": 1,
+    "skipped_by_limit": 0,
+    "with_errors": 0,
+    "with_fatal_error": 0
+   },
+   {
+    "header_files": 1,
+    "parsed": 1,
+    "parsed_as_cxx": 1,
+    "skipped_by_limit": 0,
+    "with_errors": 0,
+    "with_fatal_error": 0
+   }
+  ],
+  "diff": {
+   "definitions": [
+    0,
+    0
+   ],
+   "definitions_added": 0,
+   "definitions_common": 0,
+   "definitions_removed": 0,
+   "examples": [],
+   "inline_body_changed": 0,
+   "inline_body_changed_template": 0,
+   "inline_decl_changed": 0,
+   "macro_value_changed": 1,
+   "macro_value_changed_nonversion": 0,
+   "macros": [
+    4,
+    4
+   ],
+   "macros_common": 4
+  },
+  "id": "chromaprint@1.6.0..1.6.1",
+  "language": "cxx",
+  "source": "chromaprint",
+  "symbol_declared": {
+   "_ZNSt6vectorIsSaIsEE17_M_realloc_appendIJRKsEEEvDpOT_": "undeclared",
+   "_ZSt13__adjust_heapIN9__gnu_cxx17__normal_iteratorIPjSt6vectorIjSaIjEEEEljSt4lessIvEEvT_T0_SA_T1_T2_": "undeclared",
+   "_ZSt13__adjust_heapISt16reverse_iteratorIN9__gnu_cxx17__normal_iteratorIPSt4pairIjjESt6vectorIS4_SaIS4_EEEEElS4_St4lessIvEEvT_T0_SE_T1_T2_": "undeclared"
+  },
+  "upstream": [
+   "1.6.0",
+   "1.6.1"
+  ]
+ },
+ "generated_at": "2026-09-04T02:20:29Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
+}

@@ -1,0 +1,106 @@
+{
+ "data": {
+  "coverage": [
+   {
+    "header_files": 15,
+    "parsed": 15,
+    "parsed_as_cxx": 0,
+    "skipped_by_limit": 0,
+    "with_errors": 2,
+    "with_fatal_error": 0
+   },
+   {
+    "header_files": 15,
+    "parsed": 15,
+    "parsed_as_cxx": 0,
+    "skipped_by_limit": 0,
+    "with_errors": 2,
+    "with_fatal_error": 0
+   }
+  ],
+  "diff": {
+   "definitions": [
+    0,
+    1
+   ],
+   "definitions_added": 1,
+   "definitions_common": 0,
+   "definitions_removed": 0,
+   "examples": [],
+   "inline_body_changed": 0,
+   "inline_body_changed_template": 0,
+   "inline_decl_changed": 0,
+   "macro_value_changed": 3,
+   "macro_value_changed_nonversion": 0,
+   "macros": [
+    21,
+    36
+   ],
+   "macros_common": 21
+  },
+  "id": "json-c@0.12.1+ds..0.13.1+dfsg",
+  "language": "c",
+  "source": "json-c",
+  "symbol_declared": {
+   "_json_c_set_last_err": "undeclared",
+   "_json_c_strerror": "undeclared",
+   "_json_c_strerror_enable": "undeclared",
+   "array_list_bsearch": "declared",
+   "array_list_del_idx": "declared",
+   "array_list_get_idx": "declared",
+   "array_list_length": "declared",
+   "array_list_put_idx": "declared",
+   "json_c_object_sizeof": "declared",
+   "json_c_set_serialization_double_format": "declared",
+   "json_c_shallow_copy_default": "declared",
+   "json_c_visit": "declared",
+   "json_global_set_string_hash": "declared",
+   "json_object_array_bsearch": "declared",
+   "json_object_array_del_idx": "declared",
+   "json_object_array_get_idx": "declared",
+   "json_object_array_length": "declared",
+   "json_object_array_put_idx": "declared",
+   "json_object_deep_copy": "declared",
+   "json_object_double_to_json_string": "declared",
+   "json_object_equal": "declared",
+   "json_object_from_fd": "declared",
+   "json_object_get_userdata": "declared",
+   "json_object_int_inc": "declared",
+   "json_object_object_add": "declared",
+   "json_object_object_add_ex": "declared",
+   "json_object_set_boolean": "declared",
+   "json_object_set_double": "declared",
+   "json_object_set_int": "declared",
+   "json_object_set_int64": "declared",
+   "json_object_set_string": "declared",
+   "json_object_set_string_len": "declared",
+   "json_object_set_userdata": "declared",
+   "json_object_to_fd": "declared",
+   "json_object_to_json_string_length": "declared",
+   "json_pointer_get": "declared",
+   "json_pointer_getf": "declared",
+   "json_pointer_set": "declared",
+   "json_pointer_setf": "declared",
+   "json_util_get_last_err": "declared",
+   "lh_char_hash": "declared",
+   "lh_kchar_table_new": "declared",
+   "lh_kptr_table_new": "declared",
+   "lh_ptr_hash": "declared",
+   "lh_table_insert_w_hash": "declared",
+   "lh_table_lookup_entry_w_hash": "declared",
+   "lh_table_new": "declared",
+   "lh_table_resize": "declared"
+  },
+  "upstream": [
+   "0.12.1+ds",
+   "0.13.1+dfsg"
+  ]
+ },
+ "generated_at": "2026-09-04T02:20:27Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
+}

@@ -1,0 +1,63 @@
+{
+ "data": {
+  "coverage": [
+   {
+    "header_files": 2,
+    "parsed": 2,
+    "parsed_as_cxx": 0,
+    "skipped_by_limit": 0,
+    "with_errors": 0,
+    "with_fatal_error": 0
+   },
+   {
+    "header_files": 2,
+    "parsed": 2,
+    "parsed_as_cxx": 0,
+    "skipped_by_limit": 0,
+    "with_errors": 0,
+    "with_fatal_error": 0
+   }
+  ],
+  "diff": {
+   "definitions": [
+    9,
+    10
+   ],
+   "definitions_added": 1,
+   "definitions_common": 9,
+   "definitions_removed": 0,
+   "examples": [
+    "jansson.h::json_incref",
+    "jansson.h::json_decref"
+   ],
+   "inline_body_changed": 2,
+   "inline_body_changed_template": 0,
+   "inline_decl_changed": 0,
+   "macro_value_changed": 2,
+   "macro_value_changed_nonversion": 0,
+   "macros": [
+    29,
+    32
+   ],
+   "macros_common": 29
+  },
+  "id": "jansson@2.10..2.11",
+  "language": "c",
+  "source": "jansson",
+  "symbol_declared": {
+   "json_sprintf": "declared",
+   "json_vsprintf": "declared"
+  },
+  "upstream": [
+   "2.10",
+   "2.11"
+  ]
+ },
+ "generated_at": "2026-09-04T02:20:27Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
+}

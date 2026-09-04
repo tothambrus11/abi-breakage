@@ -1,0 +1,75 @@
+{
+ "data": {
+  "coverage": [
+   {
+    "header_files": 3,
+    "parsed": 3,
+    "parsed_as_cxx": 3,
+    "skipped_by_limit": 0,
+    "with_errors": 0,
+    "with_fatal_error": 0
+   },
+   {
+    "header_files": 3,
+    "parsed": 3,
+    "parsed_as_cxx": 3,
+    "skipped_by_limit": 0,
+    "with_errors": 0,
+    "with_fatal_error": 0
+   }
+  ],
+  "diff": {
+   "definitions": [
+    1,
+    1
+   ],
+   "definitions_added": 0,
+   "definitions_common": 1,
+   "definitions_removed": 0,
+   "examples": [],
+   "inline_body_changed": 0,
+   "inline_body_changed_template": 0,
+   "inline_decl_changed": 0,
+   "macro_value_changed": 2,
+   "macro_value_changed_nonversion": 0,
+   "macros": [
+    4,
+    4
+   ],
+   "macros_common": 4
+  },
+  "id": "libnumbertext@1.0.7..1.0.8",
+  "language": "cxx",
+  "source": "libnumbertext",
+  "symbol_declared": {
+   "_ZNKSt10_HashtableINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_5SorosESaIS9_ENSt8__detail10_Select1stESt8equal_toIS5_ESt4hashIS5_ENSB_18_Mod_range_hashingENSB_20_Default_ranged_hashENSB_20_Prime_rehash_policyENSB_17_Hashtable_traitsILb1ELb0ELb1EEEE19_M_find_before_nodeEmRS7_m": "undeclared",
+   "_ZNSt10_HashtableINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_5SorosESaIS9_ENSt8__detail10_Select1stESt8equal_toIS5_ESt4hashIS5_ENSB_18_Mod_range_hashingENSB_20_Default_ranged_hashENSB_20_Prime_rehash_policyENSB_17_Hashtable_traitsILb1ELb0ELb1EEEE4findERS7_": "undeclared",
+   "_ZNSt6vectorISt4pairIlS_INSt7__cxx119sub_matchIN9__gnu_cxx17__normal_iteratorIPKcNS1_12basic_stringIcSt11char_traitsIcESaIcEEEEEEESaISD_EEESaISG_EE12emplace_backIJRlRKSF_EEEvDpOT_": "undeclared",
+   "_ZNSt6vectorISt4pairIlS_INSt7__cxx119sub_matchIN9__gnu_cxx17__normal_iteratorIPKwNS1_12basic_stringIwSt11char_traitsIwESaIwEEEEEEESaISD_EEESaISG_EE12emplace_backIJRlRKSF_EEEvDpOT_": "undeclared",
+   "_ZNSt6vectorIcSaIcEE17_M_realloc_insertIJcEEEvN9__gnu_cxx17__normal_iteratorIPcS1_EEDpOT_": "undeclared",
+   "_ZNSt7__cxx1111basic_regexIwNS_12regex_traitsIwEEEC2EPKwNSt15regex_constants18syntax_option_typeE": "undeclared",
+   "_ZNSt8__detail6_StateIcEC2EOS1_": "undeclared",
+   "_ZNSt8__detail6_StateIwEC2EOS1_": "undeclared",
+   "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIcEEE6_M_popEv": "undeclared",
+   "_ZNSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIcEELb0EE17_M_handle_backrefENSH_11_Match_modeEl": "undeclared",
+   "_ZNSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIcEELb0EEC2ESB_SB_RSt6vectorISD_SE_ERKNS5_11basic_regexIcSG_EENSt15regex_constants15match_flag_typeE": "undeclared",
+   "_ZNSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIcEELb1EE17_M_handle_backrefENSH_11_Match_modeEl": "undeclared",
+   "_ZNSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKwNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIwEELb0EE17_M_handle_backrefENSH_11_Match_modeEl": "undeclared",
+   "_ZNSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKwNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIwEELb0EEC2ESB_SB_RSt6vectorISD_SE_ERKNS5_11basic_regexIwSG_EENSt15regex_constants15match_flag_typeE": "undeclared",
+   "_ZNSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKwNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIwEELb1EE17_M_handle_backrefENSH_11_Match_modeEl": "undeclared",
+   "_ZSt4findIN9__gnu_cxx17__normal_iteratorIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS7_SaIS7_EEEES7_ET_SE_SE_RKT0_": "undeclared",
+   "_ZSt4findIN9__gnu_cxx17__normal_iteratorIPKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEESt6vectorIS7_SaIS7_EEEES7_ET_SE_SE_RKT0_": "undeclared"
+  },
+  "upstream": [
+   "1.0.7",
+   "1.0.8"
+  ]
+ },
+ "generated_at": "2026-09-04T02:20:50Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
+}

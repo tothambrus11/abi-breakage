@@ -1,0 +1,65 @@
+{
+ "data": {
+  "coverage": [
+   {
+    "header_files": 2,
+    "parsed": 2,
+    "parsed_as_cxx": 2,
+    "skipped_by_limit": 0,
+    "with_errors": 2,
+    "with_fatal_error": 0
+   },
+   {
+    "header_files": 2,
+    "parsed": 2,
+    "parsed_as_cxx": 2,
+    "skipped_by_limit": 0,
+    "with_errors": 2,
+    "with_fatal_error": 0
+   }
+  ],
+  "diff": {
+   "definitions": [
+    0,
+    0
+   ],
+   "definitions_added": 0,
+   "definitions_common": 0,
+   "definitions_removed": 0,
+   "examples": [],
+   "inline_body_changed": 0,
+   "inline_body_changed_template": 0,
+   "inline_decl_changed": 0,
+   "macro_value_changed": 0,
+   "macro_value_changed_nonversion": 0,
+   "macros": [
+    0,
+    0
+   ],
+   "macros_common": 0
+  },
+  "id": "libwpg@0.3.1..0.3.2",
+  "language": "cxx",
+  "source": "libwpg",
+  "symbol_declared": {
+   "_ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE10_M_releaseEv": "unknown",
+   "_ZNSt6vectorIdSaIdEE17_M_realloc_insertIJRKdEEEvN9__gnu_cxx17__normal_iteratorIPdS1_EEDpOT_": "unknown",
+   "_ZNSt6vectorIdSaIdEE17_M_realloc_insertIJdEEEvN9__gnu_cxx17__normal_iteratorIPdS1_EEDpOT_": "unknown",
+   "_ZNSt6vectorIdSaIdEE19_M_emplace_back_auxIJRKdEEEvDpOT_": "unknown",
+   "_ZNSt6vectorIdSaIdEE19_M_emplace_back_auxIJdEEEvDpOT_": "unknown",
+   "_ZNSt6vectorIhSaIhEE17_M_realloc_insertIJRKhEEEvN9__gnu_cxx17__normal_iteratorIPhS1_EEDpOT_": "unknown",
+   "_ZNSt6vectorIhSaIhEE19_M_emplace_back_auxIJhEEEvDpOT_": "unknown"
+  },
+  "upstream": [
+   "0.3.1",
+   "0.3.2"
+  ]
+ },
+ "generated_at": "2026-09-04T02:20:29Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
+}

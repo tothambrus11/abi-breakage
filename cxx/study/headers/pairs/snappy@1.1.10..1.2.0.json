@@ -1,0 +1,64 @@
+{
+ "data": {
+  "coverage": [
+   {
+    "header_files": 4,
+    "parsed": 4,
+    "parsed_as_cxx": 4,
+    "skipped_by_limit": 0,
+    "with_errors": 0,
+    "with_fatal_error": 0
+   },
+   {
+    "header_files": 4,
+    "parsed": 4,
+    "parsed_as_cxx": 4,
+    "skipped_by_limit": 0,
+    "with_errors": 0,
+    "with_fatal_error": 0
+   }
+  ],
+  "diff": {
+   "definitions": [
+    5,
+    10
+   ],
+   "definitions_added": 5,
+   "definitions_common": 5,
+   "definitions_removed": 0,
+   "examples": [],
+   "inline_body_changed": 0,
+   "inline_body_changed_template": 0,
+   "inline_decl_changed": 0,
+   "macro_value_changed": 2,
+   "macro_value_changed_nonversion": 0,
+   "macros": [
+    4,
+    4
+   ],
+   "macros_common": 4
+  },
+  "id": "snappy@1.1.10..1.2.0",
+  "language": "cxx",
+  "source": "snappy",
+  "symbol_declared": {
+   "_ZN6snappy11RawCompressEPKcmPcPmNS_18CompressionOptionsE": "declared",
+   "_ZN6snappy17CompressFromIOVecEPK5iovecmPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE": "declared",
+   "_ZN6snappy20RawCompressFromIOVecEPK5iovecmPcPm": "declared",
+   "_ZN6snappy8CompressEPKcmPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_18CompressionOptionsE": "declared",
+   "_ZN6snappy8CompressEPNS_6SourceEPNS_4SinkENS_18CompressionOptionsE": "declared",
+   "_ZN6snappy8internal26CompressFragmentDoubleHashEPKcmPcPtiS4_i": "undeclared"
+  },
+  "upstream": [
+   "1.1.10",
+   "1.2.0"
+  ]
+ },
+ "generated_at": "2026-09-04T02:20:27Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
+}

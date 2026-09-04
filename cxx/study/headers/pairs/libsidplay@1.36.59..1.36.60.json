@@ -1,0 +1,73 @@
+{
+ "data": {
+  "coverage": [
+   {
+    "header_files": 10,
+    "parsed": 10,
+    "parsed_as_cxx": 10,
+    "skipped_by_limit": 0,
+    "with_errors": 0,
+    "with_fatal_error": 0
+   },
+   {
+    "header_files": 10,
+    "parsed": 10,
+    "parsed_as_cxx": 10,
+    "skipped_by_limit": 0,
+    "with_errors": 0,
+    "with_fatal_error": 0
+   }
+  ],
+  "diff": {
+   "definitions": [
+    81,
+    81
+   ],
+   "definitions_added": 0,
+   "definitions_common": 81,
+   "definitions_removed": 0,
+   "examples": [],
+   "inline_body_changed": 0,
+   "inline_body_changed_template": 0,
+   "inline_decl_changed": 0,
+   "macro_value_changed": 0,
+   "macro_value_changed_nonversion": 0,
+   "macros": [
+    7,
+    7
+   ],
+   "macros_common": 7
+  },
+  "id": "libsidplay@1.36.59..1.36.60",
+  "language": "cxx",
+  "source": "libsidplay",
+  "symbol_declared": {
+   "_Z10sidEmuSet2P11sidOperator": "undeclared",
+   "_Z14waveCalcFilterP11sidOperator": "undeclared",
+   "_Z9sidEmuSetP11sidOperatort": "undeclared",
+   "_ZN12smartPtrBaseIKcED0Ev": "undeclared",
+   "_ZN12smartPtrBaseIKcED2Ev": "undeclared",
+   "_ZN12smartPtrBaseIKhED0Ev": "undeclared",
+   "_ZN12smartPtrBaseIKhED2Ev": "undeclared",
+   "_ZN12smartPtrBaseIKhEixEm": "undeclared",
+   "_ZN12smartPtrBaseIcED0Ev": "undeclared",
+   "_ZN12smartPtrBaseIcED2Ev": "undeclared",
+   "_ZN7sidTuneD0Ev": "declared",
+   "_ZN7sidTuneD2Ev": "declared",
+   "_ZN9emuEngineD0Ev": "declared",
+   "_ZN9emuEngineD2Ev": "declared",
+   "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tag": "undeclared"
+  },
+  "upstream": [
+   "1.36.59",
+   "1.36.60"
+  ]
+ },
+ "generated_at": "2026-09-04T02:20:29Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
+}

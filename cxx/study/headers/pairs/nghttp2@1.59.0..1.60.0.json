@@ -1,0 +1,72 @@
+{
+ "data": {
+  "coverage": [
+   {
+    "header_files": 2,
+    "parsed": 2,
+    "parsed_as_cxx": 0,
+    "skipped_by_limit": 0,
+    "with_errors": 0,
+    "with_fatal_error": 0
+   },
+   {
+    "header_files": 2,
+    "parsed": 2,
+    "parsed_as_cxx": 0,
+    "skipped_by_limit": 0,
+    "with_errors": 0,
+    "with_fatal_error": 0
+   }
+  ],
+  "diff": {
+   "definitions": [
+    0,
+    0
+   ],
+   "definitions_added": 0,
+   "definitions_common": 0,
+   "definitions_removed": 0,
+   "examples": [],
+   "inline_body_changed": 0,
+   "inline_body_changed_template": 0,
+   "inline_decl_changed": 0,
+   "macro_value_changed": 2,
+   "macro_value_changed_nonversion": 0,
+   "macros": [
+    24,
+    24
+   ],
+   "macros_common": 24
+  },
+  "id": "nghttp2@1.59.0..1.60.0",
+  "language": "c",
+  "source": "nghttp2",
+  "symbol_declared": {
+   "nghttp2_hd_deflate_hd2": "declared",
+   "nghttp2_hd_deflate_hd_vec2": "declared",
+   "nghttp2_hd_inflate_hd3": "declared",
+   "nghttp2_pack_settings_payload2": "declared",
+   "nghttp2_session_callbacks_set_data_source_read_length_callback2": "declared",
+   "nghttp2_session_callbacks_set_pack_extension_callback2": "declared",
+   "nghttp2_session_callbacks_set_recv_callback2": "declared",
+   "nghttp2_session_callbacks_set_select_padding_callback2": "declared",
+   "nghttp2_session_callbacks_set_send_callback2": "declared",
+   "nghttp2_session_mem_recv2": "declared",
+   "nghttp2_session_mem_send2": "declared",
+   "nghttp2_submit_data2": "declared",
+   "nghttp2_submit_request2": "declared",
+   "nghttp2_submit_response2": "declared"
+  },
+  "upstream": [
+   "1.59.0",
+   "1.60.0"
+  ]
+ },
+ "generated_at": "2026-09-04T02:20:27Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
+}

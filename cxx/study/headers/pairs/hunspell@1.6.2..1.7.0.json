@@ -1,0 +1,92 @@
+{
+ "data": {
+  "coverage": [
+   {
+    "header_files": 7,
+    "parsed": 7,
+    "parsed_as_cxx": 7,
+    "skipped_by_limit": 0,
+    "with_errors": 0,
+    "with_fatal_error": 0
+   },
+   {
+    "header_files": 5,
+    "parsed": 5,
+    "parsed_as_cxx": 5,
+    "skipped_by_limit": 0,
+    "with_errors": 0,
+    "with_fatal_error": 0
+   }
+  ],
+  "diff": {
+   "definitions": [
+    9,
+    5
+   ],
+   "definitions_added": 0,
+   "definitions_common": 5,
+   "definitions_removed": 4,
+   "examples": [],
+   "inline_body_changed": 0,
+   "inline_body_changed_template": 0,
+   "inline_decl_changed": 0,
+   "macro_value_changed": 0,
+   "macro_value_changed_nonversion": 0,
+   "macros": [
+    65,
+    35
+   ],
+   "macros_common": 30
+  },
+  "id": "hunspell@1.6.2..1.7.0",
+  "language": "cxx",
+  "source": "hunspell",
+  "symbol_declared": {
+   "_Z11parse_arrayRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERS4_RSt6vectorI6w_charSaIS9_EEii": "declared",
+   "_Z24remove_ignored_chars_utfRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKSt6vectorI6w_charSaIS7_EE": "declared",
+   "_Z6phonetRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEER10phonetable": "undeclared",
+   "_Z6u16_u8RNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKSt6vectorI6w_charSaIS7_EE": "declared",
+   "_Z6u8_u16RSt6vectorI6w_charSaIS0_EERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE": "declared",
+   "_Z8line_tokRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEc": "declared",
+   "_ZN6Hunzip7getlineERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE": "undeclared",
+   "_ZN8Hunspell10input_convERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERS5_": "declared",
+   "_ZN8Hunspell14add_with_affixERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_": "declared",
+   "_ZN8Hunspell14suffix_suggestERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE": "declared",
+   "_ZN8Hunspell3addERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE": "declared",
+   "_ZN8Hunspell4stemERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE": "declared",
+   "_ZN8Hunspell5spellERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPiPS5_": "declared",
+   "_ZN8Hunspell6removeERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE": "declared",
+   "_ZN8Hunspell7analyzeERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE": "declared",
+   "_ZN8Hunspell7suggestERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE": "declared",
+   "_ZN8Hunspell8generateERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKSt6vectorIS5_SaIS5_EE": "declared",
+   "_ZN8Hunspell8generateERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_": "declared",
+   "_ZNK8Hunspell15get_version_cppB5cxx11Ev": "declared",
+   "_ZNK8Hunspell17get_dict_encodingB5cxx11Ev": "declared",
+   "_ZNK8Hunspell17get_wordchars_cppB5cxx11Ev": "declared",
+   "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE12emplace_backIJS5_EEEvDpOT_": "undeclared",
+   "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE14_M_insert_rvalEN9__gnu_cxx17__normal_iteratorIPKS5_S7_EEOS5_": "undeclared",
+   "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE7reserveEm": "undeclared",
+   "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EEaSERKS7_": "undeclared",
+   "_ZNSt6vectorIS_INSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EESaIS7_EE17_M_realloc_insertIJS7_EEEvN9__gnu_cxx17__normal_iteratorIPS7_S9_EEDpOT_": "undeclared",
+   "_ZNSt6vectorIS_INSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EESaIS7_EE7reserveEm": "undeclared",
+   "_ZNSt6vectorIS_INSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EESaIS7_EED2Ev": "undeclared",
+   "_ZNSt6vectorIS_ItSaItEESaIS1_EE7reserveEm": "undeclared",
+   "_ZNSt6vectorIcSaIcEE17_M_default_appendEm": "undeclared",
+   "_ZNSt6vectorItSaItEE12emplace_backIJtEEEvDpOT_": "undeclared",
+   "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIN9__gnu_cxx17__normal_iteratorIPKcS4_EEEEvT_SB_St20forward_iterator_tag": "undeclared",
+   "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tag": "undeclared",
+   "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPcEEvT_S7_St20forward_iterator_tag": "undeclared"
+  },
+  "upstream": [
+   "1.6.2",
+   "1.7.0"
+  ]
+ },
+ "generated_at": "2026-09-04T02:39:10Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
+}

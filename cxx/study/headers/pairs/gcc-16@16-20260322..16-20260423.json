@@ -1,0 +1,96 @@
+{
+ "data": {
+  "coverage": [
+   {
+    "header_files": 860,
+    "parsed": 860,
+    "parsed_as_cxx": 860,
+    "skipped_by_limit": 0,
+    "with_errors": 287,
+    "with_fatal_error": 0
+   },
+   {
+    "header_files": 862,
+    "parsed": 862,
+    "parsed_as_cxx": 862,
+    "skipped_by_limit": 0,
+    "with_errors": 286,
+    "with_fatal_error": 0
+   }
+  ],
+  "diff": {
+   "definitions": [
+    15933,
+    15937
+   ],
+   "definitions_added": 7,
+   "definitions_common": 15930,
+   "definitions_removed": 3,
+   "examples": [
+    "c++/16/bits/cow_string.h::replace",
+    "c++/16/bits/hashtable.h::_M_emplace_uniq",
+    "c++/16/bits/hashtable.h::_M_move_assign",
+    "c++/16/condition_variable::wait_for",
+    "c++/16/bits/cow_string.h::_M_replace_dispatch",
+    "c++/16/optional::_M_destroy",
+    "c++/16/bits/hashtable_policy.h::_M_init"
+   ],
+   "inline_body_changed": 7,
+   "inline_body_changed_template": 4,
+   "inline_decl_changed": 1,
+   "macro_value_changed": 0,
+   "macro_value_changed_nonversion": 0,
+   "macros": [
+    131,
+    131
+   ],
+   "macros_common": 131
+  },
+  "id": "gcc-16@16-20260322..16-20260423",
+  "language": "cxx",
+  "source": "gcc-16",
+  "symbol_declared": {
+   "_ZNKSbIwSt11char_traitsIwESaIwEE11starts_withEPKw": "undeclared",
+   "_ZNKSbIwSt11char_traitsIwESaIwEE11starts_withESt17basic_string_viewIwS0_E": "undeclared",
+   "_ZNKSbIwSt11char_traitsIwESaIwEE11starts_withEw": "undeclared",
+   "_ZNKSbIwSt11char_traitsIwESaIwEE9ends_withEPKw": "undeclared",
+   "_ZNKSbIwSt11char_traitsIwESaIwEE9ends_withESt17basic_string_viewIwS0_E": "undeclared",
+   "_ZNKSbIwSt11char_traitsIwESaIwEE9ends_withEw": "undeclared",
+   "_ZNKSs11starts_withEPKc": "undeclared",
+   "_ZNKSs11starts_withESt17basic_string_viewIcSt11char_traitsIcEE": "undeclared",
+   "_ZNKSs11starts_withEc": "undeclared",
+   "_ZNKSs9ends_withEPKc": "undeclared",
+   "_ZNKSs9ends_withESt17basic_string_viewIcSt11char_traitsIcEE": "undeclared",
+   "_ZNKSs9ends_withEc": "undeclared",
+   "_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11starts_withEPKc": "undeclared",
+   "_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11starts_withESt17basic_string_viewIcS2_E": "undeclared",
+   "_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11starts_withEc": "undeclared",
+   "_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9ends_withEPKc": "undeclared",
+   "_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9ends_withESt17basic_string_viewIcS2_E": "undeclared",
+   "_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9ends_withEc": "undeclared",
+   "_ZNKSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEE11starts_withEPKw": "undeclared",
+   "_ZNKSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEE11starts_withESt17basic_string_viewIwS2_E": "undeclared",
+   "_ZNKSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEE11starts_withEw": "undeclared",
+   "_ZNKSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEE9ends_withEPKw": "undeclared",
+   "_ZNKSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEE9ends_withESt17basic_string_viewIwS2_E": "undeclared",
+   "_ZNKSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEE9ends_withEw": "undeclared",
+   "_ZNSbIwSt11char_traitsIwESaIwEEC2EvQ26is_default_constructible_vIT1_E": "undeclared",
+   "_ZNSsC2EvQ26is_default_constructible_vIT1_E": "undeclared",
+   "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC2EvQ26is_default_constructible_vIT1_E": "undeclared",
+   "_ZNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEC2EvQ26is_default_constructible_vIT1_E": "undeclared",
+   "_ZNSt8__format15__do_vformat_toIcLj1EEENS_10_Sink_iterIT_EES3_St17basic_string_viewIS2_St11char_traitsIS2_EERSt20basic_format_contextIS3_S2_E": "undeclared",
+   "_ZNSt8__format15__do_vformat_toIwLj1EEENS_10_Sink_iterIT_EES3_St17basic_string_viewIS2_St11char_traitsIS2_EERSt20basic_format_contextIS3_S2_E": "undeclared"
+  },
+  "upstream": [
+   "16-20260322",
+   "16-20260423"
+  ]
+ },
+ "generated_at": "2026-09-04T02:20:23Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
+}

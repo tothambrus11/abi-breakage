@@ -1,0 +1,103 @@
+{
+ "data": {
+  "coverage": [
+   {
+    "header_files": 6,
+    "parsed": 6,
+    "parsed_as_cxx": 6,
+    "skipped_by_limit": 0,
+    "with_errors": 0,
+    "with_fatal_error": 0
+   },
+   {
+    "header_files": 6,
+    "parsed": 6,
+    "parsed_as_cxx": 6,
+    "skipped_by_limit": 0,
+    "with_errors": 0,
+    "with_fatal_error": 0
+   }
+  ],
+  "diff": {
+   "definitions": [
+    7,
+    7
+   ],
+   "definitions_added": 0,
+   "definitions_common": 7,
+   "definitions_removed": 0,
+   "examples": [],
+   "inline_body_changed": 0,
+   "inline_body_changed_template": 0,
+   "inline_decl_changed": 0,
+   "macro_value_changed": 2,
+   "macro_value_changed_nonversion": 0,
+   "macros": [
+    88,
+    88
+   ],
+   "macros_common": 88
+  },
+  "id": "srt@1.5.4..1.5.5",
+  "language": "cxx",
+  "source": "srt",
+  "symbol_declared": {
+   "_ZN3srt10CUDTSocket11resetAtForkEv": "undeclared",
+   "_ZN3srt10CUDTUnited13cleanupAtForkEv": "undeclared",
+   "_ZN3srt10CUDTUnited15closeAllSocketsEv": "undeclared",
+   "_ZN3srt10CUDTUnited17cleanupAllSocketsEv": "undeclared",
+   "_ZN3srt10CUDTUnited20stopGarbageCollectorEv": "undeclared",
+   "_ZN3srt10CUDTUnited21startGarbageCollectorEv": "undeclared",
+   "_ZN3srt11FormatValueB5cxx11EiiPKc": "undeclared",
+   "_ZN3srt12CMultiplexer11resetAtForkEv": "undeclared",
+   "_ZN3srt12CMultiplexer4stopEv": "undeclared",
+   "_ZN3srt12CMultiplexer5closeEv": "undeclared",
+   "_ZN3srt12CMultiplexerD2Ev": "undeclared",
+   "_ZN3srt12PacketFilter10globalInitEv": "undeclared",
+   "_ZN3srt12PacketFilter15builtin_filtersB5cxx11E": "undeclared",
+   "_ZN3srt12PacketFilter7filtersB5cxx11E": "undeclared",
+   "_ZN3srt12PacketFilter8Internal11ParseConfigERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERNS_15SrtFilterConfigEPPNS0_7FactoryE": "undeclared",
+   "_ZN3srt12PacketFilter8Internal17CheckFilterCompatERNS_15SrtFilterConfigERKS2_": "undeclared",
+   "_ZN3srt12PacketFilter8InternalC2Ev": "undeclared",
+   "_ZN3srt12PacketFilter8internalEv": "undeclared",
+   "_ZN3srt12PacketFilter9IsBuiltinERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE": "undeclared",
+   "_ZN3srt16getHandshakeSideEi": "undeclared",
+   "_ZN3srt17CheckFilterCompatERNS_15SrtFilterConfigES0_": "undeclared",
+   "_ZN3srt17ParseFilterConfigERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERNS_15SrtFilterConfigEPPNS_12PacketFilter7FactoryE": "undeclared",
+   "_ZN3srt4CUDT11closeAtForkEv": "undeclared",
+   "_ZN3srt4CUDT11resetAtForkEv": "undeclared",
+   "_ZN3srt4CUDT13cleanupAtForkEv": "undeclared",
+   "_ZN3srt4CUDT13handshakeSideEi": "undeclared",
+   "_ZN3srt4CUDT14compareCookiesEii": "undeclared",
+   "_ZN3srt4CUDT20checkRexmitRightTimeEiRKNS_4sync9TimePointINS1_12steady_clockEEE": "undeclared",
+   "_ZN3srt4CUDT20getCleanRexmitOffsetEv": "undeclared",
+   "_ZN3srt4CUDT23isRetransmissionAllowedERKNS_4sync9TimePointINS1_12steady_clockEEE": "undeclared",
+   "_ZN3srt4CUDT24extractCleanRexmitPacketEiiRNS_7CPacketERNS_4sync9TimePointINS3_12steady_clockEEE": "undeclared",
+   "_ZN3srt4CUDT24isRegularSendingPriorityEv": "undeclared",
+   "_ZN3srt4CUDT24updateSenderMeasurementsEb": "undeclared",
+   "_ZN3srt4CUDT31backwardCompatibleCookieContestEii": "undeclared",
+   "_ZN3srt4sync9Condition5resetEv": "undeclared",
+   "_ZN3srt9CRcvQueue11getListenerEv": "undeclared",
+   "_ZN3srt9CRcvQueue11resetAtForkEv": "undeclared",
+   "_ZN3srt9CRcvQueue11setListenerEPNS_4CUDTE": "undeclared",
+   "_ZN3srt9CRcvQueue14removeListenerEPKNS_4CUDTE": "undeclared",
+   "_ZN3srt9CRcvQueue4stopEv": "undeclared",
+   "_ZN3srt9CSndQueue11resetAtForkEv": "undeclared",
+   "_ZN3srt9CSndQueue4stopEv": "undeclared",
+   "_ZN3srt9CSndUList11resetAtForkEv": "undeclared",
+   "_ZNSt3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEN3srt12PacketFilter10ManagedPtrESt4lessIS5_ESaISt4pairIKS5_S8_EEED2Ev": "undeclared",
+   "_ZNSt3setINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4lessIS5_ESaIS5_EED2Ev": "undeclared"
+  },
+  "upstream": [
+   "1.5.4",
+   "1.5.5"
+  ]
+ },
+ "generated_at": "2026-09-04T02:20:29Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
+}
