@@ -4,44 +4,92 @@
    {
     "header_files": 139,
     "parsed": 139,
+    "parsed_as_cxx": 139,
     "skipped_by_limit": 0,
+    "with_errors": 66,
     "with_fatal_error": 0
    },
    {
-    "header_files": 0,
-    "parsed": 0,
+    "header_files": 139,
+    "parsed": 139,
+    "parsed_as_cxx": 139,
     "skipped_by_limit": 0,
+    "with_errors": 66,
     "with_fatal_error": 0
    }
   ],
   "diff": {
    "definitions": [
     313,
-    0
+    313
    ],
    "definitions_added": 0,
-   "definitions_common": 0,
-   "definitions_removed": 313,
+   "definitions_common": 313,
+   "definitions_removed": 0,
    "examples": [],
    "inline_body_changed": 0,
    "inline_body_changed_template": 0,
    "inline_decl_changed": 0,
-   "macro_value_changed": 0,
+   "macro_value_changed": 5,
+   "macro_value_changed_nonversion": 2,
    "macros": [
     109,
-    0
+    112
    ],
-   "macros_common": 0
+   "macros_common": 109
   },
   "id": "openexr@3.1.4..3.1.5",
   "language": "cxx",
   "source": "openexr",
+  "symbol_declared": {
+   "_ZNSt6vectorIN7Imf_3_110IDManifest20ChannelGroupManifestESaIS2_EE17_M_realloc_insertIJRKS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_": "undeclared",
+   "_ZNSt6vectorIN7Imf_3_110IDManifest20ChannelGroupManifestESaIS2_EE17_M_realloc_insertIJS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_": "undeclared",
+   "_ZNSt6vectorIN7Imf_3_16HeaderESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_": "undeclared",
+   "_ZNSt6vectorIN7Imf_3_19PixelTypeESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_": "undeclared",
+   "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_realloc_insertIJRKS5_EEEvN9__gnu_cxx17__normal_iteratorIPS5_S7_EEDpOT_": "undeclared",
+   "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EEaSERKS7_": "undeclared",
+   "_ZNSt6vectorIPKcSaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_": "undeclared",
+   "_ZNSt6vectorIPN13IlmThread_3_14TaskESaIS2_EE17_M_realloc_insertIJRKS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_": "undeclared",
+   "_ZNSt6vectorIPN7Imf_3_121DeepScanLineInputFileESaIS2_EE17_M_realloc_insertIJRKS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_": "undeclared",
+   "_ZNSt6vectorIPN7Imf_3_121DeepScanLineInputPartESaIS2_EE17_M_realloc_insertIJRKS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_": "undeclared",
+   "_ZNSt6vectorIPcSaIS0_EE17_M_realloc_insertIJRKS0_EEEvN9__gnu_cxx17__normal_iteratorIPS0_S2_EEDpOT_": "undeclared",
+   "_ZNSt6vectorIS_IPKcSaIS1_EESaIS3_EE17_M_realloc_insertIJRKS3_EEEvN9__gnu_cxx17__normal_iteratorIPS3_S5_EEDpOT_": "undeclared",
+   "_ZNSt6vectorIS_IPcSaIS0_EESaIS2_EE17_M_realloc_insertIJRKS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_": "undeclared",
+   "_ZNSt6vectorISt4pairIiiESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_": "undeclared",
+   "_ZNSt6vectorIcSaIcEE17_M_realloc_insertIJcEEEvN9__gnu_cxx17__normal_iteratorIPcS1_EEDpOT_": "undeclared",
+   "_ZNSt6vectorIfSaIfEEaSERKS1_": "undeclared",
+   "_ZNSt6vectorIiSaIiEE17_M_realloc_insertIJiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_": "undeclared",
+   "_ZNSt6vectorImSaImEE17_M_realloc_insertIJmEEEvN9__gnu_cxx17__normal_iteratorIPmS1_EEDpOT_": "undeclared",
+   "_ZNSt8_Rb_treeIN7Imf_3_14NameESt4pairIKS1_NS0_7ChannelEESt10_Select1stIS5_ESt4lessIS1_ESaIS5_EEaSERKSB_": "undeclared",
+   "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_St9_IdentityIS5_ESt4lessIS5_ESaIS5_EE24_M_get_insert_unique_posERKS5_": "undeclared",
+   "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_St9_IdentityIS5_ESt4lessIS5_ESaIS5_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS5_ERKS5_": "undeclared",
+   "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_PN7Imf_3_116DeepImageChannelEESt10_Select1stISB_ESt4lessIS5_ESaISB_EE24_M_get_insert_unique_posERS7_": "undeclared",
+   "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_PN7Imf_3_116DeepImageChannelEESt10_Select1stISB_ESt4lessIS5_ESaISB_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorISB_ERS7_": "undeclared",
+   "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_PN7Imf_3_116FlatImageChannelEESt10_Select1stISB_ESt4lessIS5_ESaISB_EE24_M_get_insert_unique_posERS7_": "undeclared",
+   "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_PN7Imf_3_116FlatImageChannelEESt10_Select1stISB_ESt4lessIS5_ESaISB_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorISB_ERS7_": "undeclared",
+   "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_iESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE24_M_get_insert_unique_posERS7_": "undeclared",
+   "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_iESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS8_ERS7_": "undeclared",
+   "_ZNSt8_Rb_treeIiSt4pairIKiPN7Imf_3_116GenericInputFileEESt10_Select1stIS5_ESt4lessIiESaIS5_EE17_M_emplace_uniqueIJS0_IiS4_EEEES0_ISt17_Rb_tree_iteratorIS5_EbEDpOT_": "undeclared",
+   "_ZNSt8_Rb_treeIiSt4pairIKiPN7Imf_3_116GenericInputFileEESt10_Select1stIS5_ESt4lessIiESaIS5_EE24_M_get_insert_unique_posERS1_": "undeclared",
+   "_ZNSt8_Rb_treeIiSt4pairIKiPN7Imf_3_116GenericInputFileEESt10_Select1stIS5_ESt4lessIiESaIS5_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS5_ERS1_": "undeclared",
+   "_ZNSt8_Rb_treeIiSt4pairIKiPN7Imf_3_117GenericOutputFileEESt10_Select1stIS5_ESt4lessIiESaIS5_EE17_M_emplace_uniqueIJS0_IiS4_EEEES0_ISt17_Rb_tree_iteratorIS5_EbEDpOT_": "undeclared",
+   "_ZNSt8_Rb_treeIiSt4pairIKiPN7Imf_3_117GenericOutputFileEESt10_Select1stIS5_ESt4lessIiESaIS5_EE24_M_get_insert_unique_posERS1_": "undeclared",
+   "_ZNSt8_Rb_treeIiSt4pairIKiPN7Imf_3_117GenericOutputFileEESt10_Select1stIS5_ESt4lessIiESaIS5_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS5_ERS1_": "undeclared",
+   "_ZNSt8_Rb_treeImSt4pairIKmSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS8_EEESt10_Select1stISB_ESt4lessImESaISB_EE17_M_emplace_uniqueIJS0_ImSA_EEEES0_ISt17_Rb_tree_iteratorISB_EbEDpOT_": "undeclared",
+   "_ZNSt8_Rb_treeImSt4pairIKmSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS8_EEESt10_Select1stISB_ESt4lessImESaISB_EE24_M_get_insert_unique_posERS1_": "undeclared",
+   "_ZNSt8_Rb_treeImSt4pairIKmSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS8_EEESt10_Select1stISB_ESt4lessImESaISB_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorISB_ERS1_": "undeclared",
+   "_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_RKS8_": "undeclared"
+  },
   "upstream": [
    "3.1.4",
    "3.1.5"
   ]
  },
- "generated_at": "2026-09-02T14:53:53Z",
- "schema": "abistudy/header-pair/2",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T07:43:45Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
 }

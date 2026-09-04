@@ -4,13 +4,17 @@
    {
     "header_files": 2,
     "parsed": 2,
+    "parsed_as_cxx": 2,
     "skipped_by_limit": 0,
+    "with_errors": 2,
     "with_fatal_error": 0
    },
    {
     "header_files": 2,
     "parsed": 2,
+    "parsed_as_cxx": 2,
     "skipped_by_limit": 0,
+    "with_errors": 2,
     "with_fatal_error": 0
    }
   ],
@@ -27,6 +31,7 @@
    "inline_body_changed_template": 0,
    "inline_decl_changed": 0,
    "macro_value_changed": 0,
+   "macro_value_changed_nonversion": 0,
    "macros": [
     0,
     0
@@ -36,12 +41,31 @@
   "id": "libvisio@0.1.7..0.1.9",
   "language": "cxx",
   "source": "libvisio",
+  "symbol_declared": {
+   "_ZN5boost16bad_lexical_castD0Ev": "unknown",
+   "_ZN5boost16bad_lexical_castD2Ev": "unknown",
+   "_ZNSt11_Deque_baseIjSaIjEED2Ev": "unknown",
+   "_ZNSt12_Destroy_auxILb0EE9__destroyIPN8libvisio9VSDTabSetEEEvT_S5_": "unknown",
+   "_ZNSt12_Vector_baseISt4pairIddESaIS1_EED2Ev": "unknown",
+   "_ZNSt12_Vector_baseIdSaIdEED2Ev": "unknown",
+   "_ZNSt12_Vector_baseIhSaIhEED2Ev": "unknown",
+   "_ZNSt12_Vector_baseIjSaIjEED2Ev": "unknown",
+   "_ZNSt19_Sp_counted_deleterIPhPFvPvESaIvELN9__gnu_cxx12_Lock_policyE2EED0Ev": "unknown",
+   "_ZNSt19_Sp_counted_deleterIPhPFvPvESaIvELN9__gnu_cxx12_Lock_policyE2EED2Ev": "unknown",
+   "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_realloc_appendIJS5_EEEvDpOT_": "unknown",
+   "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EED2Ev": "unknown",
+   "_ZNSt6vectorIdSaIdEE6insertEN9__gnu_cxx17__normal_iteratorIPKdS1_EERS4_": "unknown"
+  },
   "upstream": [
    "0.1.7",
    "0.1.9"
   ]
  },
- "generated_at": "2026-09-02T14:53:54Z",
- "schema": "abistudy/header-pair/2",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T07:43:45Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
 }

@@ -4,13 +4,17 @@
    {
     "header_files": 2,
     "parsed": 2,
+    "parsed_as_cxx": 2,
     "skipped_by_limit": 0,
+    "with_errors": 0,
     "with_fatal_error": 0
    },
    {
     "header_files": 2,
     "parsed": 2,
+    "parsed_as_cxx": 2,
     "skipped_by_limit": 0,
+    "with_errors": 0,
     "with_fatal_error": 0
    }
   ],
@@ -27,6 +31,7 @@
    "inline_body_changed_template": 0,
    "inline_decl_changed": 0,
    "macro_value_changed": 2,
+   "macro_value_changed_nonversion": 0,
    "macros": [
     4,
     4
@@ -36,12 +41,25 @@
   "id": "libde265@1.0.13..1.0.15",
   "language": "cxx",
   "source": "libde265",
+  "symbol_declared": {
+   "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_realloc_insertIJS5_EEEvN9__gnu_cxx17__normal_iteratorIPS5_S7_EEDpOT_": "undeclared",
+   "_ZNSt6vectorIPhSaIS0_EE17_M_realloc_insertIJRKS0_EEEvN9__gnu_cxx17__normal_iteratorIPS0_S2_EEDpOT_": "undeclared",
+   "_ZNSt6vectorIPvSaIS0_EE17_M_realloc_insertIJRKS0_EEEvN9__gnu_cxx17__normal_iteratorIPS0_S2_EEDpOT_": "undeclared",
+   "_ZNSt6vectorIPvSaIS0_EE17_M_realloc_insertIJS0_EEEvN9__gnu_cxx17__normal_iteratorIPS0_S2_EEDpOT_": "undeclared",
+   "_ZNSt6vectorIiSaIiEE17_M_realloc_insertIJRKiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_": "undeclared",
+   "_ZNSt6vectorIiSaIiEE17_M_realloc_insertIJiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_": "undeclared",
+   "_ZNSt6vectorIiSaIiEED2Ev": "undeclared"
+  },
   "upstream": [
    "1.0.13",
    "1.0.15"
   ]
  },
- "generated_at": "2026-09-02T14:51:57Z",
- "schema": "abistudy/header-pair/2",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T07:43:44Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
 }

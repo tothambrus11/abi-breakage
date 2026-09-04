@@ -1,21 +1,1650 @@
 {
  "data": {
+  "bytes_extracted": 16104103,
   "id": "openal-soft@1.23.1..1.24.0",
-  "objects": [],
-  "seconds": 1.27324957,
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      176,
+      176
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libopenal.so.1",
+     "libopenal.so.1"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 67,
+     "enum_case_added": 10,
+     "enum_case_removed": 5,
+     "field_added_to_struct": 32,
+     "field_removed_from_struct": 13,
+     "field_type_changed": 81,
+     "member_offset_changed": 176,
+     "type_size_changed": 29,
+     "vtable_changed": 13
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 6,
+      "declared_in": "./alc/device.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct ALCdevice"
+     },
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": "./alc/device.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct ALCdevice"
+     },
+     {
+      "append_only": false,
+      "count": 16,
+      "declared_in": "./alc/device.h",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct ALCdevice"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./alc/device.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct ALCdevice"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./alc/device.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct ALCdevice"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/unique_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__uniq_ptr_data<BackendBase, std::default_delete<BackendBase>, true, true>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::tuple<BackendBase*, std::default_delete<BackendBase> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Tuple_impl<0, BackendBase*, std::default_delete<BackendBase> >"
+     },
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "./alc/backends/base.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct BackendBase"
+     },
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "./alc/backends/base.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct BackendBase"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./alc/backends/base.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "struct BackendBase"
+     },
+     {
+      "append_only": false,
+      "count": 7,
+      "declared_in": "./core/device.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct DeviceBase"
+     },
+     {
+      "append_only": false,
+      "count": 5,
+      "declared_in": "./core/device.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct DeviceBase"
+     },
+     {
+      "append_only": false,
+      "count": 6,
+      "declared_in": "./core/device.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct DeviceBase"
+     },
+     {
+      "append_only": false,
+      "count": 37,
+      "declared_in": "./core/device.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct DeviceBase"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./core/device.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct DeviceBase"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./core/devformat.h",
+      "exposure": "not_in_interface",
+      "kind": "enum_case_added",
+      "third_party": true,
+      "type": "enum DevFmtChannels"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./core/filters/nfc.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct NfcFilter1"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./core/filters/nfc.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct NfcFilter2"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./core/filters/nfc.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct NfcFilter3"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./core/filters/nfc.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct NfcFilter4"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/array",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct std::array<std::array<float, 1280>, 16>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::array<float, 1024>, al::allocator<std::array<float, 1024>, 16> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::array<float, 1024>, al::allocator<std::array<float, 1024>, 16> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::array<float, 1024>, al::allocator<std::array<float, 1024>, 16> >::_Vector_impl_data"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./common/alspan.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class al::span<std::array<float, 1024>, 18446744073709551615>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./core/device.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct RealMixParams"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./core/device.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct RealMixParams"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./core/device.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct RealMixParams"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./common/alspan.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class al::span<const InputRemixMap, 18446744073709551615>"
+     },
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": "./core/devformat.h",
+      "exposure": "not_in_interface",
+      "kind": "enum_case_added",
+      "third_party": true,
+      "type": "enum Channel"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./common/alspan.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class al::span<const InputRemixMap::TargetMix, 18446744073709551615>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/array",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct std::array<unsigned int, 32>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/array",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct std::array<unsigned int, 32>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/unique_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__uniq_ptr_data<DirectHrtfState, std::default_delete<DirectHrtfState>, true, true>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::tuple<DirectHrtfState*, std::default_delete<DirectHrtfState> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Tuple_impl<0, DirectHrtfState*, std::default_delete<DirectHrtfState> >"
+     },
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "./core/hrtf.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct DirectHrtfState"
+     },
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "./common/almalloc.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct al::FlexArray<HrtfChannelState, 16>"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "./core/hrtf.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct HrtfStore"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./core/hrtf.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct HrtfStore"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./core/hrtf.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct HrtfStore"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./common/alspan.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class al::span<const HrtfStore::Field, 18446744073709551615>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/unique_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__uniq_ptr_data<BFormatDec, std::default_delete<BFormatDec>, true, true>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::tuple<BFormatDec*, std::default_delete<BFormatDec> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Tuple_impl<0, BFormatDec*, std::default_delete<BFormatDec> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./core/bformatdec.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "class BFormatDec"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./core/bformatdec.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class BFormatDec"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./core/bformatdec.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "class BFormatDec"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/unique_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__uniq_ptr_data<FrontStablizer, std::default_delete<FrontStablizer>, true, true>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::tuple<FrontStablizer*, std::default_delete<FrontStablizer> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Tuple_impl<0, FrontStablizer*, std::default_delete<FrontStablizer> >"
+     },
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "./core/front_stablizer.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct FrontStablizer"
+     },
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "./common/almalloc.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct al::FlexArray<BandSplitterR<float>, 16>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class std::vector<BFormatDec::ChannelDecoder, al::allocator<BFormatDec::ChannelDecoder, 4> >"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<BFormatDec::ChannelDecoder, al::allocator<BFormatDec::ChannelDecoder, 4> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/unique_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class std::unique_ptr<bs2b, std::default_delete<bs2b> >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/14/bits/unique_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__uniq_ptr_data<bs2b, std::default_delete<bs2b>, true, true>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/unique_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__uniq_ptr_data<Compressor, std::default_delete<Compressor>, true, true>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::tuple<Compressor*, std::default_delete<Compressor> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Tuple_impl<0, Compressor*, std::default_delete<Compressor> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./core/mastering.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct Compressor"
+     },
+     {
+      "append_only": false,
+      "count": 5,
+      "declared_in": "./core/mastering.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct Compressor"
+     },
+     {
+      "append_only": false,
+      "count": 17,
+      "declared_in": "./core/mastering.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct Compressor"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./core/mastering.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct Compressor"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/unique_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__uniq_ptr_data<DistanceComp, std::default_delete<DistanceComp>, true, true>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::tuple<DistanceComp*, std::default_delete<DistanceComp> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Tuple_impl<0, DistanceComp*, std::default_delete<DistanceComp> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./core/device.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct DistanceComp"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./core/device.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct DistanceComp"
+     },
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/array",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct std::array<DistanceComp::ChanData, 16>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./core/device.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct DistanceComp::ChanData"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./core/device.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct DistanceComp::ChanData"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./core/device.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct DistanceComp::ChanData"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./core/device.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct DistanceComp::ChanData"
+     },
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "./common/almalloc.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct al::FlexArray<float, 16>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/atomic",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct std::atomic<al::FlexArray<ContextBase*, 8>*>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/atomic_base.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct std::__atomic_base<al::FlexArray<ContextBase*, 8>*>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, al::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, 8> >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<BufferSubList, al::allocator<BufferSubList, 8> >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<EffectSubList, al::allocator<EffectSubList, 8> >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<FilterSubList, al::allocator<FilterSubList, 8> >"
+     },
+     {
+      "append_only": false,
+      "count": 12,
+      "declared_in": "./alc/context.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct ALCcontext"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "./alc/context.h",
+      "exposure": "by_pointer",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct ALCcontext"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./alc/context.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct ALCcontext"
+     },
+     {
+      "append_only": false,
+      "count": 21,
+      "declared_in": "./alc/context.h",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct ALCcontext"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./alc/context.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct ALCcontext"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./alc/context.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct ALCcontext"
+     },
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": "./alc/context.h",
+      "exposure": "by_pointer",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "struct ALCcontext"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<SourceSubList, al::allocator<SourceSubList, 8> >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<EffectSlotSubList, al::allocator<EffectSlotSubList, 8> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/unique_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__uniq_ptr_data<ALeffectslot, std::default_delete<ALeffectslot>, true, true>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::tuple<ALeffectslot*, std::default_delete<ALeffectslot> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Tuple_impl<0, ALeffectslot*, std::default_delete<ALeffectslot> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./al/auxeffectslot.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct ALeffectslot"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./al/auxeffectslot.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct ALeffectslot"
+     },
+     {
+      "append_only": false,
+      "count": 10,
+      "declared_in": "./al/auxeffectslot.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct ALeffectslot"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./al/auxeffectslot.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct ALeffectslot"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./al/buffer.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct ALbuffer"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./al/buffer.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct ALbuffer"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<unsigned char, al::allocator<unsigned char, 16> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./core/buffer_storage.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct BufferStorage"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./common/alspan.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class al::span<unsigned char, 18446744073709551615>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./core/buffer_storage.h",
+      "exposure": "not_in_interface",
+      "kind": "enum_case_added",
+      "third_party": true,
+      "type": "enum FmtChannels"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./core/buffer_storage.h",
+      "exposure": "not_in_interface",
+      "kind": "enum_case_added",
+      "third_party": true,
+      "type": "enum FmtType"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./al/auxeffectslot.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct {EffectSlotType Type; EffectProps Props; al::intrusive_ptr<EffectState> State;}"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./al/auxeffectslot.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct {EffectSlotType Type; EffectProps Props; al::intrusive_ptr<EffectState> State;}"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./al/auxeffectslot.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct {EffectSlotType Type; EffectProps Props; al::intrusive_ptr<EffectState> State;}"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./core/effectslot.h",
+      "exposure": "not_in_interface",
+      "kind": "enum_case_added",
+      "third_party": true,
+      "type": "enum EffectSlotType"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "./core/effectslot.h",
+      "exposure": "not_in_interface",
+      "kind": "enum_case_removed",
+      "third_party": true,
+      "type": "enum EffectSlotType"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./core/effects/base.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct EffectState"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./core/effects/base.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "struct EffectState"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./common/alspan.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class al::span<const std::array<float, 1024>, 18446744073709551615>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./al/auxeffectslot.h",
+      "exposure": "not_in_interface",
+      "kind": "enum_case_removed",
+      "third_party": true,
+      "type": "enum SlotState"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./al/auxeffectslot.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "enum SlotState"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./core/effectslot.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct EffectSlot"
+     },
+     {
+      "append_only": false,
+      "count": 8,
+      "declared_in": "./core/effectslot.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct EffectSlot"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./core/effectslot.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct EffectSlot"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./core/effectslot.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct EffectSlotProps"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./core/effectslot.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct EffectSlotProps"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./core/effectslot.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct EffectSlotProps"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "./core/context.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct ContextBase"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./core/context.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct ContextBase"
+     },
+     {
+      "append_only": false,
+      "count": 6,
+      "declared_in": "./core/context.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct ContextBase"
+     },
+     {
+      "append_only": false,
+      "count": 21,
+      "declared_in": "./core/context.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct ContextBase"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./core/context.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct ContextBase"
+     },
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": "./core/context.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "struct ContextBase"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./core/voice.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct VoicePropsItem"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./core/voice.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct VoicePropsItem"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./core/voice.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct VoicePropsItem"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./core/voice.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct VoiceProps"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./core/voice.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct VoiceProps"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./core/voice.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct VoiceProps"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./core/voice.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct VoiceProps"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./core/mixer/defs.h",
+      "exposure": "not_in_interface",
+      "kind": "enum_case_added",
+      "third_party": true,
+      "type": "enum Resampler"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./core/mixer/defs.h",
+      "exposure": "not_in_interface",
+      "kind": "enum_case_removed",
+      "third_party": true,
+      "type": "enum Resampler"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./core/voice.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct Voice"
+     },
+     {
+      "append_only": false,
+      "count": 29,
+      "declared_in": "./core/voice.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct Voice"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./core/voice.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct Voice"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./core/voice.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct VoiceBufferItem"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./core/voice.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct VoiceBufferItem"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/unique_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__uniq_ptr_data<DecoderBase, std::default_delete<DecoderBase>, true, true>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::tuple<DecoderBase*, std::default_delete<DecoderBase> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Tuple_impl<0, DecoderBase*, std::default_delete<DecoderBase> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./core/uhjfilter.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "struct DecoderBase"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./common/alspan.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class al::span<float*, 18446744073709551615>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./common/alspan.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class al::span<float, 18446744073709551615>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::array<float, 48>, al::allocator<std::array<float, 48>, 16> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::array<float, 48>, al::allocator<std::array<float, 48>, 16> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::array<float, 48>, al::allocator<std::array<float, 48>, 16> >::_Vector_impl_data"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<Voice::ChannelData, al::allocator<Voice::ChannelData, 16> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<Voice::ChannelData, al::allocator<Voice::ChannelData, 16> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<Voice::ChannelData, al::allocator<Voice::ChannelData, 16> >::_Vector_impl_data"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./core/voice.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct DirectParams"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./core/voice.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct SendParams"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "./core/context.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct ContextParams"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./common/vecmat.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class alu::VectorR<float>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./common/vecmat.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class alu::MatrixR<float>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/atomic",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct std::atomic<al::FlexArray<Voice*, 8>*>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/atomic_base.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct std::__atomic_base<al::FlexArray<Voice*, 8>*>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/atomic",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct std::atomic<al::FlexArray<EffectSlot*, 8>*>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/atomic_base.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct std::__atomic_base<al::FlexArray<EffectSlot*, 8>*>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/unique_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__uniq_ptr_data<RingBuffer, std::default_delete<RingBuffer>, true, true>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::tuple<RingBuffer*, std::default_delete<RingBuffer> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Tuple_impl<0, RingBuffer*, std::default_delete<RingBuffer> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./common/ringbuffer.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct RingBuffer"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./common/ringbuffer.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct RingBuffer"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./common/ringbuffer.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct RingBuffer"
+     },
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": "./common/ringbuffer.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct RingBuffer"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./common/ringbuffer.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct RingBuffer"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./common/almalloc.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct al::FlexArray<unsigned char, 16>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./common/almalloc.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct al::FlexArray<unsigned char, 16>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::unique_ptr<VoiceChange [], std::default_delete<VoiceChange []> >, al::allocator<std::unique_ptr<VoiceChange [], std::default_delete<VoiceChange []> >, 8> >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::unique_ptr<Voice [], std::default_delete<Voice []> >, al::allocator<std::unique_ptr<Voice [], std::default_delete<Voice []> >, 8> >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::unique_ptr<VoicePropsItem [], std::default_delete<VoicePropsItem []> >, al::allocator<std::unique_ptr<VoicePropsItem [], std::default_delete<VoicePropsItem []> >, 8> >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::unique_ptr<EffectSlot [], std::default_delete<EffectSlot []> >, al::allocator<std::unique_ptr<EffectSlot [], std::default_delete<EffectSlot []> >, 8> >"
+     }
+    ],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 23.148829454,
   "source": "openal-soft",
   "unpaired": [
    [],
-   [
-    "libopenal"
-   ]
+   []
   ],
   "upstream": [
    "1.23.1",
    "1.24.0"
   ]
  },
- "generated_at": "2026-09-02T12:20:24Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:35:03Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

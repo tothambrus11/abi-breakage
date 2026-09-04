@@ -1,5 +1,6 @@
 {
  "data": {
+  "bytes_extracted": 1469413,
   "id": "lz4@1.9.3..1.9.4",
   "object_errors": [],
   "objects": [
@@ -37,62 +38,74 @@
      {
       "kind": "symbol_added",
       "pretty": "function int LZ4_decompress_safe_partial_usingDict(const char*, char*, int, int, int, const char*, int)",
-      "symbol": "LZ4_decompress_safe_partial_usingDict"
+      "symbol": "LZ4_decompress_safe_partial_usingDict",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function size_t LZ4F_write(LZ4_writeFile_t*, void*, size_t)",
-      "symbol": "LZ4F_write"
+      "symbol": "LZ4F_write",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function LZ4F_errorCode_t LZ4F_readOpen(LZ4_readFile_t**, FILE*)",
-      "symbol": "LZ4F_readOpen"
+      "symbol": "LZ4F_readOpen",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function LZ4F_errorCode_t LZ4F_readClose(LZ4_readFile_t*)",
-      "symbol": "LZ4F_readClose"
+      "symbol": "LZ4F_readClose",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function size_t LZ4F_read(LZ4_readFile_t*, void*, size_t)",
-      "symbol": "LZ4F_read"
+      "symbol": "LZ4F_read",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function LZ4F_errorCode_t LZ4F_writeOpen(LZ4_writeFile_t**, FILE*, const LZ4F_preferences_t*)",
-      "symbol": "LZ4F_writeOpen"
+      "symbol": "LZ4F_writeOpen",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function LZ4F_dctx* LZ4F_createDecompressionContext_advanced(LZ4F_CustomMem, unsigned int)",
-      "symbol": "LZ4F_createDecompressionContext_advanced"
+      "symbol": "LZ4F_createDecompressionContext_advanced",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function LZ4F_errorCode_t LZ4F_writeClose(LZ4_writeFile_t*)",
-      "symbol": "LZ4F_writeClose"
+      "symbol": "LZ4F_writeClose",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function LZ4F_cctx* LZ4F_createCompressionContext_advanced(LZ4F_CustomMem, unsigned int)",
-      "symbol": "LZ4F_createCompressionContext_advanced"
+      "symbol": "LZ4F_createCompressionContext_advanced",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function size_t LZ4F_uncompressedUpdate(LZ4F_cctx*, void*, size_t, void*, size_t, const LZ4F_compressOptions_t*)",
-      "symbol": "LZ4F_uncompressedUpdate"
+      "symbol": "LZ4F_uncompressedUpdate",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function LZ4F_CDict* LZ4F_createCDict_advanced(LZ4F_CustomMem, void*, size_t)",
-      "symbol": "LZ4F_createCDict_advanced"
+      "symbol": "LZ4F_createCDict_advanced",
+      "weak": false
      },
      {
       "kind": "function_signature_changed",
       "pretty": "function size_t LZ4F_getBlockSize(unsigned int)  ->  function size_t LZ4F_getBlockSize(LZ4F_blockSizeID_t)",
-      "symbol": "LZ4F_getBlockSize"
+      "symbol": "LZ4F_getBlockSize",
+      "weak": false
      }
     ],
     "symbols_version_renamed": 0,
@@ -103,111 +116,163 @@
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "/build/lz4-0AQt96/lz4-1.9.3/lib/lz4frame.c",
+      "exposure": "by_pointer",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "struct LZ4F_cctx_s"
      },
      {
+      "append_only": false,
       "count": 14,
       "declared_in": "/build/lz4-0AQt96/lz4-1.9.3/lib/lz4frame.c",
+      "exposure": "by_pointer",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct LZ4F_cctx_s"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/build/lz4-0AQt96/lz4-1.9.3/lib/lz4frame.c",
+      "exposure": "by_pointer",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct LZ4F_cctx_s"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/build/lz4-0AQt96/lz4-1.9.3/lib/lz4frame.c",
+      "exposure": "by_pointer",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "struct LZ4F_CDict_s"
      },
      {
+      "append_only": false,
       "count": 3,
       "declared_in": "/build/lz4-0AQt96/lz4-1.9.3/lib/lz4frame.c",
+      "exposure": "by_pointer",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct LZ4F_CDict_s"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/build/lz4-0AQt96/lz4-1.9.3/lib/lz4frame.c",
+      "exposure": "by_pointer",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct LZ4F_CDict_s"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/build/lz4-0AQt96/lz4-1.9.3/lib/lz4.h",
+      "exposure": "by_pointer",
       "kind": "field_type_changed",
+      "third_party": false,
       "type": "union LZ4_stream_u"
      },
      {
+      "append_only": false,
       "count": 4,
       "declared_in": "/build/lz4-0AQt96/lz4-1.9.3/lib/lz4.h",
+      "exposure": "not_in_interface",
       "kind": "member_offset_changed",
+      "third_party": false,
       "type": "struct LZ4_stream_t_internal"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/build/lz4-0AQt96/lz4-1.9.3/lib/lz4hc.h",
+      "exposure": "by_pointer",
       "kind": "field_type_changed",
+      "third_party": false,
       "type": "union LZ4_streamHC_u"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "/build/lz4-0AQt96/lz4-1.9.3/lib/lz4frame.c",
+      "exposure": "by_pointer",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "struct LZ4F_dctx_s"
      },
      {
+      "append_only": false,
       "count": 18,
       "declared_in": "/build/lz4-0AQt96/lz4-1.9.3/lib/lz4frame.c",
+      "exposure": "by_pointer",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct LZ4F_dctx_s"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/build/lz4-0AQt96/lz4-1.9.3/lib/lz4frame.c",
+      "exposure": "by_pointer",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct LZ4F_dctx_s"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "/build/lz4-0AQt96/lz4-1.9.3/lib/lz4frame.h",
+      "exposure": "by_pointer",
       "kind": "field_added_to_struct",
+      "third_party": false,
       "type": "struct LZ4F_decompressOptions_t"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/build/lz4-0AQt96/lz4-1.9.3/lib/lz4frame.h",
+      "exposure": "by_pointer",
       "kind": "field_type_changed",
+      "third_party": false,
       "type": "struct LZ4F_decompressOptions_t"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "/build/lz4-0AQt96/lz4-1.9.3/lib/lz4frame.h",
+      "exposure": "by_value",
       "kind": "enum_case_added",
+      "third_party": false,
       "type": "enum LZ4F_errorCodes"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/build/lz4-0AQt96/lz4-1.9.3/lib/lz4.h",
+      "exposure": "by_pointer",
       "kind": "field_type_changed",
+      "third_party": false,
       "type": "union LZ4_streamDecode_u"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "/build/lz4-0AQt96/lz4-1.9.3/lib/lz4.h",
+      "exposure": "not_in_interface",
       "kind": "member_offset_changed",
+      "third_party": false,
       "type": "struct LZ4_streamDecode_t_internal"
      }
-    ]
+    ],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 1.824364181,
+  "seconds": 1.143779555,
   "source": "lz4",
   "unpaired": [
    [],
@@ -218,7 +283,11 @@
    "1.9.4"
   ]
  },
- "generated_at": "2026-09-02T14:58:21Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:43:03Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

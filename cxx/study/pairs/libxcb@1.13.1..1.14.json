@@ -1,5 +1,6 @@
 {
  "data": {
+  "bytes_extracted": 1960088,
   "id": "libxcb@1.13.1..1.14",
   "object_errors": [],
   "objects": [
@@ -32,12 +33,14 @@
      {
       "kind": "symbol_added",
       "pretty": "function uint64_t xcb_total_written(xcb_connection_t*)",
-      "symbol": "xcb_total_written"
+      "symbol": "xcb_total_written",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function uint64_t xcb_total_read(xcb_connection_t*)",
-      "symbol": "xcb_total_read"
+      "symbol": "xcb_total_read",
+      "weak": false
      }
     ],
     "symbols_version_renamed": 0,
@@ -48,57 +51,82 @@
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 3,
       "declared_in": "../../src/xcbint.h",
+      "exposure": "by_pointer",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct xcb_connection_t"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "../../src/xcbint.h",
+      "exposure": "by_pointer",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct xcb_connection_t"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "../../src/xcbint.h",
+      "exposure": "not_in_interface",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "struct _xcb_in"
      },
      {
+      "append_only": false,
       "count": 11,
       "declared_in": "../../src/xcbint.h",
+      "exposure": "not_in_interface",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct _xcb_in"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "../../src/xcbint.h",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct _xcb_in"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "../../src/xcbint.h",
+      "exposure": "not_in_interface",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "struct _xcb_out"
      },
      {
+      "append_only": false,
       "count": 4,
       "declared_in": "../../src/xcbint.h",
+      "exposure": "not_in_interface",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct _xcb_out"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "../../src/xcbint.h",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct _xcb_out"
      }
-    ]
+    ],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 3.736902259,
+  "seconds": 2.621568583,
   "source": "libxcb",
   "unpaired": [
    [],
@@ -109,7 +137,11 @@
    "1.14"
   ]
  },
- "generated_at": "2026-09-02T14:57:57Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:42:35Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

@@ -1,6 +1,8 @@
 {
  "data": {
+  "bytes_extracted": 963595,
   "id": "rtmpdump@2.4+20151223.gitfa8646d.1..2.6",
+  "object_errors": [],
   "objects": [
    {
     "coverage": {
@@ -28,10 +30,11 @@
     "symbol_events": [],
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 1.868325157,
+  "seconds": 1.119744205,
   "source": "rtmpdump",
   "unpaired": [
    [],
@@ -42,7 +45,11 @@
    "2.6"
   ]
  },
- "generated_at": "2026-09-02T12:09:46Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:44:03Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

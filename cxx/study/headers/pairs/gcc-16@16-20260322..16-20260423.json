@@ -4,38 +4,42 @@
    {
     "header_files": 860,
     "parsed": 860,
+    "parsed_as_cxx": 860,
     "skipped_by_limit": 0,
+    "with_errors": 287,
     "with_fatal_error": 0
    },
    {
     "header_files": 862,
     "parsed": 862,
+    "parsed_as_cxx": 862,
     "skipped_by_limit": 0,
+    "with_errors": 286,
     "with_fatal_error": 0
    }
   ],
   "diff": {
    "definitions": [
-    15983,
-    15983
+    15933,
+    15937
    ],
-   "definitions_added": 0,
-   "definitions_common": 15983,
-   "definitions_removed": 0,
+   "definitions_added": 7,
+   "definitions_common": 15930,
+   "definitions_removed": 3,
    "examples": [
     "c++/16/bits/cow_string.h::replace",
     "c++/16/bits/hashtable.h::_M_emplace_uniq",
     "c++/16/bits/hashtable.h::_M_move_assign",
     "c++/16/condition_variable::wait_for",
     "c++/16/bits/cow_string.h::_M_replace_dispatch",
-    "c++/16/bits/exception_ptr.h::make_exception_ptr",
     "c++/16/optional::_M_destroy",
     "c++/16/bits/hashtable_policy.h::_M_init"
    ],
-   "inline_body_changed": 8,
-   "inline_body_changed_template": 5,
-   "inline_decl_changed": 0,
+   "inline_body_changed": 7,
+   "inline_body_changed_template": 4,
+   "inline_decl_changed": 1,
    "macro_value_changed": 0,
+   "macro_value_changed_nonversion": 0,
    "macros": [
     131,
     131
@@ -45,12 +49,17 @@
   "id": "gcc-16@16-20260322..16-20260423",
   "language": "cxx",
   "source": "gcc-16",
+  "symbol_declared": {},
   "upstream": [
    "16-20260322",
    "16-20260423"
   ]
  },
- "generated_at": "2026-09-02T14:49:25Z",
- "schema": "abistudy/header-pair/2",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T07:43:43Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
 }

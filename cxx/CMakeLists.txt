@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.28)
-project(abistudy VERSION 3.0.0 LANGUAGES CXX
+project(abistudy VERSION 4.0.0 LANGUAGES CXX
         DESCRIPTION "Measures which kinds of ABI change occur between consecutive library releases")
 
 # ---------------------------------------------------------------------------
@@ -24,11 +24,11 @@ endif()
 # ---------------------------------------------------------------------------
 option(ABISTUDY_TIDY "Run clang-tidy during the build" OFF)
 if(ABISTUDY_TIDY)
-  find_program(CLANG_TIDY_EXE NAMES clang-tidy clang-tidy-21 REQUIRED)
+  find_program(CLANG_TIDY_EXE NAMES clang-tidy-23 clang-tidy REQUIRED)
   # clang parses `#embed` in C++26 mode but still labels it a C23 extension.
   set(CMAKE_CXX_CLANG_TIDY "${CLANG_TIDY_EXE};--quiet;--extra-arg=-Wno-c23-extensions")
 endif()
-find_program(CLANG_FORMAT_EXE NAMES clang-format clang-format-21)
+find_program(CLANG_FORMAT_EXE NAMES clang-format-23 clang-format)
 file(GLOB_RECURSE _abistudy_sources CONFIGURE_DEPENDS
      "${CMAKE_SOURCE_DIR}/src/*.cpp" "${CMAKE_SOURCE_DIR}/src/*.hpp"
      "${CMAKE_SOURCE_DIR}/tests/*.cpp" "${CMAKE_SOURCE_DIR}/tests/*.hpp")
@@ -81,30 +81,37 @@ message(STATUS "libclang C API: ${CLANG_C_LIBRARY} (${CLANG_C_INCLUDE_DIR})")
 # Library: everything except main(), so the tests link the real code.
 # ---------------------------------------------------------------------------
 add_library(abistudy_lib STATIC
-  src/core/version.cpp
   src/core/fs.cpp
-  src/core/process.cpp
   src/core/hash.cpp
-  src/core/artifact.cpp
-  src/snapshot/client.cpp
-  src/snapshot/api.cpp
-  src/snapshot/archive_index.cpp
-  src/deb/extract.cpp
-  src/abi/model.cpp
-  src/abi/compare.cpp
-  src/hdr/index.cpp
-  src/pipeline/artifacts.cpp
-  src/pipeline/materialize.cpp
-  src/pipeline/select.cpp
-  src/pipeline/resolve.cpp
-  src/pipeline/diff.cpp
-  src/pipeline/headers.cpp
-  src/pipeline/analyze.cpp
-  src/pipeline/report.cpp
+  src/domain/taxonomy.cpp
+  src/domain/events.cpp
+  src/domain/header_model.cpp
+  src/domain/version.cpp
+  src/domain/records.cpp
+  src/domain/symbols.cpp
+  src/domain/transition.cpp
+  src/domain/statistics.cpp
+  src/domain/summary.cpp
+  src/ports/package_source.cpp
+  src/adapters/posix/process.cpp
+  src/adapters/fs/artifact_store.cpp
+  src/adapters/libarchive/extract.cpp
+  src/adapters/snapshot/client.cpp
+  src/adapters/snapshot/source.cpp
+  src/adapters/snapshot/archive_index.cpp
+  src/adapters/abigail/comparer.cpp
+  src/adapters/libclang/indexer.cpp
+  src/app/materialize.cpp
+  src/app/select.cpp
+  src/app/resolve.cpp
+  src/app/diff.cpp
+  src/app/headers.cpp
+  src/app/analyze.cpp
+  src/app/report.cpp
 )
 target_include_directories(abistudy_lib PUBLIC src)
 # `#embed "template.html"` in report.cpp resolves through the embed search path.
-set_source_files_properties(src/pipeline/report.cpp PROPERTIES
+set_source_files_properties(src/app/report.cpp PROPERTIES
   COMPILE_OPTIONS "--embed-dir=${CMAKE_SOURCE_DIR}/report"
   OBJECT_DEPENDS "${CMAKE_SOURCE_DIR}/report/template.html")
 target_link_libraries(abistudy_lib
@@ -120,12 +127,13 @@ target_link_libraries(abistudy PRIVATE abistudy_lib abistudy_warnings)
 # and pushed through the real diff and header stages.
 # ---------------------------------------------------------------------------
 enable_testing()
-foreach(t version strong classify extract)
+foreach(t version strong domain extract)
   add_executable(${t}_test tests/unit/${t}_test.cpp)
   target_link_libraries(${t}_test PRIVATE abistudy_lib abistudy_warnings)
   add_test(NAME unit.${t} COMMAND ${t}_test)
 endforeach()
 target_link_libraries(extract_test PRIVATE PkgConfig::ARCHIVE)
+target_link_libraries(domain_test PRIVATE PkgConfig::ABIGAIL)
 
 add_executable(abistudy_calibration tests/calibration/calibration_test.cpp)
 target_link_libraries(abistudy_calibration PRIVATE abistudy_lib abistudy_warnings)

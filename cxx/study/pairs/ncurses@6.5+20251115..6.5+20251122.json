@@ -1,6 +1,11 @@
 {
  "data": {
+  "bytes_extracted": 10730117,
   "id": "ncurses@6.5+20251115..6.5+20251122",
+  "object_errors": [
+   "missing package: lib64ncurses-dev",
+   "missing package: lib64ncurses-dev"
+  ],
   "objects": [
    {
     "coverage": {
@@ -28,7 +33,8 @@
     "symbol_events": [],
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -56,10 +62,11 @@
     "symbol_events": [],
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 2.876406077,
+  "seconds": 1.88117042,
   "source": "ncurses",
   "unpaired": [
    [],
@@ -70,7 +77,11 @@
    "6.5+20251122"
   ]
  },
- "generated_at": "2026-09-02T12:10:11Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:41:38Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

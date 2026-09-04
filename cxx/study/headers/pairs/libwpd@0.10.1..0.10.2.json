@@ -4,13 +4,17 @@
    {
     "header_files": 2,
     "parsed": 2,
+    "parsed_as_cxx": 2,
     "skipped_by_limit": 0,
+    "with_errors": 2,
     "with_fatal_error": 0
    },
    {
     "header_files": 2,
     "parsed": 2,
+    "parsed_as_cxx": 2,
     "skipped_by_limit": 0,
+    "with_errors": 2,
     "with_fatal_error": 0
    }
   ],
@@ -27,6 +31,7 @@
    "inline_body_changed_template": 0,
    "inline_decl_changed": 0,
    "macro_value_changed": 0,
+   "macro_value_changed_nonversion": 0,
    "macros": [
     0,
     0
@@ -36,12 +41,27 @@
   "id": "libwpd@0.10.1..0.10.2",
   "language": "cxx",
   "source": "libwpd",
+  "symbol_declared": {
+   "_ZNSt11_Deque_baseI11WP6ListTypeSaIS0_EE17_M_initialize_mapEm": "unknown",
+   "_ZNSt11_Deque_baseIjSaIjEE17_M_initialize_mapEm": "unknown",
+   "_ZNSt5dequeI11WP6ListTypeSaIS0_EE12emplace_backIJS0_EEEvDpOT_": "unknown",
+   "_ZNSt6vectorI13WP6StyleStateSaIS0_EE19_M_emplace_back_auxIJS0_EEEvDpOT_": "unknown",
+   "_ZNSt6vectorIPhSaIS0_EE19_M_emplace_back_auxIJRKS0_EEEvDpOT_": "unknown",
+   "_ZNSt6vectorIdSaIdEE19_M_emplace_back_auxIJRKdEEEvDpOT_": "unknown",
+   "_ZNSt6vectorIdSaIdEE19_M_emplace_back_auxIJdEEEvDpOT_": "unknown",
+   "_ZNSt6vectorIjSaIjEE19_M_emplace_back_auxIJRKjEEEvDpOT_": "unknown",
+   "_ZNSt6vectorIjSaIjEE19_M_emplace_back_auxIJjEEEvDpOT_": "unknown"
+  },
   "upstream": [
    "0.10.1",
    "0.10.2"
   ]
  },
- "generated_at": "2026-09-02T14:53:53Z",
- "schema": "abistudy/header-pair/2",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T07:43:45Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
 }

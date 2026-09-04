@@ -1,6 +1,11 @@
 {
  "data": {
+  "bytes_extracted": 16054254,
+  "excluded_objects": [],
   "id": "libwps@0.4.5..0.4.6",
+  "object_errors": [
+   "missing package: libwps-0.4-4-dbgsym"
+  ],
   "objects": [
    {
     "coverage": {
@@ -20,9 +25,7 @@
     "language": "cxx",
     "mass_rename": false,
     "private_node": {},
-    "public": {
-     "symbol_removed": 4
-    },
+    "public": {},
     "soname": [
      "libwps-0.4.so.4",
      "libwps-0.4.so.4"
@@ -30,31 +33,39 @@
     "symbol_events": [
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::vector<int,std::allocator<int>>::emplace_back<int>(int&&)",
-      "symbol": "_ZNSt6vectorIiSaIiEE12emplace_backIJiEEEvDpOT_"
+      "pretty": "function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&, const char*)",
+      "symbol": "_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEOS8_PKS5_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::vector<float,std::allocator<float>>::_M_fill_insert(std::vector<float,std::allocator<float>>::iterator, std::vector<float,std::allocator<float>>::size_type, const std::vector<float,std::allocator<float>>::value_type&)",
-      "symbol": "_ZNSt6vectorIfSaIfEE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPfS1_EEmRKf"
+      "pretty": "method void std::vector<float, std::allocator<float> >::_M_fill_insert(std::vector<float, std::allocator<float> >::iterator, std::vector<float, std::allocator<float> >::size_type, const std::vector<float, std::allocator<float> >::value_type&)",
+      "symbol": "_ZNSt6vectorIfSaIfEE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPfS1_EEmRKf",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method LotusSpreadsheetInternal::Spreadsheet* std::__uninitialized_default_n_1<false>::__uninit_default_n<LotusSpreadsheetInternal::Spreadsheet*,longunsignedint>(LotusSpreadsheetInternal::Spreadsheet*, unsigned long int)",
-      "symbol": "_ZNSt27__uninitialized_default_n_1ILb0EE18__uninit_default_nIPN24LotusSpreadsheetInternal11SpreadsheetEmEET_S5_T0_"
+      "pretty": "method LotusSpreadsheetInternal::Spreadsheet* std::__uninitialized_default_n_1<false>::__uninit_default_n<LotusSpreadsheetInternal::Spreadsheet*, long unsigned int>(unsigned long int)",
+      "symbol": "_ZNSt27__uninitialized_default_n_1ILb0EE18__uninit_default_nIPN24LotusSpreadsheetInternal11SpreadsheetEmEET_S5_T0_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "function std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>> std::operator+<char,std::char_traits<char>,std::allocator<char>>(std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>&&, const char*)",
-      "symbol": "_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEOS8_PKS5_"
+      "pretty": "method void std::vector<int, std::allocator<int> >::emplace_back<int>(int&&)",
+      "symbol": "_ZNSt6vectorIiSaIiEE12emplace_backIJiEEEvDpOT_",
+      "weak": true
      }
     ],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {
+     "symbol_removed": 4
+    }
    }
   ],
-  "seconds": 12.949283414,
+  "seconds": 8.242297234,
   "source": "libwps",
   "unpaired": [
    [],
@@ -65,7 +76,11 @@
    "0.4.6"
   ]
  },
- "generated_at": "2026-09-02T12:55:13Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T06:19:07Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

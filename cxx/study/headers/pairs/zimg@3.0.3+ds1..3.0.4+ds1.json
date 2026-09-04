@@ -2,46 +2,56 @@
  "data": {
   "coverage": [
    {
-    "header_files": 0,
-    "parsed": 0,
+    "header_files": 2,
+    "parsed": 2,
+    "parsed_as_cxx": 2,
     "skipped_by_limit": 0,
+    "with_errors": 0,
     "with_fatal_error": 0
    },
    {
     "header_files": 2,
     "parsed": 2,
+    "parsed_as_cxx": 2,
     "skipped_by_limit": 0,
+    "with_errors": 0,
     "with_fatal_error": 0
    }
   ],
   "diff": {
    "definitions": [
-    0,
+    32,
     32
    ],
-   "definitions_added": 32,
-   "definitions_common": 0,
+   "definitions_added": 0,
+   "definitions_common": 32,
    "definitions_removed": 0,
    "examples": [],
    "inline_body_changed": 0,
    "inline_body_changed_template": 0,
    "inline_decl_changed": 0,
    "macro_value_changed": 0,
+   "macro_value_changed_nonversion": 0,
    "macros": [
-    0,
+    25,
     25
    ],
-   "macros_common": 0
+   "macros_common": 25
   },
   "id": "zimg@3.0.3+ds1..3.0.4+ds1",
   "language": "cxx",
   "source": "zimg",
+  "symbol_declared": {},
   "upstream": [
    "3.0.3+ds1",
    "3.0.4+ds1"
   ]
  },
- "generated_at": "2026-09-02T14:52:21Z",
- "schema": "abistudy/header-pair/2",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T07:43:44Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
 }

@@ -1,5 +1,7 @@
 {
  "data": {
+  "bytes_extracted": 1849382,
+  "excluded_objects": [],
   "id": "libwpg@0.3.3..0.3.4",
   "object_errors": [],
   "objects": [
@@ -21,10 +23,7 @@
     "language": "cxx",
     "mass_rename": false,
     "private_node": {},
-    "public": {
-     "symbol_added": 5,
-     "symbol_removed": 6
-    },
+    "public": {},
     "soname": [
      "libwpg-0.3.so.3",
      "libwpg-0.3.so.3"
@@ -32,87 +31,122 @@
     "symbol_events": [
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::vector<double,std::allocator<double>>::emplace_back<double>(double&&)",
-      "symbol": "_ZNSt6vectorIdSaIdEE12emplace_backIJdEEEvDpOT_"
+      "pretty": "method void std::vector<unsigned char, std::allocator<unsigned char> >::_M_realloc_insert<unsigned char const&>(std::vector<unsigned char, std::allocator<unsigned char> >::iterator, const unsigned char&)",
+      "symbol": "_ZNSt6vectorIhSaIhEE17_M_realloc_insertIJRKhEEEvN9__gnu_cxx17__normal_iteratorIPhS1_EEDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method std::vector<double,std::allocator<double>>& std::vector<double,std::allocator<double>>::operator=(const std::vector<double,std::allocator<double>>&)",
-      "symbol": "_ZNSt6vectorIdSaIdEEaSERKS1_"
+      "pretty": "method void std::vector<unsigned char, std::allocator<unsigned char> >::emplace_back<unsigned char>(unsigned char&&)",
+      "symbol": "_ZNSt6vectorIhSaIhEE12emplace_backIJhEEEvDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::vector<double,std::allocator<double>>::_M_realloc_insert<doubleconst&>(std::vector<double,std::allocator<double>>::iterator, const double&)",
-      "symbol": "_ZNSt6vectorIdSaIdEE17_M_realloc_insertIJRKdEEEvN9__gnu_cxx17__normal_iteratorIPdS1_EEDpOT_"
+      "pretty": "method std::vector<double, std::allocator<double> >& std::vector<double, std::allocator<double> >::operator=(const std::vector<double, std::allocator<double> >&)",
+      "symbol": "_ZNSt6vectorIdSaIdEEaSERKS1_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::vector<double,std::allocator<double>>::_M_realloc_insert<double>(std::vector<double,std::allocator<double>>::iterator, double&&)",
-      "symbol": "_ZNSt6vectorIdSaIdEE17_M_realloc_insertIJdEEEvN9__gnu_cxx17__normal_iteratorIPdS1_EEDpOT_"
+      "pretty": "method void std::vector<double, std::allocator<double> >::_M_realloc_insert<double>(std::vector<double, std::allocator<double> >::iterator, double&&)",
+      "symbol": "_ZNSt6vectorIdSaIdEE17_M_realloc_insertIJdEEEvN9__gnu_cxx17__normal_iteratorIPdS1_EEDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::vector<unsignedchar,std::allocator<unsignedchar>>::emplace_back<unsignedchar>(unsigned char&&)",
-      "symbol": "_ZNSt6vectorIhSaIhEE12emplace_backIJhEEEvDpOT_"
+      "pretty": "method void std::vector<double, std::allocator<double> >::_M_realloc_insert<double const&>(std::vector<double, std::allocator<double> >::iterator, const double&)",
+      "symbol": "_ZNSt6vectorIdSaIdEE17_M_realloc_insertIJRKdEEEvN9__gnu_cxx17__normal_iteratorIPdS1_EEDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::vector<unsignedchar,std::allocator<unsignedchar>>::_M_realloc_insert<unsignedcharconst&>(std::vector<unsignedchar,std::allocator<unsignedchar>>::iterator, const unsigned char&)",
-      "symbol": "_ZNSt6vectorIhSaIhEE17_M_realloc_insertIJRKhEEEvN9__gnu_cxx17__normal_iteratorIPhS1_EEDpOT_"
+      "pretty": "method void std::vector<double, std::allocator<double> >::emplace_back<double>(double&&)",
+      "symbol": "_ZNSt6vectorIdSaIdEE12emplace_backIJdEEEvDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::vector<unsignedchar,std::allocator<unsignedchar>>::_M_realloc_append<unsignedchar>()",
-      "symbol": "_ZNSt6vectorIhSaIhEE17_M_realloc_appendIJhEEEvDpOT_"
+      "pretty": "method void std::vector<unsigned char, std::allocator<unsigned char> >::_M_realloc_append<unsigned char>(unsigned char&&)",
+      "symbol": "_ZNSt6vectorIhSaIhEE17_M_realloc_appendIJhEEEvDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::vector<unsignedchar,std::allocator<unsignedchar>>::_M_realloc_append<unsignedcharconst&>()",
-      "symbol": "_ZNSt6vectorIhSaIhEE17_M_realloc_appendIJRKhEEEvDpOT_"
+      "pretty": "method void std::vector<unsigned char, std::allocator<unsigned char> >::_M_realloc_append<unsigned char const&>(const unsigned char&)",
+      "symbol": "_ZNSt6vectorIhSaIhEE17_M_realloc_appendIJRKhEEEvDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::vector<double,std::allocator<double>>::_M_realloc_append<double>()",
-      "symbol": "_ZNSt6vectorIdSaIdEE17_M_realloc_appendIJdEEEvDpOT_"
+      "pretty": "method void std::vector<double, std::allocator<double> >::_M_realloc_append<double>(double&&)",
+      "symbol": "_ZNSt6vectorIdSaIdEE17_M_realloc_appendIJdEEEvDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
       "pretty": "method void std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release_last_use_cold()",
-      "symbol": "_ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE24_M_release_last_use_coldEv"
+      "symbol": "_ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE24_M_release_last_use_coldEv",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method std::_Vector_base<double,std::allocator<double>>::~_Vector_base()",
-      "symbol": "_ZNSt12_Vector_baseIdSaIdEED2Ev"
+      "pretty": "method std::_Vector_base<double, std::allocator<double> >::~_Vector_base()",
+      "symbol": "_ZNSt12_Vector_baseIdSaIdEED2Ev",
+      "weak": true
      }
     ],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {
-     "base_class_changed": 5
+     "base_class_changed": 5,
+     "field_removed_from_struct": 3
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "by_pointer",
       "kind": "base_class_changed",
-      "type": "class std::vector<unsignedchar,std::allocator<unsignedchar>>"
+      "third_party": true,
+      "type": "class std::vector<unsigned char, std::allocator<unsigned char> >"
      },
      {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
       "count": 2,
       "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Vector_base<unsignedchar,std::allocator<unsignedchar>>::_Vector_impl"
+      "third_party": true,
+      "type": "struct std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_Vector_impl"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "/usr/include/c++/8/bits/allocator.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "class std::allocator<unsignedchar>"
+      "third_party": true,
+      "type": "class std::allocator<unsigned char>"
      }
-    ]
+    ],
+    "vague_linkage": {
+     "symbol_added": 5,
+     "symbol_removed": 6
+    }
    }
   ],
-  "seconds": 3.120375203,
+  "seconds": 1.607557546,
   "source": "libwpg",
   "unpaired": [
    [],
@@ -123,7 +157,11 @@
    "0.3.4"
   ]
  },
- "generated_at": "2026-09-02T15:07:44Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T06:20:22Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

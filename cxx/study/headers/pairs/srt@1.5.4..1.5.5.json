@@ -4,13 +4,17 @@
    {
     "header_files": 6,
     "parsed": 6,
+    "parsed_as_cxx": 6,
     "skipped_by_limit": 0,
+    "with_errors": 0,
     "with_fatal_error": 0
    },
    {
     "header_files": 6,
     "parsed": 6,
+    "parsed_as_cxx": 6,
     "skipped_by_limit": 0,
+    "with_errors": 0,
     "with_fatal_error": 0
    }
   ],
@@ -27,6 +31,7 @@
    "inline_body_changed_template": 0,
    "inline_decl_changed": 0,
    "macro_value_changed": 2,
+   "macro_value_changed_nonversion": 0,
    "macros": [
     88,
     88
@@ -36,12 +41,29 @@
   "id": "srt@1.5.4..1.5.5",
   "language": "cxx",
   "source": "srt",
+  "symbol_declared": {
+   "_ZN3srt12PacketFilter10globalInitEv": "undeclared",
+   "_ZN3srt12PacketFilter15builtin_filtersB5cxx11E": "undeclared",
+   "_ZN3srt12PacketFilter7filtersB5cxx11E": "undeclared",
+   "_ZN3srt12PacketFilter9IsBuiltinERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE": "undeclared",
+   "_ZN3srt17CheckFilterCompatERNS_15SrtFilterConfigES0_": "undeclared",
+   "_ZN3srt17ParseFilterConfigERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERNS_15SrtFilterConfigEPPNS_12PacketFilter7FactoryE": "undeclared",
+   "_ZN3srt4CUDT23isRetransmissionAllowedERKNS_4sync9TimePointINS1_12steady_clockEEE": "undeclared",
+   "_ZN3srt9CRcvQueue11setListenerEPNS_4CUDTE": "undeclared",
+   "_ZN3srt9CRcvQueue14removeListenerEPKNS_4CUDTE": "undeclared",
+   "_ZNSt3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEN3srt12PacketFilter10ManagedPtrESt4lessIS5_ESaISt4pairIKS5_S8_EEED2Ev": "undeclared",
+   "_ZNSt3setINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4lessIS5_ESaIS5_EED2Ev": "undeclared"
+  },
   "upstream": [
    "1.5.4",
    "1.5.5"
   ]
  },
- "generated_at": "2026-09-02T14:52:21Z",
- "schema": "abistudy/header-pair/2",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T07:43:44Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
 }

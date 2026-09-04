@@ -1,5 +1,7 @@
 {
  "data": {
+  "bytes_extracted": 24314238,
+  "excluded_objects": [],
   "id": "djvulibre@3.5.28..3.5.29",
   "object_errors": [],
   "objects": [
@@ -21,12 +23,988 @@
     "language": "cxx",
     "mass_rename": false,
     "private_node": {},
-    "public": {},
+    "public": {
+     "function_signature_changed": 134
+    },
     "soname": [
      "libdjvulibre.so.21",
      "libdjvulibre.so.21"
     ],
-    "symbol_events": [],
+    "symbol_events": [
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::_ArrayRep::~_ArrayRep(int)  ->  method virtual DJVU::_ArrayRep::~_ArrayRep()",
+      "symbol": "_ZN4DJVU9_ArrayRepD0Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::IW44Image::~IW44Image(int)  ->  method virtual DJVU::IW44Image::~IW44Image()",
+      "symbol": "_ZN4DJVU9IW44ImageD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::IW44Image::Codec::~Codec(int)  ->  method virtual DJVU::IW44Image::Codec::~Codec()",
+      "symbol": "_ZN4DJVU9IW44Image5CodecD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::IW44Image::Codec::~Codec(int)  ->  method virtual DJVU::IW44Image::Codec::~Codec()",
+      "symbol": "_ZN4DJVU9IW44Image5CodecD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::_ArrayRep::~_ArrayRep(int)  ->  method virtual DJVU::_ArrayRep::~_ArrayRep()",
+      "symbol": "_ZN4DJVU9_ArrayRepD2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::GPEnabled::~GPEnabled(int)  ->  method virtual DJVU::GPEnabled::~GPEnabled()",
+      "symbol": "_ZN4DJVU9GPEnabledD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method DJVU::GListBase::~GListBase(int)  ->  method DJVU::GListBase::~GListBase()",
+      "symbol": "_ZN4DJVU9GListBaseD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::GIFFChunk::~GIFFChunk(int)  ->  method virtual DJVU::GIFFChunk::~GIFFChunk()",
+      "symbol": "_ZN4DJVU9GIFFChunkD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::GIFFChunk::~GIFFChunk(int)  ->  method virtual DJVU::GIFFChunk::~GIFFChunk()",
+      "symbol": "_ZN4DJVU9GIFFChunkD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::IWPixmap::~IWPixmap(int)  ->  method virtual DJVU::IWPixmap::~IWPixmap()",
+      "symbol": "_ZN4DJVU8IWPixmapD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::IWPixmap::Encode::~Encode(int)  ->  method virtual DJVU::IWPixmap::Encode::~Encode()",
+      "symbol": "_ZN4DJVU8IWPixmap6EncodeD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::IWBitmap::Encode::~Encode(int)  ->  method virtual DJVU::IWBitmap::Encode::~Encode()",
+      "symbol": "_ZN4DJVU8IWBitmap6EncodeD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method DJVU::GSetBase::~GSetBase(int)  ->  method DJVU::GSetBase::~GSetBase()",
+      "symbol": "_ZN4DJVU8GSetBaseD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method DJVU::GMonitor::~GMonitor(int)  ->  method DJVU::GMonitor::~GMonitor()",
+      "symbol": "_ZN4DJVU8GMonitorD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::GMapRect::~GMapRect(int)  ->  method virtual DJVU::GMapRect::~GMapRect()",
+      "symbol": "_ZN4DJVU8GMapRectD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::GMapPoly::~GMapPoly(int)  ->  method virtual DJVU::GMapPoly::~GMapPoly()",
+      "symbol": "_ZN4DJVU8GMapPolyD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::GMapPoly::~GMapPoly(int)  ->  method virtual DJVU::GMapPoly::~GMapPoly()",
+      "symbol": "_ZN4DJVU8GMapPolyD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::GMapOval::~GMapOval(int)  ->  method virtual DJVU::GMapOval::~GMapOval()",
+      "symbol": "_ZN4DJVU8GMapOvalD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method DJVU::GLParser::~GLParser(int)  ->  method DJVU::GLParser::~GLParser()",
+      "symbol": "_ZN4DJVU8GLParserD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::GLObject::~GLObject(int)  ->  method virtual DJVU::GLObject::~GLObject()",
+      "symbol": "_ZN4DJVU8GLObjectD0Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::DjVuPort::~DjVuPort(int)  ->  method virtual DJVU::DjVuPort::~DjVuPort()",
+      "symbol": "_ZN4DJVU8DjVuPortD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::DjVmDir0::~DjVmDir0(int)  ->  method virtual DJVU::DjVmDir0::~DjVmDir0()",
+      "symbol": "_ZN4DJVU8DjVmDir0D2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::GPEnabled::~GPEnabled(int)  ->  method virtual DJVU::GPEnabled::~GPEnabled()",
+      "symbol": "_ZN4DJVU9GPEnabledD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::DjVmDir0::~DjVmDir0(int)  ->  method virtual DJVU::DjVmDir0::~DjVmDir0()",
+      "symbol": "_ZN4DJVU8DjVmDir0D0Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::GPEnabled::~GPEnabled(int)  ->  method virtual DJVU::GPEnabled::~GPEnabled()",
+      "symbol": "_ZN4DJVU9GPEnabledD1Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::DjVmDir0::FileRec::~FileRec(int)  ->  method virtual DJVU::DjVmDir0::FileRec::~FileRec()",
+      "symbol": "_ZN4DJVU8DjVmDir07FileRecD2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::lt_XMLParser::Impl::~Impl(int)  ->  method virtual DJVU::lt_XMLParser::Impl::~Impl()",
+      "symbol": "_ZN4DJVU12lt_XMLParser4ImplD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::GIFFManager::~GIFFManager(int)  ->  method virtual DJVU::GIFFManager::~GIFFManager()",
+      "symbol": "_ZN4DJVU11GIFFManagerD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::BSByteStream::Decode::~Decode(int)  ->  method virtual DJVU::BSByteStream::Decode::~Decode()",
+      "symbol": "_ZN4DJVU12BSByteStream6DecodeD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::DjVuInterface::~DjVuInterface(int)  ->  method virtual DJVU::DjVuInterface::~DjVuInterface()",
+      "symbol": "_ZN4DJVU13DjVuInterfaceD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::GMapArea::~GMapArea(int)  ->  method virtual DJVU::GMapArea::~GMapArea()",
+      "symbol": "_ZN4DJVU8GMapAreaD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::ZPCodec::~ZPCodec(int)  ->  method virtual DJVU::ZPCodec::~ZPCodec()",
+      "symbol": "_ZN4DJVU7ZPCodecD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::MemoryMapByteStream::~MemoryMapByteStream(int)  ->  method virtual DJVU::MemoryMapByteStream::~MemoryMapByteStream()",
+      "symbol": "_ZN4DJVU19MemoryMapByteStreamD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::GMapRect::~GMapRect(int)  ->  method virtual DJVU::GMapRect::~GMapRect()",
+      "symbol": "_ZN4DJVU8GMapRectD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::DjVuPalette::~DjVuPalette(int)  ->  method virtual DJVU::DjVuPalette::~DjVuPalette()",
+      "symbol": "_ZN4DJVU11DjVuPaletteD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method DJVU::GUTF8String::~GUTF8String(int)  ->  method DJVU::GUTF8String::~GUTF8String()",
+      "symbol": "_ZN4DJVU11GUTF8StringD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::lt_XMLTags::~lt_XMLTags(int)  ->  method virtual DJVU::lt_XMLTags::~lt_XMLTags()",
+      "symbol": "_ZN4DJVU10lt_XMLTagsD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::BSByteStream::~BSByteStream(int)  ->  method virtual DJVU::BSByteStream::~BSByteStream()",
+      "symbol": "_ZN4DJVU12BSByteStreamD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::MMRDecoder::~MMRDecoder(int)  ->  method virtual DJVU::MMRDecoder::~MMRDecoder()",
+      "symbol": "_ZN4DJVU10MMRDecoderD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::IWBitmap::~IWBitmap(int)  ->  method virtual DJVU::IWBitmap::~IWBitmap()",
+      "symbol": "_ZN4DJVU8IWBitmapD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::GStringRep::~GStringRep(int)  ->  method virtual DJVU::GStringRep::~GStringRep()",
+      "symbol": "_ZN4DJVU10GStringRepD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::XMLByteStream::~XMLByteStream(int)  ->  method virtual DJVU::XMLByteStream::~XMLByteStream()",
+      "symbol": "_ZN4DJVU13XMLByteStreamD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::_ArrayBase::~_ArrayBase(int)  ->  method virtual DJVU::_ArrayBase::~_ArrayBase()",
+      "symbol": "_ZN4DJVU10_ArrayBaseD2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::ByteStream::Static::~Static(int)  ->  method virtual DJVU::ByteStream::Static::~Static()",
+      "symbol": "_ZN4DJVU10ByteStream6StaticD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::DjVuInterface::~DjVuInterface(int)  ->  method virtual DJVU::DjVuInterface::~DjVuInterface()",
+      "symbol": "_ZN4DJVU13DjVuInterfaceD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::DjVuPort::~DjVuPort(int)  ->  method virtual DJVU::DjVuPort::~DjVuPort()",
+      "symbol": "_ZN4DJVU8DjVuPortD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::ArrayRep::~ArrayRep(int)  ->  method virtual DJVU::ArrayRep::~ArrayRep()",
+      "symbol": "_ZN4DJVU8ArrayRepD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::GStringRep::Unicode::~Unicode(int)  ->  method virtual DJVU::GStringRep::Unicode::~Unicode()",
+      "symbol": "_ZN4DJVU10GStringRep7UnicodeD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::IWPixmap::Encode::~Encode(int)  ->  method virtual DJVU::IWPixmap::Encode::~Encode()",
+      "symbol": "_ZN4DJVU8IWPixmap6EncodeD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::TArray<char>::~TArray(int)  ->  method virtual DJVU::TArray<char>::~TArray()",
+      "symbol": "_ZN4DJVU6TArrayIcED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method DJVU::GThread::~GThread(int)  ->  method DJVU::GThread::~GThread()",
+      "symbol": "_ZN4DJVU7GThreadD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::GMapArea::~GMapArea(int)  ->  method virtual DJVU::GMapArea::~GMapArea()",
+      "symbol": "_ZN4DJVU8GMapAreaD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::ByteStream::Wrapper::~Wrapper(int)  ->  method virtual DJVU::ByteStream::Wrapper::~Wrapper()",
+      "symbol": "_ZN4DJVU10ByteStream7WrapperD1Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::_ArrayBase::~_ArrayBase(int)  ->  method virtual DJVU::_ArrayBase::~_ArrayBase()",
+      "symbol": "_ZN4DJVU10_ArrayBaseD0Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::DjVuMessageLite::~DjVuMessageLite(int)  ->  method virtual DJVU::DjVuMessageLite::~DjVuMessageLite()",
+      "symbol": "_ZN4DJVU15DjVuMessageLiteD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::BSByteStream::~BSByteStream(int)  ->  method virtual DJVU::BSByteStream::~BSByteStream()",
+      "symbol": "_ZN4DJVU12BSByteStreamD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method DJVU::GBaseString::~GBaseString(int)  ->  method DJVU::GBaseString::~GBaseString()",
+      "symbol": "_ZN4DJVU11GBaseStringD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::DjVuMessage::~DjVuMessage(int)  ->  method virtual DJVU::DjVuMessage::~DjVuMessage()",
+      "symbol": "_ZN4DJVU11DjVuMessageD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual miniobj_t::~miniobj_t(int)  ->  method virtual miniobj_t::~miniobj_t()",
+      "symbol": "_ZN9miniobj_tD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::lt_XMLParser::~lt_XMLParser(int)  ->  method virtual DJVU::lt_XMLParser::~lt_XMLParser()",
+      "symbol": "_ZN4DJVU12lt_XMLParserD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::GStringRep::Native::~Native(int)  ->  method virtual DJVU::GStringRep::Native::~Native()",
+      "symbol": "_ZN4DJVU10GStringRep6NativeD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::DjVuFile::~DjVuFile(int)  ->  method virtual DJVU::DjVuFile::~DjVuFile()",
+      "symbol": "_ZN4DJVU8DjVuFileD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::ByteStream::Static::~Static(int)  ->  method virtual DJVU::ByteStream::Static::~Static()",
+      "symbol": "_ZN4DJVU10ByteStream6StaticD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::MMRDecoder::~MMRDecoder(int)  ->  method virtual DJVU::MMRDecoder::~MMRDecoder()",
+      "symbol": "_ZN4DJVU10MMRDecoderD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::DjVuPalette::~DjVuPalette(int)  ->  method virtual DJVU::DjVuPalette::~DjVuPalette()",
+      "symbol": "_ZN4DJVU11DjVuPaletteD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::ByteStream::~ByteStream(int)  ->  method virtual DJVU::ByteStream::~ByteStream()",
+      "symbol": "_ZN4DJVU10ByteStreamD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::ZPCodec::~ZPCodec(int)  ->  method virtual DJVU::ZPCodec::~ZPCodec()",
+      "symbol": "_ZN4DJVU7ZPCodecD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::GStringRep::Native::~Native(int)  ->  method virtual DJVU::GStringRep::Native::~Native()",
+      "symbol": "_ZN4DJVU10GStringRep6NativeD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method minivar_t::~minivar_t(int)  ->  method minivar_t::~minivar_t()",
+      "symbol": "_ZN9minivar_tD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::DjVuFileCache::~DjVuFileCache(int)  ->  method virtual DJVU::DjVuFileCache::~DjVuFileCache()",
+      "symbol": "_ZN4DJVU13DjVuFileCacheD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::ProgressByteStream::~ProgressByteStream(int)  ->  method virtual DJVU::ProgressByteStream::~ProgressByteStream()",
+      "symbol": "_ZN4DJVU18ProgressByteStreamD0Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::MemoryMapByteStream::~MemoryMapByteStream(int)  ->  method virtual DJVU::MemoryMapByteStream::~MemoryMapByteStream()",
+      "symbol": "_ZN4DJVU19MemoryMapByteStreamD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::lt_XMLTags::~lt_XMLTags(int)  ->  method virtual DJVU::lt_XMLTags::~lt_XMLTags()",
+      "symbol": "_ZN4DJVU10lt_XMLTagsD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::GStringRep::~GStringRep(int)  ->  method virtual DJVU::GStringRep::~GStringRep()",
+      "symbol": "_ZN4DJVU10GStringRepD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::ByteStream::Stdio::~Stdio(int)  ->  method virtual DJVU::ByteStream::Stdio::~Stdio()",
+      "symbol": "_ZN4DJVU10ByteStream5StdioD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::GLObject::~GLObject(int)  ->  method virtual DJVU::GLObject::~GLObject()",
+      "symbol": "_ZN4DJVU8GLObjectD2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::GException::~GException(int)  ->  method virtual DJVU::GException::~GException()",
+      "symbol": "_ZN4DJVU10GExceptionD1Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method DJVU::GNativeString::~GNativeString(int)  ->  method DJVU::GNativeString::~GNativeString()",
+      "symbol": "_ZN4DJVU13GNativeStringD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::PoolByteStream::~PoolByteStream(int)  ->  method virtual DJVU::PoolByteStream::~PoolByteStream()",
+      "symbol": "_ZN4DJVU14PoolByteStreamD2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::DjVuMessage::~DjVuMessage(int)  ->  method virtual DJVU::DjVuMessage::~DjVuMessage()",
+      "symbol": "_ZN4DJVU11DjVuMessageD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::IW44Image::~IW44Image(int)  ->  method virtual DJVU::IW44Image::~IW44Image()",
+      "symbol": "_ZN4DJVU9IW44ImageD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::DjVuDocument::~DjVuDocument(int)  ->  method virtual DJVU::DjVuDocument::~DjVuDocument()",
+      "symbol": "_ZN4DJVU12DjVuDocumentD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::ZPCodec::Decode::~Decode(int)  ->  method virtual DJVU::ZPCodec::Decode::~Decode()",
+      "symbol": "_ZN4DJVU7ZPCodec6DecodeD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method DJVU::GStringRep::ChangeLocale::~ChangeLocale(int)  ->  method DJVU::GStringRep::ChangeLocale::~ChangeLocale()",
+      "symbol": "_ZN4DJVU10GStringRep12ChangeLocaleD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::ByteStream::Memory::~Memory(int)  ->  method virtual DJVU::ByteStream::Memory::~Memory()",
+      "symbol": "_ZN4DJVU10ByteStream6MemoryD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::ByteStream::~ByteStream(int)  ->  method virtual DJVU::ByteStream::~ByteStream()",
+      "symbol": "_ZN4DJVU10ByteStreamD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::BSByteStream::Encode::~Encode(int)  ->  method virtual DJVU::BSByteStream::Encode::~Encode()",
+      "symbol": "_ZN4DJVU12BSByteStream6EncodeD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method DJVU::GArrayBase::~GArrayBase(int)  ->  method DJVU::GArrayBase::~GArrayBase()",
+      "symbol": "_ZN4DJVU10GArrayBaseD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::IWBitmap::Encode::~Encode(int)  ->  method virtual DJVU::IWBitmap::Encode::~Encode()",
+      "symbol": "_ZN4DJVU8IWBitmap6EncodeD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::GStringRep::UTF8::~UTF8(int)  ->  method virtual DJVU::GStringRep::UTF8::~UTF8()",
+      "symbol": "_ZN4DJVU10GStringRep4UTF8D2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::DjVuNavDir::~DjVuNavDir(int)  ->  method virtual DJVU::DjVuNavDir::~DjVuNavDir()",
+      "symbol": "_ZN4DJVU10DjVuNavDirD2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::lt_XMLParser::Impl::~Impl(int)  ->  method virtual DJVU::lt_XMLParser::Impl::~Impl()",
+      "symbol": "_ZN4DJVU12lt_XMLParser4ImplD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::GURL::~GURL(int)  ->  method virtual DJVU::GURL::~GURL()",
+      "symbol": "_ZN4DJVU4GURLD0Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::ByteStream::Wrapper::~Wrapper(int)  ->  method virtual DJVU::ByteStream::Wrapper::~Wrapper()",
+      "symbol": "_ZN4DJVU10ByteStream7WrapperD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::GException::~GException(int)  ->  method virtual DJVU::GException::~GException()",
+      "symbol": "_ZN4DJVU10GExceptionD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::DjVuFile::~DjVuFile(int)  ->  method virtual DJVU::DjVuFile::~DjVuFile()",
+      "symbol": "_ZN4DJVU8DjVuFileD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::BSByteStream::Encode::~Encode(int)  ->  method virtual DJVU::BSByteStream::Encode::~Encode()",
+      "symbol": "_ZN4DJVU12BSByteStream6EncodeD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::GPixmapScaler::~GPixmapScaler(int)  ->  method virtual DJVU::GPixmapScaler::~GPixmapScaler()",
+      "symbol": "_ZN4DJVU13GPixmapScalerD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::GStringRep::UTF8::~UTF8(int)  ->  method virtual DJVU::GStringRep::UTF8::~UTF8()",
+      "symbol": "_ZN4DJVU10GStringRep4UTF8D0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::ByteStream::Stdio::~Stdio(int)  ->  method virtual DJVU::ByteStream::Stdio::~Stdio()",
+      "symbol": "_ZN4DJVU10ByteStream5StdioD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::BSByteStream::Decode::~Decode(int)  ->  method virtual DJVU::BSByteStream::Decode::~Decode()",
+      "symbol": "_ZN4DJVU12BSByteStream6DecodeD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::DjVuDocEditor::~DjVuDocEditor(int)  ->  method virtual DJVU::DjVuDocEditor::~DjVuDocEditor()",
+      "symbol": "_ZN4DJVU13DjVuDocEditorD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::DjVuDocEditor::~DjVuDocEditor(int)  ->  method virtual DJVU::DjVuDocEditor::~DjVuDocEditor()",
+      "symbol": "_ZN4DJVU13DjVuDocEditorD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::DjVuFileCache::~DjVuFileCache(int)  ->  method virtual DJVU::DjVuFileCache::~DjVuFileCache()",
+      "symbol": "_ZN4DJVU13DjVuFileCacheD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::DjVuFileCache::Item::~Item(int)  ->  method virtual DJVU::DjVuFileCache::Item::~Item()",
+      "symbol": "_ZN4DJVU13DjVuFileCache4ItemD0Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::GPixmap::~GPixmap(int)  ->  method virtual DJVU::GPixmap::~GPixmap()",
+      "symbol": "_ZN4DJVU7GPixmapD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::ByteStream::Memory::~Memory(int)  ->  method virtual DJVU::ByteStream::Memory::~Memory()",
+      "symbol": "_ZN4DJVU10ByteStream6MemoryD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::DjVuFileCache::Item::~Item(int)  ->  method virtual DJVU::DjVuFileCache::Item::~Item()",
+      "symbol": "_ZN4DJVU13DjVuFileCache4ItemD2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::DjVuNavDir::~DjVuNavDir(int)  ->  method virtual DJVU::DjVuNavDir::~DjVuNavDir()",
+      "symbol": "_ZN4DJVU10DjVuNavDirD0Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::DjVuFileCache::~DjVuFileCache(int)  ->  method virtual DJVU::DjVuFileCache::~DjVuFileCache()",
+      "symbol": "_ZN4DJVU13DjVuFileCacheD1Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::GBitmapScaler::~GBitmapScaler(int)  ->  method virtual DJVU::GBitmapScaler::~GBitmapScaler()",
+      "symbol": "_ZN4DJVU13GBitmapScalerD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::lt_XMLParser::~lt_XMLParser(int)  ->  method virtual DJVU::lt_XMLParser::~lt_XMLParser()",
+      "symbol": "_ZN4DJVU12lt_XMLParserD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::GPixmapScaler::~GPixmapScaler(int)  ->  method virtual DJVU::GPixmapScaler::~GPixmapScaler()",
+      "symbol": "_ZN4DJVU13GPixmapScalerD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::IFFByteStream::~IFFByteStream(int)  ->  method virtual DJVU::IFFByteStream::~IFFByteStream()",
+      "symbol": "_ZN4DJVU13IFFByteStreamD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::IFFByteStream::~IFFByteStream(int)  ->  method virtual DJVU::IFFByteStream::~IFFByteStream()",
+      "symbol": "_ZN4DJVU13IFFByteStreamD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::XMLByteStream::~XMLByteStream(int)  ->  method virtual DJVU::XMLByteStream::~XMLByteStream()",
+      "symbol": "_ZN4DJVU13XMLByteStreamD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::DjVuPortcaster::~DjVuPortcaster(int)  ->  method virtual DJVU::DjVuPortcaster::~DjVuPortcaster()",
+      "symbol": "_ZN4DJVU14DjVuPortcasterD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::GScaler::~GScaler(int)  ->  method virtual DJVU::GScaler::~GScaler()",
+      "symbol": "_ZN4DJVU7GScalerD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::ZPCodec::Encode::~Encode(int)  ->  method virtual DJVU::ZPCodec::Encode::~Encode()",
+      "symbol": "_ZN4DJVU7ZPCodec6EncodeD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::ByteStream::Wrapper::~Wrapper(int)  ->  method virtual DJVU::ByteStream::Wrapper::~Wrapper()",
+      "symbol": "_ZN4DJVU10ByteStream7WrapperD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::PoolByteStream::~PoolByteStream(int)  ->  method virtual DJVU::PoolByteStream::~PoolByteStream()",
+      "symbol": "_ZN4DJVU14PoolByteStreamD0Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::GMapOval::~GMapOval(int)  ->  method virtual DJVU::GMapOval::~GMapOval()",
+      "symbol": "_ZN4DJVU8GMapOvalD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::DataPool::Trigger::~Trigger(int)  ->  method virtual DJVU::DataPool::Trigger::~Trigger()",
+      "symbol": "_ZN4DJVU8DataPool7TriggerD2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::DjVuPortcaster::~DjVuPortcaster(int)  ->  method virtual DJVU::DjVuPortcaster::~DjVuPortcaster()",
+      "symbol": "_ZN4DJVU14DjVuPortcasterD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::DjVuMessageLite::~DjVuMessageLite(int)  ->  method virtual DJVU::DjVuMessageLite::~DjVuMessageLite()",
+      "symbol": "_ZN4DJVU15DjVuMessageLiteD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::TArray<char>::~TArray(int)  ->  method virtual DJVU::TArray<char>::~TArray()",
+      "symbol": "_ZN4DJVU6TArrayIcED0Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::GStringRep::Unicode::~Unicode(int)  ->  method virtual DJVU::GStringRep::Unicode::~Unicode()",
+      "symbol": "_ZN4DJVU10GStringRep7UnicodeD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::UnicodeByteStream::~UnicodeByteStream(int)  ->  method virtual DJVU::UnicodeByteStream::~UnicodeByteStream()",
+      "symbol": "_ZN4DJVU17UnicodeByteStreamD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::ArrayRep::~ArrayRep(int)  ->  method virtual DJVU::ArrayRep::~ArrayRep()",
+      "symbol": "_ZN4DJVU8ArrayRepD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::GIFFManager::~GIFFManager(int)  ->  method virtual DJVU::GIFFManager::~GIFFManager()",
+      "symbol": "_ZN4DJVU11GIFFManagerD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::ProgressByteStream::~ProgressByteStream(int)  ->  method virtual DJVU::ProgressByteStream::~ProgressByteStream()",
+      "symbol": "_ZN4DJVU18ProgressByteStreamD2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::GURL::~GURL(int)  ->  method virtual DJVU::GURL::~GURL()",
+      "symbol": "_ZN4DJVU4GURLD2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::DjVuANT::~DjVuANT(int)  ->  method virtual DJVU::DjVuANT::~DjVuANT()",
+      "symbol": "_ZN4DJVU7DjVuANTD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::DArray<DJVU::GUTF8String>::~DArray(int)  ->  method virtual DJVU::DArray<DJVU::GUTF8String>::~DArray()",
+      "symbol": "_ZN4DJVU6DArrayINS_11GUTF8StringEED0Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method DJVU::IW44Image::Map::~Map(int)  ->  method DJVU::IW44Image::Map::~Map()",
+      "symbol": "_ZN4DJVU9IW44Image3MapD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::DjVuANT::~DjVuANT(int)  ->  method virtual DJVU::DjVuANT::~DjVuANT()",
+      "symbol": "_ZN4DJVU7DjVuANTD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::GBitmapScaler::~GBitmapScaler(int)  ->  method virtual DJVU::GBitmapScaler::~GBitmapScaler()",
+      "symbol": "_ZN4DJVU13GBitmapScalerD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::DArray<DJVU::GUTF8String>::~DArray(int)  ->  method virtual DJVU::DArray<DJVU::GUTF8String>::~DArray()",
+      "symbol": "_ZN4DJVU6DArrayINS_11GUTF8StringEED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::GBitmap::~GBitmap(int)  ->  method virtual DJVU::GBitmap::~GBitmap()",
+      "symbol": "_ZN4DJVU7GBitmapD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::GException::~GException(int)  ->  method virtual DJVU::GException::~GException()",
+      "symbol": "_ZN4DJVU10GExceptionD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::GBitmap::~GBitmap(int)  ->  method virtual DJVU::GBitmap::~GBitmap()",
+      "symbol": "_ZN4DJVU7GBitmapD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::DataPool::~DataPool(int)  ->  method virtual DJVU::DataPool::~DataPool()",
+      "symbol": "_ZN4DJVU8DataPoolD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::GPixmap::~GPixmap(int)  ->  method virtual DJVU::GPixmap::~GPixmap()",
+      "symbol": "_ZN4DJVU7GPixmapD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::GScaler::~GScaler(int)  ->  method virtual DJVU::GScaler::~GScaler()",
+      "symbol": "_ZN4DJVU7GScalerD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::JB2Dict::JB2Codec::~JB2Codec(int)  ->  method virtual DJVU::JB2Dict::JB2Codec::~JB2Codec()",
+      "symbol": "_ZN4DJVU7JB2Dict8JB2CodecD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::IWBitmap::~IWBitmap(int)  ->  method virtual DJVU::IWBitmap::~IWBitmap()",
+      "symbol": "_ZN4DJVU8IWBitmapD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::JB2Dict::JB2Codec::~JB2Codec(int)  ->  method virtual DJVU::JB2Dict::JB2Codec::~JB2Codec()",
+      "symbol": "_ZN4DJVU7JB2Dict8JB2CodecD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::ZPCodec::Decode::~Decode(int)  ->  method virtual DJVU::ZPCodec::Decode::~Decode()",
+      "symbol": "_ZN4DJVU7ZPCodec6DecodeD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual miniobj_t::~miniobj_t(int)  ->  method virtual miniobj_t::~miniobj_t()",
+      "symbol": "_ZN9miniobj_tD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::ZPCodec::Encode::~Encode(int)  ->  method virtual DJVU::ZPCodec::Encode::~Encode()",
+      "symbol": "_ZN4DJVU7ZPCodec6EncodeD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::DataPool::OpenFiles_File::~OpenFiles_File(int)  ->  method virtual DJVU::DataPool::OpenFiles_File::~OpenFiles_File()",
+      "symbol": "_ZN4DJVU8DataPool14OpenFiles_FileD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::IWPixmap::~IWPixmap(int)  ->  method virtual DJVU::IWPixmap::~IWPixmap()",
+      "symbol": "_ZN4DJVU8IWPixmapD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::UnicodeByteStream::~UnicodeByteStream(int)  ->  method virtual DJVU::UnicodeByteStream::~UnicodeByteStream()",
+      "symbol": "_ZN4DJVU17UnicodeByteStreamD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::DataPool::OpenFiles_File::~OpenFiles_File(int)  ->  method virtual DJVU::DataPool::OpenFiles_File::~OpenFiles_File()",
+      "symbol": "_ZN4DJVU8DataPool14OpenFiles_FileD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::DataPool::Reader::~Reader(int)  ->  method virtual DJVU::DataPool::Reader::~Reader()",
+      "symbol": "_ZN4DJVU8DataPool6ReaderD0Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::DataPool::Reader::~Reader(int)  ->  method virtual DJVU::DataPool::Reader::~Reader()",
+      "symbol": "_ZN4DJVU8DataPool6ReaderD2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::DataPool::Trigger::~Trigger(int)  ->  method virtual DJVU::DataPool::Trigger::~Trigger()",
+      "symbol": "_ZN4DJVU8DataPool7TriggerD0Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method DJVU::_BSort::~_BSort(int)  ->  method DJVU::_BSort::~_BSort()",
+      "symbol": "_ZN4DJVU6_BSortD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::DataPool::~DataPool(int)  ->  method virtual DJVU::DataPool::~DataPool()",
+      "symbol": "_ZN4DJVU8DataPoolD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method DJVU::GPBufferBase::~GPBufferBase(int)  ->  method DJVU::GPBufferBase::~GPBufferBase()",
+      "symbol": "_ZN4DJVU12GPBufferBaseD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::DjVuDocument::~DjVuDocument(int)  ->  method virtual DJVU::DjVuDocument::~DjVuDocument()",
+      "symbol": "_ZN4DJVU12DjVuDocumentD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual DJVU::DjVmDir0::FileRec::~FileRec(int)  ->  method virtual DJVU::DjVmDir0::FileRec::~FileRec()",
+      "symbol": "_ZN4DJVU8DjVmDir07FileRecD0Ev",
+      "weak": true
+     }
+    ],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {
      "field_added_to_struct": 2,
@@ -35,27 +1013,39 @@
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
+      "exposure": "by_pointer",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "struct _IO_FILE"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
+      "exposure": "by_pointer",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "struct _IO_FILE"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
+      "exposure": "by_pointer",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct _IO_FILE"
      }
-    ]
+    ],
+    "vague_linkage": {
+     "function_signature_changed": 28
+    }
    }
   ],
-  "seconds": 7.746979511,
+  "seconds": 4.893892905,
   "source": "djvulibre",
   "unpaired": [
    [],
@@ -66,7 +1056,11 @@
    "3.5.29"
   ]
  },
- "generated_at": "2026-09-02T15:04:04Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T07:25:32Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

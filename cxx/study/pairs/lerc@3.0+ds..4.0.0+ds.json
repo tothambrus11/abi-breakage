@@ -1,5 +1,7 @@
 {
  "data": {
+  "bytes_extracted": 5473513,
+  "excluded_objects": [],
   "id": "lerc@3.0+ds..4.0.0+ds",
   "object_errors": [],
   "objects": [
@@ -23,9 +25,9 @@
     "private_node": {},
     "public": {
      "enum_case_added": 1,
-     "function_signature_changed": 12,
-     "symbol_added": 67,
-     "symbol_removed": 178
+     "function_signature_changed": 10,
+     "symbol_added": 69,
+     "symbol_removed": 2
     },
     "soname": [
      "libLerc.so.3",
@@ -34,1513 +36,1919 @@
     "symbol_events": [
      {
       "kind": "function_signature_changed",
-      "pretty": "method bool LercNS::BitStuffer::readUInt(LercNS::Byte**, unsigned int&, int)  ->  method bool LercNS::BitStuffer::readUInt(const LercNS::Byte**, unsigned int&, int)",
-      "symbol": "_ZN6LercNS10BitStuffer8readUIntEPPhRji"
+      "pretty": "method bool LercNS::BitStuffer2::BitUnStuff_Before_Lerc2v3(size_t&, std::vector<unsigned int, std::allocator<unsigned int> >&, unsigned int, int)  ->  method bool LercNS::BitStuffer2::BitUnStuff_Before_Lerc2v3(const LercNS::Byte**, size_t&, std::vector<unsigned int, std::allocator<unsigned int> >&, unsigned int, int) const",
+      "symbol": "_ZN6LercNS11BitStuffer225BitUnStuff_Before_Lerc2v3EPPKhRmRSt6vectorIjSaIjEEji",
+      "weak": false
      },
      {
       "kind": "function_signature_changed",
-      "pretty": "method bool LercNS::BitStuffer2::BitUnStuff_Before_Lerc2v3(const LercNS::Byte**, size_t&, std::vector<unsignedint,std::allocator<unsignedint>>&, unsigned int, int)  ->  method bool LercNS::BitStuffer2::BitUnStuff_Before_Lerc2v3(const LercNS::Byte**, size_t&, std::vector<unsignedint,std::allocator<unsignedint>>&, unsigned int, int) const",
-      "symbol": "_ZN6LercNS11BitStuffer225BitUnStuff_Before_Lerc2v3EPPKhRmRSt6vectorIjSaIjEEji"
+      "pretty": "method LercNS::ErrCode LercNS::Lerc::Decode(unsigned int, int, LercNS::Byte*, int, int, int, int, LercNS::Lerc::DataType, void*)  ->  method LercNS::ErrCode LercNS::Lerc::Decode(unsigned int, int, LercNS::Byte*, int, int, int, int, LercNS::Lerc::DataType, void*, unsigned char*, double*)",
+      "symbol": "_ZN6LercNS4Lerc6DecodeEPKhjiPhiiiiNS0_8DataTypeEPv",
+      "weak": false
      },
      {
       "kind": "function_signature_changed",
-      "pretty": "method LercNS::ErrCode LercNS::Lerc::GetLercInfo(const LercNS::Byte*, unsigned int, LercNS::Lerc::LercInfo&)  ->  method LercNS::ErrCode LercNS::Lerc::GetLercInfo(const LercNS::Byte*, unsigned int, LercNS::Lerc::LercInfo&, double*, double*, size_t)",
-      "symbol": "_ZN6LercNS4Lerc11GetLercInfoEPKhjRNS0_8LercInfoE"
+      "pretty": "method LercNS::ErrCode LercNS::Lerc::ComputeCompressedSize(int, LercNS::Lerc::DataType, int, int, int, int, int, const LercNS::Byte*, double, unsigned int&)  ->  method LercNS::ErrCode LercNS::Lerc::ComputeCompressedSize(int, LercNS::Lerc::DataType, int, int, int, int, int, const LercNS::Byte*, double, unsigned int&, const unsigned char*, const double*)",
+      "symbol": "_ZN6LercNS4Lerc21ComputeCompressedSizeEPKviNS0_8DataTypeEiiiiiPKhdRj",
+      "weak": false
      },
      {
       "kind": "function_signature_changed",
-      "pretty": "method LercNS::ErrCode LercNS::Lerc::ComputeCompressedSize(void*, int, LercNS::Lerc::DataType, int, int, int, int, int, const LercNS::Byte*, double, unsigned int&)  ->  method LercNS::ErrCode LercNS::Lerc::ComputeCompressedSize(void*, int, LercNS::Lerc::DataType, int, int, int, int, int, const LercNS::Byte*, double, unsigned int&, const unsigned char*, const double*)",
-      "symbol": "_ZN6LercNS4Lerc21ComputeCompressedSizeEPKviNS0_8DataTypeEiiiiiPKhdRj"
+      "pretty": "method LercNS::ErrCode LercNS::Lerc::Encode(int, LercNS::Lerc::DataType, int, int, int, int, int, const LercNS::Byte*, double, LercNS::Byte*, unsigned int, unsigned int&)  ->  method LercNS::ErrCode LercNS::Lerc::Encode(int, LercNS::Lerc::DataType, int, int, int, int, int, const LercNS::Byte*, double, LercNS::Byte*, unsigned int, unsigned int&, const unsigned char*, const double*)",
+      "symbol": "_ZN6LercNS4Lerc6EncodeEPKviNS0_8DataTypeEiiiiiPKhdPhjRj",
+      "weak": false
      },
      {
       "kind": "function_signature_changed",
-      "pretty": "method LercNS::ErrCode LercNS::Lerc::Encode(void*, int, LercNS::Lerc::DataType, int, int, int, int, int, const LercNS::Byte*, double, LercNS::Byte*, unsigned int, unsigned int&)  ->  method LercNS::ErrCode LercNS::Lerc::Encode(void*, int, LercNS::Lerc::DataType, int, int, int, int, int, const LercNS::Byte*, double, LercNS::Byte*, unsigned int, unsigned int&, const unsigned char*, const double*)",
-      "symbol": "_ZN6LercNS4Lerc6EncodeEPKviNS0_8DataTypeEiiiiiPKhdPhjRj"
-     },
-     {
-      "kind": "function_signature_changed",
-      "pretty": "method LercNS::ErrCode LercNS::Lerc::Decode(const LercNS::Byte*, unsigned int, int, LercNS::Byte*, int, int, int, int, LercNS::Lerc::DataType, void*)  ->  method LercNS::ErrCode LercNS::Lerc::Decode(const LercNS::Byte*, unsigned int, int, LercNS::Byte*, int, int, int, int, LercNS::Lerc::DataType, void*, unsigned char*, double*)",
-      "symbol": "_ZN6LercNS4Lerc6DecodeEPKhjiPhiiiiNS0_8DataTypeEPv"
-     },
-     {
-      "kind": "function_signature_changed",
-      "pretty": "method bool LercNS::CntZImage::readFlt(LercNS::Byte**, float&, int)  ->  method bool LercNS::CntZImage::readFlt(const LercNS::Byte**, float&, int)",
-      "symbol": "_ZN6LercNS9CntZImage7readFltEPPhRfi"
+      "pretty": "method LercNS::ErrCode LercNS::Lerc::GetLercInfo(unsigned int, LercNS::Lerc::LercInfo&)  ->  method LercNS::ErrCode LercNS::Lerc::GetLercInfo(unsigned int, LercNS::Lerc::LercInfo&, double*, double*, size_t)",
+      "symbol": "_ZN6LercNS4Lerc11GetLercInfoEPKhjRNS0_8LercInfoE",
+      "weak": false
      },
      {
       "kind": "function_signature_changed",
       "pretty": "method bool LercNS::CntZImage::readTiles(bool, double, int, int, float, LercNS::Byte*)  ->  method bool LercNS::CntZImage::readTiles(bool, double, int, int, float, const LercNS::Byte*)",
-      "symbol": "_ZN6LercNS9CntZImage9readTilesEbdiifPh"
+      "symbol": "_ZN6LercNS9CntZImage9readTilesEbdiifPh",
+      "weak": false
      },
      {
       "kind": "function_signature_changed",
       "pretty": "method bool LercNS::CntZImage::readCntTile(LercNS::Byte**, int, int, int, int)  ->  method bool LercNS::CntZImage::readCntTile(const LercNS::Byte**, int, int, int, int)",
-      "symbol": "_ZN6LercNS9CntZImage11readCntTileEPPhiiii"
+      "symbol": "_ZN6LercNS9CntZImage11readCntTileEPPhiiii",
+      "weak": false
      },
      {
       "kind": "function_signature_changed",
-      "pretty": "method bool LercNS::CntZImage::readZTile(LercNS::Byte**, int, int, int, int, double, float)  ->  method bool LercNS::CntZImage::readZTile(const LercNS::Byte**, int, int, int, int, double, float)",
-      "symbol": "_ZN6LercNS9CntZImage9readZTileEPPhiiiidf"
-     },
-     {
-      "kind": "function_signature_changed",
-      "pretty": "method bool LercNS::BitStuffer::read(LercNS::Byte**, std::vector<unsignedint,std::allocator<unsignedint>>&) const  ->  method bool LercNS::BitStuffer::read(const LercNS::Byte**, std::vector<unsignedint,std::allocator<unsignedint>>&) const",
-      "symbol": "_ZNK6LercNS10BitStuffer4readEPPhRSt6vectorIjSaIjEE"
+      "pretty": "method bool LercNS::BitStuffer::read(LercNS::Byte**, std::vector<unsigned int, std::allocator<unsigned int> >&) const  ->  method bool LercNS::BitStuffer::read(const LercNS::Byte**, std::vector<unsigned int, std::allocator<unsigned int> >&) const",
+      "symbol": "_ZNK6LercNS10BitStuffer4readEPPhRSt6vectorIjSaIjEE",
+      "weak": false
      },
      {
       "kind": "function_signature_changed",
       "pretty": "method bool LercNS::CntZImage::read(LercNS::Byte**, double, bool, bool)  ->  method bool LercNS::CntZImage::read(const LercNS::Byte**, double, bool, bool)",
-      "symbol": "_ZN6LercNS9CntZImage4readEPPhdbb"
+      "symbol": "_ZN6LercNS9CntZImage4readEPPhdbb",
+      "weak": false
      },
      {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::WriteTiles<unsignedint>(const unsigned int*, LercNS::Byte**, int&) const",
-      "symbol": "_ZNK6LercNS5Lerc210WriteTilesIjEEbPKT_PPhRi"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::WriteTiles<double>(const double*, LercNS::Byte**, int&) const",
-      "symbol": "_ZNK6LercNS5Lerc210WriteTilesIdEEbPKT_PPhRi"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method virtual LercNS::BitStuffer::~BitStuffer()",
-      "symbol": "_ZN6LercNS10BitStufferD0Ev"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::vector<int,std::allocator<int>>::_M_realloc_insert<intconst&>(std::vector<int,std::allocator<int>>::iterator)",
-      "symbol": "_ZNSt6vectorIiSaIiEE17_M_realloc_insertIJRKiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc::Convert<shortint>(const LercNS::CntZImage&, short int*, LercNS::Byte*, bool)",
-      "symbol": "_ZN6LercNS4Lerc7ConvertIsEEbRKNS_9CntZImageEPT_Phb"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method virtual LercNS::RLE::~RLE()",
-      "symbol": "_ZN6LercNS3RLED0Ev"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method virtual LercNS::RLE::~RLE()",
-      "symbol": "_ZN6LercNS3RLED2Ev"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method LercNS::ErrCode LercNS::Lerc::CheckForNaN<float>(const float*, int, int, int, const LercNS::Byte*)",
-      "symbol": "_ZN6LercNS4Lerc11CheckForNaNIfEENS_7ErrCodeEPKT_iiiPKh"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::WriteTiles<float>(const float*, LercNS::Byte**, int&) const",
-      "symbol": "_ZNK6LercNS5Lerc210WriteTilesIfEEbPKT_PPhRi"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method int LercNS::Lerc2::NumBytesTile<int>(int, int, int, LercNS::Lerc2::DataType, bool, LercNS::Lerc2::BlockEncodeMode&, const std::vector<std::pair<unsignedint,unsignedint>,std::allocator<std::pair<unsignedint,unsignedint>>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc212NumBytesTileIiEEiiT_S2_NS0_8DataTypeEbRNS0_15BlockEncodeModeERKSt6vectorISt4pairIjjESaIS8_EE"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::FillConstImage<shortint>(short int*) const",
-      "symbol": "_ZNK6LercNS5Lerc214FillConstImageIsEEbPT_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method LercNS::ErrCode LercNS::Lerc::DecodeTempl<float>(float*, const LercNS::Byte*, unsigned int, int, int, int, int, int, LercNS::Byte*)",
-      "symbol": "_ZN6LercNS4Lerc11DecodeTemplIfEENS_7ErrCodeEPT_PKhjiiiiiPh"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::ReadTiles<unsignedint>(const LercNS::Byte**, size_t&, unsigned int*) const",
-      "symbol": "_ZNK6LercNS5Lerc29ReadTilesIjEEbPPKhRmPT_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method LercNS::ErrCode LercNS::Lerc::DecodeTempl<unsignedchar>(unsigned char*, const LercNS::Byte*, unsigned int, int, int, int, int, int, LercNS::Byte*)",
-      "symbol": "_ZN6LercNS4Lerc11DecodeTemplIhEENS_7ErrCodeEPT_PKhjiiiiiPh"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::DecodeHuffman<double>(const LercNS::Byte**, size_t&, double*) const",
-      "symbol": "_ZNK6LercNS5Lerc213DecodeHuffmanIdEEbPPKhRmPT_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method std::vector<double,std::allocator<double>>::iterator std::vector<double,std::allocator<double>>::_M_erase(std::vector<double,std::allocator<double>>::iterator)",
-      "symbol": "_ZNSt6vectorIdSaIdEE8_M_eraseEN9__gnu_cxx17__normal_iteratorIPdS1_EE"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method LercNS::ErrCode LercNS::Lerc::EncodeInternal<float>(const float*, int, int, int, int, int, int, const LercNS::Byte*, double, unsigned int&, LercNS::Byte*, unsigned int, unsigned int&)",
-      "symbol": "_ZN6LercNS4Lerc14EncodeInternalIfEENS_7ErrCodeEPKT_iiiiiiPKhdRjPhjS8_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method LercNS::ErrCode LercNS::Lerc::EncodeInternal<unsignedchar>(const unsigned char*, int, int, int, int, int, int, const LercNS::Byte*, double, unsigned int&, LercNS::Byte*, unsigned int, unsigned int&)",
-      "symbol": "_ZN6LercNS4Lerc14EncodeInternalIhEENS_7ErrCodeEPKT_iiiiiiPKhdRjPhjS8_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method virtual LercNS::TImage<LercNS::CntZ>& LercNS::TImage<LercNS::CntZ>::operator=(const LercNS::TImage<LercNS::CntZ>&)",
-      "symbol": "_ZN6LercNS6TImageINS_4CntZEEaSERKS2_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method LercNS::ErrCode LercNS::Lerc::EncodeInternal<unsignedint>(const unsigned int*, int, int, int, int, int, int, const LercNS::Byte*, double, unsigned int&, LercNS::Byte*, unsigned int, unsigned int&)",
-      "symbol": "_ZN6LercNS4Lerc14EncodeInternalIjEENS_7ErrCodeEPKT_iiiiiiPKhdRjPhjS8_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::ComputeMinMaxRanges<shortint>(const short int*, std::vector<double,std::allocator<double>>&, std::vector<double,std::allocator<double>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc219ComputeMinMaxRangesIsEEbPKT_RSt6vectorIdSaIdEES8_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method int LercNS::Lerc2::ReduceDataType<float>(float, LercNS::Lerc2::DataType, LercNS::Lerc2::DataType&)",
-      "symbol": "_ZN6LercNS5Lerc214ReduceDataTypeIfEEiT_NS0_8DataTypeERS3_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc::Resize<unsignedchar>(std::vector<unsignedchar,std::allocator<unsignedchar>>&, size_t)",
-      "symbol": "_ZN6LercNS4Lerc6ResizeIhEEbRSt6vectorIT_SaIS3_EEm"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::vector<shortunsignedint,std::allocator<shortunsignedint>>::_M_default_append(std::vector<shortunsignedint,std::allocator<shortunsignedint>>::size_type)",
-      "symbol": "_ZNSt6vectorItSaItEE17_M_default_appendEm"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method LercNS::ErrCode LercNS::Lerc::CheckForNaN<double>(const double*, int, int, int, const LercNS::Byte*)",
-      "symbol": "_ZN6LercNS4Lerc11CheckForNaNIdEENS_7ErrCodeEPKT_iiiPKh"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method int LercNS::Lerc2::NumBytesTile<signedchar>(int, signed char, signed char, LercNS::Lerc2::DataType, bool, LercNS::Lerc2::BlockEncodeMode&, const std::vector<std::pair<unsignedint,unsignedint>,std::allocator<std::pair<unsignedint,unsignedint>>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc212NumBytesTileIaEEiiT_S2_NS0_8DataTypeEbRNS0_15BlockEncodeModeERKSt6vectorISt4pairIjjESaIS8_EE"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc::Convert<unsignedchar>(const LercNS::CntZImage&, unsigned char*, LercNS::Byte*, bool)",
-      "symbol": "_ZN6LercNS4Lerc7ConvertIhEEbRKNS_9CntZImageEPT_Phb"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::TryRaiseMaxZError<shortunsignedint>(const unsigned short int*, double&) const",
-      "symbol": "_ZNK6LercNS5Lerc217TryRaiseMaxZErrorItEEbPKT_Rd"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method virtual LercNS::BitStuffer2::~BitStuffer2()",
-      "symbol": "_ZN6LercNS11BitStuffer2D0Ev"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc::Convert<unsignedint>(const LercNS::CntZImage&, unsigned int*, LercNS::Byte*, bool)",
-      "symbol": "_ZN6LercNS4Lerc7ConvertIjEEbRKNS_9CntZImageEPT_Phb"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method std::_Vector_base<std::pair<unsignedint,unsignedint>,std::allocator<std::pair<unsignedint,unsignedint>>>::~_Vector_base()",
-      "symbol": "_ZNSt12_Vector_baseISt4pairIjjESaIS1_EED2Ev"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void LercNS::Lerc2::ComputeHuffmanCodes<double>(const double*, int&, LercNS::Lerc2::ImageEncodeMode&, std::vector<std::pair<shortunsignedint,unsignedint>,std::allocator<std::pair<shortunsignedint,unsignedint>>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc219ComputeHuffmanCodesIdEEvPKT_RiRNS0_15ImageEncodeModeERSt6vectorISt4pairItjESaISA_EE"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::TryRaiseMaxZError<signedchar>(const signed char*, double&) const",
-      "symbol": "_ZNK6LercNS5Lerc217TryRaiseMaxZErrorIaEEbPKT_Rd"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void LercNS::Lerc2::ComputeHuffmanCodes<unsignedint>(const unsigned int*, int&, LercNS::Lerc2::ImageEncodeMode&, std::vector<std::pair<shortunsignedint,unsignedint>,std::allocator<std::pair<shortunsignedint,unsignedint>>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc219ComputeHuffmanCodesIjEEvPKT_RiRNS0_15ImageEncodeModeERSt6vectorISt4pairItjESaISA_EE"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method LercNS::ErrCode LercNS::Lerc::EncodeInternal<shortint>(const short int*, int, int, int, int, int, int, const LercNS::Byte*, double, unsigned int&, LercNS::Byte*, unsigned int, unsigned int&)",
-      "symbol": "_ZN6LercNS4Lerc14EncodeInternalIsEENS_7ErrCodeEPKT_iiiiiiPKhdRjPhjS8_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::ReadTile<float>(const LercNS::Byte**, size_t&, float*, int, int, int, int, int, std::vector<unsignedint,std::allocator<unsignedint>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc28ReadTileIfEEbPPKhRmPT_iiiiiRSt6vectorIjSaIjEE"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::WriteTiles<signedchar>(const signed char*, LercNS::Byte**, int&) const",
-      "symbol": "_ZNK6LercNS5Lerc210WriteTilesIaEEbPKT_PPhRi"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::vector<double,std::allocator<double>>::_M_default_append(std::vector<double,std::allocator<double>>::size_type)",
-      "symbol": "_ZNSt6vectorIdSaIdEE17_M_default_appendEm"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method virtual LercNS::BitStuffer::~BitStuffer()",
-      "symbol": "_ZN6LercNS10BitStufferD2Ev"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::ComputeMinMaxRanges<signedchar>(const signed char*, std::vector<double,std::allocator<double>>&, std::vector<double,std::allocator<double>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc219ComputeMinMaxRangesIaEEbPKT_RSt6vectorIdSaIdEES8_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method LercNS::ErrCode LercNS::Lerc::DecodeTempl<double>(double*, const LercNS::Byte*, unsigned int, int, int, int, int, int, LercNS::Byte*)",
-      "symbol": "_ZN6LercNS4Lerc11DecodeTemplIdEENS_7ErrCodeEPT_PKhjiiiiiPh"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method std::_Vector_base<unsignedchar,std::allocator<unsignedchar>>::~_Vector_base()",
-      "symbol": "_ZNSt12_Vector_baseIhSaIhEED2Ev"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::FillConstImage<int>(int*) const",
-      "symbol": "_ZNK6LercNS5Lerc214FillConstImageIiEEbPT_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::ComputeMinMaxRanges<int>(const int*, std::vector<double,std::allocator<double>>&, std::vector<double,std::allocator<double>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc219ComputeMinMaxRangesIiEEbPKT_RSt6vectorIdSaIdEES8_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::TryRaiseMaxZError<unsignedchar>(const unsigned char*, double&) const",
-      "symbol": "_ZNK6LercNS5Lerc217TryRaiseMaxZErrorIhEEbPKT_Rd"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::FillConstImage<double>(double*) const",
-      "symbol": "_ZNK6LercNS5Lerc214FillConstImageIdEEbPT_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method virtual LercNS::BitMask::~BitMask()",
-      "symbol": "_ZN6LercNS7BitMaskD2Ev"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void LercNS::Lerc2::ComputeHistoForHuffman<signedchar>(const signed char*, std::vector<int,std::allocator<int>>&, std::vector<int,std::allocator<int>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc222ComputeHistoForHuffmanIaEEvPKT_RSt6vectorIiSaIiEES8_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::vector<unsignedint,std::allocator<unsignedint>>::_M_default_append(std::vector<unsignedint,std::allocator<unsignedint>>::size_type)",
-      "symbol": "_ZNSt6vectorIjSaIjEE17_M_default_appendEm"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void LercNS::Lerc2::ComputeHistoForHuffman<unsignedchar>(const unsigned char*, std::vector<int,std::allocator<int>>&, std::vector<int,std::allocator<int>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc222ComputeHistoForHuffmanIhEEvPKT_RSt6vectorIiSaIiEES8_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void LercNS::Lerc2::ComputeHistoForHuffman<int>(const int*, std::vector<int,std::allocator<int>>&, std::vector<int,std::allocator<int>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc222ComputeHistoForHuffmanIiEEvPKT_RSt6vectorIiSaIiEES8_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::TryBitPlaneCompression<float>(const float*, double, double&) const",
-      "symbol": "_ZNK6LercNS5Lerc222TryBitPlaneCompressionIfEEbPKT_dRd"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void LercNS::Lerc2::ComputeHistoForHuffman<shortunsignedint>(const unsigned short int*, std::vector<int,std::allocator<int>>&, std::vector<int,std::allocator<int>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc222ComputeHistoForHuffmanItEEvPKT_RSt6vectorIiSaIiEES8_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::TryRaiseMaxZError<double>(const double*, double&) const",
-      "symbol": "_ZNK6LercNS5Lerc217TryRaiseMaxZErrorIdEEbPKT_Rd"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::FillConstImage<float>(float*) const",
-      "symbol": "_ZNK6LercNS5Lerc214FillConstImageIfEEbPT_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::ReadTiles<signedchar>(const LercNS::Byte**, size_t&, signed char*) const",
-      "symbol": "_ZNK6LercNS5Lerc29ReadTilesIaEEbPPKhRmPT_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::ReadTile<signedchar>(const LercNS::Byte**, size_t&, signed char*, int, int, int, int, int, std::vector<unsignedint,std::allocator<unsignedint>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc28ReadTileIaEEbPPKhRmPT_iiiiiRSt6vectorIjSaIjEE"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc::Convert<signedchar>(const LercNS::CntZImage&, signed char*, LercNS::Byte*, bool)",
-      "symbol": "_ZN6LercNS4Lerc7ConvertIaEEbRKNS_9CntZImageEPT_Phb"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void LercNS::Lerc2::ComputeHistoForHuffman<double>(const double*, std::vector<int,std::allocator<int>>&, std::vector<int,std::allocator<int>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc222ComputeHistoForHuffmanIdEEvPKT_RSt6vectorIiSaIiEES8_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method LercNS::ErrCode LercNS::Lerc::EncodeInternal<signedchar>(const signed char*, int, int, int, int, int, int, const LercNS::Byte*, double, unsigned int&, LercNS::Byte*, unsigned int, unsigned int&)",
-      "symbol": "_ZN6LercNS4Lerc14EncodeInternalIaEENS_7ErrCodeEPKT_iiiiiiPKhdRjPhjS8_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method virtual LercNS::Lerc2::~Lerc2()",
-      "symbol": "_ZN6LercNS5Lerc2D2Ev"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method std::_Vector_base<float,std::allocator<float>>::~_Vector_base()",
-      "symbol": "_ZNSt12_Vector_baseIfSaIfEED2Ev"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::ReadTile<double>(const LercNS::Byte**, size_t&, double*, int, int, int, int, int, std::vector<unsignedint,std::allocator<unsignedint>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc28ReadTileIdEEbPPKhRmPT_iiiiiRSt6vectorIjSaIjEE"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::vector<int,std::allocator<int>>::_M_default_append(std::vector<int,std::allocator<int>>::size_type)",
-      "symbol": "_ZNSt6vectorIiSaIiEE17_M_default_appendEm"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method LercNS::ErrCode LercNS::Lerc::DecodeTempl<unsignedint>(unsigned int*, const LercNS::Byte*, unsigned int, int, int, int, int, int, LercNS::Byte*)",
-      "symbol": "_ZN6LercNS4Lerc11DecodeTemplIjEENS_7ErrCodeEPT_PKhjiiiiiPh"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void LercNS::Lerc2::ComputeHistoForHuffman<shortint>(const short int*, std::vector<int,std::allocator<int>>&, std::vector<int,std::allocator<int>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc222ComputeHistoForHuffmanIsEEvPKT_RSt6vectorIiSaIiEES8_"
+      "kind": "function_signature_changed",
+      "pretty": "method bool LercNS::CntZImage::readZTile(LercNS::Byte**, int, int, int, int, double, float)  ->  method bool LercNS::CntZImage::readZTile(const LercNS::Byte**, int, int, int, int, double, float)",
+      "symbol": "_ZN6LercNS9CntZImage9readZTileEPPhiiiidf",
+      "weak": false
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::vector<float,std::allocator<float>>::_M_default_append(std::vector<float,std::allocator<float>>::size_type)",
-      "symbol": "_ZNSt6vectorIfSaIfEE17_M_default_appendEm"
+      "pretty": "method void std::vector<short unsigned int, std::allocator<short unsigned int> >::_M_default_append(std::vector<short unsigned int, std::allocator<short unsigned int> >::size_type)",
+      "symbol": "_ZNSt6vectorItSaItEE17_M_default_appendEm",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method std::_Vector_base<shortint,std::allocator<shortint>>::~_Vector_base()",
-      "symbol": "_ZNSt12_Vector_baseIsSaIsEED2Ev"
+      "pretty": "method void std::vector<short int, std::allocator<short int> >::_M_default_append(std::vector<short int, std::allocator<short int> >::size_type)",
+      "symbol": "_ZNSt6vectorIsSaIsEE17_M_default_appendEm",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::WriteTiles<shortint>(const short int*, LercNS::Byte**, int&) const",
-      "symbol": "_ZNK6LercNS5Lerc210WriteTilesIsEEbPKT_PPhRi"
+      "pretty": "method void std::vector<unsigned int, std::allocator<unsigned int> >::_M_default_append(std::vector<unsigned int, std::allocator<unsigned int> >::size_type)",
+      "symbol": "_ZNSt6vectorIjSaIjEE17_M_default_appendEm",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::EncodeHuffman<unsignedchar>(const unsigned char*, LercNS::Byte**) const",
-      "symbol": "_ZNK6LercNS5Lerc213EncodeHuffmanIhEEbPKT_PPh"
+      "pretty": "method void std::vector<unsigned int, std::allocator<unsigned int> >::_M_fill_insert(std::vector<unsigned int, std::allocator<unsigned int> >::iterator, std::vector<unsigned int, std::allocator<unsigned int> >::size_type, const std::vector<unsigned int, std::allocator<unsigned int> >::value_type&)",
+      "symbol": "_ZNSt6vectorIjSaIjEE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPjS1_EEmRKj",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method LercNS::ErrCode LercNS::Lerc::DecodeTempl<shortint>(short int*, const LercNS::Byte*, unsigned int, int, int, int, int, int, LercNS::Byte*)",
-      "symbol": "_ZN6LercNS4Lerc11DecodeTemplIsEENS_7ErrCodeEPT_PKhjiiiiiPh"
+      "pretty": "method void std::vector<unsigned int, std::allocator<unsigned int> >::_M_fill_assign(std::size_t, const std::vector<unsigned int, std::allocator<unsigned int> >::value_type&)",
+      "symbol": "_ZNSt6vectorIjSaIjEE14_M_fill_assignEmRKj",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::vector<std::pair<shortint,shortint>,std::allocator<std::pair<shortint,shortint>>>::_M_fill_assign(std::size_t, const std::vector<std::pair<shortint,shortint>,std::allocator<std::pair<shortint,shortint>>>::value_type&)",
-      "symbol": "_ZNSt6vectorISt4pairIssESaIS1_EE14_M_fill_assignEmRKS1_"
+      "pretty": "method void std::vector<int, std::allocator<int> >::_M_realloc_insert<int>(std::vector<int, std::allocator<int> >::iterator, int&&)",
+      "symbol": "_ZNSt6vectorIiSaIiEE17_M_realloc_insertIJiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::vector<std::pair<shortunsignedint,unsignedint>,std::allocator<std::pair<shortunsignedint,unsignedint>>>::_M_default_append(std::vector<std::pair<shortunsignedint,unsignedint>,std::allocator<std::pair<shortunsignedint,unsignedint>>>::size_type)",
-      "symbol": "_ZNSt6vectorISt4pairItjESaIS1_EE17_M_default_appendEm"
+      "pretty": "method void std::vector<int, std::allocator<int> >::_M_realloc_insert<int const&>(std::vector<int, std::allocator<int> >::iterator, const int&)",
+      "symbol": "_ZNSt6vectorIiSaIiEE17_M_realloc_insertIJRKiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method LercNS::ErrCode LercNS::Lerc::DecodeTempl<signedchar>(signed char*, const LercNS::Byte*, unsigned int, int, int, int, int, int, LercNS::Byte*)",
-      "symbol": "_ZN6LercNS4Lerc11DecodeTemplIaEENS_7ErrCodeEPT_PKhjiiiiiPh"
+      "pretty": "method std::vector<double, std::allocator<double> >::iterator std::vector<double, std::allocator<double> >::_M_erase(std::vector<double, std::allocator<double> >::iterator)",
+      "symbol": "_ZNSt6vectorIdSaIdEE8_M_eraseEN9__gnu_cxx17__normal_iteratorIPdS1_EE",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::ReadTiles<int>(const LercNS::Byte**, size_t&, int*) const",
-      "symbol": "_ZNK6LercNS5Lerc29ReadTilesIiEEbPPKhRmPT_"
+      "pretty": "method void std::vector<double, std::allocator<double> >::_M_realloc_insert<double const&>(std::vector<double, std::allocator<double> >::iterator, const double&)",
+      "symbol": "_ZNSt6vectorIdSaIdEE17_M_realloc_insertIJRKdEEEvN9__gnu_cxx17__normal_iteratorIPdS1_EEDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method LercNS::ErrCode LercNS::Lerc::EncodeInternal<shortunsignedint>(const unsigned short int*, int, int, int, int, int, int, const LercNS::Byte*, double, unsigned int&, LercNS::Byte*, unsigned int, unsigned int&)",
-      "symbol": "_ZN6LercNS4Lerc14EncodeInternalItEENS_7ErrCodeEPKT_iiiiiiPKhdRjPhjS8_"
+      "pretty": "method void std::vector<double, std::allocator<double> >::_M_default_append(std::vector<double, std::allocator<double> >::size_type)",
+      "symbol": "_ZNSt6vectorIdSaIdEE17_M_default_appendEm",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::vector<unsignedchar,std::allocator<unsignedchar>>::_M_default_append(std::vector<unsignedchar,std::allocator<unsignedchar>>::size_type)",
-      "symbol": "_ZNSt6vectorIhSaIhEE17_M_default_appendEm"
+      "pretty": "method void std::vector<std::pair<short unsigned int, unsigned int>, std::allocator<std::pair<short unsigned int, unsigned int> > >::_M_default_append(std::vector<std::pair<short unsigned int, unsigned int>, std::allocator<std::pair<short unsigned int, unsigned int> > >::size_type)",
+      "symbol": "_ZNSt6vectorISt4pairItjESaIS1_EE17_M_default_appendEm",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method LercNS::ErrCode LercNS::Lerc::DecodeTempl<shortunsignedint>(unsigned short int*, const LercNS::Byte*, unsigned int, int, int, int, int, int, LercNS::Byte*)",
-      "symbol": "_ZN6LercNS4Lerc11DecodeTemplItEENS_7ErrCodeEPT_PKhjiiiiiPh"
+      "pretty": "method std::_Vector_base<short int, std::allocator<short int> >::~_Vector_base(int)",
+      "symbol": "_ZNSt12_Vector_baseIsSaIsEED2Ev",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::FillConstImage<unsignedint>(unsigned int*) const",
-      "symbol": "_ZNK6LercNS5Lerc214FillConstImageIjEEbPT_"
+      "pretty": "method std::_Vector_base<unsigned int, std::allocator<unsigned int> >::~_Vector_base(int)",
+      "symbol": "_ZNSt12_Vector_baseIjSaIjEED2Ev",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::ReadTiles<float>(const LercNS::Byte**, size_t&, float*) const",
-      "symbol": "_ZNK6LercNS5Lerc29ReadTilesIfEEbPPKhRmPT_"
+      "pretty": "method std::_Vector_base<float, std::allocator<float> >::~_Vector_base(int)",
+      "symbol": "_ZNSt12_Vector_baseIfSaIfEED2Ev",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method std::_Vector_base<unsignedint,std::allocator<unsignedint>>::~_Vector_base()",
-      "symbol": "_ZNSt12_Vector_baseIjSaIjEED2Ev"
+      "pretty": "method std::_Vector_base<std::pair<short unsigned int, unsigned int>, std::allocator<std::pair<short unsigned int, unsigned int> > >::~_Vector_base(int)",
+      "symbol": "_ZNSt12_Vector_baseISt4pairItjESaIS1_EED2Ev",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::ReadTile<unsignedchar>(const LercNS::Byte**, size_t&, unsigned char*, int, int, int, int, int, std::vector<unsignedint,std::allocator<unsignedint>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc28ReadTileIhEEbPPKhRmPT_iiiiiRSt6vectorIjSaIjEE"
+      "pretty": "method std::_Vector_base<std::pair<unsigned int, unsigned int>, std::allocator<std::pair<unsigned int, unsigned int> > >::~_Vector_base(int)",
+      "symbol": "_ZNSt12_Vector_baseISt4pairIjjESaIS1_EED2Ev",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
       "pretty": "method virtual std::string LercNS::CntZImage::getTypeString() const",
-      "symbol": "_ZNK6LercNS9CntZImage13getTypeStringB5cxx11Ev"
+      "symbol": "_ZNK6LercNS9CntZImage13getTypeStringB5cxx11Ev",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::vector<int,std::allocator<int>>::_M_realloc_insert<int>(std::vector<int,std::allocator<int>>::iterator)",
-      "symbol": "_ZNSt6vectorIiSaIiEE17_M_realloc_insertIJiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_"
+      "pretty": "method bool LercNS::Lerc2::WriteTile<unsigned int>(const unsigned int*, int, LercNS::Byte**, int&, int, unsigned int, unsigned int, LercNS::Lerc2::DataType, bool, const std::vector<unsigned int, std::allocator<unsigned int> >&, LercNS::Lerc2::BlockEncodeMode, const std::vector<std::pair<unsigned int, unsigned int>, std::allocator<std::pair<unsigned int, unsigned int> > >&) const",
+      "symbol": "_ZNK6LercNS5Lerc29WriteTileIjEEbPKT_iPPhRiiS2_S2_NS0_8DataTypeEbRKSt6vectorIjSaIjEENS0_15BlockEncodeModeERKS9_ISt4pairIjjESaISG_EE",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::ReadTiles<unsignedchar>(const LercNS::Byte**, size_t&, unsigned char*) const",
-      "symbol": "_ZNK6LercNS5Lerc29ReadTilesIhEEbPPKhRmPT_"
+      "pretty": "method bool LercNS::Lerc2::WriteTile<int>(const int*, int, LercNS::Byte**, int&, int, int, int, LercNS::Lerc2::DataType, bool, const std::vector<unsigned int, std::allocator<unsigned int> >&, LercNS::Lerc2::BlockEncodeMode, const std::vector<std::pair<unsigned int, unsigned int>, std::allocator<std::pair<unsigned int, unsigned int> > >&) const",
+      "symbol": "_ZNK6LercNS5Lerc29WriteTileIiEEbPKT_iPPhRiiS2_S2_NS0_8DataTypeEbRKSt6vectorIjSaIjEENS0_15BlockEncodeModeERKS9_ISt4pairIjjESaISG_EE",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::TryRaiseMaxZError<shortint>(const short int*, double&) const",
-      "symbol": "_ZNK6LercNS5Lerc217TryRaiseMaxZErrorIsEEbPKT_Rd"
+      "pretty": "method bool LercNS::Lerc2::ReadTiles<short unsigned int>(const LercNS::Byte**, size_t&, unsigned short int*) const",
+      "symbol": "_ZNK6LercNS5Lerc29ReadTilesItEEbPPKhRmPT_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void LercNS::Lerc2::ComputeHuffmanCodes<shortint>(const short int*, int&, LercNS::Lerc2::ImageEncodeMode&, std::vector<std::pair<shortunsignedint,unsignedint>,std::allocator<std::pair<shortunsignedint,unsignedint>>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc219ComputeHuffmanCodesIsEEvPKT_RiRNS0_15ImageEncodeModeERSt6vectorISt4pairItjESaISA_EE"
+      "pretty": "method bool LercNS::Lerc2::ReadTiles<short int>(const LercNS::Byte**, size_t&, short int*) const",
+      "symbol": "_ZNK6LercNS5Lerc29ReadTilesIsEEbPPKhRmPT_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::vector<std::pair<unsignedint,unsignedint>,std::allocator<std::pair<unsignedint,unsignedint>>>::_M_default_append(std::vector<std::pair<unsignedint,unsignedint>,std::allocator<std::pair<unsignedint,unsignedint>>>::size_type)",
-      "symbol": "_ZNSt6vectorISt4pairIjjESaIS1_EE17_M_default_appendEm"
+      "pretty": "method bool LercNS::Lerc2::ReadTiles<unsigned int>(const LercNS::Byte**, size_t&, unsigned int*) const",
+      "symbol": "_ZNK6LercNS5Lerc29ReadTilesIjEEbPPKhRmPT_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::TryBitPlaneCompression<shortint>(const short int*, double, double&) const",
-      "symbol": "_ZNK6LercNS5Lerc222TryBitPlaneCompressionIsEEbPKT_dRd"
+      "pretty": "method bool LercNS::Lerc2::ReadTiles<unsigned char>(const LercNS::Byte**, size_t&, unsigned char*) const",
+      "symbol": "_ZNK6LercNS5Lerc29ReadTilesIhEEbPPKhRmPT_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void LercNS::Lerc2::ComputeHuffmanCodes<unsignedchar>(const unsigned char*, int&, LercNS::Lerc2::ImageEncodeMode&, std::vector<std::pair<shortunsignedint,unsignedint>,std::allocator<std::pair<shortunsignedint,unsignedint>>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc219ComputeHuffmanCodesIhEEvPKT_RiRNS0_15ImageEncodeModeERSt6vectorISt4pairItjESaISA_EE"
+      "pretty": "method bool LercNS::Lerc2::ReadTiles<float>(const LercNS::Byte**, size_t&, float*) const",
+      "symbol": "_ZNK6LercNS5Lerc29ReadTilesIfEEbPPKhRmPT_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::ReadTile<unsignedint>(const LercNS::Byte**, size_t&, unsigned int*, int, int, int, int, int, std::vector<unsignedint,std::allocator<unsignedint>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc28ReadTileIjEEbPPKhRmPT_iiiiiRSt6vectorIjSaIjEE"
+      "pretty": "method bool LercNS::Lerc2::ReadTiles<signed char>(const LercNS::Byte**, size_t&, signed char*) const",
+      "symbol": "_ZNK6LercNS5Lerc29ReadTilesIaEEbPPKhRmPT_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::EncodeHuffman<int>(const int*, LercNS::Byte**) const",
-      "symbol": "_ZNK6LercNS5Lerc213EncodeHuffmanIiEEbPKT_PPh"
+      "pretty": "method bool LercNS::Lerc2::ReadTile<short unsigned int>(const LercNS::Byte**, size_t&, unsigned short int*, int, int, int, int, int, std::vector<unsigned int, std::allocator<unsigned int> >&) const",
+      "symbol": "_ZNK6LercNS5Lerc28ReadTileItEEbPPKhRmPT_iiiiiRSt6vectorIjSaIjEE",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::vector<unsignedint,std::allocator<unsignedint>>::_M_fill_assign(std::size_t, const std::vector<unsignedint,std::allocator<unsignedint>>::value_type&)",
-      "symbol": "_ZNSt6vectorIjSaIjEE14_M_fill_assignEmRKj"
+      "pretty": "method bool LercNS::Lerc2::WriteTile<float>(const float*, int, LercNS::Byte**, int&, int, float, float, LercNS::Lerc2::DataType, bool, const std::vector<unsigned int, std::allocator<unsigned int> >&, LercNS::Lerc2::BlockEncodeMode, const std::vector<std::pair<unsigned int, unsigned int>, std::allocator<std::pair<unsigned int, unsigned int> > >&) const",
+      "symbol": "_ZNK6LercNS5Lerc29WriteTileIfEEbPKT_iPPhRiiS2_S2_NS0_8DataTypeEbRKSt6vectorIjSaIjEENS0_15BlockEncodeModeERKS9_ISt4pairIjjESaISG_EE",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::WriteTile<unsignedint>(const unsigned int*, int, LercNS::Byte**, int&, int, unsigned int, unsigned int, LercNS::Lerc2::DataType, bool, const std::vector<unsignedint,std::allocator<unsignedint>>&, LercNS::Lerc2::BlockEncodeMode, const std::vector<std::pair<unsignedint,unsignedint>,std::allocator<std::pair<unsignedint,unsignedint>>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc29WriteTileIjEEbPKT_iPPhRiiS2_S2_NS0_8DataTypeEbRKSt6vectorIjSaIjEENS0_15BlockEncodeModeERKS9_ISt4pairIjjESaISG_EE"
+      "pretty": "method bool LercNS::Lerc2::ReadTile<short int>(const LercNS::Byte**, size_t&, short int*, int, int, int, int, int, std::vector<unsigned int, std::allocator<unsigned int> >&) const",
+      "symbol": "_ZNK6LercNS5Lerc28ReadTileIsEEbPPKhRmPT_iiiiiRSt6vectorIjSaIjEE",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void LercNS::Lerc2::ComputeHistoForHuffman<float>(const float*, std::vector<int,std::allocator<int>>&, std::vector<int,std::allocator<int>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc222ComputeHistoForHuffmanIfEEvPKT_RSt6vectorIiSaIiEES8_"
+      "pretty": "method bool LercNS::Lerc2::ReadTile<int>(const LercNS::Byte**, size_t&, int*, int, int, int, int, int, std::vector<unsigned int, std::allocator<unsigned int> >&) const",
+      "symbol": "_ZNK6LercNS5Lerc28ReadTileIiEEbPPKhRmPT_iiiiiRSt6vectorIjSaIjEE",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::DecodeHuffman<signedchar>(const LercNS::Byte**, size_t&, signed char*) const",
-      "symbol": "_ZNK6LercNS5Lerc213DecodeHuffmanIaEEbPPKhRmPT_"
+      "pretty": "method bool LercNS::Lerc2::ReadTile<unsigned char>(const LercNS::Byte**, size_t&, unsigned char*, int, int, int, int, int, std::vector<unsigned int, std::allocator<unsigned int> >&) const",
+      "symbol": "_ZNK6LercNS5Lerc28ReadTileIhEEbPPKhRmPT_iiiiiRSt6vectorIjSaIjEE",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::ComputeMinMaxRanges<double>(const double*, std::vector<double,std::allocator<double>>&, std::vector<double,std::allocator<double>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc219ComputeMinMaxRangesIdEEbPKT_RSt6vectorIdSaIdEES8_"
+      "pretty": "method bool LercNS::Lerc2::ReadTile<double>(const LercNS::Byte**, size_t&, double*, int, int, int, int, int, std::vector<unsigned int, std::allocator<unsigned int> >&) const",
+      "symbol": "_ZNK6LercNS5Lerc28ReadTileIdEEbPPKhRmPT_iiiiiRSt6vectorIjSaIjEE",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::WriteTile<int>(const int*, int, LercNS::Byte**, int&, int, int, int, LercNS::Lerc2::DataType, bool, const std::vector<unsignedint,std::allocator<unsignedint>>&, LercNS::Lerc2::BlockEncodeMode, const std::vector<std::pair<unsignedint,unsignedint>,std::allocator<std::pair<unsignedint,unsignedint>>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc29WriteTileIiEEbPKT_iPPhRiiS2_S2_NS0_8DataTypeEbRKSt6vectorIjSaIjEENS0_15BlockEncodeModeERKS9_ISt4pairIjjESaISG_EE"
+      "pretty": "method bool LercNS::Lerc2::ReadTile<signed char>(const LercNS::Byte**, size_t&, signed char*, int, int, int, int, int, std::vector<unsigned int, std::allocator<unsigned int> >&) const",
+      "symbol": "_ZNK6LercNS5Lerc28ReadTileIaEEbPPKhRmPT_iiiiiRSt6vectorIjSaIjEE",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method int LercNS::Lerc2::NumBytesTile<shortunsignedint>(int, unsigned short int, unsigned short int, LercNS::Lerc2::DataType, bool, LercNS::Lerc2::BlockEncodeMode&, const std::vector<std::pair<unsignedint,unsignedint>,std::allocator<std::pair<unsignedint,unsignedint>>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc212NumBytesTileItEEiiT_S2_NS0_8DataTypeEbRNS0_15BlockEncodeModeERKSt6vectorISt4pairIjjESaIS8_EE"
+      "pretty": "method bool LercNS::Lerc2::TryBitPlaneCompression<short unsigned int>(const unsigned short int*, double, double&) const",
+      "symbol": "_ZNK6LercNS5Lerc222TryBitPlaneCompressionItEEbPKT_dRd",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::TryBitPlaneCompression<int>(const int*, double, double&) const",
-      "symbol": "_ZNK6LercNS5Lerc222TryBitPlaneCompressionIiEEbPKT_dRd"
+      "pretty": "method bool LercNS::Lerc2::TryBitPlaneCompression<short int>(const short int*, double, double&) const",
+      "symbol": "_ZNK6LercNS5Lerc222TryBitPlaneCompressionIsEEbPKT_dRd",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::FillConstImage<shortunsignedint>(unsigned short int*) const",
-      "symbol": "_ZNK6LercNS5Lerc214FillConstImageItEEbPT_"
+      "pretty": "method bool LercNS::Lerc2::TryBitPlaneCompression<signed char>(const signed char*, double, double&) const",
+      "symbol": "_ZNK6LercNS5Lerc222TryBitPlaneCompressionIaEEbPKT_dRd",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc::Convert<shortunsignedint>(const LercNS::CntZImage&, unsigned short int*, LercNS::Byte*, bool)",
-      "symbol": "_ZN6LercNS4Lerc7ConvertItEEbRKNS_9CntZImageEPT_Phb"
+      "pretty": "method void LercNS::Lerc2::ComputeHistoForHuffman<short unsigned int>(const unsigned short int*, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) const",
+      "symbol": "_ZNK6LercNS5Lerc222ComputeHistoForHuffmanItEEvPKT_RSt6vectorIiSaIiEES8_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::vector<unsignedint,std::allocator<unsignedint>>::_M_fill_insert(std::vector<unsignedint,std::allocator<unsignedint>>::iterator, std::vector<unsignedint,std::allocator<unsignedint>>::size_type, const std::vector<unsignedint,std::allocator<unsignedint>>::value_type&)",
-      "symbol": "_ZNSt6vectorIjSaIjEE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPjS1_EEmRKj"
+      "pretty": "method void LercNS::Lerc2::ComputeHistoForHuffman<unsigned int>(const unsigned int*, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) const",
+      "symbol": "_ZNK6LercNS5Lerc222ComputeHistoForHuffmanIjEEvPKT_RSt6vectorIiSaIiEES8_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::EncodeHuffman<unsignedint>(const unsigned int*, LercNS::Byte**) const",
-      "symbol": "_ZNK6LercNS5Lerc213EncodeHuffmanIjEEbPKT_PPh"
+      "pretty": "method void LercNS::Lerc2::ComputeHistoForHuffman<int>(const int*, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) const",
+      "symbol": "_ZNK6LercNS5Lerc222ComputeHistoForHuffmanIiEEvPKT_RSt6vectorIiSaIiEES8_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::ReadTiles<shortint>(const LercNS::Byte**, size_t&, short int*) const",
-      "symbol": "_ZNK6LercNS5Lerc29ReadTilesIsEEbPPKhRmPT_"
+      "pretty": "method bool LercNS::Lerc2::ComputeMinMaxRanges<short int>(const short int*, std::vector<double, std::allocator<double> >&, std::vector<double, std::allocator<double> >&) const",
+      "symbol": "_ZNK6LercNS5Lerc219ComputeMinMaxRangesIsEEbPKT_RSt6vectorIdSaIdEES8_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::ReadTile<int>(const LercNS::Byte**, size_t&, int*, int, int, int, int, int, std::vector<unsignedint,std::allocator<unsignedint>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc28ReadTileIiEEbPPKhRmPT_iiiiiRSt6vectorIjSaIjEE"
+      "pretty": "method bool LercNS::Lerc2::ComputeMinMaxRanges<int>(const int*, std::vector<double, std::allocator<double> >&, std::vector<double, std::allocator<double> >&) const",
+      "symbol": "_ZNK6LercNS5Lerc219ComputeMinMaxRangesIiEEbPKT_RSt6vectorIdSaIdEES8_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method virtual LercNS::BitStuffer2::~BitStuffer2()",
-      "symbol": "_ZN6LercNS11BitStuffer2D2Ev"
+      "pretty": "method bool LercNS::Lerc2::ComputeMinMaxRanges<unsigned char>(const unsigned char*, std::vector<double, std::allocator<double> >&, std::vector<double, std::allocator<double> >&) const",
+      "symbol": "_ZNK6LercNS5Lerc219ComputeMinMaxRangesIhEEbPKT_RSt6vectorIdSaIdEES8_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::WriteTile<double>(const double*, int, LercNS::Byte**, int&, int, double, double, LercNS::Lerc2::DataType, bool, const std::vector<unsignedint,std::allocator<unsignedint>>&, LercNS::Lerc2::BlockEncodeMode, const std::vector<std::pair<unsignedint,unsignedint>,std::allocator<std::pair<unsignedint,unsignedint>>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc29WriteTileIdEEbPKT_iPPhRiiS2_S2_NS0_8DataTypeEbRKSt6vectorIjSaIjEENS0_15BlockEncodeModeERKS9_ISt4pairIjjESaISG_EE"
+      "pretty": "method bool LercNS::Lerc2::ComputeMinMaxRanges<double>(const double*, std::vector<double, std::allocator<double> >&, std::vector<double, std::allocator<double> >&) const",
+      "symbol": "_ZNK6LercNS5Lerc219ComputeMinMaxRangesIdEEbPKT_RSt6vectorIdSaIdEES8_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::pair<unsigned int, unsigned int>, std::allocator<std::pair<unsigned int, unsigned int> > >::_M_default_append(std::vector<std::pair<unsigned int, unsigned int>, std::allocator<std::pair<unsigned int, unsigned int> > >::size_type)",
+      "symbol": "_ZNSt6vectorISt4pairIjjESaIS1_EE17_M_default_appendEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void LercNS::Lerc2::ComputeHuffmanCodes<short int>(const short int*, int&, LercNS::Lerc2::ImageEncodeMode&, std::vector<std::pair<short unsigned int, unsigned int>, std::allocator<std::pair<short unsigned int, unsigned int> > >&) const",
+      "symbol": "_ZNK6LercNS5Lerc219ComputeHuffmanCodesIsEEvPKT_RiRNS0_15ImageEncodeModeERSt6vectorISt4pairItjESaISA_EE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void LercNS::Lerc2::ComputeHuffmanCodes<double>(const double*, int&, LercNS::Lerc2::ImageEncodeMode&, std::vector<std::pair<short unsigned int, unsigned int>, std::allocator<std::pair<short unsigned int, unsigned int> > >&) const",
+      "symbol": "_ZNK6LercNS5Lerc219ComputeHuffmanCodesIdEEvPKT_RiRNS0_15ImageEncodeModeERSt6vectorISt4pairItjESaISA_EE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc2::TryRaiseMaxZError<short int>(const short int*, double&) const",
+      "symbol": "_ZNK6LercNS5Lerc217TryRaiseMaxZErrorIsEEbPKT_Rd",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc2::FillConstImage<short int>(short int*) const",
+      "symbol": "_ZNK6LercNS5Lerc214FillConstImageIsEEbPT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc2::FillConstImage<int>(int*) const",
+      "symbol": "_ZNK6LercNS5Lerc214FillConstImageIiEEbPT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc2::FillConstImage<float>(float*) const",
+      "symbol": "_ZNK6LercNS5Lerc214FillConstImageIfEEbPT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc2::TryRaiseMaxZError<unsigned char>(const unsigned char*, double&) const",
+      "symbol": "_ZNK6LercNS5Lerc217TryRaiseMaxZErrorIhEEbPKT_Rd",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc2::FillConstImage<double>(double*) const",
+      "symbol": "_ZNK6LercNS5Lerc214FillConstImageIdEEbPT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc2::FillConstImage<signed char>(signed char*) const",
+      "symbol": "_ZNK6LercNS5Lerc214FillConstImageIaEEbPT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc2::EncodeHuffman<short unsigned int>(const unsigned short int*, LercNS::Byte**) const",
+      "symbol": "_ZNK6LercNS5Lerc213EncodeHuffmanItEEbPKT_PPh",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc2::EncodeHuffman<unsigned int>(const unsigned int*, LercNS::Byte**) const",
+      "symbol": "_ZNK6LercNS5Lerc213EncodeHuffmanIjEEbPKT_PPh",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc2::EncodeHuffman<unsigned char>(const unsigned char*, LercNS::Byte**) const",
+      "symbol": "_ZNK6LercNS5Lerc213EncodeHuffmanIhEEbPKT_PPh",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc2::EncodeHuffman<signed char>(const signed char*, LercNS::Byte**) const",
+      "symbol": "_ZNK6LercNS5Lerc213EncodeHuffmanIaEEbPKT_PPh",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc2::ComputeMinMaxRanges<float>(const float*, std::vector<double, std::allocator<double> >&, std::vector<double, std::allocator<double> >&) const",
+      "symbol": "_ZNK6LercNS5Lerc219ComputeMinMaxRangesIfEEbPKT_RSt6vectorIdSaIdEES8_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
       "pretty": "method bool LercNS::Lerc2::TryRaiseMaxZError<float>(const float*, double&) const",
-      "symbol": "_ZNK6LercNS5Lerc217TryRaiseMaxZErrorIfEEbPKT_Rd"
+      "symbol": "_ZNK6LercNS5Lerc217TryRaiseMaxZErrorIfEEbPKT_Rd",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::ComputeMinMaxRanges<float>(const float*, std::vector<double,std::allocator<double>>&, std::vector<double,std::allocator<double>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc219ComputeMinMaxRangesIfEEbPKT_RSt6vectorIdSaIdEES8_"
+      "pretty": "method bool LercNS::Lerc2::DecodeHuffman<short unsigned int>(const LercNS::Byte**, size_t&, unsigned short int*) const",
+      "symbol": "_ZNK6LercNS5Lerc213DecodeHuffmanItEEbPPKhRmPT_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::DecodeHuffman<shortunsignedint>(const LercNS::Byte**, size_t&, unsigned short int*) const",
-      "symbol": "_ZNK6LercNS5Lerc213DecodeHuffmanItEEbPPKhRmPT_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::DecodeHuffman<unsignedint>(const LercNS::Byte**, size_t&, unsigned int*) const",
-      "symbol": "_ZNK6LercNS5Lerc213DecodeHuffmanIjEEbPPKhRmPT_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::TryBitPlaneCompression<signedchar>(const signed char*, double, double&) const",
-      "symbol": "_ZNK6LercNS5Lerc222TryBitPlaneCompressionIaEEbPKT_dRd"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::TryBitPlaneCompression<double>(const double*, double, double&) const",
-      "symbol": "_ZNK6LercNS5Lerc222TryBitPlaneCompressionIdEEbPKT_dRd"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method std::_Vector_base<signedchar,std::allocator<signedchar>>::~_Vector_base()",
-      "symbol": "_ZNSt12_Vector_baseIaSaIaEED2Ev"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method virtual LercNS::Lerc2::~Lerc2()",
-      "symbol": "_ZN6LercNS5Lerc2D0Ev"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::WriteTile<signedchar>(const signed char*, int, LercNS::Byte**, int&, int, signed char, signed char, LercNS::Lerc2::DataType, bool, const std::vector<unsignedint,std::allocator<unsignedint>>&, LercNS::Lerc2::BlockEncodeMode, const std::vector<std::pair<unsignedint,unsignedint>,std::allocator<std::pair<unsignedint,unsignedint>>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc29WriteTileIaEEbPKT_iPPhRiiS2_S2_NS0_8DataTypeEbRKSt6vectorIjSaIjEENS0_15BlockEncodeModeERKS9_ISt4pairIjjESaISG_EE"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::ReadTile<shortint>(const LercNS::Byte**, size_t&, short int*, int, int, int, int, int, std::vector<unsignedint,std::allocator<unsignedint>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc28ReadTileIsEEbPPKhRmPT_iiiiiRSt6vectorIjSaIjEE"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::WriteTile<float>(const float*, int, LercNS::Byte**, int&, int, float, float, LercNS::Lerc2::DataType, bool, const std::vector<unsignedint,std::allocator<unsignedint>>&, LercNS::Lerc2::BlockEncodeMode, const std::vector<std::pair<unsignedint,unsignedint>,std::allocator<std::pair<unsignedint,unsignedint>>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc29WriteTileIfEEbPKT_iPPhRiiS2_S2_NS0_8DataTypeEbRKSt6vectorIjSaIjEENS0_15BlockEncodeModeERKS9_ISt4pairIjjESaISG_EE"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::ReadTiles<double>(const LercNS::Byte**, size_t&, double*) const",
-      "symbol": "_ZNK6LercNS5Lerc29ReadTilesIdEEbPPKhRmPT_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method virtual LercNS::CntZImage::~CntZImage()",
-      "symbol": "_ZN6LercNS9CntZImageD0Ev"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::ReadTile<shortunsignedint>(const LercNS::Byte**, size_t&, unsigned short int*, int, int, int, int, int, std::vector<unsignedint,std::allocator<unsignedint>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc28ReadTileItEEbPPKhRmPT_iiiiiRSt6vectorIjSaIjEE"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::TryBitPlaneCompression<unsignedint>(const unsigned int*, double, double&) const",
-      "symbol": "_ZNK6LercNS5Lerc222TryBitPlaneCompressionIjEEbPKT_dRd"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method LercNS::ErrCode LercNS::Lerc::EncodeInternal<int>(const int*, int, int, int, int, int, int, const LercNS::Byte*, double, unsigned int&, LercNS::Byte*, unsigned int, unsigned int&)",
-      "symbol": "_ZN6LercNS4Lerc14EncodeInternalIiEENS_7ErrCodeEPKT_iiiiiiPKhdRjPhjS8_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::FillConstImage<signedchar>(signed char*) const",
-      "symbol": "_ZNK6LercNS5Lerc214FillConstImageIaEEbPT_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::EncodeHuffman<shortunsignedint>(const unsigned short int*, LercNS::Byte**) const",
-      "symbol": "_ZNK6LercNS5Lerc213EncodeHuffmanItEEbPKT_PPh"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method std::_Vector_base<shortunsignedint,std::allocator<shortunsignedint>>::~_Vector_base()",
-      "symbol": "_ZNSt12_Vector_baseItSaItEED2Ev"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method std::_Vector_base<std::pair<shortunsignedint,unsignedint>,std::allocator<std::pair<shortunsignedint,unsignedint>>>::~_Vector_base()",
-      "symbol": "_ZNSt12_Vector_baseISt4pairItjESaIS1_EED2Ev"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method int LercNS::Lerc2::ReduceDataType<double>(double, LercNS::Lerc2::DataType, LercNS::Lerc2::DataType&)",
-      "symbol": "_ZN6LercNS5Lerc214ReduceDataTypeIdEEiT_NS0_8DataTypeERS3_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::EncodeHuffman<shortint>(const short int*, LercNS::Byte**) const",
-      "symbol": "_ZNK6LercNS5Lerc213EncodeHuffmanIsEEbPKT_PPh"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::EncodeHuffman<float>(const float*, LercNS::Byte**) const",
-      "symbol": "_ZNK6LercNS5Lerc213EncodeHuffmanIfEEbPKT_PPh"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void LercNS::Lerc2::ComputeHuffmanCodes<int>(const int*, int&, LercNS::Lerc2::ImageEncodeMode&, std::vector<std::pair<shortunsignedint,unsignedint>,std::allocator<std::pair<shortunsignedint,unsignedint>>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc219ComputeHuffmanCodesIiEEvPKT_RiRNS0_15ImageEncodeModeERSt6vectorISt4pairItjESaISA_EE"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::WriteTiles<shortunsignedint>(const unsigned short int*, LercNS::Byte**, int&) const",
-      "symbol": "_ZNK6LercNS5Lerc210WriteTilesItEEbPKT_PPhRi"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::EncodeHuffman<signedchar>(const signed char*, LercNS::Byte**) const",
-      "symbol": "_ZNK6LercNS5Lerc213EncodeHuffmanIaEEbPKT_PPh"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::EncodeHuffman<double>(const double*, LercNS::Byte**) const",
-      "symbol": "_ZNK6LercNS5Lerc213EncodeHuffmanIdEEbPKT_PPh"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc::Convert<double>(const LercNS::CntZImage&, double*, LercNS::Byte*, bool)",
-      "symbol": "_ZN6LercNS4Lerc7ConvertIdEEbRKNS_9CntZImageEPT_Phb"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::vector<signedchar,std::allocator<signedchar>>::_M_default_append(std::vector<signedchar,std::allocator<signedchar>>::size_type)",
-      "symbol": "_ZNSt6vectorIaSaIaEE17_M_default_appendEm"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::DecodeHuffman<shortint>(const LercNS::Byte**, size_t&, short int*) const",
-      "symbol": "_ZNK6LercNS5Lerc213DecodeHuffmanIsEEbPPKhRmPT_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::FillConstImage<unsignedchar>(unsigned char*) const",
-      "symbol": "_ZNK6LercNS5Lerc214FillConstImageIhEEbPT_"
+      "pretty": "method bool LercNS::Lerc2::FillConstImage<unsigned char>(unsigned char*) const",
+      "symbol": "_ZNK6LercNS5Lerc214FillConstImageIhEEbPT_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
       "pretty": "method bool LercNS::Lerc2::DecodeHuffman<int>(const LercNS::Byte**, size_t&, int*) const",
-      "symbol": "_ZNK6LercNS5Lerc213DecodeHuffmanIiEEbPPKhRmPT_"
+      "symbol": "_ZNK6LercNS5Lerc213DecodeHuffmanIiEEbPPKhRmPT_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method std::vector<unsignedint,std::allocator<unsignedint>>::iterator std::vector<unsignedint,std::allocator<unsignedint>>::_M_insert_rval(std::vector<unsignedint,std::allocator<unsignedint>>::const_iterator, std::vector<unsignedint,std::allocator<unsignedint>>::value_type&&)",
-      "symbol": "_ZNSt6vectorIjSaIjEE14_M_insert_rvalEN9__gnu_cxx17__normal_iteratorIPKjS1_EEOj"
+      "pretty": "method bool LercNS::Lerc2::DecodeHuffman<unsigned char>(const LercNS::Byte**, size_t&, unsigned char*) const",
+      "symbol": "_ZNK6LercNS5Lerc213DecodeHuffmanIhEEbPPKhRmPT_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc::Convert<float>(const LercNS::CntZImage&, float*, LercNS::Byte*, bool)",
-      "symbol": "_ZN6LercNS4Lerc7ConvertIfEEbRKNS_9CntZImageEPT_Phb"
+      "pretty": "method void LercNS::Lerc2::ComputeHuffmanCodes<short unsigned int>(const unsigned short int*, int&, LercNS::Lerc2::ImageEncodeMode&, std::vector<std::pair<short unsigned int, unsigned int>, std::allocator<std::pair<short unsigned int, unsigned int> > >&) const",
+      "symbol": "_ZNK6LercNS5Lerc219ComputeHuffmanCodesItEEvPKT_RiRNS0_15ImageEncodeModeERSt6vectorISt4pairItjESaISA_EE",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::WriteTile<shortint>(const short int*, int, LercNS::Byte**, int&, int, short int, short int, LercNS::Lerc2::DataType, bool, const std::vector<unsignedint,std::allocator<unsignedint>>&, LercNS::Lerc2::BlockEncodeMode, const std::vector<std::pair<unsignedint,unsignedint>,std::allocator<std::pair<unsignedint,unsignedint>>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc29WriteTileIsEEbPKT_iPPhRiiS2_S2_NS0_8DataTypeEbRKSt6vectorIjSaIjEENS0_15BlockEncodeModeERKS9_ISt4pairIjjESaISG_EE"
+      "pretty": "method void std::vector<int, std::allocator<int> >::_M_default_append(std::vector<int, std::allocator<int> >::size_type)",
+      "symbol": "_ZNSt6vectorIiSaIiEE17_M_default_appendEm",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::DecodeHuffman<float>(const LercNS::Byte**, size_t&, float*) const",
-      "symbol": "_ZNK6LercNS5Lerc213DecodeHuffmanIfEEbPPKhRmPT_"
+      "pretty": "method bool LercNS::Lerc2::EncodeHuffman<int>(const int*, LercNS::Byte**) const",
+      "symbol": "_ZNK6LercNS5Lerc213EncodeHuffmanIiEEbPKT_PPh",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc::Convert<int>(const LercNS::CntZImage&, int*, LercNS::Byte*, bool)",
-      "symbol": "_ZN6LercNS4Lerc7ConvertIiEEbRKNS_9CntZImageEPT_Phb"
+      "pretty": "method void LercNS::Lerc2::ComputeHuffmanCodes<unsigned int>(const unsigned int*, int&, LercNS::Lerc2::ImageEncodeMode&, std::vector<std::pair<short unsigned int, unsigned int>, std::allocator<std::pair<short unsigned int, unsigned int> > >&) const",
+      "symbol": "_ZNK6LercNS5Lerc219ComputeHuffmanCodesIjEEvPKT_RiRNS0_15ImageEncodeModeERSt6vectorISt4pairItjESaISA_EE",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::vector<LercNS::Huffman::Node,std::allocator<LercNS::Huffman::Node>>::_M_realloc_insert<LercNS::Huffman::Node>(std::vector<LercNS::Huffman::Node,std::allocator<LercNS::Huffman::Node>>::iterator)",
-      "symbol": "_ZNSt6vectorIN6LercNS7Huffman4NodeESaIS2_EE17_M_realloc_insertIJS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_"
+      "pretty": "method bool LercNS::Lerc2::TryRaiseMaxZError<signed char>(const signed char*, double&) const",
+      "symbol": "_ZNK6LercNS5Lerc217TryRaiseMaxZErrorIaEEbPKT_Rd",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method int LercNS::Lerc2::NumBytesTile<unsignedchar>(int, unsigned char, unsigned char, LercNS::Lerc2::DataType, bool, LercNS::Lerc2::BlockEncodeMode&, const std::vector<std::pair<unsignedint,unsignedint>,std::allocator<std::pair<unsignedint,unsignedint>>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc212NumBytesTileIhEEiiT_S2_NS0_8DataTypeEbRNS0_15BlockEncodeModeERKSt6vectorISt4pairIjjESaIS8_EE"
+      "pretty": "method bool LercNS::Lerc2::EncodeHuffman<short int>(const short int*, LercNS::Byte**) const",
+      "symbol": "_ZNK6LercNS5Lerc213EncodeHuffmanIsEEbPKT_PPh",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method virtual void LercNS::TImage<LercNS::CntZ>::clear()",
-      "symbol": "_ZN6LercNS6TImageINS_4CntZEE5clearEv"
+      "pretty": "method bool LercNS::Lerc2::EncodeHuffman<float>(const float*, LercNS::Byte**) const",
+      "symbol": "_ZNK6LercNS5Lerc213EncodeHuffmanIfEEbPKT_PPh",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method int LercNS::Lerc2::NumBytesTile<shortint>(int, short int, short int, LercNS::Lerc2::DataType, bool, LercNS::Lerc2::BlockEncodeMode&, const std::vector<std::pair<unsignedint,unsignedint>,std::allocator<std::pair<unsignedint,unsignedint>>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc212NumBytesTileIsEEiiT_S2_NS0_8DataTypeEbRNS0_15BlockEncodeModeERKSt6vectorISt4pairIjjESaIS8_EE"
+      "pretty": "method int LercNS::Lerc2::ReduceDataType<double>(LercNS::Lerc2::DataType, LercNS::Lerc2::DataType&)",
+      "symbol": "_ZN6LercNS5Lerc214ReduceDataTypeIdEEiT_NS0_8DataTypeERS3_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method std::_Vector_base<double,std::allocator<double>>::~_Vector_base()",
-      "symbol": "_ZNSt12_Vector_baseIdSaIdEED2Ev"
+      "pretty": "method bool LercNS::Lerc::Convert<unsigned char>(unsigned char*, LercNS::Byte*, bool)",
+      "symbol": "_ZN6LercNS4Lerc7ConvertIhEEbRKNS_9CntZImageEPT_Phb",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::TryRaiseMaxZError<unsignedint>(const unsigned int*, double&) const",
-      "symbol": "_ZNK6LercNS5Lerc217TryRaiseMaxZErrorIjEEbPKT_Rd"
+      "pretty": "method bool LercNS::Lerc2::FillConstImage<unsigned int>(unsigned int*) const",
+      "symbol": "_ZNK6LercNS5Lerc214FillConstImageIjEEbPT_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method int LercNS::Lerc2::NumBytesTile<unsignedint>(int, unsigned int, unsigned int, LercNS::Lerc2::DataType, bool, LercNS::Lerc2::BlockEncodeMode&, const std::vector<std::pair<unsignedint,unsignedint>,std::allocator<std::pair<unsignedint,unsignedint>>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc212NumBytesTileIjEEiiT_S2_NS0_8DataTypeEbRNS0_15BlockEncodeModeERKSt6vectorISt4pairIjjESaIS8_EE"
+      "pretty": "method LercNS::ErrCode LercNS::Lerc::DecodeTempl<short unsigned int>(const LercNS::Byte*, unsigned int, int, int, int, int, int, LercNS::Byte*)",
+      "symbol": "_ZN6LercNS4Lerc11DecodeTemplItEENS_7ErrCodeEPT_PKhjiiiiiPh",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::WriteTile<unsignedchar>(const unsigned char*, int, LercNS::Byte**, int&, int, unsigned char, unsigned char, LercNS::Lerc2::DataType, bool, const std::vector<unsignedint,std::allocator<unsignedint>>&, LercNS::Lerc2::BlockEncodeMode, const std::vector<std::pair<unsignedint,unsignedint>,std::allocator<std::pair<unsignedint,unsignedint>>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc29WriteTileIhEEbPKT_iPPhRiiS2_S2_NS0_8DataTypeEbRKSt6vectorIjSaIjEENS0_15BlockEncodeModeERKS9_ISt4pairIjjESaISG_EE"
+      "pretty": "method void LercNS::Lerc2::ComputeHuffmanCodes<signed char>(const signed char*, int&, LercNS::Lerc2::ImageEncodeMode&, std::vector<std::pair<short unsigned int, unsigned int>, std::allocator<std::pair<short unsigned int, unsigned int> > >&) const",
+      "symbol": "_ZNK6LercNS5Lerc219ComputeHuffmanCodesIaEEvPKT_RiRNS0_15ImageEncodeModeERSt6vectorISt4pairItjESaISA_EE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method LercNS::ErrCode LercNS::Lerc::EncodeInternal<double>(int, int, int, int, int, int, const LercNS::Byte*, double, unsigned int&, LercNS::Byte*, unsigned int, unsigned int&)",
+      "symbol": "_ZN6LercNS4Lerc14EncodeInternalIdEENS_7ErrCodeEPKT_iiiiiiPKhdRjPhjS8_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc::Resize<unsigned char>(size_t)",
+      "symbol": "_ZN6LercNS4Lerc6ResizeIhEEbRSt6vectorIT_SaIS3_EEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc::Convert<short int>(short int*, LercNS::Byte*, bool)",
+      "symbol": "_ZN6LercNS4Lerc7ConvertIsEEbRKNS_9CntZImageEPT_Phb",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method LercNS::ErrCode LercNS::Lerc::DecodeTempl<unsigned char>(const LercNS::Byte*, unsigned int, int, int, int, int, int, LercNS::Byte*)",
+      "symbol": "_ZN6LercNS4Lerc11DecodeTemplIhEENS_7ErrCodeEPT_PKhjiiiiiPh",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual LercNS::BitStuffer::~BitStuffer(int)",
+      "symbol": "_ZN6LercNS10BitStufferD0Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc2::TryBitPlaneCompression<float>(const float*, double, double&) const",
+      "symbol": "_ZNK6LercNS5Lerc222TryBitPlaneCompressionIfEEbPKT_dRd",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc::Convert<short unsigned int>(unsigned short int*, LercNS::Byte*, bool)",
+      "symbol": "_ZN6LercNS4Lerc7ConvertItEEbRKNS_9CntZImageEPT_Phb",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc2::DecodeHuffman<unsigned int>(const LercNS::Byte**, size_t&, unsigned int*) const",
+      "symbol": "_ZNK6LercNS5Lerc213DecodeHuffmanIjEEbPPKhRmPT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method LercNS::ErrCode LercNS::Lerc::DecodeTempl<float>(const LercNS::Byte*, unsigned int, int, int, int, int, int, LercNS::Byte*)",
+      "symbol": "_ZN6LercNS4Lerc11DecodeTemplIfEENS_7ErrCodeEPT_PKhjiiiiiPh",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc2::WriteTile<double>(const double*, int, LercNS::Byte**, int&, int, double, double, LercNS::Lerc2::DataType, bool, const std::vector<unsigned int, std::allocator<unsigned int> >&, LercNS::Lerc2::BlockEncodeMode, const std::vector<std::pair<unsigned int, unsigned int>, std::allocator<std::pair<unsigned int, unsigned int> > >&) const",
+      "symbol": "_ZNK6LercNS5Lerc29WriteTileIdEEbPKT_iPPhRiiS2_S2_NS0_8DataTypeEbRKSt6vectorIjSaIjEENS0_15BlockEncodeModeERKS9_ISt4pairIjjESaISG_EE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual LercNS::BitStuffer2::~BitStuffer2(int)",
+      "symbol": "_ZN6LercNS11BitStuffer2D2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method LercNS::ErrCode LercNS::Lerc::CheckForNaN<float>(int, int, int, const LercNS::Byte*)",
+      "symbol": "_ZN6LercNS4Lerc11CheckForNaNIfEENS_7ErrCodeEPKT_iiiPKh",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method LercNS::ErrCode LercNS::Lerc::EncodeInternal<unsigned char>(int, int, int, int, int, int, const LercNS::Byte*, double, unsigned int&, LercNS::Byte*, unsigned int, unsigned int&)",
+      "symbol": "_ZN6LercNS4Lerc14EncodeInternalIhEENS_7ErrCodeEPKT_iiiiiiPKhdRjPhjS8_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc2::ReadTiles<int>(const LercNS::Byte**, size_t&, int*) const",
+      "symbol": "_ZNK6LercNS5Lerc29ReadTilesIiEEbPPKhRmPT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method LercNS::ErrCode LercNS::Lerc::DecodeTempl<signed char>(const LercNS::Byte*, unsigned int, int, int, int, int, int, LercNS::Byte*)",
+      "symbol": "_ZN6LercNS4Lerc11DecodeTemplIaEENS_7ErrCodeEPT_PKhjiiiiiPh",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual LercNS::RLE::~RLE(int)",
+      "symbol": "_ZN6LercNS3RLED0Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int LercNS::Lerc2::ReduceDataType<float>(LercNS::Lerc2::DataType, LercNS::Lerc2::DataType&)",
+      "symbol": "_ZN6LercNS5Lerc214ReduceDataTypeIfEEiT_NS0_8DataTypeERS3_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual LercNS::RLE::~RLE(int)",
+      "symbol": "_ZN6LercNS3RLED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc2::TryBitPlaneCompression<unsigned int>(const unsigned int*, double, double&) const",
+      "symbol": "_ZNK6LercNS5Lerc222TryBitPlaneCompressionIjEEbPKT_dRd",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Vector_base<unsigned char, std::allocator<unsigned char> >::~_Vector_base(int)",
+      "symbol": "_ZNSt12_Vector_baseIhSaIhEED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method LercNS::ErrCode LercNS::Lerc::DecodeTempl<double>(const LercNS::Byte*, unsigned int, int, int, int, int, int, LercNS::Byte*)",
+      "symbol": "_ZN6LercNS4Lerc11DecodeTemplIdEENS_7ErrCodeEPT_PKhjiiiiiPh",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc2::ReadTile<unsigned int>(const LercNS::Byte**, size_t&, unsigned int*, int, int, int, int, int, std::vector<unsigned int, std::allocator<unsigned int> >&) const",
+      "symbol": "_ZNK6LercNS5Lerc28ReadTileIjEEbPPKhRmPT_iiiiiRSt6vectorIjSaIjEE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void LercNS::Lerc2::ComputeHuffmanCodes<unsigned char>(const unsigned char*, int&, LercNS::Lerc2::ImageEncodeMode&, std::vector<std::pair<short unsigned int, unsigned int>, std::allocator<std::pair<short unsigned int, unsigned int> > >&) const",
+      "symbol": "_ZNK6LercNS5Lerc219ComputeHuffmanCodesIhEEvPKT_RiRNS0_15ImageEncodeModeERSt6vectorISt4pairItjESaISA_EE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc2::TryBitPlaneCompression<unsigned char>(const unsigned char*, double, double&) const",
+      "symbol": "_ZNK6LercNS5Lerc222TryBitPlaneCompressionIhEEbPKT_dRd",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::pair<short int, short int>, std::allocator<std::pair<short int, short int> > >::_M_fill_assign(std::size_t, const std::vector<std::pair<short int, short int>, std::allocator<std::pair<short int, short int> > >::value_type&)",
+      "symbol": "_ZNSt6vectorISt4pairIssESaIS1_EE14_M_fill_assignEmRKS1_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method LercNS::ErrCode LercNS::Lerc::DecodeTempl<short int>(const LercNS::Byte*, unsigned int, int, int, int, int, int, LercNS::Byte*)",
+      "symbol": "_ZN6LercNS4Lerc11DecodeTemplIsEENS_7ErrCodeEPT_PKhjiiiiiPh",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc2::ReadTiles<double>(const LercNS::Byte**, size_t&, double*) const",
+      "symbol": "_ZNK6LercNS5Lerc29ReadTilesIdEEbPPKhRmPT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc::Convert<unsigned int>(unsigned int*, LercNS::Byte*, bool)",
+      "symbol": "_ZN6LercNS4Lerc7ConvertIjEEbRKNS_9CntZImageEPT_Phb",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual LercNS::BitStuffer2::~BitStuffer2(int)",
+      "symbol": "_ZN6LercNS11BitStuffer2D0Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void LercNS::Lerc2::ComputeHistoForHuffman<unsigned char>(const unsigned char*, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) const",
+      "symbol": "_ZNK6LercNS5Lerc222ComputeHistoForHuffmanIhEEvPKT_RSt6vectorIiSaIiEES8_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::vector<unsigned int, std::allocator<unsigned int> >::iterator std::vector<unsigned int, std::allocator<unsigned int> >::_M_insert_rval(std::vector<unsigned int, std::allocator<unsigned int> >::const_iterator, std::vector<unsigned int, std::allocator<unsigned int> >::value_type&&)",
+      "symbol": "_ZNSt6vectorIjSaIjEE14_M_insert_rvalEN9__gnu_cxx17__normal_iteratorIPKjS1_EEOj",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::BitStuffer::readUInt(unsigned int&, int)",
+      "symbol": "_ZN6LercNS10BitStuffer8readUIntEPPhRji",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method LercNS::ErrCode LercNS::Lerc::EncodeInternal<float>(int, int, int, int, int, int, const LercNS::Byte*, double, unsigned int&, LercNS::Byte*, unsigned int, unsigned int&)",
+      "symbol": "_ZN6LercNS4Lerc14EncodeInternalIfEENS_7ErrCodeEPKT_iiiiiiPKhdRjPhjS8_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<float, std::allocator<float> >::_M_default_append(std::vector<float, std::allocator<float> >::size_type)",
+      "symbol": "_ZNSt6vectorIfSaIfEE17_M_default_appendEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void LercNS::Lerc2::ComputeHistoForHuffman<short int>(const short int*, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) const",
+      "symbol": "_ZNK6LercNS5Lerc222ComputeHistoForHuffmanIsEEvPKT_RSt6vectorIiSaIiEES8_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method LercNS::ErrCode LercNS::Lerc::DecodeTempl<unsigned int>(const LercNS::Byte*, unsigned int, int, int, int, int, int, LercNS::Byte*)",
+      "symbol": "_ZN6LercNS4Lerc11DecodeTemplIjEENS_7ErrCodeEPT_PKhjiiiiiPh",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<unsigned char, std::allocator<unsigned char> >::_M_default_append(std::vector<unsigned char, std::allocator<unsigned char> >::size_type)",
+      "symbol": "_ZNSt6vectorIhSaIhEE17_M_default_appendEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method LercNS::ErrCode LercNS::Lerc::EncodeInternal<short unsigned int>(int, int, int, int, int, int, const LercNS::Byte*, double, unsigned int&, LercNS::Byte*, unsigned int, unsigned int&)",
+      "symbol": "_ZN6LercNS4Lerc14EncodeInternalItEENS_7ErrCodeEPKT_iiiiiiPKhdRjPhjS8_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc2::DecodeHuffman<short int>(const LercNS::Byte**, size_t&, short int*) const",
+      "symbol": "_ZNK6LercNS5Lerc213DecodeHuffmanIsEEbPPKhRmPT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void LercNS::Lerc2::ComputeHuffmanCodes<int>(const int*, int&, LercNS::Lerc2::ImageEncodeMode&, std::vector<std::pair<short unsigned int, unsigned int>, std::allocator<std::pair<short unsigned int, unsigned int> > >&) const",
+      "symbol": "_ZNK6LercNS5Lerc219ComputeHuffmanCodesIiEEvPKT_RiRNS0_15ImageEncodeModeERSt6vectorISt4pairItjESaISA_EE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc2::WriteTiles<short unsigned int>(const unsigned short int*, LercNS::Byte**, int&) const",
+      "symbol": "_ZNK6LercNS5Lerc210WriteTilesItEEbPKT_PPhRi",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method LercNS::ErrCode LercNS::Lerc::EncodeInternal<unsigned int>(int, int, int, int, int, int, const LercNS::Byte*, double, unsigned int&, LercNS::Byte*, unsigned int, unsigned int&)",
+      "symbol": "_ZN6LercNS4Lerc14EncodeInternalIjEENS_7ErrCodeEPKT_iiiiiiPKhdRjPhjS8_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void LercNS::Lerc2::ComputeHistoForHuffman<signed char>(const signed char*, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) const",
+      "symbol": "_ZNK6LercNS5Lerc222ComputeHistoForHuffmanIaEEvPKT_RSt6vectorIiSaIiEES8_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual LercNS::BitMask::~BitMask(int)",
+      "symbol": "_ZN6LercNS7BitMaskD2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc2::ReadTile<float>(const LercNS::Byte**, size_t&, float*, int, int, int, int, int, std::vector<unsigned int, std::allocator<unsigned int> >&) const",
+      "symbol": "_ZNK6LercNS5Lerc28ReadTileIfEEbPPKhRmPT_iiiiiRSt6vectorIjSaIjEE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method LercNS::ErrCode LercNS::Lerc::EncodeInternal<short int>(int, int, int, int, int, int, const LercNS::Byte*, double, unsigned int&, LercNS::Byte*, unsigned int, unsigned int&)",
+      "symbol": "_ZN6LercNS4Lerc14EncodeInternalIsEENS_7ErrCodeEPKT_iiiiiiPKhdRjPhjS8_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual LercNS::Lerc2::~Lerc2(int)",
+      "symbol": "_ZN6LercNS5Lerc2D2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method LercNS::ErrCode LercNS::Lerc::EncodeInternal<signed char>(int, int, int, int, int, int, const LercNS::Byte*, double, unsigned int&, LercNS::Byte*, unsigned int, unsigned int&)",
+      "symbol": "_ZN6LercNS4Lerc14EncodeInternalIaEENS_7ErrCodeEPKT_iiiiiiPKhdRjPhjS8_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc2::WriteTiles<signed char>(const signed char*, LercNS::Byte**, int&) const",
+      "symbol": "_ZNK6LercNS5Lerc210WriteTilesIaEEbPKT_PPhRi",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<signed char, std::allocator<signed char> >::_M_default_append(std::vector<signed char, std::allocator<signed char> >::size_type)",
+      "symbol": "_ZNSt6vectorIaSaIaEE17_M_default_appendEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc2::EncodeHuffman<double>(const double*, LercNS::Byte**) const",
+      "symbol": "_ZNK6LercNS5Lerc213EncodeHuffmanIdEEbPKT_PPh",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc::Convert<double>(double*, LercNS::Byte*, bool)",
+      "symbol": "_ZN6LercNS4Lerc7ConvertIdEEbRKNS_9CntZImageEPT_Phb",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual LercNS::CntZImage::~CntZImage(int)",
+      "symbol": "_ZN6LercNS9CntZImageD0Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc2::TryRaiseMaxZError<short unsigned int>(const unsigned short int*, double&) const",
+      "symbol": "_ZNK6LercNS5Lerc217TryRaiseMaxZErrorItEEbPKT_Rd",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Vector_base<int, std::allocator<int> >::~_Vector_base(int)",
+      "symbol": "_ZNSt12_Vector_baseIiSaIiEED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Huffman::Node::TreeToLUT(unsigned short int, unsigned int, std::vector<std::pair<short unsigned int, unsigned int>, std::allocator<std::pair<short unsigned int, unsigned int> > >&) const",
+      "symbol": "_ZNK6LercNS7Huffman4Node9TreeToLUTEtjRSt6vectorISt4pairItjESaIS4_EE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method LercNS::ErrCode LercNS::Lerc::EncodeInternal<int>(int, int, int, int, int, int, const LercNS::Byte*, double, unsigned int&, LercNS::Byte*, unsigned int, unsigned int&)",
+      "symbol": "_ZN6LercNS4Lerc14EncodeInternalIiEENS_7ErrCodeEPKT_iiiiiiPKhdRjPhjS8_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc2::WriteTiles<float>(const float*, LercNS::Byte**, int&) const",
+      "symbol": "_ZNK6LercNS5Lerc210WriteTilesIfEEbPKT_PPhRi",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc2::ComputeMinMaxRanges<signed char>(const signed char*, std::vector<double, std::allocator<double> >&, std::vector<double, std::allocator<double> >&) const",
+      "symbol": "_ZNK6LercNS5Lerc219ComputeMinMaxRangesIaEEbPKT_RSt6vectorIdSaIdEES8_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual LercNS::BitStuffer::~BitStuffer(int)",
+      "symbol": "_ZN6LercNS10BitStufferD2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc2::WriteTile<unsigned char>(const unsigned char*, int, LercNS::Byte**, int&, int, unsigned char, unsigned char, LercNS::Lerc2::DataType, bool, const std::vector<unsigned int, std::allocator<unsigned int> >&, LercNS::Lerc2::BlockEncodeMode, const std::vector<std::pair<unsigned int, unsigned int>, std::allocator<std::pair<unsigned int, unsigned int> > >&) const",
+      "symbol": "_ZNK6LercNS5Lerc29WriteTileIhEEbPKT_iPPhRiiS2_S2_NS0_8DataTypeEbRKSt6vectorIjSaIjEENS0_15BlockEncodeModeERKS9_ISt4pairIjjESaISG_EE",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
       "pretty": "method bool LercNS::Lerc2::TryRaiseMaxZError<int>(const int*, double&) const",
-      "symbol": "_ZNK6LercNS5Lerc217TryRaiseMaxZErrorIiEEbPKT_Rd"
+      "symbol": "_ZNK6LercNS5Lerc217TryRaiseMaxZErrorIiEEbPKT_Rd",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Vector_base<short unsigned int, std::allocator<short unsigned int> >::~_Vector_base(int)",
+      "symbol": "_ZNSt12_Vector_baseItSaItEED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc2::WriteTile<short int>(const short int*, int, LercNS::Byte**, int&, int, short int, short int, LercNS::Lerc2::DataType, bool, const std::vector<unsigned int, std::allocator<unsigned int> >&, LercNS::Lerc2::BlockEncodeMode, const std::vector<std::pair<unsigned int, unsigned int>, std::allocator<std::pair<unsigned int, unsigned int> > >&) const",
+      "symbol": "_ZNK6LercNS5Lerc29WriteTileIsEEbPKT_iPPhRiiS2_S2_NS0_8DataTypeEbRKSt6vectorIjSaIjEENS0_15BlockEncodeModeERKS9_ISt4pairIjjESaISG_EE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc2::DecodeHuffman<float>(const LercNS::Byte**, size_t&, float*) const",
+      "symbol": "_ZNK6LercNS5Lerc213DecodeHuffmanIfEEbPPKhRmPT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc::Convert<float>(float*, LercNS::Byte*, bool)",
+      "symbol": "_ZN6LercNS4Lerc7ConvertIfEEbRKNS_9CntZImageEPT_Phb",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::CntZImage::readFlt(float&, int)",
+      "symbol": "_ZN6LercNS9CntZImage7readFltEPPhRfi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void LercNS::Lerc2::ComputeHistoForHuffman<float>(const float*, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) const",
+      "symbol": "_ZNK6LercNS5Lerc222ComputeHistoForHuffmanIfEEvPKT_RSt6vectorIiSaIiEES8_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc2::DecodeHuffman<signed char>(const LercNS::Byte**, size_t&, signed char*) const",
+      "symbol": "_ZNK6LercNS5Lerc213DecodeHuffmanIaEEbPPKhRmPT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int LercNS::Lerc2::NumBytesTile<unsigned int>(int, unsigned int, unsigned int, LercNS::Lerc2::DataType, bool, LercNS::Lerc2::BlockEncodeMode&, const std::vector<std::pair<unsigned int, unsigned int>, std::allocator<std::pair<unsigned int, unsigned int> > >&) const",
+      "symbol": "_ZNK6LercNS5Lerc212NumBytesTileIjEEiiT_S2_NS0_8DataTypeEbRNS0_15BlockEncodeModeERKSt6vectorISt4pairIjjESaIS8_EE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc2::TryBitPlaneCompression<int>(const int*, double, double&) const",
+      "symbol": "_ZNK6LercNS5Lerc222TryBitPlaneCompressionIiEEbPKT_dRd",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc2::FillConstImage<short unsigned int>(unsigned short int*) const",
+      "symbol": "_ZNK6LercNS5Lerc214FillConstImageItEEbPT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int LercNS::Lerc2::NumBytesTile<short unsigned int>(int, unsigned short int, unsigned short int, LercNS::Lerc2::DataType, bool, LercNS::Lerc2::BlockEncodeMode&, const std::vector<std::pair<unsigned int, unsigned int>, std::allocator<std::pair<unsigned int, unsigned int> > >&) const",
+      "symbol": "_ZNK6LercNS5Lerc212NumBytesTileItEEiiT_S2_NS0_8DataTypeEbRNS0_15BlockEncodeModeERKSt6vectorISt4pairIjjESaIS8_EE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc2::WriteTile<short unsigned int>(const unsigned short int*, int, LercNS::Byte**, int&, int, unsigned short int, unsigned short int, LercNS::Lerc2::DataType, bool, const std::vector<unsigned int, std::allocator<unsigned int> >&, LercNS::Lerc2::BlockEncodeMode, const std::vector<std::pair<unsigned int, unsigned int>, std::allocator<std::pair<unsigned int, unsigned int> > >&) const",
+      "symbol": "_ZNK6LercNS5Lerc29WriteTileItEEbPKT_iPPhRiiS2_S2_NS0_8DataTypeEbRKSt6vectorIjSaIjEENS0_15BlockEncodeModeERKS9_ISt4pairIjjESaISG_EE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual LercNS::CntZImage::~CntZImage(int)",
+      "symbol": "_ZN6LercNS9CntZImageD2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Vector_base<signed char, std::allocator<signed char> >::~_Vector_base(int)",
+      "symbol": "_ZNSt12_Vector_baseIaSaIaEED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc2::WriteTile<signed char>(const signed char*, int, LercNS::Byte**, int&, int, signed char, signed char, LercNS::Lerc2::DataType, bool, const std::vector<unsigned int, std::allocator<unsigned int> >&, LercNS::Lerc2::BlockEncodeMode, const std::vector<std::pair<unsigned int, unsigned int>, std::allocator<std::pair<unsigned int, unsigned int> > >&) const",
+      "symbol": "_ZNK6LercNS5Lerc29WriteTileIaEEbPKT_iPPhRiiS2_S2_NS0_8DataTypeEbRKSt6vectorIjSaIjEENS0_15BlockEncodeModeERKS9_ISt4pairIjjESaISG_EE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc2::TryBitPlaneCompression<double>(const double*, double, double&) const",
+      "symbol": "_ZNK6LercNS5Lerc222TryBitPlaneCompressionIdEEbPKT_dRd",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual LercNS::Lerc2::~Lerc2(int)",
+      "symbol": "_ZN6LercNS5Lerc2D0Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual void LercNS::TImage<LercNS::CntZ>::clear()",
+      "symbol": "_ZN6LercNS6TImageINS_4CntZEE5clearEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<LercNS::Huffman::Node, std::allocator<LercNS::Huffman::Node> >::_M_realloc_insert<LercNS::Huffman::Node>(std::vector<LercNS::Huffman::Node, std::allocator<LercNS::Huffman::Node> >::iterator, LercNS::Huffman::Node&&)",
+      "symbol": "_ZNSt6vectorIN6LercNS7Huffman4NodeESaIS2_EE17_M_realloc_insertIJS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc::Convert<int>(int*, LercNS::Byte*, bool)",
+      "symbol": "_ZN6LercNS4Lerc7ConvertIiEEbRKNS_9CntZImageEPT_Phb",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int LercNS::Lerc2::NumBytesTile<unsigned char>(int, unsigned char, unsigned char, LercNS::Lerc2::DataType, bool, LercNS::Lerc2::BlockEncodeMode&, const std::vector<std::pair<unsigned int, unsigned int>, std::allocator<std::pair<unsigned int, unsigned int> > >&) const",
+      "symbol": "_ZNK6LercNS5Lerc212NumBytesTileIhEEiiT_S2_NS0_8DataTypeEbRNS0_15BlockEncodeModeERKSt6vectorISt4pairIjjESaIS8_EE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual LercNS::TImage<LercNS::CntZ>& LercNS::TImage<LercNS::CntZ>::operator=(const LercNS::TImage<LercNS::CntZ>&)",
+      "symbol": "_ZN6LercNS6TImageINS_4CntZEEaSERKS2_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual LercNS::BitMask::~BitMask(int)",
+      "symbol": "_ZN6LercNS7BitMaskD0Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc2::TryRaiseMaxZError<double>(const double*, double&) const",
+      "symbol": "_ZNK6LercNS5Lerc217TryRaiseMaxZErrorIdEEbPKT_Rd",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Vector_base<double, std::allocator<double> >::~_Vector_base(int)",
+      "symbol": "_ZNSt12_Vector_baseIdSaIdEED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc2::TryRaiseMaxZError<unsigned int>(const unsigned int*, double&) const",
+      "symbol": "_ZNK6LercNS5Lerc217TryRaiseMaxZErrorIjEEbPKT_Rd",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int LercNS::Lerc2::NumBytesTile<short int>(int, short int, short int, LercNS::Lerc2::DataType, bool, LercNS::Lerc2::BlockEncodeMode&, const std::vector<std::pair<unsigned int, unsigned int>, std::allocator<std::pair<unsigned int, unsigned int> > >&) const",
+      "symbol": "_ZNK6LercNS5Lerc212NumBytesTileIsEEiiT_S2_NS0_8DataTypeEbRNS0_15BlockEncodeModeERKSt6vectorISt4pairIjjESaIS8_EE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void LercNS::Lerc2::ComputeHistoForHuffman<double>(const double*, std::vector<int, std::allocator<int> >&, std::vector<int, std::allocator<int> >&) const",
+      "symbol": "_ZNK6LercNS5Lerc222ComputeHistoForHuffmanIdEEvPKT_RSt6vectorIiSaIiEES8_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool LercNS::Lerc::Convert<signed char>(signed char*, LercNS::Byte*, bool)",
+      "symbol": "_ZN6LercNS4Lerc7ConvertIaEEbRKNS_9CntZImageEPT_Phb",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
       "pretty": "method bool LercNS::Lerc2::WriteTiles<int>(const int*, LercNS::Byte**, int&) const",
-      "symbol": "_ZNK6LercNS5Lerc210WriteTilesIiEEbPKT_PPhRi"
+      "symbol": "_ZNK6LercNS5Lerc210WriteTilesIiEEbPKT_PPhRi",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method LercNS::ErrCode LercNS::Lerc::DecodeTempl<int>(int*, const LercNS::Byte*, unsigned int, int, int, int, int, int, LercNS::Byte*)",
-      "symbol": "_ZN6LercNS4Lerc11DecodeTemplIiEENS_7ErrCodeEPT_PKhjiiiiiPh"
+      "pretty": "method LercNS::Huffman::~Huffman(int)",
+      "symbol": "_ZN6LercNS7HuffmanD2Ev",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::WriteTiles<unsignedchar>(const unsigned char*, LercNS::Byte**, int&) const",
-      "symbol": "_ZNK6LercNS5Lerc210WriteTilesIhEEbPKT_PPhRi"
+      "pretty": "method bool LercNS::Lerc2::ComputeMinMaxRanges<unsigned int>(const unsigned int*, std::vector<double, std::allocator<double> >&, std::vector<double, std::allocator<double> >&) const",
+      "symbol": "_ZNK6LercNS5Lerc219ComputeMinMaxRangesIjEEbPKT_RSt6vectorIdSaIdEES8_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::WriteTile<shortunsignedint>(const unsigned short int*, int, LercNS::Byte**, int&, int, unsigned short int, unsigned short int, LercNS::Lerc2::DataType, bool, const std::vector<unsignedint,std::allocator<unsignedint>>&, LercNS::Lerc2::BlockEncodeMode, const std::vector<std::pair<unsignedint,unsignedint>,std::allocator<std::pair<unsignedint,unsignedint>>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc29WriteTileItEEbPKT_iPPhRiiS2_S2_NS0_8DataTypeEbRKSt6vectorIjSaIjEENS0_15BlockEncodeModeERKS9_ISt4pairIjjESaISG_EE"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method virtual LercNS::CntZImage::~CntZImage()",
-      "symbol": "_ZN6LercNS9CntZImageD2Ev"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::ComputeMinMaxRanges<unsignedint>(const unsigned int*, std::vector<double,std::allocator<double>>&, std::vector<double,std::allocator<double>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc219ComputeMinMaxRangesIjEEbPKT_RSt6vectorIdSaIdEES8_"
+      "pretty": "method void LercNS::Lerc2::ComputeHuffmanCodes<float>(const float*, int&, LercNS::Lerc2::ImageEncodeMode&, std::vector<std::pair<short unsigned int, unsigned int>, std::allocator<std::pair<short unsigned int, unsigned int> > >&) const",
+      "symbol": "_ZNK6LercNS5Lerc219ComputeHuffmanCodesIfEEvPKT_RiRNS0_15ImageEncodeModeERSt6vectorISt4pairItjESaISA_EE",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
       "pretty": "method void LercNS::Huffman::Node::FreeTree(int&)",
-      "symbol": "_ZN6LercNS7Huffman4Node8FreeTreeERi"
+      "symbol": "_ZN6LercNS7Huffman4Node8FreeTreeERi",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void LercNS::Lerc2::ComputeHuffmanCodes<float>(const float*, int&, LercNS::Lerc2::ImageEncodeMode&, std::vector<std::pair<shortunsignedint,unsignedint>,std::allocator<std::pair<shortunsignedint,unsignedint>>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc219ComputeHuffmanCodesIfEEvPKT_RiRNS0_15ImageEncodeModeERSt6vectorISt4pairItjESaISA_EE"
+      "pretty": "method bool LercNS::Lerc2::ComputeMinMaxRanges<short unsigned int>(const unsigned short int*, std::vector<double, std::allocator<double> >&, std::vector<double, std::allocator<double> >&) const",
+      "symbol": "_ZNK6LercNS5Lerc219ComputeMinMaxRangesItEEbPKT_RSt6vectorIdSaIdEES8_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::vector<shortint,std::allocator<shortint>>::_M_default_append(std::vector<shortint,std::allocator<shortint>>::size_type)",
-      "symbol": "_ZNSt6vectorIsSaIsEE17_M_default_appendEm"
+      "pretty": "method bool LercNS::Lerc2::WriteTiles<double>(const double*, LercNS::Byte**, int&) const",
+      "symbol": "_ZNK6LercNS5Lerc210WriteTilesIdEEbPKT_PPhRi",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::DecodeHuffman<unsignedchar>(const LercNS::Byte**, size_t&, unsigned char*) const",
-      "symbol": "_ZNK6LercNS5Lerc213DecodeHuffmanIhEEbPPKhRmPT_"
+      "pretty": "method LercNS::ErrCode LercNS::Lerc::DecodeTempl<int>(const LercNS::Byte*, unsigned int, int, int, int, int, int, LercNS::Byte*)",
+      "symbol": "_ZN6LercNS4Lerc11DecodeTemplIiEENS_7ErrCodeEPT_PKhjiiiiiPh",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method LercNS::Huffman::~Huffman()",
-      "symbol": "_ZN6LercNS7HuffmanD2Ev"
+      "pretty": "method bool LercNS::Lerc2::WriteTiles<unsigned char>(const unsigned char*, LercNS::Byte**, int&) const",
+      "symbol": "_ZNK6LercNS5Lerc210WriteTilesIhEEbPKT_PPhRi",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::vector<double,std::allocator<double>>::_M_realloc_insert<doubleconst&>(std::vector<double,std::allocator<double>>::iterator)",
-      "symbol": "_ZNSt6vectorIdSaIdEE17_M_realloc_insertIJRKdEEEvN9__gnu_cxx17__normal_iteratorIPdS1_EEDpOT_"
+      "pretty": "method bool LercNS::Lerc2::WriteTiles<unsigned int>(const unsigned int*, LercNS::Byte**, int&) const",
+      "symbol": "_ZNK6LercNS5Lerc210WriteTilesIjEEbPKT_PPhRi",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void LercNS::Lerc2::ComputeHistoForHuffman<unsignedint>(const unsigned int*, std::vector<int,std::allocator<int>>&, std::vector<int,std::allocator<int>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc222ComputeHistoForHuffmanIjEEvPKT_RSt6vectorIiSaIiEES8_"
+      "pretty": "method bool LercNS::Lerc2::WriteTiles<short int>(const short int*, LercNS::Byte**, int&) const",
+      "symbol": "_ZNK6LercNS5Lerc210WriteTilesIsEEbPKT_PPhRi",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::ComputeMinMaxRanges<unsignedchar>(const unsigned char*, std::vector<double,std::allocator<double>>&, std::vector<double,std::allocator<double>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc219ComputeMinMaxRangesIhEEbPKT_RSt6vectorIdSaIdEES8_"
+      "pretty": "method LercNS::ErrCode LercNS::Lerc::CheckForNaN<double>(int, int, int, const LercNS::Byte*)",
+      "symbol": "_ZN6LercNS4Lerc11CheckForNaNIdEENS_7ErrCodeEPKT_iiiPKh",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method virtual LercNS::BitMask::~BitMask()",
-      "symbol": "_ZN6LercNS7BitMaskD0Ev"
+      "pretty": "method int LercNS::Lerc2::NumBytesTile<signed char>(int, signed char, signed char, LercNS::Lerc2::DataType, bool, LercNS::Lerc2::BlockEncodeMode&, const std::vector<std::pair<unsigned int, unsigned int>, std::allocator<std::pair<unsigned int, unsigned int> > >&) const",
+      "symbol": "_ZNK6LercNS5Lerc212NumBytesTileIaEEiiT_S2_NS0_8DataTypeEbRNS0_15BlockEncodeModeERKSt6vectorISt4pairIjjESaIS8_EE",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::TryBitPlaneCompression<shortunsignedint>(const unsigned short int*, double, double&) const",
-      "symbol": "_ZNK6LercNS5Lerc222TryBitPlaneCompressionItEEbPKT_dRd"
+      "pretty": "method int LercNS::Lerc2::NumBytesTile<int>(int, int, int, LercNS::Lerc2::DataType, bool, LercNS::Lerc2::BlockEncodeMode&, const std::vector<std::pair<unsigned int, unsigned int>, std::allocator<std::pair<unsigned int, unsigned int> > >&) const",
+      "symbol": "_ZNK6LercNS5Lerc212NumBytesTileIiEEiiT_S2_NS0_8DataTypeEbRNS0_15BlockEncodeModeERKSt6vectorISt4pairIjjESaIS8_EE",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::TryBitPlaneCompression<unsignedchar>(const unsigned char*, double, double&) const",
-      "symbol": "_ZNK6LercNS5Lerc222TryBitPlaneCompressionIhEEbPKT_dRd"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method std::_Vector_base<int,std::allocator<int>>::~_Vector_base()",
-      "symbol": "_ZNSt12_Vector_baseIiSaIiEED2Ev"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Huffman::Node::TreeToLUT(unsigned short int, unsigned int, std::vector<std::pair<shortunsignedint,unsignedint>,std::allocator<std::pair<shortunsignedint,unsignedint>>>&) const",
-      "symbol": "_ZNK6LercNS7Huffman4Node9TreeToLUTEtjRSt6vectorISt4pairItjESaIS4_EE"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void LercNS::Lerc2::ComputeHuffmanCodes<shortunsignedint>(const unsigned short int*, int&, LercNS::Lerc2::ImageEncodeMode&, std::vector<std::pair<shortunsignedint,unsignedint>,std::allocator<std::pair<shortunsignedint,unsignedint>>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc219ComputeHuffmanCodesItEEvPKT_RiRNS0_15ImageEncodeModeERSt6vectorISt4pairItjESaISA_EE"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method LercNS::ErrCode LercNS::Lerc::EncodeInternal<double>(const double*, int, int, int, int, int, int, const LercNS::Byte*, double, unsigned int&, LercNS::Byte*, unsigned int, unsigned int&)",
-      "symbol": "_ZN6LercNS4Lerc14EncodeInternalIdEENS_7ErrCodeEPKT_iiiiiiPKhdRjPhjS8_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void LercNS::Lerc2::ComputeHuffmanCodes<signedchar>(const signed char*, int&, LercNS::Lerc2::ImageEncodeMode&, std::vector<std::pair<shortunsignedint,unsignedint>,std::allocator<std::pair<shortunsignedint,unsignedint>>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc219ComputeHuffmanCodesIaEEvPKT_RiRNS0_15ImageEncodeModeERSt6vectorISt4pairItjESaISA_EE"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::ComputeMinMaxRanges<shortunsignedint>(const unsigned short int*, std::vector<double,std::allocator<double>>&, std::vector<double,std::allocator<double>>&) const",
-      "symbol": "_ZNK6LercNS5Lerc219ComputeMinMaxRangesItEEbPKT_RSt6vectorIdSaIdEES8_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool LercNS::Lerc2::ReadTiles<shortunsignedint>(const LercNS::Byte**, size_t&, unsigned short int*) const",
-      "symbol": "_ZNK6LercNS5Lerc29ReadTilesItEEbPPKhRmPT_"
+      "pretty": "method bool LercNS::Lerc2::DecodeHuffman<double>(const LercNS::Byte**, size_t&, double*) const",
+      "symbol": "_ZNK6LercNS5Lerc213DecodeHuffmanIdEEbPPKhRmPT_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
       "pretty": "function lerc_status lerc_getDataRanges(const unsigned char*, unsigned int, int, int, double*, double*)",
-      "symbol": "lerc_getDataRanges"
+      "symbol": "lerc_getDataRanges",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function lerc_status lerc_encode_4D(void*, unsigned int, int, int, int, int, int, const unsigned char*, double, unsigned char*, unsigned int, unsigned int*, const unsigned char*, const double*)",
-      "symbol": "lerc_encode_4D"
+      "symbol": "lerc_encode_4D",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function lerc_status lerc_decode_4D(const unsigned char*, unsigned int, int, unsigned char*, int, int, int, int, unsigned int, void*, unsigned char*, double*)",
-      "symbol": "lerc_decode_4D"
+      "symbol": "lerc_decode_4D",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function lerc_status lerc_computeCompressedSize_4D(void*, unsigned int, int, int, int, int, int, const unsigned char*, double, unsigned int*, const unsigned char*, const double*)",
-      "symbol": "lerc_computeCompressedSize_4D"
+      "symbol": "lerc_computeCompressedSize_4D",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "method int LercNS::LosslessFPCompression::compressedLength() const",
-      "symbol": "_ZNK6LercNS21LosslessFPCompression16compressedLengthEv"
+      "symbol": "_ZNK6LercNS21LosslessFPCompression16compressedLengthEv",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "method unsigned char LercNS::UnitTypes::unitCode(LercNS::UnitType)",
-      "symbol": "_ZN6LercNS9UnitTypes8unitCodeENS_8UnitTypeE"
+      "pretty": "method unsigned char LercNS::UnitTypes::unitCode()",
+      "symbol": "_ZN6LercNS9UnitTypes8unitCodeENS_8UnitTypeE",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void LercNS::UnitTypes::restoreBlockSequence(int, void*, const size_t, const size_t, const LercNS::UnitType)",
-      "symbol": "_ZN6LercNS9UnitTypes20restoreBlockSequenceEiPvmmNS_8UnitTypeE"
+      "pretty": "method void LercNS::UnitTypes::restoreBlockSequence(void*, size_t, size_t, LercNS::UnitType)",
+      "symbol": "_ZN6LercNS9UnitTypes20restoreBlockSequenceEiPvmmNS_8UnitTypeE",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void LercNS::UnitTypes::undoFloatTransform(uint32_t*, const size_t)",
-      "symbol": "_ZN6LercNS9UnitTypes18undoFloatTransformEPjm"
+      "pretty": "method void LercNS::UnitTypes::undoFloatTransform(size_t)",
+      "symbol": "_ZN6LercNS9UnitTypes18undoFloatTransformEPjm",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void LercNS::UnitTypes::setCrossDerivative(LercNS::UnitType, void*, const size_t, const size_t, const int, int)",
-      "symbol": "_ZN6LercNS9UnitTypes18setCrossDerivativeENS_8UnitTypeEPvmmii"
+      "pretty": "method void LercNS::UnitTypes::setCrossDerivative(void*, size_t, size_t, int, int)",
+      "symbol": "_ZN6LercNS9UnitTypes18setCrossDerivativeENS_8UnitTypeEPvmmii",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void LercNS::UnitTypes::setBlockDerivative(LercNS::UnitType, void*, const size_t, const size_t, const int, const int)",
-      "symbol": "_ZN6LercNS9UnitTypes18setBlockDerivativeENS_8UnitTypeEPvmmii"
+      "pretty": "method void LercNS::UnitTypes::setBlockDerivative(void*, size_t, size_t, int, int)",
+      "symbol": "_ZN6LercNS9UnitTypes18setBlockDerivativeENS_8UnitTypeEPvmmii",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void LercNS::UnitTypes::setRowsDerivative(LercNS::UnitType, void*, const size_t, const size_t, const int, int)",
-      "symbol": "_ZN6LercNS9UnitTypes17setRowsDerivativeENS_8UnitTypeEPvmmii"
+      "pretty": "method void LercNS::UnitTypes::setRowsDerivative(void*, size_t, size_t, int, int)",
+      "symbol": "_ZN6LercNS9UnitTypes17setRowsDerivativeENS_8UnitTypeEPvmmii",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void LercNS::UnitTypes::restoreCrossBytes(int, void*, const size_t, const size_t, const LercNS::UnitType)",
-      "symbol": "_ZN6LercNS9UnitTypes17restoreCrossBytesEiPvmmNS_8UnitTypeE"
+      "pretty": "method void LercNS::UnitTypes::restoreCrossBytes(void*, size_t, size_t, LercNS::UnitType)",
+      "symbol": "_ZN6LercNS9UnitTypes17restoreCrossBytesEiPvmmNS_8UnitTypeE",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void LercNS::UnitTypes::setDerivative(LercNS::UnitType, void*, const size_t, const int, const int)",
-      "symbol": "_ZN6LercNS9UnitTypes13setDerivativeENS_8UnitTypeEPvmii"
+      "pretty": "method void LercNS::UnitTypes::setDerivative(void*, size_t, int, int)",
+      "symbol": "_ZN6LercNS9UnitTypes13setDerivativeENS_8UnitTypeEPvmii",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function void _assert(bool)",
-      "symbol": "_Z7_assertb"
+      "symbol": "_Z7_assertb",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "method bool LercNS::Lerc2::SetIsAllInt(bool)",
-      "symbol": "_ZN6LercNS5Lerc211SetIsAllIntEb"
+      "symbol": "_ZN6LercNS5Lerc211SetIsAllIntEb",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function void restoreCrossBytesDouble(const int, uint64_t*, const size_t, const size_t)",
-      "symbol": "_Z23restoreCrossBytesDoubleiPmmm"
+      "symbol": "_Z23restoreCrossBytesDoubleiPmmm",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function void setRowsDerivativeFloat(uint32_t*, const size_t, const size_t, const int, int)",
-      "symbol": "_Z22setRowsDerivativeFloatPjmmii"
+      "symbol": "_Z22setRowsDerivativeFloatPjmmii",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void LercNS::UnitTypes::doFloatTransform(uint32_t*, const size_t)",
-      "symbol": "_ZN6LercNS9UnitTypes16doFloatTransformEPjm"
+      "pretty": "method void LercNS::UnitTypes::doFloatTransform(size_t)",
+      "symbol": "_ZN6LercNS9UnitTypes16doFloatTransformEPjm",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "method long int LercNS::fpl_Compression::getEntropySize(const unsigned char*, const size_t)",
-      "symbol": "_ZN6LercNS15fpl_Compression14getEntropySizeEPKhm"
+      "pretty": "method long int LercNS::fpl_Compression::getEntropySize(size_t)",
+      "symbol": "_ZN6LercNS15fpl_Compression14getEntropySizeEPKhm",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "function bool ComputeHistoForHuffman(const unsigned char*, size_t, std::vector<int,std::allocator<int>>&)",
-      "symbol": "_Z22ComputeHistoForHuffmanPKhmRSt6vectorIiSaIiEE"
+      "pretty": "function bool ComputeHistoForHuffman(const unsigned char*, size_t, std::vector<int, std::allocator<int> >&)",
+      "symbol": "_Z22ComputeHistoForHuffmanPKhmRSt6vectorIiSaIiEE",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function uint32_t SUB32_BIT_FLT(const uint32_t&, const uint32_t&)",
-      "symbol": "_Z13SUB32_BIT_FLTRKjS0_"
+      "symbol": "_Z13SUB32_BIT_FLTRKjS0_",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function void restoreBlockSequenceFloat(const int, uint32_t*, const size_t, const size_t)",
-      "symbol": "_Z25restoreBlockSequenceFloatiPjmm"
+      "symbol": "_Z25restoreBlockSequenceFloatiPjmm",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "method bool LercNS::Lerc2::GetRanges(const LercNS::Byte*, size_t, double*, double*)",
-      "symbol": "_ZN6LercNS5Lerc29GetRangesEPKhmPdS3_"
+      "symbol": "_ZN6LercNS5Lerc29GetRangesEPKhmPdS3_",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "method unsigned char LercNS::Predictor::getCode(LercNS::PredictorType)",
-      "symbol": "_ZN6LercNS9Predictor7getCodeENS_13PredictorTypeE"
+      "pretty": "method unsigned char LercNS::Predictor::getCode()",
+      "symbol": "_ZN6LercNS9Predictor7getCodeENS_13PredictorTypeE",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "function bool restoreCrossBytes(std::vector<std::pair<int,char*>,std::allocator<std::pair<int,char*>>>&, const size_t, const size_t, const size_t, const LercNS::PredictorType, const LercNS::UnitType, uint8_t**)",
-      "symbol": "_Z17restoreCrossBytesRSt6vectorISt4pairIiPcESaIS2_EEmmmN6LercNS13PredictorTypeENS6_8UnitTypeEPPh"
+      "pretty": "function bool restoreCrossBytes(std::vector<std::pair<int, char*>, std::allocator<std::pair<int, char*> > >&, const size_t, const size_t, const size_t, const LercNS::PredictorType, const LercNS::UnitType, uint8_t**)",
+      "symbol": "_Z17restoreCrossBytesRSt6vectorISt4pairIiPcESaIS2_EEmmmN6LercNS13PredictorTypeENS6_8UnitTypeEPPh",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "method size_t LercNS::fpl_Compression::extract_buffer(const char*, size_t, size_t, char**)",
-      "symbol": "_ZN6LercNS15fpl_Compression14extract_bufferEPKcmmPPc"
+      "pretty": "method size_t LercNS::fpl_Compression::extract_buffer(size_t, size_t, char**)",
+      "symbol": "_ZN6LercNS15fpl_Compression14extract_bufferEPKcmmPPc",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "function void ComputeHuffmanCodes(const unsigned char*, size_t, int&, std::vector<std::pair<shortunsignedint,unsignedint>,std::allocator<std::pair<shortunsignedint,unsignedint>>>&)",
-      "symbol": "_Z19ComputeHuffmanCodesPKhmRiRSt6vectorISt4pairItjESaIS4_EE"
+      "pretty": "function void ComputeHuffmanCodes(const unsigned char*, size_t, int&, std::vector<std::pair<short unsigned int, unsigned int>, std::allocator<std::pair<short unsigned int, unsigned int> > >&)",
+      "symbol": "_Z19ComputeHuffmanCodesPKhmRiRSt6vectorISt4pairItjESaIS4_EE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool LercNS::CntZImage::readFlt(float&, int)",
+      "symbol": "_ZN6LercNS9CntZImage7readFltEPPKhRfi",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function void setRowsDerivativeDouble(uint64_t*, const size_t, const size_t, const int, int)",
-      "symbol": "_Z23setRowsDerivativeDoublePmmmii"
+      "symbol": "_Z23setRowsDerivativeDoublePmmmii",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "method bool LercNS::Lerc2::SetNumBlobsMoreToCome(int)",
-      "symbol": "_ZN6LercNS5Lerc221SetNumBlobsMoreToComeEi"
+      "symbol": "_ZN6LercNS5Lerc221SetNumBlobsMoreToComeEi",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "method bool LercNS::LosslessFPCompression::ComputeHuffmanCodesFltSlice(void*, bool, int, int)",
-      "symbol": "_ZN6LercNS21LosslessFPCompression27ComputeHuffmanCodesFltSliceEPKvbii"
+      "symbol": "_ZN6LercNS21LosslessFPCompression27ComputeHuffmanCodesFltSliceEPKvbii",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "method LercNS::PredictorType LercNS::Predictor::getType(char)",
-      "symbol": "_ZN6LercNS9Predictor7getTypeEc"
+      "pretty": "method LercNS::PredictorType LercNS::Predictor::getType()",
+      "symbol": "_ZN6LercNS9Predictor7getTypeEc",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function uint64_t ADD64_BIT_DBL(const uint64_t&, const uint64_t&)",
-      "symbol": "_Z13ADD64_BIT_DBLRKmS0_"
+      "symbol": "_Z13ADD64_BIT_DBLRKmS0_",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function uint32_t undo_moveBits2Front(const uint32_t)",
-      "symbol": "_Z19undo_moveBits2Frontj"
+      "symbol": "_Z19undo_moveBits2Frontj",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function unsigned char* restoreSequence(unsigned char*, size_t, const int, bool)",
-      "symbol": "_Z15restoreSequencePhmib"
+      "symbol": "_Z15restoreSequencePhmib",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "method size_t LercNS::fpl_Compression::compress_buffer(const char*, size_t, char**, bool)",
-      "symbol": "_ZN6LercNS15fpl_Compression15compress_bufferEPKcmPPcb"
+      "pretty": "method size_t LercNS::fpl_Compression::compress_buffer(size_t, char**, bool)",
+      "symbol": "_ZN6LercNS15fpl_Compression15compress_bufferEPKcmPPcb",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "method LercNS::ErrCode LercNS::Lerc::GetRanges(const LercNS::Byte*, unsigned int, int, const LercNS::Lerc2::HeaderInfo&, double*, double*, size_t)",
-      "symbol": "_ZN6LercNS4Lerc9GetRangesEPKhjiRKNS_5Lerc210HeaderInfoEPdS7_m"
+      "pretty": "method LercNS::ErrCode LercNS::Lerc::GetRanges(unsigned int, int, const LercNS::Lerc2::HeaderInfo&, double*, double*, size_t)",
+      "symbol": "_ZN6LercNS4Lerc9GetRangesEPKhjiRKNS_5Lerc210HeaderInfoEPdS7_m",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function void setDerivativeFloat(uint32_t*, const size_t, const int, const int)",
-      "symbol": "_Z18setDerivativeFloatPjmii"
+      "symbol": "_Z18setDerivativeFloatPjmii",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function void setCrossDerivativeDouble(uint64_t*, const size_t, const size_t, const int, int)",
-      "symbol": "_Z24setCrossDerivativeDoublePmmmii"
+      "symbol": "_Z24setCrossDerivativeDoublePmmmii",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function void setCrossDerivativeFloat(uint32_t*, const size_t, const size_t, const int, int)",
-      "symbol": "_Z23setCrossDerivativeFloatPjmmii"
+      "symbol": "_Z23setCrossDerivativeFloatPjmmii",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function uint32_t moveBits2Front(const uint32_t)",
-      "symbol": "_Z14moveBits2Frontj"
+      "symbol": "_Z14moveBits2Frontj",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function void restoreBlockSequenceDouble(const int, uint64_t*, const size_t, const size_t)",
-      "symbol": "_Z26restoreBlockSequenceDoubleiPmmm"
+      "symbol": "_Z26restoreBlockSequenceDoubleiPmmm",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function long int getPackBitsSize(const unsigned char*, const size_t, long int*)",
-      "symbol": "_Z15getPackBitsSizePKhmPl"
+      "symbol": "_Z15getPackBitsSizePKhmPl",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function int getBestLevel(const unsigned char*, size_t, const int)",
-      "symbol": "_Z12getBestLevelPKhmi"
+      "symbol": "_Z12getBestLevelPKhmi",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "method LercNS::LosslessFPCompression::~LosslessFPCompression()",
-      "symbol": "_ZN6LercNS21LosslessFPCompressionD2Ev"
+      "symbol": "_ZN6LercNS21LosslessFPCompressionD2Ev",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "method size_t LercNS::UnitTypes::size(LercNS::UnitType)",
-      "symbol": "_ZN6LercNS9UnitTypes4sizeENS_8UnitTypeE"
+      "pretty": "method size_t LercNS::UnitTypes::size()",
+      "symbol": "_ZN6LercNS9UnitTypes4sizeENS_8UnitTypeE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool LercNS::BitStuffer::readUInt(unsigned int&, int)",
+      "symbol": "_ZN6LercNS10BitStuffer8readUIntEPPKhRji",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function int getBestLevel2(const unsigned char*, size_t, const int)",
-      "symbol": "_Z13getBestLevel2PKhmi"
+      "symbol": "_Z13getBestLevel2PKhmi",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function lerc_status lerc_decodeToDouble_4D(const unsigned char*, unsigned int, int, unsigned char*, int, int, int, int, double*, unsigned char*, double*)",
-      "symbol": "lerc_decodeToDouble_4D"
+      "symbol": "lerc_decodeToDouble_4D",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function uint64_t SUB64_BIT_DBL(const uint64_t&, const uint64_t&)",
-      "symbol": "_Z13SUB64_BIT_DBLRKmS0_"
+      "symbol": "_Z13SUB64_BIT_DBLRKmS0_",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function long int encodePackBits(const unsigned char*, const size_t, unsigned char**)",
-      "symbol": "_Z14encodePackBitsPKhmPPh"
+      "symbol": "_Z14encodePackBitsPKhmPPh",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "method bool LercNS::fpl_EsriHuffman::DecodeHuffman(const unsigned char*, const size_t, size_t&, unsigned char**)",
-      "symbol": "_ZN6LercNS15fpl_EsriHuffman13DecodeHuffmanEPKhmRmPPh"
+      "pretty": "method bool LercNS::fpl_EsriHuffman::DecodeHuffman(size_t, size_t&, unsigned char**)",
+      "symbol": "_ZN6LercNS15fpl_EsriHuffman13DecodeHuffmanEPKhmRmPPh",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "method int LercNS::fpl_EsriHuffman::EncodeHuffman(const char*, size_t, unsigned char**, bool)",
-      "symbol": "_ZN6LercNS15fpl_EsriHuffman13EncodeHuffmanEPKcmPPhb"
+      "pretty": "method int LercNS::fpl_EsriHuffman::EncodeHuffman(size_t, unsigned char**, bool)",
+      "symbol": "_ZN6LercNS15fpl_EsriHuffman13EncodeHuffmanEPKcmPPhb",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "method int LercNS::fpl_EsriHuffman::getCompressedSize(const char*, size_t)",
-      "symbol": "_ZN6LercNS15fpl_EsriHuffman17getCompressedSizeEPKcm"
+      "pretty": "method int LercNS::fpl_EsriHuffman::getCompressedSize(size_t)",
+      "symbol": "_ZN6LercNS15fpl_EsriHuffman17getCompressedSizeEPKcm",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "method bool LercNS::LosslessFPCompression::DecodeHuffmanFlt(const unsigned char**, size_t&, void*, bool, int, int, int)",
-      "symbol": "_ZN6LercNS21LosslessFPCompression16DecodeHuffmanFltEPPKhRmPvbiii"
+      "pretty": "method bool LercNS::LosslessFPCompression::DecodeHuffmanFlt(size_t&, void*, bool, int, int, int)",
+      "symbol": "_ZN6LercNS21LosslessFPCompression16DecodeHuffmanFltEPPKhRmPvbiii",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "method int LercNS::Predictor::getIntDelta(LercNS::PredictorType)",
-      "symbol": "_ZN6LercNS9Predictor11getIntDeltaENS_13PredictorTypeE"
+      "pretty": "method int LercNS::Predictor::getIntDelta()",
+      "symbol": "_ZN6LercNS9Predictor11getIntDeltaENS_13PredictorTypeE",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "method bool LercNS::LosslessFPCompression::EncodeHuffmanFlt(unsigned char**)",
-      "symbol": "_ZN6LercNS21LosslessFPCompression16EncodeHuffmanFltEPPh"
+      "symbol": "_ZN6LercNS21LosslessFPCompression16EncodeHuffmanFltEPPh",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function bool decodePackBits(const unsigned char*, const size_t, size_t, unsigned char**)",
-      "symbol": "_Z14decodePackBitsPKhmmPPh"
+      "symbol": "_Z14decodePackBitsPKhmmPPh",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "method bool LercNS::LosslessFPCompression::DecodeHuffmanFltSlice(const unsigned char**, size_t&, void*, bool, int, int)",
-      "symbol": "_ZN6LercNS21LosslessFPCompression21DecodeHuffmanFltSliceEPPKhRmPvbii"
+      "pretty": "method bool LercNS::LosslessFPCompression::DecodeHuffmanFltSlice(size_t&, void*, bool, int, int)",
+      "symbol": "_ZN6LercNS21LosslessFPCompression21DecodeHuffmanFltSliceEPPKhRmPvbii",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "method bool LercNS::LosslessFPCompression::ComputeHuffmanCodesFlt(void*, bool, int, int, int)",
-      "symbol": "_ZN6LercNS21LosslessFPCompression22ComputeHuffmanCodesFltEPKvbiii"
+      "symbol": "_ZN6LercNS21LosslessFPCompression22ComputeHuffmanCodesFltEPKvbiii",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void LercNS::LosslessFPCompression::selectInitialLinearOrCrossDelta(const LercNS::UnitType, void*, const int, const int, int&, bool&, bool, size_t*)",
-      "symbol": "_ZN6LercNS21LosslessFPCompression31selectInitialLinearOrCrossDeltaENS_8UnitTypeEPviiRiRbbPm"
+      "pretty": "method void LercNS::LosslessFPCompression::selectInitialLinearOrCrossDelta(LercNS::UnitType, void*, int, int, int&, bool&, bool, size_t*)",
+      "symbol": "_ZN6LercNS21LosslessFPCompression31selectInitialLinearOrCrossDeltaENS_8UnitTypeEPviiRiRbbPm",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "function bool restoreByteOrder(std::vector<std::pair<int,char*>,std::allocator<std::pair<int,char*>>>&, const size_t, const size_t, const LercNS::PredictorType, const LercNS::UnitType, uint8_t**)",
-      "symbol": "_Z16restoreByteOrderRSt6vectorISt4pairIiPcESaIS2_EEmmN6LercNS13PredictorTypeENS6_8UnitTypeEPPh"
+      "pretty": "function bool restoreByteOrder(std::vector<std::pair<int, char*>, std::allocator<std::pair<int, char*> > >&, const size_t, const size_t, const LercNS::PredictorType, const LercNS::UnitType, uint8_t**)",
+      "symbol": "_Z16restoreByteOrderRSt6vectorISt4pairIiPcESaIS2_EEmmN6LercNS13PredictorTypeENS6_8UnitTypeEPPh",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "method LercNS::UnitType LercNS::UnitTypes::type(int, bool)",
-      "symbol": "_ZN6LercNS9UnitTypes4typeEib"
+      "pretty": "method LercNS::UnitType LercNS::UnitTypes::type(bool)",
+      "symbol": "_ZN6LercNS9UnitTypes4typeEib",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "method bool LercNS::Lerc2::SetNoDataValues(bool, double, double)",
-      "symbol": "_ZN6LercNS5Lerc215SetNoDataValuesEbdd"
+      "symbol": "_ZN6LercNS5Lerc215SetNoDataValuesEbdd",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function uint32_t ADD32_BIT_FLT(const uint32_t&, const uint32_t&)",
-      "symbol": "_Z13ADD32_BIT_FLTRKjS0_"
+      "symbol": "_Z13ADD32_BIT_FLTRKjS0_",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function void restoreCrossBytesFloat(const int, uint32_t*, const size_t, const size_t)",
-      "symbol": "_Z22restoreCrossBytesFloatiPjmm"
+      "symbol": "_Z22restoreCrossBytesFloatiPjmm",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function void setDerivativeDouble(uint64_t*, const size_t, const int, const int)",
-      "symbol": "_Z19setDerivativeDoublePmmii"
+      "symbol": "_Z19setDerivativeDoublePmmii",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "method int LercNS::Predictor::getMaxByteDelta(LercNS::PredictorType)",
-      "symbol": "_ZN6LercNS9Predictor15getMaxByteDeltaENS_13PredictorTypeE"
+      "pretty": "method int LercNS::Predictor::getMaxByteDelta()",
+      "symbol": "_ZN6LercNS9Predictor15getMaxByteDeltaENS_13PredictorTypeE",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "method LercNS::PredictorType LercNS::Predictor::fromDeltaAndCross(int, bool)",
-      "symbol": "_ZN6LercNS9Predictor17fromDeltaAndCrossEib"
+      "pretty": "method LercNS::PredictorType LercNS::Predictor::fromDeltaAndCross(bool)",
+      "symbol": "_ZN6LercNS9Predictor17fromDeltaAndCrossEib",
+      "weak": false
      }
     ],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {
-     "base_class_changed": 37,
+     "base_class_changed": 35,
      "enum_case_added": 1,
      "field_added_to_struct": 8,
      "member_offset_changed": 11,
-     "type_size_changed": 2
+     "type_size_changed": 2,
+     "vtable_changed": 5
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 1,
-      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
-      "kind": "base_class_changed",
-      "type": "class std::vector<unsignedint,std::allocator<unsignedint>>"
+      "declared_in": "./src/LercLib/BitStuffer2.h",
+      "exposure": "by_pointer",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class LercNS::BitStuffer2"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
       "kind": "base_class_changed",
-      "type": "struct std::_Vector_base<unsignedint,std::allocator<unsignedint>>::_Vector_impl"
+      "third_party": true,
+      "type": "class std::vector<unsigned int, std::allocator<unsigned int> >"
      },
      {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
       "count": 2,
       "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "class std::allocator<unsignedint>"
+      "third_party": true,
+      "type": "class std::allocator<unsigned int>"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
       "kind": "base_class_changed",
-      "type": "class std::vector<std::pair<unsignedint,unsignedint>,std::allocator<std::pair<unsignedint,unsignedint>>>"
+      "third_party": true,
+      "type": "class std::vector<std::pair<unsigned int, unsigned int>, std::allocator<std::pair<unsigned int, unsigned int> > >"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Vector_base<std::pair<unsignedint,unsignedint>,std::allocator<std::pair<unsignedint,unsignedint>>>::_Vector_impl"
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::pair<unsigned int, unsigned int>, std::allocator<std::pair<unsigned int, unsigned int> > >::_Vector_impl"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/11/bits/stl_pair.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::pair<unsignedint,unsignedint>"
+      "third_party": true,
+      "type": "struct std::pair<unsigned int, unsigned int>"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "class std::allocator<std::pair<unsignedint,unsignedint>>"
+      "third_party": true,
+      "type": "class std::allocator<std::pair<unsigned int, unsigned int> >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/LercLib/Lerc1Decode/CntZImage.h",
+      "exposure": "by_pointer",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class LercNS::CntZImage"
      },
      {
+      "append_only": false,
       "count": 1,
-      "declared_in": "/usr/include/c++/11/bits/basic_string.h",
-      "kind": "base_class_changed",
-      "type": "struct std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Alloc_hider"
+      "declared_in": "./src/LercLib/Lerc1Decode/CntZImage.h",
+      "exposure": "by_pointer",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class LercNS::CntZImage"
      },
      {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/basic_string.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Alloc_hider"
+     },
+     {
+      "append_only": false,
       "count": 2,
       "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class std::allocator<char>"
      },
      {
-      "count": 1,
-      "declared_in": "./src/LercLib/Lerc1Decode/CntZImage.h",
-      "kind": "base_class_changed",
-      "type": "class LercNS::CntZImage"
-     },
-     {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/LercLib/Lerc1Decode/TImage.hpp",
+      "exposure": "by_pointer",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class LercNS::TImage<LercNS::CntZ>"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/LercLib/Lerc1Decode/TImage.hpp",
-      "kind": "base_class_changed",
+      "exposure": "by_pointer",
+      "kind": "vtable_changed",
+      "third_party": true,
       "type": "class LercNS::TImage<LercNS::CntZ>"
      },
      {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/LercLib/Lerc1Decode/Image.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class LercNS::Image"
+     },
+     {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
       "kind": "base_class_changed",
-      "type": "class std::vector<std::pair<shortunsignedint,unsignedint>,std::allocator<std::pair<shortunsignedint,unsignedint>>>"
+      "third_party": true,
+      "type": "class std::vector<std::pair<short unsigned int, unsigned int>, std::allocator<std::pair<short unsigned int, unsigned int> > >"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Vector_base<std::pair<shortunsignedint,unsignedint>,std::allocator<std::pair<shortunsignedint,unsignedint>>>::_Vector_impl"
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::pair<short unsigned int, unsigned int>, std::allocator<std::pair<short unsigned int, unsigned int> > >::_Vector_impl"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/11/bits/stl_pair.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::pair<shortunsignedint,unsignedint>"
+      "third_party": true,
+      "type": "struct std::pair<short unsigned int, unsigned int>"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "class std::allocator<std::pair<shortunsignedint,unsignedint>>"
+      "third_party": true,
+      "type": "class std::allocator<std::pair<short unsigned int, unsigned int> >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
       "kind": "base_class_changed",
-      "type": "class std::vector<std::pair<shortint,shortint>,std::allocator<std::pair<shortint,shortint>>>"
+      "third_party": true,
+      "type": "class std::vector<std::pair<short int, short int>, std::allocator<std::pair<short int, short int> > >"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Vector_base<std::pair<shortint,shortint>,std::allocator<std::pair<shortint,shortint>>>::_Vector_impl"
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::pair<short int, short int>, std::allocator<std::pair<short int, short int> > >::_Vector_impl"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/11/bits/stl_pair.h",
+      "exposure": "by_pointer",
       "kind": "base_class_changed",
-      "type": "struct std::pair<shortint,shortint>"
+      "third_party": true,
+      "type": "struct std::pair<short int, short int>"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "class std::allocator<std::pair<shortint,shortint>>"
+      "third_party": true,
+      "type": "class std::allocator<std::pair<short int, short int> >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
       "kind": "base_class_changed",
-      "type": "class std::vector<int,std::allocator<int>>"
+      "third_party": true,
+      "type": "class std::vector<int, std::allocator<int> >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Vector_base<int,std::allocator<int>>::_Vector_impl"
+      "third_party": true,
+      "type": "struct std::_Vector_base<int, std::allocator<int> >::_Vector_impl"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class std::allocator<int>"
      },
      {
+      "append_only": false,
       "count": 7,
       "declared_in": "./src/LercLib/Lerc2.h",
+      "exposure": "by_pointer",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "struct LercNS::Lerc2::HeaderInfo"
      },
      {
+      "append_only": false,
       "count": 4,
       "declared_in": "./src/LercLib/Lerc2.h",
+      "exposure": "by_pointer",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct LercNS::Lerc2::HeaderInfo"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/LercLib/Lerc2.h",
+      "exposure": "by_pointer",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct LercNS::Lerc2::HeaderInfo"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/LercLib/Lerc2.h",
+      "exposure": "by_pointer",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "class LercNS::Lerc2"
      },
      {
+      "append_only": false,
       "count": 7,
       "declared_in": "./src/LercLib/Lerc2.h",
+      "exposure": "by_pointer",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "class LercNS::Lerc2"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/LercLib/Lerc2.h",
+      "exposure": "by_pointer",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "class LercNS::Lerc2"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/LercLib/Lerc2.h",
+      "exposure": "by_pointer",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class LercNS::Lerc2"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/LercLib/Lerc2.h",
+      "exposure": "by_pointer",
       "kind": "enum_case_added",
+      "third_party": true,
       "type": "enum LercNS::Lerc2::ImageEncodeMode"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
       "kind": "base_class_changed",
-      "type": "class std::vector<double,std::allocator<double>>"
+      "third_party": true,
+      "type": "class std::vector<double, std::allocator<double> >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Vector_base<double,std::allocator<double>>::_Vector_impl"
+      "third_party": true,
+      "type": "struct std::_Vector_base<double, std::allocator<double> >::_Vector_impl"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class std::allocator<double>"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/LercLib/include/Lerc_types.h",
+      "exposure": "by_value",
       "kind": "enum_case_added",
+      "third_party": false,
       "type": "enum LercNS::ErrCode"
      }
-    ]
+    ],
+    "vague_linkage": {
+     "symbol_removed": 178
+    }
    }
   ],
-  "seconds": 3.504261392,
+  "seconds": 2.452782007,
   "source": "lerc",
   "unpaired": [
    [],
@@ -1551,7 +1959,11 @@
    "4.0.0+ds"
   ]
  },
- "generated_at": "2026-09-02T14:59:52Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T07:26:46Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

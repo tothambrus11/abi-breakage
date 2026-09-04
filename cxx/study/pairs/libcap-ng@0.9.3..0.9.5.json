@@ -1,6 +1,8 @@
 {
  "data": {
+  "bytes_extracted": 324556,
   "id": "libcap-ng@0.9.3..0.9.5",
+  "object_errors": [],
   "objects": [
    {
     "coverage": {
@@ -31,17 +33,20 @@
      {
       "kind": "function_signature_changed",
       "pretty": "function int capng_set_rootid(int)  ->  function int capng_set_rootid(uid_t)",
-      "symbol": "capng_set_rootid"
+      "symbol": "capng_set_rootid",
+      "weak": false
      },
      {
       "kind": "function_signature_changed",
-      "pretty": "function int capng_get_rootid(void)  ->  function uid_t capng_get_rootid(void)",
-      "symbol": "capng_get_rootid"
+      "pretty": "function int capng_get_rootid()  ->  function uid_t capng_get_rootid()",
+      "symbol": "capng_get_rootid",
+      "weak": false
      }
     ],
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -71,16 +76,18 @@
     "symbol_events": [
      {
       "kind": "symbol_removed",
-      "pretty": "function void init(void)",
-      "symbol": "init"
+      "pretty": "function void init()",
+      "symbol": "init",
+      "weak": false
      }
     ],
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 1.840130427,
+  "seconds": 1.117486699,
   "source": "libcap-ng",
   "unpaired": [
    [],
@@ -91,7 +98,11 @@
    "0.9.5"
   ]
  },
- "generated_at": "2026-09-02T12:08:50Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:45:01Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

@@ -1,5 +1,6 @@
 {
  "data": {
+  "bytes_extracted": 3499873,
   "id": "expat@2.8.2..2.8.3",
   "object_errors": [],
   "objects": [
@@ -33,12 +34,16 @@
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "../../src/lib/xmlparse.c",
+      "exposure": "by_pointer",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "struct XML_ParserStruct"
      }
-    ]
+    ],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -70,15 +75,19 @@
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "../../srcw/lib/xmlparse.c",
+      "exposure": "by_pointer",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "struct XML_ParserStruct"
      }
-    ]
+    ],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 1.888715956,
+  "seconds": 1.274376561,
   "source": "expat",
   "unpaired": [
    [],
@@ -89,7 +98,11 @@
    "2.8.3"
   ]
  },
- "generated_at": "2026-09-02T14:57:40Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:42:37Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

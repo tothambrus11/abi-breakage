@@ -1,5 +1,6 @@
 {
  "data": {
+  "bytes_extracted": 1109259,
   "id": "libfido2@1.13.0..1.14.0",
   "object_errors": [],
   "objects": [
@@ -35,62 +36,84 @@
      {
       "kind": "symbol_added",
       "pretty": "function int fido_assert_set_winhello_appid(fido_assert_t*, const char*)",
-      "symbol": "fido_assert_set_winhello_appid"
+      "symbol": "fido_assert_set_winhello_appid",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function const unsigned char* fido_assert_authdata_raw_ptr(const fido_assert_t*, size_t)",
-      "symbol": "fido_assert_authdata_raw_ptr"
+      "symbol": "fido_assert_authdata_raw_ptr",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function size_t fido_assert_authdata_raw_len(const fido_assert_t*, size_t)",
-      "symbol": "fido_assert_authdata_raw_len"
+      "symbol": "fido_assert_authdata_raw_len",
+      "weak": false
      }
     ],
     "symbols_version_renamed": 0,
     "third_party": {},
     "type_events": [
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/fido/types.h",
+      "exposure": "by_pointer",
       "kind": "field_added_to_struct",
+      "third_party": false,
       "type": "struct fido_assert"
      },
      {
+      "append_only": false,
       "count": 9,
       "declared_in": "./src/fido/types.h",
+      "exposure": "by_pointer",
       "kind": "member_offset_changed",
+      "third_party": false,
       "type": "struct fido_assert"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/fido/types.h",
+      "exposure": "by_pointer",
       "kind": "type_size_changed",
+      "third_party": false,
       "type": "struct fido_assert"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/fido/types.h",
+      "exposure": "not_in_interface",
       "kind": "field_added_to_struct",
+      "third_party": false,
       "type": "struct _fido_assert_stmt"
      },
      {
+      "append_only": false,
       "count": 3,
       "declared_in": "./src/fido/types.h",
+      "exposure": "not_in_interface",
       "kind": "member_offset_changed",
+      "third_party": false,
       "type": "struct _fido_assert_stmt"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/fido/types.h",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": false,
       "type": "struct _fido_assert_stmt"
      }
-    ]
+    ],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 1.831390001,
+  "seconds": 1.279464403,
   "source": "libfido2",
   "unpaired": [
    [],
@@ -101,7 +124,11 @@
    "1.14.0"
   ]
  },
- "generated_at": "2026-09-02T14:59:22Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:43:43Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

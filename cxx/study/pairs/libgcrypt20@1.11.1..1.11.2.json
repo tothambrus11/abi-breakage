@@ -1,5 +1,6 @@
 {
  "data": {
+  "bytes_extracted": 83188190,
   "id": "libgcrypt20@1.11.1..1.11.2",
   "object_errors": [],
   "objects": [
@@ -29,40 +30,23 @@
     "symbol_events": [],
     "symbols_version_renamed": 0,
     "third_party": {
-     "enum_case_added": 1,
-     "field_added_to_struct": 2,
-     "field_type_changed": 1,
-     "member_offset_changed": 1
+     "enum_case_added": 1
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/x86_64-linux-gnu/gpg-error.h",
+      "exposure": "by_value",
       "kind": "enum_case_added",
+      "third_party": true,
       "type": "enum gpg_err_code_t"
-     },
-     {
-      "count": 2,
-      "declared_in": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
-      "kind": "field_added_to_struct",
-      "type": "struct _IO_FILE"
-     },
-     {
-      "count": 1,
-      "declared_in": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
-      "kind": "field_type_changed",
-      "type": "struct _IO_FILE"
-     },
-     {
-      "count": 1,
-      "declared_in": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
-      "kind": "member_offset_changed",
-      "type": "struct _IO_FILE"
      }
-    ]
+    ],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 4.273039533,
+  "seconds": 3.554562925,
   "source": "libgcrypt20",
   "unpaired": [
    [],
@@ -73,7 +57,11 @@
    "1.11.2"
   ]
  },
- "generated_at": "2026-09-02T14:59:08Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:32:21Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

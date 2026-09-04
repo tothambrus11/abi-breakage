@@ -1,5 +1,4 @@
-<title>The Resilience Budget</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<title>ABI Change Between Consecutive Releases</title>
 <style>
   :root{
     --paper:#F5F7F8; --card:#FFFFFF; --ink:#121820; --slate:#57636E;
@@ -7,9 +6,8 @@
     --accent:#0E6C66; --accent-soft:#DCEDEB;
     --absorb:#2C6B4E; --absorb-soft:#DFEDE5;
     --nohelp:#A2382A; --nohelp-soft:#F4E1DE;
-    --invisible:#8A6212; --invisible-soft:#F5EAD4;
+    --na:#57636E; --na-soft:#E8ECEF;
     --bar:#9FB8B5; --bar-strong:#0E6C66;
-    --shadow:0 1px 2px rgba(18,24,32,.06), 0 8px 24px -16px rgba(18,24,32,.28);
   }
   @media (prefers-color-scheme:dark){
     :root:not([data-theme="light"]){
@@ -18,9 +16,8 @@
       --accent:#43A79F; --accent-soft:#122C2B;
       --absorb:#5EAE84; --absorb-soft:#132A20;
       --nohelp:#DE7C6C; --nohelp-soft:#2E1A17;
-      --invisible:#D6A83F; --invisible-soft:#2C2413;
+      --na:#95A2AD; --na-soft:#1D262E;
       --bar:#3A5754; --bar-strong:#43A79F;
-      --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -18px rgba(0,0,0,.8);
     }
   }
   :root[data-theme="dark"]{
@@ -29,277 +26,143 @@
     --accent:#43A79F; --accent-soft:#122C2B;
     --absorb:#5EAE84; --absorb-soft:#132A20;
     --nohelp:#DE7C6C; --nohelp-soft:#2E1A17;
-    --invisible:#D6A83F; --invisible-soft:#2C2413;
+    --na:#95A2AD; --na-soft:#1D262E;
     --bar:#3A5754; --bar-strong:#43A79F;
-    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -18px rgba(0,0,0,.8);
   }
   *{box-sizing:border-box}
-  body{background:var(--paper); color:var(--ink); font-family:"IBM Plex Sans","Segoe UI",system-ui,sans-serif;
-       font-size:16px; line-height:1.62; margin:0; -webkit-font-smoothing:antialiased}
-  .wrap{max-width:1080px; margin:0 auto; padding:56px 28px 96px; display:flex; flex-direction:column; gap:56px}
-  h1,h2,h3{font-family:"IBM Plex Sans Condensed","IBM Plex Sans",sans-serif; text-wrap:balance; margin:0; line-height:1.14}
-  h1{font-size:clamp(2.1rem,5vw,3.1rem); font-weight:700; letter-spacing:-.015em}
-  h2{font-size:1.55rem; font-weight:600; letter-spacing:-.008em}
-  h3{font-size:1.06rem; font-weight:600}
-  p{margin:0; max-width:68ch}
-  a{color:var(--accent)}
-  .eyebrow{font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:.14em; text-transform:uppercase; color:var(--accent); font-weight:500}
-  .lede{font-size:1.13rem; color:var(--slate); max-width:66ch}
-  section{display:flex; flex-direction:column; gap:20px}
-  .stack{display:flex; flex-direction:column; gap:14px}
-  header{display:flex; flex-direction:column; gap:18px; border-bottom:2px solid var(--ink); padding-bottom:26px}
-  .corpus{font-family:"IBM Plex Mono",monospace; font-size:.79rem; color:var(--slate); display:flex; flex-wrap:wrap; gap:6px 20px}
-  .corpus b{color:var(--ink); font-weight:600}
-  .ledger{display:flex; flex-direction:column; border-top:1px solid var(--rule-strong)}
-  .ledger-row{display:grid; grid-template-columns:minmax(0,1fr) auto; gap:12px 24px; align-items:baseline; padding:15px 0; border-bottom:1px solid var(--rule)}
-  .ledger-row .k{font-weight:500}
-  .ledger-row .k small{display:block; font-weight:400; color:var(--slate); font-size:.87rem; line-height:1.5; max-width:60ch}
-  .ledger-row .v{font-family:"IBM Plex Mono",monospace; font-weight:600; font-size:1.35rem; font-variant-numeric:tabular-nums; white-space:nowrap}
-  .v.go{color:var(--absorb)} .v.no{color:var(--nohelp)} .v.hid{color:var(--invisible)}
-  .tablewrap{overflow-x:auto; border:1px solid var(--rule); border-radius:3px; background:var(--card); box-shadow:var(--shadow)}
-  table{border-collapse:collapse; width:100%; min-width:720px; font-variant-numeric:tabular-nums}
-  caption{text-align:left; padding:14px 16px 0; color:var(--slate); font-size:.84rem; font-family:"IBM Plex Mono",monospace}
-  th,td{padding:9px 14px; text-align:right; border-bottom:1px solid var(--rule)}
-  th{font-family:"IBM Plex Mono",monospace; font-size:.7rem; font-weight:500; letter-spacing:.08em; text-transform:uppercase; color:var(--slate);
-     border-bottom:1px solid var(--rule-strong); white-space:nowrap; position:sticky; top:0; background:var(--card)}
-  td:first-child,th:first-child{text-align:left}
-  tbody tr:last-child td{border-bottom:none}
-  .kind{font-family:"IBM Plex Mono",monospace; font-size:.85rem; white-space:nowrap}
-  .num{font-family:"IBM Plex Mono",monospace; font-size:.9rem}
-  .big{font-weight:600}
-  .barcell{width:132px; min-width:132px}
-  .bar{height:8px; background:var(--bar); border-radius:1px; display:block}
+  body{background:var(--paper); color:var(--ink); font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
+       font-size:15px; line-height:1.55; margin:0}
+  .wrap{max-width:1180px; margin:0 auto; padding:48px 24px 96px; display:flex; flex-direction:column; gap:44px}
+  h1,h2,h3{margin:0; line-height:1.15; text-wrap:balance}
+  h1{font-size:clamp(1.8rem,4vw,2.6rem); font-weight:700; letter-spacing:-.01em}
+  h2{font-size:1.35rem; font-weight:600}
+  p{margin:0; max-width:72ch}
+  .eyebrow{font-family:ui-monospace,monospace; font-size:.72rem; letter-spacing:.12em; text-transform:uppercase; color:var(--accent); font-weight:600}
+  .lede{font-size:1.05rem; color:var(--slate)}
+  header{display:flex; flex-direction:column; gap:14px; border-bottom:2px solid var(--ink); padding-bottom:22px}
+  .corpus{font-family:ui-monospace,monospace; font-size:.8rem; color:var(--slate); display:flex; flex-wrap:wrap; gap:6px 18px}
+  .corpus b{color:var(--ink)}
+  section{display:flex; flex-direction:column; gap:14px}
+  .note{color:var(--slate); font-size:.92rem; max-width:80ch}
+  .scroll{overflow-x:auto; border:1px solid var(--rule); border-radius:8px; background:var(--card)}
+  table{border-collapse:collapse; width:100%; font-size:.88rem}
+  th,td{padding:7px 10px; border-bottom:1px solid var(--rule); text-align:left; vertical-align:top; white-space:nowrap}
+  th{font-size:.72rem; letter-spacing:.06em; text-transform:uppercase; color:var(--slate); background:var(--paper)}
+  td.num{text-align:right; font-variant-numeric:tabular-nums; font-family:ui-monospace,monospace}
+  td.big{font-weight:600}
+  .small{font-size:.78rem; color:var(--slate)}
+  td.kind{font-family:ui-monospace,monospace}
+  tr.total td{border-top:2px solid var(--rule-strong); font-weight:600}
+  .barcell{width:120px}
+  .bar{display:inline-block; height:9px; background:var(--bar); border-radius:2px; vertical-align:middle}
   .bar.hi{background:var(--bar-strong)}
-  .chip{font-family:"IBM Plex Mono",monospace; font-size:.66rem; font-weight:600; letter-spacing:.06em; text-transform:uppercase; padding:3px 7px; border-radius:2px; white-space:nowrap}
-  .chip.go{color:var(--absorb); background:var(--absorb-soft)}
-  .chip.no{color:var(--nohelp); background:var(--nohelp-soft)}
-  .chip.na{color:var(--slate); background:var(--rule)}
-  .chip.hid{color:var(--invisible); background:var(--invisible-soft)}
-  tr.group td{background:var(--paper); font-family:"IBM Plex Mono",monospace; font-size:.68rem; letter-spacing:.1em; text-transform:uppercase; color:var(--slate); padding:7px 14px}
-  .callout{border-left:3px solid var(--invisible); background:var(--invisible-soft); padding:18px 22px; border-radius:0 3px 3px 0; display:flex; flex-direction:column; gap:10px}
-  .callout h3{color:var(--invisible)}
-  .note{border-left:3px solid var(--accent); background:var(--accent-soft); padding:18px 22px; border-radius:0 3px 3px 0; display:flex; flex-direction:column; gap:10px}
-  .traps{display:flex; flex-direction:column; border-top:1px solid var(--rule)}
-  .trap{display:grid; grid-template-columns:auto minmax(0,1fr); gap:16px; padding:15px 0; border-bottom:1px solid var(--rule); align-items:start}
-  .trap .n{font-family:"IBM Plex Mono",monospace; font-size:.78rem; font-weight:600; color:var(--accent); padding-top:3px}
-  .trap p{font-size:.94rem; color:var(--slate); max-width:64ch}
-  .trap strong{color:var(--ink); font-weight:600}
-  code{font-family:"IBM Plex Mono",monospace; font-size:.87em; background:var(--rule); padding:1px 5px; border-radius:2px}
-  .callout code,.note code{background:rgba(127,127,127,.18)}
-  footer{border-top:1px solid var(--rule); padding-top:22px; color:var(--slate); font-size:.86rem; display:flex; flex-direction:column; gap:10px}
-  @media (max-width:640px){ .wrap{padding:36px 18px 64px; gap:44px} .ledger-row{grid-template-columns:1fr} }
+  .chip{display:inline-block; padding:1px 7px; border-radius:99px; font-size:.7rem; font-weight:600; letter-spacing:.03em}
+  .chip.go{background:var(--absorb-soft); color:var(--absorb)}
+  .chip.no{background:var(--nohelp-soft); color:var(--nohelp)}
+  .chip.na{background:var(--na-soft); color:var(--na)}
+  .mech{color:var(--slate); font-size:.8rem}
+  .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:12px}
+  .card{background:var(--card); border:1px solid var(--rule); border-radius:8px; padding:14px 16px; display:flex; flex-direction:column; gap:6px}
+  .card .k{font-size:.72rem; letter-spacing:.06em; text-transform:uppercase; color:var(--slate)}
+  .card .v{font-size:1.25rem; font-weight:600; font-variant-numeric:tabular-nums}
+  ul{margin:0; padding-left:1.2em; max-width:80ch; color:var(--slate); font-size:.92rem}
+  footer{color:var(--slate); font-size:.8rem; border-top:1px solid var(--rule); padding-top:14px}
 </style>
-
 <div class="wrap">
-
 <header>
-  <div class="eyebrow">Empirical study · Debian archive · 2026-09-02</div>
-  <h1>The Resilience Budget</h1>
-  <p class="lede">A resilient module boundary buys recompilation-free evolution at a runtime cost.
-  This measures which kinds of change actually happen across 714 consecutive releases
-  of 111 C and C++ libraries — and therefore which resilience mechanisms earn that cost,
-  and which are budget spent on events that almost never occur.</p>
+  <div class="eyebrow">Empirical study · Debian archive · libabigail + libclang</div>
+  <h1>Which ABI changes happen between consecutive library releases, and which a resilient boundary would absorb</h1>
+  <p class="lede">Every number below is computed from <code>summary.json</code>. Two break definitions bracket the truth: <b>strict</b> counts every public event; <b>lenient</b> excludes append-only growth of types clients never hold by value and removals of symbols no public header declares. Intervals are 95% cluster bootstraps over libraries.</p>
   <div class="corpus">
-    <span><b>714</b> consecutive-release transitions</span>
-    <span><b>111</b> libraries</span>
-    <span><b>2,048</b> shared objects</span>
-    <span><b>529</b> C / <b>185</b> C++ transitions</span>
-    <span>abistudy 3.0.0 · libabigail library API · libclang C API</span>
+    <span><b>739</b> transitions</span><span><b>109</b> libraries</span><span><b>1037</b> shared objects</span>
+    <span>C <b>551</b> / 77 libs</span><span>C++ <b>188</b> / 36 libs</span>
+    <span>levels: major 14, minor 219, other 12, patch 447, snapshot 47</span>
+    <span>excluded: mass rename 2, failed 0, no linkable object 23, not attempted 9, no DWARF 15</span>
   </div>
 </header>
 
 <section>
-  <div class="eyebrow">The answer</div>
-  <h2>What to build, and what to skip</h2>
-  <div class="ledger">
-    <div class="ledger-row"><div class="k">Opaque struct layout<small>Field added, removed, retyped or shifted; type size changed. Present in 160 transitions; load-bearing for 46 of the 68 releases a resilient boundary would fully rescue, the sole reason for 37.</small></div><div class="v go">Worth it</div></div><div class="ledger-row"><div class="k">Non-frozen enums<small>An added enum case moves no byte, so it is not a binary break — but it breaks any client that switched exhaustively. Enum cases changed in 58 transitions (7.8%); load-bearing for 30 of 68 rescues, sole reason for 22.</small></div><div class="v go">Worth it</div></div><div class="ledger-row"><div class="k">No implicit cross-module inlining<small>Inline, in-class and template bodies changed in <b>5.0%</b> of transitions (1,125 events); non-stamp macro values in 46.9%. C and C++ have no defence, and no ABI tool can detect it. Counted as a hazard, it is load-bearing for 25 of 84 rescued releases, the sole reason for 16.</small></div><div class="v hid">Worth it</div></div><div class="ledger-row"><div class="k">Resilient vtable dispatch<small>Vtables changed in 5 of 714 transitions (0.7%); load-bearing for 1 rescues, sole reason for 0. Real, but the thinnest return on runtime budget of the four.</small></div><div class="v ">Marginal</div></div><div class="ledger-row"><div class="k">Removed symbols &amp; changed signatures<small>Present in 161 of 207 binary-breaking transitions (77.8%). No indirection helps: a call that no longer type-checks is an API break, not an ABI one. This is the ceiling on what any resilience mechanism can deliver.</small></div><div class="v no">Cannot help</div></div>
-  </div>
+  <h2>Break rates</h2>
+  <p class="note">A transition is affected under a framing if it has at least one relevant change: <i>binary</i> = layout, vtable, removed or re-signed symbols; <i>evolution</i> adds enum cases; <i>evolution_or_inline</i> adds changed inline bodies. "Declared" = the SONAME changed too.</p>
+  <div class="scroll"><table>
+    <tr><th>framing</th><th>definition</th><th>affected</th><th>% of transitions</th><th>95% CI</th><th>libraries affected</th><th>95% CI</th><th>declared</th><th>silent</th></tr>
+    <tr><td>binary</td><td>lenient</td><td class="num big">106</td><td class="num">14.3%</td><td class="num small">10.2–18.6</td><td class="num">51/109 (47%)</td><td class="num small">39–57</td><td class="num">6</td><td class="num">100</td></tr><tr><td>binary</td><td>strict</td><td class="num big">162</td><td class="num">21.9%</td><td class="num small">16.7–27.0</td><td class="num">63/109 (58%)</td><td class="num small">49–67</td><td class="num">8</td><td class="num">154</td></tr><tr><td>evolution</td><td>lenient</td><td class="num big">145</td><td class="num">19.6%</td><td class="num small">14.6–24.3</td><td class="num">61/109 (56%)</td><td class="num small">46–65</td><td class="num">8</td><td class="num">137</td></tr><tr><td>evolution</td><td>strict</td><td class="num big">188</td><td class="num">25.4%</td><td class="num small">20.1–30.7</td><td class="num">70/109 (64%)</td><td class="num small">55–73</td><td class="num">8</td><td class="num">180</td></tr><tr><td>evolution_or_inline</td><td>lenient</td><td class="num big">164</td><td class="num">22.2%</td><td class="num small">16.6–27.7</td><td class="num">64/109 (59%)</td><td class="num small">50–68</td><td class="num">8</td><td class="num">156</td></tr><tr><td>evolution_or_inline</td><td>strict</td><td class="num big">205</td><td class="num">27.7%</td><td class="num small">22.1–33.2</td><td class="num">72/109 (66%)</td><td class="num small">57–75</td><td class="num">8</td><td class="num">197</td></tr>
+  </table></div>
+  <h3>Binary breaks by release level</h3>
+  <div class="scroll"><table>
+    <tr><th>level</th><th>n</th><th>strict</th><th>95% CI</th><th>lenient</th><th>95% CI</th></tr>
+    <tr><td>major</td><td class="num">14</td><td class="num big">50.0%</td><td class="num small">22.2–83.3</td><td class="num big">14.3%</td><td class="num small">0.0–44.4</td></tr><tr><td>minor</td><td class="num">219</td><td class="num big">28.8%</td><td class="num small">19.3–38.5</td><td class="num big">18.3%</td><td class="num small">11.1–25.6</td></tr><tr><td>other</td><td class="num">12</td><td class="num big">58.3%</td><td class="num small">12.5–85.7</td><td class="num big">58.3%</td><td class="num small">12.5–85.7</td></tr><tr><td>patch</td><td class="num">447</td><td class="num big">16.6%</td><td class="num small">11.6–22.5</td><td class="num big">10.5%</td><td class="num small">6.7–15.0</td></tr><tr><td>snapshot</td><td class="num">47</td><td class="num big">23.4%</td><td class="num small">9.8–39.1</td><td class="num big">21.3%</td><td class="num small">7.7–38.0</td></tr>
+  </table></div>
 </section>
 
 <section>
-  <div class="eyebrow">Frequency</div>
-  <h2>How often each change kind occurs</h2>
-  <p>Counted per release transition, on the library's own public API. Bars scale to the transition
-  count. <span class="chip go">absorbs</span> marks changes a resilient boundary makes invisible to
-  clients; <span class="chip no">cannot help</span> marks changes that break the source API too;
-  <span class="chip hid">invisible</span> marks changes no ABI tool can detect.</p>
-  <div class="tablewrap">
-    <table>
-      <caption>All 111 libraries — n = 714 transitions</caption>
-      <thead><tr><th>Change kind</th><th class="barcell">Transitions</th><th>n</th><th>% of n</th>
-      <th>Total events</th><th>Median</th><th>Max</th><th>Resilience</th></tr></thead>
-      <tbody><tr class="group"><td colspan="8">Symbols</td></tr><tr><td class="kind">symbol_added</td><td class="barcell"><span class="bar" style="width:77.9%"></span></td><td class="num big">261</td><td class="num">36.6%</td><td class="num">7,092</td><td class="num">4</td><td class="num">1,426</td><td><span class="chip na">additive</span></td></tr><tr><td class="kind">symbol_removed</td><td class="barcell"><span class="bar" style="width:39.7%"></span></td><td class="num big">133</td><td class="num">18.6%</td><td class="num">5,306</td><td class="num">7</td><td class="num">936</td><td><span class="chip no">cannot help</span></td></tr><tr><td class="kind">function_signature_changed</td><td class="barcell"><span class="bar" style="width:23.3%"></span></td><td class="num big">78</td><td class="num">10.9%</td><td class="num">635</td><td class="num">2</td><td class="num">127</td><td><span class="chip no">cannot help</span></td></tr><tr><td class="kind">symbol_version_renamed</td><td class="barcell"><span class="bar" style="width:0.9%"></span></td><td class="num big">3</td><td class="num">0.4%</td><td class="num">3</td><td class="num">1</td><td class="num">1</td><td><span class="chip na">additive</span></td></tr><tr class="group"><td colspan="8">Enums</td></tr><tr><td class="kind">enum_case_added</td><td class="barcell"><span class="bar hi" style="width:16.7%"></span></td><td class="num big">56</td><td class="num">7.8%</td><td class="num">145</td><td class="num">2</td><td class="num">23</td><td><span class="chip go">absorbs</span></td></tr><tr><td class="kind">enum_case_removed</td><td class="barcell"><span class="bar hi" style="width:0.6%"></span></td><td class="num big">2</td><td class="num">0.3%</td><td class="num">2</td><td class="num">1</td><td class="num">1</td><td><span class="chip go">absorbs</span></td></tr><tr class="group"><td colspan="8">Layout</td></tr><tr><td class="kind">field_added_to_struct</td><td class="barcell"><span class="bar hi" style="width:11.9%"></span></td><td class="num big">40</td><td class="num">5.6%</td><td class="num">211</td><td class="num">2</td><td class="num">53</td><td><span class="chip go">absorbs</span></td></tr><tr><td class="kind">type_size_changed</td><td class="barcell"><span class="bar hi" style="width:11.3%"></span></td><td class="num big">38</td><td class="num">5.3%</td><td class="num">74</td><td class="num">1</td><td class="num">8</td><td><span class="chip go">absorbs</span></td></tr><tr><td class="kind">field_type_changed</td><td class="barcell"><span class="bar hi" style="width:9.3%"></span></td><td class="num big">31</td><td class="num">4.3%</td><td class="num">100</td><td class="num">2</td><td class="num">16</td><td><span class="chip go">absorbs</span></td></tr><tr><td class="kind">member_offset_changed</td><td class="barcell"><span class="bar hi" style="width:7.5%"></span></td><td class="num big">25</td><td class="num">3.5%</td><td class="num">205</td><td class="num">8</td><td class="num">18</td><td><span class="chip go">absorbs</span></td></tr><tr><td class="kind">base_class_changed</td><td class="barcell"><span class="bar hi" style="width:4.5%"></span></td><td class="num big">15</td><td class="num">2.1%</td><td class="num">68</td><td class="num">5</td><td class="num">11</td><td><span class="chip go">absorbs</span></td></tr><tr><td class="kind">field_removed_from_struct</td><td class="barcell"><span class="bar hi" style="width:3.3%"></span></td><td class="num big">11</td><td class="num">1.5%</td><td class="num">31</td><td class="num">2</td><td class="num">6</td><td><span class="chip go">absorbs</span></td></tr><tr class="group"><td colspan="8">Dispatch</td></tr><tr><td class="kind">vtable_changed</td><td class="barcell"><span class="bar hi" style="width:1.5%"></span></td><td class="num big">5</td><td class="num">0.7%</td><td class="num">24</td><td class="num">4</td><td class="num">10</td><td><span class="chip go">absorbs</span></td></tr><tr class="group"><td colspan="8">Header bodies (libclang)</td></tr><tr><td class="kind">macro_value_changed</td><td class="barcell"><span class="bar hi" style="width:100.0%"></span></td><td class="num big">335</td><td class="num">46.9%</td><td class="num">1,431</td><td class="num">2</td><td class="num">326</td><td><span class="chip hid">invisible</span></td></tr><tr><td class="kind">inline_body_changed</td><td class="barcell"><span class="bar hi" style="width:10.7%"></span></td><td class="num big">36</td><td class="num">5.0%</td><td class="num">1,125</td><td class="num">4</td><td class="num">500</td><td><span class="chip hid">invisible</span></td></tr></tbody>
-    </table>
-  </div>
-  <div class="tablewrap">
-    <table>
-      <caption>C++ libraries only — n = 185 transitions across 38 libraries.
-      Language assigned from the fraction of Itanium-mangled exported symbols.</caption>
-      <thead><tr><th>Change kind</th><th class="barcell">Transitions</th><th>n</th><th>% of n</th>
-      <th>Total events</th><th>Median</th><th>Max</th><th>Resilience</th></tr></thead>
-      <tbody><tr class="group"><td colspan="8">Symbols</td></tr><tr><td class="kind">symbol_added</td><td class="barcell"><span class="bar" style="width:100.0%"></span></td><td class="num big">115</td><td class="num">62.2%</td><td class="num">5,534</td><td class="num">10</td><td class="num">1,426</td><td><span class="chip na">additive</span></td></tr><tr><td class="kind">symbol_removed</td><td class="barcell"><span class="bar" style="width:86.1%"></span></td><td class="num big">99</td><td class="num">53.5%</td><td class="num">4,681</td><td class="num">10</td><td class="num">936</td><td><span class="chip no">cannot help</span></td></tr><tr><td class="kind">function_signature_changed</td><td class="barcell"><span class="bar" style="width:44.3%"></span></td><td class="num big">51</td><td class="num">27.6%</td><td class="num">477</td><td class="num">3</td><td class="num">127</td><td><span class="chip no">cannot help</span></td></tr><tr><td class="kind">symbol_version_renamed</td><td class="barcell"><span class="bar" style="width:2.6%"></span></td><td class="num big">3</td><td class="num">1.6%</td><td class="num">3</td><td class="num">1</td><td class="num">1</td><td><span class="chip na">additive</span></td></tr><tr class="group"><td colspan="8">Enums</td></tr><tr><td class="kind">enum_case_added</td><td class="barcell"><span class="bar hi" style="width:15.7%"></span></td><td class="num big">18</td><td class="num">9.7%</td><td class="num">61</td><td class="num">1</td><td class="num">23</td><td><span class="chip go">absorbs</span></td></tr><tr class="group"><td colspan="8">Layout</td></tr><tr><td class="kind">base_class_changed</td><td class="barcell"><span class="bar hi" style="width:12.2%"></span></td><td class="num big">14</td><td class="num">7.6%</td><td class="num">66</td><td class="num">5</td><td class="num">11</td><td><span class="chip go">absorbs</span></td></tr><tr><td class="kind">field_added_to_struct</td><td class="barcell"><span class="bar hi" style="width:9.6%"></span></td><td class="num big">11</td><td class="num">5.9%</td><td class="num">42</td><td class="num">3</td><td class="num">10</td><td><span class="chip go">absorbs</span></td></tr><tr><td class="kind">type_size_changed</td><td class="barcell"><span class="bar hi" style="width:8.7%"></span></td><td class="num big">10</td><td class="num">5.4%</td><td class="num">10</td><td class="num">1</td><td class="num">1</td><td><span class="chip go">absorbs</span></td></tr><tr><td class="kind">member_offset_changed</td><td class="barcell"><span class="bar hi" style="width:5.2%"></span></td><td class="num big">6</td><td class="num">3.2%</td><td class="num">49</td><td class="num">9</td><td class="num">18</td><td><span class="chip go">absorbs</span></td></tr><tr><td class="kind">field_type_changed</td><td class="barcell"><span class="bar hi" style="width:2.6%"></span></td><td class="num big">3</td><td class="num">1.6%</td><td class="num">5</td><td class="num">2</td><td class="num">2</td><td><span class="chip go">absorbs</span></td></tr><tr><td class="kind">field_removed_from_struct</td><td class="barcell"><span class="bar hi" style="width:0.9%"></span></td><td class="num big">1</td><td class="num">0.5%</td><td class="num">2</td><td class="num">2</td><td class="num">2</td><td><span class="chip go">absorbs</span></td></tr><tr class="group"><td colspan="8">Dispatch</td></tr><tr><td class="kind">vtable_changed</td><td class="barcell"><span class="bar hi" style="width:4.3%"></span></td><td class="num big">5</td><td class="num">2.7%</td><td class="num">24</td><td class="num">4</td><td class="num">10</td><td><span class="chip go">absorbs</span></td></tr><tr class="group"><td colspan="8">Header bodies (libclang)</td></tr><tr><td class="kind">macro_value_changed</td><td class="barcell"><span class="bar hi" style="width:57.4%"></span></td><td class="num big">66</td><td class="num">35.7%</td><td class="num">141</td><td class="num">2</td><td class="num">6</td><td><span class="chip hid">invisible</span></td></tr><tr><td class="kind">inline_body_changed</td><td class="barcell"><span class="bar hi" style="width:18.3%"></span></td><td class="num big">21</td><td class="num">11.4%</td><td class="num">230</td><td class="num">3</td><td class="num">59</td><td><span class="chip hid">invisible</span></td></tr></tbody>
-    </table>
-  </div>
-  <div class="tablewrap">
-    <table>
-      <caption>C libraries only — n = 529 transitions across 76 libraries</caption>
-      <thead><tr><th>Change kind</th><th class="barcell">Transitions</th><th>n</th><th>% of n</th>
-      <th>Total events</th><th>Median</th><th>Max</th><th>Resilience</th></tr></thead>
-      <tbody><tr class="group"><td colspan="8">Symbols</td></tr><tr><td class="kind">symbol_added</td><td class="barcell"><span class="bar" style="width:54.3%"></span></td><td class="num big">146</td><td class="num">27.6%</td><td class="num">1,558</td><td class="num">3</td><td class="num">377</td><td><span class="chip na">additive</span></td></tr><tr><td class="kind">symbol_removed</td><td class="barcell"><span class="bar" style="width:12.6%"></span></td><td class="num big">34</td><td class="num">6.4%</td><td class="num">625</td><td class="num">3</td><td class="num">370</td><td><span class="chip no">cannot help</span></td></tr><tr><td class="kind">function_signature_changed</td><td class="barcell"><span class="bar" style="width:10.0%"></span></td><td class="num big">27</td><td class="num">5.1%</td><td class="num">158</td><td class="num">2</td><td class="num">67</td><td><span class="chip no">cannot help</span></td></tr><tr class="group"><td colspan="8">Enums</td></tr><tr><td class="kind">enum_case_added</td><td class="barcell"><span class="bar hi" style="width:14.1%"></span></td><td class="num big">38</td><td class="num">7.2%</td><td class="num">84</td><td class="num">2</td><td class="num">12</td><td><span class="chip go">absorbs</span></td></tr><tr><td class="kind">enum_case_removed</td><td class="barcell"><span class="bar hi" style="width:0.7%"></span></td><td class="num big">2</td><td class="num">0.4%</td><td class="num">2</td><td class="num">1</td><td class="num">1</td><td><span class="chip go">absorbs</span></td></tr><tr class="group"><td colspan="8">Layout</td></tr><tr><td class="kind">field_added_to_struct</td><td class="barcell"><span class="bar hi" style="width:10.8%"></span></td><td class="num big">29</td><td class="num">5.5%</td><td class="num">169</td><td class="num">2</td><td class="num">53</td><td><span class="chip go">absorbs</span></td></tr><tr><td class="kind">field_type_changed</td><td class="barcell"><span class="bar hi" style="width:10.4%"></span></td><td class="num big">28</td><td class="num">5.3%</td><td class="num">95</td><td class="num">2</td><td class="num">16</td><td><span class="chip go">absorbs</span></td></tr><tr><td class="kind">type_size_changed</td><td class="barcell"><span class="bar hi" style="width:10.4%"></span></td><td class="num big">28</td><td class="num">5.3%</td><td class="num">64</td><td class="num">1</td><td class="num">8</td><td><span class="chip go">absorbs</span></td></tr><tr><td class="kind">member_offset_changed</td><td class="barcell"><span class="bar hi" style="width:7.1%"></span></td><td class="num big">19</td><td class="num">3.6%</td><td class="num">156</td><td class="num">8</td><td class="num">15</td><td><span class="chip go">absorbs</span></td></tr><tr><td class="kind">field_removed_from_struct</td><td class="barcell"><span class="bar hi" style="width:3.7%"></span></td><td class="num big">10</td><td class="num">1.9%</td><td class="num">29</td><td class="num">2</td><td class="num">6</td><td><span class="chip go">absorbs</span></td></tr><tr><td class="kind">base_class_changed</td><td class="barcell"><span class="bar hi" style="width:0.4%"></span></td><td class="num big">1</td><td class="num">0.2%</td><td class="num">2</td><td class="num">2</td><td class="num">2</td><td><span class="chip go">absorbs</span></td></tr><tr class="group"><td colspan="8">Header bodies (libclang)</td></tr><tr><td class="kind">macro_value_changed</td><td class="barcell"><span class="bar hi" style="width:100.0%"></span></td><td class="num big">269</td><td class="num">50.9%</td><td class="num">1,290</td><td class="num">2</td><td class="num">326</td><td><span class="chip hid">invisible</span></td></tr><tr><td class="kind">inline_body_changed</td><td class="barcell"><span class="bar hi" style="width:5.6%"></span></td><td class="num big">15</td><td class="num">2.8%</td><td class="num">895</td><td class="num">26</td><td class="num">500</td><td><span class="chip hid">invisible</span></td></tr></tbody>
-    </table>
-  </div>
-</section>
-
-<section>
-  <div class="eyebrow">The blind spot</div>
-  <h2>The most frequent hazard is the one no tool measures</h2>
-  <div class="callout">
-    <h3>Inline, in-class and template bodies</h3>
-    <p><code>abidiff</code> compares DWARF types and ELF symbols. <code>abi-compliance-checker</code>
-    compares declared interfaces. A change to the <em>body</em> of a header <code>inline</code>
-    function, an in-class method, or a template produces no output and exit code 0 from either —
-    even with <code>--harmless</code>. It is invisible by construction, not merely rare. Yet C++
-    copies exactly those bodies into every client that included the header.</p>
-  </div>
-  <div class="tablewrap">
-    <table>
-      <caption>Measured from the <code>-dev</code> headers with libclang — n = 714 transitions with header data</caption>
-      <thead><tr><th>Measure</th><th>Transitions</th><th>% of n</th><th>Total events</th></tr></thead>
-      <tbody>
-        <tr><td>Ship at least one inlinable definition in public headers</td>
-            <td class="num big">243</td><td class="num">34.0%</td><td class="num">—</td></tr>
-        <tr><td>Changed at least one inline / template body</td>
-            <td class="num big">36</td><td class="num">5.0%</td><td class="num">1,125</td></tr>
-        <tr><td>Changed at least one public macro value</td>
-            <td class="num big">335</td><td class="num">46.9%</td><td class="num">1,431</td></tr>
-        <tr><td>&nbsp;&nbsp;…excluding version / build-stamp macros, which change every release by construction</td>
-            <td class="num big">335</td><td class="num">46.9%</td><td class="num">—</td></tr>
-        <tr><td>Poor parse coverage (over half the units hit a fatal diagnostic; counts there are lower bounds)</td>
-            <td class="num big">0</td><td class="num">0.0%</td><td class="num">—</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <p>At 5.0%, inline-body churn is 1× as frequent as struct-field additions (5.6%) and 7× as frequent as vtable changes (0.7%). Worst single releases: gmp@6.1.2+dfsg..6.2.0+dfsg changed 500 bodies; e2fsprogs@1.46.6..1.47.0 changed 93 bodies; gmp@6.2.1+dfsg1..6.3.0+dfsg changed 64 bodies. This is the strongest argument in the data for making cross-module inlining opt-in rather than automatic.</p>
-</section>
-
-<section>
-  <div class="eyebrow">Breakage</div>
-  <h2>Most breaks are never declared</h2>
-  <div class="ledger">
-    <div class="ledger-row">
-      <div class="k">Transitions containing a binary-breaking change</div>
-      <div class="v">207 <span style="color:var(--slate);font-size:.9rem">/ 714 · 29.0%</span></div>
-    </div>
-    <div class="ledger-row">
-      <div class="k">…where the SONAME was bumped <small>the break was announced; the loader will refuse to mismatch</small></div>
-      <div class="v">6</div>
-    </div>
-    <div class="ledger-row">
-      <div class="k">…where the SONAME was unchanged <small>a silent break: existing binaries keep linking and may misbehave</small></div>
-      <div class="v no">201 <span style="color:var(--slate);font-size:.9rem">· 97.1%</span></div>
-    </div>
-  </div>
-  <p>The SONAME is the only ABI-compatibility signal the C/C++ platform offers, and in this corpus it
-  accompanies roughly one break in 34. That is the background condition a resilient
-  boundary competes against — not a careful versioning discipline, but an unenforced convention.</p>
-  <p style="font-size:.94rem;color:var(--slate)">Least stable in the corpus, by binary-breaking
-  transitions: intel-gmmlib 8/9, sane-backends 8/9, hunspell 8/8, libwps 7/9, srt 7/8, snappy 7/8, libzstd 6/9, libde265 6/9.</p>
-</section>
-
-<section>
-  <div class="eyebrow">The verdict</div>
   <h2>Would a resilient boundary have saved the release?</h2>
-  <p>Three framings, because they answer different questions. The first asks what survives at the
-  linker level; the second what survives without recompiling — which is what a resilient boundary
-  is for; the third also counts a changed inline body as a hazard, since a client may still be
-  running the old copy.</p>
-  <div class="tablewrap">
-    <table>
-      <caption>Rescue analysis. "Sole reason" counts releases where that one mechanism was the only
-      thing standing between broken and compatible.</caption>
-      <thead><tr><th>Framing</th><th>Affected</th><th>Fully rescued</th><th>Opaque layout</th>
-      <th>Non-frozen enum</th><th>Resilient dispatch</th><th>Opt-in inlining</th></tr></thead>
-      <tbody><tr><td>Binary breakage only</td><td class="num">207</td><td class="num big">46 <span style="color:var(--slate)">· 22.2%</span></td><td class="num">46 <span style="color:var(--slate)">(sole 45)</span></td><td class="num">—</td><td class="num">1 <span style="color:var(--slate)">(sole 0)</span></td><td class="num">—</td></tr><tr><td>Recompilation-free evolution</td><td class="num">229</td><td class="num big">68 <span style="color:var(--slate)">· 29.7%</span></td><td class="num">46 <span style="color:var(--slate)">(sole 37)</span></td><td class="num">30 <span style="color:var(--slate)">(sole 22)</span></td><td class="num">1 <span style="color:var(--slate)">(sole 0)</span></td><td class="num">—</td></tr><tr><td>…plus changed inline bodies</td><td class="num">245</td><td class="num big">84 <span style="color:var(--slate)">· 34.3%</span></td><td class="num">46 <span style="color:var(--slate)">(sole 31)</span></td><td class="num">30 <span style="color:var(--slate)">(sole 22)</span></td><td class="num">1 <span style="color:var(--slate)">(sole 0)</span></td><td class="num">25 <span style="color:var(--slate)">(sole 16)</span></td></tr></tbody>
-    </table>
-  </div>
-  <div class="note">
-    <h3>Why the two rows differ, and why it matters</h3>
-    <p>Adding an enum case moves no byte, so <code>abidiff</code> — correctly, for its purpose — does
-    not call it an ABI break; neither does a changed inline body. Score only binary breakage and the
-    enum and inlining mechanisms are credited with <b>zero</b> by construction. Under the framings
-    that match what resilience is for: 68 of 229 affected releases are fully rescued (29.7%); opaque layout is load-bearing for 46, non-frozen enums for 30, resilient dispatch for 1. Counting changed inline bodies as a hazard too, opt-in inlining becomes load-bearing for 25 of 84 rescues.</p>
-  </div>
-  <p>The ceiling is the real finding: even under the generous framing, <b>70.3%</b> of affected releases contain a removed symbol or a changed signature. Resilience buys evolution headroom, not immunity — it converts a class of breaks that is common and mechanical into a non-event, while leaving untouched the class that arises from deliberate API redesign.</p>
+  <p class="note">Of the affected transitions, how many contain only absorbable changes; and for those, which mechanism is needed (and is the sole reason). A removed or retyped field, a removed enum case, a removed symbol or a changed signature is never absorbable.</p>
+  <div class="scroll"><table>
+    <tr><th>framing</th><th>definition</th><th>affected</th><th>fully rescued</th><th>opaque layout</th><th>non-frozen enum</th><th>resilient dispatch</th><th>opt-in inlining</th></tr>
+    <tr><td>binary</td><td>lenient</td><td class="num">106</td><td class="num big">19 <span class="small">· 17.9%</span></td><td class="num">19 <span class="small">(sole 13)</span></td><td class="num">0 <span class="small">(sole 0)</span></td><td class="num">6 <span class="small">(sole 0)</span></td><td class="num">0 <span class="small">(sole 0)</span></td></tr><tr><td>binary</td><td>strict</td><td class="num">162</td><td class="num big">29 <span class="small">· 17.9%</span></td><td class="num">29 <span class="small">(sole 23)</span></td><td class="num">0 <span class="small">(sole 0)</span></td><td class="num">6 <span class="small">(sole 0)</span></td><td class="num">0 <span class="small">(sole 0)</span></td></tr><tr><td>evolution</td><td>lenient</td><td class="num">145</td><td class="num big">52 <span class="small">· 35.9%</span></td><td class="num">19 <span class="small">(sole 12)</span></td><td class="num">35 <span class="small">(sole 33)</span></td><td class="num">6 <span class="small">(sole 0)</span></td><td class="num">0 <span class="small">(sole 0)</span></td></tr><tr><td>evolution</td><td>strict</td><td class="num">188</td><td class="num big">51 <span class="small">· 27.1%</span></td><td class="num">28 <span class="small">(sole 19)</span></td><td class="num">27 <span class="small">(sole 23)</span></td><td class="num">6 <span class="small">(sole 0)</span></td><td class="num">0 <span class="small">(sole 0)</span></td></tr><tr><td>evolution_or_inline</td><td>lenient</td><td class="num">164</td><td class="num big">71 <span class="small">· 43.3%</span></td><td class="num">19 <span class="small">(sole 9)</span></td><td class="num">35 <span class="small">(sole 32)</span></td><td class="num">6 <span class="small">(sole 0)</span></td><td class="num">25 <span class="small">(sole 19)</span></td></tr><tr><td>evolution_or_inline</td><td>strict</td><td class="num">205</td><td class="num big">68 <span class="small">· 33.2%</span></td><td class="num">28 <span class="small">(sole 16)</span></td><td class="num">27 <span class="small">(sole 23)</span></td><td class="num">6 <span class="small">(sole 0)</span></td><td class="num">23 <span class="small">(sole 17)</span></td></tr>
+  </table></div>
 </section>
 
 <section>
-  <div class="eyebrow">Method</div>
-  <h2>How the measurement is made</h2>
-  <p>Everything runs in one C++26 tool, <code>abistudy</code>, in five idempotent stages. libabigail is
-  linked as a library and its diff tree is walked directly — no <code>abidiff</code> text is parsed —
-  so every count traces to a specific IR node, and the per-object artefacts keep the event lists that
-  justify each number. Header bodies are indexed with the libclang C API. A 30-case ground-truth suite
-  (synthetic libraries with exactly one known change each, four of them negative controls) is compiled
-  and pushed through the same code on every build; the calibration gate passes 30/30.</p>
-  <div class="traps">
-    <div class="trap"><div class="n">01</div><div>
-      <p><strong>Default <code>abidiff</code> hides enum-case additions.</strong> They are filtered as
-      harmless. The tool keeps the harmless categories, so they are counted.</p></div></div>
-    <div class="trap"><div class="n">02</div><div>
-      <p><strong><code>--leaf-changes-only</code> drops base-class insertions.</strong> The visitor reads
-      the base-class maps of each class diff directly.</p></div></div>
-    <div class="trap"><div class="n">03</div><div>
-      <p><strong>Types outside the public headers are attributed to the library.</strong> glibc's
-      <code>_IO_FILE</code> or libstdc++'s <code>std::vector</code> change when the toolchain moves, and
-      a library's private structs change freely. Each type event carries the DWARF declaring file,
-      matched by basename against the <code>-dev</code> headers; <b>15,868</b> events on
-      types not declared there were set aside.</p></div></div>
-    <div class="trap"><div class="n">04</div><div>
-      <p><strong>Private ELF version nodes.</strong> Symbols whose version node says
-      <code>PRIVATE</code> or <code>INTERNAL</code> are not API; <b>3,299</b> such events
-      were set aside. <code>--drop-private-types</code> would not have caught them: it covers types,
-      not functions.</p></div></div>
-    <div class="trap"><div class="n">05</div><div>
-      <p><strong><code>abipkgdiff</code> cannot compare across a SONAME rename.</strong> It pairs ELF
-      files by filename and silently skips the mismatch. Shared objects are paired by SONAME stem
-      instead.</p></div></div>
-    <div class="trap"><div class="n">06</div><div>
-      <p><strong>Some libraries rename every symbol by policy.</strong> ICU suffixes each symbol with
-      its version. Transitions whose churn is such a rename (1 here) are detected and
-      excluded rather than left to dominate the totals.</p></div></div>
+  <h2>Frequency of change kinds — all libraries</h2>
+  <p class="note">Layout, enum and vtable rows are computed over transitions with DWARF on both sides; symbol and header rows over all. One structural edit can produce several layout kinds; the last row counts affected types once.</p>
+  <div class="scroll"><table>
+    <tr><th>kind</th><th></th><th>strict</th><th>%</th><th>95% CI</th><th>lenient</th><th>libraries</th><th>events</th><th>median</th><th>mechanism</th></tr>
+    <tr><td class="kind">field_added_to_struct</td><td class="barcell"><span class="bar hi" style="width:22.4%"></span></td><td class="num big">47</td><td class="num">6.5%</td><td class="num small">3.7–9.6</td><td class="num">29</td><td class="num">25/108 (23%)</td><td class="num">248</td><td class="num">2</td><td><span class="chip go">absorbs</span> <span class="mech">opaque layout</span></td></tr><tr><td class="kind">field_removed_from_struct</td><td class="barcell"><span class="bar" style="width:5.7%"></span></td><td class="num big">12</td><td class="num">1.7%</td><td class="num small">0.6–2.9</td><td class="num">12</td><td class="num">8/108 (7%)</td><td class="num">32</td><td class="num">2</td><td><span class="chip no">cannot help</span> <span class="mech">cannot help</span></td></tr><tr><td class="kind">field_type_changed</td><td class="barcell"><span class="bar" style="width:15.2%"></span></td><td class="num big">32</td><td class="num">4.4%</td><td class="num small">2.3–6.7</td><td class="num">32</td><td class="num">19/108 (18%)</td><td class="num">125</td><td class="num">2</td><td><span class="chip no">cannot help</span> <span class="mech">cannot help</span></td></tr><tr><td class="kind">member_offset_changed</td><td class="barcell"><span class="bar hi" style="width:12.9%"></span></td><td class="num big">27</td><td class="num">3.7%</td><td class="num small">1.8–5.8</td><td class="num">27</td><td class="num">15/108 (14%)</td><td class="num">225</td><td class="num">8</td><td><span class="chip go">absorbs</span> <span class="mech">opaque layout</span></td></tr><tr><td class="kind">type_size_changed</td><td class="barcell"><span class="bar hi" style="width:20.5%"></span></td><td class="num big">43</td><td class="num">5.9%</td><td class="num small">3.4–8.8</td><td class="num">24</td><td class="num">25/108 (23%)</td><td class="num">84</td><td class="num">1</td><td><span class="chip go">absorbs</span> <span class="mech">opaque layout</span></td></tr><tr><td class="kind">base_class_changed</td><td class="barcell"><span class="bar hi" style="width:7.6%"></span></td><td class="num big">16</td><td class="num">2.2%</td><td class="num small">0.4–4.8</td><td class="num">16</td><td class="num">6/108 (6%)</td><td class="num">275</td><td class="num">4</td><td><span class="chip go">absorbs</span> <span class="mech">opaque layout</span></td></tr><tr><td class="kind">enum_case_added</td><td class="barcell"><span class="bar hi" style="width:27.6%"></span></td><td class="num big">58</td><td class="num">8.0%</td><td class="num small">4.8–11.2</td><td class="num">58</td><td class="num">26/108 (24%)</td><td class="num">196</td><td class="num">2</td><td><span class="chip go">absorbs</span> <span class="mech">non-frozen enum</span></td></tr><tr><td class="kind">enum_case_removed</td><td class="barcell"><span class="bar" style="width:3.3%"></span></td><td class="num big">7</td><td class="num">1.0%</td><td class="num small">0.3–1.8</td><td class="num">7</td><td class="num">6/108 (6%)</td><td class="num">11</td><td class="num">1</td><td><span class="chip no">cannot help</span> <span class="mech">cannot help</span></td></tr><tr><td class="kind">vtable_changed</td><td class="barcell"><span class="bar hi" style="width:5.2%"></span></td><td class="num big">11</td><td class="num">1.5%</td><td class="num small">0.0–4.0</td><td class="num">11</td><td class="num">3/108 (3%)</td><td class="num">15</td><td class="num">1</td><td><span class="chip go">absorbs</span> <span class="mech">resilient dispatch</span></td></tr><tr><td class="kind">function_signature_changed</td><td class="barcell"><span class="bar" style="width:34.8%"></span></td><td class="num big">73</td><td class="num">9.9%</td><td class="num small">6.8–13.2</td><td class="num">45</td><td class="num">42/109 (39%)</td><td class="num">1337</td><td class="num">3</td><td><span class="chip no">cannot help</span> <span class="mech">cannot help</span></td></tr><tr><td class="kind">symbol_removed</td><td class="barcell"><span class="bar" style="width:30.0%"></span></td><td class="num big">63</td><td class="num">8.5%</td><td class="num small">5.6–11.7</td><td class="num">23</td><td class="num">33/109 (30%)</td><td class="num">2409</td><td class="num">4</td><td><span class="chip no">cannot help</span> <span class="mech">cannot help</span></td></tr><tr><td class="kind">symbol_added</td><td class="barcell"><span class="bar" style="width:100.0%"></span></td><td class="num big">210</td><td class="num">28.4%</td><td class="num small">23.2–33.8</td><td class="num">210</td><td class="num">68/109 (62%)</td><td class="num">3439</td><td class="num">3</td><td><span class="chip na">additive</span> <span class="mech">n/a</span></td></tr><tr><td class="kind">symbol_version_renamed</td><td class="barcell"><span class="bar" style="width:1.0%"></span></td><td class="num big">2</td><td class="num">0.3%</td><td class="num small">0.0–0.7</td><td class="num">2</td><td class="num">2/109 (2%)</td><td class="num">2</td><td class="num">1</td><td><span class="chip na">additive</span> <span class="mech">n/a</span></td></tr><tr><td class="kind">inline_body_changed</td><td class="barcell"><span class="bar hi" style="width:20.0%"></span></td><td class="num big">42</td><td class="num">5.7%</td><td class="num small">2.6–9.4</td><td class="num">42</td><td class="num">16/109 (15%)</td><td class="num">1214</td><td class="num">6</td><td><span class="chip go">absorbs</span> <span class="mech">no implicit cross-module inlining</span></td></tr><tr><td class="kind">macro_value_changed</td><td class="barcell"><span class="bar hi" style="width:38.1%"></span></td><td class="num big">80</td><td class="num">10.8%</td><td class="num small">6.1–16.2</td><td class="num">80</td><td class="num">31/109 (28%)</td><td class="num">703</td><td class="num">2</td><td><span class="chip go">absorbs</span> <span class="mech">no implicit cross-module inlining</span></td></tr><tr class="total"><td class="kind">types with any layout change</td><td></td><td class="num big">75</td><td class="num">10.4%</td><td class="num small">6.5–14.5</td><td class="num">60</td><td class="num">34/108 (31%)</td><td></td><td></td><td>primary layout measure</td></tr>
+  </table></div>
+  <h3>C libraries</h3>
+  <div class="scroll"><table>
+    <tr><th>kind</th><th></th><th>strict</th><th>%</th><th>95% CI</th><th>lenient</th><th>libraries</th><th>events</th><th>median</th><th>mechanism</th></tr>
+    <tr><td class="kind">field_added_to_struct</td><td class="barcell"><span class="bar hi" style="width:21.5%"></span></td><td class="num big">34</td><td class="num">6.3%</td><td class="num small">3.0–9.8</td><td class="num">19</td><td class="num">18/76 (24%)</td><td class="num">208</td><td class="num">2</td><td><span class="chip go">absorbs</span> <span class="mech">opaque layout</span></td></tr><tr><td class="kind">field_removed_from_struct</td><td class="barcell"><span class="bar" style="width:7.0%"></span></td><td class="num big">11</td><td class="num">2.0%</td><td class="num small">0.6–3.8</td><td class="num">11</td><td class="num">7/76 (9%)</td><td class="num">30</td><td class="num">2</td><td><span class="chip no">cannot help</span> <span class="mech">cannot help</span></td></tr><tr><td class="kind">field_type_changed</td><td class="barcell"><span class="bar" style="width:18.4%"></span></td><td class="num big">29</td><td class="num">5.4%</td><td class="num small">2.7–8.5</td><td class="num">29</td><td class="num">18/76 (24%)</td><td class="num">120</td><td class="num">2</td><td><span class="chip no">cannot help</span> <span class="mech">cannot help</span></td></tr><tr><td class="kind">member_offset_changed</td><td class="barcell"><span class="bar hi" style="width:13.3%"></span></td><td class="num big">21</td><td class="num">3.9%</td><td class="num small">1.5–6.7</td><td class="num">21</td><td class="num">11/76 (14%)</td><td class="num">176</td><td class="num">8</td><td><span class="chip go">absorbs</span> <span class="mech">opaque layout</span></td></tr><tr><td class="kind">type_size_changed</td><td class="barcell"><span class="bar hi" style="width:20.9%"></span></td><td class="num big">33</td><td class="num">6.1%</td><td class="num small">3.2–9.6</td><td class="num">18</td><td class="num">19/76 (25%)</td><td class="num">74</td><td class="num">1</td><td><span class="chip go">absorbs</span> <span class="mech">opaque layout</span></td></tr><tr><td class="kind">base_class_changed</td><td class="barcell"><span class="bar hi" style="width:0.6%"></span></td><td class="num big">1</td><td class="num">0.2%</td><td class="num small">0.0–0.6</td><td class="num">1</td><td class="num">1/76 (1%)</td><td class="num">2</td><td class="num">2</td><td><span class="chip go">absorbs</span> <span class="mech">opaque layout</span></td></tr><tr><td class="kind">enum_case_added</td><td class="barcell"><span class="bar hi" style="width:28.5%"></span></td><td class="num big">45</td><td class="num">8.3%</td><td class="num small">4.9–12.1</td><td class="num">45</td><td class="num">20/76 (26%)</td><td class="num">140</td><td class="num">2</td><td><span class="chip go">absorbs</span> <span class="mech">non-frozen enum</span></td></tr><tr><td class="kind">enum_case_removed</td><td class="barcell"><span class="bar" style="width:4.4%"></span></td><td class="num big">7</td><td class="num">1.3%</td><td class="num small">0.4–2.4</td><td class="num">7</td><td class="num">6/76 (8%)</td><td class="num">11</td><td class="num">1</td><td><span class="chip no">cannot help</span> <span class="mech">cannot help</span></td></tr><tr><td class="kind">function_signature_changed</td><td class="barcell"><span class="bar" style="width:20.9%"></span></td><td class="num big">33</td><td class="num">6.0%</td><td class="num small">3.6–8.5</td><td class="num">21</td><td class="num">22/77 (29%)</td><td class="num">164</td><td class="num">2</td><td><span class="chip no">cannot help</span> <span class="mech">cannot help</span></td></tr><tr><td class="kind">symbol_removed</td><td class="barcell"><span class="bar" style="width:22.8%"></span></td><td class="num big">36</td><td class="num">6.5%</td><td class="num small">3.7–9.5</td><td class="num">17</td><td class="num">22/77 (29%)</td><td class="num">787</td><td class="num">3</td><td><span class="chip no">cannot help</span> <span class="mech">cannot help</span></td></tr><tr><td class="kind">symbol_added</td><td class="barcell"><span class="bar" style="width:100.0%"></span></td><td class="num big">158</td><td class="num">28.7%</td><td class="num small">23.0–34.3</td><td class="num">158</td><td class="num">52/77 (68%)</td><td class="num">1656</td><td class="num">3</td><td><span class="chip na">additive</span> <span class="mech">n/a</span></td></tr><tr><td class="kind">inline_body_changed</td><td class="barcell"><span class="bar hi" style="width:12.0%"></span></td><td class="num big">19</td><td class="num">3.4%</td><td class="num small">0.8–6.7</td><td class="num">19</td><td class="num">8/77 (10%)</td><td class="num">974</td><td class="num">25</td><td><span class="chip go">absorbs</span> <span class="mech">no implicit cross-module inlining</span></td></tr><tr><td class="kind">macro_value_changed</td><td class="barcell"><span class="bar hi" style="width:46.2%"></span></td><td class="num big">73</td><td class="num">13.2%</td><td class="num small">7.5–19.7</td><td class="num">73</td><td class="num">27/77 (35%)</td><td class="num">693</td><td class="num">2</td><td><span class="chip go">absorbs</span> <span class="mech">no implicit cross-module inlining</span></td></tr><tr class="total"><td class="kind">types with any layout change</td><td></td><td class="num big">52</td><td class="num">9.6%</td><td class="num small">5.3–14.3</td><td class="num">39</td><td class="num">24/76 (32%)</td><td></td><td></td><td>primary layout measure</td></tr>
+  </table></div>
+  <h3>C++ libraries</h3>
+  <div class="scroll"><table>
+    <tr><th>kind</th><th></th><th>strict</th><th>%</th><th>95% CI</th><th>lenient</th><th>libraries</th><th>events</th><th>median</th><th>mechanism</th></tr>
+    <tr><td class="kind">field_added_to_struct</td><td class="barcell"><span class="bar hi" style="width:25.0%"></span></td><td class="num big">13</td><td class="num">7.1%</td><td class="num small">2.0–14.0</td><td class="num">10</td><td class="num">7/35 (20%)</td><td class="num">40</td><td class="num">2</td><td><span class="chip go">absorbs</span> <span class="mech">opaque layout</span></td></tr><tr><td class="kind">field_removed_from_struct</td><td class="barcell"><span class="bar" style="width:1.9%"></span></td><td class="num big">1</td><td class="num">0.5%</td><td class="num small">0.0–1.7</td><td class="num">1</td><td class="num">1/35 (3%)</td><td class="num">2</td><td class="num">2</td><td><span class="chip no">cannot help</span> <span class="mech">cannot help</span></td></tr><tr><td class="kind">field_type_changed</td><td class="barcell"><span class="bar" style="width:5.8%"></span></td><td class="num big">3</td><td class="num">1.6%</td><td class="num small">0.0–5.5</td><td class="num">3</td><td class="num">1/35 (3%)</td><td class="num">5</td><td class="num">2</td><td><span class="chip no">cannot help</span> <span class="mech">cannot help</span></td></tr><tr><td class="kind">member_offset_changed</td><td class="barcell"><span class="bar hi" style="width:11.5%"></span></td><td class="num big">6</td><td class="num">3.3%</td><td class="num small">0.5–6.6</td><td class="num">6</td><td class="num">4/35 (11%)</td><td class="num">49</td><td class="num">9</td><td><span class="chip go">absorbs</span> <span class="mech">opaque layout</span></td></tr><tr><td class="kind">type_size_changed</td><td class="barcell"><span class="bar hi" style="width:19.2%"></span></td><td class="num big">10</td><td class="num">5.5%</td><td class="num small">1.6–10.1</td><td class="num">6</td><td class="num">6/35 (17%)</td><td class="num">10</td><td class="num">1</td><td><span class="chip go">absorbs</span> <span class="mech">opaque layout</span></td></tr><tr><td class="kind">base_class_changed</td><td class="barcell"><span class="bar hi" style="width:28.8%"></span></td><td class="num big">15</td><td class="num">8.2%</td><td class="num small">1.3–18.5</td><td class="num">15</td><td class="num">5/35 (14%)</td><td class="num">273</td><td class="num">4</td><td><span class="chip go">absorbs</span> <span class="mech">opaque layout</span></td></tr><tr><td class="kind">enum_case_added</td><td class="barcell"><span class="bar hi" style="width:25.0%"></span></td><td class="num big">13</td><td class="num">7.1%</td><td class="num small">1.9–12.6</td><td class="num">13</td><td class="num">6/35 (17%)</td><td class="num">56</td><td class="num">2</td><td><span class="chip go">absorbs</span> <span class="mech">non-frozen enum</span></td></tr><tr><td class="kind">vtable_changed</td><td class="barcell"><span class="bar hi" style="width:21.2%"></span></td><td class="num big">11</td><td class="num">6.0%</td><td class="num small">0.0–16.5</td><td class="num">11</td><td class="num">3/35 (9%)</td><td class="num">15</td><td class="num">1</td><td><span class="chip go">absorbs</span> <span class="mech">resilient dispatch</span></td></tr><tr><td class="kind">function_signature_changed</td><td class="barcell"><span class="bar" style="width:76.9%"></span></td><td class="num big">40</td><td class="num">21.3%</td><td class="num small">12.5–32.5</td><td class="num">24</td><td class="num">20/36 (56%)</td><td class="num">1173</td><td class="num">4</td><td><span class="chip no">cannot help</span> <span class="mech">cannot help</span></td></tr><tr><td class="kind">symbol_removed</td><td class="barcell"><span class="bar" style="width:51.9%"></span></td><td class="num big">27</td><td class="num">14.4%</td><td class="num small">6.5–23.6</td><td class="num">6</td><td class="num">12/36 (33%)</td><td class="num">1622</td><td class="num">5</td><td><span class="chip no">cannot help</span> <span class="mech">cannot help</span></td></tr><tr><td class="kind">symbol_added</td><td class="barcell"><span class="bar" style="width:100.0%"></span></td><td class="num big">52</td><td class="num">27.7%</td><td class="num small">16.1–40.1</td><td class="num">52</td><td class="num">17/36 (47%)</td><td class="num">1783</td><td class="num">3</td><td><span class="chip na">additive</span> <span class="mech">n/a</span></td></tr><tr><td class="kind">symbol_version_renamed</td><td class="barcell"><span class="bar" style="width:3.8%"></span></td><td class="num big">2</td><td class="num">1.1%</td><td class="num small">0.0–2.6</td><td class="num">2</td><td class="num">2/36 (6%)</td><td class="num">2</td><td class="num">1</td><td><span class="chip na">additive</span> <span class="mech">n/a</span></td></tr><tr><td class="kind">inline_body_changed</td><td class="barcell"><span class="bar hi" style="width:44.2%"></span></td><td class="num big">23</td><td class="num">12.2%</td><td class="num small">3.3–22.0</td><td class="num">23</td><td class="num">8/36 (22%)</td><td class="num">240</td><td class="num">3</td><td><span class="chip go">absorbs</span> <span class="mech">no implicit cross-module inlining</span></td></tr><tr><td class="kind">macro_value_changed</td><td class="barcell"><span class="bar hi" style="width:13.5%"></span></td><td class="num big">7</td><td class="num">3.7%</td><td class="num small">0.5–8.1</td><td class="num">7</td><td class="num">4/36 (11%)</td><td class="num">10</td><td class="num">1</td><td><span class="chip go">absorbs</span> <span class="mech">no implicit cross-module inlining</span></td></tr><tr class="total"><td class="kind">types with any layout change</td><td></td><td class="num big">23</td><td class="num">12.6%</td><td class="num small">4.7–24.1</td><td class="num">21</td><td class="num">10/35 (29%)</td><td></td><td></td><td>primary layout measure</td></tr>
+  </table></div>
+</section>
+
+<section>
+  <h2>What no ABI tool sees: header bodies and macros</h2>
+  <p class="note">Token-level fingerprints of inline, in-class and template bodies in the public headers. A changed fingerprint is a stale copy in every client that inlined it; it is an upper bound on semantically different bodies.</p>
+  <div class="grid">
+    <div class="card"><div class="k">transitions with header data</div><div class="v">739</div></div>
+    <div class="card"><div class="k">shipping ≥1 inlinable definition</div><div class="v">250 (33.8%)</div></div>
+    <div class="card"><div class="k">changing ≥1 body</div><div class="v">42 (5.7%)</div><div class="small">1214 bodies</div></div>
+    <div class="card"><div class="k">changing ≥1 macro value</div><div class="v">347 (47.0%)</div><div class="small">excluding version stamps: 80 (10.8%)</div></div>
+    <div class="card"><div class="k">poor parse coverage (lower bounds)</div><div class="v">139 (18.8%)</div></div>
   </div>
 </section>
 
 <section>
-  <div class="eyebrow">Scope</div>
-  <h2>What this does and does not establish</h2>
-  <div class="stack">
-    <p><strong>Selection is automatic, not curated.</strong> Libraries are the most-installed
-    <code>lib*</code> packages by Debian popcon whose source ships both a <code>-dbgsym</code> and a
-    <code>-dev</code> package, quota'd separately for C and C++.</p>
-    <p><strong>"Consecutive releases" means consecutive upstream versions as packaged by Debian</strong>,
-    deduplicated so Debian-revision-only rebuilds are not counted as library evolution. Debian may skip
-    upstream releases, so a pair can span more than one.</p>
-    <p><strong>Reachability is not usage.</strong> A layout-visible struct is one reachable from the
-    public API; whether clients embed it rather than hold a pointer is not measured, so layout counts
-    are an upper bound on real client breakage.</p>
-    <p><strong>Header coverage is heuristic.</strong> Headers are parsed standalone with include paths
-    guessed from the package layout; 0 transitions had poor coverage and their body counts
-    are lower bounds.</p>
-    <p><strong>Debug info was missing on one side for 15 transitions</strong>; those
-    were compared on symbols alone and contribute no layout events.</p>
-    <p><strong>Transitions are not independent samples</strong>: a library contributes up to nine.
-    Per-library rates are in <code>summary.json</code>.</p>
+  <h2>Symbol strata</h2>
+  <p class="note">Public symbol removals and signature changes joined against the old release's headers (mangled names via libclang). "Undecidable" = the headers parsed too poorly to say.</p>
+  <div class="grid">
+    <div class="card"><div class="k">removed · declared / undeclared / undecidable</div><div class="v">189 / 2056 / 164</div></div>
+    <div class="card"><div class="k">re-signed · declared / undeclared / undecidable</div><div class="v">791 / 519 / 27</div></div>
+    <div class="card"><div class="k">layout events excluded by the lenient rule</div><div class="v">198</div></div>
   </div>
 </section>
 
-<footer>
-  <div>abistudy 3.0.0 · libabigail library API · libclang C API. Corpus from snapshot.debian.org; DWARF from <code>-dbgsym</code>; public API
-  restricted to the <code>-dev</code> include root. Generated 2026-09-02T15:44:51Z by
-  <code>abistudy report</code> from <code>summary.json</code>.</div>
-  <div>Machine-readable results: <code>summary.json</code>; per-transition evidence:
-  <code>pairs/*.json</code>, <code>headers/pairs/*.json</code>; method and production-readiness
-  review: <code>METHODOLOGY.md</code>.</div>
-</footer>
+<section>
+  <h2>Per library</h2>
+  <div class="scroll"><table>
+    <tr><th>source package</th><th>lang</th><th>transitions</th><th>binary breaks (strict)</th><th>binary breaks (lenient)</th></tr>
+    <tr><td>intel-gmmlib</td><td>cxx</td><td class="num">9</td><td class="num">9</td><td class="num">9</td></tr><tr><td>libfido2</td><td>c</td><td class="num">9</td><td class="num">7</td><td class="num">5</td></tr><tr><td>hunspell</td><td>cxx</td><td class="num">9</td><td class="num">7</td><td class="num">6</td></tr><tr><td>srt</td><td>cxx</td><td class="num">8</td><td class="num">7</td><td class="num">0</td></tr><tr><td>libzstd</td><td>c</td><td class="num">9</td><td class="num">6</td><td class="num">3</td></tr><tr><td>pciutils</td><td>c</td><td class="num">9</td><td class="num">6</td><td class="num">5</td></tr><tr><td>rubberband</td><td>cxx</td><td class="num">9</td><td class="num">6</td><td class="num">1</td></tr><tr><td>libyuv</td><td>c</td><td class="num">9</td><td class="num">5</td><td class="num">5</td></tr><tr><td>xxhash</td><td>c</td><td class="num">9</td><td class="num">5</td><td class="num">5</td></tr><tr><td>snappy</td><td>cxx</td><td class="num">9</td><td class="num">5</td><td class="num">4</td></tr><tr><td>z3</td><td>c</td><td class="num">8</td><td class="num">5</td><td class="num">5</td></tr><tr><td>lz4</td><td>c</td><td class="num">8</td><td class="num">5</td><td class="num">5</td></tr><tr><td>freetype</td><td>c</td><td class="num">9</td><td class="num">4</td><td class="num">3</td></tr><tr><td>sqlite3</td><td>c</td><td class="num">9</td><td class="num">4</td><td class="num">0</td></tr><tr><td>audit</td><td>c</td><td class="num">9</td><td class="num">4</td><td class="num">2</td></tr><tr><td>lerc</td><td>cxx</td><td class="num">4</td><td class="num">4</td><td class="num">0</td></tr><tr><td>sane-backends</td><td>c</td><td class="num">9</td><td class="num">3</td><td class="num">0</td></tr><tr><td>openal-soft</td><td>c</td><td class="num">9</td><td class="num">3</td><td class="num">0</td></tr><tr><td>libde265</td><td>cxx</td><td class="num">9</td><td class="num">3</td><td class="num">0</td></tr><tr><td>libheif</td><td>c</td><td class="num">9</td><td class="num">3</td><td class="num">1</td></tr><tr><td>json-c</td><td>c</td><td class="num">9</td><td class="num">3</td><td class="num">2</td></tr><tr><td>soundtouch</td><td>cxx</td><td class="num">8</td><td class="num">3</td><td class="num">3</td></tr><tr><td>libsigc++-2.0</td><td>cxx</td><td class="num">8</td><td class="num">3</td><td class="num">3</td></tr><tr><td>chromaprint</td><td>cxx</td><td class="num">9</td><td class="num">2</td><td class="num">1</td></tr><tr><td>libedit</td><td>c</td><td class="num">9</td><td class="num">2</td><td class="num">1</td></tr><tr><td>libcap2</td><td>c</td><td class="num">9</td><td class="num">2</td><td class="num">1</td></tr><tr><td>libnftnl</td><td>c</td><td class="num">9</td><td class="num">2</td><td class="num">2</td></tr><tr><td>libx11</td><td>c</td><td class="num">9</td><td class="num">2</td><td class="num">0</td></tr><tr><td>gst-plugins-bad1.0</td><td>cxx</td><td class="num">9</td><td class="num">2</td><td class="num">1</td></tr><tr><td>ncurses</td><td>c</td><td class="num">9</td><td class="num">2</td><td class="num">2</td></tr><tr><td>jemalloc</td><td>cxx</td><td class="num">5</td><td class="num">2</td><td class="num">1</td></tr><tr><td>libgav1</td><td>cxx</td><td class="num">5</td><td class="num">2</td><td class="num">2</td></tr><tr><td>aspell</td><td>cxx</td><td class="num">3</td><td class="num">2</td><td class="num">0</td></tr><tr><td>librevenge</td><td>cxx</td><td class="num">3</td><td class="num">2</td><td class="num">2</td></tr><tr><td>openexr</td><td>cxx</td><td class="num">3</td><td class="num">2</td><td class="num">2</td></tr><tr><td>libxml2</td><td>c</td><td class="num">9</td><td class="num">1</td><td class="num">1</td></tr><tr><td>xz-utils</td><td>c</td><td class="num">9</td><td class="num">1</td><td class="num">1</td></tr><tr><td>libusb-1.0</td><td>c</td><td class="num">9</td><td class="num">1</td><td class="num">1</td></tr><tr><td>lvm2</td><td>c</td><td class="num">9</td><td class="num">1</td><td class="num">1</td></tr><tr><td>nghttp2</td><td>c</td><td class="num">9</td><td class="num">1</td><td class="num">1</td></tr><tr><td>libgpg-error</td><td>c</td><td class="num">9</td><td class="num">1</td><td class="num">1</td></tr><tr><td>apparmor</td><td>c</td><td class="num">9</td><td class="num">1</td><td class="num">0</td></tr><tr><td>iptables</td><td>c</td><td class="num">9</td><td class="num">1</td><td class="num">1</td></tr><tr><td>apt</td><td>cxx</td><td class="num">9</td><td class="num">1</td><td class="num">1</td></tr><tr><td>kmod</td><td>c</td><td class="num">9</td><td class="num">1</td><td class="num">1</td></tr><tr><td>gcc-16</td><td>cxx</td><td class="num">9</td><td class="num">1</td><td class="num">1</td></tr><tr><td>e2fsprogs</td><td>c</td><td class="num">9</td><td class="num">1</td><td class="num">1</td></tr><tr><td>brotli</td><td>c</td><td class="num">9</td><td class="num">1</td><td class="num">1</td></tr><tr><td>libcap-ng</td><td>c</td><td class="num">8</td><td class="num">1</td><td class="num">1</td></tr><tr><td>libnumbertext</td><td>cxx</td><td class="num">7</td><td class="num">1</td><td class="num">1</td></tr><tr><td>gmp</td><td>c</td><td class="num">6</td><td class="num">1</td><td class="num">0</td></tr><tr><td>acl</td><td>c</td><td class="num">4</td><td class="num">1</td><td class="num">0</td></tr><tr><td>slang2</td><td>c</td><td class="num">4</td><td class="num">1</td><td class="num">0</td></tr><tr><td>attr</td><td>c</td><td class="num">4</td><td class="num">1</td><td class="num">1</td></tr><tr><td>cyrus-sasl2</td><td>c</td><td class="num">3</td><td class="num">1</td><td class="num">1</td></tr><tr><td>djvulibre</td><td>cxx</td><td class="num">3</td><td class="num">1</td><td class="num">1</td></tr><tr><td>libodfgen</td><td>cxx</td><td class="num">2</td><td class="num">1</td><td class="num">1</td></tr><tr><td>rtmpdump</td><td>c</td><td class="num">2</td><td class="num">1</td><td class="num">1</td></tr><tr><td>mythes</td><td>cxx</td><td class="num">2</td><td class="num">1</td><td class="num">1</td></tr><tr><td>libmodplug</td><td>cxx</td><td class="num">1</td><td class="num">1</td><td class="num">1</td></tr><tr><td>gpm</td><td>c</td><td class="num">1</td><td class="num">1</td><td class="num">1</td></tr><tr><td>libcaca</td><td>cxx</td><td class="num">1</td><td class="num">1</td><td class="num">1</td></tr><tr><td>libsidplay</td><td>cxx</td><td class="num">1</td><td class="num">1</td><td class="num">1</td></tr><tr><td>libgcrypt20</td><td>c</td><td class="num">9</td><td class="num">0</td><td class="num">0</td></tr><tr><td>mesa</td><td>c</td><td class="num">9</td><td class="num">0</td><td class="num">0</td></tr><tr><td>vte2.91</td><td>c</td><td class="num">9</td><td class="num">0</td><td class="num">0</td></tr><tr><td>util-linux</td><td>c</td><td class="num">9</td><td class="num">0</td><td class="num">0</td></tr><tr><td>nftables</td><td>c</td><td class="num">9</td><td class="num">0</td><td class="num">0</td></tr><tr><td>expat</td><td>c</td><td class="num">9</td><td class="num">0</td><td class="num">0</td></tr><tr><td>p11-kit</td><td>c</td><td class="num">9</td><td class="num">0</td><td class="num">0</td></tr><tr><td>systemd</td><td>c</td><td class="num">9</td><td class="num">0</td><td class="num">0</td></tr><tr><td>pcre2</td><td>c</td><td class="num">9</td><td class="num">0</td><td class="num">0</td></tr><tr><td>dbus</td><td>c</td><td class="num">9</td><td class="num">0</td><td class="num">0</td></tr><tr><td>cdebconf</td><td>c</td><td class="num">9</td><td class="num">0</td><td class="num">0</td></tr><tr><td>libksba</td><td>c</td><td class="num">9</td><td class="num">0</td><td class="num">0</td></tr><tr><td>libmwaw</td><td>cxx</td><td class="num">9</td><td class="num">0</td><td class="num">0</td></tr><tr><td>libpipeline</td><td>c</td><td class="num">9</td><td class="num">0</td><td class="num">0</td></tr><tr><td>libseccomp</td><td>c</td><td class="num">9</td><td class="num">0</td><td class="num">0</td></tr><tr><td>libselinux</td><td>c</td><td class="num">9</td><td class="num">0</td><td class="num">0</td></tr><tr><td>libbsd</td><td>c</td><td class="num">9</td><td class="num">0</td><td class="num">0</td></tr><tr><td>libtasn1-6</td><td>c</td><td class="num">9</td><td class="num">0</td><td class="num">0</td></tr><tr><td>libmaxminddb</td><td>c</td><td class="num">9</td><td class="num">0</td><td class="num">0</td></tr><tr><td>libidn2</td><td>c</td><td class="num">9</td><td class="num">0</td><td class="num">0</td></tr><tr><td>libwps</td><td>cxx</td><td class="num">9</td><td class="num">0</td><td class="num">0</td></tr><tr><td>libxcrypt</td><td>c</td><td class="num">9</td><td class="num">0</td><td class="num">0</td></tr><tr><td>jansson</td><td>c</td><td class="num">8</td><td class="num">0</td><td class="num">0</td></tr><tr><td>newt</td><td>c</td><td class="num">7</td><td class="num">0</td><td class="num">0</td></tr><tr><td>libcdr</td><td>cxx</td><td class="num">7</td><td class="num">0</td><td class="num">0</td></tr><tr><td>libvisio</td><td>cxx</td><td class="num">6</td><td class="num">0</td><td class="num">0</td></tr><tr><td>libetonyek</td><td>cxx</td><td class="num">6</td><td class="num">0</td><td class="num">0</td></tr><tr><td>libmd</td><td>c</td><td class="num">6</td><td class="num">0</td><td class="num">0</td></tr><tr><td>zeromq3</td><td>c</td><td class="num">6</td><td class="num">0</td><td class="num">0</td></tr><tr><td>lmdb</td><td>c</td><td class="num">6</td><td class="num">0</td><td class="num">0</td></tr><tr><td>game-music-emu</td><td>c</td><td class="num">5</td><td class="num">0</td><td class="num">0</td></tr><tr><td>zimg</td><td>cxx</td><td class="num">5</td><td class="num">0</td><td class="num">0</td></tr><tr><td>protobuf-c</td><td>c</td><td class="num">4</td><td class="num">0</td><td class="num">0</td></tr><tr><td>libxcb</td><td>c</td><td class="num">4</td><td class="num">0</td><td class="num">0</td></tr><tr><td>libabw</td><td>cxx</td><td class="num">3</td><td class="num">0</td><td class="num">0</td></tr><tr><td>uchardet</td><td>cxx</td><td class="num">3</td><td class="num">0</td><td class="num">0</td></tr><tr><td>libwpg</td><td>cxx</td><td class="num">3</td><td class="num">0</td><td class="num">0</td></tr><tr><td>keyutils</td><td>c</td><td class="num">3</td><td class="num">0</td><td class="num">0</td></tr><tr><td>libmnl</td><td>c</td><td class="num">2</td><td class="num">0</td><td class="num">0</td></tr><tr><td>popt</td><td>c</td><td class="num">2</td><td class="num">0</td><td class="num">0</td></tr><tr><td>fstrm</td><td>c</td><td class="num">2</td><td class="num">0</td><td class="num">0</td></tr><tr><td>libwpd</td><td>cxx</td><td class="num">2</td><td class="num">0</td><td class="num">0</td></tr><tr><td>libe-book</td><td>cxx</td><td class="num">2</td><td class="num">0</td><td class="num">0</td></tr><tr><td>libglu</td><td>c</td><td class="num">2</td><td class="num">0</td><td class="num">0</td></tr><tr><td>bzip2</td><td>c</td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr><tr><td>libxau</td><td>c</td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr>
+  </table></div>
+</section>
 
+<section>
+  <h2>Scope and known limits</h2>
+  <ul>
+    <li>Corpus: Debian's most-installed C and C++ libraries whose maintainers ship <code>-dbgsym</code> and <code>-dev</code> packages; releases since automatic debug packages exist (2016). Not a sample of all C/C++ libraries.</li>
+    <li>A transition is one pair of consecutive upstream versions as Debian packaged them; Debian may skip upstream releases.</li>
+    <li>Layout facts come from the compiled binary's DWARF; whether a client depends on a layout is unknowable, hence the strict/lenient bracket.</li>
+    <li>Header churn is measured on token spellings; parse coverage is reported and counts under poor coverage are lower bounds.</li>
+    <li>Transitions are nested within libraries; every interval resamples libraries.</li>
+  </ul>
+</section>
+
+<footer>abistudy 4.0.0 · libabigail 2.4.0 · Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62) · report generated 2026-09-04T07:43:45Z</footer>
 </div>

@@ -4,13 +4,17 @@
    {
     "header_files": 164,
     "parsed": 164,
+    "parsed_as_cxx": 0,
     "skipped_by_limit": 0,
+    "with_errors": 163,
     "with_fatal_error": 0
    },
    {
     "header_files": 166,
     "parsed": 166,
+    "parsed_as_cxx": 0,
     "skipped_by_limit": 0,
+    "with_errors": 165,
     "with_fatal_error": 0
    }
   ],
@@ -27,6 +31,7 @@
    "inline_body_changed_template": 0,
    "inline_decl_changed": 0,
    "macro_value_changed": 0,
+   "macro_value_changed_nonversion": 0,
    "macros": [
     491,
     495
@@ -36,12 +41,36 @@
   "id": "gst-plugins-bad1.0@1.29.1..1.29.2",
   "language": "c",
   "source": "gst-plugins-bad1.0",
+  "symbol_declared": {
+   "_ZNSt6vectorIPKcSaIS1_EE17_M_realloc_appendIJRKS1_EEEvDpOT_": "unknown",
+   "_ZNSt6vectorIPKcSaIS1_EE17_M_realloc_appendIJS1_EEEvDpOT_": "unknown",
+   "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_replaceEmmPKcm": "unknown",
+   "gst_analytics_group_mtd_has_semantic_tag": "unknown",
+   "gst_analytics_group_mtd_semantic_tag_has_prefix": "unknown",
+   "gst_analytics_group_mtd_set_semantic_tag": "unknown",
+   "gst_buffer_add_wl_buffer": "unknown",
+   "gst_buffer_get_wl_buffer": "unknown",
+   "gst_wl_buffer_force_release_and_unref": "unknown",
+   "gst_wl_buffer_get_display": "unknown",
+   "gst_wl_buffer_ref_gst_buffer": "unknown",
+   "gst_wl_buffer_unref_buffer": "unknown",
+   "gst_wl_display_lookup_buffer": "unknown",
+   "gst_wl_display_register_buffer": "unknown",
+   "gst_wl_display_unregister_buffer": "unknown",
+   "gst_wl_shm_memory_construct_wl_buffer": "unknown",
+   "gst_wl_window_render": "unknown",
+   "gst_wl_window_render_hdr": "unknown"
+  },
   "upstream": [
    "1.29.1",
    "1.29.2"
   ]
  },
- "generated_at": "2026-09-02T14:52:30Z",
- "schema": "abistudy/header-pair/2",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T07:43:44Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
 }

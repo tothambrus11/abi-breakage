@@ -4,13 +4,17 @@
    {
     "header_files": 15,
     "parsed": 15,
+    "parsed_as_cxx": 0,
     "skipped_by_limit": 0,
+    "with_errors": 2,
     "with_fatal_error": 0
    },
    {
     "header_files": 15,
     "parsed": 15,
+    "parsed_as_cxx": 0,
     "skipped_by_limit": 0,
+    "with_errors": 2,
     "with_fatal_error": 0
    }
   ],
@@ -27,6 +31,7 @@
    "inline_body_changed_template": 0,
    "inline_decl_changed": 0,
    "macro_value_changed": 3,
+   "macro_value_changed_nonversion": 0,
    "macros": [
     21,
     36
@@ -36,12 +41,31 @@
   "id": "json-c@0.12.1+ds..0.13.1+dfsg",
   "language": "c",
   "source": "json-c",
+  "symbol_declared": {
+   "array_list_get_idx": "declared",
+   "array_list_length": "declared",
+   "array_list_put_idx": "declared",
+   "json_object_array_get_idx": "declared",
+   "json_object_array_length": "declared",
+   "json_object_array_put_idx": "declared",
+   "json_object_object_add": "declared",
+   "lh_char_hash": "declared",
+   "lh_kchar_table_new": "declared",
+   "lh_kptr_table_new": "declared",
+   "lh_ptr_hash": "declared",
+   "lh_table_new": "declared",
+   "lh_table_resize": "declared"
+  },
   "upstream": [
    "0.12.1+ds",
    "0.13.1+dfsg"
   ]
  },
- "generated_at": "2026-09-02T14:51:49Z",
- "schema": "abistudy/header-pair/2",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T07:43:44Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
 }

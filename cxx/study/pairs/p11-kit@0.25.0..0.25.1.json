@@ -1,5 +1,6 @@
 {
  "data": {
+  "bytes_extracted": 9321976,
   "id": "p11-kit@0.25.0..0.25.1",
   "object_errors": [],
   "objects": [
@@ -37,39 +38,55 @@
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 4,
       "declared_in": "p11-kit/iter.c",
+      "exposure": "by_pointer",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "struct p11_kit_iter"
      },
      {
+      "append_only": false,
       "count": 28,
       "declared_in": "p11-kit/iter.c",
+      "exposure": "by_pointer",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct p11_kit_iter"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "p11-kit/iter.c",
+      "exposure": "by_pointer",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct p11_kit_iter"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "p11-kit/iter.h",
+      "exposure": "by_value",
       "kind": "enum_case_added",
+      "third_party": false,
       "type": "enum P11KitIterKind"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "p11-kit/iter.h",
+      "exposure": "by_value",
       "kind": "enum_case_added",
+      "third_party": false,
       "type": "enum P11KitIterBehavior"
      }
-    ]
+    ],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 2.098216912,
+  "seconds": 1.941128389,
   "source": "p11-kit",
   "unpaired": [
    [],
@@ -80,7 +97,11 @@
    "0.25.1"
   ]
  },
- "generated_at": "2026-09-02T14:57:53Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:40:12Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

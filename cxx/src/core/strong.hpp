@@ -65,8 +65,8 @@ concept StrongType = requires {
 
 } // namespace abistudy
 
-// NOLINTBEGIN(cert-dcl58-cpp): specialising std::formatter/std::hash for a program-defined type is
-// allowed
+// NOLINTBEGIN(cert-dcl58-cpp,bugprone-std-namespace-modification): specialising std::formatter and
+// std::hash for a program-defined type is explicitly allowed by the standard
 /// @brief JSON: a Strong value serialises as its bare representation. The
 ///        one-argument from_json form is used because Strong is not
 ///        default-constructible.
@@ -92,4 +92,4 @@ struct std::hash<T> {
     return std::hash<typename T::rep_type>{}(s.get());
   }
 };
-// NOLINTEND(cert-dcl58-cpp)
+// NOLINTEND(cert-dcl58-cpp,bugprone-std-namespace-modification)

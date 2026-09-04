@@ -4,13 +4,17 @@
    {
     "header_files": 2,
     "parsed": 2,
+    "parsed_as_cxx": 2,
     "skipped_by_limit": 0,
+    "with_errors": 2,
     "with_fatal_error": 0
    },
    {
     "header_files": 2,
     "parsed": 2,
+    "parsed_as_cxx": 2,
     "skipped_by_limit": 0,
+    "with_errors": 2,
     "with_fatal_error": 0
    }
   ],
@@ -27,6 +31,7 @@
    "inline_body_changed_template": 0,
    "inline_decl_changed": 0,
    "macro_value_changed": 0,
+   "macro_value_changed_nonversion": 0,
    "macros": [
     0,
     0
@@ -36,12 +41,28 @@
   "id": "libetonyek@0.1.6..0.1.7",
   "language": "cxx",
   "source": "libetonyek",
+  "symbol_declared": {
+   "_ZNSt11_Deque_baseIbSaIbEE17_M_initialize_mapEm": "unknown",
+   "_ZNSt11_Deque_baseIbSaIbEED2Ev": "unknown",
+   "_ZNSt12_Destroy_auxILb0EE9__destroyIPN5boost10shared_ptrIN10libetonyek18IWORKOutputElementEEEEEvT_S8_": "unknown",
+   "_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPKN5boost7variantIdJNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEN10libetonyek7AddressESt4pairISB_SB_ENS2_17recursive_wrapperINSA_8PrefixOpEEENSE_INSA_7InfixOpEEENSE_INSA_9PostfixOpEEENSE_INSA_8FunctionEEENSE_INSA_5PExprEEEEEEPSP_EET0_T_SU_ST_": "unknown",
+   "_ZNSt25__uninitialized_default_1ILb0EE16__uninit_defaultIPN10libetonyek10IWORKTable4CellEEEvT_S6_": "unknown",
+   "_ZNSt5dequeISt4pairIllESaIS1_EE16_M_push_back_auxIJS1_EEEvDpOT_": "unknown",
+   "_ZNSt5dequeIdSaIdEE16_M_push_back_auxIJdEEEvDpOT_": "unknown",
+   "_ZNSt5dequeIdSaIdEE19_M_range_insert_auxISt15_Deque_iteratorIdRKdPS4_EEEvS3_IdRdPdET_SB_St20forward_iterator_tag": "unknown",
+   "_ZNSt6vectorIcSaIcEE13_M_insert_auxIJRKcEEEvN9__gnu_cxx17__normal_iteratorIPcS1_EEDpOT_": "unknown",
+   "_ZSt4moveIdESt15_Deque_iteratorIT_RS1_PS1_ES0_IS1_RKS1_PS5_ES8_S4_": "unknown"
+  },
   "upstream": [
    "0.1.6",
    "0.1.7"
   ]
  },
- "generated_at": "2026-09-02T14:53:54Z",
- "schema": "abistudy/header-pair/2",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T07:43:45Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
 }

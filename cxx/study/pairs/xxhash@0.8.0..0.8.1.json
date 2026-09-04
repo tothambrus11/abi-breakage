@@ -1,5 +1,6 @@
 {
  "data": {
+  "bytes_extracted": 1208002,
   "id": "xxhash@0.8.0..0.8.1",
   "object_errors": [],
   "objects": [
@@ -22,6 +23,8 @@
     "mass_rename": false,
     "private_node": {},
     "public": {
+     "enum_case_added": 2,
+     "enum_case_removed": 2,
      "field_removed_from_struct": 6,
      "field_type_changed": 2,
      "function_signature_changed": 3,
@@ -35,75 +38,114 @@
      {
       "kind": "symbol_added",
       "pretty": "function void XXH3_generateSecret_fromSeed(void*, XXH64_hash_t)",
-      "symbol": "XXH3_generateSecret_fromSeed"
+      "symbol": "XXH3_generateSecret_fromSeed",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function XXH64_hash_t XXH3_64bits_withSecretandSeed(void*, size_t, void*, size_t, XXH64_hash_t)",
-      "symbol": "XXH3_64bits_withSecretandSeed"
+      "symbol": "XXH3_64bits_withSecretandSeed",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function XXH_errorcode XXH3_64bits_reset_withSecretandSeed(XXH3_state_t*, void*, size_t, XXH64_hash_t)",
-      "symbol": "XXH3_64bits_reset_withSecretandSeed"
+      "symbol": "XXH3_64bits_reset_withSecretandSeed",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function XXH128_hash_t XXH3_128bits_withSecretandSeed(void*, size_t, void*, size_t, XXH64_hash_t)",
-      "symbol": "XXH3_128bits_withSecretandSeed"
+      "symbol": "XXH3_128bits_withSecretandSeed",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function XXH_errorcode XXH3_128bits_reset_withSecretandSeed(XXH3_state_t*, void*, size_t, XXH64_hash_t)",
-      "symbol": "XXH3_128bits_reset_withSecretandSeed"
+      "symbol": "XXH3_128bits_reset_withSecretandSeed",
+      "weak": false
      },
      {
       "kind": "function_signature_changed",
       "pretty": "function void XXH3_generateSecret(void*, void*, size_t)  ->  function XXH_errorcode XXH3_generateSecret(void*, size_t, void*, size_t)",
-      "symbol": "XXH3_generateSecret"
-     },
-     {
-      "kind": "function_signature_changed",
-      "pretty": "function XXH_INLINE_XXH_errorcode XXH3_128bits_update_dispatch(XXH_INLINE_XXH3_state_t*, void*, size_t)  ->  function XXH_NAMESPACEXXH_errorcode XXH3_128bits_update_dispatch(XXH_NAMESPACEXXH3_state_t*, void*, size_t)",
-      "symbol": "XXH3_128bits_update_dispatch"
+      "symbol": "XXH3_generateSecret",
+      "weak": false
      },
      {
       "kind": "function_signature_changed",
       "pretty": "function XXH_INLINE_XXH_errorcode XXH3_64bits_update_dispatch(XXH_INLINE_XXH3_state_t*, void*, size_t)  ->  function XXH_NAMESPACEXXH_errorcode XXH3_64bits_update_dispatch(XXH_NAMESPACEXXH3_state_t*, void*, size_t)",
-      "symbol": "XXH3_64bits_update_dispatch"
+      "symbol": "XXH3_64bits_update_dispatch",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function XXH_INLINE_XXH_errorcode XXH3_128bits_update_dispatch(XXH_INLINE_XXH3_state_t*, void*, size_t)  ->  function XXH_NAMESPACEXXH_errorcode XXH3_128bits_update_dispatch(XXH_NAMESPACEXXH3_state_t*, void*, size_t)",
+      "symbol": "XXH3_128bits_update_dispatch",
+      "weak": false
      }
     ],
     "symbols_version_renamed": 0,
     "third_party": {},
     "type_events": [
      {
+      "append_only": false,
       "count": 3,
       "declared_in": "./xxhash.h",
+      "exposure": "by_pointer",
       "kind": "field_removed_from_struct",
+      "third_party": false,
       "type": "struct XXH32_state_s"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./xxhash.h",
+      "exposure": "by_pointer",
       "kind": "field_type_changed",
+      "third_party": false,
       "type": "struct XXH32_state_s"
      },
      {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./xxhash.h",
+      "exposure": "by_value",
+      "kind": "enum_case_added",
+      "third_party": false,
+      "type": "enum XXH_INLINE_XXH_errorcode"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./xxhash.h",
+      "exposure": "by_value",
+      "kind": "enum_case_removed",
+      "third_party": false,
+      "type": "enum XXH_INLINE_XXH_errorcode"
+     },
+     {
+      "append_only": false,
       "count": 3,
       "declared_in": "./xxhash.h",
+      "exposure": "by_pointer",
       "kind": "field_removed_from_struct",
+      "third_party": false,
       "type": "struct XXH64_state_s"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./xxhash.h",
+      "exposure": "by_pointer",
       "kind": "field_type_changed",
+      "third_party": false,
       "type": "struct XXH64_state_s"
      }
-    ]
+    ],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 1.330717245,
+  "seconds": 1.172466282,
   "source": "xxhash",
   "unpaired": [
    [],
@@ -114,7 +156,11 @@
    "0.8.1"
   ]
  },
- "generated_at": "2026-09-02T14:59:20Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:43:36Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

@@ -1,5 +1,6 @@
 {
  "data": {
+  "bytes_extracted": 23145946,
   "id": "openexr@3.1.3..3.1.4",
   "object_errors": [],
   "objects": [
@@ -29,7 +30,8 @@
     "symbol_events": [],
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -57,7 +59,8 @@
     "symbol_events": [],
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -92,66 +95,97 @@
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "class std::vector<Imf_3_1::(anonymousnamespace)::LineBuffer*,std::allocator<Imf_3_1::(anonymousnamespace)::LineBuffer*>>"
+      "third_party": true,
+      "type": "class std::vector<Imf_3_1::(anonymous namespace)::LineBuffer*, std::allocator<Imf_3_1::(anonymous namespace)::LineBuffer*> >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Vector_base<Imf_3_1::(anonymousnamespace)::LineBuffer*,std::allocator<Imf_3_1::(anonymousnamespace)::LineBuffer*>>::_Vector_impl"
+      "third_party": true,
+      "type": "struct std::_Vector_base<Imf_3_1::(anonymous namespace)::LineBuffer*, std::allocator<Imf_3_1::(anonymous namespace)::LineBuffer*> >::_Vector_impl"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/lib/OpenEXR/ImfDeepScanLineInputFile.cpp",
+      "exposure": "not_in_interface",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "struct LineBuffer"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/lib/OpenEXR/ImfDeepScanLineInputFile.cpp",
+      "exposure": "not_in_interface",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct LineBuffer"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/lib/OpenEXR/ImfDeepScanLineInputFile.cpp",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct LineBuffer"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/lib/OpenEXR/ImfDeepScanLineInputFile.cpp",
+      "exposure": "not_in_interface",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "struct Imf_3_1::DeepScanLineInputFile::Data"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
       "kind": "base_class_changed",
-      "type": "class std::vector<Imf_3_1::DeepScanLineInputFile*,std::allocator<Imf_3_1::DeepScanLineInputFile*>>"
+      "third_party": true,
+      "type": "class std::vector<Imf_3_1::DeepScanLineInputFile*, std::allocator<Imf_3_1::DeepScanLineInputFile*> >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Vector_base<Imf_3_1::DeepScanLineInputFile*,std::allocator<Imf_3_1::DeepScanLineInputFile*>>::_Vector_impl"
+      "third_party": true,
+      "type": "struct std::_Vector_base<Imf_3_1::DeepScanLineInputFile*, std::allocator<Imf_3_1::DeepScanLineInputFile*> >::_Vector_impl"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
       "kind": "base_class_changed",
-      "type": "class std::vector<Imf_3_1::DeepScanLineInputPart*,std::allocator<Imf_3_1::DeepScanLineInputPart*>>"
+      "third_party": true,
+      "type": "class std::vector<Imf_3_1::DeepScanLineInputPart*, std::allocator<Imf_3_1::DeepScanLineInputPart*> >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Vector_base<Imf_3_1::DeepScanLineInputPart*,std::allocator<Imf_3_1::DeepScanLineInputPart*>>::_Vector_impl"
+      "third_party": true,
+      "type": "struct std::_Vector_base<Imf_3_1::DeepScanLineInputPart*, std::allocator<Imf_3_1::DeepScanLineInputPart*> >::_Vector_impl"
      }
-    ]
+    ],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -179,7 +213,8 @@
     "symbol_events": [],
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -207,10 +242,11 @@
     "symbol_events": [],
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 15.396857559,
+  "seconds": 16.543456131,
   "source": "openexr",
   "unpaired": [
    [],
@@ -221,7 +257,11 @@
    "3.1.4"
   ]
  },
- "generated_at": "2026-09-02T15:07:29Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:35:22Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

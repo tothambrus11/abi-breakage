@@ -1,5 +1,6 @@
 {
  "data": {
+  "bytes_extracted": 11624189,
   "id": "libx11@1.8.6..1.8.7",
   "object_errors": [],
   "objects": [
@@ -33,15 +34,19 @@
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
+      "exposure": "by_pointer",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "struct _IO_FILE"
      }
-    ]
+    ],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 3.642349475,
+  "seconds": 2.771151806,
   "source": "libx11",
   "unpaired": [
    [],
@@ -52,7 +57,11 @@
    "1.8.7"
   ]
  },
- "generated_at": "2026-09-02T14:58:01Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:39:22Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

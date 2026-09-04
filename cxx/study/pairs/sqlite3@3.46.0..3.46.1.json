@@ -1,5 +1,6 @@
 {
  "data": {
+  "bytes_extracted": 15842545,
   "id": "sqlite3@3.46.0..3.46.1",
   "object_errors": [],
   "objects": [
@@ -32,7 +33,8 @@
      {
       "kind": "symbol_added",
       "pretty": "function int sqlite3DbpageRegister(sqlite3*)",
-      "symbol": "sqlite3DbpageRegister"
+      "symbol": "sqlite3DbpageRegister",
+      "weak": false
      }
     ],
     "symbols_version_renamed": 0,
@@ -43,45 +45,64 @@
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/sqliteInt.h",
+      "exposure": "not_in_interface",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "struct AggInfo"
      },
      {
+      "append_only": false,
       "count": 11,
       "declared_in": "./src/sqliteInt.h",
+      "exposure": "not_in_interface",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct AggInfo"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/sqliteInt.h",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct AggInfo"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "./src/sqliteInt.h",
+      "exposure": "not_in_interface",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "struct AggInfo_col"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/sqliteInt.h",
+      "exposure": "not_in_interface",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct AggInfo_col"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/sqliteInt.h",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct AggInfo_col"
      }
-    ]
+    ],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 4.105093795,
+  "seconds": 5.239922408,
   "source": "sqlite3",
   "unpaired": [
    [],
@@ -92,7 +113,11 @@
    "3.46.1"
   ]
  },
- "generated_at": "2026-09-02T14:57:34Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:37:23Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

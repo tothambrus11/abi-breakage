@@ -4,13 +4,17 @@
    {
     "header_files": 2,
     "parsed": 2,
+    "parsed_as_cxx": 2,
     "skipped_by_limit": 0,
+    "with_errors": 2,
     "with_fatal_error": 0
    },
    {
     "header_files": 2,
     "parsed": 2,
+    "parsed_as_cxx": 2,
     "skipped_by_limit": 0,
+    "with_errors": 2,
     "with_fatal_error": 0
    }
   ],
@@ -27,6 +31,7 @@
    "inline_body_changed_template": 0,
    "inline_decl_changed": 0,
    "macro_value_changed": 0,
+   "macro_value_changed_nonversion": 0,
    "macros": [
     0,
     0
@@ -36,12 +41,33 @@
   "id": "libvisio@0.1.5..0.1.6",
   "language": "cxx",
   "source": "libvisio",
+  "symbol_declared": {
+   "_ZN5boost6system12system_errorD0Ev": "unknown",
+   "_ZN5boost6system12system_errorD2Ev": "unknown",
+   "_ZNK5boost6system12system_error4whatEv": "unknown",
+   "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE19_M_emplace_back_auxIJRKS5_EEEvDpOT_": "unknown",
+   "_ZNSt6vectorINSt7__cxx114listIjSaIjEEESaIS3_EE19_M_emplace_back_auxIJRKS3_EEEvDpOT_": "unknown",
+   "_ZNSt6vectorISt3mapIjjSt4lessIjESaISt4pairIKjjEEESaIS7_EE19_M_emplace_back_auxIJRKS7_EEEvDpOT_": "unknown",
+   "_ZNSt6vectorISt4pairIddESaIS1_EE13_M_insert_auxIJS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_": "unknown",
+   "_ZNSt6vectorISt4pairIddESaIS1_EE19_M_emplace_back_auxIJRKS1_EEEvDpOT_": "unknown",
+   "_ZNSt6vectorISt4pairIddESaIS1_EE19_M_emplace_back_auxIJS1_EEEvDpOT_": "unknown",
+   "_ZNSt6vectorISt4pairIjjESaIS1_EE19_M_emplace_back_auxIJS1_EEEvDpOT_": "unknown",
+   "_ZNSt6vectorIdSaIdEE13_M_insert_auxIJRKdEEEvN9__gnu_cxx17__normal_iteratorIPdS1_EEDpOT_": "unknown",
+   "_ZNSt6vectorIdSaIdEE19_M_emplace_back_auxIJRKdEEEvDpOT_": "unknown",
+   "_ZNSt6vectorIhSaIhEE19_M_emplace_back_auxIJRKhEEEvDpOT_": "unknown",
+   "_ZNSt6vectorIjSaIjEE19_M_emplace_back_auxIJRKjEEEvDpOT_": "unknown",
+   "_ZNSt6vectorIjSaIjEE19_M_emplace_back_auxIJjEEEvDpOT_": "unknown"
+  },
   "upstream": [
    "0.1.5",
    "0.1.6"
   ]
  },
- "generated_at": "2026-09-02T14:53:54Z",
- "schema": "abistudy/header-pair/2",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T07:43:45Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
 }

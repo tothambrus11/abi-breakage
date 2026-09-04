@@ -1,5 +1,7 @@
 {
  "data": {
+  "bytes_extracted": 11055281,
+  "excluded_objects": [],
   "id": "libwpd@0.10.1..0.10.2",
   "object_errors": [],
   "objects": [
@@ -21,10 +23,7 @@
     "language": "cxx",
     "mass_rename": false,
     "private_node": {},
-    "public": {
-     "symbol_added": 11,
-     "symbol_removed": 9
-    },
+    "public": {},
     "soname": [
      "libwpd-0.10.so.10",
      "libwpd-0.10.so.10"
@@ -32,132 +31,185 @@
     "symbol_events": [
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::vector<unsignedint,std::allocator<unsignedint>>::_M_emplace_back_aux<unsignedint>(unsigned int&&)",
-      "symbol": "_ZNSt6vectorIjSaIjEE19_M_emplace_back_auxIJjEEEvDpOT_"
+      "pretty": "method void std::vector<unsigned int, std::allocator<unsigned int> >::_M_emplace_back_aux<unsigned int>(unsigned int&&)",
+      "symbol": "_ZNSt6vectorIjSaIjEE19_M_emplace_back_auxIJjEEEvDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::_Deque_base<WP6istType,std::allocator<WP6istType>>::_M_initialize_map(std::size_t)",
-      "symbol": "_ZNSt11_Deque_baseI11WP6ListTypeSaIS0_EE17_M_initialize_mapEm"
+      "pretty": "method void std::vector<double, std::allocator<double> >::_M_emplace_back_aux<double>(double&&)",
+      "symbol": "_ZNSt6vectorIdSaIdEE19_M_emplace_back_auxIJdEEEvDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::vector<double,std::allocator<double>>::_M_emplace_back_aux<double>(double&&)",
-      "symbol": "_ZNSt6vectorIdSaIdEE19_M_emplace_back_auxIJdEEEvDpOT_"
+      "pretty": "method void std::vector<double, std::allocator<double> >::_M_emplace_back_aux<double const&>(const double&)",
+      "symbol": "_ZNSt6vectorIdSaIdEE19_M_emplace_back_auxIJRKdEEEvDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::_Deque_base<unsignedint,std::allocator<unsignedint>>::_M_initialize_map(std::size_t)",
-      "symbol": "_ZNSt11_Deque_baseIjSaIjEE17_M_initialize_mapEm"
+      "pretty": "method void std::vector<unsigned char*, std::allocator<unsigned char*> >::_M_emplace_back_aux<unsigned char* const&>(unsigned char* const&)",
+      "symbol": "_ZNSt6vectorIPhSaIS0_EE19_M_emplace_back_auxIJRKS0_EEEvDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::deque<WP6istType,std::allocator<WP6istType>>::emplace_back<WP6istType>(WP6ListType&&)",
-      "symbol": "_ZNSt5dequeI11WP6ListTypeSaIS0_EE12emplace_backIJS0_EEEvDpOT_"
+      "pretty": "method void std::vector<unsigned int, std::allocator<unsigned int> >::_M_emplace_back_aux<unsigned int const&>(const unsigned int&)",
+      "symbol": "_ZNSt6vectorIjSaIjEE19_M_emplace_back_auxIJRKjEEEvDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::vector<unsignedchar*,std::allocator<unsignedchar*>>::_M_emplace_back_aux<unsignedchar*const&>(unsigned char* const&)",
-      "symbol": "_ZNSt6vectorIPhSaIS0_EE19_M_emplace_back_auxIJRKS0_EEEvDpOT_"
+      "pretty": "method void std::vector<WP6StyleState, std::allocator<WP6StyleState> >::_M_emplace_back_aux<WP6StyleState>(WP6StyleState&&)",
+      "symbol": "_ZNSt6vectorI13WP6StyleStateSaIS0_EE19_M_emplace_back_auxIJS0_EEEvDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::vector<double,std::allocator<double>>::_M_emplace_back_aux<doubleconst&>(const double&)",
-      "symbol": "_ZNSt6vectorIdSaIdEE19_M_emplace_back_auxIJRKdEEEvDpOT_"
+      "pretty": "method void std::deque<WP6ListType, std::allocator<WP6ListType> >::emplace_back<WP6ListType>(WP6ListType&&)",
+      "symbol": "_ZNSt5dequeI11WP6ListTypeSaIS0_EE12emplace_backIJS0_EEEvDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::vector<WP6StyleState,std::allocator<WP6StyleState>>::_M_emplace_back_aux<WP6StyleState>(WP6StyleState&&)",
-      "symbol": "_ZNSt6vectorI13WP6StyleStateSaIS0_EE19_M_emplace_back_auxIJS0_EEEvDpOT_"
+      "pretty": "method void std::_Deque_base<unsigned int, std::allocator<unsigned int> >::_M_initialize_map(std::size_t)",
+      "symbol": "_ZNSt11_Deque_baseIjSaIjEE17_M_initialize_mapEm",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::vector<unsignedint,std::allocator<unsignedint>>::_M_emplace_back_aux<unsignedintconst&>(const unsigned int&)",
-      "symbol": "_ZNSt6vectorIjSaIjEE19_M_emplace_back_auxIJRKjEEEvDpOT_"
+      "pretty": "method void std::_Deque_base<WP6ListType, std::allocator<WP6ListType> >::_M_initialize_map(std::size_t)",
+      "symbol": "_ZNSt11_Deque_baseI11WP6ListTypeSaIS0_EE17_M_initialize_mapEm",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method std::pair<std::_Rb_tree_iterator<longint>,bool> std::_Rb_tree<longint,longint,std::_Identity<longint>,std::less<longint>,std::allocator<longint>>::_M_insert_unique<longint>(long int&&)",
-      "symbol": "_ZNSt8_Rb_treeIllSt9_IdentityIlESt4lessIlESaIlEE16_M_insert_uniqueIlEESt4pairISt17_Rb_tree_iteratorIlEbEOT_"
+      "pretty": "method std::pair<std::_Rb_tree_iterator<long int>, bool> std::_Rb_tree<long int, long int, std::_Identity<long int>, std::less<long int>, std::allocator<long int> >::_M_insert_unique<long int>(long int&&)",
+      "symbol": "_ZNSt8_Rb_treeIllSt9_IdentityIlESt4lessIlESaIlEE16_M_insert_uniqueIlEESt4pairISt17_Rb_tree_iteratorIlEbEOT_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::_M_construct<charconst*>(const char*, const char*, std::forward_iterator_tag)",
-      "symbol": "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tag"
+      "pretty": "method void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(const char*, const char*, std::forward_iterator_tag)",
+      "symbol": "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tag",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::vector<unsignedint,std::allocator<unsignedint>>::_M_realloc_insert<unsignedintconst&>(std::vector<unsignedint,std::allocator<unsignedint>>::iterator, const unsigned int&)",
-      "symbol": "_ZNSt6vectorIjSaIjEE17_M_realloc_insertIJRKjEEEvN9__gnu_cxx17__normal_iteratorIPjS1_EEDpOT_"
+      "pretty": "method void std::vector<unsigned int, std::allocator<unsigned int> >::_M_realloc_insert<unsigned int const&>(std::vector<unsigned int, std::allocator<unsigned int> >::iterator, const unsigned int&)",
+      "symbol": "_ZNSt6vectorIjSaIjEE17_M_realloc_insertIJRKjEEEvN9__gnu_cxx17__normal_iteratorIPjS1_EEDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::vector<unsignedint,std::allocator<unsignedint>>::_M_realloc_insert<unsignedint>(std::vector<unsignedint,std::allocator<unsignedint>>::iterator, unsigned int&&)",
-      "symbol": "_ZNSt6vectorIjSaIjEE17_M_realloc_insertIJjEEEvN9__gnu_cxx17__normal_iteratorIPjS1_EEDpOT_"
+      "pretty": "method void std::vector<unsigned int, std::allocator<unsigned int> >::_M_realloc_insert<unsigned int>(std::vector<unsigned int, std::allocator<unsigned int> >::iterator, unsigned int&&)",
+      "symbol": "_ZNSt6vectorIjSaIjEE17_M_realloc_insertIJjEEEvN9__gnu_cxx17__normal_iteratorIPjS1_EEDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::vector<unsignedchar*,std::allocator<unsignedchar*>>::_M_realloc_insert<unsignedchar*const&>(std::vector<unsignedchar*,std::allocator<unsignedchar*>>::iterator, unsigned char* const&)",
-      "symbol": "_ZNSt6vectorIPhSaIS0_EE17_M_realloc_insertIJRKS0_EEEvN9__gnu_cxx17__normal_iteratorIPS0_S2_EEDpOT_"
+      "pretty": "method void std::vector<unsigned char*, std::allocator<unsigned char*> >::_M_realloc_insert<unsigned char* const&>(std::vector<unsigned char*, std::allocator<unsigned char*> >::iterator, unsigned char* const&)",
+      "symbol": "_ZNSt6vectorIPhSaIS0_EE17_M_realloc_insertIJRKS0_EEEvN9__gnu_cxx17__normal_iteratorIPS0_S2_EEDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::vector<WP6StyleState,std::allocator<WP6StyleState>>::_M_realloc_insert<WP6StyleState>(std::vector<WP6StyleState,std::allocator<WP6StyleState>>::iterator, WP6StyleState&&)",
-      "symbol": "_ZNSt6vectorI13WP6StyleStateSaIS0_EE17_M_realloc_insertIJS0_EEEvN9__gnu_cxx17__normal_iteratorIPS0_S2_EEDpOT_"
+      "pretty": "method void std::vector<WP6StyleState, std::allocator<WP6StyleState> >::_M_realloc_insert<WP6StyleState>(std::vector<WP6StyleState, std::allocator<WP6StyleState> >::iterator, WP6StyleState&&)",
+      "symbol": "_ZNSt6vectorI13WP6StyleStateSaIS0_EE17_M_realloc_insertIJS0_EEEvN9__gnu_cxx17__normal_iteratorIPS0_S2_EEDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::deque<unsignedint,std::allocator<unsignedint>>::_M_push_back_aux<unsignedintconst&>(const unsigned int&)",
-      "symbol": "_ZNSt5dequeIjSaIjEE16_M_push_back_auxIJRKjEEEvDpOT_"
+      "pretty": "method void std::deque<unsigned int, std::allocator<unsigned int> >::_M_push_back_aux<unsigned int const&>(const unsigned int&)",
+      "symbol": "_ZNSt5dequeIjSaIjEE16_M_push_back_auxIJRKjEEEvDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::vector<double,std::allocator<double>>::_M_realloc_insert<double>(std::vector<double,std::allocator<double>>::iterator, double&&)",
-      "symbol": "_ZNSt6vectorIdSaIdEE17_M_realloc_insertIJdEEEvN9__gnu_cxx17__normal_iteratorIPdS1_EEDpOT_"
+      "pretty": "method void std::vector<double, std::allocator<double> >::_M_realloc_insert<double>(std::vector<double, std::allocator<double> >::iterator, double&&)",
+      "symbol": "_ZNSt6vectorIdSaIdEE17_M_realloc_insertIJdEEEvN9__gnu_cxx17__normal_iteratorIPdS1_EEDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::deque<WP6istType,std::allocator<WP6istType>>::_M_push_back_aux<WP6istType>(WP6ListType&&)",
-      "symbol": "_ZNSt5dequeI11WP6ListTypeSaIS0_EE16_M_push_back_auxIJS0_EEEvDpOT_"
+      "pretty": "method void std::deque<WP6ListType, std::allocator<WP6ListType> >::_M_push_back_aux<WP6ListType>(WP6ListType&&)",
+      "symbol": "_ZNSt5dequeI11WP6ListTypeSaIS0_EE16_M_push_back_auxIJS0_EEEvDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::vector<double,std::allocator<double>>::_M_realloc_insert<doubleconst&>(std::vector<double,std::allocator<double>>::iterator, const double&)",
-      "symbol": "_ZNSt6vectorIdSaIdEE17_M_realloc_insertIJRKdEEEvN9__gnu_cxx17__normal_iteratorIPdS1_EEDpOT_"
+      "pretty": "method void std::vector<double, std::allocator<double> >::_M_realloc_insert<double const&>(std::vector<double, std::allocator<double> >::iterator, const double&)",
+      "symbol": "_ZNSt6vectorIdSaIdEE17_M_realloc_insertIJRKdEEEvN9__gnu_cxx17__normal_iteratorIPdS1_EEDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
       "pretty": "method void std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release()",
-      "symbol": "_ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE10_M_releaseEv"
+      "symbol": "_ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE10_M_releaseEv",
+      "weak": true
      }
     ],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {
-     "base_class_changed": 4
+     "base_class_changed": 4,
+     "field_removed_from_struct": 6
     },
     "type_events": [
      {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "/usr/include/c++/6/bits/stl_tree.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct std::_Rb_tree<long int, long int, std::_Identity<long int>, std::less<long int>, std::allocator<long int> >::_Rb_tree_impl<std::less<long int>, true>"
+     },
+     {
+      "append_only": false,
       "count": 2,
       "declared_in": "/usr/include/c++/6/bits/stl_tree.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Rb_tree<longint,longint,std::_Identity<longint>,std::less<longint>,std::allocator<longint>>::_Rb_tree_impl<std::less<longint>,true>"
+      "third_party": true,
+      "type": "struct std::_Rb_tree<long int, long int, std::_Identity<long int>, std::less<long int>, std::allocator<long int> >::_Rb_tree_impl<std::less<long int>, true>"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/6/bits/stl_bvector.h",
+      "exposure": "by_pointer",
       "kind": "base_class_changed",
-      "type": "class std::vector<bool,std::allocator<bool>>"
+      "third_party": true,
+      "type": "class std::vector<bool, std::allocator<bool> >"
      },
      {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "/usr/include/c++/6/bits/stl_bvector.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct std::_Bvector_base<std::allocator<bool> >::_Bvector_impl"
+     },
+     {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/6/bits/stl_bvector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Bvector_base<std::allocator<bool>>::_Bvector_impl"
+      "third_party": true,
+      "type": "struct std::_Bvector_base<std::allocator<bool> >::_Bvector_impl"
      }
-    ]
+    ],
+    "vague_linkage": {
+     "symbol_added": 11,
+     "symbol_removed": 9
+    }
    }
   ],
-  "seconds": 12.819529032,
+  "seconds": 9.62362149,
   "source": "libwpd",
   "unpaired": [
    [],
@@ -168,7 +220,11 @@
    "0.10.2"
   ]
  },
- "generated_at": "2026-09-02T15:07:52Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T06:19:38Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

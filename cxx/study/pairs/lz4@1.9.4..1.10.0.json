@@ -1,5 +1,6 @@
 {
  "data": {
+  "bytes_extracted": 1605534,
   "id": "lz4@1.9.4..1.10.0",
   "object_errors": [],
   "objects": [
@@ -22,7 +23,8 @@
     "mass_rename": false,
     "private_node": {},
     "public": {
-     "enum_case_added": 2,
+     "enum_case_added": 3,
+     "enum_case_removed": 1,
      "symbol_added": 4
     },
     "soname": [
@@ -33,22 +35,26 @@
      {
       "kind": "symbol_added",
       "pretty": "function int LZ4_loadDictSlow(LZ4_stream_t*, const char*, int)",
-      "symbol": "LZ4_loadDictSlow"
+      "symbol": "LZ4_loadDictSlow",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function void LZ4_attach_dictionary(LZ4_stream_t*, const LZ4_stream_t*)",
-      "symbol": "LZ4_attach_dictionary"
+      "symbol": "LZ4_attach_dictionary",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function void LZ4_attach_HC_dictionary(LZ4_streamHC_t*, const LZ4_streamHC_t*)",
-      "symbol": "LZ4_attach_HC_dictionary"
+      "symbol": "LZ4_attach_HC_dictionary",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function size_t LZ4F_compressBegin_usingDict(LZ4F_cctx*, void*, size_t, void*, size_t, const LZ4F_preferences_t*)",
-      "symbol": "LZ4F_compressBegin_usingDict"
+      "symbol": "LZ4F_compressBegin_usingDict",
+      "weak": false
      }
     ],
     "symbols_version_renamed": 0,
@@ -59,39 +65,64 @@
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./lib/lz4frame.c",
+      "exposure": "by_pointer",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "struct LZ4F_cctx_s"
      },
      {
-      "count": 2,
+      "append_only": false,
+      "count": 3,
       "declared_in": "./lib/lz4frame.h",
+      "exposure": "by_value",
       "kind": "enum_case_added",
+      "third_party": false,
       "type": "enum LZ4F_errorCodes"
      },
      {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./lib/lz4frame.h",
+      "exposure": "by_value",
+      "kind": "enum_case_removed",
+      "third_party": false,
+      "type": "enum LZ4F_errorCodes"
+     },
+     {
+      "append_only": false,
       "count": 3,
       "declared_in": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
+      "exposure": "by_pointer",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "struct _IO_FILE"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
+      "exposure": "by_pointer",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "struct _IO_FILE"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
+      "exposure": "by_pointer",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct _IO_FILE"
      }
-    ]
+    ],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 1.807707965,
+  "seconds": 1.34062291,
   "source": "lz4",
   "unpaired": [
    [],
@@ -102,7 +133,11 @@
    "1.10.0"
   ]
  },
- "generated_at": "2026-09-02T14:58:22Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:42:56Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

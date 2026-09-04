@@ -1,5 +1,6 @@
 {
  "data": {
+  "bytes_extracted": 8616590,
   "id": "slang2@2.3.0..2.3.1",
   "object_errors": [],
   "objects": [
@@ -33,15 +34,19 @@
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 6,
       "declared_in": "./src/_slang.h",
+      "exposure": "not_in_interface",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "union _pSL_Object_Union_Type"
      }
-    ]
+    ],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 1.538947261,
+  "seconds": 1.626197354,
   "source": "slang2",
   "unpaired": [
    [],
@@ -52,7 +57,11 @@
    "2.3.1"
   ]
  },
- "generated_at": "2026-09-02T14:57:19Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:41:43Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

@@ -1,5 +1,6 @@
 {
  "data": {
+  "bytes_extracted": 10135499,
   "id": "libgav1@0.16.0..0.16.3",
   "object_errors": [],
   "objects": [
@@ -38,213 +39,316 @@
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/10/bits/unique_ptr.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::__uniq_ptr_data<libgav1::DecoderImpl,std::default_delete<libgav1::DecoderImpl>,true,true>"
+      "third_party": true,
+      "type": "struct std::__uniq_ptr_data<libgav1::DecoderImpl, std::default_delete<libgav1::DecoderImpl>, true, true>"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/10/tuple",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "class std::tuple<libgav1::DecoderImpl*,std::default_delete<libgav1::DecoderImpl>>"
+      "third_party": true,
+      "type": "class std::tuple<libgav1::DecoderImpl*, std::default_delete<libgav1::DecoderImpl> >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/10/tuple",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Tuple_impl<0,libgav1::DecoderImpl*,std::default_delete<libgav1::DecoderImpl>>"
+      "third_party": true,
+      "type": "struct std::_Tuple_impl<0, libgav1::DecoderImpl*, std::default_delete<libgav1::DecoderImpl> >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/decoder_impl.h",
+      "exposure": "not_in_interface",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "class libgav1::DecoderImpl"
      },
      {
+      "append_only": false,
       "count": 5,
       "declared_in": "./src/decoder_impl.h",
+      "exposure": "not_in_interface",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "class libgav1::DecoderImpl"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/10/bits/unique_ptr.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::__uniq_ptr_data<libgav1::TemporalUnit,std::default_delete<libgav1::TemporalUnit[]>,true,true>"
+      "third_party": true,
+      "type": "struct std::__uniq_ptr_data<libgav1::TemporalUnit, std::default_delete<libgav1::TemporalUnit []>, true, true>"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/10/tuple",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "class std::tuple<libgav1::TemporalUnit*,std::default_delete<libgav1::TemporalUnit[]>>"
+      "third_party": true,
+      "type": "class std::tuple<libgav1::TemporalUnit*, std::default_delete<libgav1::TemporalUnit []> >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/10/tuple",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Tuple_impl<0,libgav1::TemporalUnit*,std::default_delete<libgav1::TemporalUnit[]>>"
+      "third_party": true,
+      "type": "struct std::_Tuple_impl<0, libgav1::TemporalUnit*, std::default_delete<libgav1::TemporalUnit []> >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/utils/vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class libgav1::Vector<libgav1::EncodedFrame>"
      },
      {
+      "append_only": false,
       "count": 3,
       "declared_in": "./src/decoder_impl.h",
+      "exposure": "not_in_interface",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct libgav1::EncodedFrame"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/decoder_impl.h",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct libgav1::EncodedFrame"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/decoder_state.h",
+      "exposure": "not_in_interface",
       "kind": "field_removed_from_struct",
+      "third_party": true,
       "type": "struct libgav1::DecoderState"
      },
      {
+      "append_only": false,
       "count": 6,
       "declared_in": "./src/decoder_state.h",
+      "exposure": "not_in_interface",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct libgav1::DecoderState"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/decoder_state.h",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct libgav1::DecoderState"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/10/bits/unique_ptr.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::__uniq_ptr_data<libgav1::FrameScratchBuffer,std::default_delete<libgav1::FrameScratchBuffer>,true,true>"
+      "third_party": true,
+      "type": "struct std::__uniq_ptr_data<libgav1::FrameScratchBuffer, std::default_delete<libgav1::FrameScratchBuffer>, true, true>"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/10/tuple",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "class std::tuple<libgav1::FrameScratchBuffer*,std::default_delete<libgav1::FrameScratchBuffer>>"
+      "third_party": true,
+      "type": "class std::tuple<libgav1::FrameScratchBuffer*, std::default_delete<libgav1::FrameScratchBuffer> >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/10/tuple",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Tuple_impl<0,libgav1::FrameScratchBuffer*,std::default_delete<libgav1::FrameScratchBuffer>>"
+      "third_party": true,
+      "type": "struct std::_Tuple_impl<0, libgav1::FrameScratchBuffer*, std::default_delete<libgav1::FrameScratchBuffer> >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/frame_scratch_buffer.h",
+      "exposure": "not_in_interface",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct libgav1::FrameScratchBuffer"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/utils/block_parameters_holder.h",
+      "exposure": "not_in_interface",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "class libgav1::BlockParametersHolder"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/utils/block_parameters_holder.h",
+      "exposure": "not_in_interface",
       "kind": "field_removed_from_struct",
+      "third_party": true,
       "type": "class libgav1::BlockParametersHolder"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/utils/block_parameters_holder.h",
+      "exposure": "not_in_interface",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "class libgav1::BlockParametersHolder"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/utils/block_parameters_holder.h",
+      "exposure": "not_in_interface",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "class libgav1::BlockParametersHolder"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/utils/block_parameters_holder.h",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "class libgav1::BlockParametersHolder"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/10/bits/unique_ptr.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::__uniq_ptr_data<libgav1::ResidualBufferPool,std::default_delete<libgav1::ResidualBufferPool>,true,true>"
+      "third_party": true,
+      "type": "struct std::__uniq_ptr_data<libgav1::ResidualBufferPool, std::default_delete<libgav1::ResidualBufferPool>, true, true>"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/10/tuple",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "class std::tuple<libgav1::ResidualBufferPool*,std::default_delete<libgav1::ResidualBufferPool>>"
+      "third_party": true,
+      "type": "class std::tuple<libgav1::ResidualBufferPool*, std::default_delete<libgav1::ResidualBufferPool> >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/10/tuple",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Tuple_impl<0,libgav1::ResidualBufferPool*,std::default_delete<libgav1::ResidualBufferPool>>"
+      "third_party": true,
+      "type": "struct std::_Tuple_impl<0, libgav1::ResidualBufferPool*, std::default_delete<libgav1::ResidualBufferPool> >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/residual_buffer_pool.h",
+      "exposure": "not_in_interface",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "class libgav1::ResidualBuffer"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/residual_buffer_pool.h",
+      "exposure": "not_in_interface",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "class libgav1::ResidualBuffer"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/residual_buffer_pool.h",
+      "exposure": "not_in_interface",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "class libgav1::ResidualBuffer"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/residual_buffer_pool.h",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "class libgav1::ResidualBuffer"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/residual_buffer_pool.h",
+      "exposure": "not_in_interface",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "class libgav1::TransformParameterQueue"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/residual_buffer_pool.h",
+      "exposure": "not_in_interface",
       "kind": "field_removed_from_struct",
+      "third_party": true,
       "type": "class libgav1::TransformParameterQueue"
      },
      {
+      "append_only": false,
       "count": 4,
       "declared_in": "./src/residual_buffer_pool.h",
+      "exposure": "not_in_interface",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "class libgav1::TransformParameterQueue"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/residual_buffer_pool.h",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "class libgav1::TransformParameterQueue"
      }
-    ]
+    ],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 5.562472149,
+  "seconds": 5.16866878,
   "source": "libgav1",
   "unpaired": [
    [],
@@ -255,7 +359,11 @@
    "0.16.3"
   ]
  },
- "generated_at": "2026-09-02T15:03:01Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:39:45Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

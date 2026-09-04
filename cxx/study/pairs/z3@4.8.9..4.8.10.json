@@ -1,12 +1,203 @@
 {
  "data": {
-  "error": "no object could be compared: libz3: reading corpus of '/work/study/scratch/rel-oISFoz/rt/usr/lib/x86_64-linux-gnu/libz3.so.4': std::bad_alloc",
+  "bytes_extracted": 320407617,
+  "excluded_objects": [],
   "id": "z3@4.8.9..4.8.10",
-  "object_errors": [
-   "libz3: reading corpus of '/work/study/scratch/rel-oISFoz/rt/usr/lib/x86_64-linux-gnu/libz3.so.4': std::bad_alloc"
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      826,
+      835
+     ],
+     "mangled_functions": [
+      119,
+      131
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "enum_case_added": 2,
+     "symbol_removed": 3
+    },
+    "soname": [
+     "libz3.so.4",
+     "libz3.so.4"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual void std::thread::_State_impl<std::thread::_Invoker<std::tuple<void (*)(unsigned int, event_handler*, std::timed_mutex*), unsigned int, event_handler*, std::timed_mutex*> > >::_M_run()",
+      "symbol": "_ZNSt6thread11_State_implINS_8_InvokerISt5tupleIJPFvjP13event_handlerPSt11timed_mutexEjS4_S6_EEEEE6_M_runEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function Z3_ast Z3_solver_get_implied_value(Z3_context, Z3_solver, Z3_ast)",
+      "symbol": "Z3_solver_get_implied_value",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method sat::clause** std::__copy_move_backward<true, true, std::random_access_iterator_tag>::__copy_move_b<sat::clause*>(sat::clause* const*, sat::clause**)",
+      "symbol": "_ZNSt20__copy_move_backwardILb1ELb1ESt26random_access_iterator_tagE13__copy_move_bIPN3sat6clauseEEEPT_PKS6_S9_S7_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function Z3_ast Z3_solver_get_implied_upper(Z3_context, Z3_solver, Z3_ast)",
+      "symbol": "Z3_solver_get_implied_upper",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function Z3_ast Z3_solver_get_implied_lower(Z3_context, Z3_solver, Z3_ast)",
+      "symbol": "Z3_solver_get_implied_lower",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_V2::condition_variable_any::wait<std::mutex>(std::mutex&)",
+      "symbol": "_ZNSt3_V222condition_variable_any4waitISt5mutexEEvRT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual std::_Sp_counted_ptr_inplace<std::mutex, std::allocator<std::mutex>, (__gnu_cxx::_Lock_policy)2>::~_Sp_counted_ptr_inplace(int)",
+      "symbol": "_ZNSt23_Sp_counted_ptr_inplaceISt5mutexSaIS0_ELN9__gnu_cxx12_Lock_policyE2EED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual std::_Sp_counted_ptr_inplace<std::mutex, std::allocator<std::mutex>, (__gnu_cxx::_Lock_policy)2>::~_Sp_counted_ptr_inplace(int)",
+      "symbol": "_ZNSt23_Sp_counted_ptr_inplaceISt5mutexSaIS0_ELN9__gnu_cxx12_Lock_policyE2EED0Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::function<void()>::function(const std::function<void()>&)",
+      "symbol": "_ZNSt8functionIFvvEEC2ERKS1_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void* std::_Sp_counted_ptr_inplace<std::mutex, std::allocator<std::mutex>, (__gnu_cxx::_Lock_policy)2>::_M_get_deleter(const std::type_info&)",
+      "symbol": "_ZNSt23_Sp_counted_ptr_inplaceISt5mutexSaIS0_ELN9__gnu_cxx12_Lock_policyE2EE14_M_get_deleterERKSt9type_info",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void std::_Sp_counted_ptr_inplace<std::mutex, std::allocator<std::mutex>, (__gnu_cxx::_Lock_policy)2>::_M_dispose()",
+      "symbol": "_ZNSt23_Sp_counted_ptr_inplaceISt5mutexSaIS0_ELN9__gnu_cxx12_Lock_policyE2EE10_M_disposeEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void std::_Sp_counted_ptr_inplace<std::mutex, std::allocator<std::mutex>, (__gnu_cxx::_Lock_policy)2>::_M_destroy()",
+      "symbol": "_ZNSt23_Sp_counted_ptr_inplaceISt5mutexSaIS0_ELN9__gnu_cxx12_Lock_policyE2EE10_M_destroyEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::~_Hashtable(int)",
+      "symbol": "_ZNSt10_HashtableIiiSaIiENSt8__detail9_IdentityESt8equal_toIiESt4hashIiENS1_18_Mod_range_hashingENS1_20_Default_ranged_hashENS1_20_Prime_rehash_policyENS1_17_Hashtable_traitsILb0ELb1ELb1EEEED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_rehash(std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::size_type, const std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::__rehash_state&)",
+      "symbol": "_ZNSt10_HashtableIiiSaIiENSt8__detail9_IdentityESt8equal_toIiESt4hashIiENS1_18_Mod_range_hashingENS1_20_Default_ranged_hashENS1_20_Prime_rehash_policyENS1_17_Hashtable_traitsILb0ELb1ELb1EEEE9_M_rehashEmRKm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void std::thread::_State_impl<std::thread::_Invoker<std::tuple<void (*)(scoped_timer_state*), scoped_timer_state*> > >::_M_run()",
+      "symbol": "_ZNSt6thread11_State_implINS_8_InvokerISt5tupleIJPFvP18scoped_timer_stateES4_EEEEE6_M_runEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::iterator std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::find(const std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::key_type&)",
+      "symbol": "_ZNSt10_HashtableIiiSaIiENSt8__detail9_IdentityESt8equal_toIiESt4hashIiENS1_18_Mod_range_hashingENS1_20_Default_ranged_hashENS1_20_Prime_rehash_policyENS1_17_Hashtable_traitsILb0ELb1ELb1EEEE4findERKi",
+      "weak": true
+     }
+    ],
+    "symbol_events_truncated": false,
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 4,
+     "field_type_changed": 1
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/api/z3_api.h",
+      "exposure": "by_value",
+      "kind": "enum_case_added",
+      "third_party": false,
+      "type": "enum Z3_decl_kind"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/ref_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class ref_vector<expr, ast_manager>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/ref_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class ref_vector_core<expr, ref_manager_wrapper<expr, ast_manager> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/rlimit.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class reslimit"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class ptr_vector<reslimit>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class ptr_vector<decl_plugin>"
+     }
+    ],
+    "vague_linkage": {
+     "symbol_added": 11,
+     "symbol_removed": 2
+    }
+   }
   ],
-  "objects": [],
-  "seconds": 107.742090603,
+  "seconds": 188.346218323,
   "source": "z3",
   "unpaired": [
    [],
@@ -17,7 +208,11 @@
    "4.8.10"
   ]
  },
- "generated_at": "2026-09-02T15:04:19Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T07:30:43Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

@@ -2,46 +2,56 @@
  "data": {
   "coverage": [
    {
-    "header_files": 0,
-    "parsed": 0,
+    "header_files": 848,
+    "parsed": 848,
+    "parsed_as_cxx": 848,
     "skipped_by_limit": 0,
+    "with_errors": 287,
     "with_fatal_error": 0
    },
    {
     "header_files": 848,
     "parsed": 848,
+    "parsed_as_cxx": 848,
     "skipped_by_limit": 0,
+    "with_errors": 287,
     "with_fatal_error": 0
    }
   ],
   "diff": {
    "definitions": [
-    0,
-    15979
+    15929,
+    15929
    ],
-   "definitions_added": 15979,
-   "definitions_common": 0,
-   "definitions_removed": 0,
+   "definitions_added": 1,
+   "definitions_common": 15928,
+   "definitions_removed": 1,
    "examples": [],
    "inline_body_changed": 0,
    "inline_body_changed_template": 0,
    "inline_decl_changed": 0,
    "macro_value_changed": 0,
+   "macro_value_changed_nonversion": 0,
    "macros": [
-    0,
+    131,
     131
    ],
-   "macros_common": 0
+   "macros_common": 131
   },
   "id": "gcc-16@16-20260308..16-20260315",
   "language": "cxx",
   "source": "gcc-16",
+  "symbol_declared": {},
   "upstream": [
    "16-20260308",
    "16-20260315"
   ]
  },
- "generated_at": "2026-09-02T14:49:25Z",
- "schema": "abistudy/header-pair/2",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T07:43:43Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
 }

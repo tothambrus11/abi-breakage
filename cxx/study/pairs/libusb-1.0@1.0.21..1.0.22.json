@@ -1,5 +1,6 @@
 {
  "data": {
+  "bytes_extracted": 1046037,
   "id": "libusb-1.0@1.0.21..1.0.22",
   "object_errors": [],
   "objects": [
@@ -33,57 +34,114 @@
      {
       "kind": "symbol_added",
       "pretty": "function int libusb_set_option(libusb_context*, libusb_option, ...)",
-      "symbol": "libusb_set_option"
+      "symbol": "libusb_set_option",
+      "weak": false
      }
     ],
     "symbols_version_renamed": 0,
     "third_party": {
-     "field_added_to_struct": 2,
-     "field_type_changed": 1,
+     "field_added_to_struct": 3,
+     "field_removed_from_struct": 2,
+     "field_type_changed": 8,
      "member_offset_changed": 22,
      "type_size_changed": 1
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "../../libusb/libusbi.h",
+      "exposure": "by_pointer",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct libusb_device_handle"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "../../libusb/libusbi.h",
+      "exposure": "by_pointer",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "struct libusb_context"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "../../libusb/libusbi.h",
+      "exposure": "by_pointer",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "struct libusb_context"
      },
      {
+      "append_only": false,
       "count": 21,
       "declared_in": "../../libusb/libusbi.h",
+      "exposure": "by_pointer",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct libusb_context"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "../../libusb/libusbi.h",
+      "exposure": "by_pointer",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct libusb_context"
      },
      {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "union pthread_cond_t"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct {int __lock; unsigned int __futex; unsigned long long int __total_seq; unsigned long long int __wakeup_seq; unsigned long long int __woken_seq; void* __mutex; unsigned int __nwaiters; unsigned int __broadcast_seq;}"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct {int __lock; unsigned int __futex; unsigned long long int __total_seq; unsigned long long int __wakeup_seq; unsigned long long int __woken_seq; void* __mutex; unsigned int __nwaiters; unsigned int __broadcast_seq;}"
+     },
+     {
+      "append_only": false,
+      "count": 6,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct {int __lock; unsigned int __futex; unsigned long long int __total_seq; unsigned long long int __wakeup_seq; unsigned long long int __woken_seq; void* __mutex; unsigned int __nwaiters; unsigned int __broadcast_seq;}"
+     },
+     {
+      "append_only": false,
       "count": 1,
       "declared_in": "../../libusb/libusb.h",
+      "exposure": "not_in_interface",
       "kind": "enum_case_added",
+      "third_party": false,
       "type": "enum libusb_speed"
      }
-    ]
+    ],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 1.348118378,
+  "seconds": 1.165832105,
   "source": "libusb-1.0",
   "unpaired": [
    [],
@@ -94,7 +152,11 @@
    "1.0.22"
   ]
  },
- "generated_at": "2026-09-02T14:58:58Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:44:12Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

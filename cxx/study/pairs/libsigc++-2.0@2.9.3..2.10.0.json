@@ -1,5 +1,6 @@
 {
  "data": {
+  "bytes_extracted": 2791940,
   "id": "libsigc++-2.0@2.9.3..2.10.0",
   "object_errors": [],
   "objects": [
@@ -36,51 +37,73 @@
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "../sigc++/functors/slot_base.h",
+      "exposure": "by_pointer",
       "kind": "base_class_changed",
+      "third_party": false,
       "type": "struct sigc::internal::slot_rep"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/6/bits/stl_list.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "class std::__cxx11::list<sigc::internal::trackable_callback,std::allocator<sigc::internal::trackable_callback>>"
+      "third_party": true,
+      "type": "class std::__cxx11::list<sigc::internal::trackable_callback, std::allocator<sigc::internal::trackable_callback> >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/6/bits/stl_list.h",
+      "exposure": "not_in_interface",
       "kind": "field_type_changed",
-      "type": "struct std::__cxx11::_List_base<sigc::internal::trackable_callback,std::allocator<sigc::internal::trackable_callback>>::_List_impl"
+      "third_party": true,
+      "type": "struct std::__cxx11::_List_base<sigc::internal::trackable_callback, std::allocator<sigc::internal::trackable_callback> >::_List_impl"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/6/bits/stl_list.h",
+      "exposure": "not_in_interface",
       "kind": "field_type_changed",
-      "type": "struct std::_List_node<longunsignedint>"
+      "third_party": true,
+      "type": "struct std::_List_node<long unsigned int>"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/6/bits/stl_list.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "class std::__cxx11::list<sigc::slot_base,std::allocator<sigc::slot_base>>"
+      "third_party": true,
+      "type": "class std::__cxx11::list<sigc::slot_base, std::allocator<sigc::slot_base> >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/6/bits/stl_list.h",
+      "exposure": "not_in_interface",
       "kind": "field_type_changed",
-      "type": "struct std::__cxx11::_List_base<sigc::slot_base,std::allocator<sigc::slot_base>>::_List_impl"
+      "third_party": true,
+      "type": "struct std::__cxx11::_List_base<sigc::slot_base, std::allocator<sigc::slot_base> >::_List_impl"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "../sigc++/signal_base.h",
+      "exposure": "by_pointer",
       "kind": "base_class_changed",
+      "third_party": false,
       "type": "struct sigc::signal_base"
      }
-    ]
+    ],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 2.035429304,
+  "seconds": 1.46634289,
   "source": "libsigc++-2.0",
   "unpaired": [
    [],
@@ -91,7 +114,11 @@
    "2.10.0"
   ]
  },
- "generated_at": "2026-09-02T15:04:55Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:43:58Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

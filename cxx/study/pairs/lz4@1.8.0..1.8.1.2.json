@@ -1,5 +1,6 @@
 {
  "data": {
+  "bytes_extracted": 827912,
   "id": "lz4@1.8.0..1.8.1.2",
   "object_errors": [],
   "objects": [
@@ -36,32 +37,38 @@
      {
       "kind": "symbol_added",
       "pretty": "function LZ4F_errorCodes LZ4F_getErrorCode(size_t)",
-      "symbol": "LZ4F_getErrorCode"
+      "symbol": "LZ4F_getErrorCode",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function void LZ4F_freeCDict(LZ4F_CDict*)",
-      "symbol": "LZ4F_freeCDict"
+      "symbol": "LZ4F_freeCDict",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function size_t LZ4F_decompress_usingDict(LZ4F_dctx*, void*, size_t*, void*, size_t*, void*, size_t, const LZ4F_decompressOptions_t*)",
-      "symbol": "LZ4F_decompress_usingDict"
+      "symbol": "LZ4F_decompress_usingDict",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function LZ4F_CDict* LZ4F_createCDict(void*, size_t)",
-      "symbol": "LZ4F_createCDict"
+      "symbol": "LZ4F_createCDict",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function size_t LZ4F_compressFrame_usingCDict(void*, size_t, void*, size_t, const LZ4F_CDict*, const LZ4F_preferences_t*)",
-      "symbol": "LZ4F_compressFrame_usingCDict"
+      "symbol": "LZ4F_compressFrame_usingCDict",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function size_t LZ4F_compressBegin_usingCDict(LZ4F_cctx*, void*, size_t, const LZ4F_CDict*, const LZ4F_preferences_t*)",
-      "symbol": "LZ4F_compressBegin_usingCDict"
+      "symbol": "LZ4F_compressBegin_usingCDict",
+      "weak": false
      }
     ],
     "symbols_version_renamed": 0,
@@ -70,51 +77,73 @@
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./lib/lz4hc.h",
+      "exposure": "by_pointer",
       "kind": "field_type_changed",
+      "third_party": false,
       "type": "union LZ4_streamHC_u"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./lib/lz4hc.h",
+      "exposure": "by_pointer",
       "kind": "type_size_changed",
+      "third_party": false,
       "type": "union LZ4_streamHC_u"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./lib/lz4hc.h",
+      "exposure": "not_in_interface",
       "kind": "field_removed_from_struct",
+      "third_party": false,
       "type": "struct LZ4HC_CCtx_internal"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "./lib/lz4hc.h",
+      "exposure": "not_in_interface",
       "kind": "field_type_changed",
+      "third_party": false,
       "type": "struct LZ4HC_CCtx_internal"
      },
      {
+      "append_only": false,
       "count": 8,
       "declared_in": "./lib/lz4hc.h",
+      "exposure": "not_in_interface",
       "kind": "member_offset_changed",
+      "third_party": false,
       "type": "struct LZ4HC_CCtx_internal"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./lib/lz4hc.h",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": false,
       "type": "struct LZ4HC_CCtx_internal"
      },
      {
+      "append_only": false,
       "count": 3,
       "declared_in": "./lib/lz4frame.c",
+      "exposure": "not_in_interface",
       "kind": "enum_case_removed",
+      "third_party": true,
       "type": "enum dStage_t"
      }
-    ]
+    ],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 1.816596983,
+  "seconds": 1.158984421,
   "source": "lz4",
   "unpaired": [
    [],
@@ -125,7 +154,11 @@
    "1.8.1.2"
   ]
  },
- "generated_at": "2026-09-02T14:58:19Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:44:12Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

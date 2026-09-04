@@ -1,5 +1,6 @@
 {
  "data": {
+  "bytes_extracted": 19170900,
   "id": "srt@1.5.5..1.5.6",
   "object_errors": [],
   "objects": [
@@ -32,12 +33,14 @@
      {
       "kind": "symbol_added",
       "pretty": "method void srt::CRcvQueue::removeFromLists(srt::CUDT*)",
-      "symbol": "_ZN3srt9CRcvQueue15removeFromListsEPNS_4CUDTE"
+      "symbol": "_ZN3srt9CRcvQueue15removeFromListsEPNS_4CUDTE",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function int HaiCrypt_GetKeyIndex(HaiCrypt_Handle, unsigned char*)",
-      "symbol": "HaiCrypt_GetKeyIndex"
+      "symbol": "HaiCrypt_GetKeyIndex",
+      "weak": false
      }
     ],
     "symbols_version_renamed": 0,
@@ -49,93 +52,136 @@
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./srtcore/crypto.h",
+      "exposure": "by_pointer",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "class srt::CCryptoControl"
      },
      {
+      "append_only": false,
       "count": 11,
       "declared_in": "./srtcore/crypto.h",
+      "exposure": "by_pointer",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "class srt::CCryptoControl"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./srtcore/crypto.h",
+      "exposure": "by_pointer",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "class srt::CCryptoControl"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/15/bits/unique_ptr.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::__uniq_ptr_data<srt::CCryptoControl,std::default_delete<srt::CCryptoControl>,true,true>"
+      "third_party": true,
+      "type": "struct std::__uniq_ptr_data<srt::CCryptoControl, std::default_delete<srt::CCryptoControl>, true, true>"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/15/tuple",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "class std::tuple<srt::CCryptoControl*,std::default_delete<srt::CCryptoControl>>"
+      "third_party": true,
+      "type": "class std::tuple<srt::CCryptoControl*, std::default_delete<srt::CCryptoControl> >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/15/tuple",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Tuple_impl<0,srt::CCryptoControl*,std::default_delete<srt::CCryptoControl>>"
+      "third_party": true,
+      "type": "struct std::_Tuple_impl<0, srt::CCryptoControl*, std::default_delete<srt::CCryptoControl> >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/15/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "class std::vector<srt::CUDT*,std::allocator<srt::CUDT*>>"
+      "third_party": true,
+      "type": "class std::vector<srt::CUDT*, std::allocator<srt::CUDT*> >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/15/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Vector_base<srt::CUDT*,std::allocator<srt::CUDT*>>::_Vector_impl"
+      "third_party": true,
+      "type": "struct std::_Vector_base<srt::CUDT*, std::allocator<srt::CUDT*> >::_Vector_impl"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/15/bits/stl_vector.h",
+      "exposure": "by_pointer",
       "kind": "base_class_changed",
-      "type": "class std::vector<srt::CRendezvousQueue::LinkStatusInfo,std::allocator<srt::CRendezvousQueue::LinkStatusInfo>>"
+      "third_party": true,
+      "type": "class std::vector<srt::CRendezvousQueue::LinkStatusInfo, std::allocator<srt::CRendezvousQueue::LinkStatusInfo> >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/15/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Vector_base<srt::CRendezvousQueue::LinkStatusInfo,std::allocator<srt::CRendezvousQueue::LinkStatusInfo>>::_Vector_impl"
+      "third_party": true,
+      "type": "struct std::_Vector_base<srt::CRendezvousQueue::LinkStatusInfo, std::allocator<srt::CRendezvousQueue::LinkStatusInfo> >::_Vector_impl"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./srtcore/congctl.cpp",
+      "exposure": "by_pointer",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class srt::FileCC"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./srtcore/congctl.cpp",
+      "exposure": "by_pointer",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class srt::LiveCC"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/15/bits/stl_vector.h",
+      "exposure": "by_pointer",
       "kind": "base_class_changed",
-      "type": "class std::vector<srt::CUDTSocket*,std::allocator<srt::CUDTSocket*>>"
+      "third_party": true,
+      "type": "class std::vector<srt::CUDTSocket*, std::allocator<srt::CUDTSocket*> >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/15/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Vector_base<srt::CUDTSocket*,std::allocator<srt::CUDTSocket*>>::_Vector_impl"
+      "third_party": true,
+      "type": "struct std::_Vector_base<srt::CUDTSocket*, std::allocator<srt::CUDTSocket*> >::_Vector_impl"
      }
-    ]
+    ],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 10.472313107,
+  "seconds": 10.891291404,
   "source": "srt",
   "unpaired": [
    [],
@@ -146,7 +192,11 @@
    "1.5.6"
   ]
  },
- "generated_at": "2026-09-02T15:05:26Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:36:21Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

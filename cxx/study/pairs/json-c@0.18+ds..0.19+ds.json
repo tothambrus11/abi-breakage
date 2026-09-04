@@ -1,6 +1,8 @@
 {
  "data": {
+  "bytes_extracted": 990090,
   "id": "json-c@0.18+ds..0.19+ds",
+  "object_errors": [],
   "objects": [
    {
     "coverage": {
@@ -34,39 +36,45 @@
       "kind": "symbol_added",
       "pretty": "function int lh_table_delete_entry_to_tail(lh_table*, lh_entry*)",
       "symbol": "lh_table_delete_entry_to_tail",
-      "version": "JSONC_PRIVATE"
+      "version": "JSONC_PRIVATE",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function int json_pointer_set_with_limit_index(json_object**, const char*, json_object*, size_t)",
       "symbol": "json_pointer_set_with_limit_index",
-      "version": "JSONC_0.19"
+      "version": "JSONC_0.19",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function int json_pointer_set_with_cb(json_object**, const char*, json_object*, json_pointer_set_cb, int, void*)",
       "symbol": "json_pointer_set_with_cb",
-      "version": "JSONC_0.19"
+      "version": "JSONC_0.19",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function int json_object_array_put_with_idx_limit_cb(json_object*, const char*, size_t, json_object*, void*)",
       "symbol": "json_object_array_put_with_idx_limit_cb",
-      "version": "JSONC_0.19"
+      "version": "JSONC_0.19",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function int array_list_set_idx(array_list*, size_t, void*)",
       "symbol": "array_list_set_idx",
-      "version": "JSONC_PRIVATE"
+      "version": "JSONC_PRIVATE",
+      "weak": false
      }
     ],
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 2.657927433,
+  "seconds": 1.091030294,
   "source": "json-c",
   "unpaired": [
    [],
@@ -77,7 +85,11 @@
    "0.19+ds"
   ]
  },
- "generated_at": "2026-09-02T12:11:20Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:44:24Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

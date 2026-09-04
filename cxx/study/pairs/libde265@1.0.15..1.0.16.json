@@ -1,5 +1,7 @@
 {
  "data": {
+  "bytes_extracted": 4335500,
+  "excluded_objects": [],
   "id": "libde265@1.0.15..1.0.16",
   "object_errors": [],
   "objects": [
@@ -21,10 +23,7 @@
     "language": "cxx",
     "mass_rename": false,
     "private_node": {},
-    "public": {
-     "symbol_added": 1,
-     "symbol_removed": 3
-    },
+    "public": {},
     "soname": [
      "libde265.so.0",
      "libde265.so.0"
@@ -32,181 +31,276 @@
     "symbol_events": [
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::vector<unsignedchar*,std::allocator<unsignedchar*>>::_M_realloc_append<unsignedchar*const&>()",
-      "symbol": "_ZNSt6vectorIPhSaIS0_EE17_M_realloc_appendIJRKS0_EEEvDpOT_"
+      "pretty": "method void std::vector<void*, std::allocator<void*> >::_M_realloc_append<void*>(void*&&)",
+      "symbol": "_ZNSt6vectorIPvSaIS0_EE17_M_realloc_appendIJS0_EEEvDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::vector<void*,std::allocator<void*>>::_M_realloc_append<void*const&>()",
-      "symbol": "_ZNSt6vectorIPvSaIS0_EE17_M_realloc_appendIJRKS0_EEEvDpOT_"
+      "pretty": "method void std::vector<unsigned char*, std::allocator<unsigned char*> >::_M_realloc_append<unsigned char* const&>(unsigned char* const&)",
+      "symbol": "_ZNSt6vectorIPhSaIS0_EE17_M_realloc_appendIJRKS0_EEEvDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::vector<void*,std::allocator<void*>>::_M_realloc_append<void*>()",
-      "symbol": "_ZNSt6vectorIPvSaIS0_EE17_M_realloc_appendIJS0_EEEvDpOT_"
+      "pretty": "method void std::vector<void*, std::allocator<void*> >::_M_realloc_append<void* const&>(void* const&)",
+      "symbol": "_ZNSt6vectorIPvSaIS0_EE17_M_realloc_appendIJRKS0_EEEvDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::_M_construct<true>(const char*, std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::size_type)",
-      "symbol": "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructILb1EEEvPKcm"
+      "pretty": "method void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<true>(const char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::size_type)",
+      "symbol": "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructILb1EEEvPKcm",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::~vector(int)  ->  method std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::~vector()",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method std::_Vector_base<int, std::allocator<int> >::~_Vector_base(int)  ->  method std::_Vector_base<int, std::allocator<int> >::~_Vector_base()",
+      "symbol": "_ZNSt12_Vector_baseIiSaIiEED2Ev",
+      "weak": true
      }
     ],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {
-     "base_class_changed": 16,
+     "base_class_changed": 15,
      "field_type_changed": 6,
      "member_offset_changed": 131,
-     "type_size_changed": 3
+     "type_size_changed": 3,
+     "vtable_changed": 1
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "../libde265/image.h",
+      "exposure": "by_pointer",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "struct de265_image"
      },
      {
+      "append_only": false,
       "count": 42,
       "declared_in": "../libde265/image.h",
+      "exposure": "by_pointer",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct de265_image"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "../libde265/image.h",
+      "exposure": "by_pointer",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct de265_image"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "class std::vector<slice_segment_header*,std::allocator<slice_segment_header*>>"
+      "third_party": true,
+      "type": "class std::vector<slice_segment_header*, std::allocator<slice_segment_header*> >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Vector_base<slice_segment_header*,std::allocator<slice_segment_header*>>::_Vector_impl"
+      "third_party": true,
+      "type": "struct std::_Vector_base<slice_segment_header*, std::allocator<slice_segment_header*> >::_Vector_impl"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "class std::shared_ptr<constpic_parameter_set>"
+      "third_party": true,
+      "type": "class std::shared_ptr<const pic_parameter_set>"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "class std::shared_ptr<constseq_parameter_set>"
+      "third_party": true,
+      "type": "class std::shared_ptr<const seq_parameter_set>"
      },
      {
+      "append_only": false,
       "count": 4,
       "declared_in": "../libde265/sps.h",
+      "exposure": "not_in_interface",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "class seq_parameter_set"
      },
      {
+      "append_only": false,
       "count": 83,
       "declared_in": "../libde265/sps.h",
+      "exposure": "not_in_interface",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "class seq_parameter_set"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "../libde265/sps.h",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "class seq_parameter_set"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./libde265/decctx.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class decoder_context"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class std::shared_ptr<seq_parameter_set>"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class std::shared_ptr<pic_parameter_set>"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "class std::vector<de265_image*,std::allocator<de265_image*>>"
+      "third_party": true,
+      "type": "class std::vector<de265_image*, std::allocator<de265_image*> >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Vector_base<de265_image*,std::allocator<de265_image*>>::_Vector_impl"
+      "third_party": true,
+      "type": "struct std::_Vector_base<de265_image*, std::allocator<de265_image*> >::_Vector_impl"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/stl_deque.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "class std::deque<de265_image*,std::allocator<de265_image*>>"
+      "third_party": true,
+      "type": "class std::deque<de265_image*, std::allocator<de265_image*> >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/stl_deque.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Deque_base<de265_image*,std::allocator<de265_image*>>::_Deque_impl"
+      "third_party": true,
+      "type": "struct std::_Deque_base<de265_image*, std::allocator<de265_image*> >::_Deque_impl"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "class std::vector<image_unit*,std::allocator<image_unit*>>"
+      "third_party": true,
+      "type": "class std::vector<image_unit*, std::allocator<image_unit*> >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Vector_base<image_unit*,std::allocator<image_unit*>>::_Vector_impl"
+      "third_party": true,
+      "type": "struct std::_Vector_base<image_unit*, std::allocator<image_unit*> >::_Vector_impl"
      },
      {
+      "append_only": false,
       "count": 6,
       "declared_in": "../libde265/decctx.h",
+      "exposure": "not_in_interface",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "class image_unit"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "../libde265/decctx.h",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "class image_unit"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "class std::vector<slice_unit*,std::allocator<slice_unit*>>"
+      "third_party": true,
+      "type": "class std::vector<slice_unit*, std::allocator<slice_unit*> >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Vector_base<slice_unit*,std::allocator<slice_unit*>>::_Vector_impl"
+      "third_party": true,
+      "type": "struct std::_Vector_base<slice_unit*, std::allocator<slice_unit*> >::_Vector_impl"
      },
      {
+      "append_only": false,
       "count": 1,
-      "declared_in": "./libde265/decctx.h",
-      "kind": "base_class_changed",
-      "type": "class decoder_context"
+      "declared_in": "../libde265/decctx.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class base_context"
      }
-    ]
+    ],
+    "vague_linkage": {
+     "function_signature_changed": 2,
+     "symbol_added": 1,
+     "symbol_removed": 3
+    }
    }
   ],
-  "seconds": 5.0740746,
+  "seconds": 3.535986205,
   "source": "libde265",
   "unpaired": [
    [],
@@ -217,7 +311,11 @@
    "1.0.16"
   ]
  },
- "generated_at": "2026-09-02T14:59:49Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T06:20:04Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

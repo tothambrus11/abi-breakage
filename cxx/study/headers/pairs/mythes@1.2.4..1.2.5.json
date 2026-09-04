@@ -4,13 +4,17 @@
    {
     "header_files": 1,
     "parsed": 1,
+    "parsed_as_cxx": 1,
     "skipped_by_limit": 0,
+    "with_errors": 1,
     "with_fatal_error": 0
    },
    {
     "header_files": 1,
     "parsed": 1,
+    "parsed_as_cxx": 1,
     "skipped_by_limit": 0,
+    "with_errors": 1,
     "with_fatal_error": 0
    }
   ],
@@ -27,6 +31,7 @@
    "inline_body_changed_template": 0,
    "inline_decl_changed": 0,
    "macro_value_changed": 0,
+   "macro_value_changed_nonversion": 0,
    "macros": [
     2,
     2
@@ -36,12 +41,20 @@
   "id": "mythes@1.2.4..1.2.5",
   "language": "cxx",
   "source": "mythes",
+  "symbol_declared": {
+   "_ZN6MyThesD2Ev": "unknown",
+   "_ZNSt12_Vector_baseIcSaIcEED2Ev": "unknown"
+  },
   "upstream": [
    "1.2.4",
    "1.2.5"
   ]
  },
- "generated_at": "2026-09-02T14:53:53Z",
- "schema": "abistudy/header-pair/2",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T07:43:45Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
 }

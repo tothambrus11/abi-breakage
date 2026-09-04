@@ -1,5 +1,7 @@
 {
  "data": {
+  "bytes_extracted": 23973556,
+  "excluded_objects": [],
   "id": "gst-plugins-bad1.0@1.28.5..1.28.6",
   "object_errors": [],
   "objects": [
@@ -27,9 +29,11 @@
      "libgstadaptivedemux-1.0.so.0"
     ],
     "symbol_events": [],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -55,9 +59,11 @@
      "libgstanalytics-1.0.so.0"
     ],
     "symbol_events": [],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -83,9 +89,11 @@
      "libgstbadaudio-1.0.so.0"
     ],
     "symbol_events": [],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -111,9 +119,11 @@
      "libgstbasecamerabinsrc-1.0.so.0"
     ],
     "symbol_events": [],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -139,9 +149,11 @@
      "libgstcodecparsers-1.0.so.0"
     ],
     "symbol_events": [],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -167,9 +179,11 @@
      "libgstcodecs-1.0.so.0"
     ],
     "symbol_events": [],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -189,9 +203,7 @@
     "language": "c",
     "mass_rename": false,
     "private_node": {},
-    "public": {
-     "symbol_removed": 3
-    },
+    "public": {},
     "soname": [
      "libgstcuda-1.0.so.0",
      "libgstcuda-1.0.so.0"
@@ -199,32 +211,42 @@
     "symbol_events": [
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::vector<charconst*,std::allocator<charconst*>>::_M_realloc_append<charconst*const&>()",
-      "symbol": "_ZNSt6vectorIPKcSaIS1_EE17_M_realloc_appendIJRKS1_EEEvDpOT_"
+      "pretty": "method std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >& std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::size_type, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::size_type, const char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::size_type)",
+      "symbol": "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_replaceEmmPKcm",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::vector<charconst*,std::allocator<charconst*>>::_M_realloc_append<charconst*>()",
-      "symbol": "_ZNSt6vectorIPKcSaIS1_EE17_M_realloc_appendIJS1_EEEvDpOT_"
+      "pretty": "method void std::vector<char const*, std::allocator<char const*> >::_M_realloc_append<char const*>(const char*&&)",
+      "symbol": "_ZNSt6vectorIPKcSaIS1_EE17_M_realloc_appendIJS1_EEEvDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>& std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::_M_replace(std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::size_type, std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::size_type, const char*, const std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::size_type)",
-      "symbol": "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_replaceEmmPKcm"
+      "pretty": "method void std::vector<char const*, std::allocator<char const*> >::_M_realloc_append<char const* const&>(const char* const&)",
+      "symbol": "_ZNSt6vectorIPKcSaIS1_EE17_M_realloc_appendIJRKS1_EEEvDpOT_",
+      "weak": true
      }
     ],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {
      "base_class_changed": 1
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/15/bits/std_mutex.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class std::mutex"
      }
-    ]
+    ],
+    "vague_linkage": {
+     "symbol_removed": 3
+    }
    },
    {
     "coverage": {
@@ -250,9 +272,11 @@
      "libgstdxva-1.0.so.0"
     ],
     "symbol_events": [],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -278,30 +302,41 @@
      "libgsthip.so.0"
     ],
     "symbol_events": [],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {
      "base_class_changed": 3
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/15/bits/std_mutex.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class std::mutex"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/15/bits/stl_deque.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "class std::deque<_GstHipEvent*,std::allocator<_GstHipEvent*>>"
+      "third_party": true,
+      "type": "class std::deque<_GstHipEvent*, std::allocator<_GstHipEvent*> >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/15/bits/stl_deque.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Deque_base<_GstHipEvent*,std::allocator<_GstHipEvent*>>::_Deque_impl"
+      "third_party": true,
+      "type": "struct std::_Deque_base<_GstHipEvent*, std::allocator<_GstHipEvent*> >::_Deque_impl"
      }
-    ]
+    ],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -327,9 +362,11 @@
      "libgstinsertbin-1.0.so.0"
     ],
     "symbol_events": [],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -355,9 +392,11 @@
      "libgstisoff-1.0.so.0"
     ],
     "symbol_events": [],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -383,9 +422,11 @@
      "libgstmpegts-1.0.so.0"
     ],
     "symbol_events": [],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -411,9 +452,11 @@
      "libgstmse-1.0.so.0"
     ],
     "symbol_events": [],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -439,9 +482,11 @@
      "libgstphotography-1.0.so.0"
     ],
     "symbol_events": [],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -467,9 +512,11 @@
      "libgstplay-1.0.so.0"
     ],
     "symbol_events": [],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -495,9 +542,11 @@
      "libgstplayer-1.0.so.0"
     ],
     "symbol_events": [],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -523,9 +572,11 @@
      "libgstsctp-1.0.so.0"
     ],
     "symbol_events": [],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -551,9 +602,11 @@
      "libgsttranscoder-1.0.so.0"
     ],
     "symbol_events": [],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -579,9 +632,11 @@
      "libgsturidownloader-1.0.so.0"
     ],
     "symbol_events": [],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -607,9 +662,11 @@
      "libgstva-1.0.so.0"
     ],
     "symbol_events": [],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -635,9 +692,11 @@
      "libgstwayland-1.0.so.0"
     ],
     "symbol_events": [],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -663,9 +722,11 @@
      "libgstwebrtc-1.0.so.0"
     ],
     "symbol_events": [],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -691,12 +752,14 @@
      "libgstwebrtcnice-1.0.so.0"
     ],
     "symbol_events": [],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 5.468909858,
+  "seconds": 3.368361959,
   "source": "gst-plugins-bad1.0",
   "unpaired": [
    [],
@@ -707,7 +770,11 @@
    "1.28.6"
   ]
  },
- "generated_at": "2026-09-02T15:05:59Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T06:18:53Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

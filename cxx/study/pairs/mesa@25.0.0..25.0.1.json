@@ -1,5 +1,6 @@
 {
  "data": {
+  "bytes_extracted": 55823105,
   "id": "mesa@25.0.0..25.0.1",
   "object_errors": [],
   "objects": [
@@ -36,33 +37,46 @@
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
+      "exposure": "not_in_interface",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "struct _IO_FILE"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h",
+      "exposure": "not_in_interface",
       "kind": "field_removed_from_struct",
+      "third_party": true,
       "type": "struct __pthread_cond_s"
      },
      {
+      "append_only": false,
       "count": 4,
       "declared_in": "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h",
+      "exposure": "not_in_interface",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct __pthread_cond_s"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct __pthread_cond_s"
      }
-    ]
+    ],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 16.419618817,
+  "seconds": 18.858602841,
   "source": "mesa",
   "unpaired": [
    [],
@@ -73,7 +87,11 @@
    "25.0.1"
   ]
  },
- "generated_at": "2026-09-02T15:07:14Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:27:36Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

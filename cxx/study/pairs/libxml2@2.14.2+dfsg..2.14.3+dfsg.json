@@ -1,6 +1,8 @@
 {
  "data": {
+  "bytes_extracted": 8255892,
   "id": "libxml2@2.14.2+dfsg..2.14.3+dfsg",
+  "object_errors": [],
   "objects": [
    {
     "coverage": {
@@ -30,126 +32,150 @@
     "symbol_events": [
      {
       "kind": "symbol_added",
-      "pretty": "function void xmlRegisterHTTPPostCallbacks(void)",
-      "symbol": "xmlRegisterHTTPPostCallbacks"
+      "pretty": "function void xmlRegisterHTTPPostCallbacks()",
+      "symbol": "xmlRegisterHTTPPostCallbacks",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function void xmlNanoHTTPScanProxy(const char*)",
-      "symbol": "xmlNanoHTTPScanProxy"
+      "symbol": "xmlNanoHTTPScanProxy",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function int xmlNanoHTTPReturnCode(void*)",
-      "symbol": "xmlNanoHTTPReturnCode"
+      "symbol": "xmlNanoHTTPReturnCode",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function const char* xmlNanoHTTPRedir(void*)",
-      "symbol": "xmlNanoHTTPRedir"
+      "symbol": "xmlNanoHTTPRedir",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function void* xmlNanoHTTPOpenRedir(const char*, char**, char**)",
-      "symbol": "xmlNanoHTTPOpenRedir"
+      "symbol": "xmlNanoHTTPOpenRedir",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function void* xmlNanoHTTPOpen(const char*, char**)",
-      "symbol": "xmlNanoHTTPOpen"
+      "symbol": "xmlNanoHTTPOpen",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function const char* xmlNanoHTTPMimeType(void*)",
-      "symbol": "xmlNanoHTTPMimeType"
+      "symbol": "xmlNanoHTTPMimeType",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function void* xmlNanoHTTPMethodRedir(const char*, const char*, const char*, char**, char**, const char*, int)",
-      "symbol": "xmlNanoHTTPMethodRedir"
+      "symbol": "xmlNanoHTTPMethodRedir",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function int xmlIOHTTPClose(void*)",
-      "symbol": "xmlIOHTTPClose"
+      "symbol": "xmlIOHTTPClose",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function int xmlNanoHTTPSave(void*, const char*)",
-      "symbol": "xmlNanoHTTPSave"
+      "symbol": "xmlNanoHTTPSave",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "function void xmlNanoHTTPInit(void)",
-      "symbol": "xmlNanoHTTPInit"
+      "pretty": "function void xmlNanoHTTPInit()",
+      "symbol": "xmlNanoHTTPInit",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function int xmlIOHTTPMatch(const char*)",
-      "symbol": "xmlIOHTTPMatch"
+      "symbol": "xmlIOHTTPMatch",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function int xmlNanoHTTPRead(void*, void*, int)",
-      "symbol": "xmlNanoHTTPRead"
+      "symbol": "xmlNanoHTTPRead",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function void* xmlIOHTTPOpenW(const char*, int)",
-      "symbol": "xmlIOHTTPOpenW"
+      "symbol": "xmlIOHTTPOpenW",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function void* xmlIOHTTPOpen(const char*)",
-      "symbol": "xmlIOHTTPOpen"
+      "symbol": "xmlIOHTTPOpen",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "function void xmlNanoHTTPCleanup(void)",
-      "symbol": "xmlNanoHTTPCleanup"
+      "pretty": "function void xmlNanoHTTPCleanup()",
+      "symbol": "xmlNanoHTTPCleanup",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function void* xmlNanoHTTPMethod(const char*, const char*, const char*, char**, const char*, int)",
-      "symbol": "xmlNanoHTTPMethod"
+      "symbol": "xmlNanoHTTPMethod",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function int xmlIOHTTPRead(void*, char*, int)",
-      "symbol": "xmlIOHTTPRead"
+      "symbol": "xmlIOHTTPRead",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function void xmlNanoHTTPClose(void*)",
-      "symbol": "xmlNanoHTTPClose"
+      "symbol": "xmlNanoHTTPClose",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function const char* xmlNanoHTTPAuthHeader(void*)",
-      "symbol": "xmlNanoHTTPAuthHeader"
+      "symbol": "xmlNanoHTTPAuthHeader",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function int xmlNanoHTTPFetch(const char*, const char*, char**)",
-      "symbol": "xmlNanoHTTPFetch"
+      "symbol": "xmlNanoHTTPFetch",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function int xmlNanoHTTPContentLength(void*)",
-      "symbol": "xmlNanoHTTPContentLength"
+      "symbol": "xmlNanoHTTPContentLength",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function const char* xmlNanoHTTPEncoding(void*)",
-      "symbol": "xmlNanoHTTPEncoding"
+      "symbol": "xmlNanoHTTPEncoding",
+      "weak": false
      }
     ],
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 5.733402036,
+  "seconds": 2.768203569,
   "source": "libxml2",
   "unpaired": [
    [],
@@ -160,7 +186,11 @@
    "2.14.3+dfsg"
   ]
  },
- "generated_at": "2026-09-02T12:09:14Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:39:58Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

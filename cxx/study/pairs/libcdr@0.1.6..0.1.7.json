@@ -1,6 +1,9 @@
 {
  "data": {
+  "bytes_extracted": 7907132,
+  "excluded_objects": [],
   "id": "libcdr@0.1.6..0.1.7",
+  "object_errors": [],
   "objects": [
    {
     "coverage": {
@@ -20,10 +23,7 @@
     "language": "cxx",
     "mass_rename": false,
     "private_node": {},
-    "public": {
-     "symbol_added": 7,
-     "symbol_removed": 19
-    },
+    "public": {},
     "soname": [
      "libcdr-0.1.so.1",
      "libcdr-0.1.so.1"
@@ -31,141 +31,197 @@
     "symbol_events": [
      {
       "kind": "symbol_removed",
-      "pretty": "method std::_Rb_tree<unsignedint,std::pair<unsignedintconst,double>,std::_Select1st<std::pair<unsignedintconst,double>>,std::less<unsignedint>,std::allocator<std::pair<unsignedintconst,double>>>::iterator std::_Rb_tree<unsignedint,std::pair<unsignedintconst,double>,std::_Select1st<std::pair<unsignedintconst,double>>,std::less<unsignedint>,std::allocator<std::pair<unsignedintconst,double>>>::_M_emplace_hint_unique<conststd::piecewise_construct_t&,std::tuple<unsignedint&&>,std::tuple<>>(std::_Rb_tree<unsignedint,std::pair<unsignedintconst,double>,std::_Select1st<std::pair<unsignedintconst,double>>,std::less<unsignedint>,std::allocator<std::pair<unsignedintconst,double>>>::const_iterator)",
-      "symbol": "_ZNSt8_Rb_treeIjSt4pairIKjdESt10_Select1stIS2_ESt4lessIjESaIS2_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJOjEESD_IJEEEEESt17_Rb_tree_iteratorIS2_ESt23_Rb_tree_const_iteratorIS2_EDpOT_"
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<short unsigned int, std::pair<short unsigned int const, unsigned int>, std::_Select1st<std::pair<short unsigned int const, unsigned int> >, std::less<short unsigned int>, std::allocator<std::pair<short unsigned int const, unsigned int> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree<short unsigned int, std::pair<short unsigned int const, unsigned int>, std::_Select1st<std::pair<short unsigned int const, unsigned int> >, std::less<short unsigned int>, std::allocator<std::pair<short unsigned int const, unsigned int> > >::const_iterator, const std::_Rb_tree<short unsigned int, std::pair<short unsigned int const, unsigned int>, std::_Select1st<std::pair<short unsigned int const, unsigned int> >, std::less<short unsigned int>, std::allocator<std::pair<short unsigned int const, unsigned int> > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeItSt4pairIKtjESt10_Select1stIS2_ESt4lessItESaIS2_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS2_ERS1_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method std::pair<std::_Rb_tree_node_base*,std::_Rb_tree_node_base*> std::_Rb_tree<unsignedint,std::pair<unsignedintconst,std::vector<unsignedint,std::allocator<unsignedint>>>,std::_Select1st<std::pair<unsignedintconst,std::vector<unsignedint,std::allocator<unsignedint>>>>,std::less<unsignedint>,std::allocator<std::pair<unsignedintconst,std::vector<unsignedint,std::allocator<unsignedint>>>>>::_M_get_insert_unique_pos(const std::_Rb_tree<unsignedint,std::pair<unsignedintconst,std::vector<unsignedint,std::allocator<unsignedint>>>,std::_Select1st<std::pair<unsignedintconst,std::vector<unsignedint,std::allocator<unsignedint>>>>,std::less<unsignedint>,std::allocator<std::pair<unsignedintconst,std::vector<unsignedint,std::allocator<unsignedint>>>>>::key_type&)",
-      "symbol": "_ZNSt8_Rb_treeIjSt4pairIKjSt6vectorIjSaIjEEESt10_Select1stIS5_ESt4lessIjESaIS5_EE24_M_get_insert_unique_posERS1_"
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<unsigned int, std::pair<unsigned int const, short unsigned int>, std::_Select1st<std::pair<unsigned int const, short unsigned int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, short unsigned int> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree<unsigned int, std::pair<unsigned int const, short unsigned int>, std::_Select1st<std::pair<unsigned int const, short unsigned int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, short unsigned int> > >::const_iterator, const std::_Rb_tree<unsigned int, std::pair<unsigned int const, short unsigned int>, std::_Select1st<std::pair<unsigned int const, short unsigned int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, short unsigned int> > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeIjSt4pairIKjtESt10_Select1stIS2_ESt4lessIjESaIS2_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS2_ERS1_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::vector<unsignedint,std::allocator<unsignedint>>::_M_realloc_insert<unsignedint>(std::vector<unsignedint,std::allocator<unsignedint>>::iterator)",
-      "symbol": "_ZNSt6vectorIjSaIjEE17_M_realloc_insertIJjEEEvN9__gnu_cxx17__normal_iteratorIPjS1_EEDpOT_"
+      "pretty": "method std::_Rb_tree<unsigned int, std::pair<unsigned int const, short unsigned int>, std::_Select1st<std::pair<unsigned int const, short unsigned int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, short unsigned int> > >::iterator std::_Rb_tree<unsigned int, std::pair<unsigned int const, short unsigned int>, std::_Select1st<std::pair<unsigned int const, short unsigned int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, short unsigned int> > >::_M_emplace_hint_unique<const std::piecewise_construct_t&, std::tuple<unsigned int const&>, std::tuple<> >(std::_Rb_tree<unsigned int, std::pair<unsigned int const, short unsigned int>, std::_Select1st<std::pair<unsigned int const, short unsigned int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, short unsigned int> > >::const_iterator, const std::piecewise_construct_t&, std::tuple<unsigned int const&>&&, std::tuple<>&&)",
+      "symbol": "_ZNSt8_Rb_treeIjSt4pairIKjtESt10_Select1stIS2_ESt4lessIjESaIS2_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJRS1_EESD_IJEEEEESt17_Rb_tree_iteratorIS2_ESt23_Rb_tree_const_iteratorIS2_EDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::vector<unsignedchar,std::allocator<unsignedchar>>::_M_realloc_insert<unsignedchar>(std::vector<unsignedchar,std::allocator<unsignedchar>>::iterator)",
-      "symbol": "_ZNSt6vectorIhSaIhEE17_M_realloc_insertIJhEEEvN9__gnu_cxx17__normal_iteratorIPhS1_EEDpOT_"
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<unsigned int, std::pair<unsigned int const, unsigned int>, std::_Select1st<std::pair<unsigned int const, unsigned int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree<unsigned int, std::pair<unsigned int const, unsigned int>, std::_Select1st<std::pair<unsigned int const, unsigned int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> > >::const_iterator, const std::_Rb_tree<unsigned int, std::pair<unsigned int const, unsigned int>, std::_Select1st<std::pair<unsigned int const, unsigned int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeIjSt4pairIKjjESt10_Select1stIS2_ESt4lessIjESaIS2_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS2_ERS1_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method bool std::istreambuf_iterator<char,std::char_traits<char>>::equal(const std::istreambuf_iterator<char,std::char_traits<char>>&) const",
-      "symbol": "_ZNKSt19istreambuf_iteratorIcSt11char_traitsIcEE5equalERKS2_"
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<unsigned int, std::pair<unsigned int const, double>, std::_Select1st<std::pair<unsigned int const, double> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, double> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree<unsigned int, std::pair<unsigned int const, double>, std::_Select1st<std::pair<unsigned int const, double> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, double> > >::const_iterator, const std::_Rb_tree<unsigned int, std::pair<unsigned int const, double>, std::_Select1st<std::pair<unsigned int const, double> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, double> > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeIjSt4pairIKjdESt10_Select1stIS2_ESt4lessIjESaIS2_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS2_ERS1_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method std::pair<std::_Rb_tree_node_base*,std::_Rb_tree_node_base*> std::_Rb_tree<shortunsignedint,std::pair<shortunsignedintconst,unsignedint>,std::_Select1st<std::pair<shortunsignedintconst,unsignedint>>,std::less<shortunsignedint>,std::allocator<std::pair<shortunsignedintconst,unsignedint>>>::_M_get_insert_hint_unique_pos(std::_Rb_tree<shortunsignedint,std::pair<shortunsignedintconst,unsignedint>,std::_Select1st<std::pair<shortunsignedintconst,unsignedint>>,std::less<shortunsignedint>,std::allocator<std::pair<shortunsignedintconst,unsignedint>>>::const_iterator, const std::_Rb_tree<shortunsignedint,std::pair<shortunsignedintconst,unsignedint>,std::_Select1st<std::pair<shortunsignedintconst,unsignedint>>,std::less<shortunsignedint>,std::allocator<std::pair<shortunsignedintconst,unsignedint>>>::key_type&)",
-      "symbol": "_ZNSt8_Rb_treeItSt4pairIKtjESt10_Select1stIS2_ESt4lessItESaIS2_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS2_ERS1_"
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<unsigned int, std::pair<unsigned int const, double>, std::_Select1st<std::pair<unsigned int const, double> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, double> > >::_M_get_insert_unique_pos(const std::_Rb_tree<unsigned int, std::pair<unsigned int const, double>, std::_Select1st<std::pair<unsigned int const, double> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, double> > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeIjSt4pairIKjdESt10_Select1stIS2_ESt4lessIjESaIS2_EE24_M_get_insert_unique_posERS1_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::vector<std::pair<double,double>,std::allocator<std::pair<double,double>>>::_M_realloc_insert<conststd::pair<double,double>&>(std::vector<std::pair<double,double>,std::allocator<std::pair<double,double>>>::iterator)",
-      "symbol": "_ZNSt6vectorISt4pairIddESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_"
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<unsigned int, std::pair<unsigned int const, short unsigned int>, std::_Select1st<std::pair<unsigned int const, short unsigned int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, short unsigned int> > >::_M_get_insert_unique_pos(const std::_Rb_tree<unsigned int, std::pair<unsigned int const, short unsigned int>, std::_Select1st<std::pair<unsigned int const, short unsigned int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, short unsigned int> > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeIjSt4pairIKjtESt10_Select1stIS2_ESt4lessIjESaIS2_EE24_M_get_insert_unique_posERS1_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method std::_Rb_tree<unsignedint,std::pair<unsignedintconst,shortunsignedint>,std::_Select1st<std::pair<unsignedintconst,shortunsignedint>>,std::less<unsignedint>,std::allocator<std::pair<unsignedintconst,shortunsignedint>>>::iterator std::_Rb_tree<unsignedint,std::pair<unsignedintconst,shortunsignedint>,std::_Select1st<std::pair<unsignedintconst,shortunsignedint>>,std::less<unsignedint>,std::allocator<std::pair<unsignedintconst,shortunsignedint>>>::_M_emplace_hint_unique<conststd::piecewise_construct_t&,std::tuple<unsignedintconst&>,std::tuple<>>(std::_Rb_tree<unsignedint,std::pair<unsignedintconst,shortunsignedint>,std::_Select1st<std::pair<unsignedintconst,shortunsignedint>>,std::less<unsignedint>,std::allocator<std::pair<unsignedintconst,shortunsignedint>>>::const_iterator)",
-      "symbol": "_ZNSt8_Rb_treeIjSt4pairIKjtESt10_Select1stIS2_ESt4lessIjESaIS2_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJRS1_EESD_IJEEEEESt17_Rb_tree_iteratorIS2_ESt23_Rb_tree_const_iteratorIS2_EDpOT_"
+      "pretty": "method bool std::istreambuf_iterator<char, std::char_traits<char> >::equal(const std::istreambuf_iterator<char, std::char_traits<char> >&) const",
+      "symbol": "_ZNKSt19istreambuf_iteratorIcSt11char_traitsIcEE5equalERKS2_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method std::pair<std::_Rb_tree_node_base*,std::_Rb_tree_node_base*> std::_Rb_tree<unsignedint,std::pair<unsignedintconst,double>,std::_Select1st<std::pair<unsignedintconst,double>>,std::less<unsignedint>,std::allocator<std::pair<unsignedintconst,double>>>::_M_get_insert_hint_unique_pos(std::_Rb_tree<unsignedint,std::pair<unsignedintconst,double>,std::_Select1st<std::pair<unsignedintconst,double>>,std::less<unsignedint>,std::allocator<std::pair<unsignedintconst,double>>>::const_iterator, const std::_Rb_tree<unsignedint,std::pair<unsignedintconst,double>,std::_Select1st<std::pair<unsignedintconst,double>>,std::less<unsignedint>,std::allocator<std::pair<unsignedintconst,double>>>::key_type&)",
-      "symbol": "_ZNSt8_Rb_treeIjSt4pairIKjdESt10_Select1stIS2_ESt4lessIjESaIS2_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS2_ERS1_"
+      "pretty": "method void std::vector<unsigned char, std::allocator<unsigned char> >::_M_realloc_insert<unsigned char>(std::vector<unsigned char, std::allocator<unsigned char> >::iterator, unsigned char&&)",
+      "symbol": "_ZNSt6vectorIhSaIhEE17_M_realloc_insertIJhEEEvN9__gnu_cxx17__normal_iteratorIPhS1_EEDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method std::pair<std::_Rb_tree_node_base*,std::_Rb_tree_node_base*> std::_Rb_tree<unsignedint,std::pair<unsignedintconst,double>,std::_Select1st<std::pair<unsignedintconst,double>>,std::less<unsignedint>,std::allocator<std::pair<unsignedintconst,double>>>::_M_get_insert_unique_pos(const std::_Rb_tree<unsignedint,std::pair<unsignedintconst,double>,std::_Select1st<std::pair<unsignedintconst,double>>,std::less<unsignedint>,std::allocator<std::pair<unsignedintconst,double>>>::key_type&)",
-      "symbol": "_ZNSt8_Rb_treeIjSt4pairIKjdESt10_Select1stIS2_ESt4lessIjESaIS2_EE24_M_get_insert_unique_posERS1_"
+      "pretty": "method void std::vector<unsigned char, std::allocator<unsigned char> >::resize(std::vector<unsigned char, std::allocator<unsigned char> >::size_type)",
+      "symbol": "_ZNSt6vectorIhSaIhEE6resizeEm",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method std::pair<std::_Rb_tree_node_base*,std::_Rb_tree_node_base*> std::_Rb_tree<shortunsignedint,std::pair<shortunsignedintconst,unsignedint>,std::_Select1st<std::pair<shortunsignedintconst,unsignedint>>,std::less<shortunsignedint>,std::allocator<std::pair<shortunsignedintconst,unsignedint>>>::_M_get_insert_unique_pos(const std::_Rb_tree<shortunsignedint,std::pair<shortunsignedintconst,unsignedint>,std::_Select1st<std::pair<shortunsignedintconst,unsignedint>>,std::less<shortunsignedint>,std::allocator<std::pair<shortunsignedintconst,unsignedint>>>::key_type&)",
-      "symbol": "_ZNSt8_Rb_treeItSt4pairIKtjESt10_Select1stIS2_ESt4lessItESaIS2_EE24_M_get_insert_unique_posERS1_"
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<unsigned int, std::pair<unsigned int const, unsigned int>, std::_Select1st<std::pair<unsigned int const, unsigned int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> > >::_M_get_insert_unique_pos(const std::_Rb_tree<unsigned int, std::pair<unsigned int const, unsigned int>, std::_Select1st<std::pair<unsigned int const, unsigned int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeIjSt4pairIKjjESt10_Select1stIS2_ESt4lessIjESaIS2_EE24_M_get_insert_unique_posERS1_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::vector<unsignedchar,std::allocator<unsignedchar>>::_M_realloc_insert<unsignedcharconst&>(std::vector<unsignedchar,std::allocator<unsignedchar>>::iterator)",
-      "symbol": "_ZNSt6vectorIhSaIhEE17_M_realloc_insertIJRKhEEEvN9__gnu_cxx17__normal_iteratorIPhS1_EEDpOT_"
+      "pretty": "method void std::_Destroy_aux<false>::__destroy<libcdr::CDRText*>(libcdr::CDRText*)",
+      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIPN6libcdr7CDRTextEEEvT_S5_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method std::pair<std::_Rb_tree_node_base*,std::_Rb_tree_node_base*> std::_Rb_tree<unsignedint,std::pair<unsignedintconst,std::vector<unsignedint,std::allocator<unsignedint>>>,std::_Select1st<std::pair<unsignedintconst,std::vector<unsignedint,std::allocator<unsignedint>>>>,std::less<unsignedint>,std::allocator<std::pair<unsignedintconst,std::vector<unsignedint,std::allocator<unsignedint>>>>>::_M_get_insert_hint_unique_pos(std::_Rb_tree<unsignedint,std::pair<unsignedintconst,std::vector<unsignedint,std::allocator<unsignedint>>>,std::_Select1st<std::pair<unsignedintconst,std::vector<unsignedint,std::allocator<unsignedint>>>>,std::less<unsignedint>,std::allocator<std::pair<unsignedintconst,std::vector<unsignedint,std::allocator<unsignedint>>>>>::const_iterator, const std::_Rb_tree<unsignedint,std::pair<unsignedintconst,std::vector<unsignedint,std::allocator<unsignedint>>>,std::_Select1st<std::pair<unsignedintconst,std::vector<unsignedint,std::allocator<unsignedint>>>>,std::less<unsignedint>,std::allocator<std::pair<unsignedintconst,std::vector<unsignedint,std::allocator<unsignedint>>>>>::key_type&)",
-      "symbol": "_ZNSt8_Rb_treeIjSt4pairIKjSt6vectorIjSaIjEEESt10_Select1stIS5_ESt4lessIjESaIS5_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS5_ERS1_"
+      "pretty": "method std::_Rb_tree<unsigned int, std::pair<unsigned int const, double>, std::_Select1st<std::pair<unsigned int const, double> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, double> > >::iterator std::_Rb_tree<unsigned int, std::pair<unsigned int const, double>, std::_Select1st<std::pair<unsigned int const, double> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, double> > >::_M_emplace_hint_unique<const std::piecewise_construct_t&, std::tuple<unsigned int&&>, std::tuple<> >(std::_Rb_tree<unsigned int, std::pair<unsigned int const, double>, std::_Select1st<std::pair<unsigned int const, double> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, double> > >::const_iterator, const std::piecewise_construct_t&, std::tuple<unsigned int&&>&&, std::tuple<>&&)",
+      "symbol": "_ZNSt8_Rb_treeIjSt4pairIKjdESt10_Select1stIS2_ESt4lessIjESaIS2_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJOjEESD_IJEEEEESt17_Rb_tree_iteratorIS2_ESt23_Rb_tree_const_iteratorIS2_EDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method std::pair<std::_Rb_tree_node_base*,std::_Rb_tree_node_base*> std::_Rb_tree<unsignedint,std::pair<unsignedintconst,shortunsignedint>,std::_Select1st<std::pair<unsignedintconst,shortunsignedint>>,std::less<unsignedint>,std::allocator<std::pair<unsignedintconst,shortunsignedint>>>::_M_get_insert_hint_unique_pos(std::_Rb_tree<unsignedint,std::pair<unsignedintconst,shortunsignedint>,std::_Select1st<std::pair<unsignedintconst,shortunsignedint>>,std::less<unsignedint>,std::allocator<std::pair<unsignedintconst,shortunsignedint>>>::const_iterator, const std::_Rb_tree<unsignedint,std::pair<unsignedintconst,shortunsignedint>,std::_Select1st<std::pair<unsignedintconst,shortunsignedint>>,std::less<unsignedint>,std::allocator<std::pair<unsignedintconst,shortunsignedint>>>::key_type&)",
-      "symbol": "_ZNSt8_Rb_treeIjSt4pairIKjtESt10_Select1stIS2_ESt4lessIjESaIS2_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS2_ERS1_"
+      "pretty": "method void std::vector<unsigned int, std::allocator<unsigned int> >::_M_realloc_insert<unsigned int>(std::vector<unsigned int, std::allocator<unsigned int> >::iterator, unsigned int&&)",
+      "symbol": "_ZNSt6vectorIjSaIjEE17_M_realloc_insertIJjEEEvN9__gnu_cxx17__normal_iteratorIPjS1_EEDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method std::pair<std::_Rb_tree_node_base*,std::_Rb_tree_node_base*> std::_Rb_tree<unsignedint,std::pair<unsignedintconst,shortunsignedint>,std::_Select1st<std::pair<unsignedintconst,shortunsignedint>>,std::less<unsignedint>,std::allocator<std::pair<unsignedintconst,shortunsignedint>>>::_M_get_insert_unique_pos(const std::_Rb_tree<unsignedint,std::pair<unsignedintconst,shortunsignedint>,std::_Select1st<std::pair<unsignedintconst,shortunsignedint>>,std::less<unsignedint>,std::allocator<std::pair<unsignedintconst,shortunsignedint>>>::key_type&)",
-      "symbol": "_ZNSt8_Rb_treeIjSt4pairIKjtESt10_Select1stIS2_ESt4lessIjESaIS2_EE24_M_get_insert_unique_posERS1_"
+      "pretty": "method void std::vector<std::pair<double, double>, std::allocator<std::pair<double, double> > >::_M_realloc_insert<const std::pair<double, double>&>(std::vector<std::pair<double, double>, std::allocator<std::pair<double, double> > >::iterator, const std::pair<double, double>&)",
+      "symbol": "_ZNSt6vectorISt4pairIddESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method std::pair<std::_Rb_tree_node_base*,std::_Rb_tree_node_base*> std::_Rb_tree<unsignedint,std::pair<unsignedintconst,unsignedint>,std::_Select1st<std::pair<unsignedintconst,unsignedint>>,std::less<unsignedint>,std::allocator<std::pair<unsignedintconst,unsignedint>>>::_M_get_insert_hint_unique_pos(std::_Rb_tree<unsignedint,std::pair<unsignedintconst,unsignedint>,std::_Select1st<std::pair<unsignedintconst,unsignedint>>,std::less<unsignedint>,std::allocator<std::pair<unsignedintconst,unsignedint>>>::const_iterator, const std::_Rb_tree<unsignedint,std::pair<unsignedintconst,unsignedint>,std::_Select1st<std::pair<unsignedintconst,unsignedint>>,std::less<unsignedint>,std::allocator<std::pair<unsignedintconst,unsignedint>>>::key_type&)",
-      "symbol": "_ZNSt8_Rb_treeIjSt4pairIKjjESt10_Select1stIS2_ESt4lessIjESaIS2_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS2_ERS1_"
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<short unsigned int, std::pair<short unsigned int const, unsigned int>, std::_Select1st<std::pair<short unsigned int const, unsigned int> >, std::less<short unsigned int>, std::allocator<std::pair<short unsigned int const, unsigned int> > >::_M_get_insert_unique_pos(const std::_Rb_tree<short unsigned int, std::pair<short unsigned int const, unsigned int>, std::_Select1st<std::pair<short unsigned int const, unsigned int> >, std::less<short unsigned int>, std::allocator<std::pair<short unsigned int const, unsigned int> > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeItSt4pairIKtjESt10_Select1stIS2_ESt4lessItESaIS2_EE24_M_get_insert_unique_posERS1_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::vector<unsignedchar,std::allocator<unsignedchar>>::resize(std::vector<unsignedchar,std::allocator<unsignedchar>>::size_type)",
-      "symbol": "_ZNSt6vectorIhSaIhEE6resizeEm"
+      "pretty": "method void std::vector<unsigned char, std::allocator<unsigned char> >::_M_realloc_insert<unsigned char const&>(std::vector<unsigned char, std::allocator<unsigned char> >::iterator, const unsigned char&)",
+      "symbol": "_ZNSt6vectorIhSaIhEE17_M_realloc_insertIJRKhEEEvN9__gnu_cxx17__normal_iteratorIPhS1_EEDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::_Destroy_aux<false>::__destroy<libcdr::CDRText*>(libcdr::CDRText*, libcdr::CDRText*)",
-      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIPN6libcdr7CDRTextEEEvT_S5_"
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<unsigned int, std::pair<unsigned int const, std::vector<unsigned int, std::allocator<unsigned int> > >, std::_Select1st<std::pair<unsigned int const, std::vector<unsigned int, std::allocator<unsigned int> > > >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, std::vector<unsigned int, std::allocator<unsigned int> > > > >::_M_get_insert_hint_unique_pos(std::_Rb_tree<unsigned int, std::pair<unsigned int const, std::vector<unsigned int, std::allocator<unsigned int> > >, std::_Select1st<std::pair<unsigned int const, std::vector<unsigned int, std::allocator<unsigned int> > > >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, std::vector<unsigned int, std::allocator<unsigned int> > > > >::const_iterator, const std::_Rb_tree<unsigned int, std::pair<unsigned int const, std::vector<unsigned int, std::allocator<unsigned int> > >, std::_Select1st<std::pair<unsigned int const, std::vector<unsigned int, std::allocator<unsigned int> > > >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, std::vector<unsigned int, std::allocator<unsigned int> > > > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeIjSt4pairIKjSt6vectorIjSaIjEEESt10_Select1stIS5_ESt4lessIjESaIS5_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS5_ERS1_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method std::pair<std::_Rb_tree_node_base*,std::_Rb_tree_node_base*> std::_Rb_tree<unsignedint,std::pair<unsignedintconst,unsignedint>,std::_Select1st<std::pair<unsignedintconst,unsignedint>>,std::less<unsignedint>,std::allocator<std::pair<unsignedintconst,unsignedint>>>::_M_get_insert_unique_pos(const std::_Rb_tree<unsignedint,std::pair<unsignedintconst,unsignedint>,std::_Select1st<std::pair<unsignedintconst,unsignedint>>,std::less<unsignedint>,std::allocator<std::pair<unsignedintconst,unsignedint>>>::key_type&)",
-      "symbol": "_ZNSt8_Rb_treeIjSt4pairIKjjESt10_Select1stIS2_ESt4lessIjESaIS2_EE24_M_get_insert_unique_posERS1_"
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<unsigned int, std::pair<unsigned int const, std::vector<unsigned int, std::allocator<unsigned int> > >, std::_Select1st<std::pair<unsigned int const, std::vector<unsigned int, std::allocator<unsigned int> > > >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, std::vector<unsigned int, std::allocator<unsigned int> > > > >::_M_get_insert_unique_pos(const std::_Rb_tree<unsigned int, std::pair<unsigned int const, std::vector<unsigned int, std::allocator<unsigned int> > >, std::_Select1st<std::pair<unsigned int const, std::vector<unsigned int, std::allocator<unsigned int> > > >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, std::vector<unsigned int, std::allocator<unsigned int> > > > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeIjSt4pairIKjSt6vectorIjSaIjEEESt10_Select1stIS5_ESt4lessIjESaIS5_EE24_M_get_insert_unique_posERS1_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::_M_construct<true>(const char*, std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::size_type)",
-      "symbol": "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructILb1EEEvPKcm"
+      "pretty": "method void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<true>(const char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::size_type)",
+      "symbol": "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructILb1EEEvPKcm",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::vector<unsignedint,std::allocator<unsignedint>>::_M_realloc_append<unsignedint>()",
-      "symbol": "_ZNSt6vectorIjSaIjEE17_M_realloc_appendIJjEEEvDpOT_"
+      "pretty": "method void std::vector<unsigned int, std::allocator<unsigned int> >::_M_realloc_append<unsigned int>(unsigned int&&)",
+      "symbol": "_ZNSt6vectorIjSaIjEE17_M_realloc_appendIJjEEEvDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::vector<unsignedchar,std::allocator<unsignedchar>>::_M_realloc_append<unsignedcharconst&>()",
-      "symbol": "_ZNSt6vectorIhSaIhEE17_M_realloc_appendIJRKhEEEvDpOT_"
+      "pretty": "method void std::vector<unsigned char, std::allocator<unsigned char> >::_M_realloc_append<unsigned char const&>(const unsigned char&)",
+      "symbol": "_ZNSt6vectorIhSaIhEE17_M_realloc_appendIJRKhEEEvDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::vector<std::pair<double,double>,std::allocator<std::pair<double,double>>>::_M_realloc_append<conststd::pair<double,double>&>()",
-      "symbol": "_ZNSt6vectorISt4pairIddESaIS1_EE17_M_realloc_appendIJRKS1_EEEvDpOT_"
+      "pretty": "method void std::vector<std::pair<double, double>, std::allocator<std::pair<double, double> > >::_M_realloc_append<const std::pair<double, double>&>(const std::pair<double, double>&)",
+      "symbol": "_ZNSt6vectorISt4pairIddESaIS1_EE17_M_realloc_appendIJRKS1_EEEvDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>::_M_realloc_append<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>&>()",
-      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_realloc_appendIJRKS5_EEEvDpOT_"
+      "pretty": "method void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_append<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>(const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_realloc_appendIJRKS5_EEEvDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::vector<unsignedchar,std::allocator<unsignedchar>>::_M_realloc_append<unsignedchar>()",
-      "symbol": "_ZNSt6vectorIhSaIhEE17_M_realloc_appendIJhEEEvDpOT_"
+      "pretty": "method void std::vector<unsigned char, std::allocator<unsigned char> >::_M_realloc_append<unsigned char>(unsigned char&&)",
+      "symbol": "_ZNSt6vectorIhSaIhEE17_M_realloc_appendIJhEEEvDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::deque<unsignedint,std::allocator<unsignedint>>::_M_reallocate_map(std::deque<unsignedint,std::allocator<unsignedint>>::size_type, bool)",
-      "symbol": "_ZNSt5dequeIjSaIjEE17_M_reallocate_mapEmb"
+      "pretty": "method void std::deque<unsigned int, std::allocator<unsigned int> >::_M_reallocate_map(std::deque<unsigned int, std::allocator<unsigned int> >::size_type, bool)",
+      "symbol": "_ZNSt5dequeIjSaIjEE17_M_reallocate_mapEmb",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method std::_Vector_base<unsigned int, std::allocator<unsigned int> >::~_Vector_base(int)  ->  method std::_Vector_base<unsigned int, std::allocator<unsigned int> >::~_Vector_base()",
+      "symbol": "_ZNSt12_Vector_baseIjSaIjEED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method std::_Vector_base<unsigned char, std::allocator<unsigned char> >::~_Vector_base(int)  ->  method std::_Vector_base<unsigned char, std::allocator<unsigned char> >::~_Vector_base()",
+      "symbol": "_ZNSt12_Vector_baseIhSaIhEED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method std::_Vector_base<std::pair<double, double>, std::allocator<std::pair<double, double> > >::~_Vector_base(int)  ->  method std::_Vector_base<std::pair<double, double>, std::allocator<std::pair<double, double> > >::~_Vector_base()",
+      "symbol": "_ZNSt12_Vector_baseISt4pairIddESaIS1_EED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method std::_Deque_base<unsigned int, std::allocator<unsigned int> >::~_Deque_base(int)  ->  method std::_Deque_base<unsigned int, std::allocator<unsigned int> >::~_Deque_base()",
+      "symbol": "_ZNSt11_Deque_baseIjSaIjEED2Ev",
+      "weak": true
      }
     ],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {
+     "function_signature_changed": 4,
+     "symbol_added": 7,
+     "symbol_removed": 19
+    }
    }
   ],
-  "seconds": 24.666461148,
+  "seconds": 11.907508652,
   "source": "libcdr",
   "unpaired": [
    [],
@@ -176,7 +232,11 @@
    "0.1.7"
   ]
  },
- "generated_at": "2026-09-02T12:46:57Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T06:19:26Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

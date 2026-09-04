@@ -1,5 +1,6 @@
 {
  "data": {
+  "bytes_extracted": 3969857,
   "id": "openal-soft@1.19.0..1.19.1",
   "object_errors": [],
   "objects": [
@@ -21,10 +22,7 @@
     "language": "c",
     "mass_rename": false,
     "private_node": {},
-    "public": {
-     "field_added_to_struct": 6,
-     "type_size_changed": 1
-    },
+    "public": {},
     "soname": [
      "libopenal.so.1",
      "libopenal.so.1"
@@ -40,81 +38,100 @@
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 3,
       "declared_in": "./OpenAL32/Include/alMain.h",
+      "exposure": "by_pointer",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "struct ALCdevice_struct"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "./OpenAL32/Include/alMain.h",
+      "exposure": "by_pointer",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "struct ALCdevice_struct"
      },
      {
+      "append_only": false,
       "count": 27,
       "declared_in": "./OpenAL32/Include/alMain.h",
+      "exposure": "by_pointer",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct ALCdevice_struct"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./OpenAL32/Include/alMain.h",
+      "exposure": "by_pointer",
       "kind": "field_removed_from_struct",
+      "third_party": true,
       "type": "struct ALCcontext_struct"
      },
      {
+      "append_only": false,
       "count": 12,
       "declared_in": "./OpenAL32/Include/alMain.h",
+      "exposure": "by_pointer",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct ALCcontext_struct"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./OpenAL32/Include/alMain.h",
+      "exposure": "by_pointer",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct ALCcontext_struct"
      },
      {
-      "count": 6,
-      "declared_in": "",
-      "kind": "field_added_to_struct",
-      "type": "struct ll_ringbuffer"
-     },
-     {
-      "count": 1,
-      "declared_in": "",
-      "kind": "type_size_changed",
-      "type": "struct ll_ringbuffer"
-     },
-     {
+      "append_only": false,
       "count": 1,
       "declared_in": "./OpenAL32/Include/alMain.h",
+      "exposure": "not_in_interface",
       "kind": "field_removed_from_struct",
+      "third_party": true,
       "type": "struct DryMixParams"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./OpenAL32/Include/alMain.h",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct DryMixParams"
      },
      {
+      "append_only": false,
       "count": 16,
       "declared_in": "./Alc/mastering.h",
+      "exposure": "not_in_interface",
       "kind": "field_removed_from_struct",
+      "third_party": true,
       "type": "struct Compressor"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./Alc/mastering.h",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct Compressor"
      }
-    ]
+    ],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 2.009653543,
+  "seconds": 1.54715597,
   "source": "openal-soft",
   "unpaired": [
    [],
@@ -125,7 +142,11 @@
    "1.19.1"
   ]
  },
- "generated_at": "2026-09-02T15:04:09Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:41:39Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

@@ -1,6 +1,8 @@
 {
  "data": {
+  "bytes_extracted": 5824460,
   "id": "libcap2@2.66..2.73",
+  "object_errors": [],
   "objects": [
    {
     "coverage": {
@@ -30,23 +32,27 @@
     "symbol_events": [
      {
       "kind": "symbol_removed",
-      "pretty": "function void __so_start(void)",
-      "symbol": "__so_start"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "function void _libcap_initialize(void)",
-      "symbol": "_libcap_initialize"
-     },
-     {
-      "kind": "symbol_removed",
       "pretty": "function char* _libcap_strdup(const char*)",
-      "symbol": "_libcap_strdup"
+      "symbol": "_libcap_strdup",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void _libcap_initialize()",
+      "symbol": "_libcap_initialize",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void __so_start()",
+      "symbol": "__so_start",
+      "weak": false
      }
     ],
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -77,26 +83,30 @@
     "symbol_events": [
      {
       "kind": "symbol_removed",
-      "pretty": "function void __so_start(void)",
-      "symbol": "__so_start"
+      "pretty": "function void __so_start()",
+      "symbol": "__so_start",
+      "weak": false
      },
      {
       "kind": "symbol_removed",
       "pretty": "pthread_key_t psx_action_key",
-      "symbol": "psx_action_key"
+      "symbol": "psx_action_key",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "function int __real_pthread_create(pthread_t*, const pthread_attr_t*, void* (*)(void*), void*)",
-      "symbol": "__real_pthread_create"
+      "pretty": "function int __real_pthread_create(pthread_t*, const pthread_attr_t*, void* (void*)*, void*)",
+      "symbol": "__real_pthread_create",
+      "weak": true
      }
     ],
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 1.857282466,
+  "seconds": 1.577652386,
   "source": "libcap2",
   "unpaired": [
    [],
@@ -107,7 +117,11 @@
    "2.73"
   ]
  },
- "generated_at": "2026-09-02T12:05:55Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:42:44Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

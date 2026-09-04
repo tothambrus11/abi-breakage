@@ -1,5 +1,6 @@
 {
  "data": {
+  "bytes_extracted": 6070914,
   "id": "lerc@4.0.0+ds..4.1.0+ds",
   "object_errors": [],
   "objects": [
@@ -33,97 +34,99 @@
      {
       "kind": "symbol_removed",
       "pretty": "function void _assert(bool)",
-      "symbol": "_Z7_assertb"
+      "symbol": "_Z7_assertb",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function void lerc_assert(bool)",
-      "symbol": "_Z11lerc_assertb"
+      "symbol": "_Z11lerc_assertb",
+      "weak": false
      }
     ],
     "symbols_version_renamed": 0,
     "third_party": {
      "member_offset_changed": 19,
-     "type_size_changed": 4,
-     "vtable_changed": 16
+     "type_size_changed": 4
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 3,
       "declared_in": "src/LercLib/Lerc1Decode/../BitMask.h",
+      "exposure": "by_pointer",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "class LercNS::BitMask"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "src/LercLib/Lerc1Decode/../BitMask.h",
+      "exposure": "by_pointer",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "class LercNS::BitMask"
      },
      {
-      "count": 4,
-      "declared_in": "src/LercLib/Lerc1Decode/../BitMask.h",
-      "kind": "vtable_changed",
-      "type": "class LercNS::BitMask"
-     },
-     {
+      "append_only": false,
       "count": 3,
       "declared_in": "src/LercLib/BitStuffer2.h",
+      "exposure": "by_pointer",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "class LercNS::BitStuffer2"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "src/LercLib/BitStuffer2.h",
+      "exposure": "by_pointer",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "class LercNS::BitStuffer2"
      },
      {
-      "count": 4,
-      "declared_in": "src/LercLib/BitStuffer2.h",
-      "kind": "vtable_changed",
-      "type": "class LercNS::BitStuffer2"
-     },
-     {
+      "append_only": false,
       "count": 12,
       "declared_in": "src/LercLib/Lerc2.h",
+      "exposure": "by_pointer",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "class LercNS::Lerc2"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "src/LercLib/Lerc2.h",
+      "exposure": "by_pointer",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "class LercNS::Lerc2"
      },
      {
-      "count": 4,
-      "declared_in": "src/LercLib/Lerc2.h",
-      "kind": "vtable_changed",
-      "type": "class LercNS::Lerc2"
-     },
-     {
+      "append_only": false,
       "count": 1,
       "declared_in": "src/LercLib/RLE.h",
+      "exposure": "by_pointer",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "class LercNS::RLE"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "src/LercLib/RLE.h",
+      "exposure": "by_pointer",
       "kind": "type_size_changed",
-      "type": "class LercNS::RLE"
-     },
-     {
-      "count": 4,
-      "declared_in": "src/LercLib/RLE.h",
-      "kind": "vtable_changed",
+      "third_party": true,
       "type": "class LercNS::RLE"
      }
-    ]
+    ],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 3.737765993,
+  "seconds": 3.44704863,
   "source": "lerc",
   "unpaired": [
    [],
@@ -134,7 +137,11 @@
    "4.1.0+ds"
   ]
  },
- "generated_at": "2026-09-02T14:59:53Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:41:16Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

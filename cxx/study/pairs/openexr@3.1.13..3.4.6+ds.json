@@ -1,31 +1,2365 @@
 {
  "data": {
+  "bytes_extracted": 23144467,
+  "excluded_objects": [],
   "id": "openexr@3.1.13..3.4.6+ds",
-  "objects": [],
-  "seconds": 51.276211147,
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      3251,
+      3251
+     ],
+     "mangled_functions": [
+      3251,
+      3251
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": true,
+    "private_node": {},
+    "public": {
+     "symbol_added": 1,
+     "symbol_version_renamed": 2015
+    },
+    "soname": [
+     "libIex-3_1.so.30",
+     "libIex-3_4.so.33"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual Iex_3_4::EnocsiExc::~EnocsiExc()",
+      "symbol": "_ZN7Iex_3_49EnocsiExcD2Ev",
+      "weak": false
+     }
+    ],
+    "symbol_events_truncated": false,
+    "symbols_version_renamed": 2015,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      47,
+      47
+     ],
+     "mangled_functions": [
+      47,
+      47
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_version_renamed": 35
+    },
+    "soname": [
+     "libIlmThread-3_1.so.30",
+     "libIlmThread-3_4.so.33"
+    ],
+    "symbol_events": [],
+    "symbol_events_truncated": false,
+    "symbols_version_renamed": 35,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      2102,
+      2343
+     ],
+     "mangled_functions": [
+      2015,
+      2256
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": true,
+    "private_node": {},
+    "public": {
+     "symbol_added": 261,
+     "symbol_removed": 28,
+     "symbol_version_renamed": 1794
+    },
+    "soname": [
+     "libOpenEXR-3_1.so.30",
+     "libOpenEXR-3_4.so.33"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "function std::vector<std::vector<long unsigned int, std::allocator<long unsigned int> >, std::allocator<std::vector<long unsigned int, std::allocator<long unsigned int> > > >* std::__do_uninit_copy<__gnu_cxx::__normal_iterator<const std::vector<std::vector<long unsigned int> >*, std::vector<std::vector<std::vector<long unsigned int> > > >, __gnu_cxx::__normal_iterator<const std::vector<std::vector<long unsigned int> >*, std::vector<std::vector<std::vector<long unsigned int> > > >, std::vector<std::vector<long unsigned int> >*>(__gnu_cxx::__normal_iterator<const std::vector<std::vector<long unsigned int, std::allocator<long unsigned int> >, std::allocator<std::vector<long unsigned int, std::allocator<long unsigned int> > > >*, std::vector<std::vector<std::vector<long unsigned int, std::allocator<long unsigned int> >, std::allocator<std::vector<long unsigned int, std::allocator<long unsigned int> > > >, std::allocator<std::vector<std::vector<long unsigned int, std::allocator<long unsigned int> >, std::allocator<std::vector<long unsigned int, std::allocator<long unsigned int> > > > > > >, __gnu_cxx::__normal_iterator<const std::vector<std::vector<long unsigned int, std::allocator<long unsigned int> >, std::allocator<std::vector<long unsigned int, std::allocator<long unsigned int> > > >*, std::vector<std::vector<std::vector<long unsigned int, std::allocator<long unsigned int> >, std::allocator<std::vector<long unsigned int, std::allocator<long unsigned int> > > >, std::allocator<std::vector<std::vector<long unsigned int, std::allocator<long unsigned int> >, std::allocator<std::vector<long unsigned int, std::allocator<long unsigned int> > > > > > >, std::vector<std::vector<long unsigned int, std::allocator<long unsigned int> >, std::allocator<std::vector<long unsigned int, std::allocator<long unsigned int> > > >*)",
+      "symbol": "_ZSt16__do_uninit_copyIN9__gnu_cxx17__normal_iteratorIPKSt6vectorIS2_ImSaImEESaIS4_EES2_IS6_SaIS6_EEEESB_PS6_ET1_T_T0_SD_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::vector<char*, std::allocator<char*> >, std::allocator<std::vector<char*, std::allocator<char*> > > >::_M_realloc_append<const std::vector<char*, std::allocator<char*> >&>(const std::vector<char*, std::allocator<char*> >&)",
+      "symbol": "_ZNSt6vectorIS_IPcSaIS0_EESaIS2_EE17_M_realloc_appendIJRKS2_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<Imf_3_1::PixelType, std::allocator<Imf_3_1::PixelType> >::_M_realloc_append<const Imf_3_1::PixelType&>(const Imf_3_1::PixelType&)",
+      "symbol": "_ZNSt6vectorIN7Imf_3_19PixelTypeESaIS1_EE17_M_realloc_appendIJRKS1_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual Imf_3_1::InputFile::~InputFile()",
+      "symbol": "_ZN7Imf_3_19InputFileD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual Imf_3_1::InputFile::~InputFile()",
+      "symbol": "_ZN7Imf_3_19InputFileD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void Imf_3_1::DeepScanLineInputFile::initialize(const Imf_3_1::Header&)",
+      "symbol": "_ZN7Imf_3_121DeepScanLineInputFile10initializeERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual Imf_3_1::MultiPartInputFile::~MultiPartInputFile()",
+      "symbol": "_ZN7Imf_3_118MultiPartInputFileD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method Imf_3_1::Compressor::Compressor(const Imf_3_1::Header&)",
+      "symbol": "_ZN7Imf_3_110CompressorC2ERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void Imf_3_1::DeepTiledInputFile::Data::validateStreamSize()",
+      "symbol": "_ZN7Imf_3_118DeepTiledInputFile4Data18validateStreamSizeEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::vector<char const*, std::allocator<char const*> >, std::allocator<std::vector<char const*, std::allocator<char const*> > > >::_M_realloc_append<const std::vector<char const*, std::allocator<char const*> >&>(const std::vector<char const*, std::allocator<char const*> >&)",
+      "symbol": "_ZNSt6vectorIS_IPKcSaIS1_EESaIS3_EE17_M_realloc_appendIJRKS3_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method Imf_3_1::DeepTiledInputFile::DeepTiledInputFile(const Imf_3_1::Header&, Imf_3_1::IStream*, int, int)",
+      "symbol": "_ZN7Imf_3_118DeepTiledInputFileC2ERKNS_6HeaderEPNS_7IStreamEii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual Imf_3_1::DeepScanLineInputFile::~DeepScanLineInputFile()",
+      "symbol": "_ZN7Imf_3_121DeepScanLineInputFileD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual Imf_3_1::DeepTiledInputFile::~DeepTiledInputFile()",
+      "symbol": "_ZN7Imf_3_118DeepTiledInputFileD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual Imf_3_1::ScanLineInputFile::~ScanLineInputFile()",
+      "symbol": "_ZN7Imf_3_117ScanLineInputFileD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual Imf_3_1::TiledInputFile::~TiledInputFile()",
+      "symbol": "_ZN7Imf_3_114TiledInputFileD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual Imf_3_1::TiledInputFile::~TiledInputFile()",
+      "symbol": "_ZN7Imf_3_114TiledInputFileD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void Imf_3_1::DeepScanLineInputFile::multiPartInitialize(Imf_3_1::InputPartData*)",
+      "symbol": "_ZN7Imf_3_121DeepScanLineInputFile19multiPartInitializeEPNS_13InputPartDataE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method Imf_3_1::ScanLineInputFile::ScanLineInputFile(const Imf_3_1::Header&, Imf_3_1::IStream*, int)",
+      "symbol": "_ZN7Imf_3_117ScanLineInputFileC2ERKNS_6HeaderEPNS_7IStreamEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual Imf_3_1::ScanLineInputFile::~ScanLineInputFile()",
+      "symbol": "_ZN7Imf_3_117ScanLineInputFileD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<Imf_3_1::Header, std::allocator<Imf_3_1::Header> >::_M_realloc_append<const Imf_3_1::Header&>(const Imf_3_1::Header&)",
+      "symbol": "_ZNSt6vectorIN7Imf_3_16HeaderESaIS1_EE17_M_realloc_appendIJRKS1_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void Imf_3_1::DeepTiledInputFile::multiPartInitialize(Imf_3_1::InputPartData*)",
+      "symbol": "_ZN7Imf_3_118DeepTiledInputFile19multiPartInitializeEPNS_13InputPartDataE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void Imf_3_1::DeepTiledInputFile::initialize()",
+      "symbol": "_ZN7Imf_3_118DeepTiledInputFile10initializeEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int& Imf_3_1::DeepTiledInputFile::Data::getSampleCount(int, int)",
+      "symbol": "_ZN7Imf_3_118DeepTiledInputFile4Data14getSampleCountEii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method Imf_3_1::DeepTiledInputFile::Data::Data(int)",
+      "symbol": "_ZN7Imf_3_118DeepTiledInputFile4DataC2Ei",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method Imf_3_1::DeepTiledInputFile::Data::~Data()",
+      "symbol": "_ZN7Imf_3_118DeepTiledInputFile4DataD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method Imf_3_1::DeepTiledInputFile::DeepTiledInputFile(Imf_3_1::InputPartData*)",
+      "symbol": "_ZN7Imf_3_118DeepTiledInputFileC2EPNS_13InputPartDataE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void Imf_3_1::DeepTiledInputFile::compatibilityInitialize(Imf_3_1::IStream&)",
+      "symbol": "_ZN7Imf_3_118DeepTiledInputFile23compatibilityInitializeERNS_7IStreamE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual Imf_3_1::DeepTiledInputFile::~DeepTiledInputFile()",
+      "symbol": "_ZN7Imf_3_118DeepTiledInputFileD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual Imf_3_1::MultiPartInputFile::~MultiPartInputFile()",
+      "symbol": "_ZN7Imf_3_118MultiPartInputFileD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function bool Imf_3_1::isValidCompression(Imf_3_1::Compression)",
+      "symbol": "_ZN7Imf_3_118isValidCompressionENS_11CompressionE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method Imf_3_1::DeepScanLineInputFile::DeepScanLineInputFile(Imf_3_1::InputPartData*)",
+      "symbol": "_ZN7Imf_3_121DeepScanLineInputFileC2EPNS_13InputPartDataE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual Imf_3_1::DeepScanLineInputFile::~DeepScanLineInputFile()",
+      "symbol": "_ZN7Imf_3_121DeepScanLineInputFileD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void Imf_3_1::DeepScanLineInputFile::compatibilityInitialize(Imf_3_1::IStream&)",
+      "symbol": "_ZN7Imf_3_121DeepScanLineInputFile23compatibilityInitializeERNS_7IStreamE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<Imf_3_4::Slice, std::allocator<Imf_3_4::Slice> >::_M_realloc_append<const Imf_3_4::Slice&>(const Imf_3_4::Slice&)",
+      "symbol": "_ZNSt6vectorIN7Imf_3_45SliceESaIS1_EE17_M_realloc_appendIJRKS1_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::any::_Manager_external<std::shared_ptr<Imf_3_4::InputFile> >::_S_manage(const std::any*, std::any::_Arg*)",
+      "symbol": "_ZNSt3any17_Manager_externalISt10shared_ptrIN7Imf_3_49InputFileEEE9_S_manageENS_3_OpEPKS_PNS_4_ArgE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::any::_Manager_external<std::shared_ptr<Imf_3_4::DeepScanLineInputFile> >::_S_manage(const std::any*, std::any::_Arg*)",
+      "symbol": "_ZNSt3any17_Manager_externalISt10shared_ptrIN7Imf_3_421DeepScanLineInputFileEEE9_S_manageENS_3_OpEPKS_PNS_4_ArgE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool Imf_3_4::KeyCode::operator==(const Imf_3_4::KeyCode&) const",
+      "symbol": "_ZNK7Imf_3_47KeyCodeeqERKS0_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual bool Imf_3_4::IStream::isStatelessRead() const",
+      "symbol": "_ZNK7Imf_3_47IStream15isStatelessReadEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int Imf_3_4::Context::partCount() const",
+      "symbol": "_ZNK7Imf_3_47Context9partCountEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method exr_lineorder_t Imf_3_4::Context::lineOrder(int) const",
+      "symbol": "_ZNK7Imf_3_47Context9lineOrderEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int Imf_3_4::Context::attrCount(int) const",
+      "symbol": "_ZNK7Imf_3_47Context9attrCountEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int Imf_3_4::Context::version() const",
+      "symbol": "_ZNK7Imf_3_47Context7versionEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method exr_storage_t Imf_3_4::Context::storage(int) const",
+      "symbol": "_ZNK7Imf_3_47Context7storageEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method const exr_attribute_t* Imf_3_4::Context::getAttr(int, int) const",
+      "symbol": "_ZNK7Imf_3_47Context7getAttrEii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool Imf_3_4::Context::hasChannel(int, const char*) const",
+      "symbol": "_ZNK7Imf_3_47Context10hasChannelEiPKc",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method exr_attr_box2i_t Imf_3_4::Context::dataWindow(int) const",
+      "symbol": "_ZNK7Imf_3_47Context10dataWindowEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method const Imf_3_4::TypedAttribute<Imf_3_4::Rational>* Imf_3_4::Header::findTypedAttribute<Imf_3_4::TypedAttribute<Imf_3_4::Rational> >(const char*) const",
+      "symbol": "_ZNK7Imf_3_46Header18findTypedAttributeINS_14TypedAttributeINS_8RationalEEEEEPKT_PKc",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method const Imf_3_4::TypedAttribute<Imath_3_1::Vec2<float> >* Imf_3_4::Header::findTypedAttribute<Imf_3_4::TypedAttribute<Imath_3_1::Vec2<float> > >(const char*) const",
+      "symbol": "_ZNK7Imf_3_46Header18findTypedAttributeINS_14TypedAttributeIN9Imath_3_14Vec2IfEEEEEEPKT_PKc",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method const Imf_3_4::TypedAttribute<Imath_3_1::Box<Imath_3_1::Vec2<int> > >* Imf_3_4::Header::findTypedAttribute<Imf_3_4::TypedAttribute<Imath_3_1::Box<Imath_3_1::Vec2<int> > > >(const char*) const",
+      "symbol": "_ZNK7Imf_3_46Header18findTypedAttributeINS_14TypedAttributeIN9Imath_3_13BoxINS3_4Vec2IiEEEEEEEEPKT_PKc",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::any::_Manager_external<std::shared_ptr<Imf_3_4::DeepTiledInputFile> >::_S_manage(const std::any*, std::any::_Arg*)",
+      "symbol": "_ZNSt3any17_Manager_externalISt10shared_ptrIN7Imf_3_418DeepTiledInputFileEEE9_S_manageENS_3_OpEPKS_PNS_4_ArgE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual const char* Imf_3_4::BytesAttribute::typeName() const",
+      "symbol": "_ZNK7Imf_3_414BytesAttribute8typeNameEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual Imf_3_4::Attribute* Imf_3_4::BytesAttribute::copy() const",
+      "symbol": "_ZNK7Imf_3_414BytesAttribute4copyEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void Imf_3_4::BytesAttribute::writeValueTo(Imf_3_4::OStream&, int) const",
+      "symbol": "_ZNK7Imf_3_414BytesAttribute12writeValueToERNS_7OStreamEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int Imf_3_4::RgbaInputFile::parts() const",
+      "symbol": "_ZNK7Imf_3_413RgbaInputFile5partsEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method const exr_attr_chlist_t* Imf_3_4::Context::channels(int) const",
+      "symbol": "_ZNK7Imf_3_47Context8channelsEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool Imf_3_4::BytesAttribute::operator==(const Imf_3_4::BytesAttribute&) const",
+      "symbol": "_ZNK7Imf_3_414BytesAttributeeqERKS0_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method const char* Imf_3_4::MultiPartInputFile::fileName() const",
+      "symbol": "_ZNK7Imf_3_418MultiPartInputFile8fileNameEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method const exr_attribute_t* Imf_3_4::Context::getAttr(int, const char*) const",
+      "symbol": "_ZNK7Imf_3_47Context7getAttrEiPKc",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual int Imf_3_4::Compressor::numScanLines() const",
+      "symbol": "_ZNK7Imf_3_410Compressor12numScanLinesEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void Imf_3_4::InputPart::readPixels(const Imf_3_4::FrameBuffer&, int, int)",
+      "symbol": "_ZN7Imf_3_49InputPart10readPixelsERKNS_11FrameBufferEii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method Imf_3_4::InputFile::InputFile(const char*, const Imf_3_4::ContextInitializer&, int)",
+      "symbol": "_ZN7Imf_3_49InputFileC2EPKcRKNS_18ContextInitializerEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void Imf_3_4::InputFile::Data::deleteCachedBuffer()",
+      "symbol": "_ZN7Imf_3_49InputFile4Data18deleteCachedBufferEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void Imf_3_4::InputFile::Data::copyCachedBuffer(Imf_3_4::FrameBuffer::ConstIterator, Imf_3_4::FrameBuffer::ConstIterator, int, int, int, int, int)",
+      "symbol": "_ZN7Imf_3_49InputFile4Data16copyCachedBufferENS_11FrameBuffer13ConstIteratorES3_iiiii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void Imf_3_4::InputFile::Data::readPixels(int, int)",
+      "symbol": "_ZN7Imf_3_49InputFile4Data10readPixelsEii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void Imf_3_4::InputFile::Data::readPixels(const Imf_3_4::FrameBuffer&, int, int)",
+      "symbol": "_ZN7Imf_3_49InputFile4Data10readPixelsERKNS_11FrameBufferEii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void Imf_3_4::InputFile::readPixels(const Imf_3_4::FrameBuffer&, int, int)",
+      "symbol": "_ZN7Imf_3_49InputFile10readPixelsERKNS_11FrameBufferEii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function std::string& Imf_3_4::lensMake(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_48lensMakeB5cxx11ERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool Imf_3_4::hasTStop(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_48hasTStopERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Imf_3_4::addTStop(Imf_3_4::Header&, const float&)",
+      "symbol": "_ZN7Imf_3_48addTStopERNS_6HeaderERKf",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method Imf_3_4::Context::Context()",
+      "symbol": "_ZN7Imf_3_47ContextC2Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method Imf_3_4::Context::Context(const char*, const Imf_3_4::ContextInitializer&, Imf_3_4::Context::write_mode_t)",
+      "symbol": "_ZN7Imf_3_47ContextC2EPKcRKNS_18ContextInitializerENS0_12write_mode_tE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void Imf_3_4::Context::setLongNameSupport(bool)",
+      "symbol": "_ZN7Imf_3_47Context18setLongNameSupportEb",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void Imf_3_4::Header::getMaxTileSize(int&)",
+      "symbol": "_ZN7Imf_3_46Header14getMaxTileSizeERiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Imf_3_4::TypedAttribute<Imath_3_1::Box<Imath_3_1::Vec2<int> > >& Imf_3_4::sensorAcquisitionRectangleAttribute(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_435sensorAcquisitionRectangleAttributeERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const Imf_3_4::TypedAttribute<Imath_3_1::Box<Imath_3_1::Vec2<int> > >& Imf_3_4::sensorAcquisitionRectangleAttribute(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_435sensorAcquisitionRectangleAttributeERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Imf_3_4::TypedAttribute<Imath_3_1::Vec2<float> >& Imf_3_4::sensorOverallDimensionsAttribute(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_432sensorOverallDimensionsAttributeERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const Imf_3_4::TypedAttribute<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >& Imf_3_4::ascFramingDecisionListAttribute(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_431ascFramingDecisionListAttributeB5cxx11ERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const Imf_3_4::TypedAttribute<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >& Imf_3_4::cameraFirmwareVersionAttribute(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_430cameraFirmwareVersionAttributeB5cxx11ERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void Imf_3_4::Header::getMaxImageSize(int&)",
+      "symbol": "_ZN7Imf_3_46Header15getMaxImageSizeERiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Imf_3_4::TypedAttribute<float>& Imf_3_4::sensorPhotositePitchAttribute(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_429sensorPhotositePitchAttributeERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool Imf_3_4::hasSensorAcquisitionRectangle(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_429hasSensorAcquisitionRectangleERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Imf_3_4::TypedAttribute<float>& Imf_3_4::effectiveFocalLengthAttribute(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_429effectiveFocalLengthAttributeERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Imf_3_4::addSensorAcquisitionRectangle(Imf_3_4::Header&, const Imath_3_1::Box2i&)",
+      "symbol": "_ZN7Imf_3_429addSensorAcquisitionRectangleERNS_6HeaderERKN9Imath_3_13BoxINS2_4Vec2IiEEEE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Imf_3_4::TypedAttribute<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >& Imf_3_4::lensFirmwareVersionAttribute(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_428lensFirmwareVersionAttributeB5cxx11ERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Imf_3_4::TypedAttribute<float>& Imf_3_4::entrancePupilOffsetAttribute(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_428entrancePupilOffsetAttributeERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const Imf_3_4::TypedAttribute<float>& Imf_3_4::entrancePupilOffsetAttribute(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_428entrancePupilOffsetAttributeERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const Imf_3_4::TypedAttribute<float>& Imf_3_4::pinholeFocalLengthAttribute(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_427pinholeFocalLengthAttributeERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Imf_3_4::TypedAttribute<float>& Imf_3_4::nominalFocalLengthAttribute(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_427nominalFocalLengthAttributeERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const Imf_3_4::TypedAttribute<float>& Imf_3_4::nominalFocalLengthAttribute(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_427nominalFocalLengthAttributeERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Imf_3_4::TypedAttribute<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >& Imf_3_4::cameraSerialNumberAttribute(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_427cameraSerialNumberAttributeB5cxx11ERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const Imf_3_4::TypedAttribute<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >& Imf_3_4::cameraSerialNumberAttribute(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_427cameraSerialNumberAttributeB5cxx11ERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Imf_3_4::TypedAttribute<Imath_3_1::Vec2<float> >& Imf_3_4::cameraColorBalanceAttribute(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_427cameraColorBalanceAttributeERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const Imf_3_4::TypedAttribute<Imath_3_1::Vec2<float> >& Imf_3_4::cameraColorBalanceAttribute(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_427cameraColorBalanceAttributeERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method const char* Imf_3_4::Context::fileName() const",
+      "symbol": "_ZNK7Imf_3_47Context8fileNameEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Imath_3_1::Box2i& Imf_3_4::sensorAcquisitionRectangle(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_426sensorAcquisitionRectangleERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const Imath_3_1::Box2i& Imf_3_4::sensorAcquisitionRectangle(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_426sensorAcquisitionRectangleERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Imf_3_4::TypedAttribute<float>& Imf_3_4::cameraTintSettingAttribute(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_426cameraTintSettingAttributeERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Imf_3_4::TypedAttribute<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >& Imf_3_4::lensSerialNumberAttribute(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_425lensSerialNumberAttributeB5cxx11ERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const Imf_3_4::TypedAttribute<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >& Imf_3_4::lensSerialNumberAttribute(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_425lensSerialNumberAttributeB5cxx11ERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool Imf_3_4::hasAscFramingDecisionList(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_425hasAscFramingDecisionListERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Imf_3_4::TypedAttribute<float>& Imf_3_4::cameraCCTSettingAttribute(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_425cameraCCTSettingAttributeERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const Imf_3_4::TypedAttribute<float>& Imf_3_4::cameraCCTSettingAttribute(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_425cameraCCTSettingAttributeERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Imf_3_4::addAscFramingDecisionList(Imf_3_4::Header&, const std::string&)",
+      "symbol": "_ZN7Imf_3_425addAscFramingDecisionListERNS_6HeaderERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Imf_3_4::getCompressionIdFromName(const std::string&, Imf_3_4::Compression&)",
+      "symbol": "_ZN7Imf_3_424getCompressionIdFromNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERNS_11CompressionE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Imf_3_4::addCameraFirmwareVersion(Imf_3_4::Header&, const std::string&)",
+      "symbol": "_ZN7Imf_3_424addCameraFirmwareVersionERNS_6HeaderERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool Imf_3_4::hasSensorPhotositePitch(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_423hasSensorPhotositePitchERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool Imf_3_4::hasEffectiveFocalLength(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_423hasEffectiveFocalLengthERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Imf_3_4::TypedAttribute<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >& Imf_3_4::colorInteropIDAttribute(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_423colorInteropIDAttributeB5cxx11ERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const Imf_3_4::TypedAttribute<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >& Imf_3_4::colorInteropIDAttribute(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_423colorInteropIDAttributeB5cxx11ERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Imf_3_4::addEffectiveFocalLength(Imf_3_4::Header&, const float&)",
+      "symbol": "_ZN7Imf_3_423addEffectiveFocalLengthERNS_6HeaderERKf",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool Imf_3_4::hasEntrancePupilOffset(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_422hasEntrancePupilOffsetERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const std::string& Imf_3_4::ascFramingDecisionList(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_422ascFramingDecisionListB5cxx11ERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Imf_3_4::addEntrancePupilOffset(Imf_3_4::Header&, const float&)",
+      "symbol": "_ZN7Imf_3_422addEntrancePupilOffsetERNS_6HeaderERKf",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const Imf_3_4::TypedAttribute<float>& Imf_3_4::shutterAngleAttribute(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_421shutterAngleAttributeERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Imf_3_4::TypedAttribute<int>& Imf_3_4::imageCounterAttribute(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_421imageCounterAttributeERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const Imf_3_4::TypedAttribute<int>& Imf_3_4::imageCounterAttribute(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_421imageCounterAttributeERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool Imf_3_4::hasSensorCenterOffset(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_421hasSensorCenterOffsetERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function std::string& Imf_3_4::lensModel(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_49lensModelB5cxx11ERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Imf_3_4::addPinholeFocalLength(Imf_3_4::Header&, const float&)",
+      "symbol": "_ZN7Imf_3_421addPinholeFocalLengthERNS_6HeaderERKf",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void Imf_3_4::BytesAttribute::unRegisterAttributeType()",
+      "symbol": "_ZN7Imf_3_414BytesAttribute23unRegisterAttributeTypeEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void Imf_3_4::InputFile::Data::lockedSetFrameBuffer(const Imf_3_4::FrameBuffer&)",
+      "symbol": "_ZN7Imf_3_49InputFile4Data20lockedSetFrameBufferERKNS_11FrameBufferE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method Imf_3_4::DeepScanLineInputFile::DeepScanLineInputFile(const char*, const Imf_3_4::ContextInitializer&, int)",
+      "symbol": "_ZN7Imf_3_421DeepScanLineInputFileC2EPKcRKNS_18ContextInitializerEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Imf_3_4::TypedAttribute<float>& Imf_3_4::tStopAttribute(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_414tStopAttributeERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Imath_3_1::V2f& Imf_3_4::sensorCenterOffset(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_418sensorCenterOffsetERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method Imf_3_4::ScanLineInputFile::ScanLineInputFile(Imf_3_4::IStream&, int)",
+      "symbol": "_ZN7Imf_3_417ScanLineInputFileC2ERNS_7IStreamEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const float& Imf_3_4::entrancePupilOffset(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_419entrancePupilOffsetERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const std::string& Imf_3_4::lensMake(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_48lensMakeB5cxx11ERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function float& Imf_3_4::shutterAngle(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_412shutterAngleERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function std::string& Imf_3_4::cameraModel(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_411cameraModelB5cxx11ERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function float& Imf_3_4::entrancePupilOffset(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_419entrancePupilOffsetERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool Imf_3_4::hasCameraModel(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_414hasCameraModelERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool Imf_3_4::hasCaptureRate(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_414hasCaptureRateERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Imf_3_4::addSensorOverallDimensions(Imf_3_4::Header&, const Imath_3_1::V2f&)",
+      "symbol": "_ZN7Imf_3_426addSensorOverallDimensionsERNS_6HeaderERKN9Imath_3_14Vec2IfEE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const float& Imf_3_4::tStop(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_45tStopERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void Imf_3_4::BytesAttribute::readValueFrom(Imf_3_4::IStream&, int, int)",
+      "symbol": "_ZN7Imf_3_414BytesAttribute13readValueFromERNS_7IStreamEii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const std::string& Imf_3_4::lensSerialNumber(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_416lensSerialNumberB5cxx11ERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Imf_3_4::addShutterAngle(Imf_3_4::Header&, const float&)",
+      "symbol": "_ZN7Imf_3_415addShutterAngleERNS_6HeaderERKf",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool Imf_3_4::hasCameraFirmwareVersion(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_424hasCameraFirmwareVersionERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function std::string& Imf_3_4::colorInteropID(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_414colorInteropIDB5cxx11ERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void Imf_3_4::InputFile::Data::setFrameBuffer(const Imf_3_4::FrameBuffer&)",
+      "symbol": "_ZN7Imf_3_49InputFile4Data14setFrameBufferERKNS_11FrameBufferE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const Imf_3_4::TypedAttribute<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >& Imf_3_4::cameraModelAttribute(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_420cameraModelAttributeB5cxx11ERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method Imf_3_4::RgbaInputFile::RgbaInputFile(int, Imf_3_4::IStream&, const std::string&, int)",
+      "symbol": "_ZN7Imf_3_413RgbaInputFileC2EiRNS_7IStreamERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function std::string& Imf_3_4::cameraLabel(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_411cameraLabelB5cxx11ERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const Imath_3_1::V2f& Imf_3_4::sensorCenterOffset(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_418sensorCenterOffsetERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<Imf_3_4::MultiPartInputFile::Data::Part, std::allocator<Imf_3_4::MultiPartInputFile::Data::Part> >::_M_default_append(std::vector<Imf_3_4::MultiPartInputFile::Data::Part, std::allocator<Imf_3_4::MultiPartInputFile::Data::Part> >::size_type)",
+      "symbol": "_ZNSt6vectorIN7Imf_3_418MultiPartInputFile4Data4PartESaIS3_EE17_M_default_appendEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function std::string& Imf_3_4::reelName(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_48reelNameB5cxx11ERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method uint64_t Imf_3_4::Compressor::runEncodeStep(const char*, int, Imath_3_1::Box2i, const char*&)",
+      "symbol": "_ZN7Imf_3_410Compressor13runEncodeStepEPKciN9Imath_3_13BoxINS3_4Vec2IiEEEERS2_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method Imf_3_4::OpaqueAttribute::OpaqueAttribute(const char*, long int, void*)",
+      "symbol": "_ZN7Imf_3_415OpaqueAttributeC2EPKclPKv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method Imf_3_4::Context::Context(const char*, const Imf_3_4::ContextInitializer&, Imf_3_4::Context::temp_mode_t)",
+      "symbol": "_ZN7Imf_3_47ContextC2EPKcRKNS_18ContextInitializerENS0_11temp_mode_tE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Imf_3_4::addCameraUuid(Imf_3_4::Header&, const std::string&)",
+      "symbol": "_ZN7Imf_3_413addCameraUuidERNS_6HeaderERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool Imf_3_4::hasPinholeFocalLength(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_421hasPinholeFocalLengthERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const Imf_3_4::Rational& Imf_3_4::captureRate(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_411captureRateERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const Imf_3_4::TypedAttribute<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >& Imf_3_4::lensFirmwareVersionAttribute(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_428lensFirmwareVersionAttributeB5cxx11ERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int& Imf_3_4::imageCounter(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_412imageCounterERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method const char* Imf_3_4::BytesAttribute::staticTypeName()",
+      "symbol": "_ZN7Imf_3_414BytesAttribute14staticTypeNameEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<Imf_3_4::DeepSlice, std::allocator<Imf_3_4::DeepSlice> >::_M_realloc_append<const Imf_3_4::DeepSlice&>(const Imf_3_4::DeepSlice&)",
+      "symbol": "_ZNSt6vectorIN7Imf_3_49DeepSliceESaIS1_EE17_M_realloc_appendIJRKS1_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function std::string& Imf_3_4::cameraUuid(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_410cameraUuidB5cxx11ERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const std::string& Imf_3_4::reelName(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_48reelNameB5cxx11ERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Imf_3_4::TypedAttribute<Imf_3_4::Rational>& Imf_3_4::captureRateAttribute(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_420captureRateAttributeERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method Imf_3_4::TiledInputFile::TiledInputFile(const char*, const Imf_3_4::ContextInitializer&, int)",
+      "symbol": "_ZN7Imf_3_414TiledInputFileC2EPKcRKNS_18ContextInitializerEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Imf_3_4::TypedAttribute<float>& Imf_3_4::shutterAngleAttribute(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_421shutterAngleAttributeERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool Imf_3_4::hasLensFirmwareVersion(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_422hasLensFirmwareVersionERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method Imf_3_4::BytesAttribute::BytesAttribute(size_t, void*, const std::string&)",
+      "symbol": "_ZN7Imf_3_414BytesAttributeC2EmPKvRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const float& Imf_3_4::cameraTintSetting(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_417cameraTintSettingERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const std::string& Imf_3_4::cameraUuid(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_410cameraUuidB5cxx11ERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual Imf_3_4::BytesAttribute::~BytesAttribute()",
+      "symbol": "_ZN7Imf_3_414BytesAttributeD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Imf_3_4::TypedAttribute<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >& Imf_3_4::cameraFirmwareVersionAttribute(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_430cameraFirmwareVersionAttributeB5cxx11ERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Imf_3_4::Rational& Imf_3_4::captureRate(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_411captureRateERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual Imf_3_4::TypedAttribute<Imath_3_1::Vec3<double> >::~TypedAttribute()",
+      "symbol": "_ZN7Imf_3_414TypedAttributeIN9Imath_3_14Vec3IdEEED1Ev",
+      "vtable_slot": true,
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Imf_3_4::TypedAttribute<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >& Imf_3_4::cameraModelAttribute(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_420cameraModelAttributeB5cxx11ERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool Imf_3_4::hasReelName(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_411hasReelNameERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function std::string& Imf_3_4::cameraSerialNumber(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_418cameraSerialNumberB5cxx11ERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Imf_3_4::getCompressionNamesString(const std::string&, std::string&)",
+      "symbol": "_ZN7Imf_3_425getCompressionNamesStringERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERS5_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void Imf_3_4::BytesAttribute::copyValueFrom(const Imf_3_4::Attribute&)",
+      "symbol": "_ZN7Imf_3_414BytesAttribute13copyValueFromERKNS_9AttributeE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const std::string& Imf_3_4::cameraFirmwareVersion(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_421cameraFirmwareVersionB5cxx11ERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void Imf_3_4::RgbaInputFile::setPartAndLayer(int, const std::string&)",
+      "symbol": "_ZN7Imf_3_413RgbaInputFile15setPartAndLayerEiRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool Imf_3_4::hasCameraLabel(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_414hasCameraLabelERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Imf_3_4::TypedAttribute<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >& Imf_3_4::ascFramingDecisionListAttribute(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_431ascFramingDecisionListAttributeB5cxx11ERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Imf_3_4::addCameraColorBalance(Imf_3_4::Header&, const Imath_3_1::V2f&)",
+      "symbol": "_ZN7Imf_3_421addCameraColorBalanceERNS_6HeaderERKN9Imath_3_14Vec2IfEE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const float& Imf_3_4::shutterAngle(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_412shutterAngleERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Imf_3_4::addImageCounter(Imf_3_4::Header&, const int&)",
+      "symbol": "_ZN7Imf_3_415addImageCounterERNS_6HeaderERKi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool Imf_3_4::hasLensModel(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_412hasLensModelERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool Imf_3_4::hasLensMake(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_411hasLensMakeERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void Imf_3_4::InputFile::Data::bufferedReadPixels(int, int)",
+      "symbol": "_ZN7Imf_3_49InputFile4Data18bufferedReadPixelsEii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual int Imf_3_4::Compressor::compress(const char*, int, int, const char*&)",
+      "symbol": "_ZN7Imf_3_410Compressor8compressEPKciiRS2_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function std::string& Imf_3_4::cameraMake(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_410cameraMakeB5cxx11ERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void Imf_3_4::RgbaInputFile::setPart(int)",
+      "symbol": "_ZN7Imf_3_413RgbaInputFile7setPartEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual int Imf_3_4::Compressor::uncompress(const char*, int, int, const char*&)",
+      "symbol": "_ZN7Imf_3_410Compressor10uncompressEPKciiRS2_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method Imf_3_4::RgbaInputFile::RgbaInputFile(int, const char*, int)",
+      "symbol": "_ZN7Imf_3_413RgbaInputFileC2EiPKci",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const float& Imf_3_4::pinholeFocalLength(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_418pinholeFocalLengthERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::any::_Manager_external<std::shared_ptr<Imf_3_4::TiledInputFile> >::_S_manage(const std::any*, std::any::_Arg*)",
+      "symbol": "_ZNSt3any17_Manager_externalISt10shared_ptrIN7Imf_3_414TiledInputFileEEE9_S_manageENS_3_OpEPKS_PNS_4_ArgE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual int64_t Imf_3_4::IStream::read(void*, uint64_t, uint64_t)",
+      "symbol": "_ZN7Imf_3_47IStream4readEPvmm",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Imf_3_4::addCameraModel(Imf_3_4::Header&, const std::string&)",
+      "symbol": "_ZN7Imf_3_414addCameraModelERNS_6HeaderERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool Imf_3_4::hasCameraMake(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_413hasCameraMakeERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Imf_3_4::addLensFirmwareVersion(Imf_3_4::Header&, const std::string&)",
+      "symbol": "_ZN7Imf_3_422addLensFirmwareVersionERNS_6HeaderERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const std::string& Imf_3_4::cameraLabel(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_411cameraLabelB5cxx11ERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual Imf_3_4::TypedAttribute<Imath_3_1::Vec2<double> >::~TypedAttribute()",
+      "symbol": "_ZN7Imf_3_414TypedAttributeIN9Imath_3_14Vec2IdEEED0Ev",
+      "vtable_slot": true,
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const Imf_3_4::TypedAttribute<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >& Imf_3_4::cameraUuidAttribute(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_419cameraUuidAttributeB5cxx11ERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function std::string& Imf_3_4::lensFirmwareVersion(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_419lensFirmwareVersionB5cxx11ERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void Imf_3_4::ScanLineInputFile::readPixels(const Imf_3_4::FrameBuffer&, int, int)",
+      "symbol": "_ZN7Imf_3_417ScanLineInputFile10readPixelsERKNS_11FrameBufferEii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void Imf_3_4::BytesAttribute::registerAttributeType()",
+      "symbol": "_ZN7Imf_3_414BytesAttribute21registerAttributeTypeEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method uint64_t Imf_3_4::Compressor::runDecodeStep(const char*, int, Imath_3_1::Box2i, const char*&)",
+      "symbol": "_ZN7Imf_3_410Compressor13runDecodeStepEPKciN9Imath_3_13BoxINS3_4Vec2IiEEEERS2_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Imf_3_4::addLensModel(Imf_3_4::Header&, const std::string&)",
+      "symbol": "_ZN7Imf_3_412addLensModelERNS_6HeaderERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Imf_3_4::addLensSerialNumber(Imf_3_4::Header&, const std::string&)",
+      "symbol": "_ZN7Imf_3_419addLensSerialNumberERNS_6HeaderERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const std::string& Imf_3_4::colorInteropID(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_414colorInteropIDB5cxx11ERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Imf_3_4::addCameraMake(Imf_3_4::Header&, const std::string&)",
+      "symbol": "_ZN7Imf_3_413addCameraMakeERNS_6HeaderERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Imf_3_4::addSensorPhotositePitch(Imf_3_4::Header&, const float&)",
+      "symbol": "_ZN7Imf_3_423addSensorPhotositePitchERNS_6HeaderERKf",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void Imf_3_4::InputFile::Data::fillBuffer(Imf_3_4::FrameBuffer::ConstIterator, int, int, int, int, int)",
+      "symbol": "_ZN7Imf_3_49InputFile4Data10fillBufferENS_11FrameBuffer13ConstIteratorEiiiii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const int& Imf_3_4::imageCounter(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_412imageCounterERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void Imf_3_4::BytesAttribute::setData(const unsigned char*, size_t)",
+      "symbol": "_ZN7Imf_3_414BytesAttribute7setDataEPKhm",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method Imf_3_4::Compressor::Compressor(const Imf_3_4::Header&, exr_compression_t, size_t, int)",
+      "symbol": "_ZN7Imf_3_410CompressorC2ERKNS_6HeaderE17exr_compression_tmi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method Imf_3_4::RgbaInputFile::RgbaInputFile(int, Imf_3_4::IStream&, int)",
+      "symbol": "_ZN7Imf_3_413RgbaInputFileC2EiRNS_7IStreamEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Imf_3_4::TypedAttribute<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >& Imf_3_4::reelNameAttribute(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_417reelNameAttributeB5cxx11ERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Imf_3_4::addLensMake(Imf_3_4::Header&, const std::string&)",
+      "symbol": "_ZN7Imf_3_411addLensMakeERNS_6HeaderERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const std::string& Imf_3_4::cameraMake(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_410cameraMakeB5cxx11ERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const std::string& Imf_3_4::cameraModel(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_411cameraModelB5cxx11ERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool Imf_3_4::isValidCompression(int)",
+      "symbol": "_ZN7Imf_3_418isValidCompressionEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Imf_3_4::addCameraCCTSetting(Imf_3_4::Header&, const float&)",
+      "symbol": "_ZN7Imf_3_419addCameraCCTSettingERNS_6HeaderERKf",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const Imf_3_4::TypedAttribute<float>& Imf_3_4::tStopAttribute(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_414tStopAttributeERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const Imf_3_4::TypedAttribute<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >& Imf_3_4::reelNameAttribute(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_417reelNameAttributeB5cxx11ERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method Imf_3_4::Attribute* Imf_3_4::BytesAttribute::makeNewAttribute()",
+      "symbol": "_ZN7Imf_3_414BytesAttribute16makeNewAttributeEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const Imf_3_4::TypedAttribute<Imath_3_1::Vec2<float> >& Imf_3_4::sensorCenterOffsetAttribute(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_427sensorCenterOffsetAttributeERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual Imf_3_4::BytesAttribute::~BytesAttribute()",
+      "symbol": "_ZN7Imf_3_414BytesAttributeD1Ev",
+      "vtable_slot": true,
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method Imf_3_4::BytesAttribute::BytesAttribute(const Imf_3_4::BytesAttribute&)",
+      "symbol": "_ZN7Imf_3_414BytesAttributeC2ERKS0_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const Imath_3_1::V2f& Imf_3_4::sensorOverallDimensions(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_423sensorOverallDimensionsERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method Imf_3_4::BytesAttribute::BytesAttribute()",
+      "symbol": "_ZN7Imf_3_414BytesAttributeC2Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual Imf_3_4::TypedAttribute<Imath_3_1::Matrix33<double> >::~TypedAttribute()",
+      "symbol": "_ZN7Imf_3_414TypedAttributeIN9Imath_3_18Matrix33IdEEED2Ev",
+      "vtable_slot": true,
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual Imf_3_4::BytesAttribute::~BytesAttribute()",
+      "symbol": "_ZN7Imf_3_414BytesAttributeD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method Imf_3_4::Context::Context(const char*, const Imf_3_4::ContextInitializer&, Imf_3_4::Context::read_mode_t)",
+      "symbol": "_ZN7Imf_3_47ContextC2EPKcRKNS_18ContextInitializerENS0_11read_mode_tE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Imath_3_1::V2f& Imf_3_4::sensorOverallDimensions(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_423sensorOverallDimensionsERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Imf_3_4::TypedAttribute<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >& Imf_3_4::lensMakeAttribute(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_417lensMakeAttributeB5cxx11ERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const Imf_3_4::TypedAttribute<Imath_3_1::Vec2<float> >& Imf_3_4::sensorOverallDimensionsAttribute(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_432sensorOverallDimensionsAttributeERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const Imf_3_4::TypedAttribute<float>& Imf_3_4::cameraTintSettingAttribute(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_426cameraTintSettingAttributeERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function float& Imf_3_4::tStop(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_45tStopERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method Imf_3_4::DeepTiledInputFile::DeepTiledInputFile(const char*, const Imf_3_4::ContextInitializer&, int)",
+      "symbol": "_ZN7Imf_3_418DeepTiledInputFileC2EPKcRKNS_18ContextInitializerEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool Imf_3_4::hasShutterAngle(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_415hasShutterAngleERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const Imf_3_4::TypedAttribute<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >& Imf_3_4::cameraMakeAttribute(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_419cameraMakeAttributeB5cxx11ERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function float& Imf_3_4::effectiveFocalLength(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_420effectiveFocalLengthERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method Imf_3_4::RgbaInputFile::RgbaInputFile(int, const char*, const std::string&, int)",
+      "symbol": "_ZN7Imf_3_413RgbaInputFileC2EiPKcRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int Imf_3_4::getCompressionNumScanlines(Imf_3_4::Compression)",
+      "symbol": "_ZN7Imf_3_426getCompressionNumScanlinesENS_11CompressionE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Imf_3_4::TypedAttribute<float>& Imf_3_4::pinholeFocalLengthAttribute(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_427pinholeFocalLengthAttributeERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const Imf_3_4::TypedAttribute<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >& Imf_3_4::lensModelAttribute(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_418lensModelAttributeB5cxx11ERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Imf_3_4::TypedAttribute<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >& Imf_3_4::cameraUuidAttribute(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_419cameraUuidAttributeB5cxx11ERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool Imf_3_4::hasSensorOverallDimensions(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_426hasSensorOverallDimensionsERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool Imf_3_4::hasCameraUuid(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_413hasCameraUuidERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual int64_t Imf_3_4::IStream::size()",
+      "symbol": "_ZN7Imf_3_47IStream4sizeEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const float& Imf_3_4::sensorPhotositePitch(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_420sensorPhotositePitchERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Imf_3_4::addCameraLabel(Imf_3_4::Header&, const std::string&)",
+      "symbol": "_ZN7Imf_3_414addCameraLabelERNS_6HeaderERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const std::string& Imf_3_4::cameraSerialNumber(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_418cameraSerialNumberB5cxx11ERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Imf_3_4::addCaptureRate(Imf_3_4::Header&, const Imf_3_4::Rational&)",
+      "symbol": "_ZN7Imf_3_414addCaptureRateERNS_6HeaderERKNS_8RationalE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method Imf_3_4::Header Imf_3_4::Context::header(int) const",
+      "symbol": "_ZNK7Imf_3_47Context6headerEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method Imf_3_4::ContextInitializer& Imf_3_4::ContextInitializer::setOutputStream(Imf_3_4::OStream*)",
+      "symbol": "_ZN7Imf_3_418ContextInitializer15setOutputStreamEPNS_7OStreamE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Imf_3_4::addReelName(Imf_3_4::Header&, const std::string&)",
+      "symbol": "_ZN7Imf_3_411addReelNameERNS_6HeaderERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method Imf_3_4::ScanLineInputFile::ScanLineInputFile(const char*, const Imf_3_4::ContextInitializer&, int)",
+      "symbol": "_ZN7Imf_3_417ScanLineInputFileC2EPKcRKNS_18ContextInitializerEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const std::string& Imf_3_4::lensModel(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_49lensModelB5cxx11ERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method Imf_3_4::TiledRgbaInputFile::TiledRgbaInputFile(const char*, const Imf_3_4::ContextInitializer&, const std::string&, int)",
+      "symbol": "_ZN7Imf_3_418TiledRgbaInputFileC2EPKcRKNS_18ContextInitializerERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Imf_3_4::getCompressionDescriptionFromId(Imf_3_4::Compression, std::string&)",
+      "symbol": "_ZN7Imf_3_431getCompressionDescriptionFromIdENS_11CompressionERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const Imf_3_4::TypedAttribute<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >& Imf_3_4::lensMakeAttribute(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_417lensMakeAttributeB5cxx11ERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const Imf_3_4::TypedAttribute<float>& Imf_3_4::sensorPhotositePitchAttribute(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_429sensorPhotositePitchAttributeERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual Imf_3_4::TypedAttribute<Imath_3_1::Matrix44<double> >::~TypedAttribute()",
+      "symbol": "_ZN7Imf_3_414TypedAttributeIN9Imath_3_18Matrix44IdEEED2Ev",
+      "vtable_slot": true,
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Imf_3_4::TypedAttribute<Imath_3_1::Vec2<float> >& Imf_3_4::sensorCenterOffsetAttribute(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_427sensorCenterOffsetAttributeERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool Imf_3_4::Context::chunkTableValid(int) const",
+      "symbol": "_ZNK7Imf_3_47Context15chunkTableValidEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method const exr_attr_chlist_entry_t* Imf_3_4::Context::findChannel(int, const char*) const",
+      "symbol": "_ZNK7Imf_3_47Context11findChannelEiPKc",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool Imf_3_4::hasImageCounter(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_415hasImageCounterERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const float& Imf_3_4::cameraCCTSetting(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_416cameraCCTSettingERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function float& Imf_3_4::cameraCCTSetting(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_416cameraCCTSettingERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function std::string& Imf_3_4::lensSerialNumber(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_416lensSerialNumberB5cxx11ERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method Imf_3_4::ScanLineInputFile::ScanLineInputFile(const char*, int)",
+      "symbol": "_ZN7Imf_3_417ScanLineInputFileC2EPKci",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Imf_3_4::addColorInteropID(Imf_3_4::Header&, const std::string&)",
+      "symbol": "_ZN7Imf_3_417addColorInteropIDERNS_6HeaderERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function float& Imf_3_4::cameraTintSetting(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_417cameraTintSettingERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Imf_3_4::getCompressionNameFromId(Imf_3_4::Compression, std::string&)",
+      "symbol": "_ZN7Imf_3_424getCompressionNameFromIdENS_11CompressionERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual Imf_3_4::TypedAttribute<std::vector<float, std::allocator<float> > >::~TypedAttribute()",
+      "symbol": "_ZN7Imf_3_414TypedAttributeISt6vectorIfSaIfEEED2Ev",
+      "vtable_slot": true,
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool Imf_3_4::hasColorInteropID(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_417hasColorInteropIDERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method Imf_3_4::ContextInitializer& Imf_3_4::ContextInitializer::setInputStream(Imf_3_4::IStream*)",
+      "symbol": "_ZN7Imf_3_418ContextInitializer14setInputStreamEPNS_7IStreamE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function std::string& Imf_3_4::cameraFirmwareVersion(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_421cameraFirmwareVersionB5cxx11ERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method Imf_3_4::MultiPartInputFile::MultiPartInputFile(const char*, const Imf_3_4::ContextInitializer&, int, bool)",
+      "symbol": "_ZN7Imf_3_418MultiPartInputFileC2EPKcRKNS_18ContextInitializerEib",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const Imath_3_1::V2f& Imf_3_4::cameraColorBalance(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_418cameraColorBalanceERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool Imf_3_4::hasCameraSerialNumber(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_421hasCameraSerialNumberERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Imf_3_4::TypedAttribute<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >& Imf_3_4::lensModelAttribute(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_418lensModelAttributeB5cxx11ERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function float& Imf_3_4::nominalFocalLength(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_418nominalFocalLengthERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const Imf_3_4::TypedAttribute<float>& Imf_3_4::effectiveFocalLengthAttribute(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_429effectiveFocalLengthAttributeERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function float& Imf_3_4::pinholeFocalLength(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_418pinholeFocalLengthERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const Imf_3_4::TypedAttribute<Imf_3_4::Rational>& Imf_3_4::captureRateAttribute(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_420captureRateAttributeERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const float& Imf_3_4::nominalFocalLength(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_418nominalFocalLengthERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function float& Imf_3_4::sensorPhotositePitch(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_420sensorPhotositePitchERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Imath_3_1::V2f& Imf_3_4::cameraColorBalance(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_418cameraColorBalanceERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function std::string& Imf_3_4::ascFramingDecisionList(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_422ascFramingDecisionListB5cxx11ERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const char* Imf_3_4::getLibraryVersion()",
+      "symbol": "_ZN7Imf_3_417getLibraryVersionEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Imf_3_4::TypedAttribute<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >& Imf_3_4::cameraMakeAttribute(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_419cameraMakeAttributeB5cxx11ERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual Imf_3_4::OpaqueAttribute::~OpaqueAttribute()",
+      "symbol": "_ZN7Imf_3_415OpaqueAttributeD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool Imf_3_4::hasCameraCCTSetting(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_419hasCameraCCTSettingERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool Imf_3_4::hasLensSerialNumber(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_419hasLensSerialNumberERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const std::string& Imf_3_4::lensFirmwareVersion(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_419lensFirmwareVersionB5cxx11ERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Imf_3_4::addCameraTintSetting(Imf_3_4::Header&, const float&)",
+      "symbol": "_ZN7Imf_3_420addCameraTintSettingERNS_6HeaderERKf",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const Imf_3_4::TypedAttribute<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >& Imf_3_4::cameraLabelAttribute(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_420cameraLabelAttributeB5cxx11ERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void Imf_3_4::Context::addHeader(int, const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_47Context9addHeaderEiRKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Imf_3_4::TypedAttribute<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >& Imf_3_4::cameraLabelAttribute(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_420cameraLabelAttributeB5cxx11ERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const float& Imf_3_4::effectiveFocalLength(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_420effectiveFocalLengthERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool Imf_3_4::hasCameraTintSetting(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_420hasCameraTintSettingERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Imf_3_4::addCameraSerialNumber(Imf_3_4::Header&, const std::string&)",
+      "symbol": "_ZN7Imf_3_421addCameraSerialNumberERNS_6HeaderERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Imf_3_4::addNominalFocalLength(Imf_3_4::Header&, const float&)",
+      "symbol": "_ZN7Imf_3_421addNominalFocalLengthERNS_6HeaderERKf",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Imf_3_4::addSensorCenterOffset(Imf_3_4::Header&, const Imath_3_1::V2f&)",
+      "symbol": "_ZN7Imf_3_421addSensorCenterOffsetERNS_6HeaderERKN9Imath_3_14Vec2IfEE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool Imf_3_4::hasCameraColorBalance(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_421hasCameraColorBalanceERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool Imf_3_4::hasNominalFocalLength(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_421hasNominalFocalLengthERKNS_6HeaderE",
+      "weak": false
+     }
+    ],
+    "symbol_events_truncated": false,
+    "symbols_version_renamed": 1794,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {
+     "symbol_added": 10,
+     "symbol_removed": 5
+    }
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      147,
+      164
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "enum_case_added": 5,
+     "field_added_to_struct": 59,
+     "field_type_changed": 7,
+     "member_offset_changed": 55,
+     "symbol_added": 17,
+     "type_size_changed": 3
+    },
+    "soname": [
+     "libOpenEXRCore-3_1.so.30",
+     "libOpenEXRCore-3_4.so.33"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function exr_result_t exr_validate_chunk_table(exr_context_t, int)",
+      "symbol": "exr_validate_chunk_table",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function exr_result_t exr_uncompress_chunk(exr_decode_pipeline_t*)",
+      "symbol": "exr_uncompress_chunk",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function exr_result_t exr_uncompress_buffer(exr_const_context_t, void*, size_t, void*, size_t, size_t*)",
+      "symbol": "exr_uncompress_buffer",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function exr_result_t exr_attr_get_bytes(exr_const_context_t, int, const char*, exr_attr_bytes_t*)",
+      "symbol": "exr_attr_get_bytes",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function exr_result_t exr_attr_set_bytes(exr_context_t, int, const char*, const exr_attr_bytes_t*)",
+      "symbol": "exr_attr_set_bytes",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function exr_result_t exr_get_file_version_and_flags(exr_const_context_t, uint32_t*)",
+      "symbol": "exr_get_file_version_and_flags",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function exr_result_t exr_chunk_default_initialize(exr_context_t, int, const exr_attr_box2i_t*, int, int, exr_chunk_info_t*)",
+      "symbol": "exr_chunk_default_initialize",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function exr_result_t exr_start_temporary_context(exr_context_t*, const char*, const exr_context_initializer_t*)",
+      "symbol": "exr_start_temporary_context",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int exr_compression_lines_per_chunk(exr_compression_t)",
+      "symbol": "exr_compression_lines_per_chunk",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function exr_result_t exr_compress_buffer(exr_const_context_t, int, void*, size_t, void*, size_t, size_t*)",
+      "symbol": "exr_compress_buffer",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function exr_result_t exr_get_chunk_table_offset(exr_const_context_t, int, uint64_t*)",
+      "symbol": "exr_get_chunk_table_offset",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function exr_result_t exr_compress_chunk(exr_encode_pipeline_t*)",
+      "symbol": "exr_compress_chunk",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t exr_compress_max_buffer_size(size_t)",
+      "symbol": "exr_compress_max_buffer_size",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function exr_result_t exr_get_tile_counts(exr_const_context_t, int, int, int, int32_t*, int32_t*)",
+      "symbol": "exr_get_tile_counts",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function exr_result_t exr_get_chunk_table(exr_const_context_t, int, uint64_t**, int32_t*)",
+      "symbol": "exr_get_chunk_table",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t exr_rle_compress_buffer(size_t, void*, void*, size_t)",
+      "symbol": "exr_rle_compress_buffer",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t exr_rle_uncompress_buffer(size_t, size_t, void*, void*)",
+      "symbol": "exr_rle_uncompress_buffer",
+      "weak": false
+     }
+    ],
+    "symbol_events_truncated": false,
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [
+     {
+      "append_only": true,
+      "count": 44,
+      "declared_in": "",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": false,
+      "type": "struct _priv_exr_context_t"
+     },
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": false,
+      "type": "struct _priv_exr_context_t"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRCore/openexr_attr.h",
+      "exposure": "by_value",
+      "kind": "enum_case_added",
+      "third_party": false,
+      "type": "enum exr_storage_t"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/lib/OpenEXRCore/openexr_attr.h",
+      "exposure": "by_value",
+      "kind": "enum_case_added",
+      "third_party": false,
+      "type": "enum exr_attribute_type_t"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRCore/openexr_attr.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": false,
+      "type": "struct exr_attribute_t"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRCore/openexr_attr.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": false,
+      "type": "union {uint8_t uc; double d; float f; int32_t i; exr_attr_box2i_t* box2i; exr_attr_box2f_t* box2f; exr_attr_chlist_t* chlist; exr_attr_chromaticities_t* chromaticities; exr_attr_keycode_t* keycode; exr_attr_float_vector_t* floatvector; exr_attr_m33f_t* m33f; exr_attr_m33d_t* m33d; exr_attr_m44f_t* m44f; exr_attr_m44d_t* m44d; exr_attr_preview_t* preview; exr_attr_rational_t* rational; exr_attr_string_t* string; exr_attr_string_vector_t* stringvector; exr_attr_tiledesc_t* tiledesc; exr_attr_timecode_t* timecode; exr_attr_v2i_t* v2i; exr_attr_v2f_t* v2f; exr_attr_v2d_t* v2d; exr_attr_v3i_t* v3i; exr_attr_v3f_t* v3f; exr_attr_v3d_t* v3d; exr_attr_opaquedata_t* opaque; uint8_t* rawptr;}"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRCore/openexr_attr.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": false,
+      "type": "struct exr_attr_v2f_t"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRCore/openexr_attr.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": false,
+      "type": "struct exr_attr_v2f_t"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRCore/openexr_attr.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": false,
+      "type": "struct exr_attr_v2i_t"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRCore/openexr_attr.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": false,
+      "type": "struct exr_attr_v2i_t"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRCore/openexr_attr.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": false,
+      "type": "struct exr_attr_v2d_t"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRCore/openexr_attr.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": false,
+      "type": "struct exr_attr_v2d_t"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/lib/OpenEXRCore/openexr_attr.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": false,
+      "type": "struct exr_attr_v3d_t"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRCore/openexr_attr.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": false,
+      "type": "struct exr_attr_v3d_t"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/lib/OpenEXRCore/openexr_attr.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": false,
+      "type": "struct exr_attr_v3f_t"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRCore/openexr_attr.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": false,
+      "type": "struct exr_attr_v3f_t"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/lib/OpenEXRCore/openexr_attr.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": false,
+      "type": "struct exr_attr_v3i_t"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRCore/openexr_attr.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": false,
+      "type": "struct exr_attr_v3i_t"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/lib/OpenEXRCore/openexr_attr.h",
+      "exposure": "by_value",
+      "kind": "enum_case_added",
+      "third_party": false,
+      "type": "enum exr_compression_t"
+     },
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": "./src/lib/OpenEXRCore/openexr_decode.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": false,
+      "type": "struct _exr_decode_pipeline"
+     },
+     {
+      "append_only": false,
+      "count": 26,
+      "declared_in": "./src/lib/OpenEXRCore/openexr_decode.h",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": false,
+      "type": "struct _exr_decode_pipeline"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRCore/openexr_decode.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": false,
+      "type": "struct _exr_decode_pipeline"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRCore/openexr_encode.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": false,
+      "type": "struct _exr_encode_pipeline"
+     },
+     {
+      "append_only": false,
+      "count": 29,
+      "declared_in": "./src/lib/OpenEXRCore/openexr_encode.h",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": false,
+      "type": "struct _exr_encode_pipeline"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRCore/openexr_encode.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": false,
+      "type": "struct _exr_encode_pipeline"
+     }
+    ],
+    "vague_linkage": {}
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      203,
+      203
+     ],
+     "mangled_functions": [
+      203,
+      203
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": true,
+    "private_node": {},
+    "public": {
+     "symbol_version_renamed": 178
+    },
+    "soname": [
+     "libOpenEXRUtil-3_1.so.30",
+     "libOpenEXRUtil-3_4.so.33"
+    ],
+    "symbol_events": [],
+    "symbol_events_truncated": false,
+    "symbols_version_renamed": 178,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 15.052109176,
   "source": "openexr",
   "unpaired": [
-   [
-    "libIex-3_1",
-    "libIlmThread-3_1",
-    "libOpenEXR-3_1",
-    "libOpenEXRCore-3_1",
-    "libOpenEXRUtil-3_1"
-   ],
-   [
-    "libIex-3_4",
-    "libIlmThread-3_4",
-    "libOpenEXR-3_4",
-    "libOpenEXRCore-3_4",
-    "libOpenEXRUtil-3_4"
-   ]
+   [],
+   []
   ],
   "upstream": [
    "3.1.13",
    "3.4.6+ds"
   ]
  },
- "generated_at": "2026-09-02T12:27:53Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T07:25:47Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

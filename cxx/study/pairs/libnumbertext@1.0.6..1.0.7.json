@@ -1,5 +1,7 @@
 {
  "data": {
+  "bytes_extracted": 5657670,
+  "excluded_objects": [],
   "id": "libnumbertext@1.0.6..1.0.7",
   "object_errors": [],
   "objects": [
@@ -22,9 +24,6 @@
     "mass_rename": false,
     "private_node": {},
     "public": {
-     "function_signature_changed": 2,
-     "symbol_added": 65,
-     "symbol_removed": 115,
      "symbol_version_renamed": 1
     },
     "soname": [
@@ -34,997 +33,1236 @@
     "symbol_events": [
      {
       "kind": "symbol_removed",
-      "pretty": "method std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>,std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>>& std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>,std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>>::operator=(const std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>,std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>>&)",
-      "symbol": "_ZNSt6vectorINSt7__cxx119sub_matchIN9__gnu_cxx17__normal_iteratorIPKcNS0_12basic_stringIcSt11char_traitsIcESaIcEEEEEEESaISC_EEaSERKSE_"
+      "pretty": "function __gnu_cxx::__normal_iterator<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > std::__find_if<__gnu_cxx::__normal_iterator<const std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > > >, __gnu_cxx::__ops::_Iter_equals_val<const std::__cxx11::basic_string<char> > >(__gnu_cxx::__normal_iterator<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, __gnu_cxx::__normal_iterator<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, __gnu_cxx::__ops::_Iter_equals_val<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::random_access_iterator_tag)",
+      "symbol": "_ZSt9__find_ifIN9__gnu_cxx17__normal_iteratorIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS7_SaIS7_EEEENS0_5__ops16_Iter_equals_valIS8_EEET_SH_SH_T0_St26random_access_iterator_tag",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method std::__detail::_State<char>::~_State()",
-      "symbol": "_ZNSt8__detail6_StateIcED2Ev"
+      "pretty": "function void std::__final_insertion_sort<__gnu_cxx::__normal_iterator<wchar_t*, std::vector<wchar_t, std::allocator<wchar_t> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<wchar_t*, std::vector<wchar_t, std::allocator<wchar_t> > >, __gnu_cxx::__normal_iterator<wchar_t*, std::vector<wchar_t, std::allocator<wchar_t> > >, __gnu_cxx::__ops::_Iter_less_iter)",
+      "symbol": "_ZSt22__final_insertion_sortIN9__gnu_cxx17__normal_iteratorIPwSt6vectorIwSaIwEEEENS0_5__ops15_Iter_less_iterEEvT_S9_T0_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::vector<std::pair<char,char>,std::allocator<std::pair<char,char>>>::emplace_back<std::pair<char,char>>()",
-      "symbol": "_ZNSt6vectorISt4pairIccESaIS1_EE12emplace_backIJS1_EEEvDpOT_"
+      "pretty": "function void std::__final_insertion_sort<__gnu_cxx::__normal_iterator<char*, std::vector<char, std::allocator<char> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<char*, std::vector<char, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char*, std::vector<char, std::allocator<char> > >, __gnu_cxx::__ops::_Iter_less_iter)",
+      "symbol": "_ZSt22__final_insertion_sortIN9__gnu_cxx17__normal_iteratorIPcSt6vectorIcSaIcEEEENS0_5__ops15_Iter_less_iterEEvT_S9_T0_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::_Rb_tree<longint,std::pair<longintconst,longint>,std::_Select1st<std::pair<longintconst,longint>>,std::less<longint>,std::allocator<std::pair<longintconst,longint>>>::_M_erase(std::_Rb_tree<longint,std::pair<longintconst,longint>,std::_Select1st<std::pair<longintconst,longint>>,std::less<longint>,std::allocator<std::pair<longintconst,longint>>>::_Link_type)",
-      "symbol": "_ZNSt8_Rb_treeIlSt4pairIKllESt10_Select1stIS2_ESt4lessIlESaIS2_EE8_M_eraseEPSt13_Rb_tree_nodeIS2_E"
+      "pretty": "function void std::__insertion_sort<__gnu_cxx::__normal_iterator<wchar_t*, std::vector<wchar_t, std::allocator<wchar_t> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<wchar_t*, std::vector<wchar_t, std::allocator<wchar_t> > >, __gnu_cxx::__normal_iterator<wchar_t*, std::vector<wchar_t, std::allocator<wchar_t> > >, __gnu_cxx::__ops::_Iter_less_iter)",
+      "symbol": "_ZSt16__insertion_sortIN9__gnu_cxx17__normal_iteratorIPwSt6vectorIwSaIwEEEENS0_5__ops15_Iter_less_iterEEvT_S9_T0_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::_M_construct<__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t>>>(__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>, __gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>, std::forward_iterator_tag)",
-      "symbol": "_ZNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEE12_M_constructIN9__gnu_cxx17__normal_iteratorIPKwS4_EEEEvT_SB_St20forward_iterator_tag"
+      "pretty": "function void std::__insertion_sort<__gnu_cxx::__normal_iterator<char*, std::vector<char, std::allocator<char> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<char*, std::vector<char, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char*, std::vector<char, std::allocator<char> > >, __gnu_cxx::__ops::_Iter_less_iter)",
+      "symbol": "_ZSt16__insertion_sortIN9__gnu_cxx17__normal_iteratorIPcSt6vectorIcSaIcEEEENS0_5__ops15_Iter_less_iterEEvT_S9_T0_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<char>>::_M_insert_any_matcher_ecma<true,false>()",
-      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIcEEE26_M_insert_any_matcher_ecmaILb1ELb0EEEvv"
+      "pretty": "function void std::__adjust_heap<__gnu_cxx::__normal_iterator<wchar_t*, std::vector<wchar_t, std::allocator<wchar_t> > >, long int, wchar_t, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<wchar_t*, std::vector<wchar_t, std::allocator<wchar_t> > >, long int, long int, wchar_t, __gnu_cxx::__ops::_Iter_less_iter)",
+      "symbol": "_ZSt13__adjust_heapIN9__gnu_cxx17__normal_iteratorIPwSt6vectorIwSaIwEEEElwNS0_5__ops15_Iter_less_iterEEvT_T0_SA_T1_T2_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method int std::__cxx11::regex_traits<char>::value(char, int) const",
-      "symbol": "_ZNKSt7__cxx1112regex_traitsIcE5valueEci"
+      "pretty": "method void std::function<bool(wchar_t)>::function<std::__detail::_BracketMatcher<std::__cxx11::regex_traits<wchar_t>, false, false> >(std::__detail::_BracketMatcher<std::__cxx11::regex_traits<wchar_t>, false, false>)",
+      "symbol": "_ZNSt8functionIFbwEEC2INSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIwEELb0ELb0EEEvvEET_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method bool std::__cxx11::regex_traits<char>::isctype(char, std::__cxx11::regex_traits<char>::char_class_type) const",
-      "symbol": "_ZNKSt7__cxx1112regex_traitsIcE7isctypeEcNS1_10_RegexMaskE"
+      "pretty": "function __gnu_cxx::__normal_iterator<wchar_t*, std::vector<wchar_t, std::allocator<wchar_t> > > std::__unique<__gnu_cxx::__normal_iterator<wchar_t*, std::vector<wchar_t, std::allocator<wchar_t> > >, __gnu_cxx::__ops::_Iter_equal_to_iter>(__gnu_cxx::__normal_iterator<wchar_t*, std::vector<wchar_t, std::allocator<wchar_t> > >, __gnu_cxx::__normal_iterator<wchar_t*, std::vector<wchar_t, std::allocator<wchar_t> > >, __gnu_cxx::__ops::_Iter_equal_to_iter)",
+      "symbol": "_ZSt8__uniqueIN9__gnu_cxx17__normal_iteratorIPwSt6vectorIwSaIwEEEENS0_5__ops19_Iter_equal_to_iterEET_S9_S9_T0_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method bool std::__cxx11::regex_iterator<__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,char,std::__cxx11::regex_traits<char>>::operator==(const std::__cxx11::regex_iterator<__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,char,std::__cxx11::regex_traits<char>>&) const",
-      "symbol": "_ZNKSt7__cxx1114regex_iteratorIN9__gnu_cxx17__normal_iteratorIPKcNS_12basic_stringIcSt11char_traitsIcESaIcEEEEEcNS_12regex_traitsIcEEEeqERKSD_"
+      "pretty": "method void std::function<bool(char)>::function<std::__detail::_BracketMatcher<std::__cxx11::regex_traits<char>, false, true> >(std::__detail::_BracketMatcher<std::__cxx11::regex_traits<char>, false, true>)",
+      "symbol": "_ZNSt8functionIFbcEEC2INSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIcEELb0ELb1EEEvvEET_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_AnyMatcher<std::__cxx11::regex_traits<char>,true,true,true>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIcEELb1ELb1ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method std::pair<std::__detail::_Node_iterator<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,Soros>,false,true>,bool> std::_Hashtable<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,Soros>,std::allocator<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,Soros>>,std::__detail::_Select1st,std::equal_to<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::hash<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::__detail::_Mod_range_hashing,std::__detail::_Default_ranged_hash,std::__detail::_Prime_rehash_policy,std::__detail::_Hashtable_traits<true,false,true>>::_M_emplace<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,Soros>>(std::true_type)",
-      "symbol": "_ZNSt10_HashtableINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_5SorosESaIS9_ENSt8__detail10_Select1stESt8equal_toIS5_ESt4hashIS5_ENSB_18_Mod_range_hashingENSB_20_Default_ranged_hashENSB_20_Prime_rehash_policyENSB_17_Hashtable_traitsILb1ELb0ELb1EEEE10_M_emplaceIJS6_IS5_S8_EEEES6_INSB_14_Node_iteratorIS9_Lb0ELb1EEEbESt17integral_constantIbLb1EEDpOT_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method std::_Deque_base<std::__detail::_StateSeq<std::__cxx11::regex_traits<wchar_t>>,std::allocator<std::__detail::_StateSeq<std::__cxx11::regex_traits<wchar_t>>>>::~_Deque_base()",
-      "symbol": "_ZNSt11_Deque_baseINSt8__detail9_StateSeqINSt7__cxx1112regex_traitsIwEEEESaIS5_EED2Ev"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::function<bool(wchar_t)>::function<std::__detail::_BracketMatcher<std::__cxx11::regex_traits<wchar_t>,false,true>>(std::__detail::_BracketMatcher<std::__cxx11::regex_traits<wchar_t>,false,true>)",
-      "symbol": "_ZNSt8functionIFbwEEC2INSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIwEELb0ELb1EEEvvEET_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_AnyMatcher<std::__cxx11::regex_traits<char>,false,false,false>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIcEELb0ELb0ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<wchar_t>>::_M_insert_any_matcher_ecma<true,true>()",
-      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIwEEE26_M_insert_any_matcher_ecmaILb1ELb1EEEvv"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_AnyMatcher<std::__cxx11::regex_traits<char>,true,false,false>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIcEELb1ELb0ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<wchar_t>>::_M_insert_any_matcher_posix<true,false>()",
-      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIwEEE27_M_insert_any_matcher_posixILb1ELb0EEEvv"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_AnyMatcher<std::__cxx11::regex_traits<char>,true,true,false>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIcEELb1ELb1ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_AnyMatcher<std::__cxx11::regex_traits<wchar_t>,false,false,false>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIwEELb0ELb0ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_AnyMatcher<std::__cxx11::regex_traits<wchar_t>,true,false,false>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIwEELb1ELb0ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "function void std::__adjust_heap<__gnu_cxx::__normal_iterator<wchar_t*,std::vector<wchar_t,std::allocator<wchar_t>>>,longint,wchar_t,__gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<wchar_t*,std::vector<wchar_t,std::allocator<wchar_t>>>, long int, long int, wchar_t, __gnu_cxx::__ops::_Iter_less_iter)",
-      "symbol": "_ZSt13__adjust_heapIN9__gnu_cxx17__normal_iteratorIPwSt6vectorIwSaIwEEEElwNS0_5__ops15_Iter_less_iterEEvT_T0_SA_T1_T2_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::vector<bool,std::allocator<bool>>::_M_insert_aux(std::vector<bool,std::allocator<bool>>::iterator, bool)",
-      "symbol": "_ZNSt6vectorIbSaIbEE13_M_insert_auxESt13_Bit_iteratorb"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "function __gnu_cxx::__normal_iterator<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>*,std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>> std::__find_if<__gnu_cxx::__normal_iterator<conststd::__cxx11::basic_string<char>*,std::vector<std::__cxx11::basic_string<char>,std::allocator<std::__cxx11::basic_string<char>>>>,__gnu_cxx::__ops::_Iter_equals_val<conststd::__cxx11::basic_string<char>>>(__gnu_cxx::__normal_iterator<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>*,std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>, __gnu_cxx::__normal_iterator<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>*,std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>, __gnu_cxx::__ops::_Iter_equals_val<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>, std::random_access_iterator_tag)",
-      "symbol": "_ZSt9__find_ifIN9__gnu_cxx17__normal_iteratorIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS7_SaIS7_EEEENS0_5__ops16_Iter_equals_valIS8_EEET_SH_SH_T0_St26random_access_iterator_tag"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_BracketMatcher<std::__cxx11::regex_traits<wchar_t>,true,true>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIwEELb1ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_AnyMatcher<std::__cxx11::regex_traits<wchar_t>,true,true,false>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIwEELb1ELb1ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::_M_construct<charconst*>(const char*, const char*, std::forward_iterator_tag)",
-      "symbol": "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tag"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>>,std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>>>>& std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>>,std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>>>>::operator=(const std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>>,std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>>>>&)",
-      "symbol": "_ZNSt6vectorINSt7__cxx119sub_matchIN9__gnu_cxx17__normal_iteratorIPKwNS0_12basic_stringIwSt11char_traitsIwESaIwEEEEEEESaISC_EEaSERKSE_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_CharMatcher<std::__cxx11::regex_traits<char>,true,true>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail12_CharMatcherINSt7__cxx1112regex_traitsIcEELb1ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_CharMatcher<std::__cxx11::regex_traits<wchar_t>,false,false>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail12_CharMatcherINSt7__cxx1112regex_traitsIwEELb0ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::function<bool(char)>::function<std::__detail::_BracketMatcher<std::__cxx11::regex_traits<char>,true,false>>(std::__detail::_BracketMatcher<std::__cxx11::regex_traits<char>,true,false>)",
-      "symbol": "_ZNSt8functionIFbcEEC2INSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIcEELb1ELb0EEEvvEET_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_CharMatcher<std::__cxx11::regex_traits<wchar_t>,false,true>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail12_CharMatcherINSt7__cxx1112regex_traitsIwEELb0ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<char>>::_M_insert_any_matcher_posix<false,true>()",
-      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIcEEE27_M_insert_any_matcher_posixILb0ELb1EEEvv"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_BracketMatcher<std::__cxx11::regex_traits<char>,true,false>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIcEELb1ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_AnyMatcher<std::__cxx11::regex_traits<wchar_t>,true,false,true>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIwEELb1ELb0ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_BracketMatcher<std::__cxx11::regex_traits<char>,false,true>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIcEELb0ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_BracketMatcher<std::__cxx11::regex_traits<char>,true,true>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIcEELb1ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<wchar_t>>::_M_insert_any_matcher_ecma<false,true>()",
-      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIwEEE26_M_insert_any_matcher_ecmaILb0ELb1EEEvv"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_BracketMatcher<std::__cxx11::regex_traits<wchar_t>,false,false>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIwEELb0ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_BracketMatcher<std::__cxx11::regex_traits<wchar_t>,false,true>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIwEELb0ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<char>>::_M_insert_any_matcher_ecma<false,false>()",
-      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIcEEE26_M_insert_any_matcher_ecmaILb0ELb0EEEvv"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<wchar_t>>::_M_insert_any_matcher_ecma<false,false>()",
-      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIwEEE26_M_insert_any_matcher_ecmaILb0ELb0EEEvv"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::function<bool(wchar_t)>::function<std::__detail::_BracketMatcher<std::__cxx11::regex_traits<wchar_t>,true,true>>(std::__detail::_BracketMatcher<std::__cxx11::regex_traits<wchar_t>,true,true>)",
-      "symbol": "_ZNSt8functionIFbwEEC2INSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIwEELb1ELb1EEEvvEET_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::function<bool(char)>::function<std::__detail::_BracketMatcher<std::__cxx11::regex_traits<char>,false,true>>(std::__detail::_BracketMatcher<std::__cxx11::regex_traits<char>,false,true>)",
-      "symbol": "_ZNSt8functionIFbcEEC2INSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIcEELb0ELb1EEEvvEET_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<wchar_t>>::_M_insert_any_matcher_posix<true,true>()",
-      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIwEEE27_M_insert_any_matcher_posixILb1ELb1EEEvv"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_CharMatcher<std::__cxx11::regex_traits<char>,true,false>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail12_CharMatcherINSt7__cxx1112regex_traitsIcEELb1ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_BracketMatcher<std::__cxx11::regex_traits<wchar_t>,true,false>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIwEELb1ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<char>>::_M_insert_char_matcher<false,false>()",
-      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIcEEE22_M_insert_char_matcherILb0ELb0EEEvv"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<char>>::_M_insert_any_matcher_posix<true,false>()",
-      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIcEEE27_M_insert_any_matcher_posixILb1ELb0EEEvv"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "function __gnu_cxx::__normal_iterator<conststd::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>*,std::vector<std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>,std::allocator<std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>>> std::__find_if<__gnu_cxx::__normal_iterator<conststd::__cxx11::basic_string<wchar_t>*,std::vector<std::__cxx11::basic_string<wchar_t>>>,__gnu_cxx::__ops::_Iter_equals_val<conststd::__cxx11::basic_string<wchar_t>>>(__gnu_cxx::__normal_iterator<conststd::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>*,std::vector<std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>,std::allocator<std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>>>, __gnu_cxx::__normal_iterator<conststd::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>*,std::vector<std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>,std::allocator<std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>>>, __gnu_cxx::__ops::_Iter_equals_val<conststd::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>, std::random_access_iterator_tag)",
-      "symbol": "_ZSt9__find_ifIN9__gnu_cxx17__normal_iteratorIPKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEESt6vectorIS7_SaIS7_EEEENS0_5__ops16_Iter_equals_valIS8_EEET_SH_SH_T0_St26random_access_iterator_tag"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool std::__cxx11::regex_traits<wchar_t>::isctype(wchar_t, std::__cxx11::regex_traits<wchar_t>::char_class_type) const",
-      "symbol": "_ZNKSt7__cxx1112regex_traitsIwE7isctypeEwNS1_10_RegexMaskE"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<char>>::_M_insert_char_matcher<false,true>()",
-      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIcEEE22_M_insert_char_matcherILb0ELb1EEEvv"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>>,std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>>>>::_M_default_append(std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>>,std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>>>>::size_type)",
-      "symbol": "_ZNSt6vectorINSt7__cxx119sub_matchIN9__gnu_cxx17__normal_iteratorIPKwNS0_12basic_stringIwSt11char_traitsIwESaIwEEEEEEESaISC_EE17_M_default_appendEm"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::__detail::_BracketMatcher<std::__cxx11::regex_traits<wchar_t>,true,false>::_M_add_char(std::__detail::_BracketMatcher<std::__cxx11::regex_traits<wchar_t>,true,false>::_CharT)",
-      "symbol": "_ZNSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIwEELb1ELb0EE11_M_add_charEw"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool std::__detail::_Executor<__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>,std::__cxx11::regex_traits<char>,false>::_M_main_dispatch(std::__detail::_Executor<__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>,std::__cxx11::regex_traits<char>,false>::_Match_mode, std::__detail::_Executor<__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>,std::__cxx11::regex_traits<char>,false>::__bfs)",
-      "symbol": "_ZNSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIcEELb0EE16_M_main_dispatchENSH_11_Match_modeESt17integral_constantIbLb0EE"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "function __gnu_cxx::__normal_iterator<wchar_t*,std::vector<wchar_t,std::allocator<wchar_t>>> std::__unique<__gnu_cxx::__normal_iterator<wchar_t*,std::vector<wchar_t,std::allocator<wchar_t>>>,__gnu_cxx::__ops::_Iter_equal_to_iter>(__gnu_cxx::__normal_iterator<wchar_t*,std::vector<wchar_t,std::allocator<wchar_t>>>, __gnu_cxx::__normal_iterator<wchar_t*,std::vector<wchar_t,std::allocator<wchar_t>>>, __gnu_cxx::__ops::_Iter_equal_to_iter)",
-      "symbol": "_ZSt8__uniqueIN9__gnu_cxx17__normal_iteratorIPwSt6vectorIwSaIwEEEENS0_5__ops19_Iter_equal_to_iterEET_S9_S9_T0_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_AnyMatcher<std::__cxx11::regex_traits<wchar_t>,false,true,true>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIwEELb0ELb1ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::__detail::_BracketMatcher<std::__cxx11::regex_traits<wchar_t>,true,true>::_M_add_char(std::__detail::_BracketMatcher<std::__cxx11::regex_traits<wchar_t>,true,true>::_CharT)",
-      "symbol": "_ZNSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIwEELb1ELb1EE11_M_add_charEw"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::vector<std::pair<wchar_t,wchar_t>,std::allocator<std::pair<wchar_t,wchar_t>>>::emplace_back<std::pair<wchar_t,wchar_t>>()",
-      "symbol": "_ZNSt6vectorISt4pairIwwESaIS1_EE12emplace_backIJS1_EEEvDpOT_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method int std::__detail::_Compiler<std::__cxx11::regex_traits<char>>::_M_cur_int_value(int)",
-      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIcEEE16_M_cur_int_valueEi"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method int std::__cxx11::regex_traits<wchar_t>::value(wchar_t, int) const",
-      "symbol": "_ZNKSt7__cxx1112regex_traitsIwE5valueEwi"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::function<bool(char)>::function<std::__detail::_BracketMatcher<std::__cxx11::regex_traits<char>,false,false>>(std::__detail::_BracketMatcher<std::__cxx11::regex_traits<char>,false,false>)",
-      "symbol": "_ZNSt8functionIFbcEEC2INSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIcEELb0ELb0EEEvvEET_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_CharMatcher<std::__cxx11::regex_traits<wchar_t>,true,true>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail12_CharMatcherINSt7__cxx1112regex_traitsIwEELb1ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "function __gnu_cxx::__normal_iterator<char*,std::vector<char,std::allocator<char>>> std::__unique<__gnu_cxx::__normal_iterator<char*,std::vector<char,std::allocator<char>>>,__gnu_cxx::__ops::_Iter_equal_to_iter>(__gnu_cxx::__normal_iterator<char*,std::vector<char,std::allocator<char>>>, __gnu_cxx::__normal_iterator<char*,std::vector<char,std::allocator<char>>>, __gnu_cxx::__ops::_Iter_equal_to_iter)",
-      "symbol": "_ZSt8__uniqueIN9__gnu_cxx17__normal_iteratorIPcSt6vectorIcSaIcEEEENS0_5__ops19_Iter_equal_to_iterEET_S9_S9_T0_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>,std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>>::_M_default_append(std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>,std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>>::size_type)",
-      "symbol": "_ZNSt6vectorINSt7__cxx119sub_matchIN9__gnu_cxx17__normal_iteratorIPKcNS0_12basic_stringIcSt11char_traitsIcESaIcEEEEEEESaISC_EE17_M_default_appendEm"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<char>>::_M_insert_any_matcher_ecma<false,true>()",
-      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIcEEE26_M_insert_any_matcher_ecmaILb0ELb1EEEvv"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::function<bool(wchar_t)>::function<std::__detail::_BracketMatcher<std::__cxx11::regex_traits<wchar_t>,false,false>>(std::__detail::_BracketMatcher<std::__cxx11::regex_traits<wchar_t>,false,false>)",
-      "symbol": "_ZNSt8functionIFbwEEC2INSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIwEELb0ELb0EEEvvEET_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "function void std::__insertion_sort<__gnu_cxx::__normal_iterator<wchar_t*,std::vector<wchar_t,std::allocator<wchar_t>>>,__gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<wchar_t*,std::vector<wchar_t,std::allocator<wchar_t>>>, __gnu_cxx::__normal_iterator<wchar_t*,std::vector<wchar_t,std::allocator<wchar_t>>>, __gnu_cxx::__ops::_Iter_less_iter)",
-      "symbol": "_ZSt16__insertion_sortIN9__gnu_cxx17__normal_iteratorIPwSt6vectorIwSaIwEEEENS0_5__ops15_Iter_less_iterEEvT_S9_T0_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<wchar_t>>::_M_insert_char_matcher<true,false>()",
-      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIwEEE22_M_insert_char_matcherILb1ELb0EEEvv"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::__detail::_Scanner<char>::_M_advance()",
-      "symbol": "_ZNSt8__detail8_ScannerIcE10_M_advanceEv"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_AnyMatcher<std::__cxx11::regex_traits<char>,false,false,true>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIcEELb0ELb0ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_AnyMatcher<std::__cxx11::regex_traits<wchar_t>,true,true,true>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIwEELb1ELb1ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_CharMatcher<std::__cxx11::regex_traits<char>,false,false>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail12_CharMatcherINSt7__cxx1112regex_traitsIcEELb0ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<wchar_t>>::_M_insert_char_matcher<false,true>()",
-      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIwEEE22_M_insert_char_matcherILb0ELb1EEEvv"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method std::_Rb_tree<longint,std::pair<longintconst,longint>,std::_Select1st<std::pair<longintconst,longint>>,std::less<longint>,std::allocator<std::pair<longintconst,longint>>>::iterator std::_Rb_tree<longint,std::pair<longintconst,longint>,std::_Select1st<std::pair<longintconst,longint>>,std::less<longint>,std::allocator<std::pair<longintconst,longint>>>::_M_emplace_hint_unique<conststd::piecewise_construct_t&,std::tuple<longintconst&>,std::tuple<>>(std::_Rb_tree<longint,std::pair<longintconst,longint>,std::_Select1st<std::pair<longintconst,longint>>,std::less<longint>,std::allocator<std::pair<longintconst,longint>>>::const_iterator)",
-      "symbol": "_ZNSt8_Rb_treeIlSt4pairIKllESt10_Select1stIS2_ESt4lessIlESaIS2_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJRS1_EESD_IJEEEEESt17_Rb_tree_iteratorIS2_ESt23_Rb_tree_const_iteratorIS2_EDpOT_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method std::_Deque_base<std::__detail::_StateSeq<std::__cxx11::regex_traits<char>>,std::allocator<std::__detail::_StateSeq<std::__cxx11::regex_traits<char>>>>::~_Deque_base()",
-      "symbol": "_ZNSt11_Deque_baseINSt8__detail9_StateSeqINSt7__cxx1112regex_traitsIcEEEESaIS5_EED2Ev"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool std::__detail::_Executor<__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>,std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>>>,std::__cxx11::regex_traits<wchar_t>,false>::_M_main_dispatch(std::__detail::_Executor<__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>,std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>>>,std::__cxx11::regex_traits<wchar_t>,false>::_Match_mode, std::__detail::_Executor<__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>,std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>>>,std::__cxx11::regex_traits<wchar_t>,false>::__bfs)",
-      "symbol": "_ZNSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKwNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIwEELb0EE16_M_main_dispatchENSH_11_Match_modeESt17integral_constantIbLb0EE"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method std::__cxx11::regex_iterator<__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>,wchar_t,std::__cxx11::regex_traits<wchar_t>>& std::__cxx11::regex_iterator<__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>,wchar_t,std::__cxx11::regex_traits<wchar_t>>::operator++()",
-      "symbol": "_ZNSt7__cxx1114regex_iteratorIN9__gnu_cxx17__normal_iteratorIPKwNS_12basic_stringIwSt11char_traitsIwESaIwEEEEEwNS_12regex_traitsIwEEEppEv"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::__detail::_Scanner<wchar_t>::_M_advance()",
-      "symbol": "_ZNSt8__detail8_ScannerIwE10_M_advanceEv"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::vector<std::pair<std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>,std::allocator<std::pair<std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>>>::emplace_back<std::pair<std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>>()",
-      "symbol": "_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEES6_ESaIS7_EE12emplace_backIJS7_EEEvDpOT_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::function<bool(wchar_t)>::function(const std::function<bool(wchar_t)>&)",
-      "symbol": "_ZNSt8functionIFbwEEC2ERKS1_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "function void std::__introsort_loop<__gnu_cxx::__normal_iterator<char*,std::vector<char,std::allocator<char>>>,longint,__gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<char*,std::vector<char,std::allocator<char>>>, __gnu_cxx::__normal_iterator<char*,std::vector<char,std::allocator<char>>>, long int, __gnu_cxx::__ops::_Iter_less_iter)",
-      "symbol": "_ZSt16__introsort_loopIN9__gnu_cxx17__normal_iteratorIPcSt6vectorIcSaIcEEEElNS0_5__ops15_Iter_less_iterEEvT_S9_T0_T1_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<char>>::_M_insert_char_matcher<true,false>()",
-      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIcEEE22_M_insert_char_matcherILb1ELb0EEEvv"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_AnyMatcher<std::__cxx11::regex_traits<char>,false,true,false>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIcEELb0ELb1ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<char>>::_M_insert_any_matcher_posix<false,false>()",
-      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIcEEE27_M_insert_any_matcher_posixILb0ELb0EEEvv"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_CharMatcher<std::__cxx11::regex_traits<wchar_t>,true,false>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail12_CharMatcherINSt7__cxx1112regex_traitsIwEELb1ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::function<bool(char)>::function<std::__detail::_BracketMatcher<std::__cxx11::regex_traits<char>,true,true>>(std::__detail::_BracketMatcher<std::__cxx11::regex_traits<char>,true,true>)",
-      "symbol": "_ZNSt8functionIFbcEEC2INSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIcEELb1ELb1EEEvvEET_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_AnyMatcher<std::__cxx11::regex_traits<char>,false,true,true>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIcEELb0ELb1ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "function void std::__introsort_loop<__gnu_cxx::__normal_iterator<wchar_t*,std::vector<wchar_t,std::allocator<wchar_t>>>,longint,__gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<wchar_t*,std::vector<wchar_t,std::allocator<wchar_t>>>, __gnu_cxx::__normal_iterator<wchar_t*,std::vector<wchar_t,std::allocator<wchar_t>>>, long int, __gnu_cxx::__ops::_Iter_less_iter)",
-      "symbol": "_ZSt16__introsort_loopIN9__gnu_cxx17__normal_iteratorIPwSt6vectorIwSaIwEEEElNS0_5__ops15_Iter_less_iterEEvT_S9_T0_T1_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "function void std::__final_insertion_sort<__gnu_cxx::__normal_iterator<wchar_t*,std::vector<wchar_t,std::allocator<wchar_t>>>,__gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<wchar_t*,std::vector<wchar_t,std::allocator<wchar_t>>>, __gnu_cxx::__normal_iterator<wchar_t*,std::vector<wchar_t,std::allocator<wchar_t>>>, __gnu_cxx::__ops::_Iter_less_iter)",
-      "symbol": "_ZSt22__final_insertion_sortIN9__gnu_cxx17__normal_iteratorIPwSt6vectorIwSaIwEEEENS0_5__ops15_Iter_less_iterEEvT_S9_T0_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_AnyMatcher<std::__cxx11::regex_traits<wchar_t>,false,true,false>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIwEELb0ELb1ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "function void std::__final_insertion_sort<__gnu_cxx::__normal_iterator<char*,std::vector<char,std::allocator<char>>>,__gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<char*,std::vector<char,std::allocator<char>>>, __gnu_cxx::__normal_iterator<char*,std::vector<char,std::allocator<char>>>, __gnu_cxx::__ops::_Iter_less_iter)",
-      "symbol": "_ZSt22__final_insertion_sortIN9__gnu_cxx17__normal_iteratorIPcSt6vectorIcSaIcEEEENS0_5__ops15_Iter_less_iterEEvT_S9_T0_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<wchar_t>>::_M_insert_any_matcher_posix<false,false>()",
-      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIwEEE27_M_insert_any_matcher_posixILb0ELb0EEEvv"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_AnyMatcher<std::__cxx11::regex_traits<wchar_t>,false,false,true>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIwEELb0ELb0ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_BracketMatcher<std::__cxx11::regex_traits<char>,false,false>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIcEELb0ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::__detail::_BracketMatcher<std::__cxx11::regex_traits<char>,false,true>::_M_ready()",
-      "symbol": "_ZNSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIcEELb0ELb1EE8_M_readyEv"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<char>>::_M_insert_any_matcher_posix<true,true>()",
-      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIcEEE27_M_insert_any_matcher_posixILb1ELb1EEEvv"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<wchar_t>>::_M_insert_char_matcher<true,true>()",
-      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIwEEE22_M_insert_char_matcherILb1ELb1EEEvv"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_AnyMatcher<std::__cxx11::regex_traits<char>,true,false,true>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIcEELb1ELb0ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::_M_construct<wchar_tconst*>(const wchar_t*, const wchar_t*, std::forward_iterator_tag)",
-      "symbol": "_ZNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEE12_M_constructIPKwEEvT_S8_St20forward_iterator_tag"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::_M_construct<char*>(char*, char*, std::forward_iterator_tag)",
-      "symbol": "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPcEEvT_S7_St20forward_iterator_tag"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::vector<std::pair<longint,std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>>,std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>>>>>,std::allocator<std::pair<longint,std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>>,std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>>>>>>>::emplace_back<longint&,conststd::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>>,std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>>>>&>()",
-      "symbol": "_ZNSt6vectorISt4pairIlS_INSt7__cxx119sub_matchIN9__gnu_cxx17__normal_iteratorIPKwNS1_12basic_stringIwSt11char_traitsIwESaIwEEEEEEESaISD_EEESaISG_EE12emplace_backIJRlRKSF_EEEvDpOT_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::vector<std::pair<longint,std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>,std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>>>,std::allocator<std::pair<longint,std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>,std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>>>>>::emplace_back<longint&,conststd::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>,std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>>&>()",
-      "symbol": "_ZNSt6vectorISt4pairIlS_INSt7__cxx119sub_matchIN9__gnu_cxx17__normal_iteratorIPKcNS1_12basic_stringIcSt11char_traitsIcESaIcEEEEEEESaISD_EEESaISG_EE12emplace_backIJRlRKSF_EEEvDpOT_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool std::__cxx11::regex_iterator<__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>,wchar_t,std::__cxx11::regex_traits<wchar_t>>::operator==(const std::__cxx11::regex_iterator<__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>,wchar_t,std::__cxx11::regex_traits<wchar_t>>&) const",
-      "symbol": "_ZNKSt7__cxx1114regex_iteratorIN9__gnu_cxx17__normal_iteratorIPKwNS_12basic_stringIwSt11char_traitsIwESaIwEEEEEwNS_12regex_traitsIwEEEeqERKSD_"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method std::__detail::_State<wchar_t>::~_State()",
-      "symbol": "_ZNSt8__detail6_StateIwED2Ev"
+      "pretty": "method void std::function<bool(char)>::function<std::__detail::_BracketMatcher<std::__cxx11::regex_traits<char>, false, false> >(std::__detail::_BracketMatcher<std::__cxx11::regex_traits<char>, false, false>)",
+      "symbol": "_ZNSt8functionIFbcEEC2INSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIcEELb0ELb0EEEvvEET_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
       "pretty": "method void std::function<bool(char)>::function(const std::function<bool(char)>&)",
-      "symbol": "_ZNSt8functionIFbcEEC2ERKS1_"
+      "symbol": "_ZNSt8functionIFbcEEC2ERKS1_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "function void std::__insertion_sort<__gnu_cxx::__normal_iterator<char*,std::vector<char,std::allocator<char>>>,__gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<char*,std::vector<char,std::allocator<char>>>, __gnu_cxx::__normal_iterator<char*,std::vector<char,std::allocator<char>>>, __gnu_cxx::__ops::_Iter_less_iter)",
-      "symbol": "_ZSt16__insertion_sortIN9__gnu_cxx17__normal_iteratorIPcSt6vectorIcSaIcEEEENS0_5__ops15_Iter_less_iterEEvT_S9_T0_"
+      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<wchar_t> >::_M_insert_any_matcher_posix<true, true>()",
+      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIwEEE27_M_insert_any_matcher_posixILb1ELb1EEEvv",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::function<bool(wchar_t)>::function<std::__detail::_BracketMatcher<std::__cxx11::regex_traits<wchar_t>,true,false>>(std::__detail::_BracketMatcher<std::__cxx11::regex_traits<wchar_t>,true,false>)",
-      "symbol": "_ZNSt8functionIFbwEEC2INSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIwEELb1ELb0EEEvvEET_"
+      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<wchar_t> >::_M_insert_any_matcher_posix<false, true>()",
+      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIwEEE27_M_insert_any_matcher_posixILb0ELb1EEEvv",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_CharMatcher<std::__cxx11::regex_traits<char>,false,true>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail12_CharMatcherINSt7__cxx1112regex_traitsIcEELb0ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
+      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<wchar_t> >::_M_insert_any_matcher_posix<false, false>()",
+      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIwEEE27_M_insert_any_matcher_posixILb0ELb0EEEvv",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<char>>::_M_insert_char_matcher<true,true>()",
-      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIcEEE22_M_insert_char_matcherILb1ELb1EEEvv"
+      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<wchar_t> >::_M_insert_any_matcher_ecma<false, true>()",
+      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIwEEE26_M_insert_any_matcher_ecmaILb0ELb1EEEvv",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<wchar_t>>::_M_insert_any_matcher_posix<false,true>()",
-      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIwEEE27_M_insert_any_matcher_posixILb0ELb1EEEvv"
+      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<wchar_t> >::_M_insert_any_matcher_ecma<false, false>()",
+      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIwEEE26_M_insert_any_matcher_ecmaILb0ELb0EEEvv",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<char>>::_M_insert_any_matcher_ecma<true,true>()",
-      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIcEEE26_M_insert_any_matcher_ecmaILb1ELb1EEEvv"
+      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_CharMatcher<std::__cxx11::regex_traits<char>, true, true> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail12_CharMatcherINSt7__cxx1112regex_traitsIcEELb1ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method std::__cxx11::regex_iterator<__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,char,std::__cxx11::regex_traits<char>>& std::__cxx11::regex_iterator<__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,char,std::__cxx11::regex_traits<char>>::operator++()",
-      "symbol": "_ZNSt7__cxx1114regex_iteratorIN9__gnu_cxx17__normal_iteratorIPKcNS_12basic_stringIcSt11char_traitsIcESaIcEEEEEcNS_12regex_traitsIcEEEppEv"
+      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_BracketMatcher<std::__cxx11::regex_traits<char>, true, false> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIcEELb1ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "function void std::__adjust_heap<__gnu_cxx::__normal_iterator<char*,std::vector<char,std::allocator<char>>>,longint,char,__gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<char*,std::vector<char,std::allocator<char>>>, long int, long int, char, __gnu_cxx::__ops::_Iter_less_iter)",
-      "symbol": "_ZSt13__adjust_heapIN9__gnu_cxx17__normal_iteratorIPcSt6vectorIcSaIcEEEElcNS0_5__ops15_Iter_less_iterEEvT_T0_SA_T1_T2_"
+      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<char> >::_M_insert_any_matcher_posix<false, true>()",
+      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIcEEE27_M_insert_any_matcher_posixILb0ELb1EEEvv",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<wchar_t>>::_M_insert_any_matcher_ecma<true,false>()",
-      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIwEEE26_M_insert_any_matcher_ecmaILb1ELb0EEEvv"
+      "pretty": "function void std::__adjust_heap<__gnu_cxx::__normal_iterator<char*, std::vector<char, std::allocator<char> > >, long int, char, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<char*, std::vector<char, std::allocator<char> > >, long int, long int, char, __gnu_cxx::__ops::_Iter_less_iter)",
+      "symbol": "_ZSt13__adjust_heapIN9__gnu_cxx17__normal_iteratorIPcSt6vectorIcSaIcEEEElcNS0_5__ops15_Iter_less_iterEEvT_T0_SA_T1_T2_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<wchar_t>>::_M_insert_char_matcher<false,false>()",
-      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIwEEE22_M_insert_char_matcherILb0ELb0EEEvv"
+      "pretty": "method void std::function<bool(wchar_t)>::function<std::__detail::_BracketMatcher<std::__cxx11::regex_traits<wchar_t>, false, true> >(std::__detail::_BracketMatcher<std::__cxx11::regex_traits<wchar_t>, false, true>)",
+      "symbol": "_ZNSt8functionIFbwEEC2INSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIwEELb0ELb1EEEvvEET_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_AnyMatcher<std::__cxx11::regex_traits<wchar_t>, false, false, true> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIwEELb0ELb0ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_CharMatcher<std::__cxx11::regex_traits<wchar_t>, true, true> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail12_CharMatcherINSt7__cxx1112regex_traitsIwEELb1ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_CharMatcher<std::__cxx11::regex_traits<wchar_t>, true, false> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail12_CharMatcherINSt7__cxx1112regex_traitsIwEELb1ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_BracketMatcher<std::__cxx11::regex_traits<wchar_t>, true, true> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIwEELb1ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_CharMatcher<std::__cxx11::regex_traits<wchar_t>, false, false> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail12_CharMatcherINSt7__cxx1112regex_traitsIwEELb0ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_BracketMatcher<std::__cxx11::regex_traits<wchar_t>, true, false> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIwEELb1ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_CharMatcher<std::__cxx11::regex_traits<char>, true, false> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail12_CharMatcherINSt7__cxx1112regex_traitsIcEELb1ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<char> >::_M_insert_char_matcher<false, false>()",
+      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIcEEE22_M_insert_char_matcherILb0ELb0EEEvv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_CharMatcher<std::__cxx11::regex_traits<char>, false, true> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail12_CharMatcherINSt7__cxx1112regex_traitsIcEELb0ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<wchar_t> >::_M_insert_any_matcher_posix<true, false>()",
+      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIwEEE27_M_insert_any_matcher_posixILb1ELb0EEEvv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_AnyMatcher<std::__cxx11::regex_traits<char>, true, false, true> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIcEELb1ELb0ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_AnyMatcher<std::__cxx11::regex_traits<wchar_t>, true, true, false> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIwEELb1ELb1ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::function<bool(wchar_t)>::function<std::__detail::_BracketMatcher<std::__cxx11::regex_traits<wchar_t>, true, false> >(std::__detail::_BracketMatcher<std::__cxx11::regex_traits<wchar_t>, true, false>)",
+      "symbol": "_ZNSt8functionIFbwEEC2INSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIwEELb1ELb0EEEvvEET_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(const char*, const char*, std::forward_iterator_tag)",
+      "symbol": "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tag",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Deque_base<std::__detail::_StateSeq<std::__cxx11::regex_traits<wchar_t> >, std::allocator<std::__detail::_StateSeq<std::__cxx11::regex_traits<wchar_t> > > >::~_Deque_base(int)",
+      "symbol": "_ZNSt11_Deque_baseINSt8__detail9_StateSeqINSt7__cxx1112regex_traitsIwEEEESaIS5_EED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::__detail::_Node_iterator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros>, false, true>, bool> std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros>, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_emplace<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros> >(std::true_type, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros>&&)",
+      "symbol": "_ZNSt10_HashtableINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_5SorosESaIS9_ENSt8__detail10_Select1stESt8equal_toIS5_ESt4hashIS5_ENSB_18_Mod_range_hashingENSB_20_Default_ranged_hashENSB_20_Prime_rehash_policyENSB_17_Hashtable_traitsILb1ELb0ELb1EEEE10_M_emplaceIJS6_IS5_S8_EEEES6_INSB_14_Node_iteratorIS9_Lb0ELb1EEEbESt17integral_constantIbLb1EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_AnyMatcher<std::__cxx11::regex_traits<char>, false, true, false> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIcEELb0ELb1ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_CharMatcher<std::__cxx11::regex_traits<wchar_t>, false, true> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail12_CharMatcherINSt7__cxx1112regex_traitsIwEELb0ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<char> >::_M_insert_any_matcher_posix<false, false>()",
+      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIcEEE27_M_insert_any_matcher_posixILb0ELb0EEEvv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<wchar_t> >::_M_insert_any_matcher_ecma<true, false>()",
+      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIwEEE26_M_insert_any_matcher_ecmaILb1ELb0EEEvv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Deque_base<std::__detail::_StateSeq<std::__cxx11::regex_traits<char> >, std::allocator<std::__detail::_StateSeq<std::__cxx11::regex_traits<char> > > >::~_Deque_base(int)",
+      "symbol": "_ZNSt11_Deque_baseINSt8__detail9_StateSeqINSt7__cxx1112regex_traitsIcEEEESaIS5_EED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_BracketMatcher<std::__cxx11::regex_traits<wchar_t>, false, true> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIwEELb0ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool std::__detail::_Executor<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::regex_traits<char>, false>::_M_main_dispatch(std::__detail::_Executor<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::regex_traits<char>, false>::_Match_mode, std::__detail::_Executor<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::regex_traits<char>, false>::__bfs)",
+      "symbol": "_ZNSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIcEELb0EE16_M_main_dispatchENSH_11_Match_modeESt17integral_constantIbLb0EE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_AnyMatcher<std::__cxx11::regex_traits<char>, false, false, true> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIcEELb0ELb0ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_AnyMatcher<std::__cxx11::regex_traits<wchar_t>, true, true, true> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIwEELb1ELb1ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function __gnu_cxx::__normal_iterator<const std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >*, std::vector<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::allocator<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > std::__find_if<__gnu_cxx::__normal_iterator<const std::__cxx11::basic_string<wchar_t>*, std::vector<std::__cxx11::basic_string<wchar_t> > >, __gnu_cxx::__ops::_Iter_equals_val<const std::__cxx11::basic_string<wchar_t> > >(__gnu_cxx::__normal_iterator<const std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >*, std::vector<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::allocator<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > >, __gnu_cxx::__normal_iterator<const std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >*, std::vector<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::allocator<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > >, __gnu_cxx::__ops::_Iter_equals_val<const std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::random_access_iterator_tag)",
+      "symbol": "_ZSt9__find_ifIN9__gnu_cxx17__normal_iteratorIPKNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEESt6vectorIS7_SaIS7_EEEENS0_5__ops16_Iter_equals_valIS8_EEET_SH_SH_T0_St26random_access_iterator_tag",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<wchar_t> >::_M_insert_char_matcher<false, true>()",
+      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIwEEE22_M_insert_char_matcherILb0ELb1EEEvv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool std::__cxx11::regex_iterator<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, wchar_t, std::__cxx11::regex_traits<wchar_t> >::operator==(const std::__cxx11::regex_iterator<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, wchar_t, std::__cxx11::regex_traits<wchar_t> >&) const",
+      "symbol": "_ZNKSt7__cxx1114regex_iteratorIN9__gnu_cxx17__normal_iteratorIPKwNS_12basic_stringIwSt11char_traitsIwESaIwEEEEEwNS_12regex_traitsIwEEEeqERKSD_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::function<bool(char)>::function<std::__detail::_BracketMatcher<std::__cxx11::regex_traits<char>, true, false> >(std::__detail::_BracketMatcher<std::__cxx11::regex_traits<char>, true, false>)",
+      "symbol": "_ZNSt8functionIFbcEEC2INSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIcEELb1ELb0EEEvvEET_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::__detail::_State<wchar_t>::~_State(int)",
+      "symbol": "_ZNSt8__detail6_StateIwED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_AnyMatcher<std::__cxx11::regex_traits<char>, false, false, false> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIcEELb0ELb0ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_AnyMatcher<std::__cxx11::regex_traits<wchar_t>, true, false, false> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIwEELb1ELb0ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::pair<char, char>, std::allocator<std::pair<char, char> > >::emplace_back<std::pair<char, char> >(std::pair<char, char>&&)",
+      "symbol": "_ZNSt6vectorISt4pairIccESaIS1_EE12emplace_backIJS1_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_BracketMatcher<std::__cxx11::regex_traits<char>, false, false> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIcEELb0ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool std::__cxx11::regex_iterator<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, char, std::__cxx11::regex_traits<char> >::operator==(const std::__cxx11::regex_iterator<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, char, std::__cxx11::regex_traits<char> >&) const",
+      "symbol": "_ZNKSt7__cxx1114regex_iteratorIN9__gnu_cxx17__normal_iteratorIPKcNS_12basic_stringIcSt11char_traitsIcESaIcEEEEEcNS_12regex_traitsIcEEEeqERKSD_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > > >, std::allocator<std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > > > > >::emplace_back<long int&, const std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > >&>(long int&, const std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > >&)",
+      "symbol": "_ZNSt6vectorISt4pairIlS_INSt7__cxx119sub_matchIN9__gnu_cxx17__normal_iteratorIPKwNS1_12basic_stringIwSt11char_traitsIwESaIwEEEEEEESaISD_EEESaISG_EE12emplace_backIJRlRKSF_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__detail::_BracketMatcher<std::__cxx11::regex_traits<wchar_t>, true, false>::_M_add_char(std::__detail::_BracketMatcher<std::__cxx11::regex_traits<wchar_t>, true, false>::_CharT)",
+      "symbol": "_ZNSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIwEELb1ELb0EE11_M_add_charEw",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_AnyMatcher<std::__cxx11::regex_traits<char>, false, true, true> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIcEELb0ELb1ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int std::__cxx11::regex_traits<wchar_t>::value(wchar_t, int) const",
+      "symbol": "_ZNKSt7__cxx1112regex_traitsIwE5valueEwi",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void std::__introsort_loop<__gnu_cxx::__normal_iterator<wchar_t*, std::vector<wchar_t, std::allocator<wchar_t> > >, long int, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<wchar_t*, std::vector<wchar_t, std::allocator<wchar_t> > >, __gnu_cxx::__normal_iterator<wchar_t*, std::vector<wchar_t, std::allocator<wchar_t> > >, long int, __gnu_cxx::__ops::_Iter_less_iter)",
+      "symbol": "_ZSt16__introsort_loopIN9__gnu_cxx17__normal_iteratorIPwSt6vectorIwSaIwEEEElNS0_5__ops15_Iter_less_iterEEvT_S9_T0_T1_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_BracketMatcher<std::__cxx11::regex_traits<wchar_t>, false, false> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIwEELb0ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::pair<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<std::pair<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > >::emplace_back<std::pair<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >(std::pair<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >&&)",
+      "symbol": "_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEES6_ESaIS7_EE12emplace_backIJS7_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_M_construct<wchar_t const*>(const wchar_t*, const wchar_t*, std::forward_iterator_tag)",
+      "symbol": "_ZNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEE12_M_constructIPKwEEvT_S8_St20forward_iterator_tag",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<char> >::_M_insert_char_matcher<false, true>()",
+      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIcEEE22_M_insert_char_matcherILb0ELb1EEEvv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_AnyMatcher<std::__cxx11::regex_traits<char>, true, true, false> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIcEELb1ELb1ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >::_M_default_append(std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >::size_type)",
+      "symbol": "_ZNSt6vectorINSt7__cxx119sub_matchIN9__gnu_cxx17__normal_iteratorIPKcNS0_12basic_stringIcSt11char_traitsIcESaIcEEEEEEESaISC_EE17_M_default_appendEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_BracketMatcher<std::__cxx11::regex_traits<char>, false, true> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIcEELb0ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_AnyMatcher<std::__cxx11::regex_traits<wchar_t>, true, false, true> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIwEELb1ELb0ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_AnyMatcher<std::__cxx11::regex_traits<wchar_t>, false, true, true> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIwEELb0ELb1ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<char> >::_M_insert_any_matcher_ecma<true, true>()",
+      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIcEEE26_M_insert_any_matcher_ecmaILb1ELb1EEEvv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > >& std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > >::operator=(const std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > >&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx119sub_matchIN9__gnu_cxx17__normal_iteratorIPKwNS0_12basic_stringIwSt11char_traitsIwESaIwEEEEEEESaISC_EEaSERKSE_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_AnyMatcher<std::__cxx11::regex_traits<char>, true, false, false> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIcEELb1ELb0ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<wchar_t> >::_M_insert_any_matcher_ecma<true, true>()",
+      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIwEEE26_M_insert_any_matcher_ecmaILb1ELb1EEEvv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_AnyMatcher<std::__cxx11::regex_traits<char>, true, true, true> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIcEELb1ELb1ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_AnyMatcher<std::__cxx11::regex_traits<wchar_t>, false, false, false> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIwEELb0ELb0ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > > >, std::allocator<std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > > > > >::emplace_back<long int&, const std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >&>(long int&, const std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >&)",
+      "symbol": "_ZNSt6vectorISt4pairIlS_INSt7__cxx119sub_matchIN9__gnu_cxx17__normal_iteratorIPKcNS1_12basic_stringIcSt11char_traitsIcESaIcEEEEEEESaISD_EEESaISG_EE12emplace_backIJRlRKSF_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool std::__cxx11::regex_traits<char>::isctype(char, std::__cxx11::regex_traits<char>::char_class_type) const",
+      "symbol": "_ZNKSt7__cxx1112regex_traitsIcE7isctypeEcNS1_10_RegexMaskE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::pair<wchar_t, wchar_t>, std::allocator<std::pair<wchar_t, wchar_t> > >::emplace_back<std::pair<wchar_t, wchar_t> >(std::pair<wchar_t, wchar_t>&&)",
+      "symbol": "_ZNSt6vectorISt4pairIwwESaIS1_EE12emplace_backIJS1_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<bool, std::allocator<bool> >::_M_insert_aux(std::vector<bool, std::allocator<bool> >::iterator, bool)",
+      "symbol": "_ZNSt6vectorIbSaIbEE13_M_insert_auxESt13_Bit_iteratorb",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag)",
+      "symbol": "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPcEEvT_S7_St20forward_iterator_tag",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_M_construct<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t> > >(__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, __gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::forward_iterator_tag)",
+      "symbol": "_ZNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEE12_M_constructIN9__gnu_cxx17__normal_iteratorIPKwS4_EEEEvT_SB_St20forward_iterator_tag",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_CharMatcher<std::__cxx11::regex_traits<char>, false, false> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail12_CharMatcherINSt7__cxx1112regex_traitsIcEELb0ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::__cxx11::regex_iterator<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, char, std::__cxx11::regex_traits<char> >& std::__cxx11::regex_iterator<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, char, std::__cxx11::regex_traits<char> >::operator++()",
+      "symbol": "_ZNSt7__cxx1114regex_iteratorIN9__gnu_cxx17__normal_iteratorIPKcNS_12basic_stringIcSt11char_traitsIcESaIcEEEEEcNS_12regex_traitsIcEEEppEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::__cxx11::regex_iterator<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, wchar_t, std::__cxx11::regex_traits<wchar_t> >& std::__cxx11::regex_iterator<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, wchar_t, std::__cxx11::regex_traits<wchar_t> >::operator++()",
+      "symbol": "_ZNSt7__cxx1114regex_iteratorIN9__gnu_cxx17__normal_iteratorIPKwNS_12basic_stringIwSt11char_traitsIwESaIwEEEEEwNS_12regex_traitsIwEEEppEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__detail::_Scanner<wchar_t>::_M_advance()",
+      "symbol": "_ZNSt8__detail8_ScannerIwE10_M_advanceEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >& std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >::operator=(const std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx119sub_matchIN9__gnu_cxx17__normal_iteratorIPKcNS0_12basic_stringIcSt11char_traitsIcESaIcEEEEEEESaISC_EEaSERKSE_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<char> >::_M_insert_any_matcher_posix<true, false>()",
+      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIcEEE27_M_insert_any_matcher_posixILb1ELb0EEEvv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Rb_tree<long int, std::pair<long int const, long int>, std::_Select1st<std::pair<long int const, long int> >, std::less<long int>, std::allocator<std::pair<long int const, long int> > >::iterator std::_Rb_tree<long int, std::pair<long int const, long int>, std::_Select1st<std::pair<long int const, long int> >, std::less<long int>, std::allocator<std::pair<long int const, long int> > >::_M_emplace_hint_unique<const std::piecewise_construct_t&, std::tuple<long int const&>, std::tuple<> >(std::_Rb_tree<long int, std::pair<long int const, long int>, std::_Select1st<std::pair<long int const, long int> >, std::less<long int>, std::allocator<std::pair<long int const, long int> > >::const_iterator, const std::piecewise_construct_t&, std::tuple<long int const&>&&, std::tuple<>&&)",
+      "symbol": "_ZNSt8_Rb_treeIlSt4pairIKllESt10_Select1stIS2_ESt4lessIlESaIS2_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJRS1_EESD_IJEEEEESt17_Rb_tree_iteratorIS2_ESt23_Rb_tree_const_iteratorIS2_EDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::_Rb_tree<long int, std::pair<long int const, long int>, std::_Select1st<std::pair<long int const, long int> >, std::less<long int>, std::allocator<std::pair<long int const, long int> > >::_M_erase(std::_Rb_tree<long int, std::pair<long int const, long int>, std::_Select1st<std::pair<long int const, long int> >, std::less<long int>, std::allocator<std::pair<long int const, long int> > >::_Link_type)",
+      "symbol": "_ZNSt8_Rb_treeIlSt4pairIKllESt10_Select1stIS2_ESt4lessIlESaIS2_EE8_M_eraseEPSt13_Rb_tree_nodeIS2_E",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__detail::_BracketMatcher<std::__cxx11::regex_traits<char>, true, true>::_M_ready()",
+      "symbol": "_ZNSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIcEELb1ELb1EE8_M_readyEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function __gnu_cxx::__normal_iterator<char*, std::vector<char, std::allocator<char> > > std::__unique<__gnu_cxx::__normal_iterator<char*, std::vector<char, std::allocator<char> > >, __gnu_cxx::__ops::_Iter_equal_to_iter>(__gnu_cxx::__normal_iterator<char*, std::vector<char, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char*, std::vector<char, std::allocator<char> > >, __gnu_cxx::__ops::_Iter_equal_to_iter)",
+      "symbol": "_ZSt8__uniqueIN9__gnu_cxx17__normal_iteratorIPcSt6vectorIcSaIcEEEENS0_5__ops19_Iter_equal_to_iterEET_S9_S9_T0_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::__detail::_State<char>::~_State(int)",
+      "symbol": "_ZNSt8__detail6_StateIcED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > >::_M_default_append(std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > >::size_type)",
+      "symbol": "_ZNSt6vectorINSt7__cxx119sub_matchIN9__gnu_cxx17__normal_iteratorIPKwNS0_12basic_stringIwSt11char_traitsIwESaIwEEEEEEESaISC_EE17_M_default_appendEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__detail::_Scanner<char>::_M_advance()",
+      "symbol": "_ZNSt8__detail8_ScannerIcE10_M_advanceEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<wchar_t> >::_M_insert_char_matcher<true, false>()",
+      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIwEEE22_M_insert_char_matcherILb1ELb0EEEvv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool std::__detail::_Executor<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > >, std::__cxx11::regex_traits<wchar_t>, false>::_M_main_dispatch(std::__detail::_Executor<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > >, std::__cxx11::regex_traits<wchar_t>, false>::_Match_mode, std::__detail::_Executor<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > >, std::__cxx11::regex_traits<wchar_t>, false>::__bfs)",
+      "symbol": "_ZNSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKwNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIwEELb0EE16_M_main_dispatchENSH_11_Match_modeESt17integral_constantIbLb0EE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::function<bool(char)>::function<std::__detail::_BracketMatcher<std::__cxx11::regex_traits<char>, true, true> >(std::__detail::_BracketMatcher<std::__cxx11::regex_traits<char>, true, true>)",
+      "symbol": "_ZNSt8functionIFbcEEC2INSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIcEELb1ELb1EEEvvEET_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int std::__cxx11::regex_traits<char>::value(char, int) const",
+      "symbol": "_ZNKSt7__cxx1112regex_traitsIcE5valueEci",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::function<bool(wchar_t)>::function(const std::function<bool(wchar_t)>&)",
+      "symbol": "_ZNSt8functionIFbwEEC2ERKS1_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool std::__cxx11::regex_traits<wchar_t>::isctype(wchar_t, std::__cxx11::regex_traits<wchar_t>::char_class_type) const",
+      "symbol": "_ZNKSt7__cxx1112regex_traitsIwE7isctypeEwNS1_10_RegexMaskE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_AnyMatcher<std::__cxx11::regex_traits<wchar_t>, false, true, false> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIwEELb0ELb1ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<char> >::_M_insert_char_matcher<true, false>()",
+      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIcEEE22_M_insert_char_matcherILb1ELb0EEEvv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<char> >::_M_insert_char_matcher<true, true>()",
+      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIcEEE22_M_insert_char_matcherILb1ELb1EEEvv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool std::_Function_base::_Base_manager<std::__detail::_BracketMatcher<std::__cxx11::regex_traits<char>, true, true> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerINSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIcEELb1ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__detail::_BracketMatcher<std::__cxx11::regex_traits<wchar_t>, true, true>::_M_add_char(std::__detail::_BracketMatcher<std::__cxx11::regex_traits<wchar_t>, true, true>::_CharT)",
+      "symbol": "_ZNSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIwEELb1ELb1EE11_M_add_charEw",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<char> >::_M_insert_any_matcher_ecma<false, false>()",
+      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIcEEE26_M_insert_any_matcher_ecmaILb0ELb0EEEvv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<char> >::_M_insert_any_matcher_ecma<false, true>()",
+      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIcEEE26_M_insert_any_matcher_ecmaILb0ELb1EEEvv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<char> >::_M_insert_any_matcher_ecma<true, false>()",
+      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIcEEE26_M_insert_any_matcher_ecmaILb1ELb0EEEvv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::function<bool(wchar_t)>::function<std::__detail::_BracketMatcher<std::__cxx11::regex_traits<wchar_t>, true, true> >(std::__detail::_BracketMatcher<std::__cxx11::regex_traits<wchar_t>, true, true>)",
+      "symbol": "_ZNSt8functionIFbwEEC2INSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIwEELb1ELb1EEEvvEET_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<char> >::_M_insert_any_matcher_posix<true, true>()",
+      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIcEEE27_M_insert_any_matcher_posixILb1ELb1EEEvv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int std::__detail::_Compiler<std::__cxx11::regex_traits<char> >::_M_cur_int_value(int)",
+      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIcEEE16_M_cur_int_valueEi",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<wchar_t> >::_M_insert_char_matcher<true, true>()",
+      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIwEEE22_M_insert_char_matcherILb1ELb1EEEvv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void std::__introsort_loop<__gnu_cxx::__normal_iterator<char*, std::vector<char, std::allocator<char> > >, long int, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<char*, std::vector<char, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char*, std::vector<char, std::allocator<char> > >, long int, __gnu_cxx::__ops::_Iter_less_iter)",
+      "symbol": "_ZSt16__introsort_loopIN9__gnu_cxx17__normal_iteratorIPcSt6vectorIcSaIcEEEElNS0_5__ops15_Iter_less_iterEEvT_S9_T0_T1_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__detail::_Compiler<std::__cxx11::regex_traits<wchar_t> >::_M_insert_char_matcher<false, false>()",
+      "symbol": "_ZNSt8__detail9_CompilerINSt7__cxx1112regex_traitsIwEEE22_M_insert_char_matcherILb0ELb0EEEvv",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::__detail::_Executor<__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>,std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>>>,std::__cxx11::regex_traits<wchar_t>,true>::_M_handle_backref(std::__detail::_Executor<__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>,std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>>>,std::__cxx11::regex_traits<wchar_t>,true>::_Match_mode, std::__detail::_StateIdT)",
-      "symbol": "_ZNSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKwNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIwEELb1EE17_M_handle_backrefENSH_11_Match_modeEl"
+      "pretty": "method void std::__detail::_Executor<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > >, std::__cxx11::regex_traits<wchar_t>, true>::_M_handle_backref(std::__detail::_Executor<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > >, std::__cxx11::regex_traits<wchar_t>, true>::_Match_mode, std::__detail::_StateIdT)",
+      "symbol": "_ZNSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKwNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIwEELb1EE17_M_handle_backrefENSH_11_Match_modeEl",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "function std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>> std::operator+<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>(std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>&&, std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>&&)",
-      "symbol": "_ZStplIwSt11char_traitsIwESaIwEENSt7__cxx1112basic_stringIT_T0_T1_EEOS8_S9_"
+      "pretty": "function std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > std::operator+<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >(std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >&&, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >&&)",
+      "symbol": "_ZStplIwSt11char_traitsIwESaIwEENSt7__cxx1112basic_stringIT_T0_T1_EEOS8_S9_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::__detail::_Executor<__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>,std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>>>,std::__cxx11::regex_traits<wchar_t>,false>::_M_handle_backref(std::__detail::_Executor<__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>,std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>>>,std::__cxx11::regex_traits<wchar_t>,false>::_Match_mode, std::__detail::_StateIdT)",
-      "symbol": "_ZNSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKwNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIwEELb0EE17_M_handle_backrefENSH_11_Match_modeEl"
+      "pretty": "method void std::__detail::_Executor<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > >, std::__cxx11::regex_traits<wchar_t>, false>::_M_handle_backref(std::__detail::_Executor<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > >, std::__cxx11::regex_traits<wchar_t>, false>::_Match_mode, std::__detail::_StateIdT)",
+      "symbol": "_ZNSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKwNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIwEELb0EE17_M_handle_backrefENSH_11_Match_modeEl",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method std::__detail::_StateIdT std::__detail::_NFA<std::__cxx11::regex_traits<wchar_t>>::_M_insert_subexpr_end()",
-      "symbol": "_ZNSt8__detail4_NFAINSt7__cxx1112regex_traitsIwEEE21_M_insert_subexpr_endEv"
+      "pretty": "method std::__detail::_StateIdT std::__detail::_NFA<std::__cxx11::regex_traits<wchar_t> >::_M_insert_subexpr_end()",
+      "symbol": "_ZNSt8__detail4_NFAINSt7__cxx1112regex_traitsIwEEE21_M_insert_subexpr_endEv",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method bool std::_Function_handler<bool(char),std::__detail::_BracketMatcher<std::__cxx11::regex_traits<char>,false,true>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt17_Function_handlerIFbcENSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIcEELb0ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
+      "pretty": "method bool std::_Function_handler<bool(char), std::__detail::_BracketMatcher<std::__cxx11::regex_traits<char>, false, true> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt17_Function_handlerIFbcENSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIcEELb0ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method bool std::_Function_handler<bool(wchar_t),std::__detail::_CharMatcher<std::__cxx11::regex_traits<wchar_t>,true,false>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt17_Function_handlerIFbwENSt8__detail12_CharMatcherINSt7__cxx1112regex_traitsIwEELb1ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
+      "pretty": "method bool std::_Function_handler<bool(wchar_t), std::__detail::_CharMatcher<std::__cxx11::regex_traits<wchar_t>, true, false> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt17_Function_handlerIFbwENSt8__detail12_CharMatcherINSt7__cxx1112regex_traitsIwEELb1ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method bool std::_Function_handler<bool(char),std::__detail::_CharMatcher<std::__cxx11::regex_traits<char>,true,true>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt17_Function_handlerIFbcENSt8__detail12_CharMatcherINSt7__cxx1112regex_traitsIcEELb1ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
+      "pretty": "method bool std::_Function_handler<bool(char), std::__detail::_CharMatcher<std::__cxx11::regex_traits<char>, true, true> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt17_Function_handlerIFbcENSt8__detail12_CharMatcherINSt7__cxx1112regex_traitsIcEELb1ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method bool std::_Function_handler<bool(char),std::__detail::_CharMatcher<std::__cxx11::regex_traits<char>,true,false>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt17_Function_handlerIFbcENSt8__detail12_CharMatcherINSt7__cxx1112regex_traitsIcEELb1ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
+      "pretty": "method bool std::_Function_handler<bool(char), std::__detail::_CharMatcher<std::__cxx11::regex_traits<char>, true, false> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt17_Function_handlerIFbcENSt8__detail12_CharMatcherINSt7__cxx1112regex_traitsIcEELb1ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method bool std::_Function_handler<bool(char),std::__detail::_CharMatcher<std::__cxx11::regex_traits<char>,false,true>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt17_Function_handlerIFbcENSt8__detail12_CharMatcherINSt7__cxx1112regex_traitsIcEELb0ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
+      "pretty": "method bool std::_Function_handler<bool(char), std::__detail::_CharMatcher<std::__cxx11::regex_traits<char>, false, true> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt17_Function_handlerIFbcENSt8__detail12_CharMatcherINSt7__cxx1112regex_traitsIcEELb0ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method bool std::_Function_handler<bool(char),std::__detail::_AnyMatcher<std::__cxx11::regex_traits<char>,true,false,false>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt17_Function_handlerIFbcENSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIcEELb1ELb0ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
+      "pretty": "method bool std::_Function_handler<bool(char), std::__detail::_AnyMatcher<std::__cxx11::regex_traits<char>, true, false, false> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt17_Function_handlerIFbcENSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIcEELb1ELb0ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method bool std::_Function_handler<bool(wchar_t),std::__detail::_CharMatcher<std::__cxx11::regex_traits<wchar_t>,false,false>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt17_Function_handlerIFbwENSt8__detail12_CharMatcherINSt7__cxx1112regex_traitsIwEELb0ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
+      "pretty": "method bool std::_Function_handler<bool(wchar_t), std::__detail::_CharMatcher<std::__cxx11::regex_traits<wchar_t>, false, false> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt17_Function_handlerIFbwENSt8__detail12_CharMatcherINSt7__cxx1112regex_traitsIwEELb0ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method std::__detail::_StateIdT std::__detail::_NFA<std::__cxx11::regex_traits<char>>::_M_insert_dummy()",
-      "symbol": "_ZNSt8__detail4_NFAINSt7__cxx1112regex_traitsIcEEE15_M_insert_dummyEv"
+      "pretty": "method std::__detail::_StateIdT std::__detail::_NFA<std::__cxx11::regex_traits<char> >::_M_insert_dummy()",
+      "symbol": "_ZNSt8__detail4_NFAINSt7__cxx1112regex_traitsIcEEE15_M_insert_dummyEv",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method bool std::_Function_handler<bool(wchar_t),std::__detail::_AnyMatcher<std::__cxx11::regex_traits<wchar_t>,false,true,false>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt17_Function_handlerIFbwENSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIwEELb0ELb1ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
+      "pretty": "method bool std::_Function_handler<bool(wchar_t), std::__detail::_AnyMatcher<std::__cxx11::regex_traits<wchar_t>, false, true, false> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt17_Function_handlerIFbwENSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIwEELb0ELb1ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method std::__cxx11::match_results<__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>,std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>>>>::const_reference std::__cxx11::match_results<__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>,std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>>>>::operator[](std::__cxx11::match_results<__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>,std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>>>>::size_type) const",
-      "symbol": "_ZNKSt7__cxx1113match_resultsIN9__gnu_cxx17__normal_iteratorIPKwNS_12basic_stringIwSt11char_traitsIwESaIwEEEEESaINS_9sub_matchISA_EEEEixEm"
+      "pretty": "method std::__cxx11::match_results<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > >::const_reference std::__cxx11::match_results<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > >::operator[](std::__cxx11::match_results<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > >::size_type) const",
+      "symbol": "_ZNKSt7__cxx1113match_resultsIN9__gnu_cxx17__normal_iteratorIPKwNS_12basic_stringIwSt11char_traitsIwESaIwEEEEESaINS_9sub_matchISA_EEEEixEm",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::vector<std::pair<std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>,std::allocator<std::pair<std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>>>::vector(const std::vector<std::pair<std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>,std::allocator<std::pair<std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>>>&)",
-      "symbol": "_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEES6_ESaIS7_EEC2ERKS9_"
+      "pretty": "method void std::vector<std::pair<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<std::pair<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > >::vector(const std::vector<std::pair<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > >, std::allocator<std::pair<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > >&)",
+      "symbol": "_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEES6_ESaIS7_EEC2ERKS9_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method bool std::_Function_handler<bool(wchar_t),std::__detail::_CharMatcher<std::__cxx11::regex_traits<wchar_t>,true,true>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt17_Function_handlerIFbwENSt8__detail12_CharMatcherINSt7__cxx1112regex_traitsIwEELb1ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
+      "pretty": "method bool std::_Function_handler<bool(wchar_t), std::__detail::_CharMatcher<std::__cxx11::regex_traits<wchar_t>, true, true> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt17_Function_handlerIFbwENSt8__detail12_CharMatcherINSt7__cxx1112regex_traitsIwEELb1ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method std::__detail::_RegexTranslatorBase<std::__cxx11::regex_traits<char>,false,true>::_StrTransT std::__detail::_RegexTranslatorBase<std::__cxx11::regex_traits<char>,false,true>::_M_transform(std::__detail::_RegexTranslatorBase<std::__cxx11::regex_traits<char>,false,true>::_CharT) const",
-      "symbol": "_ZNKSt8__detail20_RegexTranslatorBaseINSt7__cxx1112regex_traitsIcEELb0ELb1EE12_M_transformEc"
+      "pretty": "method std::__detail::_RegexTranslatorBase<std::__cxx11::regex_traits<char>, false, true>::_StrTransT std::__detail::_RegexTranslatorBase<std::__cxx11::regex_traits<char>, false, true>::_M_transform(std::__detail::_RegexTranslatorBase<std::__cxx11::regex_traits<char>, false, true>::_CharT) const",
+      "symbol": "_ZNKSt8__detail20_RegexTranslatorBaseINSt7__cxx1112regex_traitsIcEELb0ELb1EE12_M_transformEc",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method bool std::__detail::_Executor<__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>,std::__cxx11::regex_traits<char>,false>::_M_word_boundary() const",
-      "symbol": "_ZNKSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIcEELb0EE16_M_word_boundaryEv"
+      "pretty": "method bool std::__detail::_Executor<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::regex_traits<char>, false>::_M_word_boundary() const",
+      "symbol": "_ZNKSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIcEELb0EE16_M_word_boundaryEv",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method std::__detail::_RegexTranslatorBase<std::__cxx11::regex_traits<wchar_t>,false,true>::_StrTransT std::__detail::_RegexTranslatorBase<std::__cxx11::regex_traits<wchar_t>,false,true>::_M_transform(std::__detail::_RegexTranslatorBase<std::__cxx11::regex_traits<wchar_t>,false,true>::_CharT) const",
-      "symbol": "_ZNKSt8__detail20_RegexTranslatorBaseINSt7__cxx1112regex_traitsIwEELb0ELb1EE12_M_transformEw"
+      "pretty": "method std::__detail::_RegexTranslatorBase<std::__cxx11::regex_traits<wchar_t>, false, true>::_StrTransT std::__detail::_RegexTranslatorBase<std::__cxx11::regex_traits<wchar_t>, false, true>::_M_transform(std::__detail::_RegexTranslatorBase<std::__cxx11::regex_traits<wchar_t>, false, true>::_CharT) const",
+      "symbol": "_ZNKSt8__detail20_RegexTranslatorBaseINSt7__cxx1112regex_traitsIwEELb0ELb1EE12_M_transformEw",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method bool std::_Function_handler<bool(char),std::__detail::_CharMatcher<std::__cxx11::regex_traits<char>,false,false>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt17_Function_handlerIFbcENSt8__detail12_CharMatcherINSt7__cxx1112regex_traitsIcEELb0ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
+      "pretty": "method bool std::_Function_handler<bool(char), std::__detail::_CharMatcher<std::__cxx11::regex_traits<char>, false, false> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt17_Function_handlerIFbcENSt8__detail12_CharMatcherINSt7__cxx1112regex_traitsIcEELb0ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>>,std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>>>>::_M_fill_assign(std::size_t, const std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>>,std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_tconst*,std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>>>>::value_type&)",
-      "symbol": "_ZNSt6vectorINSt7__cxx119sub_matchIN9__gnu_cxx17__normal_iteratorIPKwNS0_12basic_stringIwSt11char_traitsIwESaIwEEEEEEESaISC_EE14_M_fill_assignEmRKSC_"
+      "pretty": "method void std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > >::_M_fill_assign(std::size_t, const std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<wchar_t const*, std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > > > >::value_type&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx119sub_matchIN9__gnu_cxx17__normal_iteratorIPKwNS0_12basic_stringIwSt11char_traitsIwESaIwEEEEEEESaISC_EE14_M_fill_assignEmRKSC_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method std::__detail::_RegexTranslatorBase<std::__cxx11::regex_traits<wchar_t>,true,true>::_StrTransT std::__detail::_RegexTranslatorBase<std::__cxx11::regex_traits<wchar_t>,true,true>::_M_transform(std::__detail::_RegexTranslatorBase<std::__cxx11::regex_traits<wchar_t>,true,true>::_CharT) const",
-      "symbol": "_ZNKSt8__detail20_RegexTranslatorBaseINSt7__cxx1112regex_traitsIwEELb1ELb1EE12_M_transformEw"
+      "pretty": "method std::__detail::_RegexTranslatorBase<std::__cxx11::regex_traits<wchar_t>, true, true>::_StrTransT std::__detail::_RegexTranslatorBase<std::__cxx11::regex_traits<wchar_t>, true, true>::_M_transform(std::__detail::_RegexTranslatorBase<std::__cxx11::regex_traits<wchar_t>, true, true>::_CharT) const",
+      "symbol": "_ZNKSt8__detail20_RegexTranslatorBaseINSt7__cxx1112regex_traitsIwEELb1ELb1EE12_M_transformEw",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method bool std::_Function_handler<bool(char),std::__detail::_AnyMatcher<std::__cxx11::regex_traits<char>,true,true,false>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt17_Function_handlerIFbcENSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIcEELb1ELb1ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
+      "pretty": "method bool std::_Function_handler<bool(char), std::__detail::_AnyMatcher<std::__cxx11::regex_traits<char>, true, true, false> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt17_Function_handlerIFbcENSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIcEELb1ELb1ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method std::_Function_base::~_Function_base()",
-      "symbol": "_ZNSt14_Function_baseD2Ev"
+      "pretty": "method std::_Function_base::~_Function_base(int)",
+      "symbol": "_ZNSt14_Function_baseD2Ev",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method bool std::_Function_handler<bool(char),std::__detail::_BracketMatcher<std::__cxx11::regex_traits<char>,false,false>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt17_Function_handlerIFbcENSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIcEELb0ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
+      "pretty": "method bool std::_Function_handler<bool(char), std::__detail::_BracketMatcher<std::__cxx11::regex_traits<char>, false, false> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt17_Function_handlerIFbcENSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIcEELb0ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method bool std::__detail::_Executor<__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>,std::__cxx11::regex_traits<char>,true>::_M_word_boundary() const",
-      "symbol": "_ZNKSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIcEELb1EE16_M_word_boundaryEv"
+      "pretty": "method bool std::__detail::_Executor<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::regex_traits<char>, true>::_M_word_boundary() const",
+      "symbol": "_ZNKSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIcEELb1EE16_M_word_boundaryEv",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method bool std::_Function_handler<bool(char),std::__detail::_AnyMatcher<std::__cxx11::regex_traits<char>,false,true,false>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt17_Function_handlerIFbcENSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIcEELb0ELb1ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
+      "pretty": "method bool std::_Function_handler<bool(char), std::__detail::_AnyMatcher<std::__cxx11::regex_traits<char>, false, true, false> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt17_Function_handlerIFbcENSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIcEELb0ELb1ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method bool std::_Function_handler<bool(char),std::__detail::_AnyMatcher<std::__cxx11::regex_traits<char>,false,false,false>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt17_Function_handlerIFbcENSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIcEELb0ELb0ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
+      "pretty": "method bool std::_Function_handler<bool(char), std::__detail::_AnyMatcher<std::__cxx11::regex_traits<char>, false, false, false> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt17_Function_handlerIFbcENSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIcEELb0ELb0ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method bool std::_Function_handler<bool(wchar_t),std::__detail::_BracketMatcher<std::__cxx11::regex_traits<wchar_t>,false,true>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt17_Function_handlerIFbwENSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIwEELb0ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
+      "pretty": "method bool std::_Function_handler<bool(wchar_t), std::__detail::_BracketMatcher<std::__cxx11::regex_traits<wchar_t>, false, true> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt17_Function_handlerIFbwENSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIwEELb0ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method bool std::_Function_handler<bool(char),std::__detail::_BracketMatcher<std::__cxx11::regex_traits<char>,true,false>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt17_Function_handlerIFbcENSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIcEELb1ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
+      "pretty": "method bool std::_Function_handler<bool(char), std::__detail::_BracketMatcher<std::__cxx11::regex_traits<char>, true, false> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt17_Function_handlerIFbcENSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIcEELb1ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::_Destroy_aux<false>::__destroy<std::__detail::_State<char>*>(std::__detail::_State<char>*, std::__detail::_State<char>*)",
-      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIPNSt8__detail6_StateIcEEEEvT_S6_"
+      "pretty": "method void std::_Destroy_aux<false>::__destroy<std::__detail::_State<char>*>(std::__detail::_State<char>*)",
+      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIPNSt8__detail6_StateIcEEEEvT_S6_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method bool std::_Function_handler<bool(wchar_t),std::__detail::_CharMatcher<std::__cxx11::regex_traits<wchar_t>,false,true>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt17_Function_handlerIFbwENSt8__detail12_CharMatcherINSt7__cxx1112regex_traitsIwEELb0ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
+      "pretty": "method bool std::_Function_handler<bool(wchar_t), std::__detail::_CharMatcher<std::__cxx11::regex_traits<wchar_t>, false, true> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt17_Function_handlerIFbwENSt8__detail12_CharMatcherINSt7__cxx1112regex_traitsIwEELb0ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method std::_Hashtable<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,Soros>,std::allocator<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,Soros>>,std::__detail::_Select1st,std::equal_to<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::hash<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::__detail::_Mod_range_hashing,std::__detail::_Default_ranged_hash,std::__detail::_Prime_rehash_policy,std::__detail::_Hashtable_traits<true,false,true>>::_Scoped_node::~_Scoped_node()",
-      "symbol": "_ZNSt10_HashtableINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_5SorosESaIS9_ENSt8__detail10_Select1stESt8equal_toIS5_ESt4hashIS5_ENSB_18_Mod_range_hashingENSB_20_Default_ranged_hashENSB_20_Prime_rehash_policyENSB_17_Hashtable_traitsILb1ELb0ELb1EEEE12_Scoped_nodeD2Ev"
+      "pretty": "method std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros>, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Soros> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_Scoped_node::~_Scoped_node(int)",
+      "symbol": "_ZNSt10_HashtableINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_5SorosESaIS9_ENSt8__detail10_Select1stESt8equal_toIS5_ESt4hashIS5_ENSB_18_Mod_range_hashingENSB_20_Default_ranged_hashENSB_20_Prime_rehash_policyENSB_17_Hashtable_traitsILb1ELb0ELb1EEEE12_Scoped_nodeD2Ev",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method bool std::_Function_handler<bool(char),std::__detail::_AnyMatcher<std::__cxx11::regex_traits<char>,true,true,true>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt17_Function_handlerIFbcENSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIcEELb1ELb1ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
+      "pretty": "method bool std::_Function_handler<bool(char), std::__detail::_AnyMatcher<std::__cxx11::regex_traits<char>, true, true, true> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt17_Function_handlerIFbcENSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIcEELb1ELb1ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::_Destroy_aux<false>::__destroy<std::__cxx11::basic_string<char>*>(std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>*, std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>*)",
-      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEvT_S9_"
+      "pretty": "method void std::_Destroy_aux<false>::__destroy<std::__cxx11::basic_string<char>*>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*)",
+      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEvT_S9_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method bool std::_Function_handler<bool(char),std::__detail::_AnyMatcher<std::__cxx11::regex_traits<char>,false,true,true>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt17_Function_handlerIFbcENSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIcEELb0ELb1ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
+      "pretty": "method bool std::_Function_handler<bool(char), std::__detail::_AnyMatcher<std::__cxx11::regex_traits<char>, false, true, true> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt17_Function_handlerIFbcENSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIcEELb0ELb1ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method bool std::_Function_handler<bool(char),std::__detail::_AnyMatcher<std::__cxx11::regex_traits<char>,true,false,true>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt17_Function_handlerIFbcENSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIcEELb1ELb0ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
+      "pretty": "method bool std::_Function_handler<bool(char), std::__detail::_AnyMatcher<std::__cxx11::regex_traits<char>, true, false, true> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt17_Function_handlerIFbcENSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIcEELb1ELb0ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method bool std::_Function_handler<bool(char),std::__detail::_BracketMatcher<std::__cxx11::regex_traits<char>,true,true>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt17_Function_handlerIFbcENSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIcEELb1ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
+      "pretty": "method bool std::_Function_handler<bool(char), std::__detail::_BracketMatcher<std::__cxx11::regex_traits<char>, true, true> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt17_Function_handlerIFbcENSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIcEELb1ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method bool std::_Function_handler<bool(char),std::__detail::_AnyMatcher<std::__cxx11::regex_traits<char>,false,false,true>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt17_Function_handlerIFbcENSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIcEELb0ELb0ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
+      "pretty": "method bool std::_Function_handler<bool(char), std::__detail::_AnyMatcher<std::__cxx11::regex_traits<char>, false, false, true> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt17_Function_handlerIFbcENSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIcEELb0ELb0ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method std::__detail::_RegexTranslatorBase<std::__cxx11::regex_traits<char>,true,true>::_StrTransT std::__detail::_RegexTranslatorBase<std::__cxx11::regex_traits<char>,true,true>::_M_transform(std::__detail::_RegexTranslatorBase<std::__cxx11::regex_traits<char>,true,true>::_CharT) const",
-      "symbol": "_ZNKSt8__detail20_RegexTranslatorBaseINSt7__cxx1112regex_traitsIcEELb1ELb1EE12_M_transformEc"
+      "pretty": "method std::__detail::_RegexTranslatorBase<std::__cxx11::regex_traits<char>, true, true>::_StrTransT std::__detail::_RegexTranslatorBase<std::__cxx11::regex_traits<char>, true, true>::_M_transform(std::__detail::_RegexTranslatorBase<std::__cxx11::regex_traits<char>, true, true>::_CharT) const",
+      "symbol": "_ZNKSt8__detail20_RegexTranslatorBaseINSt7__cxx1112regex_traitsIcEELb1ELb1EE12_M_transformEc",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::__detail::_Executor<__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>,std::__cxx11::regex_traits<char>,false>::_M_handle_backref(std::__detail::_Executor<__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>,std::__cxx11::regex_traits<char>,false>::_Match_mode, std::__detail::_StateIdT)",
-      "symbol": "_ZNSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIcEELb0EE17_M_handle_backrefENSH_11_Match_modeEl"
+      "pretty": "method void std::__detail::_Executor<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::regex_traits<char>, false>::_M_handle_backref(std::__detail::_Executor<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::regex_traits<char>, false>::_Match_mode, std::__detail::_StateIdT)",
+      "symbol": "_ZNSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIcEELb0EE17_M_handle_backrefENSH_11_Match_modeEl",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::_Destroy_aux<false>::__destroy<std::__cxx11::basic_string<wchar_t>*>(std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>*, std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>*)",
-      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIPNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEEEvT_S9_"
+      "pretty": "method void std::_Destroy_aux<false>::__destroy<std::__cxx11::basic_string<wchar_t>*>(std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >*)",
+      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIPNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEEEvT_S9_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::_Destroy_aux<false>::__destroy<std::__detail::_State<wchar_t>*>(std::__detail::_State<wchar_t>*, std::__detail::_State<wchar_t>*)",
-      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIPNSt8__detail6_StateIwEEEEvT_S6_"
+      "pretty": "method void std::_Destroy_aux<false>::__destroy<std::__detail::_State<wchar_t>*>(std::__detail::_State<wchar_t>*)",
+      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIPNSt8__detail6_StateIwEEEEvT_S6_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method bool std::_Function_handler<bool(wchar_t),std::__detail::_AnyMatcher<std::__cxx11::regex_traits<wchar_t>,false,false,false>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt17_Function_handlerIFbwENSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIwEELb0ELb0ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
+      "pretty": "method bool std::_Function_handler<bool(wchar_t), std::__detail::_AnyMatcher<std::__cxx11::regex_traits<wchar_t>, false, false, false> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt17_Function_handlerIFbwENSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIwEELb0ELb0ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method bool std::_Function_handler<bool(wchar_t),std::__detail::_AnyMatcher<std::__cxx11::regex_traits<wchar_t>,true,true,true>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt17_Function_handlerIFbwENSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIwEELb1ELb1ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
+      "pretty": "method bool std::_Function_handler<bool(wchar_t), std::__detail::_AnyMatcher<std::__cxx11::regex_traits<wchar_t>, true, true, true> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt17_Function_handlerIFbwENSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIwEELb1ELb1ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method bool std::_Function_handler<bool(wchar_t),std::__detail::_AnyMatcher<std::__cxx11::regex_traits<wchar_t>,false,false,true>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt17_Function_handlerIFbwENSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIwEELb0ELb0ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
+      "pretty": "method bool std::_Function_handler<bool(wchar_t), std::__detail::_AnyMatcher<std::__cxx11::regex_traits<wchar_t>, false, false, true> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt17_Function_handlerIFbwENSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIwEELb0ELb0ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method std::__detail::_StateIdT std::__detail::_NFA<std::__cxx11::regex_traits<wchar_t>>::_M_insert_subexpr_begin()",
-      "symbol": "_ZNSt8__detail4_NFAINSt7__cxx1112regex_traitsIwEEE23_M_insert_subexpr_beginEv"
+      "pretty": "method std::__detail::_StateIdT std::__detail::_NFA<std::__cxx11::regex_traits<wchar_t> >::_M_insert_subexpr_begin()",
+      "symbol": "_ZNSt8__detail4_NFAINSt7__cxx1112regex_traitsIwEEE23_M_insert_subexpr_beginEv",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method bool std::_Function_handler<bool(wchar_t),std::__detail::_AnyMatcher<std::__cxx11::regex_traits<wchar_t>,false,true,true>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt17_Function_handlerIFbwENSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIwEELb0ELb1ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
+      "pretty": "method bool std::_Function_handler<bool(wchar_t), std::__detail::_AnyMatcher<std::__cxx11::regex_traits<wchar_t>, false, true, true> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt17_Function_handlerIFbwENSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIwEELb0ELb1ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
      },
      {
       "kind": "symbol_added",
       "pretty": "method std::__cxx11::regex_traits<wchar_t>::char_type std::__cxx11::regex_traits<wchar_t>::translate_nocase(std::__cxx11::regex_traits<wchar_t>::char_type) const",
-      "symbol": "_ZNKSt7__cxx1112regex_traitsIwE16translate_nocaseEw"
+      "symbol": "_ZNKSt7__cxx1112regex_traitsIwE16translate_nocaseEw",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method std::__detail::_StateIdT std::__detail::_NFA<std::__cxx11::regex_traits<wchar_t>>::_M_insert_dummy()",
-      "symbol": "_ZNSt8__detail4_NFAINSt7__cxx1112regex_traitsIwEEE15_M_insert_dummyEv"
+      "pretty": "method std::__detail::_StateIdT std::__detail::_NFA<std::__cxx11::regex_traits<wchar_t> >::_M_insert_dummy()",
+      "symbol": "_ZNSt8__detail4_NFAINSt7__cxx1112regex_traitsIwEEE15_M_insert_dummyEv",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method bool std::_Function_handler<bool(wchar_t),std::__detail::_AnyMatcher<std::__cxx11::regex_traits<wchar_t>,true,false,false>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt17_Function_handlerIFbwENSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIwEELb1ELb0ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
+      "pretty": "method bool std::_Function_handler<bool(wchar_t), std::__detail::_AnyMatcher<std::__cxx11::regex_traits<wchar_t>, true, false, false> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt17_Function_handlerIFbwENSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIwEELb1ELb0ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method bool std::_Function_handler<bool(wchar_t),std::__detail::_AnyMatcher<std::__cxx11::regex_traits<wchar_t>,true,false,true>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt17_Function_handlerIFbwENSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIwEELb1ELb0ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
+      "pretty": "method bool std::_Function_handler<bool(wchar_t), std::__detail::_AnyMatcher<std::__cxx11::regex_traits<wchar_t>, true, false, true> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt17_Function_handlerIFbwENSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIwEELb1ELb0ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method bool std::_Function_handler<bool(wchar_t),std::__detail::_AnyMatcher<std::__cxx11::regex_traits<wchar_t>,true,true,false>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt17_Function_handlerIFbwENSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIwEELb1ELb1ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
+      "pretty": "method bool std::_Function_handler<bool(wchar_t), std::__detail::_AnyMatcher<std::__cxx11::regex_traits<wchar_t>, true, true, false> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt17_Function_handlerIFbwENSt8__detail11_AnyMatcherINSt7__cxx1112regex_traitsIwEELb1ELb1ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method bool std::_Function_handler<bool(wchar_t),std::__detail::_BracketMatcher<std::__cxx11::regex_traits<wchar_t>,false,false>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt17_Function_handlerIFbwENSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIwEELb0ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
+      "pretty": "method bool std::_Function_handler<bool(wchar_t), std::__detail::_BracketMatcher<std::__cxx11::regex_traits<wchar_t>, false, false> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt17_Function_handlerIFbwENSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIwEELb0ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method bool std::_Function_handler<bool(wchar_t),std::__detail::_BracketMatcher<std::__cxx11::regex_traits<wchar_t>,true,true>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt17_Function_handlerIFbwENSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIwEELb1ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
+      "pretty": "method bool std::_Function_handler<bool(wchar_t), std::__detail::_BracketMatcher<std::__cxx11::regex_traits<wchar_t>, true, true> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt17_Function_handlerIFbwENSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIwEELb1ELb1EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::deque<std::__detail::_StateSeq<std::__cxx11::regex_traits<wchar_t>>,std::allocator<std::__detail::_StateSeq<std::__cxx11::regex_traits<wchar_t>>>>::push_back(const std::deque<std::__detail::_StateSeq<std::__cxx11::regex_traits<wchar_t>>,std::allocator<std::__detail::_StateSeq<std::__cxx11::regex_traits<wchar_t>>>>::value_type&)",
-      "symbol": "_ZNSt5dequeINSt8__detail9_StateSeqINSt7__cxx1112regex_traitsIwEEEESaIS5_EE9push_backERKS5_"
+      "pretty": "method void std::deque<std::__detail::_StateSeq<std::__cxx11::regex_traits<wchar_t> >, std::allocator<std::__detail::_StateSeq<std::__cxx11::regex_traits<wchar_t> > > >::push_back(const std::deque<std::__detail::_StateSeq<std::__cxx11::regex_traits<wchar_t> >, std::allocator<std::__detail::_StateSeq<std::__cxx11::regex_traits<wchar_t> > > >::value_type&)",
+      "symbol": "_ZNSt5dequeINSt8__detail9_StateSeqINSt7__cxx1112regex_traitsIwEEEESaIS5_EE9push_backERKS5_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>::vector(const std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>&)",
-      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EEC2ERKS7_"
+      "pretty": "method void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::vector(const std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EEC2ERKS7_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::vector<std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>,std::allocator<std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>>::vector(const std::vector<std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>,std::allocator<std::__cxx11::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>>&)",
-      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEESaIS5_EEC2ERKS7_"
+      "pretty": "method void std::vector<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::allocator<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >::vector(const std::vector<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >, std::allocator<std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> > > >&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEESaIS5_EEC2ERKS7_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::__detail::_Executor<__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>,std::__cxx11::regex_traits<char>,true>::_M_handle_backref(std::__detail::_Executor<__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>,std::__cxx11::regex_traits<char>,true>::_Match_mode, std::__detail::_StateIdT)",
-      "symbol": "_ZNSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIcEELb1EE17_M_handle_backrefENSH_11_Match_modeEl"
+      "pretty": "method void std::__detail::_Executor<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::regex_traits<char>, true>::_M_handle_backref(std::__detail::_Executor<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::regex_traits<char>, true>::_Match_mode, std::__detail::_StateIdT)",
+      "symbol": "_ZNSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIcEELb1EE17_M_handle_backrefENSH_11_Match_modeEl",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method bool std::_Function_handler<bool(wchar_t),std::__detail::_BracketMatcher<std::__cxx11::regex_traits<wchar_t>,true,false>>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation)",
-      "symbol": "_ZNSt17_Function_handlerIFbwENSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIwEELb1ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation"
+      "pretty": "method bool std::_Function_handler<bool(wchar_t), std::__detail::_BracketMatcher<std::__cxx11::regex_traits<wchar_t>, true, false> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt17_Function_handlerIFbwENSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIwEELb1ELb0EEEE10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>,std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>>::_M_fill_assign(std::size_t, const std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>,std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>>::value_type&)",
-      "symbol": "_ZNSt6vectorINSt7__cxx119sub_matchIN9__gnu_cxx17__normal_iteratorIPKcNS0_12basic_stringIcSt11char_traitsIcESaIcEEEEEEESaISC_EE14_M_fill_assignEmRKSC_"
+      "pretty": "method void std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >::_M_fill_assign(std::size_t, const std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >::value_type&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx119sub_matchIN9__gnu_cxx17__normal_iteratorIPKcNS0_12basic_stringIcSt11char_traitsIcESaIcEEEEEEESaISC_EE14_M_fill_assignEmRKSC_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::vector<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>::vector(const std::vector<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::pair<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>&)",
-      "symbol": "_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_ESaIS7_EEC2ERKS9_"
+      "pretty": "method void std::vector<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::vector(const std::vector<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >&)",
+      "symbol": "_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_ESaIS7_EEC2ERKS9_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method std::__detail::_StateIdT std::__detail::_NFA<std::__cxx11::regex_traits<char>>::_M_insert_subexpr_begin()",
-      "symbol": "_ZNSt8__detail4_NFAINSt7__cxx1112regex_traitsIcEEE23_M_insert_subexpr_beginEv"
+      "pretty": "method std::__detail::_StateIdT std::__detail::_NFA<std::__cxx11::regex_traits<char> >::_M_insert_subexpr_begin()",
+      "symbol": "_ZNSt8__detail4_NFAINSt7__cxx1112regex_traitsIcEEE23_M_insert_subexpr_beginEv",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method std::__detail::_StateIdT std::__detail::_NFA<std::__cxx11::regex_traits<wchar_t>>::_M_insert_state(std::__detail::_NFA<std::__cxx11::regex_traits<wchar_t>>::_StateT)",
-      "symbol": "_ZNSt8__detail4_NFAINSt7__cxx1112regex_traitsIwEEE15_M_insert_stateENS_6_StateIwEE"
+      "pretty": "method std::__detail::_StateIdT std::__detail::_NFA<std::__cxx11::regex_traits<wchar_t> >::_M_insert_state(std::__detail::_NFA<std::__cxx11::regex_traits<wchar_t> >::_StateT)",
+      "symbol": "_ZNSt8__detail4_NFAINSt7__cxx1112regex_traitsIwEEE15_M_insert_stateENS_6_StateIwEE",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method std::__detail::_StateIdT std::__detail::_NFA<std::__cxx11::regex_traits<char>>::_M_insert_subexpr_end()",
-      "symbol": "_ZNSt8__detail4_NFAINSt7__cxx1112regex_traitsIcEEE21_M_insert_subexpr_endEv"
-     },
-     {
-      "kind": "function_signature_changed",
-      "pretty": "method void std::vector<wchar_t,std::allocator<wchar_t>>::emplace_back<wchar_t>()  ->  method void std::vector<wchar_t,std::allocator<wchar_t>>::emplace_back<wchar_t>(wchar_t&&)",
-      "symbol": "_ZNSt6vectorIwSaIwEE12emplace_backIJwEEEvDpOT_"
-     },
-     {
-      "kind": "function_signature_changed",
-      "pretty": "method void std::vector<char,std::allocator<char>>::emplace_back<char>()  ->  method void std::vector<char,std::allocator<char>>::emplace_back<char>(char&&)",
-      "symbol": "_ZNSt6vectorIcSaIcEE12emplace_backIJcEEEvDpOT_"
+      "pretty": "method std::__detail::_StateIdT std::__detail::_NFA<std::__cxx11::regex_traits<char> >::_M_insert_subexpr_end()",
+      "symbol": "_ZNSt8__detail4_NFAINSt7__cxx1112regex_traitsIcEEE21_M_insert_subexpr_endEv",
+      "weak": true
      }
     ],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 1,
     "third_party": {
-     "base_class_changed": 10,
+     "base_class_changed": 8,
+     "field_removed_from_struct": 14,
      "field_type_changed": 2
     },
     "type_events": [
      {
-      "count": 1,
+      "append_only": false,
+      "count": 4,
       "declared_in": "/usr/include/c++/9/bits/stl_deque.h",
-      "kind": "base_class_changed",
-      "type": "struct std::_Deque_base<longint,std::allocator<longint>>::_Deque_impl"
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct std::_Deque_base<long int, std::allocator<long int> >::_Deque_impl"
      },
      {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/stl_deque.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Deque_base<long int, std::allocator<long int> >::_Deque_impl"
+     },
+     {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/9/bits/unique_ptr.h",
+      "exposure": "not_in_interface",
       "kind": "field_type_changed",
-      "type": "class std::unique_ptr<std::codecvt_utf8<wchar_t,1114111,(std::codecvt_mode)0>,std::default_delete<std::codecvt_utf8<wchar_t,1114111,(std::codecvt_mode)0>>>"
+      "third_party": true,
+      "type": "class std::unique_ptr<std::codecvt_utf8<wchar_t, 1114111, (std::codecvt_mode)0>, std::default_delete<std::codecvt_utf8<wchar_t, 1114111, (std::codecvt_mode)0> > >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/9/bits/unique_ptr.h",
-      "kind": "base_class_changed",
-      "type": "class std::__uniq_ptr_impl<std::codecvt_utf8<wchar_t,1114111,(std::codecvt_mode)0>,std::default_delete<std::codecvt_utf8<wchar_t,1114111,(std::codecvt_mode)0>>>"
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "class std::__uniq_ptr_impl<std::codecvt_utf8<wchar_t, 1114111, (std::codecvt_mode)0>, std::default_delete<std::codecvt_utf8<wchar_t, 1114111, (std::codecvt_mode)0> > >"
      },
      {
-      "count": 1,
-      "declared_in": "/usr/include/c++/9/bits/stl_vector.h",
-      "kind": "base_class_changed",
-      "type": "class std::vector<std::__cxx11::regex_traits<wchar_t>::_RegexMask,std::allocator<std::__cxx11::regex_traits<wchar_t>::_RegexMask>>"
-     },
-     {
-      "count": 1,
-      "declared_in": "/usr/include/c++/9/bits/stl_vector.h",
-      "kind": "base_class_changed",
-      "type": "struct std::_Vector_base<std::__cxx11::regex_traits<wchar_t>::_RegexMask,std::allocator<std::__cxx11::regex_traits<wchar_t>::_RegexMask>>::_Vector_impl"
-     },
-     {
-      "count": 1,
-      "declared_in": "/usr/include/c++/9/bits/stl_deque.h",
-      "kind": "base_class_changed",
-      "type": "class std::deque<std::__detail::_StateSeq<std::__cxx11::regex_traits<char>>,std::allocator<std::__detail::_StateSeq<std::__cxx11::regex_traits<char>>>>"
-     },
-     {
-      "count": 1,
-      "declared_in": "/usr/include/c++/9/bits/stl_deque.h",
-      "kind": "base_class_changed",
-      "type": "struct std::_Deque_base<std::__detail::_StateSeq<std::__cxx11::regex_traits<char>>,std::allocator<std::__detail::_StateSeq<std::__cxx11::regex_traits<char>>>>::_Deque_impl"
-     },
-     {
-      "count": 1,
-      "declared_in": "/usr/include/c++/9/bits/stl_deque.h",
-      "kind": "base_class_changed",
-      "type": "class std::deque<std::__detail::_StateSeq<std::__cxx11::regex_traits<wchar_t>>,std::allocator<std::__detail::_StateSeq<std::__cxx11::regex_traits<wchar_t>>>>"
-     },
-     {
-      "count": 1,
-      "declared_in": "/usr/include/c++/9/bits/stl_deque.h",
-      "kind": "base_class_changed",
-      "type": "struct std::_Deque_base<std::__detail::_StateSeq<std::__cxx11::regex_traits<wchar_t>>,std::allocator<std::__detail::_StateSeq<std::__cxx11::regex_traits<wchar_t>>>>::_Deque_impl"
-     },
-     {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/9/bits/unique_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::__uniq_ptr_impl<std::codecvt_utf8<wchar_t, 1114111, (std::codecvt_mode)0>, std::default_delete<std::codecvt_utf8<wchar_t, 1114111, (std::codecvt_mode)0> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/stl_deque.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::deque<std::__detail::_StateSeq<std::__cxx11::regex_traits<char> >, std::allocator<std::__detail::_StateSeq<std::__cxx11::regex_traits<char> > > >"
+     },
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": "/usr/include/c++/9/bits/stl_deque.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct std::_Deque_base<std::__detail::_StateSeq<std::__cxx11::regex_traits<char> >, std::allocator<std::__detail::_StateSeq<std::__cxx11::regex_traits<char> > > >::_Deque_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/stl_deque.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Deque_base<std::__detail::_StateSeq<std::__cxx11::regex_traits<char> >, std::allocator<std::__detail::_StateSeq<std::__cxx11::regex_traits<char> > > >::_Deque_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/stl_deque.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::deque<std::__detail::_StateSeq<std::__cxx11::regex_traits<wchar_t> >, std::allocator<std::__detail::_StateSeq<std::__cxx11::regex_traits<wchar_t> > > >"
+     },
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": "/usr/include/c++/9/bits/stl_deque.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct std::_Deque_base<std::__detail::_StateSeq<std::__cxx11::regex_traits<wchar_t> >, std::allocator<std::__detail::_StateSeq<std::__cxx11::regex_traits<wchar_t> > > >::_Deque_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/stl_deque.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Deque_base<std::__detail::_StateSeq<std::__cxx11::regex_traits<wchar_t> >, std::allocator<std::__detail::_StateSeq<std::__cxx11::regex_traits<wchar_t> > > >::_Deque_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/unique_ptr.h",
+      "exposure": "not_in_interface",
       "kind": "field_type_changed",
-      "type": "class std::unique_ptr<bool[],std::default_delete<bool[]>>"
+      "third_party": true,
+      "type": "class std::unique_ptr<bool [], std::default_delete<bool []> >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/9/bits/unique_ptr.h",
-      "kind": "base_class_changed",
-      "type": "class std::__uniq_ptr_impl<bool,std::default_delete<bool[]>>"
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "class std::__uniq_ptr_impl<bool, std::default_delete<bool []> >"
      },
      {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/unique_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::__uniq_ptr_impl<bool, std::default_delete<bool []> >"
+     },
+     {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/9/bits/stl_deque.h",
+      "exposure": "by_pointer",
       "kind": "base_class_changed",
-      "type": "class std::deque<longint,std::allocator<longint>>"
+      "third_party": true,
+      "type": "class std::deque<long int, std::allocator<long int> >"
      }
-    ]
+    ],
+    "vague_linkage": {
+     "symbol_added": 65,
+     "symbol_removed": 115
+    }
    }
   ],
-  "seconds": 4.513604466,
+  "seconds": 3.40334253,
   "source": "libnumbertext",
   "unpaired": [
    [],
@@ -1035,7 +1273,11 @@
    "1.0.7"
   ]
  },
- "generated_at": "2026-09-02T15:17:00Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T06:20:02Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

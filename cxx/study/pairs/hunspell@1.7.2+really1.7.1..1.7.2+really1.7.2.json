@@ -1,5 +1,7 @@
 {
  "data": {
+  "bytes_extracted": 6893341,
+  "excluded_objects": [],
   "id": "hunspell@1.7.2+really1.7.1..1.7.2+really1.7.2",
   "object_errors": [],
   "objects": [
@@ -22,9 +24,9 @@
     "mass_rename": false,
     "private_node": {},
     "public": {
-     "function_signature_changed": 2,
-     "symbol_added": 13,
-     "symbol_removed": 12
+     "function_signature_changed": 4,
+     "symbol_added": 1,
+     "symbol_removed": 3
     },
     "soname": [
      "libhunspell-1.7.so.0",
@@ -33,140 +35,192 @@
     "symbol_events": [
      {
       "kind": "function_signature_changed",
-      "pretty": "method int Hunzip::fail(const char*, const char*)  ->  method int Hunzip::fail(const char*, const std::string&)",
-      "symbol": "_ZN6Hunzip4failEPKcS1_"
+      "pretty": "function int u8_u16(std::vector<w_char, std::allocator<w_char> >&, const std::string&)  ->  function int u8_u16(std::vector<w_char, std::allocator<w_char> >&, const std::string&, bool)",
+      "symbol": "_Z6u8_u16RSt6vectorI6w_charSaIS0_EERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE",
+      "weak": false
      },
      {
       "kind": "function_signature_changed",
-      "pretty": "function int u8_u16(std::vector<w_char,std::allocator<w_char>>&, const std::string&)  ->  function int u8_u16(std::vector<w_char,std::allocator<w_char>>&, const std::string&, bool)",
-      "symbol": "_Z6u8_u16RSt6vectorI6w_charSaIS0_EERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE"
+      "pretty": "method int Hunzip::fail(const char*, const char*)  ->  method int Hunzip::fail(const char*, const std::string&)",
+      "symbol": "_ZN6Hunzip4failEPKcS1_",
+      "weak": false
      },
      {
       "kind": "symbol_removed",
-      "pretty": "function bool std::binary_search<shortunsignedint*,int>(unsigned short int*, unsigned short int*, const int&)",
-      "symbol": "_ZSt13binary_searchIPtiEbT_S1_RKT0_"
+      "pretty": "function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)",
+      "symbol": "_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EERKS8_SA_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "function bool std::binary_search<shortunsignedintconst*,shortunsignedint>(const unsigned short int*, const unsigned short int*, const unsigned short int&)",
-      "symbol": "_ZSt13binary_searchIPKttEbT_S2_RKT0_"
+      "pretty": "function bool std::binary_search<short unsigned int*, short unsigned int>(unsigned short int*, unsigned short int*, const unsigned short int&)",
+      "symbol": "_ZSt13binary_searchIPttEbT_S1_RKT0_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "function bool std::binary_search<shortunsignedint*,shortunsignedint>(unsigned short int*, unsigned short int*, const unsigned short int&)",
-      "symbol": "_ZSt13binary_searchIPttEbT_S1_RKT0_"
+      "pretty": "function bool std::binary_search<short unsigned int*, char>(unsigned short int*, unsigned short int*, const char&)",
+      "symbol": "_ZSt13binary_searchIPtcEbT_S1_RKT0_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::vector<shortunsignedint,std::allocator<shortunsignedint>>::_M_realloc_insert<shortunsignedint>(std::vector<shortunsignedint,std::allocator<shortunsignedint>>::iterator)",
-      "symbol": "_ZNSt6vectorItSaItEE17_M_realloc_insertIJtEEEvN9__gnu_cxx17__normal_iteratorIPtS1_EEDpOT_"
+      "pretty": "function bool std::binary_search<short unsigned int const*, short unsigned int>(const unsigned short int*, const unsigned short int*, const unsigned short int&)",
+      "symbol": "_ZSt13binary_searchIPKttEbT_S2_RKT0_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "function void free_utf_tbl(void)",
-      "symbol": "_Z12free_utf_tblv"
+      "pretty": "method void std::vector<short unsigned int, std::allocator<short unsigned int> >::_M_realloc_insert<short unsigned int>(std::vector<short unsigned int, std::allocator<short unsigned int> >::iterator, unsigned short int&&)",
+      "symbol": "_ZNSt6vectorItSaItEE17_M_realloc_insertIJtEEEvN9__gnu_cxx17__normal_iteratorIPtS1_EEDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>::iterator std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>::_M_erase(std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>::iterator)",
-      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE8_M_eraseEN9__gnu_cxx17__normal_iteratorIPS5_S7_EE"
+      "pretty": "method void std::vector<std::vector<short unsigned int, std::allocator<short unsigned int> >, std::allocator<std::vector<short unsigned int, std::allocator<short unsigned int> > > >::_M_realloc_insert<std::vector<short unsigned int, std::allocator<short unsigned int> > >(std::vector<std::vector<short unsigned int, std::allocator<short unsigned int> >, std::allocator<std::vector<short unsigned int, std::allocator<short unsigned int> > > >::iterator, std::vector<short unsigned int, std::allocator<short unsigned int> >&&)",
+      "symbol": "_ZNSt6vectorIS_ItSaItEESaIS1_EE17_M_realloc_insertIJS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "function void initialize_utf_tbl(void)",
-      "symbol": "_Z18initialize_utf_tblv"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method void std::vector<std::vector<shortunsignedint,std::allocator<shortunsignedint>>,std::allocator<std::vector<shortunsignedint,std::allocator<shortunsignedint>>>>::_M_realloc_insert<std::vector<shortunsignedint,std::allocator<shortunsignedint>>>(std::vector<std::vector<shortunsignedint,std::allocator<shortunsignedint>>,std::allocator<std::vector<shortunsignedint,std::allocator<shortunsignedint>>>>::iterator)",
-      "symbol": "_ZNSt6vectorIS_ItSaItEESaIS1_EE17_M_realloc_insertIJS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_"
+      "pretty": "function bool std::binary_search<short unsigned int*, int>(unsigned short int*, unsigned short int*, const int&)",
+      "symbol": "_ZSt13binary_searchIPtiEbT_S1_RKT0_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
       "pretty": "function char* mystrdup(const char*)",
-      "symbol": "_Z8mystrdupPKc"
+      "symbol": "_Z8mystrdupPKc",
+      "weak": false
      },
      {
       "kind": "symbol_removed",
-      "pretty": "function std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>> std::operator+<char,std::char_traits<char>,std::allocator<char>>(const std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>&, const std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>&)",
-      "symbol": "_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EERKS8_SA_"
+      "pretty": "method void std::vector<short unsigned int, std::allocator<short unsigned int> >::_M_default_append(std::vector<short unsigned int, std::allocator<short unsigned int> >::size_type)",
+      "symbol": "_ZNSt6vectorItSaItEE17_M_default_appendEm",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "function bool std::binary_search<shortunsignedint*,char>(unsigned short int*, unsigned short int*, const char&)",
-      "symbol": "_ZSt13binary_searchIPtcEbT_S1_RKT0_"
+      "pretty": "method std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::iterator std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_erase(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::iterator)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE8_M_eraseEN9__gnu_cxx17__normal_iteratorIPS5_S7_EE",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::vector<shortunsignedint,std::allocator<shortunsignedint>>::_M_default_append(std::vector<shortunsignedint,std::allocator<shortunsignedint>>::size_type)",
-      "symbol": "_ZNSt6vectorItSaItEE17_M_default_appendEm"
+      "pretty": "function void free_utf_tbl()",
+      "symbol": "_Z12free_utf_tblv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void initialize_utf_tbl()",
+      "symbol": "_Z18initialize_utf_tblv",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::vector<shortunsignedint,std::allocator<shortunsignedint>>::_M_realloc_append<shortunsignedint>()",
-      "symbol": "_ZNSt6vectorItSaItEE17_M_realloc_appendIJtEEEvDpOT_"
+      "pretty": "method void std::vector<short unsigned int, std::allocator<short unsigned int> >::_M_realloc_append<short unsigned int>(unsigned short int&&)",
+      "symbol": "_ZNSt6vectorItSaItEE17_M_realloc_appendIJtEEEvDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
       "pretty": "function int Hunspell_suffix_suggest(Hunhandle*, char***, const char*)",
-      "symbol": "Hunspell_suffix_suggest"
+      "symbol": "Hunspell_suffix_suggest",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::vector<std::vector<shortunsignedint,std::allocator<shortunsignedint>>,std::allocator<std::vector<shortunsignedint,std::allocator<shortunsignedint>>>>::_M_realloc_append<>()",
-      "symbol": "_ZNSt6vectorIS_ItSaItEESaIS1_EE17_M_realloc_appendIJEEEvDpOT_"
+      "pretty": "method void std::vector<std::vector<short unsigned int, std::allocator<short unsigned int> >, std::allocator<std::vector<short unsigned int, std::allocator<short unsigned int> > > >::_M_realloc_append<>()",
+      "symbol": "_ZNSt6vectorIS_ItSaItEESaIS1_EE17_M_realloc_appendIJEEEvDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method std::_UninitDestroyGuard<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>*,void>::~_UninitDestroyGuard()",
-      "symbol": "_ZNSt19_UninitDestroyGuardIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEvED2Ev"
+      "pretty": "method std::_UninitDestroyGuard<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, void>::~_UninitDestroyGuard()",
+      "symbol": "_ZNSt19_UninitDestroyGuardIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEvED2Ev",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>::_M_realloc_append<charconst(&)[1]>()",
-      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_realloc_appendIJRA1_KcEEEvDpOT_"
+      "pretty": "method void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_append<char const (&)[1]>(const char[1]&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_realloc_appendIJRA1_KcEEEvDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>::_M_realloc_append<charconst(&)[2]>()",
-      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_realloc_appendIJRA2_KcEEEvDpOT_"
+      "pretty": "method void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_append<char const (&)[2]>(const char[2]&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_realloc_appendIJRA2_KcEEEvDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>::_M_realloc_append<charconst(&)[3]>()",
-      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_realloc_appendIJRA3_KcEEEvDpOT_"
+      "pretty": "method void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_append<char const (&)[3]>(const char[3]&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_realloc_appendIJRA3_KcEEEvDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>::_M_realloc_append<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>&>()",
-      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_realloc_appendIJRKS5_EEEvDpOT_"
+      "pretty": "method void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_append<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>(const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_realloc_appendIJRKS5_EEEvDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::vector<std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>,std::allocator<std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>>::_M_realloc_append<>()",
-      "symbol": "_ZNSt6vectorIS_INSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EESaIS7_EE17_M_realloc_appendIJEEEvDpOT_"
+      "pretty": "method void std::vector<std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >::_M_realloc_append<>()",
+      "symbol": "_ZNSt6vectorIS_INSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EESaIS7_EE17_M_realloc_appendIJEEEvDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::_M_construct<true>(const char*, std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::size_type)",
-      "symbol": "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructILb1EEEvPKcm"
+      "pretty": "method void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<true>(const char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::size_type)",
+      "symbol": "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructILb1EEEvPKcm",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>::_M_realloc_append<__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>&,__gnu_cxx::__normal_iterator<charconst*,std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>&>()",
-      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_realloc_appendIJRN9__gnu_cxx17__normal_iteratorIPKcS5_EESE_EEEvDpOT_"
+      "pretty": "method void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_append<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >&, __gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >&>(__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >&, __gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_realloc_appendIJRN9__gnu_cxx17__normal_iteratorIPKcS5_EESE_EEEvDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>::_Guard_alloc::~_Guard_alloc()",
-      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE12_Guard_allocD2Ev"
+      "pretty": "method std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_Guard_alloc::~_Guard_alloc()",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE12_Guard_allocD2Ev",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>::_M_realloc_append<char*&>()",
-      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_realloc_appendIJRPcEEEvDpOT_"
+      "pretty": "method void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_append<char*&>(char*&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_realloc_appendIJRPcEEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Hunspell::~Hunspell(int)  ->  method Hunspell::~Hunspell()",
+      "symbol": "_ZN8HunspellD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Hunzip::~Hunzip(int)  ->  method Hunzip::~Hunzip()",
+      "symbol": "_ZN6HunzipD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::~vector(int)  ->  method std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::~vector()",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method std::vector<std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >::~vector(int)  ->  method std::vector<std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >::~vector()",
+      "symbol": "_ZNSt6vectorIS_INSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EESaIS7_EED2Ev",
+      "weak": true
      }
     ],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {
      "base_class_changed": 4,
@@ -177,135 +231,203 @@
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/hunspell/hunspell.cxx",
+      "exposure": "not_in_interface",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "class HunspellImpl"
      },
      {
+      "append_only": false,
       "count": 6,
       "declared_in": "./src/hunspell/hunspell.cxx",
+      "exposure": "not_in_interface",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "class HunspellImpl"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/hunspell/hunspell.cxx",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "class HunspellImpl"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/hunspell/affentry.hxx",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class PfxEntry"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/hunspell/baseaffix.hxx",
+      "exposure": "not_in_interface",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "class AffEntry"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/hunspell/affentry.hxx",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class SfxEntry"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/12/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "class std::vector<HashMgr*,std::allocator<HashMgr*>>"
+      "third_party": true,
+      "type": "class std::vector<HashMgr*, std::allocator<HashMgr*> >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/12/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Vector_base<HashMgr*,std::allocator<HashMgr*>>::_Vector_impl"
+      "third_party": true,
+      "type": "struct std::_Vector_base<HashMgr*, std::allocator<HashMgr*> >::_Vector_impl"
      },
      {
+      "append_only": false,
       "count": 3,
       "declared_in": "./src/hunspell/hashmgr.hxx",
+      "exposure": "not_in_interface",
       "kind": "field_removed_from_struct",
+      "third_party": true,
       "type": "class HashMgr"
      },
      {
+      "append_only": false,
       "count": 4,
       "declared_in": "./src/hunspell/hashmgr.hxx",
+      "exposure": "not_in_interface",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "class HashMgr"
      },
      {
+      "append_only": false,
       "count": 14,
       "declared_in": "./src/hunspell/hashmgr.hxx",
+      "exposure": "not_in_interface",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "class HashMgr"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/hunspell/hashmgr.hxx",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "class HashMgr"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "./src/hunspell/replist.hxx",
+      "exposure": "not_in_interface",
       "kind": "field_removed_from_struct",
+      "third_party": true,
       "type": "class RepList"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/hunspell/replist.hxx",
+      "exposure": "not_in_interface",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "class RepList"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/hunspell/replist.hxx",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "class RepList"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "./src/hunspell/suggestmgr.hxx",
+      "exposure": "not_in_interface",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "class SuggestMgr"
      },
      {
+      "append_only": false,
       "count": 15,
       "declared_in": "./src/hunspell/suggestmgr.hxx",
+      "exposure": "not_in_interface",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "class SuggestMgr"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/hunspell/suggestmgr.hxx",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "class SuggestMgr"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/hunspell/hunzip.hxx",
+      "exposure": "by_pointer",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "class Hunzip"
      },
      {
+      "append_only": false,
       "count": 10,
       "declared_in": "./src/hunspell/hunzip.hxx",
+      "exposure": "by_pointer",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "class Hunzip"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/hunspell/hunzip.hxx",
+      "exposure": "by_pointer",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "class Hunzip"
      }
-    ]
+    ],
+    "vague_linkage": {
+     "function_signature_changed": 2,
+     "symbol_added": 12,
+     "symbol_removed": 9
+    }
    }
   ],
-  "seconds": 4.754782149,
+  "seconds": 2.959450959,
   "source": "hunspell",
   "unpaired": [
    [],
@@ -316,7 +438,11 @@
    "1.7.2+really1.7.2"
   ]
  },
- "generated_at": "2026-09-02T15:05:41Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T06:19:53Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

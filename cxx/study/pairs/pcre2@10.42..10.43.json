@@ -1,5 +1,6 @@
 {
  "data": {
+  "bytes_extracted": 13012063,
   "id": "pcre2@10.42..10.43",
   "object_errors": [],
   "objects": [
@@ -32,12 +33,14 @@
      {
       "kind": "symbol_added",
       "pretty": "function int pcre2_set_max_varlookbehind_16(pcre2_compile_context_16*, uint32_t)",
-      "symbol": "pcre2_set_max_varlookbehind_16"
+      "symbol": "pcre2_set_max_varlookbehind_16",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function size_t pcre2_get_match_data_heapframes_size_16(pcre2_match_data_16*)",
-      "symbol": "pcre2_get_match_data_heapframes_size_16"
+      "symbol": "pcre2_get_match_data_heapframes_size_16",
+      "weak": false
      }
     ],
     "symbols_version_renamed": 0,
@@ -48,48 +51,70 @@
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "src/pcre2_intmodedep.h",
+      "exposure": "by_pointer",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "struct pcre2_real_compile_context_16"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "src/pcre2_intmodedep.h",
+      "exposure": "by_pointer",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "struct pcre2_real_match_data_16"
      },
      {
+      "append_only": false,
       "count": 8,
       "declared_in": "src/pcre2_intmodedep.h",
+      "exposure": "by_pointer",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct pcre2_real_match_data_16"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "src/pcre2_intmodedep.h",
+      "exposure": "by_pointer",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct pcre2_real_match_data_16"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "src/pcre2_intmodedep.h",
+      "exposure": "not_in_interface",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "struct heapframe"
      },
      {
+      "append_only": false,
       "count": 5,
       "declared_in": "src/pcre2_intmodedep.h",
+      "exposure": "not_in_interface",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct heapframe"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "src/pcre2_intmodedep.h",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct heapframe"
      }
-    ]
+    ],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -120,12 +145,14 @@
      {
       "kind": "symbol_added",
       "pretty": "function int pcre2_set_max_varlookbehind_32(pcre2_compile_context_32*, uint32_t)",
-      "symbol": "pcre2_set_max_varlookbehind_32"
+      "symbol": "pcre2_set_max_varlookbehind_32",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function size_t pcre2_get_match_data_heapframes_size_32(pcre2_match_data_32*)",
-      "symbol": "pcre2_get_match_data_heapframes_size_32"
+      "symbol": "pcre2_get_match_data_heapframes_size_32",
+      "weak": false
      }
     ],
     "symbols_version_renamed": 0,
@@ -136,48 +163,70 @@
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "src/pcre2_intmodedep.h",
+      "exposure": "by_pointer",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "struct pcre2_real_compile_context_32"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "src/pcre2_intmodedep.h",
+      "exposure": "by_pointer",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "struct pcre2_real_match_data_32"
      },
      {
+      "append_only": false,
       "count": 8,
       "declared_in": "src/pcre2_intmodedep.h",
+      "exposure": "by_pointer",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct pcre2_real_match_data_32"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "src/pcre2_intmodedep.h",
+      "exposure": "by_pointer",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct pcre2_real_match_data_32"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "src/pcre2_intmodedep.h",
+      "exposure": "not_in_interface",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "struct heapframe"
      },
      {
+      "append_only": false,
       "count": 5,
       "declared_in": "src/pcre2_intmodedep.h",
+      "exposure": "not_in_interface",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct heapframe"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "src/pcre2_intmodedep.h",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct heapframe"
      }
-    ]
+    ],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -208,12 +257,14 @@
      {
       "kind": "symbol_added",
       "pretty": "function int pcre2_set_max_varlookbehind_8(pcre2_compile_context_8*, uint32_t)",
-      "symbol": "pcre2_set_max_varlookbehind_8"
+      "symbol": "pcre2_set_max_varlookbehind_8",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function size_t pcre2_get_match_data_heapframes_size_8(pcre2_match_data_8*)",
-      "symbol": "pcre2_get_match_data_heapframes_size_8"
+      "symbol": "pcre2_get_match_data_heapframes_size_8",
+      "weak": false
      }
     ],
     "symbols_version_renamed": 0,
@@ -224,51 +275,73 @@
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "src/pcre2_intmodedep.h",
+      "exposure": "by_pointer",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "struct pcre2_real_compile_context_8"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "src/pcre2_intmodedep.h",
+      "exposure": "by_pointer",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "struct pcre2_real_match_data_8"
      },
      {
+      "append_only": false,
       "count": 8,
       "declared_in": "src/pcre2_intmodedep.h",
+      "exposure": "by_pointer",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct pcre2_real_match_data_8"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "src/pcre2_intmodedep.h",
+      "exposure": "by_pointer",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct pcre2_real_match_data_8"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "src/pcre2_intmodedep.h",
+      "exposure": "not_in_interface",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "struct heapframe"
      },
      {
+      "append_only": false,
       "count": 5,
       "declared_in": "src/pcre2_intmodedep.h",
+      "exposure": "not_in_interface",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct heapframe"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "src/pcre2_intmodedep.h",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct heapframe"
      }
-    ]
+    ],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 4.617182641,
+  "seconds": 3.751147138,
   "source": "pcre2",
   "unpaired": [
    [],
@@ -279,7 +352,11 @@
    "10.43"
   ]
  },
- "generated_at": "2026-09-02T14:58:31Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:39:00Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

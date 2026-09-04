@@ -1,6 +1,8 @@
 {
  "data": {
+  "bytes_extracted": 6592335,
   "id": "libyuv@0.0.1916.20250814..0.0.1919.20250919",
+  "object_errors": [],
   "objects": [
    {
     "coverage": {
@@ -21,6 +23,7 @@
     "mass_rename": false,
     "private_node": {},
     "public": {
+     "function_signature_changed": 1,
      "symbol_added": 9
     },
     "soname": [
@@ -31,55 +34,71 @@
      {
       "kind": "symbol_added",
       "pretty": "function void libyuv::ARGBToUVRow_AVX2(const uint8_t*, int, uint8_t*, uint8_t*, int)",
-      "symbol": "ARGBToUVRow_AVX2"
+      "symbol": "ARGBToUVRow_AVX2",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function void libyuv::ARGBToUVMatrixRow_AVX2(const uint8_t*, int, uint8_t*, uint8_t*, int, const libyuv::RgbUVConstants*)",
-      "symbol": "ARGBToUVMatrixRow_AVX2"
+      "symbol": "ARGBToUVMatrixRow_AVX2",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function void libyuv::ARGBToUVJRow_Any_AVX2(const uint8_t*, int, uint8_t*, uint8_t*, int)",
-      "symbol": "ARGBToUVJRow_Any_AVX2"
+      "symbol": "ARGBToUVJRow_Any_AVX2",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function void libyuv::ARGBToUVRow_Any_AVX2(const uint8_t*, int, uint8_t*, uint8_t*, int)",
-      "symbol": "ARGBToUVRow_Any_AVX2"
+      "symbol": "ARGBToUVRow_Any_AVX2",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function void libyuv::ARGBToUVJRow_AVX2(const uint8_t*, int, uint8_t*, uint8_t*, int)",
-      "symbol": "ARGBToUVJRow_AVX2"
+      "symbol": "ARGBToUVJRow_AVX2",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function void libyuv::ABGRToUVRow_Any_AVX2(const uint8_t*, int, uint8_t*, uint8_t*, int)",
-      "symbol": "ABGRToUVRow_Any_AVX2"
+      "symbol": "ABGRToUVRow_Any_AVX2",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function void libyuv::ABGRToUVRow_AVX2(const uint8_t*, int, uint8_t*, uint8_t*, int)",
-      "symbol": "ABGRToUVRow_AVX2"
+      "symbol": "ABGRToUVRow_AVX2",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function void libyuv::ABGRToUVJRow_Any_AVX2(const uint8_t*, int, uint8_t*, uint8_t*, int)",
-      "symbol": "ABGRToUVJRow_Any_AVX2"
+      "symbol": "ABGRToUVJRow_Any_AVX2",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function void libyuv::ABGRToUVJRow_AVX2(const uint8_t*, int, uint8_t*, uint8_t*, int)",
-      "symbol": "ABGRToUVJRow_AVX2"
+      "symbol": "ABGRToUVJRow_AVX2",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method libyuv::MJpegDecoder::~MJpegDecoder(int)  ->  method libyuv::MJpegDecoder::~MJpegDecoder()",
+      "symbol": "_ZN6libyuv12MJpegDecoderD2Ev",
+      "weak": false
      }
     ],
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 2.604353174,
+  "seconds": 2.005651625,
   "source": "libyuv",
   "unpaired": [
    [],
@@ -90,7 +109,11 @@
    "0.0.1919.20250919"
   ]
  },
- "generated_at": "2026-09-02T12:14:36Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:42:00Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

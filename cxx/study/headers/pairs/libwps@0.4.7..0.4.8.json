@@ -4,13 +4,17 @@
    {
     "header_files": 2,
     "parsed": 2,
+    "parsed_as_cxx": 2,
     "skipped_by_limit": 0,
+    "with_errors": 2,
     "with_fatal_error": 0
    },
    {
     "header_files": 2,
     "parsed": 2,
+    "parsed_as_cxx": 2,
     "skipped_by_limit": 0,
+    "with_errors": 2,
     "with_fatal_error": 0
    }
   ],
@@ -27,6 +31,7 @@
    "inline_body_changed_template": 0,
    "inline_decl_changed": 0,
    "macro_value_changed": 0,
+   "macro_value_changed_nonversion": 0,
    "macros": [
     0,
     0
@@ -36,12 +41,33 @@
   "id": "libwps@0.4.7..0.4.8",
   "language": "cxx",
   "source": "libwps",
+  "symbol_declared": {
+   "_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIN9__gnu_cxx17__normal_iteratorIPK8WPSEntrySt6vectorIS4_SaIS4_EEEEPS4_EET0_T_SD_SC_": "unknown",
+   "_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPKN18WKSContentListener18FormulaInstructionEPS3_EET0_T_S8_S7_": "unknown",
+   "_ZNSt27__uninitialized_default_n_1ILb0EE18__uninit_default_nIP8WPSEntrymEET_S4_T0_": "unknown",
+   "_ZNSt27__uninitialized_default_n_1ILb0EE18__uninit_default_nIPN16WPS4TextInternal4NoteEmEET_S5_T0_": "unknown",
+   "_ZNSt27__uninitialized_default_n_1ILb0EE18__uninit_default_nIPN18WKSContentListener18FormulaInstructionEmEET_S5_T0_": "unknown",
+   "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE19_M_emplace_back_auxIJRKS5_EEEvDpOT_": "unknown",
+   "_ZNSt6vectorIfSaIfEE17_M_default_appendEm": "unknown",
+   "_ZNSt6vectorIfSaIfEE19_M_emplace_back_auxIJRKfEEEvDpOT_": "unknown",
+   "_ZNSt6vectorIfSaIfEE19_M_emplace_back_auxIJfEEEvDpOT_": "unknown",
+   "_ZNSt6vectorIiSaIiEE17_M_default_appendEm": "unknown",
+   "_ZNSt6vectorIiSaIiEE19_M_emplace_back_auxIJRKiEEEvDpOT_": "unknown",
+   "_ZNSt6vectorIiSaIiEE19_M_emplace_back_auxIJiEEEvDpOT_": "unknown",
+   "_ZNSt6vectorIlSaIlEE19_M_emplace_back_auxIJRKlEEEvDpOT_": "unknown",
+   "_ZNSt6vectorIlSaIlEE19_M_emplace_back_auxIJlEEEvDpOT_": "unknown",
+   "_ZNSt6vectorImSaImEE19_M_emplace_back_auxIJmEEEvDpOT_": "unknown"
+  },
   "upstream": [
    "0.4.7",
    "0.4.8"
   ]
  },
- "generated_at": "2026-09-02T14:53:54Z",
- "schema": "abistudy/header-pair/2",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T07:43:45Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
 }

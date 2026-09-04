@@ -1,7 +1,11 @@
 {
  "data": {
+  "bytes_extracted": 9924995,
   "id": "ncurses@6.5+20250125..6.5+20250216",
-  "object_errors": [],
+  "object_errors": [
+   "missing package: lib64ncurses-dev",
+   "missing package: lib64ncurses-dev"
+  ],
   "objects": [
    {
     "coverage": {
@@ -33,12 +37,16 @@
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
+      "exposure": "by_pointer",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "struct _IO_FILE"
      }
-    ]
+    ],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -70,15 +78,19 @@
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
+      "exposure": "by_pointer",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "struct _IO_FILE"
      }
-    ]
+    ],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 2.546971138,
+  "seconds": 1.876225002,
   "source": "ncurses",
   "unpaired": [
    [],
@@ -89,7 +101,11 @@
    "6.5+20250216"
   ]
  },
- "generated_at": "2026-09-02T14:58:50Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:41:49Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

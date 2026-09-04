@@ -1,5 +1,6 @@
 {
  "data": {
+  "bytes_extracted": 25538730,
   "id": "libheif@1.19.5..1.19.7",
   "object_errors": [],
   "objects": [
@@ -29,514 +30,458 @@
     "symbol_events": [],
     "symbols_version_renamed": 0,
     "third_party": {
-     "base_class_changed": 51,
+     "base_class_changed": 32,
      "field_added_to_struct": 2,
      "type_size_changed": 1,
-     "vtable_changed": 50
+     "vtable_changed": 25
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class std::shared_ptr<HeifContext>"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "class std::vector<std::shared_ptr<ImageItem>,std::allocator<std::shared_ptr<ImageItem>>>"
+      "third_party": true,
+      "type": "class std::vector<std::shared_ptr<ImageItem>, std::allocator<std::shared_ptr<ImageItem> > >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Vector_base<std::shared_ptr<ImageItem>,std::allocator<std::shared_ptr<ImageItem>>>::_Vector_impl"
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::shared_ptr<ImageItem>, std::allocator<std::shared_ptr<ImageItem> > >::_Vector_impl"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class std::shared_ptr<ImageItem>"
      },
      {
+      "append_only": false,
       "count": 7,
       "declared_in": "./libheif/image-items/image_item.h",
+      "exposure": "not_in_interface",
       "kind": "vtable_changed",
+      "third_party": true,
       "type": "class ImageItem"
      },
      {
-      "count": 1,
-      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
-      "kind": "base_class_changed",
-      "type": "class std::vector<std::shared_ptr<Box>,std::allocator<std::shared_ptr<Box>>>"
-     },
-     {
-      "count": 1,
-      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
-      "kind": "base_class_changed",
-      "type": "struct std::_Vector_base<std::shared_ptr<Box>,std::allocator<std::shared_ptr<Box>>>::_Vector_impl"
-     },
-     {
-      "count": 1,
-      "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
-      "kind": "base_class_changed",
-      "type": "class std::shared_ptr<Box>"
-     },
-     {
-      "count": 4,
-      "declared_in": "./libheif/box.h",
-      "kind": "vtable_changed",
-      "type": "class Box"
-     },
-     {
-      "count": 1,
-      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
-      "kind": "base_class_changed",
-      "type": "class std::vector<std::shared_ptr<Box>,std::allocator<std::shared_ptr<Box>>>"
-     },
-     {
-      "count": 4,
-      "declared_in": "./libheif/box.h",
-      "kind": "vtable_changed",
-      "type": "class Box"
-     },
-     {
-      "count": 1,
-      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
-      "kind": "base_class_changed",
-      "type": "class std::vector<std::shared_ptr<ImageItem>,std::allocator<std::shared_ptr<ImageItem>>>"
-     },
-     {
-      "count": 1,
-      "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
-      "kind": "base_class_changed",
-      "type": "class std::shared_ptr<ImageItem>"
-     },
-     {
-      "count": 7,
-      "declared_in": "./libheif/image-items/image_item.h",
-      "kind": "vtable_changed",
-      "type": "class ImageItem"
-     },
-     {
+      "append_only": false,
       "count": 2,
       "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "class std::shared_ptr<Decoder>"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "class std::shared_ptr<Decoder>"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class std::shared_ptr<Decoder>"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class std::shared_ptr<HeifFile>"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class std::shared_ptr<FileLayout>"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class std::shared_ptr<Box_ftyp>"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class Box_ftyp"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
       "kind": "vtable_changed",
+      "third_party": true,
       "type": "class Box_ftyp"
      },
      {
-      "count": 1,
+      "append_only": false,
+      "count": 4,
       "declared_in": "./libheif/box.h",
-      "kind": "base_class_changed",
-      "type": "class Box_ftyp"
-     },
-     {
-      "count": 1,
-      "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
       "kind": "vtable_changed",
-      "type": "class Box_ftyp"
+      "third_party": true,
+      "type": "class Box"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class std::shared_ptr<Box_meta>"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class Box_meta"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
       "kind": "vtable_changed",
+      "third_party": true,
       "type": "class Box_meta"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "class Box_meta"
-     },
-     {
-      "count": 1,
-      "declared_in": "./libheif/box.h",
-      "kind": "vtable_changed",
-      "type": "class Box_meta"
-     },
-     {
-      "count": 1,
-      "declared_in": "./libheif/box.h",
-      "kind": "base_class_changed",
+      "third_party": true,
       "type": "class FullBox"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
       "kind": "vtable_changed",
+      "third_party": true,
       "type": "class FullBox"
      },
      {
-      "count": 1,
-      "declared_in": "./libheif/box.h",
-      "kind": "base_class_changed",
-      "type": "class FullBox"
-     },
-     {
-      "count": 2,
-      "declared_in": "./libheif/box.h",
-      "kind": "vtable_changed",
-      "type": "class FullBox"
-     },
-     {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class std::shared_ptr<Box_hdlr>"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class Box_hdlr"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
       "kind": "vtable_changed",
+      "third_party": true,
       "type": "class Box_hdlr"
      },
      {
-      "count": 1,
-      "declared_in": "./libheif/box.h",
-      "kind": "base_class_changed",
-      "type": "class Box_hdlr"
-     },
-     {
-      "count": 1,
-      "declared_in": "./libheif/box.h",
-      "kind": "vtable_changed",
-      "type": "class Box_hdlr"
-     },
-     {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class std::shared_ptr<Box_ipco>"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class Box_ipco"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
       "kind": "vtable_changed",
+      "third_party": true,
       "type": "class Box_ipco"
      },
      {
-      "count": 1,
-      "declared_in": "./libheif/box.h",
-      "kind": "base_class_changed",
-      "type": "class Box_ipco"
-     },
-     {
-      "count": 1,
-      "declared_in": "./libheif/box.h",
-      "kind": "vtable_changed",
-      "type": "class Box_ipco"
-     },
-     {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class std::shared_ptr<Box_ipma>"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class Box_ipma"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
       "kind": "vtable_changed",
+      "third_party": true,
       "type": "class Box_ipma"
      },
      {
-      "count": 1,
-      "declared_in": "./libheif/box.h",
-      "kind": "base_class_changed",
-      "type": "class Box_ipma"
-     },
-     {
-      "count": 1,
-      "declared_in": "./libheif/box.h",
-      "kind": "vtable_changed",
-      "type": "class Box_ipma"
-     },
-     {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class std::shared_ptr<Box_iloc>"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class Box_iloc"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
       "kind": "vtable_changed",
+      "third_party": true,
       "type": "class Box_iloc"
      },
      {
-      "count": 1,
-      "declared_in": "./libheif/box.h",
-      "kind": "base_class_changed",
-      "type": "class Box_iloc"
-     },
-     {
-      "count": 1,
-      "declared_in": "./libheif/box.h",
-      "kind": "vtable_changed",
-      "type": "class Box_iloc"
-     },
-     {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class std::shared_ptr<Box_idat>"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class Box_idat"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
       "kind": "vtable_changed",
+      "third_party": true,
       "type": "class Box_idat"
      },
      {
-      "count": 1,
-      "declared_in": "./libheif/box.h",
-      "kind": "base_class_changed",
-      "type": "class Box_idat"
-     },
-     {
-      "count": 1,
-      "declared_in": "./libheif/box.h",
-      "kind": "vtable_changed",
-      "type": "class Box_idat"
-     },
-     {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class std::shared_ptr<Box_iref>"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class Box_iref"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
       "kind": "vtable_changed",
+      "third_party": true,
       "type": "class Box_iref"
      },
      {
-      "count": 1,
-      "declared_in": "./libheif/box.h",
-      "kind": "base_class_changed",
-      "type": "class Box_iref"
-     },
-     {
-      "count": 1,
-      "declared_in": "./libheif/box.h",
-      "kind": "vtable_changed",
-      "type": "class Box_iref"
-     },
-     {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class std::shared_ptr<Box_pitm>"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class Box_pitm"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
       "kind": "vtable_changed",
+      "third_party": true,
       "type": "class Box_pitm"
      },
      {
-      "count": 1,
-      "declared_in": "./libheif/box.h",
-      "kind": "base_class_changed",
-      "type": "class Box_pitm"
-     },
-     {
-      "count": 1,
-      "declared_in": "./libheif/box.h",
-      "kind": "vtable_changed",
-      "type": "class Box_pitm"
-     },
-     {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class std::shared_ptr<Box_iinf>"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class Box_iinf"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
       "kind": "vtable_changed",
+      "third_party": true,
       "type": "class Box_iinf"
      },
      {
-      "count": 1,
-      "declared_in": "./libheif/box.h",
-      "kind": "base_class_changed",
-      "type": "class Box_iinf"
-     },
-     {
-      "count": 1,
-      "declared_in": "./libheif/box.h",
-      "kind": "vtable_changed",
-      "type": "class Box_iinf"
-     },
-     {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class std::shared_ptr<Box_grpl>"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class Box_grpl"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
       "kind": "vtable_changed",
+      "third_party": true,
       "type": "class Box_grpl"
      },
      {
-      "count": 1,
-      "declared_in": "./libheif/box.h",
-      "kind": "base_class_changed",
-      "type": "class Box_grpl"
-     },
-     {
-      "count": 1,
-      "declared_in": "./libheif/box.h",
-      "kind": "vtable_changed",
-      "type": "class Box_grpl"
-     },
-     {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class std::shared_ptr<Box_iprp>"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class Box_iprp"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./libheif/box.h",
+      "exposure": "not_in_interface",
       "kind": "vtable_changed",
-      "type": "class Box_iprp"
-     },
-     {
-      "count": 1,
-      "declared_in": "./libheif/box.h",
-      "kind": "base_class_changed",
-      "type": "class Box_iprp"
-     },
-     {
-      "count": 1,
-      "declared_in": "./libheif/box.h",
-      "kind": "vtable_changed",
+      "third_party": true,
       "type": "class Box_iprp"
      }
-    ]
+    ],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 30.543430684,
+  "seconds": 31.976112639,
   "source": "libheif",
   "unpaired": [
    [],
@@ -547,7 +492,11 @@
    "1.19.7"
   ]
  },
- "generated_at": "2026-09-02T15:00:34Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:32:07Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

@@ -1,5 +1,6 @@
 {
  "data": {
+  "bytes_extracted": 25690437,
   "id": "libheif@1.19.7..1.19.8",
   "object_errors": [],
   "objects": [
@@ -29,98 +30,114 @@
     "symbol_events": [],
     "symbols_version_renamed": 0,
     "third_party": {
-     "base_class_changed": 12,
-     "vtable_changed": 4
+     "base_class_changed": 10,
+     "vtable_changed": 2
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class std::shared_ptr<HeifContext>"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "class std::vector<std::shared_ptr<ImageItem>,std::allocator<std::shared_ptr<ImageItem>>>"
+      "third_party": true,
+      "type": "class std::vector<std::shared_ptr<ImageItem>, std::allocator<std::shared_ptr<ImageItem> > >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Vector_base<std::shared_ptr<ImageItem>,std::allocator<std::shared_ptr<ImageItem>>>::_Vector_impl"
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::shared_ptr<ImageItem>, std::allocator<std::shared_ptr<ImageItem> > >::_Vector_impl"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class std::shared_ptr<ImageItem>"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "class std::vector<std::shared_ptr<ImageItem>,std::allocator<std::shared_ptr<ImageItem>>>"
+      "third_party": true,
+      "type": "class std::vector<std::shared_ptr<RegionItem>, std::allocator<std::shared_ptr<RegionItem> > >"
      },
      {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::shared_ptr<RegionItem>, std::allocator<std::shared_ptr<RegionItem> > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "class std::shared_ptr<ImageItem>"
-     },
-     {
-      "count": 1,
-      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
-      "kind": "base_class_changed",
-      "type": "class std::vector<std::shared_ptr<RegionItem>,std::allocator<std::shared_ptr<RegionItem>>>"
-     },
-     {
-      "count": 1,
-      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
-      "kind": "base_class_changed",
-      "type": "struct std::_Vector_base<std::shared_ptr<RegionItem>,std::allocator<std::shared_ptr<RegionItem>>>::_Vector_impl"
-     },
-     {
-      "count": 1,
-      "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
-      "kind": "base_class_changed",
+      "third_party": true,
       "type": "class std::shared_ptr<RegionItem>"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "class std::vector<std::shared_ptr<RegionGeometry>,std::allocator<std::shared_ptr<RegionGeometry>>>"
+      "third_party": true,
+      "type": "class std::vector<std::shared_ptr<RegionGeometry>, std::allocator<std::shared_ptr<RegionGeometry> > >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Vector_base<std::shared_ptr<RegionGeometry>,std::allocator<std::shared_ptr<RegionGeometry>>>::_Vector_impl"
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::shared_ptr<RegionGeometry>, std::allocator<std::shared_ptr<RegionGeometry> > >::_Vector_impl"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class std::shared_ptr<RegionGeometry>"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "./libheif/region.h",
+      "exposure": "not_in_interface",
       "kind": "vtable_changed",
-      "type": "class RegionGeometry"
-     },
-     {
-      "count": 2,
-      "declared_in": "./libheif/region.h",
-      "kind": "vtable_changed",
+      "third_party": true,
       "type": "class RegionGeometry"
      }
-    ]
+    ],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 31.109626065,
+  "seconds": 30.981533036,
   "source": "libheif",
   "unpaired": [
    [],
@@ -131,7 +148,11 @@
    "1.19.8"
   ]
  },
- "generated_at": "2026-09-02T15:00:35Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:32:00Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

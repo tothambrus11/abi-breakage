@@ -4,13 +4,17 @@
    {
     "header_files": 1,
     "parsed": 1,
+    "parsed_as_cxx": 0,
     "skipped_by_limit": 0,
+    "with_errors": 0,
     "with_fatal_error": 0
    },
    {
     "header_files": 1,
     "parsed": 1,
+    "parsed_as_cxx": 0,
     "skipped_by_limit": 0,
+    "with_errors": 0,
     "with_fatal_error": 0
    }
   ],
@@ -27,6 +31,7 @@
    "inline_body_changed_template": 0,
    "inline_decl_changed": 0,
    "macro_value_changed": 2,
+   "macro_value_changed_nonversion": 0,
    "macros": [
     5,
     5
@@ -36,12 +41,21 @@
   "id": "chromaprint@1.3..1.3.2",
   "language": "c",
   "source": "chromaprint",
+  "symbol_declared": {
+   "_ZNSt6vectorIcSaIcEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPcS1_EERKc": "undeclared",
+   "_ZNSt6vectorIdSaIdEE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPdS1_EEmRKd": "undeclared",
+   "_ZNSt6vectorIiSaIiEEaSERKS1_": "undeclared"
+  },
   "upstream": [
    "1.3",
    "1.3.2"
   ]
  },
- "generated_at": "2026-09-02T14:52:19Z",
- "schema": "abistudy/header-pair/2",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T07:43:44Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
 }

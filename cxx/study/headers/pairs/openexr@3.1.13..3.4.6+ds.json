@@ -4,13 +4,17 @@
    {
     "header_files": 139,
     "parsed": 139,
+    "parsed_as_cxx": 139,
     "skipped_by_limit": 0,
+    "with_errors": 66,
     "with_fatal_error": 0
    },
    {
     "header_files": 148,
     "parsed": 148,
+    "parsed_as_cxx": 148,
     "skipped_by_limit": 0,
+    "with_errors": 88,
     "with_fatal_error": 0
    }
   ],
@@ -27,6 +31,7 @@
    "inline_body_changed_template": 0,
    "inline_decl_changed": 0,
    "macro_value_changed": 11,
+   "macro_value_changed_nonversion": 6,
    "macros": [
     114,
     128
@@ -36,12 +41,51 @@
   "id": "openexr@3.1.13..3.4.6+ds",
   "language": "cxx",
   "source": "openexr",
+  "symbol_declared": {
+   "_ZN7Imf_3_110CompressorC2ERKNS_6HeaderE": "undeclared",
+   "_ZN7Imf_3_114TiledInputFileD0Ev": "declared",
+   "_ZN7Imf_3_114TiledInputFileD2Ev": "declared",
+   "_ZN7Imf_3_117ScanLineInputFileC2ERKNS_6HeaderEPNS_7IStreamEi": "undeclared",
+   "_ZN7Imf_3_117ScanLineInputFileD0Ev": "undeclared",
+   "_ZN7Imf_3_117ScanLineInputFileD2Ev": "undeclared",
+   "_ZN7Imf_3_118DeepTiledInputFile10initializeEv": "declared",
+   "_ZN7Imf_3_118DeepTiledInputFile19multiPartInitializeEPNS_13InputPartDataE": "declared",
+   "_ZN7Imf_3_118DeepTiledInputFile23compatibilityInitializeERNS_7IStreamE": "declared",
+   "_ZN7Imf_3_118DeepTiledInputFile4Data14getSampleCountEii": "undeclared",
+   "_ZN7Imf_3_118DeepTiledInputFile4Data18validateStreamSizeEv": "undeclared",
+   "_ZN7Imf_3_118DeepTiledInputFile4DataC2Ei": "undeclared",
+   "_ZN7Imf_3_118DeepTiledInputFile4DataD2Ev": "undeclared",
+   "_ZN7Imf_3_118DeepTiledInputFileC2EPNS_13InputPartDataE": "declared",
+   "_ZN7Imf_3_118DeepTiledInputFileC2ERKNS_6HeaderEPNS_7IStreamEii": "declared",
+   "_ZN7Imf_3_118DeepTiledInputFileD0Ev": "declared",
+   "_ZN7Imf_3_118DeepTiledInputFileD2Ev": "declared",
+   "_ZN7Imf_3_118MultiPartInputFileD0Ev": "declared",
+   "_ZN7Imf_3_118MultiPartInputFileD2Ev": "declared",
+   "_ZN7Imf_3_118isValidCompressionENS_11CompressionE": "undeclared",
+   "_ZN7Imf_3_121DeepScanLineInputFile10initializeERKNS_6HeaderE": "declared",
+   "_ZN7Imf_3_121DeepScanLineInputFile19multiPartInitializeEPNS_13InputPartDataE": "declared",
+   "_ZN7Imf_3_121DeepScanLineInputFile23compatibilityInitializeERNS_7IStreamE": "declared",
+   "_ZN7Imf_3_121DeepScanLineInputFileC2EPNS_13InputPartDataE": "declared",
+   "_ZN7Imf_3_121DeepScanLineInputFileD0Ev": "declared",
+   "_ZN7Imf_3_121DeepScanLineInputFileD2Ev": "declared",
+   "_ZN7Imf_3_19InputFileD0Ev": "declared",
+   "_ZN7Imf_3_19InputFileD2Ev": "declared",
+   "_ZNSt6vectorIN7Imf_3_16HeaderESaIS1_EE17_M_realloc_appendIJRKS1_EEEvDpOT_": "undeclared",
+   "_ZNSt6vectorIN7Imf_3_19PixelTypeESaIS1_EE17_M_realloc_appendIJRKS1_EEEvDpOT_": "undeclared",
+   "_ZNSt6vectorIS_IPKcSaIS1_EESaIS3_EE17_M_realloc_appendIJRKS3_EEEvDpOT_": "undeclared",
+   "_ZNSt6vectorIS_IPcSaIS0_EESaIS2_EE17_M_realloc_appendIJRKS2_EEEvDpOT_": "undeclared",
+   "_ZSt16__do_uninit_copyIN9__gnu_cxx17__normal_iteratorIPKSt6vectorIS2_ImSaImEESaIS4_EES2_IS6_SaIS6_EEEESB_PS6_ET1_T_T0_SD_": "undeclared"
+  },
   "upstream": [
    "3.1.13",
    "3.4.6+ds"
   ]
  },
- "generated_at": "2026-09-02T14:53:53Z",
- "schema": "abistudy/header-pair/2",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T07:43:45Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
 }

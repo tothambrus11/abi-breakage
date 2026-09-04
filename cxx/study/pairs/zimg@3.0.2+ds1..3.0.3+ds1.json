@@ -1,13 +1,60 @@
 {
  "data": {
+  "bytes_extracted": 15432084,
+  "excluded_objects": [],
   "id": "zimg@3.0.2+ds1..3.0.3+ds1",
-  "objects": [],
-  "seconds": 1.174919779,
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      40,
+      36
+     ],
+     "mangled_functions": [
+      27,
+      23
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libzimg.so.2",
+     "libzimg.so.2"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__shared_count<(__gnu_cxx::_Lock_policy)2>::__shared_count<zimg::graph::ImageFilter, std::default_delete<zimg::graph::ImageFilter> >(std::unique_ptr<zimg::graph::ImageFilter, std::default_delete<zimg::graph::ImageFilter> >&&)",
+      "symbol": "_ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE2EEC2IN4zimg5graph11ImageFilterESt14default_deleteIS6_EEEOSt10unique_ptrIT_T0_E",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__shared_count<(__gnu_cxx::_Lock_policy)2>::__shared_count<zimg::graph::CopyFilter, std::default_delete<zimg::graph::CopyFilter> >(std::unique_ptr<zimg::graph::CopyFilter, std::default_delete<zimg::graph::CopyFilter> >&&)",
+      "symbol": "_ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE2EEC2IN4zimg5graph10CopyFilterESt14default_deleteIS6_EEEOSt10unique_ptrIT_T0_E",
+      "weak": true
+     }
+    ],
+    "symbol_events_truncated": false,
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {
+     "symbol_removed": 2
+    }
+   }
+  ],
+  "seconds": 4.533601741,
   "source": "zimg",
   "unpaired": [
-   [
-    "libzimg"
-   ],
+   [],
    []
   ],
   "upstream": [
@@ -15,7 +62,11 @@
    "3.0.3+ds1"
   ]
  },
- "generated_at": "2026-09-02T12:22:35Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T06:18:37Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

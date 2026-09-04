@@ -4,13 +4,17 @@
    {
     "header_files": 6,
     "parsed": 6,
+    "parsed_as_cxx": 6,
     "skipped_by_limit": 0,
+    "with_errors": 0,
     "with_fatal_error": 0
    },
    {
     "header_files": 6,
     "parsed": 6,
+    "parsed_as_cxx": 6,
     "skipped_by_limit": 0,
+    "with_errors": 0,
     "with_fatal_error": 0
    }
   ],
@@ -27,6 +31,7 @@
    "inline_body_changed_template": 0,
    "inline_decl_changed": 0,
    "macro_value_changed": 2,
+   "macro_value_changed_nonversion": 0,
    "macros": [
     88,
     88
@@ -36,12 +41,42 @@
   "id": "srt@1.5.0..1.5.1",
   "language": "cxx",
   "source": "srt",
+  "symbol_declared": {
+   "_ZN11srt_logging13LogDispatcher5Proxy5vformEPKcP13__va_list_tag": "undeclared",
+   "_ZN3srt10CTsbpdTime14addDriftSampleEji": "undeclared",
+   "_ZN3srt10CUnitQueue4initEiii": "undeclared",
+   "_ZN3srt10CUnitQueue6shrinkEv": "undeclared",
+   "_ZN3srt10CUnitQueue8increaseEv": "undeclared",
+   "_ZN3srt10CUnitQueueC2Ev": "undeclared",
+   "_ZN3srt13CRcvBufferNew22addRcvTsbPdDriftSampleEji": "undeclared",
+   "_ZN3srt14CCryptoControl13regenCryptoKmEbb": "undeclared",
+   "_ZN3srt14CCryptoControl14sendKeysToPeerENS_15Whether2RegenKmE": "undeclared",
+   "_ZN3srt14CCryptoControl4initENS_13HandshakeSideEb": "undeclared",
+   "_ZN3srt14CCryptoControlC2EPNS_4CUDTEi": "undeclared",
+   "_ZN3srt15SrtOptionActionC2Ev": "undeclared",
+   "_ZN3srt4CUDT15handleKeepaliveEPKcm": "undeclared",
+   "_ZNSt15_Deque_iteratorIbRbPbEpLEl": "undeclared",
+   "_ZNSt6vectorISt4pairIiiESaIS1_EEaSERKS3_": "undeclared",
+   "_ZNSt8_Rb_treeI11SRT_SOCKOPTSt4pairIKS0_NSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEESt10_Select1stIS9_ESt4lessIS0_ESaIS9_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS9_ERS2_": "undeclared",
+   "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_St9_IdentityIS5_ESt4lessIS5_ESaIS5_EE16_M_insert_uniqueIS5_EESt4pairISt17_Rb_tree_iteratorIS5_EbEOT_": "undeclared",
+   "_ZNSt8_Rb_treeIiSt4pairIKiN3srt10CEPollDesc4WaitEESt10_Select1stIS5_ESt4lessIiESaIS5_EE17_M_emplace_uniqueIJS0_IiS4_EEEES0_ISt17_Rb_tree_iteratorIS5_EbEDpOT_": "undeclared",
+   "_ZNSt8_Rb_treeIiSt4pairIKiN3srt10CEPollDescEESt10_Select1stIS4_ESt4lessIiESaIS4_EE17_M_emplace_uniqueIJS0_IiS3_EEEES0_ISt17_Rb_tree_iteratorIS4_EbEDpOT_": "undeclared",
+   "_ZNSt8_Rb_treeIiSt4pairIKiN3srt12CMultiplexerEESt10_Select1stIS4_ESt4lessIiESaIS4_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS4_ERS1_": "undeclared",
+   "_ZNSt8_Rb_treeIlSt4pairIKlSt3setIiSt4lessIiESaIiEEESt10_Select1stIS7_ES3_IlESaIS7_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS7_ERS1_": "undeclared",
+   "_ZSt16__introsort_loopIN9__gnu_cxx17__normal_iteratorIPPN3srt5CUnitESt6vectorIS4_SaIS4_EEEElNS0_5__ops15_Iter_comp_iterINS2_14SortBySequenceEEEEvT_SE_T0_T1_": "undeclared",
+   "crysprGnuTLS_AES_SetKey": "undeclared",
+   "crysprStub_AES_SetKey": "undeclared"
+  },
   "upstream": [
    "1.5.0",
    "1.5.1"
   ]
  },
- "generated_at": "2026-09-02T14:52:21Z",
- "schema": "abistudy/header-pair/2",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T07:43:44Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
 }

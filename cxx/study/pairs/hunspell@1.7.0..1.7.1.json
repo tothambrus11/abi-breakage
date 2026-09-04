@@ -1,5 +1,7 @@
 {
  "data": {
+  "bytes_extracted": 6023612,
+  "excluded_objects": [],
   "id": "hunspell@1.7.0..1.7.1",
   "object_errors": [],
   "objects": [
@@ -21,10 +23,7 @@
     "language": "cxx",
     "mass_rename": false,
     "private_node": {},
-    "public": {
-     "symbol_added": 1,
-     "symbol_removed": 1
-    },
+    "public": {},
     "soname": [
      "libhunspell-1.7.so.0",
      "libhunspell-1.7.so.0"
@@ -32,15 +31,18 @@
     "symbol_events": [
      {
       "kind": "symbol_removed",
-      "pretty": "method std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>::iterator std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>::insert(std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>::const_iterator, const std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>::value_type&)",
-      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE6insertEN9__gnu_cxx17__normal_iteratorIPKS5_S7_EERSA_"
+      "pretty": "method std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::iterator std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::insert(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::const_iterator, const std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::value_type&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE6insertEN9__gnu_cxx17__normal_iteratorIPKS5_S7_EERSA_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>::reserve(std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>::size_type)",
-      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE7reserveEm"
+      "pretty": "method void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::reserve(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::size_type)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE7reserveEm",
+      "weak": true
      }
     ],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {
      "base_class_changed": 47,
@@ -48,201 +50,301 @@
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/hunspell/affentry.hxx",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class PfxEntry"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/11/bits/basic_string.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Alloc_hider"
+      "third_party": true,
+      "type": "struct std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Alloc_hider"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class std::allocator<char>"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./src/hunspell/affentry.hxx",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class SfxEntry"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "class std::vector<HashMgr*,std::allocator<HashMgr*>>"
+      "third_party": true,
+      "type": "class std::vector<HashMgr*, std::allocator<HashMgr*> >"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Vector_base<HashMgr*,std::allocator<HashMgr*>>::_Vector_impl"
+      "third_party": true,
+      "type": "struct std::_Vector_base<HashMgr*, std::allocator<HashMgr*> >::_Vector_impl"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
       "kind": "base_class_changed",
-      "type": "class std::vector<w_char,std::allocator<w_char>>"
+      "third_party": true,
+      "type": "class std::vector<w_char, std::allocator<w_char> >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Vector_base<w_char,std::allocator<w_char>>::_Vector_impl"
+      "third_party": true,
+      "type": "struct std::_Vector_base<w_char, std::allocator<w_char> >::_Vector_impl"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class std::allocator<w_char>"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "class std::vector<replentry,std::allocator<replentry>>"
+      "third_party": true,
+      "type": "class std::vector<replentry, std::allocator<replentry> >"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Vector_base<replentry,std::allocator<replentry>>::_Vector_impl"
+      "third_party": true,
+      "type": "struct std::_Vector_base<replentry, std::allocator<replentry> >::_Vector_impl"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class std::allocator<replentry>"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class std::allocator<HashMgr*>"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
       "kind": "base_class_changed",
-      "type": "class std::vector<std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>,std::allocator<std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>>"
+      "third_party": true,
+      "type": "class std::vector<std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Vector_base<std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>,std::allocator<std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>>::_Vector_impl"
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >::_Vector_impl"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_value",
       "kind": "base_class_changed",
-      "type": "class std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>"
+      "third_party": true,
+      "type": "class std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Vector_base<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>::_Vector_impl"
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_Vector_impl"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "class std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>"
+      "third_party": true,
+      "type": "class std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "class std::allocator<std::vector<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>>"
+      "third_party": true,
+      "type": "class std::allocator<std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "class std::vector<patentry,std::allocator<patentry>>"
+      "third_party": true,
+      "type": "class std::vector<patentry, std::allocator<patentry> >"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Vector_base<patentry,std::allocator<patentry>>::_Vector_impl"
+      "third_party": true,
+      "type": "struct std::_Vector_base<patentry, std::allocator<patentry> >::_Vector_impl"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class std::allocator<patentry>"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
       "kind": "base_class_changed",
-      "type": "class std::vector<std::vector<shortunsignedint,std::allocator<shortunsignedint>>,std::allocator<std::vector<shortunsignedint,std::allocator<shortunsignedint>>>>"
+      "third_party": true,
+      "type": "class std::vector<std::vector<short unsigned int, std::allocator<short unsigned int> >, std::allocator<std::vector<short unsigned int, std::allocator<short unsigned int> > > >"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Vector_base<std::vector<shortunsignedint,std::allocator<shortunsignedint>>,std::allocator<std::vector<shortunsignedint,std::allocator<shortunsignedint>>>>::_Vector_impl"
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::vector<short unsigned int, std::allocator<short unsigned int> >, std::allocator<std::vector<short unsigned int, std::allocator<short unsigned int> > > >::_Vector_impl"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
       "kind": "base_class_changed",
-      "type": "class std::vector<shortunsignedint,std::allocator<shortunsignedint>>"
+      "third_party": true,
+      "type": "class std::vector<short unsigned int, std::allocator<short unsigned int> >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Vector_base<shortunsignedint,std::allocator<shortunsignedint>>::_Vector_impl"
+      "third_party": true,
+      "type": "struct std::_Vector_base<short unsigned int, std::allocator<short unsigned int> >::_Vector_impl"
      },
      {
-      "count": 2,
-      "declared_in": "/usr/include/c++/11/bits/allocator.h",
-      "kind": "base_class_changed",
-      "type": "class std::allocator<shortunsignedint>"
-     },
-     {
-      "count": 2,
-      "declared_in": "/usr/include/c++/11/bits/allocator.h",
-      "kind": "base_class_changed",
-      "type": "class std::allocator<std::vector<shortunsignedint,std::allocator<shortunsignedint>>>"
-     },
-     {
-      "count": 1,
-      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
-      "kind": "base_class_changed",
-      "type": "class std::vector<bit,std::allocator<bit>>"
-     },
-     {
-      "count": 1,
-      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
-      "kind": "base_class_changed",
-      "type": "struct std::_Vector_base<bit,std::allocator<bit>>::_Vector_impl"
-     },
-     {
+      "append_only": false,
       "count": 2,
       "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<short unsigned int>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::allocator<std::vector<short unsigned int, std::allocator<short unsigned int> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<bit, std::allocator<bit> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<bit, std::allocator<bit> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/allocator.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
       "type": "class std::allocator<bit>"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/11/bits/ios_base.h",
+      "exposure": "by_value",
       "kind": "enum_case_added",
+      "third_party": true,
       "type": "enum std::_Ios_Openmode"
      }
-    ]
+    ],
+    "vague_linkage": {
+     "symbol_added": 1,
+     "symbol_removed": 1
+    }
    }
   ],
-  "seconds": 4.02998677,
+  "seconds": 2.815903052,
   "source": "hunspell",
   "unpaired": [
    [],
@@ -253,7 +355,11 @@
    "1.7.1"
   ]
  },
- "generated_at": "2026-09-02T15:05:36Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T06:19:57Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

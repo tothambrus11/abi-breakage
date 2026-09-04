@@ -1,5 +1,6 @@
 {
  "data": {
+  "bytes_extracted": 9047485,
   "id": "freetype@2.14.1+dfsg..2.14.2+dfsg",
   "object_errors": [],
   "objects": [
@@ -37,51 +38,73 @@
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./include/freetype/internal/ftobjs.h",
+      "exposure": "by_pointer",
       "kind": "field_removed_from_struct",
+      "third_party": true,
       "type": "struct FT_LibraryRec_"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./include/freetype/internal/ftobjs.h",
+      "exposure": "by_pointer",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct FT_LibraryRec_"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./include/freetype/internal/ftobjs.h",
+      "exposure": "by_pointer",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct FT_LibraryRec_"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "./include/freetype/internal/ftobjs.h",
+      "exposure": "not_in_interface",
       "kind": "field_removed_from_struct",
+      "third_party": true,
       "type": "struct FT_Face_InternalRec_"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./include/freetype/internal/ftobjs.h",
+      "exposure": "not_in_interface",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct FT_Face_InternalRec_"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./include/freetype/internal/ftobjs.h",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct FT_Face_InternalRec_"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./include/freetype/ftimage.h",
+      "exposure": "not_in_interface",
       "kind": "field_type_changed",
+      "third_party": false,
       "type": "struct FT_Span_"
      }
-    ]
+    ],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 2.109629877,
+  "seconds": 1.800702506,
   "source": "freetype",
   "unpaired": [
    [],
@@ -92,7 +115,11 @@
    "2.14.2+dfsg"
   ]
  },
- "generated_at": "2026-09-02T14:57:47Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:40:08Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

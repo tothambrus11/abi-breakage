@@ -1,5 +1,7 @@
 {
  "data": {
+  "bytes_extracted": 2981890,
+  "excluded_objects": [],
   "id": "game-music-emu@0.6.3..0.6.4",
   "object_errors": [],
   "objects": [
@@ -22,8 +24,7 @@
     "mass_rename": false,
     "private_node": {},
     "public": {
-     "symbol_added": 5,
-     "symbol_removed": 2
+     "symbol_added": 5
     },
     "soname": [
      "libgme.so.0",
@@ -32,149 +33,190 @@
     "symbol_events": [
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::vector<shortint,std::allocator<shortint>>::_M_default_append(std::vector<shortint,std::allocator<shortint>>::size_type)",
-      "symbol": "_ZNSt6vectorIsSaIsEE17_M_default_appendEm"
+      "pretty": "function std::vector<short int, std::allocator<short int> >* std::__do_uninit_fill_n<std::vector<short int>*, long unsigned int, std::vector<short int> >(std::vector<short int, std::allocator<short int> >*, unsigned long int, const std::vector<short int, std::allocator<short int> >&)",
+      "symbol": "_ZSt18__do_uninit_fill_nIPSt6vectorIsSaIsEEmS2_ET_S4_T0_RKT1_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "function std::vector<shortint,std::allocator<shortint>>* std::__do_uninit_fill_n<std::vector<shortint>*,longunsignedint,std::vector<shortint>>(std::vector<shortint,std::allocator<shortint>>*, unsigned long int, const std::vector<shortint,std::allocator<shortint>>&)",
-      "symbol": "_ZSt18__do_uninit_fill_nIPSt6vectorIsSaIsEEmS2_ET_S4_T0_RKT1_"
+      "pretty": "method void std::vector<short int, std::allocator<short int> >::_M_default_append(std::vector<short int, std::allocator<short int> >::size_type)",
+      "symbol": "_ZNSt6vectorIsSaIsEE17_M_default_appendEm",
+      "weak": true
      },
      {
       "kind": "symbol_added",
       "pretty": "function void gme_set_fade_msecs(Music_Emu*, int, int)",
-      "symbol": "gme_set_fade_msecs"
+      "symbol": "gme_set_fade_msecs",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function gme_err_t gme_load_tracks(Music_Emu*, void*, long int*, int)",
-      "symbol": "gme_load_tracks"
+      "symbol": "gme_load_tracks",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function int gme_fixed_track_count(gme_type_t)",
-      "symbol": "gme_fixed_track_count"
+      "symbol": "gme_fixed_track_count",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function void gme_disable_echo(Music_Emu*, int)",
-      "symbol": "gme_disable_echo"
+      "symbol": "gme_disable_echo",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function int gme_autoload_playback_limit(const Music_Emu*)",
-      "symbol": "gme_autoload_playback_limit"
+      "symbol": "gme_autoload_playback_limit",
+      "weak": false
      }
     ],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {
-     "base_class_changed": 2,
+     "base_class_changed": 1,
      "field_added_to_struct": 16,
      "member_offset_changed": 37,
      "type_size_changed": 5,
-     "vtable_changed": 10
+     "vtable_changed": 5
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 24,
       "declared_in": "./gme/Music_Emu.h",
+      "exposure": "by_pointer",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct Music_Emu"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./gme/Music_Emu.h",
+      "exposure": "by_pointer",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct Music_Emu"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./gme/Music_Emu.h",
+      "exposure": "by_pointer",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "struct Music_Emu"
      },
      {
+      "append_only": false,
       "count": 5,
       "declared_in": "./gme/Music_Emu.h",
+      "exposure": "by_pointer",
       "kind": "vtable_changed",
+      "third_party": true,
       "type": "struct Music_Emu"
      },
      {
-      "count": 1,
-      "declared_in": "./gme/Music_Emu.h",
-      "kind": "base_class_changed",
-      "type": "struct Music_Emu"
-     },
-     {
-      "count": 5,
-      "declared_in": "./gme/Music_Emu.h",
-      "kind": "vtable_changed",
-      "type": "struct Music_Emu"
-     },
-     {
+      "append_only": false,
       "count": 1,
       "declared_in": "./gme/Gme_File.h",
+      "exposure": "not_in_interface",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "struct Gme_File"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "./gme/Gme_File.h",
+      "exposure": "not_in_interface",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct Gme_File"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./gme/Gme_File.h",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct Gme_File"
      },
      {
+      "append_only": true,
       "count": 1,
       "declared_in": "./gme/M3u_Playlist.h",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
-      "type": "class M3_Playlist"
+      "third_party": true,
+      "type": "class M3u_Playlist"
      },
      {
+      "append_only": false,
       "count": 4,
       "declared_in": "./gme/M3u_Playlist.h",
+      "exposure": "not_in_interface",
       "kind": "field_added_to_struct",
-      "type": "struct M3_Playlist::info_t"
+      "third_party": true,
+      "type": "struct M3u_Playlist::info_t"
      },
      {
+      "append_only": false,
       "count": 4,
       "declared_in": "./gme/M3u_Playlist.h",
+      "exposure": "not_in_interface",
       "kind": "member_offset_changed",
-      "type": "struct M3_Playlist::info_t"
+      "third_party": true,
+      "type": "struct M3u_Playlist::info_t"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./gme/M3u_Playlist.h",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
-      "type": "struct M3_Playlist::info_t"
+      "third_party": true,
+      "type": "struct M3u_Playlist::info_t"
      },
      {
+      "append_only": false,
       "count": 11,
       "declared_in": "./gme/Gme_File.h",
+      "exposure": "not_in_interface",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "struct track_info_t"
      },
      {
+      "append_only": false,
       "count": 7,
       "declared_in": "./gme/Gme_File.h",
+      "exposure": "not_in_interface",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct track_info_t"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./gme/Gme_File.h",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct track_info_t"
      }
-    ]
+    ],
+    "vague_linkage": {
+     "symbol_removed": 2
+    }
    }
   ],
-  "seconds": 2.640487357,
+  "seconds": 1.581404038,
   "source": "game-music-emu",
   "unpaired": [
    [],
@@ -185,7 +227,11 @@
    "0.6.4"
   ]
  },
- "generated_at": "2026-09-02T15:03:23Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T06:20:20Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

@@ -1,5 +1,6 @@
 {
  "data": {
+  "bytes_extracted": 23931822,
   "id": "gst-plugins-bad1.0@1.28.6..1.29.1",
   "object_errors": [],
   "objects": [
@@ -29,7 +30,8 @@
     "symbol_events": [],
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -60,97 +62,116 @@
      {
       "kind": "symbol_added",
       "pretty": "function gboolean gst_analytics_relation_meta_get_keypoint_mtd(GstAnalyticsRelationMeta*, guint, GstAnalyticsKeypointMtd*)",
-      "symbol": "gst_analytics_relation_meta_get_keypoint_mtd"
+      "symbol": "gst_analytics_relation_meta_get_keypoint_mtd",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function gboolean gst_analytics_relation_meta_get_group_mtd(GstAnalyticsRelationMeta*, guint, GstAnalyticsGroupMtd*)",
-      "symbol": "gst_analytics_relation_meta_get_group_mtd"
+      "symbol": "gst_analytics_relation_meta_get_group_mtd",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function gboolean gst_analytics_relation_meta_add_keypoint_mtd(GstAnalyticsRelationMeta*, GstAnalyticsKeypointDimensions, gint, gint, gint, guint8, gfloat, GstAnalyticsKeypointMtd*)",
-      "symbol": "gst_analytics_relation_meta_add_keypoint_mtd"
+      "symbol": "gst_analytics_relation_meta_add_keypoint_mtd",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function gboolean gst_analytics_relation_meta_add_group_mtd_with_size(GstAnalyticsRelationMeta*, gsize, GstAnalyticsGroupMtd*)",
-      "symbol": "gst_analytics_relation_meta_add_group_mtd_with_size"
+      "symbol": "gst_analytics_relation_meta_add_group_mtd_with_size",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function gboolean gst_analytics_group_mtd_add_member(GstAnalyticsGroupMtd*, guint)",
-      "symbol": "gst_analytics_group_mtd_add_member"
+      "symbol": "gst_analytics_group_mtd_add_member",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function gboolean gst_analytics_group_mtd_get_member(const GstAnalyticsGroupMtd*, gsize, GstAnalyticsMtd*)",
-      "symbol": "gst_analytics_group_mtd_get_member"
+      "symbol": "gst_analytics_group_mtd_get_member",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function gboolean gst_analytics_keypoint_mtd_get_position(const GstAnalyticsKeypointMtd*, gint*, gint*, gint*, GstAnalyticsKeypointDimensions*)",
-      "symbol": "gst_analytics_keypoint_mtd_get_position"
+      "symbol": "gst_analytics_keypoint_mtd_get_position",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function gsize gst_analytics_group_mtd_get_member_count(const GstAnalyticsGroupMtd*)",
-      "symbol": "gst_analytics_group_mtd_get_member_count"
+      "symbol": "gst_analytics_group_mtd_get_member_count",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function gboolean gst_analytics_keypoint_mtd_get_confidence(const GstAnalyticsKeypointMtd*, gfloat*)",
-      "symbol": "gst_analytics_keypoint_mtd_get_confidence"
+      "symbol": "gst_analytics_keypoint_mtd_get_confidence",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function gboolean gst_analytics_group_mtd_has_semantic_tag(const GstAnalyticsGroupMtd*, const gchar*)",
-      "symbol": "gst_analytics_group_mtd_has_semantic_tag"
+      "symbol": "gst_analytics_group_mtd_has_semantic_tag",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function gboolean gst_analytics_group_mtd_iterate(const GstAnalyticsGroupMtd*, gpointer*, GstAnalyticsMtdType, GstAnalyticsMtd*)",
-      "symbol": "gst_analytics_group_mtd_iterate"
+      "symbol": "gst_analytics_group_mtd_iterate",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "function GstAnalyticsMtdType gst_analytics_group_mtd_get_mtd_type(void)",
-      "symbol": "gst_analytics_group_mtd_get_mtd_type"
+      "pretty": "function GstAnalyticsMtdType gst_analytics_group_mtd_get_mtd_type()",
+      "symbol": "gst_analytics_group_mtd_get_mtd_type",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function gboolean gst_analytics_group_mtd_semantic_tag_has_prefix(const GstAnalyticsGroupMtd*, const gchar*)",
-      "symbol": "gst_analytics_group_mtd_semantic_tag_has_prefix"
+      "symbol": "gst_analytics_group_mtd_semantic_tag_has_prefix",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function gboolean gst_analytics_group_mtd_set_semantic_tag(GstAnalyticsGroupMtd*, const gchar*)",
-      "symbol": "gst_analytics_group_mtd_set_semantic_tag"
+      "symbol": "gst_analytics_group_mtd_set_semantic_tag",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "function GstAnalyticsMtdType gst_analytics_keypoint_mtd_get_mtd_type(void)",
-      "symbol": "gst_analytics_keypoint_mtd_get_mtd_type"
+      "pretty": "function GstAnalyticsMtdType gst_analytics_keypoint_mtd_get_mtd_type()",
+      "symbol": "gst_analytics_keypoint_mtd_get_mtd_type",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function gboolean gst_analytics_keypoint_mtd_get_visibility_flags(const GstAnalyticsKeypointMtd*, guint8*)",
-      "symbol": "gst_analytics_keypoint_mtd_get_visibility_flags"
+      "symbol": "gst_analytics_keypoint_mtd_get_visibility_flags",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function gboolean gst_analytics_relation_meta_add_keypoints_group(GstAnalyticsRelationMeta*, const gchar*, GstAnalyticsKeypointDimensions, gsize, const gint*, gsize, const gfloat*, const guint8*, gsize, const gint*, GstAnalyticsGroupMtd*)",
-      "symbol": "gst_analytics_relation_meta_add_keypoints_group"
+      "symbol": "gst_analytics_relation_meta_add_keypoints_group",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function gboolean gst_analytics_relation_meta_add_group_mtd(GstAnalyticsRelationMeta*, gsize, GstAnalyticsGroupMtd*)",
-      "symbol": "gst_analytics_relation_meta_add_group_mtd"
+      "symbol": "gst_analytics_relation_meta_add_group_mtd",
+      "weak": false
      }
     ],
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -178,7 +199,8 @@
     "symbol_events": [],
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -206,7 +228,8 @@
     "symbol_events": [],
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -239,50 +262,63 @@
      {
       "kind": "symbol_added",
       "pretty": "function GstAV1ParserResult gst_av1_parser_parse_decoder_config_record(GstAV1Parser*, const guint8*, gsize, GstAV1DecoderConfigRecord**)",
-      "symbol": "gst_av1_parser_parse_decoder_config_record"
+      "symbol": "gst_av1_parser_parse_decoder_config_record",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function gboolean gst_av1_parser_create_decoder_config_record_from_sequence_header(GstAV1Parser*, const guint8*, gsize, GstAV1DecoderConfigRecord**)",
-      "symbol": "gst_av1_parser_create_decoder_config_record_from_sequence_header"
+      "symbol": "gst_av1_parser_create_decoder_config_record_from_sequence_header",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function void gst_av1_decoder_config_record_free(GstAV1DecoderConfigRecord*)",
-      "symbol": "gst_av1_decoder_config_record_free"
+      "symbol": "gst_av1_decoder_config_record_free",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function GstBuffer* gst_av1_create_decoder_config_record_buffer(const GstAV1DecoderConfigRecord*)",
-      "symbol": "gst_av1_create_decoder_config_record_buffer"
+      "symbol": "gst_av1_create_decoder_config_record_buffer",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function GstBuffer* gst_av1_build_obu_buffer(GstAV1OBU*, gboolean)",
-      "symbol": "gst_av1_build_obu_buffer"
+      "symbol": "gst_av1_build_obu_buffer",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function gboolean gst_av1_bit_writer_write_leb128(guint8*, gsize, guint*, guint64)",
-      "symbol": "gst_av1_bit_writer_write_leb128"
+      "symbol": "gst_av1_bit_writer_write_leb128",
+      "weak": false
      }
     ],
     "symbols_version_renamed": 0,
     "third_party": {},
     "type_events": [
      {
+      "append_only": true,
       "count": 1,
       "declared_in": "../gst-libs/gst/codecparsers/gstav1parser.h",
+      "exposure": "not_in_interface",
       "kind": "field_added_to_struct",
+      "third_party": false,
       "type": "struct _GstAV1MetadataITUT_T35"
      },
      {
+      "append_only": true,
       "count": 1,
       "declared_in": "../gst-libs/gst/codecparsers/gstav1parser.h",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": false,
       "type": "struct _GstAV1MetadataITUT_T35"
      }
-    ]
+    ],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -310,7 +346,8 @@
     "symbol_events": [],
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -330,9 +367,7 @@
     "language": "c",
     "mass_rename": false,
     "private_node": {},
-    "public": {
-     "symbol_added": 3
-    },
+    "public": {},
     "soname": [
      "libgstcuda-1.0.so.0",
      "libgstcuda-1.0.so.0"
@@ -340,18 +375,21 @@
     "symbol_events": [
      {
       "kind": "symbol_added",
-      "pretty": "method std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>& std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::_M_replace(std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::size_type, std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::size_type, const char*, const std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>::size_type)",
-      "symbol": "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_replaceEmmPKcm"
+      "pretty": "method std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >& std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::size_type, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::size_type, const char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::size_type)",
+      "symbol": "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_replaceEmmPKcm",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::vector<charconst*,std::allocator<charconst*>>::_M_realloc_append<charconst*>()",
-      "symbol": "_ZNSt6vectorIPKcSaIS1_EE17_M_realloc_appendIJS1_EEEvDpOT_"
+      "pretty": "method void std::vector<char const*, std::allocator<char const*> >::_M_realloc_append<char const*>(const char*&&)",
+      "symbol": "_ZNSt6vectorIPKcSaIS1_EE17_M_realloc_appendIJS1_EEEvDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::vector<charconst*,std::allocator<charconst*>>::_M_realloc_append<charconst*const&>()",
-      "symbol": "_ZNSt6vectorIPKcSaIS1_EE17_M_realloc_appendIJRKS1_EEEvDpOT_"
+      "pretty": "method void std::vector<char const*, std::allocator<char const*> >::_M_realloc_append<char const* const&>(const char* const&)",
+      "symbol": "_ZNSt6vectorIPKcSaIS1_EE17_M_realloc_appendIJRKS1_EEEvDpOT_",
+      "weak": true
      }
     ],
     "symbols_version_renamed": 0,
@@ -360,12 +398,18 @@
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/16/bits/std_mutex.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class std::mutex"
      }
-    ]
+    ],
+    "vague_linkage": {
+     "symbol_added": 3
+    }
    },
    {
     "coverage": {
@@ -393,7 +437,8 @@
     "symbol_events": [],
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -425,24 +470,34 @@
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/16/bits/std_mutex.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class std::mutex"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/16/bits/stl_deque.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "class std::deque<_GstHipEvent*,std::allocator<_GstHipEvent*>>"
+      "third_party": true,
+      "type": "class std::deque<_GstHipEvent*, std::allocator<_GstHipEvent*> >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/16/bits/stl_deque.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Deque_base<_GstHipEvent*,std::allocator<_GstHipEvent*>>::_Deque_impl"
+      "third_party": true,
+      "type": "struct std::_Deque_base<_GstHipEvent*, std::allocator<_GstHipEvent*> >::_Deque_impl"
      }
-    ]
+    ],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -470,7 +525,8 @@
     "symbol_events": [],
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -498,7 +554,8 @@
     "symbol_events": [],
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -526,7 +583,8 @@
     "symbol_events": [],
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -554,7 +612,8 @@
     "symbol_events": [],
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -582,7 +641,8 @@
     "symbol_events": [],
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -614,19 +674,24 @@
      {
       "kind": "symbol_added",
       "pretty": "function void gst_play_message_parse_tracks_selected(GstMessage*, gchar**, gchar**, gchar**)",
-      "symbol": "gst_play_message_parse_tracks_selected"
+      "symbol": "gst_play_message_parse_tracks_selected",
+      "weak": false
      }
     ],
     "symbols_version_renamed": 0,
     "third_party": {},
     "type_events": [
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "../gst-libs/gst/play/gstplay.h",
+      "exposure": "by_value",
       "kind": "enum_case_added",
+      "third_party": false,
       "type": "enum GstPlayMessage"
      }
-    ]
+    ],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -654,7 +719,8 @@
     "symbol_events": [],
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -682,7 +748,8 @@
     "symbol_events": [],
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -710,7 +777,8 @@
     "symbol_events": [],
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -738,7 +806,8 @@
     "symbol_events": [],
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -766,7 +835,8 @@
     "symbol_events": [],
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -798,12 +868,16 @@
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 5,
       "declared_in": "/usr/include/wayland-client-protocol.h",
+      "exposure": "by_value",
       "kind": "enum_case_removed",
+      "third_party": true,
       "type": "enum wl_shm_format"
      }
-    ]
+    ],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -831,7 +905,8 @@
     "symbol_events": [],
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -859,10 +934,11 @@
     "symbol_events": [],
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 5.488617888,
+  "seconds": 4.574062414,
   "source": "gst-plugins-bad1.0",
   "unpaired": [
    [],
@@ -873,7 +949,11 @@
    "1.29.1"
   ]
  },
- "generated_at": "2026-09-02T15:05:59Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:37:05Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

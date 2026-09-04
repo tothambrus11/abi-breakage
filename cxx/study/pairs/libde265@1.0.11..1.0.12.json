@@ -1,6 +1,9 @@
 {
  "data": {
+  "bytes_extracted": 4275891,
+  "excluded_objects": [],
   "id": "libde265@1.0.11..1.0.12",
+  "object_errors": [],
   "objects": [
    {
     "coverage": {
@@ -20,10 +23,7 @@
     "language": "cxx",
     "mass_rename": false,
     "private_node": {},
-    "public": {
-     "symbol_added": 1,
-     "symbol_removed": 2
-    },
+    "public": {},
     "soname": [
      "libde265.so.0",
      "libde265.so.0"
@@ -31,26 +31,34 @@
     "symbol_events": [
      {
       "kind": "symbol_removed",
-      "pretty": "method std::_Vector_base<int,std::allocator<int>>::~_Vector_base()",
-      "symbol": "_ZNSt12_Vector_baseIiSaIiEED2Ev"
+      "pretty": "function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)",
+      "symbol": "_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EERKS8_SA_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "function std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>> std::operator+<char,std::char_traits<char>,std::allocator<char>>(const std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>&, const std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>&)",
-      "symbol": "_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EERKS8_SA_"
+      "pretty": "method std::_Vector_base<int, std::allocator<int> >::~_Vector_base(int)",
+      "symbol": "_ZNSt12_Vector_baseIiSaIiEED2Ev",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method std::vector<int,std::allocator<int>>::~vector()",
-      "symbol": "_ZNSt6vectorIiSaIiEED2Ev"
+      "pretty": "method std::vector<int, std::allocator<int> >::~vector(int)",
+      "symbol": "_ZNSt6vectorIiSaIiEED2Ev",
+      "weak": true
      }
     ],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {
+     "symbol_added": 1,
+     "symbol_removed": 2
+    }
    }
   ],
-  "seconds": 5.272248865,
+  "seconds": 3.207909012,
   "source": "libde265",
   "unpaired": [
    [],
@@ -61,7 +69,11 @@
    "1.0.12"
   ]
  },
- "generated_at": "2026-09-02T12:11:44Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T06:20:06Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

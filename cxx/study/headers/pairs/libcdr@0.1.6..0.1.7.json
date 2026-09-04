@@ -4,13 +4,17 @@
    {
     "header_files": 4,
     "parsed": 4,
+    "parsed_as_cxx": 4,
     "skipped_by_limit": 0,
+    "with_errors": 3,
     "with_fatal_error": 0
    },
    {
     "header_files": 4,
     "parsed": 4,
+    "parsed_as_cxx": 4,
     "skipped_by_limit": 0,
+    "with_errors": 3,
     "with_fatal_error": 0
    }
   ],
@@ -27,6 +31,7 @@
    "inline_body_changed_template": 0,
    "inline_decl_changed": 0,
    "macro_value_changed": 0,
+   "macro_value_changed_nonversion": 0,
    "macros": [
     0,
     0
@@ -36,12 +41,41 @@
   "id": "libcdr@0.1.6..0.1.7",
   "language": "cxx",
   "source": "libcdr",
+  "symbol_declared": {
+   "_ZNKSt19istreambuf_iteratorIcSt11char_traitsIcEE5equalERKS2_": "unknown",
+   "_ZNSt11_Deque_baseIjSaIjEED2Ev": "unknown",
+   "_ZNSt12_Destroy_auxILb0EE9__destroyIPN6libcdr7CDRTextEEEvT_S5_": "unknown",
+   "_ZNSt12_Vector_baseISt4pairIddESaIS1_EED2Ev": "unknown",
+   "_ZNSt12_Vector_baseIhSaIhEED2Ev": "unknown",
+   "_ZNSt12_Vector_baseIjSaIjEED2Ev": "unknown",
+   "_ZNSt6vectorISt4pairIddESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_": "unknown",
+   "_ZNSt6vectorIhSaIhEE17_M_realloc_insertIJRKhEEEvN9__gnu_cxx17__normal_iteratorIPhS1_EEDpOT_": "unknown",
+   "_ZNSt6vectorIhSaIhEE17_M_realloc_insertIJhEEEvN9__gnu_cxx17__normal_iteratorIPhS1_EEDpOT_": "unknown",
+   "_ZNSt6vectorIhSaIhEE6resizeEm": "unknown",
+   "_ZNSt6vectorIjSaIjEE17_M_realloc_insertIJjEEEvN9__gnu_cxx17__normal_iteratorIPjS1_EEDpOT_": "unknown",
+   "_ZNSt8_Rb_treeIjSt4pairIKjSt6vectorIjSaIjEEESt10_Select1stIS5_ESt4lessIjESaIS5_EE24_M_get_insert_unique_posERS1_": "unknown",
+   "_ZNSt8_Rb_treeIjSt4pairIKjSt6vectorIjSaIjEEESt10_Select1stIS5_ESt4lessIjESaIS5_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS5_ERS1_": "unknown",
+   "_ZNSt8_Rb_treeIjSt4pairIKjdESt10_Select1stIS2_ESt4lessIjESaIS2_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJOjEESD_IJEEEEESt17_Rb_tree_iteratorIS2_ESt23_Rb_tree_const_iteratorIS2_EDpOT_": "unknown",
+   "_ZNSt8_Rb_treeIjSt4pairIKjdESt10_Select1stIS2_ESt4lessIjESaIS2_EE24_M_get_insert_unique_posERS1_": "unknown",
+   "_ZNSt8_Rb_treeIjSt4pairIKjdESt10_Select1stIS2_ESt4lessIjESaIS2_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS2_ERS1_": "unknown",
+   "_ZNSt8_Rb_treeIjSt4pairIKjjESt10_Select1stIS2_ESt4lessIjESaIS2_EE24_M_get_insert_unique_posERS1_": "unknown",
+   "_ZNSt8_Rb_treeIjSt4pairIKjjESt10_Select1stIS2_ESt4lessIjESaIS2_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS2_ERS1_": "unknown",
+   "_ZNSt8_Rb_treeIjSt4pairIKjtESt10_Select1stIS2_ESt4lessIjESaIS2_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJRS1_EESD_IJEEEEESt17_Rb_tree_iteratorIS2_ESt23_Rb_tree_const_iteratorIS2_EDpOT_": "unknown",
+   "_ZNSt8_Rb_treeIjSt4pairIKjtESt10_Select1stIS2_ESt4lessIjESaIS2_EE24_M_get_insert_unique_posERS1_": "unknown",
+   "_ZNSt8_Rb_treeIjSt4pairIKjtESt10_Select1stIS2_ESt4lessIjESaIS2_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS2_ERS1_": "unknown",
+   "_ZNSt8_Rb_treeItSt4pairIKtjESt10_Select1stIS2_ESt4lessItESaIS2_EE24_M_get_insert_unique_posERS1_": "unknown",
+   "_ZNSt8_Rb_treeItSt4pairIKtjESt10_Select1stIS2_ESt4lessItESaIS2_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS2_ERS1_": "unknown"
+  },
   "upstream": [
    "0.1.6",
    "0.1.7"
   ]
  },
- "generated_at": "2026-09-02T14:53:53Z",
- "schema": "abistudy/header-pair/2",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T07:43:45Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
 }

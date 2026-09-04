@@ -1,5 +1,6 @@
 {
  "data": {
+  "bytes_extracted": 5489752,
   "id": "intel-gmmlib@22.8.2+ds1..22.9.0+ds1",
   "object_errors": [],
   "objects": [
@@ -22,12 +23,13 @@
     "mass_rename": false,
     "private_node": {},
     "public": {
-     "base_class_changed": 6,
+     "base_class_changed": 5,
      "enum_case_added": 8,
      "field_added_to_struct": 2,
      "field_type_changed": 2,
      "member_offset_changed": 10,
-     "type_size_changed": 1
+     "type_size_changed": 1,
+     "vtable_changed": 1
     },
     "soname": [
      "libigdgmm.so.12",
@@ -38,93 +40,136 @@
     "third_party": {},
     "type_events": [
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./Source/GmmLib/inc/External/Common/GmmInfo.h",
+      "exposure": "by_pointer",
       "kind": "field_type_changed",
+      "third_party": false,
       "type": "class GmmLib::Context"
      },
      {
+      "append_only": false,
       "count": 10,
       "declared_in": "./Source/GmmLib/inc/External/Common/GmmInfo.h",
+      "exposure": "by_pointer",
       "kind": "member_offset_changed",
+      "third_party": false,
       "type": "class GmmLib::Context"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./Source/GmmLib/inc/External/Common/GmmInfo.h",
+      "exposure": "by_pointer",
       "kind": "type_size_changed",
+      "third_party": false,
       "type": "class GmmLib::Context"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "./Source/GmmLib/inc/External/Common/../../../../inc/umKmInc/../common/igfxfmid.h",
+      "exposure": "not_in_interface",
       "kind": "enum_case_added",
+      "third_party": false,
       "type": "enum PRODUCT_FAMILY"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "./Source/GmmLib/inc/External/Common/../../../../inc/umKmInc/../common/igfxfmid.h",
+      "exposure": "not_in_interface",
       "kind": "enum_case_added",
+      "third_party": false,
       "type": "enum GFXCORE_FAMILY"
      },
      {
+      "append_only": false,
       "count": 4,
       "declared_in": "./Source/GmmLib/inc/External/Common/GmmCachePolicyExt.h",
+      "exposure": "by_value",
       "kind": "enum_case_added",
+      "third_party": false,
       "type": "enum GMM_RESOURCE_USAGE_TYPE_ENUM"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./Source/GmmLib/inc/External/Common/GmmResourceInfoExt.h",
+      "exposure": "by_pointer",
       "kind": "base_class_changed",
+      "third_party": false,
       "type": "struct GMM_RESCREATE_CUSTOM_PARAMS_2_REC"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./Source/GmmLib/inc/External/Common/../../../../inc/umKmInc/../common/sku_wa.h",
+      "exposure": "by_pointer",
       "kind": "field_type_changed",
+      "third_party": false,
       "type": "struct _SKU_FEATURE_TABLE"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "./Source/GmmLib/inc/External/Common/../../../../inc/umKmInc/../common/sku_wa.h",
+      "exposure": "not_in_interface",
       "kind": "field_added_to_struct",
+      "third_party": false,
       "type": "struct {unsigned int FtrPPGTT; unsigned int FtrIA32eGfxPTEs; unsigned int FtrMemTypeMocsDeferPAT; unsigned int FtrPml4Support; unsigned int FtrSVM; unsigned int FtrTileMappedResource; unsigned int FtrTranslationTable; unsigned int FtrUserModeTranslationTable; unsigned int FtrNullPages; unsigned int FtrEDram; unsigned int FtrLLCBypass; unsigned int FtrCrystalwell; unsigned int FtrCentralCachePolicy; unsigned int FtrWddm2GpuMmu; unsigned int FtrWddm2Svm; unsigned int FtrStandardMipTailFormat; unsigned int FtrWddm2_1_64kbPages; unsigned int FtrE2ECompression; unsigned int FtrLinearCCS; unsigned int FtrFrameBufferLLC; unsigned int FtrDriverFLR; unsigned int FtrLocalMemory; unsigned int FtrCameraCaptureCaching; unsigned int FtrLocalMemoryAllows4KB; unsigned int FtrPpgtt64KBWalkOptimization; unsigned int FtrFlatPhysCCS; unsigned int FtrDisplayXTiling; unsigned int FtrMultiTileArch; unsigned int FtrDisplayPageTables; unsigned int Ftr57bGPUAddressing; unsigned int FtrUnified3DMediaCompressionFormats; unsigned int FtrForceTile4; unsigned int FtrTile64Optimization; unsigned int FtrDiscrete; unsigned int FtrXe2Compression; unsigned int FtrXe2PlusTiling; unsigned int FtrL4Cache; unsigned int FtrPml5Support;}"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./Source/GmmLib/inc/External/Common/../Linux/GmmResourceInfoLin.h",
+      "exposure": "by_pointer",
       "kind": "base_class_changed",
+      "third_party": false,
       "type": "class GmmLib::GmmResourceInfoLin"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./Source/GmmLib/inc/External/Common/../Linux/GmmResourceInfoLin.h",
-      "kind": "base_class_changed",
+      "exposure": "by_pointer",
+      "kind": "vtable_changed",
+      "third_party": false,
       "type": "class GmmLib::GmmResourceInfoLin"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./Source/GmmLib/TranslationTable/../TranslationTable/GmmUmdTranslationTable.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": false,
       "type": "class GmmLib::AuxTable"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./Source/GmmLib/TranslationTable/../TranslationTable/GmmUmdTranslationTable.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": false,
       "type": "class GmmLib::MidLevelTable"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./Source/GmmLib/TranslationTable/../TranslationTable/GmmUmdTranslationTable.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": false,
       "type": "class GmmLib::LastLevelTable"
      }
-    ]
+    ],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 2.747044925,
+  "seconds": 2.012570453,
   "source": "intel-gmmlib",
   "unpaired": [
    [],
@@ -135,7 +180,11 @@
    "22.9.0+ds1"
   ]
  },
- "generated_at": "2026-09-02T15:05:31Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:42:06Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

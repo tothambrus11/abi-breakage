@@ -4,44 +4,62 @@
    {
     "header_files": 14,
     "parsed": 14,
+    "parsed_as_cxx": 1,
     "skipped_by_limit": 0,
+    "with_errors": 10,
     "with_fatal_error": 0
    },
    {
-    "header_files": 0,
-    "parsed": 0,
+    "header_files": 14,
+    "parsed": 14,
+    "parsed_as_cxx": 1,
     "skipped_by_limit": 0,
+    "with_errors": 10,
     "with_fatal_error": 0
    }
   ],
   "diff": {
    "definitions": [
     736,
-    0
+    761
    ],
-   "definitions_added": 0,
-   "definitions_common": 0,
-   "definitions_removed": 736,
-   "examples": [],
-   "inline_body_changed": 0,
+   "definitions_added": 30,
+   "definitions_common": 731,
+   "definitions_removed": 5,
+   "examples": [
+    "z3++.h::mod",
+    "z3++.h::abs",
+    "z3++.h::sqrt"
+   ],
+   "inline_body_changed": 3,
    "inline_body_changed_template": 0,
    "inline_decl_changed": 0,
-   "macro_value_changed": 0,
+   "macro_value_changed": 2,
+   "macro_value_changed_nonversion": 0,
    "macros": [
     49,
-    0
+    49
    ],
-   "macros_common": 0
+   "macros_common": 49
   },
   "id": "z3@4.8.4..4.8.6",
-  "language": "cxx",
+  "language": "c",
   "source": "z3",
+  "symbol_declared": {
+   "Z3_fixedpoint_pop": "unknown",
+   "Z3_fixedpoint_push": "unknown",
+   "Z3_get_error_msg_ex": "unknown"
+  },
   "upstream": [
    "4.8.4",
    "4.8.6"
   ]
  },
- "generated_at": "2026-09-02T14:52:05Z",
- "schema": "abistudy/header-pair/2",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T07:43:44Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
 }

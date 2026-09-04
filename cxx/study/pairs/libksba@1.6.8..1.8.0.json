@@ -1,5 +1,6 @@
 {
  "data": {
+  "bytes_extracted": 13069644,
   "id": "libksba@1.6.8..1.8.0",
   "object_errors": [],
   "objects": [
@@ -33,13 +34,15 @@
       "kind": "symbol_added",
       "pretty": "function gpg_error_t ksba_cms_get_attribute(ksba_cms_t, int, int, int, char**, unsigned char**, size_t*)",
       "symbol": "ksba_cms_get_attribute",
-      "version": "KSBA_0.9"
+      "version": "KSBA_0.9",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function gpg_error_t ksba_cms_add_attribute(ksba_cms_t, int, const char*, int, const unsigned char*, size_t)",
       "symbol": "ksba_cms_add_attribute",
-      "version": "KSBA_0.9"
+      "version": "KSBA_0.9",
+      "weak": false
      }
     ],
     "symbols_version_renamed": 0,
@@ -51,51 +54,73 @@
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "../../src/asn1-constants.h",
+      "exposure": "not_in_interface",
       "kind": "enum_case_added",
+      "third_party": true,
       "type": "enum node_type_t"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "../../src/cms.h",
+      "exposure": "by_pointer",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "struct ksba_cms_s"
      },
      {
+      "append_only": false,
       "count": 5,
       "declared_in": "../../src/cms.h",
+      "exposure": "by_pointer",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct ksba_cms_s"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "../../src/cms.h",
+      "exposure": "by_pointer",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct ksba_cms_s"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "../../src/cms.h",
+      "exposure": "not_in_interface",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "struct oidparmlist_s"
      },
      {
+      "append_only": false,
       "count": 3,
       "declared_in": "../../src/cms.h",
+      "exposure": "not_in_interface",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct oidparmlist_s"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "../../src/cms.h",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct oidparmlist_s"
      }
-    ]
+    ],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 2.598250347,
+  "seconds": 1.990104069,
   "source": "libksba",
   "unpaired": [
    [],
@@ -106,7 +131,11 @@
    "1.8.0"
   ]
  },
- "generated_at": "2026-09-02T14:59:36Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:41:24Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

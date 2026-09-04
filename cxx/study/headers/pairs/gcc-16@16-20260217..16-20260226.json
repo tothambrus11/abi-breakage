@@ -4,23 +4,27 @@
    {
     "header_files": 848,
     "parsed": 848,
+    "parsed_as_cxx": 848,
     "skipped_by_limit": 0,
+    "with_errors": 286,
     "with_fatal_error": 0
    },
    {
     "header_files": 848,
     "parsed": 848,
+    "parsed_as_cxx": 848,
     "skipped_by_limit": 0,
+    "with_errors": 286,
     "with_fatal_error": 0
    }
   ],
   "diff": {
    "definitions": [
-    15979,
-    15979
+    15929,
+    15929
    ],
    "definitions_added": 0,
-   "definitions_common": 15979,
+   "definitions_common": 15929,
    "definitions_removed": 0,
    "examples": [
     "c++/16/debug/unordered_set::erase"
@@ -29,6 +33,7 @@
    "inline_body_changed_template": 0,
    "inline_decl_changed": 0,
    "macro_value_changed": 0,
+   "macro_value_changed_nonversion": 0,
    "macros": [
     131,
     131
@@ -38,12 +43,17 @@
   "id": "gcc-16@16-20260217..16-20260226",
   "language": "cxx",
   "source": "gcc-16",
+  "symbol_declared": {},
   "upstream": [
    "16-20260217",
    "16-20260226"
   ]
  },
- "generated_at": "2026-09-02T14:49:24Z",
- "schema": "abistudy/header-pair/2",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T07:43:43Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
 }

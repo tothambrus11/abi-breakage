@@ -1,6 +1,8 @@
 {
  "data": {
+  "bytes_extracted": 597592,
   "id": "acl@2.2.52..2.2.53",
+  "object_errors": [],
   "objects": [
    {
     "coverage": {
@@ -30,56 +32,66 @@
     "symbol_events": [
      {
       "kind": "symbol_removed",
-      "pretty": "function int __acl_extended_file(const char*, ssize_t (*)(const char*, const char*, void*, size_t))",
-      "symbol": "__acl_extended_file"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "function char* __acl_to_xattr(const acl_obj*, size_t*)",
-      "symbol": "__acl_to_xattr"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "function int walk_tree(const char*, int, unsigned int, int (*)(const char*, const stat*, int, void*), void*)",
-      "symbol": "walk_tree"
+      "pretty": "function int walk_tree(const char*, int, unsigned int, int (const char*, const stat*, int, void*)*, void*)",
+      "symbol": "walk_tree",
+      "weak": false
      },
      {
       "kind": "symbol_removed",
       "pretty": "function int high_water_alloc(void**, size_t*, size_t)",
-      "symbol": "high_water_alloc"
+      "symbol": "high_water_alloc",
+      "weak": false
      },
      {
       "kind": "symbol_removed",
-      "pretty": "function acl_t __acl_from_xattr(const char*, size_t)",
-      "symbol": "__acl_from_xattr"
+      "pretty": "function char* __acl_to_xattr(const acl_obj*, size_t*)",
+      "symbol": "__acl_to_xattr",
+      "weak": false
      },
      {
       "kind": "symbol_removed",
       "pretty": "function char* next_line(FILE*)",
-      "symbol": "next_line"
+      "symbol": "next_line",
+      "weak": false
      },
      {
       "kind": "symbol_removed",
-      "pretty": "entry_handle* closed",
-      "symbol": "closed"
+      "pretty": "function acl_t __acl_from_xattr(const char*, size_t)",
+      "symbol": "__acl_from_xattr",
+      "weak": false
      },
      {
       "kind": "symbol_removed",
-      "pretty": "entry_handle head",
-      "symbol": "head"
+      "pretty": "function int __acl_extended_file(const char*, typedef ssize_t (const char*, const char*, void*, typedef size_t)*)",
+      "symbol": "__acl_extended_file",
+      "weak": false
      },
      {
       "kind": "symbol_removed",
       "pretty": "unsigned int num_dir_handles",
-      "symbol": "num_dir_handles"
+      "symbol": "num_dir_handles",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "entry_handle head",
+      "symbol": "head",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "entry_handle* closed",
+      "symbol": "closed",
+      "weak": false
      }
     ],
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 1.598306445,
+  "seconds": 1.01478016,
   "source": "acl",
   "unpaired": [
    [],
@@ -90,7 +102,11 @@
    "2.2.53"
   ]
  },
- "generated_at": "2026-09-02T12:01:35Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:44:38Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

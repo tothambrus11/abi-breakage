@@ -7,6 +7,7 @@
 
 #include <cstdint>
 #include <string>
+#include <string_view>
 
 #include "core/strong.hpp"
 
@@ -78,6 +79,15 @@ enum class Language : std::uint8_t { c, cxx, unknown };
     return "unknown";
   }
   return "unknown";
+}
+
+/// @brief Parses a Language name written by to_string(Language); unknown otherwise.
+[[nodiscard]] constexpr Language language_from_string(std::string_view s) noexcept {
+  if (s == "c")
+    return Language::c;
+  if (s == "cxx")
+    return Language::cxx;
+  return Language::unknown;
 }
 
 } // namespace abistudy

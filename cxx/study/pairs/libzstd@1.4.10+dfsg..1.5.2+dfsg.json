@@ -1,5 +1,6 @@
 {
  "data": {
+  "bytes_extracted": 8052413,
   "id": "libzstd@1.4.10+dfsg..1.5.2+dfsg",
   "object_errors": [],
   "objects": [
@@ -22,9 +23,12 @@
     "mass_rename": false,
     "private_node": {},
     "public": {
-     "enum_case_added": 3,
+     "enum_case_added": 6,
+     "enum_case_removed": 3,
+     "field_added_to_struct": 14,
      "symbol_added": 5,
-     "symbol_removed": 21
+     "symbol_removed": 21,
+     "type_size_changed": 1
     },
     "soname": [
      "libzstd.so.1",
@@ -33,382 +37,535 @@
     "symbol_events": [
      {
       "kind": "symbol_removed",
-      "pretty": "function size_t ZBUFF_compressContinue(ZBUFF_CCtx*, void*, size_t*, void*, size_t*)",
-      "symbol": "ZBUFF_compressContinue"
+      "pretty": "function size_t ZBUFF_recommendedCInSize()",
+      "symbol": "ZBUFF_recommendedCInSize",
+      "weak": false
      },
      {
       "kind": "symbol_removed",
-      "pretty": "function size_t ZBUFF_compressEnd(ZBUFF_CCtx*, void*, size_t*)",
-      "symbol": "ZBUFF_compressEnd"
+      "pretty": "function ZBUFF_DCtx* ZBUFF_createDCtx()",
+      "symbol": "ZBUFF_createDCtx",
+      "weak": false
      },
      {
       "kind": "symbol_removed",
       "pretty": "function size_t ZBUFF_compressInit_advanced(ZBUFF_CCtx*, void*, size_t, ZSTD_parameters, unsigned long long int)",
-      "symbol": "ZBUFF_compressInit_advanced"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "function ZBUFF_CCtx* ZBUFF_createCCtx(void)",
-      "symbol": "ZBUFF_createCCtx"
+      "symbol": "ZBUFF_compressInit_advanced",
+      "weak": false
      },
      {
       "kind": "symbol_removed",
       "pretty": "function ZBUFF_CCtx* ZBUFF_createCCtx_advanced(ZSTD_customMem)",
-      "symbol": "ZBUFF_createCCtx_advanced"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "function ZBUFF_DCtx* ZBUFF_createDCtx(void)",
-      "symbol": "ZBUFF_createDCtx"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "function size_t ZBUFF_decompressContinue(ZBUFF_DCtx*, void*, size_t*, void*, size_t*)",
-      "symbol": "ZBUFF_decompressContinue"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "function size_t ZBUFF_recommendedDInSize(void)",
-      "symbol": "ZBUFF_recommendedDInSize"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "function size_t ZBUFF_recommendedCOutSize(void)",
-      "symbol": "ZBUFF_recommendedCOutSize"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "function size_t ZBUFF_freeDCtx(ZBUFF_DCtx*)",
-      "symbol": "ZBUFF_freeDCtx"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "function size_t ZBUFF_compressInit(ZBUFF_CCtx*, int)",
-      "symbol": "ZBUFF_compressInit"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "function size_t ZBUFF_decompressInit(ZBUFF_DCtx*)",
-      "symbol": "ZBUFF_decompressInit"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "function size_t ZBUFF_recommendedCInSize(void)",
-      "symbol": "ZBUFF_recommendedCInSize"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "function size_t ZBUFF_decompressInitDictionary(ZBUFF_DCtx*, void*, size_t)",
-      "symbol": "ZBUFF_decompressInitDictionary"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "function size_t ZBUFF_freeCCtx(ZBUFF_CCtx*)",
-      "symbol": "ZBUFF_freeCCtx"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "function unsigned int ZBUFF_isError(size_t)",
-      "symbol": "ZBUFF_isError"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "function size_t ZBUFF_recommendedDOutSize(void)",
-      "symbol": "ZBUFF_recommendedDOutSize"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "function ZBUFF_DCtx* ZBUFF_createDCtx_advanced(ZSTD_customMem)",
-      "symbol": "ZBUFF_createDCtx_advanced"
+      "symbol": "ZBUFF_createCCtx_advanced",
+      "weak": false
      },
      {
       "kind": "symbol_removed",
       "pretty": "function size_t ZBUFF_compressFlush(ZBUFF_CCtx*, void*, size_t*)",
-      "symbol": "ZBUFF_compressFlush"
+      "symbol": "ZBUFF_compressFlush",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function size_t ZBUFF_decompressContinue(ZBUFF_DCtx*, void*, size_t*, void*, size_t*)",
+      "symbol": "ZBUFF_decompressContinue",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function size_t ZBUFF_compressEnd(ZBUFF_CCtx*, void*, size_t*)",
+      "symbol": "ZBUFF_compressEnd",
+      "weak": false
      },
      {
       "kind": "symbol_removed",
       "pretty": "function size_t ZBUFF_compressInitDictionary(ZBUFF_CCtx*, void*, size_t, int)",
-      "symbol": "ZBUFF_compressInitDictionary"
+      "symbol": "ZBUFF_compressInitDictionary",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function size_t ZBUFF_compressInit(ZBUFF_CCtx*, int)",
+      "symbol": "ZBUFF_compressInit",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function size_t ZBUFF_freeCCtx(ZBUFF_CCtx*)",
+      "symbol": "ZBUFF_freeCCtx",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function size_t ZBUFF_compressContinue(ZBUFF_CCtx*, void*, size_t*, void*, size_t*)",
+      "symbol": "ZBUFF_compressContinue",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function unsigned int ZBUFF_isError(size_t)",
+      "symbol": "ZBUFF_isError",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function size_t ZBUFF_decompressInit(ZBUFF_DCtx*)",
+      "symbol": "ZBUFF_decompressInit",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function size_t ZBUFF_freeDCtx(ZBUFF_DCtx*)",
+      "symbol": "ZBUFF_freeDCtx",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function ZBUFF_CCtx* ZBUFF_createCCtx()",
+      "symbol": "ZBUFF_createCCtx",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function size_t ZBUFF_recommendedCOutSize()",
+      "symbol": "ZBUFF_recommendedCOutSize",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function size_t ZBUFF_recommendedDInSize()",
+      "symbol": "ZBUFF_recommendedDInSize",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function ZBUFF_DCtx* ZBUFF_createDCtx_advanced(ZSTD_customMem)",
+      "symbol": "ZBUFF_createDCtx_advanced",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function size_t ZBUFF_decompressInitDictionary(ZBUFF_DCtx*, void*, size_t)",
+      "symbol": "ZBUFF_decompressInitDictionary",
+      "weak": false
      },
      {
       "kind": "symbol_removed",
       "pretty": "function const char* ZBUFF_getErrorName(size_t)",
-      "symbol": "ZBUFF_getErrorName"
+      "symbol": "ZBUFF_getErrorName",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function size_t ZBUFF_recommendedDOutSize()",
+      "symbol": "ZBUFF_recommendedDOutSize",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function size_t ZSTD_readSkippableFrame(void*, size_t, unsigned int*, void*, size_t)",
-      "symbol": "ZSTD_readSkippableFrame"
+      "symbol": "ZSTD_readSkippableFrame",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function unsigned int ZSTD_isSkippableFrame(void*, size_t)",
-      "symbol": "ZSTD_isSkippableFrame"
+      "symbol": "ZSTD_isSkippableFrame",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function void ZSTD_freeThreadPool(ZSTD_threadPool*)",
-      "symbol": "ZSTD_freeThreadPool"
+      "symbol": "ZSTD_freeThreadPool",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "function int ZSTD_defaultCLevel(void)",
-      "symbol": "ZSTD_defaultCLevel"
+      "pretty": "function int ZSTD_defaultCLevel()",
+      "symbol": "ZSTD_defaultCLevel",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function POOL_ctx* ZSTD_createThreadPool(size_t)",
-      "symbol": "ZSTD_createThreadPool"
+      "symbol": "ZSTD_createThreadPool",
+      "weak": false
      }
     ],
     "symbols_version_renamed": 0,
     "third_party": {
-     "field_added_to_struct": 29,
+     "field_added_to_struct": 16,
      "field_removed_from_struct": 3,
-     "field_type_changed": 11,
+     "field_type_changed": 10,
      "member_offset_changed": 67,
-     "type_size_changed": 12
+     "type_size_changed": 11
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 3,
-      "declared_in": "compress/zstd_compress_internal.h",
+      "declared_in": "dictBuilder/../compress/zstd_compress_internal.h",
+      "exposure": "by_pointer",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "struct ZSTD_CCtx_params_s"
      },
      {
+      "append_only": false,
       "count": 1,
-      "declared_in": "compress/zstd_compress_internal.h",
+      "declared_in": "dictBuilder/../compress/zstd_compress_internal.h",
+      "exposure": "by_pointer",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "struct ZSTD_CCtx_params_s"
      },
      {
+      "append_only": false,
       "count": 1,
-      "declared_in": "compress/zstd_compress_internal.h",
+      "declared_in": "dictBuilder/../compress/zstd_compress_internal.h",
+      "exposure": "by_pointer",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct ZSTD_CCtx_params_s"
      },
      {
+      "append_only": false,
       "count": 1,
-      "declared_in": "compress/zstd_compress_internal.h",
+      "declared_in": "dictBuilder/../compress/zstd_compress_internal.h",
+      "exposure": "by_pointer",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct ZSTD_CCtx_params_s"
      },
      {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "compress/../common/../zstd.h",
+      "exposure": "not_in_interface",
+      "kind": "enum_case_added",
+      "third_party": false,
+      "type": "enum ZSTD_literalCompressionMode_e"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "compress/../common/../zstd.h",
+      "exposure": "not_in_interface",
+      "kind": "enum_case_removed",
+      "third_party": false,
+      "type": "enum ZSTD_literalCompressionMode_e"
+     },
+     {
+      "append_only": false,
       "count": 1,
       "declared_in": "compress/zstd_compress_internal.h",
+      "exposure": "not_in_interface",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "struct ldmParams_t"
      },
      {
+      "append_only": false,
       "count": 3,
       "declared_in": "compress/../common/../zstd.h",
+      "exposure": "by_value",
       "kind": "enum_case_added",
+      "third_party": false,
       "type": "enum ZSTD_cParameter"
      },
      {
+      "append_only": false,
       "count": 3,
       "declared_in": "compress/zstd_compress_internal.h",
+      "exposure": "by_pointer",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "struct ZSTD_CCtx_s"
      },
      {
+      "append_only": false,
       "count": 40,
       "declared_in": "compress/zstd_compress_internal.h",
+      "exposure": "by_pointer",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct ZSTD_CCtx_s"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "compress/zstd_compress_internal.h",
+      "exposure": "by_pointer",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct ZSTD_CCtx_s"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "legacy/../common/xxhash.h",
+      "exposure": "not_in_interface",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "struct XXH64_state_s"
      },
      {
+      "append_only": false,
       "count": 3,
       "declared_in": "legacy/../common/xxhash.h",
+      "exposure": "not_in_interface",
       "kind": "field_removed_from_struct",
+      "third_party": true,
       "type": "struct XXH64_state_s"
      },
      {
+      "append_only": false,
       "count": 4,
       "declared_in": "legacy/../common/xxhash.h",
+      "exposure": "not_in_interface",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "struct XXH64_state_s"
      },
      {
-      "count": 13,
-      "declared_in": "common/pool.c",
+      "append_only": true,
+      "count": 14,
+      "declared_in": "",
+      "exposure": "by_pointer",
       "kind": "field_added_to_struct",
+      "third_party": false,
       "type": "struct POOL_ctx_s"
      },
      {
+      "append_only": true,
       "count": 1,
-      "declared_in": "common/pool.c",
-      "kind": "field_type_changed",
-      "type": "struct POOL_ctx_s"
-     },
-     {
-      "count": 1,
-      "declared_in": "common/pool.c",
+      "declared_in": "",
+      "exposure": "by_pointer",
       "kind": "type_size_changed",
+      "third_party": false,
       "type": "struct POOL_ctx_s"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "compress/../common/zstd_internal.h",
+      "exposure": "not_in_interface",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "struct seqStore_t"
      },
      {
+      "append_only": false,
       "count": 5,
       "declared_in": "compress/zstd_compress_internal.h",
+      "exposure": "not_in_interface",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct ldmState_t"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "compress/zstd_compress_internal.h",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct ldmState_t"
      },
      {
+      "append_only": true,
       "count": 1,
       "declared_in": "compress/zstd_compress_internal.h",
+      "exposure": "not_in_interface",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "struct ZSTD_window_t"
      },
      {
+      "append_only": true,
       "count": 1,
       "declared_in": "compress/zstd_compress_internal.h",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct ZSTD_window_t"
      },
      {
+      "append_only": true,
       "count": 1,
       "declared_in": "compress/zstd_compress_internal.h",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct ZSTD_blockState_t"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "compress/zstd_compress_internal.h",
+      "exposure": "not_in_interface",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct ZSTD_compressedBlockState_t"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "compress/zstd_compress_internal.h",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct ZSTD_compressedBlockState_t"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "compress/zstd_compress_internal.h",
+      "exposure": "not_in_interface",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct ZSTD_entropyCTables_t"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "compress/zstd_compress_internal.h",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct ZSTD_entropyCTables_t"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "compress/zstd_compress_internal.h",
+      "exposure": "not_in_interface",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "struct ZSTD_hufCTables_t"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "compress/zstd_compress_internal.h",
+      "exposure": "not_in_interface",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct ZSTD_hufCTables_t"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "compress/zstd_compress_internal.h",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct ZSTD_hufCTables_t"
      },
      {
+      "append_only": false,
       "count": 4,
       "declared_in": "compress/zstd_compress_internal.h",
+      "exposure": "not_in_interface",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "struct ZSTD_matchState_t"
      },
      {
+      "append_only": false,
       "count": 11,
       "declared_in": "compress/zstd_compress_internal.h",
+      "exposure": "not_in_interface",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct ZSTD_matchState_t"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "compress/zstd_compress_internal.h",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct ZSTD_matchState_t"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "compress/zstd_compress_internal.h",
+      "exposure": "not_in_interface",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "struct optState_t"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "compress/zstd_compress.c",
+      "exposure": "by_pointer",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "struct ZSTD_CDict_s"
      },
      {
+      "append_only": false,
       "count": 4,
       "declared_in": "compress/zstd_compress.c",
+      "exposure": "by_pointer",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct ZSTD_CDict_s"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "compress/zstd_compress.c",
+      "exposure": "by_pointer",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct ZSTD_CDict_s"
      },
      {
+      "append_only": false,
       "count": 3,
       "declared_in": "decompress/zstd_decompress_internal.h",
+      "exposure": "by_pointer",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "struct ZSTD_DCtx_s"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "decompress/zstd_decompress_internal.h",
+      "exposure": "by_pointer",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "struct ZSTD_DCtx_s"
      },
      {
+      "append_only": false,
       "count": 3,
       "declared_in": "decompress/zstd_decompress_internal.h",
+      "exposure": "by_pointer",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct ZSTD_DCtx_s"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "decompress/zstd_decompress_internal.h",
+      "exposure": "by_pointer",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct ZSTD_DCtx_s"
      }
-    ]
+    ],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 2.113470801,
+  "seconds": 1.7505448,
   "source": "libzstd",
   "unpaired": [
    [],
@@ -419,7 +576,11 @@
    "1.5.2+dfsg"
   ]
  },
- "generated_at": "2026-09-02T14:58:43Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:40:02Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

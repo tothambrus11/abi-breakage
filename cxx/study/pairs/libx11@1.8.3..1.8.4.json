@@ -1,5 +1,6 @@
 {
  "data": {
+  "bytes_extracted": 11299368,
   "id": "libx11@1.8.3..1.8.4",
   "object_errors": [],
   "objects": [
@@ -34,21 +35,28 @@
     "third_party": {},
     "type_events": [
      {
+      "append_only": true,
       "count": 2,
       "declared_in": "../../../include/X11/Xlibint.h",
+      "exposure": "by_pointer",
       "kind": "field_added_to_struct",
+      "third_party": false,
       "type": "struct _XDisplay"
      },
      {
+      "append_only": true,
       "count": 1,
       "declared_in": "../../../include/X11/Xlibint.h",
+      "exposure": "by_pointer",
       "kind": "type_size_changed",
+      "third_party": false,
       "type": "struct _XDisplay"
      }
-    ]
+    ],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 3.504753243,
+  "seconds": 2.824493151,
   "source": "libx11",
   "unpaired": [
    [],
@@ -59,7 +67,11 @@
    "1.8.4"
   ]
  },
- "generated_at": "2026-09-02T14:58:01Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:39:40Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

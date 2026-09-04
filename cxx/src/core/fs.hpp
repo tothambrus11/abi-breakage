@@ -44,6 +44,28 @@ std::uintmax_t remove_all_noexcept(const stdfs::path &p) noexcept;
 /// @brief Total size in bytes of the regular files under `p` (0 if absent).
 [[nodiscard]] std::uintmax_t tree_size(const stdfs::path &p) noexcept;
 
+/// @brief An advisory exclusive lock on a file, held for the object's
+///        lifetime. Two processes that would otherwise share (and wipe) one
+///        scratch tree take it before touching the tree.
+/// @invariant While alive, no other LockFile on the same path exists in any
+///            process on this machine.
+class LockFile {
+public:
+  /// @brief Acquires the lock without blocking.
+  /// @errors busy if another process holds it; io if the file cannot be opened.
+  [[nodiscard]] static Result<LockFile> acquire(const stdfs::path &p);
+
+  LockFile(LockFile &&o) noexcept : fd_(o.fd_) { o.fd_ = -1; }
+  LockFile &operator=(LockFile &&o) noexcept;
+  LockFile(const LockFile &) = delete ("a lock has one holder");
+  LockFile &operator=(const LockFile &) = delete ("a lock has one holder");
+  ~LockFile();
+
+private:
+  explicit LockFile(int fd) : fd_(fd) {}
+  int fd_;
+};
+
 /// @brief A directory created on construction and removed on destruction.
 /// @invariant While alive, path() exists and is owned by this object.
 /// @ownership Non-copyable; movable (the moved-from object owns nothing).

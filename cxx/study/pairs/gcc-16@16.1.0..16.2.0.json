@@ -1,5 +1,6 @@
 {
  "data": {
+  "bytes_extracted": 72028825,
   "id": "gcc-16@16.1.0..16.2.0",
   "object_errors": [],
   "objects": [
@@ -22,8 +23,8 @@
     "mass_rename": false,
     "private_node": {},
     "public": {
-     "base_class_changed": 11,
-     "symbol_added": 3
+     "base_class_changed": 12,
+     "symbol_added": 1
     },
     "soname": [
      "libstdc++.so.6",
@@ -34,122 +35,220 @@
       "kind": "symbol_added",
       "pretty": "function bool std::chrono::__detail::__recent_leap_second_info(std::chrono::leap_second_info&, unsigned int)",
       "symbol": "_ZNSt6chrono8__detail25__recent_leap_second_infoERNS_16leap_second_infoEj",
-      "version": "GLIBCXX_3.4.36"
+      "version": "GLIBCXX_3.4.36",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "method std::basic_format_arg<std::basic_format_context<std::__format::_Sink_iter<wchar_t>,wchar_t>>::handle std::basic_format_arg<std::basic_format_context<std::__format::_Sink_iter<wchar_t>,wchar_t>>::_M_handle_unrecognized() const",
+      "pretty": "method std::basic_format_arg<std::basic_format_context<std::__format::_Sink_iter<wchar_t>, wchar_t> >::handle std::basic_format_arg<std::basic_format_context<std::__format::_Sink_iter<wchar_t>, wchar_t> >::_M_handle_unrecognized() const",
       "symbol": "_ZNKSt16basic_format_argISt20basic_format_contextINSt8__format10_Sink_iterIwEEwEE22_M_handle_unrecognizedEv",
-      "version": "GLIBCXX_3.4.36"
+      "version": "GLIBCXX_3.4.36",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method std::basic_format_arg<std::basic_format_context<std::__format::_Sink_iter<char>,char>>::handle std::basic_format_arg<std::basic_format_context<std::__format::_Sink_iter<char>,char>>::_M_handle_unrecognized() const",
+      "pretty": "method std::basic_format_arg<std::basic_format_context<std::__format::_Sink_iter<char>, char> >::handle std::basic_format_arg<std::basic_format_context<std::__format::_Sink_iter<char>, char> >::_M_handle_unrecognized() const",
       "symbol": "_ZNKSt16basic_format_argISt20basic_format_contextINSt8__format10_Sink_iterIcEEcEE22_M_handle_unrecognizedEv",
-      "version": "GLIBCXX_3.4.36"
+      "version": "GLIBCXX_3.4.36",
+      "weak": true
      }
     ],
     "symbols_version_renamed": 0,
     "third_party": {
+     "base_class_changed": 1,
      "field_added_to_struct": 1,
-     "field_removed_from_struct": 1,
-     "field_type_changed": 2
+     "field_removed_from_struct": 2,
+     "field_type_changed": 3,
+     "member_offset_changed": 1
     },
     "type_events": [
      {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/build/reproducible-path/gcc-16-16.1.0/build/x86_64-linux-gnu/libstdc++-v3/include/bits/std_mutex.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class std::mutex"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../../../../src/libstdc++-v3/src/c++11/compatibility-thread-c++0x.cc",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::__future_base::_Async_state_common"
+     },
+     {
+      "append_only": false,
       "count": 1,
       "declared_in": "/build/reproducible-path/gcc-16-16.1.0/build/x86_64-linux-gnu/libstdc++-v3/include/bits/unique_ptr.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::__uniq_ptr_data<std::chrono::time_zone::_Impl,std::default_delete<std::chrono::time_zone::_Impl>,true,true>"
+      "third_party": false,
+      "type": "struct std::__uniq_ptr_data<std::chrono::time_zone::_Impl, std::default_delete<std::chrono::time_zone::_Impl>, true, true>"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/build/reproducible-path/gcc-16-16.1.0/build/x86_64-linux-gnu/libstdc++-v3/include/tuple",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "class std::tuple<std::chrono::time_zone::_Impl*,std::default_delete<std::chrono::time_zone::_Impl>>"
+      "third_party": false,
+      "type": "class std::tuple<std::chrono::time_zone::_Impl*, std::default_delete<std::chrono::time_zone::_Impl> >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/build/reproducible-path/gcc-16-16.1.0/build/x86_64-linux-gnu/libstdc++-v3/include/tuple",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Tuple_impl<0,std::chrono::time_zone::_Impl*,std::default_delete<std::chrono::time_zone::_Impl>>"
+      "third_party": false,
+      "type": "struct std::_Tuple_impl<0, std::chrono::time_zone::_Impl*, std::default_delete<std::chrono::time_zone::_Impl> >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/build/reproducible-path/gcc-16-16.1.0/build/x86_64-linux-gnu/libstdc++-v3/include/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "class std::vector<std::chrono::(anonymousnamespace)::ZoneInfo,std::allocator<std::chrono::(anonymousnamespace)::ZoneInfo>>"
+      "third_party": false,
+      "type": "class std::vector<std::chrono::(anonymous namespace)::ZoneInfo, std::allocator<std::chrono::(anonymous namespace)::ZoneInfo> >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/build/reproducible-path/gcc-16-16.1.0/build/x86_64-linux-gnu/libstdc++-v3/include/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Vector_base<std::chrono::(anonymousnamespace)::ZoneInfo,std::allocator<std::chrono::(anonymousnamespace)::ZoneInfo>>::_Vector_impl"
+      "third_party": false,
+      "type": "struct std::_Vector_base<std::chrono::(anonymous namespace)::ZoneInfo, std::allocator<std::chrono::(anonymous namespace)::ZoneInfo> >::_Vector_impl"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "../../../../../src/libstdc++-v3/src/c++20/tzdb.cc",
+      "exposure": "not_in_interface",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "struct ZoneInfo"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "../../../../../src/libstdc++-v3/src/c++20/tzdb.cc",
+      "exposure": "not_in_interface",
       "kind": "field_removed_from_struct",
+      "third_party": true,
       "type": "struct ZoneInfo"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/build/reproducible-path/gcc-16-16.1.0/build/x86_64-linux-gnu/libstdc++-v3/include/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": false,
       "type": "class std::weak_ptr<std::chrono::tzdb_list::_Node>"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/build/reproducible-path/gcc-16-16.1.0/build/x86_64-linux-gnu/libstdc++-v3/include/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": false,
       "type": "class std::shared_ptr<std::chrono::tzdb_list::_Node>"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/build/reproducible-path/gcc-16-16.1.0/build/x86_64-linux-gnu/libstdc++-v3/include/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "class std::vector<std::chrono::time_zone,std::allocator<std::chrono::time_zone>>"
+      "third_party": false,
+      "type": "class std::vector<std::chrono::time_zone, std::allocator<std::chrono::time_zone> >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/build/reproducible-path/gcc-16-16.1.0/build/x86_64-linux-gnu/libstdc++-v3/include/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Vector_base<std::chrono::time_zone,std::allocator<std::chrono::time_zone>>::_Vector_impl"
+      "third_party": false,
+      "type": "struct std::_Vector_base<std::chrono::time_zone, std::allocator<std::chrono::time_zone> >::_Vector_impl"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/build/reproducible-path/gcc-16-16.1.0/build/x86_64-linux-gnu/libstdc++-v3/include/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "class std::vector<std::chrono::(anonymousnamespace)::Rule,std::allocator<std::chrono::(anonymousnamespace)::Rule>>"
+      "third_party": false,
+      "type": "class std::vector<std::chrono::(anonymous namespace)::Rule, std::allocator<std::chrono::(anonymous namespace)::Rule> >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/build/reproducible-path/gcc-16-16.1.0/build/x86_64-linux-gnu/libstdc++-v3/include/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Vector_base<std::chrono::(anonymousnamespace)::Rule,std::allocator<std::chrono::(anonymousnamespace)::Rule>>::_Vector_impl"
+      "third_party": false,
+      "type": "struct std::_Vector_base<std::chrono::(anonymous namespace)::Rule, std::allocator<std::chrono::(anonymous namespace)::Rule> >::_Vector_impl"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "../../../../../src/libstdc++-v3/src/c++20/tzdb.cc",
+      "exposure": "not_in_interface",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "struct Rule::datetime"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "../../../../../src/libstdc++-v3/src/c++20/tzdb.cc",
+      "exposure": "not_in_interface",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "struct on_day"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct __pthread_rwlock_arch_t"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct __pthread_rwlock_arch_t"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct __pthread_rwlock_arch_t"
      }
-    ]
+    ],
+    "vague_linkage": {
+     "symbol_added": 2
+    }
    }
   ],
-  "seconds": 19.061671173,
+  "seconds": 17.840172238,
   "source": "gcc-16",
   "unpaired": [
    [],
@@ -160,7 +259,11 @@
    "16.2.0"
   ]
  },
- "generated_at": "2026-09-02T14:57:23Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:32:20Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

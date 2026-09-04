@@ -1,5 +1,7 @@
 {
  "data": {
+  "bytes_extracted": 731160,
+  "excluded_objects": [],
   "id": "snappy@1.2.1..1.2.2",
   "object_errors": [],
   "objects": [
@@ -22,7 +24,7 @@
     "mass_rename": false,
     "private_node": {},
     "public": {
-     "symbol_removed": 1
+     "function_signature_changed": 11
     },
     "soname": [
      "libsnappy.so.1",
@@ -31,10 +33,92 @@
     "symbol_events": [
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::vector<char*,std::allocator<char*>>::_M_realloc_append<char*const&>()",
-      "symbol": "_ZNSt6vectorIPcSaIS0_EE17_M_realloc_appendIJRKS0_EEEvDpOT_"
+      "pretty": "method void std::vector<char*, std::allocator<char*> >::_M_realloc_append<char* const&>(char* const&)",
+      "symbol": "_ZNSt6vectorIPcSaIS0_EE17_M_realloc_appendIJRKS0_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method snappy::internal::WorkingMemory::~WorkingMemory(int)  ->  method snappy::internal::WorkingMemory::~WorkingMemory()",
+      "symbol": "_ZN6snappy8internal13WorkingMemoryD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual snappy::Source::~Source(int)  ->  method virtual snappy::Source::~Source()",
+      "symbol": "_ZN6snappy6SourceD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual snappy::Source::~Source(int)  ->  method virtual snappy::Source::~Source()",
+      "symbol": "_ZN6snappy6SourceD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual snappy::ByteArraySource::~ByteArraySource(int)  ->  method virtual snappy::ByteArraySource::~ByteArraySource()",
+      "symbol": "_ZN6snappy15ByteArraySourceD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual snappy::UncheckedByteArraySink::~UncheckedByteArraySink(int)  ->  method virtual snappy::UncheckedByteArraySink::~UncheckedByteArraySink()",
+      "symbol": "_ZN6snappy22UncheckedByteArraySinkD1Ev",
+      "vtable_slot": true,
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual snappy::UncheckedByteArraySink::~UncheckedByteArraySink(int)  ->  method virtual snappy::UncheckedByteArraySink::~UncheckedByteArraySink()",
+      "symbol": "_ZN6snappy22UncheckedByteArraySinkD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual snappy::ByteArraySource::~ByteArraySource(int)  ->  method virtual snappy::ByteArraySource::~ByteArraySource()",
+      "symbol": "_ZN6snappy15ByteArraySourceD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual snappy::SnappyIOVecReader::~SnappyIOVecReader(int)  ->  method virtual snappy::SnappyIOVecReader::~SnappyIOVecReader()",
+      "symbol": "_ZN6snappy17SnappyIOVecReaderD0Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual snappy::SnappyIOVecReader::~SnappyIOVecReader(int)  ->  method virtual snappy::SnappyIOVecReader::~SnappyIOVecReader()",
+      "symbol": "_ZN6snappy17SnappyIOVecReaderD2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual snappy::Sink::~Sink(int)  ->  method virtual snappy::Sink::~Sink()",
+      "symbol": "_ZN6snappy4SinkD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual snappy::UncheckedByteArraySink::~UncheckedByteArraySink(int)  ->  method virtual snappy::UncheckedByteArraySink::~UncheckedByteArraySink()",
+      "symbol": "_ZN6snappy22UncheckedByteArraySinkD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual snappy::ByteArraySource::~ByteArraySource(int)  ->  method virtual snappy::ByteArraySource::~ByteArraySource()",
+      "symbol": "_ZN6snappy15ByteArraySourceD1Ev",
+      "vtable_slot": true,
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual snappy::Sink::~Sink(int)  ->  method virtual snappy::Sink::~Sink()",
+      "symbol": "_ZN6snappy4SinkD2Ev",
+      "weak": false
      }
     ],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {
      "field_type_changed": 1,
@@ -42,21 +126,31 @@
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./snappy.cc",
+      "exposure": "by_pointer",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "class snappy::SnappyDecompressor"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "./snappy.cc",
+      "exposure": "by_pointer",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "class snappy::SnappyDecompressor"
      }
-    ]
+    ],
+    "vague_linkage": {
+     "function_signature_changed": 2,
+     "symbol_removed": 1
+    }
    }
   ],
-  "seconds": 1.536640142,
+  "seconds": 1.284365484,
   "source": "snappy",
   "unpaired": [
    [],
@@ -67,7 +161,11 @@
    "1.2.2"
   ]
  },
- "generated_at": "2026-09-02T15:00:04Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T07:26:51Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

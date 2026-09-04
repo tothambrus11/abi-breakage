@@ -1,5 +1,6 @@
 {
  "data": {
+  "bytes_extracted": 691875,
   "id": "soundtouch@2.0.0..2.1.2+ds1",
   "object_errors": [],
   "objects": [
@@ -24,7 +25,7 @@
     "public": {
      "field_added_to_struct": 10,
      "member_offset_changed": 1,
-     "symbol_added": 8,
+     "symbol_added": 7,
      "type_size_changed": 1
     },
     "soname": [
@@ -35,69 +36,89 @@
      {
       "kind": "symbol_added",
       "pretty": "method int soundtouch::BPMDetect::getBeats(float*, float*, int)",
-      "symbol": "_ZN10soundtouch9BPMDetect8getBeatsEPfS1_i"
+      "symbol": "_ZN10soundtouch9BPMDetect8getBeatsEPfS1_i",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "method void soundtouch::BPMDetect::updateBeatPos(int)",
-      "symbol": "_ZN10soundtouch9BPMDetect13updateBeatPosEi"
+      "symbol": "_ZN10soundtouch9BPMDetect13updateBeatPosEi",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "method soundtouch::IIR2_filter::IIR2_filter(const double*)",
-      "symbol": "_ZN10soundtouch11IIR2_filterC2EPKd"
+      "symbol": "_ZN10soundtouch11IIR2_filterC2EPKd",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "method float soundtouch::IIR2_filter::update(float)",
-      "symbol": "_ZN10soundtouch11IIR2_filter6updateEf"
+      "symbol": "_ZN10soundtouch11IIR2_filter6updateEf",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function void MAFilter(float*, const float*, int, int, int)",
-      "symbol": "_Z8MAFilterPfPKfiii"
+      "symbol": "_Z8MAFilterPfPKfiii",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::vector<soundtouch::BEAT,std::allocator<soundtouch::BEAT>>::_M_realloc_insert<constsoundtouch::BEAT&>(std::vector<soundtouch::BEAT,std::allocator<soundtouch::BEAT>>::iterator, const soundtouch::BEAT&)",
-      "symbol": "_ZNSt6vectorIN10soundtouch4BEATESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_"
+      "pretty": "method void std::vector<soundtouch::BEAT, std::allocator<soundtouch::BEAT> >::_M_realloc_insert<const soundtouch::BEAT&>(std::vector<soundtouch::BEAT, std::allocator<soundtouch::BEAT> >::iterator, const soundtouch::BEAT&)",
+      "symbol": "_ZNSt6vectorIN10soundtouch4BEATESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
       "pretty": "function void hamming(float*, int)",
-      "symbol": "_Z7hammingPfi"
+      "symbol": "_Z7hammingPfi",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "bool _dontcomplain_mmx_empty",
-      "symbol": "_dontcomplain_mmx_empty"
+      "symbol": "_dontcomplain_mmx_empty",
+      "weak": false
      }
     ],
     "symbols_version_renamed": 0,
     "third_party": {},
     "type_events": [
      {
+      "append_only": false,
       "count": 10,
       "declared_in": "../../include/BPMDetect.h",
+      "exposure": "by_pointer",
       "kind": "field_added_to_struct",
+      "third_party": false,
       "type": "class soundtouch::BPMDetect"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "../../include/BPMDetect.h",
+      "exposure": "by_pointer",
       "kind": "member_offset_changed",
+      "third_party": false,
       "type": "class soundtouch::BPMDetect"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "../../include/BPMDetect.h",
+      "exposure": "by_pointer",
       "kind": "type_size_changed",
+      "third_party": false,
       "type": "class soundtouch::BPMDetect"
      }
-    ]
+    ],
+    "vague_linkage": {
+     "symbol_added": 1
+    }
    }
   ],
-  "seconds": 2.303884193,
+  "seconds": 1.692699238,
   "source": "soundtouch",
   "unpaired": [
    [],
@@ -108,7 +129,11 @@
    "2.1.2+ds1"
   ]
  },
- "generated_at": "2026-09-02T15:06:02Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:44:18Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

@@ -89,6 +89,7 @@ struct FormatAt {
   /// @brief Implicit from a literal, so call sites read `fail(code, "...", x)`.
   template <class S>
     requires std::convertible_to<const S &, std::string_view>
+  // NOLINTNEXTLINE(*-explicit-constructor): implicit from a literal is the point
   consteval FormatAt(const S &s, std::source_location loc = std::source_location::current())
       : fmt(s), where(loc) {}
 };
@@ -128,8 +129,10 @@ template <class U>
 
 /// @brief Early return when only success matters (Result<void> or value unused).
 #define ABISTUDY_TRY_VOID(expr)                                                                    \
-  if (auto &&ABISTUDY_CAT(abistudy_tryv_, __LINE__) = (expr);                                      \
-      !ABISTUDY_CAT(abistudy_tryv_, __LINE__))                                                     \
+  if (                                                                                             \
+    auto &&ABISTUDY_CAT(abistudy_tryv_, __LINE__) = (expr);                                        \
+    !ABISTUDY_CAT(abistudy_tryv_, __LINE__)                                                        \
+  )                                                                                                \
   return ::abistudy::forward_error(ABISTUDY_CAT(abistudy_tryv_, __LINE__))
 
 // NOLINTEND(bugprone-macro-parentheses)

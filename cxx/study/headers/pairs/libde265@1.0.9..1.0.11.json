@@ -4,13 +4,17 @@
    {
     "header_files": 2,
     "parsed": 2,
+    "parsed_as_cxx": 2,
     "skipped_by_limit": 0,
+    "with_errors": 0,
     "with_fatal_error": 0
    },
    {
     "header_files": 2,
     "parsed": 2,
+    "parsed_as_cxx": 2,
     "skipped_by_limit": 0,
+    "with_errors": 0,
     "with_fatal_error": 0
    }
   ],
@@ -27,6 +31,7 @@
    "inline_body_changed_template": 0,
    "inline_decl_changed": 0,
    "macro_value_changed": 2,
+   "macro_value_changed_nonversion": 0,
    "macros": [
     4,
     4
@@ -36,12 +41,57 @@
   "id": "libde265@1.0.9..1.0.11",
   "language": "cxx",
   "source": "libde265",
+  "symbol_declared": {
+   "_Z19en265_print_loggingPK15encoder_contextPKcS3_": "undeclared",
+   "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_realloc_insertIJRKS5_EEEvN9__gnu_cxx17__normal_iteratorIPS5_S7_EEDpOT_": "undeclared",
+   "_ZNSt6vectorISt4pairI13IntraPredModefESaIS2_EE17_M_default_appendEm": "undeclared",
+   "_ZNSt6vectorISt4pairI13IntraPredModefESaIS2_EE17_M_realloc_insertIJS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_": "undeclared",
+   "_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE10MVTestModeESaIS8_EE17_M_realloc_insertIJS8_EEEvN9__gnu_cxx17__normal_iteratorIPS8_SA_EEDpOT_": "undeclared",
+   "_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE12MVSearchAlgoESaIS8_EE17_M_realloc_insertIJS8_EEEvN9__gnu_cxx17__normal_iteratorIPS8_SA_EEDpOT_": "undeclared",
+   "_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE13SOP_StructureESaIS8_EE17_M_realloc_insertIJS8_EEEvN9__gnu_cxx17__normal_iteratorIPS8_SA_EEDpOT_": "undeclared",
+   "_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE20TBBitrateEstimMethodESaIS8_EE17_M_realloc_insertIJS8_EEEvN9__gnu_cxx17__normal_iteratorIPS8_SA_EEDpOT_": "undeclared",
+   "_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE21ALGO_CB_IntraPartModeESaIS8_EE17_M_realloc_insertIJS8_EEEvN9__gnu_cxx17__normal_iteratorIPS8_SA_EEDpOT_": "undeclared",
+   "_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE21ALGO_TB_IntraPredModeESaIS8_EE17_M_realloc_insertIJS8_EEEvN9__gnu_cxx17__normal_iteratorIPS8_SA_EEDpOT_": "undeclared",
+   "_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE22ALGO_TB_RateEstimationESaIS8_EE17_M_realloc_insertIJS8_EEEvN9__gnu_cxx17__normal_iteratorIPS8_SA_EEDpOT_": "undeclared",
+   "_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE28ALGO_TB_IntraPredMode_SubsetESaIS8_EE17_M_realloc_insertIJS8_EEEvN9__gnu_cxx17__normal_iteratorIPS8_SA_EEDpOT_": "undeclared",
+   "_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE39ALGO_TB_Split_BruteForce_ZeroBlockPruneESaIS8_EE17_M_realloc_insertIJS8_EEEvN9__gnu_cxx17__normal_iteratorIPS8_SA_EEDpOT_": "undeclared",
+   "_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE6MEModeESaIS8_EE17_M_realloc_insertIJS8_EEEvN9__gnu_cxx17__normal_iteratorIPS8_SA_EEDpOT_": "undeclared",
+   "_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE8PartModeESaIS8_EE17_M_realloc_insertIJS8_EEEvN9__gnu_cxx17__normal_iteratorIPS8_SA_EEDpOT_": "undeclared",
+   "en265_allocate_image": "undeclared",
+   "en265_block_on_input_queue_length": "undeclared",
+   "en265_current_input_queue_length": "undeclared",
+   "en265_encode": "undeclared",
+   "en265_free_encoder": "undeclared",
+   "en265_free_packet": "undeclared",
+   "en265_get_encoder_state": "undeclared",
+   "en265_get_image_spec": "undeclared",
+   "en265_get_packet": "undeclared",
+   "en265_get_parameter_type": "undeclared",
+   "en265_list_parameter_choices": "undeclared",
+   "en265_list_parameters": "undeclared",
+   "en265_new_encoder": "undeclared",
+   "en265_number_of_queued_packets": "undeclared",
+   "en265_parse_command_line_parameters": "undeclared",
+   "en265_push_eof": "undeclared",
+   "en265_push_image": "undeclared",
+   "en265_set_parameter_bool": "undeclared",
+   "en265_set_parameter_choice": "undeclared",
+   "en265_set_parameter_int": "undeclared",
+   "en265_set_parameter_string": "undeclared",
+   "en265_show_parameters": "undeclared",
+   "en265_start_encoder": "undeclared",
+   "en265_trim_input_queue": "undeclared"
+  },
   "upstream": [
    "1.0.9",
    "1.0.11"
   ]
  },
- "generated_at": "2026-09-02T14:51:57Z",
- "schema": "abistudy/header-pair/2",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T07:43:44Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
 }

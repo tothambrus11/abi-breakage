@@ -1,13 +1,114 @@
 {
  "data": {
+  "bytes_extracted": 622865,
   "id": "pciutils@3.7.0..3.8.0",
-  "objects": [],
-  "seconds": 1.403513312,
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      44,
+      49
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "field_added_to_struct": 11,
+     "field_removed_from_struct": 1,
+     "member_offset_changed": 8,
+     "type_size_changed": 2
+    },
+    "soname": [
+     "libpci.so.3",
+     "libpci.so.3"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_type_changed": 1
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./lib/pci.h",
+      "exposure": "by_pointer",
+      "kind": "field_removed_from_struct",
+      "third_party": false,
+      "type": "struct pci_access"
+     },
+     {
+      "append_only": false,
+      "count": 9,
+      "declared_in": "./lib/pci.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": false,
+      "type": "struct pci_dev"
+     },
+     {
+      "append_only": false,
+      "count": 8,
+      "declared_in": "./lib/pci.h",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": false,
+      "type": "struct pci_dev"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./lib/pci.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": false,
+      "type": "struct pci_dev"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./lib/internal.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct pci_methods"
+     },
+     {
+      "append_only": true,
+      "count": 2,
+      "declared_in": "",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": false,
+      "type": "struct id_bucket"
+     },
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": false,
+      "type": "struct id_bucket"
+     }
+    ],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 1.402742907,
   "source": "pciutils",
   "unpaired": [
-   [
-    "libpci"
-   ],
+   [],
    []
   ],
   "upstream": [
@@ -15,7 +116,11 @@
    "3.8.0"
   ]
  },
- "generated_at": "2026-09-02T12:08:15Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:44:28Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

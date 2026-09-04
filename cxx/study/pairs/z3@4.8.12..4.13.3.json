@@ -1,8 +1,1028 @@
 {
  "data": {
+  "bytes_extracted": 379198762,
+  "excluded_objects": [],
   "id": "z3@4.8.12..4.13.3",
-  "objects": [],
-  "seconds": 74.524349483,
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      752,
+      801
+     ],
+     "mangled_functions": [
+      47,
+      21
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "enum_case_added": 27,
+     "function_signature_changed": 2,
+     "symbol_added": 75
+    },
+    "soname": [
+     "libz3.so.4",
+     "libz3.so.4"
+    ],
+    "symbol_events": [
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method void std::_Hashtable<unsigned int, unsigned int, std::allocator<unsigned int>, std::__detail::_Identity, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_assign<const std::_Hashtable<unsigned int, unsigned int, std::allocator<unsigned int>, std::__detail::_Identity, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >&, std::__detail::_ReuseOrAllocNode<std::allocator<std::__detail::_Hash_node<unsigned int, false> > > >(const std::_Hashtable<unsigned int, unsigned int, std::allocator<unsigned int>, std::__detail::_Identity, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >&, const std::__detail::_ReuseOrAllocNode<std::allocator<std::__detail::_Hash_node<unsigned int, false> > >&)  ->  method void std::_Hashtable<unsigned int, unsigned int, std::allocator<unsigned int>, std::__detail::_Identity, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_assign<const std::_Hashtable<unsigned int, unsigned int, std::allocator<unsigned int>, std::__detail::_Identity, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >&, std::__detail::_ReuseOrAllocNode<std::allocator<std::__detail::_Hash_node<unsigned int, false> > > >(const std::_Hashtable<unsigned int, unsigned int, std::allocator<unsigned int>, std::__detail::_Identity, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >&, std::__detail::_ReuseOrAllocNode<std::allocator<std::__detail::_Hash_node<unsigned int, false> > >&)",
+      "symbol": "_ZNSt10_HashtableIjjSaIjENSt8__detail9_IdentityESt8equal_toIjESt4hashIjENS1_18_Mod_range_hashingENS1_20_Default_ranged_hashENS1_20_Prime_rehash_policyENS1_17_Hashtable_traitsILb0ELb1ELb1EEEE9_M_assignIRKSC_NS1_17_ReuseOrAllocNodeISaINS1_10_Hash_nodeIjLb0EEEEEEEEvOT_RKT0_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function __gnu_cxx::__enable_if<true, std::_Deque_iterator<bool, bool&, bool*> >::__type std::__copy_move_backward_a1<true, bool*, bool>(bool*, bool*, std::_Deque_iterator<bool, bool&, bool*>)",
+      "symbol": "_ZSt23__copy_move_backward_a1ILb1EPbbEN9__gnu_cxx11__enable_ifIXsrSt23__is_random_access_iterIT0_NSt15iterator_traitsIS4_E17iterator_categoryEE7__valueESt15_Deque_iteratorIT1_RSA_PSA_EE6__typeES4_S4_SD_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function std::_Deque_iterator<bool, bool&, bool*> std::__copy_move_dit<true, bool, bool&, bool*, std::_Deque_iterator<bool, bool&, bool*> >(std::_Deque_iterator<bool, bool&, bool*>, std::_Deque_iterator<bool, bool&, bool*>, std::_Deque_iterator<bool, bool&, bool*>)",
+      "symbol": "_ZSt15__copy_move_ditILb1EbRbPbSt15_Deque_iteratorIbS0_S1_EET3_S2_IT0_T1_T2_ES8_S4_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function __gnu_cxx::__enable_if<true, std::_Deque_iterator<bool, bool&, bool*> >::__type std::__copy_move_a1<true, bool*, bool>(bool*, bool*, std::_Deque_iterator<bool, bool&, bool*>)",
+      "symbol": "_ZSt14__copy_move_a1ILb1EPbbEN9__gnu_cxx11__enable_ifIXsrSt23__is_random_access_iterIT0_NSt15iterator_traitsIS4_E17iterator_categoryEE7__valueESt15_Deque_iteratorIT1_RSA_PSA_EE6__typeES4_S4_SD_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function __gnu_cxx::__enable_if<true, std::_Deque_iterator<bool, bool&, bool*> >::__type std::__copy_move_a1<false, bool*, bool>(bool*, bool*, std::_Deque_iterator<bool, bool&, bool*>)",
+      "symbol": "_ZSt14__copy_move_a1ILb0EPbbEN9__gnu_cxx11__enable_ifIXsrSt23__is_random_access_iterIT0_NSt15iterator_traitsIS4_E17iterator_categoryEE7__valueESt15_Deque_iteratorIT1_RSA_PSA_EE6__typeES4_S4_SD_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::__detail::_Map_base<unsigned int, std::pair<unsigned int const, unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> >, std::__detail::_Select1st, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true>, true>::mapped_type& std::__detail::_Map_base<unsigned int, std::pair<unsigned int const, unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> >, std::__detail::_Select1st, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true>, true>::operator[](const std::__detail::_Map_base<unsigned int, std::pair<unsigned int const, unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> >, std::__detail::_Select1st, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true>, true>::key_type&)",
+      "symbol": "_ZNSt8__detail9_Map_baseIjSt4pairIKjjESaIS3_ENS_10_Select1stESt8equal_toIjESt4hashIjENS_18_Mod_range_hashingENS_20_Default_ranged_hashENS_20_Prime_rehash_policyENS_17_Hashtable_traitsILb0ELb0ELb1EEELb1EEixERS2_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::__detail::_Map_base<unsigned int, std::pair<unsigned int const, lp::non_basic_column_value_position>, std::allocator<std::pair<unsigned int const, lp::non_basic_column_value_position> >, std::__detail::_Select1st, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true>, true>::mapped_type& std::__detail::_Map_base<unsigned int, std::pair<unsigned int const, lp::non_basic_column_value_position>, std::allocator<std::pair<unsigned int const, lp::non_basic_column_value_position> >, std::__detail::_Select1st, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true>, true>::operator[](const std::__detail::_Map_base<unsigned int, std::pair<unsigned int const, lp::non_basic_column_value_position>, std::allocator<std::pair<unsigned int const, lp::non_basic_column_value_position> >, std::__detail::_Select1st, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true>, true>::key_type&)",
+      "symbol": "_ZNSt8__detail9_Map_baseIjSt4pairIKjN2lp31non_basic_column_value_positionEESaIS5_ENS_10_Select1stESt8equal_toIjESt4hashIjENS_18_Mod_range_hashingENS_20_Default_ranged_hashENS_20_Prime_rehash_policyENS_17_Hashtable_traitsILb0ELb0ELb1EEELb1EEixERS2_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_iterator<unsigned int>, bool> std::_Rb_tree<unsigned int, unsigned int, std::_Identity<unsigned int>, std::less<unsigned int>, std::allocator<unsigned int> >::_M_insert_unique<unsigned int>(unsigned int&&)",
+      "symbol": "_ZNSt8_Rb_treeIjjSt9_IdentityIjESt4lessIjESaIjEE16_M_insert_uniqueIjEESt4pairISt17_Rb_tree_iteratorIjEbEOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_iterator<unsigned int>, bool> std::_Rb_tree<unsigned int, unsigned int, std::_Identity<unsigned int>, std::less<unsigned int>, std::allocator<unsigned int> >::_M_insert_unique<unsigned int const&>(const unsigned int&)",
+      "symbol": "_ZNSt8_Rb_treeIjjSt9_IdentityIjESt4lessIjESaIjEE16_M_insert_uniqueIRKjEESt4pairISt17_Rb_tree_iteratorIjEbEOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_iterator<int>, bool> std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_M_insert_unique<int>(int&&)",
+      "symbol": "_ZNSt8_Rb_treeIiiSt9_IdentityIiESt4lessIiESaIiEE16_M_insert_uniqueIiEESt4pairISt17_Rb_tree_iteratorIiEbEOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_append<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>(const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_realloc_appendIJRKS5_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_default_append(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::size_type)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_default_appendEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::__detail::_Map_base<unsigned int, std::pair<unsigned int const, unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> >, std::__detail::_Select1st, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true>, true>::mapped_type& std::__detail::_Map_base<unsigned int, std::pair<unsigned int const, unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> >, std::__detail::_Select1st, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true>, true>::operator[](std::__detail::_Map_base<unsigned int, std::pair<unsigned int const, unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> >, std::__detail::_Select1st, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true>, true>::key_type&&)",
+      "symbol": "_ZNSt8__detail9_Map_baseIjSt4pairIKjjESaIS3_ENS_10_Select1stESt8equal_toIjESt4hashIjENS_18_Mod_range_hashingENS_20_Default_ranged_hashENS_20_Prime_rehash_policyENS_17_Hashtable_traitsILb0ELb0ELb1EEELb1EEixEOj",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::_Hashtable<std::pair<unsigned int, unsigned int>, std::pair<const std::pair<unsigned int, unsigned int>, unsigned int>, std::allocator<std::pair<const std::pair<unsigned int, unsigned int>, unsigned int> >, std::__detail::_Select1st, std::equal_to<std::pair<unsigned int, unsigned int> >, std::hash<std::pair<unsigned int, unsigned int> >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::clear()",
+      "symbol": "_ZNSt10_HashtableISt4pairIjjES0_IKS1_jESaIS3_ENSt8__detail10_Select1stESt8equal_toIS1_ESt4hashIS1_ENS5_18_Mod_range_hashingENS5_20_Default_ranged_hashENS5_20_Prime_rehash_policyENS5_17_Hashtable_traitsILb1ELb0ELb1EEEE5clearEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::deque<bool, std::allocator<bool> >::_M_new_elements_at_front(std::deque<bool, std::allocator<bool> >::size_type)",
+      "symbol": "_ZNSt5dequeIbSaIbEE24_M_new_elements_at_frontEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned int>, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::iterator std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned int>, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_insert_unique_node(std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned int>, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::size_type, std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned int>, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::__hash_code, std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned int>, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::__node_ptr, std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned int>, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::size_type)",
+      "symbol": "_ZNSt10_HashtableINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_jESaIS8_ENSt8__detail10_Select1stESt8equal_toIS5_ESt4hashIS5_ENSA_18_Mod_range_hashingENSA_20_Default_ranged_hashENSA_20_Prime_rehash_policyENSA_17_Hashtable_traitsILb1ELb0ELb1EEEE21_M_insert_unique_nodeEmmPNSA_10_Hash_nodeIS8_Lb1EEEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Hashtable<std::pair<unsigned int, unsigned int>, std::pair<const std::pair<unsigned int, unsigned int>, unsigned int>, std::allocator<std::pair<const std::pair<unsigned int, unsigned int>, unsigned int> >, std::__detail::_Select1st, std::equal_to<std::pair<unsigned int, unsigned int> >, std::hash<std::pair<unsigned int, unsigned int> >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::iterator std::_Hashtable<std::pair<unsigned int, unsigned int>, std::pair<const std::pair<unsigned int, unsigned int>, unsigned int>, std::allocator<std::pair<const std::pair<unsigned int, unsigned int>, unsigned int> >, std::__detail::_Select1st, std::equal_to<std::pair<unsigned int, unsigned int> >, std::hash<std::pair<unsigned int, unsigned int> >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::find(const std::_Hashtable<std::pair<unsigned int, unsigned int>, std::pair<const std::pair<unsigned int, unsigned int>, unsigned int>, std::allocator<std::pair<const std::pair<unsigned int, unsigned int>, unsigned int> >, std::__detail::_Select1st, std::equal_to<std::pair<unsigned int, unsigned int> >, std::hash<std::pair<unsigned int, unsigned int> >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::key_type&)",
+      "symbol": "_ZNSt10_HashtableISt4pairIjjES0_IKS1_jESaIS3_ENSt8__detail10_Select1stESt8equal_toIS1_ESt4hashIS1_ENS5_18_Mod_range_hashingENS5_20_Default_ranged_hashENS5_20_Prime_rehash_policyENS5_17_Hashtable_traitsILb1ELb0ELb1EEEE4findERS2_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::deque<bool, std::allocator<bool> >::_M_new_elements_at_back(std::deque<bool, std::allocator<bool> >::size_type)",
+      "symbol": "_ZNSt5dequeIbSaIbEE23_M_new_elements_at_backEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double>, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::const_iterator std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double>, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::find(const std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double>, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, double> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::key_type&) const",
+      "symbol": "_ZNKSt10_HashtableINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_dESaIS8_ENSt8__detail10_Select1stESt8equal_toIS5_ESt4hashIS5_ENSA_18_Mod_range_hashingENSA_20_Default_ranged_hashENSA_20_Prime_rehash_policyENSA_17_Hashtable_traitsILb1ELb0ELb1EEEE4findERS7_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::deque<unsigned int, std::allocator<unsigned int> >::_M_push_back_aux<unsigned int const&>(const unsigned int&)",
+      "symbol": "_ZNSt5dequeIjSaIjEE16_M_push_back_auxIJRKjEEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Deque_base<lp::simplex_strategy_enum, std::allocator<lp::simplex_strategy_enum> >::~_Deque_base(int)",
+      "symbol": "_ZNSt11_Deque_baseIN2lp21simplex_strategy_enumESaIS1_EED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::__detail::_Map_base<std::pair<unsigned int, unsigned int>, std::pair<const std::pair<unsigned int, unsigned int>, unsigned int>, std::allocator<std::pair<const std::pair<unsigned int, unsigned int>, unsigned int> >, std::__detail::_Select1st, std::equal_to<std::pair<unsigned int, unsigned int> >, std::hash<std::pair<unsigned int, unsigned int> >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true>, true>::mapped_type& std::__detail::_Map_base<std::pair<unsigned int, unsigned int>, std::pair<const std::pair<unsigned int, unsigned int>, unsigned int>, std::allocator<std::pair<const std::pair<unsigned int, unsigned int>, unsigned int> >, std::__detail::_Select1st, std::equal_to<std::pair<unsigned int, unsigned int> >, std::hash<std::pair<unsigned int, unsigned int> >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true>, true>::operator[](const std::__detail::_Map_base<std::pair<unsigned int, unsigned int>, std::pair<const std::pair<unsigned int, unsigned int>, unsigned int>, std::allocator<std::pair<const std::pair<unsigned int, unsigned int>, unsigned int> >, std::__detail::_Select1st, std::equal_to<std::pair<unsigned int, unsigned int> >, std::hash<std::pair<unsigned int, unsigned int> >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true>, true>::key_type&)",
+      "symbol": "_ZNSt8__detail9_Map_baseISt4pairIjjES1_IKS2_jESaIS4_ENS_10_Select1stESt8equal_toIS2_ESt4hashIS2_ENS_18_Mod_range_hashingENS_20_Default_ranged_hashENS_20_Prime_rehash_policyENS_17_Hashtable_traitsILb1ELb0ELb1EEELb1EEixERS3_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Hashtable<std::pair<unsigned int, unsigned int>, std::pair<const std::pair<unsigned int, unsigned int>, unsigned int>, std::allocator<std::pair<const std::pair<unsigned int, unsigned int>, unsigned int> >, std::__detail::_Select1st, std::equal_to<std::pair<unsigned int, unsigned int> >, std::hash<std::pair<unsigned int, unsigned int> >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::iterator std::_Hashtable<std::pair<unsigned int, unsigned int>, std::pair<const std::pair<unsigned int, unsigned int>, unsigned int>, std::allocator<std::pair<const std::pair<unsigned int, unsigned int>, unsigned int> >, std::__detail::_Select1st, std::equal_to<std::pair<unsigned int, unsigned int> >, std::hash<std::pair<unsigned int, unsigned int> >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_erase(std::_Hashtable<std::pair<unsigned int, unsigned int>, std::pair<const std::pair<unsigned int, unsigned int>, unsigned int>, std::allocator<std::pair<const std::pair<unsigned int, unsigned int>, unsigned int> >, std::__detail::_Select1st, std::equal_to<std::pair<unsigned int, unsigned int> >, std::hash<std::pair<unsigned int, unsigned int> >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::size_type, std::_Hashtable<std::pair<unsigned int, unsigned int>, std::pair<const std::pair<unsigned int, unsigned int>, unsigned int>, std::allocator<std::pair<const std::pair<unsigned int, unsigned int>, unsigned int> >, std::__detail::_Select1st, std::equal_to<std::pair<unsigned int, unsigned int> >, std::hash<std::pair<unsigned int, unsigned int> >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::__node_base_ptr, std::_Hashtable<std::pair<unsigned int, unsigned int>, std::pair<const std::pair<unsigned int, unsigned int>, unsigned int>, std::allocator<std::pair<const std::pair<unsigned int, unsigned int>, unsigned int> >, std::__detail::_Select1st, std::equal_to<std::pair<unsigned int, unsigned int> >, std::hash<std::pair<unsigned int, unsigned int> >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::__node_ptr)",
+      "symbol": "_ZNSt10_HashtableISt4pairIjjES0_IKS1_jESaIS3_ENSt8__detail10_Select1stESt8equal_toIS1_ESt4hashIS1_ENS5_18_Mod_range_hashingENS5_20_Default_ranged_hashENS5_20_Prime_rehash_policyENS5_17_Hashtable_traitsILb1ELb0ELb1EEEE8_M_eraseEmPNS5_15_Hash_node_baseEPNS5_10_Hash_nodeIS3_Lb1EEE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::deque<lp::simplex_strategy_enum, std::allocator<lp::simplex_strategy_enum> >::_M_push_back_aux<const lp::simplex_strategy_enum&>(const lp::simplex_strategy_enum&)",
+      "symbol": "_ZNSt5dequeIN2lp21simplex_strategy_enumESaIS1_EE16_M_push_back_auxIJRKS1_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::_Hashtable<unsigned int, std::pair<unsigned int const, double>, std::allocator<std::pair<unsigned int const, double> >, std::__detail::_Select1st, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::clear()",
+      "symbol": "_ZNSt10_HashtableIjSt4pairIKjdESaIS2_ENSt8__detail10_Select1stESt8equal_toIjESt4hashIjENS4_18_Mod_range_hashingENS4_20_Default_ranged_hashENS4_20_Prime_rehash_policyENS4_17_Hashtable_traitsILb0ELb0ELb1EEEE5clearEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Hashtable<unsigned int, std::pair<unsigned int const, unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> >, std::__detail::_Select1st, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::iterator std::_Hashtable<unsigned int, std::pair<unsigned int const, unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> >, std::__detail::_Select1st, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::erase(std::_Hashtable<unsigned int, std::pair<unsigned int const, unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> >, std::__detail::_Select1st, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::const_iterator)",
+      "symbol": "_ZNSt10_HashtableIjSt4pairIKjjESaIS2_ENSt8__detail10_Select1stESt8equal_toIjESt4hashIjENS4_18_Mod_range_hashingENS4_20_Default_ranged_hashENS4_20_Prime_rehash_policyENS4_17_Hashtable_traitsILb0ELb0ELb1EEEE5eraseENS4_20_Node_const_iteratorIS2_Lb0ELb0EEE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_append<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_realloc_appendIJS5_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::deque<bool, std::allocator<bool> >::_M_insert_aux<std::_Deque_iterator<bool, bool const&, bool const*> >(std::deque<bool, std::allocator<bool> >::iterator, std::_Deque_iterator<bool, bool const&, bool const*>, std::_Deque_iterator<bool, bool const&, bool const*>, std::deque<bool, std::allocator<bool> >::size_type)",
+      "symbol": "_ZNSt5dequeIbSaIbEE13_M_insert_auxISt15_Deque_iteratorIbRKbPS4_EEEvS3_IbRbPbET_SB_m",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Deque_base<int, std::allocator<int> >::~_Deque_base(int)",
+      "symbol": "_ZNSt11_Deque_baseIiSaIiEED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::_Deque_base<unsigned int, std::allocator<unsigned int> >::_M_initialize_map(std::size_t)",
+      "symbol": "_ZNSt11_Deque_baseIjSaIjEE17_M_initialize_mapEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned int>, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::const_iterator std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned int>, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::find(const std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned int>, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::key_type&) const",
+      "symbol": "_ZNKSt10_HashtableINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_jESaIS8_ENSt8__detail10_Select1stESt8equal_toIS5_ESt4hashIS5_ENSA_18_Mod_range_hashingENSA_20_Default_ranged_hashENSA_20_Prime_rehash_policyENSA_17_Hashtable_traitsILb1ELb0ELb1EEEE4findERS7_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Deque_base<bool, std::allocator<bool> >::~_Deque_base(int)",
+      "symbol": "_ZNSt11_Deque_baseIbSaIbEED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::__detail::_Map_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned int>, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true>, true>::mapped_type& std::__detail::_Map_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned int>, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true>, true>::operator[](const std::__detail::_Map_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned int>, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned int> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true>, true>::key_type&)",
+      "symbol": "_ZNSt8__detail9_Map_baseINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS6_jESaIS9_ENS_10_Select1stESt8equal_toIS6_ESt4hashIS6_ENS_18_Mod_range_hashingENS_20_Default_ranged_hashENS_20_Prime_rehash_policyENS_17_Hashtable_traitsILb1ELb0ELb1EEELb1EEixERS8_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Deque_base<unsigned int, std::allocator<unsigned int> >::~_Deque_base(int)",
+      "symbol": "_ZNSt11_Deque_baseIjSaIjEED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::deque<bool, std::allocator<bool> >::_M_reallocate_map(std::deque<bool, std::allocator<bool> >::size_type, bool)",
+      "symbol": "_ZNSt5dequeIbSaIbEE17_M_reallocate_mapEmb",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void std::__throw_bad_variant_access(unsigned int)",
+      "symbol": "_ZSt26__throw_bad_variant_accessj",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<std::pair<unsigned int, unsigned int>, std::pair<const std::pair<unsigned int, unsigned int>, unsigned int>, std::_Select1st<std::pair<const std::pair<unsigned int, unsigned int>, unsigned int> >, std::less<std::pair<unsigned int, unsigned int> >, std::allocator<std::pair<const std::pair<unsigned int, unsigned int>, unsigned int> > >::_M_get_insert_unique_pos(const std::_Rb_tree<std::pair<unsigned int, unsigned int>, std::pair<const std::pair<unsigned int, unsigned int>, unsigned int>, std::_Select1st<std::pair<const std::pair<unsigned int, unsigned int>, unsigned int> >, std::less<std::pair<unsigned int, unsigned int> >, std::allocator<std::pair<const std::pair<unsigned int, unsigned int>, unsigned int> > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeISt4pairIjjES0_IKS1_jESt10_Select1stIS3_ESt4lessIS1_ESaIS3_EE24_M_get_insert_unique_posERS2_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, long unsigned int>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, long unsigned int> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, long unsigned int> > >::_M_get_insert_unique_pos(const std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, long unsigned int>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, long unsigned int> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, long unsigned int> > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_mESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE24_M_get_insert_unique_posERS7_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::__cxx11::list<unsigned int, std::allocator<unsigned int> >::resize(std::__cxx11::list<unsigned int, std::allocator<unsigned int> >::size_type)",
+      "symbol": "_ZNSt7__cxx114listIjSaIjEE6resizeEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::_Hashtable<unsigned int, unsigned int, std::allocator<unsigned int>, std::__detail::_Identity, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::~_Hashtable()",
+      "symbol": "_ZNSt10_HashtableIjjSaIjENSt8__detail9_IdentityESt8equal_toIjESt4hashIjENS1_18_Mod_range_hashingENS1_20_Default_ranged_hashENS1_20_Prime_rehash_policyENS1_17_Hashtable_traitsILb0ELb1ELb1EEEED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::_Hashtable<unsigned int, std::pair<unsigned int const, unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> >, std::__detail::_Select1st, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::const_iterator std::_Hashtable<unsigned int, std::pair<unsigned int const, unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> >, std::__detail::_Select1st, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::find(const std::_Hashtable<unsigned int, std::pair<unsigned int const, unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> >, std::__detail::_Select1st, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::key_type&) const",
+      "symbol": "_ZNKSt10_HashtableIjSt4pairIKjjESaIS2_ENSt8__detail10_Select1stESt8equal_toIjESt4hashIjENS4_18_Mod_range_hashingENS4_20_Default_ranged_hashENS4_20_Prime_rehash_policyENS4_17_Hashtable_traitsILb0ELb0ELb1EEEE4findERS1_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_ast Z3_substitute_funs(Z3_context, Z3_ast, unsigned int, const Z3_func_decl*, const Z3_ast*)",
+      "symbol": "Z3_substitute_funs",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Z3_solver_set_initial_value(Z3_context, Z3_solver, Z3_ast, Z3_ast)",
+      "symbol": "Z3_solver_set_initial_value",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Z3_solver_register_on_clause(Z3_context, Z3_solver, void*, Z3_on_clause_eh*)",
+      "symbol": "Z3_solver_register_on_clause",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Z3_solver_propagate_register_cb(Z3_context, Z3_solver_callback, Z3_ast)",
+      "symbol": "Z3_solver_propagate_register_cb",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Z3_solver_propagate_decide(Z3_context, Z3_solver, Z3_decide_eh*)",
+      "symbol": "Z3_solver_propagate_decide",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Z3_solver_propagate_created(Z3_context, Z3_solver, Z3_created_eh*)",
+      "symbol": "Z3_solver_propagate_created",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_ast Z3_solver_congruence_root(Z3_context, Z3_solver, Z3_ast)",
+      "symbol": "Z3_solver_congruence_root",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_solver Z3_solver_add_simplifier(Z3_context, Z3_solver, Z3_simplifier)",
+      "symbol": "Z3_solver_add_simplifier",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_string Z3_simplifier_get_help(Z3_context, Z3_simplifier)",
+      "symbol": "Z3_simplifier_get_help",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_string Z3_simplifier_get_descr(Z3_context, Z3_string)",
+      "symbol": "Z3_simplifier_get_descr",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool Z3_solver_next_split(Z3_context, Z3_solver_callback, Z3_ast, unsigned int, Z3_lbool)",
+      "symbol": "Z3_solver_next_split",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_sort Z3_mk_datatype_sort(Z3_context, Z3_symbol)",
+      "symbol": "Z3_mk_datatype_sort",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_parser_context Z3_mk_parser_context(Z3_context)",
+      "symbol": "Z3_mk_parser_context",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Z3_simplifier_dec_ref(Z3_context, Z3_simplifier)",
+      "symbol": "Z3_simplifier_dec_ref",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_ast Z3_mk_char_to_int(Z3_context, Z3_ast)",
+      "symbol": "Z3_mk_char_to_int",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_ast Z3_mk_char_le(Z3_context, Z3_ast, Z3_ast)",
+      "symbol": "Z3_mk_char_le",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Z3_enable_concurrent_dec_ref(Z3_context)",
+      "symbol": "Z3_enable_concurrent_dec_ref",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_symbol Z3_get_quantifier_skolem_id(Z3_context, Z3_ast)",
+      "symbol": "Z3_get_quantifier_skolem_id",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Z3_simplifier_inc_ref(Z3_context, Z3_simplifier)",
+      "symbol": "Z3_simplifier_inc_ref",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_ast Z3_mk_char_to_bv(Z3_context, Z3_ast)",
+      "symbol": "Z3_mk_char_to_bv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function unsigned int Z3_constructor_num_fields(Z3_context, Z3_constructor)",
+      "symbol": "Z3_constructor_num_fields",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_ast Z3_mk_ubv_to_str(Z3_context, Z3_ast)",
+      "symbol": "Z3_mk_ubv_to_str",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool Z3_rcf_is_rational(Z3_context, Z3_rcf_num)",
+      "symbol": "Z3_rcf_is_rational",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_ast Z3_mk_seq_foldl(Z3_context, Z3_ast, Z3_ast, Z3_ast)",
+      "symbol": "Z3_mk_seq_foldl",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_ast Z3_mk_u32string(Z3_context, unsigned int, const unsigned int*)",
+      "symbol": "Z3_mk_u32string",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_simplifier Z3_simplifier_and_then(Z3_context, Z3_simplifier, Z3_simplifier)",
+      "symbol": "Z3_simplifier_and_then",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_ast_vector Z3_parser_context_from_string(Z3_context, Z3_parser_context, Z3_string)",
+      "symbol": "Z3_parser_context_from_string",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_ast Z3_mk_sbv_to_str(Z3_context, Z3_ast)",
+      "symbol": "Z3_mk_sbv_to_str",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_ast Z3_mk_re_allchar(Z3_context, Z3_sort)",
+      "symbol": "Z3_mk_re_allchar",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_ast Z3_solver_congruence_next(Z3_context, Z3_solver, Z3_ast)",
+      "symbol": "Z3_solver_congruence_next",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool Z3_is_char_sort(Z3_context, Z3_sort)",
+      "symbol": "Z3_is_char_sort",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, long unsigned int>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, long unsigned int> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, long unsigned int> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, long unsigned int>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, long unsigned int> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, long unsigned int> > >::const_iterator, const std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, long unsigned int>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, long unsigned int> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, long unsigned int> > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_mESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS8_ERS7_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_ast Z3_mk_char_from_bv(Z3_context, Z3_ast)",
+      "symbol": "Z3_mk_char_from_bv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_ast Z3_mk_abs(Z3_context, Z3_ast)",
+      "symbol": "Z3_mk_abs",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function unsigned int Z3_rcf_extension_index(Z3_context, Z3_rcf_num)",
+      "symbol": "Z3_rcf_extension_index",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_sort Z3_mk_char_sort(Z3_context)",
+      "symbol": "Z3_mk_char_sort",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_ast Z3_mk_re_diff(Z3_context, Z3_ast, Z3_ast)",
+      "symbol": "Z3_mk_re_diff",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_param_descrs Z3_get_global_param_descrs(Z3_context)",
+      "symbol": "Z3_get_global_param_descrs",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_param_descrs Z3_simplifier_get_param_descrs(Z3_context, Z3_simplifier)",
+      "symbol": "Z3_simplifier_get_param_descrs",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_sort Z3_get_array_sort_domain_n(Z3_context, Z3_sort, unsigned int)",
+      "symbol": "Z3_get_array_sort_domain_n",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_symbol Z3_get_quantifier_id(Z3_context, Z3_ast)",
+      "symbol": "Z3_get_quantifier_id",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_ast Z3_mk_seq_foldli(Z3_context, Z3_ast, Z3_ast, Z3_ast, Z3_ast)",
+      "symbol": "Z3_mk_seq_foldli",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Z3_parser_context_add_decl(Z3_context, Z3_parser_context, Z3_func_decl)",
+      "symbol": "Z3_parser_context_add_decl",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function unsigned int Z3_get_num_simplifiers(Z3_context)",
+      "symbol": "Z3_get_num_simplifiers",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int Z3_rcf_interval(Z3_context, Z3_rcf_num, int*, int*, Z3_rcf_num*, int*, int*, Z3_rcf_num*)",
+      "symbol": "Z3_rcf_interval",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_ast Z3_mk_real_int64(Z3_context, int64_t, int64_t)",
+      "symbol": "Z3_mk_real_int64",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_string Z3_get_simplifier_name(Z3_context, unsigned int)",
+      "symbol": "Z3_get_simplifier_name",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function unsigned int Z3_get_string_length(Z3_context, Z3_ast)",
+      "symbol": "Z3_get_string_length",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_ast Z3_mk_re_power(Z3_context, Z3_ast, unsigned int)",
+      "symbol": "Z3_mk_re_power",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_ast Z3_mk_char_is_digit(Z3_context, Z3_ast)",
+      "symbol": "Z3_mk_char_is_digit",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_ast Z3_mk_bit2bool(Z3_context, unsigned int, Z3_ast)",
+      "symbol": "Z3_mk_bit2bool",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::_Hashtable<unsigned int, std::pair<unsigned int const, unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> >, std::__detail::_Select1st, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::iterator std::_Hashtable<unsigned int, std::pair<unsigned int const, unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> >, std::__detail::_Select1st, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::find(const std::_Hashtable<unsigned int, std::pair<unsigned int const, unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> >, std::__detail::_Select1st, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::key_type&)",
+      "symbol": "_ZNSt10_HashtableIjSt4pairIKjjESaIS2_ENSt8__detail10_Select1stESt8equal_toIjESt4hashIjENS4_18_Mod_range_hashingENS4_20_Default_ranged_hashENS4_20_Prime_rehash_policyENS4_17_Hashtable_traitsILb0ELb0ELb1EEEE4findERS1_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_rcf_num Z3_rcf_coefficient(Z3_context, Z3_rcf_num, unsigned int)",
+      "symbol": "Z3_rcf_coefficient",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_ast Z3_mk_seq_map(Z3_context, Z3_ast, Z3_ast)",
+      "symbol": "Z3_mk_seq_map",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int Z3_rcf_sign_condition_sign(Z3_context, Z3_rcf_num, unsigned int)",
+      "symbol": "Z3_rcf_sign_condition_sign",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_ast Z3_mk_seq_mapi(Z3_context, Z3_ast, Z3_ast, Z3_ast)",
+      "symbol": "Z3_mk_seq_mapi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::pair<std::__detail::_Node_iterator<std::pair<unsigned int const, unsigned int>, false, false>, bool> std::_Hashtable<unsigned int, std::pair<unsigned int const, unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> >, std::__detail::_Select1st, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_emplace_uniq<std::pair<unsigned int, unsigned int> >(std::pair<unsigned int, unsigned int>&&)",
+      "symbol": "_ZNSt10_HashtableIjSt4pairIKjjESaIS2_ENSt8__detail10_Select1stESt8equal_toIjESt4hashIjENS4_18_Mod_range_hashingENS4_20_Default_ranged_hashENS4_20_Prime_rehash_policyENS4_17_Hashtable_traitsILb0ELb0ELb1EEEE15_M_emplace_uniqIJS0_IjjEEEES0_INS4_14_Node_iteratorIS2_Lb0ELb0EEEbEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_ast Z3_mk_string_from_code(Z3_context, Z3_ast)",
+      "symbol": "Z3_mk_string_from_code",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_simplifier Z3_mk_simplifier(Z3_context, Z3_string)",
+      "symbol": "Z3_mk_simplifier",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function unsigned int Z3_rcf_num_coefficients(Z3_context, Z3_rcf_num)",
+      "symbol": "Z3_rcf_num_coefficients",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Z3_get_string_contents(Z3_context, Z3_ast, unsigned int, unsigned int*)",
+      "symbol": "Z3_get_string_contents",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_ast Z3_mk_string_to_code(Z3_context, Z3_ast)",
+      "symbol": "Z3_mk_string_to_code",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Z3_parser_context_inc_ref(Z3_context, Z3_parser_context)",
+      "symbol": "Z3_parser_context_inc_ref",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_func_decl Z3_solver_propagate_declare(Z3_context, Z3_symbol, unsigned int, Z3_sort*, Z3_sort)",
+      "symbol": "Z3_solver_propagate_declare",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_sort Z3_mk_type_variable(Z3_context, Z3_symbol)",
+      "symbol": "Z3_mk_type_variable",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Z3_optimize_set_initial_value(Z3_context, Z3_optimize, Z3_ast, Z3_ast)",
+      "symbol": "Z3_optimize_set_initial_value",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Z3_parser_context_add_sort(Z3_context, Z3_parser_context, Z3_sort)",
+      "symbol": "Z3_parser_context_add_sort",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void Z3_parser_context_dec_ref(Z3_context, Z3_parser_context)",
+      "symbol": "Z3_parser_context_dec_ref",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_symbol Z3_rcf_infinitesimal_name(Z3_context, Z3_rcf_num)",
+      "symbol": "Z3_rcf_infinitesimal_name",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::__cxx11::list<unsigned int, std::allocator<unsigned int> >::_M_default_append(std::__cxx11::list<unsigned int, std::allocator<unsigned int> >::size_type)",
+      "symbol": "_ZNSt7__cxx114listIjSaIjEE17_M_default_appendEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool Z3_rcf_is_algebraic(Z3_context, Z3_rcf_num)",
+      "symbol": "Z3_rcf_is_algebraic",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool Z3_rcf_is_infinitesimal(Z3_context, Z3_rcf_num)",
+      "symbol": "Z3_rcf_is_infinitesimal",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_ast Z3_mk_char(Z3_context, unsigned int)",
+      "symbol": "Z3_mk_char",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool Z3_rcf_is_transcendental(Z3_context, Z3_rcf_num)",
+      "symbol": "Z3_rcf_is_transcendental",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function unsigned int Z3_rcf_num_sign_condition_coefficients(Z3_context, Z3_rcf_num, unsigned int)",
+      "symbol": "Z3_rcf_num_sign_condition_coefficients",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_simplifier Z3_simplifier_using_params(Z3_context, Z3_simplifier, Z3_params)",
+      "symbol": "Z3_simplifier_using_params",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_symbol Z3_rcf_transcendental_name(Z3_context, Z3_rcf_num)",
+      "symbol": "Z3_rcf_transcendental_name",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function unsigned int Z3_rcf_num_sign_conditions(Z3_context, Z3_rcf_num)",
+      "symbol": "Z3_rcf_num_sign_conditions",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Hashtable<unsigned int, std::pair<unsigned int const, unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> >, std::__detail::_Select1st, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::clear()",
+      "symbol": "_ZNSt10_HashtableIjSt4pairIKjjESaIS2_ENSt8__detail10_Select1stESt8equal_toIjESt4hashIjENS4_18_Mod_range_hashingENS4_20_Default_ranged_hashENS4_20_Prime_rehash_policyENS4_17_Hashtable_traitsILb0ELb0ELb1EEEE5clearEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_rcf_num Z3_rcf_sign_condition_coefficient(Z3_context, Z3_rcf_num, unsigned int, unsigned int)",
+      "symbol": "Z3_rcf_sign_condition_coefficient",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void Z3_solver_propagate_consequence(Z3_context, Z3_solver_callback, unsigned int, const unsigned int*, unsigned int, const unsigned int*, const unsigned int*, Z3_ast)  ->  function bool Z3_solver_propagate_consequence(Z3_context, Z3_solver_callback, unsigned int, const Z3_ast*, unsigned int, const Z3_ast*, const Z3_ast*, Z3_ast)",
+      "symbol": "Z3_solver_propagate_consequence",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function unsigned int Z3_solver_propagate_register(Z3_context, Z3_solver, Z3_ast)  ->  function void Z3_solver_propagate_register(Z3_context, Z3_solver, Z3_ast)",
+      "symbol": "Z3_solver_propagate_register",
+      "weak": false
+     }
+    ],
+    "symbol_events_truncated": false,
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 24,
+     "field_added_to_struct": 6,
+     "field_type_changed": 2
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 25,
+      "declared_in": "./src/api/z3_api.h",
+      "exposure": "by_value",
+      "kind": "enum_case_added",
+      "third_party": false,
+      "type": "enum Z3_decl_kind"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/api/z3_api.h",
+      "exposure": "by_value",
+      "kind": "enum_case_added",
+      "third_party": false,
+      "type": "enum Z3_sort_kind"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/hashtable_policy.h",
+      "exposure": "by_value",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__detail::_Node_iterator<std::pair<unsigned int const, unsigned int>, false, false>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/hashtable_policy.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__detail::_Hash_node<std::pair<unsigned int const, unsigned int>, false>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/hashtable_policy.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__detail::_Hash_node_value<std::pair<unsigned int const, unsigned int>, false>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/ext/aligned_buffer.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct __gnu_cxx::__aligned_buffer<std::pair<unsigned int const, unsigned int> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/ext/aligned_buffer.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct __gnu_cxx::__aligned_buffer<std::pair<unsigned int const, unsigned int> >"
+     },
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": "/usr/include/c++/14/bits/hashtable.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::_Hashtable<unsigned int, std::pair<unsigned int const, unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> >, std::__detail::_Select1st, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/hashtable_policy.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<unsigned int const, unsigned int>, false> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/hashtable_policy.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<unsigned int const, unsigned int>, false> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/hashtable_policy.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct std::__detail::_Hashtable_base<unsigned int, std::pair<unsigned int const, unsigned int>, std::__detail::_Select1st, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Hashtable_traits<false, false, true> >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/14/bits/hashtable_policy.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__detail::_Hashtable_base<unsigned int, std::pair<unsigned int const, unsigned int>, std::__detail::_Select1st, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Hashtable_traits<false, false, true> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/hashtable_policy.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct std::__detail::_Hash_code_base<unsigned int, std::pair<unsigned int const, unsigned int>, std::__detail::_Select1st, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/hashtable_policy.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__detail::_Hash_code_base<unsigned int, std::pair<unsigned int const, unsigned int>, std::__detail::_Select1st, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/hashtable_policy.h",
+      "exposure": "by_value",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__detail::_Node_iterator<unsigned int, true, false>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/hashtable_policy.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__detail::_Hash_node<unsigned int, false>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/hashtable_policy.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__detail::_Hash_node_value<unsigned int, false>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/ext/aligned_buffer.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct __gnu_cxx::__aligned_buffer<unsigned int>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/ext/aligned_buffer.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct __gnu_cxx::__aligned_buffer<unsigned int>"
+     },
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": "/usr/include/c++/14/bits/hashtable.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::_Hashtable<unsigned int, unsigned int, std::allocator<unsigned int>, std::__detail::_Identity, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/hashtable_policy.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<unsigned int, false> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/hashtable_policy.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<unsigned int, false> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/hashtable_policy.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct std::__detail::_Hashtable_base<unsigned int, unsigned int, std::__detail::_Identity, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Hashtable_traits<false, true, true> >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/14/bits/hashtable_policy.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__detail::_Hashtable_base<unsigned int, unsigned int, std::__detail::_Identity, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Hashtable_traits<false, true, true> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/hashtable_policy.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct std::__detail::_Hash_code_base<unsigned int, unsigned int, std::__detail::_Identity, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/hashtable_policy.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__detail::_Hash_code_base<unsigned int, unsigned int, std::__detail::_Identity, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>"
+     }
+    ],
+    "vague_linkage": {
+     "function_signature_changed": 1,
+     "symbol_added": 11,
+     "symbol_removed": 34
+    }
+   }
+  ],
+  "seconds": 252.796781353,
   "source": "z3",
   "unpaired": [
    [],
@@ -13,7 +1033,11 @@
    "4.13.3"
   ]
  },
- "generated_at": "2026-09-02T13:59:31Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T07:17:34Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

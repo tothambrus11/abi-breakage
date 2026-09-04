@@ -4,13 +4,17 @@
    {
     "header_files": 7,
     "parsed": 7,
+    "parsed_as_cxx": 7,
     "skipped_by_limit": 0,
+    "with_errors": 0,
     "with_fatal_error": 0
    },
    {
     "header_files": 7,
     "parsed": 7,
+    "parsed_as_cxx": 7,
     "skipped_by_limit": 0,
+    "with_errors": 0,
     "with_fatal_error": 0
    }
   ],
@@ -27,6 +31,7 @@
    "inline_body_changed_template": 0,
    "inline_decl_changed": 0,
    "macro_value_changed": 0,
+   "macro_value_changed_nonversion": 0,
    "macros": [
     65,
     65
@@ -36,12 +41,25 @@
   "id": "hunspell@1.6.1..1.6.2",
   "language": "cxx",
   "source": "hunspell",
+  "symbol_declared": {
+   "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE13_M_insert_auxIJRKS5_EEEvN9__gnu_cxx17__normal_iteratorIPS5_S7_EEDpOT_": "undeclared",
+   "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE13_M_insert_auxIJS5_EEEvN9__gnu_cxx17__normal_iteratorIPS5_S7_EEDpOT_": "undeclared",
+   "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE19_M_emplace_back_auxIJRKS5_EEEvDpOT_": "undeclared",
+   "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE19_M_emplace_back_auxIJS5_EEEvDpOT_": "undeclared",
+   "_ZNSt6vectorIS_INSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EESaIS7_EE19_M_emplace_back_auxIJS7_EEEvDpOT_": "undeclared",
+   "_ZNSt6vectorIS_ItSaItEESaIS1_EE19_M_emplace_back_auxIJS1_EEEvDpOT_": "undeclared",
+   "_ZNSt6vectorItSaItEE19_M_emplace_back_auxIJtEEEvDpOT_": "undeclared"
+  },
   "upstream": [
    "1.6.1",
    "1.6.2"
   ]
  },
- "generated_at": "2026-09-02T14:52:22Z",
- "schema": "abistudy/header-pair/2",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T07:43:44Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
 }

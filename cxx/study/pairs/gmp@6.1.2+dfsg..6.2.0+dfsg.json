@@ -1,6 +1,8 @@
 {
  "data": {
+  "bytes_extracted": 6563984,
   "id": "gmp@6.1.2+dfsg..6.2.0+dfsg",
+  "object_errors": [],
   "objects": [
    {
     "coverage": {
@@ -31,81 +33,96 @@
     "symbol_events": [
      {
       "kind": "symbol_removed",
-      "pretty": "function mp_size_t __gmpn_dcpi1_bdiv_q_n_itch(mp_size_t)",
-      "symbol": "__gmpn_dcpi1_bdiv_q_n_itch"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "function mp_limb_t __gmpn_dcpi1_divappr_q_n(mp_ptr, mp_ptr, mp_srcptr, mp_size_t, gmp_pi1_t*, mp_ptr)",
-      "symbol": "__gmpn_dcpi1_divappr_q_n"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "function mp_size_t __gmpn_mu_div_qr_choose_in(mp_size_t, mp_size_t, int)",
-      "symbol": "__gmpn_mu_div_qr_choose_in"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "function void __gmpn_dcpi1_bdiv_q_n(mp_ptr, mp_ptr, mp_srcptr, mp_size_t, mp_limb_t, mp_ptr)",
-      "symbol": "__gmpn_dcpi1_bdiv_q_n"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "function mp_size_t __gmpn_mu_divappr_q_choose_in(mp_size_t, mp_size_t, int)",
-      "symbol": "__gmpn_mu_divappr_q_choose_in"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "function void __gmpn_matrix22_mul_strassen(mp_ptr, mp_ptr, mp_ptr, mp_ptr, mp_size_t, mp_srcptr, mp_srcptr, mp_srcptr, mp_srcptr, mp_size_t, mp_ptr)",
-      "symbol": "__gmpn_matrix22_mul_strassen"
+      "pretty": "function void __gmpn_set_str_compute_powtab(powers_t*, mp_ptr, mp_size_t, int)",
+      "symbol": "__gmpn_set_str_compute_powtab",
+      "weak": false
      },
      {
       "kind": "symbol_removed",
       "pretty": "function mp_limb_t __gmpn_preinv_mu_divappr_q(mp_ptr, mp_srcptr, mp_size_t, mp_srcptr, mp_size_t, mp_srcptr, mp_size_t, mp_ptr)",
-      "symbol": "__gmpn_preinv_mu_divappr_q"
+      "symbol": "__gmpn_preinv_mu_divappr_q",
+      "weak": false
      },
      {
       "kind": "symbol_removed",
-      "pretty": "function void __gmpn_set_str_compute_powtab(powers_t*, mp_ptr, mp_size_t, int)",
-      "symbol": "__gmpn_set_str_compute_powtab"
+      "pretty": "function void __gmpn_matrix22_mul_strassen(mp_ptr, mp_ptr, mp_ptr, mp_ptr, mp_size_t, mp_srcptr, mp_srcptr, mp_srcptr, mp_srcptr, mp_size_t, mp_ptr)",
+      "symbol": "__gmpn_matrix22_mul_strassen",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function mp_limb_t __gmpn_dcpi1_divappr_q_n(mp_ptr, mp_ptr, mp_srcptr, mp_size_t, gmp_pi1_t*, mp_ptr)",
+      "symbol": "__gmpn_dcpi1_divappr_q_n",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function mp_size_t __gmpn_dcpi1_bdiv_q_n_itch(mp_size_t)",
+      "symbol": "__gmpn_dcpi1_bdiv_q_n_itch",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function mp_size_t __gmpn_mu_divappr_q_choose_in(mp_size_t, mp_size_t, int)",
+      "symbol": "__gmpn_mu_divappr_q_choose_in",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function mp_size_t __gmpn_mu_div_qr_choose_in(mp_size_t, mp_size_t, int)",
+      "symbol": "__gmpn_mu_div_qr_choose_in",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void __gmpn_dcpi1_bdiv_q_n(mp_ptr, mp_ptr, mp_srcptr, mp_size_t, mp_limb_t, mp_ptr)",
+      "symbol": "__gmpn_dcpi1_bdiv_q_n",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function int __gmpz_stronglucas(mpz_srcptr, mpz_ptr, mpz_ptr)",
-      "symbol": "__gmpz_stronglucas"
+      "symbol": "__gmpz_stronglucas",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function int __gmpn_strongfibo(mp_srcptr, mp_size_t, mp_ptr)",
-      "symbol": "__gmpn_strongfibo"
+      "symbol": "__gmpn_strongfibo",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function mp_limb_t __gmpn_sbpi1_bdiv_r(mp_ptr, mp_size_t, mp_srcptr, mp_size_t, mp_limb_t)",
-      "symbol": "__gmpn_sbpi1_bdiv_r"
+      "symbol": "__gmpn_sbpi1_bdiv_r",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function int __gmpz_lucas_mod(mpz_ptr, mpz_ptr, long int, mp_bitcnt_t, mpz_srcptr, mpz_ptr, mpz_ptr)",
-      "symbol": "__gmpz_lucas_mod"
+      "symbol": "__gmpz_lucas_mod",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function int __gmpn_fib2m(mp_ptr, mp_ptr, mp_srcptr, mp_size_t, mp_srcptr, mp_size_t)",
-      "symbol": "__gmpn_fib2m"
+      "symbol": "__gmpn_fib2m",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function size_t __gmpn_compute_powtab(powers_t*, mp_ptr, mp_size_t, int)",
-      "symbol": "__gmpn_compute_powtab"
+      "symbol": "__gmpn_compute_powtab",
+      "weak": false
      }
     ],
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 3.046783608,
+  "seconds": 2.046551211,
   "source": "gmp",
   "unpaired": [
    [],
@@ -116,7 +133,11 @@
    "6.2.0+dfsg"
   ]
  },
- "generated_at": "2026-09-02T12:08:31Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:41:18Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

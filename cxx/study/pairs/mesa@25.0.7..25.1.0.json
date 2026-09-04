@@ -1,5 +1,6 @@
 {
  "data": {
+  "bytes_extracted": 56044350,
   "id": "mesa@25.0.7..25.1.0",
   "object_errors": [],
   "objects": [
@@ -29,192 +30,344 @@
     "symbol_events": [],
     "symbols_version_renamed": 0,
     "third_party": {
-     "enum_case_added": 4,
-     "field_added_to_struct": 8,
+     "enum_case_added": 5,
+     "enum_case_removed": 2,
+     "field_added_to_struct": 11,
      "field_removed_from_struct": 5,
      "field_type_changed": 8,
-     "member_offset_changed": 158,
-     "type_size_changed": 5
+     "member_offset_changed": 300,
+     "type_size_changed": 6
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "../src/gallium/include/pipe/p_screen.h",
+      "exposure": "not_in_interface",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "struct pipe_screen"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "../src/gallium/include/pipe/p_screen.h",
+      "exposure": "not_in_interface",
       "kind": "field_removed_from_struct",
+      "third_party": true,
       "type": "struct pipe_screen"
      },
      {
+      "append_only": false,
       "count": 74,
       "declared_in": "../src/gallium/include/pipe/p_screen.h",
+      "exposure": "not_in_interface",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct pipe_screen"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "../src/gallium/include/pipe/p_screen.h",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct pipe_screen"
      },
      {
+      "append_only": false,
       "count": 3,
       "declared_in": "../src/gallium/include/pipe/p_video_enums.h",
+      "exposure": "not_in_interface",
       "kind": "enum_case_added",
+      "third_party": true,
       "type": "enum pipe_video_profile"
      },
      {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/gallium/include/pipe/p_video_enums.h",
+      "exposure": "not_in_interface",
+      "kind": "enum_case_added",
+      "third_party": true,
+      "type": "enum pipe_video_cap"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/gallium/include/pipe/p_video_enums.h",
+      "exposure": "not_in_interface",
+      "kind": "enum_case_removed",
+      "third_party": true,
+      "type": "enum pipe_video_cap"
+     },
+     {
+      "append_only": false,
       "count": 1,
       "declared_in": "../src/gallium/include/pipe/p_context.h",
+      "exposure": "not_in_interface",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "struct pipe_context"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "../src/gallium/include/pipe/p_context.h",
+      "exposure": "not_in_interface",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "struct pipe_context"
      },
      {
+      "append_only": false,
       "count": 48,
       "declared_in": "../src/gallium/include/pipe/p_context.h",
+      "exposure": "not_in_interface",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct pipe_context"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "../src/gallium/include/pipe/p_context.h",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct pipe_context"
      },
      {
+      "append_only": true,
       "count": 1,
       "declared_in": "../src/compiler/nir/nir.h",
+      "exposure": "not_in_interface",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "struct nir_shader"
      },
      {
+      "append_only": true,
       "count": 1,
       "declared_in": "../src/compiler/nir/nir.h",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct nir_shader"
      },
      {
-      "count": 1,
-      "declared_in": "../src/compiler/shader_info.h",
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../src/compiler/nir/nir.h",
+      "exposure": "not_in_interface",
       "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct nir_shader_compiler_options"
+     },
+     {
+      "append_only": false,
+      "count": 142,
+      "declared_in": "../src/compiler/nir/nir.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct nir_shader_compiler_options"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/compiler/nir/nir.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct nir_shader_compiler_options"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/compiler/nir/nir.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct nir_instr"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/compiler/nir/nir.h",
+      "exposure": "not_in_interface",
+      "kind": "enum_case_removed",
+      "third_party": true,
+      "type": "enum nir_instr_type"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/compiler/shader_info.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "struct shader_info"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "../src/compiler/shader_info.h",
+      "exposure": "not_in_interface",
       "kind": "field_removed_from_struct",
+      "third_party": true,
       "type": "struct shader_info"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "../src/compiler/shader_info.h",
+      "exposure": "not_in_interface",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "struct shader_info"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "../src/compiler/shader_info.h",
+      "exposure": "not_in_interface",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "union {struct {uint64_t double_inputs; uint8_t blit_sgprs_amd; bool tes_agx; bool window_space_position; bool needs_edge_flag;} vs; struct {mesa_prim output_primitive; mesa_prim input_primitive; uint16_t vertices_out; uint8_t invocations; uint8_t vertices_in; bool uses_end_primitive; uint8_t active_stream_mask;} gs; struct {bool uses_discard; bool uses_fbfetch_output; bool fbfetch_coherent; bool color_is_dual_source; bool require_full_quads; bool quad_derivatives; bool needs_quad_helper_invocations; bool uses_sample_qualifier; bool uses_sample_shading; bool early_fragment_tests; bool inner_coverage; bool post_depth_coverage; bool pixel_center_integer; bool origin_upper_left; bool pixel_interlock_ordered; bool pixel_interlock_unordered; bool sample_interlock_ordered; bool sample_interlock_unordered; bool untyped_color_outputs; gl_frag_depth_layout depth_layout; unsigned int color0_interp; bool color0_sample; bool color0_centroid; unsigned int color1_interp; bool color1_sample; bool color1_centroid; unsigned int advanced_blend_modes; bool early_and_late_fragment_tests; gl_frag_stencil_layout stencil_front_layout; gl_frag_stencil_layout stencil_back_layout;} fs; struct {uint16_t workgroup_size_hint[3]; uint8_t user_data_components_amd; bool has_variable_shared_mem; bool has_cooperative_matrix; uint8_t image_block_size_per_thread_agx; unsigned int ptr_size; uint32_t shader_index; uint32_t node_payloads_size; uint32_t workgroup_count[3];} cs; struct {tess_primitive_mode _primitive_mode; uint8_t tcs_vertices_out; unsigned int spacing; bool ccw; bool point_mode; uint64_t tcs_same_invocation_inputs_read; uint64_t tcs_cross_invocation_inputs_read; uint64_t tcs_cross_invocation_outputs_read;} tess; struct {uint64_t ms_cross_invocation_output_access; uint32_t ts_mesh_dispatch_dimensions[3]; uint16_t max_vertices_out; uint16_t max_primitives_out; mesa_prim primitive_type; bool nv;} mesh;}"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "../src/compiler/shader_info.h",
+      "exposure": "not_in_interface",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "struct {bool uses_discard; bool uses_fbfetch_output; bool fbfetch_coherent; bool color_is_dual_source; bool require_full_quads; bool quad_derivatives; bool needs_quad_helper_invocations; bool uses_sample_qualifier; bool uses_sample_shading; bool early_fragment_tests; bool inner_coverage; bool post_depth_coverage; bool pixel_center_integer; bool origin_upper_left; bool pixel_interlock_ordered; bool pixel_interlock_unordered; bool sample_interlock_ordered; bool sample_interlock_unordered; bool untyped_color_outputs; gl_frag_depth_layout depth_layout; unsigned int color0_interp; bool color0_sample; bool color0_centroid; unsigned int color1_interp; bool color1_sample; bool color1_centroid; unsigned int advanced_blend_modes; bool early_and_late_fragment_tests; gl_frag_stencil_layout stencil_front_layout; gl_frag_stencil_layout stencil_back_layout;}"
      },
      {
+      "append_only": false,
       "count": 23,
       "declared_in": "../src/compiler/shader_info.h",
+      "exposure": "not_in_interface",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct {bool uses_discard; bool uses_fbfetch_output; bool fbfetch_coherent; bool color_is_dual_source; bool require_full_quads; bool quad_derivatives; bool needs_quad_helper_invocations; bool uses_sample_qualifier; bool uses_sample_shading; bool early_fragment_tests; bool inner_coverage; bool post_depth_coverage; bool pixel_center_integer; bool origin_upper_left; bool pixel_interlock_ordered; bool pixel_interlock_unordered; bool sample_interlock_ordered; bool sample_interlock_unordered; bool untyped_color_outputs; gl_frag_depth_layout depth_layout; unsigned int color0_interp; bool color0_sample; bool color0_centroid; unsigned int color1_interp; bool color1_sample; bool color1_centroid; unsigned int advanced_blend_modes; bool early_and_late_fragment_tests; gl_frag_stencil_layout stencil_front_layout; gl_frag_stencil_layout stencil_back_layout;}"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "../src/compiler/shader_info.h",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct {bool uses_discard; bool uses_fbfetch_output; bool fbfetch_coherent; bool color_is_dual_source; bool require_full_quads; bool quad_derivatives; bool needs_quad_helper_invocations; bool uses_sample_qualifier; bool uses_sample_shading; bool early_fragment_tests; bool inner_coverage; bool post_depth_coverage; bool pixel_center_integer; bool origin_upper_left; bool pixel_interlock_ordered; bool pixel_interlock_unordered; bool sample_interlock_ordered; bool sample_interlock_unordered; bool untyped_color_outputs; gl_frag_depth_layout depth_layout; unsigned int color0_interp; bool color0_sample; bool color0_centroid; unsigned int color1_interp; bool color1_sample; bool color1_centroid; unsigned int advanced_blend_modes; bool early_and_late_fragment_tests; gl_frag_stencil_layout stencil_front_layout; gl_frag_stencil_layout stencil_back_layout;}"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "../src/gallium/include/pipe/p_state.h",
+      "exposure": "not_in_interface",
       "kind": "field_removed_from_struct",
+      "third_party": true,
       "type": "struct pipe_surface"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "../src/gallium/include/pipe/p_state.h",
+      "exposure": "not_in_interface",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct pipe_surface"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "../src/gallium/include/pipe/p_state.h",
+      "exposure": "not_in_interface",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "struct pipe_image_view"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "../src/gallium/include/pipe/p_state.h",
+      "exposure": "not_in_interface",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "union {struct {unsigned int first_layer; unsigned int last_layer; unsigned int level; bool single_layer_view; bool is_2d_view_of_3d;} tex; struct {unsigned int offset; unsigned int size;} buf; struct {unsigned int offset; uint16_t row_stride; uint16_t width; uint16_t height;} tex2d_from_buf;}"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "../src/gallium/include/pipe/p_state.h",
+      "exposure": "not_in_interface",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "struct pipe_sampler_view"
      },
      {
+      "append_only": false,
       "count": 11,
       "declared_in": "../src/gallium/include/pipe/p_state.h",
+      "exposure": "not_in_interface",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct pipe_sampler_view"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "../src/gallium/include/pipe/p_state.h",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct pipe_sampler_view"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "../src/gallium/include/pipe/p_state.h",
+      "exposure": "not_in_interface",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "union {struct {unsigned int first_layer; unsigned int last_layer; unsigned int first_level; unsigned int last_level;} tex; struct {unsigned int offset; unsigned int size;} buf; struct {unsigned int offset; uint16_t row_stride; uint16_t width; uint16_t height;} tex2d_from_buf;}"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "../src/gallium/include/pipe/p_video_state.h",
+      "exposure": "not_in_interface",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "struct pipe_vpp_desc"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "../src/util/xmlconfig.h",
+      "exposure": "not_in_interface",
       "kind": "enum_case_added",
+      "third_party": true,
       "type": "enum driOptionType"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "../src/util/xmlconfig.h",
+      "exposure": "not_in_interface",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "union driOptionValue"
      }
-    ]
+    ],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 16.570595156,
+  "seconds": 18.0876558,
   "source": "mesa",
   "unpaired": [
    [],
@@ -225,7 +378,11 @@
    "25.1.0"
   ]
  },
- "generated_at": "2026-09-02T15:07:26Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:26:58Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

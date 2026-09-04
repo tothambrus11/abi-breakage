@@ -1,12 +1,196 @@
 {
  "data": {
-  "error": "no object could be compared: libmwaw-0.3: reading corpus of '/work/study/scratch/rel-2mnpSx/rt/usr/lib/x86_64-linux-gnu/libmwaw-0.3.so.3.0.20': std::bad_alloc",
+  "bytes_extracted": 138186959,
+  "excluded_objects": [],
   "id": "libmwaw@0.3.19..0.3.20",
-  "object_errors": [
-   "libmwaw-0.3: reading corpus of '/work/study/scratch/rel-2mnpSx/rt/usr/lib/x86_64-linux-gnu/libmwaw-0.3.so.3.0.20': std::bad_alloc"
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      298,
+      309
+     ],
+     "mangled_functions": [
+      298,
+      309
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libmwaw-0.3.so.3",
+     "libmwaw-0.3.so.3"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__shared_count<(__gnu_cxx::_Lock_policy)2>::__shared_count<Canvas5GraphInternal::SubDocument*>(Canvas5GraphInternal::SubDocument*)",
+      "symbol": "_ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE2EEC2IPN20Canvas5GraphInternal11SubDocumentEEET_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<int, std::pair<int const, std::array<int, 4> >, std::_Select1st<std::pair<int const, std::array<int, 4> > >, std::less<int>, std::allocator<std::pair<int const, std::array<int, 4> > > >::_M_get_insert_unique_pos(const std::_Rb_tree<int, std::pair<int const, std::array<int, 4> >, std::_Select1st<std::pair<int const, std::array<int, 4> > >, std::less<int>, std::allocator<std::pair<int const, std::array<int, 4> > > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiSt5arrayIiLm4EEESt10_Select1stIS4_ESt4lessIiESaIS4_EE24_M_get_insert_unique_posERS1_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<int, char const*> >, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<int, char const*> > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<int, char const*> > > >::_M_get_insert_hint_unique_pos(std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<int, char const*> >, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<int, char const*> > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<int, char const*> > > >::const_iterator, const std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<int, char const*> >, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<int, char const*> > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<int, char const*> > > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_S6_IiPKcEESt10_Select1stISB_ESt4lessIS5_ESaISB_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorISB_ERS7_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<std::array<int, 5>, std::allocator<std::array<int, 5> > >::_M_realloc_insert<const std::array<int, 5>&>(std::vector<std::array<int, 5>, std::allocator<std::array<int, 5> > >::iterator, const std::array<int, 5>&)",
+      "symbol": "_ZNSt6vectorISt5arrayIiLm5EESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<int, std::pair<int const, std::pair<int, int> >, std::_Select1st<std::pair<int const, std::pair<int, int> > >, std::less<int>, std::allocator<std::pair<int const, std::pair<int, int> > > >::_M_get_insert_unique_pos(const std::_Rb_tree<int, std::pair<int const, std::pair<int, int> >, std::_Select1st<std::pair<int const, std::pair<int, int> > >, std::less<int>, std::allocator<std::pair<int const, std::pair<int, int> > > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiS0_IiiEESt10_Select1stIS3_ESt4lessIiESaIS3_EE24_M_get_insert_unique_posERS1_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<std::array<int, 3>, std::allocator<std::array<int, 3> > >::_M_realloc_insert<const std::array<int, 3>&>(std::vector<std::array<int, 3>, std::allocator<std::array<int, 3> > >::iterator, const std::array<int, 3>&)",
+      "symbol": "_ZNSt6vectorISt5arrayIiLm3EESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<int, std::pair<int const, std::array<int, 4> >, std::_Select1st<std::pair<int const, std::array<int, 4> > >, std::less<int>, std::allocator<std::pair<int const, std::array<int, 4> > > >::_M_get_insert_hint_unique_pos(std::_Rb_tree<int, std::pair<int const, std::array<int, 4> >, std::_Select1st<std::pair<int const, std::array<int, 4> > >, std::less<int>, std::allocator<std::pair<int const, std::array<int, 4> > > >::const_iterator, const std::_Rb_tree<int, std::pair<int const, std::array<int, 4> >, std::_Select1st<std::pair<int const, std::array<int, 4> > >, std::less<int>, std::allocator<std::pair<int const, std::array<int, 4> > > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiSt5arrayIiLm4EEESt10_Select1stIS4_ESt4lessIiESaIS4_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS4_ERS1_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::pair<std::_Rb_tree_const_iterator<int>, bool> std::set<int, std::less<int>, std::allocator<int> >::insert(const std::set<int, std::less<int>, std::allocator<int> >::value_type&)",
+      "symbol": "_ZNSt3setIiSt4lessIiESaIiEE6insertERKi",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::_Vector_base<std::array<int, 5>, std::allocator<std::array<int, 5> > >::~_Vector_base(int)",
+      "symbol": "_ZNSt12_Vector_baseISt5arrayIiLm5EESaIS1_EED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<int, std::pair<int const, std::pair<int, int> >, std::_Select1st<std::pair<int const, std::pair<int, int> > >, std::less<int>, std::allocator<std::pair<int const, std::pair<int, int> > > >::_M_get_insert_hint_unique_pos(std::_Rb_tree<int, std::pair<int const, std::pair<int, int> >, std::_Select1st<std::pair<int const, std::pair<int, int> > >, std::less<int>, std::allocator<std::pair<int const, std::pair<int, int> > > >::const_iterator, const std::_Rb_tree<int, std::pair<int const, std::pair<int, int> >, std::_Select1st<std::pair<int const, std::pair<int, int> > >, std::less<int>, std::allocator<std::pair<int const, std::pair<int, int> > > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiS0_IiiEESt10_Select1stIS3_ESt4lessIiESaIS3_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS3_ERS1_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<int, char const*> >, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<int, char const*> > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<int, char const*> > > >::_M_get_insert_unique_pos(const std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<int, char const*> >, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<int, char const*> > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<int, char const*> > > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_S6_IiPKcEESt10_Select1stISB_ESt4lessIS5_ESaISB_EE24_M_get_insert_unique_posERS7_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::_Vector_base<std::array<int, 3>, std::allocator<std::array<int, 3> > >::~_Vector_base(int)",
+      "symbol": "_ZNSt12_Vector_baseISt5arrayIiLm3EESaIS1_EED2Ev",
+      "weak": true
+     }
+    ],
+    "symbol_events_truncated": false,
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 4,
+     "field_added_to_struct": 4,
+     "member_offset_changed": 12,
+     "type_size_changed": 2
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<Canvas5GraphInternal::PseudoShape>"
+     },
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "./src/lib/Canvas5Graph.cxx",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct Canvas5GraphInternal::PseudoShape"
+     },
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": "./src/lib/Canvas5Graph.cxx",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct Canvas5GraphInternal::ShapeData"
+     },
+     {
+      "append_only": false,
+      "count": 12,
+      "declared_in": "./src/lib/Canvas5Graph.cxx",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct Canvas5GraphInternal::ShapeData"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/Canvas5Graph.cxx",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct Canvas5GraphInternal::ShapeData"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<Canvas5ImageInternal::VKFLImage>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<Canvas5ImageInternal::VKFLShape, std::allocator<Canvas5ImageInternal::VKFLShape> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/10/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<Canvas5ImageInternal::VKFLShape, std::allocator<Canvas5ImageInternal::VKFLShape> >::_Vector_impl"
+     }
+    ],
+    "vague_linkage": {
+     "symbol_added": 11,
+     "symbol_removed": 1
+    }
+   }
   ],
-  "objects": [],
-  "seconds": 121.996100701,
+  "seconds": 240.757789874,
   "source": "libmwaw",
   "unpaired": [
    [],
@@ -17,7 +201,11 @@
    "0.3.20"
   ]
  },
- "generated_at": "2026-09-02T14:44:19Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T06:40:14Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

@@ -1,5 +1,6 @@
 {
  "data": {
+  "bytes_extracted": 4196338,
   "id": "nftables@1.1.0..1.1.1",
   "object_errors": [],
   "objects": [
@@ -33,15 +34,19 @@
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
+      "exposure": "by_pointer",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "struct _IO_FILE"
      }
-    ]
+    ],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 2.081476087,
+  "seconds": 1.454543172,
   "source": "nftables",
   "unpaired": [
    [],
@@ -52,7 +57,11 @@
    "1.1.1"
   ]
  },
- "generated_at": "2026-09-02T14:59:28Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:41:44Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

@@ -1,5 +1,7 @@
 {
  "data": {
+  "bytes_extracted": 22237109,
+  "excluded_objects": [],
   "id": "gst-plugins-bad1.0@1.28.0..1.28.1",
   "object_errors": [],
   "objects": [
@@ -27,9 +29,11 @@
      "libgstadaptivedemux-1.0.so.0"
     ],
     "symbol_events": [],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -55,9 +59,11 @@
      "libgstanalytics-1.0.so.0"
     ],
     "symbol_events": [],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -83,9 +89,11 @@
      "libgstbadaudio-1.0.so.0"
     ],
     "symbol_events": [],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -111,9 +119,11 @@
      "libgstbasecamerabinsrc-1.0.so.0"
     ],
     "symbol_events": [],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -144,22 +154,27 @@
      {
       "kind": "symbol_added",
       "pretty": "function GstH265ParserResult gst_h265_parser_parse_sps_ext(GstH265Parser*, GstH265NalUnit*, GstH265SPS*, GstH265SPSEXT*, gboolean)",
-      "symbol": "gst_h265_parser_parse_sps_ext"
+      "symbol": "gst_h265_parser_parse_sps_ext",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function GstH265ParserResult gst_h265_parser_parse_slice_hdr_ext(GstH265Parser*, GstH265NalUnit*, GstH265SliceHdr*, GstH265SPSEXT*)",
-      "symbol": "gst_h265_parser_parse_slice_hdr_ext"
+      "symbol": "gst_h265_parser_parse_slice_hdr_ext",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function GstH265ParserResult gst_h265_parse_sps_ext(GstH265Parser*, GstH265NalUnit*, GstH265SPS*, GstH265SPSEXT*, gboolean)",
-      "symbol": "gst_h265_parse_sps_ext"
+      "symbol": "gst_h265_parse_sps_ext",
+      "weak": false
      }
     ],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -190,9 +205,11 @@
      {
       "kind": "symbol_added",
       "pretty": "function const GstH265SPSEXT* gst_h265_decoder_get_sps_ext(const GstH265Decoder*, const GstH265SPS*)",
-      "symbol": "gst_h265_decoder_get_sps_ext"
+      "symbol": "gst_h265_decoder_get_sps_ext",
+      "weak": false
      }
     ],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {
      "field_added_to_struct": 1,
@@ -201,24 +218,34 @@
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "../gst-libs/gst/codecs/gsth265decoder.c",
+      "exposure": "not_in_interface",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "struct _GstH265DecoderPrivate"
      },
      {
+      "append_only": false,
       "count": 33,
       "declared_in": "../gst-libs/gst/codecs/gsth265decoder.c",
+      "exposure": "not_in_interface",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct _GstH265DecoderPrivate"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "../gst-libs/gst/codecs/gsth265decoder.c",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct _GstH265DecoderPrivate"
      }
-    ]
+    ],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -244,9 +271,11 @@
      "libgstcuda-1.0.so.0"
     ],
     "symbol_events": [],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -266,9 +295,7 @@
     "language": "c",
     "mass_rename": false,
     "private_node": {},
-    "public": {
-     "symbol_removed": 1
-    },
+    "public": {},
     "soname": [
      "libgstdxva-1.0.so.0",
      "libgstdxva-1.0.so.0"
@@ -276,13 +303,18 @@
     "symbol_events": [
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::vector<unsignedchar,std::allocator<unsignedchar>>::_M_fill_insert(std::vector<unsignedchar,std::allocator<unsignedchar>>::iterator, std::vector<unsignedchar,std::allocator<unsignedchar>>::size_type, const std::vector<unsignedchar,std::allocator<unsignedchar>>::value_type&)",
-      "symbol": "_ZNSt6vectorIhSaIhEE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPhS1_EEmRKh"
+      "pretty": "method void std::vector<unsigned char, std::allocator<unsigned char> >::_M_fill_insert(std::vector<unsigned char, std::allocator<unsigned char> >::iterator, std::vector<unsigned char, std::allocator<unsigned char> >::size_type, const std::vector<unsigned char, std::allocator<unsigned char> >::value_type&)",
+      "symbol": "_ZNSt6vectorIhSaIhEE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPhS1_EEmRKh",
+      "weak": true
      }
     ],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {
+     "symbol_removed": 1
+    }
    },
    {
     "coverage": {
@@ -308,9 +340,11 @@
      "libgsthip.so.0"
     ],
     "symbol_events": [],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -336,9 +370,11 @@
      "libgstinsertbin-1.0.so.0"
     ],
     "symbol_events": [],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -364,9 +400,11 @@
      "libgstisoff-1.0.so.0"
     ],
     "symbol_events": [],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -392,9 +430,11 @@
      "libgstmpegts-1.0.so.0"
     ],
     "symbol_events": [],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -420,9 +460,11 @@
      "libgstmse-1.0.so.0"
     ],
     "symbol_events": [],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -448,9 +490,11 @@
      "libgstphotography-1.0.so.0"
     ],
     "symbol_events": [],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -476,9 +520,11 @@
      "libgstplay-1.0.so.0"
     ],
     "symbol_events": [],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -504,9 +550,11 @@
      "libgstplayer-1.0.so.0"
     ],
     "symbol_events": [],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -532,9 +580,11 @@
      "libgstsctp-1.0.so.0"
     ],
     "symbol_events": [],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -560,9 +610,11 @@
      "libgsttranscoder-1.0.so.0"
     ],
     "symbol_events": [],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -588,9 +640,11 @@
      "libgsturidownloader-1.0.so.0"
     ],
     "symbol_events": [],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -616,9 +670,11 @@
      "libgstva-1.0.so.0"
     ],
     "symbol_events": [],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -644,9 +700,11 @@
      "libgstwayland-1.0.so.0"
     ],
     "symbol_events": [],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -672,9 +730,11 @@
      "libgstwebrtc-1.0.so.0"
     ],
     "symbol_events": [],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    },
    {
     "coverage": {
@@ -700,12 +760,14 @@
      "libgstwebrtcnice-1.0.so.0"
     ],
     "symbol_events": [],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 7.305344322,
+  "seconds": 3.623141268,
   "source": "gst-plugins-bad1.0",
   "unpaired": [
    [],
@@ -716,7 +778,11 @@
    "1.28.1"
   ]
  },
- "generated_at": "2026-09-02T15:05:53Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T06:18:59Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

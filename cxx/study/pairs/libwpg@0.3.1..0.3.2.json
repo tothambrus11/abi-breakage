@@ -1,6 +1,9 @@
 {
  "data": {
+  "bytes_extracted": 1650933,
+  "excluded_objects": [],
   "id": "libwpg@0.3.1..0.3.2",
+  "object_errors": [],
   "objects": [
    {
     "coverage": {
@@ -20,10 +23,7 @@
     "language": "cxx",
     "mass_rename": false,
     "private_node": {},
-    "public": {
-     "symbol_added": 4,
-     "symbol_removed": 3
-    },
+    "public": {},
     "soname": [
      "libwpg-0.3.so.3",
      "libwpg-0.3.so.3"
@@ -31,46 +31,58 @@
     "symbol_events": [
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::vector<double,std::allocator<double>>::_M_emplace_back_aux<doubleconst&>(const double&)",
-      "symbol": "_ZNSt6vectorIdSaIdEE19_M_emplace_back_auxIJRKdEEEvDpOT_"
+      "pretty": "method void std::vector<unsigned char, std::allocator<unsigned char> >::_M_emplace_back_aux<unsigned char>(unsigned char&&)",
+      "symbol": "_ZNSt6vectorIhSaIhEE19_M_emplace_back_auxIJhEEEvDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::vector<double,std::allocator<double>>::_M_emplace_back_aux<double>(double&&)",
-      "symbol": "_ZNSt6vectorIdSaIdEE19_M_emplace_back_auxIJdEEEvDpOT_"
+      "pretty": "method void std::vector<double, std::allocator<double> >::_M_emplace_back_aux<double>(double&&)",
+      "symbol": "_ZNSt6vectorIdSaIdEE19_M_emplace_back_auxIJdEEEvDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void std::vector<unsignedchar,std::allocator<unsignedchar>>::_M_emplace_back_aux<unsignedchar>(unsigned char&&)",
-      "symbol": "_ZNSt6vectorIhSaIhEE19_M_emplace_back_auxIJhEEEvDpOT_"
+      "pretty": "method void std::vector<double, std::allocator<double> >::_M_emplace_back_aux<double const&>(const double&)",
+      "symbol": "_ZNSt6vectorIdSaIdEE19_M_emplace_back_auxIJRKdEEEvDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::vector<unsignedchar,std::allocator<unsignedchar>>::_M_realloc_insert<unsignedcharconst&>(std::vector<unsignedchar,std::allocator<unsignedchar>>::iterator, const unsigned char&)",
-      "symbol": "_ZNSt6vectorIhSaIhEE17_M_realloc_insertIJRKhEEEvN9__gnu_cxx17__normal_iteratorIPhS1_EEDpOT_"
+      "pretty": "method void std::vector<unsigned char, std::allocator<unsigned char> >::_M_realloc_insert<unsigned char const&>(std::vector<unsigned char, std::allocator<unsigned char> >::iterator, const unsigned char&)",
+      "symbol": "_ZNSt6vectorIhSaIhEE17_M_realloc_insertIJRKhEEEvN9__gnu_cxx17__normal_iteratorIPhS1_EEDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::vector<double,std::allocator<double>>::_M_realloc_insert<double>(std::vector<double,std::allocator<double>>::iterator, double&&)",
-      "symbol": "_ZNSt6vectorIdSaIdEE17_M_realloc_insertIJdEEEvN9__gnu_cxx17__normal_iteratorIPdS1_EEDpOT_"
+      "pretty": "method void std::vector<double, std::allocator<double> >::_M_realloc_insert<double>(std::vector<double, std::allocator<double> >::iterator, double&&)",
+      "symbol": "_ZNSt6vectorIdSaIdEE17_M_realloc_insertIJdEEEvN9__gnu_cxx17__normal_iteratorIPdS1_EEDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::vector<double,std::allocator<double>>::_M_realloc_insert<doubleconst&>(std::vector<double,std::allocator<double>>::iterator, const double&)",
-      "symbol": "_ZNSt6vectorIdSaIdEE17_M_realloc_insertIJRKdEEEvN9__gnu_cxx17__normal_iteratorIPdS1_EEDpOT_"
+      "pretty": "method void std::vector<double, std::allocator<double> >::_M_realloc_insert<double const&>(std::vector<double, std::allocator<double> >::iterator, const double&)",
+      "symbol": "_ZNSt6vectorIdSaIdEE17_M_realloc_insertIJRKdEEEvN9__gnu_cxx17__normal_iteratorIPdS1_EEDpOT_",
+      "weak": true
      },
      {
       "kind": "symbol_added",
       "pretty": "method void std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release()",
-      "symbol": "_ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE10_M_releaseEv"
+      "symbol": "_ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE10_M_releaseEv",
+      "weak": true
      }
     ],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {
+     "symbol_added": 4,
+     "symbol_removed": 3
+    }
    }
   ],
-  "seconds": 2.426749206,
+  "seconds": 1.609021961,
   "source": "libwpg",
   "unpaired": [
    [],
@@ -81,7 +93,11 @@
    "0.3.2"
   ]
  },
- "generated_at": "2026-09-02T12:27:56Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T06:20:24Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

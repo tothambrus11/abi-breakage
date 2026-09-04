@@ -4,31 +4,43 @@
    {
     "header_files": 862,
     "parsed": 862,
+    "parsed_as_cxx": 862,
     "skipped_by_limit": 0,
+    "with_errors": 286,
     "with_fatal_error": 0
    },
    {
     "header_files": 862,
     "parsed": 862,
+    "parsed_as_cxx": 862,
     "skipped_by_limit": 0,
+    "with_errors": 286,
     "with_fatal_error": 0
    }
   ],
   "diff": {
    "definitions": [
-    15983,
-    15983
+    15937,
+    15937
    ],
-   "definitions_added": 0,
-   "definitions_common": 15983,
-   "definitions_removed": 0,
+   "definitions_added": 9,
+   "definitions_common": 15928,
+   "definitions_removed": 9,
    "examples": [
-    "c++/16/bits/deque.tcc::__uninitialized_copy_a"
+    "c++/16/bits/uniform_int_dist.h::_S_nd",
+    "c++/16/bits/stl_algobase.h::__mismatch",
+    "c++/16/bits/stl_heap.h::__push_heap",
+    "c++/16/experimental/bits/simd_neon.h::_S_popcount",
+    "c++/16/bits/stl_algobase.h::__mismatch",
+    "c++/16/bits/deque.tcc::__uninitialized_copy_a",
+    "c++/16/bits/stl_algobase.h::__find_if",
+    "c++/16/experimental/bits/simd.h::__int_for_sizeof"
    ],
-   "inline_body_changed": 1,
-   "inline_body_changed_template": 1,
+   "inline_body_changed": 8,
+   "inline_body_changed_template": 8,
    "inline_decl_changed": 0,
    "macro_value_changed": 0,
+   "macro_value_changed_nonversion": 0,
    "macros": [
     131,
     131
@@ -38,12 +50,17 @@
   "id": "gcc-16@16.1.0..16.2.0",
   "language": "cxx",
   "source": "gcc-16",
+  "symbol_declared": {},
   "upstream": [
    "16.1.0",
    "16.2.0"
   ]
  },
- "generated_at": "2026-09-02T14:49:26Z",
- "schema": "abistudy/header-pair/2",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T07:43:44Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
 }

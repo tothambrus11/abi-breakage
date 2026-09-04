@@ -1,5 +1,6 @@
 {
  "data": {
+  "bytes_extracted": 1613264,
   "id": "lvm2@2.03.11..2.03.15",
   "object_errors": [],
   "objects": [
@@ -34,99 +35,115 @@
     "symbol_events": [
      {
       "kind": "symbol_removed",
-      "pretty": "function dm_bitset_t dm_bitset_parse_list(const char*, dm_pool*, size_t)",
-      "symbol": "dm_bitset_parse_list",
-      "version": "DM_1_02_138"
+      "pretty": "function int dm_tree_node_size_changed_base(const dm_tree_node*)",
+      "symbol": "dm_tree_node_size_changed",
+      "version": "Base",
+      "weak": false
      },
      {
       "kind": "symbol_removed",
-      "pretty": "function int dm_tree_node_size_changed_base(const dm_tree_node*)",
-      "symbol": "dm_tree_node_size_changed",
-      "version": "Base"
+      "pretty": "function dm_bitset_t dm_bitset_parse_list(const char*, dm_pool*, size_t)",
+      "symbol": "dm_bitset_parse_list",
+      "version": "DM_1_02_138",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function int dm_tree_node_add_thin_pool_target_v1(dm_tree_node*, uint64_t, uint64_t, const char*, const char*, uint32_t, uint64_t, unsigned int, unsigned int)",
       "symbol": "dm_tree_node_add_thin_pool_target_v1",
-      "version": "DM_1_02_172"
+      "version": "DM_1_02_172",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function int dm_task_ima_measurement(dm_task*)",
       "symbol": "dm_task_ima_measurement",
-      "version": "DM_1_02_181"
+      "version": "DM_1_02_181",
+      "weak": false
      },
      {
       "kind": "function_signature_changed",
       "pretty": "function int dm_tree_node_add_thin_pool_message(dm_tree_node*, dm_thin_message_t, uint64_t, uint64_t)  ->  function int dm_tree_node_add_thin_pool_message(dm_tree_node*, dm_thin_message_t, uint64_t, uint64_t)",
       "symbol": "dm_tree_node_add_thin_pool_message",
-      "version": "Base"
+      "version": "Base",
+      "weak": false
      },
      {
       "kind": "function_signature_changed",
       "pretty": "function int dm_tree_node_add_replicator_target(dm_tree_node*, uint64_t, const char*, const char*, unsigned int, dm_replicator_mode_t, uint32_t, uint64_t, uint32_t)  ->  function int dm_tree_node_add_replicator_target(dm_tree_node*, uint64_t, const char*, const char*, unsigned int, dm_replicator_mode_t, uint32_t, uint64_t, uint32_t)",
       "symbol": "dm_tree_node_add_replicator_target",
-      "version": "Base"
-     },
-     {
-      "kind": "function_signature_changed",
-      "pretty": "function const char* dm_size_to_string(dm_pool*, uint64_t, char, int, uint64_t, int, dm_size_suffix_t)  ->  function const char* dm_size_to_string(dm_pool*, uint64_t, char, int, uint64_t, int, dm_size_suffix_t)",
-      "symbol": "dm_size_to_string",
-      "version": "DM_1_02_104"
-     },
-     {
-      "kind": "function_signature_changed",
-      "pretty": "function dm_filemapd_mode_t dm_filemapd_mode_from_string(const char*)  ->  function dm_filemapd_mode_t dm_filemapd_mode_from_string(const char*)",
-      "symbol": "dm_filemapd_mode_from_string",
-      "version": "DM_1_02_138"
-     },
-     {
-      "kind": "function_signature_changed",
-      "pretty": "function dm_report_group* dm_report_group_create(dm_report_group_type_t, void*)  ->  function dm_report_group* dm_report_group_create(dm_report_group_type_t, void*)",
-      "symbol": "dm_report_group_create",
-      "version": "DM_1_02_128"
-     },
-     {
-      "kind": "function_signature_changed",
-      "pretty": "function dm_string_mangling_t dm_get_name_mangling_mode(void)  ->  function dm_string_mangling_t dm_get_name_mangling_mode(void)",
-      "symbol": "dm_get_name_mangling_mode",
-      "version": "Base"
+      "version": "Base",
+      "weak": false
      },
      {
       "kind": "function_signature_changed",
       "pretty": "function uint64_t dm_stats_get_counter(const dm_stats*, dm_stats_counter_t, uint64_t, uint64_t)  ->  function uint64_t dm_stats_get_counter(const dm_stats*, dm_stats_counter_t, uint64_t, uint64_t)",
       "symbol": "dm_stats_get_counter",
-      "version": "DM_1_02_129"
+      "version": "DM_1_02_129",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function const char* dm_size_to_string(dm_pool*, uint64_t, char, int, uint64_t, int, dm_size_suffix_t)  ->  function const char* dm_size_to_string(dm_pool*, uint64_t, char, int, uint64_t, int, dm_size_suffix_t)",
+      "symbol": "dm_size_to_string",
+      "version": "DM_1_02_104",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function dm_filemapd_mode_t dm_filemapd_mode_from_string(const char*)  ->  function dm_filemapd_mode_t dm_filemapd_mode_from_string(const char*)",
+      "symbol": "dm_filemapd_mode_from_string",
+      "version": "DM_1_02_138",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function dm_report_group* dm_report_group_create(dm_report_group_type_t, void*)  ->  function dm_report_group* dm_report_group_create(dm_report_group_type_t, void*)",
+      "symbol": "dm_report_group_create",
+      "version": "DM_1_02_128",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function dm_string_mangling_t dm_get_name_mangling_mode()  ->  function dm_string_mangling_t dm_get_name_mangling_mode()",
+      "symbol": "dm_get_name_mangling_mode",
+      "version": "Base",
+      "weak": false
      },
      {
       "kind": "function_signature_changed",
       "pretty": "function int dm_set_name_mangling_mode(dm_string_mangling_t)  ->  function int dm_set_name_mangling_mode(dm_string_mangling_t)",
       "symbol": "dm_set_name_mangling_mode",
-      "version": "Base"
-     },
-     {
-      "kind": "function_signature_changed",
-      "pretty": "function dm_stats_obj_type_t dm_stats_object_type(const dm_stats*, uint64_t, uint64_t)  ->  function dm_stats_obj_type_t dm_stats_object_type(const dm_stats*, uint64_t, uint64_t)",
-      "symbol": "dm_stats_object_type",
-      "version": "DM_1_02_129"
-     },
-     {
-      "kind": "function_signature_changed",
-      "pretty": "function dm_stats_obj_type_t dm_stats_current_object_type(const dm_stats*)  ->  function dm_stats_obj_type_t dm_stats_current_object_type(const dm_stats*)",
-      "symbol": "dm_stats_current_object_type",
-      "version": "DM_1_02_129"
-     },
-     {
-      "kind": "function_signature_changed",
-      "pretty": "function int dm_task_set_add_node(dm_task*, dm_add_node_t)  ->  function int dm_task_set_add_node(dm_task*, dm_add_node_t)",
-      "symbol": "dm_task_set_add_node",
-      "version": "Base"
+      "version": "Base",
+      "weak": false
      },
      {
       "kind": "function_signature_changed",
       "pretty": "function int dm_stats_start_filemapd(int, uint64_t, const char*, dm_filemapd_mode_t, unsigned int, unsigned int)  ->  function int dm_stats_start_filemapd(int, uint64_t, const char*, dm_filemapd_mode_t, unsigned int, unsigned int)",
       "symbol": "dm_stats_start_filemapd",
-      "version": "DM_1_02_138"
+      "version": "DM_1_02_138",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function dm_stats_obj_type_t dm_stats_object_type(const dm_stats*, uint64_t, uint64_t)  ->  function dm_stats_obj_type_t dm_stats_object_type(const dm_stats*, uint64_t, uint64_t)",
+      "symbol": "dm_stats_object_type",
+      "version": "DM_1_02_129",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function dm_stats_obj_type_t dm_stats_current_object_type(const dm_stats*)  ->  function dm_stats_obj_type_t dm_stats_current_object_type(const dm_stats*)",
+      "symbol": "dm_stats_current_object_type",
+      "version": "DM_1_02_129",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function int dm_task_set_add_node(dm_task*, dm_add_node_t)  ->  function int dm_task_set_add_node(dm_task*, dm_add_node_t)",
+      "symbol": "dm_task_set_add_node",
+      "version": "Base",
+      "weak": false
      }
     ],
     "symbols_version_renamed": 0,
@@ -139,105 +156,154 @@
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "../libdm/libdevmapper.h",
+      "exposure": "by_pointer",
       "kind": "field_type_changed",
+      "third_party": false,
       "type": "struct dm_config_value"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "ioctl/libdm-targets.h",
+      "exposure": "by_pointer",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "struct dm_task"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "ioctl/libdm-targets.h",
+      "exposure": "by_pointer",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "struct dm_task"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "ioctl/libdm-targets.h",
+      "exposure": "by_pointer",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct dm_task"
      },
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "../libdm/libdevmapper.h",
+      "exposure": "by_pointer",
       "kind": "field_type_changed",
+      "third_party": false,
       "type": "struct dm_status_mirror"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "../libdm/libdevmapper.h",
+      "exposure": "not_in_interface",
       "kind": "field_type_changed",
+      "third_party": false,
       "type": "struct {dm_status_mirror_health_t health; uint32_t major; uint32_t minor;}"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "../libdm/libdevmapper.h",
+      "exposure": "by_pointer",
       "kind": "field_type_changed",
+      "third_party": false,
       "type": "struct dm_status_thin_pool"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./debian/build/build_deb/libdm/libdm-report.c",
+      "exposure": "not_in_interface",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "struct selection_node"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./debian/build/build_deb/libdm/libdm-report.c",
+      "exposure": "not_in_interface",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "struct field_selection_value"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./debian/build/build_deb/libdm/libdm-report.c",
+      "exposure": "not_in_interface",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "struct report_group_item"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./debian/build/build_deb/libdm/libdm-report.c",
+      "exposure": "by_pointer",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "struct dm_report_group"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./debian/build/build_deb/libdm/libdm-deptree.c",
+      "exposure": "by_pointer",
       "kind": "field_removed_from_struct",
+      "third_party": true,
       "type": "struct dm_tree_node"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./debian/build/build_deb/libdm/libdm-deptree.c",
+      "exposure": "by_pointer",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "struct dm_tree_node"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./debian/build/build_deb/libdm/libdm-deptree.c",
+      "exposure": "by_pointer",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct dm_tree_node"
      },
      {
+      "append_only": false,
       "count": 6,
       "declared_in": "./debian/build/build_deb/libdm/libdm-deptree.c",
+      "exposure": "by_pointer",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "struct dm_tree"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./debian/build/build_deb/libdm/libdm-deptree.c",
+      "exposure": "by_pointer",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct dm_tree"
      }
-    ]
+    ],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 2.455775774,
+  "seconds": 1.877546239,
   "source": "lvm2",
   "unpaired": [
    [],
@@ -248,7 +314,11 @@
    "2.03.15"
   ]
  },
- "generated_at": "2026-09-02T14:57:25Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:43:39Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

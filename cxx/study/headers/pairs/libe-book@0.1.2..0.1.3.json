@@ -4,13 +4,17 @@
    {
     "header_files": 2,
     "parsed": 2,
+    "parsed_as_cxx": 2,
     "skipped_by_limit": 0,
+    "with_errors": 2,
     "with_fatal_error": 0
    },
    {
     "header_files": 2,
     "parsed": 2,
+    "parsed_as_cxx": 2,
     "skipped_by_limit": 0,
+    "with_errors": 2,
     "with_fatal_error": 0
    }
   ],
@@ -27,6 +31,7 @@
    "inline_body_changed_template": 0,
    "inline_decl_changed": 0,
    "macro_value_changed": 0,
+   "macro_value_changed_nonversion": 0,
    "macros": [
     0,
     0
@@ -36,12 +41,50 @@
   "id": "libe-book@0.1.2..0.1.3",
   "language": "cxx",
   "source": "libe-book",
+  "symbol_declared": {
+   "_ZN5boost16bad_lexical_castD0Ev": "unknown",
+   "_ZN5boost16bad_lexical_castD2Ev": "unknown",
+   "_ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_16bad_lexical_castEEEED0Ev": "unknown",
+   "_ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_16bad_lexical_castEEEED1Ev": "unknown",
+   "_ZN5boost16exception_detail19error_info_injectorINS_16bad_lexical_castEED0Ev": "unknown",
+   "_ZN5boost16exception_detail19error_info_injectorINS_16bad_lexical_castEED2Ev": "unknown",
+   "_ZN5boost6system12system_errorD0Ev": "unknown",
+   "_ZN5boost6system12system_errorD2Ev": "unknown",
+   "_ZNK5boost16bad_lexical_cast4whatEv": "unknown",
+   "_ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_16bad_lexical_castEEEE5cloneEv": "unknown",
+   "_ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_16bad_lexical_castEEEE7rethrowEv": "unknown",
+   "_ZNK5boost6system12system_error4whatEv": "unknown",
+   "_ZNSt11_Deque_baseISt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_ESaIS7_EE17_M_initialize_mapEm": "unknown",
+   "_ZNSt11_Deque_baseISt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_ESaIS7_EED2Ev": "unknown",
+   "_ZNSt11_Deque_baseIbSaIbEED2Ev": "unknown",
+   "_ZNSt5dequeIS_IbSaIbEESaIS1_EE12emplace_backIJS1_EEEvDpOT_": "unknown",
+   "_ZNSt5dequeISt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_ESaIS7_EE16_M_push_back_auxIJRKS7_EEEvDpOT_": "unknown",
+   "_ZNSt5dequeISt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_ESaIS7_EE16_M_push_back_auxIJS7_EEEvDpOT_": "unknown",
+   "_ZNSt5dequeISt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_ESaIS7_EED2Ev": "unknown",
+   "_ZNSt5dequeIbSaIbEE13_M_insert_auxESt15_Deque_iteratorIbRbPbEmRKb": "unknown",
+   "_ZNSt5dequeIbSaIbEE14_M_fill_insertESt15_Deque_iteratorIbRbPbEmRKb": "unknown",
+   "_ZNSt6vectorIcSaIcEE12emplace_backIJcEEEvDpOT_": "unknown",
+   "_ZNSt6vectorIhSaIhEE12emplace_backIJhEEEvDpOT_": "unknown",
+   "_ZNSt6vectorIhSaIhEE19_M_emplace_back_auxIJRKhEEEvDpOT_": "unknown",
+   "_ZNSt6vectorIhSaIhEE19_M_emplace_back_auxIJhEEEvDpOT_": "unknown",
+   "_ZNSt6vectorIjSaIjEE19_M_emplace_back_auxIJjEEEvDpOT_": "unknown",
+   "_ZNSt8_Rb_treeIjSt4pairIKjSt6vectorIhSaIhEEESt10_Select1stIS5_ESt4lessIjESaIS5_EE16_M_insert_uniqueIS5_EES0_ISt17_Rb_tree_iteratorIS5_EbEOT_": "unknown",
+   "_ZNSt8_Rb_treeIjSt4pairIKjSt6vectorIhSaIhEEESt10_Select1stIS5_ESt4lessIjESaIS5_EE8_M_eraseEPSt13_Rb_tree_nodeIS5_E": "unknown",
+   "_ZNSt8_Rb_treeIjSt4pairIKjjESt10_Select1stIS2_ESt4lessIjESaIS2_EE24_M_get_insert_unique_posERS1_": "unknown",
+   "_ZNSt8_Rb_treeIjSt4pairIKjjESt10_Select1stIS2_ESt4lessIjESaIS2_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS2_ERS1_": "unknown",
+   "_ZNSt8_Rb_treeIjSt4pairIKjjESt10_Select1stIS2_ESt4lessIjESaIS2_EE8_M_eraseEPSt13_Rb_tree_nodeIS2_E": "unknown",
+   "_ZSt4fillIbEvRKSt15_Deque_iteratorIT_RS1_PS1_ES6_RKS1_": "unknown"
+  },
   "upstream": [
    "0.1.2",
    "0.1.3"
   ]
  },
- "generated_at": "2026-09-02T14:53:54Z",
- "schema": "abistudy/header-pair/2",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T07:43:45Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
 }

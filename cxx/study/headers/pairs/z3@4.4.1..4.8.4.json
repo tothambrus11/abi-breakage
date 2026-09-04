@@ -4,13 +4,17 @@
    {
     "header_files": 10,
     "parsed": 10,
+    "parsed_as_cxx": 1,
     "skipped_by_limit": 0,
+    "with_errors": 6,
     "with_fatal_error": 0
    },
    {
     "header_files": 14,
     "parsed": 14,
+    "parsed_as_cxx": 1,
     "skipped_by_limit": 0,
+    "with_errors": 10,
     "with_fatal_error": 0
    }
   ],
@@ -23,19 +27,20 @@
    "definitions_common": 464,
    "definitions_removed": 8,
    "examples": [
-    "z3++.h::const_array",
-    "z3++.h::check",
-    "z3++.h::bv_val",
-    "z3++.h::is_decided_sat",
-    "z3++.h::inconsistent",
     "z3++.h::is_uint",
-    "z3++.h::operator+",
-    "z3++.h::operator!"
+    "z3++.h::check",
+    "z3++.h::inconsistent",
+    "z3++.h::pw",
+    "z3++.h::operator==",
+    "z3++.h::operator-",
+    "z3++.h::implies",
+    "z3++.h::operator!="
    ],
    "inline_body_changed": 34,
    "inline_body_changed_template": 0,
    "inline_decl_changed": 2,
    "macro_value_changed": 2,
+   "macro_value_changed_nonversion": 2,
    "macros": [
     43,
     49
@@ -45,12 +50,17 @@
   "id": "z3@4.4.1..4.8.4",
   "language": "c",
   "source": "z3",
+  "symbol_declared": {},
   "upstream": [
    "4.4.1",
    "4.8.4"
   ]
  },
- "generated_at": "2026-09-02T14:52:05Z",
- "schema": "abistudy/header-pair/2",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T07:43:44Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
 }

@@ -1,6 +1,7 @@
 #include "core/types.hpp"
 
 #include <concepts>
+#include <cstdio>
 #include <format>
 #include <unordered_map>
 
@@ -16,7 +17,7 @@ static_assert(!std::default_initializable<SourceName>);
 static_assert(std::totally_ordered<SourceName>);
 static_assert(StrongType<PopconRank> && !StrongType<int>);
 
-int main() {
+int main() try {
   const SourceName a{"openssl"};
   const SourceName b{"openssl"};
   const SourceName c{"zlib"};
@@ -44,4 +45,9 @@ int main() {
   CHECK(!m.contains(Soname{"libz.so.2"}));
 
   return test::report("strong");
+} catch (const std::exception &e) {
+  static_cast<void>(std::fputs("strong: unexpected exception: ", stderr));
+  static_cast<void>(std::fputs(e.what(), stderr));
+  static_cast<void>(std::fputs("\n", stderr));
+  return 1;
 }

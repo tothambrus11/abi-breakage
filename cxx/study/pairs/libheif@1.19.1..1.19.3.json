@@ -1,5 +1,6 @@
 {
  "data": {
+  "bytes_extracted": 24167295,
   "id": "libheif@1.19.1..1.19.3",
   "object_errors": [],
   "objects": [
@@ -29,83 +30,90 @@
     "symbol_events": [],
     "symbols_version_renamed": 0,
     "third_party": {
-     "base_class_changed": 6,
+     "base_class_changed": 4,
      "field_added_to_struct": 1,
      "member_offset_changed": 26,
      "type_size_changed": 1,
-     "vtable_changed": 4
+     "vtable_changed": 1
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class std::shared_ptr<HeifContext>"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "class std::vector<std::shared_ptr<ImageItem>,std::allocator<std::shared_ptr<ImageItem>>>"
+      "third_party": true,
+      "type": "class std::vector<std::shared_ptr<ImageItem>, std::allocator<std::shared_ptr<ImageItem> > >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Vector_base<std::shared_ptr<ImageItem>,std::allocator<std::shared_ptr<ImageItem>>>::_Vector_impl"
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::shared_ptr<ImageItem>, std::allocator<std::shared_ptr<ImageItem> > >::_Vector_impl"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class std::shared_ptr<ImageItem>"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./libheif/image-items/image_item.h",
+      "exposure": "not_in_interface",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "class ImageItem"
      },
      {
+      "append_only": false,
       "count": 26,
       "declared_in": "./libheif/image-items/image_item.h",
+      "exposure": "not_in_interface",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "class ImageItem"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./libheif/image-items/image_item.h",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "class ImageItem"
      },
      {
-      "count": 2,
-      "declared_in": "./libheif/image-items/image_item.h",
-      "kind": "vtable_changed",
-      "type": "class ImageItem"
-     },
-     {
+      "append_only": false,
       "count": 1,
-      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
-      "kind": "base_class_changed",
-      "type": "class std::vector<std::shared_ptr<ImageItem>,std::allocator<std::shared_ptr<ImageItem>>>"
-     },
-     {
-      "count": 1,
-      "declared_in": "/usr/include/c++/14/bits/shared_ptr.h",
-      "kind": "base_class_changed",
-      "type": "class std::shared_ptr<ImageItem>"
-     },
-     {
-      "count": 2,
       "declared_in": "./libheif/image-items/image_item.h",
+      "exposure": "not_in_interface",
       "kind": "vtable_changed",
+      "third_party": true,
       "type": "class ImageItem"
      }
-    ]
+    ],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 29.805470955,
+  "seconds": 32.683118794,
   "source": "libheif",
   "unpaired": [
    [],
@@ -116,7 +124,11 @@
    "1.19.3"
   ]
  },
- "generated_at": "2026-09-02T15:00:33Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:32:57Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

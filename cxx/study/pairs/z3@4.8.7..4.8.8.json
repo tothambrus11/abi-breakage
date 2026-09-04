@@ -1,12 +1,2457 @@
 {
  "data": {
-  "error": "no object could be compared: libz3: reading corpus of '/work/study/scratch/rel-wbr5yx/rt/usr/lib/x86_64-linux-gnu/libz3.so.4': std::bad_alloc",
+  "bytes_extracted": 298847108,
+  "excluded_objects": [],
   "id": "z3@4.8.7..4.8.8",
-  "object_errors": [
-   "libz3: reading corpus of '/work/study/scratch/rel-wbr5yx/rt/usr/lib/x86_64-linux-gnu/libz3.so.4': std::bad_alloc"
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      818,
+      858
+     ],
+     "mangled_functions": [
+      124,
+      162
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "function_signature_changed": 1,
+     "symbol_added": 2
+    },
+    "soname": [
+     "libz3.so.4",
+     "libz3.so.4"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Rb_tree<unsigned int, unsigned int, std::_Identity<unsigned int>, std::less<unsigned int>, std::allocator<unsigned int> >::_Link_type std::_Rb_tree<unsigned int, unsigned int, std::_Identity<unsigned int>, std::less<unsigned int>, std::allocator<unsigned int> >::_M_copy<std::_Rb_tree<unsigned int, unsigned int, std::_Identity<unsigned int>, std::less<unsigned int>, std::allocator<unsigned int> >::_Alloc_node>(std::_Rb_tree<unsigned int, unsigned int, std::_Identity<unsigned int>, std::less<unsigned int>, std::allocator<unsigned int> >::_Const_Link_type, std::_Rb_tree<unsigned int, unsigned int, std::_Identity<unsigned int>, std::less<unsigned int>, std::allocator<unsigned int> >::_Base_ptr, std::_Rb_tree<unsigned int, unsigned int, std::_Identity<unsigned int>, std::less<unsigned int>, std::allocator<unsigned int> >::_Alloc_node&)",
+      "symbol": "_ZNSt8_Rb_treeIjjSt9_IdentityIjESt4lessIjESaIjEE7_M_copyINS5_11_Alloc_nodeEEEPSt13_Rb_tree_nodeIjEPKS9_PSt18_Rb_tree_node_baseRT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Rb_tree<char, std::pair<char const, unsigned int>, std::_Select1st<std::pair<char const, unsigned int> >, std::less<char>, std::allocator<std::pair<char const, unsigned int> > >::_Link_type std::_Rb_tree<char, std::pair<char const, unsigned int>, std::_Select1st<std::pair<char const, unsigned int> >, std::less<char>, std::allocator<std::pair<char const, unsigned int> > >::_M_copy<std::_Rb_tree<char, std::pair<char const, unsigned int>, std::_Select1st<std::pair<char const, unsigned int> >, std::less<char>, std::allocator<std::pair<char const, unsigned int> > >::_Alloc_node>(std::_Rb_tree<char, std::pair<char const, unsigned int>, std::_Select1st<std::pair<char const, unsigned int> >, std::less<char>, std::allocator<std::pair<char const, unsigned int> > >::_Const_Link_type, std::_Rb_tree<char, std::pair<char const, unsigned int>, std::_Select1st<std::pair<char const, unsigned int> >, std::less<char>, std::allocator<std::pair<char const, unsigned int> > >::_Base_ptr, std::_Rb_tree<char, std::pair<char const, unsigned int>, std::_Select1st<std::pair<char const, unsigned int> >, std::less<char>, std::allocator<std::pair<char const, unsigned int> > >::_Alloc_node&)",
+      "symbol": "_ZNSt8_Rb_treeIcSt4pairIKcjESt10_Select1stIS2_ESt4lessIcESaIS2_EE7_M_copyINS8_11_Alloc_nodeEEEPSt13_Rb_tree_nodeIS2_EPKSC_PSt18_Rb_tree_node_baseRT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Rb_tree<unsigned int, std::pair<unsigned int const, std::map<char, unsigned int, std::less<char>, std::allocator<std::pair<char const, unsigned int> > > >, std::_Select1st<std::pair<unsigned int const, std::map<char, unsigned int, std::less<char>, std::allocator<std::pair<char const, unsigned int> > > > >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, std::map<char, unsigned int, std::less<char>, std::allocator<std::pair<char const, unsigned int> > > > > >::_Link_type std::_Rb_tree<unsigned int, std::pair<unsigned int const, std::map<char, unsigned int, std::less<char>, std::allocator<std::pair<char const, unsigned int> > > >, std::_Select1st<std::pair<unsigned int const, std::map<char, unsigned int, std::less<char>, std::allocator<std::pair<char const, unsigned int> > > > >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, std::map<char, unsigned int, std::less<char>, std::allocator<std::pair<char const, unsigned int> > > > > >::_M_copy<std::_Rb_tree<unsigned int, std::pair<unsigned int const, std::map<char, unsigned int> >, std::_Select1st<std::pair<unsigned int const, std::map<char, unsigned int> > >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, std::map<char, unsigned int> > > >::_Alloc_node>(std::_Rb_tree<unsigned int, std::pair<unsigned int const, std::map<char, unsigned int, std::less<char>, std::allocator<std::pair<char const, unsigned int> > > >, std::_Select1st<std::pair<unsigned int const, std::map<char, unsigned int, std::less<char>, std::allocator<std::pair<char const, unsigned int> > > > >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, std::map<char, unsigned int, std::less<char>, std::allocator<std::pair<char const, unsigned int> > > > > >::_Const_Link_type, std::_Rb_tree<unsigned int, std::pair<unsigned int const, std::map<char, unsigned int, std::less<char>, std::allocator<std::pair<char const, unsigned int> > > >, std::_Select1st<std::pair<unsigned int const, std::map<char, unsigned int, std::less<char>, std::allocator<std::pair<char const, unsigned int> > > > >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, std::map<char, unsigned int, std::less<char>, std::allocator<std::pair<char const, unsigned int> > > > > >::_Base_ptr, std::_Rb_tree<unsigned int, std::pair<unsigned int const, std::map<char, unsigned int, std::less<char>, std::allocator<std::pair<char const, unsigned int> > > >, std::_Select1st<std::pair<unsigned int const, std::map<char, unsigned int, std::less<char>, std::allocator<std::pair<char const, unsigned int> > > > >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, std::map<char, unsigned int, std::less<char>, std::allocator<std::pair<char const, unsigned int> > > > > >::_Alloc_node&)",
+      "symbol": "_ZNSt8_Rb_treeIjSt4pairIKjSt3mapIcjSt4lessIcESaIS0_IKcjEEEESt10_Select1stIS9_ES3_IjESaIS9_EE7_M_copyINSE_11_Alloc_nodeEEEPSt13_Rb_tree_nodeIS9_EPKSI_PSt18_Rb_tree_node_baseRT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool std::_Function_base::_Base_manager<lp::hnf_cutter::initialize_row(unsigned int)::<lambda(unsigned int)> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerIZN2lp10hnf_cutter14initialize_rowEjEUljE_E10_M_managerERSt9_Any_dataRKS5_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Rb_tree<unsigned int, std::pair<unsigned int const, std::set<unsigned int, std::less<unsigned int>, std::allocator<unsigned int> > >, std::_Select1st<std::pair<unsigned int const, std::set<unsigned int, std::less<unsigned int>, std::allocator<unsigned int> > > >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, std::set<unsigned int, std::less<unsigned int>, std::allocator<unsigned int> > > > >::_Link_type std::_Rb_tree<unsigned int, std::pair<unsigned int const, std::set<unsigned int, std::less<unsigned int>, std::allocator<unsigned int> > >, std::_Select1st<std::pair<unsigned int const, std::set<unsigned int, std::less<unsigned int>, std::allocator<unsigned int> > > >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, std::set<unsigned int, std::less<unsigned int>, std::allocator<unsigned int> > > > >::_M_copy<std::_Rb_tree<unsigned int, std::pair<unsigned int const, std::set<unsigned int> >, std::_Select1st<std::pair<unsigned int const, std::set<unsigned int> > >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, std::set<unsigned int> > > >::_Alloc_node>(std::_Rb_tree<unsigned int, std::pair<unsigned int const, std::set<unsigned int, std::less<unsigned int>, std::allocator<unsigned int> > >, std::_Select1st<std::pair<unsigned int const, std::set<unsigned int, std::less<unsigned int>, std::allocator<unsigned int> > > >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, std::set<unsigned int, std::less<unsigned int>, std::allocator<unsigned int> > > > >::_Const_Link_type, std::_Rb_tree<unsigned int, std::pair<unsigned int const, std::set<unsigned int, std::less<unsigned int>, std::allocator<unsigned int> > >, std::_Select1st<std::pair<unsigned int const, std::set<unsigned int, std::less<unsigned int>, std::allocator<unsigned int> > > >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, std::set<unsigned int, std::less<unsigned int>, std::allocator<unsigned int> > > > >::_Base_ptr, std::_Rb_tree<unsigned int, std::pair<unsigned int const, std::set<unsigned int, std::less<unsigned int>, std::allocator<unsigned int> > >, std::_Select1st<std::pair<unsigned int const, std::set<unsigned int, std::less<unsigned int>, std::allocator<unsigned int> > > >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, std::set<unsigned int, std::less<unsigned int>, std::allocator<unsigned int> > > > >::_Alloc_node&)",
+      "symbol": "_ZNSt8_Rb_treeIjSt4pairIKjSt3setIjSt4lessIjESaIjEEESt10_Select1stIS7_ES4_SaIS7_EE7_M_copyINSB_11_Alloc_nodeEEEPSt13_Rb_tree_nodeIS7_EPKSF_PSt18_Rb_tree_node_baseRT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::deque<bool, std::allocator<bool> >::_M_new_elements_at_back(std::deque<bool, std::allocator<bool> >::size_type)",
+      "symbol": "_ZNSt5dequeIbSaIbEE23_M_new_elements_at_backEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::deque<bool, std::allocator<bool> >::_M_insert_aux<std::_Deque_iterator<bool, bool const&, bool const*> >(std::deque<bool, std::allocator<bool> >::iterator, std::_Deque_iterator<bool, bool const&, bool const*>, std::_Deque_iterator<bool, bool const&, bool const*>, std::deque<bool, std::allocator<bool> >::size_type)",
+      "symbol": "_ZNSt5dequeIbSaIbEE13_M_insert_auxISt15_Deque_iteratorIbRKbPS4_EEEvS3_IbRbPbET_SB_m",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::deque<bool, std::allocator<bool> >::_M_reallocate_map(std::deque<bool, std::allocator<bool> >::size_type, bool)",
+      "symbol": "_ZNSt5dequeIbSaIbEE17_M_reallocate_mapEmb",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::_Function_base::_Base_manager<nla::core::print_row(const T&, std::ostream&) const [with T = vector<lp::row_cell<rational>, true, unsigned int>; std::ostream = std::basic_ostream<char>]::<lambda(nla::lpvar)> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerIZNK3nla4core9print_rowI6vectorIN2lp8row_cellI8rationalEELb1EjEEERSoRKT_SA_EUljE_E10_M_managerERSt9_Any_dataRKSG_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::_Function_base::_Base_manager<smt::theory_arith<Ext>::constrain_free_vars(const smt::theory_arith<Ext>::row&) [with Ext = smt::inf_ext]::<lambda()> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerIZN3smt12theory_arithINS1_7inf_extEE19constrain_free_varsERKNS4_3rowEEUlvE_E10_M_managerERSt9_Any_dataRKSA_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::_Function_base::_Base_manager<smt::theory_arith<Ext>::branch_infeasible_int_equality() [with Ext = smt::inf_ext]::<lambda()> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerIZN3smt12theory_arithINS1_7inf_extEE30branch_infeasible_int_equalityEvEUlvE_E10_M_managerERSt9_Any_dataRKS7_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::_Function_base::_Base_manager<smt::theory_arith<Ext>::mk_gomory_cut(const smt::theory_arith<Ext>::row&) [with Ext = smt::inf_ext]::<lambda()> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerIZN3smt12theory_arithINS1_7inf_extEE13mk_gomory_cutERKNS4_3rowEEUlvE_E10_M_managerERSt9_Any_dataRKSA_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::_Function_base::_Base_manager<smt::theory_arith<Ext>::branch_infeasible_int_equality() [with Ext = smt::mi_ext]::<lambda()> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerIZN3smt12theory_arithINS1_6mi_extEE30branch_infeasible_int_equalityEvEUlvE_E10_M_managerERSt9_Any_dataRKS7_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::_Function_base::_Base_manager<smt::theory_arith<Ext>::mk_gomory_cut(const smt::theory_arith<Ext>::row&) [with Ext = smt::mi_ext]::<lambda()> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerIZN3smt12theory_arithINS1_6mi_extEE13mk_gomory_cutERKNS4_3rowEEUlvE_E10_M_managerERSt9_Any_dataRKSA_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Hashtable<unsigned int, unsigned int, std::allocator<unsigned int>, std::__detail::_Identity, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_Hashtable(std::_Hashtable<unsigned int, unsigned int, std::allocator<unsigned int>, std::__detail::_Identity, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >&&)",
+      "symbol": "_ZNSt10_HashtableIjjSaIjENSt8__detail9_IdentityESt8equal_toIjESt4hashIjENS1_18_Mod_range_hashingENS1_20_Default_ranged_hashENS1_20_Prime_rehash_policyENS1_17_Hashtable_traitsILb0ELb1ELb1EEEEC2EOSC_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::pair<std::__detail::_Node_iterator<unsigned int, true, false>, bool> std::_Hashtable<unsigned int, unsigned int, std::allocator<unsigned int>, std::__detail::_Identity, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_insert<unsigned int const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<unsigned int, false> > > >(const unsigned int&, const std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<unsigned int, false> > >&, std::true_type, std::_Hashtable<unsigned int, unsigned int, std::allocator<unsigned int>, std::__detail::_Identity, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::size_type)",
+      "symbol": "_ZNSt10_HashtableIjjSaIjENSt8__detail9_IdentityESt8equal_toIjESt4hashIjENS1_18_Mod_range_hashingENS1_20_Default_ranged_hashENS1_20_Prime_rehash_policyENS1_17_Hashtable_traitsILb0ELb1ELb1EEEE9_M_insertIRKjNS1_10_AllocNodeISaINS1_10_Hash_nodeIjLb0EEEEEEEESt4pairINS1_14_Node_iteratorIjLb1ELb0EEEbEOT_RKT0_St17integral_constantIbLb1EEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::_Function_base::_Base_manager<smt::theory_arith<Ext>::constrain_free_vars(const smt::theory_arith<Ext>::row&) [with Ext = smt::mi_ext]::<lambda()> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerIZN3smt12theory_arithINS1_6mi_extEE19constrain_free_varsERKNS4_3rowEEUlvE_E10_M_managerERSt9_Any_dataRKSA_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::_Function_base::_Base_manager<smt::theory_arith<Ext>::mk_gomory_cut(const smt::theory_arith<Ext>::row&) [with Ext = smt::i_ext]::<lambda()> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerIZN3smt12theory_arithINS1_5i_extEE13mk_gomory_cutERKNS4_3rowEEUlvE_E10_M_managerERSt9_Any_dataRKSA_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::_Function_base::_Base_manager<nla::cross_nested::cross_nested(std::function<bool(const nla::nex*)>, std::function<bool(unsigned int)>, std::function<unsigned int()>, nla::nex_creator&)::<lambda()> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerIZN3nla12cross_nestedC4ESt8functionIFbPKNS1_3nexEEES3_IFbjEES3_IFjvEERNS1_11nex_creatorEEUlvE_E10_M_managerERSt9_Any_dataRKSH_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Hashtable<unsigned int, unsigned int, std::allocator<unsigned int>, std::__detail::_Identity, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::clear()",
+      "symbol": "_ZNSt10_HashtableIjjSaIjENSt8__detail9_IdentityESt8equal_toIjESt4hashIjENS1_18_Mod_range_hashingENS1_20_Default_ranged_hashENS1_20_Prime_rehash_policyENS1_17_Hashtable_traitsILb0ELb1ELb1EEEE5clearEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Hashtable<unsigned int, unsigned int, std::allocator<unsigned int>, std::__detail::_Identity, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_assign_elements<const std::_Hashtable<unsigned int, unsigned int, std::allocator<unsigned int>, std::__detail::_Identity, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >&, std::_Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal, _H1, _H2, _Hash, _RehashPolicy, _Traits>::operator=(const std::_Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal, _H1, _H2, _Hash, _RehashPolicy, _Traits>&) [with _Key = unsigned int; _Value = unsigned int; _Alloc = std::allocator<unsigned int>; _ExtractKey = std::__detail::_Identity; _Equal = std::equal_to<unsigned int>; _H1 = std::hash<unsigned int>; _H2 = std::__detail::_Mod_range_hashing; _Hash = std::__detail::_Default_ranged_hash; _RehashPolicy = std::__detail::_Prime_rehash_policy; _Traits = std::__detail::_Hashtable_traits<false, true, true>]::<lambda(const __reuse_or_alloc_node_type&, const __node_type*)> >(const std::_Hashtable<unsigned int, unsigned int, std::allocator<unsigned int>, std::__detail::_Identity, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >&, const std::_Hashtable<unsigned int, unsigned int, std::allocator<unsigned int>, std::__detail::_Identity, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::<lambda(const __reuse_or_alloc_node_type&, const __node_type*)>&)",
+      "symbol": "_ZNSt10_HashtableIjjSaIjENSt8__detail9_IdentityESt8equal_toIjESt4hashIjENS1_18_Mod_range_hashingENS1_20_Default_ranged_hashENS1_20_Prime_rehash_policyENS1_17_Hashtable_traitsILb0ELb1ELb1EEEE18_M_assign_elementsIRKSC_ZNSC_aSESF_EUlRKNS1_17_ReuseOrAllocNodeISaINS1_10_Hash_nodeIjLb0EEEEEEPKSI_E0_EEvOT_RKT0_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::_Function_base::_Base_manager<nla::horner::lemmas_on_row(const T&) [with T = vector<lp::row_cell<rational>, true, unsigned int>]::<lambda(unsigned int)> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerIZN3nla6horner13lemmas_on_rowI6vectorIN2lp8row_cellI8rationalEELb1EjEEEbRKT_EUljE0_E10_M_managerERSt9_Any_dataRKSF_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::_Hashtable<unsigned int, std::pair<unsigned int const, unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> >, std::__detail::_Select1st, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::iterator std::_Hashtable<unsigned int, std::pair<unsigned int const, unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> >, std::__detail::_Select1st, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::erase(std::_Hashtable<unsigned int, std::pair<unsigned int const, unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> >, std::__detail::_Select1st, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::const_iterator)",
+      "symbol": "_ZNSt10_HashtableIjSt4pairIKjjESaIS2_ENSt8__detail10_Select1stESt8equal_toIjESt4hashIjENS4_18_Mod_range_hashingENS4_20_Default_ranged_hashENS4_20_Prime_rehash_policyENS4_17_Hashtable_traitsILb0ELb0ELb1EEEE5eraseENS4_20_Node_const_iteratorIS2_Lb0ELb0EEE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Z3_ast_vector Z3_algebraic_get_poly(Z3_context, Z3_ast)",
+      "symbol": "Z3_algebraic_get_poly",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::deque<bool, std::allocator<bool> >::_M_new_elements_at_front(std::deque<bool, std::allocator<bool> >::size_type)",
+      "symbol": "_ZNSt5dequeIbSaIbEE24_M_new_elements_at_frontEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Hashtable<unsigned int, unsigned int, std::allocator<unsigned int>, std::__detail::_Identity, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_assign<std::_Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal, _H1, _H2, _Hash, _RehashPolicy, _Traits>::_M_assign_elements(_Ht&&, const _NodeGenerator&) [with _Ht = const std::_Hashtable<unsigned int, unsigned int, std::allocator<unsigned int>, std::__detail::_Identity, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >&; _NodeGenerator = std::_Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal, _H1, _H2, _Hash, _RehashPolicy, _Traits>::operator=(const std::_Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal, _H1, _H2, _Hash, _RehashPolicy, _Traits>&) [with _Key = unsigned int; _Value = unsigned int; _Alloc = std::allocator<unsigned int>; _ExtractKey = std::__detail::_Identity; _Equal = std::equal_to<unsigned int>; _H1 = std::hash<unsigned int>; _H2 = std::__detail::_Mod_range_hashing; _Hash = std::__detail::_Default_ranged_hash; _RehashPolicy = std::__detail::_Prime_rehash_policy; _Traits = std::__detail::_Hashtable_traits<false, true, true>]::<lambda(const __reuse_or_alloc_node_type&, const __node_type*)>; _Key = unsigned int; _Value = unsigned int; _Alloc = std::allocator<unsigned int>; _ExtractKey = std::__detail::_Identity; _Equal = std::equal_to<unsigned int>; _H1 = std::hash<unsigned int>; _H2 = std::__detail::_Mod_range_hashing; _Hash = std::__detail::_Default_ranged_hash; _RehashPolicy = std::__detail::_Prime_rehash_policy; _Traits = std::__detail::_Hashtable_traits<false, true, true>]::<lambda(std::_Hashtable<unsigned int, unsigned int, std::allocator<unsigned int>, std::__detail::_Identity, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::__node_type*)> >(const std::_Hashtable<unsigned int, unsigned int, std::allocator<unsigned int>, std::__detail::_Identity, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >&, const std::_Hashtable<unsigned int, unsigned int, std::allocator<unsigned int>, std::__detail::_Identity, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::<lambda(std::_Hashtable<unsigned int, unsigned int, std::allocator<unsigned int>, std::__detail::_Identity, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::__node_type*)>&)",
+      "symbol": "_ZNSt10_HashtableIjjSaIjENSt8__detail9_IdentityESt8equal_toIjESt4hashIjENS1_18_Mod_range_hashingENS1_20_Default_ranged_hashENS1_20_Prime_rehash_policyENS1_17_Hashtable_traitsILb0ELb1ELb1EEEE9_M_assignIZNSC_18_M_assign_elementsIRKSC_ZNSC_aSESG_EUlRKNS1_17_ReuseOrAllocNodeISaINS1_10_Hash_nodeIjLb0EEEEEEPKSJ_E0_EEvOT_RKT0_EUlPSJ_E_EEvSG_RKSR_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Deque_base<int, std::allocator<int> >::_M_initialize_map(std::size_t)",
+      "symbol": "_ZNSt11_Deque_baseIiSaIiEE17_M_initialize_mapEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::_Function_base::_Base_manager<smt::theory_arith<Ext>::branch_infeasible_int_equality() [with Ext = smt::i_ext]::<lambda()> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerIZN3smt12theory_arithINS1_5i_extEE30branch_infeasible_int_equalityEvEUlvE_E10_M_managerERSt9_Any_dataRKS7_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function unsigned int Z3_algebraic_get_i(Z3_context, Z3_ast)",
+      "symbol": "Z3_algebraic_get_i",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::_Function_base::_Base_manager<nla::horner::lemmas_on_row(const T&) [with T = vector<lp::row_cell<rational>, true, unsigned int>]::<lambda()> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerIZN3nla6horner13lemmas_on_rowI6vectorIN2lp8row_cellI8rationalEELb1EjEEEbRKT_EUlvE1_E10_M_managerERSt9_Any_dataRKSF_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::_Hashtable<unsigned int, unsigned int, std::allocator<unsigned int>, std::__detail::_Identity, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::iterator std::_Hashtable<unsigned int, unsigned int, std::allocator<unsigned int>, std::__detail::_Identity, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_insert_unique_node(std::_Hashtable<unsigned int, unsigned int, std::allocator<unsigned int>, std::__detail::_Identity, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::size_type, std::_Hashtable<unsigned int, unsigned int, std::allocator<unsigned int>, std::__detail::_Identity, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::__hash_code, std::_Hashtable<unsigned int, unsigned int, std::allocator<unsigned int>, std::__detail::_Identity, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::__node_type*, std::_Hashtable<unsigned int, unsigned int, std::allocator<unsigned int>, std::__detail::_Identity, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::size_type)",
+      "symbol": "_ZNSt10_HashtableIjjSaIjENSt8__detail9_IdentityESt8equal_toIjESt4hashIjENS1_18_Mod_range_hashingENS1_20_Default_ranged_hashENS1_20_Prime_rehash_policyENS1_17_Hashtable_traitsILb0ELb1ELb1EEEE21_M_insert_unique_nodeEmmPNS1_10_Hash_nodeIjLb0EEEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::_Function_base::_Base_manager<smt::theory_lra::imp::mk_idiv_mod_axioms(expr*, expr*)::<lambda()> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerIZN3smt10theory_lra3imp18mk_idiv_mod_axiomsEP4exprS5_EUlvE0_E10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::deque<bool, std::allocator<bool> >::_M_range_insert_aux<std::_Deque_iterator<bool, bool const&, bool const*> >(std::deque<bool, std::allocator<bool> >::iterator, std::_Deque_iterator<bool, bool const&, bool const*>, std::_Deque_iterator<bool, bool const&, bool const*>, std::forward_iterator_tag)",
+      "symbol": "_ZNSt5dequeIbSaIbEE19_M_range_insert_auxISt15_Deque_iteratorIbRKbPS4_EEEvS3_IbRbPbET_SB_St20forward_iterator_tag",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::_Function_base::_Base_manager<smt::theory_lra::imp::mk_idiv_mod_axioms(expr*, expr*)::<lambda()> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerIZN3smt10theory_lra3imp18mk_idiv_mod_axiomsEP4exprS5_EUlvE1_E10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function std::_Deque_iterator<bool, bool&, bool*> std::copy<bool>(std::_Deque_iterator<bool, bool const&, bool const*>, std::_Deque_iterator<bool, bool const&, bool const*>, std::_Deque_iterator<bool, bool&, bool*>)",
+      "symbol": "_ZSt4copyIbESt15_Deque_iteratorIT_RS1_PS1_ES0_IS1_RKS1_PS5_ES8_S4_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::_Deque_base<bool, std::allocator<bool> >::~_Deque_base(int)",
+      "symbol": "_ZNSt11_Deque_baseIbSaIbEED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::_Function_base::_Base_manager<smt::theory_lra::imp::mk_idiv_mod_axioms(expr*, expr*)::<lambda()> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerIZN3smt10theory_lra3imp18mk_idiv_mod_axiomsEP4exprS5_EUlvE2_E10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::_Function_base::_Base_manager<nla::horner::lemmas_on_row(const T&) [with T = vector<lp::row_cell<rational>, true, unsigned int>]::<lambda(const nla::nex*)> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerIZN3nla6horner13lemmas_on_rowI6vectorIN2lp8row_cellI8rationalEELb1EjEEEbRKT_EUlPKNS1_3nexEE_E10_M_managerERSt9_Any_dataRKSI_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::_Function_base::_Base_manager<smt::theory_arith<Ext>::branch_infeasible_int_var(smt::theory_var) [with Ext = smt::i_ext; smt::theory_var = int]::<lambda()> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerIZN3smt12theory_arithINS1_5i_extEE25branch_infeasible_int_varEiEUlvE_E10_M_managerERSt9_Any_dataRKS7_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::_Function_base::_Base_manager<smt::theory_arith<Ext>::branch_nl_int_var(smt::theory_var) [with Ext = smt::mi_ext; smt::theory_var = int]::<lambda()> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerIZN3smt12theory_arithINS1_6mi_extEE17branch_nl_int_varEiEUlvE_E10_M_managerERSt9_Any_dataRKS7_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::_Function_base::_Base_manager<smt::theory_lra::imp::mk_idiv_mod_axioms(expr*, expr*)::<lambda()> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerIZN3smt10theory_lra3imp18mk_idiv_mod_axiomsEP4exprS5_EUlvE_E10_M_managerERSt9_Any_dataRKS8_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::_Function_base::_Base_manager<smt::theory_arith<Ext>::branch_nl_int_var(smt::theory_var) [with Ext = smt::i_ext; smt::theory_var = int]::<lambda()> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerIZN3smt12theory_arithINS1_5i_extEE17branch_nl_int_varEiEUlvE_E10_M_managerERSt9_Any_dataRKS7_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::deque<bool, std::allocator<bool> >& std::deque<bool, std::allocator<bool> >::operator=(const std::deque<bool, std::allocator<bool> >&)",
+      "symbol": "_ZNSt5dequeIbSaIbEEaSERKS1_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::_Function_base::_Base_manager<lp::print_linear_combination_of_column_indices_only(const vector<std::pair<T, unsigned int> >&, std::ostream&) [with T = rational; std::ostream = std::basic_ostream<char>]::<lambda(unsigned int)> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerIZN2lp47print_linear_combination_of_column_indices_onlyI8rationalEERSoRK6vectorISt4pairIT_jELb1EjES4_EUljE_E10_M_managerERSt9_Any_dataRKSE_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::_Function_base::_Base_manager<smt::theory_arith<Ext>::constrain_free_vars(const smt::theory_arith<Ext>::row&) [with Ext = smt::i_ext]::<lambda()> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerIZN3smt12theory_arithINS1_5i_extEE19constrain_free_varsERKNS4_3rowEEUlvE_E10_M_managerERSt9_Any_dataRKSA_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::_Function_base::_Base_manager<smt::theory_arith<Ext>::branch_infeasible_int_var(smt::theory_var) [with Ext = smt::inf_ext; smt::theory_var = int]::<lambda()> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerIZN3smt12theory_arithINS1_7inf_extEE25branch_infeasible_int_varEiEUlvE_E10_M_managerERSt9_Any_dataRKS7_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::_Function_base::_Base_manager<smt::theory_arith<Ext>::branch_nl_int_var(smt::theory_var) [with Ext = smt::inf_ext; smt::theory_var = int]::<lambda()> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerIZN3smt12theory_arithINS1_7inf_extEE17branch_nl_int_varEiEUlvE_E10_M_managerERSt9_Any_dataRKS7_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool std::_Function_base::_Base_manager<smt::theory_arith<Ext>::branch_infeasible_int_var(smt::theory_var) [with Ext = smt::mi_ext; smt::theory_var = int]::<lambda()> >::_M_manager(const std::_Any_data&, std::_Manager_operation)",
+      "symbol": "_ZNSt14_Function_base13_Base_managerIZN3smt12theory_arithINS1_6mi_extEE25branch_infeasible_int_varEiEUlvE_E10_M_managerERSt9_Any_dataRKS7_St18_Manager_operation",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method void std::_Hashtable<unsigned int, std::pair<unsigned int const, double>, std::allocator<std::pair<unsigned int const, double> >, std::__detail::_Select1st, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_assign<std::_Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal, _H1, _H2, _Hash, _RehashPolicy, _Traits>::_Hashtable(const std::_Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal, _H1, _H2, _Hash, _RehashPolicy, _Traits>&) [with _Key = unsigned int; _Value = std::pair<unsigned int const, double>; _Alloc = std::allocator<std::pair<unsigned int const, double> >; _ExtractKey = std::__detail::_Select1st; _Equal = std::equal_to<unsigned int>; _H1 = std::hash<unsigned int>; _H2 = std::__detail::_Mod_range_hashing; _Hash = std::__detail::_Default_ranged_hash; _RehashPolicy = std::__detail::_Prime_rehash_policy; _Traits = std::__detail::_Hashtable_traits<false, false, true>]::<lambda(const __node_type*)> >(const std::_Hashtable<unsigned int, std::pair<unsigned int const, double>, std::allocator<std::pair<unsigned int const, double> >, std::__detail::_Select1st, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >&, const std::_Hashtable<unsigned int, std::pair<unsigned int const, rational>, std::allocator<std::pair<unsigned int const, rational> >, std::__detail::_Select1st, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::<lambda(const __node_type*)>&)  ->  method void std::_Hashtable<unsigned int, std::pair<unsigned int const, double>, std::allocator<std::pair<unsigned int const, double> >, std::__detail::_Select1st, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_assign<std::_Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal, _H1, _H2, _Hash, _RehashPolicy, _Traits>::_Hashtable(const std::_Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal, _H1, _H2, _Hash, _RehashPolicy, _Traits>&) [with _Key = unsigned int; _Value = std::pair<unsigned int const, double>; _Alloc = std::allocator<std::pair<unsigned int const, double> >; _ExtractKey = std::__detail::_Select1st; _Equal = std::equal_to<unsigned int>; _H1 = std::hash<unsigned int>; _H2 = std::__detail::_Mod_range_hashing; _Hash = std::__detail::_Default_ranged_hash; _RehashPolicy = std::__detail::_Prime_rehash_policy; _Traits = std::__detail::_Hashtable_traits<false, false, true>]::<lambda(const __node_type*)> >(const std::_Hashtable<unsigned int, std::pair<unsigned int const, double>, std::allocator<std::pair<unsigned int const, double> >, std::__detail::_Select1st, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >&, const std::_Hashtable<unsigned int, std::pair<unsigned int const, double>, std::allocator<std::pair<unsigned int const, double> >, std::__detail::_Select1st, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::<lambda(const __node_type*)>&)",
+      "symbol": "_ZNSt10_HashtableIjSt4pairIKjdESaIS2_ENSt8__detail10_Select1stESt8equal_toIjESt4hashIjENS4_18_Mod_range_hashingENS4_20_Default_ranged_hashENS4_20_Prime_rehash_policyENS4_17_Hashtable_traitsILb0ELb0ELb1EEEE9_M_assignIZNSF_C4ERKSF_EUlPKNS4_10_Hash_nodeIS2_Lb0EEEE_EEvSI_RKT_",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function Z3_string Z3_solver_to_dimacs_string(Z3_context, Z3_solver)  ->  function Z3_string Z3_solver_to_dimacs_string(Z3_context, Z3_solver, bool)",
+      "symbol": "Z3_solver_to_dimacs_string",
+      "weak": false
+     }
+    ],
+    "symbol_events_truncated": false,
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 152,
+     "enum_case_added": 1,
+     "field_added_to_struct": 44,
+     "field_removed_from_struct": 233,
+     "field_type_changed": 190,
+     "member_offset_changed": 83,
+     "type_size_changed": 21,
+     "vtable_changed": 21
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/bits/hashtable.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct std::_Hashtable<unsigned int, std::pair<unsigned int const, rational>, std::allocator<std::pair<unsigned int const, rational> >, std::__detail::_Select1st, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::<lambda(const __node_type*)>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/9/bits/hashtable.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class std::_Hashtable<unsigned int, std::pair<unsigned int const, rational>, std::allocator<std::pair<unsigned int const, rational> >, std::__detail::_Select1st, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >"
+     },
+     {
+      "append_only": false,
+      "count": 12,
+      "declared_in": "/usr/include/c++/9/bits/hashtable.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::_Hashtable<unsigned int, std::pair<unsigned int const, rational>, std::allocator<std::pair<unsigned int const, rational> >, std::__detail::_Select1st, std::equal_to<unsigned int>, std::hash<unsigned int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::tuple<par_and_then_tactical::operator()(const goal_ref&, goal_ref_buffer&)::<lambda()> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Tuple_impl<0, par_and_then_tactical::operator()(const goal_ref&, goal_ref_buffer&)::<lambda()> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/tuple",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct std::_Head_base<0, par_and_then_tactical::operator()(const goal_ref&, goal_ref_buffer&)::<lambda()>, false>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/tactic/tactical.cpp",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct sat::solver::<lambda()>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/tactic/tactical.cpp",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct sat::solver::<lambda()>"
+     },
+     {
+      "append_only": false,
+      "count": 7,
+      "declared_in": "./src/sat/sat_solver.cpp",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct sat::solver::<lambda(int)>"
+     },
+     {
+      "append_only": false,
+      "count": 10,
+      "declared_in": "./src/sat/sat_solver.cpp",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct sat::solver::<lambda(int)>"
+     },
+     {
+      "append_only": false,
+      "count": 5,
+      "declared_in": "./src/sat/sat_solver.cpp",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct sat::solver::<lambda(int)>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/sat/sat_solver.cpp",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct sat::solver::<lambda(int)>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/sat/sat_solver.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "class sat::solver"
+     },
+     {
+      "append_only": false,
+      "count": 117,
+      "declared_in": "./src/sat/sat_solver.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "class sat::solver"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/sat/sat_solver.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class sat::solver"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/sat/sat_solver.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class sat::solver"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/sat/sat_solver.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class sat::solver"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/sat/sat_solver.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class sat::solver"
+     },
+     {
+      "append_only": false,
+      "count": 84,
+      "declared_in": "./src/sat/sat_config.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct sat::config"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "./src/sat/sat_config.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct sat::config"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/sat/sat_config.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct sat::config"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/sat/sat_solver.cpp",
+      "exposure": "not_in_interface",
+      "kind": "enum_case_added",
+      "third_party": true,
+      "type": "enum sat::par_exception_kind"
+     },
+     {
+      "append_only": false,
+      "count": 12,
+      "declared_in": "./src/sat/sat_parallel.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "class sat::parallel"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/sat/sat_parallel.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class sat::parallel"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/sat/sat_parallel.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class sat::parallel"
+     },
+     {
+      "append_only": false,
+      "count": 31,
+      "declared_in": "./src/util/scoped_ptr_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "class scoped_ptr_vector<sat::i_local_search>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/scoped_ptr_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class scoped_ptr_vector<sat::i_local_search>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/scoped_ptr_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class scoped_ptr_vector<sat::i_local_search>"
+     },
+     {
+      "append_only": false,
+      "count": 6,
+      "declared_in": "./src/util/old_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "class old_ptr_vector<sat::i_local_search>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/old_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class old_ptr_vector<sat::i_local_search>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/old_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class old_ptr_vector<sat::i_local_search>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::tuple<par_tactical::operator()(const goal_ref&, goal_ref_buffer&)::<lambda()> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Tuple_impl<0, par_tactical::operator()(const goal_ref&, goal_ref_buffer&)::<lambda()> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/tuple",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct std::_Head_base<0, par_tactical::operator()(const goal_ref&, goal_ref_buffer&)::<lambda()>, false>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::tuple<parallel_tactic::solve(model_ref&)::<lambda()> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/9/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Tuple_impl<0, parallel_tactic::solve(model_ref&)::<lambda()> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/solver/parallel_tactic.cpp",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct parallel_tactic::<lambda()>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/solver/parallel_tactic.cpp",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class parallel_tactic"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/solver/solver.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class solver"
+     },
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": "./src/solver/solver.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class solver"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/params.cpp",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class params"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/old_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class old_svector<std::pair<symbol, params::value>, unsigned int>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/ast/ast.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "class ast_manager"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/ast/ast.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class ast_manager"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/ast/ast.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "class ast_manager"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/ast/ast.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class ast_manager"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/rlimit.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class reslimit"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/old_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class old_svector<long unsigned int, unsigned int>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/old_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class old_ptr_vector<reslimit>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/ast/ast.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class family_manager"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/symbol_table.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class symbol_table<int>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/old_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class old_svector<int, unsigned int>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/old_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class old_svector<symbol, unsigned int>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/parray.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class parray_manager<ast_manager::expr_array_config>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/old_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class old_ptr_vector<parray_manager<ast_manager::expr_array_config>::cell>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/dependency.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class dependency_manager<ast_manager::expr_dependency_config>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/old_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class old_ptr_vector<dependency_manager<ast_manager::expr_dependency_config>::dependency>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/parray.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class parray_manager<ast_manager::expr_dependency_array_config>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/old_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class old_ptr_vector<parray_manager<ast_manager::expr_dependency_array_config>::cell>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/old_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class old_ptr_vector<decl_plugin>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/ast/ast.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class func_decl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/ast/ast.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class sort"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/ast/ast.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class decl_info"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/ast/ast.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class parameter"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/ast/ast.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "union {int m_int; ast* m_ast; void* m_symbol; rational* m_rational; double m_dval; unsigned int m_ext_id;}"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/id_gen.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class id_gen"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/old_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class old_svector<unsigned int, unsigned int>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/params.cpp",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct param_descrs::imp"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/ref_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class ref_vector<expr, ast_manager>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/ref_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class ref_vector_core<expr, ref_manager_wrapper<expr, ast_manager> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/ref_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class ref_vector_core<expr, ref_manager_wrapper<expr, ast_manager> >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/old_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class old_ptr_vector<expr>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/ast/arith_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class arith_decl_plugin"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/ast/arith_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class arith_decl_plugin"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/ast/arith_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class arith_decl_plugin"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "./src/ast/arith_decl_plugin.cpp",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct arith_decl_plugin::algebraic_numbers_wrapper"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/ast/arith_decl_plugin.cpp",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct arith_decl_plugin::algebraic_numbers_wrapper"
+     },
+     {
+      "append_only": false,
+      "count": 6,
+      "declared_in": "./src/util/mpq.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "class mpq_manager<false>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/mpq.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class mpq_manager<false>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/mpq.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class mpq_manager<false>"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "./src/util/mpz.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "class mpz_manager<false>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/mpz.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class mpz_manager<false>"
+     },
+     {
+      "append_only": false,
+      "count": 5,
+      "declared_in": "./src/util/mpn.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "class mpn_manager"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/mpn.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class mpn_manager"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/math/polynomial/algebraic_numbers.cpp",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct algebraic_numbers::manager::imp"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/mpbqi.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class mpbqi_manager"
+     },
+     {
+      "append_only": false,
+      "count": 9,
+      "declared_in": "./src/math/polynomial/polynomial.cpp",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct polynomial::manager::imp"
+     },
+     {
+      "append_only": false,
+      "count": 5,
+      "declared_in": "./src/math/polynomial/upolynomial.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class upolynomial::manager"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/math/polynomial/upolynomial.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class upolynomial::manager"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/old_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class old_svector<mpz, unsigned int>"
+     },
+     {
+      "append_only": false,
+      "count": 10,
+      "declared_in": "./src/math/polynomial/upolynomial.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class upolynomial::core_manager"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/math/polynomial/polynomial.cpp",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class polynomial::monomial_manager"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/old_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class old_svector<polynomial::power, unsigned int>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/old_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class old_ptr_vector<polynomial::polynomial>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/math/polynomial/polynomial.cpp",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class polynomial::monomial2pos"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/old_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class old_ptr_vector<polynomial::monomial>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/math/polynomial/polynomial.cpp",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class polynomial::manager::imp::som_buffer"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/math/polynomial/polynomial.cpp",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class polynomial::manager::imp::cheap_som_buffer"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/old_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class old_vector<old_svector<unsigned int, unsigned int>, true, unsigned int>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/old_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class old_svector<bool, unsigned int>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/math/polynomial/polynomial.cpp",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class polynomial::manager::imp::som_buffer_vector"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/old_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class old_ptr_vector<polynomial::manager::imp::som_buffer>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/math/polynomial/polynomial.cpp",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class polynomial::manager::imp::newton_interpolator_vector"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/old_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class old_ptr_vector<polynomial::manager::imp::newton_interpolator>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/scoped_ptr_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class scoped_ptr_vector<polynomial::manager::imp::skeleton>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/old_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class old_ptr_vector<polynomial::manager::imp::skeleton>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/math/polynomial/polynomial.cpp",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class polynomial::manager::imp::var_max_degree"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/math/polynomial/polynomial.cpp",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct polynomial::manager::imp::var_pos"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/math/polynomial/upolynomial.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class upolynomial::scoped_numeral_vector"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/scoped_numeral_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class _scoped_numeral_vector<mpzzp_manager>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/math/polynomial/upolynomial.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class upolynomial::core_manager::factors"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/old_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class old_vector<old_svector<mpz, unsigned int>, true, unsigned int>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/scoped_numeral_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class _scoped_numeral_vector<mpbq_manager>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/scoped_numeral_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class _scoped_numeral_vector<algebraic_numbers::manager>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/old_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class old_ptr_vector<app>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/ast/ast.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class decl_plugin"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "./src/ast/ast_translation.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class ast_translation"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/old_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class old_svector<ast_translation::frame, unsigned int>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/old_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class old_ptr_vector<ast>"
+     },
+     {
+      "append_only": false,
+      "count": 50,
+      "declared_in": "./src/ast/bv_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class bv_decl_plugin"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/ast/bv_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class bv_decl_plugin"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/ast/bv_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class bv_decl_plugin"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/old_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class old_ptr_vector<sort>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/old_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class old_ptr_vector<func_decl>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/old_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class old_vector<old_ptr_vector<func_decl>, true, unsigned int>"
+     },
+     {
+      "append_only": false,
+      "count": 8,
+      "declared_in": "./src/ast/fpa_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "class fpa_decl_plugin"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/ast/fpa_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class fpa_decl_plugin"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/ast/fpa_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class fpa_decl_plugin"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/ast/fpa_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class fpa_decl_plugin"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/mpf.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "class mpf_manager"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/mpf.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class mpf_manager"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/scoped_numeral_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class _scoped_numeral_vector<mpf_manager>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/chashtable.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class chashtable<unsigned int, fpa_decl_plugin::mpf_hash_proc, fpa_decl_plugin::mpf_eq_proc>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/ast/seq_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "class seq_util"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/ast/seq_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "class seq_util"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/ast/seq_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class seq_util"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/ast/seq_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "class seq_decl_plugin"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/ast/seq_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class seq_decl_plugin"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/ast/seq_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class seq_decl_plugin"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/ast/seq_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class seq_decl_plugin"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/old_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class old_ptr_vector<seq_decl_plugin::psig>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/ast/dl_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "class datalog::dl_decl_util"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/ast/dl_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class datalog::dl_decl_util"
+     },
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": "./src/ast/dl_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "class datalog::dl_decl_util"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/ast/dl_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class datalog::dl_decl_util"
+     },
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": "./src/ast/datatype_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class datatype::util"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/ast/datatype_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class datatype::decl::plugin"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/ast/datatype_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class datatype::decl::plugin"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/ast/datatype_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class datatype::decl::plugin"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/map.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class map<symbol, datatype::def*, symbol_hash_proc, symbol_eq_proc>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/map.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class default_map_entry<symbol, datatype::def*>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/ast/datatype_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class datatype::def"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/ref_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class ref_vector<sort, ast_manager>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/ref_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class ref_vector_core<sort, ref_manager_wrapper<sort, ast_manager> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/ref_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class ref_vector_core<sort, ref_manager_wrapper<sort, ast_manager> >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/old_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class old_ptr_vector<datatype::constructor>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/obj_hashtable.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class obj_map<sort, old_ptr_vector<func_decl>*>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/hashtable.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class core_hashtable<obj_map<sort, old_ptr_vector<func_decl>*>::obj_map_entry, obj_hash<obj_map<sort, old_ptr_vector<func_decl>*>::key_data>, default_eq<obj_map<sort, old_ptr_vector<func_decl>*>::key_data> >"
+     },
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": "./src/util/hashtable.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class core_hashtable<obj_map<sort, old_ptr_vector<func_decl>*>::obj_map_entry, obj_hash<obj_map<sort, old_ptr_vector<func_decl>*>::key_data>, default_eq<obj_map<sort, old_ptr_vector<func_decl>*>::key_data> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/obj_hashtable.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class obj_map<sort, old_ptr_vector<func_decl>*>::obj_map_entry"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/obj_hashtable.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct obj_map<sort, old_ptr_vector<func_decl>*>::key_data"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/obj_hashtable.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class obj_map<func_decl, old_ptr_vector<func_decl>*>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/hashtable.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class core_hashtable<obj_map<func_decl, old_ptr_vector<func_decl>*>::obj_map_entry, obj_hash<obj_map<func_decl, old_ptr_vector<func_decl>*>::key_data>, default_eq<obj_map<func_decl, old_ptr_vector<func_decl>*>::key_data> >"
+     },
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": "./src/util/hashtable.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class core_hashtable<obj_map<func_decl, old_ptr_vector<func_decl>*>::obj_map_entry, obj_hash<obj_map<func_decl, old_ptr_vector<func_decl>*>::key_data>, default_eq<obj_map<func_decl, old_ptr_vector<func_decl>*>::key_data> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/obj_hashtable.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class obj_map<func_decl, old_ptr_vector<func_decl>*>::obj_map_entry"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/obj_hashtable.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct obj_map<func_decl, old_ptr_vector<func_decl>*>::key_data"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/ref_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class ref_vector<ast, ast_manager>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/ref_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class ref_vector_core<ast, ref_manager_wrapper<ast, ast_manager> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/ref_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class ref_vector_core<ast, ref_manager_wrapper<ast, ast_manager> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/ref_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class sref_vector<datatype::param_size::size>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/ref_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class ref_vector_core<datatype::param_size::size, ref_unmanaged_wrapper<datatype::param_size::size> >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/old_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class old_ptr_vector<datatype::param_size::size>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/old_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class old_ptr_vector<old_ptr_vector<func_decl> >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/model/model.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class model"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/model/model.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class model"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/obj_hashtable.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class obj_map<sort, old_ptr_vector<expr>*>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/hashtable.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class core_hashtable<obj_map<sort, old_ptr_vector<expr>*>::obj_map_entry, obj_hash<obj_map<sort, old_ptr_vector<expr>*>::key_data>, default_eq<obj_map<sort, old_ptr_vector<expr>*>::key_data> >"
+     },
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": "./src/util/hashtable.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class core_hashtable<obj_map<sort, old_ptr_vector<expr>*>::obj_map_entry, obj_hash<obj_map<sort, old_ptr_vector<expr>*>::key_data>, default_eq<obj_map<sort, old_ptr_vector<expr>*>::key_data> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/obj_hashtable.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class obj_map<sort, old_ptr_vector<expr>*>::obj_map_entry"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/obj_hashtable.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct obj_map<sort, old_ptr_vector<expr>*>::key_data"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/model/model_evaluator.cpp",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct model_evaluator::imp"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/model/model_evaluator.cpp",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct model_evaluator::imp"
+     },
+     {
+      "append_only": false,
+      "count": 6,
+      "declared_in": "./src/model/model_evaluator.cpp",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct evaluator_cfg"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "./src/model/model_core.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class model_core"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/model/func_interp.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class func_interp"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/old_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class old_ptr_vector<func_entry>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/old_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class old_ptr_vector<sat::ba_solver::constraint>"
+     },
+     {
+      "append_only": false,
+      "count": 9,
+      "declared_in": "./src/ast/rewriter/arith_rewriter.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "class arith_rewriter"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/ast/rewriter/arith_rewriter.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class arith_rewriter"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/ast/rewriter/arith_rewriter.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class arith_rewriter"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/ast/rewriter/poly_rewriter.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "class poly_rewriter<arith_rewriter_core>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/ast/rewriter/poly_rewriter.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "class poly_rewriter<arith_rewriter_core>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/ast/rewriter/poly_rewriter.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class poly_rewriter<arith_rewriter_core>"
+     },
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": "./src/ast/rewriter/bv_rewriter.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "class bv_rewriter"
+     },
+     {
+      "append_only": false,
+      "count": 14,
+      "declared_in": "./src/ast/rewriter/bv_rewriter.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "class bv_rewriter"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/ast/rewriter/bv_rewriter.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class bv_rewriter"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/ast/rewriter/bv_rewriter.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class bv_rewriter"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/ast/rewriter/poly_rewriter.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "class poly_rewriter<bv_rewriter_core>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/ast/rewriter/poly_rewriter.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "class poly_rewriter<bv_rewriter_core>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/ast/rewriter/poly_rewriter.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class poly_rewriter<bv_rewriter_core>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/ast/rewriter/pb_rewriter.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class pb_rewriter"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/ast/pb_decl_plugin.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class pb_util"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/ast/rewriter/seq_rewriter.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "class seq_rewriter"
+     },
+     {
+      "append_only": false,
+      "count": 5,
+      "declared_in": "./src/ast/rewriter/seq_rewriter.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "class seq_rewriter"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/ast/rewriter/seq_rewriter.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class seq_rewriter"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "./src/ast/rewriter/seq_rewriter.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "class re2automaton"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/ast/rewriter/seq_rewriter.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class re2automaton"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/math/automata/boolean_algebra.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class boolean_algebra<sym_expr*>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/plugin_manager.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class plugin_manager<value_factory>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/old_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class old_ptr_vector<value_factory>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/tactic/model_converter.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class labels_vec"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/ast/ast_pp_util.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class ast_pp_util"
+     },
+     {
+      "append_only": false,
+      "count": 5,
+      "declared_in": "./src/ast/ast_pp_util.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "class ast_pp_util"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/ast/ast_pp_util.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class ast_pp_util"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/obj_hashtable.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class obj_hashtable<func_decl>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/ast/ast_smt2_pp.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "class smt2_pp_environment_dbg"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/ast/ast_smt2_pp.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class smt2_pp_environment_dbg"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/ast/ast_smt2_pp.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class smt2_pp_environment_dbg"
+     },
+     {
+      "append_only": false,
+      "count": 6,
+      "declared_in": "./src/ast/decl_collector.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class decl_collector"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/solver/check_sat_result.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class check_sat_result"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/statistics.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class statistics"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/old_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class old_svector<std::pair<char const*, unsigned int>, unsigned int>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/old_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class old_svector<std::pair<char const*, double>, unsigned int>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/ref_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class sref_vector<model>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/ref_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class ref_vector_core<model, ref_unmanaged_wrapper<model> >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/old_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class old_ptr_vector<model>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/solver/parallel_tactic.cpp",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class parallel_tactic::task_queue"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/old_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class old_ptr_vector<parallel_tactic::solver_state>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/tactic/proof_converter.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class proof_converter"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/ref_buffer.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class sref_buffer<goal, 16>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/util/ref_buffer.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class ref_buffer_core<goal, ref_unmanaged_wrapper<goal>, 16>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/util/old_buffer.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class old_ptr_buffer<goal, 16>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/tactic/tactic.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class tactic"
+     }
+    ],
+    "vague_linkage": {
+     "function_signature_changed": 1,
+     "symbol_added": 41,
+     "symbol_removed": 5
+    }
+   }
   ],
-  "objects": [],
-  "seconds": 151.144663449,
+  "seconds": 168.778513397,
   "source": "z3",
   "unpaired": [
    [],
@@ -17,7 +2462,11 @@
    "4.8.8"
   ]
  },
- "generated_at": "2026-09-02T15:22:11Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T06:31:51Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

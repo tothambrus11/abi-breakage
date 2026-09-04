@@ -1,5 +1,6 @@
 {
  "data": {
+  "bytes_extracted": 1141087,
   "id": "chromaprint@1.4.2..1.4.3",
   "object_errors": [],
   "objects": [
@@ -21,9 +22,7 @@
     "language": "cxx",
     "mass_rename": false,
     "private_node": {},
-    "public": {
-     "symbol_added": 2
-    },
+    "public": {},
     "soname": [
      "libchromaprint.so.1",
      "libchromaprint.so.1"
@@ -31,13 +30,15 @@
     "symbol_events": [
      {
       "kind": "symbol_added",
-      "pretty": "method void std::vector<float,std::allocator<float>>::_M_default_append(std::vector<float,std::allocator<float>>::size_type)",
-      "symbol": "_ZNSt6vectorIfSaIfEE17_M_default_appendEm"
+      "pretty": "method void std::vector<float, std::allocator<float> >::_M_default_append(std::vector<float, std::allocator<float> >::size_type)",
+      "symbol": "_ZNSt6vectorIfSaIfEE17_M_default_appendEm",
+      "weak": true
      },
      {
       "kind": "symbol_added",
-      "pretty": "method void std::vector<double,std::allocator<double>>::_M_default_append(std::vector<double,std::allocator<double>>::size_type)",
-      "symbol": "_ZNSt6vectorIdSaIdEE17_M_default_appendEm"
+      "pretty": "method void std::vector<double, std::allocator<double> >::_M_default_append(std::vector<double, std::allocator<double> >::size_type)",
+      "symbol": "_ZNSt6vectorIdSaIdEE17_M_default_appendEm",
+      "weak": true
      }
     ],
     "symbols_version_renamed": 0,
@@ -46,21 +47,30 @@
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/7/bits/stl_vector.h",
+      "exposure": "by_pointer",
       "kind": "base_class_changed",
-      "type": "class std::vector<std::pair<unsignedint,unsignedint>,std::allocator<std::pair<unsignedint,unsignedint>>>"
+      "third_party": true,
+      "type": "class std::vector<std::pair<unsigned int, unsigned int>, std::allocator<std::pair<unsigned int, unsigned int> > >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/7/bits/stl_pair.h",
+      "exposure": "by_pointer",
       "kind": "base_class_changed",
-      "type": "struct std::pair<unsignedint,unsignedint>"
+      "third_party": true,
+      "type": "struct std::pair<unsigned int, unsigned int>"
      }
-    ]
+    ],
+    "vague_linkage": {
+     "symbol_added": 2
+    }
    }
   ],
-  "seconds": 2.862006239,
+  "seconds": 2.438885887,
   "source": "chromaprint",
   "unpaired": [
    [],
@@ -71,7 +81,11 @@
    "1.4.3"
   ]
  },
- "generated_at": "2026-09-02T15:03:45Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:42:57Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

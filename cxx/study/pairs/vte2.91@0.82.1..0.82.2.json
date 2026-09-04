@@ -1,6 +1,8 @@
 {
  "data": {
+  "bytes_extracted": 17999831,
   "id": "vte2.91@0.82.1..0.82.2",
+  "object_errors": [],
   "objects": [
    {
     "coverage": {
@@ -28,10 +30,11 @@
     "symbol_events": [],
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 16.954023783,
+  "seconds": 12.98167608,
   "source": "vte2.91",
   "unpaired": [
    [],
@@ -42,7 +45,11 @@
    "0.82.2"
   ]
  },
- "generated_at": "2026-09-02T12:26:45Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:34:45Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

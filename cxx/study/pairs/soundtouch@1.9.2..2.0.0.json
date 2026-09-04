@@ -1,5 +1,6 @@
 {
  "data": {
+  "bytes_extracted": 648147,
   "id": "soundtouch@1.9.2..2.0.0",
   "object_errors": [],
   "objects": [
@@ -36,17 +37,20 @@
      {
       "kind": "symbol_removed",
       "pretty": "method void soundtouch::BPMDetect::calcEnvelope(soundtouch::SAMPLETYPE*, int)",
-      "symbol": "_ZN10soundtouch9BPMDetect12calcEnvelopeEPfi"
+      "symbol": "_ZN10soundtouch9BPMDetect12calcEnvelopeEPfi",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "method int soundtouch::RateTransposer::getLatency() const",
-      "symbol": "_ZNK10soundtouch14RateTransposer10getLatencyEv"
+      "symbol": "_ZNK10soundtouch14RateTransposer10getLatencyEv",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "method double soundtouch::SoundTouch::getInputOutputSampleRatio()",
-      "symbol": "_ZN10soundtouch10SoundTouch25getInputOutputSampleRatioEv"
+      "symbol": "_ZN10soundtouch10SoundTouch25getInputOutputSampleRatioEv",
+      "weak": false
      }
     ],
     "symbols_version_renamed": 0,
@@ -56,39 +60,55 @@
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 2,
       "declared_in": "../../include/BPMDetect.h",
+      "exposure": "by_pointer",
       "kind": "field_removed_from_struct",
+      "third_party": false,
       "type": "class soundtouch::BPMDetect"
      },
      {
+      "append_only": false,
       "count": 8,
       "declared_in": "../../include/BPMDetect.h",
+      "exposure": "by_pointer",
       "kind": "member_offset_changed",
+      "third_party": false,
       "type": "class soundtouch::BPMDetect"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "../../include/BPMDetect.h",
+      "exposure": "by_pointer",
       "kind": "type_size_changed",
+      "third_party": false,
       "type": "class soundtouch::BPMDetect"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./source/SoundTouch/TDStretch.h",
+      "exposure": "by_pointer",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "class soundtouch::TDStretch"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./source/SoundTouch/TDStretch.h",
+      "exposure": "by_pointer",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class soundtouch::TDStretchSSE"
      }
-    ]
+    ],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 2.207015562,
+  "seconds": 1.422003263,
   "source": "soundtouch",
   "unpaired": [
    [],
@@ -99,7 +119,11 @@
    "2.0.0"
   ]
  },
- "generated_at": "2026-09-02T15:06:01Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:44:28Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

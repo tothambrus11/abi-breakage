@@ -2,15 +2,19 @@
  "data": {
   "coverage": [
    {
-    "header_files": 0,
-    "parsed": 0,
+    "header_files": 1,
+    "parsed": 1,
+    "parsed_as_cxx": 0,
     "skipped_by_limit": 0,
+    "with_errors": 0,
     "with_fatal_error": 0
    },
    {
     "header_files": 1,
     "parsed": 1,
+    "parsed_as_cxx": 0,
     "skipped_by_limit": 0,
+    "with_errors": 0,
     "with_fatal_error": 0
    }
   ],
@@ -26,22 +30,34 @@
    "inline_body_changed": 0,
    "inline_body_changed_template": 0,
    "inline_decl_changed": 0,
-   "macro_value_changed": 0,
+   "macro_value_changed": 6,
+   "macro_value_changed_nonversion": 0,
    "macros": [
-    0,
-    37
+    41,
+    36
    ],
-   "macros_common": 0
+   "macros_common": 31
   },
   "id": "jemalloc@3.6.0..5.0.1",
-  "language": "cxx",
+  "language": "c",
   "source": "jemalloc",
+  "symbol_declared": {
+   "allocm": "declared",
+   "dallocm": "declared",
+   "nallocm": "declared",
+   "rallocm": "declared",
+   "sallocm": "declared"
+  },
   "upstream": [
    "3.6.0",
    "5.0.1"
   ]
  },
- "generated_at": "2026-09-02T14:51:57Z",
- "schema": "abistudy/header-pair/2",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T07:43:44Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
 }

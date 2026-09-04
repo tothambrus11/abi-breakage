@@ -1,5 +1,7 @@
 {
  "data": {
+  "bytes_extracted": 18848853,
+  "excluded_objects": [],
   "id": "srt@1.5.4..1.5.5",
   "object_errors": [],
   "objects": [
@@ -23,8 +25,8 @@
     "private_node": {},
     "public": {
      "function_signature_changed": 2,
-     "symbol_added": 34,
-     "symbol_removed": 9
+     "symbol_added": 33,
+     "symbol_removed": 7
     },
     "soname": [
      "libsrt-gnutls.so.1.5",
@@ -34,229 +36,275 @@
      {
       "kind": "function_signature_changed",
       "pretty": "method void srt::CRcvQueue::removeListener(const srt::CUDT*)  ->  method bool srt::CRcvQueue::removeListener(srt::CUDT*)",
-      "symbol": "_ZN3srt9CRcvQueue14removeListenerEPKNS_4CUDTE"
+      "symbol": "_ZN3srt9CRcvQueue14removeListenerEPKNS_4CUDTE",
+      "weak": false
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method std::map<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,srt::PacketFilter::ManagedPtr,std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::pair<conststd::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,srt::PacketFilter::ManagedPtr>>>::~map()",
-      "symbol": "_ZNSt3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEN3srt12PacketFilter10ManagedPtrESt4lessIS5_ESaISt4pairIKS5_S8_EEED2Ev"
+      "pretty": "method std::set<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::~set()",
+      "symbol": "_ZNSt3setINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4lessIS5_ESaIS5_EED2Ev",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
-      "pretty": "method void srt::PacketFilter::globalInit(void)",
-      "symbol": "_ZN3srt12PacketFilter10globalInitEv"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method bool srt::PacketFilter::IsBuiltin(const std::string&)",
-      "symbol": "_ZN3srt12PacketFilter9IsBuiltinERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE"
-     },
-     {
-      "kind": "symbol_removed",
-      "pretty": "method std::set<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>>::~set()",
-      "symbol": "_ZNSt3setINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4lessIS5_ESaIS5_EED2Ev"
+      "pretty": "method std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, srt::PacketFilter::ManagedPtr, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, srt::PacketFilter::ManagedPtr> > >::~map()",
+      "symbol": "_ZNSt3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEN3srt12PacketFilter10ManagedPtrESt4lessIS5_ESaISt4pairIKS5_S8_EEED2Ev",
+      "weak": true
      },
      {
       "kind": "symbol_removed",
       "pretty": "function bool srt::CheckFilterCompat(srt::SrtFilterConfig&, srt::SrtFilterConfig)",
-      "symbol": "_ZN3srt17CheckFilterCompatERNS_15SrtFilterConfigES0_"
+      "symbol": "_ZN3srt17CheckFilterCompatERNS_15SrtFilterConfigES0_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool srt::PacketFilter::IsBuiltin()",
+      "symbol": "_ZN3srt12PacketFilter9IsBuiltinERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void srt::PacketFilter::globalInit()",
+      "symbol": "_ZN3srt12PacketFilter10globalInitEv",
+      "weak": false
      },
      {
       "kind": "symbol_removed",
       "pretty": "function bool srt::ParseFilterConfig(const std::string&, srt::SrtFilterConfig&, srt::PacketFilter::Factory**)",
-      "symbol": "_ZN3srt17ParseFilterConfigERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERNS_15SrtFilterConfigEPPNS_12PacketFilter7FactoryE"
+      "symbol": "_ZN3srt17ParseFilterConfigERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERNS_15SrtFilterConfigEPPNS_12PacketFilter7FactoryE",
+      "weak": false
      },
      {
       "kind": "symbol_removed",
       "pretty": "method bool srt::CUDT::isRetransmissionAllowed(const srt::CUDT::time_point&)",
-      "symbol": "_ZN3srt4CUDT23isRetransmissionAllowedERKNS_4sync9TimePointINS1_12steady_clockEEE"
+      "symbol": "_ZN3srt4CUDT23isRetransmissionAllowedERKNS_4sync9TimePointINS1_12steady_clockEEE",
+      "weak": false
      },
      {
       "kind": "symbol_removed",
       "pretty": "static srt::PacketFilter::filters_map_t srt::PacketFilter::filters",
-      "symbol": "_ZN3srt12PacketFilter7filtersB5cxx11E"
+      "symbol": "_ZN3srt12PacketFilter7filtersB5cxx11E",
+      "weak": false
      },
      {
       "kind": "symbol_removed",
-      "pretty": "static std::set<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::less<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>,std::allocator<std::__cxx11::basic_string<char,std::char_traits<char>,std::allocator<char>>>> srt::PacketFilter::builtin_filters",
-      "symbol": "_ZN3srt12PacketFilter15builtin_filtersB5cxx11E"
+      "pretty": "static std::set<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > srt::PacketFilter::builtin_filters",
+      "symbol": "_ZN3srt12PacketFilter15builtin_filtersB5cxx11E",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "method void srt::CSndUList::resetAtFork()",
-      "symbol": "_ZN3srt9CSndUList11resetAtForkEv"
+      "symbol": "_ZN3srt9CSndUList11resetAtForkEv",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "method void srt::CSndQueue::stop()",
-      "symbol": "_ZN3srt9CSndQueue4stopEv"
+      "symbol": "_ZN3srt9CSndQueue4stopEv",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "method void srt::CSndQueue::resetAtFork()",
-      "symbol": "_ZN3srt9CSndQueue11resetAtForkEv"
+      "symbol": "_ZN3srt9CSndQueue11resetAtForkEv",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "method void srt::CRcvQueue::resetAtFork()",
-      "symbol": "_ZN3srt9CRcvQueue11resetAtForkEv"
+      "symbol": "_ZN3srt9CRcvQueue11resetAtForkEv",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "method bool srt::PacketFilter::Internal::CheckFilterCompat(srt::SrtFilterConfig&, const srt::SrtFilterConfig&)",
-      "symbol": "_ZN3srt12PacketFilter8Internal17CheckFilterCompatERNS_15SrtFilterConfigERKS2_"
+      "symbol": "_ZN3srt12PacketFilter8Internal17CheckFilterCompatERNS_15SrtFilterConfigERKS2_",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "method bool srt::CUDT::isRegularSendingPriority()",
-      "symbol": "_ZN3srt4CUDT24isRegularSendingPriorityEv"
+      "symbol": "_ZN3srt4CUDT24isRegularSendingPriorityEv",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "method void srt::CRcvQueue::stop()",
-      "symbol": "_ZN3srt9CRcvQueue4stopEv"
+      "symbol": "_ZN3srt9CRcvQueue4stopEv",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "method bool srt::PacketFilter::Internal::ParseConfig(const std::string&, srt::SrtFilterConfig&, srt::PacketFilter::Factory**)",
-      "symbol": "_ZN3srt12PacketFilter8Internal11ParseConfigERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERNS_15SrtFilterConfigEPPNS0_7FactoryE"
+      "symbol": "_ZN3srt12PacketFilter8Internal11ParseConfigERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERNS_15SrtFilterConfigEPPNS0_7FactoryE",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function std::string srt::FormatValue(int, int, const char*)",
-      "symbol": "_ZN3srt11FormatValueB5cxx11EiiPKc"
+      "symbol": "_ZN3srt11FormatValueB5cxx11EiiPKc",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "method void srt::CUDTUnited::stopGarbageCollector()",
-      "symbol": "_ZN3srt10CUDTUnited20stopGarbageCollectorEv"
+      "symbol": "_ZN3srt10CUDTUnited20stopGarbageCollectorEv",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "method srt::HandshakeSide srt::CUDT::compareCookies(int32_t, int32_t)",
-      "symbol": "_ZN3srt4CUDT14compareCookiesEii"
+      "pretty": "method srt::HandshakeSide srt::CUDT::compareCookies(int32_t)",
+      "symbol": "_ZN3srt4CUDT14compareCookiesEii",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "method int srt::CUDTUnited::cleanupAtFork()",
-      "symbol": "_ZN3srt10CUDTUnited13cleanupAtForkEv"
+      "symbol": "_ZN3srt10CUDTUnited13cleanupAtForkEv",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "method bool srt::CUDT::closeAtFork()",
-      "symbol": "_ZN3srt4CUDT11closeAtForkEv"
+      "symbol": "_ZN3srt4CUDT11closeAtForkEv",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "method bool srt::CUDT::checkRexmitRightTime(int, const srt::sync::steady_clock::time_point&)",
-      "symbol": "_ZN3srt4CUDT20checkRexmitRightTimeEiRKNS_4sync9TimePointINS1_12steady_clockEEE"
+      "symbol": "_ZN3srt4CUDT20checkRexmitRightTimeEiRKNS_4sync9TimePointINS1_12steady_clockEEE",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "method int srt::CUDT::cleanupAtFork(void)",
-      "symbol": "_ZN3srt4CUDT13cleanupAtForkEv"
+      "pretty": "method int srt::CUDT::cleanupAtFork()",
+      "symbol": "_ZN3srt4CUDT13cleanupAtForkEv",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "method bool srt::CUDTUnited::startGarbageCollector()",
-      "symbol": "_ZN3srt10CUDTUnited21startGarbageCollectorEv"
+      "symbol": "_ZN3srt10CUDTUnited21startGarbageCollectorEv",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "method void srt::CMultiplexer::close()",
-      "symbol": "_ZN3srt12CMultiplexer5closeEv"
+      "symbol": "_ZN3srt12CMultiplexer5closeEv",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "method void srt::CUDTUnited::closeAllSockets()",
-      "symbol": "_ZN3srt10CUDTUnited15closeAllSocketsEv"
+      "symbol": "_ZN3srt10CUDTUnited15closeAllSocketsEv",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "method void srt::CUDTUnited::cleanupAllSockets()",
-      "symbol": "_ZN3srt10CUDTUnited17cleanupAllSocketsEv"
+      "symbol": "_ZN3srt10CUDTUnited17cleanupAllSocketsEv",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "method srt::CMultiplexer::~CMultiplexer()",
-      "symbol": "_ZN3srt12CMultiplexerD2Ev"
+      "symbol": "_ZN3srt12CMultiplexerD2Ev",
+      "weak": true
      },
      {
       "kind": "symbol_added",
       "pretty": "method void srt::CUDTSocket::resetAtFork()",
-      "symbol": "_ZN3srt10CUDTSocket11resetAtForkEv"
+      "symbol": "_ZN3srt10CUDTSocket11resetAtForkEv",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "method void srt::CMultiplexer::resetAtFork()",
-      "symbol": "_ZN3srt12CMultiplexer11resetAtForkEv"
+      "symbol": "_ZN3srt12CMultiplexer11resetAtForkEv",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "function srt::HandshakeSide srt::getHandshakeSide(SRTSOCKET)",
-      "symbol": "_ZN3srt16getHandshakeSideEi"
+      "symbol": "_ZN3srt16getHandshakeSideEi",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "method srt::PacketFilter::Internal::Internal()",
-      "symbol": "_ZN3srt12PacketFilter8InternalC2Ev"
+      "symbol": "_ZN3srt12PacketFilter8InternalC2Ev",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "method srt::CUDT* srt::CRcvQueue::getListener()",
-      "symbol": "_ZN3srt9CRcvQueue11getListenerEv"
+      "symbol": "_ZN3srt9CRcvQueue11getListenerEv",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "method void srt::CUDT::resetAtFork()",
-      "symbol": "_ZN3srt4CUDT11resetAtForkEv"
+      "symbol": "_ZN3srt4CUDT11resetAtForkEv",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "method srt::PacketFilter::Internal& srt::PacketFilter::internal(void)",
-      "symbol": "_ZN3srt12PacketFilter8internalEv"
+      "pretty": "method srt::PacketFilter::Internal& srt::PacketFilter::internal()",
+      "symbol": "_ZN3srt12PacketFilter8internalEv",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "method srt::HandshakeSide srt::CUDT::handshakeSide(SRTSOCKET)",
-      "symbol": "_ZN3srt4CUDT13handshakeSideEi"
+      "pretty": "method srt::HandshakeSide srt::CUDT::handshakeSide()",
+      "symbol": "_ZN3srt4CUDT13handshakeSideEi",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "method std::pair<int,int> srt::CUDT::getCleanRexmitOffset()",
-      "symbol": "_ZN3srt4CUDT20getCleanRexmitOffsetEv"
+      "pretty": "method std::pair<int, int> srt::CUDT::getCleanRexmitOffset()",
+      "symbol": "_ZN3srt4CUDT20getCleanRexmitOffsetEv",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "method int srt::CUDT::extractCleanRexmitPacket(int32_t, int, srt::CPacket&, srt::sync::steady_clock::time_point&)",
-      "symbol": "_ZN3srt4CUDT24extractCleanRexmitPacketEiiRNS_7CPacketERNS_4sync9TimePointINS3_12steady_clockEEE"
+      "symbol": "_ZN3srt4CUDT24extractCleanRexmitPacketEiiRNS_7CPacketERNS_4sync9TimePointINS3_12steady_clockEEE",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "method void srt::CMultiplexer::stop()",
-      "symbol": "_ZN3srt12CMultiplexer4stopEv"
+      "symbol": "_ZN3srt12CMultiplexer4stopEv",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "method void srt::CUDT::updateSenderMeasurements(bool)",
-      "symbol": "_ZN3srt4CUDT24updateSenderMeasurementsEb"
+      "symbol": "_ZN3srt4CUDT24updateSenderMeasurementsEb",
+      "weak": false
      },
      {
       "kind": "symbol_added",
-      "pretty": "method srt::HandshakeSide srt::CUDT::backwardCompatibleCookieContest(int32_t, int32_t)",
-      "symbol": "_ZN3srt4CUDT31backwardCompatibleCookieContestEii"
+      "pretty": "method srt::HandshakeSide srt::CUDT::backwardCompatibleCookieContest(int32_t)",
+      "symbol": "_ZN3srt4CUDT31backwardCompatibleCookieContestEii",
+      "weak": false
      },
      {
       "kind": "symbol_added",
       "pretty": "method void srt::sync::Condition::reset()",
-      "symbol": "_ZN3srt4sync9Condition5resetEv"
+      "symbol": "_ZN3srt4sync9Condition5resetEv",
+      "weak": false
      },
      {
       "kind": "function_signature_changed",
       "pretty": "method int srt::CRcvQueue::setListener(srt::CUDT*)  ->  method bool srt::CRcvQueue::setListener(srt::CUDT*)",
-      "symbol": "_ZN3srt9CRcvQueue11setListenerEPNS_4CUDTE"
+      "symbol": "_ZN3srt9CRcvQueue11setListenerEPNS_4CUDTE",
+      "weak": false
      }
     ],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {
      "base_class_changed": 8,
@@ -267,171 +315,256 @@
     },
     "type_events": [
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./srtcore/core.h",
+      "exposure": "by_pointer",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "class srt::CUDT"
      },
      {
+      "append_only": false,
       "count": 102,
       "declared_in": "./srtcore/core.h",
+      "exposure": "by_pointer",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "class srt::CUDT"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./srtcore/core.h",
+      "exposure": "by_pointer",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "class srt::CUDT"
      },
      {
+      "append_only": false,
       "count": 6,
       "declared_in": "./srtcore/api.h",
+      "exposure": "by_pointer",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "class srt::CUDTSocket"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./srtcore/api.h",
+      "exposure": "by_pointer",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "class srt::CUDTSocket"
      },
      {
+      "append_only": true,
       "count": 1,
       "declared_in": "./srtcore/sync.h",
+      "exposure": "by_pointer",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "class srt::sync::CThread"
      },
      {
+      "append_only": true,
       "count": 1,
       "declared_in": "./srtcore/sync.h",
+      "exposure": "by_pointer",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "class srt::sync::CThread"
      },
      {
+      "append_only": false,
       "count": 4,
       "declared_in": "./srtcore/queue.h",
+      "exposure": "by_pointer",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "class srt::CSndQueue"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./srtcore/queue.h",
+      "exposure": "by_pointer",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "class srt::CSndQueue"
      },
      {
+      "append_only": false,
       "count": 15,
       "declared_in": "./srtcore/queue.h",
+      "exposure": "by_pointer",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "class srt::CRcvQueue"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./srtcore/queue.h",
+      "exposure": "by_pointer",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "class srt::CRcvQueue"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/15/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "class std::vector<srt::CUDT*,std::allocator<srt::CUDT*>>"
+      "third_party": true,
+      "type": "class std::vector<srt::CUDT*, std::allocator<srt::CUDT*> >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/15/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Vector_base<srt::CUDT*,std::allocator<srt::CUDT*>>::_Vector_impl"
+      "third_party": true,
+      "type": "struct std::_Vector_base<srt::CUDT*, std::allocator<srt::CUDT*> >::_Vector_impl"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/15/bits/stl_vector.h",
+      "exposure": "by_pointer",
       "kind": "base_class_changed",
-      "type": "class std::vector<srt::CRendezvousQueue::LinkStatusInfo,std::allocator<srt::CRendezvousQueue::LinkStatusInfo>>"
+      "third_party": true,
+      "type": "class std::vector<srt::CRendezvousQueue::LinkStatusInfo, std::allocator<srt::CRendezvousQueue::LinkStatusInfo> >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/15/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Vector_base<srt::CRendezvousQueue::LinkStatusInfo,std::allocator<srt::CRendezvousQueue::LinkStatusInfo>>::_Vector_impl"
+      "third_party": true,
+      "type": "struct std::_Vector_base<srt::CRendezvousQueue::LinkStatusInfo, std::allocator<srt::CRendezvousQueue::LinkStatusInfo> >::_Vector_impl"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./srtcore/api.h",
+      "exposure": "by_pointer",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "class srt::CUDTUnited"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./srtcore/api.h",
+      "exposure": "by_pointer",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "class srt::CUDTUnited"
      },
      {
+      "append_only": false,
       "count": 15,
       "declared_in": "./srtcore/api.h",
+      "exposure": "by_pointer",
       "kind": "member_offset_changed",
+      "third_party": true,
       "type": "class srt::CUDTUnited"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./srtcore/api.h",
+      "exposure": "by_pointer",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "class srt::CUDTUnited"
      },
      {
+      "append_only": false,
       "count": 4,
       "declared_in": "./srtcore/sync.h",
+      "exposure": "by_pointer",
       "kind": "field_added_to_struct",
+      "third_party": true,
       "type": "class srt::sync::Mutex"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./srtcore/sync.h",
+      "exposure": "by_pointer",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "class srt::sync::Mutex"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./srtcore/sync.h",
+      "exposure": "by_pointer",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "class srt::sync::Mutex"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./srtcore/congctl.cpp",
+      "exposure": "by_pointer",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class srt::FileCC"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./srtcore/congctl.cpp",
+      "exposure": "by_pointer",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "class srt::LiveCC"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "./srtcore/congctl.cpp",
+      "exposure": "by_pointer",
       "kind": "base_class_changed",
+      "third_party": true,
       "type": "class srt::LiveCC"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/15/bits/stl_vector.h",
+      "exposure": "by_pointer",
       "kind": "base_class_changed",
-      "type": "class std::vector<srt::CUDTSocket*,std::allocator<srt::CUDTSocket*>>"
+      "third_party": true,
+      "type": "class std::vector<srt::CUDTSocket*, std::allocator<srt::CUDTSocket*> >"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/c++/15/bits/stl_vector.h",
+      "exposure": "not_in_interface",
       "kind": "base_class_changed",
-      "type": "struct std::_Vector_base<srt::CUDTSocket*,std::allocator<srt::CUDTSocket*>>::_Vector_impl"
+      "third_party": true,
+      "type": "struct std::_Vector_base<srt::CUDTSocket*, std::allocator<srt::CUDTSocket*> >::_Vector_impl"
      }
-    ]
+    ],
+    "vague_linkage": {
+     "symbol_added": 1,
+     "symbol_removed": 2
+    }
    }
   ],
-  "seconds": 10.374614168,
+  "seconds": 9.552564204,
   "source": "srt",
   "unpaired": [
    [],
@@ -442,7 +575,11 @@
    "1.5.5"
   ]
  },
- "generated_at": "2026-09-02T15:05:25Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T06:18:33Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

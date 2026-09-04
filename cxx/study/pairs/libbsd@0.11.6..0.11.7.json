@@ -1,6 +1,8 @@
 {
  "data": {
+  "bytes_extracted": 1570884,
   "id": "libbsd@0.11.6..0.11.7",
+  "object_errors": [],
   "objects": [
    {
     "coverage": {
@@ -28,10 +30,11 @@
     "symbol_events": [],
     "symbols_version_renamed": 0,
     "third_party": {},
-    "type_events": []
+    "type_events": [],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 2.58213235,
+  "seconds": 1.504296362,
   "source": "libbsd",
   "unpaired": [
    [],
@@ -42,7 +45,11 @@
    "0.11.7"
   ]
  },
- "generated_at": "2026-09-02T12:06:22Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:43:05Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }

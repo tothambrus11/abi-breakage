@@ -4,13 +4,17 @@
    {
     "header_files": 5,
     "parsed": 5,
+    "parsed_as_cxx": 5,
     "skipped_by_limit": 0,
+    "with_errors": 0,
     "with_fatal_error": 0
    },
    {
     "header_files": 5,
     "parsed": 5,
+    "parsed_as_cxx": 5,
     "skipped_by_limit": 0,
+    "with_errors": 0,
     "with_fatal_error": 0
    }
   ],
@@ -31,6 +35,7 @@
    "inline_body_changed_template": 0,
    "inline_decl_changed": 0,
    "macro_value_changed": 0,
+   "macro_value_changed_nonversion": 0,
    "macros": [
     35,
     36
@@ -40,12 +45,25 @@
   "id": "hunspell@1.7.1..1.7.2",
   "language": "cxx",
   "source": "hunspell",
+  "symbol_declared": {
+   "_Z12free_utf_tblv": "undeclared",
+   "_Z18initialize_utf_tblv": "undeclared",
+   "_Z6u8_u16RSt6vectorI6w_charSaIS0_EERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE": "undeclared",
+   "_Z8mystrdupPKc": "undeclared",
+   "_ZN6Hunzip4failEPKcS1_": "undeclared",
+   "_ZNSt6vectorIS_ItSaItEESaIS1_EE17_M_realloc_insertIJS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_": "undeclared",
+   "_ZNSt6vectorItSaItEE17_M_default_appendEm": "undeclared"
+  },
   "upstream": [
    "1.7.1",
    "1.7.2"
   ]
  },
- "generated_at": "2026-09-02T14:52:22Z",
- "schema": "abistudy/header-pair/2",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T07:43:44Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/header-pair/3",
+ "tool": "abistudy 4.0.0"
 }

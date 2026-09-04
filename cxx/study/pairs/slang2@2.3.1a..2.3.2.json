@@ -1,5 +1,6 @@
 {
  "data": {
+  "bytes_extracted": 8799945,
   "id": "slang2@2.3.1a..2.3.2",
   "object_errors": [],
   "objects": [
@@ -38,39 +39,55 @@
     },
     "type_events": [
      {
+      "append_only": true,
       "count": 3,
       "declared_in": "",
+      "exposure": "not_in_interface",
       "kind": "field_added_to_struct",
+      "third_party": false,
       "type": "struct _pSLang_Foreach_Context_Type"
      },
      {
+      "append_only": true,
       "count": 1,
       "declared_in": "",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": false,
       "type": "struct _pSLang_Foreach_Context_Type"
      },
      {
+      "append_only": false,
       "count": 3,
       "declared_in": "/usr/include/libio.h",
+      "exposure": "by_pointer",
       "kind": "field_type_changed",
+      "third_party": true,
       "type": "struct _IO_FILE"
      },
      {
+      "append_only": false,
       "count": 3,
       "declared_in": "/usr/include/libio.h",
+      "exposure": "not_in_interface",
       "kind": "field_removed_from_struct",
+      "third_party": true,
       "type": "struct _IO_marker"
      },
      {
+      "append_only": false,
       "count": 1,
       "declared_in": "/usr/include/libio.h",
+      "exposure": "not_in_interface",
       "kind": "type_size_changed",
+      "third_party": true,
       "type": "struct _IO_marker"
      }
-    ]
+    ],
+    "vague_linkage": {}
    }
   ],
-  "seconds": 2.011798398,
+  "seconds": 1.672037534,
   "source": "slang2",
   "unpaired": [
    [],
@@ -81,7 +98,11 @@
    "2.3.2"
   ]
  },
- "generated_at": "2026-09-02T14:57:21Z",
- "schema": "abistudy/pair/1",
- "tool": "abistudy 3.0.0"
+ "generated_at": "2026-09-04T00:41:39Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
 }
