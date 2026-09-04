@@ -121,6 +121,16 @@ const std::map<std::string, Expect> &expectations() {
       .hdr = {},
       .also =
         [](const Observed &o) { return !o.abi.public_counts.has(ChangeKind::vtable_changed); }}},
+    // An inline virtual has a weak symbol, but its vtable slot is ABI: a public
+    // removal, never vague linkage, and not a slot event either.
+    {"inline_virtual_removed",
+     {.abi = ChangeKind::symbol_removed,
+      .hdr = {},
+      .also =
+        [](const Observed &o) {
+          return !o.abi.vague_linkage_counts.has(ChangeKind::symbol_removed) &&
+                 !o.abi.public_counts.has(ChangeKind::vtable_changed);
+        }}},
     {"class_made_polymorphic", {.abi = ChangeKind::vtable_changed, .hdr = {}, .also = nullptr}},
     {"base_class_added", {.abi = ChangeKind::base_class_changed, .hdr = {}, .also = nullptr}},
     {"method_added_nonvirtual", {.abi = ChangeKind::symbol_added, .hdr = {}, .also = nullptr}},

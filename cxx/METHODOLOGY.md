@@ -176,9 +176,11 @@ cannot wipe the tree under a concurrent headers run:
      type-changed, member-offset-changed, type-size-changed,
      base-class-changed, enum-case added/removed, vtable slot inserted/moved
      (a *removed* virtual is a symbol removal, not a slot event, whatever
-     its ELF binding: a virtual member function is reached through its
-     vtable slot, so an inline virtual with a weak symbol is never vague
-     linkage);
+     its ELF binding: a virtual member function of one of the library's
+     own classes is reached through its vtable slot, so an inline virtual
+     with a weak symbol is never vague linkage; virtuals of third-party
+     class instantiations such as libstdc++'s shared_ptr control blocks
+     remain vague linkage);
    * every type event carries its **exposure** in the exported interface —
      `by_value`, `by_pointer`, or `not_in_interface` — computed by walking
      the parameter and return types of every exported function and the types
@@ -268,7 +270,7 @@ compute nothing themselves.
 |---|---|---|
 | Third-party types | glibc's `_IO_FILE`, libstdc++'s `std::tuple` change when the toolchain moves and appear as "the library changed its layout" | Each type event carries the DWARF declaring file; it is the library's own iff the path matches a shipped header by include-relative **suffix**, and a path under `/usr/include` or `/usr/lib/gcc` additionally needs an exact relative match or a multi-component suffix (so `bits/types.h` is never claimed by a library shipping `types.h`). |
 | Private ELF version nodes | dbus exports 657 `_dbus_*` internals under `LIBDBUS_PRIVATE_*` | Symbol events whose version node contains `PRIVATE`/`INTERNAL` go to `private_node_counts`. |
-| Vague linkage | C++ template instantiations and inline functions emitted as weak symbols come and go with the compiler | Weak *and* Itanium-mangled symbol events go to `vague_linkage_counts`; every client compiled its own copy. C weak symbols are kept, and so are **virtual member functions** whatever their binding: they are reached through a vtable slot, so an inline virtual that disappears is a public removal. |
+| Vague linkage | C++ template instantiations and inline functions emitted as weak symbols come and go with the compiler | Weak *and* Itanium-mangled symbol events go to `vague_linkage_counts`; every client compiled its own copy. C weak symbols are kept, and so are **virtual member functions of the library's own classes** whatever their binding: they are reached through a vtable slot, so an inline virtual that disappears is a public removal. Virtuals of third-party instantiations (libstdc++ control blocks) stay vague. |
 | Undeclared exports | default-visibility builds export internals no header declares | The declared-symbol join (§3.4); undeclared removals are excluded under the lenient definition and reported as a stratum. |
 | Mass rename by policy | ICU suffixes every symbol with the major version | Digits-blind matching of removed↔added linkage names; if ≥50 and ≥ all other symbol events, the transition is `mass_rename` and excluded. |
 | `abidiff` default filters | Enum-case additions are "harmless" and hidden; `--leaf-changes-only` omits base-class insertions | Harmless categories are not switched off; the visitor reads base-class maps directly. |

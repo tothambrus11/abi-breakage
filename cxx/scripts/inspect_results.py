@@ -36,6 +36,8 @@ def is_public_symbol_event(e):
     node = (e.get("version") or "").upper()
     if "PRIVATE" in node or "INTERNAL" in node:
         return False
+    if e.get("vtable_slot"):
+        return True  # a virtual member is ABI through its vtable slot, whatever its binding
     return not (e.get("weak") and e["symbol"].startswith("_Z"))
 
 

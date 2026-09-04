@@ -1,0 +1,6 @@
+{
+ "lang": "cxx",
+ "truth": "inline_virtual_removed",
+ "breaks": true,
+ "note": "a class with only inline virtuals (weak vtable, weak methods) loses its last virtual: consumers dispatch through the slot, so it is a public removal, not vague linkage"
+}

@@ -473,12 +473,17 @@ struct SymbolSide {
   bool vtable_slot; ///< a virtual member function: reached through the vtable
 };
 
-/// @brief A virtual member function occupies a vtable slot, so consumers reach
-///        it without ever linking its symbol; its ELF binding (usually weak
-///        for inline virtuals) says nothing about whether it is ABI.
-bool occupies_vtable_slot(const ir::function_decl *f) {
+/// @brief A virtual member function of one of the LIBRARY'S OWN classes
+///        occupies a vtable slot consumers dispatch through, so its ELF
+///        binding (usually weak for inline virtuals) says nothing about
+///        whether it is ABI. Virtuals of third-party class instantiations
+///        (std::_Sp_counted_ptr_inplace<...> from libstdc++) are the
+///        library's private copies and stay vague linkage.
+bool occupies_vtable_slot(const ir::function_decl *f, const ShippedHeaders &shipped) {
   const auto *m = ir::is_method_decl(f);
-  return m != nullptr && ir::get_member_function_is_virtual(*m);
+  if (m == nullptr || !ir::get_member_function_is_virtual(*m))
+    return false;
+  return declared_in_own_headers(decl_file(m), shipped);
 }
 
 template <class P>
@@ -499,7 +504,7 @@ bool compiler_generated(const std::string &linkage) {
 }
 
 template <class Map>
-void collect_functions(const Map &m, std::vector<SymbolSide> &out) {
+void collect_functions(const Map &m, const ShippedHeaders &shipped, std::vector<SymbolSide> &out) {
   for (const auto &[key, fn] : m) {
     const ir::function_decl *f = raw(fn);
     if (!f || compiler_generated(f->get_linkage_name()))
@@ -512,7 +517,7 @@ void collect_functions(const Map &m, std::vector<SymbolSide> &out) {
         .version = version_of(f->get_symbol()),
         .is_function = true,
         .weak = is_weak(f->get_symbol()),
-        .vtable_slot = occupies_vtable_slot(f)
+        .vtable_slot = occupies_vtable_slot(f, shipped)
       }
     );
   }
@@ -570,11 +575,14 @@ void record_event(
 /// @brief Splits symbol events into public/private/vague tallies and detects
 ///        the two symbol-level patterns the raw lists hide: signature changes
 ///        that the mangler turned into remove+add, and policy-driven renames.
-void classify_symbols(corpus_diff &d, const ports::CompareOptions &opt, SharedObjectDiff &out) {
+void classify_symbols(
+  corpus_diff &d, const ports::CompareOptions &opt, const ShippedHeaders &shipped,
+  SharedObjectDiff &out
+) {
   std::vector<SymbolSide> removed;
   std::vector<SymbolSide> added;
-  collect_functions(d.deleted_functions(), removed);
-  collect_functions(d.added_functions(), added);
+  collect_functions(d.deleted_functions(), shipped, removed);
+  collect_functions(d.added_functions(), shipped, added);
   collect_variables(d.deleted_variables(), removed);
   collect_variables(d.added_variables(), added);
 
@@ -666,7 +674,7 @@ void classify_symbols(corpus_diff &d, const ports::CompareOptions &opt, SharedOb
       .version = version_of(a->get_symbol()),
       .is_function = true,
       .weak = is_weak(a->get_symbol()),
-      .vtable_slot = occupies_vtable_slot(a.get())
+      .vtable_slot = occupies_vtable_slot(a.get(), shipped)
     };
     tally_for(out, side).add(ChangeKind::function_signature_changed);
     record_event(
@@ -846,7 +854,7 @@ Result<SharedObjectDiff> AbigailComparer::compare(
     (ev.third_party ? out.third_party_counts : out.public_counts).add(ev.kind, ev.count);
   }
   out.type_events = std::move(type_events);
-  classify_symbols(*d, opt, out);
+  classify_symbols(*d, opt, shipped, out);
   return out;
 }
 
