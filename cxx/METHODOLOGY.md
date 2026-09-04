@@ -281,7 +281,7 @@ compute nothing themselves.
 
 ## 5. Correctness gate
 
-`tests/calibration/cases/` holds 33 synthetic libraries, each with exactly
+`tests/calibration/cases/` holds 34 synthetic libraries, each with exactly
 one known change (or none). `ctest` compiles each with the system compiler
 and runs **the same** comparer and indexer adapters the corpus uses,
 asserting the expected `ChangeKind` and — new in this iteration — the facts
@@ -289,7 +289,8 @@ the lenient definition relies on: a field appended to a pointer-only struct
 is `by_pointer` + append-only; appended to a by-value struct it is
 `by_value`; an exported function absent from the header is `undeclared`; an
 explicit template instantiation that disappears is vague linkage; a removed
-virtual is a removed symbol, not a slot event.
+virtual is a removed symbol, not a slot event, and so is a removed *inline*
+virtual of the library's own class despite its weak binding.
 
 `tests/unit/domain_test.cpp` covers the taxonomy's invariants, the corrected
 mechanism map, the lenient rule, the release-level classifier, the cluster

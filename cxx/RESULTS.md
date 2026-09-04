@@ -194,7 +194,7 @@ ship at least one inlinable definition, 42 (5.7 %) change one, and 80
   almost all glibc and libstdc++ types). The filter matches by header
   basename with directory agreement under `/usr/include`; a library whose
   public types live in headers it does not ship would lose its own
-  events. The 33 synthetic calibration cases show no such loss, and
+  events. The 34 synthetic calibration cases show no such loss, and
   freetype (installed under `freetype2/`) and apparmor were checked by
   hand.
 * **Plugins.** The preview run counted dlopen'ed plugins (over 90 sane
