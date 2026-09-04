@@ -11,6 +11,9 @@ would have absorbed them.
   `src/adapters`, `src/app`, `src/cli`).
   - `cxx/RESULTS.md` — the results of the final run (739 transitions, 109
     libraries) with the threats to validity, blind spots and biases;
+  - `cxx/SONAME.md` — when the conventions require a SONAME bump and why
+    authors skip it after an ABI break, with the consequences for the
+    declared/silent split;
   - `cxx/METHODOLOGY.md` — how every number is measured and what it can support;
   - `cxx/REVIEW.md` — the referee-style review of the methodology and the
     corrections adopted (two break definitions, corrected mechanism map,

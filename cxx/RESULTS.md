@@ -81,7 +81,10 @@ enum growth; *evolution-or-inline* adds inline-body and macro churn.
 | evolution or inline | 27.7 % (205) | [22.1, 33.2] | 22.2 % (164) | [16.6, 27.7] |
 
 Of the 162 strict binary breaks, 8 were *declared* by a SONAME change and
-154 were silent (lenient: 6 declared, 100 silent). Fifteen transitions
+154 were silent (lenient: 6 declared, 100 silent). `SONAME.md` collects
+what the conventions require of a bump and the reasons authors give for
+not bumping; the lenient breaks are the ones every convention would have
+required a bump for. Fifteen transitions
 changed a SONAME; ten of them carried a strict break and five did not.
 Sixty-three of 109 libraries (57.8 %, CI [48.6, 67.0]) had at least one
 strict binary break within their ten releases; 51 (46.8 %) under the
