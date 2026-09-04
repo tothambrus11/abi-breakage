@@ -1,0 +1,601 @@
+{
+ "data": {
+  "bytes_extracted": 131420297,
+  "id": "libmwaw@0.3.22..0.3.23",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      166,
+      166
+     ],
+     "mangled_functions": [
+      166,
+      166
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libmwaw-0.3.so.3",
+     "libmwaw-0.3.so.3"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 57,
+     "field_added_to_struct": 1,
+     "member_offset_changed": 4,
+     "type_size_changed": 1
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/ClarisWksGraph.cxx",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class ClarisWksGraphInternal::SubDocument"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MWAWParserState>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<MWAWHeaderFooter, std::allocator<MWAWHeaderFooter> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<MWAWHeaderFooter, std::allocator<MWAWHeaderFooter> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MWAWSubDocument>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MWAWListener>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::shared_ptr<MWAWCell>, std::allocator<std::shared_ptr<MWAWCell> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::shared_ptr<MWAWCell>, std::allocator<std::shared_ptr<MWAWCell> > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MWAWCell>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MWAWFontConverter>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MWAWFontConverterInternal::State>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/MWAWFontConverter.cxx",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "class MWAWFontConverterInternal::State"
+     },
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": "./src/lib/MWAWFontConverter.cxx",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "class MWAWFontConverterInternal::State"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/MWAWFontConverter.cxx",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class MWAWFontConverterInternal::State"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MWAWFontManager>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MWAWFontManagerInternal::State>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MWAWGraphicListener>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/MWAWGraphicListener.hxx",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class MWAWGraphicListener"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MWAWGraphicListenerInternal::GraphicState>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<MWAWPageSpan, std::allocator<MWAWPageSpan> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<MWAWPageSpan, std::allocator<MWAWPageSpan> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::shared_ptr<MWAWSubDocument>, std::allocator<std::shared_ptr<MWAWSubDocument> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::shared_ptr<MWAWSubDocument>, std::allocator<std::shared_ptr<MWAWSubDocument> > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MWAWListManager>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MWAWPresentationListener>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/MWAWPresentationListener.hxx",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class MWAWPresentationListener"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MWAWPresentationListenerInternal::GraphicState>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MWAWSpreadsheetListener>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/MWAWSpreadsheetListener.hxx",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class MWAWSpreadsheetListener"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MWAWSpreadsheetListenerInternal::DocumentState>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MWAWTextListener>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/MWAWTextListener.hxx",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class MWAWTextListener"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MWAWTextListenerInternal::DocumentState>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<ClarisWksStyleManager>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<ClarisWksDatabase>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<ClarisWksGraph>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<ClarisWksPresentation>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<ClarisWksSpreadsheet>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<ClarisWksTable>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<ClarisWksText>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/HanMacWrdJGraph.cxx",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class HanMacWrdJGraphInternal::SubDocument"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/HanMacWrdJParser.hxx",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class HanMacWrdJParser"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<HanMacWrdJGraph>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<HanMacWrdJText>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/MWAWParser.hxx",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class MWAWTextParser"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/HanMacWrdKGraph.cxx",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class HanMacWrdKGraphInternal::SubDocument"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/HanMacWrdKParser.hxx",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class HanMacWrdKParser"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<HanMacWrdKGraph>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<HanMacWrdKText>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/MsWksGraph.cxx",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class MsWksGraphInternal::SubDocument"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MsWksDocumentInternal::State>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MWAWOLEParser>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MWAWOLEParserInternal::State>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MsWks4Zone>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MsWksDocument>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MsWksGraph>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MsWks3Text>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MsWks4Text>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<MsWksTable>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/BeagleWksDBParser.cxx",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct BeagleWksDBParserInternal::Cell"
+     }
+    ],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 348.552228205,
+  "source": "libmwaw",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "0.3.22",
+   "0.3.23"
+  ]
+ },
+ "generated_at": "2026-09-04T01:31:17Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

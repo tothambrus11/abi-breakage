@@ -1,0 +1,801 @@
+{
+ "data": {
+  "bytes_extracted": 60179303,
+  "id": "libwps@0.4.10..0.4.11",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      296,
+      296
+     ],
+     "mangled_functions": [
+      294,
+      296
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libwps-0.4.so.4",
+     "libwps-0.4.so.4"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&, const char*)",
+      "symbol": "_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEOS8_PKS5_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::_Destroy_aux<false>::__destroy<libwps::MultiplanParserInternal::Zone*>(libwps::MultiplanParserInternal::Zone*)",
+      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIPN6libwps23MultiplanParserInternal4ZoneEEEvT_S6_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char> > >(__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::forward_iterator_tag)",
+      "symbol": "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIN9__gnu_cxx17__normal_iteratorIPcS4_EEEEvT_SA_St20forward_iterator_tag",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method WPSGraphicStyle::Pattern* std::__uninitialized_copy<false>::__uninit_copy<const WPSGraphicStyle::Pattern*, WPSGraphicStyle::Pattern*>(const WPSGraphicStyle::Pattern*, WPSGraphicStyle::Pattern*)",
+      "symbol": "_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPKN15WPSGraphicStyle7PatternEPS3_EET0_T_S8_S7_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::deque<std::__detail::_StateSeq<std::__cxx11::regex_traits<char> >, std::allocator<std::__detail::_StateSeq<std::__cxx11::regex_traits<char> > > >::push_back(const std::deque<std::__detail::_StateSeq<std::__cxx11::regex_traits<char> >, std::allocator<std::__detail::_StateSeq<std::__cxx11::regex_traits<char> > > >::value_type&)",
+      "symbol": "_ZNSt5dequeINSt8__detail9_StateSeqINSt7__cxx1112regex_traitsIcEEEESaIS5_EE9push_backERKS5_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::string_type std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::str() const",
+      "symbol": "_ZNKSt7__cxx119sub_matchIN9__gnu_cxx17__normal_iteratorIPKcNS_12basic_stringIcSt11char_traitsIcESaIcEEEEEE3strEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__detail::_BracketMatcher<std::__cxx11::regex_traits<char>, true, false>::_M_ready()",
+      "symbol": "_ZNSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIcEELb1ELb0EE8_M_readyEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::__detail::_State<char>, std::allocator<std::__detail::_State<char> > >::emplace_back<std::__detail::_State<char> >(std::__detail::_State<char>&&)",
+      "symbol": "_ZNSt6vectorINSt8__detail6_StateIcEESaIS2_EE12emplace_backIJS2_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<unsigned char, std::allocator<unsigned char> >::emplace_back<unsigned char>(unsigned char&&)",
+      "symbol": "_ZNSt6vectorIhSaIhEE12emplace_backIJhEEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::__detail::_StateIdT std::__detail::_NFA<std::__cxx11::regex_traits<char> >::_M_insert_dummy()",
+      "symbol": "_ZNSt8__detail4_NFAINSt7__cxx1112regex_traitsIcEEE15_M_insert_dummyEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__detail::_NFA<std::__cxx11::regex_traits<char> >::_M_eliminate_dummy()",
+      "symbol": "_ZNSt8__detail4_NFAINSt7__cxx1112regex_traitsIcEEE18_M_eliminate_dummyEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__detail::_BracketMatcher<std::__cxx11::regex_traits<char>, false, false>::_M_ready()",
+      "symbol": "_ZNSt8__detail15_BracketMatcherINSt7__cxx1112regex_traitsIcEELb0ELb0EE8_M_readyEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::_Rb_tree<int, std::pair<int const, std::vector<int, std::allocator<int> > >, std::_Select1st<std::pair<int const, std::vector<int, std::allocator<int> > > >, std::less<int>, std::allocator<std::pair<int const, std::vector<int, std::allocator<int> > > > >::iterator std::_Rb_tree<int, std::pair<int const, std::vector<int, std::allocator<int> > >, std::_Select1st<std::pair<int const, std::vector<int, std::allocator<int> > > >, std::less<int>, std::allocator<std::pair<int const, std::vector<int, std::allocator<int> > > > >::_M_emplace_hint_unique<const std::piecewise_construct_t&, std::tuple<int const&>, std::tuple<> >(std::_Rb_tree<int, std::pair<int const, std::vector<int, std::allocator<int> > >, std::_Select1st<std::pair<int const, std::vector<int, std::allocator<int> > > >, std::less<int>, std::allocator<std::pair<int const, std::vector<int, std::allocator<int> > > > >::const_iterator, const std::piecewise_construct_t&, std::tuple<int const&>&&, std::tuple<>&&)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiSt6vectorIiSaIiEEESt10_Select1stIS5_ESt4lessIiESaIS5_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJRS1_EESG_IJEEEEESt17_Rb_tree_iteratorIS5_ESt23_Rb_tree_const_iteratorIS5_EDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Rb_tree<int, std::pair<int const, libwps::NumberingType>, std::_Select1st<std::pair<int const, libwps::NumberingType> >, std::less<int>, std::allocator<std::pair<int const, libwps::NumberingType> > >::_M_erase(std::_Rb_tree<int, std::pair<int const, libwps::NumberingType>, std::_Select1st<std::pair<int const, libwps::NumberingType> >, std::less<int>, std::allocator<std::pair<int const, libwps::NumberingType> > >::_Link_type)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiN6libwps13NumberingTypeEESt10_Select1stIS4_ESt4lessIiESaIS4_EE8_M_eraseEPSt13_Rb_tree_nodeIS4_E",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function double __gnu_cxx::__stoa<double>(double (const char*, char**)*, const char*, const char*, std::size_t*)",
+      "symbol": "_ZN9__gnu_cxx6__stoaIddcJEEET0_PFT_PKT1_PPS3_DpT2_EPKcS5_PmS9_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::__shared_count<(__gnu_cxx::_Lock_policy)2>::__shared_count<XYWriteParserInternal::SubDocument*>(XYWriteParserInternal::SubDocument*)",
+      "symbol": "_ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE2EEC2IPN21XYWriteParserInternal11SubDocumentEEET_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<int, std::pair<int const, libwps::NumberingType>, std::_Select1st<std::pair<int const, libwps::NumberingType> >, std::less<int>, std::allocator<std::pair<int const, libwps::NumberingType> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree<int, std::pair<int const, libwps::NumberingType>, std::_Select1st<std::pair<int const, libwps::NumberingType> >, std::less<int>, std::allocator<std::pair<int const, libwps::NumberingType> > >::const_iterator, const std::_Rb_tree<int, std::pair<int const, libwps::NumberingType>, std::_Select1st<std::pair<int const, libwps::NumberingType> >, std::less<int>, std::allocator<std::pair<int const, libwps::NumberingType> > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiN6libwps13NumberingTypeEESt10_Select1stIS4_ESt4lessIiESaIS4_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS4_ERS1_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method WKS4SpreadsheetInternal::Style* std::__uninitialized_copy<false>::__uninit_copy<const WKS4SpreadsheetInternal::Style*, WKS4SpreadsheetInternal::Style*>(const WKS4SpreadsheetInternal::Style*, WKS4SpreadsheetInternal::Style*)",
+      "symbol": "_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPKN23WKS4SpreadsheetInternal5StyleEPS3_EET0_T_S8_S7_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::emplace_back<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE12emplace_backIJS5_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<int, std::pair<int const, libwps::NumberingType>, std::_Select1st<std::pair<int const, libwps::NumberingType> >, std::less<int>, std::allocator<std::pair<int const, libwps::NumberingType> > >::_M_get_insert_unique_pos(const std::_Rb_tree<int, std::pair<int const, libwps::NumberingType>, std::_Select1st<std::pair<int const, libwps::NumberingType> >, std::less<int>, std::allocator<std::pair<int const, libwps::NumberingType> > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiN6libwps13NumberingTypeEESt10_Select1stIS4_ESt4lessIiESaIS4_EE24_M_get_insert_unique_posERS1_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::map<int, int, std::less<int>, std::allocator<std::pair<int const, int> > >::mapped_type& std::map<int, int, std::less<int>, std::allocator<std::pair<int const, int> > >::operator[](std::map<int, int, std::less<int>, std::allocator<std::pair<int const, int> > >::key_type&&)",
+      "symbol": "_ZNSt3mapIiiSt4lessIiESaISt4pairIKiiEEEixEOi",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::map<int, libwps::NumberingType, std::less<int>, std::allocator<std::pair<int const, libwps::NumberingType> > >::mapped_type& std::map<int, libwps::NumberingType, std::less<int>, std::allocator<std::pair<int const, libwps::NumberingType> > >::operator[](std::map<int, libwps::NumberingType, std::less<int>, std::allocator<std::pair<int const, libwps::NumberingType> > >::key_type&&)",
+      "symbol": "_ZNSt3mapIiN6libwps13NumberingTypeESt4lessIiESaISt4pairIKiS1_EEEixEOi",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<char, std::allocator<char> >::_M_realloc_insert<char>(std::vector<char, std::allocator<char> >::iterator, char&&)",
+      "symbol": "_ZNSt6vectorIcSaIcEE17_M_realloc_insertIJcEEEvN9__gnu_cxx17__normal_iteratorIPcS1_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<char, std::pair<char const, libwps::NumberingType>, std::_Select1st<std::pair<char const, libwps::NumberingType> >, std::less<char>, std::allocator<std::pair<char const, libwps::NumberingType> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree<char, std::pair<char const, libwps::NumberingType>, std::_Select1st<std::pair<char const, libwps::NumberingType> >, std::less<char>, std::allocator<std::pair<char const, libwps::NumberingType> > >::const_iterator, const std::_Rb_tree<char, std::pair<char const, libwps::NumberingType>, std::_Select1st<std::pair<char const, libwps::NumberingType> >, std::less<char>, std::allocator<std::pair<char const, libwps::NumberingType> > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeIcSt4pairIKcN6libwps13NumberingTypeEESt10_Select1stIS4_ESt4lessIcESaIS4_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS4_ERS1_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<unsigned char, std::allocator<unsigned char> >::_M_realloc_insert<unsigned char>(std::vector<unsigned char, std::allocator<unsigned char> >::iterator, unsigned char&&)",
+      "symbol": "_ZNSt6vectorIhSaIhEE17_M_realloc_insertIJhEEEvN9__gnu_cxx17__normal_iteratorIPhS1_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<char, std::pair<char const, libwps::NumberingType>, std::_Select1st<std::pair<char const, libwps::NumberingType> >, std::less<char>, std::allocator<std::pair<char const, libwps::NumberingType> > >::_M_get_insert_unique_pos(const std::_Rb_tree<char, std::pair<char const, libwps::NumberingType>, std::_Select1st<std::pair<char const, libwps::NumberingType> >, std::less<char>, std::allocator<std::pair<char const, libwps::NumberingType> > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeIcSt4pairIKcN6libwps13NumberingTypeEESt10_Select1stIS4_ESt4lessIcESaIS4_EE24_M_get_insert_unique_posERS1_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Rb_tree<char, std::pair<char const, libwps::NumberingType>, std::_Select1st<std::pair<char const, libwps::NumberingType> >, std::less<char>, std::allocator<std::pair<char const, libwps::NumberingType> > >::_M_erase(std::_Rb_tree<char, std::pair<char const, libwps::NumberingType>, std::_Select1st<std::pair<char const, libwps::NumberingType> >, std::less<char>, std::allocator<std::pair<char const, libwps::NumberingType> > >::_Link_type)",
+      "symbol": "_ZNSt8_Rb_treeIcSt4pairIKcN6libwps13NumberingTypeEESt10_Select1stIS4_ESt4lessIcESaIS4_EE8_M_eraseEPSt13_Rb_tree_nodeIS4_E",
+      "weak": true
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 49,
+     "field_removed_from_struct": 48
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/8/bits/regex_automaton.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__detail::_NFA<std::__cxx11::regex_traits<char> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<long unsigned int, std::allocator<long unsigned int> >"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct std::_Vector_base<long unsigned int, std::allocator<long unsigned int> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<long unsigned int, std::allocator<long unsigned int> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::__detail::_State<char>, std::allocator<std::__detail::_State<char> > >"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::__detail::_State<char>, std::allocator<std::__detail::_State<char> > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::__detail::_State<char>, std::allocator<std::__detail::_State<char> > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/stl_pair.h",
+      "exposure": "by_value",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/stl_pair.h",
+      "exposure": "by_value",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::pair<std::_Rb_tree_iterator<int>, bool>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/stl_pair.h",
+      "exposure": "by_value",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::pair<std::_Rb_tree_iterator<std::pair<int const, int> >, bool>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/stl_pair.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::pair<int const, int>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/stl_pair.h",
+      "exposure": "by_value",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::pair<std::_Rb_tree_iterator<unsigned int>, bool>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<const std::__detail::_NFA<std::__cxx11::regex_traits<char> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<char, std::allocator<char> >"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct std::_Vector_base<char, std::allocator<char> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<char, std::allocator<char> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::__cxx11::regex_traits<char>::_RegexMask, std::allocator<std::__cxx11::regex_traits<char>::_RegexMask> >"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::__cxx11::regex_traits<char>::_RegexMask, std::allocator<std::__cxx11::regex_traits<char>::_RegexMask> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::__cxx11::regex_traits<char>::_RegexMask, std::allocator<std::__cxx11::regex_traits<char>::_RegexMask> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/regex_scanner.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::__detail::_Scanner<char>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/stl_pair.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::pair<char, std::__detail::_ScannerBase::_TokenT>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/stl_pair.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::pair<char, char>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<std::__detail::_NFA<std::__cxx11::regex_traits<char> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/stl_deque.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::deque<std::__detail::_StateSeq<std::__cxx11::regex_traits<char> >, std::allocator<std::__detail::_StateSeq<std::__cxx11::regex_traits<char> > > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/stl_pair.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::pair<bool, char>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::pair<char, char>, std::allocator<std::pair<char, char> > >"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::pair<char, char>, std::allocator<std::pair<char, char> > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::pair<char, char>, std::allocator<std::pair<char, char> > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::pair<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int>, std::allocator<std::pair<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int> > >"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::pair<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int>, std::allocator<std::pair<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int> > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::pair<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int>, std::allocator<std::pair<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, int> > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > > >, std::allocator<std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > > > > >"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > > >, std::allocator<std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > > > > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > > >, std::allocator<std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > > > > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/regex.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::__cxx11::match_results<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<double, std::allocator<double> >"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct std::_Vector_base<double, std::allocator<double> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<double, std::allocator<double> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<float, std::allocator<float> >"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct std::_Vector_base<float, std::allocator<float> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<float, std::allocator<float> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<int, std::allocator<int> >"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct std::_Vector_base<int, std::allocator<int> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<int, std::allocator<int> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<long int, std::allocator<long int> >"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct std::_Vector_base<long int, std::allocator<long int> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<long int, std::allocator<long int> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/stl_pair.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::pair<long int, std::vector<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::__cxx11::sub_match<__gnu_cxx::__normal_iterator<char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/stl_pair.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<unsigned char, std::allocator<unsigned char> >"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<unsigned char, std::allocator<unsigned char> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<unsigned int, std::allocator<unsigned int> >"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/8/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_Vector_impl"
+     }
+    ],
+    "vague_linkage": {
+     "symbol_added": 15,
+     "symbol_removed": 12
+    }
+   }
+  ],
+  "seconds": 58.122156173,
+  "source": "libwps",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "0.4.10",
+   "0.4.11"
+  ]
+ },
+ "generated_at": "2026-09-04T02:16:23Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}
