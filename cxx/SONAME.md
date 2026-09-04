@@ -86,11 +86,14 @@ decide to use `major.minor` as the SOVERSION from 1.11 on. Debian bumped
 the SONAME on its own for 1.10 in the meantime.
 
 **Their stability promise is narrower than the SONAME implies.** Some
-projects promise compatibility only across major versions and expect
-consumers to be rebuilt on every minor release. srt kept `libsrt.so.1`
-across ABI-incompatible 1.4.x releases (the reporter's example is fields
-added to `CBytePerfMon`), and the request to bump per minor release was
-closed with a pull request rather than a policy change. This is what
+projects promise *source* compatibility within a major version (code
+written against 1.4 still compiles against 1.5) but make no *binary*
+promise across minor releases: a consumer built against 1.4 is expected to
+be recompiled for 1.5. The SONAME, tied to the major number, then
+advertises a binary compatibility the project never offered. srt kept
+`libsrt.so.1` across ABI-incompatible 1.4.x releases (the reporter's
+example is fields added to `CBytePerfMon`), and the request to bump per
+minor release was closed with a pull request rather than a policy change. This is what
 intel-gmmlib looks like in RESULTS.md §5.4: nine transitions, nine strict
 breaks, one SONAME. For such libraries the SONAME is a product name, not a
 compatibility statement.
