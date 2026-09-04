@@ -7,9 +7,11 @@
 // interrupted run resumes where it stopped.
 // =============================================================================
 
+#include <algorithm>
 #include <chrono>
 #include <cstdint>
 #include <filesystem>
+#include <format>
 #include <optional>
 #include <string>
 
@@ -39,6 +41,19 @@ struct Workspace {
     return pairs() / (std::string{id} + ".json");
   }
   [[nodiscard]] std::filesystem::path header_indexes() const { return root / "headers" / "index"; }
+  /// @brief The header index of one release in one language: written by the
+  ///        diff stage, read by the headers stage, so the name lives here.
+  [[nodiscard]] std::filesystem::path header_index(
+    const SourceName &src, const VersionString &ver, Language lang
+  ) const {
+    std::string v = ver.get();
+    std::ranges::replace(v, '/', '_');
+    std::ranges::replace(v, ':', '%');
+    return header_indexes() / std::format("{}@{}.{}.json", src, v, to_string(lang));
+  }
+  /// @brief Lock taken by every stage that materialises packages under
+  ///        scratch(): the diff stage wipes the tree when it starts.
+  [[nodiscard]] std::filesystem::path scratch_lock() const { return root / "scratch.lock"; }
   [[nodiscard]] std::filesystem::path header_pairs() const { return root / "headers" / "pairs"; }
   [[nodiscard]] std::filesystem::path header_pair(std::string_view id) const {
     return header_pairs() / (std::string{id} + ".json");
@@ -120,6 +135,11 @@ struct DiffOptions {
   /// Stop starting new pairs after this much wall-clock time; the rest are
   /// recorded as not attempted. 0 = no deadline.
   std::chrono::minutes deadline{0};
+  /// Before scheduling, discard the records of pairs that failed for lack of
+  /// memory or time (PairOutcome::failed_memory / failed_timeout) so they run
+  /// again under this invocation's caps. Budget skips and deadline deferrals
+  /// are kept: a larger cap does not change them.
+  bool retry_failed = false;
 };
 
 /// @brief Compares one PairJob in THIS process: materialises both releases,

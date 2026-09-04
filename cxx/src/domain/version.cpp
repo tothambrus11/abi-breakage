@@ -28,12 +28,10 @@ namespace {
   return std::isdigit(static_cast<unsigned char>(c)) != 0;
 }
 
-/// @brief Leading dotted numeric components ("1.2.3+dfsg" -> {1,2,3}); the
-///        digit count of the widest component is reported for snapshot
-///        detection. Empty if the string does not start with a digit.
+/// @brief Leading dotted numeric components ("1.2.3+dfsg" -> {1,2,3}).
+///        Empty if the string does not start with a digit.
 struct Numeric {
   std::vector<std::uint64_t> parts;
-  std::size_t widest = 0;
 };
 Numeric leading_numeric(std::string_view s) {
   if (s.starts_with('v') || s.starts_with('V'))
@@ -46,10 +44,10 @@ Numeric leading_numeric(std::string_view s) {
       ++i;
     std::uint64_t v = 0;
     const auto digits = s.substr(start, i - start);
-    // Overflow (very long date stamps) only matters for snapshot detection.
+    // Date stamps (>= 8 digits) were classified as snapshots by the caller
+    // before this runs, so overflow of a component cannot change a level.
     static_cast<void>(std::from_chars(digits.data(), digits.data() + digits.size(), v));
     n.parts.push_back(v);
-    n.widest = std::max(n.widest, digits.size());
     if (i < s.size() && s[i] == '.') {
       ++i;
     } else {
@@ -145,12 +143,23 @@ ReleaseLevel parse_release_level(std::string_view s) noexcept {
 
 ReleaseLevel release_level(std::string_view from, std::string_view to) noexcept {
   constexpr std::size_t date_digits = 8;
+  // A date stamp anywhere ("16-20260217", "6.5+20250125", "1.11.0+git20250114",
+  // "3.1-20210714") marks a snapshot whatever the leading numerics do.
+  const auto has_date_run = [](std::string_view s) {
+    std::size_t run = 0;
+    for (const char c : s) {
+      run = std::isdigit(static_cast<unsigned char>(c)) ? run + 1 : 0;
+      if (run >= date_digits)
+        return true;
+    }
+    return false;
+  };
+  if (has_date_run(from) || has_date_run(to))
+    return ReleaseLevel::snapshot;
   const auto a = leading_numeric(from);
   const auto b = leading_numeric(to);
   if (a.parts.empty() || b.parts.empty())
     return ReleaseLevel::other;
-  if (a.widest >= date_digits || b.widest >= date_digits)
-    return ReleaseLevel::snapshot;
   const auto n = std::max(a.parts.size(), b.parts.size());
   for (std::size_t i = 0; i < n; ++i) {
     const auto va = i < a.parts.size() ? a.parts[i] : 0;

@@ -23,6 +23,7 @@
 #include "adapters/posix/process.hpp"
 #include "adapters/snapshot/source.hpp"
 #include "app/stages.hpp"
+#include "core/clock.hpp"
 #include "core/error.hpp"
 
 namespace {
@@ -110,7 +111,7 @@ std::optional<Args> parse(int argc, const char *const *argv) {
 }
 
 void log_line(std::string_view msg) {
-  std::println(stderr, "[{}] {}", fsstore::utc_now_iso8601().substr(11, 8), msg);
+  std::println(stderr, "[{}] {}", utc_now_iso8601().substr(11, 8), msg);
 }
 
 Result<void> run(const Args &a) {
@@ -159,17 +160,20 @@ Result<void> run(const Args &a) {
   const auto do_diff = [&] -> Result<void> {
     DiffOptions o;
     ABISTUDY_TRY(o.workers, a.uint("workers", o.workers));
-    ABISTUDY_TRY(auto secs, a.uint("pair-timeout", 1200));
+    // Defaults come from DiffOptions itself: one source of truth for the CLI.
+    const auto u32 = [](auto v) { return static_cast<std::uint32_t>(v); };
+    ABISTUDY_TRY(auto secs, a.uint("pair-timeout", u32(o.pair_timeout.count())));
     o.pair_timeout = std::chrono::seconds(secs);
     o.index_headers = !a.has("no-headers");
     o.trace = a.has("trace");
-    ABISTUDY_TRY(auto mb, a.uint("max-extracted-mb", 2500));
+    o.retry_failed = a.has("retry-failed");
+    ABISTUDY_TRY(auto mb, a.uint("max-extracted-mb", u32(o.max_extracted_mb)));
     o.max_extracted_mb = mb;
-    ABISTUDY_TRY(auto cm, a.uint("child-memory-mb", 6000));
+    ABISTUDY_TRY(auto cm, a.uint("child-memory-mb", u32(o.child_memory_mb)));
     o.child_memory_mb = cm;
-    ABISTUDY_TRY(auto big, a.uint("big-pair-mb", 40));
+    ABISTUDY_TRY(auto big, a.uint("big-pair-mb", u32(o.big_pair_download_mb)));
     o.big_pair_download_mb = big;
-    ABISTUDY_TRY(auto dl, a.uint("deadline-minutes", 0));
+    ABISTUDY_TRY(auto dl, a.uint("deadline-minutes", u32(o.deadline.count())));
     o.deadline = std::chrono::minutes(dl);
     ABISTUDY_TRY(o.header_max_files, a.uint("max-files", o.header_max_files));
     if (a.has("one")) {

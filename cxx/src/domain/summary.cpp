@@ -304,6 +304,7 @@ Json summarize(const SummaryInputs &in, const SummaryOptions &o) {
     {"mass_rename_excluded", mass.size()},
     {"mass_rename_libraries", Json(libraries_of(mass))},
     {"errored", in.errored},
+    {"no_linkable_object", in.no_linkable_object},
     {"not_attempted", in.not_attempted},
     {"debug_info_incomplete",
      where(good, [](const Transition &t) { return !t.debug_info_complete; }).size()},
@@ -452,8 +453,9 @@ std::string render_text(const Json &s) {
     c.at("mass_rename_libraries").dump()
   );
   o << std::format(
-    "  excluded: pair failed / no objects  : {}   not attempted (budget/deadline): {}\n",
-    c.at("errored").get<int>(), c.at("not_attempted").get<int>()
+    "  excluded: pair failed               : {}   no linkable object: {}   not attempted "
+    "(budget/deadline): {}\n",
+    c.at("errored").get<int>(), c.value("no_linkable_object", 0), c.at("not_attempted").get<int>()
   );
   o << std::format(
     "  debug info missing on a side        : {}  (symbol-only; excluded from layout/enum rows)\n",

@@ -1,7 +1,7 @@
 #pragma once
 // =============================================================================
 // ArtifactStore adapter: JSON envelopes on the local filesystem, written
-// atomically. Also the small JSON/time helpers other adapters share.
+// atomically.
 // =============================================================================
 
 #include <filesystem>
@@ -11,13 +11,6 @@
 #include "ports/artifact_store.hpp"
 
 namespace abistudy::fsstore {
-
-/// @brief Parses a JSON document from text.
-/// @errors parse if the text is not valid JSON.
-[[nodiscard]] Result<Json> parse_json(std::string_view text, std::string_view what);
-
-/// @brief Current UTC time as ISO-8601 ("2026-09-02T14:03:11Z").
-[[nodiscard]] std::string utc_now_iso8601();
 
 class FsArtifactStore final : public ports::ArtifactStore {
 public:
@@ -32,6 +25,7 @@ public:
   [[nodiscard]] Result<void> save(
     const std::filesystem::path &p, Schema schema, const Json &payload
   ) const override;
+  [[nodiscard]] Result<void> remove(const std::filesystem::path &p) const override;
 
 private:
   ports::Provenance provenance_;

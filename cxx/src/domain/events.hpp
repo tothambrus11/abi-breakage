@@ -9,6 +9,7 @@
 
 #include <cstdint>
 #include <optional>
+#include <span>
 #include <string>
 #include <vector>
 
@@ -63,7 +64,8 @@ struct SymbolEvent {
   SymbolName symbol;
   std::string pretty; ///< Demangled signature as the reader prints it.
   std::optional<VersionNode> version;
-  bool weak = false; ///< STB_WEAK binding.
+  bool weak = false;        ///< STB_WEAK binding.
+  bool vtable_slot = false; ///< Virtual member function: ABI through its vtable slot, never vague.
 };
 
 /// @brief Coverage facts a reviewer needs to trust the counts.
@@ -106,11 +108,21 @@ struct SharedObjectDiff {
   Coverage coverage;
   std::vector<TypeEvent> type_events;     ///< Every counted type event (public + third party).
   std::vector<SymbolEvent> symbol_events; ///< Every counted public/private symbol event.
+  bool symbol_events_truncated = false;   ///< The event cap was hit: the list is a sample.
 };
 
 /// @brief Is a weak symbol of this name one every client emits itself?
 ///        Vague linkage exists only for C++ (templates, inline functions).
+///        Virtual member functions are the exception and carry
+///        SymbolEvent::vtable_slot; callers check that first.
 [[nodiscard]] bool is_vague_linkage(std::string_view linkage_name, bool weak) noexcept;
+
+/// @brief The language of a set of compared objects: C++ if any object is
+///        C++, else the first decided language, else `fallback`. The one
+///        rule every stage uses, so header indexes and transitions agree.
+[[nodiscard]] Language dominant_language(
+  std::span<const SharedObjectDiff> objects, Language fallback = Language::cxx
+) noexcept;
 
 /// @brief The lenient break definition for a layout event: a change to a type
 ///        clients never hold by value, that only appends, breaks no compiled

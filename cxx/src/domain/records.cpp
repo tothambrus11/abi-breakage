@@ -4,14 +4,6 @@
 
 namespace abistudy {
 
-Language language_from_string(std::string_view s) noexcept {
-  if (s == "c")
-    return Language::c;
-  if (s == "cxx")
-    return Language::cxx;
-  return Language::unknown;
-}
-
 std::string PairJob::id() const {
   return std::format("{}@{}..{}", source, v1.upstream, v2.upstream);
 }
@@ -120,7 +112,8 @@ void to_json(Json &j, const PairResult &x) {
     {"unpaired", {x.unpaired_1, x.unpaired_2}},
     {"object_errors", x.object_errors},
     {"seconds", x.seconds},
-    {"bytes_extracted", x.bytes_extracted}
+    {"bytes_extracted", x.bytes_extracted},
+    {"excluded_objects", x.excluded_objects}
   };
   if (x.error)
     j["error"] = *x.error;
@@ -137,13 +130,31 @@ PairResult pair_result_from_json(const Json &j) {
     .object_errors = j.value("object_errors", std::vector<std::string>{}),
     .error = std::nullopt,
     .seconds = j.value("seconds", 0.0),
-    .bytes_extracted = j.value("bytes_extracted", std::uint64_t{0})
+    .bytes_extracted = j.value("bytes_extracted", std::uint64_t{0}),
+    .excluded_objects = j.value("excluded_objects", std::vector<std::string>{})
   };
   for (const auto &o : j.at("objects"))
     r.objects.push_back(shared_object_diff_from_json(o));
   if (j.contains("error"))
     r.error = j.at("error").get<std::string>();
   return r;
+}
+
+PairOutcome pair_outcome(const PairResult &r) noexcept {
+  if (!r.objects.empty())
+    return PairOutcome::compared;
+  if (!r.error)
+    return PairOutcome::no_linkable_object;
+  const std::string_view e = *r.error;
+  if (e.starts_with(pair_error_skipped))
+    return PairOutcome::skipped_budget;
+  if (e.starts_with(pair_error_not_attempted))
+    return PairOutcome::not_attempted;
+  if (e.starts_with(pair_error_timeout))
+    return PairOutcome::failed_timeout;
+  if (e.starts_with(pair_error_killed) || e.contains("bad_alloc"))
+    return PairOutcome::failed_memory;
+  return PairOutcome::failed;
 }
 
 // ---- HeaderResult ---------------------------------------------------------------

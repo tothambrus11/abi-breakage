@@ -8,6 +8,7 @@
 #include <system_error>
 
 #include <fcntl.h>
+#include <sys/file.h>
 #include <unistd.h>
 
 #include "core/contracts.hpp"
@@ -129,6 +130,39 @@ TempDir &TempDir::operator=(TempDir &&o) noexcept {
 TempDir::~TempDir() {
   if (!path_.empty())
     remove_all_noexcept(path_);
+}
+
+Result<LockFile> LockFile::acquire(const stdfs::path &p) {
+  if (p.has_parent_path())
+    ABISTUDY_TRY_VOID(ensure_dir(p.parent_path()));
+  const int fd = ::open(p.c_str(), O_RDWR | O_CREAT | O_CLOEXEC, 0644); // NOLINT(*-vararg)
+  if (fd < 0)
+    return fail(ErrorCode::io, "cannot open lock file '{}': {}", p.string(), errno_text(errno));
+  if (::flock(fd, LOCK_EX | LOCK_NB) != 0) {
+    const int err = errno;
+    ::close(fd);
+    if (err == EWOULDBLOCK)
+      return fail(
+        ErrorCode::io, "'{}' is locked: another abistudy stage owns this scratch tree", p.string()
+      );
+    return fail(ErrorCode::io, "cannot lock '{}': {}", p.string(), errno_text(err));
+  }
+  return LockFile{fd};
+}
+
+LockFile &LockFile::operator=(LockFile &&o) noexcept {
+  if (this != &o) {
+    if (fd_ >= 0)
+      ::close(fd_);
+    fd_ = o.fd_;
+    o.fd_ = -1;
+  }
+  return *this;
+}
+
+LockFile::~LockFile() {
+  if (fd_ >= 0)
+    ::close(fd_); // releases the flock
 }
 
 } // namespace abistudy::fs

@@ -22,10 +22,20 @@ Result<std::string> run_analyze(const Workspace &ws, const Services &sv) {
       sv.log(std::format("skip {}: {}", p.filename().string(), pr.error().message));
       continue;
     }
-    if (pr->error || pr->objects.empty()) {
-      const bool skipped =
-        pr->error && (pr->error->starts_with("skipped") || pr->error->starts_with("not attempted"));
-      (skipped ? in.not_attempted : in.errored)++;
+    switch (pair_outcome(*pr)) {
+    case PairOutcome::compared:
+      break;
+    case PairOutcome::no_linkable_object:
+      ++in.no_linkable_object;
+      continue;
+    case PairOutcome::skipped_budget:
+    case PairOutcome::not_attempted:
+      ++in.not_attempted;
+      continue;
+    case PairOutcome::failed_memory:
+    case PairOutcome::failed_timeout:
+    case PairOutcome::failed:
+      ++in.errored;
       continue;
     }
     in.objects += static_cast<std::uint32_t>(pr->objects.size());

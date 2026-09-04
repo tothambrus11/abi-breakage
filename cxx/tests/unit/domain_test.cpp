@@ -82,6 +82,45 @@ void symbols() {
   CHECK_EQ(digits_blind("u_strlen_72"), "u_strlen_#");
   CHECK_EQ(digits_blind("abc"), "abc");
 
+  // Pair outcomes are classified from the record, in one place.
+  {
+    PairResult r{};
+    CHECK(pair_outcome(r) == PairOutcome::no_linkable_object);
+    r.error = std::string{pair_error_skipped} + "900 MB of packages exceeds ...";
+    CHECK(pair_outcome(r) == PairOutcome::skipped_budget);
+    r.error = std::string{pair_error_not_attempted} + "--deadline-minutes 270 reached";
+    CHECK(pair_outcome(r) == PairOutcome::not_attempted);
+    r.error = std::string{pair_error_timeout} + "1200s";
+    CHECK(pair_outcome(r) == PairOutcome::failed_timeout);
+    r.error = std::string{pair_error_killed} + " twice under --child-memory-mb 6000";
+    CHECK(pair_outcome(r) == PairOutcome::failed_memory);
+    r.error = "no object could be compared: libz3: reading corpus: std::bad_alloc";
+    CHECK(pair_outcome(r) == PairOutcome::failed_memory);
+    r.error = std::string{pair_error_exit} + "1: reader failed";
+    CHECK(pair_outcome(r) == PairOutcome::failed);
+    CHECK(retryable_with_more_resources(PairOutcome::failed_memory));
+    CHECK(retryable_with_more_resources(PairOutcome::failed_timeout));
+    CHECK(!retryable_with_more_resources(PairOutcome::skipped_budget));
+    CHECK(!retryable_with_more_resources(PairOutcome::failed));
+    r.objects.push_back(SharedObjectDiff{});
+    CHECK(pair_outcome(r) == PairOutcome::compared); // objects win over any error text
+  }
+
+  // One language rule for every stage.
+  {
+    std::vector<SharedObjectDiff> objs;
+    CHECK(dominant_language(objs) == Language::cxx);
+    CHECK(dominant_language(objs, Language::c) == Language::c);
+    objs.push_back(SharedObjectDiff{});
+    objs.back().language = Language::unknown;
+    objs.push_back(SharedObjectDiff{});
+    objs.back().language = Language::c;
+    CHECK(dominant_language(objs) == Language::c);
+    objs.push_back(SharedObjectDiff{});
+    objs.back().language = Language::cxx;
+    CHECK(dominant_language(objs) == Language::cxx);
+  }
+
   // Linkable library directories vs plugin directories.
   CHECK(is_linkable_library_dir("usr/lib/x86_64-linux-gnu"));
   CHECK(is_linkable_library_dir("usr/lib/x86_64-linux-gnu/"));
@@ -159,7 +198,13 @@ void release_levels() {
   CHECK(release_level("1.2.3", "1.3.0") == ReleaseLevel::minor);
   CHECK(release_level("1.2.3", "2.0") == ReleaseLevel::major);
   CHECK(release_level("1.2", "1.2.1") == ReleaseLevel::patch);
-  CHECK(release_level("16-20260322", "16-20260423") == ReleaseLevel::other); // '-' stops parsing
+  CHECK(release_level("16-20260322", "16-20260423") == ReleaseLevel::snapshot);
+  CHECK(release_level("6.5", "6.5+20250125") == ReleaseLevel::snapshot);
+  CHECK(release_level("1.11.0", "1.11.0+git20250114") == ReleaseLevel::snapshot);
+  CHECK(
+    release_level("2.1.27+dfsg", "2.1.27+dfsg2") == ReleaseLevel::other
+  );                                                           // repack, not a release
+  CHECK(release_level("1.2", "1.2.0") == ReleaseLevel::other); // same numerics
   CHECK(release_level("20240101", "20240201") == ReleaseLevel::snapshot);
   CHECK(release_level("5.6.1", "5.6.1+really5.4.5") == ReleaseLevel::other);
   CHECK(release_level("v2.0", "v2.1") == ReleaseLevel::minor);
@@ -363,7 +408,15 @@ void header_model() {
   CHECK_EQ(d.macro_value_changed, 2U);
   CHECK_EQ(d.macro_value_changed_nonversion, 1U);
   CHECK(looks_like_version_macro("x.h::X_VERSION"));
+  CHECK(looks_like_version_macro("x.h::LIB_VERSION_STR"));
+  CHECK(looks_like_version_macro("x.h::FOO_GIT_HASH"));
+  CHECK(looks_like_version_macro("x.h::BUILD_DATE"));
+  CHECK(looks_like_version_macro("x.h::foo_minor"));
   CHECK(!looks_like_version_macro("x.h::LIMIT"));
+  CHECK(!looks_like_version_macro("x.h::MAX_DIGITS")); // contains GIT
+  CHECK(!looks_like_version_macro("x.h::MINORBITS"));  // contains MINOR
+  CHECK(!looks_like_version_macro("x.h::HASH_TABLE_SIZE"));
+  CHECK(!looks_like_version_macro("x.h::BUILD_BUG_ON_ZERO"));
 
   // Declared-symbol join: undecidable when the index knows nothing or parsed poorly.
   CHECK(symbol_declared(a, "f") == Declared::unknown);

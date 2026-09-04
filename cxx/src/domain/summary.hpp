@@ -17,10 +17,11 @@
 namespace abistudy {
 
 struct SummaryInputs {
-  std::vector<Transition> transitions; ///< Every successfully compared pair.
-  std::uint32_t errored = 0;           ///< Pairs with an error and no objects.
-  std::uint32_t not_attempted = 0;     ///< Pairs skipped by budget or deadline.
-  std::uint32_t objects = 0;           ///< Shared objects compared.
+  std::vector<Transition> transitions;  ///< Every successfully compared pair.
+  std::uint32_t errored = 0;            ///< Pairs that failed (reader, memory, timeout, spawn).
+  std::uint32_t no_linkable_object = 0; ///< Pairs whose runtime packages ship no lib*.so to link.
+  std::uint32_t not_attempted = 0;      ///< Pairs skipped by budget or deadline.
+  std::uint32_t objects = 0;            ///< Shared objects compared.
 };
 
 struct SummaryOptions {

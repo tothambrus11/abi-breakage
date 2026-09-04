@@ -134,11 +134,16 @@ def main(work):
 
     n_all = sum(trans_by_lib.values())
     rate = total / n_all if n_all else 0
-    worst = max(
-        ((lib, abs((total - breaking_by_lib[lib]) / (n_all - trans_by_lib[lib]) - rate)) for lib in trans_by_lib),
-        key=lambda kv: kv[1],
-    )
-    print(f"  leave-one-library-out: strict binary rate {100 * rate:.1f}%, largest shift {100 * worst[1]:.2f} points ({worst[0]})")
+    shifts = [
+        (lib, abs((total - breaking_by_lib[lib]) / (n_all - trans_by_lib[lib]) - rate))
+        for lib in trans_by_lib
+        if n_all > trans_by_lib[lib]
+    ]
+    if shifts:
+        worst = max(shifts, key=lambda kv: kv[1])
+        print(f"  leave-one-library-out: strict binary rate {100 * rate:.1f}%, largest shift {100 * worst[1]:.2f} points ({worst[0]})")
+    else:
+        print("  leave-one-library-out: fewer than two libraries, not computed")
 
     print("\nSONAME CHANGES vs strict binary breaks")
     tab = Counter()
@@ -153,7 +158,11 @@ def main(work):
     print("\nEVIDENCE QUALITY")
     dwarf_missing = [pid for pid, d in pairs.items() if d["objects"] and not all(all(o["coverage"]["debug_info_found"]) for o in d["objects"])]
     print(f"  DWARF missing on a side: {len(dwarf_missing)}  {dwarf_missing[:12]}")
-    poor = [pid for pid, h in heads.items() if any(c["parsed"] == 0 or c["with_fatal_error"] * 2 > max(c["parsed"], 1) for c in h["coverage"])]
+    # Same predicate as ParseCoverage::poor() in domain/header_model.hpp.
+    def poor_coverage(c):
+        return c["parsed"] != 0 and max(c.get("with_errors", 0), c["with_fatal_error"]) * 2 > c["parsed"]
+
+    poor = [pid for pid, h in heads.items() if any(poor_coverage(c) for c in h["coverage"])]
     print(f"  poor header parse coverage: {len(poor)}  by source: {dict(Counter(p.split('@')[0] for p in poor).most_common(12))}")
     unpaired = [(pid, d["unpaired"]) for pid, d in pairs.items() if any(d["unpaired"])]
     print(f"  transitions with unpaired shared objects: {len(unpaired)}")

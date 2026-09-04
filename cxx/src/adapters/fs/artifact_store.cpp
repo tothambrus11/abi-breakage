@@ -4,22 +4,11 @@
 #include <chrono>
 #include <format>
 
+#include "core/clock.hpp"
 #include "core/fs.hpp"
+#include "core/json.hpp"
 
 namespace abistudy::fsstore {
-
-Result<Json> parse_json(std::string_view text, std::string_view what) {
-  try {
-    return Json::parse(text);
-  } catch (const Json::exception &e) {
-    return fail(ErrorCode::parse, "{}: invalid JSON: {}", what, e.what());
-  }
-}
-
-std::string utc_now_iso8601() {
-  const auto now = std::chrono::floor<std::chrono::seconds>(std::chrono::system_clock::now());
-  return std::format("{:%FT%TZ}", now);
-}
 
 bool FsArtifactStore::exists(const std::filesystem::path &p) const {
   std::error_code ec;
@@ -70,6 +59,14 @@ Result<void> FsArtifactStore::save(
     {"data", payload},
   };
   return fs::write_file_atomic(p, env.dump(1));
+}
+
+Result<void> FsArtifactStore::remove(const std::filesystem::path &p) const {
+  std::error_code ec;
+  std::filesystem::remove(p, ec);
+  if (ec)
+    return fail(ErrorCode::io, "cannot remove '{}': {}", p.string(), ec.message());
+  return {};
 }
 
 } // namespace abistudy::fsstore

@@ -1,20 +1,50 @@
 #include "domain/header_model.hpp"
 
-#include <regex>
+#include <cctype>
+#include <set>
+#include <string>
+#include <utility>
+#include <vector>
 
 #include "core/contracts.hpp"
 
 namespace abistudy {
 
 bool looks_like_version_macro(std::string_view key) {
-  static const std::regex stamp(
-    "(VERSION|_DATE|BUILD|REVISION|RELEASE|PATCHLEVEL|COMMIT|GIT|SVN|HASH|_YEAR|_MONTH|TIMESTAMP|"
-    "COPYRIGHT|MAJOR|MINOR|MICRO|_NUM$|_STR$)",
-    std::regex::icase
-  );
+  // Whole-token matching on the '_'-separated name: MAX_DIGITS, MINORBITS and
+  // HASH_TABLE_SIZE are not stamps, FOO_GIT_HASH, LIB_VERSION_STR and
+  // BUILD_DATE are.
+  static const std::set<std::string_view, std::less<>> stamp_tokens{
+    "VERSION",   "VER",   "DATE",  "REVISION", "RELEASE",   "PATCHLEVEL",
+    "COMMIT",    "GIT",   "SVN",   "YEAR",     "MONTH",     "TIMESTAMP",
+    "COPYRIGHT", "MAJOR", "MINOR", "MICRO",    "BUILDDATE", "BUILDNUMBER"
+  };
+  static const std::set<std::string_view, std::less<>> build_qualifiers{
+    "DATE", "TIME", "NUMBER", "NUM", "ID", "STAMP", "TIMESTAMP"
+  };
   const auto sep = key.rfind("::");
   const auto name = key.substr(sep == std::string_view::npos ? 0 : sep + 2);
-  return std::regex_search(name.begin(), name.end(), stamp);
+  std::vector<std::string> tokens;
+  std::string cur;
+  for (const char c : name) {
+    if (c == '_' || c == '.') {
+      if (!cur.empty())
+        tokens.push_back(std::exchange(cur, {}));
+    } else {
+      cur.push_back(static_cast<char>(std::toupper(static_cast<unsigned char>(c))));
+    }
+  }
+  if (!cur.empty())
+    tokens.push_back(cur);
+  bool build = false;
+  bool build_qualified = false;
+  for (const auto &t : tokens) {
+    if (stamp_tokens.contains(t))
+      return true;
+    build |= t == "BUILD";
+    build_qualified |= build_qualifiers.contains(t);
+  }
+  return build && build_qualified; // BUILD_DATE, BUILD_NUMBER, BUILD_ID
 }
 
 HeaderDiff compare_headers(const HeaderIndex &a, const HeaderIndex &b) {
@@ -113,14 +143,7 @@ void to_json(nlohmann::json &j, const HeaderIndex &x) {
   };
 }
 void from_json(const nlohmann::json &j, HeaderIndex &x) {
-  const auto l = j.at("language").get<std::string>();
-  if (l == "c") {
-    x.language = Language::c;
-  } else if (l == "cxx") {
-    x.language = Language::cxx;
-  } else {
-    x.language = Language::unknown;
-  }
+  x.language = language_from_string(j.at("language").get<std::string>());
   x.definitions = j.at("definitions").get<std::unordered_map<std::string, Definition>>();
   x.macros = j.at("macros").get<std::map<std::string, std::string>>();
   x.declared_symbols =

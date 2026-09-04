@@ -62,6 +62,10 @@ public:
     const std::filesystem::path &p, Schema schema, const Json &payload
   ) const = 0;
 
+  /// @brief Deletes an artefact; a missing file is not an error.
+  /// @errors io.
+  [[nodiscard]] virtual Result<void> remove(const std::filesystem::path &p) const = 0;
+
   /// @brief Typed convenience over load: converts the payload to T.
   /// @errors As load, plus parse if the payload does not convert to T.
   template <class T>

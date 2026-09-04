@@ -1,18 +1,14 @@
-#include <algorithm>
 #include <format>
+#include <optional>
+#include <utility>
 
 #include "app/materialize.hpp"
 #include "app/stages.hpp"
+#include "core/fs.hpp"
+#include "domain/events.hpp"
 
 namespace abistudy::app {
 namespace {
-
-std::string index_stem(const SourceName &s, const VersionString &v, Language l) {
-  std::string ver = v.get();
-  std::ranges::replace(ver, '/', '_');
-  std::ranges::replace(ver, ':', '%');
-  return std::format("{}@{}.{}", s, ver, to_string(l));
-}
 
 /// @brief Loads a release's header index, building it from a fresh download
 ///        of the -dev packages if the diff stage did not leave one behind.
@@ -20,7 +16,7 @@ Result<HeaderIndex> get_index(
   const Workspace &ws, const Services &sv, const SourceName &src, const Release &rel, Language lang,
   std::uint32_t max_files
 ) {
-  const auto p = ws.header_indexes() / (index_stem(src, rel.source_version, lang) + ".json");
+  const auto p = ws.header_index(src, rel.source_version, lang);
   if (sv.store.exists(p)) {
     auto cached = sv.store.load_as<HeaderIndex>(p, schema_header_index);
     if (cached || cached.error().code != ErrorCode::schema)
@@ -52,29 +48,17 @@ Result<HeaderIndex> get_index(
   return idx;
 }
 
-/// @brief Language of a pair as decided by the diff stage; C++ if unknown.
-Language pair_language(const PairResult *pr) {
-  if (!pr)
-    return Language::cxx;
-  Language l = Language::unknown;
-  for (const auto &o : pr->objects) {
-    if (o.language == Language::cxx)
-      return Language::cxx;
-    if (l == Language::unknown)
-      l = o.language;
-  }
-  return l == Language::unknown ? Language::cxx : l;
-}
-
 /// @brief The declared-symbol join (REVIEW.md §1.4): removed and re-signed
-///        symbols against the old release's headers, added ones against the new.
-void join_symbols(
-  const PairResult &pr, const HeaderIndex &old_idx, const HeaderIndex &new_idx, HeaderResult &hr
-) {
+///        symbols against the OLD release's headers. Only those two kinds are
+///        joined, so a symbol that moves between objects (removed from one,
+///        added to another) is classified against the old headers exactly
+///        once and never against the new ones.
+void join_symbols(const PairResult &pr, const HeaderIndex &old_idx, HeaderResult &hr) {
   for (const auto &o : pr.objects) {
     for (const auto &e : o.symbol_events) {
-      const auto &idx = e.kind == ChangeKind::symbol_added ? new_idx : old_idx;
-      hr.symbol_declared.emplace(e.symbol.get(), symbol_declared(idx, e.symbol.get()));
+      if (e.kind != ChangeKind::symbol_removed && e.kind != ChangeKind::function_signature_changed)
+        continue;
+      hr.symbol_declared.emplace(e.symbol.get(), symbol_declared(old_idx, e.symbol.get()));
     }
   }
 }
@@ -83,15 +67,20 @@ void join_symbols(
 
 Result<void> run_headers(const Workspace &ws, const Services &sv, const HeadersOptions &o) {
   ABISTUDY_TRY_VOID(ensure_workspace(ws, sv));
+  // Materialises -dev packages under scratch: never while a diff wipes it.
+  ABISTUDY_TRY(const fs::LockFile lock, fs::LockFile::acquire(ws.scratch_lock()));
   ABISTUDY_TRY(Plan plan, sv.store.load_as<Plan>(ws.plan(), schema_plan));
   std::size_t n = 0;
+  // Jobs of one library are consecutive and share a release: the newer index
+  // of job k is the older index of job k+1, so it is kept for one step.
+  std::optional<std::pair<std::string, HeaderIndex>> previous; // (index path, index)
   for (const auto &job : plan.jobs) {
     ++n;
     if (sv.store.exists(ws.header_pair(job.id())))
       continue;
     auto pair = sv.store.load_as<PairResult>(ws.pair(job.id()), schema_pair);
     const PairResult *pr = pair ? &*pair : nullptr;
-    const Language lang = pair_language(pr);
+    const Language lang = pr ? dominant_language(pr->objects, Language::cxx) : Language::cxx;
     HeaderResult hr{
       .id = job.id(),
       .source = job.source,
@@ -104,7 +93,12 @@ Result<void> run_headers(const Workspace &ws, const Services &sv, const HeadersO
       .error = std::nullopt,
       .symbol_declared = {}
     };
-    auto a = get_index(ws, sv, job.source, job.v1, lang, o.max_files);
+    const auto path_1 = ws.header_index(job.source, job.v1.source_version, lang).string();
+    const auto path_2 = ws.header_index(job.source, job.v2.source_version, lang).string();
+    Result<HeaderIndex> a = previous && previous->first == path_1
+                              ? Result<HeaderIndex>{std::move(previous->second)}
+                              : get_index(ws, sv, job.source, job.v1, lang, o.max_files);
+    previous.reset();
     auto b = a ? get_index(ws, sv, job.source, job.v2, lang, o.max_files)
                : Result<HeaderIndex>{std::unexpected{a.error()}};
     if (!a || !b) {
@@ -114,7 +108,8 @@ Result<void> run_headers(const Workspace &ws, const Services &sv, const HeadersO
       hr.coverage_1 = a->coverage;
       hr.coverage_2 = b->coverage;
       if (pr)
-        join_symbols(*pr, *a, *b, hr);
+        join_symbols(*pr, *a, hr);
+      previous.emplace(path_2, std::move(*b));
     }
     ABISTUDY_TRY_VOID(sv.store.save(ws.header_pair(hr.id), schema_header_pair, hr));
     if (n % 25 == 0 || hr.error) {

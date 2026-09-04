@@ -19,30 +19,24 @@ const std::vector<VersionString> *versions_of(const Release &r, const BinaryName
   return nullptr;
 }
 
-/// @brief Downloads one binary package (first version that has an amd64/all
-///        file) and extracts it under `dest`. Returns false if no file exists.
+/// @brief Downloads one binary package (the version first_amd64 picks) and
+///        extracts it under `dest`. Returns false if no file exists.
 Result<bool> fetch_one(
   const Services &sv, const Release &r, const BinaryName &name,
   const std::filesystem::path &scratch, const std::filesystem::path &dest, std::uint64_t &bytes
 ) {
-  const auto *vers = versions_of(r, name);
-  if (!vers)
+  ABISTUDY_TRY(const auto found, first_amd64(sv, r, name));
+  if (!found)
     return false;
-  for (const auto &v : *vers) {
-    ABISTUDY_TRY(auto hash, ports::amd64_deb_hash(sv.packages, name, v));
-    if (!hash)
-      continue;
-    const auto deb = scratch / (name.get() + ".deb");
-    ABISTUDY_TRY_VOID(sv.packages.download(*hash, deb));
-    auto st = sv.extractor.extract(deb, dest);
-    std::error_code ec;
-    std::filesystem::remove(deb, ec);
-    if (!st)
-      return forward_error(st);
-    bytes += st->bytes;
-    return true;
-  }
-  return false;
+  const auto deb = scratch / (name.get() + ".deb");
+  ABISTUDY_TRY_VOID(sv.packages.download(found->second, deb));
+  auto st = sv.extractor.extract(deb, dest);
+  std::error_code ec;
+  std::filesystem::remove(deb, ec);
+  if (!st)
+    return forward_error(st);
+  bytes += st->bytes;
+  return true;
 }
 
 bool has_elf_magic(const std::filesystem::path &p) {
@@ -66,24 +60,59 @@ std::vector<BinaryName> packages_for(const Release &rel, Want want) {
   return names;
 }
 
-std::vector<std::filesystem::path> find_shared_objects(const std::filesystem::path &root) {
-  std::vector<std::filesystem::path> out;
+Result<std::optional<std::pair<VersionString, FileHash>>> first_amd64(
+  const Services &sv, const Release &rel, const BinaryName &name
+) {
+  const auto *vers = versions_of(rel, name);
+  if (!vers)
+    return std::optional<std::pair<VersionString, FileHash>>{};
+  for (const auto &v : *vers) {
+    ABISTUDY_TRY(auto hash, ports::amd64_deb_hash(sv.packages, name, v));
+    if (hash)
+      return std::optional{std::pair{v, *hash}};
+  }
+  return std::optional<std::pair<VersionString, FileHash>>{};
+}
+
+std::vector<std::string> dev_link_dirs(const std::filesystem::path &dev_root) {
+  std::vector<std::string> dirs;
+  std::error_code ec;
+  for (auto it = std::filesystem::recursive_directory_iterator(dev_root, ec);
+       !ec && it != std::filesystem::recursive_directory_iterator(); it.increment(ec)) {
+    if (!it->is_symlink(ec))
+      continue;
+    const auto name = it->path().filename().string();
+    if (!name.starts_with("lib") || !name.ends_with(".so"))
+      continue;
+    auto dir = it->path().parent_path().lexically_relative(dev_root).generic_string();
+    if (!std::ranges::contains(dirs, dir))
+      dirs.push_back(std::move(dir));
+  }
+  std::ranges::sort(dirs);
+  return dirs;
+}
+
+FoundObjects find_shared_objects(
+  const std::filesystem::path &root, std::span<const std::string> extra_dirs
+) {
+  FoundObjects out;
   std::error_code ec;
   for (auto it = std::filesystem::recursive_directory_iterator(root, ec);
        !ec && it != std::filesystem::recursive_directory_iterator(); it.increment(ec)) {
     if (it->is_symlink(ec) || !it->is_regular_file(ec))
       continue;
     const auto name = it->path().filename().string();
-    if (!name.starts_with("lib") || !name.contains(".so"))
+    if (!name.starts_with("lib") || !name.contains(".so") || !has_elf_magic(it->path()))
       continue;
-    if (!is_linkable_library_dir(
-          it->path().parent_path().lexically_relative(root).generic_string()
-        ))
-      continue;
-    if (has_elf_magic(it->path()))
-      out.push_back(it->path());
+    const auto dir = it->path().parent_path().lexically_relative(root).generic_string();
+    if (is_linkable_library_dir(dir) || std::ranges::contains(extra_dirs, dir)) {
+      out.linkable.push_back(it->path());
+    } else {
+      out.excluded.push_back(it->path().lexically_relative(root).generic_string());
+    }
   }
-  std::ranges::sort(out);
+  std::ranges::sort(out.linkable);
+  std::ranges::sort(out.excluded);
   return out;
 }
 
@@ -98,6 +127,7 @@ Result<Materialized> materialize(
     .debug_root = {},
     .include_root = {},
     .shared_objects = {},
+    .excluded_objects = {},
     .bytes_extracted = 0,
     .missing = {}
   };
@@ -129,7 +159,13 @@ Result<Materialized> materialize(
   std::error_code ec;
   if (std::filesystem::is_directory(rt, ec)) {
     m.runtime_root = rt;
-    m.shared_objects = find_shared_objects(rt);
+    // The -dev package's lib*.so links name the directories that are link
+    // search paths for this library, whether or not they are default ones.
+    const auto extra =
+      std::filesystem::is_directory(dev, ec) ? dev_link_dirs(dev) : std::vector<std::string>{};
+    auto found = find_shared_objects(rt, extra);
+    m.shared_objects = std::move(found.linkable);
+    m.excluded_objects = std::move(found.excluded);
   }
   if (const auto d = dbg / "usr" / "lib" / "debug"; std::filesystem::is_directory(d, ec))
     m.debug_root = d;

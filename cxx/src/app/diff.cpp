@@ -11,6 +11,7 @@
 #include "app/materialize.hpp"
 #include "app/stages.hpp"
 #include "core/fs.hpp"
+#include "domain/events.hpp"
 #include "domain/symbols.hpp"
 
 namespace abistudy::app {
@@ -20,20 +21,13 @@ constexpr std::uint64_t mebibyte = std::uint64_t{1024} * 1024;
 /// dbgsym .debs expand roughly threefold; libabigail's memory tracks the DWARF.
 constexpr std::uint64_t extraction_ratio = 3;
 
-std::string index_stem(const SourceName &s, const VersionString &v, Language l) {
-  std::string ver = v.get();
-  std::ranges::replace(ver, '/', '_');
-  std::ranges::replace(ver, ':', '%');
-  return std::format("{}@{}.{}", s, ver, to_string(l));
-}
-
 /// @brief Builds and stores the header index for one materialised release
 ///        unless it is already on disk.
 Result<void> ensure_header_index(
   const Workspace &ws, const Services &sv, const SourceName &src, const Release &rel,
   const std::filesystem::path &include_root, Language lang, std::uint32_t max_files
 ) {
-  const auto p = ws.header_indexes() / (index_stem(src, rel.source_version, lang) + ".json");
+  const auto p = ws.header_index(src, rel.source_version, lang);
   if (sv.store.exists(p) || include_root.empty())
     return {};
   IndexOptions o;
@@ -64,7 +58,8 @@ PairResult empty_result(const PairJob &job) {
     .object_errors = {},
     .error = std::nullopt,
     .seconds = 0,
-    .bytes_extracted = 0
+    .bytes_extracted = 0,
+    .excluded_objects = {}
   };
 }
 
@@ -79,8 +74,8 @@ Result<PairResult> diff_one(
   // Budget the pair from the plan's sizes before fetching a byte.
   if (const auto mb = job.download_bytes() / mebibyte; mb * extraction_ratio > o.max_extracted_mb) {
     res.error = std::format(
-      "skipped: {} MB of packages (~{} MB extracted) exceeds --max-extracted-mb {} (memory budget)",
-      mb, mb * extraction_ratio, o.max_extracted_mb
+      "{}{} MB of packages (~{} MB extracted) exceeds --max-extracted-mb {} (memory budget)",
+      pair_error_skipped, mb, mb * extraction_ratio, o.max_extracted_mb
     );
     ABISTUDY_TRY_VOID(sv.store.save(ws.pair(res.id), schema_pair, res));
     return res;
@@ -90,7 +85,7 @@ Result<PairResult> diff_one(
   res.bytes_extracted = m1.bytes_extracted + m2.bytes_extracted;
   if (const auto mb = res.bytes_extracted / mebibyte; mb > o.max_extracted_mb) {
     res.error = std::format(
-      "skipped: {} MB extracted exceeds --max-extracted-mb {} (memory budget)", mb,
+      "{}{} MB extracted exceeds --max-extracted-mb {} (memory budget)", pair_error_skipped, mb,
       o.max_extracted_mb
     );
     ABISTUDY_TRY_VOID(sv.store.save(ws.pair(res.id), schema_pair, res));
@@ -108,6 +103,9 @@ Result<PairResult> diff_one(
   for (const auto *m : {&m1, &m2}) {
     for (const auto &pkg : m->missing)
       res.object_errors.push_back("missing package: " + pkg);
+    res.excluded_objects.insert(
+      res.excluded_objects.end(), m->excluded_objects.begin(), m->excluded_objects.end()
+    );
   }
 
   // Pair shared objects by SONAME stem so a SONAME bump still compares. A
@@ -140,7 +138,6 @@ Result<PairResult> diff_one(
     return found;
   };
 
-  Language pair_lang = Language::unknown;
   std::set<std::string> paired_2;
   for (const auto &[stem, p1] : by_stem_1) {
     const auto it = partner(stem);
@@ -163,11 +160,6 @@ Result<PairResult> diff_one(
       res.object_errors.push_back(stem + ": " + d.error().message);
       continue;
     }
-    if (d->language == Language::cxx) {
-      pair_lang = Language::cxx;
-    } else if (pair_lang == Language::unknown) {
-      pair_lang = d->language;
-    }
     sv.log(
       std::format(
         "    {} -> {}  lang={} public={} third={} private={} vague={} renamed={}", d->soname_1,
@@ -188,7 +180,7 @@ Result<PairResult> diff_one(
     res.error = "no object could be compared: " + res.object_errors.front().substr(0, 300);
 
   if (o.index_headers) {
-    const Language l = pair_lang == Language::unknown ? Language::cxx : pair_lang;
+    const Language l = dominant_language(res.objects, Language::cxx);
     auto index_side = [&](const Release &rel, const Materialized &m) {
       if (
         auto r =
@@ -211,16 +203,31 @@ Result<void> run_diff(
   const DiffOptions &o
 ) {
   ABISTUDY_TRY_VOID(ensure_workspace(ws, sv));
-  // Scratch left by a killed child is garbage: no other run owns it.
+  // The lock proves no other stage is materialising under scratch; only then
+  // is what is left there garbage from a killed child.
+  ABISTUDY_TRY(const fs::LockFile lock, fs::LockFile::acquire(ws.scratch_lock()));
   fs::remove_all_noexcept(ws.scratch());
   ABISTUDY_TRY_VOID(sv.store.ensure_dir(ws.scratch()));
   ABISTUDY_TRY(Plan plan, sv.store.load_as<Plan>(ws.plan(), schema_plan));
 
   std::vector<std::size_t> todo;
+  std::uint32_t retried = 0;
   for (std::size_t i = 0; i < plan.jobs.size(); ++i) {
-    if (!sv.store.exists(ws.pair(plan.jobs[i].id())))
+    const auto p = ws.pair(plan.jobs[i].id());
+    if (o.retry_failed && sv.store.exists(p)) {
+      auto pr = sv.store.load_as<PairResult>(p, schema_pair);
+      if (pr && retryable_with_more_resources(pair_outcome(*pr))) {
+        ABISTUDY_TRY_VOID(sv.store.remove(p));
+        ++retried;
+      }
+    }
+    if (!sv.store.exists(p))
       todo.push_back(i);
   }
+  if (o.retry_failed)
+    sv.log(
+      std::format("--retry-failed: {} failed_memory/failed_timeout record(s) discarded", retried)
+    );
   // Largest first: the long pole starts immediately and the tail is short.
   std::ranges::stable_sort(todo, [&](std::size_t a, std::size_t b) {
     return plan.jobs[a].download_bytes() > plan.jobs[b].download_bytes();
@@ -289,9 +296,14 @@ Result<void> run_diff(
         if (o.child_memory_mb != 0)
           argv = {"prlimit", "--as=" + std::to_string(o.child_memory_mb * mebibyte), "--"};
         argv.insert(
-          argv.end(),
-          {self_exe.string(), "diff", "--work", ws.root.string(), "--one", std::to_string(i)}
+          argv.end(), {self_exe.string(), "diff", "--work", ws.root.string(), "--one",
+                       std::to_string(i), "--max-extracted-mb", std::to_string(o.max_extracted_mb),
+                       "--max-files", std::to_string(o.header_max_files)}
         );
+        if (!o.index_headers)
+          argv.emplace_back("--no-headers");
+        if (o.trace)
+          argv.emplace_back("--trace");
         ports::RunOptions po;
         po.timeout = o.pair_timeout;
         const auto t0 = std::chrono::steady_clock::now();
@@ -329,9 +341,10 @@ Result<void> run_diff(
         }
         // Record the failure as a result so the pair is not retried forever.
         PairResult pr = empty_result(job);
-        pr.error = r->timed_out
-                     ? std::format("timeout after {}s", o.pair_timeout.count())
-                     : ("exit " + std::to_string(r->exit_code) + ": " + r->err.substr(0, 400));
+        pr.error =
+          r->timed_out
+            ? std::format("{}{}s", pair_error_timeout, o.pair_timeout.count())
+            : std::format("{}{}: {}", pair_error_exit, r->exit_code, r->err.substr(0, 400));
         pr.seconds = secs;
         static_cast<void>(sv.store.save(ws.pair(pr.id), schema_pair, pr));
         sv.log(std::format("{} FAILED {}", prefix, *pr.error));
@@ -347,9 +360,11 @@ Result<void> run_diff(
 
   auto [killed, deferred] = pass(todo, o.workers);
   if (!killed.empty()) {
-    // A pair killed while already running alone gains nothing from a retry.
+    // A pair killed while already running alone gains nothing from a retry
+    // under the same cap; `diff --retry-failed` with a larger one is the way.
     std::vector<std::size_t> still = killed;
-    if (o.workers > 1) {
+    const bool retried = o.workers > 1;
+    if (retried) {
       sv.log(std::format("retrying {} killed pair(s) with one worker", killed.size()));
       auto [again, deferred2] = pass(killed, 1);
       still = again;
@@ -357,14 +372,18 @@ Result<void> run_diff(
     }
     for (const auto i : still) {
       PairResult pr = empty_result(plan.jobs[i]);
-      pr.error = "killed by signal twice (out of memory?)";
+      pr.error = std::format(
+        "{}{} under --child-memory-mb {} (out of memory?)", pair_error_killed,
+        retried ? " twice" : " once, already alone", o.child_memory_mb
+      );
       static_cast<void>(sv.store.save(ws.pair(pr.id), schema_pair, pr));
       sv.log(std::format("{} FAILED {}", pr.id, *pr.error));
     }
   }
   for (const auto i : deferred) {
     PairResult pr = empty_result(plan.jobs[i]);
-    pr.error = std::format("not attempted: --deadline-minutes {} reached", o.deadline.count());
+    pr.error =
+      std::format("{}--deadline-minutes {} reached", pair_error_not_attempted, o.deadline.count());
     static_cast<void>(sv.store.save(ws.pair(pr.id), schema_pair, pr));
   }
   if (!deferred.empty())

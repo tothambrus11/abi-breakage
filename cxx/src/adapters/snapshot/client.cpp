@@ -9,10 +9,10 @@
 #include <curl/curl.h>
 #include <openssl/evp.h>
 
-#include "adapters/fs/artifact_store.hpp"
 #include "core/contracts.hpp"
 #include "core/fs.hpp"
 #include "core/hash.hpp"
+#include "core/json.hpp"
 
 namespace abistudy::snapshot {
 namespace {
@@ -176,13 +176,13 @@ Result<Json> Client::api(std::string_view path) const {
       std::chrono::file_clock::now() - std::filesystem::last_write_time(cache_file, ec);
     if (!ec && age < opt_.api_cache_ttl) {
       if (auto text = fs::read_file(cache_file)) {
-        if (auto j = fsstore::parse_json(*text, cache_file.string()))
+        if (auto j = parse_json(*text, cache_file.string()))
           return j;
       }
     }
   }
   ABISTUDY_TRY(Response r, get(opt_.base_url + std::string{path}));
-  ABISTUDY_TRY(Json j, fsstore::parse_json(r.body, path));
+  ABISTUDY_TRY(Json j, parse_json(r.body, path));
   static_cast<void>(fs::write_file_atomic(cache_file, r.body)); // cache failure is not an error
   return j;
 }
@@ -198,6 +198,7 @@ Result<void> Client::download(const FileHash &hash, const std::filesystem::path 
   std::string last_err;
   long status = 0;
   for (int attempt = 1; attempt <= opt_.max_attempts; ++attempt) {
+    status = 0; // a transport failure must not inherit the previous attempt's status
     throttle(opt_.min_interval);
     Easy e;
     if (!e.h)

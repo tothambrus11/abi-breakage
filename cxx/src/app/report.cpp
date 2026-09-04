@@ -13,6 +13,7 @@
 #include <vector>
 
 #include "app/stages.hpp"
+#include "core/clock.hpp"
 #include "core/fs.hpp"
 #include "domain/taxonomy.hpp"
 
@@ -221,7 +222,7 @@ Result<std::string> run_report(const Workspace &ws, const Services &sv) {
     levels += std::format("{}{} {}", levels.empty() ? "" : ", ", l, v.get<std::uint64_t>());
 
   const std::map<std::string, std::string> v{
-    {"generated_at", s.value("generated_at", std::string{})},
+    {"generated_at", utc_now_iso8601()},
     {"tool_line", std::string{ports::tool_version()} + " · " + sv.comparer.version() + " · " +
                     sv.indexer.version()},
     {"transitions", n(c.at("transitions"))},
@@ -234,6 +235,7 @@ Result<std::string> run_report(const Workspace &ws, const Services &sv) {
     {"levels", levels},
     {"mass_rename", n(c.at("mass_rename_excluded"))},
     {"errored", n(c.at("errored"))},
+    {"no_linkable_object", n(c.value("no_linkable_object", Json(0)))},
     {"not_attempted", n(c.at("not_attempted"))},
     {"debug_missing", n(c.at("debug_info_incomplete"))},
     {"rows_all", frequency_rows(s.at("frequency").at("all"))},

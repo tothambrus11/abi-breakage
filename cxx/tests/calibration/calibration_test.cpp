@@ -27,6 +27,7 @@
 #include "adapters/libclang/indexer.hpp"
 #include "adapters/posix/process.hpp"
 #include "core/fs.hpp"
+#include "core/json.hpp"
 #include "domain/header_model.hpp"
 
 using namespace abistudy;
@@ -165,7 +166,7 @@ struct Outcome {
 };
 
 Outcome run_case(const stdfs::path &dir) {
-  auto meta = fsstore::parse_json(fs::read_file(dir / "case.json").value_or("{}"), "case.json");
+  auto meta = parse_json(fs::read_file(dir / "case.json").value_or("{}"), "case.json");
   if (!meta)
     return {.pass = false, .got = meta.error().message};
   const std::string truth = meta->at("truth");
@@ -252,8 +253,7 @@ int main(int argc, char **argv) try {
   std::println("{:<4} {:<36} {:<34} {}", "", "case", "ground truth", "result");
   std::println("{:-<118}", "");
   for (const auto &c : cases) {
-    const auto meta =
-      fsstore::parse_json(fs::read_file(c / "case.json").value_or("{}"), "case.json");
+    const auto meta = parse_json(fs::read_file(c / "case.json").value_or("{}"), "case.json");
     const std::string truth = meta ? meta->value("truth", "?") : "?";
     const auto o = run_case(c);
     fails += static_cast<int>(!o.pass);

@@ -7,7 +7,10 @@
 // =============================================================================
 
 #include <filesystem>
+#include <optional>
+#include <span>
 #include <string>
+#include <utility>
 #include <vector>
 
 #include "app/stages.hpp"
@@ -29,7 +32,10 @@ struct Materialized {
   std::filesystem::path runtime_root;                ///< dest of runtime debs (may be empty tree).
   std::filesystem::path debug_root;                  ///< "<dbgsym>/usr/lib/debug" or empty if none.
   std::filesystem::path include_root;                ///< "<dev>/usr/include" or empty if none.
-  std::vector<std::filesystem::path> shared_objects; ///< Regular ELF lib*.so* under runtime_root.
+  std::vector<std::filesystem::path> shared_objects; ///< Linkable ELF lib*.so* under runtime_root.
+  /// lib*.so* ELF files under runtime_root that are NOT linkable (plugins in
+  /// subdirectories), relative to runtime_root: recorded, never compared.
+  std::vector<std::string> excluded_objects;
   std::uint64_t bytes_extracted = 0;
   std::vector<std::string> missing; ///< Packages requested but without an amd64 .deb.
 };
@@ -48,10 +54,33 @@ struct Materialized {
   const Services &sv, const Release &rel, Want want, const std::filesystem::path &scratch_base
 );
 
-/// @brief Regular files named lib*.so* whose first four bytes are the ELF
-///        magic, below `root`. Symlinks are skipped so each object is seen once.
-[[nodiscard]] std::vector<std::filesystem::path> find_shared_objects(
-  const std::filesystem::path &root
+/// @brief The newest binary version of `name` in `rel` that has an amd64 (or
+///        arch-independent) .deb, with the file's hash. A binNMU that never
+///        built on amd64 sorts newest but has no file; the older version does.
+/// @returns nullopt if no version has such a file.
+/// @errors network/http_status/parse from the package source: a transient
+///         failure is an error, never "no file".
+[[nodiscard]] Result<std::optional<std::pair<VersionString, FileHash>>> first_amd64(
+  const Services &sv, const Release &rel, const BinaryName &name
+);
+
+/// @brief Directories, relative to a -dev include tree's package root, in
+///        which the -dev package installs `lib*.so` development links: the
+///        directories the package itself declares as link-search paths
+///        (`hdf5/serial/`, `blas/`), on top of the default ones.
+[[nodiscard]] std::vector<std::string> dev_link_dirs(const std::filesystem::path &dev_root);
+
+/// @brief Splits the regular ELF files named lib*.so* below `root` into the
+///        linkable ones (in a default link directory, see
+///        is_linkable_library_dir, or in one of `extra_dirs`) and the rest
+///        (plugins), the latter as paths relative to `root`. Symlinks are
+///        skipped so each object is seen once.
+struct FoundObjects {
+  std::vector<std::filesystem::path> linkable;
+  std::vector<std::string> excluded;
+};
+[[nodiscard]] FoundObjects find_shared_objects(
+  const std::filesystem::path &root, std::span<const std::string> extra_dirs = {}
 );
 
 } // namespace abistudy::app

@@ -72,38 +72,25 @@ std::pair<std::vector<BinaryName>, std::vector<BinaryName>> roles(
   return {runtime, dev};
 }
 
-/// @brief The newest binary version of `name` in `rel` that has an amd64 (or
-///        arch-independent) .deb, with the file's hash. A binNMU that never
-///        built on amd64 sorts newest but has no file; the older version does.
-std::optional<std::pair<VersionString, FileHash>> first_amd64(
-  const Services &sv, const Release &rel, const BinaryName &name
-) {
-  const auto it = std::ranges::find(rel.binaries, name, &BinaryVersions::name);
-  if (it == rel.binaries.end())
-    return std::nullopt;
-  for (const auto &v : it->versions) {
-    if (auto hash = ports::amd64_deb_hash(sv.packages, name, v); hash && *hash)
-      return std::pair{v, **hash};
-  }
-  return std::nullopt;
-}
-
 /// @brief Sum of the .deb sizes the diff stage will download for `rel`, or
 ///        nullopt if some runtime package has no amd64 build at all (a
-///        ports-only upload): such a release cannot be compared.
-std::optional<std::uint64_t> download_bytes(const Services &sv, const Release &rel) {
+///        ports-only upload): such a release cannot be compared. A source
+///        failure is an error, never a silent skip: a dropped release would
+///        silently shrink the corpus.
+Result<std::optional<std::uint64_t>> download_bytes(const Services &sv, const Release &rel) {
   std::uint64_t total = 0;
   for (const auto &name : packages_for(rel, Want{})) {
-    const auto found = first_amd64(sv, rel, name);
+    ABISTUDY_TRY(const auto found, first_amd64(sv, rel, name));
     if (!found) {
       if (std::ranges::contains(rel.runtime, name))
-        return std::nullopt;
+        return std::optional<std::uint64_t>{};
       continue; // a missing dbgsym or dev package is reported at materialisation
     }
-    if (auto size = sv.packages.file_size(found->second); size && *size)
-      total += **size;
+    ABISTUDY_TRY(const auto size, sv.packages.file_size(found->second));
+    if (size)
+      total += *size;
   }
-  return total;
+  return std::optional{total};
 }
 
 } // namespace
@@ -181,7 +168,7 @@ Result<Plan> run_resolve(const Workspace &ws, const Services &sv, const ResolveO
             rel.binaries.push_back(BinaryVersions{.name = BinaryName{k}, .versions = vs});
           }
         }
-        const auto bytes = download_bytes(sv, rel);
+        ABISTUDY_TRY(const auto bytes, download_bytes(sv, rel));
         if (!bytes) {
           sv.log(
             std::format(

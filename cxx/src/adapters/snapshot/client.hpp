@@ -80,8 +80,6 @@ public:
     std::string_view url, const std::filesystem::path &dest, std::chrono::seconds max_age
   ) const;
 
-  [[nodiscard]] const ClientOptions &options() const noexcept { return opt_; }
-
 private:
   explicit Client(ClientOptions opt) : opt_(std::move(opt)) {}
   ClientOptions opt_;

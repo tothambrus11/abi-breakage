@@ -63,6 +63,14 @@ Transition rollup(const PairResult &p, const HeaderResult *h) {
         t.symbols.layout_events_excluded += e.count;
       }
     }
+    if (o.symbol_events_truncated) {
+      // The event list is a sample of the tally: neither the lenient
+      // subtraction nor the strata can be derived from it, so the object
+      // stays strict and every public symbol event is undecidable.
+      t.symbols.removed_unknown += o.public_counts.get(ChangeKind::symbol_removed);
+      t.symbols.signature_unknown += o.public_counts.get(ChangeKind::function_signature_changed);
+      continue;
+    }
     for (const auto &e : o.symbol_events) {
       const bool removed = e.kind == ChangeKind::symbol_removed;
       const bool resigned = e.kind == ChangeKind::function_signature_changed;
@@ -70,7 +78,7 @@ Transition rollup(const PairResult &p, const HeaderResult *h) {
         continue;
       if (
         (e.version && is_private_version_node(e.version->get())) ||
-        is_vague_linkage(e.symbol.get(), e.weak)
+        (!e.vtable_slot && is_vague_linkage(e.symbol.get(), e.weak))
       )
         continue; // not a public event; tallied elsewhere
       const auto d = declared_of(e.symbol);
@@ -94,13 +102,14 @@ Transition rollup(const PairResult &p, const HeaderResult *h) {
   t.layout_types_strict = static_cast<std::uint32_t>(layout_strict.size());
   t.layout_types_lenient = static_cast<std::uint32_t>(layout_lenient.size());
 
+  if (h)
+    t.header_coverage_poor = h->coverage_1.poor() || h->coverage_2.poor();
   if (h && h->diff) {
     t.headers = h->diff;
     for (auto *c : {&t.strict, &t.lenient}) {
       c->add(ChangeKind::inline_body_changed, h->diff->inline_body_changed);
       c->add(ChangeKind::macro_value_changed, h->diff->macro_value_changed_nonversion);
     }
-    t.header_coverage_poor = h->coverage_1.poor() || h->coverage_2.poor();
   }
   return t;
 }

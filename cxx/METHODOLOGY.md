@@ -135,7 +135,14 @@ For each pair, in a **child process** (libabigail keeps per-environment state
 and is not thread-safe), largest pairs first, at most one "big" pair at a
 time, under an address-space cap (`prlimit`), a per-pair timeout and an
 optional wall-clock deadline after which remaining pairs are recorded as not
-attempted:
+attempted. Every record carries an outcome (`compared`,
+`no_linkable_object`, `skipped_budget`, `not_attempted`, `failed_memory`,
+`failed_timeout`, `failed`) derived in one place; `diff --retry-failed`
+discards the `failed_memory` / `failed_timeout` records and runs them again
+under the caps of that invocation, which is how the two z3 pairs that
+exceed 6 GB were recovered at 12 GB. A stage that materialises packages
+holds an exclusive lock on the workspace's scratch tree, so a diff run
+cannot wipe the tree under a concurrent headers run:
 
 1. Both releases are materialised: runtime, dbgsym and dev `.deb`s are
    streamed from snapshot.debian.org's content-addressed store to disk with
@@ -143,13 +150,18 @@ attempted:
    absolute paths, no symlink escapes), and deleted. Peak disk is the
    extracted tree of the pair in flight.
 2. The shared objects of the runtime package are the `lib*.so*` ELF files in
-   a **linkable library directory** — `lib`, `usr/lib`, `lib64` and their
-   multiarch subdirectory — because only those are reachable through `-l`.
-   Anything deeper (`sane/`, `spa-0.2/`, `gstreamer-1.0/`, `caca/`,
-   `security/`) is a dlopen'ed plugin whose exported symbols are internal to
-   the loading library; counting them would report plugin churn as ABI
-   breaks (before this rule, sane-backends showed 8 strict breaks in 9
-   transitions, all removals of backend-internal symbols).
+   a **linkable library directory**: `lib`, `usr/lib`, `lib64` and their
+   multiarch subdirectory (the link editor's defaults), plus every directory
+   in which the release's own `-dev` package installs a `lib*.so`
+   development link (`hdf5/serial/`, `blas/`: what the package itself
+   declares as a link-search path). Anything else (`sane/`, `spa-0.2/`,
+   `gstreamer-1.0/`, `caca/`, `security/`) is a dlopen'ed plugin whose
+   exported symbols are internal to the loading library; counting them
+   would report plugin churn as ABI breaks (before this rule, sane-backends
+   showed 8 strict breaks in 9 transitions, all removals of backend-internal
+   symbols). Every excluded file is listed in the pair record
+   (`excluded_objects`), and a pair with nothing left to compare is reported
+   as `no_linkable_object`, not as a failure.
 3. Shared objects are paired by **SONAME stem** (`libssl` from
    `libssl.so.3`), so a SONAME bump still compares. A stem that carries the
    version itself (`libhunspell-1.6` → `libhunspell-1.7`, `libOpenEXR-3_1` →
@@ -163,7 +175,10 @@ attempted:
    * each changed **type** is counted once; events: field added/removed/
      type-changed, member-offset-changed, type-size-changed,
      base-class-changed, enum-case added/removed, vtable slot inserted/moved
-     (a *removed* virtual is a symbol removal, not a slot event);
+     (a *removed* virtual is a symbol removal, not a slot event, whatever
+     its ELF binding: a virtual member function is reached through its
+     vtable slot, so an inline virtual with a weak symbol is never vague
+     linkage);
    * every type event carries its **exposure** in the exported interface —
      `by_value`, `by_pointer`, or `not_in_interface` — computed by walking
      the parameter and return types of every exported function and the types
@@ -180,6 +195,10 @@ attempted:
      every symbol event records its ELF binding.
 5. Four tallies partition the events (§4): public, third-party (declared
    outside the library's headers), private version node, vague linkage.
+   The per-event list behind the tallies is capped (20 000 symbol events
+   per object); an object that hits the cap is flagged, its lenient counts
+   stay equal to its strict counts and its symbols are `undecidable`,
+   because a sample of the list cannot stand in for the tally.
 6. The two `-dev` include trees are indexed with libclang while they are on
    disk (§3.4).
 
@@ -207,7 +226,10 @@ stored with every index; where more than half the units hit an error the
 index is *poor* and its counts are lower bounds.
 
 The stage compares the two indexes (`inline_body_changed`,
-`macro_value_changed` with and without version/build stamps) and performs the
+`macro_value_changed` with and without version/build stamps; a stamp is
+recognised by whole `_`-separated tokens such as `VERSION`, `MAJOR`,
+`GIT`, `BUILD_DATE`, so `MAX_DIGITS` or `MINORBITS` are ordinary macros)
+and performs the
 **declared-symbol join**: each removed or re-signed symbol of the pair is
 looked up in the old release's declared set and classified `declared`,
 `undeclared`, or `unknown` (index empty or poor).
@@ -217,7 +239,10 @@ looked up in the old release's declared set and classified `declared`,
 `rollup` turns each pair into a `Transition` with strict and lenient counts,
 the number of layout-changed types, the symbol strata, the release level of
 the pair (`major`/`minor`/`patch`/`snapshot`/`other` from the upstream version
-strings) and coverage flags. `summarize` then computes, for all / C / C++:
+strings: a run of eight or more digits anywhere, `16-20260217`,
+`6.5+20250125`, `1.11.0+git20250114`, is a snapshot; equal leading numerics
+with a different suffix, `2.1.27+dfsg` → `2.1.27+dfsg2`, are `other`) and
+coverage flags. `summarize` then computes, for all / C / C++:
 
 * per kind: transitions affected (strict and lenient), the share with a
   **95 % cluster-bootstrap interval resampling libraries**, the share of
@@ -243,7 +268,7 @@ compute nothing themselves.
 |---|---|---|
 | Third-party types | glibc's `_IO_FILE`, libstdc++'s `std::tuple` change when the toolchain moves and appear as "the library changed its layout" | Each type event carries the DWARF declaring file; it is the library's own iff the path matches a shipped header by include-relative **suffix**, and a path under `/usr/include` or `/usr/lib/gcc` additionally needs an exact relative match or a multi-component suffix (so `bits/types.h` is never claimed by a library shipping `types.h`). |
 | Private ELF version nodes | dbus exports 657 `_dbus_*` internals under `LIBDBUS_PRIVATE_*` | Symbol events whose version node contains `PRIVATE`/`INTERNAL` go to `private_node_counts`. |
-| Vague linkage | C++ template instantiations and inline functions emitted as weak symbols come and go with the compiler | Weak *and* Itanium-mangled symbol events go to `vague_linkage_counts`; every client compiled its own copy. C weak symbols are kept. |
+| Vague linkage | C++ template instantiations and inline functions emitted as weak symbols come and go with the compiler | Weak *and* Itanium-mangled symbol events go to `vague_linkage_counts`; every client compiled its own copy. C weak symbols are kept, and so are **virtual member functions** whatever their binding: they are reached through a vtable slot, so an inline virtual that disappears is a public removal. |
 | Undeclared exports | default-visibility builds export internals no header declares | The declared-symbol join (§3.4); undeclared removals are excluded under the lenient definition and reported as a stratum. |
 | Mass rename by policy | ICU suffixes every symbol with the major version | Digits-blind matching of removed↔added linkage names; if ≥50 and ≥ all other symbol events, the transition is `mass_rename` and excluded. |
 | `abidiff` default filters | Enum-case additions are "harmless" and hidden; `--leaf-changes-only` omits base-class insertions | Harmless categories are not switched off; the visitor reads base-class maps directly. |

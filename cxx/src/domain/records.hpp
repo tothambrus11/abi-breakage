@@ -119,7 +119,56 @@ struct PairResult {
   std::optional<std::string> error;       ///< Set if the pair could not be processed at all.
   double seconds = 0;
   std::uint64_t bytes_extracted = 0;
+  /// lib*.so files found outside a linkable directory (plugins), both
+  /// releases, relative to the runtime package root: what the rule dropped.
+  std::vector<std::string> excluded_objects;
 };
+
+/// @brief Why a PairResult carries no comparison, or that it carries one.
+enum class PairOutcome : std::uint8_t {
+  compared,           ///< At least one shared object was compared.
+  no_linkable_object, ///< Both releases materialised, nothing to compare (plugins only, no
+                      ///< lib*.so).
+  skipped_budget,     ///< Recorded as too large for --max-extracted-mb before download.
+  not_attempted,      ///< Deferred by --deadline-minutes.
+  failed_memory,      ///< Child killed by a signal or bad_alloc: needs a larger cap.
+  failed_timeout,     ///< Child exceeded --pair-timeout: needs more time.
+  failed,             ///< Any other failure (reader error, missing package, spawn).
+};
+
+/// Prefixes of the `error` strings the diff stage writes. pair_outcome()
+/// classifies by them, so the two never drift.
+inline constexpr std::string_view pair_error_skipped = "skipped: ";
+inline constexpr std::string_view pair_error_not_attempted = "not attempted: ";
+inline constexpr std::string_view pair_error_timeout = "timeout after ";
+inline constexpr std::string_view pair_error_killed = "killed by signal";
+inline constexpr std::string_view pair_error_exit = "exit ";
+
+/// @brief Classifies a record; pure, total.
+[[nodiscard]] PairOutcome pair_outcome(const PairResult &r) noexcept;
+[[nodiscard]] constexpr const char *to_string(PairOutcome o) noexcept {
+  switch (o) {
+  case PairOutcome::compared:
+    return "compared";
+  case PairOutcome::no_linkable_object:
+    return "no_linkable_object";
+  case PairOutcome::skipped_budget:
+    return "skipped_budget";
+  case PairOutcome::not_attempted:
+    return "not_attempted";
+  case PairOutcome::failed_memory:
+    return "failed_memory";
+  case PairOutcome::failed_timeout:
+    return "failed_timeout";
+  case PairOutcome::failed:
+    return "failed";
+  }
+  return "failed";
+}
+/// @brief True for outcomes a larger memory cap or timeout can change.
+[[nodiscard]] constexpr bool retryable_with_more_resources(PairOutcome o) noexcept {
+  return o == PairOutcome::failed_memory || o == PairOutcome::failed_timeout;
+}
 
 // ---- headers ----------------------------------------------------------------
 
@@ -135,7 +184,7 @@ struct HeaderResult {
   ParseCoverage coverage_2;
   std::optional<std::string> error;
   /// The pair's removed / signature-changed symbols classified against the
-  /// OLD release's headers, and added symbols against the new one.
+  /// OLD release's headers (the only join the roll-up consumes).
   std::map<std::string, Declared> symbol_declared;
 };
 
@@ -162,9 +211,6 @@ void to_json(Json &j, const PairResult &x);
 [[nodiscard]] PairResult pair_result_from_json(const Json &j);
 void to_json(Json &j, const HeaderResult &x);
 [[nodiscard]] HeaderResult header_result_from_json(const Json &j);
-
-/// @brief Parses a Language name written by to_string(Language).
-[[nodiscard]] Language language_from_string(std::string_view s) noexcept;
 
 } // namespace abistudy
 

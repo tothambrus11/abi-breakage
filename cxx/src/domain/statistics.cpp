@@ -9,6 +9,7 @@ namespace abistudy {
 namespace {
 
 Interval percentile_95(std::vector<double> stats) {
+  ABISTUDY_EXPECTS(!stats.empty()); // BootstrapOptions::resamples >= 1
   std::ranges::sort(stats);
   const auto n = stats.size();
   auto at = [&](double q) {

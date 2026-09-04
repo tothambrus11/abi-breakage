@@ -45,10 +45,12 @@ struct Loaded {
 
 /// @brief libabigail < 2.5 takes the debug-info roots as `vector<char**>`
 ///        (pointers to C strings), later versions as `vector<string>`. Both are
-///        served from one call site.
+///        served from one call site. The old API keeps the `char**` pointers
+///        and dereferences them while the corpus is read, so `storage` must
+///        outlive every use of the returned reader: the caller owns it.
 template <class Env = ir::environment>
 elf_based_reader_sptr create_reader_compat(
-  const std::string &elf, const DebugRoots &roots, Env &env
+  const std::string &elf, const DebugRoots &roots, std::vector<char *> &storage, Env &env
 ) {
   if constexpr (
     std::is_invocable_v<
@@ -57,13 +59,13 @@ elf_based_reader_sptr create_reader_compat(
   ) {
     return dwarf::create_reader(elf, roots, env, /*read_all_types=*/false, /*kernel=*/false);
   } else {
-    std::vector<char *> cstrs;
-    cstrs.reserve(roots.size());
+    storage.clear();
+    storage.reserve(roots.size());
     for (const auto &r : roots)
-      cstrs.push_back(const_cast<char *>(r.c_str())); // NOLINT(*-const-cast): API takes char**
+      storage.push_back(const_cast<char *>(r.c_str())); // NOLINT(*-const-cast): API takes char**
     std::vector<char **> ptrs;
-    ptrs.reserve(cstrs.size());
-    for (auto &c : cstrs)
+    ptrs.reserve(storage.size());
+    for (auto &c : storage)
       ptrs.push_back(&c);
     return dwarf::create_reader(elf, ptrs, env, /*read_all_types=*/false, /*kernel=*/false);
   }
@@ -76,9 +78,11 @@ Result<Loaded> load(ir::environment &env, const ports::Side &s, const DebugRoots
   if (!std::filesystem::is_regular_file(s.elf, ec))
     return fail(ErrorCode::abi_reader, "'{}' is not a file", s.elf.string());
 
+  // Outlives the reader: libabigail < 2.5 dereferences these while reading.
+  std::vector<char *> root_storage;
   elf_based_reader_sptr rdr;
   try {
-    rdr = create_reader_compat(s.elf.string(), roots, env);
+    rdr = create_reader_compat(s.elf.string(), roots, root_storage, env);
   } catch (const std::exception &e) {
     return fail(ErrorCode::abi_reader, "libabigail reader for '{}': {}", s.elf.string(), e.what());
   }
@@ -402,7 +406,9 @@ private:
 
     // A virtual slot inserted, a method changing virtuality, or a virtual
     // method whose slot index moved. A DELETED virtual is an API removal and
-    // is already counted as a removed symbol.
+    // is counted as a removed public symbol whatever its ELF binding
+    // (occupies_vtable_slot keeps inline virtuals out of the vague-linkage
+    // quarantine).
     std::uint32_t vt = 0;
     if (!f->has_vtable() && s->has_vtable())
       ++vt;
@@ -464,7 +470,16 @@ struct SymbolSide {
   std::string version;
   bool is_function;
   bool weak;
+  bool vtable_slot; ///< a virtual member function: reached through the vtable
 };
+
+/// @brief A virtual member function occupies a vtable slot, so consumers reach
+///        it without ever linking its symbol; its ELF binding (usually weak
+///        for inline virtuals) says nothing about whether it is ABI.
+bool occupies_vtable_slot(const ir::function_decl *f) {
+  const auto *m = ir::is_method_decl(f);
+  return m != nullptr && ir::get_member_function_is_virtual(*m);
+}
 
 template <class P>
 auto *raw(const P &p) {
@@ -496,7 +511,8 @@ void collect_functions(const Map &m, std::vector<SymbolSide> &out) {
         .pairing = f->get_qualified_name(),
         .version = version_of(f->get_symbol()),
         .is_function = true,
-        .weak = is_weak(f->get_symbol())
+        .weak = is_weak(f->get_symbol()),
+        .vtable_slot = occupies_vtable_slot(f)
       }
     );
   }
@@ -515,7 +531,8 @@ void collect_variables(const Map &m, std::vector<SymbolSide> &out) {
         .pairing = d->get_qualified_name(),
         .version = version_of(d->get_symbol()),
         .is_function = false,
-        .weak = is_weak(d->get_symbol())
+        .weak = is_weak(d->get_symbol()),
+        .vtable_slot = false
       }
     );
   }
@@ -525,7 +542,7 @@ void collect_variables(const Map &m, std::vector<SymbolSide> &out) {
 ChangeCounts &tally_for(SharedObjectDiff &out, const SymbolSide &s) {
   if (is_private_version_node(s.version))
     return out.private_node_counts;
-  if (is_vague_linkage(s.linkage, s.weak))
+  if (!s.vtable_slot && is_vague_linkage(s.linkage, s.weak))
     return out.vague_linkage_counts;
   return out.public_counts;
 }
@@ -534,15 +551,18 @@ void record_event(
   SharedObjectDiff &out, const ports::CompareOptions &opt, ChangeKind k, const SymbolSide &s,
   std::string pretty
 ) {
-  if (out.symbol_events.size() >= opt.max_symbol_events)
+  if (out.symbol_events.size() >= opt.max_symbol_events) {
+    out.symbol_events_truncated = true;
     return;
+  }
   out.symbol_events.push_back(
     SymbolEvent{
       .kind = k,
       .symbol = SymbolName{s.linkage},
       .pretty = std::move(pretty),
       .version = s.version.empty() ? std::nullopt : std::optional{VersionNode{s.version}},
-      .weak = s.weak
+      .weak = s.weak,
+      .vtable_slot = s.vtable_slot
     }
   );
 }
@@ -645,7 +665,8 @@ void classify_symbols(corpus_diff &d, const ports::CompareOptions &opt, SharedOb
       .pairing = a->get_qualified_name(),
       .version = version_of(a->get_symbol()),
       .is_function = true,
-      .weak = is_weak(a->get_symbol())
+      .weak = is_weak(a->get_symbol()),
+      .vtable_slot = occupies_vtable_slot(a)
     };
     tally_for(out, side).add(ChangeKind::function_signature_changed);
     record_event(

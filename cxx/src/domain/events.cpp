@@ -17,6 +17,17 @@ bool is_vague_linkage(std::string_view linkage_name, bool weak) noexcept {
   return weak && linkage_name.starts_with("_Z");
 }
 
+Language dominant_language(std::span<const SharedObjectDiff> objects, Language fallback) noexcept {
+  Language l = Language::unknown;
+  for (const auto &o : objects) {
+    if (o.language == Language::cxx)
+      return Language::cxx;
+    if (l == Language::unknown)
+      l = o.language;
+  }
+  return l == Language::unknown ? fallback : l;
+}
+
 bool layout_event_breaks_leniently(const TypeEvent &e) noexcept {
   if (!is_layout_kind(e.kind))
     return true;
@@ -26,13 +37,6 @@ bool layout_event_breaks_leniently(const TypeEvent &e) noexcept {
 }
 
 namespace {
-Language language_from_json_string(const std::string &s) noexcept {
-  if (s == "c")
-    return Language::c;
-  if (s == "cxx")
-    return Language::cxx;
-  return Language::unknown;
-}
 ChangeKind kind_from_json(const nlohmann::json &j) {
   const auto k = parse_change_kind(j.get<std::string>());
   if (!k)
@@ -79,6 +83,8 @@ TypeEvent type_event_from_json(const nlohmann::json &j) {
 
 void to_json(nlohmann::json &j, const SymbolEvent &e) {
   j = {{"kind", to_string(e.kind)}, {"symbol", e.symbol}, {"pretty", e.pretty}, {"weak", e.weak}};
+  if (e.vtable_slot)
+    j["vtable_slot"] = true;
   if (e.version)
     j["version"] = *e.version;
 }
@@ -88,7 +94,8 @@ SymbolEvent symbol_event_from_json(const nlohmann::json &j) {
     .symbol = SymbolName{j.at("symbol").get<std::string>()},
     .pretty = j.value("pretty", std::string{}),
     .version = std::nullopt,
-    .weak = j.value("weak", false)
+    .weak = j.value("weak", false),
+    .vtable_slot = j.value("vtable_slot", false)
   };
   if (j.contains("version"))
     e.version = VersionNode{j.at("version").get<std::string>()};
@@ -107,14 +114,15 @@ void to_json(nlohmann::json &j, const SharedObjectDiff &d) {
     {"mass_rename", d.mass_rename},
     {"coverage", d.coverage},
     {"type_events", d.type_events},
-    {"symbol_events", d.symbol_events}
+    {"symbol_events", d.symbol_events},
+    {"symbol_events_truncated", d.symbol_events_truncated}
   };
 }
 SharedObjectDiff shared_object_diff_from_json(const nlohmann::json &j) {
   SharedObjectDiff d{
     .soname_1 = Soname{j.at("soname")[0].get<std::string>()},
     .soname_2 = Soname{j.at("soname")[1].get<std::string>()},
-    .language = language_from_json_string(j.at("language").get<std::string>()),
+    .language = language_from_string(j.at("language").get<std::string>()),
     .public_counts = j.at("public").get<ChangeCounts>(),
     .third_party_counts = j.at("third_party").get<ChangeCounts>(),
     .private_node_counts = j.at("private_node").get<ChangeCounts>(),
@@ -123,7 +131,8 @@ SharedObjectDiff shared_object_diff_from_json(const nlohmann::json &j) {
     .mass_rename = j.at("mass_rename").get<bool>(),
     .coverage = coverage_from_json(j.at("coverage")),
     .type_events = {},
-    .symbol_events = {}
+    .symbol_events = {},
+    .symbol_events_truncated = j.value("symbol_events_truncated", false)
   };
   for (const auto &e : j.value("type_events", nlohmann::json::array()))
     d.type_events.push_back(type_event_from_json(e));
