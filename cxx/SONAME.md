@@ -9,11 +9,20 @@ their change breaks compiled consumers.
 
 ## 1. What the mechanism is
 
+Two parties are involved throughout this note. *Upstream* is the project
+that writes and releases the library (the libcurl developers, the spdlog
+maintainers, the Samba team for libtdb); it sets the SONAME in its own
+build system (libtool `-version-info`, CMake `SOVERSION`), and the value is
+baked into the file as `DT_SONAME` when a release is built. *Downstream*
+is whoever repackages that release for a distribution, here the Debian or
+Fedora packager who turns the tarball into `libfoo7`.
+
 The dynamic linker records the library's `DT_SONAME` in every consumer's
 `DT_NEEDED` and, at load time, does a plain string-equality lookup: it
 neither checks nor understands ABI compatibility. Fedora's guideline states
-this directly and draws the consequence that the packager must use an ABI
-comparison tool and bump the SONAME themselves when upstream did not. A
+this directly and draws the consequence for the downstream packager: run an
+ABI comparison tool, and if upstream shipped an incompatible release under
+the old SONAME, change the SONAME in the distribution's own build. A
 SONAME change therefore does exactly one thing: it lets the old and the new
 library coexist on one system so that binaries linked against the old one
 keep loading it, while packages get rebuilt against the new one at their
