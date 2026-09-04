@@ -132,6 +132,14 @@ def main(work):
         acc += n
         print(f"  top {i:>2}: {lib:<24}{n:>4} / {trans_by_lib[lib]:<3}  cumulative {100 * acc / total:5.1f}% of {total}")
 
+    n_all = sum(trans_by_lib.values())
+    rate = total / n_all if n_all else 0
+    worst = max(
+        ((lib, abs((total - breaking_by_lib[lib]) / (n_all - trans_by_lib[lib]) - rate)) for lib in trans_by_lib),
+        key=lambda kv: kv[1],
+    )
+    print(f"  leave-one-library-out: strict binary rate {100 * rate:.1f}%, largest shift {100 * worst[1]:.2f} points ({worst[0]})")
+
     print("\nSONAME CHANGES vs strict binary breaks")
     tab = Counter()
     for pid, d in pairs.items():
