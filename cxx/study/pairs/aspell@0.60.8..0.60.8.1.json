@@ -1,0 +1,719 @@
+{
+ "data": {
+  "bytes_extracted": 9997212,
+  "id": "aspell@0.60.8..0.60.8.1",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      990,
+      968
+     ],
+     "mangled_functions": [
+      856,
+      834
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "function_signature_changed": 35
+    },
+    "soname": [
+     "libaspell.so.15",
+     "libaspell.so.15"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<char const*, std::allocator<char const*> >::_M_realloc_insert<char const* const&>(std::vector<char const*, std::allocator<char const*> >::iterator, const char* const&)",
+      "symbol": "_ZNSt6vectorIPKcSaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<acommon::FilterMode::MagicString, std::allocator<acommon::FilterMode::MagicString> >::_M_realloc_insert<acommon::FilterMode::MagicString>(std::vector<acommon::FilterMode::MagicString, std::allocator<acommon::FilterMode::MagicString> >::iterator, acommon::FilterMode::MagicString&&)",
+      "symbol": "_ZNSt6vectorIN7acommon10FilterMode11MagicStringESaIS2_EE17_M_realloc_insertIJS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<acommon::FilterChar, std::allocator<acommon::FilterChar> >::_M_realloc_insert<const acommon::FilterChar&>(std::vector<acommon::FilterChar, std::allocator<acommon::FilterChar> >::iterator, const acommon::FilterChar&)",
+      "symbol": "_ZNSt6vectorIN7acommon10FilterCharESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<acommon::FilterMode, std::allocator<acommon::FilterMode> >::_M_realloc_insert<const acommon::FilterMode&>(std::vector<acommon::FilterMode, std::allocator<acommon::FilterMode> >::iterator, const acommon::FilterMode&)",
+      "symbol": "_ZNSt6vectorIN7acommon10FilterModeESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<acommon::KeyInfo, std::allocator<acommon::KeyInfo> >::_M_realloc_insert<acommon::KeyInfo>(std::vector<acommon::KeyInfo, std::allocator<acommon::KeyInfo> >::iterator, acommon::KeyInfo&&)",
+      "symbol": "_ZNSt6vectorIN7acommon7KeyInfoESaIS1_EE17_M_realloc_insertIJS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<acommon::String, std::allocator<acommon::String> >::_M_realloc_insert<const acommon::String&>(std::vector<acommon::String, std::allocator<acommon::String> >::iterator, const acommon::String&)",
+      "symbol": "_ZNSt6vectorIN7acommon6StringESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function acommon::PosibErr<acommon::Encode*> acommon::get_cache_data<acommon::Encode>(acommon::GlobalCache<acommon::Encode>*, acommon::ConvBase::CacheConfig*, const acommon::ConvBase::CacheKey&)",
+      "symbol": "_ZN7acommon14get_cache_dataINS_6EncodeEEENS_8PosibErrIPT_EEPNS_11GlobalCacheIS3_EEPNS3_11CacheConfigERKNS3_8CacheKeyE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<aspeller::SuggestRepl, std::allocator<aspeller::SuggestRepl> >::_M_realloc_insert<const aspeller::SuggestRepl&>(std::vector<aspeller::SuggestRepl, std::allocator<aspeller::SuggestRepl> >::iterator, const aspeller::SuggestRepl&)",
+      "symbol": "_ZNSt6vectorIN8aspeller11SuggestReplESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<const aspeller::Dictionary*, std::allocator<const aspeller::Dictionary*> >::_M_realloc_insert<const aspeller::Dictionary* const&>(std::vector<const aspeller::Dictionary*, std::allocator<const aspeller::Dictionary*> >::iterator, const aspeller::Dictionary* const&)",
+      "symbol": "_ZNSt6vectorIPKN8aspeller10DictionaryESaIS3_EE17_M_realloc_insertIJRKS3_EEEvN9__gnu_cxx17__normal_iteratorIPS3_S5_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<double, std::allocator<double> >::_M_realloc_insert<double>(std::vector<double, std::allocator<double> >::iterator, double&&)",
+      "symbol": "_ZNSt6vectorIdSaIdEE17_M_realloc_insertIJdEEEvN9__gnu_cxx17__normal_iteratorIPdS1_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function acommon::PosibErr<acommon::Decode*> acommon::get_cache_data<acommon::Decode>(acommon::GlobalCache<acommon::Decode>*, acommon::ConvBase::CacheConfig*, const acommon::ConvBase::CacheKey&)",
+      "symbol": "_ZN7acommon14get_cache_dataINS_6DecodeEEENS_8PosibErrIPT_EEPNS_11GlobalCacheIS3_EEPNS3_11CacheConfigERKNS3_8CacheKeyE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<acommon::String, std::allocator<acommon::String> >::_M_realloc_insert<acommon::String>(std::vector<acommon::String, std::allocator<acommon::String> >::iterator, acommon::String&&)",
+      "symbol": "_ZNSt6vectorIN7acommon6StringESaIS1_EE17_M_realloc_insertIJS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<char const*, std::allocator<char const*> >::_M_realloc_insert<char const*>(std::vector<char const*, std::allocator<char const*> >::iterator, const char*&&)",
+      "symbol": "_ZNSt6vectorIPKcSaIS1_EE17_M_realloc_insertIJS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<acommon::ConfigModule, std::allocator<acommon::ConfigModule> >::_M_realloc_insert<const acommon::ConfigModule&>(std::vector<acommon::ConfigModule, std::allocator<acommon::ConfigModule> >::iterator, const acommon::ConfigModule&)",
+      "symbol": "_ZNSt6vectorIN7acommon12ConfigModuleESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<acommon::DictExt, std::allocator<acommon::DictExt> >::_M_realloc_insert<const acommon::DictExt&>(std::vector<acommon::DictExt, std::allocator<acommon::DictExt> >::iterator, const acommon::DictExt&)",
+      "symbol": "_ZNSt6vectorIN7acommon7DictExtESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function acommon::NormTables::ToUniTable* std::__do_uninit_copy<const acommon::NormTables::ToUniTable*, acommon::NormTables::ToUniTable*>(const acommon::NormTables::ToUniTable*, const acommon::NormTables::ToUniTable*, acommon::NormTables::ToUniTable*)",
+      "symbol": "_ZSt16__do_uninit_copyIPKN7acommon10NormTables10ToUniTableEPS2_ET0_T_S7_S6_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<aspeller::Dictionary*, std::allocator<aspeller::Dictionary*> >::_M_realloc_insert<aspeller::Dictionary* const&>(std::vector<aspeller::Dictionary*, std::allocator<aspeller::Dictionary*> >::iterator, aspeller::Dictionary* const&)",
+      "symbol": "_ZNSt6vectorIPN8aspeller10DictionaryESaIS2_EE17_M_realloc_insertIJRKS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<acommon::Notifier*, std::allocator<acommon::Notifier*> >::_M_realloc_insert<acommon::Notifier* const&>(std::vector<acommon::Notifier*, std::allocator<acommon::Notifier*> >::iterator, acommon::Notifier* const&)",
+      "symbol": "_ZNSt6vectorIPN7acommon8NotifierESaIS2_EE17_M_realloc_insertIJRKS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<unsigned int, std::allocator<unsigned int> >::_M_realloc_insert<unsigned int>(std::vector<unsigned int, std::allocator<unsigned int> >::iterator, unsigned int&&)",
+      "symbol": "_ZNSt6vectorIjSaIjEE17_M_realloc_insertIJjEEEvN9__gnu_cxx17__normal_iteratorIPjS1_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<acommon::FilterMode::KeyValue, std::allocator<acommon::FilterMode::KeyValue> >::_M_realloc_insert<acommon::FilterMode::KeyValue>(std::vector<acommon::FilterMode::KeyValue, std::allocator<acommon::FilterMode::KeyValue> >::iterator, acommon::FilterMode::KeyValue&&)",
+      "symbol": "_ZNSt6vectorIN7acommon10FilterMode8KeyValueESaIS2_EE17_M_realloc_insertIJS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method acommon::PosibErr<bool> aspeller::SpellerImpl::check(acommon::ParmString)",
+      "symbol": "_ZN8aspeller11SpellerImpl5checkEN7acommon10ParmStringE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<acommon::NormTables::ToUniTable, std::allocator<acommon::NormTables::ToUniTable> >::_M_realloc_insert<acommon::NormTables::ToUniTable>(std::vector<acommon::NormTables::ToUniTable, std::allocator<acommon::NormTables::ToUniTable> >::iterator, acommon::NormTables::ToUniTable&&)",
+      "symbol": "_ZNSt6vectorIN7acommon10NormTables10ToUniTableESaIS2_EE17_M_realloc_insertIJS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<aspeller::CharPair, std::allocator<aspeller::CharPair> >::_M_realloc_insert<aspeller::CharPair>(std::vector<aspeller::CharPair, std::allocator<aspeller::CharPair> >::iterator, aspeller::CharPair&&)",
+      "symbol": "_ZNSt6vectorIN8aspeller8CharPairESaIS1_EE17_M_realloc_insertIJS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<const aspeller::Dictionary*, std::allocator<const aspeller::Dictionary*> >::push_back(const std::vector<const aspeller::Dictionary*, std::allocator<const aspeller::Dictionary*> >::value_type&)",
+      "symbol": "_ZNSt6vectorIPKN8aspeller10DictionaryESaIS3_EE9push_backERKS3_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<char const*, std::allocator<char const*> >::reserve(std::vector<char const*, std::allocator<char const*> >::size_type)",
+      "symbol": "_ZNSt6vectorIPKcSaIS1_EE7reserveEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<acommon::IndividualFilter*, std::allocator<acommon::IndividualFilter*> >::_M_realloc_insert<acommon::IndividualFilter* const&>(std::vector<acommon::IndividualFilter*, std::allocator<acommon::IndividualFilter*> >::iterator, acommon::IndividualFilter* const&)",
+      "symbol": "_ZNSt6vectorIPN7acommon16IndividualFilterESaIS2_EE17_M_realloc_insertIJRKS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<acommon::ObjStack::Node*, std::allocator<acommon::ObjStack::Node*> >::_M_realloc_insert<acommon::ObjStack::Node*>(std::vector<acommon::ObjStack::Node*, std::allocator<acommon::ObjStack::Node*> >::iterator, acommon::ObjStack::Node*&&)",
+      "symbol": "_ZNSt6vectorIPN7acommon8ObjStack4NodeESaIS3_EE17_M_realloc_insertIJS3_EEEvN9__gnu_cxx17__normal_iteratorIPS3_S5_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<acommon::Cacheable*, std::allocator<acommon::Cacheable*> >::_M_realloc_insert<acommon::Cacheable*>(std::vector<acommon::Cacheable*, std::allocator<acommon::Cacheable*> >::iterator, acommon::Cacheable*&&)",
+      "symbol": "_ZNSt6vectorIPN7acommon9CacheableESaIS2_EE17_M_realloc_insertIJS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<aspeller::SpellerDict*, std::allocator<aspeller::SpellerDict*> >::_M_realloc_insert<aspeller::SpellerDict* const&>(std::vector<aspeller::SpellerDict*, std::allocator<aspeller::SpellerDict*> >::iterator, aspeller::SpellerDict* const&)",
+      "symbol": "_ZNSt6vectorIPN8aspeller11SpellerDictESaIS2_EE17_M_realloc_insertIJRKS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<int, std::allocator<int> >::_M_realloc_insert<int const&>(std::vector<int, std::allocator<int> >::iterator, const int&)",
+      "symbol": "_ZNSt6vectorIiSaIiEE17_M_realloc_insertIJRKiEEEvN9__gnu_cxx17__normal_iteratorIPiS1_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function acommon::String* std::__do_uninit_copy<const acommon::String*, const acommon::String*, acommon::String*>(const acommon::String*, const acommon::String*, acommon::String*)",
+      "symbol": "_ZSt16__do_uninit_copyIPKN7acommon6StringES3_PS1_ET1_T_T0_S5_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<acommon::DictExt, std::allocator<acommon::DictExt> >::_M_realloc_append<const acommon::DictExt&>(const acommon::DictExt&)",
+      "symbol": "_ZNSt6vectorIN7acommon7DictExtESaIS1_EE17_M_realloc_appendIJRKS1_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<acommon::NormTables::ToUniTable, std::allocator<acommon::NormTables::ToUniTable> >::_M_realloc_append<acommon::NormTables::ToUniTable>(acommon::NormTables::ToUniTable&&)",
+      "symbol": "_ZNSt6vectorIN7acommon10NormTables10ToUniTableESaIS2_EE17_M_realloc_appendIJS2_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<acommon::String, std::allocator<acommon::String> >::_M_realloc_append<acommon::String>(acommon::String&&)",
+      "symbol": "_ZNSt6vectorIN7acommon6StringESaIS1_EE17_M_realloc_appendIJS1_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<acommon::FilterMode, std::allocator<acommon::FilterMode> >::_M_realloc_append<const acommon::FilterMode&>(const acommon::FilterMode&)",
+      "symbol": "_ZNSt6vectorIN7acommon10FilterModeESaIS1_EE17_M_realloc_appendIJRKS1_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<acommon::FilterMode::KeyValue, std::allocator<acommon::FilterMode::KeyValue> >::_M_realloc_append<acommon::FilterMode::KeyValue>(acommon::FilterMode::KeyValue&&)",
+      "symbol": "_ZNSt6vectorIN7acommon10FilterMode8KeyValueESaIS2_EE17_M_realloc_appendIJS2_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<acommon::String, std::allocator<acommon::String> >::_M_realloc_append<const acommon::String&>(const acommon::String&)",
+      "symbol": "_ZNSt6vectorIN7acommon6StringESaIS1_EE17_M_realloc_appendIJRKS1_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<acommon::FilterMode::MagicString, std::allocator<acommon::FilterMode::MagicString> >::_M_realloc_append<acommon::FilterMode::MagicString>(acommon::FilterMode::MagicString&&)",
+      "symbol": "_ZNSt6vectorIN7acommon10FilterMode11MagicStringESaIS2_EE17_M_realloc_appendIJS2_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method aspeller::AffixMgr::~AffixMgr(int)  ->  method aspeller::AffixMgr::~AffixMgr()",
+      "symbol": "_ZN8aspeller8AffixMgrD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual aspeller::TypoEditDistanceInfo::~TypoEditDistanceInfo(int)  ->  method virtual aspeller::TypoEditDistanceInfo::~TypoEditDistanceInfo()",
+      "symbol": "_ZN8aspeller20TypoEditDistanceInfoD2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual aspeller::SpellerImpl::~SpellerImpl(int)  ->  method virtual aspeller::SpellerImpl::~SpellerImpl()",
+      "symbol": "_ZN8aspeller11SpellerImplD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual aspeller::SpellerImpl::~SpellerImpl(int)  ->  method virtual aspeller::SpellerImpl::~SpellerImpl()",
+      "symbol": "_ZN8aspeller11SpellerImplD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual aspeller::PhonetParms::~PhonetParms(int)  ->  method virtual aspeller::PhonetParms::~PhonetParms()",
+      "symbol": "_ZN8aspeller11PhonetParmsD0Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual aspeller::Dictionary::~Dictionary(int)  ->  method virtual aspeller::Dictionary::~Dictionary()",
+      "symbol": "_ZN8aspeller10DictionaryD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual acommon::Tokenizer::~Tokenizer(int)  ->  method virtual acommon::Tokenizer::~Tokenizer()",
+      "symbol": "_ZN7acommon9TokenizerD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual acommon::StringMap::~StringMap(int)  ->  method virtual acommon::StringMap::~StringMap()",
+      "symbol": "_ZN7acommon9StringMapD2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual acommon::StringMap::~StringMap(int)  ->  method virtual acommon::StringMap::~StringMap()",
+      "symbol": "_ZN7acommon9StringMapD0Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual acommon::Cacheable::~Cacheable(int)  ->  method virtual acommon::Cacheable::~Cacheable()",
+      "symbol": "_ZN7acommon9CacheableD2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual acommon::Cacheable::~Cacheable(int)  ->  method virtual acommon::Cacheable::~Cacheable()",
+      "symbol": "_ZN7acommon9CacheableD0Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method acommon::ObjStack::~ObjStack(int)  ->  method acommon::ObjStack::~ObjStack()",
+      "symbol": "_ZN7acommon8ObjStackD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual acommon::Notifier::~Notifier(int)  ->  method virtual acommon::Notifier::~Notifier()",
+      "symbol": "_ZN7acommon8NotifierD0Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual acommon::Speller::~Speller(int)  ->  method virtual acommon::Speller::~Speller()",
+      "symbol": "_ZN7acommon7SpellerD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual aspeller::PhonetParms::~PhonetParms(int)  ->  method virtual aspeller::PhonetParms::~PhonetParms()",
+      "symbol": "_ZN8aspeller11PhonetParmsD2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual acommon::FStream::~FStream(int)  ->  method virtual acommon::FStream::~FStream()",
+      "symbol": "_ZN7acommon7FStreamD2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual acommon::StringList::~StringList(int)  ->  method virtual acommon::StringList::~StringList()",
+      "symbol": "_ZN7acommon10StringListD2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function const acommon::StringMap* acommon::get_dict_aliases(acommon::Config*)  ->  function acommon::PosibErr<const acommon::StringMap*> acommon::get_dict_aliases(acommon::Config*)",
+      "symbol": "_ZN7acommon16get_dict_aliasesEPNS_6ConfigE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual acommon::DictInfoEnumeration::~DictInfoEnumeration(int)  ->  method virtual acommon::DictInfoEnumeration::~DictInfoEnumeration()",
+      "symbol": "_ZN7acommon19DictInfoEnumerationD0Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual acommon::Filter::~Filter(int)  ->  method virtual acommon::Filter::~Filter()",
+      "symbol": "_ZN7acommon6FilterD1Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual acommon::ModeNotifierImpl::~ModeNotifierImpl(int)  ->  method virtual acommon::ModeNotifierImpl::~ModeNotifierImpl()",
+      "symbol": "_ZN7acommon16ModeNotifierImplD0Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method acommon::Convert::~Convert(int)  ->  method acommon::Convert::~Convert()",
+      "symbol": "_ZN7acommon7ConvertD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual acommon::DocumentChecker::~DocumentChecker(int)  ->  method virtual acommon::DocumentChecker::~DocumentChecker()",
+      "symbol": "_ZN7acommon15DocumentCheckerD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual acommon::Speller::~Speller(int)  ->  method virtual acommon::Speller::~Speller()",
+      "symbol": "_ZN7acommon7SpellerD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual acommon::FStream::~FStream(int)  ->  method virtual acommon::FStream::~FStream()",
+      "symbol": "_ZN7acommon7FStreamD0Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method acommon::PathBrowser::~PathBrowser(int)  ->  method acommon::PathBrowser::~PathBrowser()",
+      "symbol": "_ZN7acommon11PathBrowserD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method acommon::MDInfoListofLists::~MDInfoListofLists(int)  ->  method acommon::MDInfoListofLists::~MDInfoListofLists()",
+      "symbol": "_ZN7acommon17MDInfoListofListsD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual acommon::ModeNotifierImpl::~ModeNotifierImpl(int)  ->  method virtual acommon::ModeNotifierImpl::~ModeNotifierImpl()",
+      "symbol": "_ZN7acommon16ModeNotifierImplD2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual aspeller::PhonetParmsImpl::~PhonetParmsImpl(int)  ->  method virtual aspeller::PhonetParmsImpl::~PhonetParmsImpl()",
+      "symbol": "_ZN8aspeller15PhonetParmsImplD2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual aspeller::Dictionary::~Dictionary(int)  ->  method virtual aspeller::Dictionary::~Dictionary()",
+      "symbol": "_ZN8aspeller10DictionaryD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function const acommon::DictInfoList* acommon::get_dict_info_list(acommon::Config*)  ->  function acommon::PosibErr<const acommon::DictInfoList*> acommon::get_dict_info_list(acommon::Config*)",
+      "symbol": "_ZN7acommon18get_dict_info_listEPNS_6ConfigE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method acommon::ItemizeTokenizer::~ItemizeTokenizer(int)  ->  method acommon::ItemizeTokenizer::~ItemizeTokenizer()",
+      "symbol": "_ZN7acommon16ItemizeTokenizerD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual acommon::ConfigFilterModule::~ConfigFilterModule(int)  ->  method virtual acommon::ConfigFilterModule::~ConfigFilterModule()",
+      "symbol": "_ZN7acommon18ConfigFilterModuleD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual acommon::NormTables::~NormTables(int)  ->  method virtual acommon::NormTables::~NormTables()",
+      "symbol": "_ZN7acommon10NormTablesD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method acommon::FilterHandle::~FilterHandle(int)  ->  method acommon::FilterHandle::~FilterHandle()",
+      "symbol": "_ZN7acommon12FilterHandleD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual acommon::ModuleInfoEnumeration::~ModuleInfoEnumeration(int)  ->  method virtual acommon::ModuleInfoEnumeration::~ModuleInfoEnumeration()",
+      "symbol": "_ZN7acommon21ModuleInfoEnumerationD0Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual acommon::Notifier::~Notifier(int)  ->  method virtual acommon::Notifier::~Notifier()",
+      "symbol": "_ZN7acommon8NotifierD2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method acommon::FilterMode::~FilterMode(int)  ->  method acommon::FilterMode::~FilterMode()",
+      "symbol": "_ZN7acommon10FilterModeD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual acommon::Better::~Better(int)  ->  method virtual acommon::Better::~Better()",
+      "symbol": "_ZN7acommon6BetterD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual aspeller::TypoEditDistanceInfo::~TypoEditDistanceInfo(int)  ->  method virtual aspeller::TypoEditDistanceInfo::~TypoEditDistanceInfo()",
+      "symbol": "_ZN8aspeller20TypoEditDistanceInfoD0Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual acommon::NormTables::~NormTables(int)  ->  method virtual acommon::NormTables::~NormTables()",
+      "symbol": "_ZN7acommon10NormTablesD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual acommon::ModuleInfoEnumeration::~ModuleInfoEnumeration(int)  ->  method virtual acommon::ModuleInfoEnumeration::~ModuleInfoEnumeration()",
+      "symbol": "_ZN7acommon21ModuleInfoEnumerationD2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method acommon::Error::~Error(int)  ->  method acommon::Error::~Error()",
+      "symbol": "_ZN7acommon5ErrorD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual acommon::CanHaveError::~CanHaveError(int)  ->  method virtual acommon::CanHaveError::~CanHaveError()",
+      "symbol": "_ZN7acommon12CanHaveErrorD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual acommon::StringList::~StringList(int)  ->  method virtual acommon::StringList::~StringList()",
+      "symbol": "_ZN7acommon10StringListD0Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual aspeller::PhonetParmsImpl::~PhonetParmsImpl(int)  ->  method virtual aspeller::PhonetParmsImpl::~PhonetParmsImpl()",
+      "symbol": "_ZN8aspeller15PhonetParmsImplD0Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method acommon::GlobalCacheBase::~GlobalCacheBase(int)  ->  method acommon::GlobalCacheBase::~GlobalCacheBase()",
+      "symbol": "_ZN7acommon15GlobalCacheBaseD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual acommon::Better::~Better(int)  ->  method virtual acommon::Better::~Better()",
+      "symbol": "_ZN7acommon6BetterD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual acommon::StringList::~StringList(int)  ->  method virtual acommon::StringList::~StringList()",
+      "symbol": "_ZN7acommon10StringListD2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method acommon::Mutex::~Mutex(int)  ->  method acommon::Mutex::~Mutex()",
+      "symbol": "_ZN7acommon5MutexD2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual acommon::CanHaveError::~CanHaveError(int)  ->  method virtual acommon::CanHaveError::~CanHaveError()",
+      "symbol": "_ZN7acommon12CanHaveErrorD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual acommon::DictInfoEnumeration::~DictInfoEnumeration(int)  ->  method virtual acommon::DictInfoEnumeration::~DictInfoEnumeration()",
+      "symbol": "_ZN7acommon19DictInfoEnumerationD2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual acommon::Tokenizer::~Tokenizer(int)  ->  method virtual acommon::Tokenizer::~Tokenizer()",
+      "symbol": "_ZN7acommon9TokenizerD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual acommon::String::~String(int)  ->  method virtual acommon::String::~String()",
+      "symbol": "_ZN7acommon6StringD0Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual acommon::Config::~Config(int)  ->  method virtual acommon::Config::~Config()",
+      "symbol": "_ZN7acommon6ConfigD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual acommon::Config::~Config(int)  ->  method virtual acommon::Config::~Config()",
+      "symbol": "_ZN7acommon6ConfigD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual acommon::ConfigFilterModule::~ConfigFilterModule(int)  ->  method virtual acommon::ConfigFilterModule::~ConfigFilterModule()",
+      "symbol": "_ZN7acommon18ConfigFilterModuleD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual acommon::Filter::~Filter(int)  ->  method virtual acommon::Filter::~Filter()",
+      "symbol": "_ZN7acommon6FilterD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual acommon::Filter::~Filter(int)  ->  method virtual acommon::Filter::~Filter()",
+      "symbol": "_ZN7acommon6FilterD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual acommon::DocumentChecker::~DocumentChecker(int)  ->  method virtual acommon::DocumentChecker::~DocumentChecker()",
+      "symbol": "_ZN7acommon15DocumentCheckerD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual acommon::String::~String(int)  ->  method virtual acommon::String::~String()",
+      "symbol": "_ZN7acommon6StringD2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual acommon::FStream::~FStream(int)  ->  method virtual acommon::FStream::~FStream()",
+      "symbol": "_ZN7acommon7FStreamD2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual acommon::String::~String(int)  ->  method virtual acommon::String::~String()",
+      "symbol": "_ZN7acommon6StringD2Ev",
+      "weak": true
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 1,
+     "field_type_changed": 1
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct _IO_FILE"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct _IO_FILE"
+     }
+    ],
+    "vague_linkage": {
+     "function_signature_changed": 28,
+     "symbol_added": 8,
+     "symbol_removed": 30
+    }
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      1,
+      1
+     ],
+     "mangled_functions": [
+      1,
+      1
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libpspell.so.15",
+     "libpspell.so.15"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 5.592445241,
+  "source": "aspell",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "0.60.8",
+   "0.60.8.1"
+  ]
+ },
+ "generated_at": "2026-09-04T00:39:40Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

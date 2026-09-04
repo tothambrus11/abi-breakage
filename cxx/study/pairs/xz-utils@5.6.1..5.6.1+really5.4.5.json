@@ -1,0 +1,65 @@
+{
+ "data": {
+  "bytes_extracted": 2851541,
+  "id": "xz-utils@5.6.1..5.6.1+really5.4.5",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      115,
+      114
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_removed": 1
+    },
+    "soname": [
+     "liblzma.so.5",
+     "liblzma.so.5"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "function uint64_t lzma_mt_block_size(const lzma_filter*)",
+      "symbol": "lzma_mt_block_size",
+      "version": "XZ_5.6.0",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 1.286740102,
+  "source": "xz-utils",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "5.6.1",
+   "5.6.1+really5.4.5"
+  ]
+ },
+ "generated_at": "2026-09-04T00:42:23Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

@@ -1,0 +1,194 @@
+{
+ "data": {
+  "bytes_extracted": 7949955,
+  "id": "libzstd@1.5.4+dfsg2..1.5.5+dfsg2",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      183,
+      185
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 2
+    },
+    "soname": [
+     "libzstd.so.1",
+     "libzstd.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_CCtx_setParams(ZSTD_CCtx*, ZSTD_parameters)",
+      "symbol": "ZSTD_CCtx_setParams",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t ZSTD_CCtx_setFParams(ZSTD_CCtx*, ZSTD_frameParameters)",
+      "symbol": "ZSTD_CCtx_setFParams",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "enum_case_added": 1,
+     "field_added_to_struct": 4,
+     "field_type_changed": 1,
+     "member_offset_changed": 60,
+     "type_size_changed": 5
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 40,
+      "declared_in": ".//compress/zstd_compress_internal.h",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct ZSTD_CCtx_s"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": ".//compress/zstd_compress_internal.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct ZSTD_CCtx_s"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": ".//compress/zstd_cwksp.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct ZSTD_cwksp"
+     },
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": ".//compress/zstd_cwksp.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct ZSTD_cwksp"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": ".//compress/zstd_cwksp.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct ZSTD_cwksp"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": ".//compress/zstd_cwksp.h",
+      "exposure": "not_in_interface",
+      "kind": "enum_case_added",
+      "third_party": true,
+      "type": "enum ZSTD_cwksp_alloc_phase_e"
+     },
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": ".//compress/zstd_compress_internal.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct ZSTD_blockState_t"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": ".//compress/zstd_compress_internal.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct ZSTD_matchState_t"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": ".//compress/zstd_compress_internal.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct ZSTD_matchState_t"
+     },
+     {
+      "append_only": false,
+      "count": 10,
+      "declared_in": ".//compress/zstd_compress_internal.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct ZSTD_matchState_t"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": ".//compress/zstd_compress_internal.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct ZSTD_matchState_t"
+     },
+     {
+      "append_only": false,
+      "count": 6,
+      "declared_in": ".//compress/zstd_compress.c",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct ZSTD_CDict_s"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": ".//compress/zstd_compress.c",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct ZSTD_CDict_s"
+     }
+    ],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 1.905973736,
+  "source": "libzstd",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.5.4+dfsg2",
+   "1.5.5+dfsg2"
+  ]
+ },
+ "generated_at": "2026-09-04T00:40:00Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

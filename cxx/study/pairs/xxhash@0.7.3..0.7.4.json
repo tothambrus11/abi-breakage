@@ -1,0 +1,105 @@
+{
+ "data": {
+  "bytes_extracted": 723645,
+  "id": "xxhash@0.7.3..0.7.4",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      43,
+      44
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "field_added_to_struct": 1,
+     "field_removed_from_struct": 2,
+     "field_type_changed": 3,
+     "member_offset_changed": 7,
+     "symbol_added": 1
+    },
+    "soname": [
+     "libxxhash.so.0",
+     "libxxhash.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function void XXH3_generateSecret(void*, void*, size_t)",
+      "symbol": "XXH3_generateSecret",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./xxhash.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": false,
+      "type": "struct XXH3_state_s"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./xxhash.h",
+      "exposure": "by_pointer",
+      "kind": "field_removed_from_struct",
+      "third_party": false,
+      "type": "struct XXH3_state_s"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "./xxhash.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": false,
+      "type": "struct XXH3_state_s"
+     },
+     {
+      "append_only": false,
+      "count": 7,
+      "declared_in": "./xxhash.h",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": false,
+      "type": "struct XXH3_state_s"
+     }
+    ],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 0.975633809,
+  "source": "xxhash",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "0.7.3",
+   "0.7.4"
+  ]
+ },
+ "generated_at": "2026-09-04T00:44:37Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

@@ -1,0 +1,220 @@
+{
+ "data": {
+  "bytes_extracted": 2066790,
+  "id": "game-music-emu@0.6.2..0.6.3",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      42,
+      48
+     ],
+     "mangled_functions": [
+      0,
+      2
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 16
+    },
+    "soname": [
+     "libgme.so.0",
+     "libgme.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function const char* gme_type_extension(gme_type_t)",
+      "symbol": "gme_type_extension",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void gme_set_autoload_playback_limit(Music_Emu*, int)",
+      "symbol": "gme_set_autoload_playback_limit",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function Music_Emu* gme_new_emu_multi_channel(gme_type_t, int)",
+      "symbol": "gme_new_emu_multi_channel",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int gme_multi_channel(const Music_Emu*)",
+      "symbol": "gme_multi_channel",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function std::vector<short int, std::allocator<short int> >* std::__do_uninit_fill_n<std::vector<short int>*, long unsigned int, std::vector<short int> >(std::vector<short int, std::allocator<short int> >*, unsigned long int, const std::vector<short int, std::allocator<short int> >&)",
+      "symbol": "_ZSt18__do_uninit_fill_nIPSt6vectorIsSaIsEEmS2_ET_S4_T0_RKT1_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<short int, std::allocator<short int> >::_M_default_append(std::vector<short int, std::allocator<short int> >::size_type)",
+      "symbol": "_ZNSt6vectorIsSaIsEE17_M_default_appendEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "const gme_type_t gme_vgz_type",
+      "symbol": "gme_vgz_type",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "const gme_type_t gme_vgm_type",
+      "symbol": "gme_vgm_type",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "const gme_type_t gme_nsfe_type",
+      "symbol": "gme_nsfe_type",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "const gme_type_t gme_kss_type",
+      "symbol": "gme_kss_type",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "const gme_type_t gme_hes_type",
+      "symbol": "gme_hes_type",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "const gme_type_t gme_sap_type",
+      "symbol": "gme_sap_type",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "const gme_type_t gme_nsf_type",
+      "symbol": "gme_nsf_type",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "const gme_type_t gme_gym_type",
+      "symbol": "gme_gym_type",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "const char* const gme_wrong_file_type",
+      "symbol": "gme_wrong_file_type",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "const gme_type_t gme_spc_type",
+      "symbol": "gme_spc_type",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "const gme_type_t gme_gbs_type",
+      "symbol": "gme_gbs_type",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "const gme_type_t gme_ay_type",
+      "symbol": "gme_ay_type",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 1,
+     "field_added_to_struct": 2,
+     "member_offset_changed": 15,
+     "type_size_changed": 1,
+     "vtable_changed": 10
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./gme/Music_Emu.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct Music_Emu"
+     },
+     {
+      "append_only": false,
+      "count": 15,
+      "declared_in": "./gme/Music_Emu.h",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct Music_Emu"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./gme/Music_Emu.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct Music_Emu"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./gme/Music_Emu.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct Music_Emu"
+     },
+     {
+      "append_only": false,
+      "count": 10,
+      "declared_in": "./gme/Music_Emu.h",
+      "exposure": "by_pointer",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "struct Music_Emu"
+     }
+    ],
+    "vague_linkage": {
+     "symbol_added": 2
+    }
+   }
+  ],
+  "seconds": 2.077413099,
+  "source": "game-music-emu",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "0.6.2",
+   "0.6.3"
+  ]
+ },
+ "generated_at": "2026-09-04T00:42:31Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

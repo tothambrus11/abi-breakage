@@ -1,0 +1,104 @@
+{
+ "data": {
+  "bytes_extracted": 306820,
+  "id": "libcap-ng@0.9.2..0.9.3",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      22,
+      23
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "enum_case_added": 2,
+     "symbol_added": 1
+    },
+    "soname": [
+     "libcap-ng.so.0",
+     "libcap-ng.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function int capng_stage_additional_groups(const gid_t*, size_t)",
+      "symbol": "capng_stage_additional_groups",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../../src/cap-ng.h",
+      "exposure": "by_value",
+      "kind": "enum_case_added",
+      "third_party": false,
+      "type": "enum capng_flags_t"
+     }
+    ],
+    "vague_linkage": {}
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      1,
+      1
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libdrop_ambient.so.0",
+     "libdrop_ambient.so.0"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 0.977771719,
+  "source": "libcap-ng",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "0.9.2",
+   "0.9.3"
+  ]
+ },
+ "generated_at": "2026-09-04T00:45:02Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

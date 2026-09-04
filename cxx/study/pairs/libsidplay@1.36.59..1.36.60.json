@@ -1,0 +1,152 @@
+{
+ "data": {
+  "bytes_extracted": 2012282,
+  "id": "libsidplay@1.36.59..1.36.60",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      215,
+      218
+     ],
+     "mangled_functions": [
+      215,
+      218
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "function_signature_changed": 4
+    },
+    "soname": [
+     "libsidplay.so.1",
+     "libsidplay.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(const char*, const char*, std::forward_iterator_tag)",
+      "symbol": "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tag",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method const unsigned char& smartPtrBase<unsigned char const>::operator[](ulint)",
+      "symbol": "_ZN12smartPtrBaseIKhEixEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void sidEmuSet(sidOperator*, uword)",
+      "symbol": "_Z9sidEmuSetP11sidOperatort",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void waveCalcFilter(sidOperator*)",
+      "symbol": "_Z14waveCalcFilterP11sidOperator",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void sidEmuSet2(sidOperator*)",
+      "symbol": "_Z10sidEmuSet2P11sidOperator",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual emuEngine::~emuEngine(int)  ->  method virtual emuEngine::~emuEngine()",
+      "symbol": "_ZN9emuEngineD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual sidTune::~sidTune(int)  ->  method virtual sidTune::~sidTune()",
+      "symbol": "_ZN7sidTuneD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual sidTune::~sidTune(int)  ->  method virtual sidTune::~sidTune()",
+      "symbol": "_ZN7sidTuneD0Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual emuEngine::~emuEngine(int)  ->  method virtual emuEngine::~emuEngine()",
+      "symbol": "_ZN9emuEngineD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual smartPtrBase<char>::~smartPtrBase(int)  ->  method virtual smartPtrBase<char>::~smartPtrBase()",
+      "symbol": "_ZN12smartPtrBaseIcED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual smartPtrBase<char>::~smartPtrBase(int)  ->  method virtual smartPtrBase<char>::~smartPtrBase()",
+      "symbol": "_ZN12smartPtrBaseIcED0Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual smartPtrBase<unsigned char const>::~smartPtrBase(int)  ->  method virtual smartPtrBase<unsigned char const>::~smartPtrBase()",
+      "symbol": "_ZN12smartPtrBaseIKhED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual smartPtrBase<unsigned char const>::~smartPtrBase(int)  ->  method virtual smartPtrBase<unsigned char const>::~smartPtrBase()",
+      "symbol": "_ZN12smartPtrBaseIKhED0Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual smartPtrBase<char const>::~smartPtrBase(int)  ->  method virtual smartPtrBase<char const>::~smartPtrBase()",
+      "symbol": "_ZN12smartPtrBaseIKcED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual smartPtrBase<char const>::~smartPtrBase(int)  ->  method virtual smartPtrBase<char const>::~smartPtrBase()",
+      "symbol": "_ZN12smartPtrBaseIKcED0Ev",
+      "weak": true
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {
+     "function_signature_changed": 6,
+     "symbol_added": 4,
+     "symbol_removed": 1
+    }
+   }
+  ],
+  "seconds": 1.448877464,
+  "source": "libsidplay",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.36.59",
+   "1.36.60"
+  ]
+ },
+ "generated_at": "2026-09-04T00:43:14Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

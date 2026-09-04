@@ -1,0 +1,183 @@
+{
+ "data": {
+  "bytes_extracted": 33273263,
+  "id": "libwps@0.4.8..0.4.9",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      298,
+      305
+     ],
+     "mangled_functions": [
+      296,
+      303
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libwps-0.4.so.4",
+     "libwps-0.4.so.4"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "method WKSContentListener::FormulaInstruction* std::__uninitialized_copy<false>::__uninit_copy<WKSContentListener::FormulaInstruction*, WKSContentListener::FormulaInstruction*>(WKSContentListener::FormulaInstruction*, WKSContentListener::FormulaInstruction*)",
+      "symbol": "_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPN18WKSContentListener18FormulaInstructionES4_EET0_T_S6_S5_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method WPSEntry* std::__uninitialized_copy<false>::__uninit_copy<WPSEntry*, WPSEntry*>(WPSEntry*, WPSEntry*)",
+      "symbol": "_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIP8WPSEntryS3_EET0_T_S5_S4_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__shared_count<(__gnu_cxx::_Lock_policy)2>::__shared_count<QuattroDosSpreadsheetInternal::Spreadsheet*>(QuattroDosSpreadsheetInternal::Spreadsheet*)",
+      "symbol": "_ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE2EEC2IPN29QuattroDosSpreadsheetInternal11SpreadsheetEEET_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_Link_type std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_M_copy<std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_Alloc_node>(std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_Const_Link_type, std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_Base_ptr, std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_Alloc_node&)",
+      "symbol": "_ZNSt8_Rb_treeIiiSt9_IdentityIiESt4lessIiESaIiEE7_M_copyINS5_11_Alloc_nodeEEEPSt13_Rb_tree_nodeIiEPKS9_PSt18_Rb_tree_node_baseRT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Rb_tree<int, std::pair<int const, std::vector<int, std::allocator<int> > >, std::_Select1st<std::pair<int const, std::vector<int, std::allocator<int> > > >, std::less<int>, std::allocator<std::pair<int const, std::vector<int, std::allocator<int> > > > >::_M_erase(std::_Rb_tree<int, std::pair<int const, std::vector<int, std::allocator<int> > >, std::_Select1st<std::pair<int const, std::vector<int, std::allocator<int> > > >, std::less<int>, std::allocator<std::pair<int const, std::vector<int, std::allocator<int> > > > >::_Link_type)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiSt6vectorIiSaIiEEESt10_Select1stIS5_ESt4lessIiESaIS5_EE8_M_eraseEPSt13_Rb_tree_nodeIS5_E",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<int, std::pair<int const, std::vector<int, std::allocator<int> > >, std::_Select1st<std::pair<int const, std::vector<int, std::allocator<int> > > >, std::less<int>, std::allocator<std::pair<int const, std::vector<int, std::allocator<int> > > > >::_M_get_insert_hint_unique_pos(std::_Rb_tree<int, std::pair<int const, std::vector<int, std::allocator<int> > >, std::_Select1st<std::pair<int const, std::vector<int, std::allocator<int> > > >, std::less<int>, std::allocator<std::pair<int const, std::vector<int, std::allocator<int> > > > >::const_iterator, const std::_Rb_tree<int, std::pair<int const, std::vector<int, std::allocator<int> > >, std::_Select1st<std::pair<int const, std::vector<int, std::allocator<int> > > >, std::less<int>, std::allocator<std::pair<int const, std::vector<int, std::allocator<int> > > > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiSt6vectorIiSaIiEEESt10_Select1stIS5_ESt4lessIiESaIS5_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS5_ERS1_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<int, std::pair<int const, std::vector<int, std::allocator<int> > >, std::_Select1st<std::pair<int const, std::vector<int, std::allocator<int> > > >, std::less<int>, std::allocator<std::pair<int const, std::vector<int, std::allocator<int> > > > >::_M_get_insert_unique_pos(const std::_Rb_tree<int, std::pair<int const, std::vector<int, std::allocator<int> > >, std::_Select1st<std::pair<int const, std::vector<int, std::allocator<int> > > >, std::less<int>, std::allocator<std::pair<int const, std::vector<int, std::allocator<int> > > > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiSt6vectorIiSaIiEEESt10_Select1stIS5_ESt4lessIiESaIS5_EE24_M_get_insert_unique_posERS1_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<int, std::allocator<int> >::emplace_back<int>(int&&)",
+      "symbol": "_ZNSt6vectorIiSaIiEE12emplace_backIJiEEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<long int, std::allocator<long int> >::emplace_back<long int>(long int&&)",
+      "symbol": "_ZNSt6vectorIlSaIlEE12emplace_backIJlEEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<float, std::allocator<float> >::_M_fill_insert(std::vector<float, std::allocator<float> >::iterator, std::vector<float, std::allocator<float> >::size_type, const std::vector<float, std::allocator<float> >::value_type&)",
+      "symbol": "_ZNSt6vectorIfSaIfEE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPfS1_EEmRKf",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::deque<long int, std::allocator<long int> >::_M_reallocate_map(std::deque<long int, std::allocator<long int> >::size_type, bool)",
+      "symbol": "_ZNSt5dequeIlSaIlEE17_M_reallocate_mapEmb",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method WKSContentListener::FormulaInstruction* std::__uninitialized_copy<false>::__uninit_copy<const WKSContentListener::FormulaInstruction*, WKSContentListener::FormulaInstruction*>(const WKSContentListener::FormulaInstruction*, WKSContentListener::FormulaInstruction*)",
+      "symbol": "_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPKN18WKSContentListener18FormulaInstructionEPS3_EET0_T_S8_S7_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::deque<std::__detail::_StateSeq<std::__cxx11::regex_traits<char> >, std::allocator<std::__detail::_StateSeq<std::__cxx11::regex_traits<char> > > >::_M_reallocate_map(std::deque<std::__detail::_StateSeq<std::__cxx11::regex_traits<char> >, std::allocator<std::__detail::_StateSeq<std::__cxx11::regex_traits<char> > > >::size_type, bool)",
+      "symbol": "_ZNSt5dequeINSt8__detail9_StateSeqINSt7__cxx1112regex_traitsIcEEEESaIS5_EE17_M_reallocate_mapEmb",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Destroy_aux<false>::__destroy<MultiplanParserInternal::Zone*>(MultiplanParserInternal::Zone*)",
+      "symbol": "_ZNSt12_Destroy_auxILb0EE9__destroyIPN23MultiplanParserInternal4ZoneEEEvT_S5_",
+      "weak": true
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 2,
+     "vtable_changed": 2
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/WKS4Spreadsheet.cpp",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct WKS4SpreadsheetInternal::Style"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/WPSFont.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class WPSFont"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/WPSCell.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class WPSCellFormat"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/7/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<WPSBorder, std::allocator<WPSBorder> >"
+     }
+    ],
+    "vague_linkage": {
+     "symbol_added": 11,
+     "symbol_removed": 3
+    }
+   }
+  ],
+  "seconds": 43.538509336,
+  "source": "libwps",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "0.4.8",
+   "0.4.9"
+  ]
+ },
+ "generated_at": "2026-09-04T00:33:24Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

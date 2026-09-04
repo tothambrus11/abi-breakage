@@ -1,0 +1,118 @@
+{
+ "data": {
+  "bytes_extracted": 2386208,
+  "id": "libnftnl@1.2.9..1.3.0",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      333,
+      333
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "field_added_to_struct": 2,
+     "member_offset_changed": 15,
+     "type_size_changed": 1
+    },
+    "soname": [
+     "libnftnl.so.11",
+     "libnftnl.so.11"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 1,
+     "member_offset_changed": 1,
+     "type_size_changed": 1
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "../include/set.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": false,
+      "type": "struct nftnl_set"
+     },
+     {
+      "append_only": false,
+      "count": 15,
+      "declared_in": "../include/set.h",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": false,
+      "type": "struct nftnl_set"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../include/set.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": false,
+      "type": "struct nftnl_set"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/trace.c",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct nftnl_trace"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/trace.c",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct nftnl_trace"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/trace.c",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct nftnl_trace"
+     }
+    ],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 1.227773995,
+  "source": "libnftnl",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.2.9",
+   "1.3.0"
+  ]
+ },
+ "generated_at": "2026-09-04T00:43:19Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

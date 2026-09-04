@@ -1,0 +1,136 @@
+{
+ "data": {
+  "bytes_extracted": 456083,
+  "id": "iptables@1.8.7..1.8.8",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      74,
+      80
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 6
+    },
+    "soname": [
+     "libxtables.so.12",
+     "libxtables.so.12"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function char* xtables_strdup(const char*)",
+      "symbol": "xtables_strdup",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void xtables_announce_chain(const char*)",
+      "symbol": "xtables_announce_chain",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const char* xt_xlate_set_get(xt_xlate*)",
+      "symbol": "xt_xlate_set_get",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function uint8_t xt_xlate_get_family(xt_xlate*)",
+      "symbol": "xt_xlate_get_family",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void xt_xlate_set_add(xt_xlate*, const char*, ...)",
+      "symbol": "xt_xlate_set_add",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void xl_xlate_set_family(xt_xlate*, uint8_t)",
+      "symbol": "xl_xlate_set_family",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 1,
+     "field_type_changed": 1,
+     "member_offset_changed": 1,
+     "type_size_changed": 1
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libxtables/xtables.c",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct xt_xlate"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libxtables/xtables.c",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct xt_xlate"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libxtables/xtables.c",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct xt_xlate"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./libxtables/xtables.c",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct xt_xlate"
+     }
+    ],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 0.971737714,
+  "source": "iptables",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.8.7",
+   "1.8.8"
+  ]
+ },
+ "generated_at": "2026-09-04T00:44:43Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

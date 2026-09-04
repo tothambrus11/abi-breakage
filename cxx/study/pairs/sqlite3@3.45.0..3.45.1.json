@@ -1,0 +1,64 @@
+{
+ "data": {
+  "bytes_extracted": 15599406,
+  "id": "sqlite3@3.45.0..3.45.1",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      1402,
+      1403
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 1
+    },
+    "soname": [
+     "libsqlite3.so.0",
+     "libsqlite3.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function int sqlite3Fts3IntegrityCheck(Fts3Table*, int*)",
+      "symbol": "sqlite3Fts3IntegrityCheck",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 4.91436074,
+  "source": "sqlite3",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "3.45.0",
+   "3.45.1"
+  ]
+ },
+ "generated_at": "2026-09-04T00:37:35Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

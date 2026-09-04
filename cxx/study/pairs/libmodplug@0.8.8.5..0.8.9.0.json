@@ -1,0 +1,993 @@
+{
+ "data": {
+  "bytes_extracted": 1947961,
+  "id": "libmodplug@0.8.8.5..0.8.9.0",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      301,
+      163
+     ],
+     "mangled_functions": [
+      259,
+      135
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "field_added_to_struct": 1,
+     "function_signature_changed": 1,
+     "member_offset_changed": 18,
+     "symbol_removed": 146
+    },
+    "soname": [
+     "libmodplug.so.1",
+     "libmodplug.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int pat_smplooped(int)",
+      "symbol": "pat_smplooped",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void pat_resetsmp()",
+      "symbol": "pat_resetsmp",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int pat_numinstr()",
+      "symbol": "pat_numinstr",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void pat_init_patnames()",
+      "symbol": "pat_init_patnames",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int pat_gmtosmp(int)",
+      "symbol": "pat_gmtosmp",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function const char* pat_gm_name(int)",
+      "symbol": "pat_gm_name",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int pat_gm_drumnr(int)",
+      "symbol": "pat_gm_drumnr",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int pat_gm_drumnote(int)",
+      "symbol": "pat_gm_drumnote",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FilterStereo8BitLinearRampMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z29FilterStereo8BitLinearRampMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void X86_MonoFromStereo(int*, UINT)",
+      "symbol": "_Z18X86_MonoFromStereoPij",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FilterMono8BitSplineRampMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z27FilterMono8BitSplineRampMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function ULONG mid_first_noteonevent_tick(MIDEVENT*)",
+      "symbol": "_Z26mid_first_noteonevent_tickP9_MIDEVENT",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FilterStereo16BitLinearMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z26FilterStereo16BitLinearMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FastMono16BitLinearRampMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z26FastMono16BitLinearRampMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FastMono8BitSplineRampMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z25FastMono8BitSplineRampMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FastMono8BitLinearRampMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z25FastMono8BitLinearRampMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FilterMono16BitSplineRampMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z28FilterMono16BitSplineRampMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FilterStereo16BitRampMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z24FilterStereo16BitRampMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int DMFUnpack(LPBYTE, LPBYTE, LPBYTE, UINT)",
+      "symbol": "_Z9DMFUnpackPhS_S_j",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FilterMono16BitLinearMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z24FilterMono16BitLinearMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void Stereo16BitFirFilterMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z23Stereo16BitFirFilterMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FilterStereo8BitRampMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z23FilterStereo8BitRampMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void ConvertMDLCommand(MODCOMMAND*, UINT, UINT)",
+      "symbol": "_Z17ConvertMDLCommandP11_MODCOMMANDjj",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method CzCUBICSPLINE::CzCUBICSPLINE()",
+      "symbol": "_ZN13CzCUBICSPLINEC2Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FilterMono8BitLinearMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z23FilterMono8BitLinearMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void Mono16BitFirFilterRampMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z25Mono16BitFirFilterRampMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FastMono16BitSplineMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z22FastMono16BitSplineMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FastMono16BitLinearMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z22FastMono16BitLinearMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void Mono8BitSplineRampMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z21Mono8BitSplineRampMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void Mono8BitLinearRampMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z21Mono8BitLinearRampMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FilterStereo16BitFirFilterMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z29FilterStereo16BitFirFilterMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FastMono8BitLinearMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z21FastMono8BitLinearMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void Stereo16BitLinearRampMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z24Stereo16BitLinearRampMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function BOOL IsMagic(LPCSTR, LPCSTR)",
+      "symbol": "_Z7IsMagicPKcS0_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FastMono16BitRampMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z20FastMono16BitRampMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function DWORD X86_Convert32To32(LPVOID, int*, DWORD, LPLONG, LPLONG)",
+      "symbol": "_Z17X86_Convert32To32PvPijS0_S0_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FilterMono8BitFirFilterMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z26FilterMono8BitFirFilterMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FastMono8BitRampMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z19FastMono8BitRampMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void Stereo16BitRampMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z18Stereo16BitRampMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FastMono16BitFirFilterRampMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z29FastMono16BitFirFilterRampMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void Mono16BitSplineMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z18Mono16BitSplineMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void Mono16BitLinearRampMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z22Mono16BitLinearRampMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void ITUnpack8Bit(signed char*, DWORD, LPBYTE, DWORD, BOOL)",
+      "symbol": "_Z12ITUnpack8BitPajPhjb",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void Mono16BitLinearMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z18Mono16BitLinearMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void swap_PSMSAMPLE(PSMSAMPLE*)",
+      "symbol": "_Z14swap_PSMSAMPLEP10_PSMSAMPLE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void Stereo8BitSplineRampMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z23Stereo8BitSplineRampMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FilterStereo8BitFirFilterRampMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z32FilterStereo8BitFirFilterRampMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FilterMono16BitFirFilterMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z27FilterMono16BitFirFilterMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void UnpackMDLTrack(MODCOMMAND*, UINT, UINT, UINT, const BYTE*)",
+      "symbol": "_Z14UnpackMDLTrackP11_MODCOMMANDjjjPKh",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void Stereo8BitFirFilterMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z22Stereo8BitFirFilterMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void X86_EndChannelOfs(MODCHANNEL*, int*, UINT)",
+      "symbol": "_Z17X86_EndChannelOfsP11_MODCHANNELPij",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FilterMono8BitRampMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z21FilterMono8BitRampMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void DMFNewNode(DMF_HTREE*)",
+      "symbol": "_Z10DMFNewNodeP9DMF_HTREE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function BOOL PAT_Load_Instruments(void*)",
+      "symbol": "PAT_Load_Instruments",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FilterStereo8BitLinearMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z25FilterStereo8BitLinearMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FilterStereo8BitFirFilterMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z28FilterStereo8BitFirFilterMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FastMono8BitSplineMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z21FastMono8BitSplineMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void Mono8BitSplineMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z17Mono8BitSplineMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void Stereo8BitSplineMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z19Stereo8BitSplineMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FilterMono16BitLinearRampMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z28FilterMono16BitLinearRampMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function DWORD X86_Convert32To24(LPVOID, int*, DWORD, LPLONG, LPLONG)",
+      "symbol": "_Z17X86_Convert32To24PvPijS0_S0_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FilterMono16BitFirFilterRampMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z31FilterMono16BitFirFilterRampMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FilterMono16BitMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z18FilterMono16BitMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function DWORD lengthArrayToDWORD(const BYTE*)",
+      "symbol": "_Z18lengthArrayToDWORDPKh",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void Mono16BitMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z12Mono16BitMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void Mono8BitLinearMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z17Mono8BitLinearMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void Stereo8BitLinearMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z19Stereo8BitLinearMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FilterStereo8BitSplineRampMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z29FilterStereo8BitSplineRampMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void Mono8BitFirFilterRampMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z24Mono8BitFirFilterRampMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FilterStereo8BitSplineMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z25FilterStereo8BitSplineMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FilterStereo16BitMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z20FilterStereo16BitMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void Mono8BitFirFilterMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z20Mono8BitFirFilterMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void Stereo16BitSplineMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z20Stereo16BitSplineMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function BOOL MMCMP_Unpack(LPCBYTE*, LPDWORD)",
+      "symbol": "_Z12MMCMP_UnpackPPKhPj",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function BYTE DMFReadBits(DMF_HTREE*, UINT)",
+      "symbol": "_Z11DMFReadBitsP9DMF_HTREEj",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function WORD MDLReadBits(DWORD&, UINT&, LPBYTE&, CHAR)",
+      "symbol": "_Z11MDLReadBitsRjS_RPha",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FastMono16BitMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z16FastMono16BitMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FilterMono16BitRampMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z22FilterMono16BitRampMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function BOOL IMAADPCMUnpack16(short int*, UINT, LPBYTE, DWORD, UINT)",
+      "symbol": "_Z16IMAADPCMUnpack16PsjPhjj",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function DWORD ITReadBits(DWORD&, UINT&, LPBYTE&, CHAR)",
+      "symbol": "_Z10ITReadBitsRjS_RPha",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function long int _mm_getfsize(FILE*)",
+      "symbol": "_Z12_mm_getfsizeP8_IO_FILE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void Mono8BitMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z11Mono8BitMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void Stereo8BitMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z13Stereo8BitMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FastMono16BitSplineRampMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z26FastMono16BitSplineRampMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function BOOL PP20_Unpack(LPCBYTE*, LPDWORD)",
+      "symbol": "_Z11PP20_UnpackPPKhPj",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void X86_StereoFill(int*, UINT, LPLONG, LPLONG)",
+      "symbol": "_Z14X86_StereoFillPijS_S_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void Stereo16BitFirFilterRampMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z27Stereo16BitFirFilterRampMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void Stereo16BitSplineRampMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z24Stereo16BitSplineRampMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FilterStereo16BitSplineMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z26FilterStereo16BitSplineMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void PP20_DoUnpack(const BYTE*, UINT, BYTE*, UINT)",
+      "symbol": "_Z13PP20_DoUnpackPKhjPhj",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FilterMono8BitMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z17FilterMono8BitMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FastMono8BitFirFilterMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z24FastMono8BitFirFilterMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method CzWINDOWEDFIR::~CzWINDOWEDFIR(int)",
+      "symbol": "_ZN13CzWINDOWEDFIRD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void AMF_Unpack(MODCOMMAND*, const BYTE*, UINT, UINT)",
+      "symbol": "_Z10AMF_UnpackP11_MODCOMMANDPKhjj",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void Stereo16BitLinearMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z20Stereo16BitLinearMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void Stereo16BitMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z14Stereo16BitMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void X86_InitMixBuffer(int*, UINT)",
+      "symbol": "_Z17X86_InitMixBufferPij",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FastMono8BitMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z15FastMono8BitMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FilterMono8BitFirFilterRampMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z30FilterMono8BitFirFilterRampMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function DWORD X86_Convert32To8(LPVOID, int*, DWORD, LPLONG, LPLONG)",
+      "symbol": "_Z16X86_Convert32To8PvPijS0_S0_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void Stereo8BitFirFilterRampMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z26Stereo8BitFirFilterRampMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void Mono16BitRampMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z16Mono16BitRampMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method DWORD MMCMPBITBUFFER::GetBits(UINT)",
+      "symbol": "_ZN14MMCMPBITBUFFER7GetBitsEj",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void Stereo8BitRampMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z17Stereo8BitRampMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FastMono8BitFirFilterRampMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z28FastMono8BitFirFilterRampMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function DWORD X86_Convert32To16(LPVOID, int*, DWORD, LPLONG, LPLONG)",
+      "symbol": "_Z17X86_Convert32To16PvPijS0_S0_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FilterStereo16BitLinearRampMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z30FilterStereo16BitLinearRampMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FilterStereo16BitSplineRampMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z30FilterStereo16BitSplineRampMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FastMono16BitFirFilterMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z25FastMono16BitFirFilterMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FilterStereo16BitFirFilterRampMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z33FilterStereo16BitFirFilterRampMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FilterMono16BitSplineMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z24FilterMono16BitSplineMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int _muldiv(long int, long int, long int)",
+      "symbol": "_Z7_muldivlll",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int _muldivr(long int, long int, long int)",
+      "symbol": "_Z8_muldivrlll",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FilterMono8BitSplineMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z23FilterMono8BitSplineMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void AMSUnpack(const char*, UINT, char*, UINT, char)",
+      "symbol": "_Z9AMSUnpackPKcjPcjc",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void Mono16BitFirFilterMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z21Mono16BitFirFilterMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int pat_smptogm(int)",
+      "symbol": "pat_smptogm",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void Mono8BitRampMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z15Mono8BitRampMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FilterStereo8BitMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z19FilterStereo8BitMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method ULONG _PPBITBUFFER::GetBits(UINT)",
+      "symbol": "_ZN12_PPBITBUFFER7GetBitsEj",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void Stereo8BitLinearRampMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z23Stereo8BitLinearRampMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int pat_modnote(int)",
+      "symbol": "pat_modnote",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method CzWINDOWEDFIR::CzWINDOWEDFIR()",
+      "symbol": "_ZN13CzWINDOWEDFIRC2Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void Mono16BitSplineRampMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z22Mono16BitSplineRampMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void ModPlug::UpdateSettings(bool)",
+      "symbol": "_ZN7ModPlug14UpdateSettingsEb",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void X86_InterleaveFrontRear(int*, int*, DWORD)",
+      "symbol": "_Z23X86_InterleaveFrontRearPiS_j",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void FilterMono8BitLinearRampMix(MODCHANNEL*, int*, int*)",
+      "symbol": "_Z27FilterMono8BitLinearRampMixP11_MODCHANNELPiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void ITUnpack16Bit(signed char*, DWORD, LPBYTE, DWORD, BOOL)",
+      "symbol": "_Z13ITUnpack16BitPajPhjb",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "CzCUBICSPLINE sspline",
+      "symbol": "sspline",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "CzWINDOWEDFIR sfir",
+      "symbol": "sfir",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "LONG gnRvbROfsVol",
+      "symbol": "gnRvbROfsVol",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "UINT gnReverbSend",
+      "symbol": "gnReverbSend",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "LONG gnDryROfsVol",
+      "symbol": "gnDryROfsVol",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "ModPlug_Settings ModPlug::gSettings",
+      "symbol": "_ZN7ModPlug9gSettingsE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "int MixReverbBuffer[1024]",
+      "symbol": "MixReverbBuffer",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "int MixSoundBuffer[2048]",
+      "symbol": "MixSoundBuffer",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "int MixRearBuffer[1024]",
+      "symbol": "MixRearBuffer",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "float MixFloatBuffer[1024]",
+      "symbol": "MixFloatBuffer",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "int ModPlug::gSampleSize",
+      "symbol": "_ZN7ModPlug11gSampleSizeE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "BYTE autovibit2xm[8]",
+      "symbol": "autovibit2xm",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "LONG gnDryLOfsVol",
+      "symbol": "gnDryLOfsVol",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "static short int CzCUBICSPLINE::lut[4096]",
+      "symbol": "_ZN13CzCUBICSPLINE3lutE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "LONG gnRvbLOfsVol",
+      "symbol": "gnRvbLOfsVol",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "int gbInitPlugins",
+      "symbol": "gbInitPlugins",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "static short int CzWINDOWEDFIR::lut[16392]",
+      "symbol": "_ZN13CzWINDOWEDFIR3lutE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "BYTE autovibxm2it[8]",
+      "symbol": "autovibxm2it",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method CSoundFile::~CSoundFile(int)  ->  method CSoundFile::~CSoundFile()",
+      "symbol": "_ZN10CSoundFileD2Ev",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 3,
+     "field_type_changed": 5,
+     "member_offset_changed": 1
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../src/libmodplug/sndfile.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": false,
+      "type": "class CSoundFile"
+     },
+     {
+      "append_only": false,
+      "count": 18,
+      "declared_in": "../src/libmodplug/sndfile.h",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": false,
+      "type": "class CSoundFile"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "/usr/include/libio.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct _IO_FILE"
+     },
+     {
+      "append_only": false,
+      "count": 5,
+      "declared_in": "/usr/include/libio.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct _IO_FILE"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/libio.h",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct _IO_FILE"
+     }
+    ],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 2.296125296,
+  "source": "libmodplug",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "0.8.8.5",
+   "0.8.9.0"
+  ]
+ },
+ "generated_at": "2026-09-04T00:42:37Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

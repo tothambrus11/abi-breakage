@@ -1,0 +1,173 @@
+{
+ "data": {
+  "bytes_extracted": 6553750,
+  "id": "libyuv@0.0.1904.20250204..0.0.1916.20250814",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      1297,
+      1300
+     ],
+     "mangled_functions": [
+      34,
+      34
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 11,
+     "symbol_removed": 8
+    },
+    "soname": [
+     "libyuv.so.0",
+     "libyuv.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::ARGBToUVRow_AVX2(const uint8_t*, int, uint8_t*, uint8_t*, int)",
+      "symbol": "ARGBToUVRow_AVX2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::ARGBToUVJRow_Any_AVX2(const uint8_t*, int, uint8_t*, uint8_t*, int)",
+      "symbol": "ARGBToUVJRow_Any_AVX2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::ARGBToUVRow_Any_AVX2(const uint8_t*, int, uint8_t*, uint8_t*, int)",
+      "symbol": "ARGBToUVRow_Any_AVX2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::ARGBToUVJRow_AVX2(const uint8_t*, int, uint8_t*, uint8_t*, int)",
+      "symbol": "ARGBToUVJRow_AVX2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::ABGRToUVRow_Any_AVX2(const uint8_t*, int, uint8_t*, uint8_t*, int)",
+      "symbol": "ABGRToUVRow_Any_AVX2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::ABGRToUVRow_AVX2(const uint8_t*, int, uint8_t*, uint8_t*, int)",
+      "symbol": "ABGRToUVRow_AVX2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::ABGRToUVJRow_Any_AVX2(const uint8_t*, int, uint8_t*, uint8_t*, int)",
+      "symbol": "ABGRToUVJRow_Any_AVX2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void libyuv::ABGRToUVJRow_AVX2(const uint8_t*, int, uint8_t*, uint8_t*, int)",
+      "symbol": "ABGRToUVJRow_AVX2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::RAWToARGBRow_Any_AVX2(const uint8_t*, uint8_t*, int)",
+      "symbol": "RAWToARGBRow_Any_AVX2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::ARGBToUVMatrixRow_SSSE3(const uint8_t*, int, uint8_t*, uint8_t*, int, const libyuv::RgbUVConstants*)",
+      "symbol": "ARGBToUVMatrixRow_SSSE3",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::ARGBToUVJ444Row_SSSE3(const uint8_t*, uint8_t*, uint8_t*, int)",
+      "symbol": "ARGBToUVJ444Row_SSSE3",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::ARGBToUVJ444Row_Any_SSSE3(const uint8_t*, uint8_t*, uint8_t*, int)",
+      "symbol": "ARGBToUVJ444Row_Any_SSSE3",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::ARGBToUVJ444Row_Any_AVX2(const uint8_t*, uint8_t*, uint8_t*, int)",
+      "symbol": "ARGBToUVJ444Row_Any_AVX2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::ARGBToUV444Row_Any_AVX2(const uint8_t*, uint8_t*, uint8_t*, int)",
+      "symbol": "ARGBToUV444Row_Any_AVX2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::RAWToARGBRow_AVX2(const uint8_t*, uint8_t*, int)",
+      "symbol": "RAWToARGBRow_AVX2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::ARGBToUVJ444Row_AVX2(const uint8_t*, uint8_t*, uint8_t*, int)",
+      "symbol": "ARGBToUVJ444Row_AVX2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::ARGBToUV444Row_AVX2(const uint8_t*, uint8_t*, uint8_t*, int)",
+      "symbol": "ARGBToUV444Row_AVX2",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::ARGBToUV444MatrixRow_SSSE3(const uint8_t*, uint8_t*, uint8_t*, int, const libyuv::RgbUVConstants*)",
+      "symbol": "ARGBToUV444MatrixRow_SSSE3",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void libyuv::ARGBToUV444MatrixRow_AVX2(const uint8_t*, uint8_t*, uint8_t*, int, const libyuv::RgbUVConstants*)",
+      "symbol": "ARGBToUV444MatrixRow_AVX2",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 1.721902102,
+  "source": "libyuv",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "0.0.1904.20250204",
+   "0.0.1916.20250814"
+  ]
+ },
+ "generated_at": "2026-09-04T00:41:57Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

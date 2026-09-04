@@ -1,0 +1,379 @@
+{
+ "data": {
+  "bytes_extracted": 1184778,
+  "id": "libfido2@1.16.0..1.17.0",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      269,
+      299
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "field_added_to_struct": 16,
+     "field_removed_from_struct": 3,
+     "field_type_changed": 4,
+     "member_offset_changed": 10,
+     "symbol_added": 30,
+     "type_size_changed": 5
+    },
+    "soname": [
+     "libfido2.so.1",
+     "libfido2.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function int fido_dev_set_puat(fido_dev_t*, const unsigned char*, size_t)",
+      "symbol": "fido_dev_set_puat",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const unsigned char* fido_cbor_info_encid_ptr(const fido_cbor_info_t*)",
+      "symbol": "fido_cbor_info_encid_ptr",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t fido_cbor_info_encid_len(const fido_cbor_info_t*)",
+      "symbol": "fido_cbor_info_encid_len",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function char** fido_cbor_info_reset_transports_ptr(const fido_cbor_info_t*)",
+      "symbol": "fido_cbor_info_reset_transports_ptr",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const unsigned char* fido_cbor_info_state_ptr(const fido_cbor_info_t*)",
+      "symbol": "fido_cbor_info_state_ptr",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int64_t fido_cbor_info_uv_count_since_pin(const fido_cbor_info_t*)",
+      "symbol": "fido_cbor_info_uv_count_since_pin",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function uint64_t fido_cbor_info_maxpinlen(const fido_cbor_info_t*)",
+      "symbol": "fido_cbor_info_maxpinlen",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool fido_cred_payment(const fido_cred_t*)",
+      "symbol": "fido_cred_payment",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const unsigned char* fido_cbor_info_id_ptr(const fido_cbor_info_t*)",
+      "symbol": "fido_cbor_info_id_ptr",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t fido_cbor_info_id_len(const fido_cbor_info_t*)",
+      "symbol": "fido_cbor_info_id_len",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int fido_cred_set_hmac_salt(fido_cred_t*, const unsigned char*, size_t)",
+      "symbol": "fido_cred_set_hmac_salt",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t fido_cbor_info_encstate_len(const fido_cbor_info_t*)",
+      "symbol": "fido_cbor_info_encstate_len",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool fido_cbor_info_long_touch_reset(const fido_cbor_info_t*)",
+      "symbol": "fido_cbor_info_long_touch_reset",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function char** fido_cbor_info_attfmts_ptr(const fido_cbor_info_t*)",
+      "symbol": "fido_cbor_info_attfmts_ptr",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t fido_cbor_info_attfmts_len(const fido_cbor_info_t*)",
+      "symbol": "fido_cbor_info_attfmts_len",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t fido_cbor_info_cfgcmds_len(const fido_cbor_info_t*)",
+      "symbol": "fido_cbor_info_cfgcmds_len",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int fido_cbor_info_pin_policy(const fido_cbor_info_t*)",
+      "symbol": "fido_cbor_info_pin_policy",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const unsigned char* fido_cred_hmac_secret_ptr(const fido_cred_t*)",
+      "symbol": "fido_cred_hmac_secret_ptr",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t fido_cbor_info_pin_policy_url_len(const fido_cbor_info_t*)",
+      "symbol": "fido_cbor_info_pin_policy_url_len",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t fido_cbor_info_reset_transports_len(const fido_cbor_info_t*)",
+      "symbol": "fido_cbor_info_reset_transports_len",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const unsigned char* fido_cbor_info_pin_policy_url_ptr(const fido_cbor_info_t*)",
+      "symbol": "fido_cbor_info_pin_policy_url_ptr",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const uint8_t* fido_cbor_info_cfgcmds_ptr(const fido_cbor_info_t*)",
+      "symbol": "fido_cbor_info_cfgcmds_ptr",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t fido_cbor_info_state_len(const fido_cbor_info_t*)",
+      "symbol": "fido_cbor_info_state_len",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int fido_cred_set_hmac_secret(fido_cred_t*, const unsigned char*, size_t)",
+      "symbol": "fido_cred_set_hmac_secret",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t fido_cred_hmac_secret_len(const fido_cred_t*)",
+      "symbol": "fido_cred_hmac_secret_len",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int fido_dev_get_puat(fido_dev_t*, unsigned int, const char*, const char*)",
+      "symbol": "fido_dev_get_puat",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t fido_dev_puat_len(const fido_dev_t*)",
+      "symbol": "fido_dev_puat_len",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const unsigned char* fido_cbor_info_encstate_ptr(const fido_cbor_info_t*)",
+      "symbol": "fido_cbor_info_encstate_ptr",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int fido_cbor_info_decrypt(fido_cbor_info_t*, const unsigned char*, size_t)",
+      "symbol": "fido_cbor_info_decrypt",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const unsigned char* fido_dev_puat_ptr(const fido_dev_t*)",
+      "symbol": "fido_dev_puat_ptr",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "./src/fido/types.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": false,
+      "type": "struct fido_dev"
+     },
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "./src/fido/types.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": false,
+      "type": "struct fido_dev"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/fido/bio.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": false,
+      "type": "struct fido_bio_enroll"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/fido/bio.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": false,
+      "type": "struct fido_bio_enroll"
+     },
+     {
+      "append_only": true,
+      "count": 12,
+      "declared_in": "./src/fido/types.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": false,
+      "type": "struct fido_cbor_info"
+     },
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "./src/fido/types.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": false,
+      "type": "struct fido_cbor_info"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/fido/types.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": false,
+      "type": "struct fido_cred"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/fido/types.h",
+      "exposure": "by_pointer",
+      "kind": "field_removed_from_struct",
+      "third_party": false,
+      "type": "struct fido_cred"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/fido/types.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": false,
+      "type": "struct fido_cred"
+     },
+     {
+      "append_only": false,
+      "count": 10,
+      "declared_in": "./src/fido/types.h",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": false,
+      "type": "struct fido_cred"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/fido/types.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": false,
+      "type": "struct fido_cred"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/fido/types.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": false,
+      "type": "struct fido_cred_ext"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/fido/types.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": false,
+      "type": "struct fido_cred_ext"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/fido/types.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": false,
+      "type": "struct fido_cred_ext"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/fido/types.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": false,
+      "type": "struct fido_cred_ext"
+     }
+    ],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 1.482520242,
+  "source": "libfido2",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.16.0",
+   "1.17.0"
+  ]
+ },
+ "generated_at": "2026-09-04T00:43:35Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

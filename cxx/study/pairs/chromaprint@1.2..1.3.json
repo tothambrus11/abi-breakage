@@ -1,0 +1,70 @@
+{
+ "data": {
+  "bytes_extracted": 764502,
+  "id": "chromaprint@1.2..1.3",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      18,
+      20
+     ],
+     "mangled_functions": [
+      4,
+      4
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 2
+    },
+    "soname": [
+     "libchromaprint.so.0",
+     "libchromaprint.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function int chromaprint_hash_fingerprint(void*, int, void*)",
+      "symbol": "chromaprint_hash_fingerprint",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int chromaprint_get_fingerprint_hash(ChromaprintContext*, void*)",
+      "symbol": "chromaprint_get_fingerprint_hash",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 2.105585155,
+  "source": "chromaprint",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.2",
+   "1.3"
+  ]
+ },
+ "generated_at": "2026-09-04T00:43:45Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

@@ -1,0 +1,136 @@
+{
+ "data": {
+  "bytes_extracted": 1793151,
+  "id": "libedit@3.1-20210910..3.1-20221009",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      130,
+      141
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 13
+    },
+    "soname": [
+     "libedit.so.2",
+     "libedit.so.2"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function int rl_set_key(const char*, rl_command_func_t*, Keymap)",
+      "symbol": "rl_set_key",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void rl_save_prompt()",
+      "symbol": "rl_save_prompt",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void rl_restore_prompt()",
+      "symbol": "rl_restore_prompt",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void rl_replace_line(const char*, int)",
+      "symbol": "rl_replace_line",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int rl_delete_text(int, int)",
+      "symbol": "rl_delete_text",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function char* rl_copy_text(int, int)",
+      "symbol": "rl_copy_text",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int reallocarr(void*, size_t, size_t)",
+      "symbol": "reallocarr",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int el_wreplacestr(EditLine*, const wchar_t*)",
+      "symbol": "el_wreplacestr",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int el_replacestr(EditLine*, const char*)",
+      "symbol": "el_replacestr",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void rl_message(const char*, ...)",
+      "symbol": "rl_message",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int el_deletestr1(EditLine*, int, int)",
+      "symbol": "el_deletestr1",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "char* rl_prompt_saved",
+      "symbol": "rl_prompt_saved",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "int rl_erase_empty_line",
+      "symbol": "rl_erase_empty_line",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 1.76712224,
+  "source": "libedit",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "3.1-20210910",
+   "3.1-20221009"
+  ]
+ },
+ "generated_at": "2026-09-04T00:43:24Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

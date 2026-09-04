@@ -1,0 +1,104 @@
+{
+ "data": {
+  "bytes_extracted": 744686,
+  "id": "apparmor@3.1.7..4.1.0",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      71,
+      73
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "field_added_to_struct": 3,
+     "symbol_added": 2,
+     "type_size_changed": 1
+    },
+    "soname": [
+     "libapparmor.so.1",
+     "libapparmor.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function int aa_split_overlay_str(char*, char***, size_t, bool)",
+      "symbol": "aa_split_overlay_str",
+      "version": "APPARMOR_3.1",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int aa_features_check(int, const char*, aa_features*)",
+      "symbol": "aa_features_check",
+      "version": "APPARMOR_3.1",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 1
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct _IO_FILE"
+     },
+     {
+      "append_only": true,
+      "count": 3,
+      "declared_in": "../include/aalogparse.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": false,
+      "type": "struct aa_log_record"
+     },
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "../include/aalogparse.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": false,
+      "type": "struct aa_log_record"
+     }
+    ],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 1.025951912,
+  "source": "apparmor",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "3.1.7",
+   "4.1.0"
+  ]
+ },
+ "generated_at": "2026-09-04T00:44:26Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

@@ -1,0 +1,1300 @@
+{
+ "data": {
+  "bytes_extracted": 24124510,
+  "id": "gst-plugins-bad1.0@1.29.1..1.29.2",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      14,
+      14
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libgstadaptivedemux-1.0.so.0",
+     "libgstadaptivedemux-1.0.so.0"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      109,
+      110
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 4,
+     "symbol_removed": 3
+    },
+    "soname": [
+     "libgstanalytics-1.0.so.0",
+     "libgstanalytics-1.0.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "function gboolean gst_analytics_group_mtd_set_semantic_tag(GstAnalyticsGroupMtd*, const gchar*)",
+      "symbol": "gst_analytics_group_mtd_set_semantic_tag",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function gboolean gst_analytics_group_mtd_semantic_tag_has_prefix(const GstAnalyticsGroupMtd*, const gchar*)",
+      "symbol": "gst_analytics_group_mtd_semantic_tag_has_prefix",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function gboolean gst_analytics_group_mtd_has_semantic_tag(const GstAnalyticsGroupMtd*, const gchar*)",
+      "symbol": "gst_analytics_group_mtd_has_semantic_tag",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function gboolean gst_analytics_mtd_semantic_tag_has_prefix(const GstAnalyticsMtd*, const gchar*)",
+      "symbol": "gst_analytics_mtd_semantic_tag_has_prefix",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function gboolean gst_analytics_mtd_has_semantic_tag(const GstAnalyticsMtd*, const gchar*)",
+      "symbol": "gst_analytics_mtd_has_semantic_tag",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function gboolean gst_analytics_mtd_set_semantic_tag(GstAnalyticsMtd*, const gchar*)",
+      "symbol": "gst_analytics_mtd_set_semantic_tag",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function gchar* gst_analytics_mtd_get_semantic_tag(const GstAnalyticsMtd*)",
+      "symbol": "gst_analytics_mtd_get_semantic_tag",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      22,
+      23
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 1
+    },
+    "soname": [
+     "libgstbadaudio-1.0.so.0",
+     "libgstbadaudio-1.0.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function void gst_nonstream_audio_decoder_set_allocator(GstNonstreamAudioDecoder*, GstAllocator*, const GstAllocationParams*)",
+      "symbol": "gst_nonstream_audio_decoder_set_allocator",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      12,
+      12
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libgstbasecamerabinsrc-1.0.so.0",
+     "libgstbasecamerabinsrc-1.0.so.0"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      221,
+      239
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "enum_case_added": 3,
+     "field_added_to_struct": 5,
+     "field_type_changed": 1,
+     "member_offset_changed": 6,
+     "symbol_added": 18,
+     "type_size_changed": 2
+    },
+    "soname": [
+     "libgstcodecparsers-1.0.so.0",
+     "libgstcodecparsers-1.0.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function gboolean gst_h274_write_sei_user_data_unregistered(NalWriter*, GstH274UserDataUnregistered*)",
+      "symbol": "gst_h274_write_sei_user_data_unregistered",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function gboolean gst_h274_write_sei_registered_user_data(NalWriter*, GstH274RegisteredUserData*)",
+      "symbol": "gst_h274_write_sei_registered_user_data",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function gboolean gst_h274_write_sei_dsci(NalWriter*, GstH274DigitallySignedContentInitialization*)",
+      "symbol": "gst_h274_write_sei_dsci",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function GstMemory* gst_h266_create_sei_memory(guint8, guint8, guint8, GArray*, GstH266SEINalUnitType)",
+      "symbol": "gst_h266_create_sei_memory",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function GstMemory* gst_h266_create_sei_memory_vvc(guint8, guint8, guint8, GArray*, GstH266SEINalUnitType)",
+      "symbol": "gst_h266_create_sei_memory_vvc",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function gboolean gst_h266_sei_copy(GstH266SEIMessage*, const GstH266SEIMessage*)",
+      "symbol": "gst_h266_sei_copy",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function GstBuffer* gst_h266_parser_insert_sei(GstH266Parser*, GstBuffer*, GstMemory*)",
+      "symbol": "gst_h266_parser_insert_sei",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function gboolean gst_h274_write_sei_dscs(NalWriter*, GstH274DigitallySignedContentSelection*)",
+      "symbol": "gst_h274_write_sei_dscs",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void gst_h266_sei_clear(GstH266SEIMessage*)",
+      "symbol": "gst_h266_sei_clear",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function GstBuffer* gst_h266_parser_insert_sei_vvc(GstH266Parser*, guint8, GstBuffer*, GstMemory*)",
+      "symbol": "gst_h266_parser_insert_sei_vvc",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function GstH274ParserResult gst_h274_parser_parse_dscv(GstH274DigitallySignedContentVerification*, NalReader*)",
+      "symbol": "gst_h274_parser_parse_dscv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function GstH274ParserResult gst_h274_parser_parse_dsci(GstH274DigitallySignedContentInitialization*, NalReader*, guint)",
+      "symbol": "gst_h274_parser_parse_dsci",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function gboolean gst_h274_write_sei_dscv(NalWriter*, GstH274DigitallySignedContentVerification*)",
+      "symbol": "gst_h274_write_sei_dscv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function GstH274ParserResult gst_h274_parser_parse_dscs(GstH274DigitallySignedContentSelection*, NalReader*)",
+      "symbol": "gst_h274_parser_parse_dscs",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void gst_h266_sei_split_messages(const GArray*, GArray**, GArray**)",
+      "symbol": "gst_h266_sei_split_messages",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function GstH274ParserResult gst_h274_parser_parse_registered_user_data(GstH274RegisteredUserData*, NalReader*, guint)",
+      "symbol": "gst_h274_parser_parse_registered_user_data",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function GstH265BitWriterResult gst_h265_bit_writer_filler(gboolean, guint, guint8*, guint*)",
+      "symbol": "gst_h265_bit_writer_filler",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function GstH274ParserResult gst_h274_parser_parse_user_data_unregistered(GstH274UserDataUnregistered*, NalReader*, guint)",
+      "symbol": "gst_h274_parser_parse_user_data_unregistered",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../gst-libs/gst/codecparsers/gsth265parser.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": false,
+      "type": "struct _GstH265VPS"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../gst-libs/gst/codecparsers/gsth265parser.h",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": false,
+      "type": "struct _GstH265VPS"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../gst-libs/gst/codecparsers/gsth265parser.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": false,
+      "type": "struct _GstH265VPS"
+     },
+     {
+      "append_only": false,
+      "count": 5,
+      "declared_in": "../gst-libs/gst/codecparsers/gsth265parser.h",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": false,
+      "type": "struct _GstH265Parser"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../gst-libs/gst/codecparsers/gsth265parser.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": false,
+      "type": "struct _GstH265Parser"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../gst-libs/gst/codecparsers/gsth266parser.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": false,
+      "type": "struct _GstH266SEIMessage"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "../gst-libs/gst/codecparsers/gsth266parser.h",
+      "exposure": "not_in_interface",
+      "kind": "enum_case_added",
+      "third_party": false,
+      "type": "enum GstH266SEIPayloadType"
+     },
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": "../gst-libs/gst/codecparsers/gsth266parser.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": false,
+      "type": "union {GstH266BufferingPeriod buffering_period; GstH266PicTiming pic_timing; GstH266DUInfo du_info; GstH266ScalableNesting scalable_nesting; GstH266SubPicLevelInfo subpic_level_info; GstH266FrameFieldInfo frame_field_info; GstH266RegisteredUserData registered_user_data; gpointer padding[20];}"
+     }
+    ],
+    "vague_linkage": {}
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      116,
+      116
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "field_added_to_struct": 1,
+     "member_offset_changed": 6,
+     "type_size_changed": 2
+    },
+    "soname": [
+     "libgstcodecs-1.0.so.0",
+     "libgstcodecs-1.0.so.0"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 5,
+      "declared_in": "../gst-libs/gst/codecparsers/gsth265parser.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": false,
+      "type": "struct _GstH265Parser"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../gst-libs/gst/codecparsers/gsth265parser.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": false,
+      "type": "struct _GstH265Parser"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../gst-libs/gst/codecparsers/gsth265parser.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": false,
+      "type": "struct _GstH265VPS"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../gst-libs/gst/codecparsers/gsth265parser.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": false,
+      "type": "struct _GstH265VPS"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../gst-libs/gst/codecparsers/gsth265parser.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": false,
+      "type": "struct _GstH265VPS"
+     }
+    ],
+    "vague_linkage": {}
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      184,
+      181
+     ],
+     "mangled_functions": [
+      13,
+      10
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libgstcuda-1.0.so.0",
+     "libgstcuda-1.0.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >& std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::size_type, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::size_type, const char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::size_type)",
+      "symbol": "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_replaceEmmPKcm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<char const*, std::allocator<char const*> >::_M_realloc_append<char const*>(const char*&&)",
+      "symbol": "_ZNSt6vectorIPKcSaIS1_EE17_M_realloc_appendIJS1_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<char const*, std::allocator<char const*> >::_M_realloc_append<char const* const&>(const char* const&)",
+      "symbol": "_ZNSt6vectorIPKcSaIS1_EE17_M_realloc_appendIJRKS1_EEEvDpOT_",
+      "weak": true
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 1
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/std_mutex.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::mutex"
+     }
+    ],
+    "vague_linkage": {
+     "symbol_removed": 3
+    }
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      9,
+      9
+     ],
+     "mangled_functions": [
+      1,
+      1
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libgstdxva-1.0.so.0",
+     "libgstdxva-1.0.so.0"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      97,
+      97
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libgsthip.so.0",
+     "libgsthip.so.0"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 3
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/std_mutex.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::mutex"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/stl_deque.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::deque<_GstHipEvent*, std::allocator<_GstHipEvent*> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/stl_deque.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Deque_base<_GstHipEvent*, std::allocator<_GstHipEvent*> >::_Deque_impl"
+     }
+    ],
+    "vague_linkage": {}
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      7,
+      7
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libgstinsertbin-1.0.so.0",
+     "libgstinsertbin-1.0.so.0"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      9,
+      9
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libgstisoff-1.0.so.0",
+     "libgstisoff-1.0.so.0"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      228,
+      228
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libgstmpegts-1.0.so.0",
+     "libgstmpegts-1.0.so.0"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      51,
+      51
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libgstmse-1.0.so.0",
+     "libgstmse-1.0.so.0"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      41,
+      41
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libgstphotography-1.0.so.0",
+     "libgstphotography-1.0.so.0"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      154,
+      154
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libgstplay-1.0.so.0",
+     "libgstplay-1.0.so.0"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      117,
+      117
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libgstplayer-1.0.so.0",
+     "libgstplayer-1.0.so.0"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      6,
+      6
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libgstsctp-1.0.so.0",
+     "libgstsctp-1.0.so.0"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      33,
+      33
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libgsttranscoder-1.0.so.0",
+     "libgsttranscoder-1.0.so.0"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      13,
+      13
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libgsturidownloader-1.0.so.0",
+     "libgsturidownloader-1.0.so.0"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      66,
+      66
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libgstva-1.0.so.0",
+     "libgstva-1.0.so.0"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      95,
+      93
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "field_added_to_struct": 6,
+     "field_type_changed": 1,
+     "function_signature_changed": 4,
+     "symbol_added": 6,
+     "symbol_removed": 8,
+     "type_size_changed": 1
+    },
+    "soname": [
+     "libgstwayland-1.0.so.0",
+     "libgstwayland-1.0.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "function gboolean gst_wl_window_render_hdr(GstWlWindow*, GstWlBuffer*, const GstVideoInfo*, const GstVideoMasteringDisplayInfo*, const GstVideoContentLightLevel*)",
+      "symbol": "gst_wl_window_render_hdr",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void gst_wl_buffer_force_release_and_unref(GstBuffer*, GstWlBuffer*)",
+      "symbol": "gst_wl_buffer_force_release_and_unref",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void gst_wl_buffer_unref_buffer(GstWlBuffer*)",
+      "symbol": "gst_wl_buffer_unref_buffer",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function gpointer gst_wl_display_lookup_buffer(GstWlDisplay*, gpointer)",
+      "symbol": "gst_wl_display_lookup_buffer",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void gst_wl_display_register_buffer(GstWlDisplay*, gpointer, gpointer)",
+      "symbol": "gst_wl_display_register_buffer",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function GstWlDisplay* gst_wl_buffer_get_display(GstWlBuffer*)",
+      "symbol": "gst_wl_buffer_get_display",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void gst_wl_display_unregister_buffer(GstWlDisplay*, gpointer)",
+      "symbol": "gst_wl_display_unregister_buffer",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void gst_wl_buffer_ref_gst_buffer(GstWlBuffer*)",
+      "symbol": "gst_wl_buffer_ref_gst_buffer",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void gst_wl_window_set_source_info(GstWlWindow*, const GstVideoInfoDmaDrm*, const GstVideoInfo*, GstCaps*, const gchar*)",
+      "symbol": "gst_wl_window_set_source_info",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void gst_wl_window_unregister_buffer(GstWlWindow*, gpointer)",
+      "symbol": "gst_wl_window_unregister_buffer",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void gst_wl_window_register_buffer(GstWlWindow*, gpointer, gpointer)",
+      "symbol": "gst_wl_window_register_buffer",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function gpointer gst_wl_window_lookup_buffer(GstWlWindow*, gpointer)",
+      "symbol": "gst_wl_window_lookup_buffer",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void gst_wl_display_sync_store(GstWlDisplay*, wl_callback**, const wl_callback_listener*, gpointer)",
+      "symbol": "gst_wl_display_sync_store",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void gst_wl_buffer_detach(GstWlBuffer*)",
+      "symbol": "gst_wl_buffer_detach",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function gboolean gst_wl_window_render(GstWlWindow*, GstWlBuffer*, const GstVideoInfo*)  ->  function GstFlowReturn gst_wl_window_render(GstWlWindow*, GstBuffer*)",
+      "symbol": "gst_wl_window_render",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function wl_buffer* gst_wl_shm_memory_construct_wl_buffer(GstMemory*, GstWlDisplay*, const GstVideoInfo*)  ->  function wl_buffer* gst_wl_shm_memory_construct_wl_buffer(GstBuffer*, GstWlDisplay*, const GstVideoInfo*)",
+      "symbol": "gst_wl_shm_memory_construct_wl_buffer",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function GstWlBuffer* gst_buffer_get_wl_buffer(GstWlDisplay*, GstBuffer*)  ->  function GstWlBuffer* gst_buffer_get_wl_buffer(GstWlWindow*, GstBuffer*)",
+      "symbol": "gst_buffer_get_wl_buffer",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function GstWlBuffer* gst_buffer_add_wl_buffer(GstBuffer*, wl_buffer*, GstWlDisplay*)  ->  function GstWlBuffer* gst_buffer_add_wl_buffer(GstBuffer*, wl_buffer*, GstWlWindow*)",
+      "symbol": "gst_buffer_add_wl_buffer",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "enum_case_added": 5,
+     "field_added_to_struct": 3,
+     "field_removed_from_struct": 10,
+     "field_type_changed": 10,
+     "member_offset_changed": 3,
+     "type_size_changed": 2
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 5,
+      "declared_in": "/usr/include/wayland-client-protocol.h",
+      "exposure": "by_value",
+      "kind": "enum_case_added",
+      "third_party": true,
+      "type": "enum wl_shm_format"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/gstreamer-1.0/gst/gstmemory.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct _GstMemory"
+     },
+     {
+      "append_only": false,
+      "count": 7,
+      "declared_in": "/usr/include/gstreamer-1.0/gst/gstallocator.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct _GstAllocator"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "/usr/include/gstreamer-1.0/gst/gstallocator.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct _GstAllocator"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/gstreamer-1.0/gst/gstallocator.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct _GstAllocator"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/gstreamer-1.0/gst/gstallocator.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct _GstAllocator"
+     },
+     {
+      "append_only": false,
+      "count": 6,
+      "declared_in": "../gst-libs/gst/wayland/gstwlbuffer.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": false,
+      "type": "struct _GstWlBuffer"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../gst-libs/gst/wayland/gstwlbuffer.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": false,
+      "type": "struct _GstWlBuffer"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "../gst-libs/gst/wayland/gstwlbuffer.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": false,
+      "type": "struct _GstWlBuffer"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "/usr/include/gstreamer-1.0/gst/gstobject.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct _GstObject"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "/usr/include/gstreamer-1.0/gst/gstobject.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct _GstObject"
+     },
+     {
+      "append_only": false,
+      "count": 5,
+      "declared_in": "/usr/include/gstreamer-1.0/gst/gstobject.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct _GstObject"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/gstreamer-1.0/gst/gstobject.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct _GstObject"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/gstreamer-1.0/gst/gstobject.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct _GstObject"
+     }
+    ],
+    "vague_linkage": {}
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      92,
+      92
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libgstwebrtc-1.0.so.0",
+     "libgstwebrtc-1.0.so.0"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      4,
+      4
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libgstwebrtcnice-1.0.so.0",
+     "libgstwebrtcnice-1.0.so.0"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 4.639549002,
+  "source": "gst-plugins-bad1.0",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.29.1",
+   "1.29.2"
+  ]
+ },
+ "generated_at": "2026-09-04T00:37:05Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

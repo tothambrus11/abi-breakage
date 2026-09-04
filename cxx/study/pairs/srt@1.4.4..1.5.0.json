@@ -1,0 +1,3398 @@
+{
+ "data": {
+  "bytes_extracted": 17030020,
+  "id": "srt@1.4.4..1.5.0",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      998,
+      1019
+     ],
+     "mangled_functions": [
+      887,
+      903
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "enum_case_added": 3,
+     "function_signature_changed": 59,
+     "symbol_added": 176,
+     "symbol_removed": 158
+    },
+    "soname": [
+     "libsrt-gnutls.so.1.4",
+     "libsrt-gnutls.so.1.5"
+    ],
+    "symbol_events": [
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method int srt::CChannel::sendto(const sockaddr_any&, srt::CPacket&) const  ->  method int srt::CChannel::sendto(const srt::sockaddr_any&, srt::CPacket&) const",
+      "symbol": "_ZNK3srt8CChannel6sendtoERK12sockaddr_anyRNS_7CPacketE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method int srt::CSndQueue::sendto(const sockaddr_any&, srt::CPacket&)  ->  method int srt::CSndQueue::sendto(const srt::sockaddr_any&, srt::CPacket&)",
+      "symbol": "_ZN3srt9CSndQueue6sendtoERK12sockaddr_anyRNS_7CPacketE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method EConnectStatus srt::CRcvQueue::worker_TryAsyncRend_OrStore(int32_t, srt::CUnit*, const sockaddr_any&)  ->  method srt::EConnectStatus srt::CRcvQueue::worker_TryAsyncRend_OrStore(int32_t, srt::CUnit*, const srt::sockaddr_any&)",
+      "symbol": "_ZN3srt9CRcvQueue27worker_TryAsyncRend_OrStoreEiPNS_5CUnitERK12sockaddr_any",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method void srt::CRcvQueue::registerConnector(const SRTSOCKET&, srt::CUDT*, const sockaddr_any&, const srt::sync::steady_clock::time_point&)  ->  method void srt::CRcvQueue::registerConnector(const SRTSOCKET&, srt::CUDT*, const srt::sockaddr_any&, const srt::sync::steady_clock::time_point&)",
+      "symbol": "_ZN3srt9CRcvQueue17registerConnectorERKiPNS_4CUDTERK12sockaddr_anyRKNS_4sync9TimePointINS8_12steady_clockEEE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method void srt::CChannel::attach(UDPSOCKET, const sockaddr_any&)  ->  method void srt::CChannel::attach(UDPSOCKET, const srt::sockaddr_any&)",
+      "symbol": "_ZN3srt8CChannel6attachEiRK12sockaddr_any",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method void srt::LiveCC::onRTO(ETransmissionEvent, EventVariant)  ->  method void srt::LiveCC::onRTO(srt::ETransmissionEvent, srt::EventVariant)",
+      "symbol": "_ZN3srt6LiveCC5onRTOE18ETransmissionEvent12EventVariant",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method void srt::LiveCC::onAck(ETransmissionEvent, EventVariant)  ->  method void srt::LiveCC::onAck(srt::ETransmissionEvent, srt::EventVariant)",
+      "symbol": "_ZN3srt6LiveCC5onAckE18ETransmissionEvent12EventVariant",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method void srt::LiveCC::updatePayloadSize(ETransmissionEvent, EventVariant)  ->  method void srt::LiveCC::updatePayloadSize(srt::ETransmissionEvent, srt::EventVariant)",
+      "symbol": "_ZN3srt6LiveCC17updatePayloadSizeE18ETransmissionEvent12EventVariant",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method void srt::FileCC::onRTO(ETransmissionEvent, EventVariant)  ->  method void srt::FileCC::onRTO(srt::ETransmissionEvent, srt::EventVariant)",
+      "symbol": "_ZN3srt6FileCC5onRTOE18ETransmissionEvent12EventVariant",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method void srt::CPacket::pack(UDTMessageType, const int32_t*, void*, size_t)  ->  method void srt::CPacket::pack(srt::UDTMessageType, const int32_t*, void*, size_t)",
+      "symbol": "_ZN3srt7CPacket4packE14UDTMessageTypePKiPvm",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method void srt::FileCC::onACK(ETransmissionEvent, EventVariant)  ->  method void srt::FileCC::onACK(srt::ETransmissionEvent, srt::EventVariant)",
+      "symbol": "_ZN3srt6FileCC5onACKE18ETransmissionEvent12EventVariant",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method EConnectStatus srt::CRcvQueue::worker_ProcessConnectionRequest(srt::CUnit*, const sockaddr_any&)  ->  method srt::EConnectStatus srt::CRcvQueue::worker_ProcessConnectionRequest(srt::CUnit*, const srt::sockaddr_any&)",
+      "symbol": "_ZN3srt9CRcvQueue31worker_ProcessConnectionRequestEPNS_5CUnitERK12sockaddr_any",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void srt::sync::SetThreadLocalError(const CUDTException&)  ->  function void srt::sync::SetThreadLocalError(const srt::CUDTException&)",
+      "symbol": "_ZN3srt4sync19SetThreadLocalErrorERK13CUDTException",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method void srt::CChannel::getPeerAddr(sockaddr_any&) const  ->  method void srt::CChannel::getPeerAddr(srt::sockaddr_any&) const",
+      "symbol": "_ZNK3srt8CChannel11getPeerAddrER12sockaddr_any",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method bool srt::CUDT::updateCC(ETransmissionEvent, EventVariant)  ->  method bool srt::CUDT::updateCC(srt::ETransmissionEvent, srt::EventVariant)",
+      "symbol": "_ZN3srt4CUDT8updateCCE18ETransmissionEvent12EventVariant",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method srt::CUDT::APIError::APIError(const CUDTException&)  ->  method srt::CUDT::APIError::APIError(const srt::CUDTException&)",
+      "symbol": "_ZN3srt4CUDT8APIErrorC2ERK13CUDTException",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method void srt::CUDT::sendCtrl(UDTMessageType, const int32_t*, void*, int)  ->  method void srt::CUDT::sendCtrl(srt::UDTMessageType, const int32_t*, void*, int)",
+      "symbol": "_ZN3srt4CUDT8sendCtrlE14UDTMessageTypePKiPvi",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method EConnectStatus srt::CUDT::processConnectResponse(const srt::CPacket&, CUDTException*)  ->  method srt::EConnectStatus srt::CUDT::processConnectResponse(const srt::CPacket&, srt::CUDTException*)",
+      "symbol": "_ZN3srt4CUDT22processConnectResponseERKNS_7CPacketEP13CUDTException",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method void srt::CUDT::rendezvousSwitchState(UDTRequestType&, bool&, bool&)  ->  method void srt::CUDT::rendezvousSwitchState(srt::UDTRequestType&, bool&, bool&)",
+      "symbol": "_ZN3srt4CUDT21rendezvousSwitchStateER14UDTRequestTypeRbS3_",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method bool srt::CUDT::prepareConnectionObjects(const CHandShake&, HandshakeSide, CUDTException*)  ->  method bool srt::CUDT::prepareConnectionObjects(const srt::CHandShake&, srt::HandshakeSide, srt::CUDTException*)",
+      "symbol": "_ZN3srt4CUDT24prepareConnectionObjectsERK10CHandShake13HandshakeSideP13CUDTException",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method void srt::CUDT::rewriteHandshakeData(const sockaddr_any&, CHandShake&)  ->  method void srt::CUDT::rewriteHandshakeData(const srt::sockaddr_any&, srt::CHandShake&)",
+      "symbol": "_ZN3srt4CUDT20rewriteHandshakeDataERK12sockaddr_anyR10CHandShake",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method bool srt::CUDT::createSrtHandshake(int, int, const uint32_t*, size_t, srt::CPacket&, CHandShake&)  ->  method bool srt::CUDT::createSrtHandshake(int, int, const uint32_t*, size_t, srt::CPacket&, srt::CHandShake&)",
+      "symbol": "_ZN3srt4CUDT18createSrtHandshakeEiiPKjmRNS_7CPacketER10CHandShake",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method void srt::CUDT::acceptAndRespond(const sockaddr_any&, const sockaddr_any&, const srt::CPacket&, CHandShake&)  ->  method void srt::CUDT::acceptAndRespond(const srt::sockaddr_any&, const srt::sockaddr_any&, const srt::CPacket&, srt::CHandShake&)",
+      "symbol": "_ZN3srt4CUDT16acceptAndRespondERK12sockaddr_anyS3_RKNS_7CPacketER10CHandShake",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method void srt::CUDT::DisconnectSignal(ETransmissionEvent)  ->  method void srt::CUDT::DisconnectSignal(srt::ETransmissionEvent)",
+      "symbol": "_ZN3srt4CUDT16DisconnectSignalE18ETransmissionEvent",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method bool srt::CUDT::runAcceptHook(srt::CUDT*, const sockaddr*, const CHandShake&, const srt::CPacket&)  ->  method bool srt::CUDT::runAcceptHook(srt::CUDT*, const sockaddr*, const srt::CHandShake&, const srt::CPacket&)",
+      "symbol": "_ZN3srt4CUDT13runAcceptHookEPS0_PK8sockaddrRK10CHandShakeRKNS_7CPacketE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method bool srt::CUDT::createCrypter(HandshakeSide, bool)  ->  method bool srt::CUDT::createCrypter(srt::HandshakeSide, bool)",
+      "symbol": "_ZN3srt4CUDT13createCrypterE13HandshakeSideb",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method void srt::CUDT::ConnectSignal(ETransmissionEvent, EventSlot)  ->  method void srt::CUDT::ConnectSignal(srt::ETransmissionEvent, srt::EventSlot)",
+      "symbol": "_ZN3srt4CUDT13ConnectSignalE18ETransmissionEvent9EventSlot",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method void srt::CUDT::startConnect(const sockaddr_any&, int32_t)  ->  method void srt::CUDT::startConnect(const srt::sockaddr_any&, int32_t)",
+      "symbol": "_ZN3srt4CUDT12startConnectERK12sockaddr_anyi",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method int srt::CUDTUnited::bind(srt::CUDTSocket*, const sockaddr_any&)  ->  method int srt::CUDTUnited::bind(srt::CUDTSocket*, const srt::sockaddr_any&)",
+      "symbol": "_ZN3srt10CUDTUnited4bindEPNS_10CUDTSocketERK12sockaddr_any",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method void srt::CChannel::setConfig(const CSrtMuxerConfig&)  ->  method void srt::CChannel::setConfig(const srt::CSrtMuxerConfig&)",
+      "symbol": "_ZN3srt8CChannel9setConfigERK15CSrtMuxerConfig",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method void srt::FileCC::onLossReport(ETransmissionEvent, EventVariant)  ->  method void srt::FileCC::onLossReport(srt::ETransmissionEvent, srt::EventVariant)",
+      "symbol": "_ZN3srt6FileCC12onLossReportE18ETransmissionEvent12EventVariant",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method EReadStatus srt::CChannel::recvfrom(sockaddr_any&, srt::CPacket&) const  ->  method srt::EReadStatus srt::CChannel::recvfrom(srt::sockaddr_any&, srt::CPacket&) const",
+      "symbol": "_ZNK3srt8CChannel8recvfromER12sockaddr_anyRNS_7CPacketE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method EConnectStatus srt::CRcvQueue::worker_ProcessAddressedPacket(int32_t, srt::CUnit*, const sockaddr_any&)  ->  method srt::EConnectStatus srt::CRcvQueue::worker_ProcessAddressedPacket(int32_t, srt::CUnit*, const srt::sockaddr_any&)",
+      "symbol": "_ZN3srt9CRcvQueue29worker_ProcessAddressedPacketEiPNS_5CUnitERK12sockaddr_any",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method srt::CUDTSocket* srt::CUDTUnited::locatePeer(const sockaddr_any&, SRTSOCKET, int32_t)  ->  method srt::CUDTSocket* srt::CUDTUnited::locatePeer(const srt::sockaddr_any&, SRTSOCKET, int32_t)",
+      "symbol": "_ZN3srt10CUDTUnited10locatePeerERK12sockaddr_anyii",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method EConnectStatus srt::CUDT::processRendezvous(const srt::CPacket*, const sockaddr_any&, EReadStatus, srt::CPacket&)  ->  method srt::EConnectStatus srt::CUDT::processRendezvous(const srt::CPacket*, const srt::sockaddr_any&, srt::EReadStatus, srt::CPacket&)",
+      "symbol": "_ZN3srt4CUDT17processRendezvousEPKNS_7CPacketERK12sockaddr_any11EReadStatusRS1_",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method bool srt::CUDT::processAsyncConnectRequest(EReadStatus, EConnectStatus, const srt::CPacket*, const sockaddr_any&)  ->  method bool srt::CUDT::processAsyncConnectRequest(srt::EReadStatus, srt::EConnectStatus, const srt::CPacket*, const srt::sockaddr_any&)",
+      "symbol": "_ZN3srt4CUDT26processAsyncConnectRequestE11EReadStatus14EConnectStatusPKNS_7CPacketERK12sockaddr_any",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method bool srt::CUDT::interpretSrtHandshake(const CHandShake&, const srt::CPacket&, uint32_t*, size_t*)  ->  method bool srt::CUDT::interpretSrtHandshake(const srt::CHandShake&, const srt::CPacket&, uint32_t*, size_t*)",
+      "symbol": "_ZN3srt4CUDT21interpretSrtHandshakeERK10CHandShakeRKNS_7CPacketEPjPm",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method srt::CUDT* srt::CRendezvousQueue::retrieve(const sockaddr_any&, SRTSOCKET&) const  ->  method srt::CUDT* srt::CRendezvousQueue::retrieve(const srt::sockaddr_any&, SRTSOCKET&) const",
+      "symbol": "_ZNK3srt16CRendezvousQueue8retrieveERK12sockaddr_anyRi",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method void srt::CChannel::getSockAddr(sockaddr_any&) const  ->  method void srt::CChannel::getSockAddr(srt::sockaddr_any&) const",
+      "symbol": "_ZNK3srt8CChannel11getSockAddrER12sockaddr_any",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method int srt::CUDTUnited::newConnection(SRTSOCKET, const sockaddr_any&, const srt::CPacket&, CHandShake&, int&, srt::CUDT*&)  ->  method int srt::CUDTUnited::newConnection(SRTSOCKET, const srt::sockaddr_any&, const srt::CPacket&, srt::CHandShake&, int&, srt::CUDT*&)",
+      "symbol": "_ZN3srt10CUDTUnited13newConnectionEiRK12sockaddr_anyRKNS_7CPacketER10CHandShakeRiRPNS_4CUDTE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method void srt::CUDT::checkSndTimers(Whether2RegenKm)  ->  method void srt::CUDT::checkSndTimers(srt::Whether2RegenKm)",
+      "symbol": "_ZN3srt4CUDT14checkSndTimersE15Whether2RegenKm",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method EReadStatus srt::CRcvQueue::worker_RetrieveUnit(int32_t&, srt::CUnit*&, sockaddr_any&)  ->  method srt::EReadStatus srt::CRcvQueue::worker_RetrieveUnit(int32_t&, srt::CUnit*&, srt::sockaddr_any&)",
+      "symbol": "_ZN3srt9CRcvQueue19worker_RetrieveUnitERiRPNS_5CUnitER12sockaddr_any",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method int srt::CUDT::processConnectRequest(const sockaddr_any&, srt::CPacket&)  ->  method int srt::CUDT::processConnectRequest(const srt::sockaddr_any&, srt::CPacket&)",
+      "symbol": "_ZN3srt4CUDT21processConnectRequestERK12sockaddr_anyRNS_7CPacketE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method int srt::CUDTUnited::connectIn(srt::CUDTSocket*, const sockaddr_any&, int32_t)  ->  method int srt::CUDTUnited::connectIn(srt::CUDTSocket*, const srt::sockaddr_any&, int32_t)",
+      "symbol": "_ZN3srt10CUDTUnited9connectInEPNS_10CUDTSocketERK12sockaddr_anyi",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method bool srt::CUDTUnited::channelSettingsMatch(const srt::CMultiplexer&, const srt::CUDTSocket*)  ->  method bool srt::CUDTUnited::channelSettingsMatch(const srt::CSrtConfig&)",
+      "symbol": "_ZN3srt10CUDTUnited20channelSettingsMatchERKNS_12CMultiplexerEPKNS_10CUDTSocketE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method void srt::CUDTUnited::updateMux(srt::CUDTSocket*, const sockaddr_any&, const UDPSOCKET*)  ->  method void srt::CUDTUnited::updateMux(srt::CUDTSocket*, const srt::sockaddr_any&, const UDPSOCKET*)",
+      "symbol": "_ZN3srt10CUDTUnited9updateMuxEPNS_10CUDTSocketERK12sockaddr_anyPKi",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method void srt::CUDT::EmitSignal(ETransmissionEvent, EventVariant)  ->  method void srt::CUDT::EmitSignal(srt::ETransmissionEvent, srt::EventVariant)",
+      "symbol": "_ZN3srt4CUDT10EmitSignalE18ETransmissionEvent12EventVariant",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method void srt::CChannel::open(const sockaddr_any&)  ->  method void srt::CChannel::open(const srt::sockaddr_any&)",
+      "symbol": "_ZN3srt8CChannel4openERK12sockaddr_any",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method void srt::CRendezvousQueue::updateConnStatus(EReadStatus, EConnectStatus, srt::CUnit*)  ->  method void srt::CRendezvousQueue::updateConnStatus(srt::EReadStatus, srt::EConnectStatus, srt::CUnit*)",
+      "symbol": "_ZN3srt16CRendezvousQueue16updateConnStatusE11EReadStatus14EConnectStatusPNS_5CUnitE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method bool srt::CRendezvousQueue::qualifyToHandle(EReadStatus, EConnectStatus, int, std::vector<srt::CRendezvousQueue::LinkStatusInfo, std::allocator<srt::CRendezvousQueue::LinkStatusInfo> >&, std::vector<srt::CRendezvousQueue::LinkStatusInfo, std::allocator<srt::CRendezvousQueue::LinkStatusInfo> >&)  ->  method bool srt::CRendezvousQueue::qualifyToHandle(srt::EReadStatus, srt::EConnectStatus, int, std::vector<srt::CRendezvousQueue::LinkStatusInfo, std::allocator<srt::CRendezvousQueue::LinkStatusInfo> >&, std::vector<srt::CRendezvousQueue::LinkStatusInfo, std::allocator<srt::CRendezvousQueue::LinkStatusInfo> >&)",
+      "symbol": "_ZN3srt16CRendezvousQueue15qualifyToHandleE11EReadStatus14EConnectStatusiRSt6vectorINS0_14LinkStatusInfoESaIS4_EES7_",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void SrtExtractHandshakeExtensions(const char*, size_t, std::vector<SrtHandshakeExtension, std::allocator<SrtHandshakeExtension> >&)  ->  function void SrtExtractHandshakeExtensions(const char*, size_t, std::vector<srt::SrtHandshakeExtension, std::allocator<srt::SrtHandshakeExtension> >&)",
+      "symbol": "_Z29SrtExtractHandshakeExtensionsPKcmRSt6vectorI21SrtHandshakeExtensionSaIS2_EE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method void srt::CRendezvousQueue::insert(const SRTSOCKET&, srt::CUDT*, const sockaddr_any&, const srt::sync::steady_clock::time_point&)  ->  method void srt::CRendezvousQueue::insert(const SRTSOCKET&, srt::CUDT*, const srt::sockaddr_any&, const srt::sync::steady_clock::time_point&)",
+      "symbol": "_ZN3srt16CRendezvousQueue6insertERKiPNS_4CUDTERK12sockaddr_anyRKNS_4sync9TimePointINS8_12steady_clockEEE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method int32_t srt::CUDT::bake(const sockaddr_any&, int32_t, int)  ->  method int32_t srt::CUDT::bake(const srt::sockaddr_any&, int32_t, int)",
+      "symbol": "_ZN3srt4CUDT4bakeERK12sockaddr_anyii",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method void srt::CPacket::setMsgCryptoFlags(EncryptionKeySpec)  ->  method void srt::CPacket::setMsgCryptoFlags(srt::EncryptionKeySpec)",
+      "symbol": "_ZN3srt7CPacket17setMsgCryptoFlagsE17EncryptionKeySpec",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method EConnectStatus srt::CUDT::postConnect(const srt::CPacket*, bool, CUDTException*)  ->  method srt::EConnectStatus srt::CUDT::postConnect(const srt::CPacket*, bool, srt::CUDTException*)",
+      "symbol": "_ZN3srt4CUDT11postConnectEPKNS_7CPacketEbP13CUDTException",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void md5_finish(md5_state_t*, md5_byte_t*)",
+      "symbol": "md5_finish",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void md5_append(md5_state_t*, const md5_byte_t*, int)",
+      "symbol": "md5_append",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function __gnu_cxx::__enable_if<true, std::_Deque_iterator<CRcvFreshLoss, CRcvFreshLoss&, CRcvFreshLoss*> >::__type std::__copy_move_a1<true, CRcvFreshLoss*, CRcvFreshLoss>(CRcvFreshLoss*, CRcvFreshLoss*, std::_Deque_iterator<CRcvFreshLoss, CRcvFreshLoss&, CRcvFreshLoss*>)",
+      "symbol": "_ZSt14__copy_move_a1ILb1EP13CRcvFreshLossS0_EN9__gnu_cxx11__enable_ifIXsrSt23__is_random_access_iterIT0_NSt15iterator_traitsIS5_E17iterator_categoryEE7__valueESt15_Deque_iteratorIT1_RSB_PSB_EE6__typeES5_S5_SE_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_iterator<std::pair<int const, CEPollDesc::Wait> >, bool> std::_Rb_tree<int, std::pair<int const, CEPollDesc::Wait>, std::_Select1st<std::pair<int const, CEPollDesc::Wait> >, std::less<int>, std::allocator<std::pair<int const, CEPollDesc::Wait> > >::_M_emplace_unique<std::pair<int, CEPollDesc::Wait> >(std::pair<int, CEPollDesc::Wait>&&)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiN10CEPollDesc4WaitEESt10_Select1stIS4_ESt4lessIiESaIS4_EE17_M_emplace_uniqueIJS0_IiS3_EEEES0_ISt17_Rb_tree_iteratorIS4_EbEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::pair<std::_Rb_tree_iterator<std::pair<int const, CEPollDesc> >, bool> std::_Rb_tree<int, std::pair<int const, CEPollDesc>, std::_Select1st<std::pair<int const, CEPollDesc> >, std::less<int>, std::allocator<std::pair<int const, CEPollDesc> > >::_M_emplace_unique<std::pair<int, CEPollDesc> >(std::pair<int, CEPollDesc>&&)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKi10CEPollDescESt10_Select1stIS3_ESt4lessIiESaIS3_EE17_M_emplace_uniqueIJS0_IiS2_EEEES0_ISt17_Rb_tree_iteratorIS3_EbEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<SrtHandshakeExtension, std::allocator<SrtHandshakeExtension> >::_M_realloc_insert<SrtHandshakeExtension>(std::vector<SrtHandshakeExtension, std::allocator<SrtHandshakeExtension> >::iterator, SrtHandshakeExtension&&)",
+      "symbol": "_ZNSt6vectorI21SrtHandshakeExtensionSaIS0_EE17_M_realloc_insertIJS0_EEEvN9__gnu_cxx17__normal_iteratorIPS0_S2_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::deque<CRcvFreshLoss, std::allocator<CRcvFreshLoss> >::iterator std::deque<CRcvFreshLoss, std::allocator<CRcvFreshLoss> >::_M_erase(std::deque<CRcvFreshLoss, std::allocator<CRcvFreshLoss> >::iterator, std::deque<CRcvFreshLoss, std::allocator<CRcvFreshLoss> >::iterator)",
+      "symbol": "_ZNSt5dequeI13CRcvFreshLossSaIS0_EE8_M_eraseESt15_Deque_iteratorIS0_RS0_PS0_ES6_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::deque<CRcvFreshLoss, std::allocator<CRcvFreshLoss> >::_M_reallocate_map(std::deque<CRcvFreshLoss, std::allocator<CRcvFreshLoss> >::size_type, bool)",
+      "symbol": "_ZNSt5dequeI13CRcvFreshLossSaIS0_EE17_M_reallocate_mapEmb",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::deque<CRcvFreshLoss, std::allocator<CRcvFreshLoss> >::iterator std::deque<CRcvFreshLoss, std::allocator<CRcvFreshLoss> >::_M_insert_aux<CRcvFreshLoss>(std::deque<CRcvFreshLoss, std::allocator<CRcvFreshLoss> >::iterator, CRcvFreshLoss&&)",
+      "symbol": "_ZNSt5dequeI13CRcvFreshLossSaIS0_EE13_M_insert_auxIJS0_EEESt15_Deque_iteratorIS0_RS0_PS0_ES7_DpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::deque<CRcvFreshLoss, std::allocator<CRcvFreshLoss> >::iterator std::deque<CRcvFreshLoss, std::allocator<CRcvFreshLoss> >::_M_erase(std::deque<CRcvFreshLoss, std::allocator<CRcvFreshLoss> >::iterator)",
+      "symbol": "_ZNSt5dequeI13CRcvFreshLossSaIS0_EE8_M_eraseESt15_Deque_iteratorIS0_RS0_PS0_E",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Deque_base<CRcvFreshLoss, std::allocator<CRcvFreshLoss> >::~_Deque_base(int)",
+      "symbol": "_ZNSt11_Deque_baseI13CRcvFreshLossSaIS0_EED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::unique_ptr<CCryptoControl, std::default_delete<CCryptoControl> >::~unique_ptr(int)",
+      "symbol": "_ZNSt10unique_ptrI14CCryptoControlSt14default_deleteIS0_EED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int CUDTException::getErrno() const",
+      "symbol": "_ZNK13CUDTException8getErrnoEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method const char* CUDTException::getErrorMessage() const",
+      "symbol": "_ZNK13CUDTException15getErrorMessageEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int CUDTException::getErrorCode() const",
+      "symbol": "_ZNK13CUDTException12getErrorCodeEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::string sockaddr_any::str() const",
+      "symbol": "_ZNK12sockaddr_any3strB5cxx11Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool SrtHSRequest::serialize(char*, size_t) const",
+      "symbol": "_ZNK12SrtHSRequest9serializeEPcm",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool CRcvLossList::find(int32_t, int32_t) const",
+      "symbol": "_ZNK12CRcvLossList4findEii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int32_t CRcvLossList::getFirstLostSeq() const",
+      "symbol": "_ZNK12CRcvLossList15getFirstLostSeqEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int CRcvLossList::getLossLength() const",
+      "symbol": "_ZNK12CRcvLossList13getLossLengthEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method CRcvBuffer::ReadingState CRcvBuffer::debugGetReadingState() const",
+      "symbol": "_ZNK10CRcvBuffer20debugGetReadingStateEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::string CRcvBuffer::debugTimeState(size_t) const",
+      "symbol": "_ZNK10CRcvBuffer14debugTimeStateB5cxx11Em",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool AvgBufSize::isTimeToUpdate(const AvgBufSize::time_point&) const",
+      "symbol": "_ZNK10AvgBufSize14isTimeToUpdateERKN3srt4sync9TimePointINS1_12steady_clockEEE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method CEPoll::~CEPoll(int)",
+      "symbol": "_ZN6CEPollD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method CEPoll::CEPoll()",
+      "symbol": "_ZN6CEPollC2Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int CEPoll::setflags(int, int32_t)",
+      "symbol": "_ZN6CEPoll8setflagsEii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int CEPoll::release(int)",
+      "symbol": "_ZN6CEPoll7releaseEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int CEPoll::create(CEPollDesc**)",
+      "symbol": "_ZN6CEPoll6createEPP10CEPollDesc",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int CEPoll::swait(CEPollDesc&, CEPoll::fmap_t&, int64_t, bool)",
+      "symbol": "_ZN6CEPoll5swaitER10CEPollDescRSt3mapIiiSt4lessIiESaISt4pairIKiiEEElb",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int CEPoll::update_events(const SRTSOCKET&, std::set<int, std::less<int>, std::allocator<int> >&, int, bool)",
+      "symbol": "_ZN6CEPoll13update_eventsERKiRSt3setIiSt4lessIiESaIiEEib",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int CEPoll::clear_usocks(int)",
+      "symbol": "_ZN6CEPoll12clear_usocksEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<EventSlot, std::allocator<EventSlot> >::_M_realloc_insert<const EventSlot&>(std::vector<EventSlot, std::allocator<EventSlot> >::iterator, const EventSlot&)",
+      "symbol": "_ZNSt6vectorI9EventSlotSaIS0_EE17_M_realloc_insertIJRKS0_EEEvN9__gnu_cxx17__normal_iteratorIPS0_S2_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int CRcvBuffer::getRcvDataSize() const",
+      "symbol": "_ZNK10CRcvBuffer14getRcvDataSizeEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int CEPoll::update_ssock(int, const SYSSOCKET&, const int*)",
+      "symbol": "_ZN6CEPoll12update_ssockEiRKiPS0_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int CEPoll::add_ssock(int, const SYSSOCKET&, const int*)",
+      "symbol": "_ZN6CEPoll9add_ssockEiRKiPS0_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::string CCryptoControl::CONID() const",
+      "symbol": "_ZNK14CCryptoControl5CONIDB5cxx11Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::string CUDTException::getErrorString() const",
+      "symbol": "_ZNK13CUDTException14getErrorStringB5cxx11Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int32_t CRcvBuffer::getTopMsgno() const",
+      "symbol": "_ZNK10CRcvBuffer11getTopMsgnoEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void CMD5::compute(unsigned char*)",
+      "symbol": "_ZN4CMD57computeEPKcPh",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void srt::CUDT::checkNeedDrop(bool&)",
+      "symbol": "_ZN3srt4CUDT13checkNeedDropERb",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool CCryptoControl::init(HandshakeSide, bool)",
+      "symbol": "_ZN14CCryptoControl4initE13HandshakeSideb",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int CSndBuffer::readData(int, srt::CPacket&, CSndBuffer::time_point&, int&)",
+      "symbol": "_ZN10CSndBuffer8readDataEiRN3srt7CPacketERNS0_4sync9TimePointINS3_12steady_clockEEERi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int CPktTimeWindowTools::getBandwidth_in(int*, size_t)",
+      "symbol": "_ZN19CPktTimeWindowTools15getBandwidth_inEPKiPim",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int CSndBuffer::getCurrBufSize() const",
+      "symbol": "_ZNK10CSndBuffer14getCurrBufSizeEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual void ObjectEventSlot<srt::FileCC>::emit(ETransmissionEvent, EventVariant)",
+      "symbol": "_ZN15ObjectEventSlotIN3srt6FileCCEE4emitE18ETransmissionEvent12EventVariant",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void CPktTimeWindowTools::initializeWindowArrays(int*, int*, size_t, size_t)",
+      "symbol": "_ZN19CPktTimeWindowTools22initializeWindowArraysEPiS0_S0_mm",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method CCryptoControl::~CCryptoControl(int)",
+      "symbol": "_ZN14CCryptoControlD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method EncryptionStatus CCryptoControl::decrypt(srt::CPacket&)",
+      "symbol": "_ZN14CCryptoControl7decryptERN3srt7CPacketE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void CCryptoControl::createFakeSndContext()",
+      "symbol": "_ZN14CCryptoControl20createFakeSndContextEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method CRcvFreshLoss::Emod CRcvFreshLoss::revoke(int32_t, int32_t)",
+      "symbol": "_ZN13CRcvFreshLoss6revokeEii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void CCryptoControl::close()",
+      "symbol": "_ZN14CCryptoControl5closeEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int CCryptoControl::processSrtMsg_KMREQ(const uint32_t*, size_t, int, uint32_t*, size_t&)",
+      "symbol": "_ZN14CCryptoControl19processSrtMsg_KMREQEPKjmiPjRm",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::string CCryptoControl::FormatKmMessage(std::string, int, size_t)",
+      "symbol": "_ZN14CCryptoControl15FormatKmMessageENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEim",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void CCryptoControl::regenCryptoKm(bool, bool)",
+      "symbol": "_ZN14CCryptoControl13regenCryptoKmEbb",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::vector<EventSlot, std::allocator<EventSlot> >::~vector(int)",
+      "symbol": "_ZNSt6vectorI9EventSlotSaIS0_EED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void CUDTException::clear()",
+      "symbol": "_ZN13CUDTException5clearEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool SrtHSRequest::deserialize(const char*, size_t)",
+      "symbol": "_ZN12SrtHSRequest11deserializeEPKcm",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method CSndLossList::CSndLossList(int)",
+      "symbol": "_ZN12CSndLossListC2Ei",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int CInfoBlock::getKey()",
+      "symbol": "_ZN10CInfoBlock6getKeyEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void CSndLossList::coalesce(int)",
+      "symbol": "_ZN12CSndLossList8coalesceEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void CRcvBuffer::getInternalTimeBase(CRcvBuffer::time_point&, bool&, CRcvBuffer::duration&)",
+      "symbol": "_ZN10CRcvBuffer19getInternalTimeBaseERN3srt4sync9TimePointINS1_12steady_clockEEERbRNS1_8DurationIS3_EE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool CSndLossList::updateElement(int, int32_t, int32_t)",
+      "symbol": "_ZN12CSndLossList13updateElementEiii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool CEPoll::empty(const CEPollDesc&) const",
+      "symbol": "_ZNK6CEPoll5emptyERK10CEPollDesc",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method CRcvFreshLoss::Emod CRcvFreshLoss::revoke(int32_t)",
+      "symbol": "_ZN13CRcvFreshLoss6revokeEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method CRcvLossList::~CRcvLossList(int)",
+      "symbol": "_ZN12CRcvLossListD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int ACKWindowTools::acknowledge(ACKWindowTools::Seq*, const size_t, int&, int&, int32_t, int32_t&, const srt::sync::steady_clock::time_point&)",
+      "symbol": "_ZN14ACKWindowTools11acknowledgeEPNS_3SeqEmRiS2_iS2_RKN3srt4sync9TimePointINS4_12steady_clockEEE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int CSrtConfig::set(SRT_SOCKOPT, void*, int)",
+      "symbol": "_ZN10CSrtConfig3setE11SRT_SOCKOPTPKvi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void CSndLossList::insertAfter(int, int, int32_t, int32_t)",
+      "symbol": "_ZN12CSndLossList11insertAfterEiiii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void CSndBuffer::addBuffer(const char*, int, SRT_MSGCTRL&)",
+      "symbol": "_ZN10CSndBuffer9addBufferEPKciR12SRT_MsgCtrl_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void CRcvLossList::insert(int32_t, int32_t)",
+      "symbol": "_ZN12CRcvLossList6insertEii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method CCryptoControl::CCryptoControl(srt::CUDT*, SRTSOCKET)",
+      "symbol": "_ZN14CCryptoControlC2EPN3srt4CUDTEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool CInfoBlock::operator==(const CInfoBlock&)",
+      "symbol": "_ZN10CInfoBlockeqERKS_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void CSndBuffer::increase()",
+      "symbol": "_ZN10CSndBuffer8increaseEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method CInfoBlock& CInfoBlock::copyFrom(const CInfoBlock&)",
+      "symbol": "_ZN10CInfoBlock8copyFromERKS_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void CSndLossList::removeUpTo(int32_t)",
+      "symbol": "_ZN12CSndLossList10removeUpToEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method CSndBuffer::time_point CSndBuffer::getPacketRexmitTime(int)",
+      "symbol": "_ZN10CSndBuffer19getPacketRexmitTimeEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int CSndBuffer::addBufferFromFile(std::fstream&, int)",
+      "symbol": "_ZN10CSndBuffer17addBufferFromFileERSt13basic_fstreamIcSt11char_traitsIcEEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void CSndBuffer::updateInputRate(const CSndBuffer::time_point&, int, int)",
+      "symbol": "_ZN10CSndBuffer15updateInputRateERKN3srt4sync9TimePointINS1_12steady_clockEEEii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void CSndBuffer::setInputRateSmpPeriod(int)",
+      "symbol": "_ZN10CSndBuffer21setInputRateSmpPeriodEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void CSndBuffer::updAvgBufSize(const CSndBuffer::time_point&)",
+      "symbol": "_ZN10CSndBuffer13updAvgBufSizeERKN3srt4sync9TimePointINS1_12steady_clockEEE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method CSndBuffer::time_point CSndBuffer::getSourceTime()",
+      "symbol": "_ZN10CSndBuffer13getSourceTimeERKNS_5BlockE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method CUDTException::CUDTException(CodeMajor, CodeMinor, int)",
+      "symbol": "_ZN13CUDTExceptionC2E9CodeMajor9CodeMinori",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method EncryptionStatus CCryptoControl::encrypt(srt::CPacket&)",
+      "symbol": "_ZN14CCryptoControl7encryptERN3srt7CPacketE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void CRcvBuffer::countBytes(int, int, bool)",
+      "symbol": "_ZN10CRcvBuffer10countBytesEiib",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void CInfoBlock::convert(uint32_t*)",
+      "symbol": "_ZN10CInfoBlock7convertERK12sockaddr_anyPj",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method CRcvLossList::CRcvLossList(int)",
+      "symbol": "_ZN12CRcvLossListC2Ei",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int CRcvBuffer::readMsg(char*, int, SRT_MSGCTRL&, int)",
+      "symbol": "_ZN10CRcvBuffer7readMsgEPciR12SRT_MsgCtrl_i",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int CRcvBuffer::extractData(char*, int, int, int, bool)",
+      "symbol": "_ZN10CRcvBuffer11extractDataEPciiib",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function std::string TransmissionEventStr(ETransmissionEvent)",
+      "symbol": "_Z20TransmissionEventStrB5cxx1118ETransmissionEvent",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void AvgBufSize::update(const AvgBufSize::time_point&, int, int, int)",
+      "symbol": "_ZN10AvgBufSize6updateERKN3srt4sync9TimePointINS1_12steady_clockEEEiii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int CEPoll::wait(int, std::set<int, std::less<int>, std::allocator<int> >*, std::set<int, std::less<int>, std::allocator<int> >*, int64_t, std::set<int, std::less<int>, std::allocator<int> >*, std::set<int, std::less<int>, std::allocator<int> >*)",
+      "symbol": "_ZN6CEPoll4waitEiPSt3setIiSt4lessIiESaIiEES5_lS5_S5_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual void ObjectEventSlot<srt::LiveCC>::emit(ETransmissionEvent, EventVariant)",
+      "symbol": "_ZN15ObjectEventSlotIN3srt6LiveCCEE4emitE18ETransmissionEvent12EventVariant",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method CRcvBuffer::time_point CRcvBuffer::debugGetDeliveryTime(int)",
+      "symbol": "_ZN10CRcvBuffer20debugGetDeliveryTimeEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void CIPAddress::ntop(uint32_t*)",
+      "symbol": "_ZN10CIPAddress4ntopERK12sockaddr_anyPj",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int CRcvBuffer::ackData(int)",
+      "symbol": "_ZN10CRcvBuffer7ackDataEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int CHandShake::store_to(char*, size_t&)",
+      "symbol": "_ZN10CHandShake8store_toEPcRm",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void md5_init(md5_state_t*)",
+      "symbol": "md5_init",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method CHandShake::CHandShake()",
+      "symbol": "_ZN10CHandShakeC2Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int CRcvBuffer::getRcvAvgDataSize(int&, int&)",
+      "symbol": "_ZN10CRcvBuffer17getRcvAvgDataSizeERiS0_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int CPktTimeWindowTools::getPktRcvSpeed_in(int*, const int*, size_t, int&)",
+      "symbol": "_ZN19CPktTimeWindowTools17getPktRcvSpeed_inEPKiPiS1_mRi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void CIPAddress::pton(const uint32_t*, const sockaddr_any&)",
+      "symbol": "_ZN10CIPAddress4ptonER12sockaddr_anyPKjRKS0_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function std::string MessageTypeStr(UDTMessageType, uint32_t)",
+      "symbol": "_Z14MessageTypeStrB5cxx1114UDTMessageTypej",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::string CRcvBuffer::strFullnessState(const CRcvBuffer::time_point&) const",
+      "symbol": "_ZNK10CRcvBuffer16strFullnessStateB5cxx11ERKN3srt4sync9TimePointINS1_12steady_clockEEE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::string CHandShake::show()",
+      "symbol": "_ZN10CHandShake4showB5cxx11Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void ACKWindowTools::store(ACKWindowTools::Seq*, const size_t, int&, int&, int32_t, int32_t)",
+      "symbol": "_ZN14ACKWindowTools5storeEPNS_3SeqEmRiS2_ii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::string CHandShake::RdvStateStr()",
+      "symbol": "_ZN10CHandShake11RdvStateStrB5cxx11ENS_15RendezvousStateE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function bool checkMappedIPv4(const uint16_t*)",
+      "symbol": "_Z15checkMappedIPv4PKt",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method CSrtConfig::~CSrtConfig(int)",
+      "symbol": "_ZN10CSrtConfigD2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int CSndLossList::insert(int32_t, int32_t)",
+      "symbol": "_ZN12CSndLossList6insertEii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool CIPAddress::ipcmp(const sockaddr*, int)",
+      "symbol": "_ZN10CIPAddress5ipcmpEPK8sockaddrS2_i",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method CInfoBlock* CInfoBlock::clone()",
+      "symbol": "_ZN10CInfoBlock5cloneEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function std::string ConnectStatusStr(EConnectStatus)",
+      "symbol": "_Z16ConnectStatusStrB5cxx1114EConnectStatus",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool CHandShake::valid()",
+      "symbol": "_ZN10CHandShake5validEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int CSndBuffer::getAvgBufSize(int&, int&)",
+      "symbol": "_ZN10CSndBuffer13getAvgBufSizeERiS0_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method CRcvBuffer::time_point CRcvBuffer::getPktTsbPdTime(uint32_t)",
+      "symbol": "_ZN10CRcvBuffer15getPktTsbPdTimeEj",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int CRcvBuffer::readMsg(char*, int)",
+      "symbol": "_ZN10CRcvBuffer7readMsgEPci",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void CRcvBuffer::updRcvAvgDataSize(const CRcvBuffer::time_point&)",
+      "symbol": "_ZN10CRcvBuffer17updRcvAvgDataSizeERKN3srt4sync9TimePointINS1_12steady_clockEEE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int CHandShake::load_from(const char*, size_t)",
+      "symbol": "_ZN10CHandShake9load_fromEPKcm",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function std::string SrtFlagString(int32_t)",
+      "symbol": "_Z13SrtFlagStringB5cxx11i",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int32_t CSndLossList::popLostSeq()",
+      "symbol": "_ZN12CSndLossList10popLostSeqEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void CRcvBuffer::setRcvTsbPdMode(const CRcvBuffer::time_point&, const CRcvBuffer::duration&)",
+      "symbol": "_ZN10CRcvBuffer15setRcvTsbPdModeERKN3srt4sync9TimePointINS1_12steady_clockEEERKNS1_8DurationIS3_EE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int CRcvBuffer::readBufferToFile(std::fstream&, int)",
+      "symbol": "_ZN10CRcvBuffer16readBufferToFileERSt13basic_fstreamIcSt11char_traitsIcEEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function std::string RequestTypeStr(UDTRequestType)",
+      "symbol": "_Z14RequestTypeStrB5cxx1114UDTRequestType",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::string CHandShake::ExtensionFlagStr()",
+      "symbol": "_ZN10CHandShake16ExtensionFlagStrB5cxx11Ei",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool CRcvBuffer::getRcvReadyMsg(CRcvBuffer::time_point&, int32_t&, int, int)",
+      "symbol": "_ZN10CRcvBuffer14getRcvReadyMsgERN3srt4sync9TimePointINS1_12steady_clockEEERiii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void CRcvBuffer::applyGroupTime(const CRcvBuffer::time_point&, bool, uint32_t, const CRcvBuffer::duration&)",
+      "symbol": "_ZN10CRcvBuffer14applyGroupTimeERKN3srt4sync9TimePointINS1_12steady_clockEEEbjRKNS1_8DurationIS3_EE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool CRcvBuffer::getRcvFirstMsg(CRcvBuffer::time_point&, bool&, int32_t&, int32_t&, int32_t)",
+      "symbol": "_ZN10CRcvBuffer14getRcvFirstMsgERN3srt4sync9TimePointINS1_12steady_clockEEERbRiS7_i",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method CSndBuffer::~CSndBuffer(int)",
+      "symbol": "_ZN10CSndBufferD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int CSndBuffer::readData(srt::CPacket&, CSndBuffer::time_point&, int)",
+      "symbol": "_ZN10CSndBuffer8readDataERN3srt7CPacketERNS0_4sync9TimePointINS3_12steady_clockEEEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method size_t CRcvBuffer::dropData(int)",
+      "symbol": "_ZN10CRcvBuffer8dropDataEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int CRcvBuffer::getRcvDataSize(int&, int&)",
+      "symbol": "_ZN10CRcvBuffer14getRcvDataSizeERiS0_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method CSndLossList::~CSndLossList(int)",
+      "symbol": "_ZN12CSndLossListD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void CCryptoControl::updateKmState(int, size_t)",
+      "symbol": "_ZN14CCryptoControl13updateKmStateEim",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool CRcvBuffer::isRcvDataReady(CRcvBuffer::time_point&, int32_t&, int32_t)",
+      "symbol": "_ZN10CRcvBuffer14isRcvDataReadyERN3srt4sync9TimePointINS1_12steady_clockEEERii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::__cxx11::list<std::_List_iterator<CInfoBlock*>, std::allocator<std::_List_iterator<CInfoBlock*> > >, std::allocator<std::__cxx11::list<std::_List_iterator<CInfoBlock*>, std::allocator<std::_List_iterator<CInfoBlock*> > > > >::_M_default_append(std::vector<std::__cxx11::list<std::_List_iterator<CInfoBlock*>, std::allocator<std::_List_iterator<CInfoBlock*> > >, std::allocator<std::__cxx11::list<std::_List_iterator<CInfoBlock*>, std::allocator<std::_List_iterator<CInfoBlock*> > > > >::size_type)",
+      "symbol": "_ZNSt6vectorINSt7__cxx114listISt14_List_iteratorIP10CInfoBlockESaIS5_EEESaIS7_EE17_M_default_appendEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool CRcvBuffer::isRcvDataReady()",
+      "symbol": "_ZN10CRcvBuffer14isRcvDataReadyEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual const char* CUDTException::what() const",
+      "symbol": "_ZNK13CUDTException4whatEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int CSndBuffer::dropLateData(int&, int32_t&, const CSndBuffer::time_point&)",
+      "symbol": "_ZN10CSndBuffer12dropLateDataERiS0_RKN3srt4sync9TimePointINS2_12steady_clockEEE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void CRcvBuffer::applyGroupDrift(const CRcvBuffer::time_point&, bool, const CRcvBuffer::duration&)",
+      "symbol": "_ZN10CRcvBuffer15applyGroupDriftERKN3srt4sync9TimePointINS1_12steady_clockEEEbRKNS1_8DurationIS3_EE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool CRcvBuffer::addRcvTsbPdDriftSample(uint32_t, int)",
+      "symbol": "_ZN10CRcvBuffer22addRcvTsbPdDriftSampleEji",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void CSndLossList::insertHead(int, int32_t, int32_t)",
+      "symbol": "_ZN12CSndLossList10insertHeadEiii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual void SimpleEventSlot::emit(ETransmissionEvent, EventVariant)",
+      "symbol": "_ZN15SimpleEventSlot4emitE18ETransmissionEvent12EventVariant",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void CRcvLossList::getLossArray(int32_t*, int&, int)",
+      "symbol": "_ZN12CRcvLossList12getLossArrayEPiRii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void CRcvBuffer::dropMsg(int32_t, bool)",
+      "symbol": "_ZN10CRcvBuffer7dropMsgEib",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function bool SrtParseConfig(std::string, srt::SrtConfig&)",
+      "symbol": "_Z14SrtParseConfigNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERN3srt9SrtConfigE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool CCryptoControl::createCryptoCtx(size_t, HaiCrypt_CryptoDir, HaiCrypt_Handle&)",
+      "symbol": "_ZN14CCryptoControl15createCryptoCtxEm18HaiCrypt_CryptoDirRP18hcrypt_Session_str",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method CRcvFreshLoss::CRcvFreshLoss(int32_t, int32_t, int)",
+      "symbol": "_ZN13CRcvFreshLossC2Eiii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool CRcvBuffer::scanMsg(int&, int&, bool&)",
+      "symbol": "_ZN10CRcvBuffer7scanMsgERiS0_Rb",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int round_val(double)",
+      "symbol": "_Z9round_vald",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method CRcvBuffer::CRcvBuffer(srt::CUnitQueue*, int)",
+      "symbol": "_ZN10CRcvBufferC2EPN3srt10CUnitQueueEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int32_t CSndBuffer::getMsgNoAt(int)",
+      "symbol": "_ZN10CSndBuffer10getMsgNoAtEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int CSndBuffer::getCurrBufSize(int&, int&)",
+      "symbol": "_ZN10CSndBuffer14getCurrBufSizeERiS0_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function __gnu_cxx::__enable_if<true, std::_Deque_iterator<CRcvFreshLoss, CRcvFreshLoss&, CRcvFreshLoss*> >::__type std::__copy_move_backward_a1<true, CRcvFreshLoss*, CRcvFreshLoss>(CRcvFreshLoss*, CRcvFreshLoss*, std::_Deque_iterator<CRcvFreshLoss, CRcvFreshLoss&, CRcvFreshLoss*>)",
+      "symbol": "_ZSt23__copy_move_backward_a1ILb1EP13CRcvFreshLossS0_EN9__gnu_cxx11__enable_ifIXsrSt23__is_random_access_iterIT0_NSt15iterator_traitsIS5_E17iterator_categoryEE7__valueESt15_Deque_iteratorIT1_RSB_PSB_EE6__typeES5_S5_SE_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void CRcvBuffer::skipData(int)",
+      "symbol": "_ZN10CRcvBuffer8skipDataEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool CRcvLossList::remove(int32_t)",
+      "symbol": "_ZN12CRcvLossList6removeEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual CUDTException::~CUDTException(int)",
+      "symbol": "_ZN13CUDTExceptionD0Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int CRcvBuffer::addData(srt::CUnit*, int)",
+      "symbol": "_ZN10CRcvBuffer7addDataEPN3srt5CUnitEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int CCryptoControl::processSrtMsg_KMRSP(const uint32_t*, size_t, int)",
+      "symbol": "_ZN14CCryptoControl19processSrtMsg_KMRSPEPKjmi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void CCryptoControl::sendKeysToPeer(Whether2RegenKm)",
+      "symbol": "_ZN14CCryptoControl14sendKeysToPeerE15Whether2RegenKm",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int CEPoll::remove_ssock(int, const SYSSOCKET&)",
+      "symbol": "_ZN6CEPoll12remove_ssockEiRKi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method virtual CUDTException::~CUDTException(int)",
+      "symbol": "_ZN13CUDTExceptionD2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void CSndBuffer::ackData(int)",
+      "symbol": "_ZN10CSndBuffer7ackDataEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int CRcvBuffer::debugGetSize() const",
+      "symbol": "_ZNK10CRcvBuffer12debugGetSizeEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method uint64_t PacketMetric::fullBytes()",
+      "symbol": "_ZN12PacketMetric9fullBytesEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method srt::CPacket* CRcvBuffer::getRcvReadyPacket(int32_t)",
+      "symbol": "_ZN10CRcvBuffer17getRcvReadyPacketEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method CRcvBuffer::~CRcvBuffer(int)",
+      "symbol": "_ZN10CRcvBufferD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool CRcvBuffer::accessMsg(int&, int&, bool&, int64_t&, int)",
+      "symbol": "_ZN10CRcvBuffer9accessMsgERiS0_RbRli",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int CSndLossList::getLossLength() const",
+      "symbol": "_ZNK12CSndLossList13getLossLengthEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method bool CRcvLossList::remove(int32_t, int32_t)",
+      "symbol": "_ZN12CRcvLossList6removeEii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::_Deque_base<CRcvFreshLoss, std::allocator<CRcvFreshLoss> >::_M_initialize_map(std::size_t)",
+      "symbol": "_ZNSt11_Deque_baseI13CRcvFreshLossSaIS0_EE17_M_initialize_mapEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void CEPoll::clear_ready_usocks(CEPollDesc&, int)",
+      "symbol": "_ZN6CEPoll18clear_ready_usocksER10CEPollDesci",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int CEPoll::update_usock(int, const SRTSOCKET&, const int*)",
+      "symbol": "_ZN6CEPoll12update_usockEiRKiPS0_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void CSndLossList::traceState() const",
+      "symbol": "_ZNK12CSndLossList10traceStateEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int CEPoll::uwait(int, SRT_EPOLL_EVENT*, int, int64_t)",
+      "symbol": "_ZN6CEPoll5uwaitEiP19SRT_EPOLL_EVENT_STRil",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method unsigned int CRcvBuffer::getRcvAvgPayloadSize() const",
+      "symbol": "_ZNK10CRcvBuffer20getRcvAvgPayloadSizeEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int CRcvBuffer::getAvailBufSize() const",
+      "symbol": "_ZNK10CRcvBuffer15getAvailBufSizeEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::string CIPAddress::show()",
+      "symbol": "_ZN10CIPAddress4showB5cxx11EPK8sockaddr",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method CSndBuffer::CSndBuffer(int, int)",
+      "symbol": "_ZN10CSndBufferC2Eii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method int CRcvBuffer::readBuffer(char*, int)",
+      "symbol": "_ZN10CRcvBuffer10readBufferEPci",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "const char* srt_rejectreason_name[15]",
+      "symbol": "srt_rejectreason_name",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "static srt::CUDTUnited srt::CUDT::s_UDTUnited",
+      "symbol": "_ZN3srt4CUDT11s_UDTUnitedE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int srt_group_data(SRTSOCKET, SRT_SOCKGROUPDATA*, size_t*)",
+      "symbol": "srt_group_data",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void srt_delete_config(SRT_SOCKOPT_CONFIG*)",
+      "symbol": "srt_delete_config",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function SRTSOCKET srt_create_group(SRT_GROUP_TYPE)",
+      "symbol": "srt_create_group",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int srt_connect_group(SRTSOCKET, SRT_SOCKGROUPCONFIG*, int)",
+      "symbol": "srt_connect_group",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int srt_config_add(SRT_SOCKOPT_CONFIG*, SRT_SOCKOPT, void*, int)",
+      "symbol": "srt_config_add",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function __gnu_cxx::__enable_if<true, std::_Deque_iterator<srt::CRcvFreshLoss, srt::CRcvFreshLoss&, srt::CRcvFreshLoss*> >::__type std::__copy_move_a1<true, srt::CRcvFreshLoss*, srt::CRcvFreshLoss>(srt::CRcvFreshLoss*, srt::CRcvFreshLoss*, std::_Deque_iterator<srt::CRcvFreshLoss, srt::CRcvFreshLoss&, srt::CRcvFreshLoss*>)",
+      "symbol": "_ZSt14__copy_move_a1ILb1EPN3srt13CRcvFreshLossES1_EN9__gnu_cxx11__enable_ifIXsrSt23__is_random_access_iterIT0_NSt15iterator_traitsIS6_E17iterator_categoryEE7__valueESt15_Deque_iteratorIT1_RSC_PSC_EE6__typeES6_S6_SF_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::vector<srt::EventSlot, std::allocator<srt::EventSlot> >::~vector(int)",
+      "symbol": "_ZNSt6vectorIN3srt9EventSlotESaIS1_EED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<srt::EventSlot, std::allocator<srt::EventSlot> >::_M_realloc_insert<const srt::EventSlot&>(std::vector<srt::EventSlot, std::allocator<srt::EventSlot> >::iterator, const srt::EventSlot&)",
+      "symbol": "_ZNSt6vectorIN3srt9EventSlotESaIS1_EE17_M_realloc_insertIJRKS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::deque<srt::CRcvFreshLoss, std::allocator<srt::CRcvFreshLoss> >::_M_reallocate_map(std::deque<srt::CRcvFreshLoss, std::allocator<srt::CRcvFreshLoss> >::size_type, bool)",
+      "symbol": "_ZNSt5dequeIN3srt13CRcvFreshLossESaIS1_EE17_M_reallocate_mapEmb",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>::_M_gen_rand()",
+      "symbol": "_ZNSt23mersenne_twister_engineImLm32ELm624ELm397ELm31ELm2567483615ELm11ELm4294967295ELm7ELm2636928640ELm15ELm4022730752ELm18ELm1812433253EE11_M_gen_randEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::unique_ptr<srt::CCryptoControl, std::default_delete<srt::CCryptoControl> >::~unique_ptr(int)",
+      "symbol": "_ZNSt10unique_ptrIN3srt14CCryptoControlESt14default_deleteIS1_EED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::_Deque_base<srt::CRcvFreshLoss, std::allocator<srt::CRcvFreshLoss> >::_M_initialize_map(std::size_t)",
+      "symbol": "_ZNSt11_Deque_baseIN3srt13CRcvFreshLossESaIS1_EE17_M_initialize_mapEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool srt::CEPoll::empty(const srt::CEPollDesc&) const",
+      "symbol": "_ZNK3srt6CEPoll5emptyERKNS_10CEPollDescE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method size_t srt::CUDT::getAvailRcvBufferSizeNoLock() const",
+      "symbol": "_ZNK3srt4CUDT27getAvailRcvBufferSizeNoLockEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method size_t srt::CUDT::getAvailRcvBufferSizeLock() const",
+      "symbol": "_ZNK3srt4CUDT25getAvailRcvBufferSizeLockEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CUDTException::getErrno() const",
+      "symbol": "_ZNK3srt13CUDTException8getErrnoEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::string srt::CUDTException::getErrorString() const",
+      "symbol": "_ZNK3srt13CUDTException14getErrorStringB5cxx11Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CRcvBufferNew::scanNotInOrderMessageRight(int, int) const",
+      "symbol": "_ZNK3srt13CRcvBufferNew26scanNotInOrderMessageRightEii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method srt::CRcvBufferNew::PacketInfo srt::CRcvBufferNew::getFirstReadablePacketInfo(srt::CRcvBufferNew::time_point) const",
+      "symbol": "_ZNK3srt13CRcvBufferNew26getFirstReadablePacketInfoENS_4sync9TimePointINS1_12steady_clockEEE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function SRT_SOCKGROUPCONFIG srt_prepare_endpoint(const sockaddr*, const sockaddr*, int)",
+      "symbol": "srt_prepare_endpoint",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::string srt::CCryptoControl::CONID() const",
+      "symbol": "_ZNK3srt14CCryptoControl5CONIDB5cxx11Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::pair<int, int> srt::CRcvBufferNew::getAvailablePacketsRange() const",
+      "symbol": "_ZNK3srt13CRcvBufferNew24getAvailablePacketsRangeEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool srt::CRcvBufferNew::hasAvailablePackets() const",
+      "symbol": "_ZNK3srt13CRcvBufferNew19hasAvailablePacketsEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::string srt::CRcvBufferNew::strFullnessState(int, const srt::CRcvBufferNew::time_point&) const",
+      "symbol": "_ZNK3srt13CRcvBufferNew16strFullnessStateB5cxx11EiRKNS_4sync9TimePointINS1_12steady_clockEEE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool srt::CRcvBufferNew::isRcvDataReady(srt::CRcvBufferNew::time_point) const",
+      "symbol": "_ZNK3srt13CRcvBufferNew14isRcvDataReadyENS_4sync9TimePointINS1_12steady_clockEEE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool srt::CRcvLossList::find(int32_t, int32_t) const",
+      "symbol": "_ZNK3srt12CRcvLossList4findEii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CRcvBufferNew::getRcvDataSize(int&, int&) const",
+      "symbol": "_ZNK3srt13CRcvBufferNew14getRcvDataSizeERiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int32_t srt::CRcvLossList::getFirstLostSeq() const",
+      "symbol": "_ZNK3srt12CRcvLossList15getFirstLostSeqEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int srt::round_val(double)",
+      "symbol": "_ZN3srt9round_valEd",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method srt::CRcvBufferNew::time_point srt::CRcvBufferNew::getTsbPdTimeBase(uint32_t) const",
+      "symbol": "_ZNK3srt13CRcvBufferNew16getTsbPdTimeBaseEj",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function __gnu_cxx::__enable_if<true, std::_Deque_iterator<srt::CRcvFreshLoss, srt::CRcvFreshLoss&, srt::CRcvFreshLoss*> >::__type std::__copy_move_backward_a1<true, srt::CRcvFreshLoss*, srt::CRcvFreshLoss>(srt::CRcvFreshLoss*, srt::CRcvFreshLoss*, std::_Deque_iterator<srt::CRcvFreshLoss, srt::CRcvFreshLoss&, srt::CRcvFreshLoss*>)",
+      "symbol": "_ZSt23__copy_move_backward_a1ILb1EPN3srt13CRcvFreshLossES1_EN9__gnu_cxx11__enable_ifIXsrSt23__is_random_access_iterIT0_NSt15iterator_traitsIS6_E17iterator_categoryEE7__valueESt15_Deque_iteratorIT1_RSC_PSC_EE6__typeES6_S6_SF_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<srt::SrtHandshakeExtension, std::allocator<srt::SrtHandshakeExtension> >::_M_realloc_insert<srt::SrtHandshakeExtension>(std::vector<srt::SrtHandshakeExtension, std::allocator<srt::SrtHandshakeExtension> >::iterator, srt::SrtHandshakeExtension&&)",
+      "symbol": "_ZNSt6vectorIN3srt21SrtHandshakeExtensionESaIS1_EE17_M_realloc_insertIJS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CEPoll::add_ssock(int, const SYSSOCKET&, const int*)",
+      "symbol": "_ZN3srt6CEPoll9add_ssockEiRKiPS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CEPoll::release(int)",
+      "symbol": "_ZN3srt6CEPoll7releaseEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method srt::CRcvBufferNew::time_point srt::CRcvBufferNew::getPktTsbPdTime(uint32_t) const",
+      "symbol": "_ZNK3srt13CRcvBufferNew15getPktTsbPdTimeEj",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void srt::CEPoll::clear_ready_usocks(srt::CEPollDesc&, int)",
+      "symbol": "_ZN3srt6CEPoll18clear_ready_usocksERNS_10CEPollDescEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CEPoll::update_usock(int, const SRTSOCKET&, const int*)",
+      "symbol": "_ZN3srt6CEPoll12update_usockEiRKiPS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CEPoll::update_ssock(int, const SYSSOCKET&, const int*)",
+      "symbol": "_ZN3srt6CEPoll12update_ssockEiRKiPS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CEPoll::remove_ssock(int, const SYSSOCKET&)",
+      "symbol": "_ZN3srt6CEPoll12remove_ssockEiRKi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CEPoll::clear_usocks(int)",
+      "symbol": "_ZN3srt6CEPoll12clear_usocksEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool srt::CUDT::isRetransmissionAllowed(const srt::CUDT::time_point&)",
+      "symbol": "_ZN3srt4CUDT23isRetransmissionAllowedERKNS_4sync9TimePointINS1_12steady_clockEEE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function SRTSOCKET srt_groupof(SRTSOCKET)",
+      "symbol": "srt_groupof",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CUDT::rcvDropTooLateUpTo(int)",
+      "symbol": "_ZN3srt4CUDT18rcvDropTooLateUpToEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CUDTException::getErrorCode() const",
+      "symbol": "_ZNK3srt13CUDTException12getErrorCodeEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CEPoll::swait(srt::CEPollDesc&, srt::CEPoll::fmap_t&, int64_t, bool)",
+      "symbol": "_ZN3srt6CEPoll5swaitERNS_10CEPollDescERSt3mapIiiSt4lessIiESaISt4pairIKiiEEElb",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CRcvBufferNew::scanNotInOrderMessageLeft(int, int) const",
+      "symbol": "_ZNK3srt13CRcvBufferNew25scanNotInOrderMessageLeftEii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CEPoll::create(srt::CEPollDesc**)",
+      "symbol": "_ZN3srt6CEPoll6createEPPNS_10CEPollDescE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method srt::CSndBuffer::CSndBuffer(int, int)",
+      "symbol": "_ZN3srt10CSndBufferC2Eii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::pair<std::_Rb_tree_iterator<std::pair<int const, srt::CEPollDesc::Wait> >, bool> std::_Rb_tree<int, std::pair<int const, srt::CEPollDesc::Wait>, std::_Select1st<std::pair<int const, srt::CEPollDesc::Wait> >, std::less<int>, std::allocator<std::pair<int const, srt::CEPollDesc::Wait> > >::_M_emplace_unique<std::pair<int, srt::CEPollDesc::Wait> >(std::pair<int, srt::CEPollDesc::Wait>&&)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiN3srt10CEPollDesc4WaitEESt10_Select1stIS5_ESt4lessIiESaIS5_EE17_M_emplace_uniqueIJS0_IiS4_EEEES0_ISt17_Rb_tree_iteratorIS5_EbEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CPktTimeWindowTools::getBandwidth_in(int*, size_t)",
+      "symbol": "_ZN3srt19CPktTimeWindowTools15getBandwidth_inEPKiPim",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method srt::CSndLossList::~CSndLossList(int)",
+      "symbol": "_ZN3srt12CSndLossListD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void srt::CSndBuffer::ackData(int)",
+      "symbol": "_ZN3srt10CSndBuffer7ackDataEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool srt::CSndLossList::updateElement(int, int32_t, int32_t)",
+      "symbol": "_ZN3srt12CSndLossList13updateElementEiii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int32_t srt::CSndLossList::popLostSeq()",
+      "symbol": "_ZN3srt12CSndLossList10popLostSeqEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CSndBuffer::getCurrBufSize(int&, int&)",
+      "symbol": "_ZN3srt10CSndBuffer14getCurrBufSizeERiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void srt::md5_finish(srt::md5_state_t*, srt::md5_byte_t*)",
+      "symbol": "_ZN3srt10md5_finishEPNS_11md5_state_sEPh",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method srt::CUDTUnited& srt::CUDT::uglobal()",
+      "symbol": "_ZN3srt4CUDT7uglobalEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void srt::md5_append(srt::md5_state_t*, const srt::md5_byte_t*, int)",
+      "symbol": "_ZN3srt10md5_appendEPNS_11md5_state_sEPKhi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void srt::CSndLossList::coalesce(int)",
+      "symbol": "_ZN3srt12CSndLossList8coalesceEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void srt::CRcvBufferNew::updRcvAvgDataSize(const srt::CRcvBufferNew::time_point&)",
+      "symbol": "_ZN3srt13CRcvBufferNew17updRcvAvgDataSizeERKNS_4sync9TimePointINS1_12steady_clockEEE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void srt::CRcvBufferNew::countBytes(int, int)",
+      "symbol": "_ZN3srt13CRcvBufferNew10countBytesEii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::deque<srt::CRcvFreshLoss, std::allocator<srt::CRcvFreshLoss> >::iterator std::deque<srt::CRcvFreshLoss, std::allocator<srt::CRcvFreshLoss> >::_M_insert_aux<srt::CRcvFreshLoss>(std::deque<srt::CRcvFreshLoss, std::allocator<srt::CRcvFreshLoss> >::iterator, srt::CRcvFreshLoss&&)",
+      "symbol": "_ZNSt5dequeIN3srt13CRcvFreshLossESaIS1_EE13_M_insert_auxIJS1_EEESt15_Deque_iteratorIS1_RS1_PS1_ES8_DpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method srt::CHandShake::CHandShake()",
+      "symbol": "_ZN3srt10CHandShakeC2Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CRcvLossList::getLossLength() const",
+      "symbol": "_ZNK3srt12CRcvLossList13getLossLengthEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::string srt::CHandShake::show()",
+      "symbol": "_ZN3srt10CHandShake4showB5cxx11Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool srt::CRcvLossList::remove(int32_t, int32_t)",
+      "symbol": "_ZN3srt12CRcvLossList6removeEii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method srt::CRateEstimator::CRateEstimator()",
+      "symbol": "_ZN3srt14CRateEstimatorC2Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void srt::CSndLossList::removeUpTo(int32_t)",
+      "symbol": "_ZN3srt12CSndLossList10removeUpToEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CRcvBufferNew::dropMessage(int32_t, int32_t, int32_t)",
+      "symbol": "_ZN3srt13CRcvBufferNew11dropMessageEiii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CInfoBlock::getKey()",
+      "symbol": "_ZN3srt10CInfoBlock6getKeyEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void srt::md5_init(srt::md5_state_t*)",
+      "symbol": "_ZN3srt8md5_initEPNS_11md5_state_sE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method srt::CSndBuffer::~CSndBuffer(int)",
+      "symbol": "_ZN3srt10CSndBufferD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void srt::CRcvBufferNew::releaseUnitInPos(int)",
+      "symbol": "_ZN3srt13CRcvBufferNew16releaseUnitInPosEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void srt::CSndLossList::insertHead(int, int32_t, int32_t)",
+      "symbol": "_ZN3srt12CSndLossList10insertHeadEiii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method srt::CCryptoControl::CCryptoControl(srt::CUDT*, SRTSOCKET)",
+      "symbol": "_ZN3srt14CCryptoControlC2EPNS_4CUDTEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CRcvBufferNew::getTimespan_ms() const",
+      "symbol": "_ZNK3srt13CRcvBufferNew14getTimespan_msEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void srt::CSndBuffer::addBuffer(const char*, int, SRT_MSGCTRL&)",
+      "symbol": "_ZN3srt10CSndBuffer9addBufferEPKciR12SRT_MsgCtrl_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CEPoll::wait(int, std::set<int, std::less<int>, std::allocator<int> >*, std::set<int, std::less<int>, std::allocator<int> >*, int64_t, std::set<int, std::less<int>, std::allocator<int> >*, std::set<int, std::less<int>, std::allocator<int> >*)",
+      "symbol": "_ZN3srt6CEPoll4waitEiPSt3setIiSt4lessIiESaIiEES6_lS6_S6_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function std::string srt::SrtFlagString(int32_t)",
+      "symbol": "_ZN3srt13SrtFlagStringB5cxx11Ei",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CRcvBufferNew::readMessage(char*, size_t, SRT_MSGCTRL*)",
+      "symbol": "_ZN3srt13CRcvBufferNew11readMessageEPcmP12SRT_MsgCtrl_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool srt::CCryptoControl::init(srt::HandshakeSide, bool)",
+      "symbol": "_ZN3srt14CCryptoControl4initENS_13HandshakeSideEb",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::string srt::CIPAddress::show()",
+      "symbol": "_ZN3srt10CIPAddress4showB5cxx11EPK8sockaddr",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool srt::SrtParseConfig(std::string, srt::SrtConfig&)",
+      "symbol": "_ZN3srt14SrtParseConfigENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERNS_9SrtConfigE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void srt::CIPAddress::ntop(uint32_t*)",
+      "symbol": "_ZN3srt10CIPAddress4ntopERKNS_12sockaddr_anyEPj",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool srt::CInfoBlock::operator==(const srt::CInfoBlock&)",
+      "symbol": "_ZN3srt10CInfoBlockeqERKS0_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual srt::CUDTException::~CUDTException(int)",
+      "symbol": "_ZN3srt13CUDTExceptionD2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void srt::AvgBufSize::update(const srt::AvgBufSize::time_point&, int, int, int)",
+      "symbol": "_ZN3srt10AvgBufSize6updateERKNS_4sync9TimePointINS1_12steady_clockEEEiii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method srt::CRcvLossList::CRcvLossList(int)",
+      "symbol": "_ZN3srt12CRcvLossListC2Ei",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void srt::CCryptoControl::updateKmState(int, size_t)",
+      "symbol": "_ZN3srt14CCryptoControl13updateKmStateEim",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method srt::CSndBuffer::time_point srt::CSndBuffer::peekNextOriginal() const",
+      "symbol": "_ZNK3srt10CSndBuffer16peekNextOriginalEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method srt::CEPoll::CEPoll()",
+      "symbol": "_ZN3srt6CEPollC2Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CHandShake::load_from(const char*, size_t)",
+      "symbol": "_ZN3srt10CHandShake9load_fromEPKcm",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method srt::CEPoll::~CEPoll(int)",
+      "symbol": "_ZN3srt6CEPollD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CHandShake::store_to(char*, size_t&)",
+      "symbol": "_ZN3srt10CHandShake8store_toEPcRm",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method srt::CSrtConfig::~CSrtConfig(int)",
+      "symbol": "_ZN3srt10CSrtConfigD2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool srt::AvgBufSize::isTimeToUpdate(const srt::AvgBufSize::time_point&) const",
+      "symbol": "_ZNK3srt10AvgBufSize14isTimeToUpdateERKNS_4sync9TimePointINS1_12steady_clockEEE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method srt::CInfoBlock* srt::CInfoBlock::clone()",
+      "symbol": "_ZN3srt10CInfoBlock5cloneEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CUDT::sndDropTooLate()",
+      "symbol": "_ZN3srt4CUDT14sndDropTooLateEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method srt::EncryptionStatus srt::CCryptoControl::decrypt(srt::CPacket&)",
+      "symbol": "_ZN3srt14CCryptoControl7decryptERNS_7CPacketE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void srt::CRcvBufferNew::updateFirstReadableOutOfOrder()",
+      "symbol": "_ZN3srt13CRcvBufferNew29updateFirstReadableOutOfOrderEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::string srt::CHandShake::RdvStateStr()",
+      "symbol": "_ZN3srt10CHandShake11RdvStateStrB5cxx11ENS0_15RendezvousStateE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual const char* srt::CUDTException::what() const",
+      "symbol": "_ZNK3srt13CUDTException4whatEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CSndLossList::getLossLength() const",
+      "symbol": "_ZNK3srt12CSndLossList13getLossLengthEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int32_t srt::CSndBuffer::getMsgNoAt(int)",
+      "symbol": "_ZN3srt10CSndBuffer10getMsgNoAtEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CRcvBufferNew::dropAll()",
+      "symbol": "_ZN3srt13CRcvBufferNew7dropAllEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::deque<srt::CRcvFreshLoss, std::allocator<srt::CRcvFreshLoss> >::iterator std::deque<srt::CRcvFreshLoss, std::allocator<srt::CRcvFreshLoss> >::_M_erase(std::deque<srt::CRcvFreshLoss, std::allocator<srt::CRcvFreshLoss> >::iterator, std::deque<srt::CRcvFreshLoss, std::allocator<srt::CRcvFreshLoss> >::iterator)",
+      "symbol": "_ZNSt5dequeIN3srt13CRcvFreshLossESaIS1_EE8_M_eraseESt15_Deque_iteratorIS1_RS1_PS1_ES7_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CSndBuffer::dropLateData(int&, int32_t&, const srt::CSndBuffer::time_point&)",
+      "symbol": "_ZN3srt10CSndBuffer12dropLateDataERiS1_RKNS_4sync9TimePointINS2_12steady_clockEEE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool srt::CRcvBufferNew::addRcvTsbPdDriftSample(uint32_t, int)",
+      "symbol": "_ZN3srt13CRcvBufferNew22addRcvTsbPdDriftSampleEji",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void srt::CSndBuffer::increase()",
+      "symbol": "_ZN3srt10CSndBuffer8increaseEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CEPoll::update_events(const SRTSOCKET&, std::set<int, std::less<int>, std::allocator<int> >&, int, bool)",
+      "symbol": "_ZN3srt6CEPoll13update_eventsERKiRSt3setIiSt4lessIiESaIiEEib",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void srt::CSndBuffer::updAvgBufSize(const srt::CSndBuffer::time_point&)",
+      "symbol": "_ZN3srt10CSndBuffer13updAvgBufSizeERKNS_4sync9TimePointINS1_12steady_clockEEE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual srt::CUDTException::~CUDTException(int)",
+      "symbol": "_ZN3srt13CUDTExceptionD0Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function SRT_SOCKOPT_CONFIG* srt_create_config()",
+      "symbol": "srt_create_config",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::_Deque_base<srt::CRcvFreshLoss, std::allocator<srt::CRcvFreshLoss> >::~_Deque_base(int)",
+      "symbol": "_ZNSt11_Deque_baseIN3srt13CRcvFreshLossESaIS1_EED2Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void srt::CRcvLossList::insert(int32_t, int32_t)",
+      "symbol": "_ZN3srt12CRcvLossList6insertEii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CSndBuffer::addBufferFromFile(std::fstream&, int)",
+      "symbol": "_ZN3srt10CSndBuffer17addBufferFromFileERSt13basic_fstreamIcSt11char_traitsIcEEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void srt::CIPAddress::pton(const uint32_t*, const srt::sockaddr_any&)",
+      "symbol": "_ZN3srt10CIPAddress4ptonERNS_12sockaddr_anyEPKjRKS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::deque<srt::CRcvFreshLoss, std::allocator<srt::CRcvFreshLoss> >::iterator std::deque<srt::CRcvFreshLoss, std::allocator<srt::CRcvFreshLoss> >::_M_erase(std::deque<srt::CRcvFreshLoss, std::allocator<srt::CRcvFreshLoss> >::iterator)",
+      "symbol": "_ZNSt5dequeIN3srt13CRcvFreshLossESaIS1_EE8_M_eraseESt15_Deque_iteratorIS1_RS1_PS1_E",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool srt::CIPAddress::ipcmp(const sockaddr*, int)",
+      "symbol": "_ZN3srt10CIPAddress5ipcmpEPK8sockaddrS3_i",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method srt::CRcvLossList::~CRcvLossList(int)",
+      "symbol": "_ZN3srt12CRcvLossListD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method srt::CSndBuffer::time_point srt::CSndBuffer::getPacketRexmitTime(int)",
+      "symbol": "_ZN3srt10CSndBuffer19getPacketRexmitTimeEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void srt::CSndLossList::insertAfter(int, int, int32_t, int32_t)",
+      "symbol": "_ZN3srt12CSndLossList11insertAfterEiiii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool srt::CUDT::packUniqueData(srt::CPacket&, srt::CUDT::time_point&)",
+      "symbol": "_ZN3srt4CUDT14packUniqueDataERNS_7CPacketERNS_4sync9TimePointINS3_12steady_clockEEE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void srt::CMD5::compute(unsigned char*)",
+      "symbol": "_ZN3srt4CMD57computeEPKcPh",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function bool srt::checkMappedIPv4(const uint16_t*)",
+      "symbol": "_ZN3srt15checkMappedIPv4EPKt",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CRcvBufferNew::readBuffer(char*, int)",
+      "symbol": "_ZN3srt13CRcvBufferNew10readBufferEPci",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void srt::CRcvBufferNew::setTsbPdMode(const srt::CRcvBufferNew::time_point&, bool, srt::CRcvBufferNew::duration)",
+      "symbol": "_ZN3srt13CRcvBufferNew12setTsbPdModeERKNS_4sync9TimePointINS1_12steady_clockEEEbNS1_8DurationIS3_EE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::string srt::sockaddr_any::str() const",
+      "symbol": "_ZNK3srt12sockaddr_any3strB5cxx11Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CSndLossList::insert(int32_t, int32_t)",
+      "symbol": "_ZN3srt12CSndLossList6insertEii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void srt::CRcvBufferNew::updateTsbPdTimeBase(uint32_t)",
+      "symbol": "_ZN3srt13CRcvBufferNew19updateTsbPdTimeBaseEj",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CRcvBufferNew::readBufferTo(int, srt::CRcvBufferNew::copy_to_dst_f*, void*)",
+      "symbol": "_ZN3srt13CRcvBufferNew12readBufferToEiPFbPciiPvES2_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool srt::CRcvBufferNew::dropUnitInPos(int)",
+      "symbol": "_ZN3srt13CRcvBufferNew13dropUnitInPosEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void srt::CRcvBufferNew::updateNonreadPos()",
+      "symbol": "_ZN3srt13CRcvBufferNew16updateNonreadPosEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void srt::CRcvBufferNew::applyGroupTime(const srt::CRcvBufferNew::time_point&, bool, uint32_t, const srt::CRcvBufferNew::duration&)",
+      "symbol": "_ZN3srt13CRcvBufferNew14applyGroupTimeERKNS_4sync9TimePointINS1_12steady_clockEEEbjRKNS1_8DurationIS3_EE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void srt::CRcvBufferNew::releaseNextFillerEntries()",
+      "symbol": "_ZN3srt13CRcvBufferNew24releaseNextFillerEntriesEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method size_t srt::CRcvBufferNew::countReadable() const",
+      "symbol": "_ZNK3srt13CRcvBufferNew13countReadableEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void srt::CRcvBufferNew::applyGroupDrift(const srt::CRcvBufferNew::time_point&, bool, const srt::CRcvBufferNew::duration&)",
+      "symbol": "_ZN3srt13CRcvBufferNew15applyGroupDriftERKNS_4sync9TimePointINS1_12steady_clockEEEbRKNS1_8DurationIS3_EE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<std::__cxx11::list<std::_List_iterator<srt::CInfoBlock*>, std::allocator<std::_List_iterator<srt::CInfoBlock*> > >, std::allocator<std::__cxx11::list<std::_List_iterator<srt::CInfoBlock*>, std::allocator<std::_List_iterator<srt::CInfoBlock*> > > > >::_M_default_append(std::vector<std::__cxx11::list<std::_List_iterator<srt::CInfoBlock*>, std::allocator<std::_List_iterator<srt::CInfoBlock*> > >, std::allocator<std::__cxx11::list<std::_List_iterator<srt::CInfoBlock*>, std::allocator<std::_List_iterator<srt::CInfoBlock*> > > > >::size_type)",
+      "symbol": "_ZNSt6vectorINSt7__cxx114listISt14_List_iteratorIPN3srt10CInfoBlockEESaIS6_EEESaIS8_EE17_M_default_appendEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method const char* srt::CUDTException::getErrorMessage() const",
+      "symbol": "_ZNK3srt13CUDTException15getErrorMessageEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CRcvBufferNew::getRcvDataSize() const",
+      "symbol": "_ZNK3srt13CRcvBufferNew14getRcvDataSizeEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CRcvBufferNew::readBufferToFile(std::fstream&, int)",
+      "symbol": "_ZN3srt13CRcvBufferNew16readBufferToFileERSt13basic_fstreamIcSt11char_traitsIcEEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CSndBuffer::getAvgBufSize(int&, int&)",
+      "symbol": "_ZN3srt10CSndBuffer13getAvgBufSizeERiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void srt::CUDTException::clear()",
+      "symbol": "_ZN3srt13CUDTException5clearEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CRcvBufferNew::getRcvAvgDataSize(int&, int&)",
+      "symbol": "_ZN3srt13CRcvBufferNew17getRcvAvgDataSizeERiS1_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CSndBuffer::getCurrBufSize() const",
+      "symbol": "_ZNK3srt10CSndBuffer14getCurrBufSizeEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method srt::CCryptoControl::~CCryptoControl(int)",
+      "symbol": "_ZN3srt14CCryptoControlD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::string srt::CHandShake::ExtensionFlagStr()",
+      "symbol": "_ZN3srt10CHandShake16ExtensionFlagStrB5cxx11Ei",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CRcvBufferNew::findLastMessagePkt()",
+      "symbol": "_ZN3srt13CRcvBufferNew18findLastMessagePktEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method srt::CUDTException::CUDTException(CodeMajor, CodeMinor, int)",
+      "symbol": "_ZN3srt13CUDTExceptionC2E9CodeMajor9CodeMinori",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void srt::CRcvBufferNew::onInsertNotInOrderPacket(int)",
+      "symbol": "_ZN3srt13CRcvBufferNew24onInsertNotInOrderPacketEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CRcvBufferNew::insert(srt::CUnit*)",
+      "symbol": "_ZN3srt13CRcvBufferNew6insertEPNS_5CUnitE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool srt::CRcvBufferNew::checkFirstReadableOutOfOrder()",
+      "symbol": "_ZN3srt13CRcvBufferNew28checkFirstReadableOutOfOrderEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CCryptoControl::processSrtMsg_KMRSP(const uint32_t*, size_t, int)",
+      "symbol": "_ZN3srt14CCryptoControl19processSrtMsg_KMRSPEPKjmi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CRcvBufferNew::dropUpTo(int32_t)",
+      "symbol": "_ZN3srt13CRcvBufferNew8dropUpToEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method srt::CSndLossList::CSndLossList(int)",
+      "symbol": "_ZN3srt12CSndLossListC2Ei",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method srt::CRcvBufferNew::CRcvBufferNew(int, size_t, srt::CUnitQueue*, bool)",
+      "symbol": "_ZN3srt13CRcvBufferNewC2EimPNS_10CUnitQueueEb",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void srt::SimpleEventSlot::emit(srt::ETransmissionEvent, srt::EventVariant)",
+      "symbol": "_ZN3srt15SimpleEventSlot4emitENS_18ETransmissionEventENS_12EventVariantE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method srt::CRcvBufferNew::~CRcvBufferNew(int)",
+      "symbol": "_ZN3srt13CRcvBufferNewD2Ev",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void srt::CCryptoControl::close()",
+      "symbol": "_ZN3srt14CCryptoControl5closeEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void srt::CRateEstimator::setInputRateSmpPeriod(int)",
+      "symbol": "_ZN3srt14CRateEstimator21setInputRateSmpPeriodEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method srt::CRcvFreshLoss::Emod srt::CRcvFreshLoss::revoke(int32_t)",
+      "symbol": "_ZN3srt13CRcvFreshLoss6revokeEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool srt::SrtHSRequest::serialize(char*, size_t) const",
+      "symbol": "_ZNK3srt12SrtHSRequest9serializeEPcm",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function std::string srt::MessageTypeStr(srt::UDTMessageType, uint32_t)",
+      "symbol": "_ZN3srt14MessageTypeStrB5cxx11ENS_14UDTMessageTypeEj",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void srt::CSndLossList::traceState() const",
+      "symbol": "_ZNK3srt12CSndLossList10traceStateEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void srt::CRcvLossList::getLossArray(int32_t*, int&, int)",
+      "symbol": "_ZN3srt12CRcvLossList12getLossArrayEPiRii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method srt::CRcvFreshLoss::Emod srt::CRcvFreshLoss::revoke(int32_t, int32_t)",
+      "symbol": "_ZN3srt13CRcvFreshLoss6revokeEii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::pair<std::_Rb_tree_iterator<std::pair<int const, srt::CEPollDesc> >, bool> std::_Rb_tree<int, std::pair<int const, srt::CEPollDesc>, std::_Select1st<std::pair<int const, srt::CEPollDesc> >, std::less<int>, std::allocator<std::pair<int const, srt::CEPollDesc> > >::_M_emplace_unique<std::pair<int, srt::CEPollDesc> >(std::pair<int, srt::CEPollDesc>&&)",
+      "symbol": "_ZNSt8_Rb_treeIiSt4pairIKiN3srt10CEPollDescEESt10_Select1stIS4_ESt4lessIiESaIS4_EE17_M_emplace_uniqueIJS0_IiS3_EEEES0_ISt17_Rb_tree_iteratorIS4_EbEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool srt::SrtHSRequest::deserialize(const char*, size_t)",
+      "symbol": "_ZN3srt12SrtHSRequest11deserializeEPKcm",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CSrtConfig::set(SRT_SOCKOPT, void*, int)",
+      "symbol": "_ZN3srt10CSrtConfig3setE11SRT_SOCKOPTPKvi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool srt::CHandShake::valid()",
+      "symbol": "_ZN3srt10CHandShake5validEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int srt::ACKWindowTools::acknowledge(srt::ACKWindowTools::Seq*, const size_t, int&, int&, int32_t, int32_t&, const srt::sync::steady_clock::time_point&)",
+      "symbol": "_ZN3srt14ACKWindowTools11acknowledgeEPNS0_3SeqEmRiS3_iS3_RKNS_4sync9TimePointINS4_12steady_clockEEE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void srt::ACKWindowTools::store(srt::ACKWindowTools::Seq*, const size_t, int&, int&, int32_t, int32_t)",
+      "symbol": "_ZN3srt14ACKWindowTools5storeEPNS0_3SeqEmRiS3_ii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method srt::CRcvFreshLoss::CRcvFreshLoss(int32_t, int32_t, int)",
+      "symbol": "_ZN3srt13CRcvFreshLossC2Eiii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void srt::CCryptoControl::regenCryptoKm(bool, bool)",
+      "symbol": "_ZN3srt14CCryptoControl13regenCryptoKmEbb",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool srt::CRcvLossList::remove(int32_t)",
+      "symbol": "_ZN3srt12CRcvLossList6removeEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void srt::CCryptoControl::sendKeysToPeer(srt::Whether2RegenKm)",
+      "symbol": "_ZN3srt14CCryptoControl14sendKeysToPeerENS_15Whether2RegenKmE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CEPoll::uwait(int, SRT_EPOLL_EVENT*, int, int64_t)",
+      "symbol": "_ZN3srt6CEPoll5uwaitEiP19SRT_EPOLL_EVENT_STRil",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::string srt::CCryptoControl::FormatKmMessage(std::string, int, size_t)",
+      "symbol": "_ZN3srt14CCryptoControl15FormatKmMessageENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEim",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method srt::CSndBuffer::duration srt::CSndBuffer::getBufferingDelay(const srt::CSndBuffer::time_point&) const",
+      "symbol": "_ZNK3srt10CSndBuffer17getBufferingDelayERKNS_4sync9TimePointINS1_12steady_clockEEE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void srt::CUDT::setInitialRcvSeq(int32_t)",
+      "symbol": "_ZN3srt4CUDT16setInitialRcvSeqEi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method srt::CInfoBlock& srt::CInfoBlock::copyFrom(const srt::CInfoBlock&)",
+      "symbol": "_ZN3srt10CInfoBlock8copyFromERKS0_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool srt::CCryptoControl::createCryptoCtx(size_t, HaiCrypt_CryptoDir, HaiCrypt_Handle&)",
+      "symbol": "_ZN3srt14CCryptoControl15createCryptoCtxEm18HaiCrypt_CryptoDirRP18hcrypt_Session_str",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method srt::CRcvBufferNew::PacketInfo srt::CRcvBufferNew::getFirstValidPacketInfo() const",
+      "symbol": "_ZNK3srt13CRcvBufferNew23getFirstValidPacketInfoEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CCryptoControl::processSrtMsg_KMREQ(const uint32_t*, size_t, int, uint32_t*, size_t&)",
+      "symbol": "_ZN3srt14CCryptoControl19processSrtMsg_KMREQEPKjmiPjRm",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void srt::CCryptoControl::createFakeSndContext()",
+      "symbol": "_ZN3srt14CCryptoControl20createFakeSndContextEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method bool srt::CUDT::isRcvBufferReady() const",
+      "symbol": "_ZNK3srt4CUDT16isRcvBufferReadyEv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CSndBuffer::readData(srt::CPacket&, srt::CSndBuffer::time_point&, int, int&)",
+      "symbol": "_ZN3srt10CSndBuffer8readDataERNS_7CPacketERNS_4sync9TimePointINS3_12steady_clockEEEiRi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method srt::EncryptionStatus srt::CCryptoControl::encrypt(srt::CPacket&)",
+      "symbol": "_ZN3srt14CCryptoControl7encryptERNS_7CPacketE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void srt::CInfoBlock::convert(uint32_t*)",
+      "symbol": "_ZN3srt10CInfoBlock7convertERKNS_12sockaddr_anyEPj",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void srt::CRateEstimator::updateInputRate(const srt::CRateEstimator::time_point&, int, int)",
+      "symbol": "_ZN3srt14CRateEstimator15updateInputRateERKNS_4sync9TimePointINS1_12steady_clockEEEii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function std::string srt::RequestTypeStr(srt::UDTRequestType)",
+      "symbol": "_ZN3srt14RequestTypeStrB5cxx11ENS_14UDTRequestTypeE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void srt::ObjectEventSlot<srt::FileCC>::emit(srt::ETransmissionEvent, srt::EventVariant)",
+      "symbol": "_ZN3srt15ObjectEventSlotINS_6FileCCEE4emitENS_18ETransmissionEventENS_12EventVariantE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void srt::ObjectEventSlot<srt::LiveCC>::emit(srt::ETransmissionEvent, srt::EventVariant)",
+      "symbol": "_ZN3srt15ObjectEventSlotINS_6LiveCCEE4emitENS_18ETransmissionEventENS_12EventVariantE",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CEPoll::setflags(int, int32_t)",
+      "symbol": "_ZN3srt6CEPoll8setflagsEii",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CSndBuffer::readData(int, srt::CPacket&, srt::CSndBuffer::time_point&, int&)",
+      "symbol": "_ZN3srt10CSndBuffer8readDataEiRNS_7CPacketERNS_4sync9TimePointINS3_12steady_clockEEERi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function std::string srt::ConnectStatusStr(srt::EConnectStatus)",
+      "symbol": "_ZN3srt16ConnectStatusStrB5cxx11ENS_14EConnectStatusE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method int srt::CPktTimeWindowTools::getPktRcvSpeed_in(int*, const int*, size_t, int&)",
+      "symbol": "_ZN3srt19CPktTimeWindowTools17getPktRcvSpeed_inEPKiPiS2_mRi",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void srt::CPktTimeWindowTools::initializeWindowArrays(int*, int*, size_t, size_t)",
+      "symbol": "_ZN3srt19CPktTimeWindowTools22initializeWindowArraysEPiS1_S1_mm",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function std::string srt::TransmissionEventStr(srt::ETransmissionEvent)",
+      "symbol": "_ZN3srt20TransmissionEventStrB5cxx11ENS_18ETransmissionEventE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "const char* srt::srt_rejectreason_name[15]",
+      "symbol": "_ZN3srt21srt_rejectreason_nameE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method UDTMessageType srt::CPacket::getType() const  ->  method srt::UDTMessageType srt::CPacket::getType() const",
+      "symbol": "_ZNK3srt7CPacket7getTypeEv",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method PacketBoundary srt::CPacket::getMsgBoundary() const  ->  method srt::PacketBoundary srt::CPacket::getMsgBoundary() const",
+      "symbol": "_ZNK3srt7CPacket14getMsgBoundaryEv",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method IOVector* srt::CPacket::getPacketVector()  ->  method srt::IOVector* srt::CPacket::getPacketVector()",
+      "symbol": "_ZN3srt7CPacket15getPacketVectorEv",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method int32_t srt::CUDT::ackDataUpTo(int32_t)  ->  method void srt::CUDT::ackDataUpTo(int32_t)",
+      "symbol": "_ZN3srt4CUDT11ackDataUpToEi",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method EncryptionKeySpec srt::CPacket::getMsgCryptoFlags() const  ->  method srt::EncryptionKeySpec srt::CPacket::getMsgCryptoFlags() const",
+      "symbol": "_ZNK3srt7CPacket17getMsgCryptoFlagsEv",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method EConnectStatus srt::CUDT::craftKmResponse(uint32_t*, size_t&)  ->  method srt::EConnectStatus srt::CUDT::craftKmResponse(uint32_t*, size_t&)",
+      "symbol": "_ZN3srt4CUDT15craftKmResponseEPjRm",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method EConnectStatus srt::CUDT::processAsyncConnectResponse(const srt::CPacket&)  ->  method srt::EConnectStatus srt::CUDT::processAsyncConnectResponse(const srt::CPacket&)",
+      "symbol": "_ZN3srt4CUDT27processAsyncConnectResponseERKNS_7CPacketE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method std::pair<int, srt::sync::TimePoint<srt::sync::steady_clock> > srt::CUDT::packData(srt::CPacket&)  ->  method std::pair<bool, srt::sync::TimePoint<srt::sync::steady_clock> > srt::CUDT::packData(srt::CPacket&)",
+      "symbol": "_ZN3srt4CUDT8packDataERNS_7CPacketE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method CUDTException& srt::CUDT::getlasterror()  ->  method srt::CUDTException& srt::CUDT::getlasterror()",
+      "symbol": "_ZN3srt4CUDT12getlasterrorEv",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function CUDTException& srt::sync::GetThreadLocalError()  ->  function srt::CUDTException& srt::sync::GetThreadLocalError()",
+      "symbol": "_ZN3srt4sync19GetThreadLocalErrorEv",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 34,
+     "field_added_to_struct": 9,
+     "field_removed_from_struct": 64,
+     "field_type_changed": 58,
+     "member_offset_changed": 132,
+     "type_size_changed": 6,
+     "vtable_changed": 2
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./srtcore/common.h",
+      "exposure": "by_pointer",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class CUDTException"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "./srtcore/srt.h",
+      "exposure": "by_value",
+      "kind": "enum_case_added",
+      "third_party": false,
+      "type": "enum SRT_SOCKOPT"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./srtcore/channel.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class srt::CChannel"
+     },
+     {
+      "append_only": false,
+      "count": 17,
+      "declared_in": "./srtcore/core.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class srt::CUDT"
+     },
+     {
+      "append_only": false,
+      "count": 110,
+      "declared_in": "./srtcore/core.h",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "class srt::CUDT"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./srtcore/core.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class srt::CUDT"
+     },
+     {
+      "append_only": false,
+      "count": 3,
+      "declared_in": "./srtcore/socketconfig.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct CSrtConfig"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./srtcore/socketconfig.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct CSrtConfig"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./srtcore/packet.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class srt::CPacket"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./srtcore/api.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class srt::CUDTSocket"
+     },
+     {
+      "append_only": false,
+      "count": 6,
+      "declared_in": "./srtcore/api.h",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "class srt::CUDTSocket"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./srtcore/api.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class srt::CUDTSocket"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./srtcore/atomic.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class srt::sync::atomic<SRT_SOCKSTATUS>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/unique_ptr.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class std::unique_ptr<CCryptoControl, std::default_delete<CCryptoControl> >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/unique_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__uniq_ptr_data<CCryptoControl, std::default_delete<CCryptoControl>, true, true>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./srtcore/cache.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class CCache<CInfoBlock>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/stl_list.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::__cxx11::list<CInfoBlock*, std::allocator<CInfoBlock*> >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::__cxx11::list<std::_List_iterator<CInfoBlock*>, std::allocator<std::_List_iterator<CInfoBlock*> > >, std::allocator<std::__cxx11::list<std::_List_iterator<CInfoBlock*>, std::allocator<std::_List_iterator<CInfoBlock*> > > > >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<EventSlot, std::allocator<EventSlot> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./srtcore/packetfilter_api.h",
+      "exposure": "by_pointer",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class srt::SrtPacketFilterBase"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./srtcore/atomic.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class srt::sync::atomic<int>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./srtcore/atomic.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class srt::sync::atomic<bool>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./srtcore/handshake.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class CHandShake"
+     },
+     {
+      "append_only": false,
+      "count": 5,
+      "declared_in": "./srtcore/buffer.h",
+      "exposure": "by_pointer",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "class CSndBuffer"
+     },
+     {
+      "append_only": false,
+      "count": 7,
+      "declared_in": "./srtcore/buffer.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class CSndBuffer"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./srtcore/buffer.h",
+      "exposure": "by_pointer",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct CSndBuffer::Block"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./srtcore/buffer.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct CSndBuffer::Block"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./srtcore/buffer.h",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct CSndBuffer::Block"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./srtcore/buffer.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct CSndBuffer::Block"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./srtcore/buffer.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct CSndBuffer::Buffer"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./srtcore/list.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class CSndLossList"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./srtcore/window.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class CPktTimeWindow<16, 16>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./srtcore/atomic.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class srt::sync::atomic<long int>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./srtcore/atomic.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class srt::sync::atomic<long unsigned int>"
+     },
+     {
+      "append_only": false,
+      "count": 8,
+      "declared_in": "./srtcore/buffer.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "class CRcvBuffer"
+     },
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": "./srtcore/buffer.h",
+      "exposure": "by_pointer",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "class CRcvBuffer"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./srtcore/buffer.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class CRcvBuffer"
+     },
+     {
+      "append_only": false,
+      "count": 8,
+      "declared_in": "./srtcore/buffer.h",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "class CRcvBuffer"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./srtcore/buffer.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class CRcvBuffer"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./srtcore/list.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "class CRcvLossList"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./srtcore/list.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class CRcvLossList"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./srtcore/list.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "class CRcvLossList"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/stl_deque.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::deque<CRcvFreshLoss, std::allocator<CRcvFreshLoss> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./srtcore/window.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class CACKWindow<1024>"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./srtcore/window.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class CPktTimeWindow<16, 64>"
+     },
+     {
+      "append_only": false,
+      "count": 54,
+      "declared_in": "./srtcore/core.h",
+      "exposure": "not_in_interface",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct srt::CUDT::CoreStats"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./srtcore/core.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct srt::CUDT::CoreStats"
+     },
+     {
+      "append_only": false,
+      "count": 6,
+      "declared_in": "./srtcore/core.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct srt::CUDT::CoreStats"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./srtcore/core.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct srt::CUDT::CoreStats"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<srt::CUDT*, std::allocator<srt::CUDT*> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<srt::CUDT*, std::allocator<srt::CUDT*> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./srtcore/queue.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct srt::CMultiplexer"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_pair.h",
+      "exposure": "by_value",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct std::pair<int, srt::sync::TimePoint<srt::sync::steady_clock> >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/stl_pair.h",
+      "exposure": "by_value",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::pair<int, srt::sync::TimePoint<srt::sync::steady_clock> >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./srtcore/api.h",
+      "exposure": "by_value",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class srt::CUDTUnited"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./srtcore/epoll.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class CEPoll"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_map.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class std::map<int, CEPollDesc, std::less<int>, std::allocator<std::pair<int const, CEPollDesc> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_tree.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class std::_Rb_tree<int, std::pair<int const, CEPollDesc>, std::_Select1st<std::pair<int const, CEPollDesc> >, std::less<int>, std::allocator<std::pair<int const, CEPollDesc> > >"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/c++/11/bits/stl_tree.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Rb_tree<int, std::pair<int const, CEPollDesc>, std::_Select1st<std::pair<int const, CEPollDesc> >, std::less<int>, std::allocator<std::pair<int const, CEPollDesc> > >::_Rb_tree_impl<std::less<int>, true>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./srtcore/fec.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class srt::FECFilterBuiltin"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./srtcore/congctl.cpp",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class srt::FileCC"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./srtcore/congctl.cpp",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class srt::LiveCC"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./srtcore/packetfilter.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class srt::PacketFilter::Creator<srt::FECFilterBuiltin>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<srt::CUnit*, std::allocator<srt::CUnit*> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<srt::CUnit*, std::allocator<srt::CUnit*> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_deque.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::deque<srt::CPacket*, std::allocator<srt::CPacket*> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_deque.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Deque_base<srt::CPacket*, std::allocator<srt::CPacket*> >::_Deque_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<srt::CRendezvousQueue::LinkStatusInfo, std::allocator<srt::CRendezvousQueue::LinkStatusInfo> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<srt::CRendezvousQueue::LinkStatusInfo, std::allocator<srt::CRendezvousQueue::LinkStatusInfo> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./srtcore/queue.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct srt::CRendezvousQueue::LinkStatusInfo"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<srt::CUDTSocket*, std::allocator<srt::CUDTSocket*> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/11/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<srt::CUDTSocket*, std::allocator<srt::CUDTSocket*> >::_Vector_impl"
+     }
+    ],
+    "vague_linkage": {
+     "function_signature_changed": 6,
+     "symbol_added": 24,
+     "symbol_removed": 23
+    }
+   }
+  ],
+  "seconds": 9.1963949,
+  "source": "srt",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.4.4",
+   "1.5.0"
+  ]
+ },
+ "generated_at": "2026-09-04T00:37:00Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

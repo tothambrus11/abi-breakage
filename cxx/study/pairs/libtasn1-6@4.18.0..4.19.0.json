@@ -1,0 +1,67 @@
+{
+ "data": {
+  "bytes_extracted": 908655,
+  "id": "libtasn1-6@4.18.0..4.19.0",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      41,
+      41
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libtasn1.so.6",
+     "libtasn1.so.6"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_type_changed": 1
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct _IO_FILE"
+     }
+    ],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 1.165639929,
+  "source": "libtasn1-6",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "4.18.0",
+   "4.19.0"
+  ]
+ },
+ "generated_at": "2026-09-04T00:44:01Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

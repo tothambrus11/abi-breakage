@@ -1,0 +1,173 @@
+{
+ "data": {
+  "bytes_extracted": 1169626,
+  "id": "chromaprint@1.4.1..1.4.2",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      34,
+      34
+     ],
+     "mangled_functions": [
+      10,
+      10
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libchromaprint.so.1",
+     "libchromaprint.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::pair<unsigned int, unsigned int>, std::allocator<std::pair<unsigned int, unsigned int> > >::_M_emplace_back_aux<std::pair<unsigned int, unsigned int> >(std::pair<unsigned int, unsigned int>&&)",
+      "symbol": "_ZNSt6vectorISt4pairIjjESaIS1_EE19_M_emplace_back_auxIJS1_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<long unsigned int, std::allocator<long unsigned int> >::_M_emplace_back_aux<long unsigned int const&>(const unsigned long int&)",
+      "symbol": "_ZNSt6vectorImSaImEE19_M_emplace_back_auxIJRKmEEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<unsigned int, std::allocator<unsigned int> >::_M_emplace_back_aux<unsigned int>(unsigned int&&)",
+      "symbol": "_ZNSt6vectorIjSaIjEE19_M_emplace_back_auxIJjEEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<long unsigned int, std::allocator<long unsigned int> >::_M_realloc_insert<long unsigned int const&>(std::vector<long unsigned int, std::allocator<long unsigned int> >::iterator, const unsigned long int&)",
+      "symbol": "_ZNSt6vectorImSaImEE17_M_realloc_insertIJRKmEEEvN9__gnu_cxx17__normal_iteratorIPmS1_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<unsigned int, std::allocator<unsigned int> >::_M_realloc_insert<unsigned int>(std::vector<unsigned int, std::allocator<unsigned int> >::iterator, unsigned int&&)",
+      "symbol": "_ZNSt6vectorIjSaIjEE17_M_realloc_insertIJjEEEvN9__gnu_cxx17__normal_iteratorIPjS1_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::vector<std::pair<unsigned int, unsigned int>, std::allocator<std::pair<unsigned int, unsigned int> > >::_M_realloc_insert<std::pair<unsigned int, unsigned int> >(std::vector<std::pair<unsigned int, unsigned int>, std::allocator<std::pair<unsigned int, unsigned int> > >::iterator, std::pair<unsigned int, unsigned int>&&)",
+      "symbol": "_ZNSt6vectorISt4pairIjjESaIS1_EE17_M_realloc_insertIJS1_EEEvN9__gnu_cxx17__normal_iteratorIPS1_S3_EEDpOT_",
+      "weak": true
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 5,
+     "field_added_to_struct": 1,
+     "field_type_changed": 1,
+     "vtable_changed": 1
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/fingerprinter.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class chromaprint::Fingerprinter"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/fft.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class chromaprint::FFT"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/6/bits/unique_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class std::unique_ptr<chromaprint::FFTLib, std::default_delete<chromaprint::FFTLib> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/6/tuple",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "class std::tuple<chromaprint::FFTLib*, std::default_delete<chromaprint::FFTLib> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/6/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::tuple<chromaprint::FFTLib*, std::default_delete<chromaprint::FFTLib> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/audio_consumer.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "class chromaprint::AudioConsumer"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/audio_processor.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class chromaprint::AudioProcessor"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/silence_remover.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class chromaprint::SilenceRemover"
+     }
+    ],
+    "vague_linkage": {
+     "symbol_added": 3,
+     "symbol_removed": 3
+    }
+   }
+  ],
+  "seconds": 2.687292107,
+  "source": "chromaprint",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.4.1",
+   "1.4.2"
+  ]
+ },
+ "generated_at": "2026-09-04T00:42:54Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

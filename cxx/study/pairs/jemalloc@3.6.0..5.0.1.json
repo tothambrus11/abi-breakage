@@ -1,0 +1,137 @@
+{
+ "data": {
+  "bytes_extracted": 5341679,
+  "id": "jemalloc@3.6.0..5.0.1",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      26,
+      32
+     ],
+     "mangled_functions": [
+      0,
+      10
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 8,
+     "symbol_removed": 5
+    },
+    "soname": [
+     "libjemalloc.so.1",
+     "libjemalloc.so.2"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int rallocm(void**, size_t*, size_t, size_t, int)",
+      "symbol": "rallocm",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int sallocm(void*, size_t*, int)",
+      "symbol": "sallocm",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int nallocm(size_t*, size_t, int)",
+      "symbol": "nallocm",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int dallocm(void*, int)",
+      "symbol": "dallocm",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int allocm(void**, size_t*, size_t, int)",
+      "symbol": "allocm",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void sdallocx(void*, size_t, int)",
+      "symbol": "sdallocx",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void* operator new(std::size_t, const std::nothrow_t&)",
+      "symbol": "_ZnwmRKSt9nothrow_t",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void operator delete(void*, std::size_t)",
+      "symbol": "_ZdlPvm",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void* operator new(std::size_t)",
+      "symbol": "_Znwm",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void operator delete(void*, const std::nothrow_t&)",
+      "symbol": "_ZdlPvRKSt9nothrow_t",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void operator delete(void*)",
+      "symbol": "_ZdlPv",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "void (variadic parameter type)* je_hooks_libc_hook",
+      "symbol": "je_hooks_libc_hook",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "void (variadic parameter type)* je_hooks_arena_new_hook",
+      "symbol": "je_hooks_arena_new_hook",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 1.374210209,
+  "source": "jemalloc",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "3.6.0",
+   "5.0.1"
+  ]
+ },
+ "generated_at": "2026-09-04T00:42:02Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

@@ -1,0 +1,97 @@
+{
+ "data": {
+  "bytes_extracted": 746376,
+  "id": "pciutils@3.10.0..3.11.1",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      49,
+      49
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "field_added_to_struct": 2,
+     "field_removed_from_struct": 2,
+     "member_offset_changed": 6,
+     "type_size_changed": 1
+    },
+    "soname": [
+     "libpci.so.3",
+     "libpci.so.3"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./lib/pci.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": false,
+      "type": "struct pci_access"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./lib/pci.h",
+      "exposure": "by_pointer",
+      "kind": "field_removed_from_struct",
+      "third_party": false,
+      "type": "struct pci_access"
+     },
+     {
+      "append_only": false,
+      "count": 6,
+      "declared_in": "./lib/pci.h",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": false,
+      "type": "struct pci_access"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./lib/pci.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": false,
+      "type": "struct pci_access"
+     }
+    ],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 1.100570816,
+  "source": "pciutils",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "3.10.0",
+   "3.11.1"
+  ]
+ },
+ "generated_at": "2026-09-04T00:44:13Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

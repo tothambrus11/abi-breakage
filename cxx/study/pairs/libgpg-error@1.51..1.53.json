@@ -1,0 +1,226 @@
+{
+ "data": {
+  "bytes_extracted": 13653988,
+  "id": "libgpg-error@1.51..1.53",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      175,
+      199
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 24
+    },
+    "soname": [
+     "libgpg-error.so.0",
+     "libgpg-error.so.0"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function gpgrt_strlist_t gpgrt_strlist_prev(gpgrt_strlist_t, gpgrt_strlist_t)",
+      "symbol": "gpgrt_strlist_prev",
+      "version": "GPG_ERROR_1.0",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function char* gpgrt_strlist_pop(gpgrt_strlist_t*)",
+      "symbol": "gpgrt_strlist_pop",
+      "version": "GPG_ERROR_1.0",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function gpgrt_strlist_t gpgrt_strlist_tokenize(gpgrt_strlist_t*, const char*, const char*, unsigned int)",
+      "symbol": "gpgrt_strlist_tokenize",
+      "version": "GPG_ERROR_1.0",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function gpgrt_strlist_t gpgrt_strlist_last(gpgrt_strlist_t)",
+      "symbol": "gpgrt_strlist_last",
+      "version": "GPG_ERROR_1.0",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void gpgrt_strlist_free(gpgrt_strlist_t)",
+      "symbol": "gpgrt_strlist_free",
+      "version": "GPG_ERROR_1.0",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function gpgrt_strlist_t gpgrt_strlist_add(gpgrt_strlist_t*, const char*, unsigned int)",
+      "symbol": "gpgrt_strlist_add",
+      "version": "GPG_ERROR_1.0",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function gpgrt_strlist_t gpgrt_strlist_copy(gpgrt_strlist_t)",
+      "symbol": "gpgrt_strlist_copy",
+      "version": "GPG_ERROR_1.0",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function gpg_err_code_t gpgrt_nve_set(gpgrt_nvc_t, gpgrt_nve_t, const char*)",
+      "symbol": "gpgrt_nve_set",
+      "version": "GPG_ERROR_1.0",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function gpg_err_code_t gpgrt_nvc_add(gpgrt_nvc_t, const char*, const char*)",
+      "symbol": "gpgrt_nvc_add",
+      "version": "GPG_ERROR_1.0",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const char* gpgrt_nvc_get_string(gpgrt_nvc_t, const char*)",
+      "symbol": "gpgrt_nvc_get_string",
+      "version": "GPG_ERROR_1.0",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int gpgrt_nvc_get_flag(gpgrt_nvc_t, unsigned int, int)",
+      "symbol": "gpgrt_nvc_get_flag",
+      "version": "GPG_ERROR_1.0",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int gpgrt_nvc_get_bool(gpgrt_nvc_t, const char*)",
+      "symbol": "gpgrt_nvc_get_bool",
+      "version": "GPG_ERROR_1.0",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function gpgrt_nve_t gpgrt_nvc_lookup(gpgrt_nvc_t, const char*)",
+      "symbol": "gpgrt_nvc_lookup",
+      "version": "GPG_ERROR_1.0",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function gpgrt_strlist_t gpgrt_strlist_rev(gpgrt_strlist_t*)",
+      "symbol": "gpgrt_strlist_rev",
+      "version": "GPG_ERROR_1.0",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function gpgrt_strlist_t gpgrt_strlist_find(gpgrt_strlist_t, const char*)",
+      "symbol": "gpgrt_strlist_find",
+      "version": "GPG_ERROR_1.0",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const char* gpgrt_nve_value(gpgrt_nve_t)",
+      "symbol": "gpgrt_nve_value",
+      "version": "GPG_ERROR_1.0",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function gpgrt_nvc_t gpgrt_nvc_new(unsigned int)",
+      "symbol": "gpgrt_nvc_new",
+      "version": "GPG_ERROR_1.0",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function gpg_err_code_t gpgrt_nvc_write(gpgrt_nvc_t, estream_t)",
+      "symbol": "gpgrt_nvc_write",
+      "version": "GPG_ERROR_1.0",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function gpg_err_code_t gpgrt_nvc_parse(gpgrt_nvc_t*, int*, estream_t, unsigned int)",
+      "symbol": "gpgrt_nvc_parse",
+      "version": "GPG_ERROR_1.0",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void gpgrt_nvc_release(gpgrt_nvc_t)",
+      "symbol": "gpgrt_nvc_release",
+      "version": "GPG_ERROR_1.0",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void gpgrt_nvc_delete(gpgrt_nvc_t, gpgrt_nve_t, const char*)",
+      "symbol": "gpgrt_nvc_delete",
+      "version": "GPG_ERROR_1.0",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function gpg_err_code_t gpgrt_nvc_set(gpgrt_nvc_t, const char*, const char*)",
+      "symbol": "gpgrt_nvc_set",
+      "version": "GPG_ERROR_1.0",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const char* gpgrt_nve_name(gpgrt_nve_t)",
+      "symbol": "gpgrt_nve_name",
+      "version": "GPG_ERROR_1.0",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function gpgrt_nve_t gpgrt_nve_next(gpgrt_nve_t, const char*)",
+      "symbol": "gpgrt_nve_next",
+      "version": "GPG_ERROR_1.0",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 1.699489452,
+  "source": "libgpg-error",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.51",
+   "1.53"
+  ]
+ },
+ "generated_at": "2026-09-04T00:41:41Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

@@ -1,0 +1,76 @@
+{
+ "data": {
+  "bytes_extracted": 1581018,
+  "id": "lvm2@2.03.22..2.03.27",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      443,
+      444
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libdevmapper.so.1.02.1",
+     "libdevmapper.so.1.02.1"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_type_changed": 2
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct _IO_FILE"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./debian/build/build_deb/libdm/libdm-deptree.c",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct dm_tree"
+     }
+    ],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 1.637296738,
+  "source": "lvm2",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "2.03.22",
+   "2.03.27"
+  ]
+ },
+ "generated_at": "2026-09-04T00:43:46Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

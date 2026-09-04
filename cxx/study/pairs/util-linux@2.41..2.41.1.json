@@ -1,0 +1,55 @@
+{
+ "data": {
+  "bytes_extracted": 4061907,
+  "id": "util-linux@2.41..2.41.1",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      111,
+      111
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libblkid.so.1",
+     "libblkid.so.1"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 1.294150363,
+  "source": "util-linux",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "2.41",
+   "2.41.1"
+  ]
+ },
+ "generated_at": "2026-09-04T00:42:17Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

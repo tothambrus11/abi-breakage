@@ -1,0 +1,437 @@
+{
+ "data": {
+  "bytes_extracted": 19081184,
+  "id": "openal-soft@1.24.1..1.24.2",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      176,
+      176
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libopenal.so.1",
+     "libopenal.so.1"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 41,
+     "vtable_changed": 1
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./alc/context.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct ALCcontext"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./alc/device.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct al::Device"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/unique_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__uniq_ptr_data<BackendBase, std::default_delete<BackendBase>, true, true>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::tuple<BackendBase*, std::default_delete<BackendBase> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Tuple_impl<0, BackendBase*, std::default_delete<BackendBase> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./common/flexarray.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct al::FlexArrayStorage<ContextBase*, 8, true>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./core/voice.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct VoicePropsItem"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./core/effects/base.h",
+      "exposure": "not_in_interface",
+      "kind": "vtable_changed",
+      "third_party": true,
+      "type": "struct EffectState"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./common/flexarray.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct al::FlexArrayStorage<Voice*, 8, true>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./common/flexarray.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct al::FlexArrayStorage<EffectSlot*, 8, true>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::unique_ptr<std::array<VoiceChange, 128>, std::default_delete<std::array<VoiceChange, 128> > >, std::allocator<std::unique_ptr<std::array<VoiceChange, 128>, std::default_delete<std::array<VoiceChange, 128> > > > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::unique_ptr<std::array<VoiceChange, 128>, std::default_delete<std::array<VoiceChange, 128> > >, std::allocator<std::unique_ptr<std::array<VoiceChange, 128>, std::default_delete<std::array<VoiceChange, 128> > > > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/unique_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__uniq_ptr_data<std::array<VoiceChange, 128>, std::default_delete<std::array<VoiceChange, 128> >, true, true>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::tuple<std::array<VoiceChange, 128>*, std::default_delete<std::array<VoiceChange, 128> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Tuple_impl<0, std::array<VoiceChange, 128>*, std::default_delete<std::array<VoiceChange, 128> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::unique_ptr<std::array<Voice, 32>, std::default_delete<std::array<Voice, 32> > >, std::allocator<std::unique_ptr<std::array<Voice, 32>, std::default_delete<std::array<Voice, 32> > > > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::unique_ptr<std::array<Voice, 32>, std::default_delete<std::array<Voice, 32> > >, std::allocator<std::unique_ptr<std::array<Voice, 32>, std::default_delete<std::array<Voice, 32> > > > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/unique_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__uniq_ptr_data<std::array<Voice, 32>, std::default_delete<std::array<Voice, 32> >, true, true>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::tuple<std::array<Voice, 32>*, std::default_delete<std::array<Voice, 32> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Tuple_impl<0, std::array<Voice, 32>*, std::default_delete<std::array<Voice, 32> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::unique_ptr<std::array<VoicePropsItem, 32>, std::default_delete<std::array<VoicePropsItem, 32> > >, std::allocator<std::unique_ptr<std::array<VoicePropsItem, 32>, std::default_delete<std::array<VoicePropsItem, 32> > > > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::unique_ptr<std::array<VoicePropsItem, 32>, std::default_delete<std::array<VoicePropsItem, 32> > >, std::allocator<std::unique_ptr<std::array<VoicePropsItem, 32>, std::default_delete<std::array<VoicePropsItem, 32> > > > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/unique_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__uniq_ptr_data<std::array<VoicePropsItem, 32>, std::default_delete<std::array<VoicePropsItem, 32> >, true, true>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::tuple<std::array<VoicePropsItem, 32>*, std::default_delete<std::array<VoicePropsItem, 32> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Tuple_impl<0, std::array<VoicePropsItem, 32>*, std::default_delete<std::array<VoicePropsItem, 32> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::unique_ptr<std::array<EffectSlot, 4>, std::default_delete<std::array<EffectSlot, 4> > >, std::allocator<std::unique_ptr<std::array<EffectSlot, 4>, std::default_delete<std::array<EffectSlot, 4> > > > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::unique_ptr<std::array<EffectSlot, 4>, std::default_delete<std::array<EffectSlot, 4> > >, std::allocator<std::unique_ptr<std::array<EffectSlot, 4>, std::default_delete<std::array<EffectSlot, 4> > > > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/unique_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__uniq_ptr_data<std::array<EffectSlot, 4>, std::default_delete<std::array<EffectSlot, 4> >, true, true>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::tuple<std::array<EffectSlot, 4>*, std::default_delete<std::array<EffectSlot, 4> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Tuple_impl<0, std::array<EffectSlot, 4>*, std::default_delete<std::array<EffectSlot, 4> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::unique_ptr<std::array<EffectSlotProps, 4>, std::default_delete<std::array<EffectSlotProps, 4> > >, std::allocator<std::unique_ptr<std::array<EffectSlotProps, 4>, std::default_delete<std::array<EffectSlotProps, 4> > > > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<std::unique_ptr<std::array<EffectSlotProps, 4>, std::default_delete<std::array<EffectSlotProps, 4> > >, std::allocator<std::unique_ptr<std::array<EffectSlotProps, 4>, std::default_delete<std::array<EffectSlotProps, 4> > > > >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/unique_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__uniq_ptr_data<std::array<EffectSlotProps, 4>, std::default_delete<std::array<EffectSlotProps, 4> >, true, true>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::tuple<std::array<EffectSlotProps, 4>*, std::default_delete<std::array<EffectSlotProps, 4> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Tuple_impl<0, std::array<EffectSlotProps, 4>*, std::default_delete<std::array<EffectSlotProps, 4> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<SourceSubList, std::allocator<SourceSubList> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<SourceSubList, std::allocator<SourceSubList> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<EffectSlotSubList, std::allocator<EffectSlotSubList> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<EffectSlotSubList, std::allocator<EffectSlotSubList> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/bits/unique_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__uniq_ptr_data<ALeffectslot, std::default_delete<ALeffectslot>, true, true>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::tuple<ALeffectslot*, std::default_delete<ALeffectslot> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/14/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Tuple_impl<0, ALeffectslot*, std::default_delete<ALeffectslot> >"
+     }
+    ],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 27.880303909,
+  "source": "openal-soft",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.24.1",
+   "1.24.2"
+  ]
+ },
+ "generated_at": "2026-09-04T00:34:02Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

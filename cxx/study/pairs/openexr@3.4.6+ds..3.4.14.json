@@ -1,0 +1,2113 @@
+{
+ "data": {
+  "bytes_extracted": 19527207,
+  "id": "openexr@3.4.6+ds..3.4.14",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      3251,
+      3250
+     ],
+     "mangled_functions": [
+      3251,
+      3250
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libIex-3_4.so.33",
+     "libIex-3_4.so.33"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<true>(const char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::size_type)",
+      "symbol": "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructILb1EEEvPKcm",
+      "weak": true
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {
+     "symbol_removed": 1
+    }
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      47,
+      46
+     ],
+     "mangled_functions": [
+      47,
+      46
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libIlmThread-3_4.so.33",
+     "libIlmThread-3_4.so.33"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::thread, std::allocator<std::thread> >::_M_default_append(std::vector<std::thread, std::allocator<std::thread> >::size_type)",
+      "symbol": "_ZNSt6vectorISt6threadSaIS0_EE17_M_default_appendEm",
+      "weak": true
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 1,
+     "field_added_to_struct": 1,
+     "field_type_changed": 1
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/IlmThread/IlmThreadPool.cpp",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct IlmThread_3_4::ThreadPool::Data"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "class std::shared_ptr<IlmThread_3_4::ThreadPoolProvider>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<IlmThread_3_4::ThreadPoolProvider>"
+     }
+    ],
+    "vague_linkage": {
+     "symbol_removed": 1
+    }
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      2343,
+      2325
+     ],
+     "mangled_functions": [
+      2256,
+      2238
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": true,
+    "private_node": {},
+    "public": {
+     "field_type_changed": 12,
+     "function_signature_changed": 144,
+     "symbol_version_renamed": 233,
+     "vtable_changed": 17
+    },
+    "soname": [
+     "libOpenEXR-3_4.so.33",
+     "libOpenEXR-3_4.so.33"
+    ],
+    "symbol_events": [
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method void Imf_3_4::HalfLut::apply(half*, int, int) const  ->  method void Imf_3_4::HalfLut::apply(const Imf_3_4::Slice&, const Imath_3_2::Box2i&) const",
+      "symbol": "_ZNK7Imf_3_47HalfLut5applyEPN9Imath_3_14halfEii",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imf_3_4::Header::Header(int, int, float, const Imath_3_1::V2f&, float, Imf_3_4::LineOrder, Imf_3_4::Compression)  ->  method Imf_3_4::Header::Header(const Imath_3_2::Box2i&, const Imath_3_2::Box2i&, float, const Imath_3_2::V2f&, float, Imf_3_4::LineOrder, Imf_3_4::Compression)",
+      "symbol": "_ZN7Imf_3_46HeaderC2EiifRKN9Imath_3_14Vec2IfEEfNS_9LineOrderENS_11CompressionE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function Imath_3_1::Box2i Imf_3_4::CubeMap::dataWindowForFace(Imf_3_4::CubeMapFace, const Imath_3_1::Box2i&)  ->  function Imath_3_2::Box2i Imf_3_4::CubeMap::dataWindowForFace(Imf_3_4::CubeMapFace, const Imath_3_2::Box2i&)",
+      "symbol": "_ZN7Imf_3_47CubeMap17dataWindowForFaceENS_11CubeMapFaceERKN9Imath_3_13BoxINS2_4Vec2IiEEEE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imf_3_4::Slice Imf_3_4::Slice::Make(void*, const Imath_3_1::Box2i&, size_t, size_t, int, int, double, bool, bool)  ->  method Imf_3_4::Slice Imf_3_4::Slice::Make(void*, const Imath_3_2::Box2i&, size_t, size_t, int, int, double, bool, bool)",
+      "symbol": "_ZN7Imf_3_45Slice4MakeENS_9PixelTypeEPKvRKN9Imath_3_13BoxINS4_4Vec2IiEEEEmmiidbb",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void Imf_3_4::addSensorCenterOffset(Imf_3_4::Header&, const Imath_3_1::V2f&)  ->  function void Imf_3_4::addSensorCenterOffset(Imf_3_4::Header&, const Imath_3_2::V2f&)",
+      "symbol": "_ZN7Imf_3_421addSensorCenterOffsetERNS_6HeaderERKN9Imath_3_14Vec2IfEE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void Imf_3_4::CubeMap::faceAndPixelPosition(const Imath_3_1::V3f&, const Imath_3_1::Box2i&, Imf_3_4::CubeMapFace&, Imath_3_1::V2f&)  ->  function void Imf_3_4::CubeMap::faceAndPixelPosition(const Imath_3_2::V3f&, const Imath_3_2::Box2i&, Imf_3_4::CubeMapFace&, Imath_3_2::V2f&)",
+      "symbol": "_ZN7Imf_3_47CubeMap20faceAndPixelPositionERKN9Imath_3_14Vec3IfEERKNS1_3BoxINS1_4Vec2IiEEEERNS_11CubeMapFaceERNS7_IfEE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imf_3_4::Slice Imf_3_4::Slice::Make(void*, const Imath_3_1::V2i&, int64_t, int64_t, size_t, size_t, int, int, double, bool, bool)  ->  method Imf_3_4::Slice Imf_3_4::Slice::Make(void*, const Imath_3_2::V2i&, int64_t, int64_t, size_t, size_t, int, int, double, bool, bool)",
+      "symbol": "_ZN7Imf_3_45Slice4MakeENS_9PixelTypeEPKvRKN9Imath_3_14Vec2IiEEllmmiidbb",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method void Imf_3_4::HalfLut::apply(const Imf_3_4::Slice&, const Imath_3_1::Box2i&) const  ->  method void Imf_3_4::HalfLut::apply(half*, int, int) const",
+      "symbol": "_ZNK7Imf_3_47HalfLut5applyERKNS_5SliceERKN9Imath_3_13BoxINS4_4Vec2IiEEEE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function Imath_3_1::V2f Imf_3_4::LatLongMap::pixelPosition(const Imath_3_1::Box2i&, const Imath_3_1::V2f&)  ->  function Imath_3_2::V2f Imf_3_4::LatLongMap::pixelPosition(const Imath_3_2::Box2i&, const Imath_3_2::V3f&)",
+      "symbol": "_ZN7Imf_3_410LatLongMap13pixelPositionERKN9Imath_3_13BoxINS1_4Vec2IiEEEERKNS3_IfEE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function Imath_3_1::V3f Imf_3_4::LatLongMap::direction(const Imath_3_1::Box2i&, const Imath_3_1::V2f&)  ->  function Imath_3_2::V3f Imf_3_4::LatLongMap::direction(const Imath_3_2::Box2i&, const Imath_3_2::V2f&)",
+      "symbol": "_ZN7Imf_3_410LatLongMap9directionERKN9Imath_3_13BoxINS1_4Vec2IiEEEERKNS3_IfEE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function Imath_3_1::V2f Imf_3_4::LatLongMap::pixelPosition(const Imath_3_1::Box2i&, const Imath_3_1::V3f&)  ->  function Imath_3_2::V2f Imf_3_4::LatLongMap::pixelPosition(const Imath_3_2::Box2i&, const Imath_3_2::V2f&)",
+      "symbol": "_ZN7Imf_3_410LatLongMap13pixelPositionERKN9Imath_3_13BoxINS1_4Vec2IiEEEERKNS1_4Vec3IfEE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imf_3_4::Chromaticities::Chromaticities(const Imath_3_1::V2f&, const Imath_3_1::V2f&, const Imath_3_1::V2f&, const Imath_3_1::V2f&)  ->  method Imf_3_4::Chromaticities::Chromaticities(const Imath_3_2::V2f&, const Imath_3_2::V2f&, const Imath_3_2::V2f&, const Imath_3_2::V2f&)",
+      "symbol": "_ZN7Imf_3_414ChromaticitiesC2ERKN9Imath_3_14Vec2IfEES5_S5_S5_",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual int Imf_3_4::Compressor::compressTile(const char*, int, Imath_3_1::Box2i, const char*&)  ->  method virtual int Imf_3_4::Compressor::compressTile(const char*, int, Imath_3_2::Box2i, const char*&)",
+      "symbol": "_ZN7Imf_3_410Compressor12compressTileEPKciN9Imath_3_13BoxINS3_4Vec2IiEEEERS2_",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method uint64_t Imf_3_4::Compressor::runEncodeStep(const char*, int, Imath_3_1::Box2i, const char*&)  ->  method uint64_t Imf_3_4::Compressor::runEncodeStep(const char*, int, Imath_3_2::Box2i, const char*&)",
+      "symbol": "_ZN7Imf_3_410Compressor13runEncodeStepEPKciN9Imath_3_13BoxINS3_4Vec2IiEEEERS2_",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual int Imf_3_4::Compressor::uncompressTile(const char*, int, Imath_3_1::Box2i, const char*&)  ->  method virtual int Imf_3_4::Compressor::uncompressTile(const char*, int, Imath_3_2::Box2i, const char*&)",
+      "symbol": "_ZN7Imf_3_410Compressor14uncompressTileEPKciN9Imath_3_13BoxINS3_4Vec2IiEEEERS2_",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method uint64_t Imf_3_4::Compressor::runDecodeStep(const char*, int, Imath_3_1::Box2i, const char*&)  ->  method uint64_t Imf_3_4::Compressor::runDecodeStep(const char*, int, Imath_3_2::Box2i, const char*&)",
+      "symbol": "_ZN7Imf_3_410Compressor13runDecodeStepEPKciN9Imath_3_13BoxINS3_4Vec2IiEEEERS2_",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imf_3_4::RgbaOutputFile::RgbaOutputFile(const char*, const Imath_3_1::Box2i&, const Imath_3_1::Box2i&, Imf_3_4::RgbaChannels, float, Imath_3_1::V2f, float, Imf_3_4::LineOrder, Imf_3_4::Compression, int)  ->  method Imf_3_4::RgbaOutputFile::RgbaOutputFile(const char*, int, int, Imf_3_4::RgbaChannels, float, Imath_3_2::V2f, float, Imf_3_4::LineOrder, Imf_3_4::Compression, int)",
+      "symbol": "_ZN7Imf_3_414RgbaOutputFileC2EPKcRKN9Imath_3_13BoxINS3_4Vec2IiEEEES9_NS_12RgbaChannelsEfNS5_IfEEfNS_9LineOrderENS_11CompressionEi",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void Imf_3_4::addSensorOverallDimensions(Imf_3_4::Header&, const Imath_3_1::V2f&)  ->  function void Imf_3_4::addSensorOverallDimensions(Imf_3_4::Header&, const Imath_3_2::V2f&)",
+      "symbol": "_ZN7Imf_3_426addSensorOverallDimensionsERNS_6HeaderERKN9Imath_3_14Vec2IfEE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function Imath_3_1::V2f Imf_3_4::LatLongMap::latLong(const Imath_3_1::Box2i&, const Imath_3_1::V2f&)  ->  function Imath_3_2::V2f Imf_3_4::LatLongMap::latLong(const Imath_3_2::Box2i&, const Imath_3_2::V2f&)",
+      "symbol": "_ZN7Imf_3_410LatLongMap7latLongERKN9Imath_3_13BoxINS1_4Vec2IiEEEERKNS3_IfEE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void Imf_3_4::addWorldToNDC(Imf_3_4::Header&, const Imath_3_1::M44f&)  ->  function void Imf_3_4::addWorldToNDC(Imf_3_4::Header&, const Imath_3_2::M44f&)",
+      "symbol": "_ZN7Imf_3_413addWorldToNDCERNS_6HeaderERKN9Imath_3_18Matrix44IfEE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imf_3_4::AcesOutputFile::AcesOutputFile(const std::string&, int, int, Imf_3_4::RgbaChannels, float, Imath_3_1::V2f, float, Imf_3_4::LineOrder, Imf_3_4::Compression, int)  ->  method Imf_3_4::AcesOutputFile::AcesOutputFile(const std::string&, int, int, Imf_3_4::RgbaChannels, float, Imath_3_2::V2f, float, Imf_3_4::LineOrder, Imf_3_4::Compression, int)",
+      "symbol": "_ZN7Imf_3_414AcesOutputFileC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiiNS_12RgbaChannelsEfN9Imath_3_14Vec2IfEEfNS_9LineOrderENS_11CompressionEi",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function Imath_3_1::V3f Imf_3_4::CubeMap::direction(Imf_3_4::CubeMapFace, const Imath_3_1::Box2i&, const Imath_3_1::V2f&)  ->  function Imath_3_2::V3f Imf_3_4::CubeMap::direction(Imf_3_4::CubeMapFace, const Imath_3_2::Box2i&, const Imath_3_2::V2f&)",
+      "symbol": "_ZN7Imf_3_47CubeMap9directionENS_11CubeMapFaceERKN9Imath_3_13BoxINS2_4Vec2IiEEEERKNS4_IfEE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function Imath_3_1::V2f Imf_3_4::LatLongMap::latLong(const Imath_3_1::V3f&)  ->  function Imath_3_2::V2f Imf_3_4::LatLongMap::latLong(const Imath_3_2::V3f&)",
+      "symbol": "_ZN7Imf_3_410LatLongMap7latLongERKN9Imath_3_14Vec3IfEE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imf_3_4::AcesOutputFile::AcesOutputFile(const std::string&, const Imath_3_1::Box2i&, const Imath_3_1::Box2i&, Imf_3_4::RgbaChannels, float, Imath_3_1::V2f, float, Imf_3_4::LineOrder, Imf_3_4::Compression, int)  ->  method Imf_3_4::AcesOutputFile::AcesOutputFile(const std::string&, const Imath_3_2::Box2i&, const Imath_3_2::Box2i&, Imf_3_4::RgbaChannels, float, Imath_3_2::V2f, float, Imf_3_4::LineOrder, Imf_3_4::Compression, int)",
+      "symbol": "_ZN7Imf_3_414AcesOutputFileC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKN9Imath_3_13BoxINS9_4Vec2IiEEEESF_NS_12RgbaChannelsEfNSB_IfEEfNS_9LineOrderENS_11CompressionEi",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imf_3_4::RgbaOutputFile::RgbaOutputFile(const char*, int, int, Imf_3_4::RgbaChannels, float, Imath_3_1::V2f, float, Imf_3_4::LineOrder, Imf_3_4::Compression, int)  ->  method Imf_3_4::RgbaOutputFile::RgbaOutputFile(const char*, const Imath_3_2::Box2i&, const Imath_3_2::Box2i&, Imf_3_4::RgbaChannels, float, Imath_3_2::V2f, float, Imf_3_4::LineOrder, Imf_3_4::Compression, int)",
+      "symbol": "_ZN7Imf_3_414RgbaOutputFileC2EPKciiNS_12RgbaChannelsEfN9Imath_3_14Vec2IfEEfNS_9LineOrderENS_11CompressionEi",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imf_3_4::TiledRgbaOutputFile::TiledRgbaOutputFile(const char*, int, int, int, int, Imf_3_4::LevelMode, Imf_3_4::LevelRoundingMode, Imf_3_4::RgbaChannels, float, Imath_3_1::V2f, float, Imf_3_4::LineOrder, Imf_3_4::Compression, int)  ->  method Imf_3_4::TiledRgbaOutputFile::TiledRgbaOutputFile(const char*, int, int, int, int, Imf_3_4::LevelMode, Imf_3_4::LevelRoundingMode, Imf_3_4::RgbaChannels, float, Imath_3_2::V2f, float, Imf_3_4::LineOrder, Imf_3_4::Compression, int)",
+      "symbol": "_ZN7Imf_3_419TiledRgbaOutputFileC2EPKciiiiNS_9LevelModeENS_17LevelRoundingModeENS_12RgbaChannelsEfN9Imath_3_14Vec2IfEEfNS_9LineOrderENS_11CompressionEi",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imf_3_4::Header::Header(int, int, const Imath_3_1::Box2i&, float, const Imath_3_1::V2f&, float, Imf_3_4::LineOrder, Imf_3_4::Compression)  ->  method Imf_3_4::Header::Header(int, int, const Imath_3_2::Box2i&, float, const Imath_3_2::V2f&, float, Imf_3_4::LineOrder, Imf_3_4::Compression)",
+      "symbol": "_ZN7Imf_3_46HeaderC2EiiRKN9Imath_3_13BoxINS1_4Vec2IiEEEEfRKNS3_IfEEfNS_9LineOrderENS_11CompressionE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void Imf_3_4::addOriginalDataWindow(Imf_3_4::Header&, const Imath_3_1::Box2i&)  ->  function void Imf_3_4::addOriginalDataWindow(Imf_3_4::Header&, const Imath_3_2::Box2i&)",
+      "symbol": "_ZN7Imf_3_421addOriginalDataWindowERNS_6HeaderERKN9Imath_3_13BoxINS2_4Vec2IiEEEE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void Imf_3_4::addWorldToCamera(Imf_3_4::Header&, const Imath_3_1::M44f&)  ->  function void Imf_3_4::addWorldToCamera(Imf_3_4::Header&, const Imath_3_2::M44f&)",
+      "symbol": "_ZN7Imf_3_416addWorldToCameraERNS_6HeaderERKN9Imath_3_18Matrix44IfEE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void Imf_3_4::addAdoptedNeutral(Imf_3_4::Header&, const Imath_3_1::V2f&)  ->  function void Imf_3_4::addAdoptedNeutral(Imf_3_4::Header&, const Imath_3_2::V2f&)",
+      "symbol": "_ZN7Imf_3_417addAdoptedNeutralERNS_6HeaderERKN9Imath_3_14Vec2IfEE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void Imf_3_4::RgbaYca::fixSaturation(const Imath_3_1::V3f&, int, const Imf_3_4::Rgba* const*, Imf_3_4::Rgba*)  ->  function void Imf_3_4::RgbaYca::fixSaturation(const Imath_3_2::V3f&, int, const Imf_3_4::Rgba* const*, Imf_3_4::Rgba*)",
+      "symbol": "_ZN7Imf_3_47RgbaYca13fixSaturationERKN9Imath_3_14Vec3IfEEiPKPKNS_4RgbaEPS6_",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imf_3_4::TiledRgbaOutputFile::TiledRgbaOutputFile(const char*, int, int, Imf_3_4::LevelMode, Imf_3_4::LevelRoundingMode, const Imath_3_1::Box2i&, const Imath_3_1::Box2i&, Imf_3_4::RgbaChannels, float, Imath_3_1::V2f, float, Imf_3_4::LineOrder, Imf_3_4::Compression, int)  ->  method Imf_3_4::TiledRgbaOutputFile::TiledRgbaOutputFile(const char*, int, int, Imf_3_4::LevelMode, Imf_3_4::LevelRoundingMode, const Imath_3_2::Box2i&, const Imath_3_2::Box2i&, Imf_3_4::RgbaChannels, float, Imath_3_2::V2f, float, Imf_3_4::LineOrder, Imf_3_4::Compression, int)",
+      "symbol": "_ZN7Imf_3_419TiledRgbaOutputFileC2EPKciiNS_9LevelModeENS_17LevelRoundingModeERKN9Imath_3_13BoxINS5_4Vec2IiEEEESB_NS_12RgbaChannelsEfNS7_IfEEfNS_9LineOrderENS_11CompressionEi",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method void Imf_3_4::RgbaLut::apply(Imf_3_4::Rgba*, int, int, const Imath_3_1::Box2i&) const  ->  method void Imf_3_4::RgbaLut::apply(Imf_3_4::Rgba*, int, int, const Imath_3_2::Box2i&) const",
+      "symbol": "_ZNK7Imf_3_47RgbaLut5applyEPNS_4RgbaEiiRKN9Imath_3_13BoxINS3_4Vec2IiEEEE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void Imf_3_4::addCameraColorBalance(Imf_3_4::Header&, const Imath_3_1::V2f&)  ->  function void Imf_3_4::addCameraColorBalance(Imf_3_4::Header&, const Imath_3_2::V2f&)",
+      "symbol": "_ZN7Imf_3_421addCameraColorBalanceERNS_6HeaderERKN9Imath_3_14Vec2IfEE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imf_3_4::Header::Header(const Imath_3_1::Box2i&, const Imath_3_1::Box2i&, float, const Imath_3_1::V2f&, float, Imf_3_4::LineOrder, Imf_3_4::Compression)  ->  method Imf_3_4::Header::Header(int, int, float, const Imath_3_2::V2f&, float, Imf_3_4::LineOrder, Imf_3_4::Compression)",
+      "symbol": "_ZN7Imf_3_46HeaderC2ERKN9Imath_3_13BoxINS1_4Vec2IiEEEES7_fRKNS3_IfEEfNS_9LineOrderENS_11CompressionE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void Imf_3_4::addSensorAcquisitionRectangle(Imf_3_4::Header&, const Imath_3_1::Box2i&)  ->  function void Imf_3_4::addSensorAcquisitionRectangle(Imf_3_4::Header&, const Imath_3_2::Box2i&)",
+      "symbol": "_ZN7Imf_3_429addSensorAcquisitionRectangleERNS_6HeaderERKN9Imath_3_13BoxINS2_4Vec2IiEEEE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function int Imf_3_4::CubeMap::sizeOfFace(const Imath_3_1::Box2i&)  ->  function int Imf_3_4::CubeMap::sizeOfFace(const Imath_3_2::Box2i&)",
+      "symbol": "_ZN7Imf_3_47CubeMap10sizeOfFaceERKN9Imath_3_13BoxINS1_4Vec2IiEEEE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function Imath_3_1::V2f Imf_3_4::CubeMap::pixelPosition(Imf_3_4::CubeMapFace, const Imath_3_1::Box2i&, Imath_3_1::V2f)  ->  function Imath_3_2::V2f Imf_3_4::CubeMap::pixelPosition(Imf_3_4::CubeMapFace, const Imath_3_2::Box2i&, Imath_3_2::V2f)",
+      "symbol": "_ZN7Imf_3_47CubeMap13pixelPositionENS_11CubeMapFaceERKN9Imath_3_13BoxINS2_4Vec2IiEEEENS4_IfEE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void Imf_3_4::RgbaYca::RGBAtoYCA(const Imath_3_1::V3f&, int, bool, const Imf_3_4::Rgba*, Imf_3_4::Rgba*)  ->  function void Imf_3_4::RgbaYca::RGBAtoYCA(const Imath_3_2::V3f&, int, bool, const Imf_3_4::Rgba*, Imf_3_4::Rgba*)",
+      "symbol": "_ZN7Imf_3_47RgbaYca9RGBAtoYCAERKN9Imath_3_14Vec3IfEEibPKNS_4RgbaEPS6_",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function void Imf_3_4::RgbaYca::YCAtoRGBA(const Imath_3_1::V3f&, int, const Imf_3_4::Rgba*, Imf_3_4::Rgba*)  ->  function void Imf_3_4::RgbaYca::YCAtoRGBA(const Imath_3_2::V3f&, int, const Imf_3_4::Rgba*, Imf_3_4::Rgba*)",
+      "symbol": "_ZN7Imf_3_47RgbaYca9YCAtoRGBAERKN9Imath_3_14Vec3IfEEiPKNS_4RgbaEPS6_",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >* std::__do_uninit_copy<__gnu_cxx::__normal_iterator<const std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >, __gnu_cxx::__normal_iterator<const std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >, std::__cxx11::basic_string<char>*>(__gnu_cxx::__normal_iterator<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, __gnu_cxx::__normal_iterator<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*)",
+      "symbol": "_ZSt16__do_uninit_copyIN9__gnu_cxx17__normal_iteratorIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS7_SaIS7_EEEESD_PS7_ET1_T_T0_SF_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<long unsigned int, std::allocator<long unsigned int> >::_M_default_append(std::vector<long unsigned int, std::allocator<long unsigned int> >::size_type)",
+      "symbol": "_ZNSt6vectorImSaImEE17_M_default_appendEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<int, std::allocator<int> >::_M_realloc_append<int>(int&&)",
+      "symbol": "_ZNSt6vectorIiSaIiEE17_M_realloc_appendIJiEEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<int, std::allocator<int> >::_M_default_append(std::vector<int, std::allocator<int> >::size_type)",
+      "symbol": "_ZNSt6vectorIiSaIiEE17_M_default_appendEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<char, std::allocator<char> >::_M_realloc_append<char>(char&&)",
+      "symbol": "_ZNSt6vectorIcSaIcEE17_M_realloc_appendIJcEEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<char, std::allocator<char> >::_M_default_append(std::vector<char, std::allocator<char> >::size_type)",
+      "symbol": "_ZNSt6vectorIcSaIcEE17_M_default_appendEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::vector<long unsigned int, std::allocator<long unsigned int> >, std::allocator<std::vector<long unsigned int, std::allocator<long unsigned int> > > >::_M_default_append(std::vector<std::vector<long unsigned int, std::allocator<long unsigned int> >, std::allocator<std::vector<long unsigned int, std::allocator<long unsigned int> > > >::size_type)",
+      "symbol": "_ZNSt6vectorIS_ImSaImEESaIS1_EE17_M_default_appendEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::vector<std::vector<long unsigned int, std::allocator<long unsigned int> >, std::allocator<std::vector<long unsigned int, std::allocator<long unsigned int> > > >, std::allocator<std::vector<std::vector<long unsigned int, std::allocator<long unsigned int> >, std::allocator<std::vector<long unsigned int, std::allocator<long unsigned int> > > > > >::_M_default_append(std::vector<std::vector<std::vector<long unsigned int, std::allocator<long unsigned int> >, std::allocator<std::vector<long unsigned int, std::allocator<long unsigned int> > > >, std::allocator<std::vector<std::vector<long unsigned int, std::allocator<long unsigned int> >, std::allocator<std::vector<long unsigned int, std::allocator<long unsigned int> > > > > >::size_type)",
+      "symbol": "_ZNSt6vectorIS_IS_ImSaImEESaIS1_EESaIS3_EE17_M_default_appendEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_insert<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::iterator, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_realloc_insertIJS5_EEEvN9__gnu_cxx17__normal_iteratorIPS5_S7_EEDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_append<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>(const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_realloc_appendIJRKS5_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<Imf_3_4::Slice, std::allocator<Imf_3_4::Slice> >::_M_realloc_append<const Imf_3_4::Slice&>(const Imf_3_4::Slice&)",
+      "symbol": "_ZNSt6vectorIN7Imf_3_45SliceESaIS1_EE17_M_realloc_appendIJRKS1_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<Imf_3_4::IDManifest::ChannelGroupManifest, std::allocator<Imf_3_4::IDManifest::ChannelGroupManifest> >::_M_realloc_append<Imf_3_4::IDManifest::ChannelGroupManifest>(Imf_3_4::IDManifest::ChannelGroupManifest&&)",
+      "symbol": "_ZNSt6vectorIN7Imf_3_410IDManifest20ChannelGroupManifestESaIS2_EE17_M_realloc_appendIJS2_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<Imf_3_4::IDManifest::ChannelGroupManifest, std::allocator<Imf_3_4::IDManifest::ChannelGroupManifest> >::_M_realloc_append<const Imf_3_4::IDManifest::ChannelGroupManifest&>(const Imf_3_4::IDManifest::ChannelGroupManifest&)",
+      "symbol": "_ZNSt6vectorIN7Imf_3_410IDManifest20ChannelGroupManifestESaIS2_EE17_M_realloc_appendIJRKS2_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<Imf_3_4::IDManifest::ChannelGroupManifest, std::allocator<Imf_3_4::IDManifest::ChannelGroupManifest> >::_M_default_append(std::vector<Imf_3_4::IDManifest::ChannelGroupManifest, std::allocator<Imf_3_4::IDManifest::ChannelGroupManifest> >::size_type)",
+      "symbol": "_ZNSt6vectorIN7Imf_3_410IDManifest20ChannelGroupManifestESaIS2_EE17_M_default_appendEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<Imf_3_4::MultiPartInputFile::Data::Part, std::allocator<Imf_3_4::MultiPartInputFile::Data::Part> >::_M_default_append(std::vector<Imf_3_4::MultiPartInputFile::Data::Part, std::allocator<Imf_3_4::MultiPartInputFile::Data::Part> >::size_type)",
+      "symbol": "_ZNSt6vectorIN7Imf_3_418MultiPartInputFile4Data4PartESaIS3_EE17_M_default_appendEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_default_append(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::size_type)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_default_appendEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_append<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&)",
+      "symbol": "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_realloc_appendIJS5_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<true>(const char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::size_type)",
+      "symbol": "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructILb1EEEvPKcm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<unsigned int, std::allocator<unsigned int> >::_M_default_append(std::vector<unsigned int, std::allocator<unsigned int> >::size_type)",
+      "symbol": "_ZNSt6vectorIjSaIjEE17_M_default_appendEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<Imf_3_4::DeepSlice, std::allocator<Imf_3_4::DeepSlice> >::_M_realloc_append<const Imf_3_4::DeepSlice&>(const Imf_3_4::DeepSlice&)",
+      "symbol": "_ZNSt6vectorIN7Imf_3_49DeepSliceESaIS1_EE17_M_realloc_appendIJRKS1_EEEvDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<float, std::allocator<float> >::_M_default_append(std::vector<float, std::allocator<float> >::size_type)",
+      "symbol": "_ZNSt6vectorIfSaIfEE17_M_default_appendEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<Imf_3_4::Header, std::allocator<Imf_3_4::Header> >::_M_default_append(std::vector<Imf_3_4::Header, std::allocator<Imf_3_4::Header> >::size_type)",
+      "symbol": "_ZNSt6vectorIN7Imf_3_46HeaderESaIS1_EE17_M_default_appendEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<std::vector<float*, std::allocator<float*> >, std::allocator<std::vector<float*, std::allocator<float*> > > >::_M_default_append(std::vector<std::vector<float*, std::allocator<float*> >, std::allocator<std::vector<float*, std::allocator<float*> > > >::size_type)",
+      "symbol": "_ZNSt6vectorIS_IPfSaIS0_EESaIS2_EE17_M_default_appendEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<float*, std::allocator<float*> >::_M_default_append(std::vector<float*, std::allocator<float*> >::size_type)",
+      "symbol": "_ZNSt6vectorIPfSaIS0_EE17_M_default_appendEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int> > >::const_iterator, const std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int> > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_iESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS8_ERS7_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int> > >::_M_get_insert_unique_pos(const std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int> > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_iESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE24_M_get_insert_unique_posERS7_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::_Identity<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_get_insert_hint_unique_pos(std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::_Identity<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::const_iterator, const std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::_Identity<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_St9_IdentityIS5_ESt4lessIS5_ESaIS5_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS5_ERKS5_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::Compression>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::Compression> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::Compression> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::Compression>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::Compression> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::Compression> > >::const_iterator, const std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::Compression>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::Compression> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::Compression> > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_N7Imf_3_411CompressionEESt10_Select1stISA_ESt4lessIS5_ESaISA_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorISA_ERS7_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::Compression>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::Compression> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::Compression> > >::_M_get_insert_unique_pos(const std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::Compression>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::Compression> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::Compression> > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_N7Imf_3_411CompressionEESt10_Select1stISA_ESt4lessIS5_ESaISA_EE24_M_get_insert_unique_posERS7_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::_Identity<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_get_insert_unique_pos(const std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::_Identity<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_St9_IdentityIS5_ESt4lessIS5_ESaIS5_EE24_M_get_insert_unique_posERKS5_",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method const Imath_3_1::V2f& Imf_3_4::Header::screenWindowCenter() const  ->  method const Imath_3_2::V2f& Imf_3_4::Header::screenWindowCenter() const",
+      "symbol": "_ZNK7Imf_3_46Header18screenWindowCenterEv",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method const Imath_3_1::Box2i& Imf_3_4::Header::displayWindow() const  ->  method const Imath_3_2::Box2i& Imf_3_4::Header::displayWindow() const",
+      "symbol": "_ZNK7Imf_3_46Header13displayWindowEv",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method const Imath_3_1::Box2i& Imf_3_4::Header::dataWindow() const  ->  method const Imath_3_2::Box2i& Imf_3_4::Header::dataWindow() const",
+      "symbol": "_ZNK7Imf_3_46Header10dataWindowEv",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method const Imath_3_1::V2f Imf_3_4::TiledRgbaOutputFile::screenWindowCenter() const  ->  method const Imath_3_2::V2f Imf_3_4::TiledRgbaOutputFile::screenWindowCenter() const",
+      "symbol": "_ZNK7Imf_3_419TiledRgbaOutputFile18screenWindowCenterEv",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imath_3_1::Box2i Imf_3_4::TiledRgbaOutputFile::dataWindowForLevel(int) const  ->  method Imath_3_2::Box2i Imf_3_4::TiledRgbaOutputFile::dataWindowForLevel(int) const",
+      "symbol": "_ZNK7Imf_3_419TiledRgbaOutputFile18dataWindowForLevelEi",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imath_3_1::Box2i Imf_3_4::TiledRgbaOutputFile::dataWindowForTile(int, int, int, int) const  ->  method Imath_3_2::Box2i Imf_3_4::TiledRgbaOutputFile::dataWindowForTile(int, int, int, int) const",
+      "symbol": "_ZNK7Imf_3_419TiledRgbaOutputFile17dataWindowForTileEiiii",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imath_3_1::Box2i Imf_3_4::TiledRgbaOutputFile::dataWindowForTile(int, int, int) const  ->  method Imath_3_2::Box2i Imf_3_4::TiledRgbaOutputFile::dataWindowForTile(int, int, int) const",
+      "symbol": "_ZNK7Imf_3_419TiledRgbaOutputFile17dataWindowForTileEiii",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imath_3_1::Box2i Imf_3_4::DeepTiledOutputPart::dataWindowForLevel(int, int) const  ->  method Imath_3_2::Box2i Imf_3_4::DeepTiledOutputPart::dataWindowForLevel(int, int) const",
+      "symbol": "_ZNK7Imf_3_419DeepTiledOutputPart18dataWindowForLevelEii",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imath_3_1::Box2i Imf_3_4::DeepTiledOutputPart::dataWindowForLevel(int) const  ->  method Imath_3_2::Box2i Imf_3_4::DeepTiledOutputPart::dataWindowForLevel(int) const",
+      "symbol": "_ZNK7Imf_3_419DeepTiledOutputPart18dataWindowForLevelEi",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imath_3_1::Box2i Imf_3_4::DeepTiledOutputFile::dataWindowForLevel(int, int) const  ->  method Imath_3_2::Box2i Imf_3_4::DeepTiledOutputFile::dataWindowForLevel(int, int) const",
+      "symbol": "_ZNK7Imf_3_419DeepTiledOutputFile18dataWindowForLevelEii",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imath_3_1::Box2i Imf_3_4::DeepTiledOutputFile::dataWindowForTile(int, int, int, int) const  ->  method Imath_3_2::Box2i Imf_3_4::DeepTiledOutputFile::dataWindowForTile(int, int, int, int) const",
+      "symbol": "_ZNK7Imf_3_419DeepTiledOutputFile17dataWindowForTileEiiii",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imath_3_1::Box2i Imf_3_4::DeepTiledOutputPart::dataWindowForTile(int, int, int, int) const  ->  method Imath_3_2::Box2i Imf_3_4::DeepTiledOutputPart::dataWindowForTile(int, int, int, int) const",
+      "symbol": "_ZNK7Imf_3_419DeepTiledOutputPart17dataWindowForTileEiiii",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method const Imath_3_1::V2f Imf_3_4::TiledRgbaInputFile::screenWindowCenter() const  ->  method const Imath_3_2::V2f Imf_3_4::TiledRgbaInputFile::screenWindowCenter() const",
+      "symbol": "_ZNK7Imf_3_418TiledRgbaInputFile18screenWindowCenterEv",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imath_3_1::Box2i Imf_3_4::TiledRgbaInputFile::dataWindowForLevel(int, int) const  ->  method Imath_3_2::Box2i Imf_3_4::TiledRgbaInputFile::dataWindowForLevel(int, int) const",
+      "symbol": "_ZNK7Imf_3_418TiledRgbaInputFile18dataWindowForLevelEii",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imath_3_1::Box2i Imf_3_4::TiledRgbaInputFile::dataWindowForLevel(int) const  ->  method Imath_3_2::Box2i Imf_3_4::TiledRgbaInputFile::dataWindowForLevel(int) const",
+      "symbol": "_ZNK7Imf_3_418TiledRgbaInputFile18dataWindowForLevelEi",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method const Imath_3_1::Box2i& Imf_3_4::TiledRgbaInputFile::displayWindow() const  ->  method const Imath_3_2::Box2i& Imf_3_4::TiledRgbaInputFile::displayWindow() const",
+      "symbol": "_ZNK7Imf_3_418TiledRgbaInputFile13displayWindowEv",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function Imath_3_1::M44f Imf_3_4::RGBtoXYZ(const Imf_3_4::Chromaticities&, float)  ->  function Imath_3_2::M44f Imf_3_4::RGBtoXYZ(const Imf_3_4::Chromaticities&, float)",
+      "symbol": "_ZN7Imf_3_48RGBtoXYZERKNS_14ChromaticitiesEf",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function Imf_3_4::TypedAttribute<Imath_3_1::Matrix44<float> >& Imf_3_4::worldToNDCAttribute(Imf_3_4::Header&)  ->  function Imf_3_4::TypedAttribute<Imath_3_2::Matrix44<float> >& Imf_3_4::worldToNDCAttribute(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_419worldToNDCAttributeERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function half Imf_3_4::uintToHalf(unsigned int)  ->  function half Imf_3_4::uintToHalf(unsigned int)",
+      "symbol": "_ZN7Imf_3_410uintToHalfEj",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method const Imath_3_1::Box2i& Imf_3_4::RgbaInputFile::dataWindow() const  ->  method const Imath_3_2::Box2i& Imf_3_4::RgbaInputFile::dataWindow() const",
+      "symbol": "_ZNK7Imf_3_413RgbaInputFile10dataWindowEv",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function Imath_3_1::V2f& Imf_3_4::sensorCenterOffset(Imf_3_4::Header&)  ->  function Imath_3_2::V2f& Imf_3_4::sensorCenterOffset(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_418sensorCenterOffsetERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function const Imath_3_1::Box2i& Imf_3_4::originalDataWindow(const Imf_3_4::Header&)  ->  function const Imath_3_2::Box2i& Imf_3_4::originalDataWindow(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_418originalDataWindowERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function Imath_3_1::V2f& Imf_3_4::cameraColorBalance(Imf_3_4::Header&)  ->  function Imath_3_2::V2f& Imf_3_4::cameraColorBalance(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_418cameraColorBalanceERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function const Imath_3_1::V2f& Imf_3_4::cameraColorBalance(const Imf_3_4::Header&)  ->  function const Imath_3_2::V2f& Imf_3_4::cameraColorBalance(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_418cameraColorBalanceERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method const Imath_3_1::Box2i& Imf_3_4::AcesOutputFile::dataWindow() const  ->  method const Imath_3_2::Box2i& Imf_3_4::AcesOutputFile::dataWindow() const",
+      "symbol": "_ZNK7Imf_3_414AcesOutputFile10dataWindowEv",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method const Imath_3_1::Box2i& Imf_3_4::TiledRgbaOutputFile::dataWindow() const  ->  method const Imath_3_2::Box2i& Imf_3_4::TiledRgbaOutputFile::dataWindow() const",
+      "symbol": "_ZNK7Imf_3_419TiledRgbaOutputFile10dataWindowEv",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function Imath_3_1::Box2i& Imf_3_4::originalDataWindow(Imf_3_4::Header&)  ->  function Imath_3_2::Box2i& Imf_3_4::originalDataWindow(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_418originalDataWindowERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imath_3_1::Box2i Imf_3_4::DeepTiledOutputFile::dataWindowForTile(int, int, int) const  ->  method Imath_3_2::Box2i Imf_3_4::DeepTiledOutputFile::dataWindowForTile(int, int, int) const",
+      "symbol": "_ZNK7Imf_3_419DeepTiledOutputFile17dataWindowForTileEiii",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imath_3_1::Box2i Imf_3_4::DeepTiledInputPart::dataWindowForLevel(int) const  ->  method Imath_3_2::Box2i Imf_3_4::DeepTiledInputPart::dataWindowForLevel(int) const",
+      "symbol": "_ZNK7Imf_3_418DeepTiledInputPart18dataWindowForLevelEi",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imath_3_1::Box2i Imf_3_4::DeepTiledInputFile::dataWindowForTile(int, int, int) const  ->  method Imath_3_2::Box2i Imf_3_4::DeepTiledInputFile::dataWindowForTile(int, int, int) const",
+      "symbol": "_ZNK7Imf_3_418DeepTiledInputFile17dataWindowForTileEiii",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method const Imath_3_1::Box2i& Imf_3_4::TiledRgbaInputFile::dataWindow() const  ->  method const Imath_3_2::Box2i& Imf_3_4::TiledRgbaInputFile::dataWindow() const",
+      "symbol": "_ZNK7Imf_3_418TiledRgbaInputFile10dataWindowEv",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imath_3_1::Box2i& Imf_3_4::Header::displayWindow()  ->  method Imath_3_2::Box2i& Imf_3_4::Header::displayWindow()",
+      "symbol": "_ZN7Imf_3_46Header13displayWindowEv",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function Imath_3_1::M44f& Imf_3_4::worldToCamera(Imf_3_4::Header&)  ->  function Imath_3_2::M44f& Imf_3_4::worldToCamera(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_413worldToCameraERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imath_3_1::Box2i Imf_3_4::TiledInputPart::dataWindowForLevel(int) const  ->  method Imath_3_2::Box2i Imf_3_4::TiledInputPart::dataWindowForLevel(int) const",
+      "symbol": "_ZNK7Imf_3_414TiledInputPart18dataWindowForLevelEi",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function Imath_3_1::M44f& Imf_3_4::worldToNDC(Imf_3_4::Header&)  ->  function Imath_3_2::M44f& Imf_3_4::worldToNDC(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_410worldToNDCERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function Imf_3_4::TypedAttribute<Imath_3_1::Vec2<float> >& Imf_3_4::sensorOverallDimensionsAttribute(Imf_3_4::Header&)  ->  function Imf_3_4::TypedAttribute<Imath_3_2::Vec2<float> >& Imf_3_4::sensorOverallDimensionsAttribute(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_432sensorOverallDimensionsAttributeERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function const Imath_3_1::M44f& Imf_3_4::worldToCamera(const Imf_3_4::Header&)  ->  function const Imath_3_2::M44f& Imf_3_4::worldToCamera(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_413worldToCameraERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imath_3_1::Box2i Imf_3_4::TiledInputFile::dataWindowForTile(int, int, int, int) const  ->  method Imath_3_2::Box2i Imf_3_4::TiledInputFile::dataWindowForTile(int, int, int, int) const",
+      "symbol": "_ZNK7Imf_3_414TiledInputFile17dataWindowForTileEiiii",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function Imath_3_1::Box2i Imf_3_4::dataWindowForLevel(const Imf_3_4::TileDescription&, int, int, int, int, int, int)  ->  function Imath_3_2::Box2i Imf_3_4::dataWindowForLevel(const Imf_3_4::TileDescription&, int, int, int, int, int, int)",
+      "symbol": "_ZN7Imf_3_418dataWindowForLevelERKNS_15TileDescriptionEiiiiii",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method const Imath_3_1::Box2i& Imf_3_4::TiledRgbaOutputFile::displayWindow() const  ->  method const Imath_3_2::Box2i& Imf_3_4::TiledRgbaOutputFile::displayWindow() const",
+      "symbol": "_ZNK7Imf_3_419TiledRgbaOutputFile13displayWindowEv",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method const Imath_3_1::Box2i& Imf_3_4::AcesInputFile::displayWindow() const  ->  method const Imath_3_2::Box2i& Imf_3_4::AcesInputFile::displayWindow() const",
+      "symbol": "_ZNK7Imf_3_413AcesInputFile13displayWindowEv",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function const Imf_3_4::TypedAttribute<Imath_3_1::Matrix44<float> >& Imf_3_4::worldToCameraAttribute(const Imf_3_4::Header&)  ->  function const Imf_3_4::TypedAttribute<Imath_3_2::Matrix44<float> >& Imf_3_4::worldToCameraAttribute(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_422worldToCameraAttributeERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imath_3_1::Box2i Imf_3_4::TiledInputFile::dataWindowForLevel(int) const  ->  method Imath_3_2::Box2i Imf_3_4::TiledInputFile::dataWindowForLevel(int) const",
+      "symbol": "_ZNK7Imf_3_414TiledInputFile18dataWindowForLevelEi",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function const Imath_3_1::M44f& Imf_3_4::worldToNDC(const Imf_3_4::Header&)  ->  function const Imath_3_2::M44f& Imf_3_4::worldToNDC(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_410worldToNDCERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function half Imf_3_4::floatToHalf(float)  ->  function half Imf_3_4::floatToHalf(float)",
+      "symbol": "_ZN7Imf_3_411floatToHalfEf",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function const Imath_3_1::V2f& Imf_3_4::adoptedNeutral(const Imf_3_4::Header&)  ->  function const Imath_3_2::V2f& Imf_3_4::adoptedNeutral(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_414adoptedNeutralERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method const Imath_3_1::V2f Imf_3_4::RgbaInputFile::screenWindowCenter() const  ->  method const Imath_3_2::V2f Imf_3_4::RgbaInputFile::screenWindowCenter() const",
+      "symbol": "_ZNK7Imf_3_413RgbaInputFile18screenWindowCenterEv",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imath_3_1::Box2i Imf_3_4::TiledOutputFile::dataWindowForLevel(int, int) const  ->  method Imath_3_2::Box2i Imf_3_4::TiledOutputFile::dataWindowForLevel(int, int) const",
+      "symbol": "_ZNK7Imf_3_415TiledOutputFile18dataWindowForLevelEii",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method const Imath_3_1::Box2i& Imf_3_4::CompositeDeepScanLine::dataWindow() const  ->  method const Imath_3_2::Box2i& Imf_3_4::CompositeDeepScanLine::dataWindow() const",
+      "symbol": "_ZNK7Imf_3_421CompositeDeepScanLine10dataWindowEv",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imath_3_1::Box2i Imf_3_4::DeepTiledInputPart::dataWindowForTile(int, int, int) const  ->  method Imath_3_2::Box2i Imf_3_4::DeepTiledInputPart::dataWindowForTile(int, int, int) const",
+      "symbol": "_ZNK7Imf_3_418DeepTiledInputPart17dataWindowForTileEiii",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imath_3_1::Box2i& Imf_3_4::Header::dataWindow()  ->  method Imath_3_2::Box2i& Imf_3_4::Header::dataWindow()",
+      "symbol": "_ZN7Imf_3_46Header10dataWindowEv",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imath_3_1::Box2i Imf_3_4::DeepTiledInputFile::dataWindowForTile(int, int, int, int) const  ->  method Imath_3_2::Box2i Imf_3_4::DeepTiledInputFile::dataWindowForTile(int, int, int, int) const",
+      "symbol": "_ZNK7Imf_3_418DeepTiledInputFile17dataWindowForTileEiiii",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imath_3_1::Box2i Imf_3_4::TiledRgbaInputFile::dataWindowForTile(int, int, int, int) const  ->  method Imath_3_2::Box2i Imf_3_4::TiledRgbaInputFile::dataWindowForTile(int, int, int, int) const",
+      "symbol": "_ZNK7Imf_3_418TiledRgbaInputFile17dataWindowForTileEiiii",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function Imf_3_4::TypedAttribute<Imath_3_1::Vec2<float> >& Imf_3_4::adoptedNeutralAttribute(Imf_3_4::Header&)  ->  function Imf_3_4::TypedAttribute<Imath_3_2::Vec2<float> >& Imf_3_4::adoptedNeutralAttribute(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_423adoptedNeutralAttributeERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imath_3_1::V2f& Imf_3_4::Header::screenWindowCenter()  ->  method Imath_3_2::V2f& Imf_3_4::Header::screenWindowCenter()",
+      "symbol": "_ZN7Imf_3_46Header18screenWindowCenterEv",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imath_3_1::Box2i Imf_3_4::TiledRgbaOutputFile::dataWindowForLevel(int, int) const  ->  method Imath_3_2::Box2i Imf_3_4::TiledRgbaOutputFile::dataWindowForLevel(int, int) const",
+      "symbol": "_ZNK7Imf_3_419TiledRgbaOutputFile18dataWindowForLevelEii",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function const Imath_3_1::V2f& Imf_3_4::sensorCenterOffset(const Imf_3_4::Header&)  ->  function const Imath_3_2::V2f& Imf_3_4::sensorCenterOffset(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_418sensorCenterOffsetERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imath_3_1::Box2i Imf_3_4::TiledOutputPart::dataWindowForTile(int, int, int) const  ->  method Imath_3_2::Box2i Imf_3_4::TiledOutputPart::dataWindowForTile(int, int, int) const",
+      "symbol": "_ZNK7Imf_3_415TiledOutputPart17dataWindowForTileEiii",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function Imf_3_4::TypedAttribute<Imath_3_1::Matrix44<float> >& Imf_3_4::worldToCameraAttribute(Imf_3_4::Header&)  ->  function Imf_3_4::TypedAttribute<Imath_3_2::Matrix44<float> >& Imf_3_4::worldToCameraAttribute(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_422worldToCameraAttributeERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function const Imf_3_4::TypedAttribute<Imath_3_1::Vec2<float> >& Imf_3_4::adoptedNeutralAttribute(const Imf_3_4::Header&)  ->  function const Imf_3_4::TypedAttribute<Imath_3_2::Vec2<float> >& Imf_3_4::adoptedNeutralAttribute(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_423adoptedNeutralAttributeERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function const Imath_3_1::V2f& Imf_3_4::sensorOverallDimensions(const Imf_3_4::Header&)  ->  function const Imath_3_2::V2f& Imf_3_4::sensorOverallDimensions(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_423sensorOverallDimensionsERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function Imath_3_1::V2f& Imf_3_4::sensorOverallDimensions(Imf_3_4::Header&)  ->  function Imath_3_2::V2f& Imf_3_4::sensorOverallDimensions(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_423sensorOverallDimensionsERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function const Imath_3_1::Box2i& Imf_3_4::sensorAcquisitionRectangle(const Imf_3_4::Header&)  ->  function const Imath_3_2::Box2i& Imf_3_4::sensorAcquisitionRectangle(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_426sensorAcquisitionRectangleERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function Imath_3_1::Box2i& Imf_3_4::sensorAcquisitionRectangle(Imf_3_4::Header&)  ->  function Imath_3_2::Box2i& Imf_3_4::sensorAcquisitionRectangle(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_426sensorAcquisitionRectangleERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function const Imf_3_4::TypedAttribute<Imath_3_1::Vec2<float> >& Imf_3_4::cameraColorBalanceAttribute(const Imf_3_4::Header&)  ->  function const Imf_3_4::TypedAttribute<Imath_3_2::Vec2<float> >& Imf_3_4::cameraColorBalanceAttribute(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_427cameraColorBalanceAttributeERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method const Imath_3_1::V2f Imf_3_4::RgbaOutputFile::screenWindowCenter() const  ->  method const Imath_3_2::V2f Imf_3_4::RgbaOutputFile::screenWindowCenter() const",
+      "symbol": "_ZNK7Imf_3_414RgbaOutputFile18screenWindowCenterEv",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function Imf_3_4::TypedAttribute<Imath_3_1::Vec2<float> >& Imf_3_4::cameraColorBalanceAttribute(Imf_3_4::Header&)  ->  function Imf_3_4::TypedAttribute<Imath_3_2::Vec2<float> >& Imf_3_4::cameraColorBalanceAttribute(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_427cameraColorBalanceAttributeERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function const Imf_3_4::TypedAttribute<Imath_3_1::Box<Imath_3_1::Vec2<int> > >& Imf_3_4::originalDataWindowAttribute(const Imf_3_4::Header&)  ->  function const Imf_3_4::TypedAttribute<Imath_3_2::Box<Imath_3_2::Vec2<int> > >& Imf_3_4::originalDataWindowAttribute(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_427originalDataWindowAttributeERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imath_3_1::Box2i Imf_3_4::TiledInputFile::dataWindowForTile(int, int, int) const  ->  method Imath_3_2::Box2i Imf_3_4::TiledInputFile::dataWindowForTile(int, int, int) const",
+      "symbol": "_ZNK7Imf_3_414TiledInputFile17dataWindowForTileEiii",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function Imf_3_4::TypedAttribute<Imath_3_1::Box<Imath_3_1::Vec2<int> > >& Imf_3_4::originalDataWindowAttribute(Imf_3_4::Header&)  ->  function Imf_3_4::TypedAttribute<Imath_3_2::Box<Imath_3_2::Vec2<int> > >& Imf_3_4::originalDataWindowAttribute(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_427originalDataWindowAttributeERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function const Imf_3_4::TypedAttribute<Imath_3_1::Vec2<float> >& Imf_3_4::sensorCenterOffsetAttribute(const Imf_3_4::Header&)  ->  function const Imf_3_4::TypedAttribute<Imath_3_2::Vec2<float> >& Imf_3_4::sensorCenterOffsetAttribute(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_427sensorCenterOffsetAttributeERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function const Imf_3_4::TypedAttribute<Imath_3_1::Vec2<float> >& Imf_3_4::sensorOverallDimensionsAttribute(const Imf_3_4::Header&)  ->  function const Imf_3_4::TypedAttribute<Imath_3_2::Vec2<float> >& Imf_3_4::sensorOverallDimensionsAttribute(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_432sensorOverallDimensionsAttributeERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function const Imf_3_4::TypedAttribute<Imath_3_1::Box<Imath_3_1::Vec2<int> > >& Imf_3_4::sensorAcquisitionRectangleAttribute(const Imf_3_4::Header&)  ->  function const Imf_3_4::TypedAttribute<Imath_3_2::Box<Imath_3_2::Vec2<int> > >& Imf_3_4::sensorAcquisitionRectangleAttribute(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_435sensorAcquisitionRectangleAttributeERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function Imf_3_4::TypedAttribute<Imath_3_1::Box<Imath_3_1::Vec2<int> > >& Imf_3_4::sensorAcquisitionRectangleAttribute(Imf_3_4::Header&)  ->  function Imf_3_4::TypedAttribute<Imath_3_2::Box<Imath_3_2::Vec2<int> > >& Imf_3_4::sensorAcquisitionRectangleAttribute(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_435sensorAcquisitionRectangleAttributeERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function Imath_3_1::V3f Imf_3_4::RgbaYca::computeYw(const Imf_3_4::Chromaticities&)  ->  function Imath_3_2::V3f Imf_3_4::RgbaYca::computeYw(const Imf_3_4::Chromaticities&)",
+      "symbol": "_ZN7Imf_3_47RgbaYca9computeYwERKNS_14ChromaticitiesE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imath_3_1::Box2i Imf_3_4::TiledInputFile::dataWindowForLevel(int, int) const  ->  method Imath_3_2::Box2i Imf_3_4::TiledInputFile::dataWindowForLevel(int, int) const",
+      "symbol": "_ZNK7Imf_3_414TiledInputFile18dataWindowForLevelEii",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function Imath_3_1::M44f Imf_3_4::XYZtoRGB(const Imf_3_4::Chromaticities&, float)  ->  function Imath_3_2::M44f Imf_3_4::XYZtoRGB(const Imf_3_4::Chromaticities&, float)",
+      "symbol": "_ZN7Imf_3_48XYZtoRGBERKNS_14ChromaticitiesEf",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imath_3_1::Box2i Imf_3_4::TiledRgbaInputFile::dataWindowForTile(int, int, int) const  ->  method Imath_3_2::Box2i Imf_3_4::TiledRgbaInputFile::dataWindowForTile(int, int, int) const",
+      "symbol": "_ZNK7Imf_3_418TiledRgbaInputFile17dataWindowForTileEiii",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function Imath_3_1::V2f& Imf_3_4::adoptedNeutral(Imf_3_4::Header&)  ->  function Imath_3_2::V2f& Imf_3_4::adoptedNeutral(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_414adoptedNeutralERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method const Imath_3_1::V2f Imf_3_4::AcesInputFile::screenWindowCenter() const  ->  method const Imath_3_2::V2f Imf_3_4::AcesInputFile::screenWindowCenter() const",
+      "symbol": "_ZNK7Imf_3_413AcesInputFile18screenWindowCenterEv",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method const Imath_3_1::Box2i& Imf_3_4::AcesInputFile::dataWindow() const  ->  method const Imath_3_2::Box2i& Imf_3_4::AcesInputFile::dataWindow() const",
+      "symbol": "_ZNK7Imf_3_413AcesInputFile10dataWindowEv",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function Imf_3_4::TypedAttribute<Imath_3_1::Vec2<float> >& Imf_3_4::sensorCenterOffsetAttribute(Imf_3_4::Header&)  ->  function Imf_3_4::TypedAttribute<Imath_3_2::Vec2<float> >& Imf_3_4::sensorCenterOffsetAttribute(Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_427sensorCenterOffsetAttributeERNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function const Imf_3_4::TypedAttribute<Imath_3_1::Matrix44<float> >& Imf_3_4::worldToNDCAttribute(const Imf_3_4::Header&)  ->  function const Imf_3_4::TypedAttribute<Imath_3_2::Matrix44<float> >& Imf_3_4::worldToNDCAttribute(const Imf_3_4::Header&)",
+      "symbol": "_ZN7Imf_3_419worldToNDCAttributeERKNS_6HeaderE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method const Imath_3_1::Box2i& Imf_3_4::RgbaInputFile::displayWindow() const  ->  method const Imath_3_2::Box2i& Imf_3_4::RgbaInputFile::displayWindow() const",
+      "symbol": "_ZNK7Imf_3_413RgbaInputFile13displayWindowEv",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method const Imath_3_1::Box2i& Imf_3_4::AcesOutputFile::displayWindow() const  ->  method const Imath_3_2::Box2i& Imf_3_4::AcesOutputFile::displayWindow() const",
+      "symbol": "_ZNK7Imf_3_414AcesOutputFile13displayWindowEv",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method const Imath_3_1::V2f Imf_3_4::AcesOutputFile::screenWindowCenter() const  ->  method const Imath_3_2::V2f Imf_3_4::AcesOutputFile::screenWindowCenter() const",
+      "symbol": "_ZNK7Imf_3_414AcesOutputFile18screenWindowCenterEv",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method const Imath_3_1::Box2i& Imf_3_4::RgbaOutputFile::dataWindow() const  ->  method const Imath_3_2::Box2i& Imf_3_4::RgbaOutputFile::dataWindow() const",
+      "symbol": "_ZNK7Imf_3_414RgbaOutputFile10dataWindowEv",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method const Imath_3_1::Box2i& Imf_3_4::RgbaOutputFile::displayWindow() const  ->  method const Imath_3_2::Box2i& Imf_3_4::RgbaOutputFile::displayWindow() const",
+      "symbol": "_ZNK7Imf_3_414RgbaOutputFile13displayWindowEv",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imath_3_1::Box2i Imf_3_4::TiledOutputFile::dataWindowForTile(int, int, int) const  ->  method Imath_3_2::Box2i Imf_3_4::TiledOutputFile::dataWindowForTile(int, int, int) const",
+      "symbol": "_ZNK7Imf_3_415TiledOutputFile17dataWindowForTileEiii",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imath_3_1::Box2i Imf_3_4::DeepTiledOutputPart::dataWindowForTile(int, int, int) const  ->  method Imath_3_2::Box2i Imf_3_4::DeepTiledOutputPart::dataWindowForTile(int, int, int) const",
+      "symbol": "_ZNK7Imf_3_419DeepTiledOutputPart17dataWindowForTileEiii",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imath_3_1::Box2i Imf_3_4::TiledOutputPart::dataWindowForLevel(int, int) const  ->  method Imath_3_2::Box2i Imf_3_4::TiledOutputPart::dataWindowForLevel(int, int) const",
+      "symbol": "_ZNK7Imf_3_415TiledOutputPart18dataWindowForLevelEii",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imath_3_1::Box2i Imf_3_4::TiledInputPart::dataWindowForTile(int, int, int) const  ->  method Imath_3_2::Box2i Imf_3_4::TiledInputPart::dataWindowForTile(int, int, int) const",
+      "symbol": "_ZNK7Imf_3_414TiledInputPart17dataWindowForTileEiii",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imath_3_1::Box2i Imf_3_4::TiledInputPart::dataWindowForLevel(int, int) const  ->  method Imath_3_2::Box2i Imf_3_4::TiledInputPart::dataWindowForLevel(int, int) const",
+      "symbol": "_ZNK7Imf_3_414TiledInputPart18dataWindowForLevelEii",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function Imath_3_1::Box2i Imf_3_4::dataWindowForTile(const Imf_3_4::TileDescription&, int, int, int, int, int, int, int, int)  ->  function Imath_3_2::Box2i Imf_3_4::dataWindowForTile(const Imf_3_4::TileDescription&, int, int, int, int, int, int, int, int)",
+      "symbol": "_ZN7Imf_3_417dataWindowForTileERKNS_15TileDescriptionEiiiiiiii",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imath_3_1::Box2i Imf_3_4::TiledOutputFile::dataWindowForTile(int, int, int, int) const  ->  method Imath_3_2::Box2i Imf_3_4::TiledOutputFile::dataWindowForTile(int, int, int, int) const",
+      "symbol": "_ZNK7Imf_3_415TiledOutputFile17dataWindowForTileEiiii",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imath_3_1::Box2i Imf_3_4::TiledOutputPart::dataWindowForTile(int, int, int, int) const  ->  method Imath_3_2::Box2i Imf_3_4::TiledOutputPart::dataWindowForTile(int, int, int, int) const",
+      "symbol": "_ZNK7Imf_3_415TiledOutputPart17dataWindowForTileEiiii",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imath_3_1::Box2i Imf_3_4::TiledOutputPart::dataWindowForLevel(int) const  ->  method Imath_3_2::Box2i Imf_3_4::TiledOutputPart::dataWindowForLevel(int) const",
+      "symbol": "_ZNK7Imf_3_415TiledOutputPart18dataWindowForLevelEi",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imath_3_1::Box2i Imf_3_4::TiledOutputFile::dataWindowForLevel(int) const  ->  method Imath_3_2::Box2i Imf_3_4::TiledOutputFile::dataWindowForLevel(int) const",
+      "symbol": "_ZNK7Imf_3_415TiledOutputFile18dataWindowForLevelEi",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imath_3_1::Box2i Imf_3_4::DeepTiledOutputFile::dataWindowForLevel(int) const  ->  method Imath_3_2::Box2i Imf_3_4::DeepTiledOutputFile::dataWindowForLevel(int) const",
+      "symbol": "_ZNK7Imf_3_419DeepTiledOutputFile18dataWindowForLevelEi",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imath_3_1::Box2i Imf_3_4::DeepTiledInputFile::dataWindowForLevel(int) const  ->  method Imath_3_2::Box2i Imf_3_4::DeepTiledInputFile::dataWindowForLevel(int) const",
+      "symbol": "_ZNK7Imf_3_418DeepTiledInputFile18dataWindowForLevelEi",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imath_3_1::Box2i Imf_3_4::DeepTiledInputFile::dataWindowForLevel(int, int) const  ->  method Imath_3_2::Box2i Imf_3_4::DeepTiledInputFile::dataWindowForLevel(int, int) const",
+      "symbol": "_ZNK7Imf_3_418DeepTiledInputFile18dataWindowForLevelEii",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imath_3_1::Box2i Imf_3_4::DeepTiledInputPart::dataWindowForTile(int, int, int, int) const  ->  method Imath_3_2::Box2i Imf_3_4::DeepTiledInputPart::dataWindowForTile(int, int, int, int) const",
+      "symbol": "_ZNK7Imf_3_418DeepTiledInputPart17dataWindowForTileEiiii",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imath_3_1::Box2i Imf_3_4::DeepTiledInputPart::dataWindowForLevel(int, int) const  ->  method Imath_3_2::Box2i Imf_3_4::DeepTiledInputPart::dataWindowForLevel(int, int) const",
+      "symbol": "_ZNK7Imf_3_418DeepTiledInputPart18dataWindowForLevelEii",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imath_3_1::Box2i Imf_3_4::TiledInputPart::dataWindowForTile(int, int, int, int) const  ->  method Imath_3_2::Box2i Imf_3_4::TiledInputPart::dataWindowForTile(int, int, int, int) const",
+      "symbol": "_ZNK7Imf_3_414TiledInputPart17dataWindowForTileEiiii",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 233,
+    "third_party": {
+     "base_class_changed": 38,
+     "field_type_changed": 9
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfAcesFile.cpp",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class Imf_3_4::AcesInputFile::Data"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<Imf_3_4::MultiPartInputFile::Data>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/std_mutex.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::mutex"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<Imf_3_4::InputFile::Data>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/unique_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__uniq_ptr_data<Imf_3_4::MultiPartInputFile, std::default_delete<Imf_3_4::MultiPartInputFile>, true, true>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::tuple<Imf_3_4::MultiPartInputFile*, std::default_delete<Imf_3_4::MultiPartInputFile> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Tuple_impl<0, Imf_3_4::MultiPartInputFile*, std::default_delete<Imf_3_4::MultiPartInputFile> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/unique_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__uniq_ptr_data<Imf_3_4::TiledInputFile, std::default_delete<Imf_3_4::TiledInputFile>, true, true>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::tuple<Imf_3_4::TiledInputFile*, std::default_delete<Imf_3_4::TiledInputFile> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Tuple_impl<0, Imf_3_4::TiledInputFile*, std::default_delete<Imf_3_4::TiledInputFile> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<Imf_3_4::TiledInputFile::Data>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/unique_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__uniq_ptr_data<Imf_3_4::ScanLineInputFile, std::default_delete<Imf_3_4::ScanLineInputFile>, true, true>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::tuple<Imf_3_4::ScanLineInputFile*, std::default_delete<Imf_3_4::ScanLineInputFile> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Tuple_impl<0, Imf_3_4::ScanLineInputFile*, std::default_delete<Imf_3_4::ScanLineInputFile> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<Imf_3_4::ScanLineInputFile::Data>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/unique_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__uniq_ptr_data<Imf_3_4::DeepScanLineInputFile, std::default_delete<Imf_3_4::DeepScanLineInputFile>, true, true>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::tuple<Imf_3_4::DeepScanLineInputFile*, std::default_delete<Imf_3_4::DeepScanLineInputFile> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Tuple_impl<0, Imf_3_4::DeepScanLineInputFile*, std::default_delete<Imf_3_4::DeepScanLineInputFile> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<Imf_3_4::DeepScanLineInputFile::Data>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/unique_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::__uniq_ptr_data<Imf_3_4::CompositeDeepScanLine, std::default_delete<Imf_3_4::CompositeDeepScanLine>, true, true>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::tuple<Imf_3_4::CompositeDeepScanLine*, std::default_delete<Imf_3_4::CompositeDeepScanLine> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/tuple",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Tuple_impl<0, Imf_3_4::CompositeDeepScanLine*, std::default_delete<Imf_3_4::CompositeDeepScanLine> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfCompositeDeepScanLine.cpp",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct Imf_3_4::CompositeDeepScanLine::Data"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<Imf_3_4::DeepScanLineInputFile*, std::allocator<Imf_3_4::DeepScanLineInputFile*> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<Imf_3_4::DeepScanLineInputFile*, std::allocator<Imf_3_4::DeepScanLineInputFile*> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<Imf_3_4::DeepScanLineInputPart*, std::allocator<Imf_3_4::DeepScanLineInputPart*> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<Imf_3_4::DeepScanLineInputPart*, std::allocator<Imf_3_4::DeepScanLineInputPart*> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/Imath/ImathBox.h",
+      "exposure": "by_value",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class Imath_3_1::Box<Imath_3_1::Vec2<int> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfRgbaFile.cpp",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class Imf_3_4::RgbaInputFile::FromYca"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfRgbaFile.cpp",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Imf_3_4::RgbaInputFile::FromYca"
+     },
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": "./src/lib/OpenEXR/ImfRgba.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": false,
+      "type": "struct Imf_3_4::Rgba"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<Imf_3_4::(anonymous namespace)::LineBuffer*, std::allocator<Imf_3_4::(anonymous namespace)::LineBuffer*> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<Imf_3_4::(anonymous namespace)::LineBuffer*, std::allocator<Imf_3_4::(anonymous namespace)::LineBuffer*> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/lib/OpenEXR/ImfCompressor.h",
+      "exposure": "by_pointer",
+      "kind": "vtable_changed",
+      "third_party": false,
+      "type": "class Imf_3_4::Compressor"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfOutputStreamMutex.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct Imf_3_4::OutputStreamMutex"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfRgbaFile.cpp",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class Imf_3_4::RgbaOutputFile::ToYca"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfRgbaFile.cpp",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Imf_3_4::RgbaOutputFile::ToYca"
+     },
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": "./src/lib/OpenEXR/ImfChromaticities.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": false,
+      "type": "struct Imf_3_4::Chromaticities"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfMultiPartOutputFile.cpp",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct Imf_3_4::MultiPartOutputFile::Data"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<Imf_3_4::OutputPartData*, std::allocator<Imf_3_4::OutputPartData*> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<Imf_3_4::OutputPartData*, std::allocator<Imf_3_4::OutputPartData*> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/shared_ptr.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::shared_ptr<Imf_3_4::DeepTiledInputFile::Data>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<Imf_3_4::(anonymous namespace)::TileBuffer*, std::allocator<Imf_3_4::(anonymous namespace)::TileBuffer*> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/15/bits/stl_vector.h",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "struct std::_Vector_base<Imf_3_4::(anonymous namespace)::TileBuffer*, std::allocator<Imf_3_4::(anonymous namespace)::TileBuffer*> >::_Vector_impl"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfLut.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": false,
+      "type": "class Imf_3_4::RgbaLut"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/Imath/halfFunction.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class halfFunction<Imath_3_1::half>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfTiledRgbaFile.cpp",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class Imf_3_4::TiledRgbaInputFile::FromYa"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfTiledRgbaFile.cpp",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Imf_3_4::TiledRgbaInputFile::FromYa"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfTiledRgbaFile.cpp",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class Imf_3_4::TiledRgbaOutputFile::ToYa"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfTiledRgbaFile.cpp",
+      "exposure": "not_in_interface",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class Imf_3_4::TiledRgbaOutputFile::ToYa"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfAttribute.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": false,
+      "type": "class Imf_3_4::TypedAttribute<Imath_3_1::Vec2<float> >"
+     },
+     {
+      "append_only": false,
+      "count": 5,
+      "declared_in": "./src/lib/OpenEXR/ImfAttribute.h",
+      "exposure": "by_pointer",
+      "kind": "vtable_changed",
+      "third_party": false,
+      "type": "class Imf_3_4::TypedAttribute<Imath_3_1::Vec2<float> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfAttribute.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": false,
+      "type": "class Imf_3_4::TypedAttribute<Imath_3_1::Box<Imath_3_1::Vec2<int> > >"
+     },
+     {
+      "append_only": false,
+      "count": 5,
+      "declared_in": "./src/lib/OpenEXR/ImfAttribute.h",
+      "exposure": "by_pointer",
+      "kind": "vtable_changed",
+      "third_party": false,
+      "type": "class Imf_3_4::TypedAttribute<Imath_3_1::Box<Imath_3_1::Vec2<int> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXR/ImfAttribute.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": false,
+      "type": "class Imf_3_4::TypedAttribute<Imath_3_1::Matrix44<float> >"
+     },
+     {
+      "append_only": false,
+      "count": 5,
+      "declared_in": "./src/lib/OpenEXR/ImfAttribute.h",
+      "exposure": "by_pointer",
+      "kind": "vtable_changed",
+      "third_party": false,
+      "type": "class Imf_3_4::TypedAttribute<Imath_3_1::Matrix44<float> >"
+     }
+    ],
+    "vague_linkage": {
+     "symbol_added": 6,
+     "symbol_removed": 24
+    }
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      164,
+      164
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libOpenEXRCore-3_4.so.33",
+     "libOpenEXRCore-3_4.so.33"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   },
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      203,
+      209
+     ],
+     "mangled_functions": [
+      203,
+      209
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "base_class_changed": 11,
+     "field_type_changed": 2,
+     "function_signature_changed": 11,
+     "symbol_version_renamed": 15,
+     "vtable_changed": 7
+    },
+    "soname": [
+     "libOpenEXRUtil-3_4.so.33",
+     "libOpenEXRUtil-3_4.so.33"
+    ],
+    "symbol_events": [
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual void Imf_3_4::ImageLevel::resize(const Imath_3_1::Box2i&)  ->  method virtual void Imf_3_4::ImageLevel::resize(const Imath_3_2::Box2i&)",
+      "symbol": "_ZN7Imf_3_410ImageLevel6resizeERKN9Imath_3_13BoxINS1_4Vec2IiEEEE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method void Imf_3_4::Image::resize(const Imath_3_1::Box2i&)  ->  method virtual void Imf_3_4::Image::resize(const Imath_3_2::Box2i&, Imf_3_4::LevelMode, Imf_3_4::LevelRoundingMode)",
+      "symbol": "_ZN7Imf_3_45Image6resizeERKN9Imath_3_13BoxINS1_4Vec2IiEEEE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual Imf_3_4::DeepImageLevel* Imf_3_4::DeepImage::newLevel(int, int, const Imath_3_1::Box2i&)  ->  method virtual Imf_3_4::DeepImageLevel* Imf_3_4::DeepImage::newLevel(int, int, const Imath_3_2::Box2i&)",
+      "symbol": "_ZN7Imf_3_49DeepImage8newLevelEiiRKN9Imath_3_13BoxINS1_4Vec2IiEEEE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual void Imf_3_4::Image::resize(const Imath_3_1::Box2i&, Imf_3_4::LevelMode, Imf_3_4::LevelRoundingMode)  ->  method void Imf_3_4::Image::resize(const Imath_3_2::Box2i&)",
+      "symbol": "_ZN7Imf_3_45Image6resizeERKN9Imath_3_13BoxINS1_4Vec2IiEEEENS_9LevelModeENS_17LevelRoundingModeE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imf_3_4::DeepImage::DeepImage(const Imath_3_1::Box2i&, Imf_3_4::LevelMode, Imf_3_4::LevelRoundingMode)  ->  method Imf_3_4::DeepImage::DeepImage(const Imath_3_2::Box2i&, Imf_3_4::LevelMode, Imf_3_4::LevelRoundingMode)",
+      "symbol": "_ZN7Imf_3_49DeepImageC2ERKN9Imath_3_13BoxINS1_4Vec2IiEEEENS_9LevelModeENS_17LevelRoundingModeE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method virtual Imf_3_4::FlatImageLevel* Imf_3_4::FlatImage::newLevel(int, int, const Imath_3_1::Box2i&)  ->  method virtual Imf_3_4::FlatImageLevel* Imf_3_4::FlatImage::newLevel(int, int, const Imath_3_2::Box2i&)",
+      "symbol": "_ZN7Imf_3_49FlatImage8newLevelEiiRKN9Imath_3_13BoxINS1_4Vec2IiEEEE",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method Imf_3_4::FlatImage::FlatImage(const Imath_3_1::Box2i&, Imf_3_4::LevelMode, Imf_3_4::LevelRoundingMode)  ->  method Imf_3_4::FlatImage::FlatImage(const Imath_3_2::Box2i&, Imf_3_4::LevelMode, Imf_3_4::LevelRoundingMode)",
+      "symbol": "_ZN7Imf_3_49FlatImageC2ERKN9Imath_3_13BoxINS1_4Vec2IiEEEENS_9LevelModeENS_17LevelRoundingModeE",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<unsigned char, std::allocator<unsigned char> >::_M_default_append(std::vector<unsigned char, std::allocator<unsigned char> >::size_type)",
+      "symbol": "_ZNSt6vectorIhSaIhEE17_M_default_appendEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::vector<float, std::allocator<float> >::_M_default_append(std::vector<float, std::allocator<float> >::size_type)",
+      "symbol": "_ZNSt6vectorIfSaIfEE17_M_default_appendEm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<true>(const char*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::size_type)",
+      "symbol": "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructILb1EEEvPKcm",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::FlatImageChannel*>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::FlatImageChannel*> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::FlatImageChannel*> > >::iterator std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::FlatImageChannel*>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::FlatImageChannel*> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::FlatImageChannel*> > >::find(const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_PN7Imf_3_416FlatImageChannelEESt10_Select1stISB_ESt4lessIS5_ESaISB_EE4findERS7_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::FlatImageChannel*>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::FlatImageChannel*> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::FlatImageChannel*> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::FlatImageChannel*>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::FlatImageChannel*> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::FlatImageChannel*> > >::const_iterator, const std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::FlatImageChannel*>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::FlatImageChannel*> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::FlatImageChannel*> > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_PN7Imf_3_416FlatImageChannelEESt10_Select1stISB_ESt4lessIS5_ESaISB_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorISB_ERS7_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::FlatImageChannel*>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::FlatImageChannel*> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::FlatImageChannel*> > >::const_iterator std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::FlatImageChannel*>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::FlatImageChannel*> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::FlatImageChannel*> > >::find(const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) const",
+      "symbol": "_ZNKSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_PN7Imf_3_416FlatImageChannelEESt10_Select1stISB_ESt4lessIS5_ESaISB_EE4findERS7_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::DeepImageChannel*>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::DeepImageChannel*> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::DeepImageChannel*> > >::_M_get_insert_unique_pos(const std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::DeepImageChannel*>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::DeepImageChannel*> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::DeepImageChannel*> > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_PN7Imf_3_416DeepImageChannelEESt10_Select1stISB_ESt4lessIS5_ESaISB_EE24_M_get_insert_unique_posERS7_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::DeepImageChannel*>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::DeepImageChannel*> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::DeepImageChannel*> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::DeepImageChannel*>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::DeepImageChannel*> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::DeepImageChannel*> > >::const_iterator, const std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::DeepImageChannel*>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::DeepImageChannel*> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::DeepImageChannel*> > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_PN7Imf_3_416DeepImageChannelEESt10_Select1stISB_ESt4lessIS5_ESaISB_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorISB_ERS7_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::DeepImageChannel*>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::DeepImageChannel*> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::DeepImageChannel*> > >::const_iterator std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::DeepImageChannel*>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::DeepImageChannel*> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::DeepImageChannel*> > >::find(const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) const",
+      "symbol": "_ZNKSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_PN7Imf_3_416DeepImageChannelEESt10_Select1stISB_ESt4lessIS5_ESaISB_EE4findERS7_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*> std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::FlatImageChannel*>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::FlatImageChannel*> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::FlatImageChannel*> > >::_M_get_insert_unique_pos(const std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::FlatImageChannel*>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::FlatImageChannel*> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::FlatImageChannel*> > >::key_type&)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_PN7Imf_3_416FlatImageChannelEESt10_Select1stISB_ESt4lessIS5_ESaISB_EE24_M_get_insert_unique_posERS7_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::const_iterator std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::find(const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) const",
+      "symbol": "_ZNKSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_S5_ESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE4findERS7_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::DeepImageChannel*>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::DeepImageChannel*> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::DeepImageChannel*> > >::iterator std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::DeepImageChannel*>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::DeepImageChannel*> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, Imf_3_4::DeepImageChannel*> > >::find(const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)",
+      "symbol": "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_PN7Imf_3_416DeepImageChannelEESt10_Select1stISB_ESt4lessIS5_ESaISB_EE4findERS7_",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method const Imath_3_1::Box2i& Imf_3_4::Image::dataWindowForLevel(int, int) const  ->  method const Imath_3_2::Box2i& Imf_3_4::Image::dataWindowForLevel(int, int) const",
+      "symbol": "_ZNK7Imf_3_45Image18dataWindowForLevelEii",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method const Imath_3_1::Box2i& Imf_3_4::Image::dataWindowForLevel(int) const  ->  method const Imath_3_2::Box2i& Imf_3_4::Image::dataWindowForLevel(int) const",
+      "symbol": "_ZNK7Imf_3_45Image18dataWindowForLevelEi",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method const Imath_3_1::Box2i& Imf_3_4::Image::dataWindow() const  ->  method const Imath_3_2::Box2i& Imf_3_4::Image::dataWindow() const",
+      "symbol": "_ZNK7Imf_3_45Image10dataWindowEv",
+      "weak": false
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "function Imath_3_1::Box2i Imf_3_4::dataWindowForFile(const Imf_3_4::Header&, const Imf_3_4::Image&, Imf_3_4::DataWindowSource)  ->  function Imath_3_2::Box2i Imf_3_4::dataWindowForFile(const Imf_3_4::Header&, const Imf_3_4::Image&, Imf_3_4::DataWindowSource)",
+      "symbol": "_ZN7Imf_3_417dataWindowForFileERKNS_6HeaderERKNS_5ImageENS_16DataWindowSourceE",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 15,
+    "third_party": {
+     "field_type_changed": 2
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRUtil/ImfDeepImage.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_4::DeepImage"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRUtil/ImfDeepImage.h",
+      "exposure": "by_pointer",
+      "kind": "vtable_changed",
+      "third_party": false,
+      "type": "class Imf_3_4::DeepImage"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRUtil/ImfDeepImageLevel.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_4::DeepImageLevel"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRUtil/ImfDeepImageLevel.h",
+      "exposure": "by_pointer",
+      "kind": "vtable_changed",
+      "third_party": false,
+      "type": "class Imf_3_4::DeepImageLevel"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRUtil/ImfSampleCountChannel.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_4::SampleCountChannel"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRUtil/ImfImageLevel.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": false,
+      "type": "class Imf_3_4::ImageLevel"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRUtil/ImfImageLevel.h",
+      "exposure": "by_pointer",
+      "kind": "vtable_changed",
+      "third_party": false,
+      "type": "class Imf_3_4::ImageLevel"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRUtil/ImfImage.h",
+      "exposure": "by_pointer",
+      "kind": "field_type_changed",
+      "third_party": false,
+      "type": "class Imf_3_4::Image"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/lib/OpenEXRUtil/ImfImage.h",
+      "exposure": "by_pointer",
+      "kind": "vtable_changed",
+      "third_party": false,
+      "type": "class Imf_3_4::Image"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "/usr/include/Imath/ImathBox.h",
+      "exposure": "by_value",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "class Imath_3_1::Box<Imath_3_1::Vec2<int> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRUtil/ImfDeepImageChannel.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_4::DeepImageChannel"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRUtil/ImfFlatImage.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_4::FlatImage"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRUtil/ImfFlatImage.h",
+      "exposure": "by_pointer",
+      "kind": "vtable_changed",
+      "third_party": false,
+      "type": "class Imf_3_4::FlatImage"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRUtil/ImfFlatImageLevel.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_4::FlatImageLevel"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRUtil/ImfFlatImageLevel.h",
+      "exposure": "by_pointer",
+      "kind": "vtable_changed",
+      "third_party": false,
+      "type": "class Imf_3_4::FlatImageLevel"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRUtil/ImfFlatImageChannel.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_4::FlatImageChannel"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRUtil/ImfDeepImageChannel.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_4::TypedDeepImageChannel<float>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRUtil/ImfDeepImageChannel.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_4::TypedDeepImageChannel<unsigned int>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRUtil/ImfFlatImageChannel.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_4::TypedFlatImageChannel<float>"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/lib/OpenEXRUtil/ImfFlatImageChannel.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": false,
+      "type": "class Imf_3_4::TypedFlatImageChannel<unsigned int>"
+     }
+    ],
+    "vague_linkage": {
+     "symbol_added": 9,
+     "symbol_removed": 3
+    }
+   }
+  ],
+  "seconds": 18.488719092,
+  "source": "openexr",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "3.4.6+ds",
+   "3.4.14"
+  ]
+ },
+ "generated_at": "2026-09-04T00:35:24Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

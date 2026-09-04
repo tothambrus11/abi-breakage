@@ -1,0 +1,72 @@
+{
+ "data": {
+  "bytes_extracted": 1858180,
+  "id": "libselinux@3.3..3.4",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      236,
+      238
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 2
+    },
+    "soname": [
+     "libselinux.so.1",
+     "libselinux.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function int selinux_restorecon_parallel(const char*, unsigned int, size_t)",
+      "symbol": "selinux_restorecon_parallel",
+      "version": "LIBSELINUX_3.4",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function unsigned long int selinux_restorecon_get_skipped_errors()",
+      "symbol": "selinux_restorecon_get_skipped_errors",
+      "version": "LIBSELINUX_3.4",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 1.508190559,
+  "source": "libselinux",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "3.3",
+   "3.4"
+  ]
+ },
+ "generated_at": "2026-09-04T00:43:06Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

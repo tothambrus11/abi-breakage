@@ -1,0 +1,197 @@
+{
+ "data": {
+  "bytes_extracted": 952695,
+  "id": "libfido2@1.8.0..1.9.0",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      229,
+      238
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "field_added_to_struct": 6,
+     "member_offset_changed": 12,
+     "symbol_added": 9,
+     "type_size_changed": 4
+    },
+    "soname": [
+     "libfido2.so.1",
+     "libfido2.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function int fido_dev_set_pin_minlen_rpid(fido_dev_t*, const char* const*, size_t, const char*)",
+      "symbol": "fido_dev_set_pin_minlen_rpid",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int fido_cred_set_attstmt(fido_cred_t*, const unsigned char*, size_t)",
+      "symbol": "fido_cred_set_attstmt",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int fido_dev_set_timeout(fido_dev_t*, int)",
+      "symbol": "fido_dev_set_timeout",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t fido_cred_pin_minlen(const fido_cred_t*)",
+      "symbol": "fido_cred_pin_minlen",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int fido_cred_set_pin_minlen(fido_cred_t*, size_t)",
+      "symbol": "fido_cred_set_pin_minlen",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function const unsigned char* fido_cred_attstmt_ptr(const fido_cred_t*)",
+      "symbol": "fido_cred_attstmt_ptr",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int rs256_pk_from_EVP_PKEY(rs256_pk_t*, const EVP_PKEY*)",
+      "symbol": "rs256_pk_from_EVP_PKEY",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t fido_cred_attstmt_len(const fido_cred_t*)",
+      "symbol": "fido_cred_attstmt_len",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int es256_pk_from_EVP_PKEY(es256_pk_t*, const EVP_PKEY*)",
+      "symbol": "es256_pk_from_EVP_PKEY",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "./src/fido/types.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": false,
+      "type": "struct fido_dev"
+     },
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "./src/fido/types.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": false,
+      "type": "struct fido_dev"
+     },
+     {
+      "append_only": false,
+      "count": 10,
+      "declared_in": "./src/fido/types.h",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": false,
+      "type": "struct fido_cred"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/fido/types.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": false,
+      "type": "struct fido_cred"
+     },
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "./src/fido/types.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": false,
+      "type": "struct fido_cred_ext"
+     },
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "./src/fido/types.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": false,
+      "type": "struct fido_cred_ext"
+     },
+     {
+      "append_only": false,
+      "count": 4,
+      "declared_in": "./src/fido/types.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": false,
+      "type": "struct fido_attstmt"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./src/fido/types.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": false,
+      "type": "struct fido_attstmt"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./src/fido/types.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": false,
+      "type": "struct fido_attstmt"
+     }
+    ],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 1.193655073,
+  "source": "libfido2",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.8.0",
+   "1.9.0"
+  ]
+ },
+ "generated_at": "2026-09-04T00:43:51Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

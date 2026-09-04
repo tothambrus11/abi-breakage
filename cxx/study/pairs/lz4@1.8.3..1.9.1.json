@@ -1,0 +1,155 @@
+{
+ "data": {
+  "bytes_extracted": 1332020,
+  "id": "lz4@1.8.3..1.9.1",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      93,
+      96
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "enum_case_added": 1,
+     "field_added_to_struct": 1,
+     "field_type_changed": 1,
+     "symbol_added": 6,
+     "symbol_removed": 3
+    },
+    "soname": [
+     "liblz4.so.1",
+     "liblz4.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_removed",
+      "pretty": "function int LZ4_compress_fast_extState_fastReset(void*, const char*, char*, int, int, int)",
+      "symbol": "LZ4_compress_fast_extState_fastReset",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void LZ4_attach_HC_dictionary(LZ4_streamHC_t*, const LZ4_streamHC_t*)",
+      "symbol": "LZ4_attach_HC_dictionary",
+      "weak": false
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "function void LZ4_attach_dictionary(LZ4_stream_t*, const LZ4_stream_t*)",
+      "symbol": "LZ4_attach_dictionary",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void LZ4_resetStreamHC_fast(LZ4_streamHC_t*, int)",
+      "symbol": "LZ4_resetStreamHC_fast",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function LZ4_stream_t* LZ4_initStream(void*, size_t)",
+      "symbol": "LZ4_initStream",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function LZ4_streamHC_t* LZ4_initStreamHC(void*, size_t)",
+      "symbol": "LZ4_initStreamHC",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int LZ4_compress_HC_destSize(void*, const char*, char*, int*, int, int)",
+      "symbol": "LZ4_compress_HC_destSize",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function int LZ4_compress_HC_continue_destSize(LZ4_streamHC_t*, const char*, char*, int*, int)",
+      "symbol": "LZ4_compress_HC_continue_destSize",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function size_t LZ4F_getBlockSize(unsigned int)",
+      "symbol": "LZ4F_getBlockSize",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_type_changed": 1
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./lib/lz4hc.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": false,
+      "type": "struct LZ4HC_CCtx_internal"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./lib/lz4hc.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": false,
+      "type": "struct LZ4HC_CCtx_internal"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./lib/xxhash.h",
+      "exposure": "not_in_interface",
+      "kind": "field_type_changed",
+      "third_party": true,
+      "type": "struct XXH32_state_s"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./lib/lz4frame.h",
+      "exposure": "by_value",
+      "kind": "enum_case_added",
+      "third_party": false,
+      "type": "enum LZ4F_errorCodes"
+     }
+    ],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 1.225234216,
+  "source": "lz4",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.8.3",
+   "1.9.1"
+  ]
+ },
+ "generated_at": "2026-09-04T00:43:12Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

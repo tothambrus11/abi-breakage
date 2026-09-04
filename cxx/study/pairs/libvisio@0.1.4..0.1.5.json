@@ -1,0 +1,195 @@
+{
+ "data": {
+  "bytes_extracted": 8912093,
+  "id": "libvisio@0.1.4..0.1.5",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      81,
+      71
+     ],
+     "mangled_functions": [
+      79,
+      69
+     ]
+    },
+    "language": "cxx",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libvisio-0.1.so.1",
+     "libvisio-0.1.so.1"
+    ],
+    "symbol_events": [
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method std::_Rb_tree<unsigned int, std::pair<unsigned int const, unsigned int>, std::_Select1st<std::pair<unsigned int const, unsigned int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> > >::_Link_type std::_Rb_tree<unsigned int, std::pair<unsigned int const, unsigned int>, std::_Select1st<std::pair<unsigned int const, unsigned int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> > >::_M_copy<std::_Rb_tree<unsigned int, std::pair<unsigned int const, unsigned int>, std::_Select1st<std::pair<unsigned int const, unsigned int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> > >::_Reuse_or_alloc_node>(std::_Rb_tree<unsigned int, std::pair<unsigned int const, unsigned int>, std::_Select1st<std::pair<unsigned int const, unsigned int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> > >::_Const_Link_type, std::_Rb_tree<unsigned int, std::pair<unsigned int const, unsigned int>, std::_Select1st<std::pair<unsigned int const, unsigned int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> > >::_Link_type, std::_Rb_tree<unsigned int, std::pair<unsigned int const, unsigned int>, std::_Select1st<std::pair<unsigned int const, unsigned int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> > >::_Reuse_or_alloc_node&)  ->  method std::_Rb_tree<unsigned int, std::pair<unsigned int const, unsigned int>, std::_Select1st<std::pair<unsigned int const, unsigned int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> > >::_Link_type std::_Rb_tree<unsigned int, std::pair<unsigned int const, unsigned int>, std::_Select1st<std::pair<unsigned int const, unsigned int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> > >::_M_copy<std::_Rb_tree<unsigned int, std::pair<unsigned int const, unsigned int>, std::_Select1st<std::pair<unsigned int const, unsigned int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> > >::_Reuse_or_alloc_node>(std::_Rb_tree<unsigned int, std::pair<unsigned int const, unsigned int>, std::_Select1st<std::pair<unsigned int const, unsigned int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> > >::_Const_Link_type, std::_Rb_tree<unsigned int, std::pair<unsigned int const, unsigned int>, std::_Select1st<std::pair<unsigned int const, unsigned int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> > >::_Base_ptr, std::_Rb_tree<unsigned int, std::pair<unsigned int const, unsigned int>, std::_Select1st<std::pair<unsigned int const, unsigned int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> > >::_Reuse_or_alloc_node&)",
+      "symbol": "_ZNSt8_Rb_treeIjSt4pairIKjjESt10_Select1stIS2_ESt4lessIjESaIS2_EE7_M_copyINS8_20_Reuse_or_alloc_nodeEEEPSt13_Rb_tree_nodeIS2_EPKSC_SD_RT_",
+      "weak": true
+     },
+     {
+      "kind": "function_signature_changed",
+      "pretty": "method std::_Rb_tree<unsigned int, std::pair<unsigned int const, unsigned int>, std::_Select1st<std::pair<unsigned int const, unsigned int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> > >::_Link_type std::_Rb_tree<unsigned int, std::pair<unsigned int const, unsigned int>, std::_Select1st<std::pair<unsigned int const, unsigned int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> > >::_M_copy<std::_Rb_tree<unsigned int, std::pair<unsigned int const, unsigned int>, std::_Select1st<std::pair<unsigned int const, unsigned int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> > >::_Alloc_node>(std::_Rb_tree<unsigned int, std::pair<unsigned int const, unsigned int>, std::_Select1st<std::pair<unsigned int const, unsigned int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> > >::_Const_Link_type, std::_Rb_tree<unsigned int, std::pair<unsigned int const, unsigned int>, std::_Select1st<std::pair<unsigned int const, unsigned int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> > >::_Link_type, std::_Rb_tree<unsigned int, std::pair<unsigned int const, unsigned int>, std::_Select1st<std::pair<unsigned int const, unsigned int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> > >::_Alloc_node&)  ->  method std::_Rb_tree<unsigned int, std::pair<unsigned int const, unsigned int>, std::_Select1st<std::pair<unsigned int const, unsigned int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> > >::_Link_type std::_Rb_tree<unsigned int, std::pair<unsigned int const, unsigned int>, std::_Select1st<std::pair<unsigned int const, unsigned int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> > >::_M_copy<std::_Rb_tree<unsigned int, std::pair<unsigned int const, unsigned int>, std::_Select1st<std::pair<unsigned int const, unsigned int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> > >::_Alloc_node>(std::_Rb_tree<unsigned int, std::pair<unsigned int const, unsigned int>, std::_Select1st<std::pair<unsigned int const, unsigned int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> > >::_Const_Link_type, std::_Rb_tree<unsigned int, std::pair<unsigned int const, unsigned int>, std::_Select1st<std::pair<unsigned int const, unsigned int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> > >::_Base_ptr, std::_Rb_tree<unsigned int, std::pair<unsigned int const, unsigned int>, std::_Select1st<std::pair<unsigned int const, unsigned int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> > >::_Alloc_node&)",
+      "symbol": "_ZNSt8_Rb_treeIjSt4pairIKjjESt10_Select1stIS2_ESt4lessIjESaIS2_EE7_M_copyINS8_11_Alloc_nodeEEEPSt13_Rb_tree_nodeIS2_EPKSC_SD_RT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Rb_tree<unsigned int, std::pair<unsigned int const, unsigned int>, std::_Select1st<std::pair<unsigned int const, unsigned int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> > >::iterator std::_Rb_tree<unsigned int, std::pair<unsigned int const, unsigned int>, std::_Select1st<std::pair<unsigned int const, unsigned int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> > >::_M_emplace_hint_unique<const std::piecewise_construct_t&, std::tuple<unsigned int const&>, std::tuple<> >(std::_Rb_tree<unsigned int, std::pair<unsigned int const, unsigned int>, std::_Select1st<std::pair<unsigned int const, unsigned int> >, std::less<unsigned int>, std::allocator<std::pair<unsigned int const, unsigned int> > >::const_iterator, const std::piecewise_construct_t&, std::tuple<unsigned int const&>&&, std::tuple<>&&)",
+      "symbol": "_ZNSt8_Rb_treeIjSt4pairIKjjESt10_Select1stIS2_ESt4lessIjESaIS2_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJRS1_EESD_IJEEEEESt17_Rb_tree_iteratorIS2_ESt23_Rb_tree_const_iteratorIS2_EDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method libvisio::VSDCharStyle* std::__uninitialized_copy<false>::__uninit_copy<libvisio::VSDCharStyle*, libvisio::VSDCharStyle*>(libvisio::VSDCharStyle*, libvisio::VSDCharStyle*)",
+      "symbol": "_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPN8libvisio12VSDCharStyleES4_EET0_T_S6_S5_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method libvisio::VSDTabSet* std::__uninitialized_copy<false>::__uninit_copy<libvisio::VSDTabSet*, libvisio::VSDTabSet*>(libvisio::VSDTabSet*, libvisio::VSDTabSet*)",
+      "symbol": "_ZNSt20__uninitialized_copyILb0EE13__uninit_copyIPN8libvisio9VSDTabSetES4_EET0_T_S6_S5_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::__cxx11::list<unsigned int, std::allocator<unsigned int> >& std::__cxx11::list<unsigned int, std::allocator<unsigned int> >::operator=(const std::__cxx11::list<unsigned int, std::allocator<unsigned int> >&)",
+      "symbol": "_ZNSt7__cxx114listIjSaIjEEaSERKS2_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::map<double, double, std::less<double>, std::allocator<std::pair<double const, double> > >::mapped_type& std::map<double, double, std::less<double>, std::allocator<std::pair<double const, double> > >::operator[](const std::map<double, double, std::less<double>, std::allocator<std::pair<double const, double> > >::key_type&)",
+      "symbol": "_ZNSt3mapIddSt4lessIdESaISt4pairIKddEEEixERS3_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_removed",
+      "pretty": "method std::_Rb_tree<short unsigned int, std::pair<short unsigned int const, short unsigned int>, std::_Select1st<std::pair<short unsigned int const, short unsigned int> >, std::less<short unsigned int>, std::allocator<std::pair<short unsigned int const, short unsigned int> > >::iterator std::_Rb_tree<short unsigned int, std::pair<short unsigned int const, short unsigned int>, std::_Select1st<std::pair<short unsigned int const, short unsigned int> >, std::less<short unsigned int>, std::allocator<std::pair<short unsigned int const, short unsigned int> > >::_M_emplace_hint_unique<const std::piecewise_construct_t&, std::tuple<short unsigned int&&>, std::tuple<> >(std::_Rb_tree<short unsigned int, std::pair<short unsigned int const, short unsigned int>, std::_Select1st<std::pair<short unsigned int const, short unsigned int> >, std::less<short unsigned int>, std::allocator<std::pair<short unsigned int const, short unsigned int> > >::const_iterator, const std::piecewise_construct_t&, std::tuple<short unsigned int&&>&&, std::tuple<>&&)",
+      "symbol": "_ZNSt8_Rb_treeItSt4pairIKttESt10_Select1stIS2_ESt4lessItESaIS2_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJOtEESD_IJEEEEESt17_Rb_tree_iteratorIS2_ESt23_Rb_tree_const_iteratorIS2_EDpOT_",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method void std::__cxx11::list<unsigned int, std::allocator<unsigned int> >::_M_assign_dispatch<std::_List_const_iterator<unsigned int> >(std::_List_const_iterator<unsigned int>, std::_List_const_iterator<unsigned int>, std::__false_type)",
+      "symbol": "_ZNSt7__cxx114listIjSaIjEE18_M_assign_dispatchISt20_List_const_iteratorIjEEEvT_S6_St12__false_type",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::bad_lexical_cast> >::~clone_impl(int, void**)",
+      "symbol": "_ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_16bad_lexical_castEEEED0Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual boost::system::system_error::~system_error(int)",
+      "symbol": "_ZN5boost6system12system_errorD0Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual const char* boost::system::system_error::what() const",
+      "symbol": "_ZNK5boost6system12system_error4whatEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::bad_lexical_cast> >::~clone_impl(int, void**)",
+      "symbol": "_ZN5boost16exception_detail10clone_implINS0_19error_info_injectorINS_16bad_lexical_castEEEED1Ev",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual const boost::exception_detail::clone_base* boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::bad_lexical_cast> >::clone() const",
+      "symbol": "_ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_16bad_lexical_castEEEE5cloneEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual void boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::bad_lexical_cast> >::rethrow() const",
+      "symbol": "_ZNK5boost16exception_detail10clone_implINS0_19error_info_injectorINS_16bad_lexical_castEEEE7rethrowEv",
+      "weak": true
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "method virtual boost::system::system_error::~system_error(int)",
+      "symbol": "_ZN5boost6system12system_errorD2Ev",
+      "weak": true
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "base_class_changed": 4
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/5/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<double, std::allocator<double> >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/5/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/5/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<std::pair<double, double>, std::allocator<std::pair<double, double> > >"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "/usr/include/c++/5/bits/stl_vector.h",
+      "exposure": "by_pointer",
+      "kind": "base_class_changed",
+      "third_party": true,
+      "type": "class std::vector<unsigned int, std::allocator<unsigned int> >"
+     }
+    ],
+    "vague_linkage": {
+     "function_signature_changed": 2,
+     "symbol_added": 8,
+     "symbol_removed": 6
+    }
+   }
+  ],
+  "seconds": 18.398019092,
+  "source": "libvisio",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "0.1.4",
+   "0.1.5"
+  ]
+ },
+ "generated_at": "2026-09-04T00:38:13Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

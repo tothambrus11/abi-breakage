@@ -1,0 +1,211 @@
+{
+ "data": {
+  "bytes_extracted": 2124156,
+  "id": "nghttp2@1.64.0..1.68.0",
+  "object_errors": [],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      true
+     ],
+     "exported_functions": [
+      179,
+      181
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {
+     "symbol_added": 2
+    },
+    "soname": [
+     "libnghttp2.so.14",
+     "libnghttp2.so.14"
+    ],
+    "symbol_events": [
+     {
+      "kind": "symbol_added",
+      "pretty": "function void nghttp2_session_callbacks_set_rand_callback(nghttp2_session_callbacks*, nghttp2_rand_callback)",
+      "symbol": "nghttp2_session_callbacks_set_rand_callback",
+      "weak": false
+     },
+     {
+      "kind": "symbol_added",
+      "pretty": "function void nghttp2_option_set_glitch_rate_limit(nghttp2_option*, uint64_t, uint64_t)",
+      "symbol": "nghttp2_option_set_glitch_rate_limit",
+      "weak": false
+     }
+    ],
+    "symbols_version_renamed": 0,
+    "third_party": {
+     "field_added_to_struct": 5,
+     "field_removed_from_struct": 16,
+     "member_offset_changed": 96,
+     "type_size_changed": 5
+    },
+    "type_events": [
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./lib/nghttp2_option.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct nghttp2_option"
+     },
+     {
+      "append_only": false,
+      "count": 17,
+      "declared_in": "./lib/nghttp2_option.h",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct nghttp2_option"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./lib/nghttp2_option.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct nghttp2_option"
+     },
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "./lib/nghttp2_callbacks.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct nghttp2_session_callbacks"
+     },
+     {
+      "append_only": true,
+      "count": 1,
+      "declared_in": "./lib/nghttp2_callbacks.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct nghttp2_session_callbacks"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./lib/nghttp2_session.h",
+      "exposure": "by_pointer",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct nghttp2_session"
+     },
+     {
+      "append_only": false,
+      "count": 6,
+      "declared_in": "./lib/nghttp2_session.h",
+      "exposure": "by_pointer",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct nghttp2_session"
+     },
+     {
+      "append_only": false,
+      "count": 52,
+      "declared_in": "./lib/nghttp2_session.h",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct nghttp2_session"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./lib/nghttp2_session.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct nghttp2_session"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./lib/nghttp2_map.h",
+      "exposure": "not_in_interface",
+      "kind": "field_added_to_struct",
+      "third_party": true,
+      "type": "struct nghttp2_map"
+     },
+     {
+      "append_only": false,
+      "count": 2,
+      "declared_in": "./lib/nghttp2_map.h",
+      "exposure": "not_in_interface",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct nghttp2_map"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./lib/nghttp2_map.h",
+      "exposure": "not_in_interface",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct nghttp2_map"
+     },
+     {
+      "append_only": false,
+      "count": 10,
+      "declared_in": "./lib/nghttp2_stream.h",
+      "exposure": "by_pointer",
+      "kind": "field_removed_from_struct",
+      "third_party": true,
+      "type": "struct nghttp2_stream"
+     },
+     {
+      "append_only": false,
+      "count": 25,
+      "declared_in": "./lib/nghttp2_stream.h",
+      "exposure": "by_pointer",
+      "kind": "member_offset_changed",
+      "third_party": true,
+      "type": "struct nghttp2_stream"
+     },
+     {
+      "append_only": false,
+      "count": 1,
+      "declared_in": "./lib/nghttp2_stream.h",
+      "exposure": "by_pointer",
+      "kind": "type_size_changed",
+      "third_party": true,
+      "type": "struct nghttp2_stream"
+     }
+    ],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 1.284144237,
+  "source": "nghttp2",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "1.64.0",
+   "1.68.0"
+  ]
+ },
+ "generated_at": "2026-09-04T00:43:17Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}

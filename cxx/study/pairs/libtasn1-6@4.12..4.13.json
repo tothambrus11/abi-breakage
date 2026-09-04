@@ -1,0 +1,57 @@
+{
+ "data": {
+  "bytes_extracted": 701088,
+  "id": "libtasn1-6@4.12..4.13",
+  "object_errors": [
+   "missing package: libtasn1-6-dbgsym"
+  ],
+  "objects": [
+   {
+    "coverage": {
+     "debug_info_found": [
+      true,
+      false
+     ],
+     "exported_functions": [
+      40,
+      40
+     ],
+     "mangled_functions": [
+      0,
+      0
+     ]
+    },
+    "language": "c",
+    "mass_rename": false,
+    "private_node": {},
+    "public": {},
+    "soname": [
+     "libtasn1.so.6",
+     "libtasn1.so.6"
+    ],
+    "symbol_events": [],
+    "symbols_version_renamed": 0,
+    "third_party": {},
+    "type_events": [],
+    "vague_linkage": {}
+   }
+  ],
+  "seconds": 0.845371159,
+  "source": "libtasn1-6",
+  "unpaired": [
+   [],
+   []
+  ],
+  "upstream": [
+   "4.12",
+   "4.13"
+  ]
+ },
+ "generated_at": "2026-09-04T00:44:30Z",
+ "provenance": {
+  "abi_reader": "libabigail 2.4.0",
+  "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"
+ },
+ "schema": "abistudy/pair/2",
+ "tool": "abistudy 4.0.0"
+}
