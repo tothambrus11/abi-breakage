@@ -51,6 +51,7 @@ def main(ws):
 
     rows = []  # one per transition with both indexes
     changed_defs = []  # (id, usr, kind, is_template, tokens_a, tokens_b, decl_changed, path, name)
+    c_wrappers = defaultdict(set)  # C library -> C++ wrapper headers that carry templates
     index_cache = {}
 
     def get_index(path):
@@ -74,6 +75,10 @@ def main(ws):
         da, db = a["definitions"], b["definitions"]
         n_inline = sum(1 for u, x in da.items() if not is_template(u, x["kind"]))
         n_tmpl = len(da) - n_inline
+        if t["language"] == "c" and n_tmpl:
+            for u, x in da.items():
+                if is_template(u, x["kind"]):
+                    c_wrappers[t["source"]].add(x["path"])
         ch_inline = ch_tmpl = 0
         for usr, x in da.items():
             y = db.get(usr)
@@ -128,6 +133,14 @@ def main(ws):
     tot_t = sum(r["template_defs"] for r in rows)
     p(f"Definitions in the OLD release's headers across all transitions: "
       f"{tot_i} inline functions, {tot_t} template definitions.\n")
+    if c_wrappers:
+        p("\"C\" is the language of the shared object, decided from its exported "
+          "symbols (RESULTS.md §5.2); the `-dev` package of a C library can still "
+          "ship C++ wrapper headers, which the indexer parses as C++. The C rows "
+          "with template bodies come entirely from such wrappers:\n")
+        for lib, paths in sorted(c_wrappers.items()):
+            p(f"* {lib}: " + ", ".join(f"`{h}`" for h in sorted(paths)))
+        p("")
 
     p("## 2. How often do bodies change?\n")
     p("Share of transitions (over those shipping at least one definition of that "

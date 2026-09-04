@@ -13,6 +13,13 @@ Recomputed per definition from the header indexes of every transition (`scripts/
 
 Definitions in the OLD release's headers across all transitions: 58068 inline functions, 134156 template definitions.
 
+"C" is the language of the shared object, decided from its exported symbols (RESULTS.md §5.2); the `-dev` package of a C library can still ship C++ wrapper headers, which the indexer parses as C++. The C rows with template bodies come entirely from such wrappers:
+
+* gmp: `gmpxx.h`
+* ncurses: `ncursesw/cursesf.h`, `ncursesw/cursesm.h`, `ncursesw/cursesp.h`
+* z3: `z3++.h`
+* zeromq3: `zmq.hpp`, `zmq_addon.hpp`
+
 ## 2. How often do bodies change?
 
 Share of transitions (over those shipping at least one definition of that kind) in which at least one body changed.
