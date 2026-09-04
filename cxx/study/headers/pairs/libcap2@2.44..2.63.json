@@ -42,31 +42,18 @@
   "language": "c",
   "source": "libcap2",
   "symbol_declared": {
-   "__execable_dl_loader": "undeclared",
-   "__so_start": "undeclared",
-   "_libcap_initialize": "undeclared",
-   "cap_copy_int_check": "declared",
-   "cap_fill": "declared",
-   "cap_fill_flag": "declared",
-   "cap_func_launcher": "declared",
-   "cap_iab_compare": "declared",
-   "cap_iab_dup": "declared",
-   "cap_iab_get_pid": "declared",
    "cap_launcher_callback": "declared",
    "cap_launcher_set_chroot": "declared",
    "cap_launcher_set_mode": "declared",
    "cap_launcher_setgroups": "declared",
-   "cap_launcher_setuid": "declared",
-   "cap_prctl": "declared",
-   "cap_prctlw": "declared",
-   "cap_proc_root": "declared"
+   "cap_launcher_setuid": "declared"
   },
   "upstream": [
    "2.44",
    "2.63"
   ]
  },
- "generated_at": "2026-09-04T02:20:23Z",
+ "generated_at": "2026-09-04T07:43:44Z",
  "provenance": {
   "abi_reader": "libabigail 2.4.0",
   "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"

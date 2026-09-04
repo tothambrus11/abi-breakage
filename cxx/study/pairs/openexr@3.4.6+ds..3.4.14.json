@@ -1,6 +1,7 @@
 {
  "data": {
   "bytes_extracted": 19527207,
+  "excluded_objects": [],
   "id": "openexr@3.4.6+ds..3.4.14",
   "object_errors": [],
   "objects": [
@@ -35,6 +36,7 @@
       "weak": true
      }
     ],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
     "type_events": [],
@@ -73,6 +75,7 @@
       "weak": true
      }
     ],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {
      "base_class_changed": 1,
@@ -217,6 +220,7 @@
       "kind": "function_signature_changed",
       "pretty": "method virtual int Imf_3_4::Compressor::compressTile(const char*, int, Imath_3_1::Box2i, const char*&)  ->  method virtual int Imf_3_4::Compressor::compressTile(const char*, int, Imath_3_2::Box2i, const char*&)",
       "symbol": "_ZN7Imf_3_410Compressor12compressTileEPKciN9Imath_3_13BoxINS3_4Vec2IiEEEERS2_",
+      "vtable_slot": true,
       "weak": false
      },
      {
@@ -229,6 +233,7 @@
       "kind": "function_signature_changed",
       "pretty": "method virtual int Imf_3_4::Compressor::uncompressTile(const char*, int, Imath_3_1::Box2i, const char*&)  ->  method virtual int Imf_3_4::Compressor::uncompressTile(const char*, int, Imath_3_2::Box2i, const char*&)",
       "symbol": "_ZN7Imf_3_410Compressor14uncompressTileEPKciN9Imath_3_13BoxINS3_4Vec2IiEEEERS2_",
+      "vtable_slot": true,
       "weak": false
      },
      {
@@ -1186,6 +1191,7 @@
       "weak": false
      }
     ],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 233,
     "third_party": {
      "base_class_changed": 38,
@@ -1726,6 +1732,7 @@
      "libOpenEXRCore-3_4.so.33"
     ],
     "symbol_events": [],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 0,
     "third_party": {},
     "type_events": [],
@@ -1765,6 +1772,7 @@
       "kind": "function_signature_changed",
       "pretty": "method virtual void Imf_3_4::ImageLevel::resize(const Imath_3_1::Box2i&)  ->  method virtual void Imf_3_4::ImageLevel::resize(const Imath_3_2::Box2i&)",
       "symbol": "_ZN7Imf_3_410ImageLevel6resizeERKN9Imath_3_13BoxINS1_4Vec2IiEEEE",
+      "vtable_slot": true,
       "weak": false
      },
      {
@@ -1777,12 +1785,14 @@
       "kind": "function_signature_changed",
       "pretty": "method virtual Imf_3_4::DeepImageLevel* Imf_3_4::DeepImage::newLevel(int, int, const Imath_3_1::Box2i&)  ->  method virtual Imf_3_4::DeepImageLevel* Imf_3_4::DeepImage::newLevel(int, int, const Imath_3_2::Box2i&)",
       "symbol": "_ZN7Imf_3_49DeepImage8newLevelEiiRKN9Imath_3_13BoxINS1_4Vec2IiEEEE",
+      "vtable_slot": true,
       "weak": false
      },
      {
       "kind": "function_signature_changed",
       "pretty": "method virtual void Imf_3_4::Image::resize(const Imath_3_1::Box2i&, Imf_3_4::LevelMode, Imf_3_4::LevelRoundingMode)  ->  method void Imf_3_4::Image::resize(const Imath_3_2::Box2i&)",
       "symbol": "_ZN7Imf_3_45Image6resizeERKN9Imath_3_13BoxINS1_4Vec2IiEEEENS_9LevelModeENS_17LevelRoundingModeE",
+      "vtable_slot": true,
       "weak": false
      },
      {
@@ -1795,6 +1805,7 @@
       "kind": "function_signature_changed",
       "pretty": "method virtual Imf_3_4::FlatImageLevel* Imf_3_4::FlatImage::newLevel(int, int, const Imath_3_1::Box2i&)  ->  method virtual Imf_3_4::FlatImageLevel* Imf_3_4::FlatImage::newLevel(int, int, const Imath_3_2::Box2i&)",
       "symbol": "_ZN7Imf_3_49FlatImage8newLevelEiiRKN9Imath_3_13BoxINS1_4Vec2IiEEEE",
+      "vtable_slot": true,
       "weak": false
      },
      {
@@ -1900,6 +1911,7 @@
       "weak": false
      }
     ],
+    "symbol_events_truncated": false,
     "symbols_version_renamed": 15,
     "third_party": {
      "field_type_changed": 2
@@ -2092,7 +2104,7 @@
     }
    }
   ],
-  "seconds": 18.488719092,
+  "seconds": 11.656341388,
   "source": "openexr",
   "unpaired": [
    [],
@@ -2103,7 +2115,7 @@
    "3.4.14"
   ]
  },
- "generated_at": "2026-09-04T00:35:24Z",
+ "generated_at": "2026-09-04T06:18:23Z",
  "provenance": {
   "abi_reader": "libabigail 2.4.0",
   "header_parser": "Ubuntu clang version 23.1.1 (++20260901122056+5340f7cc8814-1~exp1~20260901122107.62)"

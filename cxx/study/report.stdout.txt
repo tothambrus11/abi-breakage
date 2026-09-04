@@ -6,15 +6,15 @@ release transitions analysed          : 739
   shared objects compared             : 1037
   C transitions                       : 551  (77 libraries)
   C++ transitions                     : 188  (36 libraries)
-  by release level                    : {"major":17,"minor":223,"other":41,"patch":449,"snapshot":9}
+  by release level                    : {"major":14,"minor":219,"other":12,"patch":447,"snapshot":47}
   excluded: mass symbol rename policy : 2  ["openexr"]
-  excluded: pair failed / no objects  : 23   not attempted (budget/deadline): 9
+  excluded: pair failed               : 0   no linkable object: 23   not attempted (budget/deadline): 9
   debug info missing on a side        : 15  (symbol-only; excluded from layout/enum rows)
 
 EVENTS EXCLUDED BY THE ATTRIBUTION FILTERS
   types not declared in the library's headers : {"base_class_changed":5148,"enum_case_added":130,"enum_case_removed":26,"field_added_to_struct":1169,"field_removed_from_struct":1795,"field_type_changed":1521,"member_offset_changed":6118,"type_size_changed":643,"vtable_changed":463}
   symbols in private ELF version nodes        : {"symbol_added":10,"symbol_removed":3289}
-  vague-linkage (weak C++) symbols            : {"function_signature_changed":341,"symbol_added":2308,"symbol_removed":2488}
+  vague-linkage (weak C++) symbols            : {"function_signature_changed":256,"symbol_added":2303,"symbol_removed":2488}
 
 ======================================================================================================================
 FREQUENCY OF CHANGE KINDS ACROSS CONSECUTIVE RELEASES  (all libraries)
@@ -31,12 +31,12 @@ base_class_changed              16    2.2%   [ 0.4,  4.8]      16   6/108   5.6%
 enum_case_added                 58    8.0%   [ 4.8, 11.2]      58  26/108  24.1%         196      2    27  non-frozen enum
 enum_case_removed                7    1.0%   [ 0.3,  1.8]       7   6/108   5.6%          11      1     3  cannot help
 vtable_changed                  11    1.5%   [ 0.0,  4.0]      11   3/108   2.8%          15      1     3  resilient dispatch
-function_signature_changed      73    9.9%   [ 6.8, 13.2]      45  42/109  38.5%        1252      3   565  cannot help
+function_signature_changed      73    9.9%   [ 6.8, 13.2]      45  42/109  38.5%        1337      3   650  cannot help
 symbol_removed                  63    8.5%   [ 5.6, 11.7]      23  33/109  30.3%        2409      4   684  cannot help
 symbol_added                   210   28.4%   [23.2, 33.8]     210  68/109  62.4%        3439      3   684  n/a
 symbol_version_renamed           2    0.3%   [ 0.0,  0.7]       2   2/109   1.8%           2      1     1  n/a
 inline_body_changed             42    5.7%   [ 2.6,  9.4]      42  16/109  14.7%        1214      6   500  no implicit cross-module inlining
-macro_value_changed             80   10.8%   [ 6.1, 16.2]      80  31/109  28.4%         700      2   323  no implicit cross-module inlining
+macro_value_changed             80   10.8%   [ 6.1, 16.2]      80  31/109  28.4%         703      2   323  no implicit cross-module inlining
 [layout-changed types]          75   10.4%   [ 6.5, 14.5]      60  34/108  31.5%   (types with any layout change; primary layout measure)
 
 ======================================================================================================================
@@ -57,7 +57,7 @@ function_signature_changed      33    6.0%   [ 3.6,  8.5]      21  22/77   28.6%
 symbol_removed                  36    6.5%   [ 3.7,  9.5]      17  22/77   28.6%         787      3   370  cannot help
 symbol_added                   158   28.7%   [23.0, 34.3]     158  52/77   67.5%        1656      3   377  n/a
 inline_body_changed             19    3.4%   [ 0.8,  6.7]      19   8/77   10.4%         974     25   500  no implicit cross-module inlining
-macro_value_changed             73   13.2%   [ 7.5, 19.7]      73  27/77   35.1%         690      2   323  no implicit cross-module inlining
+macro_value_changed             73   13.2%   [ 7.5, 19.7]      73  27/77   35.1%         693      2   323  no implicit cross-module inlining
 [layout-changed types]          52    9.6%   [ 5.3, 14.3]      39  24/76   31.6%   (types with any layout change; primary layout measure)
 
 ======================================================================================================================
@@ -74,7 +74,7 @@ type_size_changed               10    5.5%   [ 1.6, 10.1]       6   6/35   17.1%
 base_class_changed              15    8.2%   [ 1.3, 18.5]      15   5/35   14.3%         273      4   217  opaque layout
 enum_case_added                 13    7.1%   [ 1.9, 12.6]      13   6/35   17.1%          56      2    23  non-frozen enum
 vtable_changed                  11    6.0%   [ 0.0, 16.5]      11   3/35    8.6%          15      1     3  resilient dispatch
-function_signature_changed      40   21.3%   [12.5, 32.5]      24  20/36   55.6%        1088      4   565  cannot help
+function_signature_changed      40   21.3%   [12.5, 32.5]      24  20/36   55.6%        1173      4   650  cannot help
 symbol_removed                  27   14.4%   [ 6.5, 23.6]       6  12/36   33.3%        1622      5   684  cannot help
 symbol_added                    52   27.7%   [16.1, 40.1]      52  17/36   47.2%        1783      3   684  n/a
 symbol_version_renamed           2    1.1%   [ 0.0,  2.6]       2   2/36    5.6%           2      1     1  n/a
@@ -96,11 +96,11 @@ evolution_or_inline   strict         205   27.7%   [22.1, 33.2]    72/109  66.1%
 
 BINARY BREAKS BY RELEASE LEVEL  (strict / lenient)
 ----------------------------------------------------------------------------------------------------------------------
-  major      n=17    strict    8   47.1%   [24.0, 75.0]   lenient    3   17.6%   [ 4.3, 41.2]
-  minor      n=223   strict   64   28.7%   [19.5, 38.7]   lenient   41   18.4%   [11.3, 25.8]
-  other      n=41    strict   11   26.8%   [10.0, 51.9]   lenient   10   24.4%   [ 8.8, 51.7]
-  patch      n=449   strict   74   16.5%   [11.5, 22.4]   lenient   47   10.5%   [ 6.7, 14.9]
-  snapshot   n=9     strict    5   55.6%   [55.6, 55.6]   lenient    5   55.6%   [55.6, 55.6]
+  major      n=14    strict    7   50.0%   [22.2, 83.3]   lenient    2   14.3%   [ 0.0, 44.4]
+  minor      n=219   strict   63   28.8%   [19.3, 38.5]   lenient   40   18.3%   [11.1, 25.6]
+  other      n=12    strict    7   58.3%   [12.5, 85.7]   lenient    7   58.3%   [12.5, 85.7]
+  patch      n=447   strict   74   16.6%   [11.6, 22.5]   lenient   47   10.5%   [ 6.7, 15.0]
+  snapshot   n=47    strict   11   23.4%   [ 9.8, 39.1]   lenient   10   21.3%   [ 7.7, 38.0]
 
 ======================================================================================================================
 WOULD A RESILIENT BOUNDARY HAVE SAVED THE RELEASE?
@@ -118,7 +118,7 @@ evolution_or_inline   strict         205       68    33.2%   28 (sole 16)       
 SYMBOL STRATA  (public removals / signature changes joined against the OLD release's headers)
 ======================================================================================================================
   removed:   declared    189  undeclared   2056  undecidable    164
-  re-signed: declared    791  undeclared    434  undecidable     27
+  re-signed: declared    791  undeclared    519  undecidable     27
   layout events excluded by the lenient rule (append-only growth of pointer-only types): 198
 
 ======================================================================================================================

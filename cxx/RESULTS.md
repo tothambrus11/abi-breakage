@@ -22,10 +22,13 @@ declare.
 | C++ transitions (libraries) | | 188 (36) |
 
 Thirty-four planned transitions contribute nothing; §5.1 lists them by
-cause. Release levels: 449 patch, 223 minor, 17 major, 9 snapshot, 41
-unclassifiable. The diff stage took 1 h 56 min on 4 cores for the main pass
-plus 17 min of single-worker retries; the whole run stayed inside the six-
-hour budget with room to spare.
+cause. Release levels: 447 patch, 219 minor, 14 major, 47 snapshot (date-
+stamped uploads of gcc-16, kmod, libedit, libgcrypt20, libxcrypt, libyuv,
+ncurses, rtmpdump), 12 unclassifiable (same numerics, different suffix:
+`+dfsg2`, `+really`). The diff stage took 1 h 56 min on 4 cores for the
+main pass plus 17 min of single-worker retries; the targeted re-runs after
+the code review (149 pairs) took another 1 h 25 min. The whole run stayed
+inside the six-hour budget.
 
 ## 2. How often does each kind of change happen?
 
@@ -94,18 +97,20 @@ By release level (strict / lenient binary break rate):
 
 | level | n | strict | lenient |
 |---|---|---|---|
-| major | 17 | 47.1 % [24.0, 75.0] | 17.6 % [4.3, 41.2] |
-| minor | 223 | 28.7 % [19.5, 38.7] | 18.4 % [11.3, 25.8] |
-| patch | 449 | 16.5 % [11.5, 22.4] | 10.5 % [6.7, 14.9] |
-| other | 41 | 26.8 % [10.0, 51.9] | 24.4 % [8.8, 51.7] |
-| snapshot | 9 | 55.6 % | 55.6 % |
+| major | 14 | 50.0 % [22.2, 83.3] | 14.3 % [0.0, 44.4] |
+| minor | 219 | 28.8 % [19.3, 38.5] | 18.3 % [11.1, 25.6] |
+| patch | 447 | 16.6 % [11.6, 22.5] | 10.5 % [6.7, 15.0] |
+| snapshot | 47 | 23.4 % [9.8, 39.1] | 21.3 % [7.7, 38.0] |
+| other | 12 | 58.3 % [12.5, 85.7] | 58.3 % [12.5, 85.7] |
 
 Patch releases break the binary interface in one transition in six under
 the strict definition and one in ten under the lenient one. The gradient
 major > minor > patch exists but is shallow: a major bump is far from a
-guarantee of a break and a patch bump is far from a guarantee of none. The
-`snapshot` interval is degenerate (all nine transitions belong to one
-library) and should be ignored.
+guarantee of a break and a patch bump is far from a guarantee of none.
+Date-stamped snapshot uploads (eight libraries) break at about the minor-
+release rate, and their lenient rate is close to their strict rate: what
+they break is declared API. The `major` and `other` rows rest on 14 and 12
+transitions and their intervals say so.
 
 ## 4. What would a resilient boundary have absorbed?
 
@@ -134,7 +139,7 @@ the old release's headers):
 | stratum | removed | re-signed |
 |---|---|---|
 | declared in shipped headers | 189 | 791 |
-| exported but undeclared | 2056 | 434 |
+| exported but undeclared | 2056 | 519 |
 | undecidable (no or poor header data) | 164 | 27 |
 
 Spot checks of the undeclared stratum (`sqlite3PagerCacheStat`,
@@ -149,7 +154,9 @@ macros (`ZSTD_STATIC_LINKING_ONLY`) count as undeclared.
 Header-level churn invisible to any ABI tool: 250 transitions (33.8 %)
 ship at least one inlinable definition, 42 (5.7 %) change one, and 80
 (10.8 %) change a public macro value that is not a version or build stamp
-(347, or 47 %, if stamps are counted).
+(347, or 47 %, if stamps are counted). `SUPPLEMENT_INLINE.md` analyses the
+inline-function and template body changes definition by definition; it is
+deliberately kept out of the break rates above.
 
 ## 5. Threats to validity, blind spots and biases
 
@@ -157,7 +164,7 @@ ship at least one inlinable definition, 42 (5.7 %) change one, and 80
 
 | cause | transitions | effect on the estimates |
 |---|---|---|
-| runtime package ships no linkable `lib*.so`: klibc (`klibc-*.so`), pam (PAM modules), pipewire (popcon picked `libspa-0.2-modules`, a plugin package) | 23 | three libraries contribute nothing; no direction, but pipewire's real library (`libpipewire-0.3`) is absent from the corpus |
+| runtime package ships no linkable `lib*.so` (`no_linkable_object`): klibc (`klibc-*.so`), pam (PAM modules), pipewire (popcon picked `libspa-0.2-modules`, a plugin package) | 23 | three libraries contribute nothing; no direction, but pipewire's real library (`libpipewire-0.3`) is absent from the corpus |
 | memory budget: libreoffice, 1.4 GB of packages per release | 9 | the largest C++ library in the corpus is absent; C++ rates describe small and medium libraries |
 | mass-rename policy: openexr 3.1→3.4 renames every symbol's version node | 2 | excluded by design; this is a declared break that the declared/silent count does not see |
 | libabigail out of memory under the 6 GB cap: z3 4.8.10→4.8.12 and 4.8.12→4.13.3 | 0 | recovered by the 12 GB single-worker retry (peak 6.7 GB) |
@@ -189,6 +196,9 @@ ship at least one inlinable definition, 42 (5.7 %) change one, and 80
 
 ### 5.3 Measurement
 
+* **Symbol-event cap.** Each object's per-event list is capped at 20 000;
+  no object in the corpus reached it, so the lenient counts and strata are
+  complete.
 * **Third-party filter.** Types not declared under the library's own
   headers are excluded (6118 member-offset and 5148 base-class events,
   almost all glibc and libstdc++ types). The filter matches by header
@@ -200,14 +210,19 @@ ship at least one inlinable definition, 42 (5.7 %) change one, and 80
 * **Plugins.** The preview run counted dlopen'ed plugins (over 90 sane
   backends, 23 pipewire SPA modules, libcaca output drivers) as shared objects of the
   library; their internal churn produced 8 strict breaks in sane-backends'
-  9 transitions. The final run restricts objects to linkable library
-  directories; sane-backends now shows 3 strict / 0 lenient, all from
-  `sanei_*` helpers exported by `libsane.so.1` itself.
+  9 transitions. The final run restricts objects to the default link
+  directories plus every directory in which the release's own `-dev`
+  package installs a `lib*.so` link, and records what it excluded;
+  sane-backends now shows 3 strict / 0 lenient, all from `sanei_*` helpers
+  exported by `libsane.so.1` itself.
 * **Vague linkage and private nodes.** Weak Itanium-mangled symbols and
   symbols in `PRIVATE`/`INTERNAL` version nodes are quarantined: 2488 weak
   removals and 3289 private-node removals (dbus alone removes 330 per
-  release) are not breaks. A library that exports a template
-  instantiation *as* its API would be under-counted.
+  release) are not breaks. Virtual member functions of the library's own
+  classes are exempt from the quarantine (their vtable slot is ABI
+  whatever the binding); the corpus contains no such removal, so the rule
+  changed no rate. A library that exports a template instantiation *as*
+  its API would be under-counted.
 * **Signature changes in C** compare parameter-type names modulo
   cv-qualifiers, so a typedef rename to an identical underlying type counts
   and a struct retyped behind an unchanged typedef name does not (it
@@ -228,7 +243,7 @@ ship at least one inlinable definition, 42 (5.7 %) change one, and 80
 
 * Confidence intervals are cluster bootstraps over libraries (1000
   resamples, seed 42); a library's transitions are not independent and
-  the intervals reflect that. Strata with few libraries (`snapshot`,
+  the intervals reflect that. Strata with few libraries (`major`, `other`,
   `vtable_changed`, `base_class_changed`) give degenerate or very wide
   intervals.
 * The ten most break-prone libraries carry 38.9 % of strict binary breaks;
